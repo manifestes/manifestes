@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="fr" prefix="og: http://ogp.me/ns#" ng-app="manifest">
+  <head>
+    <meta charset="utf-8">
+    
+    <title>manifeste(s)</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+    
+    <link href='http://fonts.googleapis.com/css?family=Amatic+SC|Gloria+Hallelujah|Inconsolata:400,700|Lato:400,700,900,300italic|Merriweather:400,300italic' rel='stylesheet' type='text/css'>
+
+    <link rel="shortcut icon" href="images/favicon.gif">
+
+    <!-- META -->
+    <meta name="author" content="{{htmlmeta.author}}"/>
+    <meta name="copyright" content="GNU License v2"/>
+    <meta name="description" content="{{htmlmeta.description}}"/>
+    <meta name="keywords" content="{{htmlmeta.keywords}}"/>
+
+    <!-- Opengraphh -->
+    <meta property="og:image" content="{{htmlmeta.image}}"/>
+    <meta property="og:title" content="{{htmlmeta.title}}"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:description" content="{{htmlmeta.description}}"/>
+    <meta property="og:url" content="{{htmlmeta.url}}"/>
+    <meta property="og:locale" content="fr_FR"/>
+
+    <!-- Dublin Core Metadata : http://dublincore.org/ -->
+    <meta name="DC.title" content="{{htmlmeta.title}}">
+    <meta name="DC.description" content="{{htmlmeta.description}}">
+    <meta name="DC.creator" content="{{htmlmeta.author}}">
+    <meta name="DC.publisher" content="{{htmlmeta.author}}">
+    
+    <!-- Twitter card -->
+    <meta name="twitter:card" content="photo"/>
+    <meta name="twitter:site" content="@manifestes"/>
+    <meta name="twitter:title" content="{{htmlmeta.title}}"/>
+    <meta name="twitter:image" content="{{htmlmeta.image}}"/>
+    <meta name="twitter:url" content="{{htmlmeta.url}}"/>
+
+    <link href="build/css/manifestes.css" rel="stylesheet" type="text/css"/>
+    <script src="build/js/manifestes.min.js" type="text/javascript"></script>
+
+  </head>
+
+  <body>
+  
+    <body ng-view></body>
+
+  </body>
+
+</html>
