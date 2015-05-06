@@ -1,0 +1,4 @@
+src/vendor
+src/css/styles.css
+node_modules
+.DS_Store
