@@ -1,0 +1,57 @@
+/* small screens overhidden hacks ! */
+@media (max-width: 600px) {
+  .header {
+    .menu .input {
+      width: 180px;
+    }
+    .tags .tag {
+      font-size: 0.5em;
+    }
+  }
+  .paragraph {
+    &.hidden, &.reduced {
+      .image { display: none !important; }
+    }
+    .image {
+      position: relative !important;
+      width: initial !important;
+      background-image: none !important;
+      .quote-container {
+        font-size: 1em;
+        .author, .quote { opacity: 1; }
+      }
+    }
+    .block {
+      margin-left: 0 !important;
+      .content { padding: 20px !important; }
+    }
+    .comments {
+      #disqus_thread {
+        padding: 0 !important;
+        padding-top: 2em !important;
+      }
+    }
+  }
+  .intro {
+    h1 {
+      font-size: 5em;
+      margin-top: 0;
+    }
+    .description {
+      font-size: 0.8em;
+      padding-top: 0; 
+    }
+    .button {
+      font-size: 1.4em;
+      padding: 20px;
+      margin-top: 10px;
+    }
+    .keywords {
+      font-size: 0.7em;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro h1 { font-size: 11em; }
+}

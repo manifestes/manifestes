@@ -1,0 +1,112 @@
+<div
+  class="intro"
+  ng-class="{hidden:!state.intro}">
+  <h1>{{meta.intro.title}}</h1>
+  <div class="description">{{meta.intro.description}}</div>
+  <div class="foot">
+    <div class="keywords">{{meta.intro.keywords}}</div>
+    <div class="button color-{{getRandomInt()}}" ng-click="state.intro=false;">>> consulter + participer <<</div>
+  </div>
+</div>
+
+<div class="container" ng-class="{hidden:state.intro}">
+
+  <div class="header">
+
+    <div class="menu">
+      <div class="input">
+        <input
+          type="text"
+          placeholder="chercher"
+          ng-model="state.term"
+          ng-click="$event.stopPropagation();"
+          ng-change="filterUpdate();"
+          class="filter"
+          ng-class="{highlight:state.term}"/>
+        <img
+          ng-if="state.term.length>0"
+          class="clear"
+          src="{{settings.assets}}/images/clear.svg"
+          ng-click="clickTag();"/>
+      </div>
+    </div>
+
+    <div class="tags" ng-class="{visible:state.showtags}">
+      <div
+        ng-repeat="t in meta.searchtags"
+        class="tag"
+        ng-class="{selected: state.term==t.search}"
+        ng-click="clickTag(t); $event.stopPropagation();">
+        #{{t.name}}
+      </div>
+    </div>
+
+  </div>
+
+  <div class="wrapper">
+
+    <div
+      ng-repeat="p in paragraphs"
+      id="p_{{$index}}"
+      class="paragraph index-{{$index}} color-{{$index%7}} role-{{p.role}}"
+      ng-class="{
+        searched: state.term && atLeastContains(p),
+        hidden: state.term && !atLeastContains(p),
+        reduced: !(p.opened || state.term.length>0),
+      }">
+      <div
+        class="image cover"
+        back-img="{{settings.datapath}}media/{{p.image.url}}"
+        ng-click="!p.opened && toggleOne(p)">
+        <div class="credit">credit: {{p.image.credit}}</div>
+        <div class="quote-container">
+          <div class="quote" compile-html="p.quote.content"></div>
+          <div class="author" compile-html="p.quote.author"></div>
+        </div>
+      </div>
+
+      <div class="block">
+        <div
+          class="titlebar"
+          ng-click="toggleOne(p)">
+          <div
+            class="collapser meta-{{state.toggleall}}"
+            ng-class="{
+              down: state.toggleall ? false:!p.opened,
+              up:   state.toggleall ? false:p.opened}"
+            ng-click="toggleAll(!p.opened); $event.stopPropagation();">
+            <div class="triangle"></div>
+          </div>
+          <div class="h1">
+            <img class="icon" ng-if="p.role=='meta'" src="{{settings.assets}}/images/info.svg"/>
+            <span compile-html="p.title"></span>
+          </div>
+        </div>
+
+        <div class="h2" compile-html="p.subtitle"></div>
+        <div class="content" compile-html="p.content"></div>
+        <div class="links" compile-html="p.links"></div>
+        <div
+          ng-if="p.opened || (state.term && atLeastContains(p))"
+          ng-click="openComments(p);"
+          class="discuss">
+          <div class="rect">
+            <div class="triangle"></div>
+              {{meta.discuss.text}} <span ng-if="p.commentcount">({{p.commentcount}})</span> >
+          </div>
+        </div>
+      </div>
+
+      <div class="comments" ng-class="{active:state.commenting_slug==p.slug}">
+        <div ng-if="state.commenting_slug==p.slug" class="escape" ng-click="state.commenting_slug = null;">< revenir au texte</div>
+        <div ng-if="state.commenting_slug==p.slug" id="disqus_thread"></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="content" compile-html="meta.footer"></div>
+      <a class="lastupdate" target="_blank" href="https://github.com/minut/minut.github.io">dernière modification<br>{{settings.lastupdate}}</a>
+    </div>
+
+  </div>
+</div>

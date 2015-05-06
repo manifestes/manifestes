@@ -1,0 +1,80 @@
+/* ---------------------------------------- */
+/* PREFIXES */
+.box-shadow(@args) {
+  -webkit-box-shadow: @args;
+  box-shadow: @args;
+}
+.box-shadow(@args, @oargs) {
+  -webkit-box-shadow: @args, @oargs;
+  box-shadow: @args, @oargs;
+}
+.inner-shadow(@args) {
+  .box-shadow(inset @args);
+}
+
+.background-size(@args) {
+  -webkit-background-size: @args;
+  -moz-background-size: @args;
+  -o-background-size: @args;
+  background-size: @args;
+}
+
+.animation(@args) {
+  -webkit-animation: @args;
+  -moz-animation: @args;
+  -ms-animation: @args;
+  -o-animation: @args;
+  animation: @args;
+}
+.animation-duration(@duration) {
+  -webkit-animation-duration: @duration;
+  -moz-animation-duration: @duration;
+  -ms-animation-duration: @duration;
+  -o-animation-duration: @duration;
+  animation-duration: @duration;
+}
+.animation-delay(@delay) {
+  -webkit-animation-delay: @delay;
+  -moz-animation-delay: @delay;
+  -ms-animation-delay: @delay;
+  -o-animation-delay: @delay;
+  animation-delay: @delay;
+}
+.transition(@args) {
+  -webkit-transition: @args;
+  -moz-transition: @args;
+  -o-transition: @args;
+  -ms-transition: @args;
+  transition: @args;
+}
+.transition-duration(@duration) {
+  -webkit-transition-duration: @duration;
+  -moz-transition-duration: @duration;
+  -ms-transition-duration: @duration;
+  -o-transition-duration: @duration;
+  transition-duration: @duration;
+}
+.transition-delay(@delay) {
+  -webkit-transition-delay: @delay;
+  -moz-transition-delay: @delay;
+  -ms-transition-delay: @delay;
+  -o-transition-delay: @delay;
+  transition-delay: @delay;
+}
+.transform(@args) {
+  -webkit-transform: @args;
+  -moz-transform: @args;
+  -ms-transform: @args; 
+  -o-transform: @args;
+  transform: @args;
+}
+
+.nohighlight {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+

@@ -1,0 +1,193 @@
+'use strict';
+
+/* Controllers */
+
+angular.module('underscore', [])
+
+  .factory('_', function() {
+    return window._; // assumes underscore has already been loaded on the page
+  });
+
+
+angular.module('manifest.controllers', ['underscore','config'])
+
+  .controller('manifestController', [
+    "$scope",
+    "$routeParams",
+    "$http",
+    "_",
+    "$document",
+    "$window",
+    "$location",
+    "$timeout",
+    "$sce",
+    "$rootScope",
+    "settings",
+    function ($scope, $routeParams, $http, _, $document, $window, $location, $timeout, $sce, $rootScope, settings) {
+    
+    //console.log("settings:",settings);
+    $scope.settings = settings;
+    $scope.meta = {};
+    $scope.state = {
+      intro: true,
+      commenting_slug: null,
+      toggle_all: null
+    };
+
+    $scope.paragraphs = [];
+
+    $scope.openComments = function(p) {
+      $scope.state.commenting_slug = p.slug;
+      $timeout(function(){
+        var disqus_shortname = 'manifestes';
+        var disqus_identifier = $scope.state.commenting_slug;
+        var disqus_url = 'http://manifest.es/'+disqus_identifier;
+
+        console.log("reloading: ",disqus_url);
+        DISQUS.reset({
+          reload: true,
+          config: function () {
+            this.page.identifier = disqus_identifier;  
+            this.page.url = disqus_url;
+          }
+        });
+      }); // delay to be sure disqus div is here ?
+    };
+    
+    $scope.getRandomInt = function(){
+      return Math.floor((Math.random()*7));
+    }
+
+
+    $scope.filterUpdate = function() {
+      window.scrollTo(0,0);
+    };
+
+    $scope.clickTag = function(t) {
+      if(t) {
+        $scope.state.term = t.search;
+        window.scrollTo(0,0);
+      }
+      else {
+        $scope.state.term = "";
+        $scope.toggleAll(false);
+      }
+    };
+
+    // $scope.clickMenu = function(k) {
+    //   var target = document.getElementById('p_'+k);
+    //   //console.log("o",target.offsetTop);
+    //   //target.scrollIntoView({block: "end", behavior: "smooth"});
+    //   window.scrollTo(0,target.offsetTop - 110);
+    //   //window.scrollBy(0,-40);
+    // };
+    
+    $scope.highlight = function(text) {
+      if(!$scope.state.term || $scope.state.term.length<3) {
+        return $sce.trustAsHtml(text);
+      }
+      return $sce.trustAsHtml(text.replace(new RegExp($scope.state.term, 'gi'), '<span class="highlight">$&</span>'));
+    };
+    $scope.atLeastContains = function(p) {
+      var reg = new RegExp($scope.state.term,'gi');
+
+      var show = reg.test(p.quote.content);
+
+      var watch = ['title','subtitle','content','links'];
+      _.each(watch, function(k) {
+        show = show || reg.test(p[k]);
+      });
+      return show;
+    };
+
+    $scope.toggleOne = function(p) {
+      p.opened = !p.opened ;
+      if(!p.commentcount) {
+        $timeout(function() {
+          updateCommentsCount(p);
+        },1500); // wait for the section to open, we've got time !
+      }
+    };
+    $scope.toggleAll = function(status) {
+      _.each($scope.paragraphs, function(p) {
+        p.opened = status;
+      });
+    };
+
+
+    var md2Html = function(str) {
+      return str ? markdown.toHTML(str) : "";
+    };
+
+
+    ////////////////////////////////////////// GET COMMENTS COUNT
+    var updateCommentsCount = function(p) {
+      var params = {
+        api_key: settings.disquskey,
+        forum : "manifestes",
+        thread : {
+          ident: p.slug
+        }
+      };
+      console.log(params);
+      $http
+        .get("https://disqus.com/api/3.0/threads/set.jsonp", params)
+        .success(function(res) {
+          var count = res.response.posts;
+          console.log("found comments count:",count);
+          p.commentcount = count;
+        })
+        .error(function (data, status, headers, config) {
+          console.log("error disqus",status);
+        });
+    };
+
+    ////////////////////////////////////////// GET META
+    $http
+      .get(settings.datapath + "meta.yml")
+      .success(function(res) {
+        jsyaml.loadAll(res, function(d) {
+          $scope.meta = d;
+          //$scope.meta.about = md2Html($scope.meta.about);
+          $scope.meta.footer = md2Html($scope.meta.footer);
+          // for html page meta
+          $rootScope.htmlmeta = d.htmlmeta;
+        });
+      })
+      .error(function (data, status, headers, config) {
+        console.log("error meta",status);
+      });
+
+    ////////////////////////////////////////// GET CONTENTS
+    $http
+      .get(settings.datapath + "contents.yml")
+      .success(function(res) {
+        jsyaml.loadAll(res, function(d) {
+          //console.log(d);
+          d.subtitle = md2Html(d.subtitle);
+          if(d.quote) {
+            d.quote.content = md2Html(d.quote.content);
+            d.quote.author = md2Html(d.quote.author);
+          }
+          d.content = md2Html(d.content);
+          d.links = md2Html(d.links);
+          $scope.paragraphs.push(d);
+        });
+
+        // (to improve) init here to trigger the watch on footer content set though compile-html directive
+        $scope.state.term = "";
+      })
+      .error(function (data, status, headers, config) {
+        console.log("error contents",status);
+      });
+
+      // disqus
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//manifestes.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+      
+
+  }]);
+  
