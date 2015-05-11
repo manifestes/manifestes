@@ -47,6 +47,13 @@
   -ms-transition: @args;
   transition: @args;
 }
+.erase-transition() {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+}
 .transition-duration(@duration) {
   -webkit-transition-duration: @duration;
   -moz-transition-duration: @duration;
