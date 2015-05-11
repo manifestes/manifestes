@@ -111,6 +111,10 @@ angular.module('manifest.controllers', ['underscore','config'])
     $scope.toggleAll = function(status) {
       _.each($scope.paragraphs, function(p) {
         p.opened = status;
+        if(status && !p.commentcount)
+          $timeout(function() {
+            updateCommentsCount(p);
+          });
       });
     };
 

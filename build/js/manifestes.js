@@ -2914,7 +2914,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'11 May 2015 - 11:09'})
+.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'11 May 2015 - 11:37'})
 
 ;
 ;
@@ -3032,6 +3032,10 @@ angular.module('manifest.controllers', ['underscore','config'])
     $scope.toggleAll = function(status) {
       _.each($scope.paragraphs, function(p) {
         p.opened = status;
+        if(status && !p.commentcount)
+          $timeout(function() {
+            updateCommentsCount(p);
+          });
       });
     };
 
