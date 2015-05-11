@@ -2914,7 +2914,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'07 May 2015 - 2:15'})
+.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'11 May 2015 - 11:09'})
 
 ;
 ;
@@ -2964,7 +2964,7 @@ angular.module('manifest.controllers', ['underscore','config'])
         var disqus_identifier = $scope.state.commenting_slug;
         var disqus_url = 'http://manifest.es/'+disqus_identifier;
 
-        console.log("reloading: ",disqus_url);
+        console.log("reloading comments: ",disqus_url);
         DISQUS.reset({
           reload: true,
           config: function () {
@@ -2972,7 +2972,7 @@ angular.module('manifest.controllers', ['underscore','config'])
             this.page.url = disqus_url;
           }
         });
-      }); // delay to be sure disqus div is here ?
+      }); // timeout to be sure disqus div is here ?
     };
     
     $scope.getRandomInt = function(){
@@ -3026,7 +3026,7 @@ angular.module('manifest.controllers', ['underscore','config'])
       if(!p.commentcount) {
         $timeout(function() {
           updateCommentsCount(p);
-        },1500); // wait for the section to open, we've got time !
+        }); // wait for the section to open !
       }
     };
     $scope.toggleAll = function(status) {
@@ -3046,16 +3046,31 @@ angular.module('manifest.controllers', ['underscore','config'])
       var params = {
         api_key: settings.disquskey,
         forum : "manifestes",
-        thread : {
-          ident: p.slug
-        }
+        thread : "ident:"+p.slug,
+        callback: "JSON_CALLBACK"
       };
-      console.log(params);
-      $http
-        .get("https://disqus.com/api/3.0/threads/set.jsonp", params)
-        .success(function(res) {
-          var count = res.response.posts;
-          console.log("found comments count:",count);
+      
+      var serialize = function(obj, prefix) {
+        var str = [];
+        for(var p in obj) {
+          if (obj.hasOwnProperty(p)) {
+            var k = prefix ? prefix + "[" + p + "]" : p, v = obj[p];
+            str.push(typeof v == "object" ?
+            serialize(v, k) :
+            encodeURIComponent(k) + "=" + encodeURIComponent(v));
+          }
+        }
+        return str.join("&");
+      }
+
+      var url = "https://disqus.com/api/3.0/threads/set.jsonp?"+serialize(params);
+      // console.log(url);
+
+      $http.jsonp(url)
+        .success(function(data){
+          var res = data.response;
+          var count = res.length ? res[0].posts : 0;
+          //console.log("found comments count:",count);
           p.commentcount = count;
         })
         .error(function (data, status, headers, config) {
