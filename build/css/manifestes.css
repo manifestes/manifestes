@@ -552,6 +552,14 @@ a:hover {
   background: repeating-linear-gradient(to right, #f6ba52, #f6ba52 10px, #ffd180 10px, #ffd180 20px);
   -webkit-box-shadow: inset 0px 0px 5px 0px #525252;
   box-shadow: inset 0px 0px 5px 0px #525252;
+  -webkit-transition: padding 0.1s;
+  -moz-transition: padding 0.1s;
+  -o-transition: padding 0.1s;
+  -ms-transition: padding 0.1s;
+  transition: padding 0.1s;
+}
+.intro .button:hover {
+  padding: 60px;
 }
 .intro .keywords {
   width: 100%;
@@ -906,6 +914,7 @@ a:hover {
 }
 .wrapper .paragraph .block .content p {
   margin-bottom: 15px;
+  line-height: 1.6em;
 }
 .wrapper .paragraph .block .content li {
   margin-bottom: 7px;
