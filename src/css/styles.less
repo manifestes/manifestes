@@ -89,10 +89,15 @@ a {
   .description {
     display: inline-block;
     padding: 20px;
+    padding-top: 0px;
     max-width: 590px;
     font-family: 'Gloria Hallelujah', cursive;
     font-size: 0.9em;
     line-height: 1.8em;
+  }
+  .image {
+    display: block;
+    margin: auto;
   }
   .foot {
     position: absolute;
@@ -103,8 +108,7 @@ a {
     pointer-events: all;
     cursor: pointer;
     box-sizing: border-box;
-    padding: 40px;
-    margin-top: 20px;
+    padding: 20px;
     font-size: 1.7em;
     font-style: italic;
     font-family: 'Amatic SC', cursive;
@@ -126,11 +130,13 @@ a {
     // &.color-6 { background: #B1DDBF; };
     .transition(padding 0.1s);
     &:hover {
-      padding: 60px;
+      padding: 40px;
     }
   }
   .keywords {
     width: 100%;
+    background: white;
+    padding: 10px;
     font-family: 'Gloria Hallelujah', cursive;
     font-size: 0.9em;
   }

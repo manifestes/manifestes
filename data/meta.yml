@@ -50,7 +50,7 @@ footer: >
 
     - la liste de discussion [manifestes@lists.riseup.net](https://lists.riseup.net/www/subscribe/manifestes)
 
-    - le [code source](https://github.com/minut/manifestes) de ce site avec [les textes](https://github.com/minut/manifestes/tree/gh-pages/data)
+    - le [code source](https://github.com/minut/manifestes) de ce site avec [les textes](https://github.com/minut/manifestes/blob/gh-pages/data/contents.yml)
 
     - le compte twitter [@manifestes](https://twitter.com/manifestes)
 

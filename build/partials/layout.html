@@ -3,6 +3,7 @@
   ng-class="{hidden:!state.intro}">
   <h1>{{meta.intro.title}}</h1>
   <div class="description">{{meta.intro.description}}</div>
+  <img class="image" src="{{settings.datapath}}/manifestes_splash.jpg"/>
   <div class="foot">
     <div class="keywords">{{meta.intro.keywords}}</div>
     <div class="button color-{{getRandomInt()}}" ng-click="state.intro=false;">>> consulter + participer <<</div>

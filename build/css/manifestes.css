@@ -529,10 +529,15 @@ a:hover {
 .intro .description {
   display: inline-block;
   padding: 20px;
+  padding-top: 0px;
   max-width: 590px;
   font-family: 'Gloria Hallelujah', cursive;
   font-size: 0.9em;
   line-height: 1.8em;
+}
+.intro .image {
+  display: block;
+  margin: auto;
 }
 .intro .foot {
   position: absolute;
@@ -543,8 +548,7 @@ a:hover {
   pointer-events: all;
   cursor: pointer;
   box-sizing: border-box;
-  padding: 40px;
-  margin-top: 20px;
+  padding: 20px;
   font-size: 1.7em;
   font-style: italic;
   font-family: 'Amatic SC', cursive;
@@ -559,10 +563,12 @@ a:hover {
   transition: padding 0.1s;
 }
 .intro .button:hover {
-  padding: 60px;
+  padding: 40px;
 }
 .intro .keywords {
   width: 100%;
+  background: white;
+  padding: 10px;
   font-family: 'Gloria Hallelujah', cursive;
   font-size: 0.9em;
 }
@@ -1100,6 +1106,9 @@ a:hover {
   .intro .description {
     font-size: 0.8em;
     padding-top: 0;
+  }
+  .intro .image {
+    display: none;
   }
   .intro .button {
     font-size: 1.4em;
