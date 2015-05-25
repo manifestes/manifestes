@@ -1,3 +1,60 @@
+---
+role: splash
+repo: https://github.com/minut/minut.github.io
+discuss:
+    text: discuter, corriger, proposer
+    link: https://lite6.framapad.org/p/manifestes
+htmlmeta:
+    title: Manifeste(s)
+    url: http://manifest.es
+    image: http://manifest.es/data/manifestes_banner.jpg
+    author: collectif(s)
+    description: >
+        collectif(s) des territoires communs autogérés et alternatives convivialistes DIY bénéloves révolutionnaires de la transition sociale et écologique dans les tiers-lieux créatifs des clowns bricoleurs pirates des utopies libertaires écoféministes p2p et coopératistes indignées activistes de la résilience décroissante concrète et désobéissante des convergences des luttes
+    keywords: manifeste, utopies concrètes, alernatives, décroissance, transition, autogestion, communs, résilience, écologie, convergence, écriture collective, DIY, politique, philosophie
+intro:
+    title: manifeste(s)
+    description: >
+        collectif(s) des territoires communs autogérés et alternatives convivialistes DIY bénéloves révolutionnaires de la transition sociale et écologique dans les tiers-lieux créatifs des clowns bricoleurs pirates des utopies libertaires écoféministes p2p et coopératistes indignées activistes de la résilience décroissante concrète et désobéissante des convergences des luttes
+    keywords: "# philosophie # politique # pratique # convergences #"
+searchtags:
+    -   name: argent
+        search: argent|monn\w+
+    -   name: institutions
+        search: institution\w*|structure\w*
+    -   name: pouvoir
+        search: pouvoir|autorité|puissance
+    -   name: inégalités
+        search: inégalité\w+
+    -   name: responsables
+        search: responsab\w+|coupable|culpab\w+
+    -   name: quotidien
+        search: quotidien\w*|habitu\w+
+    -   name: aliénation
+        search: aliénation|dépendan\w+
+    -   name: émancipation
+        search: émancip\w*
+    -   name: politique
+        search: politique
+    -   name: technologies
+        search: \W(techn|scienc)\w+
+    -   name: liberté
+        search: \W(liberté|libre)\w+
+    -   name: commun
+        search: communs*|collecti\w+
+    -   name: langage
+        search: langage|mot\w*|parler
+footer: >
+    ##*voir aussi*
+
+    - le [document partagé](https://lite6.framapad.org/p/manifestes)
+
+    - la liste de discussion [manifestes@lists.riseup.net](https://lists.riseup.net/www/subscribe/manifestes)
+
+    - le [code source](https://github.com/minut/manifestes) de ce site avec [les textes](https://github.com/minut/manifestes/blob/gh-pages/data/contents.yml)
+
+    - le compte twitter [@manifestes](https://twitter.com/manifestes)
+
 
 
 ---
@@ -599,6 +656,8 @@ links: >
     
     - les [Engraineurs](http://www.collectif-lesengraineurs.com/) plantent les graines d'un esprit de résistance et cultivent les alternatives
 
+    - [beautifultrouble](http://beautifultrouble.org/), boite à outils pour faire la révolution, avec extraits en français dans [Joyeux Bordel](https://france.attac.org/nos-publications/livres/article/joyeux-bordel-tactiques-principes)
+
     - hack la COP21: [climate games](https://www.climategames.net/), par le [laboratoire d'imagination insurrectionnelle](http://labofii.net/)
     
     - ...
@@ -638,10 +697,14 @@ links: >
 
     - [carte](https://www.google.com/maps/d/embed?mid=zObc46bS4Jts.kM-SMEA0C_m8) des [moutons enragés](http://lesmoutonsenrages.fr/carte-des-moutons-2/), [carte Bastamag des alternatives](http://www.bastamag.net/La-carte-de-France-des-4598), [tour de France des alternatives](http://www.tourdefrancedesalternatives.fr/alternatives/), [Citoyens en transition](http://voyageurs.en-transition.fr/carte-des-alternatives/)
 
+    - [Cap ou pas Cap ?](http://capoupascap.paris/), carte des alternatives citoyennes à Paris
+
     - la [Graffiterie](http://graffiterie.org/) met en relation des artistes et des propriétaires de murs pour réenchanter l'espace public
 
     - [PEROU](http://www.perou-paris.org/Manifeste.html), pôle d'exploration des ressources urbaines
 
+    - le doctorat sauvage d'[échelle inconnue](http://www.echelleinconnue.net/)
+    
     - [TransforMap](http://transformap.co/)
 
     - ...
@@ -738,7 +801,7 @@ content: >
 links: >
     ###*où et comment s'informer: médias libres*
 
-    - médias vrac: [Reporterre](http://reporterre.net/), [Bastamag](http://www.bastamag.net/), [la télé libre](http://latelelibre.fr/), [Reporter Citoyens](http://www.reporter-citoyen.fr/), [télé bocal](http://telebocal.org/), [alterjt](http://www.alterjt.tv/), agrégateur [Médias Libres](http://mediaslibres.org/), [CQFD](http://cqfd-journal.org/), [Paris Luttes Info](http://paris-luttes.info/), [Le 4e Singe](http://4emesinge.com/), [J'ai un doute](http://jaiundoute.com/), [Génération Précaire](https://twitter.com/generationpreca), [Infokiosques](https://www.infokiosques.net/), [Lundi matin](www.lundi.am), [le Monde Diplomatique](http://www.monde-diplomatique.fr/), [Canard enchainé](http://lecanardenchaine.fr/), [les Z'indigné(e)s](http://www.les-indignes-revue.fr), [acrimed](http://www.acrimed.org/), [mediapart](http://www.mediapart.fr), [Mr Mondialisation](http://mrmondialisation.org), [le partage](http://partage-le.com/)...
+    - médias vrac: [Reporterre](http://reporterre.net/), [Bastamag](http://www.bastamag.net/), [la télé libre](http://latelelibre.fr/), [Reporter Citoyens](http://www.reporter-citoyen.fr/), [télé bocal](http://telebocal.org/), [alterjt](http://www.alterjt.tv/), agrégateur [Médias Libres](http://mediaslibres.org/), [CQFD](http://cqfd-journal.org/), [Paris Luttes Info](http://paris-luttes.info/), [Le 4e Singe](http://4emesinge.com/), [J'ai un doute](http://jaiundoute.com/), [Génération Précaire](https://twitter.com/generationpreca), [Infokiosques](https://www.infokiosques.net/), [Lundi matin](www.lundi.am), [le Monde Diplomatique](http://www.monde-diplomatique.fr/), [Canard enchainé](http://lecanardenchaine.fr/), [les Z'indigné(e)s](http://www.les-indignes-revue.fr), [acrimed](http://www.acrimed.org/), [mediapart](http://www.mediapart.fr), [Mr Mondialisation](http://mrmondialisation.org), [le partage](http://partage-le.com/), [primitivi](http://www.primitivi.org/), [l'envolée](http://lenvolee.net/), [l'impossible](http://www.limpossible.fr/), [article11](http://www.article11.info/), [Jef Klak](http://jefklak.org/)...
 
     - [cartographie des personnalités du nucléaire en France](http://greenpeace.fr/facenuke/) par Greenpeace, 
 

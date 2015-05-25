@@ -31,8 +31,10 @@ angular.module('manifest.controllers', ['underscore','config'])
     $scope.state = {
       intro: true,
       commenting_slug: null,
-      toggle_all: null
+      toggle_all: null,
+      lang: $routeParams.lang
     };
+    console.log("state:",$scope.state);
 
     $scope.paragraphs = [];
 
@@ -161,36 +163,34 @@ angular.module('manifest.controllers', ['underscore','config'])
         });
     };
 
-    ////////////////////////////////////////// GET META
-    $http
-      .get(settings.datapath + "meta.yml")
-      .success(function(res) {
-        jsyaml.loadAll(res, function(d) {
-          $scope.meta = d;
-          //$scope.meta.about = md2Html($scope.meta.about);
-          $scope.meta.footer = md2Html($scope.meta.footer);
-          // for html page meta
-          $rootScope.htmlmeta = d.htmlmeta;
-        });
-      })
-      .error(function (data, status, headers, config) {
-        console.log("error meta",status);
-      });
 
     ////////////////////////////////////////// GET CONTENTS
     $http
-      .get(settings.datapath + "contents.yml")
+      .get(settings.datapath + "contents_"+$scope.state.lang+".yml")
       .success(function(res) {
         jsyaml.loadAll(res, function(d) {
-          //console.log(d);
-          d.subtitle = md2Html(d.subtitle);
-          if(d.quote) {
-            d.quote.content = md2Html(d.quote.content);
-            d.quote.author = md2Html(d.quote.author);
+
+          if(d.role && d.role=='splash') { // META
+
+            $scope.meta = d;
+            //$scope.meta.about = md2Html($scope.meta.about);
+            $scope.meta.footer = md2Html($scope.meta.footer);
+            // for html page meta
+            $rootScope.htmlmeta = d.htmlmeta;
+
+          } else { // SECTIONS
+
+            //console.log(d);
+            d.subtitle = md2Html(d.subtitle);
+            if(d.quote) {
+              d.quote.content = md2Html(d.quote.content);
+              d.quote.author = md2Html(d.quote.author);
+            }
+            d.content = md2Html(d.content);
+            d.links = md2Html(d.links);
+            $scope.paragraphs.push(d);
+
           }
-          d.content = md2Html(d.content);
-          d.links = md2Html(d.links);
-          $scope.paragraphs.push(d);
         });
 
         // (to improve) init here to trigger the watch on footer content set though compile-html directive

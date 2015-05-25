@@ -18,14 +18,17 @@ angular.module('manifest', [
     // $locationProvider.html5Mode(true);
     console.log("App Settings",settings);
     
-    $routeProvider.when('/', {
+    var lang = navigator.language;
+    console.log("lang:",lang);
+
+    $routeProvider.when('/:lang/', {
       templateUrl: settings.assets + '/partials/layout.html',
       controller: 'manifestController'
       // reloadOnSearch: false
     });
 
     $routeProvider.otherwise({
-      redirectTo: '/'
+      redirectTo: '/fr/'
     });
 
   }])

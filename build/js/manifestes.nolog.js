@@ -2893,14 +2893,17 @@ angular.module('manifest', [
     // $locationProvider.html5Mode(true);
     0;
     
-    $routeProvider.when('/', {
+    var lang = navigator.language;
+    0;
+
+    $routeProvider.when('/:lang/', {
       templateUrl: settings.assets + '/partials/layout.html',
       controller: 'manifestController'
       // reloadOnSearch: false
     });
 
     $routeProvider.otherwise({
-      redirectTo: '/'
+      redirectTo: '/fr/'
     });
 
   }])
@@ -2914,7 +2917,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'21 May 2015 - 2:04'})
+.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'25 May 2015 - 11:27'})
 
 ;
 ;
@@ -2952,8 +2955,10 @@ angular.module('manifest.controllers', ['underscore','config'])
     $scope.state = {
       intro: true,
       commenting_slug: null,
-      toggle_all: null
+      toggle_all: null,
+      lang: $routeParams.lang
     };
+    0;
 
     $scope.paragraphs = [];
 
@@ -3082,36 +3087,34 @@ angular.module('manifest.controllers', ['underscore','config'])
         });
     };
 
-    ////////////////////////////////////////// GET META
-    $http
-      .get(settings.datapath + "meta.yml")
-      .success(function(res) {
-        jsyaml.loadAll(res, function(d) {
-          $scope.meta = d;
-          //$scope.meta.about = md2Html($scope.meta.about);
-          $scope.meta.footer = md2Html($scope.meta.footer);
-          // for html page meta
-          $rootScope.htmlmeta = d.htmlmeta;
-        });
-      })
-      .error(function (data, status, headers, config) {
-        0;
-      });
 
     ////////////////////////////////////////// GET CONTENTS
     $http
-      .get(settings.datapath + "contents.yml")
+      .get(settings.datapath + "contents_"+$scope.state.lang+".yml")
       .success(function(res) {
         jsyaml.loadAll(res, function(d) {
-          //console.log(d);
-          d.subtitle = md2Html(d.subtitle);
-          if(d.quote) {
-            d.quote.content = md2Html(d.quote.content);
-            d.quote.author = md2Html(d.quote.author);
+
+          if(d.role && d.role=='splash') { // META
+
+            $scope.meta = d;
+            //$scope.meta.about = md2Html($scope.meta.about);
+            $scope.meta.footer = md2Html($scope.meta.footer);
+            // for html page meta
+            $rootScope.htmlmeta = d.htmlmeta;
+
+          } else { // SECTIONS
+
+            //console.log(d);
+            d.subtitle = md2Html(d.subtitle);
+            if(d.quote) {
+              d.quote.content = md2Html(d.quote.content);
+              d.quote.author = md2Html(d.quote.author);
+            }
+            d.content = md2Html(d.content);
+            d.links = md2Html(d.links);
+            $scope.paragraphs.push(d);
+
           }
-          d.content = md2Html(d.content);
-          d.links = md2Html(d.links);
-          $scope.paragraphs.push(d);
         });
 
         // (to improve) init here to trigger the watch on footer content set though compile-html directive
