@@ -4,59 +4,58 @@
 role: splash
 repo: https://github.com/minut/minut.github.io
 discuss:
-    text: discuter, corriger, proposer
+    text: discutir, corregir, proponer
     link: https://lite6.framapad.org/p/manifestes
 htmlmeta:
-    title: Manifeste(s)
+    title: Manifiesto(s)
     url: http://manifest.es
     image: http://manifest.es/data/manifestes_banner.jpg
     author: collectif(s)
     description: >
-        collectif(s) des territoires communs autogérés et alternatives convivialistes DIY bénéloves révolutionnaires de la transition sociale et écologique dans les tiers-lieux créatifs des clowns bricoleurs pirates des utopies libertaires écoféministes p2p et coopératistes indignées activistes de la résilience décroissante concrète et désobéissante des convergences des luttes
-    keywords: manifeste, utopies concrètes, alernatives, décroissance, transition, autogestion, communs, résilience, écologie, convergence, écriture collective, DIY, politique, philosophie
+        collectivo(s) de los territorios comunes autogestionados y alternativas convivialistas DIY voluntarios revolucionarios de la transición social y ecológica en los terceros lugares creativos de los clowns del bricolaje piratas de las utopías libertarias ecofeministas p2p y cooperativistas indignadas activistas de la resiliencia decreciente concreta y desobediente de las convergencias de las luchas
+    keywords: manifiesto, utopías concretas, alernativas, decrecimiento, transición, autogestión, comunes, resiliencia, ecología, convergencia, escritura colectiva, DIY, política, filosofía
 intro:
-    title: Manifesto !
+    title: ¡Manifiesto!
     description: >
-        collectif(s) des territoires communs autogérés et alternatives convivialistes DIY bénéloves révolutionnaires de la transition sociale et écologique dans les tiers-lieux créatifs des clowns bricoleurs pirates des utopies libertaires écoféministes p2p et coopératistes indignées activistes de la résilience décroissante concrète et désobéissante des convergences des luttes
-    keywords: "# philosophie # politique # pratique # convergences #"
+        collectivo(s) de los territorios comunes autogestionados y alternativas convivialistas DIY voluntarios revolucionarios de la transición social y ecológica en los terceros lugares creativos de los clowns del bricolaje piratas de las utopías libertarias ecofeministas p2p y cooperativistas indignadas activistas de la resiliencia decreciente concreta y desobediente de las convergencias de las luchas
+    keywords: "# filosofía # política # práctica # convergencias #"
 searchtags:
-    -   name: argent
-        search: argent|monn\w+
-    -   name: institutions
-        search: institution\w*|structure\w*
-    -   name: pouvoir
-        search: pouvoir|autorité|puissance
-    -   name: inégalités
-        search: inégalité\w+
+    -   name: dinero
+        search: dinero|monn\w+
+    -   name: instituciones
+        search: institución\w*|estructure\w*
+    -   name: poder
+        search: poder|autoridad|potencia
+    -   name: desigualdades
+        search: desigualdad\w+
     -   name: responsables
-        search: responsab\w+|coupable|culpab\w+
-    -   name: quotidien
-        search: quotidien\w*|habitu\w+
-    -   name: aliénation
-        search: aliénation|dépendan\w+
-    -   name: émancipation
-        search: émancip\w*
-    -   name: politique
-        search: politique
-    -   name: technologies
-        search: \W(techn|scienc)\w+
-    -   name: liberté
-        search: \W(liberté|libre)\w+
-    -   name: commun
-        search: communs*|collecti\w+
-    -   name: langage
-        search: langage|mot\w*|parler
+        search: responsab\w+|culpable|culpab\w+
+    -   name: cotidiano
+        search: cotidiano\w*|habitu\w+
+    -   name: enajenación
+        search: enajenación|dépendan\w+
+    -   name: emancipación
+        search: emancip\w*
+    -   name: política
+        search: política
+    -   name: tecnologías
+        search: \W(techn|cienc)\w+
+    -   name: libertad
+        search: \W(libertad|libre)\w+
+    -   name: común
+        search: comunes*|colecti\w+
+    -   name: lenguaje
+        search: lenguaje|palabra\w*|hablar
 footer: >
-    ##*voir aussi*
+    ##*ver también*
 
-    - le [document partagé](https://lite6.framapad.org/p/manifestes)
+    - el [documento compartido](https://lite6.framapad.org/p/manifestes)
 
-    - la liste de discussion [manifestes@lists.riseup.net](https://lists.riseup.net/www/subscribe/manifestes)
+    - la lista de discusión [manifestes@lists.riseup.net](https://lists.riseup.net/www/subscribe/manifestes)
 
-    - le [code source](https://github.com/minut/manifestes) de ce site avec [les textes](https://github.com/minut/manifestes/blob/gh-pages/data/contents.yml)
+    - el [código fuente](https://github.com/minut/manifestes) de esta página con [los textos](https://github.com/minut/manifestes/blob/gh-pages/data/contents.yml)
 
-    - le compte twitter [@manifestes](https://twitter.com/manifestes)
-
+    - la cuenta twitter [@manifestes](https://twitter.com/manifestes)
 
 
 ---
