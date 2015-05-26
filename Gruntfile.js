@@ -4,6 +4,30 @@ module.exports = function(grunt) {
 
     pkg: grunt.file.readJSON('package.json'),
 
+    preprocess : {
+      prod : {
+        src : 'src/index.html',
+        dest : 'index.html',
+        options : {
+          context : {
+            // hard written html meta within index.html
+            title: "manifeste(s)",
+            author: "collectif(s)",
+            copyleft: "GNU License v2",
+            description: "collectif(s) des territoires communs autogérés et alternatives convivialistes DIY bénéloves révolutionnaires de la transition sociale et écologique dans les tiers-lieux créatifs des clowns bricoleurs pirates des utopies libertaires écoféministes p2p et coopératistes indignées activistes de la résilience décroissante concrète et désobéissante des convergences des luttes",
+            keywords: "manifeste, utopies concrètes, alernatives, décroissance, transition, autogestion, communs, résilience, écologie, convergence, écriture collective, DIY, politique, philosophie"
+          }
+          // context_es : {
+          //   title: "Manifiesto(s)",
+          //   author: "collectif(s)",
+          //   copyleft: "GNU License v2",
+          //   description: "collectivo(s) de los territorios comunes autogestionados y alternativas convivialistas DIY voluntarios revolucionarios de la transición social y ecológica en los terceros lugares creativos de los clowns del bricolaje piratas de las utopías libertarias ecofeministas p2p y cooperativistas indignadas activistas de la resiliencia decreciente concreta y desobediente de las convergencias de las luchas",
+          //   keywords: "manifiesto, utopías concretas, alernativas, decrecimiento, transición, autogestión, comunes, resiliencia, ecología, convergencia, escritura colectiva, DIY, política, filosofía"
+          // }
+        }
+      }
+    },
+
     ngconstant: {
       options: {
         space: '  ',
@@ -113,13 +137,6 @@ module.exports = function(grunt) {
                 }
             ]
         }
-    },
-
-    preprocess : {
-      prod : {
-        src : 'src/index.html',
-        dest : 'index.html'
-      }
     },
 
     strip : {

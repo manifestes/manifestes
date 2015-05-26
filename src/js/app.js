@@ -21,14 +21,14 @@ angular.module('manifest', [
     var lang = navigator.language;
     console.log("lang:",lang);
 
-    $routeProvider.when('/:lang/', {
+    $routeProvider.when('/:lang', {
       templateUrl: settings.assets + '/partials/layout.html',
       controller: 'manifestController'
       // reloadOnSearch: false
     });
 
     $routeProvider.otherwise({
-      redirectTo: '/fr/'
+      redirectTo: '/fr'
     });
 
   }])

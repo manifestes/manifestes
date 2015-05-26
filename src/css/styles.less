@@ -62,6 +62,32 @@ a {
   overflow-x: hidden;
 }
 
+
+/* ---------------------- SET LANG */
+.setlangs {
+  pointer-events: all;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 22px;
+  font-size: 0.8em;
+  color: lightgray;
+
+  a.setlang {
+    color: lightgray;
+    margin: 0px 3px;
+    &:hover {
+      text-decoration: underline;
+    }
+    &.active {
+      pointer-events: none;
+      text-decoration: none;
+      color: gray;  
+    }
+  }
+}
+
+
 .intro {
   box-sizing: border-box;
   position: fixed;
@@ -79,8 +105,8 @@ a {
 
   pointer-events: none;
   h1 {
-    margin-bottom: 0;
-    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-top: 0px;
     font-family: 'Amatic SC', cursive;
     //font-family: 'Merriweather', serif;
     //font-family: 'Inconsolata', serif;
@@ -128,7 +154,7 @@ a {
     // &.color-4 { background: #D7C7E1; };
     // &.color-5 { background: #E4C79B; };
     // &.color-6 { background: #B1DDBF; };
-    .transition(padding 0.1s);
+    .transition(padding @openDur);
     &:hover {
       padding: 40px;
     }
@@ -172,6 +198,21 @@ a {
   width: 100%;
   background: white;
   text-align: center;
+
+  .arrow.back {
+    cursor: pointer;
+    position: absolute;
+    margin: 25px;
+    width: 11px;
+    height: 11px;
+    border-right: 3px solid lightgray;
+    border-bottom: 3px solid lightgray;
+    .transform(rotate(-135deg));
+    &:hover {
+      border-right: 3px solid gray;
+      border-bottom: 3px solid gray;      
+    }
+  }
 
   .menu {
     z-index: 80;
@@ -294,7 +335,7 @@ a {
     max-height: 2000px;
     font-family: 'Lato', sans-serif;
 
-    .transition(all 0.2s);
+    .transition(all @openDur);
 
     .highlight { /* searched words */
       padding: 2px 4px;
@@ -315,7 +356,7 @@ a {
       overflow-y: scroll;
       overflow-x: hidden;
 
-      .transition(left 0.2s);
+      .transition(left @openDur);
       left: 100%;
       &.active {
         left: 0;
@@ -386,7 +427,7 @@ a {
         opacity: 0;
       }
 
-      .transition(all 0.2s);
+      .transition(all @openDur);
       background: rgba(0,0,0,0);
       //.transform(translateX(-100%));
     }
@@ -413,47 +454,43 @@ a {
         box-sizing: border-box;
         position: absolute;
         top: 0;
-        //left: -15px;
-        width: 25px;
+        width: 22px;
+        &.opened {
+          width: 40px;
+        }
         height: 100%;
         cursor: pointer;
         //background: rgba(110, 110, 110, 0.38);
 
         &.down .triangle, &.meta-down .triangle {
-          border-width: @tsize 0 0 @tsize;
-          border-color: transparent transparent transparent @tcola;
-          bottom: 0;
+          .transform(translate(-50%,-50%) rotate(45deg));
         }
         &.up .triangle, &.meta-up .triangle {
-          border-width: @tsize @tsize 0 0;
-          border-color: @tcola transparent transparent transparent;
-          top: 0;
+          .transform(translate(-50%,-50%) rotate(-135deg));
         }
         .triangle {
           position: absolute;
-          left: 0;
-          width: 0;
-          height: 0;
-          border-style: solid;
+          top: 50%;
+          left: 50%;
+          width: 5px;
+          height: 5px;
+          border-right: 2px solid #646464;
+          border-bottom: 2px solid #646464;
           display: none;
-          //margin-left: @titspace;
         }
       }
-      .titlebar:hover .triangle { display: block; }
-      .titlebar:hover .collapser.down .triangle { border-color: transparent transparent transparent @tcolb; }
-      .titlebar:hover .collapser.up .triangle { border-color: @tcolb transparent transparent transparent; }
-      
-      .collapser.meta-down:hover .triangle { border-color: transparent transparent transparent @tcolb; }
-      .collapser.meta-up:hover .triangle { border-color: @tcolb transparent transparent transparent; }
-      
-      .collapser.meta-down .triangle {
+      .titlebar:hover .triangle {
         display: block;
-        border-color: transparent transparent transparent @tcolb;
-      } 
+      }
+      .collapser.opened .triangle {
+        border-right: 3px solid black;
+        border-bottom: 3px solid black;
+      }
+      .collapser.meta-down .triangle,
       .collapser.meta-up .triangle {
         display: block;
-        border-color: @tcolb transparent transparent transparent;
-      } 
+      }
+
 
       .h1 {
         cursor: pointer;

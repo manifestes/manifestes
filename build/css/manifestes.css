@@ -501,6 +501,28 @@ a:hover {
 .container.hidden {
   top: 100%;
 }
+/* ---------------------- SET LANG */
+.setlangs {
+  pointer-events: all;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 22px;
+  font-size: 0.8em;
+  color: lightgray;
+}
+.setlangs a.setlang {
+  color: lightgray;
+  margin: 0px 3px;
+}
+.setlangs a.setlang:hover {
+  text-decoration: underline;
+}
+.setlangs a.setlang.active {
+  pointer-events: none;
+  text-decoration: none;
+  color: gray;
+}
 .intro {
   box-sizing: border-box;
   position: fixed;
@@ -521,8 +543,8 @@ a:hover {
   top: -100%;
 }
 .intro h1 {
-  margin-bottom: 0;
-  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-top: 0px;
   font-family: 'Amatic SC', cursive;
   font-size: 9em;
 }
@@ -556,11 +578,11 @@ a:hover {
   background: repeating-linear-gradient(to right, #f6ba52, #f6ba52 10px, #ffd180 10px, #ffd180 20px);
   -webkit-box-shadow: inset 0px 0px 5px 0px #525252;
   box-shadow: inset 0px 0px 5px 0px #525252;
-  -webkit-transition: padding 0.1s;
-  -moz-transition: padding 0.1s;
-  -o-transition: padding 0.1s;
-  -ms-transition: padding 0.1s;
-  transition: padding 0.1s;
+  -webkit-transition: padding 0.2s;
+  -moz-transition: padding 0.2s;
+  -o-transition: padding 0.2s;
+  -ms-transition: padding 0.2s;
+  transition: padding 0.2s;
 }
 .intro .button:hover {
   padding: 40px;
@@ -601,6 +623,24 @@ a:hover {
   width: 100%;
   background: white;
   text-align: center;
+}
+.header .arrow.back {
+  cursor: pointer;
+  position: absolute;
+  margin: 25px;
+  width: 11px;
+  height: 11px;
+  border-right: 3px solid lightgray;
+  border-bottom: 3px solid lightgray;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+.header .arrow.back:hover {
+  border-right: 3px solid gray;
+  border-bottom: 3px solid gray;
 }
 .header .menu {
   z-index: 80;
@@ -830,52 +870,49 @@ a:hover {
   box-sizing: border-box;
   position: absolute;
   top: 0;
-  width: 25px;
+  width: 22px;
   height: 100%;
   cursor: pointer;
 }
+.wrapper .paragraph .block .collapser.opened {
+  width: 40px;
+}
 .wrapper .paragraph .block .collapser.down .triangle,
 .wrapper .paragraph .block .collapser.meta-down .triangle {
-  border-width: 22px 0 0 22px;
-  border-color: transparent transparent transparent rgba(110, 110, 110, 0.4);
-  bottom: 0;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  -moz-transform: translate(-50%, -50%) rotate(45deg);
+  -ms-transform: translate(-50%, -50%) rotate(45deg);
+  -o-transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
 }
 .wrapper .paragraph .block .collapser.up .triangle,
 .wrapper .paragraph .block .collapser.meta-up .triangle {
-  border-width: 22px 22px 0 0;
-  border-color: rgba(110, 110, 110, 0.4) transparent transparent transparent;
-  top: 0;
+  -webkit-transform: translate(-50%, -50%) rotate(-135deg);
+  -moz-transform: translate(-50%, -50%) rotate(-135deg);
+  -ms-transform: translate(-50%, -50%) rotate(-135deg);
+  -o-transform: translate(-50%, -50%) rotate(-135deg);
+  transform: translate(-50%, -50%) rotate(-135deg);
 }
 .wrapper .paragraph .block .collapser .triangle {
   position: absolute;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-style: solid;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  border-right: 2px solid #646464;
+  border-bottom: 2px solid #646464;
   display: none;
 }
 .wrapper .paragraph .block .titlebar:hover .triangle {
   display: block;
 }
-.wrapper .paragraph .block .titlebar:hover .collapser.down .triangle {
-  border-color: transparent transparent transparent rgba(110, 110, 110, 0.4);
+.wrapper .paragraph .block .collapser.opened .triangle {
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
 }
-.wrapper .paragraph .block .titlebar:hover .collapser.up .triangle {
-  border-color: rgba(110, 110, 110, 0.4) transparent transparent transparent;
-}
-.wrapper .paragraph .block .collapser.meta-down:hover .triangle {
-  border-color: transparent transparent transparent rgba(110, 110, 110, 0.4);
-}
-.wrapper .paragraph .block .collapser.meta-up:hover .triangle {
-  border-color: rgba(110, 110, 110, 0.4) transparent transparent transparent;
-}
-.wrapper .paragraph .block .collapser.meta-down .triangle {
-  display: block;
-  border-color: transparent transparent transparent rgba(110, 110, 110, 0.4);
-}
+.wrapper .paragraph .block .collapser.meta-down .triangle,
 .wrapper .paragraph .block .collapser.meta-up .triangle {
   display: block;
-  border-color: rgba(110, 110, 110, 0.4) transparent transparent transparent;
 }
 .wrapper .paragraph .block .h1 {
   cursor: pointer;
@@ -1060,7 +1097,8 @@ a:hover {
   .paragraph,
   .comments,
   .quote-container,
-  .block .h1 {
+  .block .h1,
+  .block img.icon {
     -webkit-transition: none !important;
     -moz-transition: none !important;
     -o-transition: none !important;
@@ -1098,6 +1136,12 @@ a:hover {
   .paragraph .comments #disqus_thread {
     padding: 0 !important;
     padding-top: 2em !important;
+  }
+  .intro .setlangs {
+    margin: 7px;
+  }
+  .intro .setlangs a.setlang {
+    margin: 0px;
   }
   .intro h1 {
     font-size: 5em;

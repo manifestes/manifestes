@@ -2,23 +2,17 @@
 
 ---
 role: splash
-repo: https://github.com/minut/minut.github.io
+repo: https://github.com/minut/manifestes
 discuss:
     text: discutir, corregir, proponer
-    link: https://lite6.framapad.org/p/manifestes
-htmlmeta:
-    title: Manifiesto(s)
-    url: http://manifest.es
-    image: http://manifest.es/data/manifestes_banner.jpg
-    author: collectif(s)
-    description: >
-        collectivo(s) de los territorios comunes autogestionados y alternativas convivialistas DIY voluntarios revolucionarios de la transición social y ecológica en los terceros lugares creativos de los clowns del bricolaje piratas de las utopías libertarias ecofeministas p2p y cooperativistas indignadas activistas de la resiliencia decreciente concreta y desobediente de las convergencias de las luchas
-    keywords: manifiesto, utopías concretas, alernativas, decrecimiento, transición, autogestión, comunes, resiliencia, ecología, convergencia, escritura colectiva, DIY, política, filosofía
+    back: volver al texto
 intro:
     title: ¡Manifiesto!
     description: >
         collectivo(s) de los territorios comunes autogestionados y alternativas convivialistas DIY voluntarios revolucionarios de la transición social y ecológica en los terceros lugares creativos de los clowns del bricolaje piratas de las utopías libertarias ecofeministas p2p y cooperativistas indignadas activistas de la resiliencia decreciente concreta y desobediente de las convergencias de las luchas
     keywords: "# filosofía # política # práctica # convergencias #"
+    enter: ">> consultar + participar <<"
+searchplacehoder: buscar
 searchtags:
     -   name: dinero
         search: dinero|monn\w+
@@ -46,6 +40,7 @@ searchtags:
         search: comunes*|colecti\w+
     -   name: lenguaje
         search: lenguaje|palabra\w*|hablar
+lastupdatetext: última modificación
 footer: >
     ##*ver también*
 

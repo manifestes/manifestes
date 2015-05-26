@@ -1,12 +1,17 @@
 <div
   class="intro"
   ng-class="{hidden:!state.intro}">
+  <div class="setlangs">
+    <a class="setlang" ng-class="{active: state.lang=='es'}" href="http://manifest.es/#/es">es</a>
+    <a class="setlang" ng-class="{active: state.lang=='fr'}" href="http://manifest.es/#/fr">fr</a>
+  </div>
   <h1>{{meta.intro.title}}</h1>
   <div class="description">{{meta.intro.description}}</div>
   <img class="image" src="{{settings.datapath}}/manifestes_splash.jpg"/>
+
   <div class="foot">
     <div class="keywords">{{meta.intro.keywords}}</div>
-    <div class="button color-{{getRandomInt()}}" ng-click="state.intro=false;">>> consulter + participer <<</div>
+    <div class="button color-{{getRandomInt()}}" ng-click="state.intro=false;">{{meta.intro.enter}}</div>
   </div>
 </div>
 
@@ -15,10 +20,17 @@
   <div class="header">
 
     <div class="menu">
+
+      <div class="arrow back" ng-click="state.intro = true;"></div>
+      <div class="setlangs">
+        <a class="setlang" ng-class="{active: state.lang=='es'}" href="http://manifest.es/#/es">es</a>
+        <a class="setlang" ng-class="{active: state.lang=='fr'}" href="http://manifest.es/#/fr">fr</a>
+      </div>
+
       <div class="input">
         <input
           type="text"
-          placeholder="chercher"
+          placeholder="{{meta.searchplacehoder}}"
           ng-model="state.term"
           ng-click="$event.stopPropagation();"
           ng-change="filterUpdate();"
@@ -73,9 +85,12 @@
           <div
             class="collapser meta-{{state.toggleall}}"
             ng-class="{
+              opened: p.opened,
               down: state.toggleall ? false:!p.opened,
               up:   state.toggleall ? false:p.opened}"
-            ng-click="toggleAll(!p.opened); $event.stopPropagation();">
+            ng-click="toggleAll(!p.opened); $event.stopPropagation();"
+            ng-mouseover="state.toggleall = p.opened ? 'up' : 'down'"
+            ng-mouseout="state.toggleall = null;">
             <div class="triangle"></div>
           </div>
           <div class="h1">
@@ -99,14 +114,14 @@
       </div>
 
       <div class="comments" ng-class="{active:state.commenting_slug==p.slug}">
-        <div ng-if="state.commenting_slug==p.slug" class="escape" ng-click="state.commenting_slug = null;">< revenir au texte</div>
+        <div ng-if="state.commenting_slug==p.slug" class="escape" ng-click="state.commenting_slug = null;">< {{meta.discuss.back}}</div>
         <div ng-if="state.commenting_slug==p.slug" id="disqus_thread"></div>
       </div>
     </div>
 
     <div class="footer">
       <div class="content" compile-html="meta.footer"></div>
-      <a class="lastupdate" target="_blank" href="https://github.com/minut/minut.github.io">dernière modification<br>{{settings.lastupdate}}</a>
+      <a class="lastupdate" target="_blank" href="{{meta.repo}}">{{meta.lastupdatetext}}<br>{{settings.lastupdate}}</a>
     </div>
 
   </div>
