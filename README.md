@@ -2,8 +2,8 @@
 a very simple github hosted page to display content within sections
 
 - contents & medias are set within the `data` folder
-- text sections are yaml documents containing markdown, see `data/contents.yml`
-- images are stored within the `data/media` folder
+    - text sections are yaml documents containing markdown `contents.yml`
+    - images are stored within the `media` folder
 
 start building your own !
 
@@ -15,7 +15,7 @@ start building your own !
 
 ## Build locally
 
-> git clone https://github.com/minut/manifestes.git
+> git clone https://github.com/manifestes/manifestes.git
 
 > npm install
 
