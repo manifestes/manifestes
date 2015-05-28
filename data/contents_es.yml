@@ -18,7 +18,7 @@ searchtags:
     -   name: dinero
         search: dinero|monn\w+
     -   name: instituciones
-        search: institución\w*|estructure\w*
+        search: instituc\w*|estructura\w*
     -   name: poder
         search: poder|autoridad|potencia
     -   name: desigualdades
@@ -28,17 +28,17 @@ searchtags:
     -   name: cotidiano
         search: cotidiano\w*|habitu\w+
     -   name: enajenación
-        search: enajenación|dépendan\w+
+        search: enaj|dependen\w+
     -   name: emancipación
         search: emancip\w*
     -   name: política
-        search: política
+        search: polític
     -   name: tecnologías
-        search: \W(techn|cienc)\w+
+        search: \W(tecn|cienc)\w+
     -   name: libertad
         search: \W(libertad|libre)\w+
     -   name: común
-        search: comunes*|colecti\w+
+        search: \W(comun|colecti)\w+
     -   name: lenguaje
         search: lenguaje|palabra\w*|hablar
 lastupdatetext: última modificación
