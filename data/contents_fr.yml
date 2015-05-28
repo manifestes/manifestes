@@ -3,7 +3,7 @@
 
 ---
 role: splash
-repo: https://github.com/minut/manifestes
+repo: https://github.com/manifestes/manifestes
 discuss:
     text: discuter, corriger, proposer
     back: revenir au texte
@@ -49,7 +49,7 @@ footer: >
 
     - la liste de discussion [manifestes@lists.riseup.net](https://lists.riseup.net/www/subscribe/manifestes)
 
-    - le [code source](https://github.com/minut/manifestes) de ce site avec [les textes](https://github.com/minut/manifestes/blob/gh-pages/data/contents_fr.yml)
+    - le [code source](https://github.com/manifestes/manifestes) de ce site avec [les textes](https://github.com/manifestes/manifestes/blob/gh-pages/data/contents_fr.yml)
 
     - le compte twitter [@manifestes](https://twitter.com/manifestes)
 
