@@ -12,6 +12,7 @@ start building your own !
 - faciliter l'écriture et la lecture collective.
 - minimiser le temps passé face à l'écran
 - code minimal
+- bonne humeur
 
 ## Build locally
 
@@ -26,24 +27,5 @@ start building your own !
 ## License
 GNU GENERAL PUBLIC LICENSE Version 2
 
-## Changelog
-- citations aussi visibles en version mobile
-- intro page with simple text from meta
-- ng-touch + fastclick
-- date de la dernière modification avec lien github
-- liens tout en bas de la page
 
-## To do ?
-- infinite digest loop (see html directive)
-- bouton *en savoir plus* pour ne pas afficher tous les liens/références d'un coup ?
-- améliorer expand/collapse des sections (icône plus explicite ?)
-- ajuster la couleur des sections (à la main ou selon les images)
-
-## Ideas ?
-pour éviter la rigidité: section / liens associés, distinguer:
-
-- sections (comme actuellemt), avec ≠ #tags: 'sections.yml'
-- base en vrac des liens/références/phrases avec #tags: 'links.yml'
-
-les parties pratiques s'afficheraientt ainsi dynamiquement à la fin de chaque section en fonction des #tags
 

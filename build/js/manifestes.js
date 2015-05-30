@@ -2917,7 +2917,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'26 May 2015 - 1:23'})
+.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'30 May 2015 - 11:46'})
 
 ;
 ;
