@@ -823,8 +823,8 @@ links: >
     
     
 ---
-title: Enlaces prácticos
-subtitle: Comer, dormir, moverse, curarse, conocer, organizarse...
+title: Enlaces prácticos 1
+subtitle: Conocer, reaccionar...
 slug: links
 image:
     url: Bacchus_Velazquez.jpg
@@ -855,7 +855,20 @@ content: >
     
     - [Flok Society](http://floksociety.org)
 
-    
+ 
+ 
+---
+title: Enlaces prácticos 2
+subtitle: Comer, intercambiar...
+slug: links2
+image:
+    url: Bacchus_Velazquez.jpg
+    credit: The Triumph of Bacchus, Velázquez
+quote:
+    author: 
+    content: >
+        
+content: >  
     ##*consumo + intercambio*
     
     - [Luraki](http://www.luraki.com) es una apli que te permite conocer a tus productores de proximidad
@@ -882,6 +895,19 @@ content: >
     - [Aixec](http://www.aixec.cat) es una cooperativa de servicios a personas diagnosticadas con enfermedades mentales y a sus familias
 
 
+
+---
+title: Enlaces prácticos 3
+subtitle: Informarse
+slug: links
+image:
+    url: 
+    credit: 
+quote:
+    author: 
+    content: >
+        
+content: >
     ##*periodismo + medios*
     
     - [cafèambllet](http://www.cafeambllet.com)
