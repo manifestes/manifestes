@@ -921,7 +921,7 @@ content: >
 
 ---
 title: Enlaces prácticos 3
-subtitle: Informarse
+subtitle: periodismo + medios
 slug: links
 image:
     url: 
@@ -931,8 +931,6 @@ quote:
     content: >
         
 content: >
-    ##*periodismo + medios*
-    
     - [Lista de medios de comunicación alternativos de la 15Mpedia](http://15mpedia.org/wiki/Lista_de_medios_de_comunicación_alternativos)
 
     - [Red Voltaire](http://www.voltairenet.org/es)
