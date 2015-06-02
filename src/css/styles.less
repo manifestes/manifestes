@@ -397,17 +397,11 @@ a {
       opacity: 1;
       //.transform(translateX(-100%));
     }
-    .credit {
-      position: absolute;
-      bottom: 0;
-      margin: 5px;
-      font-size: 0.6em;
-      font-style: italic;
-    }
-    &.reduced .credit {
+
+    &.reduced .imagecredit {
       display: none;
     }
-
+    
     /* ---------------------- QUOTE */
     .quote-container {
       padding: 40px;
@@ -423,7 +417,16 @@ a {
         text-align: right;
         font-size: 0.85em;
       }
-      .quote, .author {
+      .imagecredit {
+        position: absolute;
+        bottom: 0;
+        margin: 5px;
+        margin-left: -30px;
+        color: white;
+        font-size: 0.5em;
+        font-style: italic;
+      }
+      .quote, .author, .imagecredit {
         opacity: 0;
       }
 
@@ -433,7 +436,7 @@ a {
     }
     .image:hover .quote-container {
       background: rgba(0,0,0,0.90);
-      .quote, .author {
+      .quote, .author, .imagecredit {
         opacity: 1;
       }
     }

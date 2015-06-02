@@ -71,10 +71,10 @@
         class="image cover"
         back-img="{{settings.datapath}}media/{{p.image.url}}"
         ng-click="!p.opened && toggleOne(p)">
-        <div class="credit">credit: {{p.image.credit}}</div>
         <div class="quote-container">
           <div class="quote" compile-html="p.quote.content"></div>
           <div class="author" compile-html="p.quote.author"></div>
+          <div class="imagecredit">image: {{p.image.credit}}</div>
         </div>
       </div>
 

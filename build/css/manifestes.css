@@ -818,14 +818,7 @@ a:hover {
 .wrapper .paragraph:hover .image {
   opacity: 1;
 }
-.wrapper .paragraph .credit {
-  position: absolute;
-  bottom: 0;
-  margin: 5px;
-  font-size: 0.6em;
-  font-style: italic;
-}
-.wrapper .paragraph.reduced .credit {
+.wrapper .paragraph.reduced .imagecredit {
   display: none;
 }
 .wrapper .paragraph .quote-container {
@@ -849,15 +842,26 @@ a:hover {
   text-align: right;
   font-size: 0.85em;
 }
+.wrapper .paragraph .quote-container .imagecredit {
+  position: absolute;
+  bottom: 0;
+  margin: 5px;
+  margin-left: -30px;
+  color: white;
+  font-size: 0.5em;
+  font-style: italic;
+}
 .wrapper .paragraph .quote-container .quote,
-.wrapper .paragraph .quote-container .author {
+.wrapper .paragraph .quote-container .author,
+.wrapper .paragraph .quote-container .imagecredit {
   opacity: 0;
 }
 .wrapper .paragraph .image:hover .quote-container {
   background: rgba(0, 0, 0, 0.9);
 }
 .wrapper .paragraph .image:hover .quote-container .quote,
-.wrapper .paragraph .image:hover .quote-container .author {
+.wrapper .paragraph .image:hover .quote-container .author,
+.wrapper .paragraph .image:hover .quote-container .imagecredit {
   opacity: 1;
 }
 .wrapper .paragraph .block {
@@ -1127,6 +1131,9 @@ a:hover {
   .paragraph .image .quote-container .quote {
     opacity: 1;
   }
+  .paragraph .image .quote-container .imagecredit {
+    display: none;
+  }
   .paragraph .block {
     margin-left: 0 !important;
   }
@@ -1137,11 +1144,11 @@ a:hover {
     padding: 0 !important;
     padding-top: 2em !important;
   }
-  .intro .setlangs {
-    margin: 7px;
+  .setlangs {
+    margin: 22px 10px !important;
   }
-  .intro .setlangs a.setlang {
-    margin: 0px;
+  .setlangs a.setlang {
+    margin: 0px !important;
   }
   .intro h1 {
     font-size: 5em;
