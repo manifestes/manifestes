@@ -851,9 +851,9 @@ image:
     url: Bacchus_Velazquez.jpg
     credit: El Triunfo de Baco, Velázquez
 quote:
-    author: Mujeres creando
+    author: "Geoffroy de Lagasnerie, L'art de la révolte: Snowden, Assange, Manning"
     content: >
-        Cuida el presente que creas, porque debe parecerse al futuro que sueñas
+        "... no politizar la cuestión de la pertenencia, situar fuera de la política el problema de la forma de la comunidad en la que nos encontramos, equivale de hecho a forzarnos a aceptar como intangible un hecho puramente arbitrario y sin significación. No problematizar la cuestión de la pertenencia o, mejor, no darse los medios de hacer aparecer esta cuestión como potencialmente problemática, es implicarnos en una situación forzada, resignarnos a aceptar una situación contingente: el hecho de haber nacido en tal o cual país y de tener tal o cual nacionalidad."
 content: >
     ##*amigos y enemigos*
     
@@ -894,8 +894,9 @@ image:
     url: 
     credit: 
 quote:
-    author: 
+    author: Mujeres creando
     content: >
+        Cuida el presente que creas, porque debe parecerse al futuro que sueñas
 content: > 
     - Entra en [Consumo responsable](http://www.consumoresponsable.org/actua/moda/modaimplicaciones) y toma conciencia de lo que implica ir de compras
     
