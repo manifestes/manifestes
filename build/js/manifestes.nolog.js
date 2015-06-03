@@ -2917,7 +2917,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'02 June 2015 - 12:46'})
+.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'03 June 2015 - 4:45'})
 
 ;
 ;
@@ -2956,11 +2956,16 @@ angular.module('manifest.controllers', ['underscore','config'])
       intro: true,
       commenting_slug: null,
       toggle_all: null,
-      lang: $routeParams.lang
+      lang: $routeParams.lang,
+      layout: "list"
     };
     0;
 
     $scope.paragraphs = [];
+
+    $scope.layoutTemplate = function() {
+      return $scope.settings.assets+'partials/sections_'+$scope.state.layout+'.html';
+    };
 
     $scope.openComments = function(p) {
       $scope.state.commenting_slug = p.slug;
@@ -3141,7 +3146,7 @@ angular.module('manifest.controllers', ['underscore','config'])
 /* Directives */
 
 angular.module('manifest.directives', [])
-  
+
   .directive('backImg', function() {
     return function(scope, element, attrs){
       var url = attrs.backImg;

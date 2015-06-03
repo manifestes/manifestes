@@ -3,7 +3,7 @@
 /* Directives */
 
 angular.module('manifest.directives', [])
-  
+
   .directive('backImg', function() {
     return function(scope, element, attrs){
       var url = attrs.backImg;

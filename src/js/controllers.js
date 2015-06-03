@@ -32,11 +32,16 @@ angular.module('manifest.controllers', ['underscore','config'])
       intro: true,
       commenting_slug: null,
       toggle_all: null,
-      lang: $routeParams.lang
+      lang: $routeParams.lang,
+      layout: "list"
     };
     console.log("state:",$scope.state);
 
     $scope.paragraphs = [];
+
+    $scope.layoutTemplate = function() {
+      return $scope.settings.assets+'partials/sections_'+$scope.state.layout+'.html';
+    };
 
     $scope.openComments = function(p) {
       $scope.state.commenting_slug = p.slug;

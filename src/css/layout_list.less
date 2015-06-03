@@ -1,0 +1,306 @@
+
+.wrapper.layout-list {
+  box-sizing: border-box;
+  margin-top: @menuH;
+
+  @imW: 40%;
+  //@contW: 600px;
+  @pad: 20px;
+
+  .paragraph {
+    position: relative;
+    padding: 0;
+    text-align: left;
+    overflow: hidden;
+    max-height: 2000px;
+    font-family: 'Lato', sans-serif;
+
+    .transition(all @openDur);
+
+    .highlight { /* searched words */
+      padding: 2px 4px;
+      background: rgba(255, 252, 0, 0.48);
+    }
+
+    /* ---------------------- COMMENTS */
+    .comments {
+      z-index: 999;
+      box-sizing: border-box;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      padding: 10px 20px;
+      background: whitesmoke;
+      
+      overflow-y: scroll;
+      overflow-x: hidden;
+
+      .transition(left @openDur);
+      left: 100%;
+      &.active {
+        left: 0;
+      }
+
+      .escape {
+        box-sizing: border-box;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        background: #9E9E9E;
+        color: white;
+        cursor: pointer;
+        font-size: 0.9em;
+        font-style: italic;
+        &:hover {
+          background: #777777;
+        }
+      }
+      #disqus_thread {
+        padding: 20px;
+        padding-top: 2em;
+      }
+    }
+    /* ---------------------- IMAGE */
+    .image {
+      cursor: pointer;
+      position: absolute;
+      width: @imW;
+      height: 100%;
+      //.transition(opacity 0.2s);
+      opacity: 1;
+      .inner-shadow(-20px 0px 20px -20px #616161);
+    }
+    &:hover .image {
+      opacity: 1;
+      //.transform(translateX(-100%));
+    }
+
+    &.reduced .imagecredit {
+      display: none;
+    }
+    
+    /* ---------------------- QUOTE */
+    .quote-container {
+      padding: 40px;
+      height: 100%;
+      font-family: 'Merriweather', serif;
+      color: white;
+      font-size: 1.3em;
+      line-height: 1.3em;
+      font-style: italic;
+      -webkit-font-smoothing: antialiased;
+      .author {
+        margin-top: 40px;
+        text-align: right;
+        font-size: 0.85em;
+      }
+      .imagecredit {
+        position: absolute;
+        bottom: 0;
+        margin: 5px;
+        margin-left: -30px;
+        color: white;
+        font-size: 0.5em;
+        font-style: italic;
+      }
+      .quote, .author, .imagecredit {
+        opacity: 0;
+      }
+
+      .transition(all @openDur);
+      background: rgba(0,0,0,0);
+      //.transform(translateX(-100%));
+    }
+    .image:hover .quote-container {
+      background: rgba(0,0,0,0.90);
+      .quote, .author, .imagecredit {
+        opacity: 1;
+      }
+    }
+
+    /* ---------------------- TEXT */
+    .block {
+      margin-left: @imW;
+
+      .titlebar {
+        position: relative;
+      }
+
+      @titspace: 5px;
+      @tsize: 22px;
+      @tcola: rgba(110, 110, 110, 0.4);
+      @tcolb: rgba(110, 110, 110, 0.4);
+      .collapser {
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        width: 22px;
+        &.opened {
+          width: 40px;
+        }
+        height: 100%;
+        cursor: pointer;
+        //background: rgba(110, 110, 110, 0.38);
+
+        &.down .triangle, &.meta-down .triangle {
+          .transform(translate(-50%,-50%) rotate(45deg));
+        }
+        &.up .triangle, &.meta-up .triangle {
+          .transform(translate(-50%,-50%) rotate(-135deg));
+        }
+        .triangle {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 5px;
+          height: 5px;
+          border-right: 2px solid #646464;
+          border-bottom: 2px solid #646464;
+          display: none;
+        }
+      }
+      .titlebar:hover .triangle {
+        display: block;
+      }
+      .collapser.opened .triangle {
+        border-right: 3px solid black;
+        border-bottom: 3px solid black;
+      }
+      .collapser.meta-down .triangle,
+      .collapser.meta-up .triangle {
+        display: block;
+      }
+
+
+      .h1 {
+        cursor: pointer;
+        padding: @pad;
+        margin-left: 21px;
+        background: rgba(110, 110, 110, 0.19);
+        text-transform: uppercase;
+        font-size: 1.7em;
+        font-weight: 700;
+        color: black;
+        .transition(all @openDur);
+
+        img.icon {
+          width: 27px;
+          margin: -2px;
+          margin-right: 12px;
+          opacity: 1;
+          .transition(all @openDur);
+        }
+      }
+      .h2 {
+        padding: @pad;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+        background: black;
+        color: white;
+        font-size: 1.1em;
+        line-height: 1.5em;
+        opacity: 0.3;
+      }
+      .content {
+        padding: 2*@pad;
+        //width: @contW;
+        color: @textColor;
+        font-size: 1.1em;
+        line-height: 1.5em;
+        p {
+          margin-bottom: 15px;
+          line-height: 1.6em;
+        }
+        li {
+          margin-bottom: 7px;
+          margin-left: 20px;
+          li {
+            margin-left: 60px;
+          }
+        }
+      }
+      .links {
+        padding: @pad;
+        padding-bottom: 40px; /* space for discuss link */
+        background: rgba(110, 110, 110, 0.1);
+        font-size: 0.9em;
+        line-height: 1.5em;
+        opacity: 0.9;
+        ul {
+          padding-left: 20px;
+        }
+      }
+
+      @discussH: 35px;
+      @discussBack: rgba(255,255,255,0.5);
+      @discussBackover: rgba(43, 43, 43, 0.5);
+      .discuss {
+
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: @discussH;
+        cursor: pointer;
+        text-align: right;
+        font-size: 0.9em;
+        font-style: italic;
+        
+        .rect {
+          height: @discussH;
+          padding-top: 8px;
+          padding-right: 12px;
+          padding-left: 12px;
+          background: @discussBack;
+          .triangle {
+            position: absolute;
+            left: -@discussH;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: @discussH @discussH 0 0;
+            border-color: transparent @discussBack transparent transparent;
+            top: 0;
+          }
+        }
+        &:hover {
+          .rect { background: @discussBackover; color: white; }
+          .triangle { border-color: transparent @discussBackover transparent transparent; }
+        }
+      }
+    }
+
+    &:hover .h1 {
+      background: rgba(110, 110, 110, 0);
+    }
+    &.searched {
+      .quote-container {
+        background: rgba(0,0,0,0.90);
+        .quote, .author { opacity: 1; }
+      }
+    }
+    &.reduced { /* collapsed at start */
+      max-height: 37px;
+      .quote-container {
+        background: rgba(0,0,0,0.75);
+      }
+      .h1 {
+        padding: 7px;
+        padding-left: 20px;
+        font-weight: normal;
+        font-size: 0.9em;
+        color: #595858;
+        img.icon {
+          width: 17px;
+          opacity: 0.5;
+        }
+      }
+    }
+    &.hidden { /* if no search result */
+      height: 6px;
+      .quote-container { background: black; }
+    }
+  }
+}
