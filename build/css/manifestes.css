@@ -449,12 +449,12 @@ Copyright (c) 2015 Daniel Eden
 html,
 body {
   width: 100%;
-  height: 100%;
-  position: fixed;
   background: white;
-  overflow: hidden;
 }
 body {
+  position: fixed;
+  height: 100%;
+  overflow: hidden;
   font-family: "Inconsolata", sans-serif;
 }
 .cover {
@@ -1153,6 +1153,86 @@ a:hover {
 }
 .wrapper.layout-grid .section:hover .h2 {
   display: block;
+}
+body.layout-print {
+  position: relative;
+  height: auto;
+  overflow: auto;
+}
+body.layout-print .intro {
+  display: none;
+}
+body.layout-print .container {
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+body.layout-print .container .header {
+  display: none;
+}
+body.layout-print .footer {
+  display: none;
+}
+.wrapper.layout-print {
+  box-sizing: border-box;
+  font-size: 0.8em;
+}
+.wrapper.layout-print .pagebreakafter {
+  page-break-after: always;
+}
+.wrapper.layout-print .section {
+  margin: 10px;
+  margin-bottom: 20px;
+  border-top: 15px solid lightgray;
+  font-family: 'Lato', sans-serif;
+  text-align: left;
+  min-height: 100px;
+}
+.wrapper.layout-print .section .image {
+  float: left;
+  width: 130px;
+  height: 100px;
+  opacity: 0.2;
+}
+.wrapper.layout-print .section .block {
+  margin-left: 130px;
+  padding-left: 10px;
+}
+.wrapper.layout-print .section .block .h1 {
+  margin: 20px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.6em;
+}
+.wrapper.layout-print .section .block .h2 {
+  margin: 5px 20px;
+  padding-bottom: 5px;
+  font-size: 1.15em;
+  font-style: italic;
+  border-bottom: 1px dashed lightgray;
+}
+.wrapper.layout-print .section .block p {
+  margin-bottom: 7px;
+  line-height: 1.4em;
+}
+.wrapper.layout-print .section .block ul {
+  margin-left: 20px;
+}
+.wrapper.layout-print .section .block .content {
+  margin-left: 20px;
+  font-size: 0.9em;
+  padding-bottom: 7px;
+  border-bottom: 1px dashed lightgray;
+}
+.wrapper.layout-print .section .block .content li {
+  margin-top: 7px;
+}
+.wrapper.layout-print .section .block .links {
+  margin-left: 20px;
+  font-size: 0.6em;
+  max-height: 160px;
+  overflow: hidden;
 }
 /* small screens overhidden hacks ! */
 @media (max-width: 600px) {

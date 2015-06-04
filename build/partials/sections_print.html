@@ -1,0 +1,15 @@
+
+<div
+  ng-repeat="p in paragraphs"
+  class="section"
+  ng-class="{pagebreakafter: ($index)%2==1 && $index!=23}">
+
+  <div class="image cover" back-img="{{settings.datapath}}media/{{p.image.url}}"></div>
+
+  <div class="block">
+    <div class="h1" compile-html="p.title"></div>
+    <div class="h2" compile-html="p.subtitle"></div>
+    <div class="content" compile-html="p.content"></div>
+    <div class="links" compile-html="p.links"></div>
+  </div>
+</div>
