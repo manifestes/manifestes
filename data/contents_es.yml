@@ -936,7 +936,7 @@ content: >
 
 
 ---
-title: "— Enlaces prácticos: periodismo + medios"
+title: "— Enlaces prácticos: medios + internet"
 subtitle: Informarse
 slug: links_medias
 image:
@@ -946,6 +946,8 @@ quote:
     author: 
     content: >
 content: >
+    ##*medios libres*
+
     - [Lista de medios de comunicación alternativos de la 15Mpedia](http://15mpedia.org/wiki/Lista_de_medios_de_comunicación_alternativos)
 
     - [Red Voltaire](http://www.voltairenet.org/es)
@@ -964,8 +966,9 @@ content: >
     
     - [Toma la Tele](http://www.tomalatele.tv/web/)
     
-    - [PAH](http://afectadosporlahipoteca.com)
+    ##*internet*
     
+    -
     
 
 
