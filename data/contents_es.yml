@@ -966,9 +966,13 @@ content: >
     
     - [Toma la Tele](http://www.tomalatele.tv/web/)
     
-    ##*internet*
+    ##*internet anónimo*
     
-    -
+    - "mensajería: [CaliOpen](https://caliopen.org)"
+    
+    - "navegador: [Tor](https://www.torproject.org)"
+    
+    - "sistema operativo: [Tails](https://tails.boum.org/index.en.html)"
     
 
 
