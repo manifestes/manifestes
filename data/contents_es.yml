@@ -845,8 +845,9 @@ links: >
     - Las obras de [Pi©asso](http://picassoenlacalle.blogspot.com.es)
     
     
+    
 ---
-title: "— Guía práctica: conocer, reaccionar"
+title: "— Guía práctica: salidas del capitalismo + neoliberalismo"
 subtitle: Organizar nuestro saber-acción
 slug: links_reaction
 image:
@@ -857,25 +858,6 @@ quote:
     content: >
         "... no politizar la cuestión de la pertenencia, situar fuera de la política el problema de la forma de la comunidad en la que nos encontramos, equivale de hecho a forzarnos a aceptar como intangible un hecho puramente arbitrario y sin significación. No problematizar la cuestión de la pertenencia o, mejor, no darse los medios de hacer aparecer esta cuestión como potencialmente problemática, es implicarnos en una situación forzada, resignarnos a aceptar una situación contingente: el hecho de haber nacido en tal o cual país y de tener tal o cual nacionalidad."
 content: >
-    ##*amigos y enemigos*
-    
-    - En el [Transnational Institute](http://www.tni.org/es) puedes ver quiénes son los verdaderos detentores del poder económico y político
-    
-    - [WikiLeaks](https://wikileaks.org/index.en.html), [Anonymous](http://anonews.org)
-    
-    - [Finance Watch](http://www.finance-watch.org) es una ONG con sede en Bruselas consagrada a la lucha contra los lobbies de la industria financiera en la UE; [ALTER-EU](http://alter-eu.org) es una alianza que lucha por la transparencia y la ética de los lobbies en Europa; [Corporate Policy](http://www.corporatepolicy.org) lucha contra los abusos para que las grandes empresas sean públicamente responsables
-    
-    - [Attac](http://www.attac.es) busca la justicia económica a través de estudios, charlas y conferencias, publicaciones, etc.
-    
-    - [Observatorio de Multinacionales en América Latina](http://omal.info): investigación, documentación y denuncia de los impactos de las multinacionales españolas en América Latina
-    
-    - [Observatori del Deute en la Globalització](http://www.odg.cat)
-    
-    - El [CME](http://www.cmegroup.com) fija los precios de prácticamente todos los activos financieros
-    
-    
-    ##*salidas del capitalismo + neoliberalismo*
-    
     - [Cooperativa Integral Catalana](http://cooperativa.cat/es/) + [Ca La Fou](https://calafou.org/es) + [Can Fugarolas](https://canfugarolas.org) + [Comuns Urbans a Barcelona](http://bcncomuns.net)
     
     - [Fair Coop](https://fair.coop), la cooperativa de la Tierra por la equidad económica
@@ -889,8 +871,36 @@ content: >
     - [Transformap](http://transformap.co) es una plataforma cuyo objetivo es hacer visibles las alternativas existentes al pensamiento económico dominante
     
     - [Decrecimiento](http://www.decrecimiento.info)
+    
+    
 
- 
+---
+title: "– Guía práctica: amigos + enemigos"
+subtitle: para saber dónde encontrar a los que no son de fiar
+slug: links_friends_enemies
+image:
+    url:
+    credit: Otto Grosz
+quote:
+    author:
+    content: >
+    
+content: >
+    - En el [Transnational Institute](http://www.tni.org/es) puedes ver quiénes son los verdaderos detentores del poder económico y político
+    
+    - [WikiLeaks](https://wikileaks.org/index.en.html), [Anonymous](http://anonews.org)
+    
+    - [Finance Watch](http://www.finance-watch.org) es una ONG con sede en Bruselas consagrada a la lucha contra los lobbies de la industria financiera en la UE; [ALTER-EU](http://alter-eu.org) es una alianza que lucha por la transparencia y la ética de los lobbies en Europa; [Corporate Policy](http://www.corporatepolicy.org) lucha contra los abusos para que las grandes empresas sean públicamente responsables
+    
+    - [Attac](http://www.attac.es) busca la justicia económica a través de estudios, charlas y conferencias, publicaciones, etc.
+    
+    - [Observatorio de Multinacionales en América Latina](http://omal.info): investigación, documentación y denuncia de los impactos de las multinacionales españolas en América Latina
+    
+    - [Observatori del Deute en la Globalització](http://www.odg.cat)
+    
+    - El [CME](http://www.cmegroup.com) fija los precios de prácticamente todos los activos financieros
+
+
  
 ---
 title: "— Enlaces prácticos: economías alternativas"
@@ -926,6 +936,7 @@ image:
 quote:
     author: 
     content: >
+    
 content: >  
     - [Luraki](http://www.luraki.com) es una apli que te permite conocer a tus productores de proximidad
     
