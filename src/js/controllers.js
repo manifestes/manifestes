@@ -33,7 +33,7 @@ angular.module('manifest.controllers', ['underscore','config'])
       commenting_slug: null,
       toggle_all: null,
       lang: $routeParams.lang,
-      layout: "list"
+      layout: $routeParams.layout ? $routeParams.layout : "list"
     };
     console.log("state:",$scope.state);
 

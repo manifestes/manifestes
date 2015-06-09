@@ -1,7 +1,7 @@
 
 @bacgcol: #322B27;
 @titheight: 60px;
-@bord: 7px;
+@bord: 0px;
 
 .wrapper.layout-grid {
   box-sizing: border-box;
@@ -14,12 +14,13 @@
     box-sizing: border-box;
     display: inline-block;
     position: relative;
-    width: 240px;
-    height: 220px;
-    margin: 10px;
+    width: 490px;
+    height: 320px;
+    margin: 20px;
     vertical-align: top;
     overflow: hidden;
 
+    background: @bacgcol;
     cursor: pointer;
     font-family: 'Lato', sans-serif;
 
@@ -33,43 +34,63 @@
       bottom: 0;
       margin: @bord;
       overflow: hidden;
+      opacity: 0.2;
+      .transition(opacity 0.2s);
     }
     .h1 {
       box-sizing: border-box;
       position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      height: @titheight;
-      margin: @bord;
-      padding: @bord;
+      left: 50%;
+      top: 50%;
+      //height: @titheight;
+      //margin: @bord;
+      padding: 10px;
+      .transition(transform 0.2s);
+      .transform(translate(-50%,-50%));
 
+      color: white;
       text-transform: uppercase;
       font-weight: 700;
-      font-size: 1.2em;
+      font-size: 1.8em;
+      font-style: italic;
+      line-height: 1.4em;
     }
     .h2 {
+      box-sizing: border-box;
       position: absolute;
       left: 0;
       right: 0;
       bottom: 0;
-      margin: 20px;
+      padding: 25px;
 
       font-family: "Inconsolata", sans-serif;
-      font-size: 1em;
-      text-align: left;
+      font-size: 1.1em;
+      line-height: 1.3em;
+      text-align: center;
       color: white;
 
-      display: none;
+      .transition(transform 0.2s);
+      .transition-delay(0.1s);
+      .transform(translate(0,100%));
     }
 
+    //.transition(transform 0.1s);
     &:hover {
-      background: @bacgcol;
+      z-index: 9999;
+      //.transform(scale(1.05));
+      //.box-shadow(2px 2px 13px -3px black);
+      
       .image {
-        opacity: 0.1;
+        opacity: 1;
+      }
+      .h1 {
+        .transform(translate(-50%,-80%));
+        background: white;
+        color: @bacgcol;
       }
       .h2 {
-        display: block;
+        .transform(translate(0,0));
+        background: @bacgcol;
       }
     }
   }
