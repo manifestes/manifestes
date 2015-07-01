@@ -1,0 +1,912 @@
+
+
+
+---
+role: splash
+repo: https://github.com/manifestes/manifestes
+discuss:
+    text: discuter, corriger, proposer
+    back: revenir au texte
+intro:
+    title: manifeste(s)
+    description: >
+        collectif(s) des territoires communs autogérés et alternatives convivialistes DIY bénéloves révolutionnaires de la transition sociale et écologique dans les tiers-lieux créatifs des clowns bricoleurs pirates des utopies libertaires écoféministes p2p et coopératistes indignées activistes de la résilience décroissante concrète et désobéissante des convergences des luttes
+    keywords: "# philosophie # politique # pratique # convergences #"
+    enter: ">> consulter + participer <<"
+searchplacehoder: chercher
+searchtags:
+    -   name: argent
+        search: argent|monn\w+
+    -   name: institutions
+        search: institution\w*|structure\w*
+    -   name: pouvoir
+        search: pouvoir|autorité|puissance
+    -   name: inégalités
+        search: inégalité\w+
+    -   name: responsables
+        search: responsab\w+|coupable|culpab\w+
+    -   name: quotidien
+        search: quotidien\w*|habitu\w+
+    -   name: aliénation
+        search: aliénation|dépendan\w+
+    -   name: émancipation
+        search: émancip\w*
+    -   name: politique
+        search: politique
+    -   name: technologies
+        search: \W(techn|scienc)\w+
+    -   name: liberté
+        search: \W(liberté|libre)\w+
+    -   name: commun
+        search: communs*|collecti\w+
+    -   name: langage
+        search: langage|mot\w*|parler
+lastupdatetext: dernière modification
+footer: >
+    ##*voir aussi*
+
+    - le [document partagé](https://lite6.framapad.org/p/manifestes)
+
+    - la liste de discussion [manifestes@lists.riseup.net](https://lists.riseup.net/www/subscribe/manifestes)
+
+    - le [code source](https://github.com/manifestes/manifestes) de ce site avec [les textes](https://github.com/manifestes/manifestes/blob/gh-pages/data/contents_fr.yml)
+
+    - le compte twitter [@manifestes](https://twitter.com/manifestes)
+
+
+
+---
+title: Et si on écrivait ensemble ?
+subtitle: Manifeste(s) des autres mondes possibles
+slug: ecrire_manifeste
+role: meta
+image:
+    url: LilliCarre.jpg
+    credit: Lili Carré
+quote:
+    author: l'An 01
+    content: >
+        On arrête tout
+        
+
+        On réfléchit
+        
+
+        Et c'est pas triste
+content: >
+    *... chômeur.e.s, [colibris](http://www.colibris-lemouvement.org/colibris/la-charte-pour-la-terre-et-lhumanisme), créatifs culturels, [pirates](https://www.partipirate.org/Declaration-de-politique-generale-112), [objecteur.euse.s de croissance](http://decroissance.ch/manifeste-du-roc-suisse/), empêcheur.euse.s de tourner en rond, [AMAPs](http://www.amap-idf.org/la-nouvelle-charte-des-amap-est-arrivee_31.php), alternatif.ive.s, [convivialistes](http://www.lesconvivialistes.org/abrege-du-manifeste-convivialiste), grévistes, [écoféministes](http://fr.wikipedia.org/wiki/%C3%89cof%C3%A9minisme), [15M](https://15mpedia.org), [alternatiba](https://alternatiba.eu/charte-des-alternatiba/), activistes, [utopistes concrets](http://festivaldesutopiesconcretes.org/), [vers un](https://france.attac.org/archives/spip.php?article6371) [manifeste](http://www.manifeste.attac.org/) [attac](https://france.attac.org/), [maquisard.e.s](http://collectifconvergence.blogspot.fr/), [350](http://350.org/about/what-we-do/), [CIIP](https://collectifinnovationsilluminationspolitiques.wordpress.com/credo-du-ciip/), hackers, [abécédaire du changement](https://abecedaireduchangement.wordpress.com/2012/05/11/avant-propos-2/), [rassemblement citoyen](http://www.rassemblementcitoyenidf.fr/), [université du nous](http://universite-du-nous.org/a-propos-udn/ses-outils/), fablabs, [deep green resitance](http://deepgreenresistance.org/fr/who-we-are/guiding-principles-of-deep-green-resistance), grands-parents [suisses](http://gpclimat.blogspot.ch/p/texte-fondateur.html) et [belges](http://gpclimat.be/notre-charte/), [laufen](http://laufenmanifesto.org/), [désobéissants](http://www.desobeir.net/le-collectif/le-manifeste/), [transition citoyenne](http://www.transitioncitoyenne.org/), [tiers-lieux](http://movilab.org/index.php?title=Le_manifeste_des_Tiers_Lieux), p2p, [bénéloves](http://generationsfutur.zici.fr/), [commons transition](http://commonstransition.org/), consom'acteurs, [SEL](http://seldefrance.communityforge.net/node/9), anarchistes, [alliances citoyennes](http://www.alliancecitoyenne-38.fr/le-projet-2/lassociation/), [m1d](http://www.mouv1d.fr/manifeste/), révolutionnaires, [occupy](http://fr.wikipedia.org/wiki/Occupy_movement), [amis de la terre](http://www.amisdelaterre.org/), 99%, [vélistance](http://www.velistance.fr/), indignés, [bolo'bolo](http://www.lyber-eclat.net/lyber/bolo/bolo.html), éco-villages, [institut momentum](http://www.institutmomentum.org/le-manifeste/), bricoleur.se.s, [conviviums](http://www.slowfood.fr/slow-food-en-france), farceurs, [clowns](https://brigadeclowns.wordpress.com/le-manifeste-de-larmee-des-clowns/), résiliés, [to change everything](https://paris-luttes.info/traduction-francaise-du-texte-de-2778), [squatteur.se.s](https://infokiosques.net/imprimersans2.php?id_article=41), [décroissants conviviaux](http://www.decroissance.qc.ca/manifeste), [évidences](http://www.cluetrain.com/manifeste.html) écolos, [e-constituante](http://www.e-constituante.com/le-projet/), [anarnautes](https://medium.com/@nicolasvoisin/le-manifeste-des-anarnautes-48cc0a5076bc), [dark mountain](http://dark-mountain.net/about/manifesto/), libertaires, [communs](http://bienscommuns.org/signature/appel/index.php?a=du&c=qsudxs), anticapitalistes, [m6r](http://www.m6r.fr/), anonymous, [élan global](http://elanglobal.org), coopératistes, antifascistes, [reboot la France](http://wiki.rebootlafrance.fr/wiki/Accueil), [démocratie ouverte](http://democratieouverte.org/), [écosociétalistes](http://www.ecosocietal.org/articles.php?lng=fr&pg=18), [climate express](http://climate-express.be/fr/) ...*
+
+
+    Nous sommes déjà **partout**.
+
+
+    Nos démarches sont infiniment **diverses et complémentaires**.
+
+
+    Qu'avons-nous **en commun** ?
+links: >
+    ###*objectifs*
+
+    - **écrire collectivement** un/des manifeste(s) de notre territoire commun: *philosophique, politique, pratique*
+
+    - **partager** nos *inspirations, références, initiatives*
+
+    - faciliter l'accès aux **solutions concrètes existantes**
+
+
+
+---
+title: "Méthodologie et outils"
+subtitle: Comment fonctionne ce site ? écriture collective !
+slug: methodo
+role: meta
+image:
+    url: FingerBones.jpg
+    credit: Rayons X, Hopital des Enfants malades, Paris
+quote:
+    author: Pierre Desproges
+    content: L'intelligence, c'est le seul outil qui permet à l'homme de mesurer l'étendue de son malheur.
+content: >
+    Le découpage en **sections** permet de rendre le texte plus lisible et facilite les discussions sur les **thèmes** abordés.
+
+
+    Chaque section (comme celle-ci) comporte:
+
+
+    - un **titre** permettant d'ouvrir ou de fermer la section
+
+    - une **illustration** et une **citation**
+
+    - un texte synthétique **théorique** développant une idée
+
+    - suivi d'un encart **pratique** avec *les liens, exemples pratiques, initiatives concrètes associées*
+
+links: >
+    ###*outils*
+
+    - vous pouvez d'ores-et-déjà *commenter, ajouter, modifier* le contenus des sections en cliquant sur le bouton *discuter, corriger, proposer* à la fin de chaque section ou sur [le document partagé](https://lite6.framapad.org/p/manifestes)
+
+    - **vous inscrire** sur [la liste de discussion](https://lists.riseup.net/www/subscribe/manifestes/) pour coordonner des rendez-vous hors écrans
+
+
+
+---
+title: On en a marre !
+subtitle: Un monde s'en va, aidons le à partir
+slug: marre
+image:
+    url: GeorgeKovenchukStop.jpg
+    credit: George Kovenchuk
+quote:
+    author: Charles Bukowski
+    content: >
+        Comment diable un homme peut-il se réjouir d'être réveillé à 6h30 du matin par une alarme, bondir hors de son lit, avaler sans plaisir une tartine, chier, pisser, se brosser les dents et les cheveux, se débattre dans le trafic pour trouver une place, où essentiellement il produit du fric pour quelqu'un d'autre, qui en plus lui demande d'être reconnaissant pour cette opportunité ?
+content: >
+
+    - **sur-développement** matériel, boulimie consumériste, gaspillage alimentaire et énergétique
+
+    - **sous-développement** affectif, éthique et spirituel, renfermement sur soi, pauvreté des projets de vie
+
+    - mythe de la croissance infinie et **économisation** de toutes les activités humaines
+
+    - excitation de l’avoir, possession, **captation** des savoirs et du sens, domination, compétition, privatisation des communs: *eau, énergie, transports*
+
+    - illusion de participation démocratique, extrémismes
+
+    - triple **rupture de communication**:
+        - avec le **monde vivant** et la nature: *urbanisation folle*
+
+        - dans le rapport avec **nous-mêmes**: *patience, intériorité, méditation*
+
+        - dans le rapport à **autrui**: *multiplication des médiations et des services*
+links: >
+    ###*liens, références pour constater que ça va pas*
+
+    - on fait encore caca dans l'eau potable
+
+    - [5e rapport du GIEC](http://leclimatchange.fr/questions-reponses/)
+
+    - nous sommes [drogués du numérique](http://www.influencia.net/fr/actualites/com-media,audace,dessine-moi-drogue-numerique,5342.html)
+
+    - comprendre les ≠ dettes mondiales: [système de la dette](http://cadtm.org/IMG/pdf/version01-FR.pdf), pdf, 2015
+    
+    - [la mort lente de l'économie](http://www.lyber-eclat.net/lyber/bolo/mort_economie.html), préface de [Bolo'Bolo](http://www.lyber-eclat.net/lyber/bolo/bolo.html), [PM](http://fr.wikipedia.org/wiki/P.M.), 1998
+
+    - [la France n'est pas encore une démocratie](https://magic.piktochart.com/output/5251490-france-democratie), infographie
+
+    - [Attention Danger Travail](https://www.youtube.com/watch?v=P-yPQEQghMs), [Volem Rien foutre al Païs](https://www.youtube.com/watch?v=Ld2jPJPnuc8), [Pas vu pas pris](https://www.youtube.com/watch?v=6DgOE9KZZME), [Enfin Pris](https://www.youtube.com/watch?v=4-qS2Tr_GVU), [Opération Correa: les ânes ont soif](https://www.youtube.com/watch?v=At_fCG1LJpk), films de [Pierre Carles](http://www.pierrecarles.org/)
+
+    - [Wake Up Call](https://www.youtube.com/watch?v=jid2A7ldc_8)
+
+    - vidéos de [Mr Mondialisation](https://www.youtube.com/user/MrMondialisation)
+    
+    - [pornographie du temps présent](http://plus.franceculture.fr/france-culture-forum-l-annee-vue-par-la-philo), Alain Badiou
+    
+    - ...
+
+
+
+
+---
+title: On leur laisse quoi ?
+subtitle: Altruistes ou simplement parents, nous sommes responsables de ce que nous acceptons aujourd'hui, et de ce qu'on laisse aux générations suivantes
+slug: laisse_quoi
+image:
+    url: antinuke.jpg
+    credit: 281_Anti nuke
+quote:
+    author: Roland Castro
+    content: >
+        L’utopie concrête ne part pas de rien même si une bonne dose d’innocence maintenue est nécessaire à son énonciation, il y a donc des preuves qu’il arrive que du sens apparaisse, que l’idée de vivre ensemble s’impose à tous. L’idée de réenchanter le monde se nourrit de ces traces, de ces preuves qui sont des preuves de la volonté, qui nous vient par effraction de sens, par excès de mémoire heureuse, par décision de vie. J’affirme donc qu’il faut préparer une insurrection du sens.
+content: >
+    
+    - **Quelle société** (*rapports entre nous*) ? Nos enfants grandissent avec nous. Inspirés de nos comportements, ils se construisent sur les références que nous leur laissons. Quels enfants laisserons-nous à notre planète ?
+
+    - **Quelle écologie** (*rapport au monde*) ? Quelle planète, quel rapport à la nature et au vivant laisserons-nous à nos enfants ?
+
+    
+links: >
+    *« dis, maman, pourquoi personne n'a rien fait ? »*
+
+    
+
+---
+title: On fait comment ?
+subtitle: Pour changer quoi que ce soit, il faut commencer partout !
+slug: comment_faire
+image:
+    url: McMullenJagel.jpg
+    credit: Brian McMullen & Jason Jägel
+quote:
+    author: Sénèque
+    content: Ce n'est pas parce que les choses sont difficiles que nous n'osons pas, mais parce que nous n'osons pas qu'elles sont difficiles
+content: >
+
+    - Nous voulons contruire une **réflexion théorique collective** pour discuter du monde, composer les différentes perceptions, formuler un langage commun. Penser différement, c'est déjà commencer à construire quelque chose
+
+    - Et, surtout, nous retrouver pour échanger des **pratiques dans nos vies quotidiennes**, hors écrans, rendre visible les réseaux alternatifs existants, faciliter des passages à l'acte collectifs
+links: >
+    ###*plateformes existantes, annuaires, réseaux*
+    
+    - [To change everything](http://www.crimethinc.com/tce/quebecois/), par [crimethinc](http://crimethinc.com/)
+
+    - Attac recense déjà [les initiatives et réalisations alternatives](http://www.spirale.attac.org/)
+    
+    - les médias libres et liens d'[article11](http://www.article11.info/)
+
+    - les outils collaboratifs de la plateforme [Ggouv](http://ggouv.fr/)
+
+    - [Comment sortir de la crise de la dette pour les nuls par une nulle](http://blogs.mediapart.fr/blog/sarah-kilani/220515/comment-sortir-de-la-crise-de-la-dette-pour-les-nuls-par-une-nulle)
+
+    - ...
+
+
+
+
+---
+title: Héritages
+subtitle: "privilégiés du nord, responsables, refusons l'ingérence"
+slug: heritages
+image:
+    url: AlexanderAlexeieff.jpg
+    credit: Alexander Alexeieff
+quote:
+    author: Alvin, Toffler
+    content: Si vous n'avez pas de stratégie, c'est que vous êtes partie prenante de la stratégie de quelqu'un d'autre.
+content: >
+    Vivant dans des villes européennes *du nord*, nous sommes **conscients de la chance relative** que nous avons eue: *école gratuite, services publics, sécurité alimentaire*, mais surtout du **poids de responsabilité** meurtrière que nous portons.
+
+
+    Cette *responsabilité* n'est pas à confondre avec la *culpabilité*, car nous faisons partie **du problème et de la solution**.
+
+
+    Fuyons l'**ingérence prétentieuse** et manipulatrice dont nous héritons vis-à-vis des pays *du sud*. Pays que nous croyons aider, mais que nous **exploitons par prosélytisme forcené** de la *« démocratie - croissance »* dans le seul but d'accroître notre main-mise des ressources.
+links: >
+    ###*ingérence, néocolonialisme, histoire*
+    
+    - [Afrique50](https://www.youtube.com/watch?v=i5vIXhs8qic), [Techniquement si simple](https://www.youtube.com/watch?v=PnrsXB5xfGE)... de René Vautier
+    
+    - webdoc [les multinationales s'accaparent les terres d'Afrique](http://www.maintenantnosterres.com/). 
+
+    - ...
+
+
+
+---
+title: Inégalités et violences
+subtitle: Il existera toujours des inégalités et des violences
+slug: violence
+image:
+    url: ErwinBlumenfeld.jpg
+    credit: Erwin Blumenfeld
+quote:
+    author: voir A.Boyd & S. Duncombe
+    content: La politique est tout autant affaire de désir et de fantasme que de raison et rationnalité
+content: >
+    Êtres sociaux et sensibles, **infiniment complexes**, notre humanité nous rend capables du **meilleur comme du pire**.
+    
+
+    Il **existera toujours** des inégalités et des violences. Ces conflits internes et externes sont normaux, signes de **confrontation d'altérités** et de multiplicité des mondes.
+
+
+
+---
+title: Retrouver un équilibre
+subtitle: Supporter, survivre indéfiniment ? Non, là, c'est trop.
+slug: equilibre
+image:
+    url: SaschaAlexanderSchneider.jpg
+    credit: Sascha Alexander Schneider
+quote:
+    author: Berthold Brecht
+    content: Ceux qui luttent ne sont pas sûrs de gagner, mais ceux qui ne luttent pas ont déjà perdu.
+content: >
+    Tandis que les catastrophes naturelles ou évènements historiques médiatisés nous plongent dans des **états émotionnels passagers et stéréotypés** (mon dieu, une épidémie d'ébola !), les évolutions plus lentes de nos société se déroulent sans que l'on puisse en **mesurer les conséquences à long terme**: *ondes, publicité, OGM, malbouffe, pollution*
+
+
+    Comme nous l'ont prouvé l'histoire et les **conditions dramatiques de vie** de certains, nous pourrions certes *survivre* à des situations bien pires. Nous pensons qu'un **équilibre a été perdu** et nous cherchons à rééquilibrer la balance.
+    
+
+    Nous ne sommes plus prêt.e.s à survivre ou subsister à tout prix.
+    Nous pensons que le pire est derrière nous. Nous voulons *vivre*.
+
+
+
+---
+title: Habitudes, dépendances, aliénations
+subtitle: Pourquoi on se fait avoir ?
+slug: alienation
+image:
+    url: divertirdominer.jpg
+    credit: revue Offensive
+quote:
+    author: Chomsky
+    content: Identifier les structures coercitives, autoritaires et hiérarchiques de toutes sortes pour les examiner et mettre à l’épreuve leur légitimité
+content: >
+    Nous devons nous battre simultanément **contre les structures** qui nous assujettissent et nous contrôlent et **contre nous-mêmes**, gangrénés de l'intérieur par nos habitudes et les idéologies dominantes.
+
+    
+    Nous ne pouvons décrocher facilement de notre **dépendance au monde**, nous y sommes inscrits **matériellement**: *manger, se loger, se déplacer* et **culturellement**: *habitudes, bagage idéologique et culturel*.
+
+
+    Il est urgent de mieux nous connaître nous-mêmes, pour saisir comment des structures de pouvoir et d'argent arrivent à nous contrôler et à nous soumettre. Redevenons maîtres de nos propres vies et de nos désirs !
+links: >
+    ###*aliénations, biais cognitifs, comprendre les dominations*
+
+    - conditionnés à la nouveauté : [animal social et (presque) nouveau téléphone](http://www.dailymotion.com/video/xtrtht)
+
+    - [Le cinéma est politique](http://www.lecinemaestpolitique.fr/), parce que refuser les rapports de domination, c’est aussi analyser et déconstruire les représentations qui les banalisent ou les légitiment
+
+    - ...
+
+
+
+---
+title: Ce monde est pluriel
+subtitle: Nous ne cherchons pas à le réduire avec une solution unique 
+slug: monde_pluriel
+image:
+    url: RyuichiYamashiro.jpg
+    credit: Ryuichi Yamashiro
+quote:
+    author: Albert Eintein
+    content: On ne règle pas un problème en utilisant le système de pensée qui l'a engendré.
+content: >
+    Nous vivons dans un monde *traversé, perçu, vécu, interprété* par de multiples, plurielles, **diverses réalités**, qui se **superposent** ou **s'affrontent**.
+
+
+    Les notions *de juste, de liberté, d'État* sont **multiples et relatives**. Nous ne nous battons pas pour un dogme ou un programme, une vision figée du monde, un **modèle unique** de société.
+
+
+    Nous cherchons les conditions de **co-existence** de multiples présences sociales **ne s'écrasant pas** les unes les autres.
+links: >
+    ###*cultivons nos différences !*
+
+    - ...
+
+
+
+
+---
+title: Qui sont nos adversaires ?
+subtitle: La faute à qui ?
+slug: adversaires
+image:
+    url: EricRohman.jpg
+    credit: Eric Rohman
+quote:
+    author: Malcolm X
+    content: Si vous n'êtes pas vigilants, les médias arriveront à vous faire détester les gens opprimés et aimer ceux qui les oppriment.
+content: >
+    Soupçonnés pour certains d'extorquer à l'état quelques centaines d'euros, pour d'autres de former une élite manipulatrice, nous désignons parfois comme **coupables** *politiques, riches, étrangers, fonctionnaires, fraudeurs, assistés, journalistes, extrémismes, terrorisme*...
+
+
+    Ces ennemis fictifs, qu'ils soient **intérieurs ou extérieurs** détournent notre attention. Nous ne croyons pas qu'il existe de **coupable idéal** facile à désigner.
+
+
+    Nous n'incriminons personne en particulier, *ni profession ni individus*, et pensons que nous avons **tous une part de responsabilité** à travers certaines *habitudes, raisonnements, préjugés, idées, comportements* qui nous assujetissent ou nous rendent **étrangers les uns des autres**.
+
+
+    Sachons **détecter cet ennemi** lorsqu'il apparaît en nous ou autour de nous et apprenons à **réagir ensemble** à ses manifestations.
+links: >
+    ###*concrètement...*
+
+    - *« c'est à cause de... »* ? prendre du recul et évaluer si la cible est bien la bonne
+
+
+    - **témoin ou victime** d'un abus de pouvoir ou d'une oppression, **ré-agissons** ! N'affrontons pas les individus eux-mêmes, mais **leurs comportements**.
+
+
+    - oublions les **personnalités politiques**, *amies ou ennemies*. Parler d'eux, c'est déjà perdre du temps et leur donner de l'importance.
+
+    - ...
+
+
+
+
+---
+title: "Argent roi"
+subtitle: Rareté artificielle qui nous enferme dans une course à la compétition et au profit
+slug: argent
+image:
+    url: alexgross.jpg
+    credit: Alex Gross
+quote:
+    author: ?
+    content: >
+        Nous déléguons tous nos pouvoirs aux puissances d'argent: s'informer, se nourrir, se déplacer, communiquer, il n'y a plus une seule chose quotidienne que nous soyons capable d'assumer par nos propres moyens. Il est temps de réapprendre à vivre dans notre propre milieu.
+content: >
+    Quels sens donner à nos actes lorsque **toute valeur** est concentrée dans un seul instrument, l'argent ?
+
+
+    Un système motivé par le profit crée de la pauvreté au même rythme qu’il concentre la richesse. La pression de la compétition favorise l’innovation plus que tout autre système, mais elle aggrave en même temps les inégalités.
+
+
+    Instaurons des **revenus inconditionnels** minimum et maximum, élargissons la **sphère de la gratuité**, arrêtons de tout mesurer à l'aune du temps et du coût.
+links: >
+    ###*société de consommation, argent, publicité*
+
+    - utilisons l'argent comme une arme en **boycottant** les [multinationales](http://multinationales.org/), nos actes d'achats quotidiens sont bien plus puissants que nos votes
+
+    - [changeons de banque](http://jechangedebanque.org/toutes-les-banques-ne-se-valent-pas/) pour [mieux choisir](http://www.financeresponsable.org/entreprise.php) à qui nous laissons notre argent
+    
+    - échangeons biens et services dans les [SEL](http://seldefrance.communityforge.net/node/46)
+
+    - créons et utilisons des [monnaies locales](http://monnaie-locale-complementaire.net/france/)
+
+    - écrasons la publicité: [Résistance à l'Agression Publicitaire](http://antipub.org/), [Reposeurs](http://www.reposeurs.eu.org/), [Déboulonneurs](http://www.deboulonneurs.org/)
+
+    - [pour un revenu garanti pour tous](http://www.monde-diplomatique.fr/2013/05/CHOLLET/49054), Mona Chollet
+
+    - militons pour la fermeture des grandes enseignes le dimanche
+
+    - [le publiphobe](http://bap.propagande.org/modules.php?name=Publiphobe): déjà 150 numéros !
+
+    - ...
+
+
+
+---
+title: À quoi on tient ?
+subtitle: Si on y réfléchit, qu'est-ce qui compte vraiment ?
+slug: on_tient_a_quoi
+image:
+    url: FernandKhnopff.jpg
+    credit: Fernand Khnopff
+quote:
+    author:  Le Tour de France des Alternatives, collection Reporterre dirigée par Hervé Kempf, 2014
+    content: >
+        Il ne s’agit plus de faire la liste, connue jusqu’à la nausée, des **non** de ce que nous refusons, mais d’élaborer collectivement des **oui** qui caractérisent les mondes que nous voulons
+content: >
+    Nous sommes convaincus de l'importance de *l'éducation, l'art, l'histoire, la littérature, la vulgarisation scientifique* pour favoriser un **esprit critique**, une **ouverture aux autres et au monde**, la **coopération** plutôt que la compétition.
+
+
+    - le **lien** est plus important que le *bien* (matériel).
+
+    - le **soin** plus que le *résultat*
+
+    - la **création** plus que la *consommation*
+
+    - le **partage** plus que le *profit*.
+
+    - le pouvoir d'apporter du **bien aux autres**, pas le pouvoir *d'achat*.
+
+    - le **respect** plutôt que la *marchandisation* du vivant
+links: >
+    
+    - [le travail](https://www.youtube.com/watch?v=cLOZ0c7W2Go), conférence gesticulée de Franck Lepage & Gaël Tanguy: Qu'est-ce que le Travail, est-ce simplement une activité subordonnée à un patron pour nous permettre de vivre ? Comment penser le travail dans une dimension humaniste ?
+
+
+
+---
+title: Pouvoir, autorité, autonomie
+subtitle: Où se trouve le vrai pouvoir ?
+slug: pouvoir
+image:
+    url: ElenaTrofimova.jpg
+    credit: Elena Trofimova
+quote:
+    author: >
+        [Infokiosques.net](http://www.infokiosques.net), qu'est-ce qu'un infokiosque ?
+    content: >
+        Cette société nous pose question, nous empêche de vivre. Parfois elle nous fait vomir, toujours elle nous révolte. Capitalisme, patriarcat, rapports de domination, désastres écologiques, forces étatiques, de quoi faire frémir toute notre bile. Parfois nous voudrions cultiver cette bile, comment dire, l’approfondir, la relever, la garnir de données, d’arguments, d’idées d’action. Mieux connaître ce que nous critiquons pour mieux savoir ce que nous vomissons et comment nous le vomissons.
+content: >
+    Les véritables puissances sont celles qui sont aux rênes des **structures matérielles des flux**: *banques, multinationales médiatiques, construction, alimentaire, transport*. Ces organisations détiennent l’**autorité**.
+
+
+    Tandis que ces autorités cherchent à nous soumettre à leur profit, le **véritable pouvoir** est entre nos mains, *travailleurs de différents domaines, ceux qui sont sur le terrain, font tourner les machines, savent utiliser les techniques*.
+    
+    L'absence ou la dispersion des pouvoirs ne rime pas avec désordre. De nombreuses organisations horizontales, structurées, facilitent les échanges **sans contrôle centralisé**.
+
+
+    Montrons que **nous pouvons agir en nos noms**, encourageons les autres à faire de même et décourageons les autorités de s’interposer et d’interférer.
+links: >
+    ###*dominations, autonomie, prises de pouvoir*
+
+    - [débarrassons-nous des chefs !](http://generationsfutur.zici.fr/wp-content/uploads/2012/09/Tableauantichefs.gif)
+
+    - le [tirage au sort](http://fr.wikipedia.org/wiki/Tirage_au_sort_en_politique), et le non cumul des mandats pour les postes décisionnaires
+
+    - [la police n'aime pas la presse libre](https://iaata.info/1-74-09-99-192-168-0-1-en-proces-pour-lire-et-soutenir-la-presse-libre-728.html)
+
+    - ...
+
+
+
+---
+title: Déléguer, toujours déléguer ?
+subtitle: État, institutions, ou comment déléguer toute autorité
+slug: deleguer
+image:
+    url: RBagautdinov_1.jpg
+    credit: R. Bagautdinov
+quote:
+    author: Comité invisible, À nos amis, p.162
+    content: Le gouvernement, c'est denier au peuple toute capacité politique au delà de son vote.
+content: >
+    La logique de l'État n'est pas de créer des liens, mais d'entretenir une **dépendance des citoyens** à des *institutions, conventions, fonctions, règles, devoirs*, pour maintenir l'**ordre social**.
+
+
+    Nous ne voulons plus voter en espérant *chèque en blanc* qu'une poignée de promesses soient tenues. Nous savons en outre qu'il est **absurde de donner le pouvoir** à ceux qui le réclament le plus.
+
+
+    Nous ne pourrons pas maîtriser et prendre en charge toutes les facettes de notre environnement. Il est parfois nécessaire de  déléguer, mais en réelle connaissance des acteurs concernés.
+links: >
+    ###*autour du faire soi-même*
+
+    - réparer, fabriquer soi-même: [ReparCafés](https://duckduckgo.com/?q=reparcaf%C3%A9), Ateliers [Cyclofficines](http://cyclocoop.org/)
+
+    - éviter les objets fermés, p.ex voitures qu'on ne peut plus réparer soi-même sans l'aide du consructeur
+
+    - ...
+
+
+
+---
+title: Science sacralisée, expropriation
+subtitle: On arrête pas le progrès, émancipation ou servitude ? technologies et science sans conscience
+slug: science
+image:
+    url: trashphones.jpg
+    credit: google ?
+quote:
+    author: Jacques Ellul, Les nouveaux possédés, 1973
+    content: Ce n'est pas la technique qui nous asservit, c'est le sacré transféré à la technique.
+content: >
+    Les développement des technologies *nano, bio, numériques, médicales* sont le symptôme d'un **fantasme de contrôle et de connaissance totale** toujours disponible.
+
+
+    Fasciné.e.s par les **scientifiques omniscients**, nouveaux gourous de nos sociétés consuméristes, nous attendons d'eux qu'ils **améliorerent notre condition** par une *compréhension-domination* toujours plus grande de l'homme et de son monde.
+
+
+    Par une **ultra-fluidité apparente** d'appareils et de services, les technologies nous rendent **toujours plus dépendants** en **mystifiant** notre rapport au monde.
+
+
+    Les produits des innovations **contrarient** *notre sécurité, notre confort et nos libertés* bien plus qu'ils ne se mettent à notre service: *nucléaire, OGM, surveillance, géo-ingénierie*
+links: >
+    ###*monde numérique*
+
+    - non, les machines ne sauront jamais mieux que **vous** ce que vous êtes, avez besoin, etc...
+
+    - dématérialisation des tickets restaurant, paiement sans contact: à qui profite vraiment le service ?
+
+    - la loi sur le renseignement prévoit des [algorithmes pour détecter les comportements suspects](http://ownirevient.fr/). vous n'avez rien à cacher ? [we are always listening](http://www.wearealwayslistening.com/)
+
+    - avons-nous *vraiment* besoin du dernier appareil à la mode ? d'une connexion internet ininterrompue ?
+
+    - [Techn0polis](https://www.techn0polis.net/)
+
+    - arrêtons l'[identification électronique](https://www.infokiosques.net/IMG/pdf/2007_des_moutons-cahier.pdf) des animaux et des hommes
+
+    - les fabuleux outils de [Framasoft](http://www.framasoft.org) pour [degoogliser](http://degooglisons-internet.org/) l'internet
+    
+    - pour naviguer anonymement, [Tor](https://www.torproject.org/)
+    
+    - [guide riseup](https://help.riseup.net/fr/better-web-browsing) pour une meilleure navigation sur le web
+
+    - [DuckDuckGo](https://duckduckgo.com/), moteur de recherche ne marchandisant pas nos données
+    
+    - le [zinc](http://zinc.mondediplo.net/) du monde diplomatique
+
+    - [la quadrature du net](http://www.laquadrature.net/), association de défense des droits et libertés des citoyens sur Internet, l'[April](https://www.april.org/)
+
+    - l'association [Technologos](http://technologos.fr/) désacralise la technique
+
+    - les projets de l'[IndieWebCamp](http://indiewebcamp.com/)
+
+    - le [guide d'autodéfense numérique](https://guide.boum.org/), avec version papier par [tahin party](http://tahin-party.org/)
+
+    - livre, numérique, capitalisme, progrès: [la querelle des modernes et des modernes](http://les451.noblogs.org/post/2012/11/22/la-querelle-des-modernes-et-des-modernes/)
+    
+    - [à nous d'être les maîtres des technologies](http://www.internetactu.net/2015/05/07/technologie-cest-a-nous-den-etre-les-maitres-oui-mais-comment), par Hubert Guillaud
+
+    - [Kokopelli](https://kokopelli-semences.fr/), semences potagères et aromatiques Bios, libres de droit et reproductibles
+
+    - ...
+
+
+---
+title: "Désobéir, prendre position"
+subtitle: "Sortons de nos zones de confort et de soumission. Depuis là où nous sommes, reformulons nous-mêmes les questions: tout lien, tout échange, toute action est politique"
+slug: prendre_position
+image:
+    url: non.jpg
+    credit: Singer
+quote:
+    author: Desmond Tutu
+    content: Si tu es neutre en situation d'injustice, alors tu as choisi le coté de l'oppresseur
+content: >
+    Ne pensons plus à *la* **politique** représentative, comme institution de pouvoir et de luttes pour sa conquête.
+    Entretenons ou rétablissons *le* **politique**, par les relations que nous avons entre *voisins, collègues, amis*.
+    
+
+    Au *légal* préférons le **légitime** !
+
+
+    Depuis le quotidien le plus banal, devenons acteurs, **complices** d’autres logiques, d'autres manières de vivre. **Prenons position** en redessinant le territoire dans lequel nous vivons: *avec qui parler, où manger, où travailler: ça je le refuse, ça à la limite, ça ok...* 
+ 
+
+    **La désobéissance est contagieuse** !
+
+
+    Notre liberté ne se résume pas à choisir entre plusieurs options, mais à la possibilité de **formuler nous-mêmes les questions**, de réinventer continuellement nos **identités** et nos **relations**.
+links: >
+    ###*prise de position quotidienne*
+
+    - on attend de vous que vous *consommiez-travaillez* comme un bon citoyen ? Choississez **pour qui** vous travaillez, **ce que** vous achetez, **ce que** vous mangez, **comment** vous vous comportez
+
+    - marcher moins vite, explorer son quartier, consommer le moins possible d'**énergie**
+
+    - **objets**: glâner, [les mains, ça se lave](https://vimeo.com/37089032) ! ne plus jeter, mais donner, recycler, récupérer, troquer: [zones de gratuité](http://fr.wikipedia.org/wiki/Magasin_gratuit), [recupe.net](http://recupe.net/), [jedonne.org](http://www.jedonne.org/), [co-recyclage.com](http://www.co-recyclage.com/), [myrecyclestuff.com](http://myrecyclestuff.com/), visiter les [ressourceries d'Île-de-France](http://www.ressourcerie.fr/Vos-Ressourceries/Localisations), créer des [boites d'échanges entre voisins](http://www.hclbox.org/fr/boxes)
+
+    - **manger** autrement: [fruits et légumes de saison](http://asso.apne.free.fr/wp-content/uploads/2010/05/legumesaison.jpg), [réseau des AMAP](http://www.amap-idf.org/), [Marché Citoyen](http://www.lemarchecitoyen.net/)
+
+    - prenez position depuis votre travail: débattez, défendez, proposez d'autres points de vue !
+
+    - ...
+
+
+
+---
+title: Réenchantons, amusons-nous !
+slug: amusons_nous
+image:
+    url: ericDrooker_kids.jpg
+    credit: Eric Drooker
+quote:
+    author: Guy Debord
+    content: L'ennui est toujours contre-révolutionnaire. Toujours.
+content: >
+    Alors qu'on nous bassine d'*austérité*, de *moral des ménages*, de *sondages en veux-tu en voila*, **rions au nez** du sérieux et des normes.
+
+
+    Amplifions l'émergence d'un **état d'esprit** *de bonne humeur, d'amour, d'humour, d'humilité, de confiance, de convivialité, de coopération, de bienveillance, d'entraide, de partage* !
+links: >
+    ###*rire et agir*
+
+    - la [brigade activiste des clowns](https://brigadeclowns.wordpress.com/le-manifeste-de-larmee-des-clowns/) et leurs armes de dérision massive
+
+    - les pique-niques impromptus au cœur des supermarchés par [l'Appel et la Pioche](http://www.dailymotion.com/lappeletlapioche)
+
+    - les dîners festifs improvisés de [Jeudi Noir](http://www.jeudi-noir.org/)
+    
+    - les [Engraineurs](http://www.collectif-lesengraineurs.com/) plantent les graines d'un esprit de résistance et cultivent les alternatives
+
+    - [beautifultrouble](http://beautifultrouble.org/), boite à outils pour faire la révolution, avec extraits en français dans [Joyeux Bordel](https://france.attac.org/nos-publications/livres/article/joyeux-bordel-tactiques-principes)
+
+    - hack la COP21: [climate games](https://www.climategames.net/), par le [laboratoire d'imagination insurrectionnelle](http://labofii.net/)
+    
+    - [Under Construction](http://www.underconstruction.fr/?page_id=1493) fabrique des jeux pour interroger le monde
+
+    - [l'an 01](https://www.youtube.com/watch?v=_lgJbU3J7hw), Jacques Doillon, Gébé, Alain Resnais, Jean Rouch, 1973
+
+    - ...
+
+
+
+---
+title: Rencontrons-nous !
+subtitle: "Expérience du collectif, attention et confiance en l'autre, nouvelles formes de collectifs autogérés. Objectif: vivre ensemble"
+slug: rencontrons_nous
+image:
+    url: RBagautdinov_2.jpg
+    credit: R. Bagautdinov
+quote:
+    author: Comité invisible, À nos amis, p.186
+    content: >
+        Faire sécession, c'est habiter un territoire, assumer notre configuration situé du monde, notre façon d'y demeurer, la forme de vie et les vérités qui nous portent, et depuis là entre en conflit ou en complicité
+content: >
+    Nous préférons les *initiatives, pratiques, collectifs* **émergents et autogérés**, aux expériences **pilotées par une autorité** omnipotente. Seule l'**expérience** du fait politique provoque la **conscience du collectif**.
+
+
+    Nous pensons que la richesse d'un collectif provient plus des **échanges** et des expériences de **terrain** qu'il permet que de sa structure organisationnelle.
+
+
+    *« la mobilisation continue ? »*
+
+
+    Elle ne continue pas toute seule. À nous de l'**incarner** dans les faits si nous la souhaitons. Le peuple **n'est pas** dans la rue, il **se rencontre** dans la rue. Ce que nous appelons, ce n'est pas le réveil ou la révolte d'une population fictive préexistante, c'est la magie qui s'opère lorsque des êtres différents **se rencontrent et créent des liens**: *une attention nouvelle, une écoute de un à un...*
+links: >
+    ###*lieux, agendas, cartes, rencontres, transports*
+
+    - au [café-librairie Michèle Firk](http://www.la-parole-errante.org/index.php?cat=CAFE-MF) à Montreuil
+    
+    - à la [bibliothèque autogére de Malakoff](http://www.b-a-m.org/)
+
+    - participons aux innombrables évènements de l'agenda [Demosphere](http://demosphere.eu)
+
+    - [squattons](https://www.infokiosques.net/IMG/pdf/SquatAZ-bonus-cahierA5.pdf) pour expérimenter le collectif, faire acte politique dans des lieux délaissés, abandonnés, en attente spéculative
+
+    - [zones à défendre](http://zad.nadir.org/) !
+
+    - catalysons les rencontres les plus **hétéroclites** possibles: *parlons, écoutons, parlons, écoutons*
+
+    - [carte](https://www.google.com/maps/d/embed?mid=zObc46bS4Jts.kM-SMEA0C_m8) des [moutons enragés](http://lesmoutonsenrages.fr/carte-des-moutons-2/), [carte Bastamag des alternatives](http://www.bastamag.net/La-carte-de-France-des-4598), [tour de France des alternatives](http://www.tourdefrancedesalternatives.fr/alternatives/), [Citoyens en transition](http://voyageurs.en-transition.fr/carte-des-alternatives/)
+
+    - carte des [services et nouvelles formes économiques](http://www.apur.org/dataviz/nouvelles_economies/index.html)
+
+    - [Cap ou pas Cap ?](http://capoupascap.paris/), carte des alternatives citoyennes à Paris
+
+    - la [Graffiterie](http://graffiterie.org/) met en relation des artistes et des propriétaires de murs pour réenchanter l'espace public
+
+    - [PEROU](http://www.perou-paris.org/Manifeste.html), pôle d'exploration des ressources urbaines
+
+    - les [saprophytes](http://www.les-saprophytes.org/index.php?cat=sapro)
+
+    - les [vélorution](http://velorution.org/) réclament la rue pour les cyclistes et autres non-motorisé.e.s
+
+    - coordination citoyenne [Pas sans Nous](http://passansnous.fr/charte/)
+
+    - le doctorat sauvage d'[échelle inconnue](http://www.echelleinconnue.net/)
+    
+    - [TransforMap](http://transformap.co/), [ecozoom](http://mapunto.net/ecozoom/) en espagne
+
+    - ...
+
+
+
+---
+title: Pratiquer un langage commun
+subtitle: Le langage ne décrit pas le monde, il le construit. Des mots valises à la réalité, pour nous comprendre, soyons précis !
+slug: langage_commun
+image:
+    url: GeorgeKovenchuk.jpg
+    credit: George Kovenchuk
+quote:
+    author: Comité invisible, À nos amis, p.231
+    content: Notre force ne naîtra pas de la désignation de l'ennemi, mais de l'effort fait pour entrer les uns dans la géographie des autres.
+content: >
+    *austérité, modèle économique, voie de développement, responsabilité, questions d'immigration, croissance, décroissance, communauté internationale, économie solidaire, transition, démocratie, libertés, écologie, solidarité...*
+
+
+    Nous nous méfions des expressions préconçues pleines de préjugés et des **mots galvaudés** contenant tout et rien.
+
+
+    Nous préférons leur développement **concret, ancré dans la réalité**: *libre de faire quoi sous quelles conditions ? solidarité de qui par quel acte ?*
+    **Qualifier** ce dont on parle, pour mieux saisir le sens et la complexité des situations.
+
+
+    Ne nous obstinons pas à faire consensus, cherchons un **langage commun**. Nous acceptons les dissonances et les désaccords, ils n’empêchent pas des formes d’harmonie et de justesse.
+    
+
+    C'est le processus de **circulation de la parole**, *des affects, des attentions partagées*, qui nous fait parler le même langage, et former ensemble un territoire commun, où chaque personne et discours trouve sa place.
+links: >
+    ###*sur le language*
+
+    - [les mots sont importants](http://lmsi.net/?page=presentation)
+
+    - cela implique un travail difficile pour développer notre *bienveillance, ouverture, respect* des autres lorsque nous nous parlons, rencontrons.
+    
+    - récits de luttes sur [constellations](https://constellations.boum.org/)
+    
+    - ...
+
+
+
+---
+title: Traduire, transmettre, échanger
+subtitle: Plus forts que les idées, leur échange ! pas d’élitisme ni d’expropriation, tout peut être compris, transmis, diffusé.
+slug: transmettre_echanger
+image:
+    url: CandidoPortinari.jpg
+    credit: Candido Portinari
+quote:
+    author: Robert A. Heinlein
+    content: >
+        Un être humain devrait savoir *changer une couche-culotte, planifier une invasion, égorger un cochon, manœuvrer un navire, concevoir un bâtiment, écrire un sonnet, faire un bilan comptable, monter un mur, réduire une fracture, soutenir un mourant, prendre des ordres, donner des ordres, coopérer, agir seul, résoudre des équations, analyser un nouveau problème, répandre de l'engrais, programmer un ordinateur, cuisiner un bon repas, se battre efficacement, et mourir bravement*. La spécialisation, c'est bon pour les insectes.
+content: >
+    Les idées vivent lorsqu'elles sont **exprimées, transmises, débattues, interprétées, reformulées**. Chaque *position, vision, point de vue, questionnement* doit trouver sa place tout au long de cette chaîne de compréhension.
+
+
+    Échanger avec un autre différent de soi, lui parler, le comprendre, **c'est compliqué, ça prend du temps**, mais c'est indispensable pour retrouver une **entente collective**.
+
+
+    Nous refusons l'élitisme et l'expropriation des savoirs. Il existe des **inégalités naturelles de savoir-faire**, mais elles ne doivent pas être accentuées. À l'isolement et l'expertise académique et technique nous préférons la traduction, la **transmission des compétences** et des expériences pratiques, en particulier dans les domaines stratégiques: *santé, nourriture, énergie, construction, transport, numérique*.
+links: >
+    ###*où apprendre, transmettre un savoir ?*
+
+    - en pratiquant un *«vis ma vie»* des tâches difficiles/ingrates mais utiles au bien public ? assumées à tour de rôle, cela éviterait les concentrations de pouvoir et faciliterait la compréhension mutuelle des situations
+
+    - ...
+
+
+
+---
+title: Réappropriation, émancipation
+subtitle: "Informons-nous, disséquons l'ordre et l'origine des choses"
+slug: reappropriation
+image:
+    url: agropirate.jpg
+    credit: ?
+quote:
+    author: Bernard Charbonneau
+    content: Croire que la technique est neutre, c’est l’être soi-même à son endroit. C’est s’interdire de la juger et donc la laisser chaque jour davantage livrée à elle-même.
+content: >
+    **Réapproprions-nous le monde** sous toutes ses formes: *espaces public et géographique, médiatique, sémantique*
+
+
+    Pour mieux saisir la **distribution des pouvoirs**, intéressons-nous au parcours, au **contexte**, à l'histoire de ce qui nous entoure: *provenance des aliments, acteurs intermédiaires, processus de fabrication, objectifs et intérêts...*
+
+
+    Pour comprendre des situations **de plus en plus complexes**, nous avons besoin de temps et de prudence pour éviter les raccourcis réducteurs, les logiques des discours superficiels et **comprendre les non-dits** qui les accompagnent.
+
+
+    **N'attendons plus des médias** classiques qu'ils nous informent, cherchons des **alternatives indépendantes** et informons-nous **par nous-même** pour nous faire une opinion personnelle réfléchie.
+
+
+    Où sont les zones d'éducation et d'apprentissage gratuites, **émancipatrices et autonomisantes** ?
+links: >
+    ###*où et comment s'informer: médias libres*
+
+    - médias vrac: [Reporterre](http://reporterre.net/), [Bastamag](http://www.bastamag.net/), [la télé libre](http://latelelibre.fr/), [Reporter Citoyens](http://www.reporter-citoyen.fr/), [télé bocal](http://telebocal.org/), [alterjt](http://www.alterjt.tv/), agrégateur [Médias Libres](http://mediaslibres.org/), [CQFD](http://cqfd-journal.org/), [Paris Luttes Info](http://paris-luttes.info/), [IAATA](https://iaata.info), [les mutins de pangée](http://www.lesmutins.org/), [Le 4e Singe](http://4emesinge.com/), [J'ai un doute](http://jaiundoute.com/), [Zango](http://zangomedia.fr/), [informaction](http://www.informaction.info/), [Génération Précaire](https://twitter.com/generationpreca), [Infokiosques](https://www.infokiosques.net/), [Lundi matin](http://www.lundi.am), [le Monde Diplomatique](http://www.monde-diplomatique.fr/), [Canard enchainé](http://lecanardenchaine.fr/), [les Z'indigné(e)s](http://www.les-indignes-revue.fr), [acrimed](http://www.acrimed.org/), [mediapart](http://www.mediapart.fr), [Mr Mondialisation](http://mrmondialisation.org), [le partage](http://partage-le.com/), [primitivi](http://www.primitivi.org/), [l'envolée](http://lenvolee.net/), [fakir](http://www.fakirpresse.info/), [l'impossible](http://www.limpossible.fr/), [article11](http://www.article11.info/), [Jef Klak](http://jefklak.org/), [langue des bois](http://www.lalanguedesbois.ch/la-langue-des-bois/)...
+
+    - [cartographie des personnalités du nucléaire en France](http://greenpeace.fr/facenuke/) par Greenpeace, 
+
+    - cartes géopolitiques de [Bureau d'Etudes](http://bureaudetudes.org/)
+    
+    - [Liens de sang entre entreprises du CAC40](http://www.alternatives-economiques.fr/fic_bdd/article_pdf_fichier/1274372604_cac40_3.swf)
+
+    - la boite à outils ouverte [multibao](http://www.multibao.org/), échanges de fiches pratiques autour des démarches participatives
+    
+    - ...
+
+
+
+---
+title: Récupérations
+subtitle: Capitalisme vert, économie collaborative...
+slug: recuperation
+image:
+    url: PaulRand.jpg
+    credit: Paul Rand
+quote:
+    author: Félix Thiéfaine
+    content: Laissez l'État dans les toilettes où vous l'avez trouvé
+content: >
+    Les grandes **puissances d'argent** ont bien compris comment utiliser à leur compte le jargon séducteur de *l’économie collaborative, de partage, d'horizontalité, de résilience, de liberté d'accès*
+
+
+    Évitons ces nouvelles **formes pernicieuses** de marchandisation, s'immisçant plus encore dans nos vies, cherchant à **monnayer notre quotidien** et à nous mettre toujours plus en concurrence.
+
+
+    Ces nouveaux marchés, apparemment distribués, sont de fait de en plus **centralisés**.
+links: >
+    ###*les faux amis*
+
+    - utiliser le [Covoiturage Libre](http://covoiturage-libre.fr/) et pas *BlaBlaCar* ou *Uber*.
+    
+    - hébergeons-nous par [Couchsurfing](https://www.couchsurfing.com/) et pas *Airbnb*.
+
+    - *Leetchi, Change*, [générosité low-cost](http://www.marianne.net/generosite-low-cost-100233071.html)
+
+    - ...
+
+
+
+---
+title: Sous toutes les formes !
+subtitle: Diversité, multidisciplinarité, contre-récits
+slug: formes_diverses
+image:
+    url: DavidBarth.jpg
+    credit: David Barth
+quote:
+    author: Hervé Le Tellier, dialogues socratiques
+    content: >
+        Pour l'aveugle, l'oiseau chante. Pour le sourd, l'oiseau vole. Qui dit vrai ? Demande au muet.
+content: >
+    Nous pensons qu'il existe toujours une **multitude de formulations** d'un problème et de réponses possibles. Pour mieux saisir le monde,  multiplions les manières de l'aborder: *langues, domaines, dimensions, générations, temporalités*.
+
+
+    Où sont les **contre-récits**, les nouvelles formes de discours et du faire ? diversifions les interprétations: *poétiques, musicales, graphiques, invisibles, absurdes...*
+links: >
+    ###*autres manières de voir le monde*
+
+    - Jérémie Pujau attend qu'on lui lance des œufs: [de la poule ou de l'œuf](http://pouleouoeuf.com/fr)
+
+    - les épuisettes culturelles: [amacca](http://reseauculture21.fr/amacca/le-reseau/), (associations pour le maintien des alternatives en matière de culture et de création artistique), par [comme un poisson dans l'art](http://www.commeunpoissondanslart.fr/)
+
+    - illustrations de [Marie Levesque](http://www.leszillusdemissbean.com/)
+
+    - ...
+

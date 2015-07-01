@@ -60,6 +60,10 @@
 
     <div class="sections" ng-include="layoutTemplate();"></div>
 
+    <div ng-if="settings.dev" class="graph">
+      <div id="sigma-tags"></div>
+    </div>
+
     <div class="footer">
       <div class="content" compile-html="meta.footer"></div>
       <a class="lastupdate" target="_blank" href="{{meta.repo}}">{{meta.lastupdatetext}}<br>{{settings.lastupdate}}</a>

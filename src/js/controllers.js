@@ -27,9 +27,14 @@ angular.module('manifest.controllers', ['underscore','config'])
     
     //console.log("settings:",settings);
     $scope.settings = settings;
+    if($routeParams.forcedev) $scope.settings.dev = true;
     $scope.meta = {};
+    $scope.tags = {};
+    $scope.mentionedTags = {};
+    $scope.links = {};
     $scope.state = {
-      intro: true,
+      intro: !$scope.settings.dev,
+      showgraph: false,
       commenting_slug: null,
       toggle_all: null,
       lang: $routeParams.lang,
@@ -131,6 +136,59 @@ angular.module('manifest.controllers', ['underscore','config'])
     };
 
 
+    ////////////////////////////////////////// TAG GRAPH
+    var loadTagGraph = function() {
+      // sigma test
+      var g = sigma.parsers.gexf(
+        settings.datapath + "tags.gexf",
+        { container: 'sigma-tags' },
+        function(s) {
+          //console.log(s.graph);
+          
+          //s.graph.settings.labelThreshold = 0;
+
+          var ids = {} ;
+          var orphans = [];
+
+          _.each(s.graph.nodes(), function(n) {
+            //console.log(n);
+            var t = n.label;
+            
+            ids[n.label] = n.id;
+
+            if($scope.tags[t] && $scope.links[t]) {
+              n.size = 15 + $scope.links[t].length;
+              //n.label = n.size +" "+ t +" - "+ $scope.tags[t];
+            } else {
+              orphans.push(t);
+              n.size = 1;
+              //n.label = t;
+            }
+          });
+
+          console.log("!! graph nodes non defined:",orphans);
+
+          _.each(s.graph.edges(), function(e) {
+            //console.log(e);
+            //s.graph.dropEdge(e.id);
+            e.color = "rgb(200,200,200)";
+          });
+
+          _.each($scope.templinks, function(l,i) {
+            s.graph.addEdge({
+              id: "new_"+i,
+              source: ids[l[0]],
+              target: ids[l[1]],
+              color: "rgb(200,50,50)"
+            });
+          });
+
+          s.refresh();
+        }
+      );
+    }
+
+
     ////////////////////////////////////////// GET COMMENTS COUNT
     var updateCommentsCount = function(p) {
       var params = {
@@ -168,14 +226,75 @@ angular.module('manifest.controllers', ['underscore','config'])
         });
     };
 
+    var getLinksFromTags = function(tags) {
+      var out = [];
+      _.each(tags, function(t) {
+        out = _.union(out, $scope.links[t]);
+      });
+      return out;
+    }
+
+    $scope.getInjectLinks = function() {
+      $http
+        .get(settings.datapath + "links_"+$scope.state.lang+".yml")
+        .success(function(res) {
+
+          var bloks = res.split('\n\n');
+
+          $scope.templinks = [];
+
+          _.each(bloks, function(l) {
+            var tgs = l.split('\n')[0].match(/\w+/ig);
+            
+            ///// temp observe graph
+            if(tgs && tgs.length>2) {
+              _.each(tgs, function(t1) {
+                _.each(tgs, function(t2) {
+                  if(t1!=t2)
+                    $scope.templinks.push([t1,t2]);
+                });
+              });
+            }
+
+            var htm = md2Html( l.split('\n')[1] );
+            _.each(tgs, function(t) {
+              if(!$scope.links[t]) $scope.links[t] = [];
+              $scope.links[t].push(htm);
+            });
+          });
+
+          if($scope.settings.dev) {
+            console.log("!! official tags:",_.keys($scope.tags));
+            console.log("!! tags in links:",$scope.links);
+            console.log("!! tags in sections:",$scope.mentionedTags);
+            console.log("!! non cited in sections:", _.difference(_.keys($scope.links), _.keys($scope.mentionedTags)));
+            console.log("!! found non-official tags:", _.difference(_.keys($scope.links), _.keys($scope.tags)));
+            console.log("!! found orphan tags:", _.difference(_.keys($scope.tags), _.keys($scope.links)));
+          }
+
+          _.each($scope.paragraphs, function(p) {
+            p.links = getLinksFromTags(p.tags);
+          });
+
+          if($scope.settings.dev) loadTagGraph();
+
+        })
+        .error(function (data, status, headers, config) {
+          console.log("error links",status);
+        });
+    };
 
     ////////////////////////////////////////// GET CONTENTS
+    var sectionsUrl = $scope.settings.dev ?
+      settings.datapath + "sections_"+$scope.state.lang+".yml" :
+      settings.datapath + "contents_"+$scope.state.lang+".yml";
+
     $http
-      .get(settings.datapath + "contents_"+$scope.state.lang+".yml")
+      .get(sectionsUrl)
       .success(function(res) {
         jsyaml.loadAll(res, function(d) {
 
-          if(d.role && d.role=='splash') { // META
+          if(d.role && d.role=='splash') { /////////// META
 
             $scope.meta = d;
             //$scope.meta.about = md2Html($scope.meta.about);
@@ -183,7 +302,10 @@ angular.module('manifest.controllers', ['underscore','config'])
             // for html page meta
             $rootScope.htmlmeta = d.htmlmeta;
 
-          } else { // SECTIONS
+            $scope.tags = d.tags;
+            
+
+          } else { /////////// SECTIONS
 
             //console.log(d);
             d.subtitle = md2Html(d.subtitle);
@@ -192,25 +314,36 @@ angular.module('manifest.controllers', ['underscore','config'])
               d.quote.author = md2Html(d.quote.author);
             }
             d.content = md2Html(d.content);
+            d.tags = d.tags ? d.tags.split(', ') : [];
+            _.each(d.tags, function(t) {
+              $scope.mentionedTags[t] = $scope.mentionedTags[t] ? $scope.mentionedTags[t]+1 : 1;
+            });
             d.links = md2Html(d.links);
             $scope.paragraphs.push(d);
 
           }
         });
+        
+
+        // now fetch links and inject them based on tags
+        if($scope.settings.dev)
+          $scope.getInjectLinks();
 
         // (to improve) init here to trigger the watch on footer content set though compile-html directive
         $scope.state.term = "";
       })
       .error(function (data, status, headers, config) {
-        console.log("error contents",status);
+        console.log("error sections",status);
       });
 
-      // disqus
-      (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//manifestes.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      })();
+
+
+    // disqus
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//manifestes.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
       
 
   }]);

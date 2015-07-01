@@ -1,0 +1,10 @@
+
+<div
+  ng-repeat="p in paragraphs"
+  class="section colored-{{$index%7}}">
+  
+  <div class="image cover" back-img="{{settings.datapath}}media/{{p.image.url}}"></div>
+  <span class="h1 colored-{{$index%7}}" compile-html="p.title"></span>
+  <span class="h2" compile-html="p.subtitle"></span>
+
+</div>

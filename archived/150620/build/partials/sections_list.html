@@ -1,0 +1,60 @@
+<div
+  ng-repeat="p in paragraphs"
+  id="p_{{$index}}"
+  class="paragraph index-{{$index}} colored-{{$index%7}} role-{{p.role}}"
+  ng-class="{
+    searched: state.term && atLeastContains(p),
+    hidden: state.term && !atLeastContains(p),
+    reduced: !(p.opened || state.term.length>0),
+  }">
+  <div
+    class="image cover"
+    back-img="{{settings.datapath}}media/{{p.image.url}}"
+    ng-click="!p.opened && toggleOne(p)">
+    <div class="quote-container">
+      <div class="quote" compile-html="p.quote.content"></div>
+      <div class="author" compile-html="p.quote.author"></div>
+      <div class="imagecredit">image: {{p.image.credit}}</div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div
+      class="titlebar"
+      ng-click="toggleOne(p)">
+      <div
+        class="collapser meta-{{state.toggleall}}"
+        ng-class="{
+          opened: p.opened,
+          down: state.toggleall ? false:!p.opened,
+          up:   state.toggleall ? false:p.opened}"
+        ng-click="toggleAll(!p.opened); $event.stopPropagation();"
+        ng-mouseover="state.toggleall = p.opened ? 'up' : 'down'"
+        ng-mouseout="state.toggleall = null;">
+        <div class="triangle"></div>
+      </div>
+      <div class="h1">
+        <img class="icon" ng-if="p.role=='meta'" src="{{settings.assets}}/images/info.svg"/>
+        <span compile-html="p.title"></span>
+      </div>
+    </div>
+
+    <div class="h2" compile-html="p.subtitle"></div>
+    <div class="content" compile-html="p.content"></div>
+    <div class="links" compile-html="p.links"></div>
+    <div
+      ng-if="p.opened || (state.term && atLeastContains(p))"
+      ng-click="openComments(p);"
+      class="discuss">
+      <div class="rect">
+        <div class="triangle"></div>
+          {{meta.discuss.text}} <span ng-if="p.commentcount">({{p.commentcount}})</span> >
+      </div>
+    </div>
+  </div>
+
+  <div class="comments" ng-class="{active:state.commenting_slug==p.slug}">
+    <div ng-if="state.commenting_slug==p.slug" class="escape" ng-click="state.commenting_slug = null;">< {{meta.discuss.back}}</div>
+    <div ng-if="state.commenting_slug==p.slug" id="disqus_thread"></div>
+  </div>
+</div>

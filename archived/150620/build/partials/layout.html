@@ -1,0 +1,69 @@
+<div
+  class="intro"
+  ng-class="{hidden:!state.intro}">
+  <div class="setlangs">
+    <a class="setlang" ng-class="{active: state.lang=='es'}" href="http://manifest.es/#/es">es</a>
+    <a class="setlang" ng-class="{active: state.lang=='fr'}" href="http://manifest.es/#/fr">fr</a>
+  </div>
+  <h1>{{meta.intro.title}}</h1>
+  <div class="description">{{meta.intro.description}}</div>
+  <img class="image" src="{{settings.datapath}}/manifestes_splash.jpg"/>
+
+  <div class="foot">
+    <div class="keywords">{{meta.intro.keywords}}</div>
+    <div class="button color-{{getRandomInt()}}" ng-click="state.intro=false;">{{meta.intro.enter}}</div>
+  </div>
+</div>
+
+<div class="container" ng-class="{hidden:state.intro}">
+
+  <div class="header">
+
+    <div class="menu">
+
+      <div class="arrow back" ng-click="state.intro = true;"></div>
+      <div class="setlangs">
+        <a class="setlang" ng-class="{active: state.lang=='es'}" href="http://manifest.es/#/es">es</a>
+        <a class="setlang" ng-class="{active: state.lang=='fr'}" href="http://manifest.es/#/fr">fr</a>
+      </div>
+
+      <div class="input">
+        <input
+          type="text"
+          placeholder="{{meta.searchplacehoder}}"
+          ng-model="state.term"
+          ng-click="$event.stopPropagation();"
+          ng-change="filterUpdate();"
+          class="filter"
+          ng-class="{highlight:state.term}"/>
+        <img
+          ng-if="state.term.length>0"
+          class="clear"
+          src="{{settings.assets}}/images/clear.svg"
+          ng-click="clickTag();"/>
+      </div>
+    </div>
+
+    <div class="tags" ng-class="{visible:state.showtags}">
+      <div
+        ng-repeat="t in meta.searchtags"
+        class="tag"
+        ng-class="{selected: state.term==t.search}"
+        ng-click="clickTag(t); $event.stopPropagation();">
+        #{{t.name}}
+      </div>
+    </div>
+
+  </div>
+
+  <div class="wrapper layout-{{state.layout}}">
+
+    <div class="sections" ng-include="layoutTemplate();"></div>
+
+    <div class="footer">
+      <div class="content" compile-html="meta.footer"></div>
+      <a class="lastupdate" target="_blank" href="{{meta.repo}}">{{meta.lastupdatetext}}<br>{{settings.lastupdate}}</a>
+    </div>
+
+  </div>
+</div>

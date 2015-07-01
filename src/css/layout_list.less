@@ -22,6 +22,15 @@
       background: rgba(255, 252, 0, 0.48);
     }
 
+    /* ---------------------- FEATURED SECTIONS */
+    &.role-featured .block {
+      background: #322B27;
+      .h1 {
+        color: white;
+        background: #322B27;
+      }
+    }
+
     /* ---------------------- COMMENTS */
     .comments {
       z-index: 999;
@@ -193,7 +202,24 @@
           opacity: 1;
           .transition(all @openDur);
         }
+
+        .tagcount {
+          float: right;
+          margin: 4px;
+          font-size: 0.7em;
+        }
+        .tag {
+          float: right;
+          margin: 2px;
+          padding: 2px 4px;
+          border-radius: 2px;
+          
+          background: #6A6C67;
+          color: white;
+          font-size: 0.65em;
+        }
       }
+
       .h2 {
         padding: @pad;
         border-bottom: 1px solid rgba(0, 0, 0, 0.3);
@@ -225,7 +251,7 @@
         padding: @pad;
         padding-bottom: 40px; /* space for discuss link */
         background: rgba(110, 110, 110, 0.1);
-        font-size: 0.9em;
+        font-size: 0.8em;
         line-height: 1.5em;
         opacity: 0.9;
         ul {

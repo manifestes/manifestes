@@ -36,12 +36,19 @@
       <div class="h1">
         <img class="icon" ng-if="p.role=='meta'" src="{{settings.assets}}/images/info.svg"/>
         <span compile-html="p.title"></span>
+        <span ng-if="settings.dev" class="tag" ng-repeat="t in p.tags">{{t}}</span>
+        <span ng-if="settings.dev" class="tagcount">{{p.links.length}}</span>
       </div>
     </div>
 
     <div class="h2" compile-html="p.subtitle"></div>
     <div class="content" compile-html="p.content"></div>
-    <div class="links" compile-html="p.links"></div>
+    <div ng-if="!settings.dev" class="links" compile-html="p.links"></div>
+    <div ng-if="settings.dev && p.links" class="links">
+      <ul>
+        <li ng-repeat="l in p.links" compile-html="l"></li>
+      </ul>
+    </div>
     <div
       ng-if="p.opened || (state.term && atLeastContains(p))"
       ng-click="openComments(p);"

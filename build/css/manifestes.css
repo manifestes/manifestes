@@ -760,6 +760,19 @@ a:hover {
 .header:hover .tags {
   top: 58px;
 }
+.graph {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+.graph #sigma-tags {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border: 1px grey solid;
+}
 .footer {
   background: white;
   padding: 40px;
@@ -795,6 +808,7 @@ a:hover {
   -o-transition: all 0.2s;
   -ms-transition: all 0.2s;
   transition: all 0.2s;
+  /* ---------------------- FEATURED SECTIONS */
   /* ---------------------- COMMENTS */
   /* ---------------------- IMAGE */
   /* ---------------------- QUOTE */
@@ -804,6 +818,13 @@ a:hover {
   /* searched words */
   padding: 2px 4px;
   background: rgba(255, 252, 0, 0.48);
+}
+.wrapper.layout-list .paragraph.role-featured .block {
+  background: #322B27;
+}
+.wrapper.layout-list .paragraph.role-featured .block .h1 {
+  color: white;
+  background: #322B27;
 }
 .wrapper.layout-list .paragraph .comments {
   z-index: 999;
@@ -984,6 +1005,20 @@ a:hover {
   -ms-transition: all 0.2s;
   transition: all 0.2s;
 }
+.wrapper.layout-list .paragraph .block .h1 .tagcount {
+  float: right;
+  margin: 4px;
+  font-size: 0.7em;
+}
+.wrapper.layout-list .paragraph .block .h1 .tag {
+  float: right;
+  margin: 2px;
+  padding: 2px 4px;
+  border-radius: 2px;
+  background: #6A6C67;
+  color: white;
+  font-size: 0.65em;
+}
 .wrapper.layout-list .paragraph .block .h2 {
   padding: 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
@@ -1015,7 +1050,7 @@ a:hover {
   padding-bottom: 40px;
   /* space for discuss link */
   background: rgba(110, 110, 110, 0.1);
-  font-size: 0.9em;
+  font-size: 0.8em;
   line-height: 1.5em;
   opacity: 0.9;
 }
@@ -1102,11 +1137,12 @@ a:hover {
   box-sizing: border-box;
   display: inline-block;
   position: relative;
-  width: 240px;
-  height: 220px;
-  margin: 10px;
+  width: 490px;
+  height: 320px;
+  margin: 20px;
   vertical-align: top;
   overflow: hidden;
+  background: #322b27;
   cursor: pointer;
   font-family: 'Lato', sans-serif;
 }
@@ -1117,42 +1153,88 @@ a:hover {
   right: 0;
   top: 0;
   bottom: 0;
-  margin: 7px;
+  margin: 0px;
   overflow: hidden;
+  opacity: 0.2;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  transition: opacity 0.2s;
 }
 .wrapper.layout-grid .section .h1 {
   box-sizing: border-box;
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 60px;
-  margin: 7px;
-  padding: 7px;
+  left: 50%;
+  top: 50%;
+  padding: 10px;
+  -webkit-transition: transform 0.2s;
+  -moz-transition: transform 0.2s;
+  -o-transition: transform 0.2s;
+  -ms-transition: transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: white;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1.2em;
+  font-size: 1.8em;
+  font-style: italic;
+  line-height: 1.4em;
 }
 .wrapper.layout-grid .section .h2 {
+  box-sizing: border-box;
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-  margin: 20px;
+  padding: 25px;
   font-family: "Inconsolata", sans-serif;
-  font-size: 1em;
-  text-align: left;
+  font-size: 1.1em;
+  line-height: 1.3em;
+  text-align: center;
   color: white;
-  display: none;
+  -webkit-transition: transform 0.2s;
+  -moz-transition: transform 0.2s;
+  -o-transition: transform 0.2s;
+  -ms-transition: transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transition-delay: 0.1s;
+  -moz-transition-delay: 0.1s;
+  -ms-transition-delay: 0.1s;
+  -o-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  -webkit-transform: translate(0, 100%);
+  -moz-transform: translate(0, 100%);
+  -ms-transform: translate(0, 100%);
+  -o-transform: translate(0, 100%);
+  transform: translate(0, 100%);
 }
 .wrapper.layout-grid .section:hover {
-  background: #322b27;
+  z-index: 9999;
 }
 .wrapper.layout-grid .section:hover .image {
-  opacity: 0.1;
+  opacity: 1;
+}
+.wrapper.layout-grid .section:hover .h1 {
+  -webkit-transform: translate(-50%, -80%);
+  -moz-transform: translate(-50%, -80%);
+  -ms-transform: translate(-50%, -80%);
+  -o-transform: translate(-50%, -80%);
+  transform: translate(-50%, -80%);
+  background: white;
+  color: #322b27;
 }
 .wrapper.layout-grid .section:hover .h2 {
-  display: block;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  background: #322b27;
 }
 body.layout-print {
   position: relative;
@@ -1230,9 +1312,16 @@ body.layout-print .footer {
 }
 .wrapper.layout-print .section .block .links {
   margin-left: 20px;
+  margin-top: 5px;
   font-size: 0.6em;
   max-height: 160px;
   overflow: hidden;
+}
+.wrapper.layout-print .section .block .links ul {
+  list-style: none;
+}
+.wrapper.layout-print .section .block .links li p {
+  margin: 0px;
 }
 /* small screens overhidden hacks ! */
 @media (max-width: 600px) {

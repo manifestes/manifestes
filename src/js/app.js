@@ -33,6 +33,12 @@ angular.module('manifest', [
       // reloadOnSearch: false
     });
 
+    $routeProvider.when('/:lang/:layout/:forcedev', {
+      templateUrl: settings.assets + '/partials/layout.html',
+      controller: 'manifestController'
+      // reloadOnSearch: false
+    });
+
     $routeProvider.otherwise({
       redirectTo: '/fr'
     });
