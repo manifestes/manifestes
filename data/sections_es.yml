@@ -42,7 +42,7 @@ searchtags:
     -   name: lenguaje
         search: lenguaje|palabra\w*|hablar
 tags:
-    manifest: directement lié au projet manifest (liste de discussion, code, twitter)
+    manifest: projet manifeste(s) (liste de discussion, code, twitter)
     group: collectifs, réseaux, assos, ... existant(e)s
     constat: se rendre compte que le monde ne tourne pas rond
     history: (néo)colonialisme, impérialisme, passif historique
@@ -55,32 +55,35 @@ tags:
     emancipation: se reapproprier (outils, politique, connaissance)
     education: école, université, recherche
     learn: se former, se renseigner sur un sujet
+    teach: enseigner, partager son savoir
     autonomy: autogestion, moins de délégation
     diy: faire soi-même
-    plurality: diversité des mondes
-    money: argent roi, monnaie, finance, dette
-    basicincome: revenu de base inconditionnel
     tech: techniques, savoir-faire
     web: internet, monde numérique
     tool: outil, tutorial pratique
+    plurality: diversité des mondes
+    companies: grandes multinationales
+    money: argent roi, monnaie, finance, dette
+    basicincome: revenu de base inconditionnel
     boycott: ne pas utiliser, acheter, visiter
-    slow: prendre son temps
+    slow: ralentissement, décroissance, prendre son temps
     recup: recycler, réutiliser
     local: à coté de chez soi
     act: agir en pratique dans son quotidien
     fun: amusons-nous !
+    love: amour toujours
     meet: se rencontrer, discuter, partager
+    debate: discuter, s'accorder, s'engueuler
     solidarity: aider
-    place: lieu physique, tiers-lieux
     space: lié à l'espace public, urbain
     list: annuaire, base de données/liens
-    place: lieu physique où aller
+    place: adresse, lieu physique où aller, tiers-lieux
     time: agenda, rdv
-    politics: mouvement politique
-    philo: philosophie
-    media: information
-    news: actualité plutôt chaude
-    article: textes, articles, livres
+    politics: mouvement politique, représentation
+    philo: philosophie, reflexion théorique
+    media: information, journalisme
+    news: actualité dans le présent
+    text: textes, articles, livres
     image: dessin, graphique
     audio: musique, radio, son
     video: video, film, documentaire
@@ -91,8 +94,8 @@ tags:
     culture: art, culture, poésies, musique
     design: design
     health: corps, maladie, santé, sport, psychologie
-    commons: les communs
-    agriculture: cultiver
+    commons: les communs, open(res)sources
+    agriculture: cultiver, semences
     eat: nourriture, manger, cuisiner
     object: matériel, mobilier, machines
     sleep: dormir, habiter, chez soi
