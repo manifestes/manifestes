@@ -42,7 +42,7 @@ searchtags:
     -   name: langage
         search: langage|mot\w*|parler
 tags:
-    manifest: à propos = projet manifeste(s): liste de discussion, code, twitter
+    manifest: à propos = projet manifeste(s) (liste de discussion, code, twitter)
     group: collectifs = réseaux, coopératives, associatives existant(e)s
     constat: constat = se rendre compte que le monde ne tourne pas rond
     history: histoire = (néo)colonialisme, impérialisme, passif historique
