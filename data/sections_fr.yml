@@ -42,65 +42,66 @@ searchtags:
     -   name: langage
         search: langage|mot\w*|parler
 tags:
-    manifest: projet manifeste(s) (liste de discussion, code, twitter)
-    group: collectifs, réseaux, assos, ... existant(e)s
-    constat: se rendre compte que le monde ne tourne pas rond
-    history: (néo)colonialisme, impérialisme, passif historique
-    guilty: les responsables, les ennemis, on a leurs noms
-    subsist: souffrance, survie, too much
-    genre: patriarcat, féminisme, genre
-    alienation: aliené.e.s, conditionné.e.s
-    pub: publicité
-    control: société de contrôle, fichage, cloud, surveillance
-    emancipation: se reapproprier (outils, politique, connaissance)
-    education: école, université, recherche
-    learn: se former, se renseigner sur un sujet
-    teach: enseigner, partager son savoir
-    autonomy: autogestion, moins de délégation
-    diy: faire soi-même
-    tech: techniques, savoir-faire
-    web: internet, monde numérique
-    tool: outil, tutorial pratique
-    plurality: diversité des mondes
-    companies: grandes multinationales
-    money: argent roi, monnaie, finance, dette
-    basicincome: revenu de base inconditionnel
-    boycott: ne pas utiliser, acheter, visiter
-    slow: ralentissement, décroissance, prendre son temps
-    recup: recycler, réutiliser
-    local: à coté de chez soi
-    act: agir en pratique dans son quotidien
-    fun: amusons-nous !
-    love: amour toujours
-    meet: se rencontrer, discuter, partager
-    debate: discuter, s'accorder, s'engueuler
-    solidarity: aider
-    space: lié à l'espace public, urbain
-    list: annuaire, base de données/liens
-    place: adresse, lieu physique où aller, tiers-lieux
-    time: agenda, rdv
-    politics: mouvement politique, représentation
-    philo: philosophie, reflexion théorique
-    media: information, journalisme
-    news: actualité dans le présent
-    text: textes, articles, livres
-    image: dessin, graphique
-    audio: musique, radio, son
-    video: video, film, documentaire
-    energy: énergie
-    words: langage, récits, mots, traductions
-    earth: environnement, pollution, climat
-    greenwash: capitalisme vert, récupérations
-    culture: art, culture, poésies, musique
-    design: design
-    health: corps, maladie, santé, sport, psychologie
-    commons: les communs, open(res)sources
-    agriculture: cultiver, semences
-    eat: nourriture, manger, cuisiner
-    object: matériel, mobilier, machines
-    sleep: dormir, habiter, chez soi
-    move: transport, déplacement
-    work: emploi, chomage, activité remunérée
+    manifest: à propos = projet manifeste(s): liste de discussion, code, twitter
+    group: collectifs = réseaux, coopératives, associatives existant(e)s
+    constat: constat = se rendre compte que le monde ne tourne pas rond
+    history: histoire = (néo)colonialisme, impérialisme, passif historique
+    guilty: ennemis = les responsables, les ennemis, on a leurs noms
+    subsist: subsistance = souffrance, survie, too much
+    genre: patriarcat = patriarcat, féminisme, genre
+    alienation: aliénation = aliené.e.s, conditionné.e.s
+    pub: publicité = publicité
+    control: contrôle = fichage, cloud, surveillance
+    emancipation: émancipation = se reapproprier (outils, politique, connaissance)
+    education: éducation = école, université, recherche
+    learn: apprendre = se former, se renseigner sur un sujet
+    teach: enseigner = partager son savoir
+    autonomy: autogestion = autonomie, moins de délégation
+    diy: faire soi-même = réappropriation, fabriquer, construire
+    tech: techniques = savoir-faire
+    web: internet = monde numérique
+    tool: outils = guides pratiques, tutoriaux
+    plurality: diversité = multiplicité des mondes
+    companies: multinationales = puissances d'argent
+    money: argent = monnaie, finance, dette
+    basicincome: revenu de base = inconditionnel
+    boycott: boycott = ne PAS utiliser/acheter/visiter
+    slow: ralentissements = décroissance, temps long
+    recup: récup' = recyclage, réutilisation
+    local: local = à coté de chez soi
+    act: action = en pratique dans son quotidien
+    fun: humour = amusons-nous !
+    love: amour = toujours
+    dream: rêve = utopies
+    meet: rencontres = rencontrer, découvrir, partager
+    debate: discuter = s'accorder, s'engueuler, débattre
+    solidarity: solidarité = aide pratique
+    space: espace public = espaces partagés, ville
+    list: annuaire = base de données, liens
+    place: lieux = où ça ? adresses, tiers-lieux
+    time: agenda = quand ? calendriers, évenements
+    politics: politique = politique et représentation
+    philo: philosophie = réflexion, théorie
+    media: médias = information, journalisme
+    news: news = actualité chaude
+    text: textes = articles, livres, textes
+    image: images = dessins, graphiques
+    audio: sons = radios, musique
+    video: films = videos, films, documentaires
+    energy: énergie = éolien, électrique, solaire
+    words: langage = récits, mots, interprétations
+    earth: terre = environnement, climat, pollutions
+    greenwash: capitalisme vert = récupérations, greenwashing
+    culture: culture = art, culture, création, écriture
+    design: design = processus, formes, gameplay
+    health: santé = corps, maladie, santé, sport, psychologie
+    commons: communs = open(res)sources
+    agriculture: agriculture = cultures, semences
+    object: objets = matériel, mobilier, machines
+    eat: manger = cuisiner, se nourrir
+    sleep: habiter = logement, habitat, espace privé
+    move: se déplacer = transports
+    work: travail = emploi, chômage, activité remunérée
 lastupdatetext: dernière modification
 footer: >
     ##*voir aussi*
