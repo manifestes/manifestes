@@ -1,10 +1,20 @@
 
 <div
   ng-repeat="p in paragraphs"
-  class="section colored-{{$index%7}}">
+  class="section colored-{{$index%7}}"
+  ng-class="{paneled:p.paneled}"
+  ng-click="p.paneled = !p.paneled;">
   
-  <div class="image cover" back-img="{{settings.datapath}}media/{{p.image.url}}"></div>
-  <span class="h1" compile-html="p.title"></span>
-  <span class="h2" compile-html="p.subtitle"></span>
+  <div class="panel">
+    <ul>
+      <li ng-repeat="l in p.links" compile-html="l"></li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <div class="image cover" back-img="{{settings.datapath}}media/{{p.image.url}}"></div>
+    <span class="h1" compile-html="p.title"></span>
+    <span class="h2" compile-html="p.subtitle"></span>
+  </div>
 
 </div>

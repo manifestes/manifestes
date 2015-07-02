@@ -22,9 +22,17 @@
     <div class="menu">
 
       <div class="arrow back" ng-click="state.intro = true;"></div>
+
       <div class="setlangs">
         <a class="setlang" ng-class="{active: state.lang=='es'}" href="http://manifest.es/#/es">es</a>
         <a class="setlang" ng-class="{active: state.lang=='fr'}" href="http://manifest.es/#/fr">fr</a>
+      </div>
+      
+      <div ng-if="settings.dev" class="setlayout">
+        <a href="./#/{{state.lang}}/grid/test">grid</a>
+        <a href="./#/{{state.lang}}/list/test">list</a>
+        <a href="./#/{{state.lang}}/links/test">links</a>
+        <a href="./#/{{state.lang}}/print/test">print</a>
       </div>
 
       <div class="input">
@@ -44,14 +52,17 @@
       </div>
     </div>
 
-    <div class="tags" ng-class="{visible:state.showtags}">
+    <div ng-if="settings.dev" class="searchtags" ng-class="{visible:state.showtags}">
       <div
         ng-repeat="t in meta.searchtags"
-        class="tag"
+        class="searchtag"
         ng-class="{selected: state.term==t.search}"
         ng-click="clickTag(t); $event.stopPropagation();">
-        #{{t.name}}
+        {{t.name}}
       </div>
+    </div>
+    <div ng-if="settings.dev" class="graphtags">
+      <div id="sigma-tags"></div>
     </div>
 
   </div>
@@ -59,10 +70,6 @@
   <div class="wrapper layout-{{state.layout}}">
 
     <div class="sections" ng-include="layoutTemplate();"></div>
-
-    <div ng-if="settings.dev" class="graph">
-      <div id="sigma-tags"></div>
-    </div>
 
     <div class="footer">
       <div class="content" compile-html="meta.footer"></div>

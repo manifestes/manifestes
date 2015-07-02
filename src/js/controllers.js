@@ -31,10 +31,10 @@ angular.module('manifest.controllers', ['underscore','config'])
     $scope.meta = {};
     $scope.tags = {};
     $scope.mentionedTags = {};
-    $scope.links = {};
+    $scope.linksArray = [];
+    $scope.linksByTag = {};
     $scope.state = {
       intro: !$scope.settings.dev,
-      showgraph: false,
       commenting_slug: null,
       toggle_all: null,
       lang: $routeParams.lang,
@@ -136,59 +136,6 @@ angular.module('manifest.controllers', ['underscore','config'])
     };
 
 
-    ////////////////////////////////////////// TAG GRAPH
-    var loadTagGraph = function() {
-      // sigma test
-      var g = sigma.parsers.gexf(
-        settings.datapath + "tags.gexf",
-        { container: 'sigma-tags' },
-        function(s) {
-          //console.log(s.graph);
-          
-          //s.graph.settings.labelThreshold = 0;
-
-          var ids = {} ;
-          var orphans = [];
-
-          _.each(s.graph.nodes(), function(n) {
-            //console.log(n);
-            var t = n.label;
-            
-            ids[n.label] = n.id;
-
-            if($scope.tags[t] && $scope.links[t]) {
-              n.size = 15 + $scope.links[t].length;
-              //n.label = n.size +" "+ t +" - "+ $scope.tags[t];
-            } else {
-              orphans.push(t);
-              n.size = 1;
-              //n.label = t;
-            }
-          });
-
-          console.log("!! graph nodes non defined:",orphans);
-
-          _.each(s.graph.edges(), function(e) {
-            //console.log(e);
-            //s.graph.dropEdge(e.id);
-            e.color = "rgb(200,200,200)";
-          });
-
-          _.each($scope.templinks, function(l,i) {
-            s.graph.addEdge({
-              id: "new_"+i,
-              source: ids[l[0]],
-              target: ids[l[1]],
-              color: "rgb(200,50,50)"
-            });
-          });
-
-          s.refresh();
-        }
-      );
-    }
-
-
     ////////////////////////////////////////// GET COMMENTS COUNT
     var updateCommentsCount = function(p) {
       var params = {
@@ -229,7 +176,7 @@ angular.module('manifest.controllers', ['underscore','config'])
     var getLinksFromTags = function(tags) {
       var out = [];
       _.each(tags, function(t) {
-        out = _.union(out, $scope.links[t]);
+        out = _.union(out, $scope.linksByTag[t]);
       });
       return out;
     }
@@ -239,44 +186,53 @@ angular.module('manifest.controllers', ['underscore','config'])
         .get(settings.datapath + "links_"+$scope.state.lang+".yml")
         .success(function(res) {
 
-          var bloks = res.split('\n\n');
+          var singlelink = res.split('\n\n');
 
-          $scope.templinks = [];
+          $scope.templinks4graph = [];
 
-          _.each(bloks, function(l) {
+          _.each(singlelink, function(l) {
             var tgs = l.split('\n')[0].match(/\w+/ig);
             
-            ///// temp observe graph
+            // (test/dev) just to see links over graph
             if(tgs && tgs.length>2) {
               _.each(tgs, function(t1) {
                 _.each(tgs, function(t2) {
                   if(t1!=t2)
-                    $scope.templinks.push([t1,t2]);
+                    $scope.templinks4graph.push([t1,t2]);
                 });
               });
             }
 
             var htm = md2Html( l.split('\n')[1] );
+
+            // store links as array
+            $scope.linksArray.push({
+              content: htm,
+              tags: tgs
+            });
+
+            // store links indexed by tag
             _.each(tgs, function(t) {
-              if(!$scope.links[t]) $scope.links[t] = [];
-              $scope.links[t].push(htm);
+              if(!$scope.linksByTag[t]) $scope.linksByTag[t] = [];
+              $scope.linksByTag[t].push(htm);
             });
           });
 
           if($scope.settings.dev) {
-            console.log("!! official tags:",_.keys($scope.tags));
-            console.log("!! tags in links:",$scope.links);
-            console.log("!! tags in sections:",$scope.mentionedTags);
-            console.log("!! non cited in sections:", _.difference(_.keys($scope.links), _.keys($scope.mentionedTags)));
-            console.log("!! found non-official tags:", _.difference(_.keys($scope.links), _.keys($scope.tags)));
-            console.log("!! found orphan tags:", _.difference(_.keys($scope.tags), _.keys($scope.links)));
+            console.log("!! declared tags:",_.keys($scope.tags));
+            console.log("!! all links:",$scope.linksArray);
+            console.log("!! nb of links by tag:",$scope.linksByTag);
+            console.log("!! tags used in sections:",$scope.mentionedTags);
+            console.log("!! non used in sections:", _.difference(_.keys($scope.linksByTag), _.keys($scope.mentionedTags)));
+            console.log("!! non-declared tags:", _.difference(_.keys($scope.linksByTag), _.keys($scope.tags)));
+            console.log("!! declared tags with 0 link", _.difference(_.keys($scope.tags), _.keys($scope.linksByTag)));
           }
 
           _.each($scope.paragraphs, function(p) {
             p.links = getLinksFromTags(p.tags);
           });
 
-          if($scope.settings.dev) loadTagGraph();
+          if($scope.settings.dev) loadTagGraph($scope);
 
         })
         .error(function (data, status, headers, config) {
@@ -336,6 +292,10 @@ angular.module('manifest.controllers', ['underscore','config'])
         console.log("error sections",status);
       });
 
+
+    // AFTER EVERYTHING IS HERE
+    if($scope.settings.dev && $routeParams.layout=="links")
+      loadLinksGraph($scope);
 
 
     // disqus

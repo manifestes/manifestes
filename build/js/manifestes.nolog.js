@@ -2938,7 +2938,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'01 July 2015 - 12:19'})
+.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'02 July 2015 - 4:50'})
 
 ;
 ;
@@ -2976,10 +2976,10 @@ angular.module('manifest.controllers', ['underscore','config'])
     $scope.meta = {};
     $scope.tags = {};
     $scope.mentionedTags = {};
-    $scope.links = {};
+    $scope.linksArray = [];
+    $scope.linksByTag = {};
     $scope.state = {
       intro: !$scope.settings.dev,
-      showgraph: false,
       commenting_slug: null,
       toggle_all: null,
       lang: $routeParams.lang,
@@ -3081,59 +3081,6 @@ angular.module('manifest.controllers', ['underscore','config'])
     };
 
 
-    ////////////////////////////////////////// TAG GRAPH
-    var loadTagGraph = function() {
-      // sigma test
-      var g = sigma.parsers.gexf(
-        settings.datapath + "tags.gexf",
-        { container: 'sigma-tags' },
-        function(s) {
-          //console.log(s.graph);
-          
-          //s.graph.settings.labelThreshold = 0;
-
-          var ids = {} ;
-          var orphans = [];
-
-          _.each(s.graph.nodes(), function(n) {
-            //console.log(n);
-            var t = n.label;
-            
-            ids[n.label] = n.id;
-
-            if($scope.tags[t] && $scope.links[t]) {
-              n.size = 15 + $scope.links[t].length;
-              //n.label = n.size +" "+ t +" - "+ $scope.tags[t];
-            } else {
-              orphans.push(t);
-              n.size = 1;
-              //n.label = t;
-            }
-          });
-
-          0;
-
-          _.each(s.graph.edges(), function(e) {
-            //console.log(e);
-            //s.graph.dropEdge(e.id);
-            e.color = "rgb(200,200,200)";
-          });
-
-          _.each($scope.templinks, function(l,i) {
-            s.graph.addEdge({
-              id: "new_"+i,
-              source: ids[l[0]],
-              target: ids[l[1]],
-              color: "rgb(200,50,50)"
-            });
-          });
-
-          s.refresh();
-        }
-      );
-    }
-
-
     ////////////////////////////////////////// GET COMMENTS COUNT
     var updateCommentsCount = function(p) {
       var params = {
@@ -3174,7 +3121,7 @@ angular.module('manifest.controllers', ['underscore','config'])
     var getLinksFromTags = function(tags) {
       var out = [];
       _.each(tags, function(t) {
-        out = _.union(out, $scope.links[t]);
+        out = _.union(out, $scope.linksByTag[t]);
       });
       return out;
     }
@@ -3184,31 +3131,40 @@ angular.module('manifest.controllers', ['underscore','config'])
         .get(settings.datapath + "links_"+$scope.state.lang+".yml")
         .success(function(res) {
 
-          var bloks = res.split('\n\n');
+          var singlelink = res.split('\n\n');
 
-          $scope.templinks = [];
+          $scope.templinks4graph = [];
 
-          _.each(bloks, function(l) {
+          _.each(singlelink, function(l) {
             var tgs = l.split('\n')[0].match(/\w+/ig);
             
-            ///// temp observe graph
+            // (test/dev) just to see links over graph
             if(tgs && tgs.length>2) {
               _.each(tgs, function(t1) {
                 _.each(tgs, function(t2) {
                   if(t1!=t2)
-                    $scope.templinks.push([t1,t2]);
+                    $scope.templinks4graph.push([t1,t2]);
                 });
               });
             }
 
             var htm = md2Html( l.split('\n')[1] );
+
+            // store links as array
+            $scope.linksArray.push({
+              content: htm,
+              tags: tgs
+            });
+
+            // store links indexed by tag
             _.each(tgs, function(t) {
-              if(!$scope.links[t]) $scope.links[t] = [];
-              $scope.links[t].push(htm);
+              if(!$scope.linksByTag[t]) $scope.linksByTag[t] = [];
+              $scope.linksByTag[t].push(htm);
             });
           });
 
           if($scope.settings.dev) {
+            0;
             0;
             0;
             0;
@@ -3221,7 +3177,7 @@ angular.module('manifest.controllers', ['underscore','config'])
             p.links = getLinksFromTags(p.tags);
           });
 
-          if($scope.settings.dev) loadTagGraph();
+          if($scope.settings.dev) loadTagGraph($scope);
 
         })
         .error(function (data, status, headers, config) {
@@ -3281,6 +3237,10 @@ angular.module('manifest.controllers', ['underscore','config'])
         0;
       });
 
+
+    // AFTER EVERYTHING IS HERE
+    if($scope.settings.dev && $routeParams.layout=="links")
+      loadLinksGraph($scope);
 
 
     // disqus
@@ -3381,3 +3341,138 @@ angular.module('manifest.filters', [])
       return list.join(", ");
     }
   });
+;
+
+////////////////////////////////////////// LINKS GRAPH
+var loadLinksGraph = function(scope) {
+  sigma.classes.graph.addMethod('neighbors', function(nodeId) {
+    var k,
+        neighbors = {},
+        index = this.outNeighborsIndex[nodeId] || {};
+    for (k in index)
+      neighbors[k] = this.nodesIndex[k];
+    return neighbors;
+  });
+
+  var g = sigma.parsers.gexf(
+    scope.settings.datapath + "links_"+scope.state.lang+".gexf",
+    {
+      container: 'sigma-links',
+      settings: {
+        labelThreshold: 7,
+        //defaultLabelColor: "rgb(200,200,200)",
+        zoomingRatio: 1.5,
+        doubleClickZoomingRatio: 1.7,
+        defaultLabelSize: 12,
+        hideEdgesOnMove: true,
+        drawEdges: false,
+        //labelColor: "node",
+      }
+    },
+    function(s) {
+      s.graph.nodes().forEach(function(n) {
+        n.originalColor = n.color;
+      });
+      // s.graph.edges().forEach(function(e) {
+      //   e.originalColor = e.color;
+      // });
+
+      0;
+
+      s.bind('clickNode', function(event) {
+        var nodeId = event.data.node.id,
+            toKeep = s.graph.neighbors(nodeId);
+        toKeep[nodeId] = event.data.node;
+
+        s.graph.nodes().forEach(function(n) {
+          if (toKeep[n.id])
+            n.color = n.originalColor;
+          else
+            n.color = '#eee';
+        });
+        // s.graph.edges().forEach(function(e) {
+        //   if (toKeep[e.source] && toKeep[e.target]) 
+        //     e.color = e.originalColor;
+        //   else {
+        //     e.color = 'rgba(200,200,200,0)';
+        //   }
+        // });
+        s.refresh();
+      });
+      s.bind('clickStage', function(e) {
+        s.graph.nodes().forEach(function(n) {
+          n.color = n.originalColor;
+        });
+        // s.graph.edges().forEach(function(e) {
+        //   e.color = e.originalColor;
+        // });
+
+        // Same as in the previous event:
+        s.refresh();
+      });
+
+    });
+}
+
+////////////////////////////////////////// TAG GRAPH
+var loadTagGraph = function(scope) {
+  var g = sigma.parsers.gexf(
+    scope.settings.datapath + "tags.gexf",
+    {
+      container: 'sigma-tags',
+      settings: {
+        labelThreshold: 0,
+        //defaultLabelColor: "rgb(200,200,200)",
+        zoomingRatio: 1.4,
+        doubleClickZoomingRatio: 1.7,
+        defaultLabelSize: 12,
+      }
+    },
+    function(s) {
+      //console.log(s.graph);
+      
+      s.bind('clickNode', function(event) {
+        0;
+      });
+
+
+      var ids = {} ;
+      var orphans = [];
+
+      _.each(s.graph.nodes(), function(n) {
+        //console.log(n);
+        var t = n.label;
+        
+        ids[n.label] = n.id;
+
+        if(scope.tags[t] && scope.linksByTag[t]) {
+          n.size = 15 + scope.linksByTag[t].length;
+          //n.label = n.size +" "+ t +" - "+ scope.tags[t];
+        } else {
+          orphans.push(t);
+          n.size = 1;
+          //n.label = t;
+        }
+      });
+
+      0;
+
+      _.each(s.graph.edges(), function(e) {
+        //console.log(e);
+        //s.graph.dropEdge(e.id);
+        e.color = "rgb(200,200,200)";
+      });
+
+      _.each(scope.templinks4graph, function(l,i) {
+        s.graph.addEdge({
+          id: "new_"+i,
+          source: ids[l[0]],
+          target: ids[l[1]],
+          color: "rgb(200,50,50)"
+        });
+      });
+
+      s.refresh();
+    }
+  );
+}

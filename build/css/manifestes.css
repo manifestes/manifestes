@@ -522,6 +522,16 @@ a:hover {
 .container.hidden {
   top: 100%;
 }
+/* ---------------------- SET LAYOUT */
+.setlayout {
+  pointer-events: all;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 22px;
+  margin-right: 100px;
+  font-size: 0.8em;
+}
 /* ---------------------- SET LANG */
 .setlangs {
   pointer-events: all;
@@ -638,10 +648,11 @@ a:hover {
 .header {
   z-index: 99;
   box-sizing: border-box;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
+  height: 58px;
   background: white;
   text-align: center;
 }
@@ -722,7 +733,7 @@ a:hover {
 .header .menu .button div {
   font-size: 0.7em;
 }
-.header .tags {
+.header .searchtags {
   z-index: 50;
   box-sizing: border-box;
   position: absolute;
@@ -741,7 +752,7 @@ a:hover {
   transition: top 0.2s;
   top: 0;
 }
-.header .tags .tag {
+.header .searchtags .searchtag {
   box-sizing: border-box;
   display: table-cell;
   vertical-align: middle;
@@ -752,26 +763,30 @@ a:hover {
   font-size: 0.7em;
   word-break: break-all;
 }
-.header .tags .tag:hover,
-.header .tags .tag.selected {
+.header .searchtags .searchtag:hover,
+.header .searchtags .searchtag.selected {
   color: black;
   background: white;
 }
-.header:hover .tags {
+.header .graphtags {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  bottom: 0;
+  background: white;
+}
+.header .graphtags #sigma-tags {
+  height: 300px;
+}
+.header .graphtags #sigma-tags canvas {
+  left: 0px;
+  height: 300px;
+}
+.header:hover .searchtags {
   top: 58px;
 }
-.graph {
-  position: relative;
-  width: 100%;
-  height: 400px;
-}
-.graph #sigma-tags {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  border: 1px grey solid;
+.header:hover .graphtags {
+  bottom: -300px;
 }
 .footer {
   background: white;
@@ -794,7 +809,6 @@ a:hover {
 }
 .wrapper.layout-list {
   box-sizing: border-box;
-  margin-top: 58px;
 }
 .wrapper.layout-list .paragraph {
   position: relative;
@@ -1129,7 +1143,6 @@ a:hover {
 }
 .wrapper.layout-grid {
   box-sizing: border-box;
-  margin-top: 58px;
   padding-top: 45px;
   background: #322b27;
 }
@@ -1141,12 +1154,18 @@ a:hover {
   height: 320px;
   margin: 20px;
   vertical-align: top;
-  overflow: hidden;
   background: #322b27;
   cursor: pointer;
   font-family: 'Lato', sans-serif;
 }
-.wrapper.layout-grid .section .image {
+.wrapper.layout-grid .section .main {
+  position: absolute;
+  width: 490px;
+  height: 320px;
+  overflow: hidden;
+  background: black;
+}
+.wrapper.layout-grid .section .main .image {
   box-sizing: border-box;
   position: absolute;
   left: 0;
@@ -1156,13 +1175,13 @@ a:hover {
   margin: 0px;
   overflow: hidden;
   opacity: 0.2;
-  -webkit-transition: opacity 0.2s;
-  -moz-transition: opacity 0.2s;
-  -o-transition: opacity 0.2s;
-  -ms-transition: opacity 0.2s;
-  transition: opacity 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
 }
-.wrapper.layout-grid .section .h1 {
+.wrapper.layout-grid .section .main .h1 {
   box-sizing: border-box;
   position: absolute;
   left: 50%;
@@ -1185,7 +1204,7 @@ a:hover {
   font-style: italic;
   line-height: 1.4em;
 }
-.wrapper.layout-grid .section .h2 {
+.wrapper.layout-grid .section .main .h2 {
   box-sizing: border-box;
   position: absolute;
   left: 0;
@@ -1213,11 +1232,38 @@ a:hover {
   -o-transform: translate(0, 100%);
   transform: translate(0, 100%);
 }
+.wrapper.layout-grid .section .panel {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  background: white;
+  text-align: left;
+  font-size: 0.6em;
+  padding: 10px 15px;
+  opacity: 0;
+  top: 0;
+  -webkit-transition: top 0.2s;
+  -moz-transition: top 0.2s;
+  -o-transition: top 0.2s;
+  -ms-transition: top 0.2s;
+  transition: top 0.2s;
+}
+.wrapper.layout-grid .section .panel ul {
+  list-style: none;
+}
+.wrapper.layout-grid .section.paneled .panel {
+  top: 100%;
+}
 .wrapper.layout-grid .section:hover {
   z-index: 9999;
 }
 .wrapper.layout-grid .section:hover .image {
   opacity: 1;
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  transform: scale(1.02);
 }
 .wrapper.layout-grid .section:hover .h1 {
   -webkit-transform: translate(-50%, -80%);
@@ -1235,6 +1281,38 @@ a:hover {
   -o-transform: translate(0, 0);
   transform: translate(0, 0);
   background: #322b27;
+}
+.wrapper.layout-grid .section:hover.paneled .panel {
+  opacity: 1;
+}
+.wrapper.layout-grid .section.paneled .h2 {
+  background: #827167;
+}
+.wrapper.layout-links {
+  box-sizing: border-box;
+  font-size: 0.8em;
+}
+.wrapper.layout-links .sections {
+  height: 100%;
+}
+.panel.graph {
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  width: 500px;
+  height: 100%;
+}
+.panel.graph #sigma-links {
+  height: 100%;
+}
+.panel.graph #sigma-links canvas {
+  left: 0px;
+}
+.panel.links {
+  margin-left: 500px;
+  padding: 20px 10px;
+  text-align: left;
+  font-size: 0.8em;
 }
 body.layout-print {
   position: relative;
