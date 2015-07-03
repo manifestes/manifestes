@@ -2938,7 +2938,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'02 July 2015 - 4:50'})
+.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'03 July 2015 - 4:33'})
 
 ;
 ;
@@ -2975,6 +2975,7 @@ angular.module('manifest.controllers', ['underscore','config'])
     if($routeParams.forcedev) $scope.settings.dev = true;
     $scope.meta = {};
     $scope.tags = {};
+    $scope.tagsContents = {};
     $scope.mentionedTags = {};
     $scope.linksArray = [];
     $scope.linksByTag = {};
@@ -3171,6 +3172,7 @@ angular.module('manifest.controllers', ['underscore','config'])
             0;
             0;
             0;
+            0;
           }
 
           _.each($scope.paragraphs, function(p) {
@@ -3204,6 +3206,12 @@ angular.module('manifest.controllers', ['underscore','config'])
             $rootScope.htmlmeta = d.htmlmeta;
 
             $scope.tags = d.tags;
+            _.each(d.tags, function(v,k) {
+              $scope.tagsContents[k] = {
+                label: v.split(' = ')[0],
+                description: v.split(' = ')[1],
+              };
+            });
             
 
           } else { /////////// SECTIONS
@@ -3443,11 +3451,12 @@ var loadTagGraph = function(scope) {
         //console.log(n);
         var t = n.label;
         
+        n.label = scope.tagsContents[t].label;
+            
         ids[n.label] = n.id;
 
         if(scope.tags[t] && scope.linksByTag[t]) {
           n.size = 15 + scope.linksByTag[t].length;
-          //n.label = n.size +" "+ t +" - "+ scope.tags[t];
         } else {
           orphans.push(t);
           n.size = 1;
