@@ -1,0 +1,2513 @@
+{
+    "quotes": [
+        {
+            "content": "Ce n'est pas parce que les choses sont difficiles que nous n'osons pas, mais parce que nous n'osons pas qu'elles sont difficiles",
+            "k": 0,
+            "author": "Sénèque",
+            "type": "author"
+        },
+        {
+            "content": "",
+            "k": 1,
+            "author": "Infokiosque Générations futur",
+            "type": "img",
+            "img": "quotes/reflechir_desobeir.jpg"
+        },
+        {
+            "content": "Car enfin le trait le plus visible dans l'homme juste est de ne point vouloir du tout gouverner les autres, et de se gouverner seulement lui-même.",
+            "k": 2,
+            "author": "Alain",
+            "type": "author"
+        },
+        {
+            "content": "",
+            "k": 3,
+            "img": "quotes/alexgross.jpg",
+            "type": "img"
+        },
+        {
+            "content": "Cette société nous pose question, nous empêche de vivre. Parfois elle nous fait vomir, toujours elle nous révolte. Capitalisme, patriarcat, rapports de domination, désastres écologiques, forces étatiques, de quoi faire frémir toute notre bile. Parfois nous voudrions cultiver cette bile, comment dire, l’approfondir, la relever, la garnir de données, d’arguments, d’idées d’action. Mieux connaître ce que nous critiquons pour mieux savoir ce que nous vomissons et comment nous le vomissons.",
+            "k": 4,
+            "author": "[Infokiosques.net](www.infokiosques.net), qu'est-ce qu'un infokiosque ?",
+            "type": "author"
+        },
+        {
+            "content": "",
+            "k": 5,
+            "img": "quotes/boycott.jpg",
+            "type": "img"
+        },
+        {
+            "content": "l'avenir est là ! mais les gens ne le voient pas ... ils attendent l'horizon au loin",
+            "k": 6,
+            "author": "Chris Marker, Le Joli Mai, 1h28min",
+            "type": "author"
+        },
+        {
+            "content": "",
+            "k": 7,
+            "img": "quotes/cadeaunucleaire.jpg",
+            "type": "img"
+        },
+        {
+            "content": "Être de gauche ou de droite, ce n'est pas une question de morale, mais de perception du monde.",
+            "k": 8,
+            "author": "Deleuze",
+            "type": "author"
+        },
+        {
+            "content": "",
+            "k": 9,
+            "img": "quotes/warsheep.jpg",
+            "type": "img"
+        },
+        {
+            "content": "Bien que nous nous exprimons ici sur un site internet, nous pensons que la technique ne constitue pas un meilleur moyen de s'exprimer et de s'organiser que par le passé. D'une part parce qu'un message est aujourd’hui noyé dans une masse considérable d’autres messages et qu'il a toutes les chances de passer inaperçu. D'autre part parce qu'un site internet, un forum électronique... constituent des moyens de communication désincarnés. Ne recourir qu'à eux revient à légitimer la quête obsessionnelle du progrès technique que nous nous efforçons au contraire de placer sous les feux de la critique.",
+            "k": 10,
+            "author": "Manifeste [Technologos.fr](www.technologos.fr)",
+            "type": "author"
+        },
+        {
+            "content": "",
+            "k": 11,
+            "img": "quotes/choix.jpg",
+            "type": "img"
+        },
+        {
+            "content": "Maître, la jeunesse est dans la rue. Que faire ?\n\nRien. C'est une illusion d'optique: la jeunesse est avant tout dans la tête.",
+            "k": 12,
+            "author": "Hervé Letellier",
+            "type": "author"
+        },
+        {
+            "content": "",
+            "k": 13,
+            "img": "quotes/divertirdominer.jpg",
+            "type": "img"
+        },
+        {
+            "content": "Militer, c'est se battre pour sa position. c'est en quelque sorte attaquer les positions d'un adversaire, lui prendre du terrain.",
+            "k": 14,
+            "author": "",
+            "type": "author"
+        },
+        {
+            "content": "",
+            "k": 15,
+            "img": "quotes/zoneconfort.jpg",
+            "type": "img"
+        },
+        {
+            "content": "Comment diable un homme peut-il se réjouir d'être réveillé à 6h30 du matin par une alarme, bondir hors de son lit, avaler sans plaisir une tartine, chier, pisser, se brosser les dents et les cheveux, se débattre dans le trafic pour trouver une place, où essentiellement il produit du fric pour quelqu'un d'autre, qui en plus lui demande d'être reconnaissant pour cette opportunité ?",
+            "k": 16,
+            "author": "Charles Bukowski",
+            "type": "author"
+        },
+        {
+            "content": "",
+            "k": 17,
+            "img": "quotes/lapin_attention_pub.jpg",
+            "type": "img"
+        },
+        {
+            "content": "Stop à la soupe néolibérale\nqui désigne précaires et étrangers\ncomme la cause de nos maux\nquand une poignée d'oligarques\nspolient de leur droits essentiels\n99% de l'humanité !\nle système formate nos désirs et nos pensées\ns'immisce dans notre intimité\nempoisonne notre santé\ncondamne à l'exclusion les indisciplinés\nau seul profit de ces privilégiés",
+            "k": 18,
+            "author": "Manifeste des [Engraineurs](http://www.collectif-lesengraineurs.com/)",
+            "type": "author"
+        },
+        {
+            "content": "",
+            "k": 19,
+            "author": "Mana Neyestani",
+            "type": "img",
+            "img": "quotes/carotte_dhonneur.jpg"
+        },
+        {
+            "content": "La vie est courte, il faut savoir prendre son temps !",
+            "k": 20,
+            "author": "anonyme",
+            "type": "author"
+        },
+        {
+            "content": "A la différence d'autres, nous observons que tout en pâtissant du travail (la fatigue, le stress au travail et dans les transports...), les humains l'acceptent sans broncher, si ce n'est via un \"mouvement social\" de temps en temps. Ils obtempèrent \"contre mauvaise fortune bon coeur\" car ils se font à l'idée que le travail est une valeur, il constitue pour eux le \"prix du bonheur\". Ils l'endurent comme un peuple accepterait la condition d'esclavage et, de temps à autre, se risquerait à négocier le poids des chaînes avec ses maîtres.\n \nA la différence de beaucoup d'autres, nous considérons que si les humains accordaient une réelle importance au temps que leur fait \"gagner\" la technique, ils ne vivraient pas le chômage comme un drame ou une tragédie mais comme une bénédiction.",
+            "k": 21,
+            "author": "Manifeste [Technologos.fr](www.technologos.fr)",
+            "type": "author"
+        },
+        {
+            "content": "",
+            "k": 22,
+            "img": "quotes/greenwashing.jpg",
+            "type": "img"
+        },
+        {
+            "content": "Ceux qui luttent ne sont pas sûrs de gagner, mais ceux qui ne luttent pas ont déjà perdu.",
+            "k": 23,
+            "author": "Berthold Brecht",
+            "type": "author"
+        },
+        {
+            "content": "",
+            "k": 24,
+            "img": "quotes/lesgens.jpg",
+            "type": "img"
+        },
+        {
+            "content": "Résister ∞\n\nRéenchanter ∞\n\nRalentir ∞\n\nRefonder ∞\n\nRelocaliser ∞\n\nRedistribuer ∞\n\nRevivre ∞",
+            "k": 25,
+            "author": "[Rassemblement pour le bien vivre](http://www.rassemblement-r.be/)",
+            "type": "author"
+        },
+        {
+            "content": "",
+            "k": 26,
+            "img": "quotes/aspire_tv.jpg",
+            "type": "img"
+        },
+        {
+            "content": "nous pensons que pour oublier les vicissitudes du travail, les humains s'abandonnent aux biens de consommation, au point d'ériger la consommation en \"culture\".\n\nla publicité n'est pas un simple moyen de propagande, c'est l'instrument d'un culte.",
+            "k": 27,
+            "author": "Manifeste [Technologos.fr](www.technologos.fr)",
+            "type": "author"
+        },
+        {
+            "content": "",
+            "k": 28,
+            "img": "quotes/people_power.jpg",
+            "type": "img"
+        },
+        {
+            "content": "Si tu es neutre en situation d'injustice, alors tu as choisi le coté de l'oppresseur.",
+            "k": 29,
+            "author": "Desmond Tutu",
+            "type": "author"
+        },
+        {
+            "content": "Le capitalisme est un système social, autrement dit la façon dont sont organisées les choses et les personnes, et qui possède et qui ne possède pas, qui commande et qui obéit. Dans le capitalisme, il y a des gens qui ont de l’argent, autrement dit du capital, et des usines et des magasins et des champs et plein de choses, et il y en a d’autres qui n’ont rien à part leur force et leur savoir pour travailler ; et dans le capitalisme commandent ceux qui ont l’argent et les choses, tandis qu’obéissent ceux qui n’ont rien d’autre que leur force de travail.\n\nAlors, le capitalisme ça veut dire qu’il y a un groupe réduit de personnes qui possèdent de grandes richesses. Et pas parce qu’ils auraient gagné un prix ou qu’ils auraient trouvé un trésor ou qu’ils auraient hérité de leur famille, mais parce qu’ils obtiennent ces richesses en exploitant le travail de beaucoup d’autres. Autrement dit, le capitalisme repose sur l’exploitation des travailleurs, un peu comme s’il les pressait comme des citrons pour en tirer tous les profits possibles.",
+            "k": 30,
+            "author": "[Déclaration de la forêt Lacandone](http://cspcl.ouvaton.org/spip.php?article204)",
+            "type": "author"
+        },
+        {
+            "content": "Tant que des gens mourront de faim aux portes des palais, il n'y aura rien de stable dans les institutions humaines",
+            "k": 31,
+            "author": "rue de Paris, Montreuil",
+            "type": "author"
+        },
+        {
+            "content": "",
+            "k": 32,
+            "img": "quotes/agropirate.jpg",
+            "type": "img"
+        },
+        {
+            "content": "Ce n'est pas la technique qui nous asservit, c'est le sacré transféré à la technique.",
+            "k": 33,
+            "author": "Jacques Ellul, Les nouveaux possédés, 1973",
+            "type": "author"
+        },
+        {
+            "content": "Il faut bien le reconnaître: nous sommes mal armés pour procéder à cette nécessaire révolution de la pensée. Dans \"pour sauver la planète, sortez du capitalisme\", Kempf souligne la difficulté: il appartient a la jeune génération de devoir \"réinventer des solidarités, quand le conditionnement social lui répète sans cesse que l'individu est tout\". Il fait remarquer que le discours de l'écologie marchande s'adresse toujours à des individus: on y parle des \"bons gestes\" que chacun est censé accomplir pour \"sa\" planète, dans \"sa\" maison...\" Où sont les propositions actives rendant possible et désirable de faire autrement, c'est-à-dire d'abord ensemble, les uns pour mais surtout avec les autres ?\" interroge en écho Stengers. Où sont les choix concrets et négociés collectivement? Où sont les récits peuplant les imaginations, partageant réussites et apprentissages ? Où sont, à l'école, les modes de travail qui créeraient le goût de la coopération exigeante et l'expérience de la force d'un collectif qui œuvre a réussir tous ensemble, contre l'évaluation qui sépare et juge ? Il faut se souvenir de tout cela, c'est-à-dire de la manière dont nous sommes formés activés, capturés, vidés.\"",
+            "k": 34,
+            "author": "Mona Chollet, Manière de voir 136, p. 93",
+            "type": "author"
+        },
+        {
+            "content": "Il y a trois sortes de violence. La première, mère de toutes les autres, est la violence institutionnelle, celle qui légalise et perpétue les dominations, les oppressions et les exploitations, celle qui écrase et lamine des millions d’hommes dans ses rouages silencieux et bien huilés.\n\nLa seconde est la violence révolutionnaire, qui naît de la volonté d’abolir la première.\n\nLa troisième est la violence répressive, qui a pour objet d’étouffer la seconde en se faisant l’auxiliaire et la complice de la première violence, celle qui engendre toutes les autres.\n\nIl n’y a pas de pire hypocrisie de n’appeler violence que la seconde, en feignant d’oublier la première, qui la fait naître, et la troisième qui la tue.",
+            "k": 35,
+            "author": "Dom Helder",
+            "type": "author"
+        },
+        {
+            "content": "On ne règle pas un problème en utilisant le système de pensée qui l'a engendré.",
+            "k": 36,
+            "author": "Albert Enstein",
+            "type": "author"
+        },
+        {
+            "content": "Croire que la technique est neutre, c’est l’être soi-même à son endroit. C’est s’interdire de la juger et donc la laisser chaque jour davantage livrée à elle-même.",
+            "k": 37,
+            "author": "Bernard Charbonneau",
+            "type": "author"
+        },
+        {
+            "content": "Si vous n'êtes pas vigilants, les médias arriveront à vous faire détester les gens opprimés et aimer ceux qui les oppriment.",
+            "k": 38,
+            "author": "Malcolm X",
+            "type": "author"
+        },
+        {
+            "content": "",
+            "k": 39,
+            "img": "quotes/surenchere_secu.jpg",
+            "type": "img"
+        },
+        {
+            "content": "Nous n'acceptons du monde que ce qui renaît à la vie.\nNos désirs n'auraient pas de fin si nous ne mettions tant de soin à leur en assigner. L'ignorance dont nous les entourons abrite le plus souvent la vocation de nous abîmer en regrets. C'est ainsi que la mort vient avant l'heure.\nA mieux connaître nos obligations que nos privilèges, nous souscrivons plus volontiers aux lois qui nous dégradent qu'à la revendication de plaisirs qui nous confortent à vivre. Piètre consolation qui voit dans la mort ce qui épuise la vie et non ce que la vie épuise.\"\n(...)\n\"L'état de résignation, d'où viennent tous les malheurs, a accoutumé de regarder le bonheur comme une brève éclaircie dans le ciel de l'ordinaire tyrannie. Les moments heureux ont toujours été reçus avec cette méfiance qu'éveillent l'insolite clémence de la fatalité et le caprice de ceux qui s'arrogent le pouvoir de les dispenser. Rien ne changera que dès l'instant où nous nous mettrons tout à la fois dans la tête et dans le corps que le bonheur ne s'acquiert pas comme une prime de retraite, qu'il relève d'une création permanente où il ne doit rien qu'à lui-même.\"\n(...)\n\"Nous sommes les enfants d'un monde dévasté, qui s'essaient à renaître dans un monde à créer. Apprendre à devenir humain est la seule radicalité.\"",
+            "k": 40,
+            "author": "Raoul Vaneigem",
+            "type": "author"
+        },
+        {
+            "content": "",
+            "k": 41,
+            "img": "quotes/thankjesusfood.jpg",
+            "type": "img"
+        },
+        {
+            "content": "Personne n’a le droit d’exiger de la mer qu’elle porte tous les bateaux, ou du vent qu’il gonfle perpétuellement toutes les voiles. De même, personne n’a le droit d’exiger de moi que ma vie consiste à être prisonnier de certaines fonctions. Pour moi, ce n’est pas le devoir avant tout mais : la vie avant tout. Tout comme les autres hommes, je dois avoir droit à des moments où je puisse faire un pas de côté et sentir que je ne suis pas seulement une partie de cette masse que l’on appelle la population du globe, mais aussi une unité autonome.\n\nPar contre, parmi les exigences qui pèsent sur l’homme, je peux voir lesquelles sont absurdes et lesquelles sont inéluctables. Selon moi, une sorte de liberté est perdue pour toujours ou pour longtemps. C’est la liberté qui vient de la capacité de posséder son propre élément. Le poisson possède le sien, de même que l’oiseau et que l’animal terrestre. Thoreau avait encore la forêt de Walden – mais où est maintenant la forêt où l’être humain puisse prouver qu’il est possible de vivre en liberté en dehors des formes figées de la société ?",
+            "k": 42,
+            "author": "Stig Dagerman, Notre besoin de consolation est impossible à rassasier (1952)",
+            "type": "author"
+        },
+        {
+            "content": "",
+            "k": 43,
+            "img": "quotes/lan1.jpg",
+            "type": "img"
+        },
+        {
+            "content": "Nous déléguons tous nos pouvoirs aux puissances d'argent: s'informer, se nourrir, se déplacer, communiquer, il n'y a plus une seule chose quotidienne que nous soyons capable d'assumer par nos propres moyens. Il est temps de réapprendre à vivre dans notre propre milieu.",
+            "k": 44,
+            "author": "anonyme",
+            "type": "author"
+        },
+        {
+            "content": "L’utopie concrête ne part pas de rien même si une bonne dose d’innocence maintenue est nécessaire à son énonciation, il y a donc des preuves qu’il arrive que du sens apparaisse, que l’idée de vivre ensemble s’impose à tous. L’idée de réenchanter le monde se nourrit de ces traces, de ces preuves qui sont des preuves de la volonté, qui vous vient par effraction de sens, par excès de mémoire heureuse, par décision de vie. J’affirme donc qu’il faut préparer une insurrection du sens.",
+            "k": 45,
+            "author": "Roland Castro",
+            "type": "author"
+        },
+        {
+            "content": "Planter les graines d’un esprit de résistance contre les agissements nocifs pour l’environnement et l’Humanité par une interpellation directe des citoyens.\nFaire germer chez tous les citoyens l’idée qu’une transition vers des pratiques respectueuses des équilibres naturels et des humains est possible.\nCultiver par des actions collectives les alternatives, en faisant le lien avec les spécialistes, les instituts de recherche et les médias indépendants, les associations et les citoyens organisés.\nRécolter l’unité en fédérant l’ensemble des citoyens.",
+            "k": 46,
+            "author": "Manifeste des [Engraineurs](http://www.collectif-lesengraineurs.com)",
+            "type": "author"
+        },
+        {
+            "content": "La république de mon esprit se situe à l'extrême gauche de mon imagination.",
+            "k": 47,
+            "author": "Keynes",
+            "type": "author"
+        },
+        {
+            "content": "",
+            "k": 48,
+            "img": "quotes/distributeur_prie.jpg",
+            "type": "img"
+        },
+        {
+            "content": "Libérez l’action politique de toute forme de paranoïa unitaire et totalisante.\n\nFaites croître l’action, la pensée et les désirs par prolifération, juxtaposition et disjonction, plutôt que par subdivision et hiérarchisation pyramidale.\n\nAffranchissez-vous des vieilles catégories du Négatif (la loi, la limite, la castration, le manque, la lacune) que la pensée occidentale a si longtemps tenu sacré en tant que forme de pouvoir et mode d’accès à la réalité. Préférez ce qui est positif et multiple, la différence à l’uniformité, les flux aux unités, les agencements mobiles aux systèmes. Considérez que ce qui est productif n’est pas sédentaire mais nomade.\n\nN’imaginez pas qu’il faille être triste pour être militant, même si la chose qu’on combat est abominable. C’est le lien du désir à la réalité (et non sa fuite dans les formes de la représentation) qui possède une force révolutionnaire.",
+            "k": 49,
+            "author": "Michel Foucault, à propos d’Anti-Oedipe de Gilles Deleuze et Félix Guattari",
+            "type": "author"
+        },
+        {
+            "content": "N’utilisez pas la pensée pour donner à une pratique politique une valeur de Vérité; ni l’action politique pour discréditer une pensée, comme si elle n’était que pure spéculation. Utilisez la pratique politique comme un intensificateur de la pensée, et l’analyse comme un multiplicateur des formes et des domaines d’intervention de l’action politique.\n\nN’exigez pas de la politique qu’elle rétablisse les “droits” de l’individu tels que la philosophie les a définis. L’individu est le produit du pouvoir. Ce qu’il faut, c’est “désindividualiser” par la multiplication et le déplacement, l’agencement de combinaisons différentes. Le groupe ne doit pas être le lien organique qui unit des individus hiérarchisés, mais un constant générateur de “désindividualisation”.\n\nNe tombez pas amoureux du pouvoir.",
+            "k": 50,
+            "author": "Michel Foucault, à propos d’Anti-Oedipe de Gilles Deleuze et Félix Guattari",
+            "type": "author"
+        },
+        {
+            "content": "L' art  est  une  arme\nde  construction  massive !",
+            "k": 51,
+            "author": "intermittents",
+            "type": "author"
+        },
+        {
+            "content": "Les médias ont su donner des dimensions monstrueuses à l’universel désir de stupidité qui sommeille même au fond de l’intellectuel le plus élitiste. Ce phénomène est capable de détruire une société, de rendre dérisoire tout effort politique. A quoi bon s’échiner à réformer l’école et l’Université ? Le travail éducatif est saccagé par la bêtise médiatique, la bouffonnerie érigée en moyen d’expression, le déferlement des valeurs de l’argent, de l’apparence et de l’individualisme étroit diffusées par la publicité, ultime raison d’être des grands groupes médiatiques. \n\nLes dirigeants des chaînes privées ne sont pas toujours ou pas seulement des imbéciles. Ce sont aussi des malfaiteurs. On admet qu’une nourriture ou qu’un air viciés puissent être néfastes au corps. Il y a des représentations qui polluent l’esprit.",
+            "k": 52,
+            "author": "Pierre Jourde, La machine à abrutir, Monde diplomatique, 2008",
+            "type": "author"
+        },
+        {
+            "content": "",
+            "k": 53,
+            "img": "quotes/trashphones.jpg",
+            "type": "img"
+        },
+        {
+            "content": "Les symptômes de la crise sont particulièrement visibles dans nos sociétés matériellement sur-développées, mais en voie de sous-développement sur le plan affectif, éthique et spirituel. En effet, nos sociétés, de plus en plus fascinées par les technologies de communication souffrent en réalité d’une triple rupture de communication : avec le cosmos et la nature, dans le rapport avec nous-mêmes (intériorité, sagesse, méditation) et dans le rapport à autrui.",
+            "k": 54,
+            "author": "Préface de Patrick Viveret, [Ecosociétal](http://www.ecosocietal.org/)",
+            "type": "author"
+        },
+        {
+            "content": "Il n'y a pas de recette formelle: il n'y a que de nouvelles questions posées par la société, auxquelles il faut donner une forme telle qu'elle éveille chez le spectateur la joie d'envisager des réponses différentes de celles proposées par le monde où il vit. Une forme joueuse qui contraint à l'étonnement, déshabitue des fausses évidences, engage à douter de la pérennité de l'ordre existant, aide à désirer se libérer de ce qui empêche l'humain de vivre plus amplement.\n\nCe qui donne... de la joie.",
+            "k": 55,
+            "author": "Evelyne Pieiller, Manière de voir 136, p.90",
+            "type": "author"
+        }
+    ],
+    "thinks": [
+        {
+            "content": "Nous sommes des **humain.e.s ordinaires**.\n\nNous sommes chargé.e.s d'**identités multiples** et **riches de nos contradictions**.\n\nNous sommes **patient.e.s** et **déterminé.e.s.**\n\nNous **nous définissons par nos actes**.",
+            "dept": 0,
+            "k": 0,
+            "pk": -1,
+            "title": "nous, êtres humains",
+            "type": "title"
+        },
+        {
+            "content": "Vivant dans des villes européennes **du *nord***, nous sommes **conscients de la chance relative** que nous avons eu (école gratuite, services publics, sécurité alimentaire, etc...), mais surtout **du poids de responsabilité meurtrière** que nous portons, de la catastrophe que nous sommes.\n\n**Nous fuyons l'ingérence** prétentieuse et manipulatrice dont nous héritons vis-à-vis des pays **du *sud***. Pays que *nous croyons aider*, mais que nous exploitons par prosélytisme forcené de la «démocratie - croissance» dans le seul but d'accroître notre main-mise des ressources.",
+            "dept": 1,
+            "k": 0,
+            "pk": 0,
+            "title": "responsables du nord «développé»",
+            "type": "title"
+        },
+        {
+            "content": "Êtres sociaux et sensibles, infiniment complexes, nous savons que notre humanité nous rend **capables du meilleur comme du pire**.\n\nNous acceptons voire stimulons nos sensibilités, pulsions, folies, passions.\n\nSelon nos interlocuteurs et les circonstances, nous déployons une **multitude de personnalités**, qui nous font penser et agir différemment.\n\nNous pensons qu'il est urgent de mieux **nous connaître nous-mêmes**, pour saisir comment des structures de pouvoir et d'argent arrivent à nous contrôler et à nous soumettre.",
+            "dept": 1,
+            "k": 1,
+            "pk": 0,
+            "title": "êtres de chair, contradictoires",
+            "type": "title"
+        },
+        {
+            "content": "Nous vivons dans un monde traversé, perçu, vécu, interprété par de multiples, plurielles, **diverses réalités**, qui se superposent ou s'affrontent.\n\nNous croyons qu'il existera **toujours des inégalités et des violences**. Ces conflits internes et externes sont normaux, signes de confrontation d'altérités et de multiplicité des mondes.\n\nNous pensons cependant qu'un équilibre a été perdu et nous cherchons à **rétablir la balance**.\n\nNous cherchons **ceux qui partagent les idées** esquissées ici pour les discuter et les mettre en œuvre, car nous savons que **nous ne sommes pas seuls**.",
+            "dept": 1,
+            "k": 2,
+            "pk": 0,
+            "title": "retrouvons un équilibre collectif",
+            "type": "title"
+        },
+        {
+            "content": "Nous sommes **optimistes**, mais nous constatons outré.e.s  **l'état catastrophique du monde**.\n\nAussi bien dans les rapports que nous avons **entre nous humains** que vis-à-vis des **êtres non-humains** qui nous entourent.\n\nNous **n'attendons plus** de solutions venues d'ailleurs.\n\nNous cherchons nous-mêmes des **stratégies concrètes d'alternatives**.",
+            "dept": 0,
+            "k": 1,
+            "pk": -1,
+            "title": "dérangé.e.s par ce monde",
+            "type": "title"
+        },
+        {
+            "content": "Nous n'en pouvons plus du gaspillage alimentaire, de la boulimie consumériste et de notre **sous-développement affectif**, éthique, spirituel.\n\nNous n'en pouvons plus de la *croissance* et de l'**économisation de toutes les activités humaines**.\n\nNous ne voulons plus des logiques guerrières de la domination et de la compétition, de la captation des savoirs et du sens, de la possession des biens et de l’autre.\n\nNous ne voulons plus compenser la **pauvreté des projets de vie** par l'**excitation de l'avoir** (consommer, posséder, dominer) et du **divertissement**.",
+            "dept": 1,
+            "k": 0,
+            "pk": 1,
+            "title": "on en a marre",
+            "type": "title"
+        },
+        {
+            "content": "Tandis que les catastrophes naturelles ou évènement historiques brutaux nous plongent dans des **états émotionnels passagers et stéréotypés** (*mon dieu, une épidémie de choléra !*), les évolutions plus lentes de nos société se déroulent sans qu'on puisse en **mesurer les conséquences à long terme** (ondes, publicité, malbouffe, etc...).\n\nComme nous l'ont prouvé l'histoire et les conditions dramatiques de vie de certains, **nous pourrions certes survivre** à des situations bien pires.\n\nMais nous ne sommes plus prêt.e.s à ***survivre*** ou **subsister** à tout prix.\n\nNous pensons que le pire est derrière nous. Nous voulons **vivre**.",
+            "dept": 1,
+            "k": 1,
+            "pk": 1,
+            "title": "supporter longtemps le pire ?",
+            "type": "title"
+        },
+        {
+            "content": "**Altruistes** ou simplement parents, nous sommes **responsables** de ce que nous laissons aux générations suivantes.\n\n- **quelle société** ? Nos enfants grandissent avec nous. Inspirés de nos comportements, ils se construisent sur les références que nous leur laissons. *Quels enfants* laisserons-nous *à notre planète* ?\n\n- **quelle écologie** ? *Quelle planète*, quel rapport à la nature et au vivant laisserons-nous *à nos enfants* ?",
+            "dept": 1,
+            "k": 2,
+            "pk": 1,
+            "title": "ce qu'on laisse à nos enfants",
+            "type": "title"
+        },
+        {
+            "content": "À contre-courant des **dogmes individualistes de la société de consommation**.\n\nNous décidons de repenser notre manière d'**être au monde**.",
+            "dept": 0,
+            "k": 2,
+            "pk": -1,
+            "title": "des postures convergentes",
+            "type": "title"
+        },
+        {
+            "content": "Nous **faisons le tri** parmi ce qui nous entoure, pour diminuer notre dépendance aux structures de pouvoir et d'argent et redevenir **maîtres de nos propres vies**.\n\nConvaincus de l'importance de **l'éducation**, l'art, l'histoire, la vulgarisation scientifique pour favoriser l'**ouverture aux autres** et au monde, nous pensons que le **lien** est plus important que le bien, le **soin** plus que le résultat, la **création** plus que la consommation.\n\nNous cherchons à provoquer et à rejoindre des moments qui permettent des **échanges sur d'autres fréquences**.",
+            "dept": 1,
+            "k": 0,
+            "pk": 2,
+            "title": "à quoi on tient vraiment ?",
+            "type": "title"
+        },
+        {
+            "content": "Nous fuyons ***la* politique** comme  institution de pouvoir et de luttes pour sa conquête.\n\nNous cherchons cependant à entretenir ou rétablir ***le* politique**, par les relations que nous avons dans notre quotidien entre voisins, collègues, amis.\n\nNous pensons que la richesse d'un collectif provient plus des **échanges** et des **expériences** de terrain qu'il permet que de sa structure organisationnelle.",
+            "dept": 1,
+            "k": 1,
+            "pk": 2,
+            "title": "rétablissons le politique",
+            "type": "title"
+        },
+        {
+            "content": "Nous cherchons à comprendre et à analyser ensemble nos **situations quotidiennes** pour nous entraider et composer des projets et **stratégies collectives concrètes**\n\n- *soutenables* (à long terme)\n- *désirables* (pour tous)",
+            "dept": 1,
+            "k": 2,
+            "pk": 2,
+            "title": "un projet collectif de transition",
+            "type": "title"
+        },
+        {
+            "content": "Nous menons une **réflexion théorique collective** pour nous accorder sur nos perceptions et compréhensions du monde.\n\nNous **agissons concrètement** dans notre vie quotidienne, pour avoir un impact sur notre monde.",
+            "dept": 0,
+            "k": 3,
+            "pk": -1,
+            "title": "agir collectivement",
+            "type": "title"
+        },
+        {
+            "content": "Soupçonnés d'extorquer à l'état quelques centaines d'euros, d'être privilégiés, assistés, dangereux, on désigne parfois précaires, étrangers, chômeurs, fonctionnaires... comme responsables de tous nos maux. \n\nD'un autre coté, les réels enjeux (cadeaux fiscaux aux grandes entreprises) sont passés sous silence.",
+            "dept": 1,
+            "k": 0,
+            "pk": 3,
+            "title": "qui sont les vrais fraudeurs ou  assistés ?",
+            "type": "title"
+        },
+        {
+            "content": "> Notre force ne naîtra pas de la désignation de l'ennemi, mais de l'effort fait pour entrer les uns dans la géographie des autres.\n— Comité invisible, À nos amis, p.231\n\nNous ne croyons pas qu'il existe de **coupable idéal** facile à désigner (riches, politiques, chômeurs, étrangers, etc..).\n\nNous n'incriminons personne en particulier (ni profession ni individualité) et pensons que nous avons **tous une part de responsabilité** à travers certaines habitudes, raisonnements, préjugés, idées, comportements qui nous **assujetissent**.",
+            "dept": 1,
+            "k": 1,
+            "pk": 3,
+            "title": "ce n'est pas (que) la faute aux riches. à qui la faute ?",
+            "type": "title"
+        },
+        {
+            "content": "> Identifier les structures coercitives, autoritaires et hiérarchiques de toutes sortes pour les examiner et mettre à l’épreuve leur légitimité\n— Chomsky\n\nNous devons nous battre simultanément contre les **structures de contrôle** qui cherchent à nous assujettir et **contre nous-mêmes**, gangrénés de l'intérieur par l'idéologie dominante.",
+            "dept": 1,
+            "k": 2,
+            "pk": 3,
+            "title": "sortons de la domination et de l'aliénation, nommons nos ennemis !",
+            "type": "title"
+        },
+        {
+            "content": "Les véritables puissances sont celles qui sont aux rênes des **structures matérielles des flux** (banques, multinationales de construction, alimentaire, transport).\n\nDès lors que nous vivons: nous consommons, nous déplaçons, travaillons, **nous sommes complices du status-quo**.",
+            "dept": 1,
+            "k": 3,
+            "pk": 3,
+            "title": "les pouvoirs sont dans les organisations matérielles des flux",
+            "type": "title"
+        },
+        {
+            "content": "Nous ne pouvons décrocher facilement de notre dépendance totale au monde, nous y sommes inscrits **physiquement** (besoin de manger, de se loger) et **culturellement** (habitudes, bagage idéologique et culturel).\n\nNous savons que le **tout local** n'est pas la solution.\n\nNous cherchons cependant à **localiser les points névralgiques** de notre quotidien qui nous permettront d'avoir une influence globale, **depuis l'endroit où nous sommes**.",
+            "dept": 1,
+            "k": 4,
+            "pk": 3,
+            "title": "inscrit.e.s. dans ce monde, nous cherchons une autre manière de le vivre",
+            "type": "title"
+        },
+        {
+            "content": "> Laissez l'État dans les toilettes où vous l'avez trouvé — Félix Thiéfaine\n\nLa logique de l'État n'est pas de créer des liens, mais d'**entretenir une dépendance des citoyens** à des institutions, conventions, fonctions, règles, devoirs, pour maintenir l'**ordre social**.\n\nNous ne voulons plus voter en espérant — chèque en blanc — que certaines promesses soient tenues. Nous savons en outre qu'il est **absurde de donner le pouvoir à ceux qui le réclament le plus**.",
+            "dept": 1,
+            "k": 5,
+            "pk": 3,
+            "title": "nous ne cherchons pas de nouvelles institutions",
+            "type": "title"
+        },
+        {
+            "content": "> Le *gouvernement*, c'est denier au peuple toute capacité politique au delà de son vote.\n— Comité invisible, À nos amis, p.162\n\nNous préférons les initiatives, pratiques, collectifs émergents et auto-gérés, aux expériences **pilotées** par les pouvoirs en place.\n\nSeule l'**expérience du fait politique** crée la conscience du collectif.",
+            "dept": 1,
+            "k": 6,
+            "pk": 3,
+            "title": "nous cherchons de nouvelles formes de collectif, vécues de l'intérieur",
+            "type": "title"
+        },
+        {
+            "content": "Nous ne croyons pas que de **nouveaux labels ou indicateurs** (bio, équitable, bien-être, etc...) soient des solutions. Ils sont des outils de transition incomplets vite récupérés par les puissances commerciales.\n\nMesurer, **c'est réduire en voulant maîtriser**. Nous ne cherchons pas à arrêter la qualité d'un produit en particulier, nous voulons **saisir comment il s'articule** avec son environnement pour pouvoir nous en emparer sans nous décharger de notre responsabilité d'en comprendre les processus.",
+            "dept": 1,
+            "k": 7,
+            "pk": 3,
+            "title": "les labels et indicateurs nous éloignent de leurs objets",
+            "type": "title"
+        },
+        {
+            "content": "Lorsqu'il s'agit de mobiliser des foules, les puissances d'argent sont aux aguets. Elles ont donc bien compris comment **utiliser à leur compte le jargon séducteur** du *collaboratif*, du *partage*, de *l'horizontalité*, de la *résilience*, de la *liberté d'accès* (google, facebook, airbnb, uber, ...).\n\nNous prenons garde à ces nouvelles **formes pernicieuses de marchandisation**, s'immisçant plus encore dans nos vies, cherchant à monnayer notre quotidien et à nous mettre en concurrence.",
+            "dept": 1,
+            "k": 8,
+            "pk": 3,
+            "title": "nous nous méfions de l'économie  collaborative et du capitalisme vert",
+            "type": "title"
+        },
+        {
+            "content": "Nous n'avons pas une foi aveugle dans les technologies (nano, bio, numériques, médicales) pour notre salut.\n\nAttiré.e.s par un fantasme de contrôle et de connaissance totale toujours disponible, nous nous rendons **dépendants à une technique omniprésente et sacralisée**. Par une ultra-fluidité apparente d'appareils et de services, elle nous tient sous son contrôle et **mystifie notre rapport au monde**.\n\nQui peut désormais réparer sa radio sans l'aide d'un ingénieur spécialisé ?",
+            "dept": 1,
+            "k": 9,
+            "pk": 3,
+            "title": "nous nous méfions de la technologie, mais utilisons les techniques",
+            "type": "title"
+        },
+        {
+            "content": "Au fil des siècles, l'homme a conçu ses outils dans le but d'**améliorer sa condition**: dominer la nature ou son prochain.\n\nLe scientifique omniscient, nouveau gourou de nos sociétés consuméristes, justifie notre fuite en avant par la fausse espérance d'un avenir meilleur et d'une **maitrise parfaite sur notre monde**.\n\nForce est de constater aujourd'hui que les produits des **innovations contrarient** notre sécurité, notre confort et liberté bien plus qu'ils ne se mettent **à notre service**.\n\nvoir: dématérialisation des tickets restaurant, paiement sans contact",
+            "dept": 1,
+            "k": 10,
+            "pk": 3,
+            "title": "on arrête pas le progrès, émancipation ou servitude ? science sans conscience",
+            "type": "title"
+        },
+        {
+            "content": "Nous ne nous battons pas pour une **vision figée du monde**, un modèle unique de société. Nous croyons que les notions de *juste*, de *liberté*, d'*État* sont **multiples et relatives**.\n\nNous cherchons **les conditions de co-existence de multiples présences sociales** ne s'écrasant pas les unes les autres.",
+            "dept": 1,
+            "k": 11,
+            "pk": 3,
+            "title": "plus de droit, de justice ? de libertés ?",
+            "type": "title"
+        },
+        {
+            "content": "> la *mobilisation* continue ?\n\n*Elle* ne continue pas toute seule. À nous de l'**incarner** dans les faits si nous la souhaitons.\n\nCe que nous appelons, ce n'est pas la descente dans la rue d'une **population fictive préexistante**, c'est la magie qui s'opère lorsque des êtres différents **se rencontrent et créent des liens**.",
+            "dept": 1,
+            "k": 12,
+            "pk": 3,
+            "title": "le peuple n'est pas dans la rue, il se rencontre dans la rue",
+            "type": "title"
+        },
+        {
+            "content": "> Faire sécession, c'est habiter un territoire, assumer notre configuration situé du monde, notre façon d'y demeurer, la forme de vie et les vérités qui nous portent, et *depuis là* entre en conflit ou en complicité\n— Comité invisible, À nos amis, p.186\n\n**Prendre position**, c'est redessiner le territoire dans lequel nous vivons: *ça nous le refusons, ça à la limite, ça oui, etc...*\n\nPetit à petit, nous nous repérons parmi ce qui nous entoure, nous en comprenons mieux les formes, et nous sommes capables de retrouver une complicité avec une **autre manière de vivre notre quotidien**.",
+            "dept": 1,
+            "k": 13,
+            "pk": 3,
+            "title": "dessiner le territoire où nous sommes, et prendre position",
+            "type": "title"
+        },
+        {
+            "content": "Nous ne voulons plus la quête de **moyens de subsistance**.\n\nNous valorisons une qualité de liens, une certaine forme d'**être au monde avec les autres**. Une attention nouvelle, une écoute.\n\nNous recherchons les conditions d'existence d'interactions **moins matérialistes** et **plus altruistes** entre nous.\n\nCela implique de repenser notre vie quotidienne, **dans sa manifestation pratique**: où, comment, et avec qui *parler*, *manger*, *dormir*, *travailler* ?",
+            "dept": 1,
+            "k": 14,
+            "pk": 3,
+            "title": "des formes désirables d'être au monde, une attention et un souci de l'autre",
+            "type": "title"
+        },
+        {
+            "content": "> *austérité, modèle économique, voie de développement, questions d'immigration, croissance, décroissance, économie solidaire, transition, démocratie, libertés, écologie, solidarité...*\n\nNous chassons les expressions préconçues pleines de préjugés et nous méfions des **mots galvaudés** dont le sens est si large qu'ils **contiennent tout et rien**.\n\nNous préférons leur développement concret, ancré dans la réalité (*libre de faire quoi sous quelles conditions ? solidarité de qui par quel acte ?*), mieux qualifier ce dont on parle, saisir le sens et la **complexité des situations**.",
+            "dept": 1,
+            "k": 15,
+            "pk": 3,
+            "title": "le langage ne décrit pas le monde, il le construit",
+            "type": "title"
+        },
+        {
+            "content": "Nous acceptons **les dissonnances et les désaccords**, ils n’empêchent pas des formes d’harmonie et de justesse, au contraire.\n\nC'est le processus de **circulation de la parole**, des affects, des **attentions partagées**, qui nous fait parler le même langage, et **former ensemble un territoire commun**, où chacun trouve une place juste pour lui.",
+            "dept": 1,
+            "k": 16,
+            "pk": 3,
+            "title": "nous ne nous obstinons pas à faire consensus, nous cherchons un langage commun",
+            "type": "title"
+        },
+        {
+            "content": "**Une idée seule ne vaut rien**. elle vit lorsqu'elle est exprimée, transmise, confrontée, discutée, débattue, interprétée, reformulée.\n\nChaque position, vision, point de vue, questionnement doit trouver sa place pour être compris.\n\nÉchanger avec un autre différent de soi, lui parler, le comprendre, c'est compliqué, ça prend du temps, mais c'est le nerf de la guerre pour retrouver **une entente collective**.",
+            "dept": 1,
+            "k": 17,
+            "pk": 3,
+            "title": "plus forts que les idées, leur échange",
+            "type": "title"
+        },
+        {
+            "content": "Il existe des **inégalités naturelles de savoirs-faire**, mais elles ne doivent pas être accentuées.\n\nÀ l'isolement et **l'expertise** académique et technique nous **préférons la transmission des compétences**, la traduction, la transformation.",
+            "dept": 1,
+            "k": 18,
+            "pk": 3,
+            "title": "nous refusons l'élitisme et l'expropriation des savoirs",
+            "type": "title"
+        },
+        {
+            "content": "Nous cherchons les zones d'éducation et d'apprentissage gratuites, **émancipatrices et autonomisantes**.\n\nNous pensons que l'éducation doit former à l’**esprit critique** et à la **coopération**.\n\nRévéler, reconnaître, valoriser et transmettre les savoirs, savoir-faire et l'**expérience pratique et stratégique**: nourriture, santé, construction, transport.",
+            "dept": 1,
+            "k": 19,
+            "pk": 3,
+            "title": "apprendre à apprendre",
+            "type": "title"
+        },
+        {
+            "content": "Nous cherchons à comprendre ce qui nous entoure et avec quoi nous interagissons: **provenance** des aliments, objets, processus, fonctions...\n\nNous nous intéressons à leur parcours, à leur **contexte**, à leur histoire.",
+            "dept": 1,
+            "k": 20,
+            "pk": 3,
+            "title": "questionner l'ordre et l'origine des choses",
+            "type": "title"
+        },
+        {
+            "content": "Pour comprendre des situations de plus en plus complexes, nous avons **besoin de temps pour décomposer le sens**, éviter les raccourcis, les logiques des discours superficiels (acteurs, contexte,  intérêts) et **rendre visible les non-dits** qui les accompagnent.",
+            "dept": 1,
+            "k": 21,
+            "pk": 3,
+            "title": "décortiquer, traduire, disséquer la complexité",
+            "type": "title"
+        },
+        {
+            "content": "> Pour l'aveugle, l'oiseau chante. Pour le sourd, l'oiseau vole. Qui dit vrai ?\n\n> Demande au muet.\n— Hervé Le Tellier, dialogues socratiques\n\nNous pensons qu'il existe toujours une **multitude de formulations** d'un problème et de **réponses possibles**.\n\nPour décortiquer la complexité, nous **multiplions les manières d'aborder une problématique**: domaines, dimensions, générations, temporalités.",
+            "dept": 1,
+            "k": 22,
+            "pk": 3,
+            "title": "prôner diversité, points de vue,  multidisciplinarité",
+            "type": "title"
+        },
+        {
+            "content": "Nous cherchons à fabriquer des **contre-récits**, à construire de **nouvelles formes de discours et du faire**, diversifier les interprétations, **multiplier les voix**, qu'elles soient poétiques, musicales, graphiques, invisibles, absurdes...\n\nMais surtout... **d'agir !**",
+            "dept": 1,
+            "k": 23,
+            "pk": 3,
+            "title": "laisser la place à l'inhabituel, aux contre-récits, à l'absurde",
+            "type": "title"
+        }
+    ],
+    "faq": [
+        {
+            "content": "#-",
+            "dept": 0,
+            "k": 0,
+            "pk": -1
+        },
+        {
+            "content": "#-",
+            "dept": 0,
+            "k": 1,
+            "pk": -1
+        },
+        {
+            "content": "## d'accord !\n> Je suis avec vous ! par où on commence ?\n\nbienvenue !",
+            "dept": 0,
+            "k": 2,
+            "pk": -1,
+            "title": "d'accord ?",
+            "type": "title"
+        },
+        {
+            "content": "Nous avons besoin de commentaires, critiques et propositions sur le texte, envoyez-nous votre contribution !\n\nCoté pratique, vous pouvez proposer des idées d'actions, des retours d'expériences, des photos...\n\nDans l'attente de meilleurs outils, nous utilisons:\n\n- rendez-vous 1 dimanche sur 2 place de la république à Paris (15h) ?\n- une liste de diffusion ?\n- un [groupe loomio.org](https://www.loomio.org/g/9pujrIQq/utopies-concretes) ?",
+            "dept": 1,
+            "k": 0,
+            "pk": 2,
+            "title": "nourir le manifeste",
+            "type": "title"
+        },
+        {
+            "content": "Parlez et discutez du manifeste avec votre entourage, ou — encore mieux — comme prétexte d'une rencontre avec un.e inconnu.e:\n\n> Bonjour toi.\n\n> Je te donne cette carte de visite parce que je me dis que ça peut t'intéresser... Ça parle de réfléchir et d'agir collectivement pour changer le système...\n\nUne version complète papier est imprimable [ici](media/manifeste.pdf).",
+            "dept": 1,
+            "k": 1,
+            "pk": 2,
+            "title": "diffuser le manifeste",
+            "type": "title"
+        },
+        {
+            "content": "Vous pouvez rejoindre un groupe, une association, et pratiquer les actions que vous pensez pertinentes.",
+            "dept": 1,
+            "k": 2,
+            "pk": 2,
+            "title": "pratiquer les actions",
+            "type": "title"
+        },
+        {
+            "content": "## pas d'accord !\n> C'est bien beau tout ça, mais je vous arrête tout de suite...\n\nNotre démarche et le texte sont loin d'être parfaits... dites-nous ce que nous pouvons améliorer !",
+            "dept": 0,
+            "k": 3,
+            "pk": -1,
+            "title": "pas d'accord ?",
+            "type": "title"
+        },
+        {
+            "content": "il faut bien bouffer, les questions morales suivront... (Bretch)\n\n> Contacte nous !",
+            "dept": 1,
+            "k": 0,
+            "pk": 3,
+            "title": "facile à dire, mais bon là j'ai faim, pas une thune et pas de temps",
+            "type": "title"
+        },
+        {
+            "content": "cf JoliMai, chris marker @57min, on s'en fiche, seul notre bonheur compte\n\nChacun pour sa peau, man. je protège ma famille et ma voiture. peu importe le reste. Et j'ai le putain de droit de manger mcdo si je veux. ça me laisse le temps de faire autre chose. Merde, on est pas arrivés là pour retourner a l'âge de pierre ! il faut bien profiter de nos avancées technologiques et industrielles\n\n>Celui qui perd toute conscience de ses actes et qui cherche uniquement son bonheur ne le trouvera pas. Un hédonisme total est destructeur. À moins d'avoir vraiment **beaucoup** d'argent, dans peu de temps toi aussi tu sera au SMIC, au train où ça va.\nSe croire indépendant est la pire des erreur, car on joue le jeu du système à fond",
+            "dept": 1,
+            "k": 1,
+            "pk": 3,
+            "title": "je m'en fous. je vis ma vie. c'est pas de ma faute. allez voir les responsables",
+            "type": "title"
+        },
+        {
+            "content": "Débrouillez-vous bande de fénéants, pour vous trouver une place dans le monde plutot que d'espérer vivre en assistés avec votre revenu universel !\nC'est normal qu'il faille faire des efforts pour s'en sortir ... c'est le principe même de la vie, rien n'est acquis.",
+            "dept": 1,
+            "k": 2,
+            "pk": 3,
+            "title": "bah oui. c'est dur. que le meilleur gagne, bordel. c'est le principe même de l'évolution",
+            "type": "title"
+        },
+        {
+            "content": "C'est bien beau, mais on a besoin d'une armée et d'un État fort pour se défendre d'une attaque militaire étrangère, par exemple.",
+            "dept": 1,
+            "k": 3,
+            "pk": 3,
+            "title": "il faut bien se défendre des autres (étrangers agressifs, voleurs, pays offensifs)",
+            "type": "title"
+        },
+        {
+            "content": "Les philosophes pensent, les footballeurs jouent aux foot, les militants manifestent et certains politiques tentent de changer les choses... chacun son business !\nmoi, je suis boulanger, je le fais en toute honneteté\nje suis d'accord avec vous, mais allez voir les vrais responsables pour régler votre problème\n\nIl faut bien voter, si on veut des changements ! À nous de veiller que les élus font bien leur travail. ça marche plutôt bien depuis plusieurs centaines d'années. Même si les plsu connussont dans la politique politicienne, il y a toute une administration qui roule et qui fait tourner la société. Certes à améliorer, mais ça vient petit à petit, soyez patients.",
+            "dept": 1,
+            "k": 4,
+            "pk": 3,
+            "title": "très bien, super, d'accord. mais c'est pas mon boulot. c'est le rôle de l'état",
+            "type": "title"
+        },
+        {
+            "content": "globalement, tout va bien, vous êtes si pessimistes ! on s'est toujours adaptés, améliorés. si on regarde la moyenne du niveau de vie, la médecine, les techniques, on est plus au moyen-âge, et c'est tant mieux. on a même vécu des guerres, mais l'Humanité a toujours triomphé. pas besoin de s'alarmer, notre écosystème est souple, tout finira bien.\n\n>tout est relatif. un enfant élevé au moyen-âge est outré du système féodal, etc... aujourd'hui dans l'absolu, à part des nantis (faible nombre) la moyenne des gens vit pas mal (électricité, produits disponibles)",
+            "dept": 1,
+            "k": 5,
+            "pk": 3,
+            "title": "ça a tjs été comme ça. ça ira avec le temps. l'histoire évolue dans le bon sens globalement",
+            "type": "title"
+        },
+        {
+            "content": "meilleure démocratie, meilleure efficience des machines, plus d'information mieux vérifiable...\nCertes on passe un moment difficile (héritage du diesel, pollution, fortes inégalités) mais les recherches et technologies sont de plus en plus propres ! nous tendons vers le vert et vers un plus grand respect de l'environnement. Tout cela va s'accélérer en parallèle avec l'urgence, donc pas de souci !",
+            "dept": 1,
+            "k": 6,
+            "pk": 3,
+            "title": "ça se résoudra avec les évolutions technologiques",
+            "type": "title"
+        },
+        {
+            "content": "On a toujours le choix de ne pas écouter les publicités, de choisir les produits que l'on achète, du métier que l'on fait ...\nSi TF1 existe, c'est parce que beaucoup de gens le veulent\n\n> Sauf que si l'on a pas de temps, et qu'on ne connait pas les différences (si personne ne nous l'a dit), on choisit alors le dentifrice le plus connu.\n\n> Et on regarde TF1 parce que ça vide la tête après une dure journée de travail.\n\n> habibo, c est beau la ... ?\n\n> On a beau refuser de l'admettre, la publicité est en nous.",
+            "dept": 1,
+            "k": 7,
+            "pk": 3,
+            "title": "il y a de plus en plus de cons: ceux qui ne font pas d'effort",
+            "type": "title"
+        },
+        {
+            "content": "C'est pour ça que je dis de voter NPA depuis 5 ans, mais personne m'écoute... ils votent tous UMP ces cons. Et acheter un yahourt bio n'y changera rien\n\n>C'est pour cela qu'il nous faut trouver des actions qui puissent changer l'ordre des choses. Débattre, discuter, manifester sont des moyens de diffuser ses idées. Reste à le faire plus souvent !",
+            "dept": 1,
+            "k": 8,
+            "pk": 3,
+            "title": "agir moi ? ... et les autres, pendant ce temps ? seul je changerai rien",
+            "type": "title"
+        },
+        {
+            "content": "Ça bloque quand on raisonne à l’échelle d’un pays entier. Ok pour vous... voire un village alternatif. Mais si tout le monde s'y met, tout s'écroule: plus d'armée, plus services, plus rien de la société dans laquelle on vit\n\n>Nous voulons déjà vivre ce changement personnellement, afin d'affiner les enjeux qu'il soulève. Nous aurons le temps de voir venir si nous mettons les mains dans le cambouis dès maintenant, en nous posant les bonnes questions: comment manger en circuit court ? comment réparer mon vélo, comment réparer ma toiture, mes canalisations ? etc..?",
+            "dept": 1,
+            "k": 9,
+            "pk": 3,
+            "title": "ça marchera pour une petite communauté tout au plus, pas globalement",
+            "type": "title"
+        },
+        {
+            "content": "Contre le système, vous appelez à renverser toutes les puissances établies, à l'anarchie totale, à la violence envers tout.\n\n>La violence est parfois nécessaire, ne serait-ce que pour se défendre contre la répression policière, parfois extrêmement violente. \nNous excluons totalement la violence envers les personnes, mais répondrons à la violence de la société actuelle à sa juste mesure.\n\n>Nous sommes radicaux, mais cette radicalité ne se mesure pas au nombre de vitrines brisées. Le degré de violence n'est pas le bon **indicateur de ce qui est juste ou pertinent**.",
+            "dept": 1,
+            "k": 10,
+            "pk": 3,
+            "title": "c'est la porte ouverte aux pires violences",
+            "type": "title"
+        },
+        {
+            "content": "Assurer la sécurité, faire marcher l'économie nationale, prélever des impôts ...?\n\n>Nous ne cherchons pas le pouvoir sur d'autres, nous cherchons à retrouver un lien avec la réalité qui nous entoure",
+            "dept": 1,
+            "k": 11,
+            "pk": 3,
+            "title": "une fois au pouvoir, que ferez-vous pour...",
+            "type": "title"
+        },
+        {
+            "content": "Ce n'est pas 100 stickers qui feront bouger le FMI ou des nez rouges qui arrêteront les armées et leur missiles\n\n>Nous pensons que quelques bonnes paroles pertinentes et actions concrètes peuvent contribuer à nous dés-aliéner, ce qui est déjà un début pour changer nos modes de vie",
+            "dept": 1,
+            "k": 12,
+            "pk": 3,
+            "title": "vous êtes des bobos prétentieux. vos belles paroles ne changeront rien,",
+            "type": "title"
+        },
+        {
+            "content": "arrêtez votre branlette intellectuelle technophile, allez cultiver vos tomates dans la forêt ou alors \nanyway, seule la révolution fonctionnera ! tuons les riches, répartissons les richesses sans demander leur avis aux gens",
+            "dept": 1,
+            "k": 13,
+            "pk": 3,
+            "title": "vous prônez le(s) réseau(x) réels, et vous faites une plateforme web centralisée",
+            "type": "title"
+        },
+        {
+            "content": "foutez des bombes au ministères, à la BNP, dans les centrales EDF, plutôt que de faire des sites internet que les gens regarderont 5min avant d'aller acheter leur bière au super U\n\n>La violence ne résoudra pas la situation. Mieux vaut comprendre pour taper mà où ça fait mal. L'état policier n'attend que ça pour justifier une répression sécuritaire.",
+            "dept": 1,
+            "k": 14,
+            "pk": 3,
+            "title": "vous êtes trop gentils. on devrait plutôt faire péter là où ça fait mal",
+            "type": "title"
+        },
+        {
+            "content": "Vous vous battez contre l'impossible\n\n>demande au moustique si la taille compte !",
+            "dept": 1,
+            "k": 15,
+            "pk": 3,
+            "title": "c'est David contre Goliath !",
+            "type": "title"
+        },
+        {
+            "content": "Donc vous me dites de plus rien acheter ? Plus d'inutile, de luxe ? éliminer tous mes désirs en somme. Une sorte de sobriété plate et sans couleurs\n\n>Nous ne cherchons pas à supprimer le luxe, nous cherchons à retrouver simplement une mesure.\n\n>Notre volonté de nous afficher, nous affirmer n'est principalement qu'un diktat articficiel de la societé\n\n>L'opulence est toujours relative, notre jouissance, volupté se fait souvent au dépends d'autres !\n\n>Nous avons besoin d'un rapport de désirs, esthétique, inutile, aux objets. Nous devons simplement veiller à le contextualiser dans le monde réel (à qui va l'argent ? suis-je bien en train de payer pour la rareté ou la qualité du produit ?)",
+            "dept": 1,
+            "k": 16,
+            "pk": 3,
+            "title": "vous voulez supprimer le luxe, toute démesure",
+            "type": "title"
+        },
+        {
+            "content": "Vous méprisez par exemple ceux qui aprécient le foot, ou qui aiment la culture de masse NRJ. Ces divertissements  poussent à la passivité et à la consommation médiatique, mais ils générent beaucoup de lien social, de convivialité, de bonheur !",
+            "dept": 1,
+            "k": 17,
+            "pk": 3,
+            "title": "vous prônez votre vision de la convivialité, en méprisant et rejetant celle les autres",
+            "type": "title"
+        },
+        {
+            "content": "Dans toute société, il y a un pourcentage de fous, de violents, de malades, de gens cons. Ils ne feront rien de bon de toute façon. On ne peut rien faire pour eux",
+            "dept": 1,
+            "k": 18,
+            "pk": 3,
+            "title": "Il y a des gens qui sont foncièrement méchants, dangereux",
+            "type": "title"
+        },
+        {
+            "content": "Envie d'être seul avec une pizza, faire ses trucs\n\n>On a des hauts et des bas, normal. Mais nous devons nous poser des questions si nous vivons en permanence dans le *bas* !",
+            "dept": 1,
+            "k": 19,
+            "pk": 3,
+            "title": "on a juste des fois pas envie de parler à ses voisins, merde",
+            "type": "title"
+        },
+        {
+            "content": "Même si vous ne vous assumez pas comme tel, vous êtes une sorte de parti politique anarcho-écolo-autonomiste\n\n>Non, nous pensons que désigner une forme et/ou un nom ne fait que réduire le mouvement. nous aimons qu'il reste un peu flou et divers.",
+            "dept": 1,
+            "k": 20,
+            "pk": 3,
+            "title": "ah, en fait vous êtes des anarchistes-écolo-philosophes anti-systèmes...",
+            "type": "title"
+        },
+        {
+            "content": "corrections, idées, remarques, insultes, envoyez-nous tout !",
+            "dept": 1,
+            "k": 21,
+            "pk": 3,
+            "title": "ENVOYEZ-NOUS VOS CRITIQUES OU AJOUTS !",
+            "type": "title"
+        },
+        {
+            "content": "### +",
+            "dept": 1,
+            "k": 22,
+            "pk": 3
+        },
+        {
+            "content": "### +",
+            "dept": 1,
+            "k": 23,
+            "pk": 3
+        }
+    ],
+    "tags1": [
+        {
+            "content": "Guérissons nous mieux, en évitant les laboratoires pharmaceutiques. Remèdes de grand-mère, plantes, ...",
+            "k": 0,
+            "title": "santé",
+            "type": "tags",
+            "tags": [
+                "@health"
+            ],
+            "tag": "@health"
+        },
+        {
+            "content": "Combattons la malbouffe en choisissant comment et ce que l'on mange. Annuaires d'AMAPs et magasins alternatifs, recettes avec restes. Agriculture urbaine, discosoupes, ...",
+            "k": 1,
+            "title": "manger",
+            "type": "tags",
+            "tags": [
+                "@food"
+            ],
+            "tag": "@food"
+        },
+        {
+            "content": "Évitons les objets inutiles, fabriquons nous-même, recyclons. Pour les échanges: changeons de banques, utilisons monnaies complémentaires, cash et les réseaux SEL, troc, don, ...",
+            "k": 2,
+            "title": "objets",
+            "type": "tags",
+            "tags": [
+                "@objects"
+            ],
+            "tag": "@objects"
+        },
+        {
+            "content": "Projets de co-habitat, hébergement, énergie, eau, chauffage, ameublement, ...",
+            "k": 3,
+            "title": "habiter",
+            "type": "tags",
+            "tags": [
+                "@live"
+            ],
+            "tag": "@live"
+        },
+        {
+            "content": "Covoiturage libre, transports en commun, vélo, ...",
+            "k": 4,
+            "title": "se déplacer",
+            "type": "tags",
+            "tags": [
+                "@move"
+            ],
+            "tag": "@move"
+        },
+        {
+            "content": "S'informer pour mieux comprendre le monde qui nous entoure: quelles sources médiatiques ?",
+            "k": 5,
+            "title": "apprendre <<",
+            "type": "tags",
+            "tags": [
+                "@learn"
+            ],
+            "tag": "@learn"
+        },
+        {
+            "content": "Transmettre les idées auxquelles on croit: actions directe, antipub, stickers, flyers, lettres, ...",
+            "k": 6,
+            "title": ">> propager",
+            "type": "tags",
+            "tags": [
+                "@com"
+            ],
+            "tag": "@com"
+        }
+    ],
+    "tags2": [
+        {
+            "content": "Réappropriation des espaces publics",
+            "k": 0,
+            "title": "espace public",
+            "type": "tags",
+            "tags": [
+                "@space"
+            ],
+            "tag": "@space"
+        },
+        {
+            "content": "Rencontrons-nous, retrouvons une attention et une écoute de l'autre",
+            "k": 1,
+            "title": "rencontres",
+            "type": "tags",
+            "tags": [
+                "@meet"
+            ],
+            "tag": "@meet"
+        },
+        {
+            "content": "Ralentissons la course effrénée vers l'absurde",
+            "k": 2,
+            "title": "ralentir",
+            "type": "tags",
+            "tags": [
+                "@slow"
+            ],
+            "tag": "@slow"
+        },
+        {
+            "content": "La publicité est une merde, écrasons-lui la geule",
+            "k": 3,
+            "title": "anti-pub",
+            "type": "tags",
+            "tags": [
+                "@antipub"
+            ],
+            "tag": "@antipub"
+        },
+        {
+            "content": "Écrivons, collons, envoyons, distribuons ... bouts de papiers, messages, lettres aux responsables politiques, entreprises",
+            "k": 4,
+            "title": "papiers",
+            "type": "tags",
+            "tags": [
+                "@paper"
+            ],
+            "tag": "@paper"
+        },
+        {
+            "content": "Boycottons ce qui ne nous convient pas",
+            "k": 5,
+            "title": "boycott",
+            "type": "tags",
+            "tags": [
+                "@boycott"
+            ],
+            "tag": "@boycott"
+        },
+        {
+            "content": "Recyclons, récupérons, fabriquons, faisons nous-mêmes",
+            "k": 6,
+            "title": "diy",
+            "type": "tags",
+            "tags": [
+                "@diy"
+            ],
+            "tag": "@diy"
+        },
+        {
+            "content": "Échangeons temps, savoirs, services,  objets",
+            "k": 7,
+            "title": "échanges",
+            "type": "tags",
+            "tags": [
+                "@sel"
+            ],
+            "tag": "@sel"
+        },
+        {
+            "content": "Lavons nos esprits de l'information poubelle de masse",
+            "k": 8,
+            "title": "médias",
+            "type": "tags",
+            "tags": [
+                "@media"
+            ],
+            "tag": "@media"
+        },
+        {
+            "content": "Des documents, articles, films pertinents",
+            "k": 9,
+            "title": "documents",
+            "type": "tags",
+            "tags": [
+                "@doc"
+            ],
+            "tag": "@doc"
+        }
+    ],
+    "acts": [
+        {
+            "content": "sessions de dialogues avec des passants\n«à quoi on croit vraiment ? \n«quelles sont nos valeurs ?\n«pour quoi sommes-nous prêts à nous battre ?\n«c'est quoi la vraie liberté ?\n\nidée: faire un montage de toutes les réponses !",
+            "k": 0,
+            "title": "micro trottoir collectif: à quoi on tient ?",
+            "type": "when",
+            "tags": [
+                "@meet",
+                "@space",
+                "@learn",
+                "@com"
+            ],
+            "tag": "@meet",
+            "when": "à fixer"
+        },
+        {
+            "content": "Retrouvons-nous même endroit (vidéosurveillé) même moment et envoyons ensemble des [lettres de récupération](http://fr.wikipedia.org/wiki/Loi_informatique_et_libert%C3%A9s) de nos images !",
+            "k": 1,
+            "title": "récupérons nos images vidéosurveillées",
+            "type": "when",
+            "tags": [
+                "@com",
+                "@space",
+                "@paper"
+            ],
+            "tag": "@com",
+            "when": "à fixer"
+        },
+        {
+            "content": "Nous arrêtons de faire les moutons  et de les enrichir en choisissant où nous dépensons notre argent.\nAtelier d'idées d'actions dans/devant supermarchés ?",
+            "k": 2,
+            "title": "boycottons les grands groupes",
+            "type": "when",
+            "tags": [
+                "@food",
+                "@health",
+                "@boycott"
+            ],
+            "tag": "@food",
+            "when": "tous les jours"
+        },
+        {
+            "content": "Nous évitons absolument les championnes des paradis fiscaux: BNP, Société Générale, Crédit Agricole, ...",
+            "k": 3,
+            "title": "changeons de banque",
+            "type": "when",
+            "tags": [
+                "@objects",
+                "@boycott"
+            ],
+            "tag": "@objects",
+            "when": "si pas encore fait"
+        },
+        {
+            "content": "Retrouvons-nous dans le métro pour recouvrir les affiches de stickers et de post-it",
+            "k": 4,
+            "title": "recouvrons les publicités du métro",
+            "type": "when",
+            "tags": [
+                "@com",
+                "@move",
+                "@antipub",
+                "@paper",
+                "@space"
+            ],
+            "tag": "@com",
+            "when": "à fixer"
+        },
+        {
+            "content": "Nous prenons le temps de faire nous-même la cuisine à partir d'aliment bruts et frais provenant de circuits courts de production",
+            "k": 5,
+            "title": "mangeons mieux",
+            "type": "when",
+            "tags": [
+                "@health",
+                "@food",
+                "@diy",
+                "@meet"
+            ],
+            "tag": "@health",
+            "when": "tous les jours"
+        },
+        {
+            "content": "Chantons le [Petit Tafta Noêl](https://www.youtube.com/watch?v=5dlMqhhzohA) avec les [engraineurs](http://www.collectif-lesengraineurs.com/)",
+            "k": 6,
+            "title": "chantons le petit TAFTA noël",
+            "type": "when",
+            "tags": [
+                "@com",
+                "@space"
+            ],
+            "tag": "@com",
+            "when": "passé"
+        },
+        {
+            "content": "Retrouvons-nous et peignons une fresque avec de la [peinture à la craie](http://fr.wikihow.com/fabriquer-de-la-peinture-%C3%A0-la-craie)",
+            "k": 7,
+            "title": "peignons une fresque à la craie",
+            "type": "when",
+            "tags": [
+                "@live",
+                "@space"
+            ],
+            "tag": "@live",
+            "when": "à fixer"
+        },
+        {
+            "content": "[S'inscrire à la lettre de diffusion](http://generationsfutur.zici.fr/bonnes-news/) des bonnes nouvelles",
+            "k": 8,
+            "title": "la lettre des bonnes nouvelles",
+            "type": "when",
+            "tags": [
+                "@learn",
+                "@media"
+            ],
+            "tag": "@learn",
+            "when": "si pas encore fait"
+        },
+        {
+            "content": "Le [Festival des Utopies Concrètes](http://festivaldesutopiesconcretes.org) est un moment de rassemblement de tout plein d'alternatives concrètes !\nProposez un atelier !",
+            "k": 9,
+            "title": "festival des utopies concrètes",
+            "type": "when",
+            "tags": [
+                "@learn",
+                "@com",
+                "@meet",
+                "@media"
+            ],
+            "tag": "@learn",
+            "when": "sept 2015"
+        },
+        {
+            "content": "action affichette sur distributeurs de billets ou de snacks «Ce distributeur est HS»",
+            "k": 10,
+            "title": "laissons respirer les machines",
+            "type": "when",
+            "tags": [
+                "@com",
+                "@slow",
+                "@space",
+                "@boycott"
+            ],
+            "tag": "@com",
+            "when": "à fixer"
+        },
+        {
+            "content": "Pour éviter les géants du numérique & du web (Google, Facebook, Apple, Twitter, Amazon Samsung, etc...), es alternatives libres sont nombreuses.\n\nOù ouvrir une boite mail, comment naviguer, etc.. ?",
+            "k": 11,
+            "title": "atelier logiciels libres",
+            "type": "when",
+            "tags": [
+                "@learn",
+                "@boycott"
+            ],
+            "tag": "@learn",
+            "when": "à fixer"
+        },
+        {
+            "content": "Des boites d'échanges pour déposer ou récupérer des objets laissés par  ses voisins.\nAtelier de fabrication de placard étanche avec recup' de planches",
+            "k": 12,
+            "title": "installons des boites d'échanges entre voisins",
+            "type": "when",
+            "tags": [
+                "@objects",
+                "@meet",
+                "@sel"
+            ],
+            "tag": "@objects",
+            "when": "à fixer"
+        },
+        {
+            "content": "Pour éviter la spéculation et favoriser les échanges locaux, échangeons nos euros contre des pêches !",
+            "k": 13,
+            "title": "info et comptoir d'échange monnaies locales",
+            "type": "when",
+            "tags": [
+                "@objects",
+                "@sel",
+                "@boycott"
+            ],
+            "tag": "@objects",
+            "when": "tous les mercredis"
+        },
+        {
+            "content": "libérons Paris du trafic polluant incessant !\nréapproprions-nous l'espace urbain !",
+            "k": 14,
+            "title": "Paris sans voiture !",
+            "type": "when",
+            "tags": [
+                "@move",
+                "@space",
+                "@slow"
+            ],
+            "tag": "@move",
+            "when": "22 sept 2015"
+        },
+        {
+            "content": "signer [la pétition](https://www.collectifstoptafta.org/agir/article/signez-l-ice-auto-organisee) européenne des collectifs [Stop TAFTA](https://www.collectifstoptafta.org)\n\nimprimer la fiche explicative",
+            "k": 15,
+            "title": "on ne veut pas du TAFTA",
+            "type": "when",
+            "tags": [
+                "@com",
+                "@paper"
+            ],
+            "tag": "@com",
+            "when": "tout le mois de sept."
+        },
+        {
+            "content": "Atelier [Oh Cyclo](http://www.ohcyclo.org) au centre social Lounès Matoub",
+            "k": 16,
+            "title": "atelier de réparation vélo",
+            "type": "when",
+            "tags": [
+                "@move",
+                "@diy",
+                "@meet"
+            ],
+            "tag": "@move",
+            "when": "31 janv 2015"
+        },
+        {
+            "content": "nous remplissons des caddie sans être spur d'acheter, désorganisons lees codes barres, demandons des informations, ...",
+            "k": 17,
+            "title": "ralentir les grandes surfaces",
+            "type": "when",
+            "tags": [
+                "@com",
+                "@boycott",
+                "@slow"
+            ],
+            "tag": "@com",
+            "when": "à fixer"
+        },
+        {
+            "content": "Venez composter vos déchets organiques\nPermanence tous les mercredis et samedi au square de la République et...",
+            "k": 18,
+            "title": "compost collectif",
+            "type": "when",
+            "tags": [
+                "@space",
+                "@food",
+                "@diy"
+            ],
+            "tag": "@space",
+            "when": "2 fois par semaine"
+        },
+        {
+            "content": "- mon titre de transport ?\n- excusez-moi vraiment, il se trouve parmis ceux-là, vous saurez le retrouver ... (liasse de tickets utilisés!)",
+            "k": 19,
+            "title": "réaction à un contrôle de billet",
+            "type": "when",
+            "tags": [
+                "@com",
+                "@space",
+                "@slow",
+                "@meet"
+            ],
+            "tag": "@com",
+            "when": "en cas de contrôle"
+        },
+        {
+            "content": "14 juillet 2015\n\nse déguiser, danser, chanter, manifester un alter-défilé du 14 juillet !",
+            "k": 20,
+            "title": "aller défiler avec les clowns",
+            "type": "tags",
+            "tags": [
+                "@com",
+                "@space"
+            ],
+            "tag": "@com"
+        },
+        {
+            "content": "ex: Monoprix.\nOn glisse partout des flyers d'info sur l'entreprise: Chiffre d'affaire, salaire moyen d'un caissier, marge moyenne, nombre de magasins, paradis fiscaux, etc..",
+            "k": 21,
+            "title": "carte postale d'info au supermarché",
+            "type": "when",
+            "tags": [
+                "@com",
+                "@paper",
+                "@boycott"
+            ],
+            "tag": "@com",
+            "when": "à fixer"
+        },
+        {
+            "content": "Un rendez-vous pour lire des textes, penser différemment, se rencontrer\nhttp://atelierrefairelemonde.over-blog.com/",
+            "k": 22,
+            "title": "ateliers refaire le monde",
+            "type": "when",
+            "tags": [
+                "@com",
+                "@meet"
+            ],
+            "tag": "@com",
+            "when": "à fixer"
+        },
+        {
+            "content": "quel dispositif pour verser progressivement de la peinture sur les pneus, et tracer des lignes de couleurs sur la chaussée !",
+            "k": 23,
+            "title": "traces de peinture en vélo",
+            "type": "when",
+            "tags": [
+                "@com",
+                "@move",
+                "@space"
+            ],
+            "tag": "@com",
+            "when": "tous les jours"
+        },
+        {
+            "content": "aux grands médias (Europe 1, BFM TV)\n« je vous écris pour supprimer s'il vous plait l'intermède boursier inutile de votre flash merdiatique, merci »\ncela ne sert à rien d'autre que déranger mes oreilles (les vrais boursicoteurs n'utilisent pas BFM pour s'informer sur les cours)\n\nEnvoyons tous nos lettres le 1er weekend de septembre !",
+            "k": 24,
+            "title": "lettres pour supprimer les infos bourse CAC40",
+            "type": "when",
+            "tags": [
+                "@paper",
+                "@boycott",
+                "@media"
+            ],
+            "tag": "@paper",
+            "when": "tout le mois de sept."
+        },
+        {
+            "content": "> Vous prêtez aux banques commerciale a taux de 0.05%, mais refusez encore de le faire pour les états.\nje voudrai mieux comprendre d'ou vous vient cet ordre des choses, moi qui croyais naif que les entreprises devaient être sous égide de l'état\nmerci par avance pour vos éclaircissement de mon âme",
+            "k": 25,
+            "title": "lettre à la banque centrale EU",
+            "type": "when",
+            "tags": [
+                "@com",
+                "@paper"
+            ],
+            "tag": "@com",
+            "when": "tout le mois de sept."
+        },
+        {
+            "content": "pour faire respirer son cerveau !\non discutera d'idées de réutilisation, détournement",
+            "k": 26,
+            "title": "recyclons nos télés",
+            "type": "when",
+            "tags": [
+                "@learn",
+                "@diy",
+                "@media"
+            ],
+            "tag": "@learn",
+            "when": "jour à fixer"
+        },
+        {
+            "content": "atelier d'impression sur papier thermique: sur rebuts de papiers, tickets de métro, de caisse, publicités...\n\natelier tampons patates pour marquer les billets de banque.. et se les échanger !",
+            "k": 27,
+            "title": "atelier: stickers à diffuser",
+            "type": "when",
+            "tags": [
+                "@com",
+                "@diy"
+            ],
+            "tag": "@com",
+            "when": "atelier à fixer"
+        },
+        {
+            "content": "exemple en Diois: http://www.habiterre.org/",
+            "k": 28,
+            "title": "habitons groupés",
+            "type": "when",
+            "tags": [
+                "@live",
+                "@meet",
+                "@space"
+            ],
+            "tag": "@live",
+            "when": "long terme"
+        },
+        {
+            "content": "Pour retrouver la communauté parisienne de Couchsurfing !",
+            "k": 29,
+            "title": "soirée d'échanges couchsurfing",
+            "type": "when",
+            "tags": [
+                "@live",
+                "@meet"
+            ],
+            "tag": "@live",
+            "when": "à fixer"
+        },
+        {
+            "content": "- [Liens Ecoclash](http://ecoclash.jimdo.com/synergies/la-porte-du-temps/)\nagenda ? lieux ?",
+            "k": 30,
+            "title": "nous participons à des chantiers participatifs",
+            "type": "when",
+            "tags": [
+                "@live",
+                "@meet",
+                "@space"
+            ],
+            "tag": "@live",
+            "when": "à lister"
+        },
+        {
+            "content": "Sticker à télécharger, à toujours conserver sur soi !\n> **Cher agent de l'«ordre»**\n> je sais que vous ne faites que votre travail, mais les méthodes que l'on vous a demandé d'utiliser sont manipulatrices et me rendent moins confiant envers les relations humaines en général.\n> **C'est pour cela**, (et non à cause de mon indifférence envers votre personne) que je refuse catégoriquement ce que vous faites.",
+            "k": 31,
+            "title": "un sticker pour répondre aux situations injustes",
+            "type": "when",
+            "tags": [
+                "@com",
+                "@slow",
+                "@sticker"
+            ],
+            "tag": "@com",
+            "when": "tous les jours"
+        },
+        {
+            "content": "Pour accéder à un service en ligne (facebook/gmail/...), utiliser le même compte  en commun.\nLe mot de passe étant public (si ne marche plus, merci d'en créer un nouveau et de diffuser les mots de passe)",
+            "k": 32,
+            "title": "un compte public utilisable par tous",
+            "type": "when",
+            "tags": [
+                "@learn",
+                "@boycott"
+            ],
+            "tag": "@learn",
+            "when": "tous les jours"
+        },
+        {
+            "content": "qui pour animer 2 heures d'introduction aux plantes et huiles essentielles classiques ?",
+            "k": 33,
+            "title": "atelier se guérir avec des plantes",
+            "type": "when",
+            "tags": [
+                "@health",
+                "@diy",
+                "@meet"
+            ],
+            "tag": "@health",
+            "when": "à fixer"
+        },
+        {
+            "content": "Rendez-vous après le marché de Croix de Chavaux pour récupérer les invendus et fabriquer une soupe géante ! (amenez vos outils, fruits, légumes, ...)\norganisée par ...",
+            "k": 34,
+            "title": "discosoupe",
+            "type": "when",
+            "tags": [
+                "@food",
+                "@space"
+            ],
+            "tag": "@food",
+            "when": "15 fev."
+        },
+        {
+            "content": "tous les 4e mercredi de chaque mois !",
+            "k": 35,
+            "title": "rendez-vous du collectif «Prenons la ville»",
+            "type": "when",
+            "tags": [
+                "@space",
+                "@meet"
+            ],
+            "tag": "@space",
+            "when": "25 mars 2015"
+        }
+    ],
+    "links": [
+        {
+            "content": "La maison de l'arbre !",
+            "k": 0,
+            "title": "La Parole errante, librairie Michèle Firk",
+            "type": "link",
+            "tags": [
+                "@learn",
+                "@meet"
+            ],
+            "tag": "@learn",
+            "link": "http://www.la-parole-errante.org/"
+        },
+        {
+            "content": "Le site de la solidarité et du don d'objets, du don de meubles, canapés, petites annonces gratuites de don. Donnons ce qui ne nous sert plus! Vous voulez vous séparer de ce qui vous encombre, mais vous ne voulez pas jeter ces objets encore en bon état ?",
+            "k": 1,
+            "title": "Jedonne.org",
+            "type": "link",
+            "tags": [
+                "@objects",
+                "@meet",
+                "@sel",
+                "@diy"
+            ],
+            "tag": "@objects",
+            "link": "http://www.jedonne.org"
+        },
+        {
+            "content": "",
+            "k": 2,
+            "title": "quelle plante/aromatique pour quel mal ?",
+            "type": "when",
+            "tags": [
+                "@health",
+                "@food",
+                "@diy",
+                "@boycott"
+            ],
+            "tag": "@health",
+            "when": "site/infographie résumant les plantes les plus connues (qu'on trouve au marché?)"
+        },
+        {
+            "content": "Échanger des bien ou des services",
+            "k": 3,
+            "title": "SEL de France",
+            "type": "link",
+            "tags": [
+                "@objects",
+                "@meet",
+                "@sel"
+            ],
+            "tag": "@objects",
+            "link": "http://seldefrance.communityforge.net"
+        },
+        {
+            "content": "",
+            "k": 4,
+            "title": "Myrecyclestuff",
+            "type": "link",
+            "tags": [
+                "@objects",
+                "@meet",
+                "@sel",
+                "@diy"
+            ],
+            "tag": "@objects",
+            "link": "http://myrecyclestuff.com"
+        },
+        {
+            "content": "Le site RECUPE est un site de dons, de récupération, de brocante gratuite où chacun peut proposer et donner sur internet, plutôt que jeter ce dont il veut se débarrasser.",
+            "k": 5,
+            "title": "Recupe.net",
+            "type": "link",
+            "tags": [
+                "@objects",
+                "@meet",
+                "@sel",
+                "@diy"
+            ],
+            "tag": "@objects",
+            "link": "http://recupe.net"
+        },
+        {
+            "content": "",
+            "k": 6,
+            "title": "Calendrier fruits & légumes de saison",
+            "type": "link",
+            "tags": [
+                "@food",
+                "@health",
+                "@diy"
+            ],
+            "tag": "@food",
+            "link": "http://asso.apne.free.fr/wp-content/uploads/2010/05/legumesaison.jpg)"
+        },
+        {
+            "content": "",
+            "k": 7,
+            "title": "Monnaies locales en France",
+            "type": "link",
+            "tags": [
+                "@objects",
+                "@meet",
+                "@boycott"
+            ],
+            "tag": "@objects",
+            "link": "http://monnaie-locale-complementaire.net/france"
+        },
+        {
+            "content": "Etienne Chouard",
+            "k": 8,
+            "title": "Démocratie et tirage au sort",
+            "type": "link",
+            "tags": [
+                "@learn",
+                "@doc"
+            ],
+            "tag": "@learn",
+            "link": "http://etienne.chouard.free.fr/Europe/tirage_au_sort.php"
+        },
+        {
+            "content": "Cartographie Greenpeace",
+            "k": 9,
+            "title": "Personnalités du nucléaire en France",
+            "type": "link",
+            "tags": [
+                "@learn",
+                "@paper",
+                "@boycott"
+            ],
+            "tag": "@learn",
+            "link": "http://greenpeace.fr/facenuke"
+        },
+        {
+            "content": "Idée de design et retour d'expérience",
+            "k": 10,
+            "title": "Boites d'échanges entre voisins",
+            "type": "link",
+            "tags": [
+                "@meet",
+                "@space",
+                "@diy",
+                "@sel"
+            ],
+            "tag": "@meet",
+            "link": "http://tako.ch/box/geneve/en"
+        },
+        {
+            "content": "Outils libres pour contrer les géants du web",
+            "k": 11,
+            "title": "Degooglisons-internet",
+            "type": "link",
+            "tags": [
+                "@learn",
+                "@diy",
+                "@boycott"
+            ],
+            "tag": "@learn",
+            "link": "http://degooglisons-internet.org"
+        },
+        {
+            "content": "Un moteur de recherche qui ne vous traque pas",
+            "k": 12,
+            "title": "Duckduckgo",
+            "type": "link",
+            "tags": [
+                "@learn",
+                "@diy",
+                "@boycott"
+            ],
+            "tag": "@learn",
+            "link": "https://duckduckgo.com"
+        },
+        {
+            "content": "La réalité de la colonisation française: [Techniquement si simple](https://www.youtube.com/watch?v=PnrsXB5xfGE), [Afrique 50](https://www.youtube.com/watch?v=604EaA8zZC0), [J'ai 8 ans](https://www.youtube.com/watch?v=6f-cgzPoaxw), de René Vautier",
+            "k": 13,
+            "title": "De la colonisation française",
+            "type": "link",
+            "tags": [
+                "@learn",
+                "@doc"
+            ],
+            "tag": "@learn",
+            "link": "https://www.youtube.com/watch?v=PnrsXB5xfGE"
+        },
+        {
+            "content": "Annuaire du consommer autrement",
+            "k": 14,
+            "title": "Le marché citoyen",
+            "type": "link",
+            "tags": [
+                "@food",
+                "@slow",
+                "@boycott"
+            ],
+            "tag": "@food",
+            "link": "http://www.lemarchecitoyen.net"
+        },
+        {
+            "content": "Ateliers associatif de réparation de vélo, prêt de matériel",
+            "k": 15,
+            "title": "Cyclofficine",
+            "type": "link",
+            "tags": [
+                "@move",
+                "@diy",
+                "@meet"
+            ],
+            "tag": "@move",
+            "link": "http://cyclocoop.org"
+        },
+        {
+            "content": "Aggrégateur de différents sites d'information indépendants.",
+            "k": 16,
+            "title": "Médias Libres",
+            "type": "link",
+            "tags": [
+                "@learn",
+                "@boycott",
+                "@media"
+            ],
+            "tag": "@learn",
+            "link": "http://www.mediaslibres.org"
+        },
+        {
+            "content": "Lucas Armati",
+            "k": 17,
+            "title": "Info en continu, machine à extremismes",
+            "type": "link",
+            "tags": [
+                "@media",
+                "@doc"
+            ],
+            "tag": "@media",
+            "link": "http://television.telerama.fr/television/l-info-en-continu-machine-a-extremisme,114212.php)"
+        },
+        {
+            "content": "Les AMAP, ou Association pour le Maintien d'une Agriculture Paysanne, sont nées, en 2001 en France, d'une prise de conscience citoyenne face à la situation de crise importante dans les domaines de l’agriculture et de l’alimentation.",
+            "k": 18,
+            "title": "Réseau des AMAP d'Ile-de-France",
+            "type": "link",
+            "tags": [
+                "@food"
+            ],
+            "tag": "@food",
+            "link": "http://www.amap-idf.org"
+        },
+        {
+            "content": "par Alternatives Économiques",
+            "k": 19,
+            "title": "Liens de sang entre les entreprises du CAC40",
+            "type": "link",
+            "tags": [
+                "@learn",
+                "@boycott",
+                "@doc"
+            ],
+            "tag": "@learn",
+            "link": "http://www.alternatives-economiques.fr/fic_bdd/article_pdf_fichier/1274372604_cac40_3.swf"
+        },
+        {
+            "content": "L’Observatoire des multinationales est publié par l’association Alter-médias, qui publie également le site d’informations Basta ! (www.bastamag.net). L’équipe de journalistes est la même, la responsabilité éditoriale de ce site étant plus particulièrement assumée par Olivier Petitjean.",
+            "k": 20,
+            "title": "Observatoire des multinationnales",
+            "type": "link",
+            "tags": [
+                "@learn",
+                "@boycott",
+                "@media"
+            ],
+            "tag": "@learn",
+            "link": "http://multinationales.org/"
+        },
+        {
+            "content": "Les Amis de la Terre ont analysé les différentes activités des grandes banques françaises pour en dégager trois ensembles distincts en fonction des risques sociaux et environnementaux induits par leurs activités : impacts positifs / risques faibles à modérés / risques maximum.",
+            "k": 21,
+            "title": "Classement des banques par les Amis de la Terre",
+            "type": "link",
+            "tags": [
+                "@learn",
+                "@boycott",
+                "@objects"
+            ],
+            "tag": "@learn",
+            "link": "http://www.financeresponsable.org/entreprise.php"
+        },
+        {
+            "content": "Certaines banques ne sont pas présentes dans les paradis fiscaux, ne paient pas de bonus extravagants, ne spéculent pas sur les marchés, investissent uniquement dans des projets d’économie sociale et solidaire..",
+            "k": 22,
+            "title": "Comment changer de banque ?",
+            "type": "link",
+            "tags": [
+                "@learn",
+                "@boycott",
+                "@objects"
+            ],
+            "tag": "@learn",
+            "link": "http://jechangedebanque.org/toutes-les-banques-ne-se-valent-pas"
+        },
+        {
+            "content": "Le sociétalisme est un “mouvement” d’idées qui préconise, pour l’essentiel, l’instauration d’un système économique (l’écosociétalisme) et politique basé sur les Droits de l’Homme et le respect de l’environnement, la réappropriation de la création monétaire par la collectivité, la gestion planétaire des biens communs non renouvelables ou nécessaires à la vie, la répartition des enrichissements collectifs nationaux sous forme de dividendes distribués équitablement à chaque citoyen, la démocratie participative locale et régionale dans un cadre de subsidiarité. La finalité est l’existence de “la société humaine” au travers de son épanouissement, ce qui conditionne réciproquement l’épanouissement de chacun des individus la composant.",
+            "k": 23,
+            "title": "Ecosocietal",
+            "type": "link",
+            "tags": [
+                "@learn",
+                "@doc"
+            ],
+            "tag": "@learn",
+            "link": "http://www.ecosocietal.org"
+        },
+        {
+            "content": "Manifeste et mouvement pour la récupération des biens communs",
+            "k": 24,
+            "title": "Bien communs",
+            "type": "link",
+            "tags": [
+                "@learn",
+                "@doc"
+            ],
+            "tag": "@learn",
+            "link": "http://bienscommuns.org/"
+        },
+        {
+            "content": "Média indépendant centré sur l’actualité économique, sociale et environnementale. Constitué d’une équipe de journalistes et de militants associatifs, Basta ! contribue à donner une visibilité aux enjeux écologiques, aux actions citoyennes, aux revendications sociales, aux mouvements de solidarité et aux alternatives",
+            "k": 25,
+            "title": "Bastamag",
+            "type": "link",
+            "tags": [
+                "@learn",
+                "@media"
+            ],
+            "tag": "@learn",
+            "link": "http://www.bastamag.net"
+        },
+        {
+            "content": "Site d’infos anticapitaliste, \nanti-autoritaire et révolutionnaire, aussi bien un relais qu’une caisse de résonance des luttes, résistances et conflictualités en cours, dans Paris et ses banlieues. Il s’inscrit dans une perspective anticapitaliste, anti-autoritaire et révolutionnaire et cherche à diffuser infos, récits, réflexions, témoignages et appels à agir.",
+            "k": 26,
+            "title": "Paris Luttes Info",
+            "type": "link",
+            "tags": [
+                "@learn",
+                "@media"
+            ],
+            "tag": "@learn",
+            "link": "http://paris-luttes.info"
+        },
+        {
+            "content": "Le Réseau Objection de Croissance est un réseau d’échange, de sensibilisation et d’action indépendant du point de vue politique économique et religieux.",
+            "k": 27,
+            "title": "Rseau objection de croissance",
+            "type": "link",
+            "tags": [
+                "@learn",
+                "@media",
+                "@doc"
+            ],
+            "tag": "@learn",
+            "link": "http://decroissance.ch/manifeste-du-roc-suisse/"
+        },
+        {
+            "content": "Les [Anarnautes](http://anarnautes.tumblr.com), mouvement pour une Remise en Cause des Autorites Illegitimes",
+            "k": 28,
+            "title": "Les anarnautes",
+            "type": "link",
+            "tags": [
+                "@learn",
+                "@media",
+                "@doc"
+            ],
+            "tag": "@learn",
+            "link": "https://medium.com/p/48cc0a5076bc"
+        },
+        {
+            "content": "Un autre monde est non seulement possible, il est absolument nécessaire. Et urgent. Mais comment dessiner ses contours et le penser ?",
+            "k": 29,
+            "title": "Manifeste des Convivialistes",
+            "type": "link",
+            "tags": [
+                "@learn",
+                "@media",
+                "@doc"
+            ],
+            "tag": "@learn",
+            "link": "http://lesconvivialistes.fr/?page_id=8"
+        },
+        {
+            "content": "Il est temps de réagir aux crises, aux dérives et aux fractures dont souffrent notre société et notre démocratie, et c’est possible comme nous le montrent les multiples initiatives en cours. C'est pourquoi plusieurs organisations de la société civile et des militants associatifs ont adopté une plateforme commune et proposé un Pacte civique pour renouveler le vivre-ensemble et rénover la qualité démocratique.",
+            "k": 30,
+            "title": "Pacte civique",
+            "type": "link",
+            "tags": [
+                "@learn",
+                "@media",
+                "@doc"
+            ],
+            "tag": "@learn",
+            "link": "http://www.pacte-civique.org/"
+        },
+        {
+            "content": "On a travaillé et on continuera d’œuvrer sur des thématiques aussi variées que l’économie, l’environnement, la vie sociale, l’habitat et le fonctionnement des collectivités, a précisé Bruno Bérardi. Le problème aujourd’hui à Rodez comme ailleurs, c’est que l’élu se sent dépositaire de l’intérêt général.",
+            "k": 31,
+            "title": "Rodez. Le collectif Citoyen accouche d'une charte",
+            "type": "link",
+            "tags": [
+                "@media",
+                "@doc"
+            ],
+            "tag": "@media",
+            "link": "http://www.ladepeche.fr/article/2013/10/25/1738708-rodez-le-collectif-citoyen-accouche-d-une-charte.html"
+        },
+        {
+            "content": "Manifeste pour une Dotation Inconditionnelle d'Autonomie",
+            "k": 32,
+            "title": "Un Projet de décroissance",
+            "type": "link",
+            "tags": [
+                "@learn",
+                "@media",
+                "@doc"
+            ],
+            "tag": "@learn",
+            "link": "http://www.projet-decroissance.net"
+        },
+        {
+            "content": "Thinktank anthropocene raisonné",
+            "k": 33,
+            "title": "Institut momentum",
+            "type": "link",
+            "tags": [
+                "@learn",
+                "@media",
+                "@doc"
+            ],
+            "tag": "@learn",
+            "link": "http://www.institutmomentum.org/2011/06/le-manifeste"
+        },
+        {
+            "content": "Notre monde est en crise et cette crise est avant tout la nôtre… Les égoïsmes et la cupidité d’une infime minorité dominent parce que les individus composant la grande majorité se sont repliés dans une logique de chacun pour soi. Notre monde est en crise parce que l’Individualisme a pris le dessus sur les valeurs !",
+            "k": 34,
+            "title": "Abécédaire du changement",
+            "type": "link",
+            "tags": [
+                "@learn",
+                "@media",
+                "@doc"
+            ],
+            "tag": "@learn",
+            "link": "http://abecedaireduchangement.wordpress.com/"
+        },
+        {
+            "content": "",
+            "k": 35,
+            "title": "Brigade des clowns, manifeste",
+            "type": "link",
+            "tags": [
+                "@com",
+                "@meet",
+                "@space"
+            ],
+            "tag": "@com",
+            "link": "http://brigadeclowns.wordpress.com/le-manifeste-de-larmee-des-clowns/"
+        },
+        {
+            "content": "",
+            "k": 36,
+            "title": "Générations Futur, annuaire alternatives concrètes",
+            "type": "link",
+            "tags": [
+                "@learn",
+                "@media",
+                "@doc"
+            ],
+            "tag": "@learn",
+            "link": "http://www.reporterre.net/spip.php?article3962"
+        },
+        {
+            "content": "",
+            "k": 37,
+            "title": "Décroissance conviviale",
+            "type": "link",
+            "tags": [
+                "@doc"
+            ],
+            "tag": "@doc",
+            "link": "http://www.decroissance.qc.ca/manifeste"
+        },
+        {
+            "content": "",
+            "k": 38,
+            "title": "Infokiosques.net",
+            "type": "link",
+            "tags": [
+                "@learn",
+                "@media"
+            ],
+            "tag": "@learn",
+            "link": "https://infokiosques.net"
+        },
+        {
+            "content": "",
+            "k": 39,
+            "title": "Eco quartier Dieppe",
+            "type": "link",
+            "tags": [
+                "@doc"
+            ],
+            "tag": "@doc",
+            "link": "http://fr.ulule.com/ecoquartier-dieppe/"
+        },
+        {
+            "content": "Nous vous proposons de venir préparer joyeusement affiches et papillons en bonne compagnie. Venez déployer vos talents de dessinateurs, vos idées et vos propositions sur les supports que nous apporterons lors du prochain atelier.",
+            "k": 40,
+            "title": "Les reposeurs",
+            "type": "link",
+            "tags": [
+                "@com",
+                "@meet",
+                "@space",
+                "@antipub"
+            ],
+            "tag": "@com",
+            "link": "http://www.reposeurs.eu.org/"
+        },
+        {
+            "content": "",
+            "k": 41,
+            "title": "Collectif des déboulonneurs",
+            "type": "link",
+            "tags": [
+                "@com",
+                "@meet",
+                "@space",
+                "@antipub"
+            ],
+            "tag": "@com",
+            "link": "http://www.deboulonneurs.org/"
+        },
+        {
+            "content": "Résistance à l'Agression Publicitaire",
+            "k": 42,
+            "title": "Collectif des veilleurs de Nuit",
+            "type": "link",
+            "tags": [
+                "@com",
+                "@meet",
+                "@space",
+                "@antipub"
+            ],
+            "tag": "@com",
+            "link": "http://antipub.org"
+        },
+        {
+            "content": "",
+            "k": 43,
+            "title": "Brigade AntiPub",
+            "type": "link",
+            "tags": [
+                "@com",
+                "@meet",
+                "@space",
+                "@antipub"
+            ],
+            "tag": "@com",
+            "link": "http://www.bap.propagande.org"
+        },
+        {
+            "content": "Notre but: faire passer l’information avant tout, quel que soit le moyen, le principal étant que l’information circule. Même si la plupart des articles sont piochés à gauche et à droite, voire à l’extrême gauche et logiquement « du même côté inverse à droite parallèlement à la gauche », l’information est de toute manière généralement vérifiée et vérifiable.  Faire passer l’info, c’est une bien belle chose, mais elle est vaine si le cri lancé n’est entendu par personne, n’hésitez pas à nous laisser vos avis, questions, remarques et précisions dans les commentaires.",
+            "k": 44,
+            "title": "Les moutons enragés",
+            "type": "link",
+            "tags": [
+                "@media"
+            ],
+            "tag": "@media",
+            "link": "http://lesmoutonsenrages.fr/"
+        },
+        {
+            "content": "",
+            "k": 45,
+            "title": "Mouvement des colibris",
+            "type": "link",
+            "tags": [
+                "@learn",
+                "@meet"
+            ],
+            "tag": "@learn",
+            "link": "http://www.colibris-lemouvement.org/sites/default/files/contents/files/Plan_des_colibris.pdf"
+        },
+        {
+            "content": "Chaque jour une idée pour fabriquer soi-même recycler",
+            "k": 46,
+            "title": "Almanach 2015 Vivre mieux en dépensant moins",
+            "type": "link",
+            "tags": [
+                "@objects",
+                "@diy"
+            ],
+            "tag": "@objects",
+            "link": "http://www.lulu.com/shop/st%C3%A9phanie-gauvain/agenda-vivre-mieux-en-d%C3%A9pensant-moins/paperback/product-21961172.html"
+        },
+        {
+            "content": "Brocante de la récup', donne une seconde vie aux objets abandonnés, jetés, donnés. Montreuil",
+            "k": 47,
+            "title": "La Collecterie",
+            "type": "link",
+            "tags": [
+                "@objects",
+                "@sel"
+            ],
+            "tag": "@objects",
+            "link": "http://lacollecterie.org"
+        },
+        {
+            "content": "cartos, viz du système...",
+            "k": 48,
+            "title": "Bureau d'études",
+            "type": "link",
+            "tags": [
+                "@learn",
+                "@doc",
+                "@boycott"
+            ],
+            "tag": "@learn",
+            "link": "http://bureaudetudes.org"
+        },
+        {
+            "content": "média libre (cf Lepers, la TéléLibre)",
+            "k": 49,
+            "title": "Reporter citoyen",
+            "type": "link",
+            "tags": [
+                "@media"
+            ],
+            "tag": "@media",
+            "link": "http://www.reporter-citoyen.fr"
+        },
+        {
+            "content": "",
+            "k": 50,
+            "title": "Charlie Hebdo et les réseaux sociaux",
+            "type": "link",
+            "tags": [
+                "@learn",
+                "@doc"
+            ],
+            "tag": "@learn",
+            "link": "http://www.zviane.com/prout/3707"
+        },
+        {
+            "content": "Mr Mondialisation est un think tank informel et citoyen francophone à visée internationale. Son objectif principal est d’alimenter le débat libre dans la sphère publique autour des grands sujets mondiaux et locaux de notre temps.",
+            "k": 51,
+            "title": "Mr Mondialisation",
+            "type": "link",
+            "tags": [
+                "@media",
+                "@learn",
+                "@com"
+            ],
+            "tag": "@media",
+            "link": "https://mrmondialisation.org/"
+        },
+        {
+            "content": "Le collectif « Prenons la ville » est né il y a quelques années, en septembre 2011. Il se réunit au Rémouleur, local de « lutte et de critique sociale », qui est situé à Bagnolet, juste à la limite avec Montreuil. C’est un local où il y a une bibliothèque, un infokiosque et des archives. Y ont lieu des soirées projection et discussion. S’y organisent différents collectifs : autour des histoires de papiers et d’immigration, autour des problèmes qu’on peut rencontrer avec la Caf, face aux problèmes de répression, et « prenons la ville ».",
+            "k": 52,
+            "title": "Collectif Prenons la Ville",
+            "type": "link",
+            "tags": [
+                "@com",
+                "@learn"
+            ],
+            "tag": "@com",
+            "link": "https://infokiosques.net/spip.php?auteur538"
+        },
+        {
+            "content": "",
+            "k": 53,
+            "title": "Agenda Demosphere",
+            "type": "link",
+            "tags": [
+                "@media",
+                "@learn"
+            ],
+            "tag": "@media",
+            "link": "http://www.demosphere.eu"
+        },
+        {
+            "content": "",
+            "k": 54,
+            "title": "Le 4e singe",
+            "type": "link",
+            "tags": [
+                "@media",
+                "@learn",
+                "@com"
+            ],
+            "tag": "@media",
+            "link": "http://4emesinge.com/"
+        },
+        {
+            "content": "Devenons acteurs de notre information !",
+            "k": 55,
+            "title": "Informa'Action",
+            "type": "link",
+            "tags": [
+                "@media"
+            ],
+            "tag": "@media",
+            "link": "http://www.informaction.info/"
+        },
+        {
+            "content": "",
+            "k": 56,
+            "title": "j'ai un doute",
+            "type": "link",
+            "tags": [
+                "@media",
+                "@doc"
+            ],
+            "tag": "@media",
+            "link": "http://jaiundoute.com/"
+        },
+        {
+            "content": "Les moutons en ont marre, ils s'informent !",
+            "k": 57,
+            "title": "Les moutons enragés",
+            "type": "link",
+            "tags": [
+                "@media",
+                "@learn"
+            ],
+            "tag": "@media",
+            "link": "http://lesmoutonsenrages.fr/"
+        },
+        {
+            "content": "Autogestion: A la recherche du triple A ☀ A l'essentiel. Limiter l'impact écologique ☀ Autonomie par l'Alternative Libertaire Décroissante",
+            "k": 58,
+            "title": "Alternative autonomie",
+            "type": "link",
+            "tags": [
+                "@media",
+                "@learn",
+                "@diy"
+            ],
+            "tag": "@media",
+            "link": "https://decroissons.wordpress.com"
+        },
+        {
+            "content": "Les Alternatiba sont des Villages des alternatives, individuelles, collectives, territoriales et systémiques au changement climatique et à la crise énergétique.",
+            "k": 59,
+            "title": "Alternatiba",
+            "type": "link",
+            "tags": [
+                "@com",
+                "@space",
+                "@meet"
+            ],
+            "tag": "@com",
+            "link": "https://alternatiba.eu/"
+        },
+        {
+            "content": "",
+            "k": 60,
+            "title": "Transition citoyenne",
+            "type": "link",
+            "tags": [
+                "@doc"
+            ],
+            "tag": "@doc",
+            "link": "http://www.transitioncitoyenne.org/"
+        },
+        {
+            "content": "pétition et idées d'actions avec liens vers sites/asso/collectifs",
+            "k": 61,
+            "title": "Moi citoyen",
+            "type": "link",
+            "tags": [
+                "@doc"
+            ],
+            "tag": "@doc",
+            "link": "http://www.moicitoyen.org"
+        },
+        {
+            "content": "",
+            "k": 62,
+            "title": "Collectif les-engraineurs",
+            "type": "link",
+            "tags": [
+                "@com",
+                "@meet",
+                "@space"
+            ],
+            "tag": "@com",
+            "link": "http://www.collectif-lesengraineurs.com"
+        },
+        {
+            "content": "... read http://dark-mountain.net/about/faqs/",
+            "k": 63,
+            "title": "Dark montain collective",
+            "type": "link",
+            "tags": [
+                "@learn",
+                "@doc"
+            ],
+            "tag": "@learn",
+            "link": "http://dark-mountain.net/about/the-dark-mountain-project"
+        },
+        {
+            "content": "",
+            "k": 64,
+            "title": "Charte des festivals",
+            "type": "link",
+            "tags": [
+                "@meet"
+            ],
+            "tag": "@meet",
+            "link": "http://www.lecollectifdesfestivals.org/collectif/download/textes_fondamentaux/Charte%20des%20festivals%202012%282%29.pdf"
+        },
+        {
+            "content": "Nous ne sommes pas des sièges ou des yeux ou des utilisateurs finaux ou des consommateurs.\nNous sommes des êtres humains et vous n'avez pas les moyens de nos ambitions.",
+            "k": 65,
+            "title": "Manifeste des évidences",
+            "type": "link",
+            "tags": [
+                "@learn",
+                "@doc"
+            ],
+            "tag": "@learn",
+            "link": "http://www.cluetrain.com/manifeste.html"
+        },
+        {
+            "content": "La situation inquiétante de notre planète nous impose de retrouver le chemin de formes d’action et de lutte plus efficaces et plus radicales.",
+            "k": 66,
+            "title": "Manifeste désobéir.net",
+            "type": "link",
+            "tags": [
+                "@learn",
+                "@doc"
+            ],
+            "tag": "@learn",
+            "link": "http://www.desobeir.net/le-collectif/le-manifeste/"
+        },
+        {
+            "content": "The IndieWeb is a people-focused alternative to the ‘corporate web’. There are many similar efforts that are based on a single (often open source) project. We believe a community developing a plurality of projects following a set of principles is more robust and produces better results than any such monoculture.",
+            "k": 67,
+            "title": "The IndieWebCamp",
+            "type": "link",
+            "tags": [
+                "@learn",
+                "@doc",
+                "@boycott"
+            ],
+            "tag": "@learn",
+            "link": "http://indiewebcamp.com"
+        },
+        {
+            "content": "by simplon.co, forum d'entraide pbs pratiques/solutions informatique",
+            "k": 68,
+            "title": "Digitalisons l'entrepreunariat social",
+            "type": "link",
+            "tags": [
+                "@objects",
+                "@diy"
+            ],
+            "tag": "@objects",
+            "link": "http://des.simplon.co/"
+        },
+        {
+            "content": "Tarnac",
+            "k": 69,
+            "title": "Comité de soutien 11novembre",
+            "type": "link",
+            "tags": [
+                "@learn",
+                "@doc"
+            ],
+            "tag": "@learn",
+            "link": "http://soutien11novembre.org"
+        },
+        {
+            "content": "",
+            "k": 70,
+            "title": "The FLOK Project",
+            "type": "link",
+            "tags": [
+                "@doc"
+            ],
+            "tag": "@doc",
+            "link": "http://en.wiki.floksociety.org/w/Research_Plan#Background_on_the_FLOK_Project"
+        },
+        {
+            "content": "PAF is a open and relatively free site (and) PAF is a nomadic space. PAF tries to stay cheap. PAF has almost no staff",
+            "k": 71,
+            "title": "Performing Arts Forum",
+            "type": "link",
+            "tags": [
+                "@learn",
+                "@space",
+                "@meet"
+            ],
+            "tag": "@learn",
+            "link": "http://www.pa-f.net"
+        },
+        {
+            "content": "Infokiosque, annuaires des alternatives",
+            "k": 72,
+            "title": "Ecoclash",
+            "type": "link",
+            "tags": [
+                "@learn",
+                "@diy",
+                "@media"
+            ],
+            "tag": "@learn",
+            "link": "http://ecoclash.jimdo.com"
+        },
+        {
+            "content": "par Alina Astudillo Flores. Il est facile de se rendre compte lorsque quelque chose ne tourne pas rond",
+            "k": 73,
+            "title": "A 50cm del suelo",
+            "type": "link",
+            "tags": [
+                "@space",
+                "@doc"
+            ],
+            "tag": "@space",
+            "link": "http://www.cultureunplugged.com/documentary/watch-online/festival/play/3929/A-50-cm-del-Suelo--50-cm-Above-the-Ground-"
+        },
+        {
+            "content": "Marie Bouts & Till Roeskens\n\nPour se refaire une santé psychique, rien de tel qu'une bonne heure de dérive urbaine, d'observation tranquille et attentive sur des détails oubliés.",
+            "k": 74,
+            "title": "Archipel",
+            "type": "link",
+            "tags": [
+                "@space",
+                "@doc"
+            ],
+            "tag": "@space",
+            "link": "https://vimeo.com/113112194"
+        },
+        {
+            "content": "met en relations des propriétaires de mur(s) et des artistes",
+            "k": 75,
+            "title": "La Graffiterie",
+            "type": "link",
+            "tags": [
+                "@live",
+                "@space"
+            ],
+            "tag": "@live",
+            "link": "http://graffiterie.org"
+        },
+        {
+            "content": "Pour héberger d'autres êtres humains sans monnayer",
+            "k": 76,
+            "title": "Couchsurfing",
+            "type": "link",
+            "tags": [
+                "@live",
+                "@meet"
+            ],
+            "tag": "@live",
+            "link": "http://couchsurfing.org"
+        },
+        {
+            "content": "Non au BlablaCar qui cherche à tout marchandiser.",
+            "k": 77,
+            "title": "Covoiturage-libre",
+            "type": "link",
+            "tags": [
+                "@move",
+                "@meet"
+            ],
+            "tag": "@move",
+            "link": "http://covoiturage-libre.fr"
+        },
+        {
+            "content": "Pour comprendre et éviter les différents types de pouvoir !",
+            "k": 78,
+            "title": "Comment éviter les chefs ?",
+            "type": "link",
+            "tags": [
+                "@learn",
+                "@meet",
+                "@diy",
+                "@doc"
+            ],
+            "tag": "@learn",
+            "link": "http://generationsfutur.zici.fr/wp-content/uploads/2012/09/Tableauantichefs.gif"
+        },
+        {
+            "content": "http://manutopik.net/ ?\n\nhttp://la-critique-libertaire.over-blog.com/pages/contribution-a-l-elaboration-d-un-manifeste-anarchiste-revolutionnaire-3758457.html > puis\nhttp://lecombatlibertaire.free.fr/\n\nhttp://mvt14.blogspot.fr/2014/12/le-confort-de-lignorance.html\n\nhttp://gwendaletjean.tumblr.com/telecharger-le-manifeste\n\nvoir henri david thoreau\nvoir (en) https://ind.ie/manifesto/ (digital, tools)\nvoir http://side-ways.net/en\nvoir http://www.passerelleco.info/article.php?id_article=301\nvoir democracy http://www.kaizen-magazine.com/innombrables-experiences-democratiques-non-atheniennes-lire-graeber-dupuis-deri-et-rediker/\n\nliens+documents de http://jaiundoute.com/\n\nliens de https://decroissons.wordpress.com/blog-articles-liens-mises-a-jours/activisme-citoyen-resistances/\n\nliens de http://4emesinge.com/le-mouvement-pour-une-1re-democratie/\nles (très nombreux) liens de http://utime.unblog.fr/\nles (très nombreux) liens de [Le silence qui parle](http://lesilencequiparle.unblog.fr/)\n\nles liens de l'Édition [La Fabrique](http://www.lafabrique.fr/SitesAmis.php)\n\nhttp://wolesmoteurs.net/hyperliens/ au Québec\n\nhttps://abecedaireduchangement.wordpress.com\n\nhttp://www.humanisme-contemporain.com/",
+            "k": 79
+        }
+    ]
+}

@@ -116,6 +116,7 @@ footer: >
 
 
 ---
+date: 2015-06-01
 role: meta
 title: Et si on écrivait ensemble ?
 subtitle: Manifeste(s) des autres mondes possibles
@@ -155,6 +156,7 @@ content: >
 
 
 ---
+date: 2015-06-01
 role: meta
 title: "Méthodologie et outils"
 subtitle: Comment fonctionne ce site ? écriture collective !
@@ -185,6 +187,7 @@ content: >
 
 
 ---
+date: 2015-06-01
 title: On en a marre !
 subtitle: Un monde s'en va, aidons le à partir
 slug: marre
@@ -219,6 +222,7 @@ content: >
 
 
 ---
+date: 2015-06-01
 title: On leur laisse quoi ?
 subtitle: Altruistes ou simplement parents, nous sommes responsables de ce que nous acceptons aujourd'hui, et de ce qu'on laisse aux générations suivantes
 slug: laisse_quoi
@@ -243,6 +247,7 @@ content: >
     
 
 ---
+date: 2015-06-01
 title: On fait comment ?
 subtitle: Pour changer quoi que ce soit, il faut commencer partout !
 slug: comment_faire
@@ -263,6 +268,7 @@ content: >
 
 
 ---
+date: 2015-06-01
 title: Héritages
 subtitle: "privilégiés du nord, responsables, refusons l'ingérence"
 slug: heritages
@@ -286,6 +292,7 @@ content: >
 
 
 ---
+date: 2015-06-01
 title: Inégalités et violences
 subtitle: Il existera toujours des inégalités et des violences
 slug: violence
@@ -306,6 +313,7 @@ content: >
 
 
 ---
+date: 2015-06-01
 title: Retrouver un équilibre
 subtitle: Supporter, survivre indéfiniment ? Non, là, c'est trop.
 slug: equilibre
@@ -330,6 +338,7 @@ content: >
 
 
 ---
+date: 2015-06-01
 title: Habitudes, dépendances, aliénations
 subtitle: Pourquoi on se fait avoir ?
 slug: alienation
@@ -352,6 +361,7 @@ content: >
 
 
 ---
+date: 2015-06-01
 title: Ce monde est pluriel
 subtitle: Nous ne cherchons pas à le réduire avec une solution unique 
 slug: monde_pluriel
@@ -375,6 +385,7 @@ content: >
 
 
 ---
+date: 2015-06-01
 title: Qui sont nos adversaires ?
 subtitle: La faute à qui ?
 slug: adversaires
@@ -407,6 +418,7 @@ content: >
 
 
 ---
+date: 2015-06-01
 title: "Argent roi"
 subtitle: Rareté artificielle qui nous enferme dans une course à la compétition et au profit
 slug: argent
@@ -432,6 +444,7 @@ content: >
 
 
 ---
+date: 2015-06-01
 title: À quoi on tient ?
 subtitle: Si on y réfléchit, qu'est-ce qui compte vraiment ?
 slug: on_tient_a_quoi
@@ -442,7 +455,7 @@ quote:
     author:  Le Tour de France des Alternatives, collection Reporterre dirigée par Hervé Kempf, 2014
     content: >
         Il ne s’agit plus de faire la liste, connue jusqu’à la nausée, des **non** de ce que nous refusons, mais d’élaborer collectivement des **oui** qui caractérisent les mondes que nous voulons
-tags: 
+tags: dream, love, education
 content: >
     Nous sommes convaincus de l'importance de *l'éducation, l'art, l'histoire, la littérature, la vulgarisation scientifique* pour favoriser un **esprit critique**, une **ouverture aux autres et au monde**, la **coopération** plutôt que la compétition.
 
@@ -464,6 +477,7 @@ content: >
 
 
 ---
+date: 2015-06-01
 title: Pouvoir, autorité, autonomie
 subtitle: Où se trouve le vrai pouvoir ?
 slug: pouvoir
@@ -490,9 +504,8 @@ content: >
 
 
 
-
-
 ---
+date: 2015-06-01
 title: Déléguer, toujours déléguer ?
 subtitle: État, institutions, ou comment déléguer toute autorité
 slug: deleguer
@@ -517,6 +530,7 @@ content: >
 
 
 ---
+date: 2015-06-01
 title: Science sacralisée, expropriation
 subtitle: On arrête pas le progrès, émancipation ou servitude ? technologies et science sans conscience
 slug: science
@@ -548,6 +562,7 @@ content: >
 
 
 ---
+date: 2015-06-01
 title: "Désobéir, prendre position"
 subtitle: "Sortons de nos zones de confort et de soumission. Depuis là où nous sommes, reformulons nous-mêmes les questions: tout lien, tout échange, toute action est politique"
 slug: prendre_position
@@ -581,6 +596,7 @@ content: >
 
 
 ---
+date: 2015-06-01
 title: Réenchantons, amusons-nous !
 slug: amusons_nous
 image:
@@ -600,6 +616,7 @@ content: >
 
 
 ---
+date: 2015-06-01
 title: Rencontrons-nous !
 subtitle: "Expérience du collectif, attention et confiance en l'autre, nouvelles formes de collectifs autogérés. Objectif: vivre ensemble"
 slug: rencontrons_nous
@@ -627,6 +644,7 @@ content: >
 
 
 ---
+date: 2015-06-01
 title: Pratiquer un langage commun
 subtitle: Le langage ne décrit pas le monde, il le construit. Des mots valises à la réalité, pour nous comprendre, soyons précis !
 slug: langage_commun
@@ -657,6 +675,7 @@ content: >
 
 
 ---
+date: 2015-06-01
 title: Traduire, transmettre, échanger
 subtitle: Plus forts que les idées, leur échange ! pas d’élitisme ni d’expropriation, tout peut être compris, transmis, diffusé.
 slug: transmettre_echanger
@@ -681,6 +700,7 @@ content: >
 
 
 ---
+date: 2015-06-01
 title: Réappropriation, émancipation
 subtitle: "Informons-nous, disséquons l'ordre et l'origine des choses"
 slug: reappropriation
@@ -710,6 +730,7 @@ content: >
 
 
 ---
+date: 2015-06-01
 title: Récupérations
 subtitle: Capitalisme vert, économie collaborative...
 slug: recuperation
@@ -733,6 +754,7 @@ content: >
 
 
 ---
+date: 2015-06-01
 title: Sous toutes les formes !
 subtitle: Diversité, multidisciplinarité, contre-récits
 slug: formes_diverses

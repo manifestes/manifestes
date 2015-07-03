@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<path d="M214.583,78.277c0,7.334-4.618,13.279-10.315,13.279h-55.703c-5.695,0-10.314-5.945-10.314-13.279V50.835
+	c0-7.334,4.619-13.279,10.314-13.279h55.703c5.697,0,10.315,5.945,10.315,13.279V78.277z"/>
+<polyline points="146.334,87.389 146.334,106.277 167.166,87.057 "/>
+<g>
+	<line fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" x1="148.166" y1="53.057" x2="183.5" y2="53.057"/>
+	<line fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" x1="148.166" y1="64.557" x2="174.833" y2="64.557"/>
+	<line fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" x1="148.166" y1="76.057" x2="193.75" y2="76.057"/>
+</g>
+<circle fill="#FFFFFF" cx="214.583" cy="36.556" r="23.833"/>
+<g>
+	
+		<line fill="none" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" x1="211.083" y1="34.306" x2="211.083" y2="47.806"/>
+	
+		<line fill="none" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" x1="204.083" y1="41.056" x2="217.583" y2="41.056"/>
+</g>
+<path fill="#FFFFFF" d="M57.027,31.64H29.656c-3.694,0-6.689,3.855-6.689,8.611v17.795c0,4.115,2.244,7.551,5.241,8.402v9.754
+	l10.347-9.546h27.221c3.694,0,6.689-3.855,6.689-8.61v-11.6C64.147,46.446,57.367,39.874,57.027,31.64z M29.397,40.069H52.31v3.242
+	H29.397V40.069z M29.397,47.527h17.292v3.243H29.397V47.527z M58.956,58.227H29.397v-3.242h29.559V58.227z"/>
+<g>
+	<path fill="#FFFFFF" d="M70.196,39.907c-0.896,0-1.621-0.726-1.621-1.621v-8.754c0-0.896,0.726-1.621,1.621-1.621
+		s1.621,0.726,1.621,1.621v8.754C71.817,39.182,71.092,39.907,70.196,39.907z"/>
+	<path fill="#FFFFFF" d="M74.411,35.53h-8.754c-0.896,0-1.622-0.726-1.622-1.621s0.727-1.621,1.622-1.621h8.754
+		c0.896,0,1.621,0.726,1.621,1.621S75.307,35.53,74.411,35.53z"/>
+</g>
+</svg>

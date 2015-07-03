@@ -1,0 +1,56 @@
+
+
+<!-- ——————————————— corner mark QUI QUOI ... -->
+<!-- <div ng-if="p.dept==0" class="mark">
+  <span>{{p.k+1}}. {{cardLabel(p.k)}}</span>
+</div> -->
+
+<!-- ——————————————— dept0 normal full cell  -->
+<div
+  class="inner full dept-{{p.dept}}"
+  ng-if="p.dept==0"
+  ng-click="clickOn(p); $event.stopPropagation();">
+    <div class="title">{{p.title}}</div>
+    <div class="h1 dept-{{p.dept}}">{{cardLabel(p.k)}}</div>
+    <markdown
+      texttailor
+      tt-resizable="true"
+      class="markdown dept-{{p.dept}}"
+      ng-model="p.content"></markdown>
+    <div ng-if="p.dept==0" class="cardimage" back-img="images/cover_{{cardLabel(p.k)}}.jpg"></div>
+</div>
+
+<!-- ——————————————— dept1 normal full cell -->
+<div
+  class="inner full dept-{{p.dept}}"
+  ng-if="p.dept==1 && !p.subbed"
+  ng-click="clickOn(p); $event.stopPropagation();">
+    <!-- <div class="index" ng-if="p.dept==1">{{p.pk+1}}.{{p.k+1}}</div> -->
+    <div class="h1 dept-{{p.dept}}"><span class="index">{{p.pk+1}}.{{p.k+1}}.</span> {{p.title}}</div>
+    <markdown
+      texttailor
+      tt-resizable="true"
+      class="markdown dept-{{p.dept}}"
+      ng-model="p.content"></markdown>
+    <div ng-if="p.dept==0" class="cardimage" back-img="images/cover_{{cardLabel(p.k)}}.jpg"></div>
+</div>
+
+<!-- ——————————————— cell with 8-titles & their dev -->
+<div
+  class="inner sub dept-{{p.dept}} {{p.subcss|join:' '}}"
+  ng-class="{opened:p.showsubdev}"
+  ng-if="p.subbed"
+  ng-click="clickSubdev(p,true); $event.stopPropagation();">
+    <div class="index">{{p.pk+1}}.{{p.k+1}}</div>
+    <div class="h1" texttailor tt-resizable="true" tt-center="true">{{p.title}}</div>
+</div>
+<div
+  class="inner subdev dept-{{p.dept}} {{p.subdevcss|join:' '}}"
+  ng-if="p.subbed && p.showsubdev"
+  ng-click="clickSubdev(p,false); $event.stopPropagation();">
+    <markdown
+      texttailor
+      tt-resizable="true"
+      class="markdown"
+      ng-model="p.content"></markdown>
+</div>

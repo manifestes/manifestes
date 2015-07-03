@@ -1,0 +1,212 @@
+
+<div class="container">
+
+  <!-- ———————————————————————————————— INTRO -->
+  <div
+    class="wrapper center intro"
+    ng-class="{
+      outleft:state.view=='act',
+      outright:state.view=='think'}"
+    ng-click="state.view='intro';">
+    
+    <div class="menubar header center">
+      <img src="images/ic-intro.svg">
+      <div
+        ng-if="state.view=='intro'"
+        class="button left"
+        ng-click="state.view='think'; $event.stopPropagation();"
+        ng-mouseover="bl=true;"
+        ng-mouseout="bl=false;">
+        <span ng-if="!bl">refléchissons calmement</span>
+        <span ng-if="bl" class="clicker">← lire les idées</span>
+      </div>
+      <div
+        ng-if="state.view=='intro'"
+        class="button right"
+        ng-click="state.view='act'; $event.stopPropagation();"
+        ng-mouseover="br=true;"
+        ng-mouseout="br=false;">
+        <span ng-if="!br">agissons ensemble</span>
+        <span ng-if="br" class="clicker">participer aux actions →</span>
+      </div>
+    </div>
+    
+    <div class="content">
+      <div class="header" ng-if="state.view=='intro'">
+        <div class="h1">manifeste</div>
+        <div class="h2">des</div>
+        <div class="h3">utopies concrètes</div>
+      </div>
+      <div
+        class="quotes"
+        ng-if="state.view=='intro'"
+        ng-click="state.quoindex = state.quoindex+1;">
+        <div
+          no-animate
+          ng-repeat="q in quotes"
+          ng-if="near($index,state.quoindex)"
+          class="quote {{q.type}}"
+          ng-class="{
+            active:$index==state.quoindex,
+            left:$index==state.quoindex-1,
+            right:$index==state.quoindex+1}">
+          <div 
+            ng-if="q.type=='img'"
+            class="img cover"
+            back-img="media/{{q.img}}"></div>
+          <div ng-if="q.type=='author'" class="icon one">“</div>
+          <div ng-if="q.type=='author'" class="icon two">”</div>
+          <markdown
+            ng-if="q.type=='author'"
+            class="markdown"
+            texttailor
+            tt-resizable="true"
+            ng-model="q.content">
+          </markdown>
+          <markdown class="author" ng-model="q.author"></markdown>
+          <div class="counter">{{state.quoindex+1}} / {{quotes.length}}</div>
+        </div>
+      </div>
+      <div
+        class="arrow prev"
+        ng-if="state.view=='intro'"
+        ng-show="state.quoindex>0"
+        ng-click="state.quoindex = state.quoindex-1;"><</div>
+      <div
+        class="arrow next"
+        ng-if="state.view=='intro'"
+        ng-show="state.quoindex<quotes.length-1"
+        ng-click="state.quoindex = state.quoindex+1;">></div>
+    </div>
+
+  </div>
+
+
+  <!-- ———————————————————————————————— THINK & FAQ -->
+  <div
+    class="wrapper left"
+    ng-class="{active:state.view=='think', out:state.view!='think'}"
+    ng-click="state.view='think'; state.faq=false;">
+    <div 
+      class="menubar header left"
+      ng-class="{active:state.view=='think' && !state.faq}">
+      <span class="title">UTOPIES</span><img src="images/ic-think.svg">
+    </div>
+    
+    <!-- 4 THEORY blocks: Qui Quoi Pourquoi Comment -->
+    <div class="content thinks">
+      <div 
+        ng-repeat="p in thinks"
+        tempthink
+        ng-if="shallShowThink(p)"
+        class="think theory {{p.css|join:' '}} dept-{{p.dept}} parent-{{p.pk}} k-{{p.k}}"
+        ng-class="{
+          even:$index%2==0,
+          opened:p.k==current.k}">
+      </div>
+    </div>
+    
+    <!-- FAQ -->
+    <div class="content faqs" ng-if="state.faq">
+      <div class="backthink" ng-click="state.faq=!state.faq; current=start;"></div>
+      <div 
+        ng-repeat="p in faq"
+        tempthink
+        ng-if="shallShowThink(p)"
+        class="think faq {{p.css|join:' '}} dept-{{p.dept}} parent-{{p.pk}} k-{{p.k}}"
+        ng-class="{
+          even: $index %2==0,
+          opened:p.k==current.k}">
+      </div>
+    </div>
+    <div
+      class="menubar footer left"
+      ng-class="{active:state.faq}"
+      ng-click="state.view='think'; state.faq=!state.faq; current=start; $event.stopPropagation();">
+      <span class="title">RÉACTION(S)</span><img src="images/ic-faq.svg">
+    </div>
+  </div>
+
+
+  <!-- ———————————————————————————————— ACTION -->
+  <div
+    class="wrapper right"
+    ng-class="{active:state.view=='act', out:state.view!='act'}"
+    ng-click="state.view='act'">
+    <div class="menubar header right">
+      <img src="images/ic-act.svg"><span class="title">CONCRÈTES</span>
+    </div>
+
+    <div class="content">
+      <!-- action header tags -->
+      <div class="bar tags-top" ng-click="resetTags();">
+        QUOTIDIEN  ▶ 
+        <div
+          ng-repeat="t in tags1"
+          class="tag tag-top"
+          ng-class="{
+            selected: state.tag == t.tag,
+            currentover:state.tagsover.indexOf(t.tag)!=-1}"
+          ng-mouseover="t.over = true;"
+          ng-mouseout="t.over = false;"
+          ng-click="clickTag(t); $event.stopPropagation();">
+          {{t.title}}
+          <div no-animate class="tooltip nopointer" ng-show="t.over">{{t.content}}</div>
+        </div>
+      </div>
+
+      <!-- actions content -->
+      <div class="acts halfcontainer">
+        <!-- action acts -->
+        <div
+          no-animate
+          ng-repeat="c in actsfiltered"
+          tempact
+          class="act event {{c.tags|join:' '}}"
+          ng-class="{
+            odd: $index%2 ==0,
+            even: $index%2 !=0}"
+          ng-mouseover="state.tagsover = c.tags;"
+          ng-mouseout="state.tagsover = [];">
+        </div>
+      </div>
+
+      <!-- links content -->
+      <div class="links halfcontainer">
+        <!-- action acts -->
+        <div
+          no-animate
+          ng-repeat="c in linksfiltered"
+          templink
+          class="act link {{c.tags|join:' '}}"
+          ng-class="{
+            odd: $index%2 ==0,
+            even: $index%2 !=0}"
+          ng-mouseover="state.tagsover = c.tags;"
+          ng-mouseout="state.tagsover = [];">
+        </div>
+      </div>
+
+      <!-- action footer tags -->
+      <div class="bar tags-bottom" ng-click="resetTags();">
+      ACTIONS  ▶ 
+        <div
+          ng-repeat="t in tags2"
+          class="tag tag-bottom"
+          ng-class="{
+            selected: state.tag == t.tag,
+            currentover: state.tagsover.indexOf(t.tag)!=-1}"
+          ng-mouseover="t.over = true;"
+          ng-mouseout="t.over = false;"
+          ng-click="clickTag(t); $event.stopPropagation();">
+          {{t.title}}
+          <div no-animate class="tooltip nopointer" ng-show="t.over">{{t.content}}</div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+</div>
