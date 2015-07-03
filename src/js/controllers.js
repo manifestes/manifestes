@@ -30,6 +30,7 @@ angular.module('manifest.controllers', ['underscore','config'])
     if($routeParams.forcedev) $scope.settings.dev = true;
     $scope.meta = {};
     $scope.tags = {};
+    $scope.tagsContents = {};
     $scope.mentionedTags = {};
     $scope.linksArray = [];
     $scope.linksByTag = {};
@@ -220,6 +221,7 @@ angular.module('manifest.controllers', ['underscore','config'])
 
           if($scope.settings.dev) {
             console.log("!! declared tags:",_.keys($scope.tags));
+            console.log("!! declared tags contents:",$scope.tagsContents);
             console.log("!! all links:",$scope.linksArray);
             console.log("!! nb of links by tag:",$scope.linksByTag);
             console.log("!! tags used in sections:",$scope.mentionedTags);
@@ -259,6 +261,12 @@ angular.module('manifest.controllers', ['underscore','config'])
             $rootScope.htmlmeta = d.htmlmeta;
 
             $scope.tags = d.tags;
+            _.each(d.tags, function(v,k) {
+              $scope.tagsContents[k] = {
+                label: v.split(' = ')[0],
+                description: v.split(' = ')[1],
+              };
+            });
             
 
           } else { /////////// SECTIONS

@@ -98,11 +98,12 @@ var loadTagGraph = function(scope) {
         //console.log(n);
         var t = n.label;
         
+        n.label = scope.tagsContents[t].label;
+            
         ids[n.label] = n.id;
 
         if(scope.tags[t] && scope.linksByTag[t]) {
           n.size = 15 + scope.linksByTag[t].length;
-          //n.label = n.size +" "+ t +" - "+ scope.tags[t];
         } else {
           orphans.push(t);
           n.size = 1;

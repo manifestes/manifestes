@@ -52,12 +52,13 @@ tags:
     alienation: aliénation = aliené.e.s, conditionné.e.s
     pub: publicité = publicité
     control: contrôle = fichage, cloud, surveillance
+    violence: violence = radicalité, violence physique
     emancipation: émancipation = se reapproprier (outils, politique, connaissance)
     education: éducation = école, université, recherche
     learn: apprendre = se former, se renseigner sur un sujet
     teach: enseigner = partager son savoir
     autonomy: autogestion = autonomie, moins de délégation
-    diy: faire soi-même = réappropriation, fabriquer, construire
+    diy: diy = faire soi-même, réappropriation, construire
     tech: techniques = savoir-faire
     web: internet = monde numérique
     tool: outils = guides pratiques, tutoriaux
@@ -66,7 +67,7 @@ tags:
     money: argent = monnaie, finance, dette
     basicincome: revenu de base = inconditionnel
     boycott: boycott = ne PAS utiliser/acheter/visiter
-    slow: ralentissements = décroissance, temps long
+    slow: ralentir = décroissance, temps long
     recup: récup' = recyclage, réutilisation
     local: local = à coté de chez soi
     act: action = en pratique dans son quotidien
@@ -81,7 +82,7 @@ tags:
     place: lieux = où ça ? adresses, tiers-lieux
     time: agenda = quand ? calendriers, évenements
     politics: politique = politique et représentation
-    philo: philosophie = réflexion, théorie
+    philo: philo = réflexion, théorie
     media: médias = information, journalisme
     news: news = actualité chaude
     text: textes = articles, livres, textes
@@ -303,7 +304,7 @@ image:
 quote:
     author: voir A.Boyd & S. Duncombe
     content: La politique est tout autant affaire de désir et de fantasme que de raison et rationnalité
-tags: 
+tags: violence, plurality
 content: >
     Êtres sociaux et sensibles, **infiniment complexes**, notre humanité nous rend capables du **meilleur comme du pire**.
     
