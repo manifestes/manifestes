@@ -8,7 +8,8 @@
 <div class="panel links">
   <div
     ng-repeat="l in linksArray"
-    class="link">
+    class="link"
+    ng-if="shallShowIfTag(l)">
 
     <div class="content" compile-html="l.content"></div>
   </div>

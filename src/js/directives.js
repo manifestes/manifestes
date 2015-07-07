@@ -13,6 +13,21 @@ angular.module('manifest.directives', [])
     };
   })
 
+  // input enter keypress
+  .directive('ngEnter', function () {
+    return function (scope, element, attrs) {
+      element.bind("keydown keypress", function (event) {
+        if(event.which===13) {
+          scope.$apply(function(){
+            scope.$eval(attrs.ngEnter);
+          });
+
+          event.preventDefault();
+        }
+      });
+    };
+  })
+
   // will add a target blank to open ALL links having href in a new tab
   .directive('href', function ($timeout) {
     return {

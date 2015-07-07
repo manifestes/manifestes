@@ -4,7 +4,7 @@
   class="paragraph index-{{$index}} colored-{{$index%7}} role-{{p.role}}"
   ng-class="{
     searched: state.term && atLeastContains(p),
-    hidden: state.term && !atLeastContains(p),
+    hidden: (state.term && !atLeastContains(p)) || (state.filtertag && !shallShowIfTag(p)),
     reduced: !(p.opened || state.term.length>0),
   }">
   <div
@@ -22,6 +22,9 @@
     <div
       class="titlebar"
       ng-click="toggleOne(p)">
+
+      <div ng-if="settings.dev && p.date" class="date">{{p.date}}</div>
+
       <div
         class="collapser meta-{{state.toggleall}}"
         ng-class="{
@@ -36,7 +39,7 @@
       <div class="h1">
         <img class="icon" ng-if="p.role=='meta'" src="{{settings.assets}}/images/info.svg"/>
         <span compile-html="p.title"></span>
-        <span ng-if="settings.dev" class="tag" ng-repeat="t in p.tags">{{t}}</span>
+        <span ng-if="settings.dev" class="tag" ng-repeat="t in p.tags">{{tagsContents[t].label}}</span>
         <span ng-if="settings.dev" class="tagcount">{{p.links.length}}</span>
       </div>
     </div>

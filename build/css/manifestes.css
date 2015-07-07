@@ -769,24 +769,28 @@ a:hover {
   background: white;
 }
 .header .graphtags {
+  box-sizing: border-box;
   position: absolute;
   width: 100%;
-  height: 450px;
+  height: 250px;
   bottom: 0;
-  background: white;
+  padding: 10px;
+  background: #ECECEC;
+  -webkit-box-shadow: 0px 0px 5px 0px #525252;
+  box-shadow: 0px 0px 5px 0px #525252;
 }
 .header .graphtags #sigma-tags {
-  height: 450px;
+  height: 230px;
 }
 .header .graphtags #sigma-tags canvas {
   left: 0px;
-  height: 450px;
+  height: 250px;
 }
 .header:hover .searchtags {
   top: 58px;
 }
 .header:hover .graphtags {
-  bottom: -450px;
+  bottom: -250px;
 }
 .footer {
   background: white;
@@ -822,7 +826,7 @@ a:hover {
   -o-transition: all 0.2s;
   -ms-transition: all 0.2s;
   transition: all 0.2s;
-  /* ---------------------- FEATURED SECTIONS */
+  /* ---------------------- NEW SECTIONS */
   /* ---------------------- COMMENTS */
   /* ---------------------- IMAGE */
   /* ---------------------- QUOTE */
@@ -834,11 +838,11 @@ a:hover {
   background: rgba(255, 252, 0, 0.48);
 }
 .wrapper.layout-list .paragraph.role-featured .block {
-  background: #322B27;
+  background: #794039;
 }
 .wrapper.layout-list .paragraph.role-featured .block .h1 {
   color: white;
-  background: #322B27;
+  background: #794039;
 }
 .wrapper.layout-list .paragraph .comments {
   z-index: 999;
@@ -944,6 +948,20 @@ a:hover {
 }
 .wrapper.layout-list .paragraph .block .titlebar {
   position: relative;
+}
+.wrapper.layout-list .paragraph .block .date {
+  position: absolute;
+  left: 0;
+  top: 18.5px;
+  padding: 3px 10px;
+  -webkit-transform: translate(-100%, -50%);
+  -moz-transform: translate(-100%, -50%);
+  -ms-transform: translate(-100%, -50%);
+  -o-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+  color: #959393;
+  font-size: 0.65em;
+  font-style: italic;
 }
 .wrapper.layout-list .paragraph .block .collapser {
   box-sizing: border-box;

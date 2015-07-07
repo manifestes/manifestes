@@ -37,10 +37,6 @@ a {
 
 
 
-
-
-
-
 @textColor: #3C3C3C;
 @openDur: 0.2s;
 @introDur: 0.5s;
@@ -325,15 +321,20 @@ a {
     }
   }
 
-  @graphH: 450px;
+  @graphH: 250px;
   .graphtags {
+    box-sizing: border-box;
     position: absolute;
     width: 100%;
     height: @graphH;
     bottom: 0;
-    background: white;
+    padding: 10px;
+    background: #ECECEC;
+
+    .box-shadow(0px 0px 5px 0px #525252);
+
     #sigma-tags {
-      height: @graphH;
+      height: @graphH - 20px;
       canvas {
         left: 0px;
         height: @graphH;

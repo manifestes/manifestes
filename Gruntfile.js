@@ -102,8 +102,9 @@ module.exports = function(grunt) {
       },
       js: {
         src: [
-          'src/vendor/sigmajs/sigma.min.js',
-          'src/vendor/sigmajs/plugins/sigma.parsers.gexf.min.js',
+          'src/vendor/sigmajs/build/sigma.min.js',
+          'src/vendor/sigmajs/build/plugins/sigma.parsers.gexf.min.js',
+          'src/vendor/moment/min/moment-with-locales.min.js',
           'src/vendor/underscore/underscore-min.js',
           'src/vendor/angular/angular.min.js',
           'src/vendor/angular-sanitize/angular-sanitize.min.js',

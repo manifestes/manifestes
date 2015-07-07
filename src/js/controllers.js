@@ -25,6 +25,8 @@ angular.module('manifest.controllers', ['underscore','config'])
     "settings",
     function ($scope, $routeParams, $http, _, $document, $window, $location, $timeout, $sce, $rootScope, settings) {
     
+    moment.locale('fr');
+
     //console.log("settings:",settings);
     $scope.settings = settings;
     if($routeParams.forcedev) $scope.settings.dev = true;
@@ -72,8 +74,17 @@ angular.module('manifest.controllers', ['underscore','config'])
     }
 
 
+    $scope.clickOnTag = function(tag) {
+      console.log("choosed tag:",tag);
+      $scope.state.filtertag = tag;
+      $scope.$apply();
+    };
     $scope.filterUpdate = function() {
       window.scrollTo(0,0);
+    };
+    $scope.filterSubmit = function() {
+      console.log("searching:",$scope.state.term);
+      fiterLinksNodes($scope.state.term);
     };
 
     $scope.clickTag = function(t) {
@@ -112,6 +123,12 @@ angular.module('manifest.controllers', ['underscore','config'])
       });
       return show;
     };
+    $scope.shallShowIfTag = function(o) { // "o" is a section or a link
+      if($scope.state.filtertag && o.tags && o.tags.indexOf($scope.state.filtertag)==-1)
+        return false;
+      else
+        return true;
+    }
 
     $scope.toggleOne = function(p) {
       p.opened = !p.opened ;
@@ -252,7 +269,8 @@ angular.module('manifest.controllers', ['underscore','config'])
       .success(function(res) {
         jsyaml.loadAll(res, function(d) {
 
-          if(d.role && d.role=='splash') { /////////// META
+          //////////////////////////////////////////// PARSING META
+          if(d.role && d.role=='splash') {
 
             $scope.meta = d;
             //$scope.meta.about = md2Html($scope.meta.about);
@@ -269,7 +287,8 @@ angular.module('manifest.controllers', ['underscore','config'])
             });
             
 
-          } else { /////////// SECTIONS
+            //////////////////////////////////////////// PARSING SECTIONS
+          } else { 
 
             //console.log(d);
             d.subtitle = md2Html(d.subtitle);
@@ -283,6 +302,14 @@ angular.module('manifest.controllers', ['underscore','config'])
               $scope.mentionedTags[t] = $scope.mentionedTags[t] ? $scope.mentionedTags[t]+1 : 1;
             });
             d.links = md2Html(d.links);
+
+            d.date = moment(d.date);
+            var seuil = moment().subtract(30,"day");
+            if(d.date > seuil)
+              d.date = d.date.fromNow();
+            else
+              d.date = null;
+
             $scope.paragraphs.push(d);
 
           }

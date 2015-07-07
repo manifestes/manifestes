@@ -5,6 +5,7 @@
   @imW: 40%;
   //@contW: 600px;
   @pad: 20px;
+  @reducedParH: 37px;
 
   .paragraph {
     position: relative;
@@ -21,12 +22,12 @@
       background: rgba(255, 252, 0, 0.48);
     }
 
-    /* ---------------------- FEATURED SECTIONS */
+    /* ---------------------- NEW SECTIONS */
     &.role-featured .block {
-      background: #322B27;
+      background: #794039;
       .h1 {
         color: white;
-        background: #322B27;
+        background: #794039;
       }
     }
 
@@ -135,6 +136,21 @@
 
       .titlebar {
         position: relative;
+      }
+
+      .date {
+        position: absolute;
+        left: 0;
+        top: @reducedParH / 2;
+        padding: 3px 10px;
+        //border-radius: 6px;
+
+        .transform(translate(-100%,-50%));
+
+        color: #959393;
+        //background: #272727;
+        font-size: 0.65em;
+        font-style: italic;
       }
 
       @titspace: 5px;
@@ -307,7 +323,7 @@
       }
     }
     &.reduced { /* collapsed at start */
-      max-height: 37px;
+      max-height: @reducedParH;
       .quote-container {
         background: rgba(0,0,0,0.75);
       }

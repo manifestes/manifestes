@@ -11,6 +11,8 @@ intro:
     title: manifeste(s)
     description: >
         collectif(s) des territoires communs autogérés et alternatives convivialistes DIY bénéloves révolutionnaires de la transition sociale et écologique dans les tiers-lieux créatifs des clowns bricoleurs pirates des utopies libertaires écoféministes p2p et coopératistes indignées activistes de la résilience décroissante concrète et désobéissante des convergences des luttes
+    more_groups: >
+        sobriété heureuse, simplicité volontaire, désargence, chômeur.e.s, colibris, créatifs culturels, pirates, objecteur.euse.s de croissance, empêcheur.euse.s de tourner en rond, AMAPs, alternatif.ive.s, convivialistes, grévistes, écoféministes, 15M, alternatiba, activistes, utopistes concrets, maquisard.e.s, hackers, rassemblements citoyen, universités, fablabs, résitances, grands-parents, désobéissants, transition citoyenne, tiers-lieux, p2p, bénéloves, communs, consom'acteurs, SEL, anarchistes, alliances citoyennes, révolutionnaires, occupy, amis de la terre, 99%, vélistance, indignés, bolo'bolo, éco-villages, institut momentum, bricoleur.se.s, farceurs, clowns, résiliés, squatteur.se.s, décroissants conviviaux, évidences écolos, e-constituante, anarnautes, libertaires, anticapitalistes, anonymous, coopératistes, antifascistes, rebooters, démocratie ouverte, écosociétalistes
     keywords: "# philosophie # politique # pratique # convergences #"
     enter: ">> consulter + participer <<"
 searchplacehoder: chercher
@@ -46,6 +48,7 @@ tags:
     group: collectifs = réseaux, coopératives, associatives existant(e)s
     constat: constat = se rendre compte que le monde ne tourne pas rond
     history: histoire = (néo)colonialisme, impérialisme, passif historique
+    atom: nucléaire = nucléaire
     guilty: ennemis = les responsables, les ennemis, on a leurs noms
     subsist: subsistance = souffrance, survie, too much
     genre: patriarcat = patriarcat, féminisme, genre
@@ -82,7 +85,7 @@ tags:
     place: lieux = où ça ? adresses, tiers-lieux
     time: agenda = quand ? calendriers, évenements
     politics: politique = politique et représentation
-    philo: philo = réflexion, théorie
+    philo: philosophie = réflexion, théorie
     media: médias = information, journalisme
     news: news = actualité chaude
     text: textes = articles, livres, textes
@@ -91,11 +94,11 @@ tags:
     video: films = videos, films, documentaires
     energy: énergie = éolien, électrique, solaire
     words: langage = récits, mots, interprétations
-    earth: terre = environnement, climat, pollutions
     greenwash: capitalisme vert = récupérations, greenwashing
     culture: culture = art, culture, création, écriture
     design: design = processus, formes, gameplay
     health: santé = corps, maladie, santé, sport, psychologie
+    earth: terre = planète, environnement, climat, pollutions
     commons: communs = open(res)sources
     agriculture: agriculture = cultures, semences
     object: objets = matériel, mobilier, machines
@@ -120,8 +123,8 @@ footer: >
 ---
 date: 2015-06-01
 role: meta
-title: Et si on écrivait ensemble ?
-subtitle: Manifeste(s) des autres mondes possibles
+title: Manifeste(s) des autres mondes possibles
+subtitle: Nous sommes **partout**. Nos démarches sont infiniment **diverses et complémentaires**. Qu'avons-nous **en commun** ?
 slug: ecrire_manifeste
 image:
     url: LilliCarre.jpg
@@ -138,15 +141,6 @@ quote:
         Et c'est pas triste
 tags: group
 content: >
-    Nous sommes **partout**.
-
-
-    Nos démarches sont infiniment **diverses et complémentaires**.
-
-
-    Qu'avons-nous **en commun** ?
-
-
     ###*objectifs*
 
     - **écrire collectivement** un/des manifeste(s) de notre territoire commun: *philosophique, politique, pratique*
@@ -158,10 +152,38 @@ content: >
 
 
 ---
+date: 2015-07-07
+role: meta
+title: Un carnet de recherche
+subtitle: Texte collectif
+slug: research_notebook
+image:
+    url: MarianneBrandt.jpg
+    credit: Marianne Brandt
+quote:
+    author: _
+    content: _
+tags: manifest
+content: >
+    Ce site est en perpétuelle transformation. Il reflète les pérégrinations physiques et intellectuelles d'une bande de potes décidé.e.s à mieux décortiquer le monde qui nous entoure pour **mieux comprendre là où çà fait mal, afin de riposter comme il se doit**
+
+
+    Nous partons du principe que **de nombreuses solutions existent** déjà sous de multiples formes. Nous cherchons à les rendre plus visibles.
+
+
+    Ce site permet en outre de garder au chaud des idées ou références qui transitent dans des articles, au travers de discussions, rencontres, afin de pouvoir les retrouver si nécessaire !
+
+
+    Nous vous invitons à participer à ce projet de recherche comme vous le souhaitez: *ajout de liens manquants, formulation ou précision de points théoriques, démasquage de faux amis, etc...*
+
+
+
+
+---
 date: 2015-06-01
 role: meta
-title: "Méthodologie et outils"
-subtitle: Comment fonctionne ce site ? écriture collective !
+title: Par sections thématiques synthétiques
+subtitle: Le découpage en **sections** permet de rendre le texte plus lisible et facilite les discussions sur les **thèmes** abordés.
 slug: methodo
 image:
     url: FingerBones.jpg
@@ -171,10 +193,7 @@ quote:
     content: L'intelligence, c'est le seul outil qui permet à l'homme de mesurer l'étendue de son malheur.
 tags: manifest
 content: >
-    Le découpage en **sections** permet de rendre le texte plus lisible et facilite les discussions sur les **thèmes** abordés.
-
-
-    Chaque section (comme celle-ci) comporte:
+    ###*Chaque section (comme celle-ci) comporte:*
 
 
     - un **titre** permettant d'ouvrir ou de fermer la section
@@ -184,6 +203,39 @@ content: >
     - un texte synthétique **théorique** développant une idée
 
     - suivi d'un encart **pratique** avec *les liens, exemples pratiques, initiatives concrètes associées*
+
+
+
+---
+date: 2015-07-06
+role: meta
+title: Cartographie des sites internet
+subtitle: Exploration des sites et des liens hypertextes pour mieux comprendre les articulations entre les différents mouvements alternatifs du monde qui vient
+slug: hyphe_map
+tags: list, manifest
+image:
+    url: Felix_DrawingAutism.jpg
+    credit: Felix, Drawing Autism
+quote:
+    author: 
+    content: 
+content: >
+    Grâce à l'outil ouvert [hyphe](http://hyphe.medialab.sciences-po.fr/), nous avons produit une carte des liens connectant différents sites internet portant des alternatives.
+
+
+    Cette carte se construit pas-à-pas en sélectionnant ceux respectant les critères suivants:
+
+
+    - sites à contenu majoritairement francophone
+
+    - non politiciens (c-a-d ne s'intéressant pas uniquement à des partis ou personnalités)
+
+    - non gouvernementaux
+
+    - incarnant en théorie ou pratique les sujets soulevés dans le présent manifeste
+
+
+    Nous ne sommes évidemment pas capables de juger la pertinence de toutes les initiatives apparaissant sur la carte (chacune peut de toute façon changer avec le temps)
 
 
 
@@ -363,6 +415,45 @@ content: >
 
 
 ---
+date: 2015-07-06
+role: new
+title: Stop aux merdias de masse
+subtitle: Finissons-en avec le désastre médiatique des puissants, contrôlant à leur guise l'actualité et les modes de pensées
+slug: stop_medias
+image:
+    url: RokuroTaniuchi.jpg
+    credit: Rokuro Taniuchi
+quote:
+    author: Pierre Deruelle
+    content: Quand le sage montre du doigt le politique vendu au banquier, l’imbécile regarde l’immigré au bout du doigt du politique.
+tags: media, learn
+contents: >
+    Nous ne voulons plus être inondés d'images nauséabondes polluant notre *temps de cerveau disponible*.
+
+    Il existe déjà des multitudes de médias indépendants, supprimons les grandes chaines de radio et de télévision pour leur laisser la place
+
+
+
+---
+date: 2015-07-06
+role: new
+title: Un revenu de base inconditionnel
+subtitle: En nature (gratuité des communs) ou en argent, permettant de vivre dignement sans avoir à se prostituer dans une activité non choisie
+slug: basic_income
+tags: basicincome, money, autonomy, work
+image:
+    url: GrahamLambkin.jpg
+    credit: Graham Lambkin
+quote:
+    author: Aristote
+    content: >
+        Il est aussi dans l'intérêt d'un tyran de garder son peuple pauvre, pour qu'il soit si occupé à ses tâches quotidiennes qu'il n'aie pas le temps pour la rébellion.
+content: >
+    Le revenu ou dotation universelle, inconditionnelle permet à tous de satisfaire ses besoins primaires sans contrepartie. Il permet en outre à ses bénéficiaires de sortir la tête de l'eau et d'enfin choisir leur activité.
+
+
+
+---
 date: 2015-06-01
 title: Ce monde est pluriel
 subtitle: Nous ne cherchons pas à le réduire avec une solution unique 
@@ -421,8 +512,8 @@ content: >
 
 ---
 date: 2015-06-01
-title: "Argent roi"
-subtitle: Rareté artificielle qui nous enferme dans une course à la compétition et au profit
+title: Argent roi
+subtitle: Jamais l'argent n'a été aussi omniprésent, mais sa rareté artificielle nous enferme dans une course à la compétition et au profit
 slug: argent
 image:
     url: alexgross.jpg
@@ -442,6 +533,42 @@ content: >
     Instaurons des **revenus inconditionnels** minimum et maximum, élargissons la **sphère de la gratuité**, arrêtons de tout mesurer à l'aune du temps et du coût.
 
 
+
+---
+date: 2015-07-06
+role: new
+title: Une taxe sur toutes les transactions financières
+subtitle: Du retrait de 20€ au distributeur à la finance haute vitesse, taxer tous les mouvements d'argent
+slug: tax_transactions
+image:
+    url: Masereel.jpg
+    credit: Masereel
+quote:
+    author: Victor Hugo
+    content: Il n'est rien au monde d'aussi puissant qu'une idée dont l'heure est venue.
+tags: slow, money
+content: >
+    Cette taxe serait insignifiante pour les petits échanges (par ex. un retrait de 100€ à un distributeur) mais très utile pour limiter les échanges financiers à haute vitesse concernant des montants à multiples zéros.
+
+
+
+---
+date: 2015-07-06
+role: new
+title: Supprimons la publicité
+subtitle: Stop à la propagande des puissances d'argent qui nous abreuve de consumérisme idiot
+slug: kill_ads
+image:
+    url: JiriSalamoun.jpg
+    credit: Jiri Salamoun
+quote:
+    author: _
+    content: _
+tags: money, media, alienation
+contents: >
+    Nous ne voulons plus être inondés d'images nauséabondes polluant notre *temps de cerveau disponible*.
+
+    Il existe déjà des multitudes de médias indépendants, supprimons les grandes chaines de radio et de télévision pour leur laisser la place
 
 
 
@@ -476,6 +603,21 @@ content: >
 
 
 
+---
+date: 2015-07-06
+role: new
+title: N'achetons et ne mangeons plus de merde !
+subtitle: Boycottons la nourriture industrielle, cuisinons nous-même
+slug: eat_well
+image:
+    url: HorstWidmann.jpg
+    credit: Horst Widmann
+quote:
+    author: _
+    content: _
+tags: boycott, eat, health
+contents: >
+    -
 
 
 ---
@@ -594,6 +736,23 @@ content: >
 
     On attend de nous *consommation-travail* de bon citoyen ? Choississons **pour qui** nous travaillons, **ce que** nous achetons, mangeons, **comment** nous nous comportons
 
+
+
+---
+date: 2015-07-06
+role: new
+title: Boycottons toutes les multinationales
+subtitle: Réapproprions-nous tous les outils numériques, changeons de banque, choississons avec qui nous faisons commerce
+slug: boycott_companies
+image:
+    url: AnneHeathersandEstebanFrances.jpg
+    credit: Anne Heathers & Esteban Frances
+quote:
+    author: _
+    content: _
+tags: boycott, companies
+contents: >
+    -
 
 
 
@@ -732,6 +891,23 @@ content: >
 
 
 ---
+date: 2015-07-06
+role: new
+title: Le tirage au sort pour réinvestir le politique
+subtitle: Postes à responsabilité pourvus au hasard, sans cumul parmis des assemblées de volontaires
+slug: tirage_sort
+image:
+    url: R_Bagautdinov.jpg
+    credit: R. Bagautdinov
+quote:
+    author: _
+    content: _
+tags: emancipation
+contents: >
+    Afin de
+
+
+---
 date: 2015-06-01
 title: Récupérations
 subtitle: Capitalisme vert, économie collaborative...
@@ -767,7 +943,7 @@ quote:
     author: Hervé Le Tellier, dialogues socratiques
     content: >
         Pour l'aveugle, l'oiseau chante. Pour le sourd, l'oiseau vole. Qui dit vrai ? Demande au muet.
-tags: culture, diversity
+tags: culture, plurality
 content: >
     Nous pensons qu'il existe toujours une **multitude de formulations** d'un problème et de réponses possibles. Pour mieux saisir le monde,  multiplions les manières de l'aborder: *langues, domaines, dimensions, générations, temporalités*.
 
