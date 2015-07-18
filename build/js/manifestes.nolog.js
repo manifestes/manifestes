@@ -3022,7 +3022,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'07 July 2015 - 4:40'})
+.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'19 July 2015 - 12:23'})
 
 ;
 ;
@@ -3059,25 +3059,48 @@ angular.module('manifest.controllers', ['underscore','config'])
     //console.log("settings:",settings);
     $scope.settings = settings;
     if($routeParams.forcedev) $scope.settings.dev = true;
-    $scope.meta = {};
-    $scope.tags = {};
-    $scope.tagsContents = {};
-    $scope.mentionedTags = {};
-    $scope.linksArray = [];
-    $scope.linksByTag = {};
+    var layout = $routeParams.layout ?
+      (["sections","links","print"].indexOf($routeParams.layout)==-1 ? "sections" : $routeParams.layout) :
+      "sections";
+
+    $scope.meta = {}; // mainly the meta info at start of section.yml
+    $scope.sections = [];
+    $scope.tagsContents = {}; // .label & .description dor each tag
+    $scope.sectionNbByTag = {}; // how many sections by tag
+    $scope.linksArray = []; // raw list of links
+    $scope.linksByTag = {}; // related links for each tag
+    
     $scope.state = {
-      intro: !$scope.settings.dev,
-      commenting_slug: null,
-      toggle_all: null,
+      intro: !$scope.settings.dev, // splash fullscreen panel
+      commenting_slug: null, // current disqus id
       lang: $routeParams.lang,
-      layout: $routeParams.layout ? $routeParams.layout : "list"
+      layout: layout,
+      tags: [], // list of current filtering tags
+      graphstatus: "NO", // loaded or not ?
     };
     0;
 
-    $scope.paragraphs = [];
+    
+
+    // $scope.clickMenu = function(k) {
+    //   var target = document.getElementById('p_'+k);
+    //   //console.log("o",target.offsetTop);
+    //   //target.scrollIntoView({block: "end", behavior: "smooth"});
+    //   window.scrollTo(0,target.offsetTop - 110);
+    //   //window.scrollBy(0,-40);
+    // };
+
+
 
     $scope.layoutTemplate = function() {
-      return $scope.settings.assets+'partials/sections_'+$scope.state.layout+'.html';
+      return $scope.settings.assets+'partials/layout_'+$scope.state.layout+'.html';
+    };
+    $scope.sectionTemplate = function(s) {
+      return $scope.settings.assets+'partials/layout_sections_'+s.layout+'.html';
+    };
+
+    var scrollToup = function() {
+      document.getElementById("container").scrollTo(0,0);
     };
 
     $scope.openComments = function(p) {
@@ -3098,66 +3121,164 @@ angular.module('manifest.controllers', ['underscore','config'])
       }); // timeout to be sure disqus div is here ?
     };
     
-    $scope.getRandomInt = function(){
+    $scope.getRandomInt = function() {
       return Math.floor((Math.random()*7));
-    }
+    };
 
 
-    $scope.clickOnTag = function(tag) {
-      0;
-      $scope.state.filtertag = tag;
+    $scope.changeLayout = function(lay) {
+      if(lay != $scope.state.layout) {
+        $scope.state.layout = lay;
+        if(lay!='links') {
+          $scope.state.graphstatus="NO";
+          //loadLinksGraph($scope);
+        }
+      }
+    };
+    $scope.loadLinksGraph = function() {
+      loadLinksGraph($scope);
+    };
+
+
+
+    $scope.tagDescription = function(tag) {
+      if(tag && $scope.tagsContents[tag]) {
+        $scope.state.tagdescription = $scope.tagsContents[tag].description;
+      } else {
+        $scope.state.tagdescription = $scope.meta.menu.tagsdescription;
+      }
       $scope.$apply();
     };
-    $scope.filterUpdate = function() {
-      window.scrollTo(0,0);
-    };
-    $scope.filterSubmit = function() {
-      0;
-      fiterLinksNodes($scope.state.term);
+
+    $scope.isTagActive = function(tag) {
+      return $scope.state.tags.indexOf(tag)!=-1;
     };
 
-    $scope.clickTag = function(t) {
-      if(t) {
-        $scope.state.term = t.search;
-        window.scrollTo(0,0);
+
+
+
+    $scope.resetFilters = function() {
+      $scope.toggleTag();
+      $scope.searchSubmit();
+      $scope.$apply();
+    };
+
+    $scope.toggleTag = function(tag,refresh) {
+
+      // please set max tags to 5 !
+
+      if(!tag)
+        $scope.state.tags = [];
+      else {
+        if($scope.state.tags) {
+          if($scope.state.tags.indexOf(tag)==-1)
+            $scope.state.tags.push(tag);
+          else
+            $scope.state.tags = _.without($scope.state.tags,tag);
+        } else {
+          $scope.state.tags = [tag];
+        }
+      }
+      0;
+      
+      // update graph node colors
+      updateTagNodes($scope.state.tags);
+
+      if(refresh) $scope.$apply();
+      scrollToup();
+    };
+
+
+    $scope.searchSubmit = function(term) {
+      if(term) {
+        $scope.state.search = term;
       }
       else {
-        $scope.state.term = "";
+        $scope.input = "";
+        $scope.state.search = "";
         $scope.toggleAll(false);
       }
+      
+      $scope.rgx.search = new RegExp($scope.state.search,'gi');
+
+      if($scope.state.graphstatus=='OK')
+        filterLinksNodes($scope.state.search);
+
+      scrollToup();
     };
 
-    // $scope.clickMenu = function(k) {
-    //   var target = document.getElementById('p_'+k);
-    //   //console.log("o",target.offsetTop);
-    //   //target.scrollIntoView({block: "end", behavior: "smooth"});
-    //   window.scrollTo(0,target.offsetTop - 110);
-    //   //window.scrollBy(0,-40);
-    // };
     
-    $scope.highlight = function(text) {
-      if(!$scope.state.term || $scope.state.term.length<3) {
-        return $sce.trustAsHtml(text);
-      }
-      return $sce.trustAsHtml(text.replace(new RegExp($scope.state.term, 'gi'), '<span class="highlight">$&</span>'));
+    $scope.rgx = {};
+    $scope.rgx.inlnk = new RegExp("<[^>]*>","gi");
+    $scope.rgx.search = new RegExp("",'gi'); // is updated after each keystroke on search input
+    var totext = function(htm) {
+      return htm.replace(/<[^>]+>/gm,'');
     };
-    $scope.atLeastContains = function(p) {
-      var reg = new RegExp($scope.state.term,'gi');
 
-      var show = reg.test(p.quote.content);
 
-      var watch = ['title','subtitle','content','links'];
-      _.each(watch, function(k) {
-        show = show || reg.test(p[k]);
-      });
+    $scope.highlight = function(html) {
+      if(!$scope.state.search || $scope.state.search.length<3) {
+
+        return $sce.trustAsHtml(html);
+
+      } else {
+        
+        var rgxp = $scope.rgx.search;
+
+        var text = totext(html);
+
+        if(!rgxp.test(text)) { // if flattened html don't matches
+
+          return $sce.trustAsHtml(html);
+
+        } else {
+
+          var inlnkmatches = html.match($scope.rgx.inlnk);
+        
+          // if at least one link rawtag matches, highlight all
+          if(inlnkmatches && rgxp.test( inlnkmatches.join("") )) {
+
+            return $sce.trustAsHtml('<div class="highlight">'+html+'</div>');
+
+          } else {
+
+            if( !rgxp.test(html) ) { // if html don't match, but flattened text matches, higlight all
+              return $sce.trustAsHtml('<div class="highlight">'+html+'</div>');
+            } else {
+              return $sce.trustAsHtml(html.replace(rgxp,'<span class="highlight">$&</span>'));
+            }
+
+          }
+
+        }
+      }
+    };
+    $scope.shallShowSearch = function(o) { // "o" is a section or a link
+      var reg = new RegExp($scope.state.search,'gi'); //$scope.rgx.search;
+
+      if(o.title) { // a section
+        var show = reg.test(totext(o.quote.content));
+        _.each(['title','subtitle','content'], function(k) {
+          show = show || reg.test(totext(o[k]));
+        });
+      } else { // a link
+        var show = reg.test(totext(o.content));
+      }
       return show;
     };
-    $scope.shallShowIfTag = function(o) { // "o" is a section or a link
-      if($scope.state.filtertag && o.tags && o.tags.indexOf($scope.state.filtertag)==-1)
-        return false;
-      else
+    $scope.shallShowTags = function(o,onlyintersect) { // "o" is a section or a link
+      if($scope.state.tags.length && o.tags) {
+        var interslen = _.intersection(o.tags,$scope.state.tags).length;
+        if(onlyintersect) {
+          return interslen == $scope.state.tags.length;
+        }
+        else {
+          return interslen > 0;
+        }
+      } else
         return true;
     }
+
 
     $scope.toggleOne = function(p) {
       p.opened = !p.opened ;
@@ -3168,7 +3289,7 @@ angular.module('manifest.controllers', ['underscore','config'])
       }
     };
     $scope.toggleAll = function(status) {
-      _.each($scope.paragraphs, function(p) {
+      _.each($scope.sections, function(p) {
         p.opened = status;
         if(status && !p.commentcount)
           $timeout(function() {
@@ -3238,6 +3359,7 @@ angular.module('manifest.controllers', ['underscore','config'])
           $scope.templinks4graph = [];
 
           _.each(singlelink, function(l) {
+
             var tgs = l.split('\n')[0].match(/\w+/ig);
             
             // (test/dev) just to see links over graph
@@ -3276,11 +3398,9 @@ angular.module('manifest.controllers', ['underscore','config'])
             0;
           }
 
-          _.each($scope.paragraphs, function(p) {
+          _.each($scope.sections, function(p) {
             p.links = getLinksFromTags(p.tags);
           });
-
-          if($scope.settings.dev) loadTagGraph($scope);
 
         })
         .error(function (data, status, headers, config) {
@@ -3289,13 +3409,12 @@ angular.module('manifest.controllers', ['underscore','config'])
     };
 
     ////////////////////////////////////////// GET CONTENTS
-    var sectionsUrl = $scope.settings.dev ?
-      settings.datapath + "sections_"+$scope.state.lang+".yml" :
-      settings.datapath + "contents_"+$scope.state.lang+".yml";
+    var sectionsUrl = settings.datapath + "sections_"+$scope.state.lang+".yml";
 
     $http
       .get(sectionsUrl)
       .success(function(res) {
+
         jsyaml.loadAll(res, function(d) {
 
           //////////////////////////////////////////// PARSING META
@@ -3303,11 +3422,11 @@ angular.module('manifest.controllers', ['underscore','config'])
 
             $scope.meta = d;
             //$scope.meta.about = md2Html($scope.meta.about);
-            $scope.meta.footer = md2Html($scope.meta.footer);
+            $scope.meta.footer.content = md2Html($scope.meta.footer.content);
+            
             // for html page meta
             $rootScope.htmlmeta = d.htmlmeta;
 
-            $scope.tags = d.tags;
             _.each(d.tags, function(v,k) {
               $scope.tagsContents[k] = {
                 label: v.split(' = ')[0],
@@ -3328,7 +3447,7 @@ angular.module('manifest.controllers', ['underscore','config'])
             d.content = md2Html(d.content);
             d.tags = d.tags ? d.tags.split(', ') : [];
             _.each(d.tags, function(t) {
-              $scope.mentionedTags[t] = $scope.mentionedTags[t] ? $scope.mentionedTags[t]+1 : 1;
+              $scope.sectionNbByTag[t] = $scope.sectionNbByTag[t] ? $scope.sectionNbByTag[t]+1 : 1;
             });
             d.links = md2Html(d.links);
 
@@ -3338,28 +3457,37 @@ angular.module('manifest.controllers', ['underscore','config'])
               d.date = d.date.fromNow();
             else
               d.date = null;
+            
+            d.currentlink = 0;
 
-            $scope.paragraphs.push(d);
+            d.layout = 'flat'; //Math.random()<0.2 ? 'grid' : 'flat';
+
+            $scope.sections.push(d);
 
           }
         });
         
 
         // now fetch links and inject them based on tags
-        if($scope.settings.dev)
-          $scope.getInjectLinks();
+        $scope.getInjectLinks();
+
+        // please wait before loading graphs !
+        $timeout(function() {
+
+          loadTagGraph($scope);
+
+        },500);
 
         // (to improve) init here to trigger the watch on footer content set though compile-html directive
-        $scope.state.term = "";
+        $scope.state.search = "";
+
       })
       .error(function (data, status, headers, config) {
         0;
       });
 
 
-    // AFTER EVERYTHING IS HERE
-    if($scope.settings.dev && $routeParams.layout=="links")
-      loadLinksGraph($scope);
+
 
 
     // disqus
@@ -3409,6 +3537,7 @@ angular.module('manifest.directives', [])
     return {
       compile: function(element) {
         element.attr('target', '_blank');
+        element.attr('onclick','event.stopPropagation();');
       }
     };
   })
@@ -3422,7 +3551,8 @@ angular.module('manifest.directives', [])
       scope.$watch(
         function(scope) {
           // watch search term
-          return scope.state.term;
+          return scope.state.search;
+          //return scope.rgx.search;
         },
         function(val) {
           
@@ -3478,58 +3608,83 @@ angular.module('manifest.filters', [])
 ;
 
 var linksGraph = null;
+var tagsGraph = null;
 
-var fiterLinksNodes = function(term) {
+
+
+////////////////////////////////////////// LINKS GRAPH
+var filterLinksNodes = function(term) {
   g = linksGraph.graph;
 
-  var rgx = new RegExp(term,"gi");
-  g.nodes().forEach(function(n) {
-    //console.log(n);
-    upsetNode(n,rgx.test(n.savedLabel));
-  });
+  if(term) {
+    var rgx = new RegExp(term,"gi");
+    g.nodes().forEach(function(n) {
+      upsetLinkNode(n,rgx.test(n.savedLabel),true);
+    });
+    g.edges().forEach(function(e) {
+      e.color = "rgba(0,0,0,0)";
+    });
+  } else {
+    resetLinkNodes();   
+  }
 
   linksGraph.refresh();
 };
-
-////////////////////////////////////////// LINKS GRAPH
-var upsetNode = function(n,flag) {
+var upsetLinkNode = function(n,flag,searchresults) {
   if(flag) {
-    n.color = n.originalColor;
+    n.color = searchresults ? "#8D7C0D" : n.originalColor;
     n.label = n.savedLabel;
-    n.active = true;
   } else {
-    n.color = '#eee';
-    n.active = false;
+    n.color = searchresults ? "#C5C5C5" : "rgba(0,0,0,0)";
     delete n.label;
   }
 };
+var resetLinkNodes = function() {
+  linksGraph.graph.nodes().forEach(function(n) {
+    n.color = n.originalColor;
+    n.label = n.savedLabel;
+  });
+  linksGraph.graph.edges().forEach(function(e) {
+    e.color = "#EEEEEE";
+  });
+};
 
 var loadLinksGraph = function(scope) {
-  sigma.classes.graph.addMethod('neighbors', function(nodeId) {
-    var k,
-        neighbors = {},
-        //nedges = [];
-        index = this.outNeighborsIndex[nodeId] || {};
-    for (k in index) {
-      neighbors[k] = this.nodesIndex[k];
-      //nedges.push(this.outNeighborsIndex[nodeId][k]);
-    }
-    //console.log("edges",nedges);
-    return neighbors;
-  });
+
+  scope.state.graphstatus = "LOADING";
+  
+  try {
+    sigma.classes.graph.addMethod('neighbors', function(nodeId) {
+      var k,
+          neighbors = {},
+          //nedges = [];
+          index = this.allNeighborsIndex[nodeId] || {};
+      for (k in index) {
+        neighbors[k] = this.nodesIndex[k];
+        //nedges.push(this.allNeighborsIndex[nodeId][k]);
+      }
+      //console.log("edges",nedges);
+      return neighbors;
+    });
+  } catch(err) {}
+
 
   var g = sigma.parsers.gexf(
     scope.settings.datapath + "links_"+scope.state.lang+".gexf",
     {
       container: 'sigma-links',
+      renderer: {
+        container: document.getElementById('sigma-links'),
+        type: 'canvas'
+      },
       settings: {
-        labelThreshold: 0,
+        labelThreshold: 5,
         //defaultLabelColor: "rgb(200,200,200)",
         zoomingRatio: 1.5,
         doubleClickZoomingRatio: 1.7,
         defaultLabelSize: 12,
         hideEdgesOnMove: true,
-        drawEdges: false,
+        drawEdges: true,
         doubleClickEnabled: false,
         //labelColor: "node",
       }
@@ -3540,16 +3695,14 @@ var loadLinksGraph = function(scope) {
 
       // init things on the graph
       s.graph.nodes().forEach(function(n) {
-        n.originalColor = n.color;
+        n.color = "#9C9C9C";
+        n.originalColor = "#9C9C9C";
         n.savedLabel = n.label;
-        n.active = false;
-        delete n.label;
+        //delete n.label;
       });
-      // s.graph.edges().forEach(function(e) {
-      //   e.originalColor = e.color;
-      // });
-
-      0;
+      s.graph.edges().forEach(function(e) {
+        e.color = "#EEEEEE";
+      });
 
       // doubleclick to open link
       s.bind('doubleClickNode', function(event) {
@@ -3561,55 +3714,76 @@ var loadLinksGraph = function(scope) {
       
       // simple click shows neighbors
       s.bind('clickNode', function(event) {
-        var nodeId = event.data.node.id,
-            toKeep = s.graph.neighbors(nodeId);
-        toKeep[nodeId] = event.data.node;
+        if(!event.data.captor.isDragging) {
+          var nodeId = event.data.node.id,
+              toKeep = s.graph.neighbors(nodeId);
+          toKeep[nodeId] = event.data.node;
 
-        0;
+          0;
 
-        s.graph.nodes().forEach(function(n) {
-          upsetNode(n,toKeep[n.id]);
-        });
-        // s.graph.edges().forEach(function(e) {
-        //   if (toKeep[e.source] && toKeep[e.target]) 
-        //     e.color = e.originalColor;
-        //   else {
-        //     e.color = 'rgba(200,200,200,0)';
-        //   }
-        // });
-        s.refresh();
+          s.graph.nodes().forEach(function(n) {
+            upsetLinkNode(n,toKeep[n.id]);
+          });
+          event.data.node.color = "#883E3E";
+
+          s.graph.edges().forEach(function(e) {
+            if (toKeep[e.source] && toKeep[e.target]) 
+              e.color = "#EEEEEE";
+            else {
+              e.color = "rgba(0,0,0,0)";
+            }
+          });
+          s.refresh();
+        }
       });
 
-      s.bind('overNode', function(event) {
-        event.data.node.label = event.data.node.savedLabel;
-        s.refresh();
-      });
-      s.bind('outNode', function(event) {
-        var n = event.data.node;
-        if(!n.active) delete n.label;
-        //s.refresh();
+      s.bind('clickStage', function(event) {
+        if(!event.data.captor.isDragging) {
+          resetLinkNodes();
+          s.refresh();
+        }
       });
 
-      s.bind('clickStage', function(e) {
-        s.graph.nodes().forEach(function(n) {
-          n.color = n.originalColor;
-          n.active = false;
-          delete n.label;
-        });
-        // s.graph.edges().forEach(function(e) {
-        //   e.color = e.originalColor;
-        // });
-
-        // Same as in the previous event:
-        s.refresh();
-      });
+      0;
 
       s.refresh();
 
+      scope.state.graphstatus = "OK";
+
+      scope.$apply();
     });
 }
 
+
+
+
+
+
 ////////////////////////////////////////// TAG GRAPH
+var updateTagNodes = function(tags) {
+  g = tagsGraph.graph;
+
+  g.nodes().forEach(function(n) {
+    //console.log(n);
+    if(tags.length) {
+      upsetTagNode(n, tags.indexOf(n.tag)!=-1);
+    } else {
+      upsetTagNode(n, true, true);
+    }
+  });
+
+  tagsGraph.refresh();
+};
+var upsetTagNode = function(n,flag,reset) {
+  if(reset) {
+    n.color = n.originalColor;
+  } else if(flag) {
+    n.color = "rgb(130,20,20)";
+  } else {
+    n.color = '#A7A7A7';
+  }
+};
+
 var loadTagGraph = function(scope) {
   var g = sigma.parsers.gexf(
     scope.settings.datapath + "tags.gexf",
@@ -3624,24 +3798,43 @@ var loadTagGraph = function(scope) {
         //defaultLabelColor: "rgb(200,200,200)",
         zoomingRatio: 1.4,
         doubleClickZoomingRatio: 1.7,
-        defaultLabelSize: 12,
+        defaultLabelSize: 10,
         //arrowSizeRatio: 50,
       }
     },
     function(s) {
-      //console.log(s.graph);
+
+      tagsGraph = s;
 
       s.bind('clickNode', function(event) {
-        0;
-        scope.clickOnTag(event.data.node.tag);
+        if(!event.data.captor.isDragging) {
+          0;
+          scope.toggleTag(event.data.node.tag,true);
+          scope.tagDescription(event.data.node.tag);
+        }
       });
-      s.bind('clickStage', function(e) {
-        scope.clickOnTag(null);
+      s.bind('clickStage', function(event) {
+        if(!event.data.captor.isDragging) {
+          scope.toggleTag(null,true);
+          scope.tagDescription();
+        }
+      });
+      s.bind('overNode', function(event) {
+        scope.tagDescription(event.data.node.tag);
+      });
+      s.bind('outNode', function(event) {
+        scope.tagDescription();
       });
 
       var ids = {} ;
       var orphans = [];
 
+      // init things on the graph
+      s.graph.nodes().forEach(function(n) {
+        n.originalColor = n.color;
+      });
+
+      // update sizes and labels
       _.each(s.graph.nodes(), function(n) {
         //console.log(n);
         var t = n.label;
@@ -3650,8 +3843,8 @@ var loadTagGraph = function(scope) {
         n.tag = t;
         n.label = scope.tagsContents[t].label;
 
-        if(scope.tags[t] && scope.linksByTag[t]) {
-          n.size = 15 + scope.linksByTag[t].length;
+        if(scope.meta.tags[t] && scope.linksByTag[t]) {
+          n.size = 18 + scope.linksByTag[t].length;
         } else {
           orphans.push(t);
           n.size = 1;
@@ -3668,7 +3861,7 @@ var loadTagGraph = function(scope) {
         //e.size = 20;
         //e.weight = 20;
         e.color = "rgb(200,200,210)";
-        e.type = 'curvedArrow'; //['line', 'curve', 'arrow', 'curvedArrow'][Math.random() * 4 | 0];
+        e.type = 'curve'; //['line', 'curve', 'arrow', 'curvedArrow'][Math.random() * 4 | 0];
         //console.log(e);
       });
 
@@ -3683,6 +3876,8 @@ var loadTagGraph = function(scope) {
       // });
 
       s.refresh();
+
+      0;
     }
   );
 }

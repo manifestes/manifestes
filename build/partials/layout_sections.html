@@ -1,0 +1,11 @@
+<div
+  ng-repeat="p in sections"
+  id="p_{{$index}}"
+  class="section index-{{$index}} colored-{{$index%10}} role-{{p.role}} layout-{{p.layout}}"
+  ng-class="{
+    searched: state.search && shallShowSearch(p),
+    hidden: (state.search && !shallShowSearch(p)) || (state.tags.length && !shallShowTags(p,false)),
+    reduced: !(p.opened || state.search.length>0),
+  }"
+  ng-include="sectionTemplate(p);">
+</div>
