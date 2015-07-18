@@ -33,6 +33,7 @@ angular.module('manifest.directives', [])
     return {
       compile: function(element) {
         element.attr('target', '_blank');
+        element.attr('onclick','event.stopPropagation();');
       }
     };
   })
@@ -46,7 +47,8 @@ angular.module('manifest.directives', [])
       scope.$watch(
         function(scope) {
           // watch search term
-          return scope.state.term;
+          return scope.state.search;
+          //return scope.rgx.search;
         },
         function(val) {
           

@@ -1,13 +1,11 @@
 .wrapper.layout-links {
   box-sizing: border-box;
 
-  font-size: 0.8em;
   .sections {
     height: 100%;
   }
 }
 
-@panelW: 500px;
 
 .panel.graph {
   box-sizing: border-box;
@@ -16,6 +14,24 @@
   width: @panelW;
   height: 100%;
   
+  .inner-shadow(-1px 0px 1px 0px #8A8A8A);
+  background: @veryLightColor;
+
+  .graphloader {
+    z-index: 90;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-top: 50%;
+    background: lightgray;
+
+    font-style: italic;
+    color: #878787;
+    font-size: 0.8em;
+
+    .inner-shadow(-1px 0px 1px 0px #8A8A8A);
+  }
+
   #sigma-links {
     height: 100%;
     canvas {
@@ -25,15 +41,55 @@
 }
 
 .panel.links {
-
+  box-sizing: border-box;
   margin-left: @panelW;
-  padding: 20px 10px;
+  padding: 0;
 
   text-align: left;
-  font-size: 0.8em;
+  font-size: 1em;
+
+  .tags {
+    float: right;
+    margin: 0px 10px;
+    
+    .tag {
+      float: right;
+      margin: 2px -1px;
+      padding: 2px 5px;
+      border-radius: 2px;
+      background: @lightColor;
+      color: white;
+      font-size: 10px;
+      font-style: italic;
+      text-transform: uppercase;
+      cursor: pointer;
+      &:hover {
+        background: @darkColor;
+      }
+      &.active {
+        background: @redColor; 
+      }
+    }
+  }
 
   .link {
+    padding: 6px 0px 6px 15px;
+    padding-right: 0;
+    border-bottom: 1px solid #D2D2D2;
 
+    overflow: hidden;
+
+    background: white;
+
+    &.reducedtag, &.reducedsearch {
+      background: #ECECEC;
+      height: 1px;
+      padding: 0;
+      cursor: pointer;
+    }
+    &.reducedsearch {
+      background: @searchYellow;
+    }
   }
 }
 

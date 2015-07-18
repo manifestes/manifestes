@@ -30,25 +30,48 @@ angular.module('manifest.controllers', ['underscore','config'])
     //console.log("settings:",settings);
     $scope.settings = settings;
     if($routeParams.forcedev) $scope.settings.dev = true;
-    $scope.meta = {};
-    $scope.tags = {};
-    $scope.tagsContents = {};
-    $scope.mentionedTags = {};
-    $scope.linksArray = [];
-    $scope.linksByTag = {};
+    var layout = $routeParams.layout ?
+      (["sections","links","print"].indexOf($routeParams.layout)==-1 ? "sections" : $routeParams.layout) :
+      "sections";
+
+    $scope.meta = {}; // mainly the meta info at start of section.yml
+    $scope.sections = [];
+    $scope.tagsContents = {}; // .label & .description dor each tag
+    $scope.sectionNbByTag = {}; // how many sections by tag
+    $scope.linksArray = []; // raw list of links
+    $scope.linksByTag = {}; // related links for each tag
+    
     $scope.state = {
-      intro: !$scope.settings.dev,
-      commenting_slug: null,
-      toggle_all: null,
+      intro: !$scope.settings.dev, // splash fullscreen panel
+      commenting_slug: null, // current disqus id
       lang: $routeParams.lang,
-      layout: $routeParams.layout ? $routeParams.layout : "list"
+      layout: layout,
+      tags: [], // list of current filtering tags
+      graphstatus: "NO", // loaded or not ?
     };
     console.log("state:",$scope.state);
 
-    $scope.paragraphs = [];
+    
+
+    // $scope.clickMenu = function(k) {
+    //   var target = document.getElementById('p_'+k);
+    //   //console.log("o",target.offsetTop);
+    //   //target.scrollIntoView({block: "end", behavior: "smooth"});
+    //   window.scrollTo(0,target.offsetTop - 110);
+    //   //window.scrollBy(0,-40);
+    // };
+
+
 
     $scope.layoutTemplate = function() {
-      return $scope.settings.assets+'partials/sections_'+$scope.state.layout+'.html';
+      return $scope.settings.assets+'partials/layout_'+$scope.state.layout+'.html';
+    };
+    $scope.sectionTemplate = function(s) {
+      return $scope.settings.assets+'partials/layout_sections_'+s.layout+'.html';
+    };
+
+    var scrollToup = function() {
+      document.getElementById("container").scrollTo(0,0);
     };
 
     $scope.openComments = function(p) {
@@ -69,66 +92,164 @@ angular.module('manifest.controllers', ['underscore','config'])
       }); // timeout to be sure disqus div is here ?
     };
     
-    $scope.getRandomInt = function(){
+    $scope.getRandomInt = function() {
       return Math.floor((Math.random()*7));
-    }
+    };
 
 
-    $scope.clickOnTag = function(tag) {
-      console.log("choosed tag:",tag);
-      $scope.state.filtertag = tag;
+    $scope.changeLayout = function(lay) {
+      if(lay != $scope.state.layout) {
+        $scope.state.layout = lay;
+        if(lay!='links') {
+          $scope.state.graphstatus="NO";
+          //loadLinksGraph($scope);
+        }
+      }
+    };
+    $scope.loadLinksGraph = function() {
+      loadLinksGraph($scope);
+    };
+
+
+
+    $scope.tagDescription = function(tag) {
+      if(tag && $scope.tagsContents[tag]) {
+        $scope.state.tagdescription = $scope.tagsContents[tag].description;
+      } else {
+        $scope.state.tagdescription = $scope.meta.menu.tagsdescription;
+      }
       $scope.$apply();
     };
-    $scope.filterUpdate = function() {
-      window.scrollTo(0,0);
-    };
-    $scope.filterSubmit = function() {
-      console.log("searching:",$scope.state.term);
-      fiterLinksNodes($scope.state.term);
+
+    $scope.isTagActive = function(tag) {
+      return $scope.state.tags.indexOf(tag)!=-1;
     };
 
-    $scope.clickTag = function(t) {
-      if(t) {
-        $scope.state.term = t.search;
-        window.scrollTo(0,0);
+
+
+
+    $scope.resetFilters = function() {
+      $scope.toggleTag();
+      $scope.searchSubmit();
+      $scope.$apply();
+    };
+
+    $scope.toggleTag = function(tag,refresh) {
+
+      // please set max tags to 5 !
+
+      if(!tag)
+        $scope.state.tags = [];
+      else {
+        if($scope.state.tags) {
+          if($scope.state.tags.indexOf(tag)==-1)
+            $scope.state.tags.push(tag);
+          else
+            $scope.state.tags = _.without($scope.state.tags,tag);
+        } else {
+          $scope.state.tags = [tag];
+        }
+      }
+      console.log("state tags:",$scope.state.tags);
+      
+      // update graph node colors
+      updateTagNodes($scope.state.tags);
+
+      if(refresh) $scope.$apply();
+      scrollToup();
+    };
+
+
+    $scope.searchSubmit = function(term) {
+      if(term) {
+        $scope.state.search = term;
       }
       else {
-        $scope.state.term = "";
+        $scope.input = "";
+        $scope.state.search = "";
         $scope.toggleAll(false);
       }
+      
+      $scope.rgx.search = new RegExp($scope.state.search,'gi');
+
+      if($scope.state.graphstatus=='OK')
+        filterLinksNodes($scope.state.search);
+
+      scrollToup();
     };
 
-    // $scope.clickMenu = function(k) {
-    //   var target = document.getElementById('p_'+k);
-    //   //console.log("o",target.offsetTop);
-    //   //target.scrollIntoView({block: "end", behavior: "smooth"});
-    //   window.scrollTo(0,target.offsetTop - 110);
-    //   //window.scrollBy(0,-40);
-    // };
     
-    $scope.highlight = function(text) {
-      if(!$scope.state.term || $scope.state.term.length<3) {
-        return $sce.trustAsHtml(text);
-      }
-      return $sce.trustAsHtml(text.replace(new RegExp($scope.state.term, 'gi'), '<span class="highlight">$&</span>'));
+    $scope.rgx = {};
+    $scope.rgx.inlnk = new RegExp("<[^>]*>","gi");
+    $scope.rgx.search = new RegExp("",'gi'); // is updated after each keystroke on search input
+    var totext = function(htm) {
+      return htm.replace(/<[^>]+>/gm,'');
     };
-    $scope.atLeastContains = function(p) {
-      var reg = new RegExp($scope.state.term,'gi');
 
-      var show = reg.test(p.quote.content);
 
-      var watch = ['title','subtitle','content','links'];
-      _.each(watch, function(k) {
-        show = show || reg.test(p[k]);
-      });
+    $scope.highlight = function(html) {
+      if(!$scope.state.search || $scope.state.search.length<3) {
+
+        return $sce.trustAsHtml(html);
+
+      } else {
+        
+        var rgxp = $scope.rgx.search;
+
+        var text = totext(html);
+
+        if(!rgxp.test(text)) { // if flattened html don't matches
+
+          return $sce.trustAsHtml(html);
+
+        } else {
+
+          var inlnkmatches = html.match($scope.rgx.inlnk);
+        
+          // if at least one link rawtag matches, highlight all
+          if(inlnkmatches && rgxp.test( inlnkmatches.join("") )) {
+
+            return $sce.trustAsHtml('<div class="highlight">'+html+'</div>');
+
+          } else {
+
+            if( !rgxp.test(html) ) { // if html don't match, but flattened text matches, higlight all
+              return $sce.trustAsHtml('<div class="highlight">'+html+'</div>');
+            } else {
+              return $sce.trustAsHtml(html.replace(rgxp,'<span class="highlight">$&</span>'));
+            }
+
+          }
+
+        }
+      }
+    };
+    $scope.shallShowSearch = function(o) { // "o" is a section or a link
+      var reg = new RegExp($scope.state.search,'gi'); //$scope.rgx.search;
+
+      if(o.title) { // a section
+        var show = reg.test(totext(o.quote.content));
+        _.each(['title','subtitle','content'], function(k) {
+          show = show || reg.test(totext(o[k]));
+        });
+      } else { // a link
+        var show = reg.test(totext(o.content));
+      }
       return show;
     };
-    $scope.shallShowIfTag = function(o) { // "o" is a section or a link
-      if($scope.state.filtertag && o.tags && o.tags.indexOf($scope.state.filtertag)==-1)
-        return false;
-      else
+    $scope.shallShowTags = function(o,onlyintersect) { // "o" is a section or a link
+      if($scope.state.tags.length && o.tags) {
+        var interslen = _.intersection(o.tags,$scope.state.tags).length;
+        if(onlyintersect) {
+          return interslen == $scope.state.tags.length;
+        }
+        else {
+          return interslen > 0;
+        }
+      } else
         return true;
     }
+
 
     $scope.toggleOne = function(p) {
       p.opened = !p.opened ;
@@ -139,7 +260,7 @@ angular.module('manifest.controllers', ['underscore','config'])
       }
     };
     $scope.toggleAll = function(status) {
-      _.each($scope.paragraphs, function(p) {
+      _.each($scope.sections, function(p) {
         p.opened = status;
         if(status && !p.commentcount)
           $timeout(function() {
@@ -209,6 +330,7 @@ angular.module('manifest.controllers', ['underscore','config'])
           $scope.templinks4graph = [];
 
           _.each(singlelink, function(l) {
+
             var tgs = l.split('\n')[0].match(/\w+/ig);
             
             // (test/dev) just to see links over graph
@@ -237,21 +359,19 @@ angular.module('manifest.controllers', ['underscore','config'])
           });
 
           if($scope.settings.dev) {
-            console.log("!! declared tags:",_.keys($scope.tags));
+            console.log("!! declared tags:",_.keys($scope.meta.tags));
             console.log("!! declared tags contents:",$scope.tagsContents);
             console.log("!! all links:",$scope.linksArray);
             console.log("!! nb of links by tag:",$scope.linksByTag);
-            console.log("!! tags used in sections:",$scope.mentionedTags);
-            console.log("!! non used in sections:", _.difference(_.keys($scope.linksByTag), _.keys($scope.mentionedTags)));
-            console.log("!! non-declared tags:", _.difference(_.keys($scope.linksByTag), _.keys($scope.tags)));
-            console.log("!! declared tags with 0 link", _.difference(_.keys($scope.tags), _.keys($scope.linksByTag)));
+            console.log("!! tags used in sections:",$scope.sectionNbByTag);
+            console.log("!! non used in sections:", _.difference(_.keys($scope.linksByTag), _.keys($scope.sectionNbByTag)));
+            console.log("!! non-declared tags:", _.difference(_.keys($scope.linksByTag), _.keys($scope.meta.tags)));
+            console.log("!! declared tags with 0 link", _.difference(_.keys($scope.meta.tags), _.keys($scope.linksByTag)));
           }
 
-          _.each($scope.paragraphs, function(p) {
+          _.each($scope.sections, function(p) {
             p.links = getLinksFromTags(p.tags);
           });
-
-          if($scope.settings.dev) loadTagGraph($scope);
 
         })
         .error(function (data, status, headers, config) {
@@ -260,13 +380,12 @@ angular.module('manifest.controllers', ['underscore','config'])
     };
 
     ////////////////////////////////////////// GET CONTENTS
-    var sectionsUrl = $scope.settings.dev ?
-      settings.datapath + "sections_"+$scope.state.lang+".yml" :
-      settings.datapath + "contents_"+$scope.state.lang+".yml";
+    var sectionsUrl = settings.datapath + "sections_"+$scope.state.lang+".yml";
 
     $http
       .get(sectionsUrl)
       .success(function(res) {
+
         jsyaml.loadAll(res, function(d) {
 
           //////////////////////////////////////////// PARSING META
@@ -274,11 +393,11 @@ angular.module('manifest.controllers', ['underscore','config'])
 
             $scope.meta = d;
             //$scope.meta.about = md2Html($scope.meta.about);
-            $scope.meta.footer = md2Html($scope.meta.footer);
+            $scope.meta.footer.content = md2Html($scope.meta.footer.content);
+            
             // for html page meta
             $rootScope.htmlmeta = d.htmlmeta;
 
-            $scope.tags = d.tags;
             _.each(d.tags, function(v,k) {
               $scope.tagsContents[k] = {
                 label: v.split(' = ')[0],
@@ -299,7 +418,7 @@ angular.module('manifest.controllers', ['underscore','config'])
             d.content = md2Html(d.content);
             d.tags = d.tags ? d.tags.split(', ') : [];
             _.each(d.tags, function(t) {
-              $scope.mentionedTags[t] = $scope.mentionedTags[t] ? $scope.mentionedTags[t]+1 : 1;
+              $scope.sectionNbByTag[t] = $scope.sectionNbByTag[t] ? $scope.sectionNbByTag[t]+1 : 1;
             });
             d.links = md2Html(d.links);
 
@@ -309,28 +428,37 @@ angular.module('manifest.controllers', ['underscore','config'])
               d.date = d.date.fromNow();
             else
               d.date = null;
+            
+            d.currentlink = 0;
 
-            $scope.paragraphs.push(d);
+            d.layout = 'flat'; //Math.random()<0.2 ? 'grid' : 'flat';
+
+            $scope.sections.push(d);
 
           }
         });
         
 
         // now fetch links and inject them based on tags
-        if($scope.settings.dev)
-          $scope.getInjectLinks();
+        $scope.getInjectLinks();
+
+        // please wait before loading graphs !
+        $timeout(function() {
+
+          loadTagGraph($scope);
+
+        },500);
 
         // (to improve) init here to trigger the watch on footer content set though compile-html directive
-        $scope.state.term = "";
+        $scope.state.search = "";
+
       })
       .error(function (data, status, headers, config) {
         console.log("error sections",status);
       });
 
 
-    // AFTER EVERYTHING IS HERE
-    if($scope.settings.dev && $routeParams.layout=="links")
-      loadLinksGraph($scope);
+
 
 
     // disqus

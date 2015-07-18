@@ -3,46 +3,30 @@
 
 ---
 role: splash
-repo: https://github.com/manifestes/manifestes
-discuss:
-    text: discuter, corriger, proposer
-    back: revenir au texte
+source:
+    github: https://github.com/manifestes/manifestes
+    sections: https://github.com/manifestes/manifestes/blob/gh-pages/data/sections_fr.yml
+    links: https://github.com/manifestes/manifestes/blob/gh-pages/data/links_fr.yml
 intro:
     title: manifeste(s)
     description: >
         collectif(s) des territoires communs autogérés et alternatives convivialistes DIY bénéloves révolutionnaires de la transition sociale et écologique dans les tiers-lieux créatifs des clowns bricoleurs pirates des utopies libertaires écoféministes p2p et coopératistes indignées activistes de la résilience décroissante concrète et désobéissante des convergences des luttes
     more_groups: >
-        sobriété heureuse, simplicité volontaire, désargence, chômeur.e.s, colibris, créatifs culturels, pirates, objecteur.euse.s de croissance, empêcheur.euse.s de tourner en rond, AMAPs, alternatif.ive.s, convivialistes, grévistes, écoféministes, 15M, alternatiba, activistes, utopistes concrets, maquisard.e.s, hackers, rassemblements citoyen, universités, fablabs, résitances, grands-parents, désobéissants, transition citoyenne, tiers-lieux, p2p, bénéloves, communs, consom'acteurs, SEL, anarchistes, alliances citoyennes, révolutionnaires, occupy, amis de la terre, 99%, vélistance, indignés, bolo'bolo, éco-villages, institut momentum, bricoleur.se.s, farceurs, clowns, résiliés, squatteur.se.s, décroissants conviviaux, évidences écolos, e-constituante, anarnautes, libertaires, anticapitalistes, anonymous, coopératistes, antifascistes, rebooters, démocratie ouverte, écosociétalistes
+        sobriété heureuse, simplicité volontaire, désargence, chômeur.e.s, colibris, créatifs culturels, pirates, objecteur.euse.s de croissance, empêcheur.euse.s de tourner en rond, AMAPs, alternatif.ive.s, convivialistes, grévistes, écoféministes, 15M, alternatiba, activistes, utopistes concrets, maquisard.e.s, hackers, rassemblements citoyen, universités, fablabs, résitances, grands-parents, désobéissants, transition citoyenne, tiers-lieux, p2p, bénéloves, communs, consom'acteurs, SEL, anarchistes, alliances citoyennes, révolutionnaires, occupy, amis de la terre, 99%, vélistance, indignés, bolo'bolo, éco-villages, institut momentum, bricoleur.se.s, farceurs, clowns, résiliés, squatteur.se.s, décroissants conviviaux, évidences écolos, e-constituante, anarnautes, libertaires, anticapitalistes, anonymous, coopératistes, antifascistes, rebooters, démocratie ouverte, écosociétalistes, écologie, alternatives, non-violence
     keywords: "# philosophie # politique # pratique # convergences #"
     enter: ">> consulter + participer <<"
-searchplacehoder: chercher
-searchtags:
-    -   name: argent
-        search: argent|monn\w+
-    -   name: institutions
-        search: institution\w*|structure\w*
-    -   name: pouvoir
-        search: pouvoir|autorité|puissance
-    -   name: inégalités
-        search: inégalité\w+
-    -   name: responsables
-        search: responsab\w+|coupable|culpab\w+
-    -   name: quotidien
-        search: quotidien\w*|habitu\w+
-    -   name: aliénation
-        search: aliénation|dépendan\w+
-    -   name: émancipation
-        search: émancip\w*
-    -   name: politique
-        search: politique
-    -   name: technologies
-        search: \W(techn|scienc)\w+
-    -   name: liberté
-        search: \W(liberté|libre)\w+
-    -   name: commun
-        search: communs*|collecti\w+
-    -   name: langage
-        search: langage|mot\w*|parler
+menu:
+    tagsdefault: toutes
+    tagslabel: filtrer par thématiques
+    tagsdescription: cliquez sur les thématiques pour filtrer les contenus
+    search: chercher
+    sections: textes
+    links: liens
+    print: imprimer
+    examples: en pratique(s)
+    discusstext: discuter, corriger, proposer
+    discussback: revenir au texte
+    loadgraph: cliquer pour afficher le graphe
 tags:
     manifest: à propos = projet manifeste(s) (liste de discussion, code, twitter)
     group: collectifs = réseaux, coopératives, associatives existant(e)s
@@ -56,7 +40,8 @@ tags:
     pub: publicité = publicité
     control: contrôle = fichage, cloud, surveillance
     violence: violence = radicalité, violence physique
-    emancipation: émancipation = se reapproprier (outils, politique, connaissance)
+    emancipation: émancipation = réappropriation (outils, politique, connaissance)
+    law: juridique = lois, aspects juridiques
     education: éducation = école, université, recherche
     learn: apprendre = se former, se renseigner sur un sujet
     teach: enseigner = partager son savoir
@@ -76,14 +61,16 @@ tags:
     act: action = en pratique dans son quotidien
     fun: humour = amusons-nous !
     love: amour = toujours
-    dream: rêve = utopies
+    dream: rêve = utopies, promesses, idéaux
     meet: rencontres = rencontrer, découvrir, partager
     debate: discuter = s'accorder, s'engueuler, débattre
+    inegality: inégalités = d'accès, des chances, de €
     solidarity: solidarité = aide pratique
     space: espace public = espaces partagés, ville
     list: annuaire = base de données, liens
     place: lieux = où ça ? adresses, tiers-lieux
     time: agenda = quand ? calendriers, évenements
+    economy: économie = commerce, échanges
     politics: politique = politique et représentation
     philo: philosophie = réflexion, théorie
     media: médias = information, journalisme
@@ -94,11 +81,11 @@ tags:
     video: films = videos, films, documentaires
     energy: énergie = éolien, électrique, solaire
     words: langage = récits, mots, interprétations
-    greenwash: capitalisme vert = récupérations, greenwashing
+    greenwash: néocapitalisme = récupérations, greenwashing
     culture: culture = art, culture, création, écriture
     design: design = processus, formes, gameplay
     health: santé = corps, maladie, santé, sport, psychologie
-    earth: terre = planète, environnement, climat, pollutions
+    earth: planète = environnement, climat, pollutions
     commons: communs = open(res)sources
     agriculture: agriculture = cultures, semences
     object: objets = matériel, mobilier, machines
@@ -106,17 +93,18 @@ tags:
     sleep: habiter = logement, habitat, espace privé
     move: se déplacer = transports
     work: travail = emploi, chômage, activité remunérée
-lastupdatetext: dernière modification
-footer: >
-    ##*voir aussi*
+footer:
+    lastupdatetext: dernière modification
+    content: >
+        ##*voir aussi*
 
-    - le [document partagé](https://lite6.framapad.org/p/manifestes)
+        + le [document partagé](https://lite6.framapad.org/p/manifestes)
 
-    - la liste de discussion [manifestes@lists.riseup.net](https://lists.riseup.net/www/subscribe/manifestes)
+        + la liste de discussion [manifestes@lists.riseup.net](https://lists.riseup.net/www/subscribe/manifestes)
 
-    - le [code source](https://github.com/manifestes/manifestes) de ce site avec [les textes](https://github.com/manifestes/manifestes/blob/gh-pages/data/contents_fr.yml)
+        + le [code source](https://github.com/manifestes/manifestes) de ce site avec [les textes](https://github.com/manifestes/manifestes/blob/gh-pages/data/sections_fr.yml) et [les liens](https://github.com/manifestes/manifestes/blob/gh-pages/data/links_fr.yml)
 
-    - le compte twitter [@manifestes](https://twitter.com/manifestes)
+        + le compte twitter [@manifestes](https://twitter.com/manifestes)
 
 
 
@@ -139,7 +127,7 @@ quote:
         
 
         Et c'est pas triste
-tags: group
+tags: manifest, group
 content: >
     ###*objectifs*
 
@@ -152,38 +140,42 @@ content: >
 
 
 ---
-date: 2015-07-07
+date: 2015-07-16
 role: meta
 title: Un carnet de recherche
-subtitle: Texte collectif
+subtitle: Nous partons du principe que **de nombreuses solutions existent** déjà. Nous cherchons à les rendre plus visibles
 slug: research_notebook
 image:
     url: MarianneBrandt.jpg
     credit: Marianne Brandt
 quote:
-    author: _
-    content: _
+    author: Evelyne Pieiller, Manière de voir 136, p.90
+    content: >
+        Il n'y a pas de recette formelle
+
+
+        Il n'y a que de nouvelles questions posées par la société, auxquelles il faut donner une forme telle qu'elle éveille chez le spectateur la joie d'envisager des réponses différentes de celles proposées par le monde où il vit. Une forme joueuse qui contraint à l'étonnement, déshabitue des fausses évidences, engage à douter de la pérennité de l'ordre existant, aide à désirer se libérer de ce qui empêche l'humain de vivre plus amplement.
+
+
+        Ce qui donne... de la joie.
 tags: manifest
 content: >
-    Ce site est en perpétuelle transformation. Il reflète les pérégrinations physiques et intellectuelles d'une bande de potes décidé.e.s à mieux décortiquer le monde qui nous entoure pour **mieux comprendre là où çà fait mal, afin de riposter comme il se doit**
+    Ce site est en perpétuelle transformation. Il reflète les pérégrinations physiques et intellectuelles d'une bande de potes décidé.e.s à mieux décortiquer le monde qui nous entoure pour **mieux comprendre là où çà fait mal, afin de riposter comme il se doit**.
 
 
-    Nous partons du principe que **de nombreuses solutions existent** déjà sous de multiples formes. Nous cherchons à les rendre plus visibles.
+    Ce site permet en outre de garder au chaud des idées ou références qui transitent *dans des articles, au travers de discussions, rencontres*, afin de pouvoir les retrouver si nécessaire. Nous ne sommes donc que très rarement les auteurs: *nous copions, nous inspirons, traduisons...*
 
 
-    Ce site permet en outre de garder au chaud des idées ou références qui transitent dans des articles, au travers de discussions, rencontres, afin de pouvoir les retrouver si nécessaire !
-
-
-    Nous vous invitons à participer à ce projet de recherche comme vous le souhaitez: *ajout de liens manquants, formulation ou précision de points théoriques, démasquage de faux amis, etc...*
+    Nous vous invitons à participer à ce projet de recherche comme vous le souhaitez: *ajout de liens manquants, formulation ou précision de points théoriques, démasquage de faux amis...* à travers le [document partagé](http://lite6.framapad.org/p/manifestes), la [liste de discussion](http://lists.riseup.net/www/subscribe/manifestes), ou directement dans le [code source](https://github.com/manifestes/manifestes/blob/gh-pages/data).
 
 
 
 
 ---
-date: 2015-06-01
+date: 2015-06-16
 role: meta
-title: Par sections thématiques synthétiques
-subtitle: Le découpage en **sections** permet de rendre le texte plus lisible et facilite les discussions sur les **thèmes** abordés.
+title: Sections thématiques et liens
+subtitle: Les **sections** et les **liens** permettent de rendre le texte plus lisible et facilitent les discussions sur les **thèmes** abordés.
 slug: methodo
 image:
     url: FingerBones.jpg
@@ -193,7 +185,7 @@ quote:
     content: L'intelligence, c'est le seul outil qui permet à l'homme de mesurer l'étendue de son malheur.
 tags: manifest
 content: >
-    ###*Chaque section (comme celle-ci) comporte:*
+    ###Chaque [section](https://github.com/manifestes/manifestes/blob/gh-pages/data/sections_fr.yml) comme celle-ci comporte
 
 
     - un **titre** permettant d'ouvrir ou de fermer la section
@@ -202,40 +194,48 @@ content: >
 
     - un texte synthétique **théorique** développant une idée
 
-    - suivi d'un encart **pratique** avec *les liens, exemples pratiques, initiatives concrètes associées*
+    - une liste de **thématiques** (tags) associées
+
+
+    ###L'encart ci-dessous présente les [liens](https://github.com/manifestes/manifestes/blob/gh-pages/data/links_fr.yml) correspondants
+
+
+    C'est-à-dire les articles, collectifs, initiatives concrètes taggés avec les mêmes thématiques.
+
 
 
 
 ---
-date: 2015-07-06
+date: 2015-07-15
 role: meta
 title: Cartographie des sites internet
-subtitle: Exploration des sites et des liens hypertextes pour mieux comprendre les articulations entre les différents mouvements alternatifs du monde qui vient
+subtitle: Exploration des sites et des liens hypertextes pour visualiser les articulations entre les différents mouvements alternatifs
 slug: hyphe_map
 tags: list, manifest
 image:
     url: Felix_DrawingAutism.jpg
     credit: Felix, Drawing Autism
 quote:
-    author: 
-    content: 
+    author: Deleuze
+    content: Être de gauche ou de droite, ce n'est pas une question de morale, mais de perception du monde.
 content: >
-    Grâce à l'outil ouvert [hyphe](http://hyphe.medialab.sciences-po.fr/), nous avons produit une carte des liens connectant différents sites internet portant des alternatives.
+    Grâce à l'outil [hyphe](http://hyphe.medialab.sciences-po.fr/), nous avons produit une carte des liens connectant les sites internet portant des alternatives.
 
 
     Cette carte se construit pas-à-pas en sélectionnant ceux respectant les critères suivants:
 
+    
+    - *contenu majoritairement francophone*
 
-    - sites à contenu majoritairement francophone
+    - *non politiciens (c-a-d ne s'intéressant pas uniquement à des partis ou personnalités)*
 
-    - non politiciens (c-a-d ne s'intéressant pas uniquement à des partis ou personnalités)
+    - *non gouvernementaux*
 
-    - non gouvernementaux
-
-    - incarnant en théorie ou pratique les sujets soulevés dans le présent manifeste
+    - *incarnant en théorie ou pratique les problématiques du présent manifeste*
 
 
-    Nous ne sommes évidemment pas capables de juger la pertinence de toutes les initiatives apparaissant sur la carte (chacune peut de toute façon changer avec le temps)
+
+    Nous ne sommes évidemment pas capables de juger la pertinence de toutes les initiatives, chacune pouvant changer avec le temps, mais nous vous invitons à nous faire part de vos remarques.
 
 
 
@@ -415,10 +415,9 @@ content: >
 
 
 ---
-date: 2015-07-06
-role: new
+date: 2015-07-16
 title: Stop aux merdias de masse
-subtitle: Finissons-en avec le désastre médiatique des puissants, contrôlant à leur guise l'actualité et les modes de pensées
+subtitle: Finissons-en avec l'abrutissement médiatique des puissants, contrôlant à leur guise l'actualité et les modes de pensées
 slug: stop_medias
 image:
     url: RokuroTaniuchi.jpg
@@ -427,20 +426,20 @@ quote:
     author: Pierre Deruelle
     content: Quand le sage montre du doigt le politique vendu au banquier, l’imbécile regarde l’immigré au bout du doigt du politique.
 tags: media, learn
-contents: >
-    Nous ne voulons plus être inondés d'images nauséabondes polluant notre *temps de cerveau disponible*.
+content: >
+    Nous ne voulons plus être inondés d'images nauséabondes polluant notre *«temps de cerveau disponible»*.
 
-    Il existe déjà des multitudes de médias indépendants, supprimons les grandes chaines de radio et de télévision pour leur laisser la place
+
+    Écartons-nous des chaines de radios et télévision mercantiles et soutenons les médias indépendants porteurs d'autres discours.
 
 
 
 ---
-date: 2015-07-06
-role: new
+date: 2015-07-16
 title: Un revenu de base inconditionnel
-subtitle: En nature (gratuité des communs) ou en argent, permettant de vivre dignement sans avoir à se prostituer dans une activité non choisie
+subtitle: En nature ou en argent, il permet de vivre dignement sans avoir à se prostituer dans une activité non choisie
 slug: basic_income
-tags: basicincome, money, autonomy, work
+tags: basicincome, money, work
 image:
     url: GrahamLambkin.jpg
     credit: Graham Lambkin
@@ -449,7 +448,7 @@ quote:
     content: >
         Il est aussi dans l'intérêt d'un tyran de garder son peuple pauvre, pour qu'il soit si occupé à ses tâches quotidiennes qu'il n'aie pas le temps pour la rébellion.
 content: >
-    Le revenu ou dotation universelle, inconditionnelle permet à tous de satisfaire ses besoins primaires sans contrepartie. Il permet en outre à ses bénéficiaires de sortir la tête de l'eau et d'enfin choisir leur activité.
+    Le revenu ou dotation universelle inconditionnelle permet à chacun de satisfaire ses besoins primaires. Il permet, du moins de manière transitionnelle, à ceux qui sont entièrement aliénés par leur travail de sortir la tête de l'eau et d'enfin choisir leur activité.
 
 
 
@@ -502,7 +501,7 @@ content: >
     Sachons **détecter cet ennemi** lorsqu'il apparaît en nous ou autour de nous et apprenons à **réagir ensemble** à ses manifestations.
 
 
-    *« c'est à cause de... »* ? prendre du recul et évaluer si la cible est bien la bonne. **Témoin ou victime** d'un abus de pouvoir ou d'une oppression, **ré-agissons** ! N'affrontons pas les individus eux-mêmes, mais **leurs comportements**.
+    *« C'est à cause de... »* ? prendre du recul et évaluer si la cible est bien la bonne. **Témoin ou victime** d'un abus de pouvoir ou d'une oppression, **ré-agissons** ! N'affrontons pas les individus eux-mêmes, mais **leurs comportements**.
 
 
     Oublions les **personnalités politiques**, *amies ou ennemies*. Parler d'eux, c'est déjà perdre du temps et leur donner de l'importance.
@@ -521,8 +520,11 @@ image:
 quote:
     author: ?
     content: >
-        Nous déléguons tous nos pouvoirs aux puissances d'argent: s'informer, se nourrir, se déplacer, communiquer, il n'y a plus une seule chose quotidienne que nous soyons capable d'assumer par nos propres moyens. Il est temps de réapprendre à vivre dans notre propre milieu.
-tags: money, pub
+        Nous déléguons tous nos pouvoirs aux puissances d'argent: s'informer, se nourrir, se déplacer, communiquer, il n'y a plus une seule chose quotidienne que nous soyons capable d'assumer par nos propres moyens.
+
+
+        Il est temps de réapprendre à vivre dans notre propre milieu.
+tags: money
 content: >
     Quels sens donner à nos actes lorsque **toute valeur** est concentrée dans un seul instrument, l'argent ?
 
@@ -535,10 +537,9 @@ content: >
 
 
 ---
-date: 2015-07-06
-role: new
-title: Une taxe sur toutes les transactions financières
-subtitle: Du retrait de 20€ au distributeur à la finance haute vitesse, taxer tous les mouvements d'argent
+date: 2015-07-16
+title: Taxer toutes les transactions financières
+subtitle: Du simple retrait de 10€ au distributeur aux spéculateurs financiers, taxer tous les mouvements d'argent
 slug: tax_transactions
 image:
     url: Masereel.jpg
@@ -548,32 +549,35 @@ quote:
     content: Il n'est rien au monde d'aussi puissant qu'une idée dont l'heure est venue.
 tags: slow, money
 content: >
-    Cette taxe serait insignifiante pour les petits échanges (par ex. un retrait de 100€ à un distributeur) mais très utile pour limiter les échanges financiers à haute vitesse concernant des montants à multiples zéros.
+    D'un très faible pourcentage, cette taxe serait **insignifiante pour les petits échanges**, mais très utile pour limiter les échanges financiers à haute vitesse concernant des montants à multiples zéros.
+
 
 
 
 ---
-date: 2015-07-06
-role: new
+date: 2015-07-16
 title: Supprimons la publicité
-subtitle: Stop à la propagande des puissances d'argent qui nous abreuve de consumérisme idiot
+subtitle: Arrêtons la propagande des multinationales prônant un consumérisme idiot
 slug: kill_ads
 image:
     url: JiriSalamoun.jpg
     credit: Jiri Salamoun
 quote:
-    author: _
-    content: _
-tags: money, media, alienation
-contents: >
-    Nous ne voulons plus être inondés d'images nauséabondes polluant notre *temps de cerveau disponible*.
+    author: Manifeste [Technologos.fr](http://www.technologos.fr)
+    content: >
+        Nous pensons que pour oublier les vicissitudes du travail, les humains s'abandonnent aux biens de consommation, au point d'ériger la consommation en «culture».
 
-    Il existe déjà des multitudes de médias indépendants, supprimons les grandes chaines de radio et de télévision pour leur laisser la place
+
+        La publicité n'est pas un simple moyen de propagande, c'est l'instrument d'un culte.
+tags: pub, money
+content: >
+    Polluant nos cerveaux et tous les espaces publics, la publicité (que le client finance par son achat) est le premier symptôme d'une société omnubilée par la consommation et la croissance.
+
 
 
 
 ---
-date: 2015-06-01
+date: 2015-07-02
 title: À quoi on tient ?
 subtitle: Si on y réfléchit, qu'est-ce qui compte vraiment ?
 slug: on_tient_a_quoi
@@ -603,21 +607,25 @@ content: >
 
 
 
+
 ---
-date: 2015-07-06
-role: new
-title: N'achetons et ne mangeons plus de merde !
+date: 2015-07-16
+title: Ne mangeons plus de merde !
 subtitle: Boycottons la nourriture industrielle, cuisinons nous-même
 slug: eat_well
 image:
     url: HorstWidmann.jpg
     credit: Horst Widmann
 quote:
-    author: _
-    content: _
+    author: proverbe Yuocmyn
+    content: Oublie le vrai, oublie le faux, seul le rêve peut transformer le monde
 tags: boycott, eat, health
-contents: >
-    -
+content: >
+    Parmis les actes que nous faisons tous les jours, **celui de se nourir est sans doute celui qui est le plus politique.**
+
+
+    Changeons nos habitudes alimentaires pour décourager les multinationales pollueuses de l'agroalimentaire et **améliorons notre santé** en nous approvisionnant chez de petits producteurs locaux.
+
 
 
 ---
@@ -684,7 +692,7 @@ image:
 quote:
     author: Jacques Ellul, Les nouveaux possédés, 1973
     content: Ce n'est pas la technique qui nous asservit, c'est le sacré transféré à la technique.
-tags: tech, web
+tags: tech, web, atom
 content: >
     Les développement des technologies *nano, bio, numériques, médicales* sont le symptôme d'un **fantasme de contrôle et de connaissance totale** toujours disponible.
 
@@ -706,8 +714,8 @@ content: >
 
 
 ---
-date: 2015-06-01
-title: "Désobéir, prendre position"
+date: 2015-07-08
+title: Désobéir, prendre position
 subtitle: "Sortons de nos zones de confort et de soumission. Depuis là où nous sommes, reformulons nous-mêmes les questions: tout lien, tout échange, toute action est politique"
 slug: prendre_position
 image:
@@ -718,14 +726,14 @@ quote:
     content: Si tu es neutre en situation d'injustice, alors tu as choisi le coté de l'oppresseur
 tags: boycott, slow, act
 content: >
-    Ne pensons plus à *la* **politique** représentative, comme institution de pouvoir et de luttes pour sa conquête.
-    Entretenons ou rétablissons *le* **politique**, par les relations que nous avons entre *voisins, collègues, amis*.
+    Ne pensons plus à *la* politique représentative, comme institution de pouvoir et de luttes pour sa conquête.
+    Entretenons ou rétablissons *le* politique, par les relations que nous avons entre voisins, collègues, amis.
     
 
-    Au *légal* préférons le **légitime** !
+    **Au légal préférons le légitime** !
 
 
-    Depuis le quotidien le plus banal, devenons acteurs, **complices** d’autres logiques, d'autres manières de vivre. **Prenons position** en redessinant le territoire dans lequel nous vivons: *avec qui parler, où manger, où travailler: ça je le refuse, ça à la limite, ça ok...* 
+    Depuis le quotidien le plus banal, devenons acteurs, complices d’autres logiques, d'autres manières de vivre. **Prenons position** en redessinant le territoire dans lequel nous vivons: *marcher moins vite, explorer son quartier, consommer moins d'énergie, avec qui parler, où manger, où travailler, ça je le refuse, ça à la limite, ça ok...* 
  
 
     **La désobéissance est contagieuse** !
@@ -734,31 +742,39 @@ content: >
     Notre liberté ne se résume pas à choisir entre plusieurs options, mais à la possibilité de **formuler nous-mêmes les questions**, de réinventer continuellement nos **identités** et nos **relations**.
 
 
-    On attend de nous *consommation-travail* de bon citoyen ? Choississons **pour qui** nous travaillons, **ce que** nous achetons, mangeons, **comment** nous nous comportons
+    La société attend de nous travail et consommation ? Choississons *pour qui* nous travaillons, *ce que* nous achetons, mangeons, *comment* nous nous comportons.
 
 
 
 ---
-date: 2015-07-06
-role: new
+date: 2015-07-16
 title: Boycottons toutes les multinationales
-subtitle: Réapproprions-nous tous les outils numériques, changeons de banque, choississons avec qui nous faisons commerce
+subtitle: Réapproprions-nous nos outils numériques, choisissons notre banque et avec qui nous faisons commerce
 slug: boycott_companies
 image:
     url: AnneHeathersandEstebanFrances.jpg
     credit: Anne Heathers & Esteban Frances
 quote:
-    author: _
-    content: _
+    author: "[Saker francophone](http://lesakerfrancophone.net/ogm-aux-us-larroseur-arrose/)"
+    content: >
+        Le peuple a été dépossédé de sa légitimité souveraine, exit le citoyen, cette dernière est passée aux mains des marchands, place au consommateur, détenteur de la souveraineté post-moderne.
+        [...]
+
+
+        Le choix que nous faisons dans les urnes est sans effet, alors que nos caddies parlent pour nous... en attendant mieux.
 tags: boycott, companies
-contents: >
-    -
+content: >
+    Le portefeuille est notre arme la plus efficace: les banques ne sont rien sans notre argent, et les multinationales ne se développent que si l'on achète leurs produits ou utilise leurs services.
+
+
+    Souvenons-nous que chaque acte d'achat est un vote.
+
 
 
 
 ---
 date: 2015-06-01
-title: Réenchantons, amusons-nous !
+title: Réenchantons, amusons-nous
 slug: amusons_nous
 image:
     url: ericDrooker_kids.jpg
@@ -768,17 +784,17 @@ quote:
     content: L'ennui est toujours contre-révolutionnaire. Toujours.
 tags: fun
 content: >
-    Alors qu'on nous bassine d'*austérité*, de *moral des ménages*, de *sondages en veux-tu en voila*, **rions au nez** du sérieux et des normes.
+    Alors qu'on nous bassine *de croissance, d'austérité, de moral des ménages, de sondages en veux-tu en voila*, **rions au nez** du sérieux et des normes.
 
 
-    Amplifions l'émergence d'un **état d'esprit** *de bonne humeur, d'amour, d'humour, d'humilité, de confiance, de convivialité, de coopération, de bienveillance, d'entraide, de partage* !
+    Amplifions l'émergence d'un **état d'esprit** *de bonne humeur, d'amour, d'humour, d'humilité, de confiance, de convivialité, de coopération, de bienveillance, d'entraide, de partage !*
 
 
 
 
 ---
 date: 2015-06-01
-title: Rencontrons-nous !
+title: Rencontrons-nous
 subtitle: "Expérience du collectif, attention et confiance en l'autre, nouvelles formes de collectifs autogérés. Objectif: vivre ensemble"
 slug: rencontrons_nous
 image:
@@ -799,7 +815,7 @@ content: >
     *« la mobilisation continue ? »*
 
 
-    Elle ne continue pas toute seule. À nous de l'**incarner** dans les faits si nous la souhaitons. Le peuple **n'est pas** dans la rue, il **se rencontre** dans la rue. Ce que nous appelons, ce n'est pas le réveil ou la révolte d'une population fictive préexistante, c'est la magie qui s'opère lorsque des êtres différents **se rencontrent et créent des liens**: *une attention nouvelle, une écoute de un à un...*
+    Elle ne continue pas toute seule. À nous de l'**incarner dans les faits** si nous la souhaitons. Le peuple n'est pas dans la rue, il se rencontre dans la rue. Ce que nous cherchons, ce n'est pas le réveil ou la révolte d'une population fictive préexistante, c'est la magie qui s'opère lorsque des gens différents **se rencontrent et créent des liens**: *une attention nouvelle, une écoute de un à un...*
 
 
 
@@ -891,20 +907,31 @@ content: >
 
 
 ---
-date: 2015-07-06
-role: new
+date: 2015-07-16
 title: Le tirage au sort pour réinvestir le politique
-subtitle: Postes à responsabilité pourvus au hasard, sans cumul parmis des assemblées de volontaires
+subtitle: Supprimer le cumul des mandats, et pourvoir les postes à responsabilité au hasard parmis des assemblées de volontaires
 slug: tirage_sort
 image:
     url: R_Bagautdinov.jpg
     credit: R. Bagautdinov
 quote:
-    author: _
-    content: _
+    author: Alain, 1935
+    content: >
+        Car enfin le trait le plus visible dans l'homme juste est de ne point vouloir du tout gouverner les autres, et de se gouverner seulement lui-même. Cela décide tout. Autant dire que les pires gouverneront
 tags: emancipation
-contents: >
-    Afin de
+content: >
+    L'idée que la politique n'est qu'un affaire d'experts permet à des castes oligarchiques et élitistes de monopoliser tous les pouvoirs.
+
+
+    Devant une promesse électorale, la responsabilité est partagée entre ceux qui la font et ceux qui la créditent: la professionalisation politique abîme la démocratie par la multiplication de fausses promesses: *malentendus, écarts, méconnaissance des programmes...*
+
+    
+    Le tirage au sort permet la désacralisation de la politique: réappropriation des lois et des processus administratifs qui nous regardent dans notre quotidien.
+
+
+    De manière analogue, les tâches ingrates mais utiles au bien public pourraient être assumées à tour de rôle, pour éviter les concentrations de pouvoir et faciliter la compréhension mutuelle des situations.
+
+
 
 
 ---
@@ -933,7 +960,7 @@ content: >
 
 ---
 date: 2015-06-01
-title: Sous toutes les formes !
+title: Sous toutes les formes
 subtitle: Diversité, multidisciplinarité, contre-récits
 slug: formes_diverses
 image:
@@ -949,6 +976,8 @@ content: >
 
 
     Où sont les **contre-récits**, les nouvelles formes de discours et du faire ? diversifions les interprétations: *poétiques, musicales, graphiques, invisibles, absurdes...*
+
+
 
 
 

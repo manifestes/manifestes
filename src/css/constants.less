@@ -2,14 +2,21 @@
 /* PREFIXES */
 .box-shadow(@args) {
   -webkit-box-shadow: @args;
+  -moz-box-shadow: @args;
   box-shadow: @args;
 }
 .box-shadow(@args, @oargs) {
-  -webkit-box-shadow: @args, @oargs;
-  box-shadow: @args, @oargs;
+  -webkit-box-shadow: @args, @args;
+  -moz-box-shadow: @args, @args;
+  box-shadow: @args, @args;
 }
 .inner-shadow(@args) {
   .box-shadow(inset @args);
+}
+.erase-shadow() {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 .background-size(@args) {
@@ -85,3 +92,39 @@
   user-select: none;
 }
 
+
+
+
+/* LOADING SPINNER, credit: http://tobiasahlin.com/spinkit */
+
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #FFF;
+
+  border-radius: 100%;
+  display: inline-block;
+  .animation(sk-bouncedelay 1.4s infinite ease-in-out);
+
+  /* Prevent first frame from flickering when animation starts */
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.spinner .bounce1 {
+  .animation-delay(-0.32s);
+}
+.spinner .bounce2 {
+  .animation-delay(-0.16s);
+}
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { .transform(scale(0.0)) }
+  40% { .transform(scale(1.0)) }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% { 
+    .transform(scale(0.0));
+  } 40% { 
+    .transform(scale(1.0));
+  }
+}

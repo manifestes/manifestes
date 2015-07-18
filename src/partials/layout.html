@@ -1,13 +1,9 @@
 <div
   class="intro"
   ng-class="{hidden:!state.intro}">
-  <div class="setlangs">
-    <a class="setlang" ng-class="{active: state.lang=='es'}" href="http://manifest.es/#/es">es</a>
-    <a class="setlang" ng-class="{active: state.lang=='fr'}" href="http://manifest.es/#/fr">fr</a>
-  </div>
   <h1>{{meta.intro.title}}</h1>
   <div class="description">{{meta.intro.description}}</div>
-  <img class="image" src="{{settings.datapath}}/manifestes_splash.jpg"/>
+  <img class="image" ng-if="state.intro" src="{{settings.datapath}}/manifestes_splash.jpg"/>
 
   <div class="foot">
     <div class="keywords">{{meta.intro.keywords}}</div>
@@ -15,67 +11,106 @@
   </div>
 </div>
 
-<div class="container" ng-class="{hidden:state.intro}">
+<div id="container" class="container" ng-class="{hidden:state.intro}">
 
   <div class="header">
 
     <div class="menu">
 
       <div class="arrow back" ng-click="state.intro = true;"></div>
-
-      <div class="setlangs">
-        <a class="setlang" ng-class="{active: state.lang=='es'}" href="http://manifest.es/#/es">es</a>
-        <a class="setlang" ng-class="{active: state.lang=='fr'}" href="http://manifest.es/#/fr">fr</a>
-      </div>
       
-      <div ng-if="settings.dev" class="setlayout">
-        <a href="./#/{{state.lang}}/grid/test">grid</a>
-        <a href="./#/{{state.lang}}/list/test">list</a>
-        <a href="./#/{{state.lang}}/links/test">links</a>
-        <a href="./#/{{state.lang}}/print/test">print</a>
+      <!-- BUTTONS -->
+      <div class="buttons">
+        <div class="button">
+          <img src="{{settings.assets}}/images/menu_lang.svg"/>
+          <span>
+            <a class="setlang" ng-class="{active: state.lang=='es'}" href="http://manifest.es/#/es">es</a>
+            <a class="setlang" ng-class="{active: state.lang=='fr'}" href="http://manifest.es/#/fr">fr</a>
+          </span>
+        </div>
+
+        <a class="button hover" id="print" href="./#/{{state.lang}}/print" target="_blank">
+          <img src="{{settings.assets}}/images/menu_print.svg"/><span>{{meta.menu.print}}</span>
+        </a>
+
+        <div
+          class="button hover"
+          ng-click="changeLayout('links');"
+          ng-class="{active:state.layout=='links'}">
+          <img ng-if="state.layout=='links'" src="{{settings.assets}}/images/menu_links_active.svg"/>
+          <img ng-if="state.layout!='links'" src="{{settings.assets}}/images/menu_links.svg"/>
+          <a class="ext" href="{{meta.source.links}}" target="_blank"><img src="{{settings.assets}}/images/external-link.svg"/></a>
+          <span>{{meta.menu.links}}</span>
+        </div>
+
+        <div
+          class="button hover"
+          ng-click="changeLayout('sections');"
+          ng-class="{active:state.layout=='sections'}">
+          <img ng-if="state.layout=='sections'" src="{{settings.assets}}/images/menu_sections_active.svg"/>
+          <img ng-if="state.layout!='sections'" src="{{settings.assets}}/images/menu_sections.svg"/>
+          <a class="ext" href="{{meta.source.sections}}" target="_blank"><img src="{{settings.assets}}/images/external-link.svg"/></a>
+          <span>{{meta.menu.sections}}</span>
+        </div>
       </div>
 
-      <div class="input">
+      <!-- TAGS -->
+      <div class="tagsmenu" ng-class="{filtering:state.tags.length}">
+        <div class="tagshat">
+          <div class="tags">
+            <div class="tag inactive" ng-if="!state.tags.length">{{meta.menu.tagsdefault}}</div>
+            <div
+              ng-if="state.tags.length"
+              class="tag"
+              ng-repeat="t in state.tags"
+              ng-click="toggleTag(t);">{{tagsContents[t].label}}
+            </div>
+            <img
+              class="clear"
+              src="{{settings.assets}}/images/clear.svg"
+              ng-click="toggleTag();"/>
+          </div>
+          <span class="label">{{meta.menu.tagslabel}}</span>
+
+        </div>
+
+        <div class="paint"></div>
+
+        <!-- TAGS GRAPH PANEL -->
+        <div class="graphtags">
+          <div id="sigma-tags"></div>
+          <div class="tagdescription">{{state.tagdescription}}</div>
+        </div>
+      </div>
+
+      <!-- SEARCH -->
+      <div class="searchinput">
+        <form autocomplete="off" ng-submit="searchSubmit(input);">
         <input
           type="text"
-          placeholder="{{meta.searchplacehoder}}"
-          ng-model="state.term"
+          placeholder="{{meta.menu.search}}"
+          ng-model="input" 
           ng-click="$event.stopPropagation();"
-          ng-change="filterUpdate();"
-          ng-enter="filterSubmit()"
-          class="filter"
-          ng-class="{highlight:state.term}"/>
+          ng-enter="searchSubmit(input);"
+          ng-class="{highlight:state.search}"/>
+        </form>
         <img
-          ng-if="state.term.length>0"
+          ng-if="input.length>0"
           class="clear"
           src="{{settings.assets}}/images/clear.svg"
-          ng-click="clickTag();"/>
+          ng-click="searchSubmit();"/>
       </div>
-    </div>
-
-    <div ng-if="!settings.dev" class="searchtags" ng-class="{visible:state.showtags}">
-      <div
-        ng-repeat="t in meta.searchtags"
-        class="searchtag"
-        ng-class="{selected: state.term==t.search}"
-        ng-click="clickTag(t); $event.stopPropagation();">
-        {{t.name}}
-      </div>
-    </div>
-    
-    <div ng-if="settings.dev" class="graphtags">
-      <div id="sigma-tags"></div>
     </div>
 
   </div>
 
   <div class="wrapper layout-{{state.layout}}">
 
-    <div class="sections" ng-include="layoutTemplate();"></div>
+    <div class="page" ng-include="layoutTemplate();"></div>
 
     <div class="footer">
-      <div class="content" compile-html="meta.footer"></div>
-      <a class="lastupdate" target="_blank" href="{{meta.repo}}">{{meta.lastupdatetext}}<br>{{settings.lastupdate}}</a>
+      <div class="content" compile-html="meta.footer.content"></div>
+      <a class="lastupdate" target="_blank" href="{{meta.repo}}">{{meta.footer.lastupdatetext}}<br>{{settings.lastupdate}}</a>
     </div>
 
   </div>

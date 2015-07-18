@@ -2,8 +2,9 @@
 a very simple github hosted page to display content within sections
 
 - contents & medias are set within the `data` folder
-    - text sections are yaml documents containing markdown `contents.yml`
-    - images are stored within the `media` folder
+    - text sections are yaml documents containing markdown `data/sections.yml`
+    - tagged links are listed within `data/links.yml`
+    - images are stored within the `data/media` folder
 
 start building your own !
 

@@ -1,56 +1,81 @@
 var linksGraph = null;
+var tagsGraph = null;
 
-var fiterLinksNodes = function(term) {
+
+
+////////////////////////////////////////// LINKS GRAPH
+var filterLinksNodes = function(term) {
   g = linksGraph.graph;
 
-  var rgx = new RegExp(term,"gi");
-  g.nodes().forEach(function(n) {
-    //console.log(n);
-    upsetNode(n,rgx.test(n.savedLabel));
-  });
+  if(term) {
+    var rgx = new RegExp(term,"gi");
+    g.nodes().forEach(function(n) {
+      upsetLinkNode(n,rgx.test(n.savedLabel),true);
+    });
+    g.edges().forEach(function(e) {
+      e.color = "rgba(0,0,0,0)";
+    });
+  } else {
+    resetLinkNodes();   
+  }
 
   linksGraph.refresh();
 };
-
-////////////////////////////////////////// LINKS GRAPH
-var upsetNode = function(n,flag) {
+var upsetLinkNode = function(n,flag,searchresults) {
   if(flag) {
-    n.color = n.originalColor;
+    n.color = searchresults ? "#8D7C0D" : n.originalColor;
     n.label = n.savedLabel;
-    n.active = true;
   } else {
-    n.color = '#eee';
-    n.active = false;
+    n.color = searchresults ? "#C5C5C5" : "rgba(0,0,0,0)";
     delete n.label;
   }
 };
+var resetLinkNodes = function() {
+  linksGraph.graph.nodes().forEach(function(n) {
+    n.color = n.originalColor;
+    n.label = n.savedLabel;
+  });
+  linksGraph.graph.edges().forEach(function(e) {
+    e.color = "#EEEEEE";
+  });
+};
 
 var loadLinksGraph = function(scope) {
-  sigma.classes.graph.addMethod('neighbors', function(nodeId) {
-    var k,
-        neighbors = {},
-        //nedges = [];
-        index = this.outNeighborsIndex[nodeId] || {};
-    for (k in index) {
-      neighbors[k] = this.nodesIndex[k];
-      //nedges.push(this.outNeighborsIndex[nodeId][k]);
-    }
-    //console.log("edges",nedges);
-    return neighbors;
-  });
+
+  scope.state.graphstatus = "LOADING";
+  
+  try {
+    sigma.classes.graph.addMethod('neighbors', function(nodeId) {
+      var k,
+          neighbors = {},
+          //nedges = [];
+          index = this.allNeighborsIndex[nodeId] || {};
+      for (k in index) {
+        neighbors[k] = this.nodesIndex[k];
+        //nedges.push(this.allNeighborsIndex[nodeId][k]);
+      }
+      //console.log("edges",nedges);
+      return neighbors;
+    });
+  } catch(err) {}
+
 
   var g = sigma.parsers.gexf(
     scope.settings.datapath + "links_"+scope.state.lang+".gexf",
     {
       container: 'sigma-links',
+      renderer: {
+        container: document.getElementById('sigma-links'),
+        type: 'canvas'
+      },
       settings: {
-        labelThreshold: 0,
+        labelThreshold: 5,
         //defaultLabelColor: "rgb(200,200,200)",
         zoomingRatio: 1.5,
         doubleClickZoomingRatio: 1.7,
         defaultLabelSize: 12,
         hideEdgesOnMove: true,
-        drawEdges: false,
+        drawEdges: true,
         doubleClickEnabled: false,
         //labelColor: "node",
       }
@@ -61,16 +86,14 @@ var loadLinksGraph = function(scope) {
 
       // init things on the graph
       s.graph.nodes().forEach(function(n) {
-        n.originalColor = n.color;
+        n.color = "#9C9C9C";
+        n.originalColor = "#9C9C9C";
         n.savedLabel = n.label;
-        n.active = false;
-        delete n.label;
+        //delete n.label;
       });
-      // s.graph.edges().forEach(function(e) {
-      //   e.originalColor = e.color;
-      // });
-
-      console.log("links graph loaded");
+      s.graph.edges().forEach(function(e) {
+        e.color = "#EEEEEE";
+      });
 
       // doubleclick to open link
       s.bind('doubleClickNode', function(event) {
@@ -82,55 +105,76 @@ var loadLinksGraph = function(scope) {
       
       // simple click shows neighbors
       s.bind('clickNode', function(event) {
-        var nodeId = event.data.node.id,
-            toKeep = s.graph.neighbors(nodeId);
-        toKeep[nodeId] = event.data.node;
+        if(!event.data.captor.isDragging) {
+          var nodeId = event.data.node.id,
+              toKeep = s.graph.neighbors(nodeId);
+          toKeep[nodeId] = event.data.node;
 
-        console.log(event.data.node);
+          console.log(event.data.node);
 
-        s.graph.nodes().forEach(function(n) {
-          upsetNode(n,toKeep[n.id]);
-        });
-        // s.graph.edges().forEach(function(e) {
-        //   if (toKeep[e.source] && toKeep[e.target]) 
-        //     e.color = e.originalColor;
-        //   else {
-        //     e.color = 'rgba(200,200,200,0)';
-        //   }
-        // });
-        s.refresh();
+          s.graph.nodes().forEach(function(n) {
+            upsetLinkNode(n,toKeep[n.id]);
+          });
+          event.data.node.color = "#883E3E";
+
+          s.graph.edges().forEach(function(e) {
+            if (toKeep[e.source] && toKeep[e.target]) 
+              e.color = "#EEEEEE";
+            else {
+              e.color = "rgba(0,0,0,0)";
+            }
+          });
+          s.refresh();
+        }
       });
 
-      s.bind('overNode', function(event) {
-        event.data.node.label = event.data.node.savedLabel;
-        s.refresh();
-      });
-      s.bind('outNode', function(event) {
-        var n = event.data.node;
-        if(!n.active) delete n.label;
-        //s.refresh();
+      s.bind('clickStage', function(event) {
+        if(!event.data.captor.isDragging) {
+          resetLinkNodes();
+          s.refresh();
+        }
       });
 
-      s.bind('clickStage', function(e) {
-        s.graph.nodes().forEach(function(n) {
-          n.color = n.originalColor;
-          n.active = false;
-          delete n.label;
-        });
-        // s.graph.edges().forEach(function(e) {
-        //   e.color = e.originalColor;
-        // });
-
-        // Same as in the previous event:
-        s.refresh();
-      });
+      console.log("links graph loaded");
 
       s.refresh();
 
+      scope.state.graphstatus = "OK";
+
+      scope.$apply();
     });
 }
 
+
+
+
+
+
 ////////////////////////////////////////// TAG GRAPH
+var updateTagNodes = function(tags) {
+  g = tagsGraph.graph;
+
+  g.nodes().forEach(function(n) {
+    //console.log(n);
+    if(tags.length) {
+      upsetTagNode(n, tags.indexOf(n.tag)!=-1);
+    } else {
+      upsetTagNode(n, true, true);
+    }
+  });
+
+  tagsGraph.refresh();
+};
+var upsetTagNode = function(n,flag,reset) {
+  if(reset) {
+    n.color = n.originalColor;
+  } else if(flag) {
+    n.color = "rgb(130,20,20)";
+  } else {
+    n.color = '#A7A7A7';
+  }
+};
+
 var loadTagGraph = function(scope) {
   var g = sigma.parsers.gexf(
     scope.settings.datapath + "tags.gexf",
@@ -145,24 +189,43 @@ var loadTagGraph = function(scope) {
         //defaultLabelColor: "rgb(200,200,200)",
         zoomingRatio: 1.4,
         doubleClickZoomingRatio: 1.7,
-        defaultLabelSize: 12,
+        defaultLabelSize: 10,
         //arrowSizeRatio: 50,
       }
     },
     function(s) {
-      //console.log(s.graph);
+
+      tagsGraph = s;
 
       s.bind('clickNode', function(event) {
-        console.log("clickedTag:",event.data.node);
-        scope.clickOnTag(event.data.node.tag);
+        if(!event.data.captor.isDragging) {
+          console.log("clickedTag:",event.data.node);
+          scope.toggleTag(event.data.node.tag,true);
+          scope.tagDescription(event.data.node.tag);
+        }
       });
-      s.bind('clickStage', function(e) {
-        scope.clickOnTag(null);
+      s.bind('clickStage', function(event) {
+        if(!event.data.captor.isDragging) {
+          scope.toggleTag(null,true);
+          scope.tagDescription();
+        }
+      });
+      s.bind('overNode', function(event) {
+        scope.tagDescription(event.data.node.tag);
+      });
+      s.bind('outNode', function(event) {
+        scope.tagDescription();
       });
 
       var ids = {} ;
       var orphans = [];
 
+      // init things on the graph
+      s.graph.nodes().forEach(function(n) {
+        n.originalColor = n.color;
+      });
+
+      // update sizes and labels
       _.each(s.graph.nodes(), function(n) {
         //console.log(n);
         var t = n.label;
@@ -171,8 +234,8 @@ var loadTagGraph = function(scope) {
         n.tag = t;
         n.label = scope.tagsContents[t].label;
 
-        if(scope.tags[t] && scope.linksByTag[t]) {
-          n.size = 15 + scope.linksByTag[t].length;
+        if(scope.meta.tags[t] && scope.linksByTag[t]) {
+          n.size = 18 + scope.linksByTag[t].length;
         } else {
           orphans.push(t);
           n.size = 1;
@@ -189,7 +252,7 @@ var loadTagGraph = function(scope) {
         //e.size = 20;
         //e.weight = 20;
         e.color = "rgb(200,200,210)";
-        e.type = 'curvedArrow'; //['line', 'curve', 'arrow', 'curvedArrow'][Math.random() * 4 | 0];
+        e.type = 'curve'; //['line', 'curve', 'arrow', 'curvedArrow'][Math.random() * 4 | 0];
         //console.log(e);
       });
 
@@ -204,6 +267,8 @@ var loadTagGraph = function(scope) {
       // });
 
       s.refresh();
+
+      console.log("tag graph made",s.graph);
     }
   );
 }
