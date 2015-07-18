@@ -1727,7 +1727,7 @@ body.layout-print .footer {
   margin: 0px;
 }
 /* PHONES & TABLETS */
-@media (max-width: 950px) {
+@media (max-width: 1025px) {
   .container,
   .intro,
   .intro .button,
@@ -1836,7 +1836,7 @@ body.layout-print .footer {
   }
 }
 /* TABLETS ONLY */
-@media (min-width: 600px) and (max-width: 950px) {
+@media (min-width: 600px) and (max-width: 1025px) {
   .section.reduced .h1 {
     margin-left: 11px !important;
     padding: 7px 7px 7px 15px !important;
@@ -1848,11 +1848,11 @@ body.layout-print .footer {
   .menu .graphtags,
   .section.layout-flat .image,
   .panel.graph {
-    width: 280px !important;
+    width: 380px !important;
   }
   .section.layout-flat .block,
   .panel.links {
-    margin-left: 280px !important;
+    margin-left: 380px !important;
   }
 }
 /* BIG SCREENS */
