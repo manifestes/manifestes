@@ -23,29 +23,12 @@
       display: none;
     }
   }
-  @betterReducedH: 38px;
-  .section.reduced {
-    max-height: @betterReducedH !important;
-    .h1 {
-      font-size: 0.9em !important;
-    }
-    .tags {
-      margin-right: 5px !important;
-      top: 6px !important;
-    }
-    .date {
-      top: @betterReducedH / 2 !important;
-    }
-  }
-  .panel.links .tags {
-    margin: 0px 5px;
-  }
 }
 
 
 /* PHONES ONLY */
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   .header .menu .searchinput,
   .header .menu .tagsmenu,
   .panel.graph {
@@ -54,16 +37,30 @@
   .panel.links {
     margin-left: 0;
   }
+  .panel.links .tags {
+    margin: 0px 5px;
+  }
 
   /* SECTIONS */
+  @betterReducedH: 38px;
   .section {
     &.hidden, &.reduced {
       .image { display: none !important; }
     }
-    &.reduced .h1 {
-      font-size: 0.8em !important;
-      margin-left: 11px !important;
-      padding: 7px 7px 7px 10px !important;
+    &.reduced {
+      max-height: @betterReducedH !important;
+      .h1 {
+        font-size: 0.8em !important;
+        margin-left: 11px !important;
+        padding: 7px 7px 7px 10px !important;
+      }
+      .tags {
+        margin-right: 5px !important;
+        top: 6px !important;
+      }
+      .date {
+        top: @betterReducedH / 2 !important;
+      }
     }
     .image {
       position: relative !important;
@@ -112,17 +109,12 @@
 
 /* TABLETS ONLY */
 
-@media (min-width: 600px) and (max-width: 1025px) {
-  .section.reduced .h1 {
-    margin-left: 11px !important;
-    padding: 7px 7px 7px 15px !important;
-  }
-
+@media (min-width: 750px) and (max-width: 1025px) {
   .header .menu .searchinput {
     width: 150px !important;
   }
 
-  @betterPanelW: 380px;
+  @betterPanelW: 370px;
   .menu .tagshat,
   .menu .graphtags,
   .section.layout-flat .image,

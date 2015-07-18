@@ -1753,25 +1753,9 @@ body.layout-print .footer {
   .header .button#print {
     display: none;
   }
-  .section.reduced {
-    max-height: 38px !important;
-  }
-  .section.reduced .h1 {
-    font-size: 0.9em !important;
-  }
-  .section.reduced .tags {
-    margin-right: 5px !important;
-    top: 6px !important;
-  }
-  .section.reduced .date {
-    top: 19px !important;
-  }
-  .panel.links .tags {
-    margin: 0px 5px;
-  }
 }
 /* PHONES ONLY */
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   .header .menu .searchinput,
   .header .menu .tagsmenu,
   .panel.graph {
@@ -1780,15 +1764,28 @@ body.layout-print .footer {
   .panel.links {
     margin-left: 0;
   }
+  .panel.links .tags {
+    margin: 0px 5px;
+  }
   /* SECTIONS */
   .section.hidden .image,
   .section.reduced .image {
     display: none !important;
   }
+  .section.reduced {
+    max-height: 38px !important;
+  }
   .section.reduced .h1 {
     font-size: 0.8em !important;
     margin-left: 11px !important;
     padding: 7px 7px 7px 10px !important;
+  }
+  .section.reduced .tags {
+    margin-right: 5px !important;
+    top: 6px !important;
+  }
+  .section.reduced .date {
+    top: 19px !important;
   }
   .section .image {
     position: relative !important;
@@ -1836,11 +1833,7 @@ body.layout-print .footer {
   }
 }
 /* TABLETS ONLY */
-@media (min-width: 600px) and (max-width: 1025px) {
-  .section.reduced .h1 {
-    margin-left: 11px !important;
-    padding: 7px 7px 7px 15px !important;
-  }
+@media (min-width: 750px) and (max-width: 1025px) {
   .header .menu .searchinput {
     width: 150px !important;
   }
@@ -1848,11 +1841,11 @@ body.layout-print .footer {
   .menu .graphtags,
   .section.layout-flat .image,
   .panel.graph {
-    width: 380px !important;
+    width: 370px !important;
   }
   .section.layout-flat .block,
   .panel.links {
-    margin-left: 380px !important;
+    margin-left: 370px !important;
   }
 }
 /* BIG SCREENS */
