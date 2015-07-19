@@ -104,6 +104,7 @@ angular.module('manifest.controllers', ['underscore','config'])
           $scope.state.graphstatus="NO";
           //loadLinksGraph($scope);
         }
+        scrollToup();
       }
     };
     $scope.loadLinksGraph = function() {

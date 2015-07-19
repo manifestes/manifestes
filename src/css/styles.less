@@ -98,6 +98,7 @@ span.highlight, div.highlight { /* searched words */
 
 
 .intro {
+  backface-visibility: hidden;
   box-sizing: border-box;
   z-index: 9999;
   position: fixed;
@@ -120,7 +121,7 @@ span.highlight, div.highlight { /* searched words */
     font-family: 'Amatic SC', cursive;
     //font-family: 'Merriweather', serif;
     //font-family: 'Inconsolata', serif;
-    font-size: 9em;
+    font-size: 4em;
   }
   .description {
     display: inline-block;
@@ -145,7 +146,7 @@ span.highlight, div.highlight { /* searched words */
     cursor: pointer;
     box-sizing: border-box;
     padding: 20px;
-    font-size: 1.7em;
+    font-size: 1.3em;
     font-style: italic;
     font-family: 'Amatic SC', cursive;
     background: #f6ba52; 
@@ -193,6 +194,7 @@ span.highlight, div.highlight { /* searched words */
 
 
 .header {
+  backface-visibility: hidden;
   box-sizing: border-box;
   z-index: 99;
   position: fixed;
@@ -407,6 +409,7 @@ span.highlight, div.highlight { /* searched words */
           color: @lightColor;
           &.active {
             color: @redColor;
+            pointer-events: none;
           }
         }
       }

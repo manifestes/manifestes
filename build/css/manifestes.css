@@ -604,6 +604,7 @@ div.highlight {
   top: 100%;
 }
 .intro {
+  backface-visibility: hidden;
   box-sizing: border-box;
   z-index: 9999;
   position: fixed;
@@ -627,7 +628,7 @@ div.highlight {
   margin-bottom: 0px;
   margin-top: 0px;
   font-family: 'Amatic SC', cursive;
-  font-size: 9em;
+  font-size: 4em;
 }
 .intro .description {
   display: inline-block;
@@ -652,7 +653,7 @@ div.highlight {
   cursor: pointer;
   box-sizing: border-box;
   padding: 20px;
-  font-size: 1.7em;
+  font-size: 1.3em;
   font-style: italic;
   font-family: 'Amatic SC', cursive;
   background: #f6ba52;
@@ -697,6 +698,7 @@ div.highlight {
   color: white;
 }
 .header {
+  backface-visibility: hidden;
   box-sizing: border-box;
   z-index: 99;
   position: fixed;
@@ -908,6 +910,7 @@ div.highlight {
 }
 .header .menu .buttons .button .setlang.active {
   color: #883e3e;
+  pointer-events: none;
 }
 .header .menu .searchinput {
   z-index: 35;
@@ -1562,6 +1565,7 @@ div.highlight {
   height: 100%;
 }
 .panel.graph {
+  backface-visibility: hidden;
   box-sizing: border-box;
   position: fixed;
   left: 0;
