@@ -628,7 +628,7 @@ div.highlight {
   margin-bottom: 0px;
   margin-top: 0px;
   font-family: 'Amatic SC', cursive;
-  font-size: 4em;
+  font-size: 9em;
 }
 .intro .description {
   display: inline-block;
@@ -653,7 +653,7 @@ div.highlight {
   cursor: pointer;
   box-sizing: border-box;
   padding: 20px;
-  font-size: 1.3em;
+  font-size: 1.7em;
   font-style: italic;
   font-family: 'Amatic SC', cursive;
   background: #f6ba52;
@@ -1817,7 +1817,7 @@ body.layout-print .footer {
     padding-top: 2em !important;
   }
   .intro h1 {
-    font-size: 5em;
+    font-size: 3.5em;
     margin-top: 0;
   }
   .intro .description {
@@ -1828,12 +1828,12 @@ body.layout-print .footer {
     display: none;
   }
   .intro .button {
-    font-size: 1.4em;
+    font-size: 1.2em;
     padding: 20px;
     margin-top: 10px;
   }
   .intro .keywords {
-    font-size: 0.7em;
+    font-size: 0.65em;
   }
 }
 /* TABLETS ONLY */
