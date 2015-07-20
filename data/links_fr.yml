@@ -1,8 +1,5 @@
-#manifest #list
-pour ajouter un lien à la liste, créez un compte [github](http://github.com) et modifiez le [document liens.yml](https://github.com/manifestes/manifestes/blob/gh-pages/data/links_fr.yml)
-
 #manifest
-pour ajouter ou modifier une section, créez un compte [github](http://github.com) et modifiez le [document sections.yml](https://github.com/manifestes/manifestes/blob/gh-pages/data/sections_fr.yml)
+pour ajouter un lien à la liste, créez un compte [github](http://github.com) et modifiez directement le [document liens.yml](https://github.com/manifestes/manifestes/blob/gh-pages/data/links_fr.yml). Votre «pull request» sera ensuite intégrée au site en ligne
 
 #atom #video #earth
 [Into Eternity](https://www.youtube.com/watch?v=Kl-su2P6mVM), de Michael Madsen: documentaire à propos du stockage en couche géologique profonde de déchets radioactifs en Finlande
