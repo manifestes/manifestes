@@ -3022,7 +3022,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'19 July 2015 - 2:27'})
+.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'21 July 2015 - 10:26'})
 
 ;
 ;
@@ -3345,7 +3345,8 @@ angular.module('manifest.controllers', ['underscore','config'])
     var getLinksFromTags = function(tags) {
       var out = [];
       _.each(tags, function(t) {
-        out = _.union(out, $scope.linksByTag[t]);
+        if($scope.linksByTag[t])
+          out = _.union(out, $scope.linksByTag[t]);
       });
       return out;
     }

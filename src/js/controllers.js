@@ -316,7 +316,8 @@ angular.module('manifest.controllers', ['underscore','config'])
     var getLinksFromTags = function(tags) {
       var out = [];
       _.each(tags, function(t) {
-        out = _.union(out, $scope.linksByTag[t]);
+        if($scope.linksByTag[t])
+          out = _.union(out, $scope.linksByTag[t]);
       });
       return out;
     }

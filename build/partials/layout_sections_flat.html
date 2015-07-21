@@ -45,7 +45,7 @@
 
   <div class="h2" compile-html="p.subtitle"></div>
   <div class="content" compile-html="p.content"></div>
-  <div class="links" ng-click="p.currentlink = (p.currentlink+1) % p.links.length;">
+  <div ng-if="p.links.length > 0" class="links" ng-click="p.currentlink = (p.currentlink+1) % p.links.length;">
 
     <div class="label">
       <span class="fright">{{p.links.length}}&nbsp;&nbsp;&nbsp;&nbsp;• •</span>

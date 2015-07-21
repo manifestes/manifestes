@@ -624,10 +624,16 @@ div.highlight {
 .intro.hidden {
   top: -100%;
 }
+.intro.hidden h1,
+.intro.hidden .description,
+.intro.hidden .image,
+.intro.hidden .foot {
+  display: none;
+}
 .intro h1 {
   margin-bottom: 0px;
   margin-top: 0px;
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Amatic SC', serif;
   font-size: 9em;
 }
 .intro .description {
@@ -652,7 +658,7 @@ div.highlight {
   pointer-events: all;
   cursor: pointer;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 20px 0px;
   font-size: 1.7em;
   font-style: italic;
   font-family: 'Amatic SC', cursive;
@@ -668,7 +674,7 @@ div.highlight {
   transition: padding 0.2s;
 }
 .intro .button:hover {
-  padding: 40px;
+  padding: 40px 0px;
 }
 .intro .keywords {
   width: 100%;
@@ -1829,7 +1835,7 @@ body.layout-print .footer {
   }
   .intro .button {
     font-size: 1.2em;
-    padding: 20px;
+    padding: 20px 0px;
     margin-top: 10px;
   }
   .intro .keywords {
@@ -1840,6 +1846,9 @@ body.layout-print .footer {
 @media (min-width: 750px) and (max-width: 1025px) {
   .header .menu .searchinput {
     width: 150px !important;
+  }
+  .section.reduced .image {
+    background-image: none !important;
   }
   .menu .tagshat,
   .menu .graphtags,

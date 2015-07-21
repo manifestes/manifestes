@@ -109,6 +109,9 @@ span.highlight, div.highlight { /* searched words */
   top: 0;
   &.hidden {
     top: -100%;
+    h1, .description, .image, .foot {
+      display: none;
+    }
   }
 
   text-align: center;
@@ -118,7 +121,7 @@ span.highlight, div.highlight { /* searched words */
   h1 {
     margin-bottom: 0px;
     margin-top: 0px;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Amatic SC', serif;
     //font-family: 'Merriweather', serif;
     //font-family: 'Inconsolata', serif;
     font-size: 9em;
@@ -145,7 +148,7 @@ span.highlight, div.highlight { /* searched words */
     pointer-events: all;
     cursor: pointer;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 20px 0px;
     font-size: 1.7em;
     font-style: italic;
     font-family: 'Amatic SC', cursive;
@@ -160,7 +163,7 @@ span.highlight, div.highlight { /* searched words */
     .inner-shadow(0px 0px 5px 0px #525252);
     .transition(padding @openDur);
     &:hover {
-      padding: 40px;
+      padding: 40px 0px;
     }
   }
   .keywords {

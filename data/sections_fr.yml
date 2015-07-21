@@ -183,7 +183,7 @@ image:
 quote:
     author: Pierre Desproges
     content: L'intelligence, c'est le seul outil qui permet à l'homme de mesurer l'étendue de son malheur.
-tags: manifest
+tags: manifest, design
 content: >
     ###Chaque [section](https://github.com/manifestes/manifestes/blob/gh-pages/data/sections_fr.yml) comme celle-ci comporte
 
