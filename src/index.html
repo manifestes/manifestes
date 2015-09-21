@@ -44,13 +44,19 @@
 
 <!-- @if NODE_ENV == 'DEVELOPMENT' -->
 
-    <!-- ————————————————— CSS -->
+    <!-- ================ LESS / CSS ============== -->
     <link rel="stylesheet" href="vendor/normalize.css/normalize.css" type="text/css">
     <!--<link rel="stylesheet/less" href="vendor/animate.css/animate.min.css" type="text/css">-->
 
+    <link rel="stylesheet" href="vendor/leaflet/dist/leaflet.css" type="text/css">
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/leaflet.locatecontrol/dist/L.Control.Locate.min.css" type="text/css">
+    <link rel="stylesheet" href="vendor/leaflet-search/dist/leaflet-search.min.css" type="text/css">
+
     <link rel="stylesheet/less" href="css/styles.less" type="text/css">
     
-    <!-- ————————————————— JS -->
+    <!-- ================ GENERAL ============== -->
     <script type="text/javascript" src="vendor/less/dist/less.min.js"></script>
     <script type="text/javascript" src="vendor/underscore/underscore-min.js"></script>  
 
@@ -59,6 +65,8 @@
 
     <script type="text/javascript" src="vendor/moment/min/moment-with-locales.min.js"></script>
 
+
+    <!-- ================ SIGMA GRAPHS ============== -->
     <script type="text/javascript" src="vendor/sigmajs/build/sigma.min.js"></script>
     <script type="text/javascript" src="vendor/sigmajs/build/plugins/sigma.parsers.gexf.min.js"></script>
 
@@ -71,6 +79,18 @@
 
     <script type="text/javascript" src="vendor/fastclick/lib/fastclick.js"></script>
 
+    <script type="text/javascript" src="vendor/comma-separated-values/csv.min.js"></script>
+
+
+    <!-- ================ LEAFLET MAP ============== -->
+    <script type="text/javascript" src="vendor/leaflet/dist/leaflet-src.js"></script>
+    <script type="text/javascript" src="vendor/angular-simple-logger/dist/index.js"></script>
+
+    <script type="text/javascript" src="vendor/Leaflet.MakiMarkers/Leaflet.MakiMarkers.js"></script>
+    <script type="text/javascript" src="vendor/leaflet.locatecontrol/dist/L.Control.Locate.min.js"></script>
+    <script type="text/javascript" src="vendor/leaflet-search/dist/leaflet-search.min.js"></script>
+
+    <!-- ================ CODE ============== -->
     <script type="text/javascript" src="js/graphs.js"></script>
     
     <script type="text/javascript" src="js/config.js"></script>
@@ -81,7 +101,8 @@
 
 <!-- @endif -->
 <!-- @if NODE_ENV == 'PRODUCTION' -->
-
+    
+    <!-- ================ MINIFIED ============== -->
     <link href="build/css/manifestes.css" rel="stylesheet" type="text/css"/>
     <script src="build/js/manifestes.min.js" type="text/javascript"></script>
 

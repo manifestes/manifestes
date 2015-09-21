@@ -7,6 +7,20 @@ source:
     github: https://github.com/manifestes/manifestes
     sections: https://github.com/manifestes/manifestes/blob/gh-pages/data/sections_fr.yml
     links: https://github.com/manifestes/manifestes/blob/gh-pages/data/links_fr.yml
+    map: https://github.com/manifestes/manifestes/blob/gh-pages/data/map.csv
+mapcredits:
+    caravane:
+        name: Caravane des alternatives
+        url: http://caravanedesalternatives.weebly.com
+    heterotopies:
+        name: Hétérotopies
+        url: http://heterotopies.overblog.com/cartographie
+    lieuxdevie:
+        name: Lieux de vie
+        url: https://www.google.com/maps/d/viewer?mid=zCUrDZ_sv7Fw.k9HCrqv3hIVA
+    citoyens:
+        name: Citoyens en Transition
+        url: https://www.google.com/maps/d/viewer?mid=zfOpOkMajqj0.k73wlMF5RszU
 intro:
     title: manifeste(s)
     description: >
@@ -22,6 +36,7 @@ menu:
     search: chercher
     sections: textes
     links: liens
+    map: carte
     print: imprimer
     examples: en pratique(s)
     discusstext: discuter, corriger, proposer
@@ -172,9 +187,65 @@ content: >
 
 
 ---
+date: 2015-09-20
+role: meta
+title: Qui a écrit tout ça ?
+subtitle: Composition à plusieurs mais !
+slug: who_wrote
+image:
+    url: —
+    credit: —
+quote:
+    author: —
+    content: —
+tags: manifest
+content: >
+    Les textes et les liens présents sur le site ont été aggrégés en quelques mois depuis de très nombreuses sources (rencontres, sites, films, tracts): les citations, textes, liens proviennent donc en majorité de copiers-collés.
+
+
+    La foison de styles qui en résulte peut être déroutante, mais elle permet d'exhiber la multiplicité d'initiatives et de mouvements de pensées et d'actions qui composent les alternatives.
+
+
+    Bienvenue à tou.te.s celles et ceux qui souhaitent nous rejoindre pour continuer la rédaction du projet!
+
+
+
+---
+date: 2015-09-20
+role: meta
+title: Catégories
+subtitle: "La grille de tags permet d'organiser les textes, liens, lieux... par thématiques"
+slug: about_tags
+image:
+    url: —
+    credit: —
+quote:
+    author: —
+    content: —
+tags: manifest
+content: >
+    Les thématiques permettent de faciliter la navigation dans le site:
+
+
+    - **en rouge**, les besoins primaires et actes quotidiens: *manger, dormir, se soigner, rencontrer...*
+
+    - **en vert**, des sujets divers: *nucléaire, pouvoir, autonomie...*
+
+    - **en jaune**, les types de contenus: *vidéo, texte, annuaire, collectif, lieux, agendas...*
+
+
+
+    Ces thématiques sont elles-mêmes liées les unes aux autres (voir le menu *«filtrer par thématiques»* en haut à gauche)
+
+    La liste est extensible et discutable !
+
+
+
+
+---
 date: 2015-06-16
 role: meta
-title: Sections thématiques et liens
+title: Sections de textes et liens pratiques
 subtitle: Les **sections** et les **liens** permettent de rendre le texte plus lisible et facilitent les discussions sur les **thèmes** abordés.
 slug: methodo
 image:
@@ -204,6 +275,45 @@ content: >
     
     
     Il est également possible d'accéder d'un coup d'œil à tous les liens référencés depuis le menu.
+
+
+
+---
+date: 2015-09-20
+role: meta
+title: Carte de France des alternatives
+subtitle: Nous sommes partout !
+slug: interactive_map
+tags: place, list, manifest
+image:
+    url: —
+    credit: —
+quote:
+    author: —
+    content: —
+content: >
+    La carte reprend les lieux référencés de:
+
+    - [La caravane des alternatives](http://caravanedesalternatives.weebly.com)
+
+    - [Lieux de vie et bases nomades](https://www.google.com/maps/d/viewer?mid=zCUrDZ_sv7Fw.k9HCrqv3hIVA)
+
+    - [Citoyens en Transition](https://www.google.com/maps/d/viewer?mid=zfOpOkMajqj0.k73wlMF5RszU)
+
+    - [Hétérotopies](http://heterotopies.overblog.com/cartographie)
+
+
+    Car de nombreux lieux n'existent plus ou ne sont pas encore référencés, **mettons collectivement la carte à jour** en corrigeant ou ajoutant:
+    
+    - les initiatives que nous connaissons: fermes, maraîchers bio, associations, café, lieux alternatifs
+
+    - **nous-même !** (nom/pseudo, position approximative)
+
+
+
+    Plus on est partout, plus on nous entend !
+
+
 
 
 

@@ -3,15 +3,136 @@
 /* Controllers */
 
 angular.module('underscore', [])
-
   .factory('_', function() {
     return window._; // assumes underscore has already been loaded on the page
   });
 
 
-angular.module('manifest.controllers', ['underscore','config'])
 
-  .controller('manifestController', [
+angular.module('manifest.controllers', ['underscore','config'])
+////////////////////////////////////////////////////////////////////////
+.controller('MapController', [
+  '$scope',
+  '$http',
+  '_',
+  'settings',
+  function ($scope, $http, _, settings) {
+
+    $scope.initMap = function() {
+
+      console.log("initing map !");
+
+      var osm = L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      });
+      var cycle = L.tileLayer('http://{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.opencyclemap.org/copyright">OpenCycleMap</a> contributors - &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      });
+      var terrain = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer/tile/{z}/{y}/{x}', {
+        maxZoom: 19,
+        attribution: 'Tiles &copy; Esri &mdash; Source: USGS, Esri, TANA, DeLorme, and NPS'
+      });
+      var tileLayers = {
+        "OSM": osm,
+        "Cycle": cycle,
+        "Terrain": terrain
+      };
+
+      var map = L.map('leaflet', {
+        zoomControlPosition: 'bottomleft',
+        scrollWheelZoom: true,
+        doubleClickZoom: true,
+        center: [45, 2],
+        zoom: 7,
+        minZoom: 4,
+        maxZoom: 16,
+        locateButton: true,
+        layers: [osm]
+      });
+
+      L.control.locate().addTo(map);
+      var layers = new L.LayerGroup().addTo(map);
+
+      $http.get(settings.datapath + 'map.csv').success(function(data) {
+        //console.log("got csv data:",data);
+        //$scope.data = data;
+        var ms = new CSV(data, {header:true}).parse();
+        
+        _.each(ms, function(m,k) {
+
+          // if(!layers[m.source]) {
+          //   layers[m.source] = new L.LayerGroup().addTo(overlays);
+          // }
+
+          var icon = 'marker';
+          var color = "#A9A9F5";
+          var size = "s";
+          if(/^citoy_/.test(m.source)) { color = "#81BEF7"; }
+          if(/caravane/.test(m.source)) { color = "#04B431"; }
+          if(/^lieux/.test(m.source)) { color = "#F79F81"; }
+          if(/region/.test(m.scale)) { size = "l"; }
+          if(/ville/.test(m.scale)) { size = "m"; }
+
+          //var customPopup = "<div ng-include ng-init=\"data=leafmarkers['"+m.source+"']['mark_"+k+"'];\" src=\"'partials/marker.html'\"></div>";
+          var customPopup = "<div class='details'>"+
+            "<h3>"+m.name+"</h3>"+
+            "<h4>"+m.address+"</h4>"+
+            "<div>"+m.description+"</div>"+
+            "<div>"+m.contact+"</div>"+
+          "</div>";
+          var customOptions = {
+            'maxWidth': '500',
+            'className' : 'custom'
+          }
+
+          var theM = L.marker([m.lat, m.lng], {
+            title: m.name,
+            icon: L.MakiMarkers.icon({
+              icon: icon,
+              color: color,
+              size: size
+            })
+          })
+          .bindPopup(customPopup,customOptions)
+          .addTo(layers);
+        });
+        console.log("all markers added!");
+
+        L.control.layers(tileLayers).addTo(map);
+        //console.log("overlays !!",layers);
+
+        L.control.search({
+          layer: layers,
+          initial: false,
+          zoom: 9,
+          buildTip: function(text, val) {
+            var type = "ok";
+            return '<div><a href="#" class="'+type+'">YOU'+text+'<b>'+type+'</b></a></div>';
+          }
+        }).addTo(map);
+
+          // L.control.search({
+          //   layer: baselayers,
+          //   initial: false,
+          //   zoom: 18,
+          //   propertyName: 'name',
+          //   buildTip: function(text, val) {
+          //     //var type = val.layer.feature.properties.amenity;
+          //     var type = "test";
+          //     return '<a href="#" class="'+type+'">'+text+'<b>'+type+'</b></a>';
+          //   }
+          // }).addTo(map);
+      });
+    }
+
+  }
+])
+
+
+////////////////////////////////////////////////////////////////////////
+.controller('manifestController', [
     "$scope",
     "$routeParams",
     "$http",
@@ -31,7 +152,7 @@ angular.module('manifest.controllers', ['underscore','config'])
     $scope.settings = settings;
     if($routeParams.forcedev) $scope.settings.dev = true;
     var layout = $routeParams.layout ?
-      (["sections","links","print"].indexOf($routeParams.layout)==-1 ? "sections" : $routeParams.layout) :
+      (["sections","links","map","print"].indexOf($routeParams.layout)==-1 ? "sections" : $routeParams.layout) :
       "sections";
 
     $scope.meta = {}; // mainly the meta info at start of section.yml
@@ -425,7 +546,7 @@ angular.module('manifest.controllers', ['underscore','config'])
             d.links = md2Html(d.links);
 
             d.date = moment(d.date);
-            var seuil = moment().subtract(30,"day");
+            var seuil = moment().subtract(4,"month");
             if(d.date > seuil)
               d.date = d.date.fromNow();
             else

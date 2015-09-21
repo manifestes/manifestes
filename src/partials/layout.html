@@ -35,6 +35,15 @@
 
         <div
           class="button hover"
+          ng-click="changeLayout('map');"
+          ng-class="{active:state.layout=='map'}">
+          <img ng-if="state.layout=='map'" src="{{settings.assets}}/images/menu_map_active.svg"/>
+          <img ng-if="state.layout!='map'" src="{{settings.assets}}/images/menu_map.svg"/>
+          <a class="ext" href="{{meta.source.map}}" target="_blank"><img src="{{settings.assets}}/images/external-link.svg"/></a>
+          <span>{{meta.menu.map}}</span>
+        </div>
+        <div
+          class="button hover"
           ng-click="changeLayout('links');"
           ng-class="{active:state.layout=='links'}">
           <img ng-if="state.layout=='links'" src="{{settings.assets}}/images/menu_links_active.svg"/>
@@ -42,7 +51,6 @@
           <a class="ext" href="{{meta.source.links}}" target="_blank"><img src="{{settings.assets}}/images/external-link.svg"/></a>
           <span>{{meta.menu.links}}</span>
         </div>
-
         <div
           class="button hover"
           ng-click="changeLayout('sections');"

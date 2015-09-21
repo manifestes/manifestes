@@ -42,7 +42,93 @@ autres outils ... ?
     nous avons une certaine expertise sur les outils de démocratie participative et pouvons assister si besoin (wiki, mumble, pad, redmine, getopionated, forum,...)
 
 
-todo ?
+================ CHANGELOG
+done ! (to be pushed)
+
+    - more sections & links !
+
+    - interactive map !
+
+    - ≠ map sources within sections.yml
+
+    Lieux de vie https://www.google.com/maps/d/viewer?mid=zCUrDZ_sv7Fw.k9HCrqv3hIVA
+
+    Hétérotopies https://www.google.com/maps/d/viewer?mid=zWH3cGb_zi2I.kCaJt8ZC4ufk
+
+    cf http://heterotopies.overblog.com/cartographie
+
+    CitoyenTransition https://www.google.com/maps/d/viewer?mid=zfOpOkMajqj0.k73wlMF5RszU
+
+    Caravane http://caravanedesalternatives.weebly.com
+
+    - map.csv contacts removed for privacy
+
+    - copy put on https://framacalc.org/carto to experiment collaborative edit
+
+
+================ TODO ROADMAP
+
+    - better fonts ? cf http://usemodify.com/keywords/garalde-old-face/
+
+    - tagfilters on links using OR (not AND!)
+
+    - menu agenda vers demosphere.eu
+
+    - MAP.csv using GoogleRefine
+
+    - correct links without http ?
+
+    - guess empty addresses ?
+
+    - search and kill: tabs, doublespaces, quotes, empty cells
+
+    - search (woof passagers panier amap vélo cantine atelier habitat logement ...) & auto tag: #farm #collective #home #eat
+
+    - toLowercase for UPPERCASES
+
+    - accroches graphiques et divers noms en intro
+
+    - utopies concrètes — annuaire et carte des alternatives
+
+    - (vous êtes graphiste ? une idée ? aidez-nous !)
+
+    - manifeste(s) ...
+
+    - ok. on sait ce qui va pas. on fait QUOI ?
+
+    - une plateforme pour faire du fond
+
+    - CONVERGENCE des pulls
+
+    - TEP: ¡ TOUT est politique !
+
+    - 1ère plateforme d'action philosophique
+
+    - réchauffement systémique
+
+    - (C.O.L.I.B.R.I cf tract)
+
+    - C. E.S.T. F.A.C.I.L.E. : Collectif pour l'Émancipation, la Solidarité, Transmission, Féminisme, Autonomie, ...
+
+    - tag graph node sizes based on nb for current view (unclickable if no result !)
+
+    - reset tags on view change
+
+    - enorme tooltip sur les liens du menu pour expliciter
+
+    - "intro">> pour revenir au splash
+
+    - cross/close symbol on selected tags
+
+    - color / symbols for 'meta' tags (rather than 'annuaire/texte/audio/etc)
+
+    - color for action tags (eat, learn, act, ...)
+
+    - random order for links & for sections ??
+
+    - heart/like symbol to count "best" sections or links (demosphere, mediaslibres, etc...) - use firebase ?
+
+    - intro splash multiple svg/images ave accroches différentes
 
     - menu links to prose rather than github ? http://prose.io/#manifestes/manifestes/edit/gh-pages/data/links_fr.yml
 
@@ -50,33 +136,45 @@ todo ?
 
     - tags:
 
-    boycotter, ralentir (verbs quotidien) | à propos (mimetype)
+    boycotter, ralentir (> verbs quotidien) | à propos (> mimetype)
+
+    sleep > home
 
     ajouter longterm, collective, to others, etc... (meta)
 
     création plutôt que culture (linked to dream)
 
-    add [#rawtag] on description mouseover (easier to then add a link)
+    - add [#rawtag] on description mouseover (easier to then add a link)
 
     - simple graph links button for fullscreen (and resize reset zoom?)
 
-    - color neighbors on clicked graph tags
+    - color neighbors on over graph tags
 
     - clear tags when click on hidden section
 
-    - simple form (to framacalc ?) to add a section / alink
+    - simple form (to framacalc ?) to add a section / a link
 
     - sort sections by lastmodifdate / alphabétique
 
     - info popup/context on links graph(s)
 
-    - hide section images when reduced to improve speed on tablets
-
     - no-font bug on intro splash phones (just reduce size?)
 
-    - bigger menu/buttons/tags on tablet
+    - bigger sections & menu/buttons/tags on tablet
 
     - js lazy loading images
+
+    - nb de resultats de recherche ds le menu pour chaque TEXTE / LIENS / CARTE
+
+    - buy domains & build simple websites redirecting to ...
+
+    http://utopies-concretes.org
+
+    http://convergences.org
+
+    http://ici.org
+
+    http://www.autrechose.org
 
 
 ================ DISCUSSION GÉNÉRALE / FOND
@@ -130,14 +228,35 @@ todo ?
     écoute ! laisser le temps ! même si hors-sujet
 
 - jalousie ! difficile humainement de cotoyer ceux-ci ceux-là qui «profitent» + que moi, paient - cher, ont accès et moi non, injustice !
+- temporalités: on ne voit que ce qui nous saute aux yeux, là, aujourd'hui, et très difficilement ce qui se passe dans la durée, à grande échelle
 
+##niveaux de lecture
+    - accroches (images et slogans d'introduction): ≠ noms et formules qu'on retient et faciles à partager
+    - synthétique: pour organiser la réflexion
+    - approfondi: (liens, ressources)
+    - pratiques: (où:carte et quand:demosphère(s))
+
+##sections synthetiques
+plus facilement extensible, souple, permet de se soustraire aux structures/menus classiques: a propos, articles, ... contraignants !
 
 === références / réseaux à ajouter ?
 
-usinenouvelle ?!
-documentation fr ?!
-ademe ?!
+http://laboutiquesansargent.org
+https://lahordepirate.wordpress.com
+https://lesuperflux.wordpress.com
+http://www.achetezmoins.ch/
+http://www.motherearthpeace.org
+http://marchesurlacop.noblogs.org/
+http://caravanedesalternatives.weebly.com/
 medelu
+http://vecam.org/ ?
+http://autonomiaproject.org/
+
+http://www.interdemos.net/
+http://monpostdemocrate.info/
+http://lepoing.net
+!! http://leprojetencommun.net/
+http://reclaimthefields.org/fr/fourcheetchamplibre
 http://nonmarchand.org/pmwiki
 https://decroissons.wordpress.com/habitat/village-associatif-alternatif/
 https://foodhackingbase.org/
@@ -146,14 +265,25 @@ http://www.lafermedesbouillons.fr/
 http://collectifcreatifcastellas.org/
 http://www.motherearthpeace.org/
 http://lesouffledureve.com/
+rdvolution ?
+http://tribuvivace.com
+http://justdelete.me/
+http://coglode.com/
 
-cartographies lieux alternatifs, peut-etre tenter de tout merger sur https://framacalc.org/carto
-https://www.google.com/maps/d/viewer?mid=zCUrDZ_sv7Fw.k9HCrqv3hIVA&hl=fr
-http://caravanedesalternatives.weebly.com
+pour liens fromGF
+
+    http://www.reporterre.net/Annuaire-des-alternatives
+
+
+TO ADD ON MAP ?
+https://decroissons.wordpress.com/habitat/village-associatif-alternatif/
 http://heterotopies.overblog.com
 http://sharewiki.org/en/Lieu_de_vie_ouvert
 voir aussi liste de http://ddchampo.forumactif.org/t389-lieux-acteurs-ecolo-citoyens
 
+citations cf
+ne vivons plus comme des esclaves
+mutins - profession journaliste
 
 ================ DISCUSSION PARTIE par PARTIE
 === PAGE d'INTRO / intention générale
@@ -271,6 +401,14 @@ Dans les sections, intégrer/permettre aussi:
     FAQ simple
 
 
+#FORMULAIRE, BASE DES GENS
+(Projet Acteur Idée Ressource ?)
+##QUI / QUOI / OU / COMMENT
+    - moi et 1000 autres / manif avec tambours / paris / loger 100personnes, communiquer
+    - moi / besoin ordi / montreuil / prêt pour un an, ou achat pas cher
+    - 
+
+
 ================
 
 
@@ -279,5 +417,6 @@ Dans les sections, intégrer/permettre aussi:
     ouaip bravo
 
     +1
+
 
 
