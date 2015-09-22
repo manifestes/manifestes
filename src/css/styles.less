@@ -374,19 +374,29 @@ span.highlight, div.highlight { /* searched words */
         text-align: center;
         font-size: 0.75em;
 
+        i {
+          color: @lightColor;
+        }
+
         img {
           width: 15px;
         }
         span {
           display: block;
           color: @lightColor;
+          margin-top: 7px;
+          i {
+            font-size: 0.9em;
+          }
         }
         a.ext {
           position: absolute;
           top: 0;
           right: 0;
           padding: 2px 3px;
-          img { width: 10px; }
+          i { 
+            font-size: 0.8em;
+          }
           opacity: 0;
           &:hover {
             opacity: 1 !important;
@@ -404,6 +414,9 @@ span.highlight, div.highlight { /* searched words */
         &.active, &.active:hover {
           background: @activeLightColor;
           border-bottom: 5px solid @redColor;
+          i {
+            color: @redColor;
+          }
           span {
             color: @redColor;
           }
@@ -500,7 +513,7 @@ span.highlight, div.highlight { /* searched words */
 @import "layout_sections_grid";
 
 @import "layout_links";
-@import "layout_map";
+//@import "layout_map";
 @import "layout_print";
 
 @import "screen";

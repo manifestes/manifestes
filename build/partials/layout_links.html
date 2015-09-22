@@ -7,7 +7,7 @@
     <div class="bounce3"></div>
   </div>
 
-  <div class="graphloader" ng-if="state.graphstatus=='NO'" ng-click="state.lang=='fr' && loadLinksGraph();">{{meta.menu.loadgraph}}</div>
+  <div class="graphloader" ng-if="state.graphstatus=='NO'" ng-click="state.lang=='fr' && loadLinksGraph();" ng-bind-html="meta.menu.loadgraph"></div>
 
   <div id="sigma-links"></div>
 </div>
@@ -38,7 +38,7 @@
         ng-class="{active: isTagActive(t)}"
         ng-repeat="t in l.tags"
         ng-click="toggleTag(t); $event.stopPropagation();">
-        {{tagsContents[t].label}}
+        {{tagsContents[t].label}} <i class="fa fa-times fa-lg"></i>
       </span>
     </div>
     <div class="content" compile-html="l.content"></div>

@@ -21,11 +21,15 @@
   .graphloader {
     z-index: 90;
     position: absolute;
+    box-sizing: border-box;
     width: 100%;
     height: 100%;
     padding-top: 50%;
+    padding-left: 16%;
+    padding-right: 16%;
     background: lightgray;
 
+    line-height: 1.4em;
     font-style: italic;
     color: #878787;
     font-size: 0.8em;
@@ -64,11 +68,24 @@
       font-style: italic;
       text-transform: uppercase;
       cursor: pointer;
+      i {
+        display: none;
+        vertical-align: baseline;
+        font-size: 1.1em;
+        margin-left: 2px;
+        opacity: 0.5;
+      }
       &:hover {
         background: @darkColor;
+        i {
+          opacity: 1;
+        }
       }
       &.active {
-        background: @redColor; 
+        background: @redColor;
+        i {
+          display: inline-block;
+        }
       }
     }
   }

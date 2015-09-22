@@ -35,13 +35,17 @@ menu:
     tagsdescription: cliquez sur les thématiques pour filtrer les contenus
     search: chercher
     sections: textes
-    links: liens
+    links: ressources
     map: carte
+    calendar: agenda
     print: imprimer
     examples: en pratique(s)
     discusstext: discuter, corriger, proposer
     discussback: revenir au texte
-    loadgraph: cliquer pour afficher le graphe (6.5Mo)
+    loadgraph: >
+        Vous pouvez également explorer le réseau des sites internet et les liens qu'ils ont entre eux
+        <br><br><br>
+        cliquer pour afficher le graphe (6.5Mo)
 tags:
     manifest: à propos = projet manifeste(s) (liste de discussion, code, twitter)
     group: collectifs = réseaux, coopératives, associatives existant(e)s
@@ -190,7 +194,7 @@ content: >
 date: 2015-09-20
 role: meta
 title: Qui a écrit tout ça ?
-subtitle: Composition à plusieurs mais !
+subtitle: Composition à plusieurs mains !
 slug: who_wrote
 image:
     url: —
@@ -211,9 +215,36 @@ content: >
 
 
 ---
+date: 2015-06-16
+role: meta
+title: Sections de textes synthétiques
+subtitle: Les **sections** et les **liens** permettent de rendre le texte plus lisible et facilitent les discussions sur les **thèmes** abordés.
+slug: methodo
+image:
+    url: FingerBones.jpg
+    credit: Rayons X, Hopital des Enfants malades, Paris
+quote:
+    author: Pierre Desproges
+    content: L'intelligence, c'est le seul outil qui permet à l'homme de mesurer l'étendue de son malheur.
+tags: manifest, design
+content: >
+    ###Chaque [section](https://github.com/manifestes/manifestes/blob/gh-pages/data/sections_fr.yml) comme celle-ci comporte
+
+
+    - un **titre** permettant d'ouvrir ou de fermer la section
+
+    - une **illustration** et une **citation**
+
+    - un texte synthétique **théorique** développant une idée
+
+    - une liste de **thématiques** (tags) associées
+
+
+
+---
 date: 2015-09-20
 role: meta
-title: Catégories
+title: Catégories thématiques
 subtitle: "La grille de tags permet d'organiser les textes, liens, lieux... par thématiques"
 slug: about_tags
 image:
@@ -243,48 +274,12 @@ content: >
 
 
 ---
-date: 2015-06-16
-role: meta
-title: Sections de textes et liens pratiques
-subtitle: Les **sections** et les **liens** permettent de rendre le texte plus lisible et facilitent les discussions sur les **thèmes** abordés.
-slug: methodo
-image:
-    url: FingerBones.jpg
-    credit: Rayons X, Hopital des Enfants malades, Paris
-quote:
-    author: Pierre Desproges
-    content: L'intelligence, c'est le seul outil qui permet à l'homme de mesurer l'étendue de son malheur.
-tags: manifest, design
-content: >
-    ###Chaque [section](https://github.com/manifestes/manifestes/blob/gh-pages/data/sections_fr.yml) comme celle-ci comporte
-
-
-    - un **titre** permettant d'ouvrir ou de fermer la section
-
-    - une **illustration** et une **citation**
-
-    - un texte synthétique **théorique** développant une idée
-
-    - une liste de **thématiques** (tags) associées
-
-
-    ###L'encart ci-dessous présente les [liens](https://github.com/manifestes/manifestes/blob/gh-pages/data/links_fr.yml) correspondants
-
-
-    C'est-à-dire les articles, collectifs, initiatives concrètes taggés avec les mêmes thématiques.
-    
-    
-    Il est également possible d'accéder d'un coup d'œil à tous les liens référencés depuis le menu.
-
-
-
----
 date: 2015-09-20
 role: meta
 title: Carte de France des alternatives
 subtitle: Nous sommes partout !
 slug: interactive_map
-tags: place, list, manifest
+tags: place, list, manifest, tool
 image:
     url: —
     credit: —
@@ -321,10 +316,10 @@ content: >
 ---
 date: 2015-07-15
 role: meta
-title: Cartographie des sites internet
+title: Réseau des sites internet
 subtitle: Exploration des sites et des liens hypertextes pour visualiser les articulations entre les différents mouvements alternatifs
 slug: hyphe_map
-tags: list, manifest
+tags: list, manifest, tool
 image:
     url: Felix_DrawingAutism.jpg
     credit: Felix, Drawing Autism
@@ -335,7 +330,7 @@ content: >
     Grâce à l'outil libre [hyphe](http://hyphe.medialab.sciences-po.fr/), nous avons produit une carte des liens connectant les sites internet portant des alternatives.
 
 
-    Cette carte se construit pas-à-pas en sélectionnant ceux respectant les critères suivants:
+    Cette carte / réseau se construit pas-à-pas en sélectionnant ceux respectant les critères suivants:
 
     
     - *contenu majoritairement francophone*

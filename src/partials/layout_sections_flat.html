@@ -28,7 +28,7 @@
       <div class="triangle"></div>
     </div>
     <div class="h1">
-      <img class="icon" ng-if="p.role=='meta'" src="{{settings.assets}}/images/info.svg"/>
+      <i ng-if="p.role=='meta'" class="fa fa-question-circle fa-lg"></i>
       <span compile-html="p.title"></span>
     </div>
   </div>
@@ -39,14 +39,14 @@
       ng-class="{active: isTagActive(t)}"
       ng-repeat="t in p.tags"
       ng-click="toggleTag(t); $event.stopPropagation();">
-      {{tagsContents[t].label}}
+      {{tagsContents[t].label}} <i class="fa fa-times fa-lg"></i>
     </span>
   </div>
 
   <div class="h2" compile-html="p.subtitle"></div>
   <div class="content" compile-html="p.content"></div>
-  <div ng-if="p.links.length > 0" class="links" ng-click="p.currentlink = (p.currentlink+1) % p.links.length;">
 
+<!--   <div ng-if="p.links.length > 0" class="links" ng-click="p.currentlink = (p.currentlink+1) % p.links.length;">
     <div class="label">
       <span class="fright">{{p.links.length}}&nbsp;&nbsp;&nbsp;&nbsp;• •</span>
       <img class="refresh fright" src="{{settings.assets}}/images/refresh.svg"/>
@@ -65,7 +65,8 @@
         compile-html="l">
       </div>
     </div>
-  </div>
+  </div> -->
+
   <div
     ng-if="p.opened || (state.term && atLeastContains(p))"
     ng-click="openComments(p);"

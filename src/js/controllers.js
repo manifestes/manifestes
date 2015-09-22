@@ -492,9 +492,10 @@ angular.module('manifest.controllers', ['underscore','config'])
             console.log("!! declared tags with 0 link", _.difference(_.keys($scope.meta.tags), _.keys($scope.linksByTag)));
           }
 
-          _.each($scope.sections, function(p) {
-            p.links = getLinksFromTags(p.tags);
-          });
+          // populate links related to each section
+          // _.each($scope.sections, function(p) {
+          //   p.links = getLinksFromTags(p.tags);
+          // });
 
         })
         .error(function (data, status, headers, config) {
@@ -546,7 +547,7 @@ angular.module('manifest.controllers', ['underscore','config'])
             d.links = md2Html(d.links);
 
             d.date = moment(d.date);
-            var seuil = moment().subtract(4,"month");
+            var seuil = moment().subtract(3,"month");
             if(d.date > seuil)
               d.date = d.date.fromNow();
             else
