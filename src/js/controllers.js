@@ -163,8 +163,8 @@ angular.module('manifest.controllers', ['underscore','config'])
     $scope.linksByTag = {}; // related links for each tag
     
     $scope.state = {
-      intro: !$scope.settings.dev, // splash fullscreen panel
-      introimage: 0; // slideshow of intro splash images
+      intro: true, //!$scope.settings.dev, // splash fullscreen panel
+      introimage: 0, // slideshow of intro splash images
       commenting_slug: null, // current disqus id
       lang: $routeParams.lang,
       layout: layout, // sections/links/map/print/etc...
@@ -190,6 +190,14 @@ angular.module('manifest.controllers', ['underscore','config'])
     };
     $scope.sectionTemplate = function(s) {
       return $scope.settings.assets+'partials/layout_sections_'+s.layout+'.html';
+    };
+
+    $scope.slideSplashImage = function(forward) {
+      if($scope.swiping) { return; }
+      if(forward)
+        $scope.state.introimage +=1;
+      else
+        $scope.state.introimage -=1;
     };
 
     var scrollToup = function() {
@@ -522,6 +530,14 @@ angular.module('manifest.controllers', ['underscore','config'])
             
             // for html page meta
             $rootScope.htmlmeta = d.htmlmeta;
+
+            // prepare splash images & their back color
+            $scope.meta.intro.images = _.map($scope.meta.intro.images, function(v) {
+              return {
+                color: "#"+v.split("_")[1],
+                filename: v + ".svg"
+              };
+            });
 
             _.each(d.tags, function(v,k) {
               $scope.tagsContents[k] = {

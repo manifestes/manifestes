@@ -23,15 +23,18 @@ mapcredits:
         url: https://www.google.com/maps/d/viewer?mid=zfOpOkMajqj0.k73wlMF5RszU
 intro:
     images:
-        - manifestes_utopies_concretes.svg
-        - convergence.svg
+        - manifeste-utopies-concretes_CC3333
+        - lautre-ment_D1E8C5
+        - machine-philosophique_fff
+        - masse-critique_333
+        - nous-pigeons_FF6633
     title: manifeste(s)
     description: >
         collectif(s) des territoires communs autogérés et alternatives convivialistes DIY bénéloves révolutionnaires de la transition sociale et écologique dans les tiers-lieux créatifs des clowns bricoleurs pirates des utopies libertaires écoféministes p2p et coopératistes indignées activistes de la résilience décroissante concrète et désobéissante des convergences des luttes
     more_groups: >
         sobriété heureuse, simplicité volontaire, désargence, chômeur.e.s, colibris, créatifs culturels, pirates, objecteur.euse.s de croissance, empêcheur.euse.s de tourner en rond, AMAPs, alternatif.ive.s, convivialistes, grévistes, écoféministes, 15M, alternatiba, activistes, utopistes concrets, maquisard.e.s, hackers, rassemblements citoyen, universités, fablabs, résitances, grands-parents, désobéissants, transition citoyenne, tiers-lieux, p2p, bénéloves, communs, consom'acteurs, SEL, anarchistes, alliances citoyennes, révolutionnaires, occupy, amis de la terre, 99%, vélistance, indignés, bolo'bolo, éco-villages, institut momentum, bricoleur.se.s, farceurs, clowns, résiliés, squatteur.se.s, décroissants conviviaux, évidences écolos, e-constituante, anarnautes, libertaires, anticapitalistes, anonymous, coopératistes, antifascistes, rebooters, démocratie ouverte, écosociétalistes, écologie, alternatives, non-violence
     keywords: "# philosophie # politique # pratique # convergences #"
-    enter: ">> consulter + participer <<"
+    enter: "consulter & participer"
 menu:
     tagsdefault: toutes
     tagslabel: filtrer par thématiques

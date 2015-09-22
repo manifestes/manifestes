@@ -3,23 +3,26 @@
   ng-class="{hidden:!state.intro}">
   <div class="splash">
     <div
-      ng-repeat="i in intro.images"
+      ng-repeat="i in meta.intro.images"
       class="image"
-      back-img="{{settings.datapath}}splash/{{intro.images[$index]}}"
+      back-img="{{settings.datapath}}splash/{{i.filename}}"
+      ng-style="{'background-color': i.color}"
       ng-class="{
-        active: state.introimage == $index,
-        left: state.introimage == $index-1,
-        right: state.introimage == $index+1,
+        active: state.introimage % meta.intro.images.length == $index,
+        left: state.introimage % meta.intro.images.length < $index,
+        right: state.introimage % meta.intro.images.length > $index,
       }"
-      ng-click="state.introimage++;"
-      ng-swipe-left="state.introimage--;"
-      ng-swipe-right="state.introimage++;">
+      ng-click="swiping ? ( swiping = false ) : slideSplashImage(true,true);"
+      ng-swipe-left="slideSplashImage(true); swiping=true;"
+      ng-swipe-right="slideSplashImage(false); swiping=true;">
     </div>
   </div>
 
   <div class="foot">
-    <div class="keywords">{{meta.intro.keywords}}</div>
-    <div class="button color-{{getRandomInt()}}" ng-click="state.intro=false;">{{meta.intro.enter}}</div>
+    <!-- <div class="keywords">{{meta.intro.keywords}}</div> -->
+    <div class="button color-{{getRandomInt()}}" ng-click="state.intro=false;">
+      {{meta.intro.enter}}
+    </div>
   </div>
 </div>
 

@@ -1,5 +1,6 @@
 src/vendor
 src/css/styles.css
 data/_*
+data/splash/*.ai
 node_modules
 .DS_Store
