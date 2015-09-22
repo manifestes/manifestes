@@ -41,18 +41,26 @@ angular.module('manifest.controllers', ['underscore','config'])
       };
 
       var map = L.map('leaflet', {
-        zoomControlPosition: 'bottomleft',
+        zoomControl: false,
         scrollWheelZoom: true,
         doubleClickZoom: true,
-        center: [45, 2],
-        zoom: 7,
+        center: [47, 2.5],
+        zoom: 6,
         minZoom: 4,
         maxZoom: 16,
         locateButton: true,
         layers: [osm]
       });
 
-      L.control.locate().addTo(map);
+      L.control.zoom({
+        position: 'bottomleft'
+      }).addTo(map);
+
+      L.control.locate({
+        position: 'bottomleft',
+        icon: 'fa fa-street-view',
+        showPopup: false,
+      }).addTo(map);
       var layers = new L.LayerGroup().addTo(map);
 
       $http.get(settings.datapath + '_encours/map.csv').success(function(data) {
