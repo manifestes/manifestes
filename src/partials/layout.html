@@ -1,9 +1,21 @@
 <div
   class="intro"
   ng-class="{hidden:!state.intro}">
-  <h1>{{meta.intro.title}}</h1>
-  <div class="description">{{meta.intro.description}}</div>
-  <img class="image" src="{{settings.datapath}}/manifestes_splash.jpg"/>
+  <div class="splash">
+    <div
+      ng-repeat="i in intro.images"
+      class="image"
+      back-img="{{settings.datapath}}splash/{{intro.images[$index]}}"
+      ng-class="{
+        active: state.introimage == $index,
+        left: state.introimage == $index-1,
+        right: state.introimage == $index+1,
+      }"
+      ng-click="state.introimage++;"
+      ng-swipe-left="state.introimage--;"
+      ng-swipe-right="state.introimage++;">
+    </div>
+  </div>
 
   <div class="foot">
     <div class="keywords">{{meta.intro.keywords}}</div>
@@ -36,7 +48,7 @@
 
         <a
           class="button hover"
-          href="http://demosphere.eu">
+          href="http://demosphere.eu/fr">
           <i class="fa fa-calendar fa-lg"></i>
           <span>{{meta.menu.calendar}} <i class="fa fa-external-link-square fa-lg"></i></span>
         </a>

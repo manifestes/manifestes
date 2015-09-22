@@ -5,7 +5,7 @@
 angular.module('manifest', [
   'ngRoute',
   'ngSanitize',
-  //'ngTouch',
+  'ngTouch',
   //'ngScroll',
   'manifest.directives',
   'manifest.filters',

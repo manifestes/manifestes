@@ -55,7 +55,7 @@ angular.module('manifest.controllers', ['underscore','config'])
       L.control.locate().addTo(map);
       var layers = new L.LayerGroup().addTo(map);
 
-      $http.get(settings.datapath + 'map.csv').success(function(data) {
+      $http.get(settings.datapath + '_encours/map.csv').success(function(data) {
         //console.log("got csv data:",data);
         //$scope.data = data;
         var ms = new CSV(data, {header:true}).parse();
@@ -164,9 +164,10 @@ angular.module('manifest.controllers', ['underscore','config'])
     
     $scope.state = {
       intro: !$scope.settings.dev, // splash fullscreen panel
+      introimage: 0; // slideshow of intro splash images
       commenting_slug: null, // current disqus id
       lang: $routeParams.lang,
-      layout: layout,
+      layout: layout, // sections/links/map/print/etc...
       tags: [], // list of current filtering tags
       graphstatus: "NO", // loaded or not ?
     };
