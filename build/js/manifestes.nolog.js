@@ -1,11 +1,9312 @@
-/* sigma.js - A JavaScript library dedicated to graph drawing. - Version: 1.0.3 - Author: Alexis Jacomy, Sciences-Po Médialab - License: MIT */
-(function(a){"use strict";var b={},c=function(a){var d,e,f,g,h;c.classes.dispatcher.extend(this);var i=this,j=a||{};if("string"==typeof j||j instanceof HTMLElement?j={renderers:[j]}:"[object Array]"===Object.prototype.toString.call(j)&&(j={renderers:j}),g=j.renderers||j.renderer||j.container,j.renderers&&0!==j.renderers.length||("string"==typeof g||g instanceof HTMLElement||"object"==typeof g&&"container"in g)&&(j.renderers=[g]),j.id){if(b[j.id])throw'sigma: Instance "'+j.id+'" already exists.';Object.defineProperty(this,"id",{value:j.id})}else{for(h=0;b[h];)h++;Object.defineProperty(this,"id",{value:""+h})}for(b[this.id]=this,this.settings=new c.classes.configurable(c.settings,j.settings||{}),Object.defineProperty(this,"graph",{value:new c.classes.graph(this.settings),configurable:!0}),Object.defineProperty(this,"middlewares",{value:[],configurable:!0}),Object.defineProperty(this,"cameras",{value:{},configurable:!0}),Object.defineProperty(this,"renderers",{value:{},configurable:!0}),Object.defineProperty(this,"renderersPerCamera",{value:{},configurable:!0}),Object.defineProperty(this,"cameraFrames",{value:{},configurable:!0}),Object.defineProperty(this,"camera",{get:function(){return this.cameras[0]}}),Object.defineProperty(this,"events",{value:["click","rightClick","clickStage","doubleClickStage","rightClickStage","clickNode","clickNodes","doubleClickNode","doubleClickNodes","rightClickNode","rightClickNodes","overNode","overNodes","outNode","outNodes","downNode","downNodes","upNode","upNodes"],configurable:!0}),this._handler=function(a){var b,c={};for(b in a.data)c[b]=a.data[b];c.renderer=a.target,this.dispatchEvent(a.type,c)}.bind(this),f=j.renderers||[],d=0,e=f.length;e>d;d++)this.addRenderer(f[d]);for(f=j.middlewares||[],d=0,e=f.length;e>d;d++)this.middlewares.push("string"==typeof f[d]?c.middlewares[f[d]]:f[d]);"object"==typeof j.graph&&j.graph&&(this.graph.read(j.graph),this.refresh()),window.addEventListener("resize",function(){i.settings&&i.refresh()})};if(c.prototype.addCamera=function(b){var d,e=this;if(!arguments.length){for(b=0;this.cameras[""+b];)b++;b=""+b}if(this.cameras[b])throw'sigma.addCamera: The camera "'+b+'" already exists.';return d=new c.classes.camera(b,this.graph,this.settings),this.cameras[b]=d,d.quadtree=new c.classes.quad,c.classes.edgequad!==a&&(d.edgequadtree=new c.classes.edgequad),d.bind("coordinatesUpdated",function(a){e.renderCamera(d,d.isAnimated)}),this.renderersPerCamera[b]=[],d},c.prototype.killCamera=function(a){if(a="string"==typeof a?this.cameras[a]:a,!a)throw"sigma.killCamera: The camera is undefined.";var b,c,d=this.renderersPerCamera[a.id];for(c=d.length,b=c-1;b>=0;b--)this.killRenderer(d[b]);return delete this.renderersPerCamera[a.id],delete this.cameraFrames[a.id],delete this.cameras[a.id],a.kill&&a.kill(),this},c.prototype.addRenderer=function(a){var b,d,e,f,g=a||{};if("string"==typeof g?g={container:document.getElementById(g)}:g instanceof HTMLElement&&(g={container:g}),"string"==typeof g.container&&(g.container=document.getElementById(g.container)),"id"in g)b=g.id;else{for(b=0;this.renderers[""+b];)b++;b=""+b}if(this.renderers[b])throw'sigma.addRenderer: The renderer "'+b+'" already exists.';if(d="function"==typeof g.type?g.type:c.renderers[g.type],d=d||c.renderers.def,e="camera"in g?g.camera instanceof c.classes.camera?g.camera:this.cameras[g.camera]||this.addCamera(g.camera):this.addCamera(),this.cameras[e.id]!==e)throw"sigma.addRenderer: The camera is not properly referenced.";return f=new d(this.graph,e,this.settings,g),this.renderers[b]=f,Object.defineProperty(f,"id",{value:b}),f.bind&&f.bind(["click","rightClick","clickStage","doubleClickStage","rightClickStage","clickNode","clickNodes","clickEdge","clickEdges","doubleClickNode","doubleClickNodes","doubleClickEdge","doubleClickEdges","rightClickNode","rightClickNodes","rightClickEdge","rightClickEdges","overNode","overNodes","overEdge","overEdges","outNode","outNodes","outEdge","outEdges","downNode","downNodes","downEdge","downEdges","upNode","upNodes","upEdge","upEdges"],this._handler),this.renderersPerCamera[e.id].push(f),f},c.prototype.killRenderer=function(a){if(a="string"==typeof a?this.renderers[a]:a,!a)throw"sigma.killRenderer: The renderer is undefined.";var b=this.renderersPerCamera[a.camera.id],c=b.indexOf(a);return c>=0&&b.splice(c,1),a.kill&&a.kill(),delete this.renderers[a.id],this},c.prototype.refresh=function(b){var d,e,f,g,h,i,j=0;for(b=b||{},g=this.middlewares||[],d=0,e=g.length;e>d;d++)g[d].call(this,0===d?"":"tmp"+j+":",d===e-1?"ready:":"tmp"+ ++j+":");for(f in this.cameras)h=this.cameras[f],h.settings("autoRescale")&&this.renderersPerCamera[h.id]&&this.renderersPerCamera[h.id].length?c.middlewares.rescale.call(this,g.length?"ready:":"",h.readPrefix,{width:this.renderersPerCamera[h.id][0].width,height:this.renderersPerCamera[h.id][0].height}):c.middlewares.copy.call(this,g.length?"ready:":"",h.readPrefix),b.skipIndexation||(i=c.utils.getBoundaries(this.graph,h.readPrefix),h.quadtree.index(this.graph.nodes(),{prefix:h.readPrefix,bounds:{x:i.minX,y:i.minY,width:i.maxX-i.minX,height:i.maxY-i.minY}}),h.edgequadtree!==a&&h.settings("drawEdges")&&h.settings("enableEdgeHovering")&&h.edgequadtree.index(this.graph,{prefix:h.readPrefix,bounds:{x:i.minX,y:i.minY,width:i.maxX-i.minX,height:i.maxY-i.minY}}));for(g=Object.keys(this.renderers),d=0,e=g.length;e>d;d++)if(this.renderers[g[d]].process)if(this.settings("skipErrors"))try{this.renderers[g[d]].process()}catch(k){0}else this.renderers[g[d]].process();return this.render(),this},c.prototype.render=function(){var a,b,c;for(c=Object.keys(this.renderers),a=0,b=c.length;b>a;a++)if(this.settings("skipErrors"))try{this.renderers[c[a]].render()}catch(d){this.settings("verbose")&&0}else this.renderers[c[a]].render();return this},c.prototype.renderCamera=function(a,b){var c,d,e,f=this;if(b)for(e=this.renderersPerCamera[a.id],c=0,d=e.length;d>c;c++)if(this.settings("skipErrors"))try{e[c].render()}catch(g){this.settings("verbose")&&0}else e[c].render();else if(!this.cameraFrames[a.id]){for(e=this.renderersPerCamera[a.id],c=0,d=e.length;d>c;c++)if(this.settings("skipErrors"))try{e[c].render()}catch(g){this.settings("verbose")&&0}else e[c].render();this.cameraFrames[a.id]=requestAnimationFrame(function(){delete f.cameraFrames[a.id]})}return this},c.prototype.kill=function(){var a;this.dispatchEvent("kill"),this.graph.kill(),delete this.middlewares;for(a in this.renderers)this.killRenderer(this.renderers[a]);for(a in this.cameras)this.killCamera(this.cameras[a]);delete this.renderers,delete this.cameras;for(a in this)this.hasOwnProperty(a)&&delete this[a];delete b[this.id]},c.instances=function(a){return arguments.length?b[a]:c.utils.extend({},b)},c.version="1.0.3","undefined"!=typeof this.sigma)throw"An object called sigma is already in the global scope.";this.sigma=c}).call(this),function(a){"use strict";function b(a,c){var d,e,f,g;if(arguments.length)if(1===arguments.length&&Object(arguments[0])===arguments[0])for(a in arguments[0])b(a,arguments[0][a]);else if(arguments.length>1)for(g=Array.isArray(a)?a:a.split(/ /),d=0,e=g.length;d!==e;d+=1)f=g[d],C[f]||(C[f]=[]),C[f].push({handler:c})}function c(a,b){var c,d,e,f,g,h,i=Array.isArray(a)?a:a.split(/ /);if(arguments.length)if(b)for(c=0,d=i.length;c!==d;c+=1){if(h=i[c],C[h]){for(g=[],e=0,f=C[h].length;e!==f;e+=1)C[h][e].handler!==b&&g.push(C[h][e]);C[h]=g}C[h]&&0===C[h].length&&delete C[h]}else for(c=0,d=i.length;c!==d;c+=1)delete C[i[c]];else C=Object.create(null)}function d(a,b){var c,d,e,f,g,h,i=Array.isArray(a)?a:a.split(/ /);for(b=void 0===b?{}:b,c=0,e=i.length;c!==e;c+=1)if(h=i[c],C[h])for(g={type:h,data:b||{}},d=0,f=C[h].length;d!==f;d+=1)try{C[h][d].handler(g)}catch(j){}}function e(){var a,b,c,d,e=!1,f=s(),g=x.shift();if(c=g.job(),f=s()-f,g.done++,g.time+=f,g.currentTime+=f,g.weightTime=g.currentTime/(g.weight||1),g.averageTime=g.time/g.done,d=g.count?g.count<=g.done:!c,!d){for(a=0,b=x.length;b>a;a++)if(x[a].weightTime>g.weightTime){x.splice(a,0,g),e=!0;break}e||x.push(g)}return d?g:null}function f(a){var b=x.length;w[a.id]=a,a.status="running",b&&(a.weightTime=x[b-1].weightTime,a.currentTime=a.weightTime*(a.weight||1)),a.startTime=s(),d("jobStarted",q(a)),x.push(a)}function g(){var a,b,c;for(a in v)b=v[a],b.after?y[a]=b:f(b),delete v[a];for(u=!!x.length;x.length&&s()-t<B.frameDuration;)if(c=e()){i(c.id);for(a in y)y[a].after===c.id&&(f(y[a]),delete y[a])}u?(t=s(),d("enterFrame"),setTimeout(g,0)):d("stop")}function h(a,b){var c,e,f;if(Array.isArray(a)){for(A=!0,c=0,e=a.length;e>c;c++)h(a[c].id,p(a[c],b));A=!1,u||(t=s(),d("start"),g())}else if("object"==typeof a)if("string"==typeof a.id)h(a.id,a);else{A=!0;for(c in a)"function"==typeof a[c]?h(c,p({job:a[c]},b)):h(c,p(a[c],b));A=!1,u||(t=s(),d("start"),g())}else{if("string"!=typeof a)throw new Error("[conrad.addJob] Wrong arguments.");if(k(a))throw new Error('[conrad.addJob] Job with id "'+a+'" already exists.');if("function"==typeof b)f={id:a,done:0,time:0,status:"waiting",currentTime:0,averageTime:0,weightTime:0,job:b};else{if("object"!=typeof b)throw new Error("[conrad.addJob] Wrong arguments.");f=p({id:a,done:0,time:0,status:"waiting",currentTime:0,averageTime:0,weightTime:0},b)}v[a]=f,d("jobAdded",q(f)),u||A||(t=s(),d("start"),g())}return this}function i(a){var b,c,e,f,g=!1;if(Array.isArray(a))for(b=0,c=a.length;c>b;b++)i(a[b]);else{if("string"!=typeof a)throw new Error("[conrad.killJob] Wrong arguments.");for(e=[w,y,v],b=0,c=e.length;c>b;b++)a in e[b]&&(f=e[b][a],B.history&&(f.status="done",z.push(f)),d("jobEnded",q(f)),delete e[b][a],"function"==typeof f.end&&f.end(),g=!0);for(e=x,b=0,c=e.length;c>b;b++)if(e[b].id===a){e.splice(b,1);break}if(!g)throw new Error('[conrad.killJob] Job "'+a+'" not found.')}return this}function j(){var a,b=p(v,w,y);if(B.history)for(a in b)b[a].status="done",z.push(b[a]),"function"==typeof b[a].end&&b[a].end();return v={},y={},w={},x=[],u=!1,this}function k(a){var b=v[a]||w[a]||y[a];return b?p(b):null}function l(a,b){var c;if("string"==typeof a1&&1===arguments.length)return B[a1];c="object"==typeof a1&&1===arguments.length?a1||{}:{},"string"==typeof a1&&(c[a1]=a2);for(var d in c)void 0!==c[d]?B[d]=c[d]:delete B[d];return this}function m(){return u}function n(){return z=[],this}function o(a,b){var c,d,e,f,g,h,i;if(!arguments.length){g=[];for(d in v)g.push(v[d]);for(d in y)g.push(y[d]);for(d in w)g.push(w[d]);g=g.concat(z)}if("string"==typeof a)switch(a){case"waiting":g=r(y);break;case"running":g=r(w);break;case"done":g=z;break;default:h=a}if(a instanceof RegExp&&(h=a),!h&&("string"==typeof b||b instanceof RegExp)&&(h=b),h){if(i="string"==typeof h,g instanceof Array)c=g;else if("object"==typeof g){c=[];for(d in g)c=c.concat(g[d])}else{c=[];for(d in v)c.push(v[d]);for(d in y)c.push(y[d]);for(d in w)c.push(w[d]);c=c.concat(z)}for(g=[],e=0,f=c.length;f>e;e++)(i?c[e].id===h:c[e].id.match(h))&&g.push(c[e])}return q(g)}function p(){var a,b,c={},d=arguments.length;for(a=d-1;a>=0;a--)for(b in arguments[a])c[b]=arguments[a][b];return c}function q(a){var b,c,d;if(!a)return a;if(Array.isArray(a))for(b=[],c=0,d=a.length;d>c;c++)b.push(q(a[c]));else if("object"==typeof a){b={};for(c in a)b[c]=q(a[c])}else b=a;return b}function r(a){var b,c=[];for(b in a)c.push(a[b]);return c}function s(){return Date.now?Date.now():(new Date).getTime()}if(a.conrad)throw new Error("conrad already exists");var t,u=!1,v={},w={},x=[],y={},z=[],A=!1,B={frameDuration:20,history:!0},C=Object.create(null);Array.isArray||(Array.isArray=function(a){return"[object Array]"===Object.prototype.toString.call(a)});var D={hasJob:k,addJob:h,killJob:i,killAll:j,settings:l,getStats:o,isRunning:m,clearHistory:n,bind:b,unbind:c,version:"0.1.0"};"undefined"!=typeof exports&&("undefined"!=typeof module&&module.exports&&(exports=module.exports=D),exports.conrad=D),a.conrad=D}(this),function(a){"use strict";if("undefined"==typeof sigma)throw"sigma is not declared";var b=this;sigma.utils=sigma.utils||{},sigma.utils.extend=function(){var a,b,c={},d=arguments.length;for(a=d-1;a>=0;a--)for(b in arguments[a])c[b]=arguments[a][b];return c},sigma.utils.dateNow=function(){return Date.now?Date.now():(new Date).getTime()},sigma.utils.pkg=function(a){return(a||"").split(".").reduce(function(a,b){return b in a?a[b]:a[b]={}},b)},sigma.utils.id=function(){var a=0;return function(){return++a}}(),sigma.utils.floatColor=function(a){var b=[0,0,0];return a.match(/^#/)?(a=(a||"").replace(/^#/,""),b=3===a.length?[parseInt(a.charAt(0)+a.charAt(0),16),parseInt(a.charAt(1)+a.charAt(1),16),parseInt(a.charAt(2)+a.charAt(2),16)]:[parseInt(a.charAt(0)+a.charAt(1),16),parseInt(a.charAt(2)+a.charAt(3),16),parseInt(a.charAt(4)+a.charAt(5),16)]):a.match(/^ *rgba? *\(/)&&(a=a.match(/^ *rgba? *\( *([0-9]*) *, *([0-9]*) *, *([0-9]*) *(,.*)?\) *$/),b=[+a[1],+a[2],+a[3]]),256*b[0]*256+256*b[1]+b[2]},sigma.utils.zoomTo=function(a,b,c,d,e){var f,g,h,i=a.settings;g=Math.max(i("zoomMin"),Math.min(i("zoomMax"),a.ratio*d)),g!==a.ratio&&(d=g/a.ratio,h={x:b*(1-d)+a.x,y:c*(1-d)+a.y,ratio:g},e&&e.duration?(f=sigma.misc.animation.killAll(a),e=sigma.utils.extend(e,{easing:f?"quadraticOut":"quadraticInOut"}),sigma.misc.animation.camera(a,h,e)):(a.goTo(h),e&&e.onComplete&&e.onComplete()))},sigma.utils.getQuadraticControlPoint=function(a,b,c,d){return{x:(a+c)/2+(d-b)/4,y:(b+d)/2+(a-c)/4}},sigma.utils.getPointOnQuadraticCurve=function(a,b,c,d,e,f,g){return{x:Math.pow(1-a,2)*b+2*(1-a)*a*f+Math.pow(a,2)*d,y:Math.pow(1-a,2)*c+2*(1-a)*a*g+Math.pow(a,2)*e}},sigma.utils.getPointOnBezierCurve=function(a,b,c,d,e,f,g,h,i){var j=Math.pow(1-a,3),k=3*a*Math.pow(1-a,2),l=3*Math.pow(a,2)*(1-a),m=Math.pow(a,3);return{x:j*b+k*f+l*h+m*d,y:j*c+k*g+l*i+m*e}},sigma.utils.getSelfLoopControlPoints=function(a,b,c){return{x1:a-7*c,y1:b,x2:a,y2:b+7*c}},sigma.utils.getDistance=function(a,b,c,d){return Math.sqrt(Math.pow(c-a,2)+Math.pow(d-b,2))},sigma.utils.getCircleIntersection=function(a,b,c,d,e,f){var g,h,i,j,k,l,m,n,o;if(h=d-a,i=e-b,j=Math.sqrt(i*i+h*h),j>c+f)return!1;if(j<Math.abs(c-f))return!1;g=(c*c-f*f+j*j)/(2*j),n=a+h*g/j,o=b+i*g/j,k=Math.sqrt(c*c-g*g),l=-i*(k/j),m=h*(k/j);var p=n+l,q=n-l,r=o+m,s=o-m;return{xi:p,xi_prime:q,yi:r,yi_prime:s}},sigma.utils.isPointOnSegment=function(a,b,c,d,e,f,g){var h=Math.abs((b-d)*(e-c)-(a-c)*(f-d)),i=sigma.utils.getDistance(c,d,e,f),j=h/i;return g>j&&Math.min(c,e)<=a&&a<=Math.max(c,e)&&Math.min(d,f)<=b&&b<=Math.max(d,f)},sigma.utils.isPointOnQuadraticCurve=function(a,b,c,d,e,f,g,h,i){var j=sigma.utils.getDistance(c,d,e,f);if(Math.abs(a-c)>j||Math.abs(b-d)>j)return!1;for(var k,l=sigma.utils.getDistance(a,b,c,d),m=sigma.utils.getDistance(a,b,e,f),n=.5,o=m>l?-.01:.01,p=.001,q=100,r=sigma.utils.getPointOnQuadraticCurve(n,c,d,e,f,g,h),s=sigma.utils.getDistance(a,b,r.x,r.y);q-->0&&n>=0&&1>=n&&s>i&&(o>p||-p>o);)k=s,r=sigma.utils.getPointOnQuadraticCurve(n,c,d,e,f,g,h),s=sigma.utils.getDistance(a,b,r.x,r.y),s>k?(o=-o/2,n+=o):0>n+o||n+o>1?(o/=2,s=k):n+=o;return i>s},sigma.utils.isPointOnBezierCurve=function(a,b,c,d,e,f,g,h,i,j,k){var l=sigma.utils.getDistance(c,d,g,h);if(Math.abs(a-c)>l||Math.abs(b-d)>l)return!1;for(var m,n=sigma.utils.getDistance(a,b,c,d),o=sigma.utils.getDistance(a,b,e,f),p=.5,q=o>n?-.01:.01,r=.001,s=100,t=sigma.utils.getPointOnBezierCurve(p,c,d,e,f,g,h,i,j),u=sigma.utils.getDistance(a,b,t.x,t.y);s-->0&&p>=0&&1>=p&&u>k&&(q>r||-r>q);)m=u,t=sigma.utils.getPointOnBezierCurve(p,c,d,e,f,g,h,i,j),u=sigma.utils.getDistance(a,b,t.x,t.y),u>m?(q=-q/2,p+=q):0>p+q||p+q>1?(q/=2,u=m):p+=q;return k>u},sigma.utils.getX=function(b){return b.offsetX!==a&&b.offsetX||b.layerX!==a&&b.layerX||b.clientX!==a&&b.clientX},sigma.utils.getY=function(b){return b.offsetY!==a&&b.offsetY||b.layerY!==a&&b.layerY||b.clientY!==a&&b.clientY},sigma.utils.getWidth=function(b){var c=b.target.ownerSVGElement?b.target.ownerSVGElement.width:b.target.width;return"number"==typeof c&&c||c!==a&&c.baseVal!==a&&c.baseVal.value},sigma.utils.getHeight=function(b){var c=b.target.ownerSVGElement?b.target.ownerSVGElement.height:b.target.height;return"number"==typeof c&&c||c!==a&&c.baseVal!==a&&c.baseVal.value},sigma.utils.getDelta=function(b){return b.wheelDelta!==a&&b.wheelDelta||b.detail!==a&&-b.detail},sigma.utils.getOffset=function(a){for(var b=0,c=0;a;)c+=parseInt(a.offsetTop),b+=parseInt(a.offsetLeft),a=a.offsetParent;return{top:c,left:b}},sigma.utils.doubleClick=function(a,b,c){var d,e=0;a._doubleClickHandler=a._doubleClickHandler||{},a._doubleClickHandler[b]=a._doubleClickHandler[b]||[],d=a._doubleClickHandler[b],d.push(function(a){return e++,2===e?(e=0,c(a)):void(1===e&&setTimeout(function(){e=0},sigma.settings.doubleClickTimeout))}),a.addEventListener(b,d[d.length-1],!1)},sigma.utils.unbindDoubleClick=function(a,b){for(var c,d=(a._doubleClickHandler||{})[b]||[];c=d.pop();)a.removeEventListener(b,c);delete(a._doubleClickHandler||{})[b]},sigma.utils.easings=sigma.utils.easings||{},sigma.utils.easings.linearNone=function(a){return a},sigma.utils.easings.quadraticIn=function(a){return a*a},sigma.utils.easings.quadraticOut=function(a){return a*(2-a)},sigma.utils.easings.quadraticInOut=function(a){return(a*=2)<1?.5*a*a:-.5*(--a*(a-2)-1)},sigma.utils.easings.cubicIn=function(a){return a*a*a},sigma.utils.easings.cubicOut=function(a){return--a*a*a+1},sigma.utils.easings.cubicInOut=function(a){return(a*=2)<1?.5*a*a*a:.5*((a-=2)*a*a+2)},sigma.utils.loadShader=function(a,b,c,d){var e,f=a.createShader(c);return a.shaderSource(f,b),a.compileShader(f),e=a.getShaderParameter(f,a.COMPILE_STATUS),e?f:(d&&d('Error compiling shader "'+f+'":'+a.getShaderInfoLog(f)),a.deleteShader(f),null)},sigma.utils.loadProgram=function(a,b,c,d,e){var f,g,h=a.createProgram();for(f=0;f<b.length;++f)a.attachShader(h,b[f]);if(c)for(f=0;f<c.length;++f)a.bindAttribLocation(h,locations?locations[f]:f,opt_attribs[f]);return a.linkProgram(h),g=a.getProgramParameter(h,a.LINK_STATUS),g?h:(e&&e("Error in program linking: "+a.getProgramInfoLog(h)),a.deleteProgram(h),null)},sigma.utils.pkg("sigma.utils.matrices"),sigma.utils.matrices.translation=function(a,b){return[1,0,0,0,1,0,a,b,1]},sigma.utils.matrices.rotation=function(a,b){var c=Math.cos(a),d=Math.sin(a);return b?[c,-d,d,c]:[c,-d,0,d,c,0,0,0,1]},sigma.utils.matrices.scale=function(a,b){return b?[a,0,0,a]:[a,0,0,0,a,0,0,0,1]},sigma.utils.matrices.multiply=function(a,b,c){var d=c?2:3,e=a[0*d+0],f=a[0*d+1],g=a[0*d+2],h=a[1*d+0],i=a[1*d+1],j=a[1*d+2],k=a[2*d+0],l=a[2*d+1],m=a[2*d+2],n=b[0*d+0],o=b[0*d+1],p=b[0*d+2],q=b[1*d+0],r=b[1*d+1],s=b[1*d+2],t=b[2*d+0],u=b[2*d+1],v=b[2*d+2];return c?[e*n+f*q,e*o+f*r,h*n+i*q,h*o+i*r]:[e*n+f*q+g*t,e*o+f*r+g*u,e*p+f*s+g*v,h*n+i*q+j*t,h*o+i*r+j*u,h*p+i*s+j*v,k*n+l*q+m*t,k*o+l*r+m*u,k*p+l*s+m*v]}}.call(this),function(a){"use strict";var b,c=0,d=["ms","moz","webkit","o"];for(b=0;b<d.length&&!a.requestAnimationFrame;b++)a.requestAnimationFrame=a[d[b]+"RequestAnimationFrame"],a.cancelAnimationFrame=a[d[b]+"CancelAnimationFrame"]||a[d[b]+"CancelRequestAnimationFrame"];a.requestAnimationFrame||(a.requestAnimationFrame=function(b,d){var e=(new Date).getTime(),f=Math.max(0,16-(e-c)),g=a.setTimeout(function(){b(e+f)},f);return c=e+f,g}),a.cancelAnimationFrame||(a.cancelAnimationFrame=function(a){clearTimeout(a)}),Function.prototype.bind||(Function.prototype.bind=function(a){if("function"!=typeof this)throw new TypeError("Function.prototype.bind - what is trying to be bound is not callable");var b,c,d=Array.prototype.slice.call(arguments,1),e=this;return b=function(){},c=function(){return e.apply(this instanceof b&&a?this:a,d.concat(Array.prototype.slice.call(arguments)))},b.prototype=this.prototype,c.prototype=new b,c})}(this),function(a){"use strict";if("undefined"==typeof sigma)throw"sigma is not declared";sigma.utils.pkg("sigma.settings");var b={clone:!0,immutable:!0,verbose:!1,classPrefix:"sigma",defaultNodeType:"def",defaultEdgeType:"def",defaultLabelColor:"#000",defaultEdgeColor:"#000",defaultNodeColor:"#000",defaultLabelSize:14,edgeColor:"source",minArrowSize:0,font:"arial",fontStyle:"",labelColor:"default",labelSize:"fixed",labelSizeRatio:1,labelThreshold:8,webglOversamplingRatio:2,borderSize:0,defaultNodeBorderColor:"#000",hoverFont:"",singleHover:!0,hoverFontStyle:"",labelHoverShadow:"default",labelHoverShadowColor:"#000",nodeHoverColor:"node",defaultNodeHoverColor:"#000",labelHoverBGColor:"default",defaultHoverLabelBGColor:"#fff",labelHoverColor:"default",defaultLabelHoverColor:"#000",edgeHoverColor:"edge",edgeHoverSizeRatio:1,defaultEdgeHoverColor:"#000",edgeHoverExtremities:!1,drawEdges:!0,drawNodes:!0,drawLabels:!0,drawEdgeLabels:!1,batchEdgesDrawing:!1,hideEdgesOnMove:!1,canvasEdgesBatchSize:500,webglEdgesBatchSize:1e3,scalingMode:"inside",sideMargin:0,minEdgeSize:.5,maxEdgeSize:1,minNodeSize:1,maxNodeSize:8,touchEnabled:!0,mouseEnabled:!0,mouseWheelEnabled:!0,doubleClickEnabled:!0,eventsEnabled:!0,zoomingRatio:1.7,doubleClickZoomingRatio:2.2,zoomMin:.0625,zoomMax:2,mouseZoomDuration:200,doubleClickZoomDuration:200,mouseInertiaDuration:200,mouseInertiaRatio:3,touchInertiaDuration:200,touchInertiaRatio:3,doubleClickTimeout:300,doubleTapTimeout:300,dragTimeout:200,autoResize:!0,autoRescale:!0,enableCamera:!0,enableHovering:!0,enableEdgeHovering:!1,edgeHoverPrecision:5,rescaleIgnoreSize:!1,skipErrors:!1,nodesPowRatio:.5,edgesPowRatio:.5,animationsTime:200};sigma.settings=sigma.utils.extend(sigma.settings||{},b)}.call(this),function(){"use strict";var a=function(){Object.defineProperty(this,"_handlers",{value:{}})};a.prototype.bind=function(a,b){var c,d,e,f;if(1===arguments.length&&"object"==typeof arguments[0])for(a in arguments[0])this.bind(a,arguments[0][a]);else{if(2!==arguments.length||"function"!=typeof arguments[1])throw"bind: Wrong arguments.";for(f="string"==typeof a?a.split(" "):a,c=0,d=f.length;c!==d;c+=1)e=f[c],e&&(this._handlers[e]||(this._handlers[e]=[]),this._handlers[e].push({handler:b}))}return this},a.prototype.unbind=function(a,b){var c,d,e,f,g,h,i,j="string"==typeof a?a.split(" "):a;if(!arguments.length){for(g in this._handlers)delete this._handlers[g];return this}if(b)for(c=0,d=j.length;c!==d;c+=1){if(i=j[c],this._handlers[i]){for(h=[],e=0,f=this._handlers[i].length;e!==f;e+=1)this._handlers[i][e].handler!==b&&h.push(this._handlers[i][e]);this._handlers[i]=h}this._handlers[i]&&0===this._handlers[i].length&&delete this._handlers[i]}else for(c=0,d=j.length;c!==d;c+=1)delete this._handlers[j[c]];return this},a.prototype.dispatchEvent=function(a,b){var c,d,e,f,g,h,i,j=this,k="string"==typeof a?a.split(" "):a;for(b=void 0===b?{}:b,c=0,d=k.length;c!==d;c+=1)if(i=k[c],this._handlers[i]){for(h=j.getEvent(i,b),g=[],e=0,f=this._handlers[i].length;e!==f;e+=1)this._handlers[i][e].handler(h),this._handlers[i][e].one||g.push(this._handlers[i][e]);this._handlers[i]=g}return this},a.prototype.getEvent=function(a,b){return{type:a,data:b||{},target:this}},a.extend=function(b,c){var d;for(d in a.prototype)a.prototype.hasOwnProperty(d)&&(b[d]=a.prototype[d]);a.apply(b,c)},"undefined"!=typeof this.sigma?(this.sigma.classes=this.sigma.classes||{},this.sigma.classes.dispatcher=a):"undefined"!=typeof exports?("undefined"!=typeof module&&module.exports&&(exports=module.exports=a),exports.dispatcher=a):this.dispatcher=a}.call(this),function(){"use strict";var a=function(){var b,c,d={},e=Array.prototype.slice.call(arguments,0),f=function(a,b){var c,g,h,i;if(1===arguments.length&&"string"==typeof a){if(void 0!==d[a])return d[a];for(g=0,h=e.length;h>g;g++)if(void 0!==e[g][a])return e[g][a];return void 0}if("object"==typeof a&&"string"==typeof b)return void 0!==(a||{})[b]?a[b]:f(b);for(c="object"==typeof a&&void 0===b?a:{},"string"==typeof a&&(c[a]=b),g=0,i=Object.keys(c),h=i.length;h>g;g++)d[i[g]]=c[i[g]];return this};for(f.embedObjects=function(){var b=e.concat(d).concat(Array.prototype.splice.call(arguments,0));return a.apply({},b)},b=0,c=arguments.length;c>b;b++)f(arguments[b]);return f};"undefined"!=typeof this.sigma?(this.sigma.classes=this.sigma.classes||{},this.sigma.classes.configurable=a):"undefined"!=typeof exports?("undefined"!=typeof module&&module.exports&&(exports=module.exports=a),exports.configurable=a):this.configurable=a}.call(this),function(a){"use strict";function b(a,b,c){var d=function(){var d,e;for(d in h[a])h[a][d].apply(b,arguments);e=c.apply(b,arguments);for(d in g[a])g[a][d].apply(b,arguments);return e};return d}function c(a){var b;for(b in a)"hasOwnProperty"in a&&!a.hasOwnProperty(b)||delete a[b];return a}var d=Object.create(null),e=Object.create(null),f=Object.create(null),g=Object.create(null),h=Object.create(null),i={immutable:!0,clone:!0},j=function(a){return i[a]},k=function(a){var c,e,g;g={settings:a||j,nodesArray:[],edgesArray:[],nodesIndex:Object.create(null),edgesIndex:Object.create(null),inNeighborsIndex:Object.create(null),outNeighborsIndex:Object.create(null),allNeighborsIndex:Object.create(null),inNeighborsCount:Object.create(null),outNeighborsCount:Object.create(null),allNeighborsCount:Object.create(null)};for(c in f)f[c].call(g);for(c in d)e=b(c,g,d[c]),this[c]=e,g[c]=e};k.addMethod=function(a,b){if("string"!=typeof a||"function"!=typeof b||2!==arguments.length)throw"addMethod: Wrong arguments.";if(d[a]||k[a])throw'The method "'+a+'" already exists.';return d[a]=b,g[a]=Object.create(null),h[a]=Object.create(null),this},k.hasMethod=function(a){return!(!d[a]&&!k[a])},k.attach=function(a,b,c,d){if("string"!=typeof a||"string"!=typeof b||"function"!=typeof c||arguments.length<3||arguments.length>4)throw"attach: Wrong arguments.";var e;if("constructor"===a)e=f;else if(d){if(!h[a])throw'The method "'+a+'" does not exist.';e=h[a]}else{if(!g[a])throw'The method "'+a+'" does not exist.';e=g[a]}if(e[b])throw'A function "'+b+'" is already attached to the method "'+a+'".';return e[b]=c,this},k.attachBefore=function(a,b,c){return this.attach(a,b,c,!0)},k.addIndex=function(a,b){if("string"!=typeof a||Object(b)!==b||2!==arguments.length)throw"addIndex: Wrong arguments.";if(e[a])throw'The index "'+a+'" already exists.';var c;e[a]=b;for(c in b){if("function"!=typeof b[c])throw"The bindings must be functions.";k.attach(c,a,b[c])}return this},k.addMethod("addNode",function(a){if(Object(a)!==a||1!==arguments.length)throw"addNode: Wrong arguments.";if("string"!=typeof a.id&&"number"!=typeof a.id)throw"The node must have a string or number id.";if(this.nodesIndex[a.id])throw'The node "'+a.id+'" already exists.';var b,c=a.id,d=Object.create(null);if(this.settings("clone"))for(b in a)"id"!==b&&(d[b]=a[b]);else d=a;return this.settings("immutable")?Object.defineProperty(d,"id",{value:c,enumerable:!0}):d.id=c,this.inNeighborsIndex[c]=Object.create(null),this.outNeighborsIndex[c]=Object.create(null),this.allNeighborsIndex[c]=Object.create(null),this.inNeighborsCount[c]=0,this.outNeighborsCount[c]=0,this.allNeighborsCount[c]=0,this.nodesArray.push(d),this.nodesIndex[d.id]=d,this}),k.addMethod("addEdge",function(a){if(Object(a)!==a||1!==arguments.length)throw"addEdge: Wrong arguments.";if("string"!=typeof a.id&&"number"!=typeof a.id)throw"The edge must have a string or number id.";if("string"!=typeof a.source&&"number"!=typeof a.source||!this.nodesIndex[a.source])throw"The edge source must have an existing node id.";if("string"!=typeof a.target&&"number"!=typeof a.target||!this.nodesIndex[a.target])throw"The edge target must have an existing node id.";if(this.edgesIndex[a.id])throw'The edge "'+a.id+'" already exists.';var b,c=Object.create(null);if(this.settings("clone"))for(b in a)"id"!==b&&"source"!==b&&"target"!==b&&(c[b]=a[b]);else c=a;return this.settings("immutable")?(Object.defineProperty(c,"id",{value:a.id,enumerable:!0}),Object.defineProperty(c,"source",{value:a.source,enumerable:!0}),Object.defineProperty(c,"target",{value:a.target,enumerable:!0})):(c.id=a.id,c.source=a.source,c.target=a.target),this.edgesArray.push(c),this.edgesIndex[c.id]=c,this.inNeighborsIndex[c.target][c.source]||(this.inNeighborsIndex[c.target][c.source]=Object.create(null)),this.inNeighborsIndex[c.target][c.source][c.id]=c,this.outNeighborsIndex[c.source][c.target]||(this.outNeighborsIndex[c.source][c.target]=Object.create(null)),this.outNeighborsIndex[c.source][c.target][c.id]=c,this.allNeighborsIndex[c.source][c.target]||(this.allNeighborsIndex[c.source][c.target]=Object.create(null)),this.allNeighborsIndex[c.source][c.target][c.id]=c,c.target!==c.source&&(this.allNeighborsIndex[c.target][c.source]||(this.allNeighborsIndex[c.target][c.source]=Object.create(null)),this.allNeighborsIndex[c.target][c.source][c.id]=c),this.inNeighborsCount[c.target]++,this.outNeighborsCount[c.source]++,this.allNeighborsCount[c.target]++,this.allNeighborsCount[c.source]++,this}),k.addMethod("dropNode",function(a){if("string"!=typeof a&&"number"!=typeof a||1!==arguments.length)throw"dropNode: Wrong arguments.";if(!this.nodesIndex[a])throw'The node "'+a+'" does not exist.';var b,c,d;for(delete this.nodesIndex[a],b=0,d=this.nodesArray.length;d>b;b++)if(this.nodesArray[b].id===a){this.nodesArray.splice(b,1);break}for(b=this.edgesArray.length-1;b>=0;b--)(this.edgesArray[b].source===a||this.edgesArray[b].target===a)&&this.dropEdge(this.edgesArray[b].id);delete this.inNeighborsIndex[a],delete this.outNeighborsIndex[a],delete this.allNeighborsIndex[a],delete this.inNeighborsCount[a],delete this.outNeighborsCount[a],delete this.allNeighborsCount[a];for(c in this.nodesIndex)delete this.inNeighborsIndex[c][a],delete this.outNeighborsIndex[c][a],delete this.allNeighborsIndex[c][a];return this}),k.addMethod("dropEdge",function(a){if("string"!=typeof a&&"number"!=typeof a||1!==arguments.length)throw"dropEdge: Wrong arguments.";if(!this.edgesIndex[a])throw'The edge "'+a+'" does not exist.';var b,c,d;for(d=this.edgesIndex[a],delete this.edgesIndex[a],b=0,c=this.edgesArray.length;c>b;b++)if(this.edgesArray[b].id===a){this.edgesArray.splice(b,1);break}return delete this.inNeighborsIndex[d.target][d.source][d.id],Object.keys(this.inNeighborsIndex[d.target][d.source]).length||delete this.inNeighborsIndex[d.target][d.source],delete this.outNeighborsIndex[d.source][d.target][d.id],Object.keys(this.outNeighborsIndex[d.source][d.target]).length||delete this.outNeighborsIndex[d.source][d.target],delete this.allNeighborsIndex[d.source][d.target][d.id],Object.keys(this.allNeighborsIndex[d.source][d.target]).length||delete this.allNeighborsIndex[d.source][d.target],d.target!==d.source&&(delete this.allNeighborsIndex[d.target][d.source][d.id],Object.keys(this.allNeighborsIndex[d.target][d.source]).length||delete this.allNeighborsIndex[d.target][d.source]),this.inNeighborsCount[d.target]--,this.outNeighborsCount[d.source]--,this.allNeighborsCount[d.source]--,this.allNeighborsCount[d.target]--,this}),k.addMethod("kill",function(){this.nodesArray.length=0,this.edgesArray.length=0,delete this.nodesArray,delete this.edgesArray,delete this.nodesIndex,delete this.edgesIndex,delete this.inNeighborsIndex,delete this.outNeighborsIndex,delete this.allNeighborsIndex,delete this.inNeighborsCount,delete this.outNeighborsCount,delete this.allNeighborsCount}),k.addMethod("clear",function(){return this.nodesArray.length=0,this.edgesArray.length=0,c(this.nodesIndex),c(this.edgesIndex),c(this.nodesIndex),c(this.inNeighborsIndex),c(this.outNeighborsIndex),c(this.allNeighborsIndex),c(this.inNeighborsCount),c(this.outNeighborsCount),c(this.allNeighborsCount),this}),k.addMethod("read",function(a){var b,c,d;for(c=a.nodes||[],b=0,d=c.length;d>b;b++)this.addNode(c[b]);for(c=a.edges||[],b=0,d=c.length;d>b;b++)this.addEdge(c[b]);return this}),k.addMethod("nodes",function(a){if(!arguments.length)return this.nodesArray.slice(0);if(1===arguments.length&&("string"==typeof a||"number"==typeof a))return this.nodesIndex[a];if(1===arguments.length&&"[object Array]"===Object.prototype.toString.call(a)){
-var b,c,d=[];for(b=0,c=a.length;c>b;b++){if("string"!=typeof a[b]&&"number"!=typeof a[b])throw"nodes: Wrong arguments.";d.push(this.nodesIndex[a[b]])}return d}throw"nodes: Wrong arguments."}),k.addMethod("degree",function(a,b){if(b={"in":this.inNeighborsCount,out:this.outNeighborsCount}[b||""]||this.allNeighborsCount,"string"==typeof a||"number"==typeof a)return b[a];if("[object Array]"===Object.prototype.toString.call(a)){var c,d,e=[];for(c=0,d=a.length;d>c;c++){if("string"!=typeof a[c]&&"number"!=typeof a[c])throw"degree: Wrong arguments.";e.push(b[a[c]])}return e}throw"degree: Wrong arguments."}),k.addMethod("edges",function(a){if(!arguments.length)return this.edgesArray.slice(0);if(1===arguments.length&&("string"==typeof a||"number"==typeof a))return this.edgesIndex[a];if(1===arguments.length&&"[object Array]"===Object.prototype.toString.call(a)){var b,c,d=[];for(b=0,c=a.length;c>b;b++){if("string"!=typeof a[b]&&"number"!=typeof a[b])throw"edges: Wrong arguments.";d.push(this.edgesIndex[a[b]])}return d}throw"edges: Wrong arguments."}),"undefined"!=typeof sigma?(sigma.classes=sigma.classes||Object.create(null),sigma.classes.graph=k):"undefined"!=typeof exports?("undefined"!=typeof module&&module.exports&&(exports=module.exports=k),exports.graph=k):this.graph=k}.call(this),function(a){"use strict";if("undefined"==typeof sigma)throw"sigma is not declared";sigma.utils.pkg("sigma.classes"),sigma.classes.camera=function(a,b,c,d){sigma.classes.dispatcher.extend(this),Object.defineProperty(this,"graph",{value:b}),Object.defineProperty(this,"id",{value:a}),Object.defineProperty(this,"readPrefix",{value:"read_cam"+a+":"}),Object.defineProperty(this,"prefix",{value:"cam"+a+":"}),this.x=0,this.y=0,this.ratio=1,this.angle=0,this.isAnimated=!1,this.settings="object"==typeof d&&d?c.embedObject(d):c},sigma.classes.camera.prototype.goTo=function(b){if(!this.settings("enableCamera"))return this;var c,d,e=b||{},f=["x","y","ratio","angle"];for(c=0,d=f.length;d>c;c++)if(e[f[c]]!==a){if("number"!=typeof e[f[c]]||isNaN(e[f[c]]))throw'Value for "'+f[c]+'" is not a number.';this[f[c]]=e[f[c]]}return this.dispatchEvent("coordinatesUpdated"),this},sigma.classes.camera.prototype.applyView=function(b,c,d){d=d||{},c=c!==a?c:this.prefix,b=b!==a?b:this.readPrefix;var e,f,g,h=d.nodes||this.graph.nodes(),i=d.edges||this.graph.edges(),j=Math.cos(this.angle),k=Math.sin(this.angle);for(e=0,f=h.length;f>e;e++)g=h[e],g[c+"x"]=(((g[b+"x"]||0)-this.x)*j+((g[b+"y"]||0)-this.y)*k)/this.ratio+(d.width||0)/2,g[c+"y"]=(((g[b+"y"]||0)-this.y)*j-((g[b+"x"]||0)-this.x)*k)/this.ratio+(d.height||0)/2,g[c+"size"]=(g[b+"size"]||0)/Math.pow(this.ratio,this.settings("nodesPowRatio"));for(e=0,f=i.length;f>e;e++)i[e][c+"size"]=(i[e][b+"size"]||0)/Math.pow(this.ratio,this.settings("edgesPowRatio"));return this},sigma.classes.camera.prototype.graphPosition=function(a,b,c){var d=0,e=0,f=Math.cos(this.angle),g=Math.sin(this.angle);return c||(d=-(this.x*f+this.y*g)/this.ratio,e=-(this.y*f-this.x*g)/this.ratio),{x:(a*f+b*g)/this.ratio+d,y:(b*f-a*g)/this.ratio+e}},sigma.classes.camera.prototype.cameraPosition=function(a,b,c){var d=0,e=0,f=Math.cos(this.angle),g=Math.sin(this.angle);return c||(d=-(this.x*f+this.y*g)/this.ratio,e=-(this.y*f-this.x*g)/this.ratio),{x:((a-d)*f-(b-e)*g)*this.ratio,y:((b-e)*f+(a-d)*g)*this.ratio}},sigma.classes.camera.prototype.getMatrix=function(){var a=sigma.utils.matrices.scale(1/this.ratio),b=sigma.utils.matrices.rotation(this.angle),c=sigma.utils.matrices.translation(-this.x,-this.y),d=sigma.utils.matrices.multiply(c,sigma.utils.matrices.multiply(b,a));return d},sigma.classes.camera.prototype.getRectangle=function(a,b){var c=this.cameraPosition(a,0,!0),d=this.cameraPosition(0,b,!0),e=this.cameraPosition(a/2,b/2,!0),f=this.cameraPosition(a/4,0,!0).x,g=this.cameraPosition(0,b/4,!0).y;return{x1:this.x-e.x-f,y1:this.y-e.y-g,x2:this.x-e.x+f+c.x,y2:this.y-e.y-g+c.y,height:Math.sqrt(Math.pow(d.x,2)+Math.pow(d.y+2*g,2))}}}.call(this),function(a){"use strict";function b(a,b){var c=b.x+b.width/2,d=b.y+b.height/2,e=a.y<d,f=a.x<c;return e?f?0:1:f?2:3}function c(a,b){for(var c=[],d=0;4>d;d++)a.x2>=b[d][0].x&&a.x1<=b[d][1].x&&a.y1+a.height>=b[d][0].y&&a.y1<=b[d][2].y&&c.push(d);return c}function d(a,b){for(var c=[],d=0;4>d;d++)j.collision(a,b[d])&&c.push(d);return c}function e(a,b){var c,d,e=b.level+1,f=Math.round(b.bounds.width/2),g=Math.round(b.bounds.height/2),h=Math.round(b.bounds.x),j=Math.round(b.bounds.y);switch(a){case 0:c=h,d=j;break;case 1:c=h+f,d=j;break;case 2:c=h,d=j+g;break;case 3:c=h+f,d=j+g}return i({x:c,y:d,width:f,height:g},e,b.maxElements,b.maxLevel)}function f(b,d,g){if(g.level<g.maxLevel)for(var h=c(d,g.corners),i=0,j=h.length;j>i;i++)g.nodes[h[i]]===a&&(g.nodes[h[i]]=e(h[i],g)),f(b,d,g.nodes[h[i]]);else g.elements.push(b)}function g(c,d){if(d.level<d.maxLevel){var e=b(c,d.bounds);return d.nodes[e]!==a?g(c,d.nodes[e]):[]}return d.elements}function h(b,c,d,e){if(e=e||{},c.level<c.maxLevel)for(var f=d(b,c.corners),g=0,i=f.length;i>g;g++)c.nodes[f[g]]!==a&&h(b,c.nodes[f[g]],d,e);else for(var j=0,k=c.elements.length;k>j;j++)e[c.elements[j].id]===a&&(e[c.elements[j].id]=c.elements[j]);return e}function i(a,b,c,d){return{level:b||0,bounds:a,corners:j.splitSquare(a),maxElements:c||20,maxLevel:d||4,elements:[],nodes:[]}}var j={pointToSquare:function(a){return{x1:a.x-a.size,y1:a.y-a.size,x2:a.x+a.size,y2:a.y-a.size,height:2*a.size}},isAxisAligned:function(a){return a.x1===a.x2||a.y1===a.y2},axisAlignedTopPoints:function(a){return a.y1===a.y2&&a.x1<a.x2?a:a.x1===a.x2&&a.y2>a.y1?{x1:a.x1-a.height,y1:a.y1,x2:a.x1,y2:a.y1,height:a.height}:a.x1===a.x2&&a.y2<a.y1?{x1:a.x1,y1:a.y2,x2:a.x2+a.height,y2:a.y2,height:a.height}:{x1:a.x2,y1:a.y1-a.height,x2:a.x1,y2:a.y1-a.height,height:a.height}},lowerLeftCoor:function(a){var b=Math.sqrt(Math.pow(a.x2-a.x1,2)+Math.pow(a.y2-a.y1,2));return{x:a.x1-(a.y2-a.y1)*a.height/b,y:a.y1+(a.x2-a.x1)*a.height/b}},lowerRightCoor:function(a,b){return{x:b.x-a.x1+a.x2,y:b.y-a.y1+a.y2}},rectangleCorners:function(a){var b=this.lowerLeftCoor(a),c=this.lowerRightCoor(a,b);return[{x:a.x1,y:a.y1},{x:a.x2,y:a.y2},{x:b.x,y:b.y},{x:c.x,y:c.y}]},splitSquare:function(a){return[[{x:a.x,y:a.y},{x:a.x+a.width/2,y:a.y},{x:a.x,y:a.y+a.height/2},{x:a.x+a.width/2,y:a.y+a.height/2}],[{x:a.x+a.width/2,y:a.y},{x:a.x+a.width,y:a.y},{x:a.x+a.width/2,y:a.y+a.height/2},{x:a.x+a.width,y:a.y+a.height/2}],[{x:a.x,y:a.y+a.height/2},{x:a.x+a.width/2,y:a.y+a.height/2},{x:a.x,y:a.y+a.height},{x:a.x+a.width/2,y:a.y+a.height}],[{x:a.x+a.width/2,y:a.y+a.height/2},{x:a.x+a.width,y:a.y+a.height/2},{x:a.x+a.width/2,y:a.y+a.height},{x:a.x+a.width,y:a.y+a.height}]]},axis:function(a,b){return[{x:a[1].x-a[0].x,y:a[1].y-a[0].y},{x:a[1].x-a[3].x,y:a[1].y-a[3].y},{x:b[0].x-b[2].x,y:b[0].y-b[2].y},{x:b[0].x-b[1].x,y:b[0].y-b[1].y}]},projection:function(a,b){var c=(a.x*b.x+a.y*b.y)/(Math.pow(b.x,2)+Math.pow(b.y,2));return{x:c*b.x,y:c*b.y}},axisCollision:function(a,b,c){for(var d=[],e=[],f=0;4>f;f++){var g=this.projection(b[f],a),h=this.projection(c[f],a);d.push(g.x*a.x+g.y*a.y),e.push(h.x*a.x+h.y*a.y)}var i=Math.max.apply(Math,d),j=Math.max.apply(Math,e),k=Math.min.apply(Math,d),l=Math.min.apply(Math,e);return i>=l&&j>=k},collision:function(a,b){for(var c=this.axis(a,b),d=!0,e=0;4>e;e++)d=d&&this.axisCollision(c[e],a,b);return d}},k=function(){this._geom=j,this._tree=null,this._cache={query:!1,result:!1}};k.prototype.index=function(a,b){if(!b.bounds)throw"sigma.classes.quad.index: bounds information not given.";var c=b.prefix||"";this._tree=i(b.bounds,0,b.maxElements,b.maxLevel);for(var d=0,e=a.length;e>d;d++)f(a[d],j.pointToSquare({x:a[d][c+"x"],y:a[d][c+"y"],size:a[d][c+"size"]}),this._tree);return this._cache={query:!1,result:!1},this._tree},k.prototype.point=function(a,b){return this._tree?g({x:a,y:b},this._tree)||[]:[]},k.prototype.area=function(a){var b,e,f=JSON.stringify(a);if(this._cache.query===f)return this._cache.result;j.isAxisAligned(a)?(b=c,e=j.axisAlignedTopPoints(a)):(b=d,e=j.rectangleCorners(a));var g=this._tree?h(e,this._tree,b):[],i=[];for(var k in g)i.push(g[k]);return this._cache.query=f,this._cache.result=i,i},"undefined"!=typeof this.sigma?(this.sigma.classes=this.sigma.classes||{},this.sigma.classes.quad=k):"undefined"!=typeof exports?("undefined"!=typeof module&&module.exports&&(exports=module.exports=k),exports.quad=k):this.quad=k}.call(this),function(a){"use strict";function b(a,b){var c=b.x+b.width/2,d=b.y+b.height/2,e=a.y<d,f=a.x<c;return e?f?0:1:f?2:3}function c(a,b){for(var c=[],d=0;4>d;d++)a.x2>=b[d][0].x&&a.x1<=b[d][1].x&&a.y1+a.height>=b[d][0].y&&a.y1<=b[d][2].y&&c.push(d);return c}function d(a,b){for(var c=[],d=0;4>d;d++)j.collision(a,b[d])&&c.push(d);return c}function e(a,b){var c,d,e=b.level+1,f=Math.round(b.bounds.width/2),g=Math.round(b.bounds.height/2),h=Math.round(b.bounds.x),j=Math.round(b.bounds.y);switch(a){case 0:c=h,d=j;break;case 1:c=h+f,d=j;break;case 2:c=h,d=j+g;break;case 3:c=h+f,d=j+g}return i({x:c,y:d,width:f,height:g},e,b.maxElements,b.maxLevel)}function f(b,d,g){if(g.level<g.maxLevel)for(var h=c(d,g.corners),i=0,j=h.length;j>i;i++)g.nodes[h[i]]===a&&(g.nodes[h[i]]=e(h[i],g)),f(b,d,g.nodes[h[i]]);else g.elements.push(b)}function g(c,d){if(d.level<d.maxLevel){var e=b(c,d.bounds);return d.nodes[e]!==a?g(c,d.nodes[e]):[]}return d.elements}function h(b,c,d,e){if(e=e||{},c.level<c.maxLevel)for(var f=d(b,c.corners),g=0,i=f.length;i>g;g++)c.nodes[f[g]]!==a&&h(b,c.nodes[f[g]],d,e);else for(var j=0,k=c.elements.length;k>j;j++)e[c.elements[j].id]===a&&(e[c.elements[j].id]=c.elements[j]);return e}function i(a,b,c,d){return{level:b||0,bounds:a,corners:j.splitSquare(a),maxElements:c||40,maxLevel:d||8,elements:[],nodes:[]}}var j={pointToSquare:function(a){return{x1:a.x-a.size,y1:a.y-a.size,x2:a.x+a.size,y2:a.y-a.size,height:2*a.size}},lineToSquare:function(a){return a.y1<a.y2?a.x1<a.x2?{x1:a.x1-a.size,y1:a.y1-a.size,x2:a.x2+a.size,y2:a.y1-a.size,height:a.y2-a.y1+2*a.size}:{x1:a.x2-a.size,y1:a.y1-a.size,x2:a.x1+a.size,y2:a.y1-a.size,height:a.y2-a.y1+2*a.size}:a.x1<a.x2?{x1:a.x1-a.size,y1:a.y2-a.size,x2:a.x2+a.size,y2:a.y2-a.size,height:a.y1-a.y2+2*a.size}:{x1:a.x2-a.size,y1:a.y2-a.size,x2:a.x1+a.size,y2:a.y2-a.size,height:a.y1-a.y2+2*a.size}},quadraticCurveToSquare:function(a,b){var c=sigma.utils.getPointOnQuadraticCurve(.5,a.x1,a.y1,a.x2,a.y2,b.x,b.y),d=Math.min(a.x1,a.x2,c.x),e=Math.max(a.x1,a.x2,c.x),f=Math.min(a.y1,a.y2,c.y),g=Math.max(a.y1,a.y2,c.y);return{x1:d-a.size,y1:f-a.size,x2:e+a.size,y2:f-a.size,height:g-f+2*a.size}},selfLoopToSquare:function(a){var b=sigma.utils.getSelfLoopControlPoints(a.x,a.y,a.size),c=Math.min(a.x,b.x1,b.x2),d=Math.max(a.x,b.x1,b.x2),e=Math.min(a.y,b.y1,b.y2),f=Math.max(a.y,b.y1,b.y2);return{x1:c-a.size,y1:e-a.size,x2:d+a.size,y2:e-a.size,height:f-e+2*a.size}},isAxisAligned:function(a){return a.x1===a.x2||a.y1===a.y2},axisAlignedTopPoints:function(a){return a.y1===a.y2&&a.x1<a.x2?a:a.x1===a.x2&&a.y2>a.y1?{x1:a.x1-a.height,y1:a.y1,x2:a.x1,y2:a.y1,height:a.height}:a.x1===a.x2&&a.y2<a.y1?{x1:a.x1,y1:a.y2,x2:a.x2+a.height,y2:a.y2,height:a.height}:{x1:a.x2,y1:a.y1-a.height,x2:a.x1,y2:a.y1-a.height,height:a.height}},lowerLeftCoor:function(a){var b=Math.sqrt(Math.pow(a.x2-a.x1,2)+Math.pow(a.y2-a.y1,2));return{x:a.x1-(a.y2-a.y1)*a.height/b,y:a.y1+(a.x2-a.x1)*a.height/b}},lowerRightCoor:function(a,b){return{x:b.x-a.x1+a.x2,y:b.y-a.y1+a.y2}},rectangleCorners:function(a){var b=this.lowerLeftCoor(a),c=this.lowerRightCoor(a,b);return[{x:a.x1,y:a.y1},{x:a.x2,y:a.y2},{x:b.x,y:b.y},{x:c.x,y:c.y}]},splitSquare:function(a){return[[{x:a.x,y:a.y},{x:a.x+a.width/2,y:a.y},{x:a.x,y:a.y+a.height/2},{x:a.x+a.width/2,y:a.y+a.height/2}],[{x:a.x+a.width/2,y:a.y},{x:a.x+a.width,y:a.y},{x:a.x+a.width/2,y:a.y+a.height/2},{x:a.x+a.width,y:a.y+a.height/2}],[{x:a.x,y:a.y+a.height/2},{x:a.x+a.width/2,y:a.y+a.height/2},{x:a.x,y:a.y+a.height},{x:a.x+a.width/2,y:a.y+a.height}],[{x:a.x+a.width/2,y:a.y+a.height/2},{x:a.x+a.width,y:a.y+a.height/2},{x:a.x+a.width/2,y:a.y+a.height},{x:a.x+a.width,y:a.y+a.height}]]},axis:function(a,b){return[{x:a[1].x-a[0].x,y:a[1].y-a[0].y},{x:a[1].x-a[3].x,y:a[1].y-a[3].y},{x:b[0].x-b[2].x,y:b[0].y-b[2].y},{x:b[0].x-b[1].x,y:b[0].y-b[1].y}]},projection:function(a,b){var c=(a.x*b.x+a.y*b.y)/(Math.pow(b.x,2)+Math.pow(b.y,2));return{x:c*b.x,y:c*b.y}},axisCollision:function(a,b,c){for(var d=[],e=[],f=0;4>f;f++){var g=this.projection(b[f],a),h=this.projection(c[f],a);d.push(g.x*a.x+g.y*a.y),e.push(h.x*a.x+h.y*a.y)}var i=Math.max.apply(Math,d),j=Math.max.apply(Math,e),k=Math.min.apply(Math,d),l=Math.min.apply(Math,e);return i>=l&&j>=k},collision:function(a,b){for(var c=this.axis(a,b),d=!0,e=0;4>e;e++)d=d&&this.axisCollision(c[e],a,b);return d}},k=function(){this._geom=j,this._tree=null,this._cache={query:!1,result:!1},this._enabled=!0};k.prototype.index=function(a,b){if(!this._enabled)return this._tree;if(!b.bounds)throw"sigma.classes.edgequad.index: bounds information not given.";var c,d,e,g,h,k=b.prefix||"";this._tree=i(b.bounds,0,b.maxElements,b.maxLevel);for(var l=a.edges(),m=0,n=l.length;n>m;m++)d=a.nodes(l[m].source),e=a.nodes(l[m].target),h={x1:d[k+"x"],y1:d[k+"y"],x2:e[k+"x"],y2:e[k+"y"],size:l[m][k+"size"]||0},"curve"===l[m].type||"curvedArrow"===l[m].type?d.id===e.id?(g={x:d[k+"x"],y:d[k+"y"],size:d[k+"size"]||0},f(l[m],j.selfLoopToSquare(g),this._tree)):(c=sigma.utils.getQuadraticControlPoint(h.x1,h.y1,h.x2,h.y2),f(l[m],j.quadraticCurveToSquare(h,c),this._tree)):f(l[m],j.lineToSquare(h),this._tree);return this._cache={query:!1,result:!1},this._tree},k.prototype.point=function(a,b){return this._enabled&&this._tree?g({x:a,y:b},this._tree)||[]:[]},k.prototype.area=function(a){if(!this._enabled)return[];var b,e,f=JSON.stringify(a);if(this._cache.query===f)return this._cache.result;j.isAxisAligned(a)?(b=c,e=j.axisAlignedTopPoints(a)):(b=d,e=j.rectangleCorners(a));var g=this._tree?h(e,this._tree,b):[],i=[];for(var k in g)i.push(g[k]);return this._cache.query=f,this._cache.result=i,i},"undefined"!=typeof this.sigma?(this.sigma.classes=this.sigma.classes||{},this.sigma.classes.edgequad=k):"undefined"!=typeof exports?("undefined"!=typeof module&&module.exports&&(exports=module.exports=k),exports.edgequad=k):this.edgequad=k}.call(this),function(a){"use strict";if("undefined"==typeof sigma)throw"sigma is not declared";sigma.utils.pkg("sigma.captors"),sigma.captors.mouse=function(a,b,c){function d(a){var b,c,d;return y("mouseEnabled")&&v.dispatchEvent("mousemove",{x:sigma.utils.getX(a)-sigma.utils.getWidth(a)/2,y:sigma.utils.getY(a)-sigma.utils.getHeight(a)/2,clientX:a.clientX,clientY:a.clientY,ctrlKey:a.ctrlKey,metaKey:a.metaKey,altKey:a.altKey,shiftKey:a.shiftKey}),y("mouseEnabled")&&q?(r=!0,s=!0,u&&clearTimeout(u),u=setTimeout(function(){r=!1},y("dragTimeout")),sigma.misc.animation.killAll(x),x.isMoving=!0,d=x.cameraPosition(sigma.utils.getX(a)-o,sigma.utils.getY(a)-p,!0),b=k-d.x,c=l-d.y,(b!==x.x||c!==x.y)&&(m=x.x,n=x.y,x.goTo({x:b,y:c})),a.preventDefault?a.preventDefault():a.returnValue=!1,a.stopPropagation(),!1):void 0}function e(a){if(y("mouseEnabled")&&q){q=!1,u&&clearTimeout(u),x.isMoving=!1;var b=sigma.utils.getX(a),c=sigma.utils.getY(a);r?(sigma.misc.animation.killAll(x),sigma.misc.animation.camera(x,{x:x.x+y("mouseInertiaRatio")*(x.x-m),y:x.y+y("mouseInertiaRatio")*(x.y-n)},{easing:"quadraticOut",duration:y("mouseInertiaDuration")})):(o!==b||p!==c)&&x.goTo({x:x.x,y:x.y}),v.dispatchEvent("mouseup",{x:b-sigma.utils.getWidth(a)/2,y:c-sigma.utils.getHeight(a)/2,clientX:a.clientX,clientY:a.clientY,ctrlKey:a.ctrlKey,metaKey:a.metaKey,altKey:a.altKey,shiftKey:a.shiftKey}),r=!1}}function f(a){if(y("mouseEnabled"))switch(k=x.x,l=x.y,m=x.x,n=x.y,o=sigma.utils.getX(a),p=sigma.utils.getY(a),s=!1,t=(new Date).getTime(),a.which){case 2:break;case 3:v.dispatchEvent("rightclick",{x:o-sigma.utils.getWidth(a)/2,y:p-sigma.utils.getHeight(a)/2,clientX:a.clientX,clientY:a.clientY,ctrlKey:a.ctrlKey,metaKey:a.metaKey,altKey:a.altKey,shiftKey:a.shiftKey});break;default:q=!0,v.dispatchEvent("mousedown",{x:o-sigma.utils.getWidth(a)/2,y:p-sigma.utils.getHeight(a)/2,clientX:a.clientX,clientY:a.clientY,ctrlKey:a.ctrlKey,metaKey:a.metaKey,altKey:a.altKey,shiftKey:a.shiftKey})}}function g(a){y("mouseEnabled")&&v.dispatchEvent("mouseout")}function h(a){return y("mouseEnabled")&&v.dispatchEvent("click",{x:sigma.utils.getX(a)-sigma.utils.getWidth(a)/2,y:sigma.utils.getY(a)-sigma.utils.getHeight(a)/2,clientX:a.clientX,clientY:a.clientY,ctrlKey:a.ctrlKey,metaKey:a.metaKey,altKey:a.altKey,shiftKey:a.shiftKey,isDragging:(new Date).getTime()-t>100&&s}),a.preventDefault?a.preventDefault():a.returnValue=!1,a.stopPropagation(),!1}function i(a){var b,c,d;return y("mouseEnabled")?(c=1/y("doubleClickZoomingRatio"),v.dispatchEvent("doubleclick",{x:o-sigma.utils.getWidth(a)/2,y:p-sigma.utils.getHeight(a)/2,clientX:a.clientX,clientY:a.clientY,ctrlKey:a.ctrlKey,metaKey:a.metaKey,altKey:a.altKey,shiftKey:a.shiftKey}),y("doubleClickEnabled")&&(b=x.cameraPosition(sigma.utils.getX(a)-sigma.utils.getWidth(a)/2,sigma.utils.getY(a)-sigma.utils.getHeight(a)/2,!0),d={duration:y("doubleClickZoomDuration")},sigma.utils.zoomTo(x,b.x,b.y,c,d)),a.preventDefault?a.preventDefault():a.returnValue=!1,a.stopPropagation(),!1):void 0}function j(a){var b,c,d;return y("mouseEnabled")&&y("mouseWheelEnabled")?(c=sigma.utils.getDelta(a)>0?1/y("zoomingRatio"):y("zoomingRatio"),b=x.cameraPosition(sigma.utils.getX(a)-sigma.utils.getWidth(a)/2,sigma.utils.getY(a)-sigma.utils.getHeight(a)/2,!0),d={duration:y("mouseZoomDuration")},sigma.utils.zoomTo(x,b.x,b.y,c,d),a.preventDefault?a.preventDefault():a.returnValue=!1,a.stopPropagation(),!1):void 0}var k,l,m,n,o,p,q,r,s,t,u,v=this,w=a,x=b,y=c;sigma.classes.dispatcher.extend(this),sigma.utils.doubleClick(w,"click",i),w.addEventListener("DOMMouseScroll",j,!1),w.addEventListener("mousewheel",j,!1),w.addEventListener("mousemove",d,!1),w.addEventListener("mousedown",f,!1),w.addEventListener("click",h,!1),w.addEventListener("mouseout",g,!1),document.addEventListener("mouseup",e,!1),this.kill=function(){sigma.utils.unbindDoubleClick(w,"click"),w.removeEventListener("DOMMouseScroll",j),w.removeEventListener("mousewheel",j),w.removeEventListener("mousemove",d),w.removeEventListener("mousedown",f),w.removeEventListener("click",h),w.removeEventListener("mouseout",g),document.removeEventListener("mouseup",e)}}}.call(this),function(a){"use strict";if("undefined"==typeof sigma)throw"sigma is not declared";sigma.utils.pkg("sigma.captors"),sigma.captors.touch=function(a,b,c){function d(a){var b=sigma.utils.getOffset(B);return{x:a.pageX-b.left,y:a.pageY-b.top}}function e(a){if(D("touchEnabled")){var b,c,e,f,g,h;switch(E=a.touches,E.length){case 1:C.isMoving=!0,w=1,i=C.x,j=C.y,m=C.x,n=C.y,g=d(E[0]),q=g.x,r=g.y;break;case 2:return C.isMoving=!0,w=2,g=d(E[0]),h=d(E[1]),b=g.x,e=g.y,c=h.x,f=h.y,m=C.x,n=C.y,k=C.angle,l=C.ratio,i=C.x,j=C.y,q=b,r=e,s=c,t=f,u=Math.atan2(t-r,s-q),v=Math.sqrt(Math.pow(t-r,2)+Math.pow(s-q,2)),a.preventDefault(),!1}}}function f(a){if(D("touchEnabled")){E=a.touches;var b=D("touchInertiaRatio");switch(z&&(x=!1,clearTimeout(z)),w){case 2:if(1===a.touches.length){e(a),a.preventDefault();break}case 1:C.isMoving=!1,A.dispatchEvent("stopDrag"),x&&(y=!1,sigma.misc.animation.camera(C,{x:C.x+b*(C.x-m),y:C.y+b*(C.y-n)},{easing:"quadraticOut",duration:D("touchInertiaDuration")})),x=!1,w=0}}}function g(a){if(!y&&D("touchEnabled")){var b,c,e,f,g,h,B,F,G,H,I,J,K,L,M,N,O;switch(E=a.touches,x=!0,z&&clearTimeout(z),z=setTimeout(function(){x=!1},D("dragTimeout")),w){case 1:F=d(E[0]),b=F.x,e=F.y,H=C.cameraPosition(b-q,e-r,!0),L=i-H.x,M=j-H.y,(L!==C.x||M!==C.y)&&(m=C.x,n=C.y,C.goTo({x:L,y:M}),A.dispatchEvent("mousemove",{x:F.x-sigma.utils.getWidth(a)/2,y:F.y-sigma.utils.getHeight(a)/2,clientX:a.clientX,clientY:a.clientY,ctrlKey:a.ctrlKey,metaKey:a.metaKey,altKey:a.altKey,shiftKey:a.shiftKey}),A.dispatchEvent("drag"));break;case 2:F=d(E[0]),G=d(E[1]),b=F.x,e=F.y,c=G.x,f=G.y,I=C.cameraPosition((q+s)/2-sigma.utils.getWidth(a)/2,(r+t)/2-sigma.utils.getHeight(a)/2,!0),B=C.cameraPosition((b+c)/2-sigma.utils.getWidth(a)/2,(e+f)/2-sigma.utils.getHeight(a)/2,!0),J=Math.atan2(f-e,c-b)-u,K=Math.sqrt(Math.pow(f-e,2)+Math.pow(c-b,2))/v,b=I.x,e=I.y,N=l/K,b*=K,e*=K,O=k-J,g=Math.cos(-J),h=Math.sin(-J),c=b*g+e*h,f=e*g-b*h,b=c,e=f,L=b-B.x+i,M=e-B.y+j,(N!==C.ratio||O!==C.angle||L!==C.x||M!==C.y)&&(m=C.x,n=C.y,o=C.angle,p=C.ratio,C.goTo({x:L,y:M,angle:O,ratio:N}),A.dispatchEvent("drag"))}return a.preventDefault(),!1}}function h(a){var b,c,e;return a.touches&&1===a.touches.length&&D("touchEnabled")?(y=!0,c=1/D("doubleClickZoomingRatio"),b=d(a.touches[0]),A.dispatchEvent("doubleclick",{x:b.x-sigma.utils.getWidth(a)/2,y:b.y-sigma.utils.getHeight(a)/2,clientX:a.clientX,clientY:a.clientY,ctrlKey:a.ctrlKey,metaKey:a.metaKey,altKey:a.altKey,shiftKey:a.shiftKey}),D("doubleClickEnabled")&&(b=C.cameraPosition(b.x-sigma.utils.getWidth(a)/2,b.y-sigma.utils.getHeight(a)/2,!0),e={duration:D("doubleClickZoomDuration"),onComplete:function(){y=!1}},sigma.utils.zoomTo(C,b.x,b.y,c,e)),a.preventDefault?a.preventDefault():a.returnValue=!1,a.stopPropagation(),!1):void 0}var i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,A=this,B=a,C=b,D=c,E=[];sigma.classes.dispatcher.extend(this),sigma.utils.doubleClick(B,"touchstart",h),B.addEventListener("touchstart",e,!1),B.addEventListener("touchend",f,!1),B.addEventListener("touchcancel",f,!1),B.addEventListener("touchleave",f,!1),B.addEventListener("touchmove",g,!1),this.kill=function(){sigma.utils.unbindDoubleClick(B,"touchstart"),B.addEventListener("touchstart",e),B.addEventListener("touchend",f),B.addEventListener("touchcancel",f),B.addEventListener("touchleave",f),B.addEventListener("touchmove",g)}}}.call(this),function(a){"use strict";if("undefined"==typeof sigma)throw"sigma is not declared";if("undefined"==typeof conrad)throw"conrad is not declared";sigma.utils.pkg("sigma.renderers"),sigma.renderers.canvas=function(a,b,c,d){if("object"!=typeof d)throw"sigma.renderers.canvas: Wrong arguments.";if(!(d.container instanceof HTMLElement))throw"Container not found.";var e,f,g,h;for(sigma.classes.dispatcher.extend(this),Object.defineProperty(this,"conradId",{value:sigma.utils.id()}),this.graph=a,this.camera=b,this.contexts={},this.domElements={},this.options=d,this.container=this.options.container,this.settings="object"==typeof d.settings&&d.settings?c.embedObjects(d.settings):c,this.nodesOnScreen=[],this.edgesOnScreen=[],this.jobs={},this.options.prefix="renderer"+this.conradId+":",this.settings("batchEdgesDrawing")?(this.initDOM("canvas","edges"),this.initDOM("canvas","scene"),this.contexts.nodes=this.contexts.scene,this.contexts.labels=this.contexts.scene):(this.initDOM("canvas","scene"),this.contexts.edges=this.contexts.scene,this.contexts.nodes=this.contexts.scene,this.contexts.labels=this.contexts.scene),this.initDOM("canvas","mouse"),this.contexts.hover=this.contexts.mouse,this.captors=[],g=this.options.captors||[sigma.captors.mouse,sigma.captors.touch],e=0,f=g.length;f>e;e++)h="function"==typeof g[e]?g[e]:sigma.captors[g[e]],this.captors.push(new h(this.domElements.mouse,this.camera,this.settings));sigma.misc.bindEvents.call(this,this.options.prefix),sigma.misc.drawHovers.call(this,this.options.prefix),this.resize(!1)},sigma.renderers.canvas.prototype.render=function(b){b=b||{};var c,d,e,f,g,h,i,j,k,l,m,n,o,p={},q=this.graph,r=this.graph.nodes,s=(this.options.prefix||"",this.settings(b,"drawEdges")),t=this.settings(b,"drawNodes"),u=this.settings(b,"drawLabels"),v=this.settings(b,"drawEdgeLabels"),w=this.settings.embedObjects(b,{prefix:this.options.prefix});this.resize(!1),this.settings(b,"hideEdgesOnMove")&&(this.camera.isAnimated||this.camera.isMoving)&&(s=!1),this.camera.applyView(a,this.options.prefix,{width:this.width,height:this.height}),this.clear();for(e in this.jobs)conrad.hasJob(e)&&conrad.killJob(e);for(this.edgesOnScreen=[],this.nodesOnScreen=this.camera.quadtree.area(this.camera.getRectangle(this.width,this.height)),c=this.nodesOnScreen,d=0,f=c.length;f>d;d++)p[c[d].id]=c[d];if(s){for(c=q.edges(),d=0,f=c.length;f>d;d++)g=c[d],!p[g.source]&&!p[g.target]||g.hidden||r(g.source).hidden||r(g.target).hidden||this.edgesOnScreen.push(g);if(this.settings(b,"batchEdgesDrawing"))h="edges_"+this.conradId,n=w("canvasEdgesBatchSize"),l=this.edgesOnScreen,f=l.length,k=0,i=Math.min(l.length,k+n),j=function(){for(o=this.contexts.edges.globalCompositeOperation,this.contexts.edges.globalCompositeOperation="destination-over",m=sigma.canvas.edges,d=k;i>d;d++)g=l[d],(m[g.type||this.settings(b,"defaultEdgeType")]||m.def)(g,q.nodes(g.source),q.nodes(g.target),this.contexts.edges,w);if(v)for(m=sigma.canvas.edges.labels,d=k;i>d;d++)g=l[d],g.hidden||(m[g.type||this.settings(b,"defaultEdgeType")]||m.def)(g,q.nodes(g.source),q.nodes(g.target),this.contexts.labels,w);return this.contexts.edges.globalCompositeOperation=o,i===l.length?(delete this.jobs[h],!1):(k=i+1,i=Math.min(l.length,k+n),!0)},this.jobs[h]=j,conrad.addJob(h,j.bind(this));else{for(m=sigma.canvas.edges,c=this.edgesOnScreen,d=0,f=c.length;f>d;d++)g=c[d],(m[g.type||this.settings(b,"defaultEdgeType")]||m.def)(g,q.nodes(g.source),q.nodes(g.target),this.contexts.edges,w);if(v)for(m=sigma.canvas.edges.labels,c=this.edgesOnScreen,d=0,f=c.length;f>d;d++)c[d].hidden||(m[c[d].type||this.settings(b,"defaultEdgeType")]||m.def)(c[d],q.nodes(c[d].source),q.nodes(c[d].target),this.contexts.labels,w)}}if(t)for(m=sigma.canvas.nodes,c=this.nodesOnScreen,d=0,f=c.length;f>d;d++)c[d].hidden||(m[c[d].type||this.settings(b,"defaultNodeType")]||m.def)(c[d],this.contexts.nodes,w);if(u)for(m=sigma.canvas.labels,c=this.nodesOnScreen,d=0,f=c.length;f>d;d++)c[d].hidden||(m[c[d].type||this.settings(b,"defaultNodeType")]||m.def)(c[d],this.contexts.labels,w);return this.dispatchEvent("render"),this},sigma.renderers.canvas.prototype.initDOM=function(a,b){var c=document.createElement(a);c.style.position="absolute",c.setAttribute("class","sigma-"+b),this.domElements[b]=c,this.container.appendChild(c),"canvas"===a.toLowerCase()&&(this.contexts[b]=c.getContext("2d"))},sigma.renderers.canvas.prototype.resize=function(b,c){var d,e=this.width,f=this.height,g=1;if(b!==a&&c!==a?(this.width=b,this.height=c):(this.width=this.container.offsetWidth,this.height=this.container.offsetHeight,b=this.width,c=this.height),e!==this.width||f!==this.height)for(d in this.domElements)this.domElements[d].style.width=b+"px",this.domElements[d].style.height=c+"px","canvas"===this.domElements[d].tagName.toLowerCase()&&(this.domElements[d].setAttribute("width",b*g+"px"),this.domElements[d].setAttribute("height",c*g+"px"),1!==g&&this.contexts[d].scale(g,g));return this},sigma.renderers.canvas.prototype.clear=function(){var a;for(a in this.domElements)"CANVAS"===this.domElements[a].tagName&&(this.domElements[a].width=this.domElements[a].width);return this},sigma.renderers.canvas.prototype.kill=function(){for(var a,b;b=this.captors.pop();)b.kill();delete this.captors;for(a in this.domElements)this.domElements[a].parentNode.removeChild(this.domElements[a]),delete this.domElements[a],delete this.contexts[a];delete this.domElements,delete this.contexts},sigma.utils.pkg("sigma.canvas.nodes"),sigma.utils.pkg("sigma.canvas.edges"),sigma.utils.pkg("sigma.canvas.labels")}.call(this),function(a){"use strict";if("undefined"==typeof sigma)throw"sigma is not declared";sigma.utils.pkg("sigma.renderers"),sigma.renderers.webgl=function(a,b,c,d){if("object"!=typeof d)throw"sigma.renderers.webgl: Wrong arguments.";if(!(d.container instanceof HTMLElement))throw"Container not found.";var e,f,g,h;for(sigma.classes.dispatcher.extend(this),this.jobs={},Object.defineProperty(this,"conradId",{value:sigma.utils.id()}),this.graph=a,this.camera=b,this.contexts={},this.domElements={},this.options=d,this.container=this.options.container,this.settings="object"==typeof d.settings&&d.settings?c.embedObjects(d.settings):c,this.options.prefix=this.camera.readPrefix,Object.defineProperty(this,"nodePrograms",{value:{}}),Object.defineProperty(this,"edgePrograms",{value:{}}),Object.defineProperty(this,"nodeFloatArrays",{value:{}}),Object.defineProperty(this,"edgeFloatArrays",{value:{}}),this.settings(d,"batchEdgesDrawing")?(this.initDOM("canvas","edges",!0),this.initDOM("canvas","nodes",!0)):(this.initDOM("canvas","scene",!0),this.contexts.nodes=this.contexts.scene,this.contexts.edges=this.contexts.scene),this.initDOM("canvas","labels"),this.initDOM("canvas","mouse"),this.contexts.hover=this.contexts.mouse,this.captors=[],g=this.options.captors||[sigma.captors.mouse,sigma.captors.touch],e=0,f=g.length;f>e;e++)h="function"==typeof g[e]?g[e]:sigma.captors[g[e]],this.captors.push(new h(this.domElements.mouse,this.camera,this.settings));sigma.misc.bindEvents.call(this,this.camera.prefix),sigma.misc.drawHovers.call(this,this.camera.prefix),this.resize()},sigma.renderers.webgl.prototype.process=function(){var a,b,c,d,e,f,g=this.graph,h=sigma.utils.extend(h,this.options);for(d in this.nodeFloatArrays)delete this.nodeFloatArrays[d];for(d in this.edgeFloatArrays)delete this.edgeFloatArrays[d];for(a=g.edges(),b=0,c=a.length;c>b;b++)e=a[b].type||this.settings(h,"defaultEdgeType"),d=e&&sigma.webgl.edges[e]?e:"def",this.edgeFloatArrays[d]||(this.edgeFloatArrays[d]={edges:[]}),this.edgeFloatArrays[d].edges.push(a[b]);for(a=g.nodes(),b=0,c=a.length;c>b;b++)e=a[b].type||this.settings(h,"defaultNodeType"),d=e&&sigma.webgl.nodes[e]?e:"def",this.nodeFloatArrays[d]||(this.nodeFloatArrays[d]={nodes:[]}),this.nodeFloatArrays[d].nodes.push(a[b]);for(d in this.edgeFloatArrays)for(f=sigma.webgl.edges[d],a=this.edgeFloatArrays[d].edges,b=0,c=a.length;c>b;b++)this.edgeFloatArrays[d].array||(this.edgeFloatArrays[d].array=new Float32Array(a.length*f.POINTS*f.ATTRIBUTES)),a[b].hidden||g.nodes(a[b].source).hidden||g.nodes(a[b].target).hidden||f.addEdge(a[b],g.nodes(a[b].source),g.nodes(a[b].target),this.edgeFloatArrays[d].array,b*f.POINTS*f.ATTRIBUTES,h.prefix,this.settings);for(d in this.nodeFloatArrays)for(f=sigma.webgl.nodes[d],a=this.nodeFloatArrays[d].nodes,b=0,c=a.length;c>b;b++)this.nodeFloatArrays[d].array||(this.nodeFloatArrays[d].array=new Float32Array(a.length*f.POINTS*f.ATTRIBUTES)),a[b].hidden||f.addNode(a[b],this.nodeFloatArrays[d].array,b*f.POINTS*f.ATTRIBUTES,h.prefix,this.settings);return this},sigma.renderers.webgl.prototype.render=function(b){var c,d,e,f,g,h,i=this,j=(this.graph,this.contexts.nodes),k=this.contexts.edges,l=this.camera.getMatrix(),m=sigma.utils.extend(b,this.options),n=this.settings(m,"drawLabels"),o=this.settings(m,"drawEdges"),p=this.settings(m,"drawNodes");this.resize(!1),this.settings(m,"hideEdgesOnMove")&&(this.camera.isAnimated||this.camera.isMoving)&&(o=!1),this.clear(),l=sigma.utils.matrices.multiply(l,sigma.utils.matrices.translation(this.width/2,this.height/2));for(f in this.jobs)conrad.hasJob(f)&&conrad.killJob(f);if(o)if(this.settings(m,"batchEdgesDrawing"))(function(){var a,b,c,d,e,f,g,h,i;c="edges_"+this.conradId,i=this.settings(m,"webglEdgesBatchSize"),a=Object.keys(this.edgeFloatArrays),a.length&&(b=0,h=sigma.webgl.edges[a[b]],e=this.edgeFloatArrays[a[b]].array,g=0,f=Math.min(g+i*h.POINTS,e.length/h.ATTRIBUTES),d=function(){return this.edgePrograms[a[b]]||(this.edgePrograms[a[b]]=h.initProgram(k)),f>g&&(k.useProgram(this.edgePrograms[a[b]]),h.render(k,this.edgePrograms[a[b]],e,{settings:this.settings,matrix:l,width:this.width,height:this.height,ratio:this.camera.ratio,scalingRatio:this.settings(m,"webglOversamplingRatio"),start:g,count:f-g})),f>=e.length/h.ATTRIBUTES&&b===a.length-1?(delete this.jobs[c],!1):(f>=e.length/h.ATTRIBUTES?(b++,e=this.edgeFloatArrays[a[b]].array,h=sigma.webgl.edges[a[b]],g=0,f=Math.min(g+i*h.POINTS,e.length/h.ATTRIBUTES)):(g=f,f=Math.min(g+i*h.POINTS,e.length/h.ATTRIBUTES)),!0)},this.jobs[c]=d,conrad.addJob(c,d.bind(this)))}).call(this);else for(f in this.edgeFloatArrays)h=sigma.webgl.edges[f],this.edgePrograms[f]||(this.edgePrograms[f]=h.initProgram(k)),this.edgeFloatArrays[f]&&(k.useProgram(this.edgePrograms[f]),h.render(k,this.edgePrograms[f],this.edgeFloatArrays[f].array,{
-settings:this.settings,matrix:l,width:this.width,height:this.height,ratio:this.camera.ratio,scalingRatio:this.settings(m,"webglOversamplingRatio")}));if(p){j.blendFunc(j.SRC_ALPHA,j.ONE_MINUS_SRC_ALPHA),j.enable(j.BLEND);for(f in this.nodeFloatArrays)h=sigma.webgl.nodes[f],this.nodePrograms[f]||(this.nodePrograms[f]=h.initProgram(j)),this.nodeFloatArrays[f]&&(j.useProgram(this.nodePrograms[f]),h.render(j,this.nodePrograms[f],this.nodeFloatArrays[f].array,{settings:this.settings,matrix:l,width:this.width,height:this.height,ratio:this.camera.ratio,scalingRatio:this.settings(m,"webglOversamplingRatio")}))}if(n)for(c=this.camera.quadtree.area(this.camera.getRectangle(this.width,this.height)),this.camera.applyView(a,a,{nodes:c,edges:[],width:this.width,height:this.height}),g=function(a){return i.settings({prefix:i.camera.prefix},a)},d=0,e=c.length;e>d;d++)c[d].hidden||(sigma.canvas.labels[c[d].type||this.settings(m,"defaultNodeType")]||sigma.canvas.labels.def)(c[d],this.contexts.labels,g);return this.dispatchEvent("render"),this},sigma.renderers.webgl.prototype.initDOM=function(a,b,c){var d=document.createElement(a),e=this;d.style.position="absolute",d.setAttribute("class","sigma-"+b),this.domElements[b]=d,this.container.appendChild(d),"canvas"===a.toLowerCase()&&(this.contexts[b]=d.getContext(c?"experimental-webgl":"2d",{preserveDrawingBuffer:!0}),c&&(d.addEventListener("webglcontextlost",function(a){a.preventDefault()},!1),d.addEventListener("webglcontextrestored",function(a){e.render()},!1)))},sigma.renderers.webgl.prototype.resize=function(b,c){var d,e=this.width,f=this.height;if(b!==a&&c!==a?(this.width=b,this.height=c):(this.width=this.container.offsetWidth,this.height=this.container.offsetHeight,b=this.width,c=this.height),e!==this.width||f!==this.height)for(d in this.domElements)this.domElements[d].style.width=b+"px",this.domElements[d].style.height=c+"px","canvas"===this.domElements[d].tagName.toLowerCase()&&(this.contexts[d]&&this.contexts[d].scale?(this.domElements[d].setAttribute("width",b+"px"),this.domElements[d].setAttribute("height",c+"px")):(this.domElements[d].setAttribute("width",b*this.settings("webglOversamplingRatio")+"px"),this.domElements[d].setAttribute("height",c*this.settings("webglOversamplingRatio")+"px")));for(d in this.contexts)this.contexts[d]&&this.contexts[d].viewport&&this.contexts[d].viewport(0,0,this.width*this.settings("webglOversamplingRatio"),this.height*this.settings("webglOversamplingRatio"));return this},sigma.renderers.webgl.prototype.clear=function(){var a;for(a in this.domElements)"CANVAS"===this.domElements[a].tagName&&(this.domElements[a].width=this.domElements[a].width);return this.contexts.nodes.clear(this.contexts.nodes.COLOR_BUFFER_BIT),this.contexts.edges.clear(this.contexts.edges.COLOR_BUFFER_BIT),this},sigma.renderers.webgl.prototype.kill=function(){for(var a,b;b=this.captors.pop();)b.kill();delete this.captors;for(a in this.domElements)this.domElements[a].parentNode.removeChild(this.domElements[a]),delete this.domElements[a],delete this.contexts[a];delete this.domElements,delete this.contexts},sigma.utils.pkg("sigma.webgl.nodes"),sigma.utils.pkg("sigma.webgl.edges"),sigma.utils.pkg("sigma.canvas.labels")}.call(this),function(a){"use strict";if("undefined"==typeof sigma)throw"sigma is not declared";if("undefined"==typeof conrad)throw"conrad is not declared";sigma.utils.pkg("sigma.renderers"),sigma.renderers.svg=function(a,b,c,d){if("object"!=typeof d)throw"sigma.renderers.svg: Wrong arguments.";if(!(d.container instanceof HTMLElement))throw"Container not found.";var e,f,g,h,i=this;for(sigma.classes.dispatcher.extend(this),this.graph=a,this.camera=b,this.domElements={graph:null,groups:{},nodes:{},edges:{},labels:{},hovers:{}},this.measurementCanvas=null,this.options=d,this.container=this.options.container,this.settings="object"==typeof d.settings&&d.settings?c.embedObjects(d.settings):c,this.settings("freeStyle",!!this.options.freeStyle),this.settings("xmlns","http://www.w3.org/2000/svg"),this.nodesOnScreen=[],this.edgesOnScreen=[],this.options.prefix="renderer"+sigma.utils.id()+":",this.initDOM("svg"),this.captors=[],g=this.options.captors||[sigma.captors.mouse,sigma.captors.touch],e=0,f=g.length;f>e;e++)h="function"==typeof g[e]?g[e]:sigma.captors[g[e]],this.captors.push(new h(this.domElements.graph,this.camera,this.settings));window.addEventListener("resize",function(){i.resize()}),sigma.misc.bindDOMEvents.call(this,this.domElements.graph),this.bindHovers(this.options.prefix),this.resize(!1)},sigma.renderers.svg.prototype.render=function(b){b=b||{};var c,d,e,f,g,h,i,j,k,l={},m=this.graph,n=this.graph.nodes,o=(this.options.prefix||"",this.settings(b,"drawEdges")),p=this.settings(b,"drawNodes"),q=(this.settings(b,"drawLabels"),this.settings.embedObjects(b,{prefix:this.options.prefix,forceLabels:this.options.forceLabels}));for(this.settings(b,"hideEdgesOnMove")&&(this.camera.isAnimated||this.camera.isMoving)&&(o=!1),this.camera.applyView(a,this.options.prefix,{width:this.width,height:this.height}),this.hideDOMElements(this.domElements.nodes),this.hideDOMElements(this.domElements.edges),this.hideDOMElements(this.domElements.labels),this.edgesOnScreen=[],this.nodesOnScreen=this.camera.quadtree.area(this.camera.getRectangle(this.width,this.height)),c=this.nodesOnScreen,d=0,f=c.length;f>d;d++)l[c[d].id]=c[d];for(c=m.edges(),d=0,f=c.length;f>d;d++)g=c[d],!l[g.source]&&!l[g.target]||g.hidden||n(g.source).hidden||n(g.target).hidden||this.edgesOnScreen.push(g);if(j=sigma.svg.nodes,k=sigma.svg.labels,p)for(c=this.nodesOnScreen,d=0,f=c.length;f>d;d++)c[d].hidden||this.domElements.nodes[c[d].id]||(e=(j[c[d].type]||j.def).create(c[d],q),this.domElements.nodes[c[d].id]=e,this.domElements.groups.nodes.appendChild(e),e=(k[c[d].type]||k.def).create(c[d],q),this.domElements.labels[c[d].id]=e,this.domElements.groups.labels.appendChild(e));if(p)for(c=this.nodesOnScreen,d=0,f=c.length;f>d;d++)c[d].hidden||((j[c[d].type]||j.def).update(c[d],this.domElements.nodes[c[d].id],q),(k[c[d].type]||k.def).update(c[d],this.domElements.labels[c[d].id],q));if(j=sigma.svg.edges,o)for(c=this.edgesOnScreen,d=0,f=c.length;f>d;d++)this.domElements.edges[c[d].id]||(h=n(c[d].source),i=n(c[d].target),e=(j[c[d].type]||j.def).create(c[d],h,i,q),this.domElements.edges[c[d].id]=e,this.domElements.groups.edges.appendChild(e));if(o)for(c=this.edgesOnScreen,d=0,f=c.length;f>d;d++)h=n(c[d].source),i=n(c[d].target),(j[c[d].type]||j.def).update(c[d],this.domElements.edges[c[d].id],h,i,q);return this.dispatchEvent("render"),this},sigma.renderers.svg.prototype.initDOM=function(a){var b,c,d,e=document.createElementNS(this.settings("xmlns"),a),f=this.settings("classPrefix");e.style.position="absolute",e.setAttribute("class",f+"-svg"),e.setAttribute("xmlns",this.settings("xmlns")),e.setAttribute("xmlns:xlink","http://www.w3.org/1999/xlink"),e.setAttribute("version","1.1");var g=document.createElement("canvas");g.setAttribute("class",f+"-measurement-canvas"),this.domElements.graph=this.container.appendChild(e);var h=["edges","nodes","labels","hovers"];for(d=0,c=h.length;c>d;d++)b=document.createElementNS(this.settings("xmlns"),"g"),b.setAttributeNS(null,"id",f+"-group-"+h[d]),b.setAttributeNS(null,"class",f+"-group"),this.domElements.groups[h[d]]=this.domElements.graph.appendChild(b);this.container.appendChild(g),this.measurementCanvas=g.getContext("2d")},sigma.renderers.svg.prototype.hideDOMElements=function(a){var b,c;for(c in a)b=a[c],sigma.svg.utils.hide(b);return this},sigma.renderers.svg.prototype.bindHovers=function(a){function b(b){var c=b.data.node,d=g.settings.embedObjects({prefix:a});if(d("enableHovering")){var h=(f[c.type]||f.def).create(c,g.domElements.nodes[c.id],g.measurementCanvas,d);g.domElements.hovers[c.id]=h,g.domElements.groups.hovers.appendChild(h),e=c}}function c(b){var c=b.data.node,d=g.settings.embedObjects({prefix:a});d("enableHovering")&&(g.domElements.groups.hovers.removeChild(g.domElements.hovers[c.id]),e=null,delete g.domElements.hovers[c.id],g.domElements.groups.nodes.appendChild(g.domElements.nodes[c.id]))}function d(){if(e){var b=g.settings.embedObjects({prefix:a});g.domElements.groups.hovers.removeChild(g.domElements.hovers[e.id]),delete g.domElements.hovers[e.id];var c=(f[e.type]||f.def).create(e,g.domElements.nodes[e.id],g.measurementCanvas,b);g.domElements.hovers[e.id]=c,g.domElements.groups.hovers.appendChild(c)}}var e,f=sigma.svg.hovers,g=this;this.bind("overNode",b),this.bind("outNode",c),this.bind("render",d)},sigma.renderers.svg.prototype.resize=function(b,c){var d=this.width,e=this.height,f=1;return b!==a&&c!==a?(this.width=b,this.height=c):(this.width=this.container.offsetWidth,this.height=this.container.offsetHeight,b=this.width,c=this.height),(d!==this.width||e!==this.height)&&(this.domElements.graph.style.width=b+"px",this.domElements.graph.style.height=c+"px","svg"===this.domElements.graph.tagName.toLowerCase()&&(this.domElements.graph.setAttribute("width",b*f),this.domElements.graph.setAttribute("height",c*f))),this},sigma.utils.pkg("sigma.svg.nodes"),sigma.utils.pkg("sigma.svg.edges"),sigma.utils.pkg("sigma.svg.labels")}.call(this),function(a){"use strict";if("undefined"==typeof sigma)throw"sigma is not declared";sigma.utils.pkg("sigma.renderers");var b,c=!!a.WebGLRenderingContext;if(c){b=document.createElement("canvas");try{c=!(!b.getContext("webgl")&&!b.getContext("experimental-webgl"))}catch(d){c=!1}}sigma.renderers.def=c?sigma.renderers.webgl:sigma.renderers.canvas}(this),function(){"use strict";sigma.utils.pkg("sigma.webgl.nodes"),sigma.webgl.nodes.def={POINTS:3,ATTRIBUTES:5,addNode:function(a,b,c,d,e){var f=sigma.utils.floatColor(a.color||e("defaultNodeColor"));b[c++]=a[d+"x"],b[c++]=a[d+"y"],b[c++]=a[d+"size"],b[c++]=f,b[c++]=0,b[c++]=a[d+"x"],b[c++]=a[d+"y"],b[c++]=a[d+"size"],b[c++]=f,b[c++]=2*Math.PI/3,b[c++]=a[d+"x"],b[c++]=a[d+"y"],b[c++]=a[d+"size"],b[c++]=f,b[c++]=4*Math.PI/3},render:function(a,b,c,d){var e,f=a.getAttribLocation(b,"a_position"),g=a.getAttribLocation(b,"a_size"),h=a.getAttribLocation(b,"a_color"),i=a.getAttribLocation(b,"a_angle"),j=a.getUniformLocation(b,"u_resolution"),k=a.getUniformLocation(b,"u_matrix"),l=a.getUniformLocation(b,"u_ratio"),m=a.getUniformLocation(b,"u_scale");e=a.createBuffer(),a.bindBuffer(a.ARRAY_BUFFER,e),a.bufferData(a.ARRAY_BUFFER,c,a.DYNAMIC_DRAW),a.uniform2f(j,d.width,d.height),a.uniform1f(l,1/Math.pow(d.ratio,d.settings("nodesPowRatio"))),a.uniform1f(m,d.scalingRatio),a.uniformMatrix3fv(k,!1,d.matrix),a.enableVertexAttribArray(f),a.enableVertexAttribArray(g),a.enableVertexAttribArray(h),a.enableVertexAttribArray(i),a.vertexAttribPointer(f,2,a.FLOAT,!1,this.ATTRIBUTES*Float32Array.BYTES_PER_ELEMENT,0),a.vertexAttribPointer(g,1,a.FLOAT,!1,this.ATTRIBUTES*Float32Array.BYTES_PER_ELEMENT,8),a.vertexAttribPointer(h,1,a.FLOAT,!1,this.ATTRIBUTES*Float32Array.BYTES_PER_ELEMENT,12),a.vertexAttribPointer(i,1,a.FLOAT,!1,this.ATTRIBUTES*Float32Array.BYTES_PER_ELEMENT,16),a.drawArrays(a.TRIANGLES,d.start||0,d.count||c.length/this.ATTRIBUTES)},initProgram:function(a){var b,c,d;return b=sigma.utils.loadShader(a,["attribute vec2 a_position;","attribute float a_size;","attribute float a_color;","attribute float a_angle;","uniform vec2 u_resolution;","uniform float u_ratio;","uniform float u_scale;","uniform mat3 u_matrix;","varying vec4 color;","varying vec2 center;","varying float radius;","void main() {","radius = a_size * u_ratio;","vec2 position = (u_matrix * vec3(a_position, 1)).xy;","center = position * u_scale;","center = vec2(center.x, u_scale * u_resolution.y - center.y);","position = position +","2.0 * radius * vec2(cos(a_angle), sin(a_angle));","position = (position / u_resolution * 2.0 - 1.0) * vec2(1, -1);","radius = radius * u_scale;","gl_Position = vec4(position, 0, 1);","float c = a_color;","color.b = mod(c, 256.0); c = floor(c / 256.0);","color.g = mod(c, 256.0); c = floor(c / 256.0);","color.r = mod(c, 256.0); c = floor(c / 256.0); color /= 255.0;","color.a = 1.0;","}"].join("\n"),a.VERTEX_SHADER),c=sigma.utils.loadShader(a,["precision mediump float;","varying vec4 color;","varying vec2 center;","varying float radius;","void main(void) {","vec4 color0 = vec4(0.0, 0.0, 0.0, 0.0);","vec2 m = gl_FragCoord.xy - center;","float diff = radius - sqrt(m.x * m.x + m.y * m.y);","if (diff > 0.0)","gl_FragColor = color;","else","gl_FragColor = color0;","}"].join("\n"),a.FRAGMENT_SHADER),d=sigma.utils.loadProgram(a,[b,c])}}}(),function(){"use strict";sigma.utils.pkg("sigma.webgl.nodes"),sigma.webgl.nodes.fast={POINTS:1,ATTRIBUTES:4,addNode:function(a,b,c,d,e){b[c++]=a[d+"x"],b[c++]=a[d+"y"],b[c++]=a[d+"size"],b[c++]=sigma.utils.floatColor(a.color||e("defaultNodeColor"))},render:function(a,b,c,d){var e,f=a.getAttribLocation(b,"a_position"),g=a.getAttribLocation(b,"a_size"),h=a.getAttribLocation(b,"a_color"),i=a.getUniformLocation(b,"u_resolution"),j=a.getUniformLocation(b,"u_matrix"),k=a.getUniformLocation(b,"u_ratio"),l=a.getUniformLocation(b,"u_scale");e=a.createBuffer(),a.bindBuffer(a.ARRAY_BUFFER,e),a.bufferData(a.ARRAY_BUFFER,c,a.DYNAMIC_DRAW),a.uniform2f(i,d.width,d.height),a.uniform1f(k,1/Math.pow(d.ratio,d.settings("nodesPowRatio"))),a.uniform1f(l,d.scalingRatio),a.uniformMatrix3fv(j,!1,d.matrix),a.enableVertexAttribArray(f),a.enableVertexAttribArray(g),a.enableVertexAttribArray(h),a.vertexAttribPointer(f,2,a.FLOAT,!1,this.ATTRIBUTES*Float32Array.BYTES_PER_ELEMENT,0),a.vertexAttribPointer(g,1,a.FLOAT,!1,this.ATTRIBUTES*Float32Array.BYTES_PER_ELEMENT,8),a.vertexAttribPointer(h,1,a.FLOAT,!1,this.ATTRIBUTES*Float32Array.BYTES_PER_ELEMENT,12),a.drawArrays(a.POINTS,d.start||0,d.count||c.length/this.ATTRIBUTES)},initProgram:function(a){var b,c,d;return b=sigma.utils.loadShader(a,["attribute vec2 a_position;","attribute float a_size;","attribute float a_color;","uniform vec2 u_resolution;","uniform float u_ratio;","uniform float u_scale;","uniform mat3 u_matrix;","varying vec4 color;","void main() {","gl_Position = vec4(","((u_matrix * vec3(a_position, 1)).xy /","u_resolution * 2.0 - 1.0) * vec2(1, -1),","0,","1",");","gl_PointSize = a_size * u_ratio * u_scale * 2.0;","float c = a_color;","color.b = mod(c, 256.0); c = floor(c / 256.0);","color.g = mod(c, 256.0); c = floor(c / 256.0);","color.r = mod(c, 256.0); c = floor(c / 256.0); color /= 255.0;","color.a = 1.0;","}"].join("\n"),a.VERTEX_SHADER),c=sigma.utils.loadShader(a,["precision mediump float;","varying vec4 color;","void main(void) {","gl_FragColor = color;","}"].join("\n"),a.FRAGMENT_SHADER),d=sigma.utils.loadProgram(a,[b,c])}}}(),function(){"use strict";sigma.utils.pkg("sigma.webgl.edges"),sigma.webgl.edges.def={POINTS:6,ATTRIBUTES:7,addEdge:function(a,b,c,d,e,f,g){var h=(a[f+"size"]||1)/2,i=b[f+"x"],j=b[f+"y"],k=c[f+"x"],l=c[f+"y"],m=a.color;if(!m)switch(g("edgeColor")){case"source":m=b.color||g("defaultNodeColor");break;case"target":m=c.color||g("defaultNodeColor");break;default:m=g("defaultEdgeColor")}m=sigma.utils.floatColor(m),d[e++]=i,d[e++]=j,d[e++]=k,d[e++]=l,d[e++]=h,d[e++]=0,d[e++]=m,d[e++]=k,d[e++]=l,d[e++]=i,d[e++]=j,d[e++]=h,d[e++]=1,d[e++]=m,d[e++]=k,d[e++]=l,d[e++]=i,d[e++]=j,d[e++]=h,d[e++]=0,d[e++]=m,d[e++]=k,d[e++]=l,d[e++]=i,d[e++]=j,d[e++]=h,d[e++]=0,d[e++]=m,d[e++]=i,d[e++]=j,d[e++]=k,d[e++]=l,d[e++]=h,d[e++]=1,d[e++]=m,d[e++]=i,d[e++]=j,d[e++]=k,d[e++]=l,d[e++]=h,d[e++]=0,d[e++]=m},render:function(a,b,c,d){var e,f=a.getAttribLocation(b,"a_color"),g=a.getAttribLocation(b,"a_position1"),h=a.getAttribLocation(b,"a_position2"),i=a.getAttribLocation(b,"a_thickness"),j=a.getAttribLocation(b,"a_minus"),k=a.getUniformLocation(b,"u_resolution"),l=a.getUniformLocation(b,"u_matrix"),m=a.getUniformLocation(b,"u_matrixHalfPi"),n=a.getUniformLocation(b,"u_matrixHalfPiMinus"),o=a.getUniformLocation(b,"u_ratio"),p=a.getUniformLocation(b,"u_scale");e=a.createBuffer(),a.bindBuffer(a.ARRAY_BUFFER,e),a.bufferData(a.ARRAY_BUFFER,c,a.STATIC_DRAW),a.uniform2f(k,d.width,d.height),a.uniform1f(o,d.ratio/Math.pow(d.ratio,d.settings("edgesPowRatio"))),a.uniform1f(p,d.scalingRatio),a.uniformMatrix3fv(l,!1,d.matrix),a.uniformMatrix2fv(m,!1,sigma.utils.matrices.rotation(Math.PI/2,!0)),a.uniformMatrix2fv(n,!1,sigma.utils.matrices.rotation(-Math.PI/2,!0)),a.enableVertexAttribArray(f),a.enableVertexAttribArray(g),a.enableVertexAttribArray(h),a.enableVertexAttribArray(i),a.enableVertexAttribArray(j),a.vertexAttribPointer(g,2,a.FLOAT,!1,this.ATTRIBUTES*Float32Array.BYTES_PER_ELEMENT,0),a.vertexAttribPointer(h,2,a.FLOAT,!1,this.ATTRIBUTES*Float32Array.BYTES_PER_ELEMENT,8),a.vertexAttribPointer(i,1,a.FLOAT,!1,this.ATTRIBUTES*Float32Array.BYTES_PER_ELEMENT,16),a.vertexAttribPointer(j,1,a.FLOAT,!1,this.ATTRIBUTES*Float32Array.BYTES_PER_ELEMENT,20),a.vertexAttribPointer(f,1,a.FLOAT,!1,this.ATTRIBUTES*Float32Array.BYTES_PER_ELEMENT,24),a.drawArrays(a.TRIANGLES,d.start||0,d.count||c.length/this.ATTRIBUTES)},initProgram:function(a){var b,c,d;return b=sigma.utils.loadShader(a,["attribute vec2 a_position1;","attribute vec2 a_position2;","attribute float a_thickness;","attribute float a_minus;","attribute float a_color;","uniform vec2 u_resolution;","uniform float u_ratio;","uniform float u_scale;","uniform mat3 u_matrix;","uniform mat2 u_matrixHalfPi;","uniform mat2 u_matrixHalfPiMinus;","varying vec4 color;","void main() {","vec2 position = a_thickness * u_ratio *","normalize(a_position2 - a_position1);","mat2 matrix = a_minus * u_matrixHalfPiMinus +","(1.0 - a_minus) * u_matrixHalfPi;","position = matrix * position + a_position1;","gl_Position = vec4(","((u_matrix * vec3(position, 1)).xy /","u_resolution * 2.0 - 1.0) * vec2(1, -1),","0,","1",");","float c = a_color;","color.b = mod(c, 256.0); c = floor(c / 256.0);","color.g = mod(c, 256.0); c = floor(c / 256.0);","color.r = mod(c, 256.0); c = floor(c / 256.0); color /= 255.0;","color.a = 1.0;","}"].join("\n"),a.VERTEX_SHADER),c=sigma.utils.loadShader(a,["precision mediump float;","varying vec4 color;","void main(void) {","gl_FragColor = color;","}"].join("\n"),a.FRAGMENT_SHADER),d=sigma.utils.loadProgram(a,[b,c])}}}(),function(){"use strict";sigma.utils.pkg("sigma.webgl.edges"),sigma.webgl.edges.fast={POINTS:2,ATTRIBUTES:3,addEdge:function(a,b,c,d,e,f,g){var h=((a[f+"size"]||1)/2,b[f+"x"]),i=b[f+"y"],j=c[f+"x"],k=c[f+"y"],l=a.color;if(!l)switch(g("edgeColor")){case"source":l=b.color||g("defaultNodeColor");break;case"target":l=c.color||g("defaultNodeColor");break;default:l=g("defaultEdgeColor")}l=sigma.utils.floatColor(l),d[e++]=h,d[e++]=i,d[e++]=l,d[e++]=j,d[e++]=k,d[e++]=l},render:function(a,b,c,d){var e,f=a.getAttribLocation(b,"a_color"),g=a.getAttribLocation(b,"a_position"),h=a.getUniformLocation(b,"u_resolution"),i=a.getUniformLocation(b,"u_matrix");e=a.createBuffer(),a.bindBuffer(a.ARRAY_BUFFER,e),a.bufferData(a.ARRAY_BUFFER,c,a.DYNAMIC_DRAW),a.uniform2f(h,d.width,d.height),a.uniformMatrix3fv(i,!1,d.matrix),a.enableVertexAttribArray(g),a.enableVertexAttribArray(f),a.vertexAttribPointer(g,2,a.FLOAT,!1,this.ATTRIBUTES*Float32Array.BYTES_PER_ELEMENT,0),a.vertexAttribPointer(f,1,a.FLOAT,!1,this.ATTRIBUTES*Float32Array.BYTES_PER_ELEMENT,8),a.lineWidth(3),a.drawArrays(a.LINES,d.start||0,d.count||c.length/this.ATTRIBUTES)},initProgram:function(a){var b,c,d;return b=sigma.utils.loadShader(a,["attribute vec2 a_position;","attribute float a_color;","uniform vec2 u_resolution;","uniform mat3 u_matrix;","varying vec4 color;","void main() {","gl_Position = vec4(","((u_matrix * vec3(a_position, 1)).xy /","u_resolution * 2.0 - 1.0) * vec2(1, -1),","0,","1",");","float c = a_color;","color.b = mod(c, 256.0); c = floor(c / 256.0);","color.g = mod(c, 256.0); c = floor(c / 256.0);","color.r = mod(c, 256.0); c = floor(c / 256.0); color /= 255.0;","color.a = 1.0;","}"].join("\n"),a.VERTEX_SHADER),c=sigma.utils.loadShader(a,["precision mediump float;","varying vec4 color;","void main(void) {","gl_FragColor = color;","}"].join("\n"),a.FRAGMENT_SHADER),d=sigma.utils.loadProgram(a,[b,c])}}}(),function(){"use strict";sigma.utils.pkg("sigma.webgl.edges"),sigma.webgl.edges.arrow={POINTS:9,ATTRIBUTES:11,addEdge:function(a,b,c,d,e,f,g){var h=(a[f+"size"]||1)/2,i=b[f+"x"],j=b[f+"y"],k=c[f+"x"],l=c[f+"y"],m=c[f+"size"],n=a.color;if(!n)switch(g("edgeColor")){case"source":n=b.color||g("defaultNodeColor");break;case"target":n=c.color||g("defaultNodeColor");break;default:n=g("defaultEdgeColor")}n=sigma.utils.floatColor(n),d[e++]=i,d[e++]=j,d[e++]=k,d[e++]=l,d[e++]=h,d[e++]=m,d[e++]=0,d[e++]=0,d[e++]=0,d[e++]=0,d[e++]=n,d[e++]=k,d[e++]=l,d[e++]=i,d[e++]=j,d[e++]=h,d[e++]=m,d[e++]=1,d[e++]=1,d[e++]=0,d[e++]=0,d[e++]=n,d[e++]=k,d[e++]=l,d[e++]=i,d[e++]=j,d[e++]=h,d[e++]=m,d[e++]=1,d[e++]=0,d[e++]=0,d[e++]=0,d[e++]=n,d[e++]=k,d[e++]=l,d[e++]=i,d[e++]=j,d[e++]=h,d[e++]=m,d[e++]=1,d[e++]=0,d[e++]=0,d[e++]=0,d[e++]=n,d[e++]=i,d[e++]=j,d[e++]=k,d[e++]=l,d[e++]=h,d[e++]=m,d[e++]=0,d[e++]=1,d[e++]=0,d[e++]=0,d[e++]=n,d[e++]=i,d[e++]=j,d[e++]=k,d[e++]=l,d[e++]=h,d[e++]=m,d[e++]=0,d[e++]=0,d[e++]=0,d[e++]=0,d[e++]=n,d[e++]=k,d[e++]=l,d[e++]=i,d[e++]=j,d[e++]=h,d[e++]=m,d[e++]=1,d[e++]=0,d[e++]=1,d[e++]=-1,d[e++]=n,d[e++]=k,d[e++]=l,d[e++]=i,d[e++]=j,d[e++]=h,d[e++]=m,d[e++]=1,d[e++]=0,d[e++]=1,d[e++]=0,d[e++]=n,d[e++]=k,d[e++]=l,d[e++]=i,d[e++]=j,d[e++]=h,d[e++]=m,d[e++]=1,d[e++]=0,d[e++]=1,d[e++]=1,d[e++]=n},render:function(a,b,c,d){var e,f=a.getAttribLocation(b,"a_pos1"),g=a.getAttribLocation(b,"a_pos2"),h=a.getAttribLocation(b,"a_thickness"),i=a.getAttribLocation(b,"a_tSize"),j=a.getAttribLocation(b,"a_delay"),k=a.getAttribLocation(b,"a_minus"),l=a.getAttribLocation(b,"a_head"),m=a.getAttribLocation(b,"a_headPosition"),n=a.getAttribLocation(b,"a_color"),o=a.getUniformLocation(b,"u_resolution"),p=a.getUniformLocation(b,"u_matrix"),q=a.getUniformLocation(b,"u_matrixHalfPi"),r=a.getUniformLocation(b,"u_matrixHalfPiMinus"),s=a.getUniformLocation(b,"u_ratio"),t=a.getUniformLocation(b,"u_nodeRatio"),u=a.getUniformLocation(b,"u_arrowHead"),v=a.getUniformLocation(b,"u_scale");e=a.createBuffer(),a.bindBuffer(a.ARRAY_BUFFER,e),a.bufferData(a.ARRAY_BUFFER,c,a.STATIC_DRAW),a.uniform2f(o,d.width,d.height),a.uniform1f(s,d.ratio/Math.pow(d.ratio,d.settings("edgesPowRatio"))),a.uniform1f(t,Math.pow(d.ratio,d.settings("nodesPowRatio"))/d.ratio),a.uniform1f(u,5),a.uniform1f(v,d.scalingRatio),a.uniformMatrix3fv(p,!1,d.matrix),a.uniformMatrix2fv(q,!1,sigma.utils.matrices.rotation(Math.PI/2,!0)),a.uniformMatrix2fv(r,!1,sigma.utils.matrices.rotation(-Math.PI/2,!0)),a.enableVertexAttribArray(f),a.enableVertexAttribArray(g),a.enableVertexAttribArray(h),a.enableVertexAttribArray(i),a.enableVertexAttribArray(j),a.enableVertexAttribArray(k),a.enableVertexAttribArray(l),a.enableVertexAttribArray(m),a.enableVertexAttribArray(n),a.vertexAttribPointer(f,2,a.FLOAT,!1,this.ATTRIBUTES*Float32Array.BYTES_PER_ELEMENT,0),a.vertexAttribPointer(g,2,a.FLOAT,!1,this.ATTRIBUTES*Float32Array.BYTES_PER_ELEMENT,8),a.vertexAttribPointer(h,1,a.FLOAT,!1,this.ATTRIBUTES*Float32Array.BYTES_PER_ELEMENT,16),a.vertexAttribPointer(i,1,a.FLOAT,!1,this.ATTRIBUTES*Float32Array.BYTES_PER_ELEMENT,20),a.vertexAttribPointer(j,1,a.FLOAT,!1,this.ATTRIBUTES*Float32Array.BYTES_PER_ELEMENT,24),a.vertexAttribPointer(k,1,a.FLOAT,!1,this.ATTRIBUTES*Float32Array.BYTES_PER_ELEMENT,28),a.vertexAttribPointer(l,1,a.FLOAT,!1,this.ATTRIBUTES*Float32Array.BYTES_PER_ELEMENT,32),a.vertexAttribPointer(m,1,a.FLOAT,!1,this.ATTRIBUTES*Float32Array.BYTES_PER_ELEMENT,36),a.vertexAttribPointer(n,1,a.FLOAT,!1,this.ATTRIBUTES*Float32Array.BYTES_PER_ELEMENT,40),a.drawArrays(a.TRIANGLES,d.start||0,d.count||c.length/this.ATTRIBUTES)},initProgram:function(a){var b,c,d;return b=sigma.utils.loadShader(a,["attribute vec2 a_pos1;","attribute vec2 a_pos2;","attribute float a_thickness;","attribute float a_tSize;","attribute float a_delay;","attribute float a_minus;","attribute float a_head;","attribute float a_headPosition;","attribute float a_color;","uniform vec2 u_resolution;","uniform float u_ratio;","uniform float u_nodeRatio;","uniform float u_arrowHead;","uniform float u_scale;","uniform mat3 u_matrix;","uniform mat2 u_matrixHalfPi;","uniform mat2 u_matrixHalfPiMinus;","varying vec4 color;","void main() {","vec2 pos = normalize(a_pos2 - a_pos1);","mat2 matrix = (1.0 - a_head) *","(","a_minus * u_matrixHalfPiMinus +","(1.0 - a_minus) * u_matrixHalfPi",") + a_head * (","a_headPosition * u_matrixHalfPiMinus * 0.6 +","(a_headPosition * a_headPosition - 1.0) * mat2(1.0)",");","pos = a_pos1 + (","(1.0 - a_head) * a_thickness * u_ratio * matrix * pos +","a_head * u_arrowHead * a_thickness * u_ratio * matrix * pos +","a_delay * pos * (","a_tSize / u_nodeRatio +","u_arrowHead * a_thickness * u_ratio",")",");","gl_Position = vec4(","((u_matrix * vec3(pos, 1)).xy /","u_resolution * 2.0 - 1.0) * vec2(1, -1),","0,","1",");","float c = a_color;","color.b = mod(c, 256.0); c = floor(c / 256.0);","color.g = mod(c, 256.0); c = floor(c / 256.0);","color.r = mod(c, 256.0); c = floor(c / 256.0); color /= 255.0;","color.a = 1.0;","}"].join("\n"),a.VERTEX_SHADER),c=sigma.utils.loadShader(a,["precision mediump float;","varying vec4 color;","void main(void) {","gl_FragColor = color;","}"].join("\n"),a.FRAGMENT_SHADER),d=sigma.utils.loadProgram(a,[b,c])}}}(),function(a){"use strict";if("undefined"==typeof sigma)throw"sigma is not declared";sigma.utils.pkg("sigma.canvas.labels"),sigma.canvas.labels.def=function(a,b,c){var d,e=c("prefix")||"",f=a[e+"size"];f<c("labelThreshold")||a.label&&"string"==typeof a.label&&(d="fixed"===c("labelSize")?c("defaultLabelSize"):c("labelSizeRatio")*f,b.font=(c("fontStyle")?c("fontStyle")+" ":"")+d+"px "+c("font"),b.fillStyle="node"===c("labelColor")?a.color||c("defaultNodeColor"):c("defaultLabelColor"),b.fillText(a.label,Math.round(a[e+"x"]+f+3),Math.round(a[e+"y"]+d/3)))}}.call(this),function(a){"use strict";if("undefined"==typeof sigma)throw"sigma is not declared";sigma.utils.pkg("sigma.canvas.hovers"),sigma.canvas.hovers.def=function(a,b,c){var d,e,f,g,h,i=c("hoverFontStyle")||c("fontStyle"),j=c("prefix")||"",k=a[j+"size"],l="fixed"===c("labelSize")?c("defaultLabelSize"):c("labelSizeRatio")*k;b.font=(i?i+" ":"")+l+"px "+(c("hoverFont")||c("font")),b.beginPath(),b.fillStyle="node"===c("labelHoverBGColor")?a.color||c("defaultNodeColor"):c("defaultHoverLabelBGColor"),a.label&&c("labelHoverShadow")&&(b.shadowOffsetX=0,b.shadowOffsetY=0,b.shadowBlur=8,b.shadowColor=c("labelHoverShadowColor")),a.label&&"string"==typeof a.label&&(d=Math.round(a[j+"x"]-l/2-2),e=Math.round(a[j+"y"]-l/2-2),f=Math.round(b.measureText(a.label).width+l/2+k+7),g=Math.round(l+4),h=Math.round(l/2+2),b.moveTo(d,e+h),b.arcTo(d,e,d+h,e,h),b.lineTo(d+f,e),b.lineTo(d+f,e+g),b.lineTo(d+h,e+g),b.arcTo(d,e+g,d,e+g-h,h),b.lineTo(d,e+h),b.closePath(),b.fill(),b.shadowOffsetX=0,b.shadowOffsetY=0,b.shadowBlur=0),c("borderSize")>0&&(b.beginPath(),b.fillStyle="node"===c("nodeBorderColor")?a.color||c("defaultNodeColor"):c("defaultNodeBorderColor"),b.arc(a[j+"x"],a[j+"y"],k+c("borderSize"),0,2*Math.PI,!0),b.closePath(),b.fill());var m=sigma.canvas.nodes[a.type]||sigma.canvas.nodes.def;m(a,b,c),a.label&&"string"==typeof a.label&&(b.fillStyle="node"===c("labelHoverColor")?a.color||c("defaultNodeColor"):c("defaultLabelHoverColor"),b.fillText(a.label,Math.round(a[j+"x"]+k+3),Math.round(a[j+"y"]+l/3)))}}.call(this),function(){"use strict";sigma.utils.pkg("sigma.canvas.nodes"),sigma.canvas.nodes.def=function(a,b,c){var d=c("prefix")||"";b.fillStyle=a.color||c("defaultNodeColor"),b.beginPath(),b.arc(a[d+"x"],a[d+"y"],a[d+"size"],0,2*Math.PI,!0),b.closePath(),b.fill()}}(),function(){"use strict";sigma.utils.pkg("sigma.canvas.edges"),sigma.canvas.edges.def=function(a,b,c,d,e){var f=a.color,g=e("prefix")||"",h=a[g+"size"]||1,i=e("edgeColor"),j=e("defaultNodeColor"),k=e("defaultEdgeColor");if(!f)switch(i){case"source":f=b.color||j;break;case"target":f=c.color||j;break;default:f=k}d.strokeStyle=f,d.lineWidth=h,d.beginPath(),d.moveTo(b[g+"x"],b[g+"y"]),d.lineTo(c[g+"x"],c[g+"y"]),d.stroke()}}(),function(){"use strict";sigma.utils.pkg("sigma.canvas.edges"),sigma.canvas.edges.curve=function(a,b,c,d,e){var f=a.color,g=e("prefix")||"",h=a[g+"size"]||1,i=e("edgeColor"),j=e("defaultNodeColor"),k=e("defaultEdgeColor"),l={},m=b[g+"size"],n=b[g+"x"],o=b[g+"y"],p=c[g+"x"],q=c[g+"y"];if(l=b.id===c.id?sigma.utils.getSelfLoopControlPoints(n,o,m):sigma.utils.getQuadraticControlPoint(n,o,p,q),!f)switch(i){case"source":f=b.color||j;break;case"target":f=c.color||j;break;default:f=k}d.strokeStyle=f,d.lineWidth=h,d.beginPath(),d.moveTo(n,o),b.id===c.id?d.bezierCurveTo(l.x1,l.y1,l.x2,l.y2,p,q):d.quadraticCurveTo(l.x,l.y,p,q),d.stroke()}}(),function(){"use strict";sigma.utils.pkg("sigma.canvas.edges"),sigma.canvas.edges.arrow=function(a,b,c,d,e){var f=a.color,g=e("prefix")||"",h=e("edgeColor"),i=e("defaultNodeColor"),j=e("defaultEdgeColor"),k=a[g+"size"]||1,l=c[g+"size"],m=b[g+"x"],n=b[g+"y"],o=c[g+"x"],p=c[g+"y"],q=Math.max(2.5*k,e("minArrowSize")),r=Math.sqrt(Math.pow(o-m,2)+Math.pow(p-n,2)),s=m+(o-m)*(r-q-l)/r,t=n+(p-n)*(r-q-l)/r,u=(o-m)*q/r,v=(p-n)*q/r;if(!f)switch(h){case"source":f=b.color||i;break;case"target":f=c.color||i;break;default:f=j}d.strokeStyle=f,d.lineWidth=k,d.beginPath(),d.moveTo(m,n),d.lineTo(s,t),d.stroke(),d.fillStyle=f,d.beginPath(),d.moveTo(s+u,t+v),d.lineTo(s+.6*v,t-.6*u),d.lineTo(s-.6*v,t+.6*u),d.lineTo(s+u,t+v),d.closePath(),d.fill()}}(),function(){"use strict";sigma.utils.pkg("sigma.canvas.edges"),sigma.canvas.edges.curvedArrow=function(a,b,c,d,e){var f,g,h,i,j,k=a.color,l=e("prefix")||"",m=e("edgeColor"),n=e("defaultNodeColor"),o=e("defaultEdgeColor"),p={},q=a[l+"size"]||1,r=c[l+"size"],s=b[l+"x"],t=b[l+"y"],u=c[l+"x"],v=c[l+"y"],w=Math.max(2.5*q,e("minArrowSize"));if(p=b.id===c.id?sigma.utils.getSelfLoopControlPoints(s,t,r):sigma.utils.getQuadraticControlPoint(s,t,u,v),b.id===c.id?(f=Math.sqrt(Math.pow(u-p.x1,2)+Math.pow(v-p.y1,2)),g=p.x1+(u-p.x1)*(f-w-r)/f,h=p.y1+(v-p.y1)*(f-w-r)/f,i=(u-p.x1)*w/f,j=(v-p.y1)*w/f):(f=Math.sqrt(Math.pow(u-p.x,2)+Math.pow(v-p.y,2)),g=p.x+(u-p.x)*(f-w-r)/f,h=p.y+(v-p.y)*(f-w-r)/f,i=(u-p.x)*w/f,j=(v-p.y)*w/f),!k)switch(m){case"source":k=b.color||n;break;case"target":k=c.color||n;break;default:k=o}d.strokeStyle=k,d.lineWidth=q,d.beginPath(),d.moveTo(s,t),b.id===c.id?d.bezierCurveTo(p.x2,p.y2,p.x1,p.y1,g,h):d.quadraticCurveTo(p.x,p.y,g,h),d.stroke(),d.fillStyle=k,d.beginPath(),d.moveTo(g+i,h+j),d.lineTo(g+.6*j,h-.6*i),d.lineTo(g-.6*j,h+.6*i),d.lineTo(g+i,h+j),d.closePath(),d.fill()}}(),function(){"use strict";sigma.utils.pkg("sigma.canvas.edgehovers"),sigma.canvas.edgehovers.def=function(a,b,c,d,e){var f=a.color,g=e("prefix")||"",h=a[g+"size"]||1,i=e("edgeColor"),j=e("defaultNodeColor"),k=e("defaultEdgeColor");if(!f)switch(i){case"source":f=b.color||j;break;case"target":f=c.color||j;break;default:f=k}f="edge"===e("edgeHoverColor")?a.hover_color||f:a.hover_color||e("defaultEdgeHoverColor")||f,h*=e("edgeHoverSizeRatio"),d.strokeStyle=f,d.lineWidth=h,d.beginPath(),d.moveTo(b[g+"x"],b[g+"y"]),d.lineTo(c[g+"x"],c[g+"y"]),d.stroke()}}(),function(){"use strict";sigma.utils.pkg("sigma.canvas.edgehovers"),sigma.canvas.edgehovers.curve=function(a,b,c,d,e){var f=a.color,g=e("prefix")||"",h=e("edgeHoverSizeRatio")*(a[g+"size"]||1),i=e("edgeColor"),j=e("defaultNodeColor"),k=e("defaultEdgeColor"),l={},m=b[g+"size"],n=b[g+"x"],o=b[g+"y"],p=c[g+"x"],q=c[g+"y"];if(l=b.id===c.id?sigma.utils.getSelfLoopControlPoints(n,o,m):sigma.utils.getQuadraticControlPoint(n,o,p,q),!f)switch(i){case"source":f=b.color||j;break;case"target":f=c.color||j;break;default:f=k}f="edge"===e("edgeHoverColor")?a.hover_color||f:a.hover_color||e("defaultEdgeHoverColor")||f,d.strokeStyle=f,d.lineWidth=h,d.beginPath(),d.moveTo(n,o),b.id===c.id?d.bezierCurveTo(l.x1,l.y1,l.x2,l.y2,p,q):d.quadraticCurveTo(l.x,l.y,p,q),d.stroke()}}(),function(){"use strict";sigma.utils.pkg("sigma.canvas.edgehovers"),sigma.canvas.edgehovers.arrow=function(a,b,c,d,e){var f=a.color,g=e("prefix")||"",h=e("edgeColor"),i=e("defaultNodeColor"),j=e("defaultEdgeColor"),k=a[g+"size"]||1,l=c[g+"size"],m=b[g+"x"],n=b[g+"y"],o=c[g+"x"],p=c[g+"y"];
-k=a.hover?e("edgeHoverSizeRatio")*k:k;var q=2.5*k,r=Math.sqrt(Math.pow(o-m,2)+Math.pow(p-n,2)),s=m+(o-m)*(r-q-l)/r,t=n+(p-n)*(r-q-l)/r,u=(o-m)*q/r,v=(p-n)*q/r;if(!f)switch(h){case"source":f=b.color||i;break;case"target":f=c.color||i;break;default:f=j}f="edge"===e("edgeHoverColor")?a.hover_color||f:a.hover_color||e("defaultEdgeHoverColor")||f,d.strokeStyle=f,d.lineWidth=k,d.beginPath(),d.moveTo(m,n),d.lineTo(s,t),d.stroke(),d.fillStyle=f,d.beginPath(),d.moveTo(s+u,t+v),d.lineTo(s+.6*v,t-.6*u),d.lineTo(s-.6*v,t+.6*u),d.lineTo(s+u,t+v),d.closePath(),d.fill()}}(),function(){"use strict";sigma.utils.pkg("sigma.canvas.edgehovers"),sigma.canvas.edgehovers.curvedArrow=function(a,b,c,d,e){var f,g,h,i,j,k,l=a.color,m=e("prefix")||"",n=e("edgeColor"),o=e("defaultNodeColor"),p=e("defaultEdgeColor"),q={},r=e("edgeHoverSizeRatio")*(a[m+"size"]||1),s=c[m+"size"],t=b[m+"x"],u=b[m+"y"],v=c[m+"x"],w=c[m+"y"];if(q=b.id===c.id?sigma.utils.getSelfLoopControlPoints(t,u,s):sigma.utils.getQuadraticControlPoint(t,u,v,w),b.id===c.id?(f=Math.sqrt(Math.pow(v-q.x1,2)+Math.pow(w-q.y1,2)),g=2.5*r,h=q.x1+(v-q.x1)*(f-g-s)/f,i=q.y1+(w-q.y1)*(f-g-s)/f,j=(v-q.x1)*g/f,k=(w-q.y1)*g/f):(f=Math.sqrt(Math.pow(v-q.x,2)+Math.pow(w-q.y,2)),g=2.5*r,h=q.x+(v-q.x)*(f-g-s)/f,i=q.y+(w-q.y)*(f-g-s)/f,j=(v-q.x)*g/f,k=(w-q.y)*g/f),!l)switch(n){case"source":l=b.color||o;break;case"target":l=c.color||o;break;default:l=p}l="edge"===e("edgeHoverColor")?a.hover_color||l:a.hover_color||e("defaultEdgeHoverColor")||l,d.strokeStyle=l,d.lineWidth=r,d.beginPath(),d.moveTo(t,u),b.id===c.id?d.bezierCurveTo(q.x2,q.y2,q.x1,q.y1,h,i):d.quadraticCurveTo(q.x,q.y,h,i),d.stroke(),d.fillStyle=l,d.beginPath(),d.moveTo(h+j,i+k),d.lineTo(h+.6*k,i-.6*j),d.lineTo(h-.6*k,i+.6*j),d.lineTo(h+j,i+k),d.closePath(),d.fill()}}(),function(a){"use strict";if("undefined"==typeof sigma)throw"sigma is not declared";sigma.utils.pkg("sigma.canvas.extremities"),sigma.canvas.extremities.def=function(a,b,c,d,e){(sigma.canvas.hovers[b.type]||sigma.canvas.hovers.def)(b,d,e),(sigma.canvas.hovers[c.type]||sigma.canvas.hovers.def)(c,d,e)}}.call(this),function(){"use strict";sigma.utils.pkg("sigma.svg.utils"),sigma.svg.utils={show:function(a){return a.style.display="",this},hide:function(a){return a.style.display="none",this}}}(),function(){"use strict";sigma.utils.pkg("sigma.svg.nodes"),sigma.svg.nodes.def={create:function(a,b){var c=(b("prefix")||"",document.createElementNS(b("xmlns"),"circle"));return c.setAttributeNS(null,"data-node-id",a.id),c.setAttributeNS(null,"class",b("classPrefix")+"-node"),c.setAttributeNS(null,"fill",a.color||b("defaultNodeColor")),c},update:function(a,b,c){var d=c("prefix")||"";return b.setAttributeNS(null,"cx",a[d+"x"]),b.setAttributeNS(null,"cy",a[d+"y"]),b.setAttributeNS(null,"r",a[d+"size"]),c("freeStyle")||b.setAttributeNS(null,"fill",a.color||c("defaultNodeColor")),b.style.display="",this}}}(),function(){"use strict";sigma.utils.pkg("sigma.svg.edges"),sigma.svg.edges.def={create:function(a,b,c,d){var e=a.color,f=(d("prefix")||"",d("edgeColor")),g=d("defaultNodeColor"),h=d("defaultEdgeColor");if(!e)switch(f){case"source":e=b.color||g;break;case"target":e=c.color||g;break;default:e=h}var i=document.createElementNS(d("xmlns"),"line");return i.setAttributeNS(null,"data-edge-id",a.id),i.setAttributeNS(null,"class",d("classPrefix")+"-edge"),i.setAttributeNS(null,"stroke",e),i},update:function(a,b,c,d,e){var f=e("prefix")||"";return b.setAttributeNS(null,"stroke-width",a[f+"size"]||1),b.setAttributeNS(null,"x1",c[f+"x"]),b.setAttributeNS(null,"y1",c[f+"y"]),b.setAttributeNS(null,"x2",d[f+"x"]),b.setAttributeNS(null,"y2",d[f+"y"]),b.style.display="",this}}}(),function(){"use strict";sigma.utils.pkg("sigma.svg.edges"),sigma.svg.edges.curve={create:function(a,b,c,d){var e=a.color,f=(d("prefix")||"",d("edgeColor")),g=d("defaultNodeColor"),h=d("defaultEdgeColor");if(!e)switch(f){case"source":e=b.color||g;break;case"target":e=c.color||g;break;default:e=h}var i=document.createElementNS(d("xmlns"),"path");return i.setAttributeNS(null,"data-edge-id",a.id),i.setAttributeNS(null,"class",d("classPrefix")+"-edge"),i.setAttributeNS(null,"stroke",e),i},update:function(a,b,c,d,e){var f=e("prefix")||"";b.setAttributeNS(null,"stroke-width",a[f+"size"]||1);var g=(c[f+"x"]+d[f+"x"])/2+(d[f+"y"]-c[f+"y"])/4,h=(c[f+"y"]+d[f+"y"])/2+(c[f+"x"]-d[f+"x"])/4,i="M"+c[f+"x"]+","+c[f+"y"]+" Q"+g+","+h+" "+d[f+"x"]+","+d[f+"y"];return b.setAttributeNS(null,"d",i),b.setAttributeNS(null,"fill","none"),b.style.display="",this}}}(),function(a){"use strict";if("undefined"==typeof sigma)throw"sigma is not declared";sigma.utils.pkg("sigma.svg.labels"),sigma.svg.labels.def={create:function(a,b){var c=b("prefix")||"",d=a[c+"size"],e=document.createElementNS(b("xmlns"),"text"),f="fixed"===b("labelSize")?b("defaultLabelSize"):b("labelSizeRatio")*d,g="node"===b("labelColor")?a.color||b("defaultNodeColor"):b("defaultLabelColor");return e.setAttributeNS(null,"data-label-target",a.id),e.setAttributeNS(null,"class",b("classPrefix")+"-label"),e.setAttributeNS(null,"font-size",f),e.setAttributeNS(null,"font-family",b("font")),e.setAttributeNS(null,"fill",g),e.innerHTML=a.label,e.textContent=a.label,e},update:function(a,b,c){var d=c("prefix")||"",e=a[d+"size"],f="fixed"===c("labelSize")?c("defaultLabelSize"):c("labelSizeRatio")*e;return!c("forceLabels")&&e<c("labelThreshold")||"string"!=typeof a.label?void 0:(b.setAttributeNS(null,"x",Math.round(a[d+"x"]+e+3)),b.setAttributeNS(null,"y",Math.round(a[d+"y"]+f/3)),b.style.display="",this)}}}.call(this),function(a){"use strict";if("undefined"==typeof sigma)throw"sigma is not declared";sigma.utils.pkg("sigma.svg.hovers"),sigma.svg.hovers.def={create:function(a,b,c,d){var e,f,g,h,i,j=(d("hoverFontStyle")||d("fontStyle"),d("prefix")||""),k=a[j+"size"],l="fixed"===d("labelSize")?d("defaultLabelSize"):d("labelSizeRatio")*k,m="node"===d("labelHoverColor")?a.color||d("defaultNodeColor"):d("defaultLabelHoverColor"),n=document.createElementNS(d("xmlns"),"g"),o=document.createElementNS(d("xmlns"),"rect"),p=document.createElementNS(d("xmlns"),"circle"),q=document.createElementNS(d("xmlns"),"text");return n.setAttributeNS(null,"class",d("classPrefix")+"-hover"),n.setAttributeNS(null,"data-node-id",a.id),"string"==typeof a.label&&(q.innerHTML=a.label,q.textContent=a.label,q.setAttributeNS(null,"class",d("classPrefix")+"-hover-label"),q.setAttributeNS(null,"font-size",l),q.setAttributeNS(null,"font-family",d("font")),q.setAttributeNS(null,"fill",m),q.setAttributeNS(null,"x",Math.round(a[j+"x"]+k+3)),q.setAttributeNS(null,"y",Math.round(a[j+"y"]+l/3)),e=Math.round(a[j+"x"]-l/2-2),f=Math.round(a[j+"y"]-l/2-2),g=Math.round(c.measureText(a.label).width+l/2+k+9),h=Math.round(l+4),i=Math.round(l/2+2),p.setAttributeNS(null,"class",d("classPrefix")+"-hover-area"),p.setAttributeNS(null,"fill","#fff"),p.setAttributeNS(null,"cx",a[j+"x"]),p.setAttributeNS(null,"cy",a[j+"y"]),p.setAttributeNS(null,"r",i),o.setAttributeNS(null,"class",d("classPrefix")+"-hover-area"),o.setAttributeNS(null,"fill","#fff"),o.setAttributeNS(null,"x",a[j+"x"]+i/4),o.setAttributeNS(null,"y",a[j+"y"]-i),o.setAttributeNS(null,"width",g),o.setAttributeNS(null,"height",h)),n.appendChild(p),n.appendChild(o),n.appendChild(q),n.appendChild(b),n}}}.call(this),function(a){"use strict";if("undefined"==typeof sigma)throw"sigma is not declared";sigma.utils.pkg("sigma.middlewares"),sigma.utils.pkg("sigma.utils"),sigma.middlewares.rescale=function(a,b,c){var d,e,f,g,h,i,j,k,l=this.graph.nodes(),m=this.graph.edges(),n=this.settings.embedObjects(c||{}),o=n("bounds")||sigma.utils.getBoundaries(this.graph,a,!0),p=o.minX,q=o.minY,r=o.maxX,s=o.maxY,t=o.sizeMax,u=o.weightMax,v=n("width")||1,w=n("height")||1,x=n("autoRescale"),y={nodePosition:1,nodeSize:1,edgeSize:1};for(x instanceof Array||(x=["nodePosition","nodeSize","edgeSize"]),d=0,e=x.length;e>d;d++)if(!y[x[d]])throw new Error('The rescale setting "'+x[d]+'" is not recognized.');var z=~x.indexOf("nodePosition"),A=~x.indexOf("nodeSize"),B=~x.indexOf("edgeSize");for(j="outside"===n("scalingMode")?Math.max(v/Math.max(r-p,1),w/Math.max(s-q,1)):Math.min(v/Math.max(r-p,1),w/Math.max(s-q,1)),k=(n("rescaleIgnoreSize")?0:(n("maxNodeSize")||t)/j)+(n("sideMargin")||0),r+=k,p-=k,s+=k,q-=k,j="outside"===n("scalingMode")?Math.max(v/Math.max(r-p,1),w/Math.max(s-q,1)):Math.min(v/Math.max(r-p,1),w/Math.max(s-q,1)),n("maxNodeSize")||n("minNodeSize")?n("maxNodeSize")===n("minNodeSize")?(f=0,g=+n("maxNodeSize")):(f=(n("maxNodeSize")-n("minNodeSize"))/t,g=+n("minNodeSize")):(f=1,g=0),n("maxEdgeSize")||n("minEdgeSize")?n("maxEdgeSize")===n("minEdgeSize")?(h=0,i=+n("minEdgeSize")):(h=(n("maxEdgeSize")-n("minEdgeSize"))/u,i=+n("minEdgeSize")):(h=1,i=0),d=0,e=m.length;e>d;d++)m[d][b+"size"]=m[d][a+"size"]*(B?h:1)+(B?i:0);for(d=0,e=l.length;e>d;d++)l[d][b+"size"]=l[d][a+"size"]*(A?f:1)+(A?g:0),l[d][b+"x"]=(l[d][a+"x"]-(r+p)/2)*(z?j:1),l[d][b+"y"]=(l[d][a+"y"]-(s+q)/2)*(z?j:1)},sigma.utils.getBoundaries=function(a,b,c){var d,e,f=a.edges(),g=a.nodes(),h=-(1/0),i=-(1/0),j=1/0,k=1/0,l=-(1/0),m=-(1/0);if(c)for(d=0,e=f.length;e>d;d++)h=Math.max(f[d][b+"size"],h);for(d=0,e=g.length;e>d;d++)i=Math.max(g[d][b+"size"],i),l=Math.max(g[d][b+"x"],l),j=Math.min(g[d][b+"x"],j),m=Math.max(g[d][b+"y"],m),k=Math.min(g[d][b+"y"],k);return h=h||1,i=i||1,{weightMax:h,sizeMax:i,minX:j,minY:k,maxX:l,maxY:m}}}.call(this),function(a){"use strict";if("undefined"==typeof sigma)throw"sigma is not declared";sigma.utils.pkg("sigma.middlewares"),sigma.middlewares.copy=function(a,b){var c,d,e;if(b+""!=a+""){for(e=this.graph.nodes(),c=0,d=e.length;d>c;c++)e[c][b+"x"]=e[c][a+"x"],e[c][b+"y"]=e[c][a+"y"],e[c][b+"size"]=e[c][a+"size"];for(e=this.graph.edges(),c=0,d=e.length;d>c;c++)e[c][b+"size"]=e[c][a+"size"]}}}.call(this),function(a){"use strict";if("undefined"==typeof sigma)throw"sigma is not declared";sigma.utils.pkg("sigma.misc.animation.running");var b=function(){var a=0;return function(){return""+ ++a}}();sigma.misc.animation.camera=function(c,d,e){if(!(c instanceof sigma.classes.camera&&"object"==typeof d&&d))throw"animation.camera: Wrong arguments.";if("number"!=typeof d.x&&"number"!=typeof d.y&&"number"!=typeof d.ratio&&"number"!=typeof d.angle)throw"There must be at least one valid coordinate in the given val.";var f,g,h,i,j,k,l=e||{},m=sigma.utils.dateNow();return k={x:c.x,y:c.y,ratio:c.ratio,angle:c.angle},j=l.duration,i="function"!=typeof l.easing?sigma.utils.easings[l.easing||"quadraticInOut"]:l.easing,f=function(){var b,e=l.duration?(sigma.utils.dateNow()-m)/l.duration:1;e>=1?(c.isAnimated=!1,c.goTo({x:d.x!==a?d.x:k.x,y:d.y!==a?d.y:k.y,ratio:d.ratio!==a?d.ratio:k.ratio,angle:d.angle!==a?d.angle:k.angle}),cancelAnimationFrame(g),delete sigma.misc.animation.running[g],"function"==typeof l.onComplete&&l.onComplete()):(b=i(e),c.isAnimated=!0,c.goTo({x:d.x!==a?k.x+(d.x-k.x)*b:k.x,y:d.y!==a?k.y+(d.y-k.y)*b:k.y,ratio:d.ratio!==a?k.ratio+(d.ratio-k.ratio)*b:k.ratio,angle:d.angle!==a?k.angle+(d.angle-k.angle)*b:k.angle}),"function"==typeof l.onNewFrame&&l.onNewFrame(),h.frameId=requestAnimationFrame(f))},g=b(),h={frameId:requestAnimationFrame(f),target:c,type:"camera",options:l,fn:f},sigma.misc.animation.running[g]=h,g},sigma.misc.animation.kill=function(a){if(1!==arguments.length||"number"!=typeof a)throw"animation.kill: Wrong arguments.";var b=sigma.misc.animation.running[a];return b&&(cancelAnimationFrame(a),delete sigma.misc.animation.running[b.frameId],"camera"===b.type&&(b.target.isAnimated=!1),"function"==typeof(b.options||{}).onComplete&&b.options.onComplete()),this},sigma.misc.animation.killAll=function(a){var b,c,d=0,e="string"==typeof a?a:null,f="object"==typeof a?a:null,g=sigma.misc.animation.running;for(c in g)e&&g[c].type!==e||f&&g[c].target!==f||(b=sigma.misc.animation.running[c],cancelAnimationFrame(b.frameId),delete sigma.misc.animation.running[c],"camera"===b.type&&(b.target.isAnimated=!1),d++,"function"==typeof(b.options||{}).onComplete&&b.options.onComplete());return d},sigma.misc.animation.has=function(a){var b,c="string"==typeof a?a:null,d="object"==typeof a?a:null,e=sigma.misc.animation.running;for(b in e)if(!(c&&e[b].type!==c||d&&e[b].target!==d))return!0;return!1}}.call(this),function(a){"use strict";if("undefined"==typeof sigma)throw"sigma is not declared";sigma.utils.pkg("sigma.misc"),sigma.misc.bindEvents=function(b){function c(a){a&&(h="x"in a.data?a.data.x:h,i="y"in a.data?a.data.y:i);var c,d,e,f,g,k,l,m,n=[],o=h+j.width/2,p=i+j.height/2,q=j.camera.cameraPosition(h,i),r=j.camera.quadtree.point(q.x,q.y);if(r.length)for(c=0,e=r.length;e>c;c++)if(f=r[c],g=f[b+"x"],k=f[b+"y"],l=f[b+"size"],!f.hidden&&o>g-l&&g+l>o&&p>k-l&&k+l>p&&Math.sqrt(Math.pow(o-g,2)+Math.pow(p-k,2))<l){for(m=!1,d=0;d<n.length;d++)if(f.size>n[d].size){n.splice(d,0,f),m=!0;break}m||n.push(f)}return n}function d(c){function d(a,b){for(r=!1,g=0;g<a.length;g++)if(b.size>a[g].size){a.splice(g,0,b),r=!0;break}r||a.push(b)}if(!j.settings("enableEdgeHovering"))return[];var e=sigma.renderers.canvas&&j instanceof sigma.renderers.canvas;if(!e)throw new Error("The edge events feature is not compatible with the WebGL renderer");c&&(h="x"in c.data?c.data.x:h,i="y"in c.data?c.data.y:i);var f,g,k,l,m,n,o,p,q,r,s=j.settings("edgeHoverPrecision"),t={},u=[],v=h+j.width/2,w=i+j.height/2,x=j.camera.cameraPosition(h,i),y=[];if(e){var z=j.camera.quadtree.area(j.camera.getRectangle(j.width,j.height));for(l=z,f=0,k=l.length;k>f;f++)t[l[f].id]=l[f]}if(j.camera.edgequadtree!==a&&(y=j.camera.edgequadtree.point(x.x,x.y)),y.length)for(f=0,k=y.length;k>f;f++)m=y[f],o=j.graph.nodes(m.source),p=j.graph.nodes(m.target),n=m[b+"size"]||m["read_"+b+"size"],!m.hidden&&!o.hidden&&!p.hidden&&(!e||t[m.source]||t[m.target])&&sigma.utils.getDistance(o[b+"x"],o[b+"y"],v,w)>o[b+"size"]&&sigma.utils.getDistance(p[b+"x"],p[b+"y"],v,w)>p[b+"size"]&&("curve"==m.type||"curvedArrow"==m.type?o.id===p.id?(q=sigma.utils.getSelfLoopControlPoints(o[b+"x"],o[b+"y"],o[b+"size"]),sigma.utils.isPointOnBezierCurve(v,w,o[b+"x"],o[b+"y"],p[b+"x"],p[b+"y"],q.x1,q.y1,q.x2,q.y2,Math.max(n,s))&&d(u,m)):(q=sigma.utils.getQuadraticControlPoint(o[b+"x"],o[b+"y"],p[b+"x"],p[b+"y"]),sigma.utils.isPointOnQuadraticCurve(v,w,o[b+"x"],o[b+"y"],p[b+"x"],p[b+"y"],q.x,q.y,Math.max(n,s))&&d(u,m)):sigma.utils.isPointOnSegment(v,w,o[b+"x"],o[b+"y"],p[b+"x"],p[b+"y"],Math.max(n,s))&&d(u,m));return u}function e(a){function b(a){j.settings("eventsEnabled")&&(j.dispatchEvent("click",a.data),i=c(a),k=d(a),i.length?(j.dispatchEvent("clickNode",{node:i[0],captor:a.data}),j.dispatchEvent("clickNodes",{node:i,captor:a.data})):k.length?(j.dispatchEvent("clickEdge",{edge:k[0],captor:a.data}),j.dispatchEvent("clickEdges",{edge:k,captor:a.data})):j.dispatchEvent("clickStage",{captor:a.data}))}function e(a){j.settings("eventsEnabled")&&(j.dispatchEvent("doubleClick",a.data),i=c(a),k=d(a),i.length?(j.dispatchEvent("doubleClickNode",{node:i[0],captor:a.data}),j.dispatchEvent("doubleClickNodes",{node:i,captor:a.data})):k.length?(j.dispatchEvent("doubleClickEdge",{edge:k[0],captor:a.data}),j.dispatchEvent("doubleClickEdges",{edge:k,captor:a.data})):j.dispatchEvent("doubleClickStage",{captor:a.data}))}function f(a){j.settings("eventsEnabled")&&(j.dispatchEvent("rightClick",a.data),i=c(a),k=d(a),i.length?(j.dispatchEvent("rightClickNode",{node:i[0],captor:a.data}),j.dispatchEvent("rightClickNodes",{node:i,captor:a.data})):k.length?(j.dispatchEvent("rightClickEdge",{edge:k[0],captor:a.data}),j.dispatchEvent("rightClickEdges",{edge:k,captor:a.data})):j.dispatchEvent("rightClickStage",{captor:a.data}))}function g(a){if(j.settings("eventsEnabled")){var b,c,d,e,f=[],g=[];for(b in l)f.push(l[b]);for(l={},c=0,d=f.length;d>c;c++)j.dispatchEvent("outNode",{node:f[c],captor:a.data});for(f.length&&j.dispatchEvent("outNodes",{nodes:f,captor:a.data}),m={},c=0,e=g.length;e>c;c++)j.dispatchEvent("outEdge",{edge:g[c],captor:a.data});g.length&&j.dispatchEvent("outEdges",{edges:g,captor:a.data})}}function h(a){if(j.settings("eventsEnabled")){i=c(a),k=d(a);var b,e,f,g,h=[],n=[],o={},p=i.length,q=[],r=[],s={},t=k.length;for(b=0;p>b;b++)f=i[b],o[f.id]=f,l[f.id]||(n.push(f),l[f.id]=f);for(e in l)o[e]||(h.push(l[e]),delete l[e]);for(b=0,p=n.length;p>b;b++)j.dispatchEvent("overNode",{node:n[b],captor:a.data});for(b=0,p=h.length;p>b;b++)j.dispatchEvent("outNode",{node:h[b],captor:a.data});for(n.length&&j.dispatchEvent("overNodes",{nodes:n,captor:a.data}),h.length&&j.dispatchEvent("outNodes",{nodes:h,captor:a.data}),b=0;t>b;b++)g=k[b],s[g.id]=g,m[g.id]||(r.push(g),m[g.id]=g);for(e in m)s[e]||(q.push(m[e]),delete m[e]);for(b=0,t=r.length;t>b;b++)j.dispatchEvent("overEdge",{edge:r[b],captor:a.data});for(b=0,t=q.length;t>b;b++)j.dispatchEvent("outEdge",{edge:q[b],captor:a.data});r.length&&j.dispatchEvent("overEdges",{edges:r,captor:a.data}),q.length&&j.dispatchEvent("outEdges",{edges:q,captor:a.data})}}var i,k,l={},m={};a.bind("click",b),a.bind("mousedown",h),a.bind("mouseup",h),a.bind("mousemove",h),a.bind("mouseout",g),a.bind("doubleclick",e),a.bind("rightclick",f),j.bind("render",h)}var f,g,h,i,j=this;for(f=0,g=this.captors.length;g>f;f++)e(this.captors[f])}}.call(this),function(a){"use strict";if("undefined"==typeof sigma)throw"sigma is not declared";sigma.utils.pkg("sigma.misc"),sigma.misc.bindDOMEvents=function(a){function b(a){this.attr=function(b){return a.getAttributeNS(null,b)},this.tag=a.tagName,this["class"]=this.attr("class"),this.id=this.attr("id"),this.isNode=function(){return!!~this["class"].indexOf(g.settings("classPrefix")+"-node")},this.isEdge=function(){return!!~this["class"].indexOf(g.settings("classPrefix")+"-edge")},this.isHover=function(){return!!~this["class"].indexOf(g.settings("classPrefix")+"-hover")}}function c(a){if(g.settings("eventsEnabled")){g.dispatchEvent("click",a);var c=new b(a.target);c.isNode()?g.dispatchEvent("clickNode",{node:h.nodes(c.attr("data-node-id"))}):g.dispatchEvent("clickStage"),a.preventDefault(),a.stopPropagation()}}function d(a){if(g.settings("eventsEnabled")){g.dispatchEvent("doubleClick",a);var c=new b(a.target);c.isNode()?g.dispatchEvent("doubleClickNode",{node:h.nodes(c.attr("data-node-id"))}):g.dispatchEvent("doubleClickStage"),a.preventDefault(),a.stopPropagation()}}function e(a){var c=a.toElement||a.target;if(g.settings("eventsEnabled")&&c){var d=new b(c);if(d.isNode())g.dispatchEvent("overNode",{node:h.nodes(d.attr("data-node-id"))});else if(d.isEdge()){var e=h.edges(d.attr("data-edge-id"));g.dispatchEvent("overEdge",{edge:e,source:h.nodes(e.source),target:h.nodes(e.target)})}}}function f(a){var c=a.fromElement||a.originalTarget;if(g.settings("eventsEnabled")){var d=new b(c);if(d.isNode())g.dispatchEvent("outNode",{node:h.nodes(d.attr("data-node-id"))});else if(d.isEdge()){var e=h.edges(d.attr("data-edge-id"));g.dispatchEvent("outEdge",{edge:e,source:h.nodes(e.source),target:h.nodes(e.target)})}}}var g=this,h=this.graph;a.addEventListener("click",c,!1),sigma.utils.doubleClick(a,"click",d),a.addEventListener("touchstart",c,!1),sigma.utils.doubleClick(a,"touchstart",d),a.addEventListener("mouseover",e,!0),a.addEventListener("mouseout",f,!0)}}.call(this),function(a){"use strict";if("undefined"==typeof sigma)throw"sigma is not declared";sigma.utils.pkg("sigma.misc"),sigma.misc.drawHovers=function(a){function b(){c.contexts.hover.canvas.width=c.contexts.hover.canvas.width;var b,f,g,h,i,j=c.settings("defaultNodeType"),k=c.settings("defaultEdgeType"),l=sigma.canvas.hovers,m=sigma.canvas.edgehovers,n=sigma.canvas.extremities,o=c.settings.embedObjects({prefix:a});if(o("enableHovering")&&o("singleHover")&&Object.keys(d).length&&(h=d[Object.keys(d)[0]],(l[h.type]||l[j]||l.def)(h,c.contexts.hover,o)),o("enableHovering")&&!o("singleHover"))for(b in d)(l[d[b].type]||l[j]||l.def)(d[b],c.contexts.hover,o);if(o("enableEdgeHovering")&&o("singleHover")&&Object.keys(e).length&&(i=e[Object.keys(e)[0]],f=c.graph.nodes(i.source),g=c.graph.nodes(i.target),i.hidden||((m[i.type]||m[k]||m.def)(i,f,g,c.contexts.hover,o),o("edgeHoverExtremities")?(n[i.type]||n.def)(i,f,g,c.contexts.hover,o):((sigma.canvas.nodes[f.type]||sigma.canvas.nodes.def)(f,c.contexts.hover,o),(sigma.canvas.nodes[g.type]||sigma.canvas.nodes.def)(g,c.contexts.hover,o)))),o("enableEdgeHovering")&&!o("singleHover"))for(b in e)i=e[b],f=c.graph.nodes(i.source),g=c.graph.nodes(i.target),i.hidden||((m[i.type]||m[k]||m.def)(i,f,g,c.contexts.hover,o),o("edgeHoverExtremities")?(n[i.type]||n.def)(i,f,g,c.contexts.hover,o):((sigma.canvas.nodes[f.type]||sigma.canvas.nodes.def)(f,c.contexts.hover,o),(sigma.canvas.nodes[g.type]||sigma.canvas.nodes.def)(g,c.contexts.hover,o)))}var c=this,d={},e={};this.bind("overNode",function(a){var c=a.data.node;c.hidden||(d[c.id]=c,b())}),this.bind("outNode",function(a){delete d[a.data.node.id],b()}),this.bind("overEdge",function(a){var c=a.data.edge;c.hidden||(e[c.id]=c,b())}),this.bind("outEdge",function(a){delete e[a.data.edge.id],b()}),this.bind("render",function(a){b()})}}.call(this);
+!function(t,e){"function"==typeof define&&define.amd?define([],e):"object"==typeof module&&module.exports?module.exports=e():t.CSV=e()}(this,function(){"use strict";function t(t){var e=typeof t;return"function"===e||"object"===e&&!!t}function e(t){return"string"==typeof t}function n(t){return!isNaN(+t)}function i(t){return 0==t||1==t}function r(t){return null==t}function o(t){return null!=t}function c(t,e){return o(t)?t:e}function u(t,e){for(var n=0,i=t.length;i>n&&e(t[n],n)!==!1;n+=1);}function s(t){return t.replace(/"/g,'\\"')}function a(t){return"attrs["+t+"]"}function l(t,e){return n(t)?"Number("+a(e)+")":i(t)?"Boolean("+a(e)+" == true)":"String("+a(e)+")"}function f(t,n,i,r){var o=[];return 3==arguments.length?(n?g(n)?u(i,function(i,r){e(n[r])?n[r]=n[r].toLowerCase():t[n[r]]=n[r],o.push("deserialize[cast["+r+"]]("+a(r)+")")}):u(i,function(t,e){o.push(l(t,e))}):u(i,function(t,e){o.push(a(e))}),o="return ["+o.join(",")+"]"):(n?g(n)?u(i,function(i,c){e(n[c])?n[c]=n[c].toLowerCase():t[n[c]]=n[c],o.push('"'+s(r[c])+'": deserialize[cast['+c+"]]("+a(c)+")")}):u(i,function(t,e){o.push('"'+s(r[e])+'": '+l(t,e))}):u(i,function(t,e){o.push('"'+s(r[e])+'": '+a(e))}),o="return {"+o.join(",")+"}"),Function("attrs","deserialize","cast",o)}function h(t,e){var n,i=0;return u(e,function(e){var r,o=e;-1!=p.indexOf(e)&&(o="\\"+o),r=t.match(RegExp(o,"g")),r&&r.length>i&&(i=r.length,n=e)}),n||e[0]}var p=["|","^"],d=[",",";","  ","|","^"],m=["\r\n","\r","\n"],g=Array.isArray||function(t){return"[object Array]"===toString.call(t)},y=function(){function n(t,n){if(n||(n={}),g(t))this.mode="encode";else{if(!e(t))throw Error("Incompatible format!");this.mode="parse"}this.data=t,this.options={header:c(n.header,!1),cast:c(n.cast,!0)};var i=n.lineDelimiter||n.line,r=n.cellDelimiter||n.delimiter;this.isParser()?(this.options.lineDelimiter=i||h(this.data,m),this.options.cellDelimiter=r||h(this.data,d),this.data=o(this.data,this.options.lineDelimiter)):this.isEncoder()&&(this.options.lineDelimiter=i||"\r\n",this.options.cellDelimiter=r||",")}function i(t,e,n,i,r){t(new e(n,i,r))}function o(t,e){return t.slice(-e.length)!=e&&(t+=e),t}function s(n){return g(n)?"array":t(n)?"object":e(n)?"string":r(n)?"null":"primitive"}return n.prototype.set=function(t,e){return this.options[t]=e},n.prototype.isParser=function(){return"parse"==this.mode},n.prototype.isEncoder=function(){return"encode"==this.mode},n.prototype.parse=function(t){function e(){s={escaped:!1,quote:!1,cell:!0}}function n(){m.cell=""}function r(){m.line=[]}function o(t){m.line.push(s.escaped?t.slice(1,-1).replace(/""/g,'"'):t),n(),e()}function c(t){o(t.slice(0,1-p.lineDelimiter.length))}function u(){d?g(d)?(a=f(y,p.cast,m.line,d),(u=function(){i(t,a,m.line,y,p.cast)})()):d=m.line:(a||(a=f(y,p.cast,m.line)),(u=function(){i(t,a,m.line,y,p.cast)})())}if("parse"==this.mode){if(0===this.data.trim().length)return[];var s,a,l,h=this.data,p=this.options,d=p.header,m={cell:"",line:[]},y=this.deserialize;t||(l=[],t=function(t){l.push(t)}),1==p.lineDelimiter.length&&(c=o);var v,A,D,b=h.length,j=p.cellDelimiter.charCodeAt(0),w=p.lineDelimiter.charCodeAt(p.lineDelimiter.length-1);for(e(),v=0,A=0;b>v;v++)D=h.charCodeAt(v),s.cell&&(s.cell=!1,34==D)?s.escaped=!0:s.escaped&&34==D?s.quote=!s.quote:(s.escaped&&s.quote||!s.escaped)&&(D==j?(o(m.cell+h.slice(A,v)),A=v+1):D==w&&(c(m.cell+h.slice(A,v)),A=v+1,u(),r()));return l?l:this}},n.prototype.deserialize={string:function(t){return t+""},number:function(t){return+t},"boolean":function(t){return!!t}},n.prototype.serialize={object:function(t){var e=this,n=Object.keys(t),i=Array(n.length);return u(n,function(n,r){i[r]=e[s(t[n])](t[n])}),i},array:function(t){var e=this,n=Array(t.length);return u(t,function(t,i){n[i]=e[s(t)](t)}),n},string:function(t){return'"'+(t+"").replace(/"/g,'""')+'"'},"null":function(){return""},primitive:function(t){return t}},n.prototype.encode=function(t){function n(t){return t.join(c.cellDelimiter)}if("encode"==this.mode){if(0==this.data.length)return"";var i,r,o=this.data,c=this.options,a=c.header,l=o[0],f=this.serialize,h=0;t||(r=Array(o.length),t=function(t,e){r[e+h]=t}),a&&(g(a)||(i=Object.keys(l),a=i),t(n(f.array(a)),0),h=1);var p,d=s(l);return"array"==d?(g(c.cast)?(p=Array(c.cast.length),u(c.cast,function(t,n){e(t)?p[n]=t.toLowerCase():(p[n]=t,f[t]=t)})):(p=Array(l.length),u(l,function(t,e){p[e]=s(t)})),u(o,function(e,i){var r=Array(p.length);u(e,function(t,e){r[e]=f[p[e]](t)}),t(n(r),i)})):"object"==d&&(i=Object.keys(l),g(c.cast)?(p=Array(c.cast.length),u(c.cast,function(t,n){e(t)?p[n]=t.toLowerCase():(p[n]=t,f[t]=t)})):(p=Array(i.length),u(i,function(t,e){p[e]=s(l[t])})),u(o,function(e,r){var o=Array(i.length);u(i,function(t,n){o[n]=f[p[n]](e[t])}),t(n(o),r)})),r?r.join(c.lineDelimiter):this}},n.prototype.forEach=function(t){return this[this.mode](t)},n}();return y.parse=function(t,e){return new y(t,e).parse()},y.encode=function(t,e){return new y(t,e).encode()},y.forEach=function(t,e,n){return 2==arguments.length&&(n=e),new y(t,e).forEach(n)},y});
 ;
 
-(function(a){"use strict";function b(a){var b={id:a.id,label:a.label};return a.viz&&(b.viz=a.viz),a.attributes&&(b.attributes=a.attributes),b}function c(a){var b={id:a.id,type:a.type||"undirected",label:a.label||"",source:a.source,target:a.target,weight:+a.weight||1};return a.viz&&(b.viz=a.viz),a.attributes&&(b.attributes=a.attributes),b}function d(a){function d(){var a={};return l.els.meta?(a.lastmodifieddate=l.els.meta.getAttribute("lastmodifieddate"),h.nodeListEach(l.els.meta.childNodes,function(b){a[b.tagName.toLowerCase()]=b.textContent}),a):a}function e(a){var b=[];return l.els.model[a]&&h.nodeListEach(l.els.model[a],function(a){var c={id:a.getAttribute("id")||a.getAttribute("for"),type:a.getAttribute("type")||"string",title:a.getAttribute("title")||""},d=h.nodeListToArray(a.childNodes);d.length>0&&(c.defaultValue=d[0].textContent),b.push(c)}),b.length>0?b:!1}function f(a,b){var c={},d=b.getElementsByTagName("attvalue"),e=h.nodeListToHash(d,function(a){var b=h.namedNodeMapToObject(a.attributes),c=b.id||b["for"];return{key:c,value:b.value}});return a.map(function(a){c[a.id]=!(a.id in e)&&"defaultValue"in a?h.enforceType(a.type,a.defaultValue):h.enforceType(a.type,e[a.id])}),c}function g(a){var c=[];return h.nodeListEach(l.els.nodes,function(d){var e={id:d.getAttribute("id"),label:d.getAttribute("label")||""};a&&(e.attributes=f(a,d)),l.hasViz&&(e.viz=i(d)),c.push(b(e))}),c}function i(a){var b={},c=h.getFirstElementByTagNS(a,"viz","color");if(c){var d=["r","g","b","a"].map(function(a){return c.getAttribute(a)});b.color=h.getRGB(d)}var e=h.getFirstElementByTagNS(a,"viz","position");e&&(b.position={},["x","y","z"].map(function(a){b.position[a]=+e.getAttribute(a)}));var f=h.getFirstElementByTagNS(a,"viz","size");f&&(b.size=+f.getAttribute("value"));var g=h.getFirstElementByTagNS(a,"viz","shape");return g&&(b.shape=g.getAttribute("value")),b}function j(a,b){var d=[];return h.nodeListEach(l.els.edges,function(e){var g=h.namedNodeMapToObject(e.attributes);"type"in g||(g.type=b),a&&(g.attributes=f(a,e)),l.hasViz&&(g.viz=k(e)),d.push(c(g))}),d}function k(a){var b={},c=h.getFirstElementByTagNS(a,"viz","color");if(c){var d=["r","g","b","a"].map(function(a){return c.getAttribute(a)});b.color=h.getRGB(d)}var e=h.getFirstElementByTagNS(a,"viz","shape");e&&(b.shape=e.getAttribute("value"));var f=h.getFirstElementByTagNS(a,"viz","thickness");return f&&(b.thickness=+f.getAttribute("value")),b}var l={};l.els={root:a.getElementsByTagName("gexf")[0],graph:a.getElementsByTagName("graph")[0],meta:a.getElementsByTagName("meta")[0],nodes:a.getElementsByTagName("node"),edges:a.getElementsByTagName("edge"),model:h.getModelTags(a)},l.hasViz=!!h.getAttributeNS(l.els.root,"xmlns","viz"),l.version=l.els.root.getAttribute("version")||"1.0",l.mode=l.els.graph.getAttribute("mode")||"static";var m=l.els.graph.getAttribute("defaultedgetype");l.defaultEdgetype=m||"undirected";var n=e("node"),o=e("edge"),p={version:l.version,mode:l.mode,defaultEdgeType:l.defaultEdgetype,meta:d(),model:{},nodes:g(n),edges:j(o,l.defaultEdgetype)};return n&&(p.model.node=n),o&&(p.model.edge=o),p}function e(a,b){var c=function(){if(window.XMLHttpRequest)return new XMLHttpRequest;var a,b;if(window.ActiveXObject){a=["Msxml2.XMLHTTP.6.0","Msxml2.XMLHTTP.3.0","Msxml2.XMLHTTP","Microsoft.XMLHTTP"];for(b in a)try{return new ActiveXObject(a[b])}catch(c){}}return null}();if(!c)throw"XMLHttpRequest not supported, cannot load the file.";var d,e="function"==typeof b;return c.overrideMimeType?(c.overrideMimeType("text/xml"),d=function(a){return a.responseXML}):d=function(a){var b=new DOMParser;return b.parseFromString(a.responseText,"application/xml")},c.open("GET",a,e),e&&(c.onreadystatechange=function(){4===c.readyState&&b(d(c))}),c.send(),e?c:d(c)}function f(a){return d(a)}function g(a,b){return"function"==typeof b?e(a,function(a){b(d(a))}):d(e(a))}var h={getModelTags:function(a){var b,c=a.getElementsByTagName("attributes"),d={},e=c.length;for(b=0;e>b;b++)d[c[b].getAttribute("class")]=c[b].childNodes;return d},nodeListToArray:function(a){for(var b=[],c=0,d=a.length;d>c;++c)"#text"!==a[c].nodeName&&b.push(a[c]);return b},nodeListEach:function(a,b){for(var c=0,d=a.length;d>c;++c)"#text"!==a[c].nodeName&&b(a[c])},nodeListToHash:function(a,b){for(var c={},d=0;d<a.length;d++)if("#text"!==a[d].nodeName){var e=b(a[d]);c[e.key]=e.value}return c},namedNodeMapToObject:function(a){for(var b={},c=0;c<a.length;c++)b[a[c].name]=a[c].value;return b},getFirstElementByTagNS:function(a,b,c){var d=a.getElementsByTagName(b+":"+c)[0];return d||(d=a.getElementsByTagNameNS(b,c)[0]),d||(d=a.getElementsByTagName(c)[0]),d},getAttributeNS:function(b,c,d){var e=b.getAttribute(c+":"+d);return e===a&&(e=b.getAttributeNS(c,d)),e===a&&(e=b.getAttribute(d)),e},enforceType:function(a,b){switch(a){case"boolean":b="true"===b;break;case"integer":case"long":case"float":case"double":b=+b;break;case"liststring":b=b?b.split("|"):[]}return b},getRGB:function(a){return a[3]?"rgba("+a.join(",")+")":"rgb("+a.slice(0,-1).join(",")+")"}};if("undefined"!=typeof this.gexf)throw'gexf: error - a variable called "gexf" already exists in the global scope';this.gexf={parse:f,fetch:g,version:"0.1.1"},"undefined"!=typeof exports&&this.exports!==exports&&(module.exports=this.gexf)}).call(this),function(a){"use strict";function b(){return"e"+c++}if("undefined"==typeof sigma)throw"sigma is not declared";sigma.utils.pkg("sigma.parsers");var c=0;sigma.parsers.gexf=function(a,c,d){function e(a){for(h=a.nodes,f=0,g=h.length;g>f;f++)i=h[f],i.id=i.id,i.viz&&"object"==typeof i.viz&&(i.viz.position&&"object"==typeof i.viz.position&&(i.x=i.viz.position.x,i.y=-i.viz.position.y),i.size=i.viz.size,i.color=i.viz.color);for(h=a.edges,f=0,g=h.length;g>f;f++)i=h[f],i.id="string"==typeof i.id?i.id:b(),i.source=""+i.source,i.target=""+i.target,i.viz&&"object"==typeof i.viz&&(i.color=i.viz.color,i.size=i.viz.thickness),i.size=i.weight,i.direction=i.type,delete i.type;if(c instanceof sigma){for(c.graph.clear(),h=a.nodes,f=0,g=h.length;g>f;f++)c.graph.addNode(h[f]);for(h=a.edges,f=0,g=h.length;g>f;f++)c.graph.addEdge(h[f])}else"object"==typeof c?(c.graph=a,c=new sigma(c)):"function"==typeof c&&(d=c,c=null);return d?void d(c||a):a}var f,g,h,i;if("string"==typeof a)gexf.fetch(a,e);else if("object"==typeof a)return e(gexf.parse(a))}}.call(this);
+/*
+ Leaflet, a JavaScript library for mobile-friendly interactive maps. http://leafletjs.com
+ (c) 2010-2013, Vladimir Agafonkin
+ (c) 2010-2011, CloudMade
+*/
+(function (window, document, undefined) {
+var oldL = window.L,
+    L = {};
+
+L.version = '0.7.5';
+
+// define Leaflet for Node module pattern loaders, including Browserify
+if (typeof module === 'object' && typeof module.exports === 'object') {
+	module.exports = L;
+
+// define Leaflet as an AMD module
+} else if (typeof define === 'function' && define.amd) {
+	define(L);
+}
+
+// define Leaflet as a global L variable, saving the original L to restore later if needed
+
+L.noConflict = function () {
+	window.L = oldL;
+	return this;
+};
+
+window.L = L;
+
+
+/*
+ * L.Util contains various utility functions used throughout Leaflet code.
+ */
+
+L.Util = {
+	extend: function (dest) { // (Object[, Object, ...]) ->
+		var sources = Array.prototype.slice.call(arguments, 1),
+		    i, j, len, src;
+
+		for (j = 0, len = sources.length; j < len; j++) {
+			src = sources[j] || {};
+			for (i in src) {
+				if (src.hasOwnProperty(i)) {
+					dest[i] = src[i];
+				}
+			}
+		}
+		return dest;
+	},
+
+	bind: function (fn, obj) { // (Function, Object) -> Function
+		var args = arguments.length > 2 ? Array.prototype.slice.call(arguments, 2) : null;
+		return function () {
+			return fn.apply(obj, args || arguments);
+		};
+	},
+
+	stamp: (function () {
+		var lastId = 0,
+		    key = '_leaflet_id';
+		return function (obj) {
+			obj[key] = obj[key] || ++lastId;
+			return obj[key];
+		};
+	}()),
+
+	invokeEach: function (obj, method, context) {
+		var i, args;
+
+		if (typeof obj === 'object') {
+			args = Array.prototype.slice.call(arguments, 3);
+
+			for (i in obj) {
+				method.apply(context, [i, obj[i]].concat(args));
+			}
+			return true;
+		}
+
+		return false;
+	},
+
+	limitExecByInterval: function (fn, time, context) {
+		var lock, execOnUnlock;
+
+		return function wrapperFn() {
+			var args = arguments;
+
+			if (lock) {
+				execOnUnlock = true;
+				return;
+			}
+
+			lock = true;
+
+			setTimeout(function () {
+				lock = false;
+
+				if (execOnUnlock) {
+					wrapperFn.apply(context, args);
+					execOnUnlock = false;
+				}
+			}, time);
+
+			fn.apply(context, args);
+		};
+	},
+
+	falseFn: function () {
+		return false;
+	},
+
+	formatNum: function (num, digits) {
+		var pow = Math.pow(10, digits || 5);
+		return Math.round(num * pow) / pow;
+	},
+
+	trim: function (str) {
+		return str.trim ? str.trim() : str.replace(/^\s+|\s+$/g, '');
+	},
+
+	splitWords: function (str) {
+		return L.Util.trim(str).split(/\s+/);
+	},
+
+	setOptions: function (obj, options) {
+		obj.options = L.extend({}, obj.options, options);
+		return obj.options;
+	},
+
+	getParamString: function (obj, existingUrl, uppercase) {
+		var params = [];
+		for (var i in obj) {
+			params.push(encodeURIComponent(uppercase ? i.toUpperCase() : i) + '=' + encodeURIComponent(obj[i]));
+		}
+		return ((!existingUrl || existingUrl.indexOf('?') === -1) ? '?' : '&') + params.join('&');
+	},
+	template: function (str, data) {
+		return str.replace(/\{ *([\w_]+) *\}/g, function (str, key) {
+			var value = data[key];
+			if (value === undefined) {
+				throw new Error('No value provided for variable ' + str);
+			} else if (typeof value === 'function') {
+				value = value(data);
+			}
+			return value;
+		});
+	},
+
+	isArray: Array.isArray || function (obj) {
+		return (Object.prototype.toString.call(obj) === '[object Array]');
+	},
+
+	emptyImageUrl: 'data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs='
+};
+
+(function () {
+
+	// inspired by http://paulirish.com/2011/requestanimationframe-for-smart-animating/
+
+	function getPrefixed(name) {
+		var i, fn,
+		    prefixes = ['webkit', 'moz', 'o', 'ms'];
+
+		for (i = 0; i < prefixes.length && !fn; i++) {
+			fn = window[prefixes[i] + name];
+		}
+
+		return fn;
+	}
+
+	var lastTime = 0;
+
+	function timeoutDefer(fn) {
+		var time = +new Date(),
+		    timeToCall = Math.max(0, 16 - (time - lastTime));
+
+		lastTime = time + timeToCall;
+		return window.setTimeout(fn, timeToCall);
+	}
+
+	var requestFn = window.requestAnimationFrame ||
+	        getPrefixed('RequestAnimationFrame') || timeoutDefer;
+
+	var cancelFn = window.cancelAnimationFrame ||
+	        getPrefixed('CancelAnimationFrame') ||
+	        getPrefixed('CancelRequestAnimationFrame') ||
+	        function (id) { window.clearTimeout(id); };
+
+
+	L.Util.requestAnimFrame = function (fn, context, immediate, element) {
+		fn = L.bind(fn, context);
+
+		if (immediate && requestFn === timeoutDefer) {
+			fn();
+		} else {
+			return requestFn.call(window, fn, element);
+		}
+	};
+
+	L.Util.cancelAnimFrame = function (id) {
+		if (id) {
+			cancelFn.call(window, id);
+		}
+	};
+
+}());
+
+// shortcuts for most used utility functions
+L.extend = L.Util.extend;
+L.bind = L.Util.bind;
+L.stamp = L.Util.stamp;
+L.setOptions = L.Util.setOptions;
+
+
+/*
+ * L.Class powers the OOP facilities of the library.
+ * Thanks to John Resig and Dean Edwards for inspiration!
+ */
+
+L.Class = function () {};
+
+L.Class.extend = function (props) {
+
+	// extended class with the new prototype
+	var NewClass = function () {
+
+		// call the constructor
+		if (this.initialize) {
+			this.initialize.apply(this, arguments);
+		}
+
+		// call all constructor hooks
+		if (this._initHooks) {
+			this.callInitHooks();
+		}
+	};
+
+	// instantiate class without calling constructor
+	var F = function () {};
+	F.prototype = this.prototype;
+
+	var proto = new F();
+	proto.constructor = NewClass;
+
+	NewClass.prototype = proto;
+
+	//inherit parent's statics
+	for (var i in this) {
+		if (this.hasOwnProperty(i) && i !== 'prototype') {
+			NewClass[i] = this[i];
+		}
+	}
+
+	// mix static properties into the class
+	if (props.statics) {
+		L.extend(NewClass, props.statics);
+		delete props.statics;
+	}
+
+	// mix includes into the prototype
+	if (props.includes) {
+		L.Util.extend.apply(null, [proto].concat(props.includes));
+		delete props.includes;
+	}
+
+	// merge options
+	if (props.options && proto.options) {
+		props.options = L.extend({}, proto.options, props.options);
+	}
+
+	// mix given properties into the prototype
+	L.extend(proto, props);
+
+	proto._initHooks = [];
+
+	var parent = this;
+	// jshint camelcase: false
+	NewClass.__super__ = parent.prototype;
+
+	// add method for calling all hooks
+	proto.callInitHooks = function () {
+
+		if (this._initHooksCalled) { return; }
+
+		if (parent.prototype.callInitHooks) {
+			parent.prototype.callInitHooks.call(this);
+		}
+
+		this._initHooksCalled = true;
+
+		for (var i = 0, len = proto._initHooks.length; i < len; i++) {
+			proto._initHooks[i].call(this);
+		}
+	};
+
+	return NewClass;
+};
+
+
+// method for adding properties to prototype
+L.Class.include = function (props) {
+	L.extend(this.prototype, props);
+};
+
+// merge new default options to the Class
+L.Class.mergeOptions = function (options) {
+	L.extend(this.prototype.options, options);
+};
+
+// add a constructor hook
+L.Class.addInitHook = function (fn) { // (Function) || (String, args...)
+	var args = Array.prototype.slice.call(arguments, 1);
+
+	var init = typeof fn === 'function' ? fn : function () {
+		this[fn].apply(this, args);
+	};
+
+	this.prototype._initHooks = this.prototype._initHooks || [];
+	this.prototype._initHooks.push(init);
+};
+
+
+/*
+ * L.Mixin.Events is used to add custom events functionality to Leaflet classes.
+ */
+
+var eventsKey = '_leaflet_events';
+
+L.Mixin = {};
+
+L.Mixin.Events = {
+
+	addEventListener: function (types, fn, context) { // (String, Function[, Object]) or (Object[, Object])
+
+		// types can be a map of types/handlers
+		if (L.Util.invokeEach(types, this.addEventListener, this, fn, context)) { return this; }
+
+		var events = this[eventsKey] = this[eventsKey] || {},
+		    contextId = context && context !== this && L.stamp(context),
+		    i, len, event, type, indexKey, indexLenKey, typeIndex;
+
+		// types can be a string of space-separated words
+		types = L.Util.splitWords(types);
+
+		for (i = 0, len = types.length; i < len; i++) {
+			event = {
+				action: fn,
+				context: context || this
+			};
+			type = types[i];
+
+			if (contextId) {
+				// store listeners of a particular context in a separate hash (if it has an id)
+				// gives a major performance boost when removing thousands of map layers
+
+				indexKey = type + '_idx';
+				indexLenKey = indexKey + '_len';
+
+				typeIndex = events[indexKey] = events[indexKey] || {};
+
+				if (!typeIndex[contextId]) {
+					typeIndex[contextId] = [];
+
+					// keep track of the number of keys in the index to quickly check if it's empty
+					events[indexLenKey] = (events[indexLenKey] || 0) + 1;
+				}
+
+				typeIndex[contextId].push(event);
+
+
+			} else {
+				events[type] = events[type] || [];
+				events[type].push(event);
+			}
+		}
+
+		return this;
+	},
+
+	hasEventListeners: function (type) { // (String) -> Boolean
+		var events = this[eventsKey];
+		return !!events && ((type in events && events[type].length > 0) ||
+		                    (type + '_idx' in events && events[type + '_idx_len'] > 0));
+	},
+
+	removeEventListener: function (types, fn, context) { // ([String, Function, Object]) or (Object[, Object])
+
+		if (!this[eventsKey]) {
+			return this;
+		}
+
+		if (!types) {
+			return this.clearAllEventListeners();
+		}
+
+		if (L.Util.invokeEach(types, this.removeEventListener, this, fn, context)) { return this; }
+
+		var events = this[eventsKey],
+		    contextId = context && context !== this && L.stamp(context),
+		    i, len, type, listeners, j, indexKey, indexLenKey, typeIndex, removed;
+
+		types = L.Util.splitWords(types);
+
+		for (i = 0, len = types.length; i < len; i++) {
+			type = types[i];
+			indexKey = type + '_idx';
+			indexLenKey = indexKey + '_len';
+
+			typeIndex = events[indexKey];
+
+			if (!fn) {
+				// clear all listeners for a type if function isn't specified
+				delete events[type];
+				delete events[indexKey];
+				delete events[indexLenKey];
+
+			} else {
+				listeners = contextId && typeIndex ? typeIndex[contextId] : events[type];
+
+				if (listeners) {
+					for (j = listeners.length - 1; j >= 0; j--) {
+						if ((listeners[j].action === fn) && (!context || (listeners[j].context === context))) {
+							removed = listeners.splice(j, 1);
+							// set the old action to a no-op, because it is possible
+							// that the listener is being iterated over as part of a dispatch
+							removed[0].action = L.Util.falseFn;
+						}
+					}
+
+					if (context && typeIndex && (listeners.length === 0)) {
+						delete typeIndex[contextId];
+						events[indexLenKey]--;
+					}
+				}
+			}
+		}
+
+		return this;
+	},
+
+	clearAllEventListeners: function () {
+		delete this[eventsKey];
+		return this;
+	},
+
+	fireEvent: function (type, data) { // (String[, Object])
+		if (!this.hasEventListeners(type)) {
+			return this;
+		}
+
+		var event = L.Util.extend({}, data, { type: type, target: this });
+
+		var events = this[eventsKey],
+		    listeners, i, len, typeIndex, contextId;
+
+		if (events[type]) {
+			// make sure adding/removing listeners inside other listeners won't cause infinite loop
+			listeners = events[type].slice();
+
+			for (i = 0, len = listeners.length; i < len; i++) {
+				listeners[i].action.call(listeners[i].context, event);
+			}
+		}
+
+		// fire event for the context-indexed listeners as well
+		typeIndex = events[type + '_idx'];
+
+		for (contextId in typeIndex) {
+			listeners = typeIndex[contextId].slice();
+
+			if (listeners) {
+				for (i = 0, len = listeners.length; i < len; i++) {
+					listeners[i].action.call(listeners[i].context, event);
+				}
+			}
+		}
+
+		return this;
+	},
+
+	addOneTimeEventListener: function (types, fn, context) {
+
+		if (L.Util.invokeEach(types, this.addOneTimeEventListener, this, fn, context)) { return this; }
+
+		var handler = L.bind(function () {
+			this
+			    .removeEventListener(types, fn, context)
+			    .removeEventListener(types, handler, context);
+		}, this);
+
+		return this
+		    .addEventListener(types, fn, context)
+		    .addEventListener(types, handler, context);
+	}
+};
+
+L.Mixin.Events.on = L.Mixin.Events.addEventListener;
+L.Mixin.Events.off = L.Mixin.Events.removeEventListener;
+L.Mixin.Events.once = L.Mixin.Events.addOneTimeEventListener;
+L.Mixin.Events.fire = L.Mixin.Events.fireEvent;
+
+
+/*
+ * L.Browser handles different browser and feature detections for internal Leaflet use.
+ */
+
+(function () {
+
+	var ie = 'ActiveXObject' in window,
+		ielt9 = ie && !document.addEventListener,
+
+	    // terrible browser detection to work around Safari / iOS / Android browser bugs
+	    ua = navigator.userAgent.toLowerCase(),
+	    webkit = ua.indexOf('webkit') !== -1,
+	    chrome = ua.indexOf('chrome') !== -1,
+	    phantomjs = ua.indexOf('phantom') !== -1,
+	    android = ua.indexOf('android') !== -1,
+	    android23 = ua.search('android [23]') !== -1,
+		gecko = ua.indexOf('gecko') !== -1,
+
+	    mobile = typeof orientation !== undefined + '',
+	    msPointer = !window.PointerEvent && window.MSPointerEvent,
+		pointer = (window.PointerEvent && window.navigator.pointerEnabled && window.navigator.maxTouchPoints) ||
+				  msPointer,
+	    retina = ('devicePixelRatio' in window && window.devicePixelRatio > 1) ||
+	             ('matchMedia' in window && window.matchMedia('(min-resolution:144dpi)') &&
+	              window.matchMedia('(min-resolution:144dpi)').matches),
+
+	    doc = document.documentElement,
+	    ie3d = ie && ('transition' in doc.style),
+	    webkit3d = ('WebKitCSSMatrix' in window) && ('m11' in new window.WebKitCSSMatrix()) && !android23,
+	    gecko3d = 'MozPerspective' in doc.style,
+	    opera3d = 'OTransition' in doc.style,
+	    any3d = !window.L_DISABLE_3D && (ie3d || webkit3d || gecko3d || opera3d) && !phantomjs;
+
+	var touch = !window.L_NO_TOUCH && !phantomjs && (pointer || 'ontouchstart' in window ||
+		(window.DocumentTouch && document instanceof window.DocumentTouch));
+
+	L.Browser = {
+		ie: ie,
+		ielt9: ielt9,
+		webkit: webkit,
+		gecko: gecko && !webkit && !window.opera && !ie,
+
+		android: android,
+		android23: android23,
+
+		chrome: chrome,
+
+		ie3d: ie3d,
+		webkit3d: webkit3d,
+		gecko3d: gecko3d,
+		opera3d: opera3d,
+		any3d: any3d,
+
+		mobile: mobile,
+		mobileWebkit: mobile && webkit,
+		mobileWebkit3d: mobile && webkit3d,
+		mobileOpera: mobile && window.opera,
+
+		touch: touch,
+		msPointer: msPointer,
+		pointer: pointer,
+
+		retina: retina
+	};
+
+}());
+
+
+/*
+ * L.Point represents a point with x and y coordinates.
+ */
+
+L.Point = function (/*Number*/ x, /*Number*/ y, /*Boolean*/ round) {
+	this.x = (round ? Math.round(x) : x);
+	this.y = (round ? Math.round(y) : y);
+};
+
+L.Point.prototype = {
+
+	clone: function () {
+		return new L.Point(this.x, this.y);
+	},
+
+	// non-destructive, returns a new point
+	add: function (point) {
+		return this.clone()._add(L.point(point));
+	},
+
+	// destructive, used directly for performance in situations where it's safe to modify existing point
+	_add: function (point) {
+		this.x += point.x;
+		this.y += point.y;
+		return this;
+	},
+
+	subtract: function (point) {
+		return this.clone()._subtract(L.point(point));
+	},
+
+	_subtract: function (point) {
+		this.x -= point.x;
+		this.y -= point.y;
+		return this;
+	},
+
+	divideBy: function (num) {
+		return this.clone()._divideBy(num);
+	},
+
+	_divideBy: function (num) {
+		this.x /= num;
+		this.y /= num;
+		return this;
+	},
+
+	multiplyBy: function (num) {
+		return this.clone()._multiplyBy(num);
+	},
+
+	_multiplyBy: function (num) {
+		this.x *= num;
+		this.y *= num;
+		return this;
+	},
+
+	round: function () {
+		return this.clone()._round();
+	},
+
+	_round: function () {
+		this.x = Math.round(this.x);
+		this.y = Math.round(this.y);
+		return this;
+	},
+
+	floor: function () {
+		return this.clone()._floor();
+	},
+
+	_floor: function () {
+		this.x = Math.floor(this.x);
+		this.y = Math.floor(this.y);
+		return this;
+	},
+
+	distanceTo: function (point) {
+		point = L.point(point);
+
+		var x = point.x - this.x,
+		    y = point.y - this.y;
+
+		return Math.sqrt(x * x + y * y);
+	},
+
+	equals: function (point) {
+		point = L.point(point);
+
+		return point.x === this.x &&
+		       point.y === this.y;
+	},
+
+	contains: function (point) {
+		point = L.point(point);
+
+		return Math.abs(point.x) <= Math.abs(this.x) &&
+		       Math.abs(point.y) <= Math.abs(this.y);
+	},
+
+	toString: function () {
+		return 'Point(' +
+		        L.Util.formatNum(this.x) + ', ' +
+		        L.Util.formatNum(this.y) + ')';
+	}
+};
+
+L.point = function (x, y, round) {
+	if (x instanceof L.Point) {
+		return x;
+	}
+	if (L.Util.isArray(x)) {
+		return new L.Point(x[0], x[1]);
+	}
+	if (x === undefined || x === null) {
+		return x;
+	}
+	return new L.Point(x, y, round);
+};
+
+
+/*
+ * L.Bounds represents a rectangular area on the screen in pixel coordinates.
+ */
+
+L.Bounds = function (a, b) { //(Point, Point) or Point[]
+	if (!a) { return; }
+
+	var points = b ? [a, b] : a;
+
+	for (var i = 0, len = points.length; i < len; i++) {
+		this.extend(points[i]);
+	}
+};
+
+L.Bounds.prototype = {
+	// extend the bounds to contain the given point
+	extend: function (point) { // (Point)
+		point = L.point(point);
+
+		if (!this.min && !this.max) {
+			this.min = point.clone();
+			this.max = point.clone();
+		} else {
+			this.min.x = Math.min(point.x, this.min.x);
+			this.max.x = Math.max(point.x, this.max.x);
+			this.min.y = Math.min(point.y, this.min.y);
+			this.max.y = Math.max(point.y, this.max.y);
+		}
+		return this;
+	},
+
+	getCenter: function (round) { // (Boolean) -> Point
+		return new L.Point(
+		        (this.min.x + this.max.x) / 2,
+		        (this.min.y + this.max.y) / 2, round);
+	},
+
+	getBottomLeft: function () { // -> Point
+		return new L.Point(this.min.x, this.max.y);
+	},
+
+	getTopRight: function () { // -> Point
+		return new L.Point(this.max.x, this.min.y);
+	},
+
+	getSize: function () {
+		return this.max.subtract(this.min);
+	},
+
+	contains: function (obj) { // (Bounds) or (Point) -> Boolean
+		var min, max;
+
+		if (typeof obj[0] === 'number' || obj instanceof L.Point) {
+			obj = L.point(obj);
+		} else {
+			obj = L.bounds(obj);
+		}
+
+		if (obj instanceof L.Bounds) {
+			min = obj.min;
+			max = obj.max;
+		} else {
+			min = max = obj;
+		}
+
+		return (min.x >= this.min.x) &&
+		       (max.x <= this.max.x) &&
+		       (min.y >= this.min.y) &&
+		       (max.y <= this.max.y);
+	},
+
+	intersects: function (bounds) { // (Bounds) -> Boolean
+		bounds = L.bounds(bounds);
+
+		var min = this.min,
+		    max = this.max,
+		    min2 = bounds.min,
+		    max2 = bounds.max,
+		    xIntersects = (max2.x >= min.x) && (min2.x <= max.x),
+		    yIntersects = (max2.y >= min.y) && (min2.y <= max.y);
+
+		return xIntersects && yIntersects;
+	},
+
+	isValid: function () {
+		return !!(this.min && this.max);
+	}
+};
+
+L.bounds = function (a, b) { // (Bounds) or (Point, Point) or (Point[])
+	if (!a || a instanceof L.Bounds) {
+		return a;
+	}
+	return new L.Bounds(a, b);
+};
+
+
+/*
+ * L.Transformation is an utility class to perform simple point transformations through a 2d-matrix.
+ */
+
+L.Transformation = function (a, b, c, d) {
+	this._a = a;
+	this._b = b;
+	this._c = c;
+	this._d = d;
+};
+
+L.Transformation.prototype = {
+	transform: function (point, scale) { // (Point, Number) -> Point
+		return this._transform(point.clone(), scale);
+	},
+
+	// destructive transform (faster)
+	_transform: function (point, scale) {
+		scale = scale || 1;
+		point.x = scale * (this._a * point.x + this._b);
+		point.y = scale * (this._c * point.y + this._d);
+		return point;
+	},
+
+	untransform: function (point, scale) {
+		scale = scale || 1;
+		return new L.Point(
+		        (point.x / scale - this._b) / this._a,
+		        (point.y / scale - this._d) / this._c);
+	}
+};
+
+
+/*
+ * L.DomUtil contains various utility functions for working with DOM.
+ */
+
+L.DomUtil = {
+	get: function (id) {
+		return (typeof id === 'string' ? document.getElementById(id) : id);
+	},
+
+	getStyle: function (el, style) {
+
+		var value = el.style[style];
+
+		if (!value && el.currentStyle) {
+			value = el.currentStyle[style];
+		}
+
+		if ((!value || value === 'auto') && document.defaultView) {
+			var css = document.defaultView.getComputedStyle(el, null);
+			value = css ? css[style] : null;
+		}
+
+		return value === 'auto' ? null : value;
+	},
+
+	getViewportOffset: function (element) {
+
+		var top = 0,
+		    left = 0,
+		    el = element,
+		    docBody = document.body,
+		    docEl = document.documentElement,
+		    pos;
+
+		do {
+			top  += el.offsetTop  || 0;
+			left += el.offsetLeft || 0;
+
+			//add borders
+			top += parseInt(L.DomUtil.getStyle(el, 'borderTopWidth'), 10) || 0;
+			left += parseInt(L.DomUtil.getStyle(el, 'borderLeftWidth'), 10) || 0;
+
+			pos = L.DomUtil.getStyle(el, 'position');
+
+			if (el.offsetParent === docBody && pos === 'absolute') { break; }
+
+			if (pos === 'fixed') {
+				top  += docBody.scrollTop  || docEl.scrollTop  || 0;
+				left += docBody.scrollLeft || docEl.scrollLeft || 0;
+				break;
+			}
+
+			if (pos === 'relative' && !el.offsetLeft) {
+				var width = L.DomUtil.getStyle(el, 'width'),
+				    maxWidth = L.DomUtil.getStyle(el, 'max-width'),
+				    r = el.getBoundingClientRect();
+
+				if (width !== 'none' || maxWidth !== 'none') {
+					left += r.left + el.clientLeft;
+				}
+
+				//calculate full y offset since we're breaking out of the loop
+				top += r.top + (docBody.scrollTop  || docEl.scrollTop  || 0);
+
+				break;
+			}
+
+			el = el.offsetParent;
+
+		} while (el);
+
+		el = element;
+
+		do {
+			if (el === docBody) { break; }
+
+			top  -= el.scrollTop  || 0;
+			left -= el.scrollLeft || 0;
+
+			el = el.parentNode;
+		} while (el);
+
+		return new L.Point(left, top);
+	},
+
+	documentIsLtr: function () {
+		if (!L.DomUtil._docIsLtrCached) {
+			L.DomUtil._docIsLtrCached = true;
+			L.DomUtil._docIsLtr = L.DomUtil.getStyle(document.body, 'direction') === 'ltr';
+		}
+		return L.DomUtil._docIsLtr;
+	},
+
+	create: function (tagName, className, container) {
+
+		var el = document.createElement(tagName);
+		el.className = className;
+
+		if (container) {
+			container.appendChild(el);
+		}
+
+		return el;
+	},
+
+	hasClass: function (el, name) {
+		if (el.classList !== undefined) {
+			return el.classList.contains(name);
+		}
+		var className = L.DomUtil._getClass(el);
+		return className.length > 0 && new RegExp('(^|\\s)' + name + '(\\s|$)').test(className);
+	},
+
+	addClass: function (el, name) {
+		if (el.classList !== undefined) {
+			var classes = L.Util.splitWords(name);
+			for (var i = 0, len = classes.length; i < len; i++) {
+				el.classList.add(classes[i]);
+			}
+		} else if (!L.DomUtil.hasClass(el, name)) {
+			var className = L.DomUtil._getClass(el);
+			L.DomUtil._setClass(el, (className ? className + ' ' : '') + name);
+		}
+	},
+
+	removeClass: function (el, name) {
+		if (el.classList !== undefined) {
+			el.classList.remove(name);
+		} else {
+			L.DomUtil._setClass(el, L.Util.trim((' ' + L.DomUtil._getClass(el) + ' ').replace(' ' + name + ' ', ' ')));
+		}
+	},
+
+	_setClass: function (el, name) {
+		if (el.className.baseVal === undefined) {
+			el.className = name;
+		} else {
+			// in case of SVG element
+			el.className.baseVal = name;
+		}
+	},
+
+	_getClass: function (el) {
+		return el.className.baseVal === undefined ? el.className : el.className.baseVal;
+	},
+
+	setOpacity: function (el, value) {
+
+		if ('opacity' in el.style) {
+			el.style.opacity = value;
+
+		} else if ('filter' in el.style) {
+
+			var filter = false,
+			    filterName = 'DXImageTransform.Microsoft.Alpha';
+
+			// filters collection throws an error if we try to retrieve a filter that doesn't exist
+			try {
+				filter = el.filters.item(filterName);
+			} catch (e) {
+				// don't set opacity to 1 if we haven't already set an opacity,
+				// it isn't needed and breaks transparent pngs.
+				if (value === 1) { return; }
+			}
+
+			value = Math.round(value * 100);
+
+			if (filter) {
+				filter.Enabled = (value !== 100);
+				filter.Opacity = value;
+			} else {
+				el.style.filter += ' progid:' + filterName + '(opacity=' + value + ')';
+			}
+		}
+	},
+
+	testProp: function (props) {
+
+		var style = document.documentElement.style;
+
+		for (var i = 0; i < props.length; i++) {
+			if (props[i] in style) {
+				return props[i];
+			}
+		}
+		return false;
+	},
+
+	getTranslateString: function (point) {
+		// on WebKit browsers (Chrome/Safari/iOS Safari/Android) using translate3d instead of translate
+		// makes animation smoother as it ensures HW accel is used. Firefox 13 doesn't care
+		// (same speed either way), Opera 12 doesn't support translate3d
+
+		var is3d = L.Browser.webkit3d,
+		    open = 'translate' + (is3d ? '3d' : '') + '(',
+		    close = (is3d ? ',0' : '') + ')';
+
+		return open + point.x + 'px,' + point.y + 'px' + close;
+	},
+
+	getScaleString: function (scale, origin) {
+
+		var preTranslateStr = L.DomUtil.getTranslateString(origin.add(origin.multiplyBy(-1 * scale))),
+		    scaleStr = ' scale(' + scale + ') ';
+
+		return preTranslateStr + scaleStr;
+	},
+
+	setPosition: function (el, point, disable3D) { // (HTMLElement, Point[, Boolean])
+
+		// jshint camelcase: false
+		el._leaflet_pos = point;
+
+		if (!disable3D && L.Browser.any3d) {
+			el.style[L.DomUtil.TRANSFORM] =  L.DomUtil.getTranslateString(point);
+		} else {
+			el.style.left = point.x + 'px';
+			el.style.top = point.y + 'px';
+		}
+	},
+
+	getPosition: function (el) {
+		// this method is only used for elements previously positioned using setPosition,
+		// so it's safe to cache the position for performance
+
+		// jshint camelcase: false
+		return el._leaflet_pos;
+	}
+};
+
+
+// prefix style property names
+
+L.DomUtil.TRANSFORM = L.DomUtil.testProp(
+        ['transform', 'WebkitTransform', 'OTransform', 'MozTransform', 'msTransform']);
+
+// webkitTransition comes first because some browser versions that drop vendor prefix don't do
+// the same for the transitionend event, in particular the Android 4.1 stock browser
+
+L.DomUtil.TRANSITION = L.DomUtil.testProp(
+        ['webkitTransition', 'transition', 'OTransition', 'MozTransition', 'msTransition']);
+
+L.DomUtil.TRANSITION_END =
+        L.DomUtil.TRANSITION === 'webkitTransition' || L.DomUtil.TRANSITION === 'OTransition' ?
+        L.DomUtil.TRANSITION + 'End' : 'transitionend';
+
+(function () {
+    if ('onselectstart' in document) {
+        L.extend(L.DomUtil, {
+            disableTextSelection: function () {
+                L.DomEvent.on(window, 'selectstart', L.DomEvent.preventDefault);
+            },
+
+            enableTextSelection: function () {
+                L.DomEvent.off(window, 'selectstart', L.DomEvent.preventDefault);
+            }
+        });
+    } else {
+        var userSelectProperty = L.DomUtil.testProp(
+            ['userSelect', 'WebkitUserSelect', 'OUserSelect', 'MozUserSelect', 'msUserSelect']);
+
+        L.extend(L.DomUtil, {
+            disableTextSelection: function () {
+                if (userSelectProperty) {
+                    var style = document.documentElement.style;
+                    this._userSelect = style[userSelectProperty];
+                    style[userSelectProperty] = 'none';
+                }
+            },
+
+            enableTextSelection: function () {
+                if (userSelectProperty) {
+                    document.documentElement.style[userSelectProperty] = this._userSelect;
+                    delete this._userSelect;
+                }
+            }
+        });
+    }
+
+	L.extend(L.DomUtil, {
+		disableImageDrag: function () {
+			L.DomEvent.on(window, 'dragstart', L.DomEvent.preventDefault);
+		},
+
+		enableImageDrag: function () {
+			L.DomEvent.off(window, 'dragstart', L.DomEvent.preventDefault);
+		}
+	});
+})();
+
+
+/*
+ * L.LatLng represents a geographical point with latitude and longitude coordinates.
+ */
+
+L.LatLng = function (lat, lng, alt) { // (Number, Number, Number)
+	lat = parseFloat(lat);
+	lng = parseFloat(lng);
+
+	if (isNaN(lat) || isNaN(lng)) {
+		throw new Error('Invalid LatLng object: (' + lat + ', ' + lng + ')');
+	}
+
+	this.lat = lat;
+	this.lng = lng;
+
+	if (alt !== undefined) {
+		this.alt = parseFloat(alt);
+	}
+};
+
+L.extend(L.LatLng, {
+	DEG_TO_RAD: Math.PI / 180,
+	RAD_TO_DEG: 180 / Math.PI,
+	MAX_MARGIN: 1.0E-9 // max margin of error for the "equals" check
+});
+
+L.LatLng.prototype = {
+	equals: function (obj) { // (LatLng) -> Boolean
+		if (!obj) { return false; }
+
+		obj = L.latLng(obj);
+
+		var margin = Math.max(
+		        Math.abs(this.lat - obj.lat),
+		        Math.abs(this.lng - obj.lng));
+
+		return margin <= L.LatLng.MAX_MARGIN;
+	},
+
+	toString: function (precision) { // (Number) -> String
+		return 'LatLng(' +
+		        L.Util.formatNum(this.lat, precision) + ', ' +
+		        L.Util.formatNum(this.lng, precision) + ')';
+	},
+
+	// Haversine distance formula, see http://en.wikipedia.org/wiki/Haversine_formula
+	// TODO move to projection code, LatLng shouldn't know about Earth
+	distanceTo: function (other) { // (LatLng) -> Number
+		other = L.latLng(other);
+
+		var R = 6378137, // earth radius in meters
+		    d2r = L.LatLng.DEG_TO_RAD,
+		    dLat = (other.lat - this.lat) * d2r,
+		    dLon = (other.lng - this.lng) * d2r,
+		    lat1 = this.lat * d2r,
+		    lat2 = other.lat * d2r,
+		    sin1 = Math.sin(dLat / 2),
+		    sin2 = Math.sin(dLon / 2);
+
+		var a = sin1 * sin1 + sin2 * sin2 * Math.cos(lat1) * Math.cos(lat2);
+
+		return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+	},
+
+	wrap: function (a, b) { // (Number, Number) -> LatLng
+		var lng = this.lng;
+
+		a = a || -180;
+		b = b ||  180;
+
+		lng = (lng + b) % (b - a) + (lng < a || lng === b ? b : a);
+
+		return new L.LatLng(this.lat, lng);
+	}
+};
+
+L.latLng = function (a, b) { // (LatLng) or ([Number, Number]) or (Number, Number)
+	if (a instanceof L.LatLng) {
+		return a;
+	}
+	if (L.Util.isArray(a)) {
+		if (typeof a[0] === 'number' || typeof a[0] === 'string') {
+			return new L.LatLng(a[0], a[1], a[2]);
+		} else {
+			return null;
+		}
+	}
+	if (a === undefined || a === null) {
+		return a;
+	}
+	if (typeof a === 'object' && 'lat' in a) {
+		return new L.LatLng(a.lat, 'lng' in a ? a.lng : a.lon);
+	}
+	if (b === undefined) {
+		return null;
+	}
+	return new L.LatLng(a, b);
+};
+
+
+
+/*
+ * L.LatLngBounds represents a rectangular area on the map in geographical coordinates.
+ */
+
+L.LatLngBounds = function (southWest, northEast) { // (LatLng, LatLng) or (LatLng[])
+	if (!southWest) { return; }
+
+	var latlngs = northEast ? [southWest, northEast] : southWest;
+
+	for (var i = 0, len = latlngs.length; i < len; i++) {
+		this.extend(latlngs[i]);
+	}
+};
+
+L.LatLngBounds.prototype = {
+	// extend the bounds to contain the given point or bounds
+	extend: function (obj) { // (LatLng) or (LatLngBounds)
+		if (!obj) { return this; }
+
+		var latLng = L.latLng(obj);
+		if (latLng !== null) {
+			obj = latLng;
+		} else {
+			obj = L.latLngBounds(obj);
+		}
+
+		if (obj instanceof L.LatLng) {
+			if (!this._southWest && !this._northEast) {
+				this._southWest = new L.LatLng(obj.lat, obj.lng);
+				this._northEast = new L.LatLng(obj.lat, obj.lng);
+			} else {
+				this._southWest.lat = Math.min(obj.lat, this._southWest.lat);
+				this._southWest.lng = Math.min(obj.lng, this._southWest.lng);
+
+				this._northEast.lat = Math.max(obj.lat, this._northEast.lat);
+				this._northEast.lng = Math.max(obj.lng, this._northEast.lng);
+			}
+		} else if (obj instanceof L.LatLngBounds) {
+			this.extend(obj._southWest);
+			this.extend(obj._northEast);
+		}
+		return this;
+	},
+
+	// extend the bounds by a percentage
+	pad: function (bufferRatio) { // (Number) -> LatLngBounds
+		var sw = this._southWest,
+		    ne = this._northEast,
+		    heightBuffer = Math.abs(sw.lat - ne.lat) * bufferRatio,
+		    widthBuffer = Math.abs(sw.lng - ne.lng) * bufferRatio;
+
+		return new L.LatLngBounds(
+		        new L.LatLng(sw.lat - heightBuffer, sw.lng - widthBuffer),
+		        new L.LatLng(ne.lat + heightBuffer, ne.lng + widthBuffer));
+	},
+
+	getCenter: function () { // -> LatLng
+		return new L.LatLng(
+		        (this._southWest.lat + this._northEast.lat) / 2,
+		        (this._southWest.lng + this._northEast.lng) / 2);
+	},
+
+	getSouthWest: function () {
+		return this._southWest;
+	},
+
+	getNorthEast: function () {
+		return this._northEast;
+	},
+
+	getNorthWest: function () {
+		return new L.LatLng(this.getNorth(), this.getWest());
+	},
+
+	getSouthEast: function () {
+		return new L.LatLng(this.getSouth(), this.getEast());
+	},
+
+	getWest: function () {
+		return this._southWest.lng;
+	},
+
+	getSouth: function () {
+		return this._southWest.lat;
+	},
+
+	getEast: function () {
+		return this._northEast.lng;
+	},
+
+	getNorth: function () {
+		return this._northEast.lat;
+	},
+
+	contains: function (obj) { // (LatLngBounds) or (LatLng) -> Boolean
+		if (typeof obj[0] === 'number' || obj instanceof L.LatLng) {
+			obj = L.latLng(obj);
+		} else {
+			obj = L.latLngBounds(obj);
+		}
+
+		var sw = this._southWest,
+		    ne = this._northEast,
+		    sw2, ne2;
+
+		if (obj instanceof L.LatLngBounds) {
+			sw2 = obj.getSouthWest();
+			ne2 = obj.getNorthEast();
+		} else {
+			sw2 = ne2 = obj;
+		}
+
+		return (sw2.lat >= sw.lat) && (ne2.lat <= ne.lat) &&
+		       (sw2.lng >= sw.lng) && (ne2.lng <= ne.lng);
+	},
+
+	intersects: function (bounds) { // (LatLngBounds)
+		bounds = L.latLngBounds(bounds);
+
+		var sw = this._southWest,
+		    ne = this._northEast,
+		    sw2 = bounds.getSouthWest(),
+		    ne2 = bounds.getNorthEast(),
+
+		    latIntersects = (ne2.lat >= sw.lat) && (sw2.lat <= ne.lat),
+		    lngIntersects = (ne2.lng >= sw.lng) && (sw2.lng <= ne.lng);
+
+		return latIntersects && lngIntersects;
+	},
+
+	toBBoxString: function () {
+		return [this.getWest(), this.getSouth(), this.getEast(), this.getNorth()].join(',');
+	},
+
+	equals: function (bounds) { // (LatLngBounds)
+		if (!bounds) { return false; }
+
+		bounds = L.latLngBounds(bounds);
+
+		return this._southWest.equals(bounds.getSouthWest()) &&
+		       this._northEast.equals(bounds.getNorthEast());
+	},
+
+	isValid: function () {
+		return !!(this._southWest && this._northEast);
+	}
+};
+
+//TODO International date line?
+
+L.latLngBounds = function (a, b) { // (LatLngBounds) or (LatLng, LatLng)
+	if (!a || a instanceof L.LatLngBounds) {
+		return a;
+	}
+	return new L.LatLngBounds(a, b);
+};
+
+
+/*
+ * L.Projection contains various geographical projections used by CRS classes.
+ */
+
+L.Projection = {};
+
+
+/*
+ * Spherical Mercator is the most popular map projection, used by EPSG:3857 CRS used by default.
+ */
+
+L.Projection.SphericalMercator = {
+	MAX_LATITUDE: 85.0511287798,
+
+	project: function (latlng) { // (LatLng) -> Point
+		var d = L.LatLng.DEG_TO_RAD,
+		    max = this.MAX_LATITUDE,
+		    lat = Math.max(Math.min(max, latlng.lat), -max),
+		    x = latlng.lng * d,
+		    y = lat * d;
+
+		y = Math.log(Math.tan((Math.PI / 4) + (y / 2)));
+
+		return new L.Point(x, y);
+	},
+
+	unproject: function (point) { // (Point, Boolean) -> LatLng
+		var d = L.LatLng.RAD_TO_DEG,
+		    lng = point.x * d,
+		    lat = (2 * Math.atan(Math.exp(point.y)) - (Math.PI / 2)) * d;
+
+		return new L.LatLng(lat, lng);
+	}
+};
+
+
+/*
+ * Simple equirectangular (Plate Carree) projection, used by CRS like EPSG:4326 and Simple.
+ */
+
+L.Projection.LonLat = {
+	project: function (latlng) {
+		return new L.Point(latlng.lng, latlng.lat);
+	},
+
+	unproject: function (point) {
+		return new L.LatLng(point.y, point.x);
+	}
+};
+
+
+/*
+ * L.CRS is a base object for all defined CRS (Coordinate Reference Systems) in Leaflet.
+ */
+
+L.CRS = {
+	latLngToPoint: function (latlng, zoom) { // (LatLng, Number) -> Point
+		var projectedPoint = this.projection.project(latlng),
+		    scale = this.scale(zoom);
+
+		return this.transformation._transform(projectedPoint, scale);
+	},
+
+	pointToLatLng: function (point, zoom) { // (Point, Number[, Boolean]) -> LatLng
+		var scale = this.scale(zoom),
+		    untransformedPoint = this.transformation.untransform(point, scale);
+
+		return this.projection.unproject(untransformedPoint);
+	},
+
+	project: function (latlng) {
+		return this.projection.project(latlng);
+	},
+
+	scale: function (zoom) {
+		return 256 * Math.pow(2, zoom);
+	},
+
+	getSize: function (zoom) {
+		var s = this.scale(zoom);
+		return L.point(s, s);
+	}
+};
+
+
+/*
+ * A simple CRS that can be used for flat non-Earth maps like panoramas or game maps.
+ */
+
+L.CRS.Simple = L.extend({}, L.CRS, {
+	projection: L.Projection.LonLat,
+	transformation: new L.Transformation(1, 0, -1, 0),
+
+	scale: function (zoom) {
+		return Math.pow(2, zoom);
+	}
+});
+
+
+/*
+ * L.CRS.EPSG3857 (Spherical Mercator) is the most common CRS for web mapping
+ * and is used by Leaflet by default.
+ */
+
+L.CRS.EPSG3857 = L.extend({}, L.CRS, {
+	code: 'EPSG:3857',
+
+	projection: L.Projection.SphericalMercator,
+	transformation: new L.Transformation(0.5 / Math.PI, 0.5, -0.5 / Math.PI, 0.5),
+
+	project: function (latlng) { // (LatLng) -> Point
+		var projectedPoint = this.projection.project(latlng),
+		    earthRadius = 6378137;
+		return projectedPoint.multiplyBy(earthRadius);
+	}
+});
+
+L.CRS.EPSG900913 = L.extend({}, L.CRS.EPSG3857, {
+	code: 'EPSG:900913'
+});
+
+
+/*
+ * L.CRS.EPSG4326 is a CRS popular among advanced GIS specialists.
+ */
+
+L.CRS.EPSG4326 = L.extend({}, L.CRS, {
+	code: 'EPSG:4326',
+
+	projection: L.Projection.LonLat,
+	transformation: new L.Transformation(1 / 360, 0.5, -1 / 360, 0.5)
+});
+
+
+/*
+ * L.Map is the central class of the API - it is used to create a map.
+ */
+
+L.Map = L.Class.extend({
+
+	includes: L.Mixin.Events,
+
+	options: {
+		crs: L.CRS.EPSG3857,
+
+		/*
+		center: LatLng,
+		zoom: Number,
+		layers: Array,
+		*/
+
+		fadeAnimation: L.DomUtil.TRANSITION && !L.Browser.android23,
+		trackResize: true,
+		markerZoomAnimation: L.DomUtil.TRANSITION && L.Browser.any3d
+	},
+
+	initialize: function (id, options) { // (HTMLElement or String, Object)
+		options = L.setOptions(this, options);
+
+
+		this._initContainer(id);
+		this._initLayout();
+
+		// hack for https://github.com/Leaflet/Leaflet/issues/1980
+		this._onResize = L.bind(this._onResize, this);
+
+		this._initEvents();
+
+		if (options.maxBounds) {
+			this.setMaxBounds(options.maxBounds);
+		}
+
+		if (options.center && options.zoom !== undefined) {
+			this.setView(L.latLng(options.center), options.zoom, {reset: true});
+		}
+
+		this._handlers = [];
+
+		this._layers = {};
+		this._zoomBoundLayers = {};
+		this._tileLayersNum = 0;
+
+		this.callInitHooks();
+
+		this._addLayers(options.layers);
+	},
+
+
+	// public methods that modify map state
+
+	// replaced by animation-powered implementation in Map.PanAnimation.js
+	setView: function (center, zoom) {
+		zoom = zoom === undefined ? this.getZoom() : zoom;
+		this._resetView(L.latLng(center), this._limitZoom(zoom));
+		return this;
+	},
+
+	setZoom: function (zoom, options) {
+		if (!this._loaded) {
+			this._zoom = this._limitZoom(zoom);
+			return this;
+		}
+		return this.setView(this.getCenter(), zoom, {zoom: options});
+	},
+
+	zoomIn: function (delta, options) {
+		return this.setZoom(this._zoom + (delta || 1), options);
+	},
+
+	zoomOut: function (delta, options) {
+		return this.setZoom(this._zoom - (delta || 1), options);
+	},
+
+	setZoomAround: function (latlng, zoom, options) {
+		var scale = this.getZoomScale(zoom),
+		    viewHalf = this.getSize().divideBy(2),
+		    containerPoint = latlng instanceof L.Point ? latlng : this.latLngToContainerPoint(latlng),
+
+		    centerOffset = containerPoint.subtract(viewHalf).multiplyBy(1 - 1 / scale),
+		    newCenter = this.containerPointToLatLng(viewHalf.add(centerOffset));
+
+		return this.setView(newCenter, zoom, {zoom: options});
+	},
+
+	fitBounds: function (bounds, options) {
+
+		options = options || {};
+		bounds = bounds.getBounds ? bounds.getBounds() : L.latLngBounds(bounds);
+
+		var paddingTL = L.point(options.paddingTopLeft || options.padding || [0, 0]),
+		    paddingBR = L.point(options.paddingBottomRight || options.padding || [0, 0]),
+
+		    zoom = this.getBoundsZoom(bounds, false, paddingTL.add(paddingBR));
+
+		zoom = (options.maxZoom) ? Math.min(options.maxZoom, zoom) : zoom;
+
+		var paddingOffset = paddingBR.subtract(paddingTL).divideBy(2),
+
+		    swPoint = this.project(bounds.getSouthWest(), zoom),
+		    nePoint = this.project(bounds.getNorthEast(), zoom),
+		    center = this.unproject(swPoint.add(nePoint).divideBy(2).add(paddingOffset), zoom);
+
+		return this.setView(center, zoom, options);
+	},
+
+	fitWorld: function (options) {
+		return this.fitBounds([[-90, -180], [90, 180]], options);
+	},
+
+	panTo: function (center, options) { // (LatLng)
+		return this.setView(center, this._zoom, {pan: options});
+	},
+
+	panBy: function (offset) { // (Point)
+		// replaced with animated panBy in Map.PanAnimation.js
+		this.fire('movestart');
+
+		this._rawPanBy(L.point(offset));
+
+		this.fire('move');
+		return this.fire('moveend');
+	},
+
+	setMaxBounds: function (bounds) {
+		bounds = L.latLngBounds(bounds);
+
+		this.options.maxBounds = bounds;
+
+		if (!bounds) {
+			return this.off('moveend', this._panInsideMaxBounds, this);
+		}
+
+		if (this._loaded) {
+			this._panInsideMaxBounds();
+		}
+
+		return this.on('moveend', this._panInsideMaxBounds, this);
+	},
+
+	panInsideBounds: function (bounds, options) {
+		var center = this.getCenter(),
+			newCenter = this._limitCenter(center, this._zoom, bounds);
+
+		if (center.equals(newCenter)) { return this; }
+
+		return this.panTo(newCenter, options);
+	},
+
+	addLayer: function (layer) {
+		// TODO method is too big, refactor
+
+		var id = L.stamp(layer);
+
+		if (this._layers[id]) { return this; }
+
+		this._layers[id] = layer;
+
+		// TODO getMaxZoom, getMinZoom in ILayer (instead of options)
+		if (layer.options && (!isNaN(layer.options.maxZoom) || !isNaN(layer.options.minZoom))) {
+			this._zoomBoundLayers[id] = layer;
+			this._updateZoomLevels();
+		}
+
+		// TODO looks ugly, refactor!!!
+		if (this.options.zoomAnimation && L.TileLayer && (layer instanceof L.TileLayer)) {
+			this._tileLayersNum++;
+			this._tileLayersToLoad++;
+			layer.on('load', this._onTileLayerLoad, this);
+		}
+
+		if (this._loaded) {
+			this._layerAdd(layer);
+		}
+
+		return this;
+	},
+
+	removeLayer: function (layer) {
+		var id = L.stamp(layer);
+
+		if (!this._layers[id]) { return this; }
+
+		if (this._loaded) {
+			layer.onRemove(this);
+		}
+
+		delete this._layers[id];
+
+		if (this._loaded) {
+			this.fire('layerremove', {layer: layer});
+		}
+
+		if (this._zoomBoundLayers[id]) {
+			delete this._zoomBoundLayers[id];
+			this._updateZoomLevels();
+		}
+
+		// TODO looks ugly, refactor
+		if (this.options.zoomAnimation && L.TileLayer && (layer instanceof L.TileLayer)) {
+			this._tileLayersNum--;
+			this._tileLayersToLoad--;
+			layer.off('load', this._onTileLayerLoad, this);
+		}
+
+		return this;
+	},
+
+	hasLayer: function (layer) {
+		if (!layer) { return false; }
+
+		return (L.stamp(layer) in this._layers);
+	},
+
+	eachLayer: function (method, context) {
+		for (var i in this._layers) {
+			method.call(context, this._layers[i]);
+		}
+		return this;
+	},
+
+	invalidateSize: function (options) {
+		if (!this._loaded) { return this; }
+
+		options = L.extend({
+			animate: false,
+			pan: true
+		}, options === true ? {animate: true} : options);
+
+		var oldSize = this.getSize();
+		this._sizeChanged = true;
+		this._initialCenter = null;
+
+		var newSize = this.getSize(),
+		    oldCenter = oldSize.divideBy(2).round(),
+		    newCenter = newSize.divideBy(2).round(),
+		    offset = oldCenter.subtract(newCenter);
+
+		if (!offset.x && !offset.y) { return this; }
+
+		if (options.animate && options.pan) {
+			this.panBy(offset);
+
+		} else {
+			if (options.pan) {
+				this._rawPanBy(offset);
+			}
+
+			this.fire('move');
+
+			if (options.debounceMoveend) {
+				clearTimeout(this._sizeTimer);
+				this._sizeTimer = setTimeout(L.bind(this.fire, this, 'moveend'), 200);
+			} else {
+				this.fire('moveend');
+			}
+		}
+
+		return this.fire('resize', {
+			oldSize: oldSize,
+			newSize: newSize
+		});
+	},
+
+	// TODO handler.addTo
+	addHandler: function (name, HandlerClass) {
+		if (!HandlerClass) { return this; }
+
+		var handler = this[name] = new HandlerClass(this);
+
+		this._handlers.push(handler);
+
+		if (this.options[name]) {
+			handler.enable();
+		}
+
+		return this;
+	},
+
+	remove: function () {
+		if (this._loaded) {
+			this.fire('unload');
+		}
+
+		this._initEvents('off');
+
+		try {
+			// throws error in IE6-8
+			delete this._container._leaflet;
+		} catch (e) {
+			this._container._leaflet = undefined;
+		}
+
+		this._clearPanes();
+		if (this._clearControlPos) {
+			this._clearControlPos();
+		}
+
+		this._clearHandlers();
+
+		return this;
+	},
+
+
+	// public methods for getting map state
+
+	getCenter: function () { // (Boolean) -> LatLng
+		this._checkIfLoaded();
+
+		if (this._initialCenter && !this._moved()) {
+			return this._initialCenter;
+		}
+		return this.layerPointToLatLng(this._getCenterLayerPoint());
+	},
+
+	getZoom: function () {
+		return this._zoom;
+	},
+
+	getBounds: function () {
+		var bounds = this.getPixelBounds(),
+		    sw = this.unproject(bounds.getBottomLeft()),
+		    ne = this.unproject(bounds.getTopRight());
+
+		return new L.LatLngBounds(sw, ne);
+	},
+
+	getMinZoom: function () {
+		return this.options.minZoom === undefined ?
+			(this._layersMinZoom === undefined ? 0 : this._layersMinZoom) :
+			this.options.minZoom;
+	},
+
+	getMaxZoom: function () {
+		return this.options.maxZoom === undefined ?
+			(this._layersMaxZoom === undefined ? Infinity : this._layersMaxZoom) :
+			this.options.maxZoom;
+	},
+
+	getBoundsZoom: function (bounds, inside, padding) { // (LatLngBounds[, Boolean, Point]) -> Number
+		bounds = L.latLngBounds(bounds);
+
+		var zoom = this.getMinZoom() - (inside ? 1 : 0),
+		    maxZoom = this.getMaxZoom(),
+		    size = this.getSize(),
+
+		    nw = bounds.getNorthWest(),
+		    se = bounds.getSouthEast(),
+
+		    zoomNotFound = true,
+		    boundsSize;
+
+		padding = L.point(padding || [0, 0]);
+
+		do {
+			zoom++;
+			boundsSize = this.project(se, zoom).subtract(this.project(nw, zoom)).add(padding);
+			zoomNotFound = !inside ? size.contains(boundsSize) : boundsSize.x < size.x || boundsSize.y < size.y;
+
+		} while (zoomNotFound && zoom <= maxZoom);
+
+		if (zoomNotFound && inside) {
+			return null;
+		}
+
+		return inside ? zoom : zoom - 1;
+	},
+
+	getSize: function () {
+		if (!this._size || this._sizeChanged) {
+			this._size = new L.Point(
+				this._container.clientWidth,
+				this._container.clientHeight);
+
+			this._sizeChanged = false;
+		}
+		return this._size.clone();
+	},
+
+	getPixelBounds: function () {
+		var topLeftPoint = this._getTopLeftPoint();
+		return new L.Bounds(topLeftPoint, topLeftPoint.add(this.getSize()));
+	},
+
+	getPixelOrigin: function () {
+		this._checkIfLoaded();
+		return this._initialTopLeftPoint;
+	},
+
+	getPanes: function () {
+		return this._panes;
+	},
+
+	getContainer: function () {
+		return this._container;
+	},
+
+
+	// TODO replace with universal implementation after refactoring projections
+
+	getZoomScale: function (toZoom) {
+		var crs = this.options.crs;
+		return crs.scale(toZoom) / crs.scale(this._zoom);
+	},
+
+	getScaleZoom: function (scale) {
+		return this._zoom + (Math.log(scale) / Math.LN2);
+	},
+
+
+	// conversion methods
+
+	project: function (latlng, zoom) { // (LatLng[, Number]) -> Point
+		zoom = zoom === undefined ? this._zoom : zoom;
+		return this.options.crs.latLngToPoint(L.latLng(latlng), zoom);
+	},
+
+	unproject: function (point, zoom) { // (Point[, Number]) -> LatLng
+		zoom = zoom === undefined ? this._zoom : zoom;
+		return this.options.crs.pointToLatLng(L.point(point), zoom);
+	},
+
+	layerPointToLatLng: function (point) { // (Point)
+		var projectedPoint = L.point(point).add(this.getPixelOrigin());
+		return this.unproject(projectedPoint);
+	},
+
+	latLngToLayerPoint: function (latlng) { // (LatLng)
+		var projectedPoint = this.project(L.latLng(latlng))._round();
+		return projectedPoint._subtract(this.getPixelOrigin());
+	},
+
+	containerPointToLayerPoint: function (point) { // (Point)
+		return L.point(point).subtract(this._getMapPanePos());
+	},
+
+	layerPointToContainerPoint: function (point) { // (Point)
+		return L.point(point).add(this._getMapPanePos());
+	},
+
+	containerPointToLatLng: function (point) {
+		var layerPoint = this.containerPointToLayerPoint(L.point(point));
+		return this.layerPointToLatLng(layerPoint);
+	},
+
+	latLngToContainerPoint: function (latlng) {
+		return this.layerPointToContainerPoint(this.latLngToLayerPoint(L.latLng(latlng)));
+	},
+
+	mouseEventToContainerPoint: function (e) { // (MouseEvent)
+		return L.DomEvent.getMousePosition(e, this._container);
+	},
+
+	mouseEventToLayerPoint: function (e) { // (MouseEvent)
+		return this.containerPointToLayerPoint(this.mouseEventToContainerPoint(e));
+	},
+
+	mouseEventToLatLng: function (e) { // (MouseEvent)
+		return this.layerPointToLatLng(this.mouseEventToLayerPoint(e));
+	},
+
+
+	// map initialization methods
+
+	_initContainer: function (id) {
+		var container = this._container = L.DomUtil.get(id);
+
+		if (!container) {
+			throw new Error('Map container not found.');
+		} else if (container._leaflet) {
+			throw new Error('Map container is already initialized.');
+		}
+
+		container._leaflet = true;
+	},
+
+	_initLayout: function () {
+		var container = this._container;
+
+		L.DomUtil.addClass(container, 'leaflet-container' +
+			(L.Browser.touch ? ' leaflet-touch' : '') +
+			(L.Browser.retina ? ' leaflet-retina' : '') +
+			(L.Browser.ielt9 ? ' leaflet-oldie' : '') +
+			(this.options.fadeAnimation ? ' leaflet-fade-anim' : ''));
+
+		var position = L.DomUtil.getStyle(container, 'position');
+
+		if (position !== 'absolute' && position !== 'relative' && position !== 'fixed') {
+			container.style.position = 'relative';
+		}
+
+		this._initPanes();
+
+		if (this._initControlPos) {
+			this._initControlPos();
+		}
+	},
+
+	_initPanes: function () {
+		var panes = this._panes = {};
+
+		this._mapPane = panes.mapPane = this._createPane('leaflet-map-pane', this._container);
+
+		this._tilePane = panes.tilePane = this._createPane('leaflet-tile-pane', this._mapPane);
+		panes.objectsPane = this._createPane('leaflet-objects-pane', this._mapPane);
+		panes.shadowPane = this._createPane('leaflet-shadow-pane');
+		panes.overlayPane = this._createPane('leaflet-overlay-pane');
+		panes.markerPane = this._createPane('leaflet-marker-pane');
+		panes.popupPane = this._createPane('leaflet-popup-pane');
+
+		var zoomHide = ' leaflet-zoom-hide';
+
+		if (!this.options.markerZoomAnimation) {
+			L.DomUtil.addClass(panes.markerPane, zoomHide);
+			L.DomUtil.addClass(panes.shadowPane, zoomHide);
+			L.DomUtil.addClass(panes.popupPane, zoomHide);
+		}
+	},
+
+	_createPane: function (className, container) {
+		return L.DomUtil.create('div', className, container || this._panes.objectsPane);
+	},
+
+	_clearPanes: function () {
+		this._container.removeChild(this._mapPane);
+	},
+
+	_addLayers: function (layers) {
+		layers = layers ? (L.Util.isArray(layers) ? layers : [layers]) : [];
+
+		for (var i = 0, len = layers.length; i < len; i++) {
+			this.addLayer(layers[i]);
+		}
+	},
+
+
+	// private methods that modify map state
+
+	_resetView: function (center, zoom, preserveMapOffset, afterZoomAnim) {
+
+		var zoomChanged = (this._zoom !== zoom);
+
+		if (!afterZoomAnim) {
+			this.fire('movestart');
+
+			if (zoomChanged) {
+				this.fire('zoomstart');
+			}
+		}
+
+		this._zoom = zoom;
+		this._initialCenter = center;
+
+		this._initialTopLeftPoint = this._getNewTopLeftPoint(center);
+
+		if (!preserveMapOffset) {
+			L.DomUtil.setPosition(this._mapPane, new L.Point(0, 0));
+		} else {
+			this._initialTopLeftPoint._add(this._getMapPanePos());
+		}
+
+		this._tileLayersToLoad = this._tileLayersNum;
+
+		var loading = !this._loaded;
+		this._loaded = true;
+
+		this.fire('viewreset', {hard: !preserveMapOffset});
+
+		if (loading) {
+			this.fire('load');
+			this.eachLayer(this._layerAdd, this);
+		}
+
+		this.fire('move');
+
+		if (zoomChanged || afterZoomAnim) {
+			this.fire('zoomend');
+		}
+
+		this.fire('moveend', {hard: !preserveMapOffset});
+	},
+
+	_rawPanBy: function (offset) {
+		L.DomUtil.setPosition(this._mapPane, this._getMapPanePos().subtract(offset));
+	},
+
+	_getZoomSpan: function () {
+		return this.getMaxZoom() - this.getMinZoom();
+	},
+
+	_updateZoomLevels: function () {
+		var i,
+			minZoom = Infinity,
+			maxZoom = -Infinity,
+			oldZoomSpan = this._getZoomSpan();
+
+		for (i in this._zoomBoundLayers) {
+			var layer = this._zoomBoundLayers[i];
+			if (!isNaN(layer.options.minZoom)) {
+				minZoom = Math.min(minZoom, layer.options.minZoom);
+			}
+			if (!isNaN(layer.options.maxZoom)) {
+				maxZoom = Math.max(maxZoom, layer.options.maxZoom);
+			}
+		}
+
+		if (i === undefined) { // we have no tilelayers
+			this._layersMaxZoom = this._layersMinZoom = undefined;
+		} else {
+			this._layersMaxZoom = maxZoom;
+			this._layersMinZoom = minZoom;
+		}
+
+		if (oldZoomSpan !== this._getZoomSpan()) {
+			this.fire('zoomlevelschange');
+		}
+	},
+
+	_panInsideMaxBounds: function () {
+		this.panInsideBounds(this.options.maxBounds);
+	},
+
+	_checkIfLoaded: function () {
+		if (!this._loaded) {
+			throw new Error('Set map center and zoom first.');
+		}
+	},
+
+	// map events
+
+	_initEvents: function (onOff) {
+		if (!L.DomEvent) { return; }
+
+		onOff = onOff || 'on';
+
+		L.DomEvent[onOff](this._container, 'click', this._onMouseClick, this);
+
+		var events = ['dblclick', 'mousedown', 'mouseup', 'mouseenter',
+		              'mouseleave', 'mousemove', 'contextmenu'],
+		    i, len;
+
+		for (i = 0, len = events.length; i < len; i++) {
+			L.DomEvent[onOff](this._container, events[i], this._fireMouseEvent, this);
+		}
+
+		if (this.options.trackResize) {
+			L.DomEvent[onOff](window, 'resize', this._onResize, this);
+		}
+	},
+
+	_onResize: function () {
+		L.Util.cancelAnimFrame(this._resizeRequest);
+		this._resizeRequest = L.Util.requestAnimFrame(
+		        function () { this.invalidateSize({debounceMoveend: true}); }, this, false, this._container);
+	},
+
+	_onMouseClick: function (e) {
+		if (!this._loaded || (!e._simulated &&
+		        ((this.dragging && this.dragging.moved()) ||
+		         (this.boxZoom  && this.boxZoom.moved()))) ||
+		            L.DomEvent._skipped(e)) { return; }
+
+		this.fire('preclick');
+		this._fireMouseEvent(e);
+	},
+
+	_fireMouseEvent: function (e) {
+		if (!this._loaded || L.DomEvent._skipped(e)) { return; }
+
+		var type = e.type;
+
+		type = (type === 'mouseenter' ? 'mouseover' : (type === 'mouseleave' ? 'mouseout' : type));
+
+		if (!this.hasEventListeners(type)) { return; }
+
+		if (type === 'contextmenu') {
+			L.DomEvent.preventDefault(e);
+		}
+
+		var containerPoint = this.mouseEventToContainerPoint(e),
+		    layerPoint = this.containerPointToLayerPoint(containerPoint),
+		    latlng = this.layerPointToLatLng(layerPoint);
+
+		this.fire(type, {
+			latlng: latlng,
+			layerPoint: layerPoint,
+			containerPoint: containerPoint,
+			originalEvent: e
+		});
+	},
+
+	_onTileLayerLoad: function () {
+		this._tileLayersToLoad--;
+		if (this._tileLayersNum && !this._tileLayersToLoad) {
+			this.fire('tilelayersload');
+		}
+	},
+
+	_clearHandlers: function () {
+		for (var i = 0, len = this._handlers.length; i < len; i++) {
+			this._handlers[i].disable();
+		}
+	},
+
+	whenReady: function (callback, context) {
+		if (this._loaded) {
+			callback.call(context || this, this);
+		} else {
+			this.on('load', callback, context);
+		}
+		return this;
+	},
+
+	_layerAdd: function (layer) {
+		layer.onAdd(this);
+		this.fire('layeradd', {layer: layer});
+	},
+
+
+	// private methods for getting map state
+
+	_getMapPanePos: function () {
+		return L.DomUtil.getPosition(this._mapPane);
+	},
+
+	_moved: function () {
+		var pos = this._getMapPanePos();
+		return pos && !pos.equals([0, 0]);
+	},
+
+	_getTopLeftPoint: function () {
+		return this.getPixelOrigin().subtract(this._getMapPanePos());
+	},
+
+	_getNewTopLeftPoint: function (center, zoom) {
+		var viewHalf = this.getSize()._divideBy(2);
+		// TODO round on display, not calculation to increase precision?
+		return this.project(center, zoom)._subtract(viewHalf)._round();
+	},
+
+	_latLngToNewLayerPoint: function (latlng, newZoom, newCenter) {
+		var topLeft = this._getNewTopLeftPoint(newCenter, newZoom).add(this._getMapPanePos());
+		return this.project(latlng, newZoom)._subtract(topLeft);
+	},
+
+	// layer point of the current center
+	_getCenterLayerPoint: function () {
+		return this.containerPointToLayerPoint(this.getSize()._divideBy(2));
+	},
+
+	// offset of the specified place to the current center in pixels
+	_getCenterOffset: function (latlng) {
+		return this.latLngToLayerPoint(latlng).subtract(this._getCenterLayerPoint());
+	},
+
+	// adjust center for view to get inside bounds
+	_limitCenter: function (center, zoom, bounds) {
+
+		if (!bounds) { return center; }
+
+		var centerPoint = this.project(center, zoom),
+		    viewHalf = this.getSize().divideBy(2),
+		    viewBounds = new L.Bounds(centerPoint.subtract(viewHalf), centerPoint.add(viewHalf)),
+		    offset = this._getBoundsOffset(viewBounds, bounds, zoom);
+
+		return this.unproject(centerPoint.add(offset), zoom);
+	},
+
+	// adjust offset for view to get inside bounds
+	_limitOffset: function (offset, bounds) {
+		if (!bounds) { return offset; }
+
+		var viewBounds = this.getPixelBounds(),
+		    newBounds = new L.Bounds(viewBounds.min.add(offset), viewBounds.max.add(offset));
+
+		return offset.add(this._getBoundsOffset(newBounds, bounds));
+	},
+
+	// returns offset needed for pxBounds to get inside maxBounds at a specified zoom
+	_getBoundsOffset: function (pxBounds, maxBounds, zoom) {
+		var nwOffset = this.project(maxBounds.getNorthWest(), zoom).subtract(pxBounds.min),
+		    seOffset = this.project(maxBounds.getSouthEast(), zoom).subtract(pxBounds.max),
+
+		    dx = this._rebound(nwOffset.x, -seOffset.x),
+		    dy = this._rebound(nwOffset.y, -seOffset.y);
+
+		return new L.Point(dx, dy);
+	},
+
+	_rebound: function (left, right) {
+		return left + right > 0 ?
+			Math.round(left - right) / 2 :
+			Math.max(0, Math.ceil(left)) - Math.max(0, Math.floor(right));
+	},
+
+	_limitZoom: function (zoom) {
+		var min = this.getMinZoom(),
+		    max = this.getMaxZoom();
+
+		return Math.max(min, Math.min(max, zoom));
+	}
+});
+
+L.map = function (id, options) {
+	return new L.Map(id, options);
+};
+
+
+/*
+ * Mercator projection that takes into account that the Earth is not a perfect sphere.
+ * Less popular than spherical mercator; used by projections like EPSG:3395.
+ */
+
+L.Projection.Mercator = {
+	MAX_LATITUDE: 85.0840591556,
+
+	R_MINOR: 6356752.314245179,
+	R_MAJOR: 6378137,
+
+	project: function (latlng) { // (LatLng) -> Point
+		var d = L.LatLng.DEG_TO_RAD,
+		    max = this.MAX_LATITUDE,
+		    lat = Math.max(Math.min(max, latlng.lat), -max),
+		    r = this.R_MAJOR,
+		    r2 = this.R_MINOR,
+		    x = latlng.lng * d * r,
+		    y = lat * d,
+		    tmp = r2 / r,
+		    eccent = Math.sqrt(1.0 - tmp * tmp),
+		    con = eccent * Math.sin(y);
+
+		con = Math.pow((1 - con) / (1 + con), eccent * 0.5);
+
+		var ts = Math.tan(0.5 * ((Math.PI * 0.5) - y)) / con;
+		y = -r * Math.log(ts);
+
+		return new L.Point(x, y);
+	},
+
+	unproject: function (point) { // (Point, Boolean) -> LatLng
+		var d = L.LatLng.RAD_TO_DEG,
+		    r = this.R_MAJOR,
+		    r2 = this.R_MINOR,
+		    lng = point.x * d / r,
+		    tmp = r2 / r,
+		    eccent = Math.sqrt(1 - (tmp * tmp)),
+		    ts = Math.exp(- point.y / r),
+		    phi = (Math.PI / 2) - 2 * Math.atan(ts),
+		    numIter = 15,
+		    tol = 1e-7,
+		    i = numIter,
+		    dphi = 0.1,
+		    con;
+
+		while ((Math.abs(dphi) > tol) && (--i > 0)) {
+			con = eccent * Math.sin(phi);
+			dphi = (Math.PI / 2) - 2 * Math.atan(ts *
+			            Math.pow((1.0 - con) / (1.0 + con), 0.5 * eccent)) - phi;
+			phi += dphi;
+		}
+
+		return new L.LatLng(phi * d, lng);
+	}
+};
+
+
+
+L.CRS.EPSG3395 = L.extend({}, L.CRS, {
+	code: 'EPSG:3395',
+
+	projection: L.Projection.Mercator,
+
+	transformation: (function () {
+		var m = L.Projection.Mercator,
+		    r = m.R_MAJOR,
+		    scale = 0.5 / (Math.PI * r);
+
+		return new L.Transformation(scale, 0.5, -scale, 0.5);
+	}())
+});
+
+
+/*
+ * L.TileLayer is used for standard xyz-numbered tile layers.
+ */
+
+L.TileLayer = L.Class.extend({
+	includes: L.Mixin.Events,
+
+	options: {
+		minZoom: 0,
+		maxZoom: 18,
+		tileSize: 256,
+		subdomains: 'abc',
+		errorTileUrl: '',
+		attribution: '',
+		zoomOffset: 0,
+		opacity: 1,
+		/*
+		maxNativeZoom: null,
+		zIndex: null,
+		tms: false,
+		continuousWorld: false,
+		noWrap: false,
+		zoomReverse: false,
+		detectRetina: false,
+		reuseTiles: false,
+		bounds: false,
+		*/
+		unloadInvisibleTiles: L.Browser.mobile,
+		updateWhenIdle: L.Browser.mobile
+	},
+
+	initialize: function (url, options) {
+		options = L.setOptions(this, options);
+
+		// detecting retina displays, adjusting tileSize and zoom levels
+		if (options.detectRetina && L.Browser.retina && options.maxZoom > 0) {
+
+			options.tileSize = Math.floor(options.tileSize / 2);
+			options.zoomOffset++;
+
+			if (options.minZoom > 0) {
+				options.minZoom--;
+			}
+			this.options.maxZoom--;
+		}
+
+		if (options.bounds) {
+			options.bounds = L.latLngBounds(options.bounds);
+		}
+
+		this._url = url;
+
+		var subdomains = this.options.subdomains;
+
+		if (typeof subdomains === 'string') {
+			this.options.subdomains = subdomains.split('');
+		}
+	},
+
+	onAdd: function (map) {
+		this._map = map;
+		this._animated = map._zoomAnimated;
+
+		// create a container div for tiles
+		this._initContainer();
+
+		// set up events
+		map.on({
+			'viewreset': this._reset,
+			'moveend': this._update
+		}, this);
+
+		if (this._animated) {
+			map.on({
+				'zoomanim': this._animateZoom,
+				'zoomend': this._endZoomAnim
+			}, this);
+		}
+
+		if (!this.options.updateWhenIdle) {
+			this._limitedUpdate = L.Util.limitExecByInterval(this._update, 150, this);
+			map.on('move', this._limitedUpdate, this);
+		}
+
+		this._reset();
+		this._update();
+	},
+
+	addTo: function (map) {
+		map.addLayer(this);
+		return this;
+	},
+
+	onRemove: function (map) {
+		this._container.parentNode.removeChild(this._container);
+
+		map.off({
+			'viewreset': this._reset,
+			'moveend': this._update
+		}, this);
+
+		if (this._animated) {
+			map.off({
+				'zoomanim': this._animateZoom,
+				'zoomend': this._endZoomAnim
+			}, this);
+		}
+
+		if (!this.options.updateWhenIdle) {
+			map.off('move', this._limitedUpdate, this);
+		}
+
+		this._container = null;
+		this._map = null;
+	},
+
+	bringToFront: function () {
+		var pane = this._map._panes.tilePane;
+
+		if (this._container) {
+			pane.appendChild(this._container);
+			this._setAutoZIndex(pane, Math.max);
+		}
+
+		return this;
+	},
+
+	bringToBack: function () {
+		var pane = this._map._panes.tilePane;
+
+		if (this._container) {
+			pane.insertBefore(this._container, pane.firstChild);
+			this._setAutoZIndex(pane, Math.min);
+		}
+
+		return this;
+	},
+
+	getAttribution: function () {
+		return this.options.attribution;
+	},
+
+	getContainer: function () {
+		return this._container;
+	},
+
+	setOpacity: function (opacity) {
+		this.options.opacity = opacity;
+
+		if (this._map) {
+			this._updateOpacity();
+		}
+
+		return this;
+	},
+
+	setZIndex: function (zIndex) {
+		this.options.zIndex = zIndex;
+		this._updateZIndex();
+
+		return this;
+	},
+
+	setUrl: function (url, noRedraw) {
+		this._url = url;
+
+		if (!noRedraw) {
+			this.redraw();
+		}
+
+		return this;
+	},
+
+	redraw: function () {
+		if (this._map) {
+			this._reset({hard: true});
+			this._update();
+		}
+		return this;
+	},
+
+	_updateZIndex: function () {
+		if (this._container && this.options.zIndex !== undefined) {
+			this._container.style.zIndex = this.options.zIndex;
+		}
+	},
+
+	_setAutoZIndex: function (pane, compare) {
+
+		var layers = pane.children,
+		    edgeZIndex = -compare(Infinity, -Infinity), // -Infinity for max, Infinity for min
+		    zIndex, i, len;
+
+		for (i = 0, len = layers.length; i < len; i++) {
+
+			if (layers[i] !== this._container) {
+				zIndex = parseInt(layers[i].style.zIndex, 10);
+
+				if (!isNaN(zIndex)) {
+					edgeZIndex = compare(edgeZIndex, zIndex);
+				}
+			}
+		}
+
+		this.options.zIndex = this._container.style.zIndex =
+		        (isFinite(edgeZIndex) ? edgeZIndex : 0) + compare(1, -1);
+	},
+
+	_updateOpacity: function () {
+		var i,
+		    tiles = this._tiles;
+
+		if (L.Browser.ielt9) {
+			for (i in tiles) {
+				L.DomUtil.setOpacity(tiles[i], this.options.opacity);
+			}
+		} else {
+			L.DomUtil.setOpacity(this._container, this.options.opacity);
+		}
+	},
+
+	_initContainer: function () {
+		var tilePane = this._map._panes.tilePane;
+
+		if (!this._container) {
+			this._container = L.DomUtil.create('div', 'leaflet-layer');
+
+			this._updateZIndex();
+
+			if (this._animated) {
+				var className = 'leaflet-tile-container';
+
+				this._bgBuffer = L.DomUtil.create('div', className, this._container);
+				this._tileContainer = L.DomUtil.create('div', className, this._container);
+
+			} else {
+				this._tileContainer = this._container;
+			}
+
+			tilePane.appendChild(this._container);
+
+			if (this.options.opacity < 1) {
+				this._updateOpacity();
+			}
+		}
+	},
+
+	_reset: function (e) {
+		for (var key in this._tiles) {
+			this.fire('tileunload', {tile: this._tiles[key]});
+		}
+
+		this._tiles = {};
+		this._tilesToLoad = 0;
+
+		if (this.options.reuseTiles) {
+			this._unusedTiles = [];
+		}
+
+		this._tileContainer.innerHTML = '';
+
+		if (this._animated && e && e.hard) {
+			this._clearBgBuffer();
+		}
+
+		this._initContainer();
+	},
+
+	_getTileSize: function () {
+		var map = this._map,
+		    zoom = map.getZoom() + this.options.zoomOffset,
+		    zoomN = this.options.maxNativeZoom,
+		    tileSize = this.options.tileSize;
+
+		if (zoomN && zoom > zoomN) {
+			tileSize = Math.round(map.getZoomScale(zoom) / map.getZoomScale(zoomN) * tileSize);
+		}
+
+		return tileSize;
+	},
+
+	_update: function () {
+
+		if (!this._map) { return; }
+
+		var map = this._map,
+		    bounds = map.getPixelBounds(),
+		    zoom = map.getZoom(),
+		    tileSize = this._getTileSize();
+
+		if (zoom > this.options.maxZoom || zoom < this.options.minZoom) {
+			return;
+		}
+
+		var tileBounds = L.bounds(
+		        bounds.min.divideBy(tileSize)._floor(),
+		        bounds.max.divideBy(tileSize)._floor());
+
+		this._addTilesFromCenterOut(tileBounds);
+
+		if (this.options.unloadInvisibleTiles || this.options.reuseTiles) {
+			this._removeOtherTiles(tileBounds);
+		}
+	},
+
+	_addTilesFromCenterOut: function (bounds) {
+		var queue = [],
+		    center = bounds.getCenter();
+
+		var j, i, point;
+
+		for (j = bounds.min.y; j <= bounds.max.y; j++) {
+			for (i = bounds.min.x; i <= bounds.max.x; i++) {
+				point = new L.Point(i, j);
+
+				if (this._tileShouldBeLoaded(point)) {
+					queue.push(point);
+				}
+			}
+		}
+
+		var tilesToLoad = queue.length;
+
+		if (tilesToLoad === 0) { return; }
+
+		// load tiles in order of their distance to center
+		queue.sort(function (a, b) {
+			return a.distanceTo(center) - b.distanceTo(center);
+		});
+
+		var fragment = document.createDocumentFragment();
+
+		// if its the first batch of tiles to load
+		if (!this._tilesToLoad) {
+			this.fire('loading');
+		}
+
+		this._tilesToLoad += tilesToLoad;
+
+		for (i = 0; i < tilesToLoad; i++) {
+			this._addTile(queue[i], fragment);
+		}
+
+		this._tileContainer.appendChild(fragment);
+	},
+
+	_tileShouldBeLoaded: function (tilePoint) {
+		if ((tilePoint.x + ':' + tilePoint.y) in this._tiles) {
+			return false; // already loaded
+		}
+
+		var options = this.options;
+
+		if (!options.continuousWorld) {
+			var limit = this._getWrapTileNum();
+
+			// don't load if exceeds world bounds
+			if ((options.noWrap && (tilePoint.x < 0 || tilePoint.x >= limit.x)) ||
+				tilePoint.y < 0 || tilePoint.y >= limit.y) { return false; }
+		}
+
+		if (options.bounds) {
+			var tileSize = this._getTileSize(),
+			    nwPoint = tilePoint.multiplyBy(tileSize),
+			    sePoint = nwPoint.add([tileSize, tileSize]),
+			    nw = this._map.unproject(nwPoint),
+			    se = this._map.unproject(sePoint);
+
+			// TODO temporary hack, will be removed after refactoring projections
+			// https://github.com/Leaflet/Leaflet/issues/1618
+			if (!options.continuousWorld && !options.noWrap) {
+				nw = nw.wrap();
+				se = se.wrap();
+			}
+
+			if (!options.bounds.intersects([nw, se])) { return false; }
+		}
+
+		return true;
+	},
+
+	_removeOtherTiles: function (bounds) {
+		var kArr, x, y, key;
+
+		for (key in this._tiles) {
+			kArr = key.split(':');
+			x = parseInt(kArr[0], 10);
+			y = parseInt(kArr[1], 10);
+
+			// remove tile if it's out of bounds
+			if (x < bounds.min.x || x > bounds.max.x || y < bounds.min.y || y > bounds.max.y) {
+				this._removeTile(key);
+			}
+		}
+	},
+
+	_removeTile: function (key) {
+		var tile = this._tiles[key];
+
+		this.fire('tileunload', {tile: tile, url: tile.src});
+
+		if (this.options.reuseTiles) {
+			L.DomUtil.removeClass(tile, 'leaflet-tile-loaded');
+			this._unusedTiles.push(tile);
+
+		} else if (tile.parentNode === this._tileContainer) {
+			this._tileContainer.removeChild(tile);
+		}
+
+		// for https://github.com/CloudMade/Leaflet/issues/137
+		if (!L.Browser.android) {
+			tile.onload = null;
+			tile.src = L.Util.emptyImageUrl;
+		}
+
+		delete this._tiles[key];
+	},
+
+	_addTile: function (tilePoint, container) {
+		var tilePos = this._getTilePos(tilePoint);
+
+		// get unused tile - or create a new tile
+		var tile = this._getTile();
+
+		/*
+		Chrome 20 layouts much faster with top/left (verify with timeline, frames)
+		Android 4 browser has display issues with top/left and requires transform instead
+		(other browsers don't currently care) - see debug/hacks/jitter.html for an example
+		*/
+		L.DomUtil.setPosition(tile, tilePos, L.Browser.chrome);
+
+		this._tiles[tilePoint.x + ':' + tilePoint.y] = tile;
+
+		this._loadTile(tile, tilePoint);
+
+		if (tile.parentNode !== this._tileContainer) {
+			container.appendChild(tile);
+		}
+	},
+
+	_getZoomForUrl: function () {
+
+		var options = this.options,
+		    zoom = this._map.getZoom();
+
+		if (options.zoomReverse) {
+			zoom = options.maxZoom - zoom;
+		}
+
+		zoom += options.zoomOffset;
+
+		return options.maxNativeZoom ? Math.min(zoom, options.maxNativeZoom) : zoom;
+	},
+
+	_getTilePos: function (tilePoint) {
+		var origin = this._map.getPixelOrigin(),
+		    tileSize = this._getTileSize();
+
+		return tilePoint.multiplyBy(tileSize).subtract(origin);
+	},
+
+	// image-specific code (override to implement e.g. Canvas or SVG tile layer)
+
+	getTileUrl: function (tilePoint) {
+		return L.Util.template(this._url, L.extend({
+			s: this._getSubdomain(tilePoint),
+			z: tilePoint.z,
+			x: tilePoint.x,
+			y: tilePoint.y
+		}, this.options));
+	},
+
+	_getWrapTileNum: function () {
+		var crs = this._map.options.crs,
+		    size = crs.getSize(this._map.getZoom());
+		return size.divideBy(this._getTileSize())._floor();
+	},
+
+	_adjustTilePoint: function (tilePoint) {
+
+		var limit = this._getWrapTileNum();
+
+		// wrap tile coordinates
+		if (!this.options.continuousWorld && !this.options.noWrap) {
+			tilePoint.x = ((tilePoint.x % limit.x) + limit.x) % limit.x;
+		}
+
+		if (this.options.tms) {
+			tilePoint.y = limit.y - tilePoint.y - 1;
+		}
+
+		tilePoint.z = this._getZoomForUrl();
+	},
+
+	_getSubdomain: function (tilePoint) {
+		var index = Math.abs(tilePoint.x + tilePoint.y) % this.options.subdomains.length;
+		return this.options.subdomains[index];
+	},
+
+	_getTile: function () {
+		if (this.options.reuseTiles && this._unusedTiles.length > 0) {
+			var tile = this._unusedTiles.pop();
+			this._resetTile(tile);
+			return tile;
+		}
+		return this._createTile();
+	},
+
+	// Override if data stored on a tile needs to be cleaned up before reuse
+	_resetTile: function (/*tile*/) {},
+
+	_createTile: function () {
+		var tile = L.DomUtil.create('img', 'leaflet-tile');
+		tile.style.width = tile.style.height = this._getTileSize() + 'px';
+		tile.galleryimg = 'no';
+
+		tile.onselectstart = tile.onmousemove = L.Util.falseFn;
+
+		if (L.Browser.ielt9 && this.options.opacity !== undefined) {
+			L.DomUtil.setOpacity(tile, this.options.opacity);
+		}
+		// without this hack, tiles disappear after zoom on Chrome for Android
+		// https://github.com/Leaflet/Leaflet/issues/2078
+		if (L.Browser.mobileWebkit3d) {
+			tile.style.WebkitBackfaceVisibility = 'hidden';
+		}
+		return tile;
+	},
+
+	_loadTile: function (tile, tilePoint) {
+		tile._layer  = this;
+		tile.onload  = this._tileOnLoad;
+		tile.onerror = this._tileOnError;
+
+		this._adjustTilePoint(tilePoint);
+		tile.src     = this.getTileUrl(tilePoint);
+
+		this.fire('tileloadstart', {
+			tile: tile,
+			url: tile.src
+		});
+	},
+
+	_tileLoaded: function () {
+		this._tilesToLoad--;
+
+		if (this._animated) {
+			L.DomUtil.addClass(this._tileContainer, 'leaflet-zoom-animated');
+		}
+
+		if (!this._tilesToLoad) {
+			this.fire('load');
+
+			if (this._animated) {
+				// clear scaled tiles after all new tiles are loaded (for performance)
+				clearTimeout(this._clearBgBufferTimer);
+				this._clearBgBufferTimer = setTimeout(L.bind(this._clearBgBuffer, this), 500);
+			}
+		}
+	},
+
+	_tileOnLoad: function () {
+		var layer = this._layer;
+
+		//Only if we are loading an actual image
+		if (this.src !== L.Util.emptyImageUrl) {
+			L.DomUtil.addClass(this, 'leaflet-tile-loaded');
+
+			layer.fire('tileload', {
+				tile: this,
+				url: this.src
+			});
+		}
+
+		layer._tileLoaded();
+	},
+
+	_tileOnError: function () {
+		var layer = this._layer;
+
+		layer.fire('tileerror', {
+			tile: this,
+			url: this.src
+		});
+
+		var newUrl = layer.options.errorTileUrl;
+		if (newUrl) {
+			this.src = newUrl;
+		}
+
+		layer._tileLoaded();
+	}
+});
+
+L.tileLayer = function (url, options) {
+	return new L.TileLayer(url, options);
+};
+
+
+/*
+ * L.TileLayer.WMS is used for putting WMS tile layers on the map.
+ */
+
+L.TileLayer.WMS = L.TileLayer.extend({
+
+	defaultWmsParams: {
+		service: 'WMS',
+		request: 'GetMap',
+		version: '1.1.1',
+		layers: '',
+		styles: '',
+		format: 'image/jpeg',
+		transparent: false
+	},
+
+	initialize: function (url, options) { // (String, Object)
+
+		this._url = url;
+
+		var wmsParams = L.extend({}, this.defaultWmsParams),
+		    tileSize = options.tileSize || this.options.tileSize;
+
+		if (options.detectRetina && L.Browser.retina) {
+			wmsParams.width = wmsParams.height = tileSize * 2;
+		} else {
+			wmsParams.width = wmsParams.height = tileSize;
+		}
+
+		for (var i in options) {
+			// all keys that are not TileLayer options go to WMS params
+			if (!this.options.hasOwnProperty(i) && i !== 'crs') {
+				wmsParams[i] = options[i];
+			}
+		}
+
+		this.wmsParams = wmsParams;
+
+		L.setOptions(this, options);
+	},
+
+	onAdd: function (map) {
+
+		this._crs = this.options.crs || map.options.crs;
+
+		this._wmsVersion = parseFloat(this.wmsParams.version);
+
+		var projectionKey = this._wmsVersion >= 1.3 ? 'crs' : 'srs';
+		this.wmsParams[projectionKey] = this._crs.code;
+
+		L.TileLayer.prototype.onAdd.call(this, map);
+	},
+
+	getTileUrl: function (tilePoint) { // (Point, Number) -> String
+
+		var map = this._map,
+		    tileSize = this.options.tileSize,
+
+		    nwPoint = tilePoint.multiplyBy(tileSize),
+		    sePoint = nwPoint.add([tileSize, tileSize]),
+
+		    nw = this._crs.project(map.unproject(nwPoint, tilePoint.z)),
+		    se = this._crs.project(map.unproject(sePoint, tilePoint.z)),
+		    bbox = this._wmsVersion >= 1.3 && this._crs === L.CRS.EPSG4326 ?
+		        [se.y, nw.x, nw.y, se.x].join(',') :
+		        [nw.x, se.y, se.x, nw.y].join(','),
+
+		    url = L.Util.template(this._url, {s: this._getSubdomain(tilePoint)});
+
+		return url + L.Util.getParamString(this.wmsParams, url, true) + '&BBOX=' + bbox;
+	},
+
+	setParams: function (params, noRedraw) {
+
+		L.extend(this.wmsParams, params);
+
+		if (!noRedraw) {
+			this.redraw();
+		}
+
+		return this;
+	}
+});
+
+L.tileLayer.wms = function (url, options) {
+	return new L.TileLayer.WMS(url, options);
+};
+
+
+/*
+ * L.TileLayer.Canvas is a class that you can use as a base for creating
+ * dynamically drawn Canvas-based tile layers.
+ */
+
+L.TileLayer.Canvas = L.TileLayer.extend({
+	options: {
+		async: false
+	},
+
+	initialize: function (options) {
+		L.setOptions(this, options);
+	},
+
+	redraw: function () {
+		if (this._map) {
+			this._reset({hard: true});
+			this._update();
+		}
+
+		for (var i in this._tiles) {
+			this._redrawTile(this._tiles[i]);
+		}
+		return this;
+	},
+
+	_redrawTile: function (tile) {
+		this.drawTile(tile, tile._tilePoint, this._map._zoom);
+	},
+
+	_createTile: function () {
+		var tile = L.DomUtil.create('canvas', 'leaflet-tile');
+		tile.width = tile.height = this.options.tileSize;
+		tile.onselectstart = tile.onmousemove = L.Util.falseFn;
+		return tile;
+	},
+
+	_loadTile: function (tile, tilePoint) {
+		tile._layer = this;
+		tile._tilePoint = tilePoint;
+
+		this._redrawTile(tile);
+
+		if (!this.options.async) {
+			this.tileDrawn(tile);
+		}
+	},
+
+	drawTile: function (/*tile, tilePoint*/) {
+		// override with rendering code
+	},
+
+	tileDrawn: function (tile) {
+		this._tileOnLoad.call(tile);
+	}
+});
+
+
+L.tileLayer.canvas = function (options) {
+	return new L.TileLayer.Canvas(options);
+};
+
+
+/*
+ * L.ImageOverlay is used to overlay images over the map (to specific geographical bounds).
+ */
+
+L.ImageOverlay = L.Class.extend({
+	includes: L.Mixin.Events,
+
+	options: {
+		opacity: 1
+	},
+
+	initialize: function (url, bounds, options) { // (String, LatLngBounds, Object)
+		this._url = url;
+		this._bounds = L.latLngBounds(bounds);
+
+		L.setOptions(this, options);
+	},
+
+	onAdd: function (map) {
+		this._map = map;
+
+		if (!this._image) {
+			this._initImage();
+		}
+
+		map._panes.overlayPane.appendChild(this._image);
+
+		map.on('viewreset', this._reset, this);
+
+		if (map.options.zoomAnimation && L.Browser.any3d) {
+			map.on('zoomanim', this._animateZoom, this);
+		}
+
+		this._reset();
+	},
+
+	onRemove: function (map) {
+		map.getPanes().overlayPane.removeChild(this._image);
+
+		map.off('viewreset', this._reset, this);
+
+		if (map.options.zoomAnimation) {
+			map.off('zoomanim', this._animateZoom, this);
+		}
+	},
+
+	addTo: function (map) {
+		map.addLayer(this);
+		return this;
+	},
+
+	setOpacity: function (opacity) {
+		this.options.opacity = opacity;
+		this._updateOpacity();
+		return this;
+	},
+
+	// TODO remove bringToFront/bringToBack duplication from TileLayer/Path
+	bringToFront: function () {
+		if (this._image) {
+			this._map._panes.overlayPane.appendChild(this._image);
+		}
+		return this;
+	},
+
+	bringToBack: function () {
+		var pane = this._map._panes.overlayPane;
+		if (this._image) {
+			pane.insertBefore(this._image, pane.firstChild);
+		}
+		return this;
+	},
+
+	setUrl: function (url) {
+		this._url = url;
+		this._image.src = this._url;
+	},
+
+	getAttribution: function () {
+		return this.options.attribution;
+	},
+
+	_initImage: function () {
+		this._image = L.DomUtil.create('img', 'leaflet-image-layer');
+
+		if (this._map.options.zoomAnimation && L.Browser.any3d) {
+			L.DomUtil.addClass(this._image, 'leaflet-zoom-animated');
+		} else {
+			L.DomUtil.addClass(this._image, 'leaflet-zoom-hide');
+		}
+
+		this._updateOpacity();
+
+		//TODO createImage util method to remove duplication
+		L.extend(this._image, {
+			galleryimg: 'no',
+			onselectstart: L.Util.falseFn,
+			onmousemove: L.Util.falseFn,
+			onload: L.bind(this._onImageLoad, this),
+			src: this._url
+		});
+	},
+
+	_animateZoom: function (e) {
+		var map = this._map,
+		    image = this._image,
+		    scale = map.getZoomScale(e.zoom),
+		    nw = this._bounds.getNorthWest(),
+		    se = this._bounds.getSouthEast(),
+
+		    topLeft = map._latLngToNewLayerPoint(nw, e.zoom, e.center),
+		    size = map._latLngToNewLayerPoint(se, e.zoom, e.center)._subtract(topLeft),
+		    origin = topLeft._add(size._multiplyBy((1 / 2) * (1 - 1 / scale)));
+
+		image.style[L.DomUtil.TRANSFORM] =
+		        L.DomUtil.getTranslateString(origin) + ' scale(' + scale + ') ';
+	},
+
+	_reset: function () {
+		var image   = this._image,
+		    topLeft = this._map.latLngToLayerPoint(this._bounds.getNorthWest()),
+		    size = this._map.latLngToLayerPoint(this._bounds.getSouthEast())._subtract(topLeft);
+
+		L.DomUtil.setPosition(image, topLeft);
+
+		image.style.width  = size.x + 'px';
+		image.style.height = size.y + 'px';
+	},
+
+	_onImageLoad: function () {
+		this.fire('load');
+	},
+
+	_updateOpacity: function () {
+		L.DomUtil.setOpacity(this._image, this.options.opacity);
+	}
+});
+
+L.imageOverlay = function (url, bounds, options) {
+	return new L.ImageOverlay(url, bounds, options);
+};
+
+
+/*
+ * L.Icon is an image-based icon class that you can use with L.Marker for custom markers.
+ */
+
+L.Icon = L.Class.extend({
+	options: {
+		/*
+		iconUrl: (String) (required)
+		iconRetinaUrl: (String) (optional, used for retina devices if detected)
+		iconSize: (Point) (can be set through CSS)
+		iconAnchor: (Point) (centered by default, can be set in CSS with negative margins)
+		popupAnchor: (Point) (if not specified, popup opens in the anchor point)
+		shadowUrl: (String) (no shadow by default)
+		shadowRetinaUrl: (String) (optional, used for retina devices if detected)
+		shadowSize: (Point)
+		shadowAnchor: (Point)
+		*/
+		className: ''
+	},
+
+	initialize: function (options) {
+		L.setOptions(this, options);
+	},
+
+	createIcon: function (oldIcon) {
+		return this._createIcon('icon', oldIcon);
+	},
+
+	createShadow: function (oldIcon) {
+		return this._createIcon('shadow', oldIcon);
+	},
+
+	_createIcon: function (name, oldIcon) {
+		var src = this._getIconUrl(name);
+
+		if (!src) {
+			if (name === 'icon') {
+				throw new Error('iconUrl not set in Icon options (see the docs).');
+			}
+			return null;
+		}
+
+		var img;
+		if (!oldIcon || oldIcon.tagName !== 'IMG') {
+			img = this._createImg(src);
+		} else {
+			img = this._createImg(src, oldIcon);
+		}
+		this._setIconStyles(img, name);
+
+		return img;
+	},
+
+	_setIconStyles: function (img, name) {
+		var options = this.options,
+		    size = L.point(options[name + 'Size']),
+		    anchor;
+
+		if (name === 'shadow') {
+			anchor = L.point(options.shadowAnchor || options.iconAnchor);
+		} else {
+			anchor = L.point(options.iconAnchor);
+		}
+
+		if (!anchor && size) {
+			anchor = size.divideBy(2, true);
+		}
+
+		img.className = 'leaflet-marker-' + name + ' ' + options.className;
+
+		if (anchor) {
+			img.style.marginLeft = (-anchor.x) + 'px';
+			img.style.marginTop  = (-anchor.y) + 'px';
+		}
+
+		if (size) {
+			img.style.width  = size.x + 'px';
+			img.style.height = size.y + 'px';
+		}
+	},
+
+	_createImg: function (src, el) {
+		el = el || document.createElement('img');
+		el.src = src;
+		return el;
+	},
+
+	_getIconUrl: function (name) {
+		if (L.Browser.retina && this.options[name + 'RetinaUrl']) {
+			return this.options[name + 'RetinaUrl'];
+		}
+		return this.options[name + 'Url'];
+	}
+});
+
+L.icon = function (options) {
+	return new L.Icon(options);
+};
+
+
+/*
+ * L.Icon.Default is the blue marker icon used by default in Leaflet.
+ */
+
+L.Icon.Default = L.Icon.extend({
+
+	options: {
+		iconSize: [25, 41],
+		iconAnchor: [12, 41],
+		popupAnchor: [1, -34],
+
+		shadowSize: [41, 41]
+	},
+
+	_getIconUrl: function (name) {
+		var key = name + 'Url';
+
+		if (this.options[key]) {
+			return this.options[key];
+		}
+
+		if (L.Browser.retina && name === 'icon') {
+			name += '-2x';
+		}
+
+		var path = L.Icon.Default.imagePath;
+
+		if (!path) {
+			throw new Error('Couldn\'t autodetect L.Icon.Default.imagePath, set it manually.');
+		}
+
+		return path + '/marker-' + name + '.png';
+	}
+});
+
+L.Icon.Default.imagePath = (function () {
+	var scripts = document.getElementsByTagName('script'),
+	    leafletRe = /[\/^]leaflet[\-\._]?([\w\-\._]*)\.js\??/;
+
+	var i, len, src, matches, path;
+
+	for (i = 0, len = scripts.length; i < len; i++) {
+		src = scripts[i].src;
+		matches = src.match(leafletRe);
+
+		if (matches) {
+			path = src.split(leafletRe)[0];
+			return (path ? path + '/' : '') + 'images';
+		}
+	}
+}());
+
+
+/*
+ * L.Marker is used to display clickable/draggable icons on the map.
+ */
+
+L.Marker = L.Class.extend({
+
+	includes: L.Mixin.Events,
+
+	options: {
+		icon: new L.Icon.Default(),
+		title: '',
+		alt: '',
+		clickable: true,
+		draggable: false,
+		keyboard: true,
+		zIndexOffset: 0,
+		opacity: 1,
+		riseOnHover: false,
+		riseOffset: 250
+	},
+
+	initialize: function (latlng, options) {
+		L.setOptions(this, options);
+		this._latlng = L.latLng(latlng);
+	},
+
+	onAdd: function (map) {
+		this._map = map;
+
+		map.on('viewreset', this.update, this);
+
+		this._initIcon();
+		this.update();
+		this.fire('add');
+
+		if (map.options.zoomAnimation && map.options.markerZoomAnimation) {
+			map.on('zoomanim', this._animateZoom, this);
+		}
+	},
+
+	addTo: function (map) {
+		map.addLayer(this);
+		return this;
+	},
+
+	onRemove: function (map) {
+		if (this.dragging) {
+			this.dragging.disable();
+		}
+
+		this._removeIcon();
+		this._removeShadow();
+
+		this.fire('remove');
+
+		map.off({
+			'viewreset': this.update,
+			'zoomanim': this._animateZoom
+		}, this);
+
+		this._map = null;
+	},
+
+	getLatLng: function () {
+		return this._latlng;
+	},
+
+	setLatLng: function (latlng) {
+		this._latlng = L.latLng(latlng);
+
+		this.update();
+
+		return this.fire('move', { latlng: this._latlng });
+	},
+
+	setZIndexOffset: function (offset) {
+		this.options.zIndexOffset = offset;
+		this.update();
+
+		return this;
+	},
+
+	setIcon: function (icon) {
+
+		this.options.icon = icon;
+
+		if (this._map) {
+			this._initIcon();
+			this.update();
+		}
+
+		if (this._popup) {
+			this.bindPopup(this._popup);
+		}
+
+		return this;
+	},
+
+	update: function () {
+		if (this._icon) {
+			this._setPos(this._map.latLngToLayerPoint(this._latlng).round());
+		}
+		return this;
+	},
+
+	_initIcon: function () {
+		var options = this.options,
+		    map = this._map,
+		    animation = (map.options.zoomAnimation && map.options.markerZoomAnimation),
+		    classToAdd = animation ? 'leaflet-zoom-animated' : 'leaflet-zoom-hide';
+
+		var icon = options.icon.createIcon(this._icon),
+			addIcon = false;
+
+		// if we're not reusing the icon, remove the old one and init new one
+		if (icon !== this._icon) {
+			if (this._icon) {
+				this._removeIcon();
+			}
+			addIcon = true;
+
+			if (options.title) {
+				icon.title = options.title;
+			}
+
+			if (options.alt) {
+				icon.alt = options.alt;
+			}
+		}
+
+		L.DomUtil.addClass(icon, classToAdd);
+
+		if (options.keyboard) {
+			icon.tabIndex = '0';
+		}
+
+		this._icon = icon;
+
+		this._initInteraction();
+
+		if (options.riseOnHover) {
+			L.DomEvent
+				.on(icon, 'mouseover', this._bringToFront, this)
+				.on(icon, 'mouseout', this._resetZIndex, this);
+		}
+
+		var newShadow = options.icon.createShadow(this._shadow),
+			addShadow = false;
+
+		if (newShadow !== this._shadow) {
+			this._removeShadow();
+			addShadow = true;
+		}
+
+		if (newShadow) {
+			L.DomUtil.addClass(newShadow, classToAdd);
+		}
+		this._shadow = newShadow;
+
+
+		if (options.opacity < 1) {
+			this._updateOpacity();
+		}
+
+
+		var panes = this._map._panes;
+
+		if (addIcon) {
+			panes.markerPane.appendChild(this._icon);
+		}
+
+		if (newShadow && addShadow) {
+			panes.shadowPane.appendChild(this._shadow);
+		}
+	},
+
+	_removeIcon: function () {
+		if (this.options.riseOnHover) {
+			L.DomEvent
+			    .off(this._icon, 'mouseover', this._bringToFront)
+			    .off(this._icon, 'mouseout', this._resetZIndex);
+		}
+
+		this._map._panes.markerPane.removeChild(this._icon);
+
+		this._icon = null;
+	},
+
+	_removeShadow: function () {
+		if (this._shadow) {
+			this._map._panes.shadowPane.removeChild(this._shadow);
+		}
+		this._shadow = null;
+	},
+
+	_setPos: function (pos) {
+		L.DomUtil.setPosition(this._icon, pos);
+
+		if (this._shadow) {
+			L.DomUtil.setPosition(this._shadow, pos);
+		}
+
+		this._zIndex = pos.y + this.options.zIndexOffset;
+
+		this._resetZIndex();
+	},
+
+	_updateZIndex: function (offset) {
+		this._icon.style.zIndex = this._zIndex + offset;
+	},
+
+	_animateZoom: function (opt) {
+		var pos = this._map._latLngToNewLayerPoint(this._latlng, opt.zoom, opt.center).round();
+
+		this._setPos(pos);
+	},
+
+	_initInteraction: function () {
+
+		if (!this.options.clickable) { return; }
+
+		// TODO refactor into something shared with Map/Path/etc. to DRY it up
+
+		var icon = this._icon,
+		    events = ['dblclick', 'mousedown', 'mouseover', 'mouseout', 'contextmenu'];
+
+		L.DomUtil.addClass(icon, 'leaflet-clickable');
+		L.DomEvent.on(icon, 'click', this._onMouseClick, this);
+		L.DomEvent.on(icon, 'keypress', this._onKeyPress, this);
+
+		for (var i = 0; i < events.length; i++) {
+			L.DomEvent.on(icon, events[i], this._fireMouseEvent, this);
+		}
+
+		if (L.Handler.MarkerDrag) {
+			this.dragging = new L.Handler.MarkerDrag(this);
+
+			if (this.options.draggable) {
+				this.dragging.enable();
+			}
+		}
+	},
+
+	_onMouseClick: function (e) {
+		var wasDragged = this.dragging && this.dragging.moved();
+
+		if (this.hasEventListeners(e.type) || wasDragged) {
+			L.DomEvent.stopPropagation(e);
+		}
+
+		if (wasDragged) { return; }
+
+		if ((!this.dragging || !this.dragging._enabled) && this._map.dragging && this._map.dragging.moved()) { return; }
+
+		this.fire(e.type, {
+			originalEvent: e,
+			latlng: this._latlng
+		});
+	},
+
+	_onKeyPress: function (e) {
+		if (e.keyCode === 13) {
+			this.fire('click', {
+				originalEvent: e,
+				latlng: this._latlng
+			});
+		}
+	},
+
+	_fireMouseEvent: function (e) {
+
+		this.fire(e.type, {
+			originalEvent: e,
+			latlng: this._latlng
+		});
+
+		// TODO proper custom event propagation
+		// this line will always be called if marker is in a FeatureGroup
+		if (e.type === 'contextmenu' && this.hasEventListeners(e.type)) {
+			L.DomEvent.preventDefault(e);
+		}
+		if (e.type !== 'mousedown') {
+			L.DomEvent.stopPropagation(e);
+		} else {
+			L.DomEvent.preventDefault(e);
+		}
+	},
+
+	setOpacity: function (opacity) {
+		this.options.opacity = opacity;
+		if (this._map) {
+			this._updateOpacity();
+		}
+
+		return this;
+	},
+
+	_updateOpacity: function () {
+		L.DomUtil.setOpacity(this._icon, this.options.opacity);
+		if (this._shadow) {
+			L.DomUtil.setOpacity(this._shadow, this.options.opacity);
+		}
+	},
+
+	_bringToFront: function () {
+		this._updateZIndex(this.options.riseOffset);
+	},
+
+	_resetZIndex: function () {
+		this._updateZIndex(0);
+	}
+});
+
+L.marker = function (latlng, options) {
+	return new L.Marker(latlng, options);
+};
+
+
+/*
+ * L.DivIcon is a lightweight HTML-based icon class (as opposed to the image-based L.Icon)
+ * to use with L.Marker.
+ */
+
+L.DivIcon = L.Icon.extend({
+	options: {
+		iconSize: [12, 12], // also can be set through CSS
+		/*
+		iconAnchor: (Point)
+		popupAnchor: (Point)
+		html: (String)
+		bgPos: (Point)
+		*/
+		className: 'leaflet-div-icon',
+		html: false
+	},
+
+	createIcon: function (oldIcon) {
+		var div = (oldIcon && oldIcon.tagName === 'DIV') ? oldIcon : document.createElement('div'),
+		    options = this.options;
+
+		if (options.html !== false) {
+			div.innerHTML = options.html;
+		} else {
+			div.innerHTML = '';
+		}
+
+		if (options.bgPos) {
+			div.style.backgroundPosition =
+			        (-options.bgPos.x) + 'px ' + (-options.bgPos.y) + 'px';
+		}
+
+		this._setIconStyles(div, 'icon');
+		return div;
+	},
+
+	createShadow: function () {
+		return null;
+	}
+});
+
+L.divIcon = function (options) {
+	return new L.DivIcon(options);
+};
+
+
+/*
+ * L.Popup is used for displaying popups on the map.
+ */
+
+L.Map.mergeOptions({
+	closePopupOnClick: true
+});
+
+L.Popup = L.Class.extend({
+	includes: L.Mixin.Events,
+
+	options: {
+		minWidth: 50,
+		maxWidth: 300,
+		// maxHeight: null,
+		autoPan: true,
+		closeButton: true,
+		offset: [0, 7],
+		autoPanPadding: [5, 5],
+		// autoPanPaddingTopLeft: null,
+		// autoPanPaddingBottomRight: null,
+		keepInView: false,
+		className: '',
+		zoomAnimation: true
+	},
+
+	initialize: function (options, source) {
+		L.setOptions(this, options);
+
+		this._source = source;
+		this._animated = L.Browser.any3d && this.options.zoomAnimation;
+		this._isOpen = false;
+	},
+
+	onAdd: function (map) {
+		this._map = map;
+
+		if (!this._container) {
+			this._initLayout();
+		}
+
+		var animFade = map.options.fadeAnimation;
+
+		if (animFade) {
+			L.DomUtil.setOpacity(this._container, 0);
+		}
+		map._panes.popupPane.appendChild(this._container);
+
+		map.on(this._getEvents(), this);
+
+		this.update();
+
+		if (animFade) {
+			L.DomUtil.setOpacity(this._container, 1);
+		}
+
+		this.fire('open');
+
+		map.fire('popupopen', {popup: this});
+
+		if (this._source) {
+			this._source.fire('popupopen', {popup: this});
+		}
+	},
+
+	addTo: function (map) {
+		map.addLayer(this);
+		return this;
+	},
+
+	openOn: function (map) {
+		map.openPopup(this);
+		return this;
+	},
+
+	onRemove: function (map) {
+		map._panes.popupPane.removeChild(this._container);
+
+		L.Util.falseFn(this._container.offsetWidth); // force reflow
+
+		map.off(this._getEvents(), this);
+
+		if (map.options.fadeAnimation) {
+			L.DomUtil.setOpacity(this._container, 0);
+		}
+
+		this._map = null;
+
+		this.fire('close');
+
+		map.fire('popupclose', {popup: this});
+
+		if (this._source) {
+			this._source.fire('popupclose', {popup: this});
+		}
+	},
+
+	getLatLng: function () {
+		return this._latlng;
+	},
+
+	setLatLng: function (latlng) {
+		this._latlng = L.latLng(latlng);
+		if (this._map) {
+			this._updatePosition();
+			this._adjustPan();
+		}
+		return this;
+	},
+
+	getContent: function () {
+		return this._content;
+	},
+
+	setContent: function (content) {
+		this._content = content;
+		this.update();
+		return this;
+	},
+
+	update: function () {
+		if (!this._map) { return; }
+
+		this._container.style.visibility = 'hidden';
+
+		this._updateContent();
+		this._updateLayout();
+		this._updatePosition();
+
+		this._container.style.visibility = '';
+
+		this._adjustPan();
+	},
+
+	_getEvents: function () {
+		var events = {
+			viewreset: this._updatePosition
+		};
+
+		if (this._animated) {
+			events.zoomanim = this._zoomAnimation;
+		}
+		if ('closeOnClick' in this.options ? this.options.closeOnClick : this._map.options.closePopupOnClick) {
+			events.preclick = this._close;
+		}
+		if (this.options.keepInView) {
+			events.moveend = this._adjustPan;
+		}
+
+		return events;
+	},
+
+	_close: function () {
+		if (this._map) {
+			this._map.closePopup(this);
+		}
+	},
+
+	_initLayout: function () {
+		var prefix = 'leaflet-popup',
+			containerClass = prefix + ' ' + this.options.className + ' leaflet-zoom-' +
+			        (this._animated ? 'animated' : 'hide'),
+			container = this._container = L.DomUtil.create('div', containerClass),
+			closeButton;
+
+		if (this.options.closeButton) {
+			closeButton = this._closeButton =
+			        L.DomUtil.create('a', prefix + '-close-button', container);
+			closeButton.href = '#close';
+			closeButton.innerHTML = '&#215;';
+			L.DomEvent.disableClickPropagation(closeButton);
+
+			L.DomEvent.on(closeButton, 'click', this._onCloseButtonClick, this);
+		}
+
+		var wrapper = this._wrapper =
+		        L.DomUtil.create('div', prefix + '-content-wrapper', container);
+		L.DomEvent.disableClickPropagation(wrapper);
+
+		this._contentNode = L.DomUtil.create('div', prefix + '-content', wrapper);
+
+		L.DomEvent.disableScrollPropagation(this._contentNode);
+		L.DomEvent.on(wrapper, 'contextmenu', L.DomEvent.stopPropagation);
+
+		this._tipContainer = L.DomUtil.create('div', prefix + '-tip-container', container);
+		this._tip = L.DomUtil.create('div', prefix + '-tip', this._tipContainer);
+	},
+
+	_updateContent: function () {
+		if (!this._content) { return; }
+
+		if (typeof this._content === 'string') {
+			this._contentNode.innerHTML = this._content;
+		} else {
+			while (this._contentNode.hasChildNodes()) {
+				this._contentNode.removeChild(this._contentNode.firstChild);
+			}
+			this._contentNode.appendChild(this._content);
+		}
+		this.fire('contentupdate');
+	},
+
+	_updateLayout: function () {
+		var container = this._contentNode,
+		    style = container.style;
+
+		style.width = '';
+		style.whiteSpace = 'nowrap';
+
+		var width = container.offsetWidth;
+		width = Math.min(width, this.options.maxWidth);
+		width = Math.max(width, this.options.minWidth);
+
+		style.width = (width + 1) + 'px';
+		style.whiteSpace = '';
+
+		style.height = '';
+
+		var height = container.offsetHeight,
+		    maxHeight = this.options.maxHeight,
+		    scrolledClass = 'leaflet-popup-scrolled';
+
+		if (maxHeight && height > maxHeight) {
+			style.height = maxHeight + 'px';
+			L.DomUtil.addClass(container, scrolledClass);
+		} else {
+			L.DomUtil.removeClass(container, scrolledClass);
+		}
+
+		this._containerWidth = this._container.offsetWidth;
+	},
+
+	_updatePosition: function () {
+		if (!this._map) { return; }
+
+		var pos = this._map.latLngToLayerPoint(this._latlng),
+		    animated = this._animated,
+		    offset = L.point(this.options.offset);
+
+		if (animated) {
+			L.DomUtil.setPosition(this._container, pos);
+		}
+
+		this._containerBottom = -offset.y - (animated ? 0 : pos.y);
+		this._containerLeft = -Math.round(this._containerWidth / 2) + offset.x + (animated ? 0 : pos.x);
+
+		// bottom position the popup in case the height of the popup changes (images loading etc)
+		this._container.style.bottom = this._containerBottom + 'px';
+		this._container.style.left = this._containerLeft + 'px';
+	},
+
+	_zoomAnimation: function (opt) {
+		var pos = this._map._latLngToNewLayerPoint(this._latlng, opt.zoom, opt.center);
+
+		L.DomUtil.setPosition(this._container, pos);
+	},
+
+	_adjustPan: function () {
+		if (!this.options.autoPan) { return; }
+
+		var map = this._map,
+		    containerHeight = this._container.offsetHeight,
+		    containerWidth = this._containerWidth,
+
+		    layerPos = new L.Point(this._containerLeft, -containerHeight - this._containerBottom);
+
+		if (this._animated) {
+			layerPos._add(L.DomUtil.getPosition(this._container));
+		}
+
+		var containerPos = map.layerPointToContainerPoint(layerPos),
+		    padding = L.point(this.options.autoPanPadding),
+		    paddingTL = L.point(this.options.autoPanPaddingTopLeft || padding),
+		    paddingBR = L.point(this.options.autoPanPaddingBottomRight || padding),
+		    size = map.getSize(),
+		    dx = 0,
+		    dy = 0;
+
+		if (containerPos.x + containerWidth + paddingBR.x > size.x) { // right
+			dx = containerPos.x + containerWidth - size.x + paddingBR.x;
+		}
+		if (containerPos.x - dx - paddingTL.x < 0) { // left
+			dx = containerPos.x - paddingTL.x;
+		}
+		if (containerPos.y + containerHeight + paddingBR.y > size.y) { // bottom
+			dy = containerPos.y + containerHeight - size.y + paddingBR.y;
+		}
+		if (containerPos.y - dy - paddingTL.y < 0) { // top
+			dy = containerPos.y - paddingTL.y;
+		}
+
+		if (dx || dy) {
+			map
+			    .fire('autopanstart')
+			    .panBy([dx, dy]);
+		}
+	},
+
+	_onCloseButtonClick: function (e) {
+		this._close();
+		L.DomEvent.stop(e);
+	}
+});
+
+L.popup = function (options, source) {
+	return new L.Popup(options, source);
+};
+
+
+L.Map.include({
+	openPopup: function (popup, latlng, options) { // (Popup) or (String || HTMLElement, LatLng[, Object])
+		this.closePopup();
+
+		if (!(popup instanceof L.Popup)) {
+			var content = popup;
+
+			popup = new L.Popup(options)
+			    .setLatLng(latlng)
+			    .setContent(content);
+		}
+		popup._isOpen = true;
+
+		this._popup = popup;
+		return this.addLayer(popup);
+	},
+
+	closePopup: function (popup) {
+		if (!popup || popup === this._popup) {
+			popup = this._popup;
+			this._popup = null;
+		}
+		if (popup) {
+			this.removeLayer(popup);
+			popup._isOpen = false;
+		}
+		return this;
+	}
+});
+
+
+/*
+ * Popup extension to L.Marker, adding popup-related methods.
+ */
+
+L.Marker.include({
+	openPopup: function () {
+		if (this._popup && this._map && !this._map.hasLayer(this._popup)) {
+			this._popup.setLatLng(this._latlng);
+			this._map.openPopup(this._popup);
+		}
+
+		return this;
+	},
+
+	closePopup: function () {
+		if (this._popup) {
+			this._popup._close();
+		}
+		return this;
+	},
+
+	togglePopup: function () {
+		if (this._popup) {
+			if (this._popup._isOpen) {
+				this.closePopup();
+			} else {
+				this.openPopup();
+			}
+		}
+		return this;
+	},
+
+	bindPopup: function (content, options) {
+		var anchor = L.point(this.options.icon.options.popupAnchor || [0, 0]);
+
+		anchor = anchor.add(L.Popup.prototype.options.offset);
+
+		if (options && options.offset) {
+			anchor = anchor.add(options.offset);
+		}
+
+		options = L.extend({offset: anchor}, options);
+
+		if (!this._popupHandlersAdded) {
+			this
+			    .on('click', this.togglePopup, this)
+			    .on('remove', this.closePopup, this)
+			    .on('move', this._movePopup, this);
+			this._popupHandlersAdded = true;
+		}
+
+		if (content instanceof L.Popup) {
+			L.setOptions(content, options);
+			this._popup = content;
+			content._source = this;
+		} else {
+			this._popup = new L.Popup(options, this)
+				.setContent(content);
+		}
+
+		return this;
+	},
+
+	setPopupContent: function (content) {
+		if (this._popup) {
+			this._popup.setContent(content);
+		}
+		return this;
+	},
+
+	unbindPopup: function () {
+		if (this._popup) {
+			this._popup = null;
+			this
+			    .off('click', this.togglePopup, this)
+			    .off('remove', this.closePopup, this)
+			    .off('move', this._movePopup, this);
+			this._popupHandlersAdded = false;
+		}
+		return this;
+	},
+
+	getPopup: function () {
+		return this._popup;
+	},
+
+	_movePopup: function (e) {
+		this._popup.setLatLng(e.latlng);
+	}
+});
+
+
+/*
+ * L.LayerGroup is a class to combine several layers into one so that
+ * you can manipulate the group (e.g. add/remove it) as one layer.
+ */
+
+L.LayerGroup = L.Class.extend({
+	initialize: function (layers) {
+		this._layers = {};
+
+		var i, len;
+
+		if (layers) {
+			for (i = 0, len = layers.length; i < len; i++) {
+				this.addLayer(layers[i]);
+			}
+		}
+	},
+
+	addLayer: function (layer) {
+		var id = this.getLayerId(layer);
+
+		this._layers[id] = layer;
+
+		if (this._map) {
+			this._map.addLayer(layer);
+		}
+
+		return this;
+	},
+
+	removeLayer: function (layer) {
+		var id = layer in this._layers ? layer : this.getLayerId(layer);
+
+		if (this._map && this._layers[id]) {
+			this._map.removeLayer(this._layers[id]);
+		}
+
+		delete this._layers[id];
+
+		return this;
+	},
+
+	hasLayer: function (layer) {
+		if (!layer) { return false; }
+
+		return (layer in this._layers || this.getLayerId(layer) in this._layers);
+	},
+
+	clearLayers: function () {
+		this.eachLayer(this.removeLayer, this);
+		return this;
+	},
+
+	invoke: function (methodName) {
+		var args = Array.prototype.slice.call(arguments, 1),
+		    i, layer;
+
+		for (i in this._layers) {
+			layer = this._layers[i];
+
+			if (layer[methodName]) {
+				layer[methodName].apply(layer, args);
+			}
+		}
+
+		return this;
+	},
+
+	onAdd: function (map) {
+		this._map = map;
+		this.eachLayer(map.addLayer, map);
+	},
+
+	onRemove: function (map) {
+		this.eachLayer(map.removeLayer, map);
+		this._map = null;
+	},
+
+	addTo: function (map) {
+		map.addLayer(this);
+		return this;
+	},
+
+	eachLayer: function (method, context) {
+		for (var i in this._layers) {
+			method.call(context, this._layers[i]);
+		}
+		return this;
+	},
+
+	getLayer: function (id) {
+		return this._layers[id];
+	},
+
+	getLayers: function () {
+		var layers = [];
+
+		for (var i in this._layers) {
+			layers.push(this._layers[i]);
+		}
+		return layers;
+	},
+
+	setZIndex: function (zIndex) {
+		return this.invoke('setZIndex', zIndex);
+	},
+
+	getLayerId: function (layer) {
+		return L.stamp(layer);
+	}
+});
+
+L.layerGroup = function (layers) {
+	return new L.LayerGroup(layers);
+};
+
+
+/*
+ * L.FeatureGroup extends L.LayerGroup by introducing mouse events and additional methods
+ * shared between a group of interactive layers (like vectors or markers).
+ */
+
+L.FeatureGroup = L.LayerGroup.extend({
+	includes: L.Mixin.Events,
+
+	statics: {
+		EVENTS: 'click dblclick mouseover mouseout mousemove contextmenu popupopen popupclose'
+	},
+
+	addLayer: function (layer) {
+		if (this.hasLayer(layer)) {
+			return this;
+		}
+
+		if ('on' in layer) {
+			layer.on(L.FeatureGroup.EVENTS, this._propagateEvent, this);
+		}
+
+		L.LayerGroup.prototype.addLayer.call(this, layer);
+
+		if (this._popupContent && layer.bindPopup) {
+			layer.bindPopup(this._popupContent, this._popupOptions);
+		}
+
+		return this.fire('layeradd', {layer: layer});
+	},
+
+	removeLayer: function (layer) {
+		if (!this.hasLayer(layer)) {
+			return this;
+		}
+		if (layer in this._layers) {
+			layer = this._layers[layer];
+		}
+
+		layer.off(L.FeatureGroup.EVENTS, this._propagateEvent, this);
+
+		L.LayerGroup.prototype.removeLayer.call(this, layer);
+
+		if (this._popupContent) {
+			this.invoke('unbindPopup');
+		}
+
+		return this.fire('layerremove', {layer: layer});
+	},
+
+	bindPopup: function (content, options) {
+		this._popupContent = content;
+		this._popupOptions = options;
+		return this.invoke('bindPopup', content, options);
+	},
+
+	openPopup: function (latlng) {
+		// open popup on the first layer
+		for (var id in this._layers) {
+			this._layers[id].openPopup(latlng);
+			break;
+		}
+		return this;
+	},
+
+	setStyle: function (style) {
+		return this.invoke('setStyle', style);
+	},
+
+	bringToFront: function () {
+		return this.invoke('bringToFront');
+	},
+
+	bringToBack: function () {
+		return this.invoke('bringToBack');
+	},
+
+	getBounds: function () {
+		var bounds = new L.LatLngBounds();
+
+		this.eachLayer(function (layer) {
+			bounds.extend(layer instanceof L.Marker ? layer.getLatLng() : layer.getBounds());
+		});
+
+		return bounds;
+	},
+
+	_propagateEvent: function (e) {
+		e = L.extend({
+			layer: e.target,
+			target: this
+		}, e);
+		this.fire(e.type, e);
+	}
+});
+
+L.featureGroup = function (layers) {
+	return new L.FeatureGroup(layers);
+};
+
+
+/*
+ * L.Path is a base class for rendering vector paths on a map. Inherited by Polyline, Circle, etc.
+ */
+
+L.Path = L.Class.extend({
+	includes: [L.Mixin.Events],
+
+	statics: {
+		// how much to extend the clip area around the map view
+		// (relative to its size, e.g. 0.5 is half the screen in each direction)
+		// set it so that SVG element doesn't exceed 1280px (vectors flicker on dragend if it is)
+		CLIP_PADDING: (function () {
+			var max = L.Browser.mobile ? 1280 : 2000,
+			    target = (max / Math.max(window.outerWidth, window.outerHeight) - 1) / 2;
+			return Math.max(0, Math.min(0.5, target));
+		})()
+	},
+
+	options: {
+		stroke: true,
+		color: '#0033ff',
+		dashArray: null,
+		lineCap: null,
+		lineJoin: null,
+		weight: 5,
+		opacity: 0.5,
+
+		fill: false,
+		fillColor: null, //same as color by default
+		fillOpacity: 0.2,
+
+		clickable: true
+	},
+
+	initialize: function (options) {
+		L.setOptions(this, options);
+	},
+
+	onAdd: function (map) {
+		this._map = map;
+
+		if (!this._container) {
+			this._initElements();
+			this._initEvents();
+		}
+
+		this.projectLatlngs();
+		this._updatePath();
+
+		if (this._container) {
+			this._map._pathRoot.appendChild(this._container);
+		}
+
+		this.fire('add');
+
+		map.on({
+			'viewreset': this.projectLatlngs,
+			'moveend': this._updatePath
+		}, this);
+	},
+
+	addTo: function (map) {
+		map.addLayer(this);
+		return this;
+	},
+
+	onRemove: function (map) {
+		map._pathRoot.removeChild(this._container);
+
+		// Need to fire remove event before we set _map to null as the event hooks might need the object
+		this.fire('remove');
+		this._map = null;
+
+		if (L.Browser.vml) {
+			this._container = null;
+			this._stroke = null;
+			this._fill = null;
+		}
+
+		map.off({
+			'viewreset': this.projectLatlngs,
+			'moveend': this._updatePath
+		}, this);
+	},
+
+	projectLatlngs: function () {
+		// do all projection stuff here
+	},
+
+	setStyle: function (style) {
+		L.setOptions(this, style);
+
+		if (this._container) {
+			this._updateStyle();
+		}
+
+		return this;
+	},
+
+	redraw: function () {
+		if (this._map) {
+			this.projectLatlngs();
+			this._updatePath();
+		}
+		return this;
+	}
+});
+
+L.Map.include({
+	_updatePathViewport: function () {
+		var p = L.Path.CLIP_PADDING,
+		    size = this.getSize(),
+		    panePos = L.DomUtil.getPosition(this._mapPane),
+		    min = panePos.multiplyBy(-1)._subtract(size.multiplyBy(p)._round()),
+		    max = min.add(size.multiplyBy(1 + p * 2)._round());
+
+		this._pathViewport = new L.Bounds(min, max);
+	}
+});
+
+
+/*
+ * Extends L.Path with SVG-specific rendering code.
+ */
+
+L.Path.SVG_NS = 'http://www.w3.org/2000/svg';
+
+L.Browser.svg = !!(document.createElementNS && document.createElementNS(L.Path.SVG_NS, 'svg').createSVGRect);
+
+L.Path = L.Path.extend({
+	statics: {
+		SVG: L.Browser.svg
+	},
+
+	bringToFront: function () {
+		var root = this._map._pathRoot,
+		    path = this._container;
+
+		if (path && root.lastChild !== path) {
+			root.appendChild(path);
+		}
+		return this;
+	},
+
+	bringToBack: function () {
+		var root = this._map._pathRoot,
+		    path = this._container,
+		    first = root.firstChild;
+
+		if (path && first !== path) {
+			root.insertBefore(path, first);
+		}
+		return this;
+	},
+
+	getPathString: function () {
+		// form path string here
+	},
+
+	_createElement: function (name) {
+		return document.createElementNS(L.Path.SVG_NS, name);
+	},
+
+	_initElements: function () {
+		this._map._initPathRoot();
+		this._initPath();
+		this._initStyle();
+	},
+
+	_initPath: function () {
+		this._container = this._createElement('g');
+
+		this._path = this._createElement('path');
+
+		if (this.options.className) {
+			L.DomUtil.addClass(this._path, this.options.className);
+		}
+
+		this._container.appendChild(this._path);
+	},
+
+	_initStyle: function () {
+		if (this.options.stroke) {
+			this._path.setAttribute('stroke-linejoin', 'round');
+			this._path.setAttribute('stroke-linecap', 'round');
+		}
+		if (this.options.fill) {
+			this._path.setAttribute('fill-rule', 'evenodd');
+		}
+		if (this.options.pointerEvents) {
+			this._path.setAttribute('pointer-events', this.options.pointerEvents);
+		}
+		if (!this.options.clickable && !this.options.pointerEvents) {
+			this._path.setAttribute('pointer-events', 'none');
+		}
+		this._updateStyle();
+	},
+
+	_updateStyle: function () {
+		if (this.options.stroke) {
+			this._path.setAttribute('stroke', this.options.color);
+			this._path.setAttribute('stroke-opacity', this.options.opacity);
+			this._path.setAttribute('stroke-width', this.options.weight);
+			if (this.options.dashArray) {
+				this._path.setAttribute('stroke-dasharray', this.options.dashArray);
+			} else {
+				this._path.removeAttribute('stroke-dasharray');
+			}
+			if (this.options.lineCap) {
+				this._path.setAttribute('stroke-linecap', this.options.lineCap);
+			}
+			if (this.options.lineJoin) {
+				this._path.setAttribute('stroke-linejoin', this.options.lineJoin);
+			}
+		} else {
+			this._path.setAttribute('stroke', 'none');
+		}
+		if (this.options.fill) {
+			this._path.setAttribute('fill', this.options.fillColor || this.options.color);
+			this._path.setAttribute('fill-opacity', this.options.fillOpacity);
+		} else {
+			this._path.setAttribute('fill', 'none');
+		}
+	},
+
+	_updatePath: function () {
+		var str = this.getPathString();
+		if (!str) {
+			// fix webkit empty string parsing bug
+			str = 'M0 0';
+		}
+		this._path.setAttribute('d', str);
+	},
+
+	// TODO remove duplication with L.Map
+	_initEvents: function () {
+		if (this.options.clickable) {
+			if (L.Browser.svg || !L.Browser.vml) {
+				L.DomUtil.addClass(this._path, 'leaflet-clickable');
+			}
+
+			L.DomEvent.on(this._container, 'click', this._onMouseClick, this);
+
+			var events = ['dblclick', 'mousedown', 'mouseover',
+			              'mouseout', 'mousemove', 'contextmenu'];
+			for (var i = 0; i < events.length; i++) {
+				L.DomEvent.on(this._container, events[i], this._fireMouseEvent, this);
+			}
+		}
+	},
+
+	_onMouseClick: function (e) {
+		if (this._map.dragging && this._map.dragging.moved()) { return; }
+
+		this._fireMouseEvent(e);
+	},
+
+	_fireMouseEvent: function (e) {
+		if (!this.hasEventListeners(e.type)) { return; }
+
+		var map = this._map,
+		    containerPoint = map.mouseEventToContainerPoint(e),
+		    layerPoint = map.containerPointToLayerPoint(containerPoint),
+		    latlng = map.layerPointToLatLng(layerPoint);
+
+		this.fire(e.type, {
+			latlng: latlng,
+			layerPoint: layerPoint,
+			containerPoint: containerPoint,
+			originalEvent: e
+		});
+
+		if (e.type === 'contextmenu') {
+			L.DomEvent.preventDefault(e);
+		}
+		if (e.type !== 'mousemove') {
+			L.DomEvent.stopPropagation(e);
+		}
+	}
+});
+
+L.Map.include({
+	_initPathRoot: function () {
+		if (!this._pathRoot) {
+			this._pathRoot = L.Path.prototype._createElement('svg');
+			this._panes.overlayPane.appendChild(this._pathRoot);
+
+			if (this.options.zoomAnimation && L.Browser.any3d) {
+				L.DomUtil.addClass(this._pathRoot, 'leaflet-zoom-animated');
+
+				this.on({
+					'zoomanim': this._animatePathZoom,
+					'zoomend': this._endPathZoom
+				});
+			} else {
+				L.DomUtil.addClass(this._pathRoot, 'leaflet-zoom-hide');
+			}
+
+			this.on('moveend', this._updateSvgViewport);
+			this._updateSvgViewport();
+		}
+	},
+
+	_animatePathZoom: function (e) {
+		var scale = this.getZoomScale(e.zoom),
+		    offset = this._getCenterOffset(e.center)._multiplyBy(-scale)._add(this._pathViewport.min);
+
+		this._pathRoot.style[L.DomUtil.TRANSFORM] =
+		        L.DomUtil.getTranslateString(offset) + ' scale(' + scale + ') ';
+
+		this._pathZooming = true;
+	},
+
+	_endPathZoom: function () {
+		this._pathZooming = false;
+	},
+
+	_updateSvgViewport: function () {
+
+		if (this._pathZooming) {
+			// Do not update SVGs while a zoom animation is going on otherwise the animation will break.
+			// When the zoom animation ends we will be updated again anyway
+			// This fixes the case where you do a momentum move and zoom while the move is still ongoing.
+			return;
+		}
+
+		this._updatePathViewport();
+
+		var vp = this._pathViewport,
+		    min = vp.min,
+		    max = vp.max,
+		    width = max.x - min.x,
+		    height = max.y - min.y,
+		    root = this._pathRoot,
+		    pane = this._panes.overlayPane;
+
+		// Hack to make flicker on drag end on mobile webkit less irritating
+		if (L.Browser.mobileWebkit) {
+			pane.removeChild(root);
+		}
+
+		L.DomUtil.setPosition(root, min);
+		root.setAttribute('width', width);
+		root.setAttribute('height', height);
+		root.setAttribute('viewBox', [min.x, min.y, width, height].join(' '));
+
+		if (L.Browser.mobileWebkit) {
+			pane.appendChild(root);
+		}
+	}
+});
+
+
+/*
+ * Popup extension to L.Path (polylines, polygons, circles), adding popup-related methods.
+ */
+
+L.Path.include({
+
+	bindPopup: function (content, options) {
+
+		if (content instanceof L.Popup) {
+			this._popup = content;
+		} else {
+			if (!this._popup || options) {
+				this._popup = new L.Popup(options, this);
+			}
+			this._popup.setContent(content);
+		}
+
+		if (!this._popupHandlersAdded) {
+			this
+			    .on('click', this._openPopup, this)
+			    .on('remove', this.closePopup, this);
+
+			this._popupHandlersAdded = true;
+		}
+
+		return this;
+	},
+
+	unbindPopup: function () {
+		if (this._popup) {
+			this._popup = null;
+			this
+			    .off('click', this._openPopup)
+			    .off('remove', this.closePopup);
+
+			this._popupHandlersAdded = false;
+		}
+		return this;
+	},
+
+	openPopup: function (latlng) {
+
+		if (this._popup) {
+			// open the popup from one of the path's points if not specified
+			latlng = latlng || this._latlng ||
+			         this._latlngs[Math.floor(this._latlngs.length / 2)];
+
+			this._openPopup({latlng: latlng});
+		}
+
+		return this;
+	},
+
+	closePopup: function () {
+		if (this._popup) {
+			this._popup._close();
+		}
+		return this;
+	},
+
+	_openPopup: function (e) {
+		this._popup.setLatLng(e.latlng);
+		this._map.openPopup(this._popup);
+	}
+});
+
+
+/*
+ * Vector rendering for IE6-8 through VML.
+ * Thanks to Dmitry Baranovsky and his Raphael library for inspiration!
+ */
+
+L.Browser.vml = !L.Browser.svg && (function () {
+	try {
+		var div = document.createElement('div');
+		div.innerHTML = '<v:shape adj="1"/>';
+
+		var shape = div.firstChild;
+		shape.style.behavior = 'url(#default#VML)';
+
+		return shape && (typeof shape.adj === 'object');
+
+	} catch (e) {
+		return false;
+	}
+}());
+
+L.Path = L.Browser.svg || !L.Browser.vml ? L.Path : L.Path.extend({
+	statics: {
+		VML: true,
+		CLIP_PADDING: 0.02
+	},
+
+	_createElement: (function () {
+		try {
+			document.namespaces.add('lvml', 'urn:schemas-microsoft-com:vml');
+			return function (name) {
+				return document.createElement('<lvml:' + name + ' class="lvml">');
+			};
+		} catch (e) {
+			return function (name) {
+				return document.createElement(
+				        '<' + name + ' xmlns="urn:schemas-microsoft.com:vml" class="lvml">');
+			};
+		}
+	}()),
+
+	_initPath: function () {
+		var container = this._container = this._createElement('shape');
+
+		L.DomUtil.addClass(container, 'leaflet-vml-shape' +
+			(this.options.className ? ' ' + this.options.className : ''));
+
+		if (this.options.clickable) {
+			L.DomUtil.addClass(container, 'leaflet-clickable');
+		}
+
+		container.coordsize = '1 1';
+
+		this._path = this._createElement('path');
+		container.appendChild(this._path);
+
+		this._map._pathRoot.appendChild(container);
+	},
+
+	_initStyle: function () {
+		this._updateStyle();
+	},
+
+	_updateStyle: function () {
+		var stroke = this._stroke,
+		    fill = this._fill,
+		    options = this.options,
+		    container = this._container;
+
+		container.stroked = options.stroke;
+		container.filled = options.fill;
+
+		if (options.stroke) {
+			if (!stroke) {
+				stroke = this._stroke = this._createElement('stroke');
+				stroke.endcap = 'round';
+				container.appendChild(stroke);
+			}
+			stroke.weight = options.weight + 'px';
+			stroke.color = options.color;
+			stroke.opacity = options.opacity;
+
+			if (options.dashArray) {
+				stroke.dashStyle = L.Util.isArray(options.dashArray) ?
+				    options.dashArray.join(' ') :
+				    options.dashArray.replace(/( *, *)/g, ' ');
+			} else {
+				stroke.dashStyle = '';
+			}
+			if (options.lineCap) {
+				stroke.endcap = options.lineCap.replace('butt', 'flat');
+			}
+			if (options.lineJoin) {
+				stroke.joinstyle = options.lineJoin;
+			}
+
+		} else if (stroke) {
+			container.removeChild(stroke);
+			this._stroke = null;
+		}
+
+		if (options.fill) {
+			if (!fill) {
+				fill = this._fill = this._createElement('fill');
+				container.appendChild(fill);
+			}
+			fill.color = options.fillColor || options.color;
+			fill.opacity = options.fillOpacity;
+
+		} else if (fill) {
+			container.removeChild(fill);
+			this._fill = null;
+		}
+	},
+
+	_updatePath: function () {
+		var style = this._container.style;
+
+		style.display = 'none';
+		this._path.v = this.getPathString() + ' '; // the space fixes IE empty path string bug
+		style.display = '';
+	}
+});
+
+L.Map.include(L.Browser.svg || !L.Browser.vml ? {} : {
+	_initPathRoot: function () {
+		if (this._pathRoot) { return; }
+
+		var root = this._pathRoot = document.createElement('div');
+		root.className = 'leaflet-vml-container';
+		this._panes.overlayPane.appendChild(root);
+
+		this.on('moveend', this._updatePathViewport);
+		this._updatePathViewport();
+	}
+});
+
+
+/*
+ * Vector rendering for all browsers that support canvas.
+ */
+
+L.Browser.canvas = (function () {
+	return !!document.createElement('canvas').getContext;
+}());
+
+L.Path = (L.Path.SVG && !window.L_PREFER_CANVAS) || !L.Browser.canvas ? L.Path : L.Path.extend({
+	statics: {
+		//CLIP_PADDING: 0.02, // not sure if there's a need to set it to a small value
+		CANVAS: true,
+		SVG: false
+	},
+
+	redraw: function () {
+		if (this._map) {
+			this.projectLatlngs();
+			this._requestUpdate();
+		}
+		return this;
+	},
+
+	setStyle: function (style) {
+		L.setOptions(this, style);
+
+		if (this._map) {
+			this._updateStyle();
+			this._requestUpdate();
+		}
+		return this;
+	},
+
+	onRemove: function (map) {
+		map
+		    .off('viewreset', this.projectLatlngs, this)
+		    .off('moveend', this._updatePath, this);
+
+		if (this.options.clickable) {
+			this._map.off('click', this._onClick, this);
+			this._map.off('mousemove', this._onMouseMove, this);
+		}
+
+		this._requestUpdate();
+		
+		this.fire('remove');
+		this._map = null;
+	},
+
+	_requestUpdate: function () {
+		if (this._map && !L.Path._updateRequest) {
+			L.Path._updateRequest = L.Util.requestAnimFrame(this._fireMapMoveEnd, this._map);
+		}
+	},
+
+	_fireMapMoveEnd: function () {
+		L.Path._updateRequest = null;
+		this.fire('moveend');
+	},
+
+	_initElements: function () {
+		this._map._initPathRoot();
+		this._ctx = this._map._canvasCtx;
+	},
+
+	_updateStyle: function () {
+		var options = this.options;
+
+		if (options.stroke) {
+			this._ctx.lineWidth = options.weight;
+			this._ctx.strokeStyle = options.color;
+		}
+		if (options.fill) {
+			this._ctx.fillStyle = options.fillColor || options.color;
+		}
+
+		if (options.lineCap) {
+			this._ctx.lineCap = options.lineCap;
+		}
+		if (options.lineJoin) {
+			this._ctx.lineJoin = options.lineJoin;
+		}
+	},
+
+	_drawPath: function () {
+		var i, j, len, len2, point, drawMethod;
+
+		this._ctx.beginPath();
+
+		for (i = 0, len = this._parts.length; i < len; i++) {
+			for (j = 0, len2 = this._parts[i].length; j < len2; j++) {
+				point = this._parts[i][j];
+				drawMethod = (j === 0 ? 'move' : 'line') + 'To';
+
+				this._ctx[drawMethod](point.x, point.y);
+			}
+			// TODO refactor ugly hack
+			if (this instanceof L.Polygon) {
+				this._ctx.closePath();
+			}
+		}
+	},
+
+	_checkIfEmpty: function () {
+		return !this._parts.length;
+	},
+
+	_updatePath: function () {
+		if (this._checkIfEmpty()) { return; }
+
+		var ctx = this._ctx,
+		    options = this.options;
+
+		this._drawPath();
+		ctx.save();
+		this._updateStyle();
+
+		if (options.fill) {
+			ctx.globalAlpha = options.fillOpacity;
+			ctx.fill(options.fillRule || 'evenodd');
+		}
+
+		if (options.stroke) {
+			ctx.globalAlpha = options.opacity;
+			ctx.stroke();
+		}
+
+		ctx.restore();
+
+		// TODO optimization: 1 fill/stroke for all features with equal style instead of 1 for each feature
+	},
+
+	_initEvents: function () {
+		if (this.options.clickable) {
+			this._map.on('mousemove', this._onMouseMove, this);
+			this._map.on('click dblclick contextmenu', this._fireMouseEvent, this);
+		}
+	},
+
+	_fireMouseEvent: function (e) {
+		if (this._containsPoint(e.layerPoint)) {
+			this.fire(e.type, e);
+		}
+	},
+
+	_onMouseMove: function (e) {
+		if (!this._map || this._map._animatingZoom) { return; }
+
+		// TODO don't do on each move
+		if (this._containsPoint(e.layerPoint)) {
+			this._ctx.canvas.style.cursor = 'pointer';
+			this._mouseInside = true;
+			this.fire('mouseover', e);
+
+		} else if (this._mouseInside) {
+			this._ctx.canvas.style.cursor = '';
+			this._mouseInside = false;
+			this.fire('mouseout', e);
+		}
+	}
+});
+
+L.Map.include((L.Path.SVG && !window.L_PREFER_CANVAS) || !L.Browser.canvas ? {} : {
+	_initPathRoot: function () {
+		var root = this._pathRoot,
+		    ctx;
+
+		if (!root) {
+			root = this._pathRoot = document.createElement('canvas');
+			root.style.position = 'absolute';
+			ctx = this._canvasCtx = root.getContext('2d');
+
+			ctx.lineCap = 'round';
+			ctx.lineJoin = 'round';
+
+			this._panes.overlayPane.appendChild(root);
+
+			if (this.options.zoomAnimation) {
+				this._pathRoot.className = 'leaflet-zoom-animated';
+				this.on('zoomanim', this._animatePathZoom);
+				this.on('zoomend', this._endPathZoom);
+			}
+			this.on('moveend', this._updateCanvasViewport);
+			this._updateCanvasViewport();
+		}
+	},
+
+	_updateCanvasViewport: function () {
+		// don't redraw while zooming. See _updateSvgViewport for more details
+		if (this._pathZooming) { return; }
+		this._updatePathViewport();
+
+		var vp = this._pathViewport,
+		    min = vp.min,
+		    size = vp.max.subtract(min),
+		    root = this._pathRoot;
+
+		//TODO check if this works properly on mobile webkit
+		L.DomUtil.setPosition(root, min);
+		root.width = size.x;
+		root.height = size.y;
+		root.getContext('2d').translate(-min.x, -min.y);
+	}
+});
+
+
+/*
+ * L.LineUtil contains different utility functions for line segments
+ * and polylines (clipping, simplification, distances, etc.)
+ */
+
+/*jshint bitwise:false */ // allow bitwise operations for this file
+
+L.LineUtil = {
+
+	// Simplify polyline with vertex reduction and Douglas-Peucker simplification.
+	// Improves rendering performance dramatically by lessening the number of points to draw.
+
+	simplify: function (/*Point[]*/ points, /*Number*/ tolerance) {
+		if (!tolerance || !points.length) {
+			return points.slice();
+		}
+
+		var sqTolerance = tolerance * tolerance;
+
+		// stage 1: vertex reduction
+		points = this._reducePoints(points, sqTolerance);
+
+		// stage 2: Douglas-Peucker simplification
+		points = this._simplifyDP(points, sqTolerance);
+
+		return points;
+	},
+
+	// distance from a point to a segment between two points
+	pointToSegmentDistance:  function (/*Point*/ p, /*Point*/ p1, /*Point*/ p2) {
+		return Math.sqrt(this._sqClosestPointOnSegment(p, p1, p2, true));
+	},
+
+	closestPointOnSegment: function (/*Point*/ p, /*Point*/ p1, /*Point*/ p2) {
+		return this._sqClosestPointOnSegment(p, p1, p2);
+	},
+
+	// Douglas-Peucker simplification, see http://en.wikipedia.org/wiki/Douglas-Peucker_algorithm
+	_simplifyDP: function (points, sqTolerance) {
+
+		var len = points.length,
+		    ArrayConstructor = typeof Uint8Array !== undefined + '' ? Uint8Array : Array,
+		    markers = new ArrayConstructor(len);
+
+		markers[0] = markers[len - 1] = 1;
+
+		this._simplifyDPStep(points, markers, sqTolerance, 0, len - 1);
+
+		var i,
+		    newPoints = [];
+
+		for (i = 0; i < len; i++) {
+			if (markers[i]) {
+				newPoints.push(points[i]);
+			}
+		}
+
+		return newPoints;
+	},
+
+	_simplifyDPStep: function (points, markers, sqTolerance, first, last) {
+
+		var maxSqDist = 0,
+		    index, i, sqDist;
+
+		for (i = first + 1; i <= last - 1; i++) {
+			sqDist = this._sqClosestPointOnSegment(points[i], points[first], points[last], true);
+
+			if (sqDist > maxSqDist) {
+				index = i;
+				maxSqDist = sqDist;
+			}
+		}
+
+		if (maxSqDist > sqTolerance) {
+			markers[index] = 1;
+
+			this._simplifyDPStep(points, markers, sqTolerance, first, index);
+			this._simplifyDPStep(points, markers, sqTolerance, index, last);
+		}
+	},
+
+	// reduce points that are too close to each other to a single point
+	_reducePoints: function (points, sqTolerance) {
+		var reducedPoints = [points[0]];
+
+		for (var i = 1, prev = 0, len = points.length; i < len; i++) {
+			if (this._sqDist(points[i], points[prev]) > sqTolerance) {
+				reducedPoints.push(points[i]);
+				prev = i;
+			}
+		}
+		if (prev < len - 1) {
+			reducedPoints.push(points[len - 1]);
+		}
+		return reducedPoints;
+	},
+
+	// Cohen-Sutherland line clipping algorithm.
+	// Used to avoid rendering parts of a polyline that are not currently visible.
+
+	clipSegment: function (a, b, bounds, useLastCode) {
+		var codeA = useLastCode ? this._lastCode : this._getBitCode(a, bounds),
+		    codeB = this._getBitCode(b, bounds),
+
+		    codeOut, p, newCode;
+
+		// save 2nd code to avoid calculating it on the next segment
+		this._lastCode = codeB;
+
+		while (true) {
+			// if a,b is inside the clip window (trivial accept)
+			if (!(codeA | codeB)) {
+				return [a, b];
+			// if a,b is outside the clip window (trivial reject)
+			} else if (codeA & codeB) {
+				return false;
+			// other cases
+			} else {
+				codeOut = codeA || codeB;
+				p = this._getEdgeIntersection(a, b, codeOut, bounds);
+				newCode = this._getBitCode(p, bounds);
+
+				if (codeOut === codeA) {
+					a = p;
+					codeA = newCode;
+				} else {
+					b = p;
+					codeB = newCode;
+				}
+			}
+		}
+	},
+
+	_getEdgeIntersection: function (a, b, code, bounds) {
+		var dx = b.x - a.x,
+		    dy = b.y - a.y,
+		    min = bounds.min,
+		    max = bounds.max;
+
+		if (code & 8) { // top
+			return new L.Point(a.x + dx * (max.y - a.y) / dy, max.y);
+		} else if (code & 4) { // bottom
+			return new L.Point(a.x + dx * (min.y - a.y) / dy, min.y);
+		} else if (code & 2) { // right
+			return new L.Point(max.x, a.y + dy * (max.x - a.x) / dx);
+		} else if (code & 1) { // left
+			return new L.Point(min.x, a.y + dy * (min.x - a.x) / dx);
+		}
+	},
+
+	_getBitCode: function (/*Point*/ p, bounds) {
+		var code = 0;
+
+		if (p.x < bounds.min.x) { // left
+			code |= 1;
+		} else if (p.x > bounds.max.x) { // right
+			code |= 2;
+		}
+		if (p.y < bounds.min.y) { // bottom
+			code |= 4;
+		} else if (p.y > bounds.max.y) { // top
+			code |= 8;
+		}
+
+		return code;
+	},
+
+	// square distance (to avoid unnecessary Math.sqrt calls)
+	_sqDist: function (p1, p2) {
+		var dx = p2.x - p1.x,
+		    dy = p2.y - p1.y;
+		return dx * dx + dy * dy;
+	},
+
+	// return closest point on segment or distance to that point
+	_sqClosestPointOnSegment: function (p, p1, p2, sqDist) {
+		var x = p1.x,
+		    y = p1.y,
+		    dx = p2.x - x,
+		    dy = p2.y - y,
+		    dot = dx * dx + dy * dy,
+		    t;
+
+		if (dot > 0) {
+			t = ((p.x - x) * dx + (p.y - y) * dy) / dot;
+
+			if (t > 1) {
+				x = p2.x;
+				y = p2.y;
+			} else if (t > 0) {
+				x += dx * t;
+				y += dy * t;
+			}
+		}
+
+		dx = p.x - x;
+		dy = p.y - y;
+
+		return sqDist ? dx * dx + dy * dy : new L.Point(x, y);
+	}
+};
+
+
+/*
+ * L.Polyline is used to display polylines on a map.
+ */
+
+L.Polyline = L.Path.extend({
+	initialize: function (latlngs, options) {
+		L.Path.prototype.initialize.call(this, options);
+
+		this._latlngs = this._convertLatLngs(latlngs);
+	},
+
+	options: {
+		// how much to simplify the polyline on each zoom level
+		// more = better performance and smoother look, less = more accurate
+		smoothFactor: 1.0,
+		noClip: false
+	},
+
+	projectLatlngs: function () {
+		this._originalPoints = [];
+
+		for (var i = 0, len = this._latlngs.length; i < len; i++) {
+			this._originalPoints[i] = this._map.latLngToLayerPoint(this._latlngs[i]);
+		}
+	},
+
+	getPathString: function () {
+		for (var i = 0, len = this._parts.length, str = ''; i < len; i++) {
+			str += this._getPathPartStr(this._parts[i]);
+		}
+		return str;
+	},
+
+	getLatLngs: function () {
+		return this._latlngs;
+	},
+
+	setLatLngs: function (latlngs) {
+		this._latlngs = this._convertLatLngs(latlngs);
+		return this.redraw();
+	},
+
+	addLatLng: function (latlng) {
+		this._latlngs.push(L.latLng(latlng));
+		return this.redraw();
+	},
+
+	spliceLatLngs: function () { // (Number index, Number howMany)
+		var removed = [].splice.apply(this._latlngs, arguments);
+		this._convertLatLngs(this._latlngs, true);
+		this.redraw();
+		return removed;
+	},
+
+	closestLayerPoint: function (p) {
+		var minDistance = Infinity, parts = this._parts, p1, p2, minPoint = null;
+
+		for (var j = 0, jLen = parts.length; j < jLen; j++) {
+			var points = parts[j];
+			for (var i = 1, len = points.length; i < len; i++) {
+				p1 = points[i - 1];
+				p2 = points[i];
+				var sqDist = L.LineUtil._sqClosestPointOnSegment(p, p1, p2, true);
+				if (sqDist < minDistance) {
+					minDistance = sqDist;
+					minPoint = L.LineUtil._sqClosestPointOnSegment(p, p1, p2);
+				}
+			}
+		}
+		if (minPoint) {
+			minPoint.distance = Math.sqrt(minDistance);
+		}
+		return minPoint;
+	},
+
+	getBounds: function () {
+		return new L.LatLngBounds(this.getLatLngs());
+	},
+
+	_convertLatLngs: function (latlngs, overwrite) {
+		var i, len, target = overwrite ? latlngs : [];
+
+		for (i = 0, len = latlngs.length; i < len; i++) {
+			if (L.Util.isArray(latlngs[i]) && typeof latlngs[i][0] !== 'number') {
+				return;
+			}
+			target[i] = L.latLng(latlngs[i]);
+		}
+		return target;
+	},
+
+	_initEvents: function () {
+		L.Path.prototype._initEvents.call(this);
+	},
+
+	_getPathPartStr: function (points) {
+		var round = L.Path.VML;
+
+		for (var j = 0, len2 = points.length, str = '', p; j < len2; j++) {
+			p = points[j];
+			if (round) {
+				p._round();
+			}
+			str += (j ? 'L' : 'M') + p.x + ' ' + p.y;
+		}
+		return str;
+	},
+
+	_clipPoints: function () {
+		var points = this._originalPoints,
+		    len = points.length,
+		    i, k, segment;
+
+		if (this.options.noClip) {
+			this._parts = [points];
+			return;
+		}
+
+		this._parts = [];
+
+		var parts = this._parts,
+		    vp = this._map._pathViewport,
+		    lu = L.LineUtil;
+
+		for (i = 0, k = 0; i < len - 1; i++) {
+			segment = lu.clipSegment(points[i], points[i + 1], vp, i);
+			if (!segment) {
+				continue;
+			}
+
+			parts[k] = parts[k] || [];
+			parts[k].push(segment[0]);
+
+			// if segment goes out of screen, or it's the last one, it's the end of the line part
+			if ((segment[1] !== points[i + 1]) || (i === len - 2)) {
+				parts[k].push(segment[1]);
+				k++;
+			}
+		}
+	},
+
+	// simplify each clipped part of the polyline
+	_simplifyPoints: function () {
+		var parts = this._parts,
+		    lu = L.LineUtil;
+
+		for (var i = 0, len = parts.length; i < len; i++) {
+			parts[i] = lu.simplify(parts[i], this.options.smoothFactor);
+		}
+	},
+
+	_updatePath: function () {
+		if (!this._map) { return; }
+
+		this._clipPoints();
+		this._simplifyPoints();
+
+		L.Path.prototype._updatePath.call(this);
+	}
+});
+
+L.polyline = function (latlngs, options) {
+	return new L.Polyline(latlngs, options);
+};
+
+
+/*
+ * L.PolyUtil contains utility functions for polygons (clipping, etc.).
+ */
+
+/*jshint bitwise:false */ // allow bitwise operations here
+
+L.PolyUtil = {};
+
+/*
+ * Sutherland-Hodgeman polygon clipping algorithm.
+ * Used to avoid rendering parts of a polygon that are not currently visible.
+ */
+L.PolyUtil.clipPolygon = function (points, bounds) {
+	var clippedPoints,
+	    edges = [1, 4, 2, 8],
+	    i, j, k,
+	    a, b,
+	    len, edge, p,
+	    lu = L.LineUtil;
+
+	for (i = 0, len = points.length; i < len; i++) {
+		points[i]._code = lu._getBitCode(points[i], bounds);
+	}
+
+	// for each edge (left, bottom, right, top)
+	for (k = 0; k < 4; k++) {
+		edge = edges[k];
+		clippedPoints = [];
+
+		for (i = 0, len = points.length, j = len - 1; i < len; j = i++) {
+			a = points[i];
+			b = points[j];
+
+			// if a is inside the clip window
+			if (!(a._code & edge)) {
+				// if b is outside the clip window (a->b goes out of screen)
+				if (b._code & edge) {
+					p = lu._getEdgeIntersection(b, a, edge, bounds);
+					p._code = lu._getBitCode(p, bounds);
+					clippedPoints.push(p);
+				}
+				clippedPoints.push(a);
+
+			// else if b is inside the clip window (a->b enters the screen)
+			} else if (!(b._code & edge)) {
+				p = lu._getEdgeIntersection(b, a, edge, bounds);
+				p._code = lu._getBitCode(p, bounds);
+				clippedPoints.push(p);
+			}
+		}
+		points = clippedPoints;
+	}
+
+	return points;
+};
+
+
+/*
+ * L.Polygon is used to display polygons on a map.
+ */
+
+L.Polygon = L.Polyline.extend({
+	options: {
+		fill: true
+	},
+
+	initialize: function (latlngs, options) {
+		L.Polyline.prototype.initialize.call(this, latlngs, options);
+		this._initWithHoles(latlngs);
+	},
+
+	_initWithHoles: function (latlngs) {
+		var i, len, hole;
+		if (latlngs && L.Util.isArray(latlngs[0]) && (typeof latlngs[0][0] !== 'number')) {
+			this._latlngs = this._convertLatLngs(latlngs[0]);
+			this._holes = latlngs.slice(1);
+
+			for (i = 0, len = this._holes.length; i < len; i++) {
+				hole = this._holes[i] = this._convertLatLngs(this._holes[i]);
+				if (hole[0].equals(hole[hole.length - 1])) {
+					hole.pop();
+				}
+			}
+		}
+
+		// filter out last point if its equal to the first one
+		latlngs = this._latlngs;
+
+		if (latlngs.length >= 2 && latlngs[0].equals(latlngs[latlngs.length - 1])) {
+			latlngs.pop();
+		}
+	},
+
+	projectLatlngs: function () {
+		L.Polyline.prototype.projectLatlngs.call(this);
+
+		// project polygon holes points
+		// TODO move this logic to Polyline to get rid of duplication
+		this._holePoints = [];
+
+		if (!this._holes) { return; }
+
+		var i, j, len, len2;
+
+		for (i = 0, len = this._holes.length; i < len; i++) {
+			this._holePoints[i] = [];
+
+			for (j = 0, len2 = this._holes[i].length; j < len2; j++) {
+				this._holePoints[i][j] = this._map.latLngToLayerPoint(this._holes[i][j]);
+			}
+		}
+	},
+
+	setLatLngs: function (latlngs) {
+		if (latlngs && L.Util.isArray(latlngs[0]) && (typeof latlngs[0][0] !== 'number')) {
+			this._initWithHoles(latlngs);
+			return this.redraw();
+		} else {
+			return L.Polyline.prototype.setLatLngs.call(this, latlngs);
+		}
+	},
+
+	_clipPoints: function () {
+		var points = this._originalPoints,
+		    newParts = [];
+
+		this._parts = [points].concat(this._holePoints);
+
+		if (this.options.noClip) { return; }
+
+		for (var i = 0, len = this._parts.length; i < len; i++) {
+			var clipped = L.PolyUtil.clipPolygon(this._parts[i], this._map._pathViewport);
+			if (clipped.length) {
+				newParts.push(clipped);
+			}
+		}
+
+		this._parts = newParts;
+	},
+
+	_getPathPartStr: function (points) {
+		var str = L.Polyline.prototype._getPathPartStr.call(this, points);
+		return str + (L.Browser.svg ? 'z' : 'x');
+	}
+});
+
+L.polygon = function (latlngs, options) {
+	return new L.Polygon(latlngs, options);
+};
+
+
+/*
+ * Contains L.MultiPolyline and L.MultiPolygon layers.
+ */
+
+(function () {
+	function createMulti(Klass) {
+
+		return L.FeatureGroup.extend({
+
+			initialize: function (latlngs, options) {
+				this._layers = {};
+				this._options = options;
+				this.setLatLngs(latlngs);
+			},
+
+			setLatLngs: function (latlngs) {
+				var i = 0,
+				    len = latlngs.length;
+
+				this.eachLayer(function (layer) {
+					if (i < len) {
+						layer.setLatLngs(latlngs[i++]);
+					} else {
+						this.removeLayer(layer);
+					}
+				}, this);
+
+				while (i < len) {
+					this.addLayer(new Klass(latlngs[i++], this._options));
+				}
+
+				return this;
+			},
+
+			getLatLngs: function () {
+				var latlngs = [];
+
+				this.eachLayer(function (layer) {
+					latlngs.push(layer.getLatLngs());
+				});
+
+				return latlngs;
+			}
+		});
+	}
+
+	L.MultiPolyline = createMulti(L.Polyline);
+	L.MultiPolygon = createMulti(L.Polygon);
+
+	L.multiPolyline = function (latlngs, options) {
+		return new L.MultiPolyline(latlngs, options);
+	};
+
+	L.multiPolygon = function (latlngs, options) {
+		return new L.MultiPolygon(latlngs, options);
+	};
+}());
+
+
+/*
+ * L.Rectangle extends Polygon and creates a rectangle when passed a LatLngBounds object.
+ */
+
+L.Rectangle = L.Polygon.extend({
+	initialize: function (latLngBounds, options) {
+		L.Polygon.prototype.initialize.call(this, this._boundsToLatLngs(latLngBounds), options);
+	},
+
+	setBounds: function (latLngBounds) {
+		this.setLatLngs(this._boundsToLatLngs(latLngBounds));
+	},
+
+	_boundsToLatLngs: function (latLngBounds) {
+		latLngBounds = L.latLngBounds(latLngBounds);
+		return [
+			latLngBounds.getSouthWest(),
+			latLngBounds.getNorthWest(),
+			latLngBounds.getNorthEast(),
+			latLngBounds.getSouthEast()
+		];
+	}
+});
+
+L.rectangle = function (latLngBounds, options) {
+	return new L.Rectangle(latLngBounds, options);
+};
+
+
+/*
+ * L.Circle is a circle overlay (with a certain radius in meters).
+ */
+
+L.Circle = L.Path.extend({
+	initialize: function (latlng, radius, options) {
+		L.Path.prototype.initialize.call(this, options);
+
+		this._latlng = L.latLng(latlng);
+		this._mRadius = radius;
+	},
+
+	options: {
+		fill: true
+	},
+
+	setLatLng: function (latlng) {
+		this._latlng = L.latLng(latlng);
+		return this.redraw();
+	},
+
+	setRadius: function (radius) {
+		this._mRadius = radius;
+		return this.redraw();
+	},
+
+	projectLatlngs: function () {
+		var lngRadius = this._getLngRadius(),
+		    latlng = this._latlng,
+		    pointLeft = this._map.latLngToLayerPoint([latlng.lat, latlng.lng - lngRadius]);
+
+		this._point = this._map.latLngToLayerPoint(latlng);
+		this._radius = Math.max(this._point.x - pointLeft.x, 1);
+	},
+
+	getBounds: function () {
+		var lngRadius = this._getLngRadius(),
+		    latRadius = (this._mRadius / 40075017) * 360,
+		    latlng = this._latlng;
+
+		return new L.LatLngBounds(
+		        [latlng.lat - latRadius, latlng.lng - lngRadius],
+		        [latlng.lat + latRadius, latlng.lng + lngRadius]);
+	},
+
+	getLatLng: function () {
+		return this._latlng;
+	},
+
+	getPathString: function () {
+		var p = this._point,
+		    r = this._radius;
+
+		if (this._checkIfEmpty()) {
+			return '';
+		}
+
+		if (L.Browser.svg) {
+			return 'M' + p.x + ',' + (p.y - r) +
+			       'A' + r + ',' + r + ',0,1,1,' +
+			       (p.x - 0.1) + ',' + (p.y - r) + ' z';
+		} else {
+			p._round();
+			r = Math.round(r);
+			return 'AL ' + p.x + ',' + p.y + ' ' + r + ',' + r + ' 0,' + (65535 * 360);
+		}
+	},
+
+	getRadius: function () {
+		return this._mRadius;
+	},
+
+	// TODO Earth hardcoded, move into projection code!
+
+	_getLatRadius: function () {
+		return (this._mRadius / 40075017) * 360;
+	},
+
+	_getLngRadius: function () {
+		return this._getLatRadius() / Math.cos(L.LatLng.DEG_TO_RAD * this._latlng.lat);
+	},
+
+	_checkIfEmpty: function () {
+		if (!this._map) {
+			return false;
+		}
+		var vp = this._map._pathViewport,
+		    r = this._radius,
+		    p = this._point;
+
+		return p.x - r > vp.max.x || p.y - r > vp.max.y ||
+		       p.x + r < vp.min.x || p.y + r < vp.min.y;
+	}
+});
+
+L.circle = function (latlng, radius, options) {
+	return new L.Circle(latlng, radius, options);
+};
+
+
+/*
+ * L.CircleMarker is a circle overlay with a permanent pixel radius.
+ */
+
+L.CircleMarker = L.Circle.extend({
+	options: {
+		radius: 10,
+		weight: 2
+	},
+
+	initialize: function (latlng, options) {
+		L.Circle.prototype.initialize.call(this, latlng, null, options);
+		this._radius = this.options.radius;
+	},
+
+	projectLatlngs: function () {
+		this._point = this._map.latLngToLayerPoint(this._latlng);
+	},
+
+	_updateStyle : function () {
+		L.Circle.prototype._updateStyle.call(this);
+		this.setRadius(this.options.radius);
+	},
+
+	setLatLng: function (latlng) {
+		L.Circle.prototype.setLatLng.call(this, latlng);
+		if (this._popup && this._popup._isOpen) {
+			this._popup.setLatLng(latlng);
+		}
+		return this;
+	},
+
+	setRadius: function (radius) {
+		this.options.radius = this._radius = radius;
+		return this.redraw();
+	},
+
+	getRadius: function () {
+		return this._radius;
+	}
+});
+
+L.circleMarker = function (latlng, options) {
+	return new L.CircleMarker(latlng, options);
+};
+
+
+/*
+ * Extends L.Polyline to be able to manually detect clicks on Canvas-rendered polylines.
+ */
+
+L.Polyline.include(!L.Path.CANVAS ? {} : {
+	_containsPoint: function (p, closed) {
+		var i, j, k, len, len2, dist, part,
+		    w = this.options.weight / 2;
+
+		if (L.Browser.touch) {
+			w += 10; // polyline click tolerance on touch devices
+		}
+
+		for (i = 0, len = this._parts.length; i < len; i++) {
+			part = this._parts[i];
+			for (j = 0, len2 = part.length, k = len2 - 1; j < len2; k = j++) {
+				if (!closed && (j === 0)) {
+					continue;
+				}
+
+				dist = L.LineUtil.pointToSegmentDistance(p, part[k], part[j]);
+
+				if (dist <= w) {
+					return true;
+				}
+			}
+		}
+		return false;
+	}
+});
+
+
+/*
+ * Extends L.Polygon to be able to manually detect clicks on Canvas-rendered polygons.
+ */
+
+L.Polygon.include(!L.Path.CANVAS ? {} : {
+	_containsPoint: function (p) {
+		var inside = false,
+		    part, p1, p2,
+		    i, j, k,
+		    len, len2;
+
+		// TODO optimization: check if within bounds first
+
+		if (L.Polyline.prototype._containsPoint.call(this, p, true)) {
+			// click on polygon border
+			return true;
+		}
+
+		// ray casting algorithm for detecting if point is in polygon
+
+		for (i = 0, len = this._parts.length; i < len; i++) {
+			part = this._parts[i];
+
+			for (j = 0, len2 = part.length, k = len2 - 1; j < len2; k = j++) {
+				p1 = part[j];
+				p2 = part[k];
+
+				if (((p1.y > p.y) !== (p2.y > p.y)) &&
+						(p.x < (p2.x - p1.x) * (p.y - p1.y) / (p2.y - p1.y) + p1.x)) {
+					inside = !inside;
+				}
+			}
+		}
+
+		return inside;
+	}
+});
+
+
+/*
+ * Extends L.Circle with Canvas-specific code.
+ */
+
+L.Circle.include(!L.Path.CANVAS ? {} : {
+	_drawPath: function () {
+		var p = this._point;
+		this._ctx.beginPath();
+		this._ctx.arc(p.x, p.y, this._radius, 0, Math.PI * 2, false);
+	},
+
+	_containsPoint: function (p) {
+		var center = this._point,
+		    w2 = this.options.stroke ? this.options.weight / 2 : 0;
+
+		return (p.distanceTo(center) <= this._radius + w2);
+	}
+});
+
+
+/*
+ * CircleMarker canvas specific drawing parts.
+ */
+
+L.CircleMarker.include(!L.Path.CANVAS ? {} : {
+	_updateStyle: function () {
+		L.Path.prototype._updateStyle.call(this);
+	}
+});
+
+
+/*
+ * L.GeoJSON turns any GeoJSON data into a Leaflet layer.
+ */
+
+L.GeoJSON = L.FeatureGroup.extend({
+
+	initialize: function (geojson, options) {
+		L.setOptions(this, options);
+
+		this._layers = {};
+
+		if (geojson) {
+			this.addData(geojson);
+		}
+	},
+
+	addData: function (geojson) {
+		var features = L.Util.isArray(geojson) ? geojson : geojson.features,
+		    i, len, feature;
+
+		if (features) {
+			for (i = 0, len = features.length; i < len; i++) {
+				// Only add this if geometry or geometries are set and not null
+				feature = features[i];
+				if (feature.geometries || feature.geometry || feature.features || feature.coordinates) {
+					this.addData(features[i]);
+				}
+			}
+			return this;
+		}
+
+		var options = this.options;
+
+		if (options.filter && !options.filter(geojson)) { return; }
+
+		var layer = L.GeoJSON.geometryToLayer(geojson, options.pointToLayer, options.coordsToLatLng, options);
+		layer.feature = L.GeoJSON.asFeature(geojson);
+
+		layer.defaultOptions = layer.options;
+		this.resetStyle(layer);
+
+		if (options.onEachFeature) {
+			options.onEachFeature(geojson, layer);
+		}
+
+		return this.addLayer(layer);
+	},
+
+	resetStyle: function (layer) {
+		var style = this.options.style;
+		if (style) {
+			// reset any custom styles
+			L.Util.extend(layer.options, layer.defaultOptions);
+
+			this._setLayerStyle(layer, style);
+		}
+	},
+
+	setStyle: function (style) {
+		this.eachLayer(function (layer) {
+			this._setLayerStyle(layer, style);
+		}, this);
+	},
+
+	_setLayerStyle: function (layer, style) {
+		if (typeof style === 'function') {
+			style = style(layer.feature);
+		}
+		if (layer.setStyle) {
+			layer.setStyle(style);
+		}
+	}
+});
+
+L.extend(L.GeoJSON, {
+	geometryToLayer: function (geojson, pointToLayer, coordsToLatLng, vectorOptions) {
+		var geometry = geojson.type === 'Feature' ? geojson.geometry : geojson,
+		    coords = geometry.coordinates,
+		    layers = [],
+		    latlng, latlngs, i, len;
+
+		coordsToLatLng = coordsToLatLng || this.coordsToLatLng;
+
+		switch (geometry.type) {
+		case 'Point':
+			latlng = coordsToLatLng(coords);
+			return pointToLayer ? pointToLayer(geojson, latlng) : new L.Marker(latlng);
+
+		case 'MultiPoint':
+			for (i = 0, len = coords.length; i < len; i++) {
+				latlng = coordsToLatLng(coords[i]);
+				layers.push(pointToLayer ? pointToLayer(geojson, latlng) : new L.Marker(latlng));
+			}
+			return new L.FeatureGroup(layers);
+
+		case 'LineString':
+			latlngs = this.coordsToLatLngs(coords, 0, coordsToLatLng);
+			return new L.Polyline(latlngs, vectorOptions);
+
+		case 'Polygon':
+			if (coords.length === 2 && !coords[1].length) {
+				throw new Error('Invalid GeoJSON object.');
+			}
+			latlngs = this.coordsToLatLngs(coords, 1, coordsToLatLng);
+			return new L.Polygon(latlngs, vectorOptions);
+
+		case 'MultiLineString':
+			latlngs = this.coordsToLatLngs(coords, 1, coordsToLatLng);
+			return new L.MultiPolyline(latlngs, vectorOptions);
+
+		case 'MultiPolygon':
+			latlngs = this.coordsToLatLngs(coords, 2, coordsToLatLng);
+			return new L.MultiPolygon(latlngs, vectorOptions);
+
+		case 'GeometryCollection':
+			for (i = 0, len = geometry.geometries.length; i < len; i++) {
+
+				layers.push(this.geometryToLayer({
+					geometry: geometry.geometries[i],
+					type: 'Feature',
+					properties: geojson.properties
+				}, pointToLayer, coordsToLatLng, vectorOptions));
+			}
+			return new L.FeatureGroup(layers);
+
+		default:
+			throw new Error('Invalid GeoJSON object.');
+		}
+	},
+
+	coordsToLatLng: function (coords) { // (Array[, Boolean]) -> LatLng
+		return new L.LatLng(coords[1], coords[0], coords[2]);
+	},
+
+	coordsToLatLngs: function (coords, levelsDeep, coordsToLatLng) { // (Array[, Number, Function]) -> Array
+		var latlng, i, len,
+		    latlngs = [];
+
+		for (i = 0, len = coords.length; i < len; i++) {
+			latlng = levelsDeep ?
+			        this.coordsToLatLngs(coords[i], levelsDeep - 1, coordsToLatLng) :
+			        (coordsToLatLng || this.coordsToLatLng)(coords[i]);
+
+			latlngs.push(latlng);
+		}
+
+		return latlngs;
+	},
+
+	latLngToCoords: function (latlng) {
+		var coords = [latlng.lng, latlng.lat];
+
+		if (latlng.alt !== undefined) {
+			coords.push(latlng.alt);
+		}
+		return coords;
+	},
+
+	latLngsToCoords: function (latLngs) {
+		var coords = [];
+
+		for (var i = 0, len = latLngs.length; i < len; i++) {
+			coords.push(L.GeoJSON.latLngToCoords(latLngs[i]));
+		}
+
+		return coords;
+	},
+
+	getFeature: function (layer, newGeometry) {
+		return layer.feature ? L.extend({}, layer.feature, {geometry: newGeometry}) : L.GeoJSON.asFeature(newGeometry);
+	},
+
+	asFeature: function (geoJSON) {
+		if (geoJSON.type === 'Feature') {
+			return geoJSON;
+		}
+
+		return {
+			type: 'Feature',
+			properties: {},
+			geometry: geoJSON
+		};
+	}
+});
+
+var PointToGeoJSON = {
+	toGeoJSON: function () {
+		return L.GeoJSON.getFeature(this, {
+			type: 'Point',
+			coordinates: L.GeoJSON.latLngToCoords(this.getLatLng())
+		});
+	}
+};
+
+L.Marker.include(PointToGeoJSON);
+L.Circle.include(PointToGeoJSON);
+L.CircleMarker.include(PointToGeoJSON);
+
+L.Polyline.include({
+	toGeoJSON: function () {
+		return L.GeoJSON.getFeature(this, {
+			type: 'LineString',
+			coordinates: L.GeoJSON.latLngsToCoords(this.getLatLngs())
+		});
+	}
+});
+
+L.Polygon.include({
+	toGeoJSON: function () {
+		var coords = [L.GeoJSON.latLngsToCoords(this.getLatLngs())],
+		    i, len, hole;
+
+		coords[0].push(coords[0][0]);
+
+		if (this._holes) {
+			for (i = 0, len = this._holes.length; i < len; i++) {
+				hole = L.GeoJSON.latLngsToCoords(this._holes[i]);
+				hole.push(hole[0]);
+				coords.push(hole);
+			}
+		}
+
+		return L.GeoJSON.getFeature(this, {
+			type: 'Polygon',
+			coordinates: coords
+		});
+	}
+});
+
+(function () {
+	function multiToGeoJSON(type) {
+		return function () {
+			var coords = [];
+
+			this.eachLayer(function (layer) {
+				coords.push(layer.toGeoJSON().geometry.coordinates);
+			});
+
+			return L.GeoJSON.getFeature(this, {
+				type: type,
+				coordinates: coords
+			});
+		};
+	}
+
+	L.MultiPolyline.include({toGeoJSON: multiToGeoJSON('MultiLineString')});
+	L.MultiPolygon.include({toGeoJSON: multiToGeoJSON('MultiPolygon')});
+
+	L.LayerGroup.include({
+		toGeoJSON: function () {
+
+			var geometry = this.feature && this.feature.geometry,
+				jsons = [],
+				json;
+
+			if (geometry && geometry.type === 'MultiPoint') {
+				return multiToGeoJSON('MultiPoint').call(this);
+			}
+
+			var isGeometryCollection = geometry && geometry.type === 'GeometryCollection';
+
+			this.eachLayer(function (layer) {
+				if (layer.toGeoJSON) {
+					json = layer.toGeoJSON();
+					jsons.push(isGeometryCollection ? json.geometry : L.GeoJSON.asFeature(json));
+				}
+			});
+
+			if (isGeometryCollection) {
+				return L.GeoJSON.getFeature(this, {
+					geometries: jsons,
+					type: 'GeometryCollection'
+				});
+			}
+
+			return {
+				type: 'FeatureCollection',
+				features: jsons
+			};
+		}
+	});
+}());
+
+L.geoJson = function (geojson, options) {
+	return new L.GeoJSON(geojson, options);
+};
+
+
+/*
+ * L.DomEvent contains functions for working with DOM events.
+ */
+
+L.DomEvent = {
+	/* inspired by John Resig, Dean Edwards and YUI addEvent implementations */
+	addListener: function (obj, type, fn, context) { // (HTMLElement, String, Function[, Object])
+
+		var id = L.stamp(fn),
+		    key = '_leaflet_' + type + id,
+		    handler, originalHandler, newType;
+
+		if (obj[key]) { return this; }
+
+		handler = function (e) {
+			return fn.call(context || obj, e || L.DomEvent._getEvent());
+		};
+
+		if (L.Browser.pointer && type.indexOf('touch') === 0) {
+			return this.addPointerListener(obj, type, handler, id);
+		}
+		if (L.Browser.touch && (type === 'dblclick') && this.addDoubleTapListener) {
+			this.addDoubleTapListener(obj, handler, id);
+		}
+
+		if ('addEventListener' in obj) {
+
+			if (type === 'mousewheel') {
+				obj.addEventListener('DOMMouseScroll', handler, false);
+				obj.addEventListener(type, handler, false);
+
+			} else if ((type === 'mouseenter') || (type === 'mouseleave')) {
+
+				originalHandler = handler;
+				newType = (type === 'mouseenter' ? 'mouseover' : 'mouseout');
+
+				handler = function (e) {
+					if (!L.DomEvent._checkMouse(obj, e)) { return; }
+					return originalHandler(e);
+				};
+
+				obj.addEventListener(newType, handler, false);
+
+			} else if (type === 'click' && L.Browser.android) {
+				originalHandler = handler;
+				handler = function (e) {
+					return L.DomEvent._filterClick(e, originalHandler);
+				};
+
+				obj.addEventListener(type, handler, false);
+			} else {
+				obj.addEventListener(type, handler, false);
+			}
+
+		} else if ('attachEvent' in obj) {
+			obj.attachEvent('on' + type, handler);
+		}
+
+		obj[key] = handler;
+
+		return this;
+	},
+
+	removeListener: function (obj, type, fn) {  // (HTMLElement, String, Function)
+
+		var id = L.stamp(fn),
+		    key = '_leaflet_' + type + id,
+		    handler = obj[key];
+
+		if (!handler) { return this; }
+
+		if (L.Browser.pointer && type.indexOf('touch') === 0) {
+			this.removePointerListener(obj, type, id);
+		} else if (L.Browser.touch && (type === 'dblclick') && this.removeDoubleTapListener) {
+			this.removeDoubleTapListener(obj, id);
+
+		} else if ('removeEventListener' in obj) {
+
+			if (type === 'mousewheel') {
+				obj.removeEventListener('DOMMouseScroll', handler, false);
+				obj.removeEventListener(type, handler, false);
+
+			} else if ((type === 'mouseenter') || (type === 'mouseleave')) {
+				obj.removeEventListener((type === 'mouseenter' ? 'mouseover' : 'mouseout'), handler, false);
+			} else {
+				obj.removeEventListener(type, handler, false);
+			}
+		} else if ('detachEvent' in obj) {
+			obj.detachEvent('on' + type, handler);
+		}
+
+		obj[key] = null;
+
+		return this;
+	},
+
+	stopPropagation: function (e) {
+
+		if (e.stopPropagation) {
+			e.stopPropagation();
+		} else {
+			e.cancelBubble = true;
+		}
+		L.DomEvent._skipped(e);
+
+		return this;
+	},
+
+	disableScrollPropagation: function (el) {
+		var stop = L.DomEvent.stopPropagation;
+
+		return L.DomEvent
+			.on(el, 'mousewheel', stop)
+			.on(el, 'MozMousePixelScroll', stop);
+	},
+
+	disableClickPropagation: function (el) {
+		var stop = L.DomEvent.stopPropagation;
+
+		for (var i = L.Draggable.START.length - 1; i >= 0; i--) {
+			L.DomEvent.on(el, L.Draggable.START[i], stop);
+		}
+
+		return L.DomEvent
+			.on(el, 'click', L.DomEvent._fakeStop)
+			.on(el, 'dblclick', stop);
+	},
+
+	preventDefault: function (e) {
+
+		if (e.preventDefault) {
+			e.preventDefault();
+		} else {
+			e.returnValue = false;
+		}
+		return this;
+	},
+
+	stop: function (e) {
+		return L.DomEvent
+			.preventDefault(e)
+			.stopPropagation(e);
+	},
+
+	getMousePosition: function (e, container) {
+		if (!container) {
+			return new L.Point(e.clientX, e.clientY);
+		}
+
+		var rect = container.getBoundingClientRect();
+
+		return new L.Point(
+			e.clientX - rect.left - container.clientLeft,
+			e.clientY - rect.top - container.clientTop);
+	},
+
+	getWheelDelta: function (e) {
+
+		var delta = 0;
+
+		if (e.wheelDelta) {
+			delta = e.wheelDelta / 120;
+		}
+		if (e.detail) {
+			delta = -e.detail / 3;
+		}
+		return delta;
+	},
+
+	_skipEvents: {},
+
+	_fakeStop: function (e) {
+		// fakes stopPropagation by setting a special event flag, checked/reset with L.DomEvent._skipped(e)
+		L.DomEvent._skipEvents[e.type] = true;
+	},
+
+	_skipped: function (e) {
+		var skipped = this._skipEvents[e.type];
+		// reset when checking, as it's only used in map container and propagates outside of the map
+		this._skipEvents[e.type] = false;
+		return skipped;
+	},
+
+	// check if element really left/entered the event target (for mouseenter/mouseleave)
+	_checkMouse: function (el, e) {
+
+		var related = e.relatedTarget;
+
+		if (!related) { return true; }
+
+		try {
+			while (related && (related !== el)) {
+				related = related.parentNode;
+			}
+		} catch (err) {
+			return false;
+		}
+		return (related !== el);
+	},
+
+	_getEvent: function () { // evil magic for IE
+		/*jshint noarg:false */
+		var e = window.event;
+		if (!e) {
+			var caller = arguments.callee.caller;
+			while (caller) {
+				e = caller['arguments'][0];
+				if (e && window.Event === e.constructor) {
+					break;
+				}
+				caller = caller.caller;
+			}
+		}
+		return e;
+	},
+
+	// this is a horrible workaround for a bug in Android where a single touch triggers two click events
+	_filterClick: function (e, handler) {
+		var timeStamp = (e.timeStamp || e.originalEvent.timeStamp),
+			elapsed = L.DomEvent._lastClick && (timeStamp - L.DomEvent._lastClick);
+
+		// are they closer together than 500ms yet more than 100ms?
+		// Android typically triggers them ~300ms apart while multiple listeners
+		// on the same event should be triggered far faster;
+		// or check if click is simulated on the element, and if it is, reject any non-simulated events
+
+		if ((elapsed && elapsed > 100 && elapsed < 500) || (e.target._simulatedClick && !e._simulated)) {
+			L.DomEvent.stop(e);
+			return;
+		}
+		L.DomEvent._lastClick = timeStamp;
+
+		return handler(e);
+	}
+};
+
+L.DomEvent.on = L.DomEvent.addListener;
+L.DomEvent.off = L.DomEvent.removeListener;
+
+
+/*
+ * L.Draggable allows you to add dragging capabilities to any element. Supports mobile devices too.
+ */
+
+L.Draggable = L.Class.extend({
+	includes: L.Mixin.Events,
+
+	statics: {
+		START: L.Browser.touch ? ['touchstart', 'mousedown'] : ['mousedown'],
+		END: {
+			mousedown: 'mouseup',
+			touchstart: 'touchend',
+			pointerdown: 'touchend',
+			MSPointerDown: 'touchend'
+		},
+		MOVE: {
+			mousedown: 'mousemove',
+			touchstart: 'touchmove',
+			pointerdown: 'touchmove',
+			MSPointerDown: 'touchmove'
+		}
+	},
+
+	initialize: function (element, dragStartTarget) {
+		this._element = element;
+		this._dragStartTarget = dragStartTarget || element;
+	},
+
+	enable: function () {
+		if (this._enabled) { return; }
+
+		for (var i = L.Draggable.START.length - 1; i >= 0; i--) {
+			L.DomEvent.on(this._dragStartTarget, L.Draggable.START[i], this._onDown, this);
+		}
+
+		this._enabled = true;
+	},
+
+	disable: function () {
+		if (!this._enabled) { return; }
+
+		for (var i = L.Draggable.START.length - 1; i >= 0; i--) {
+			L.DomEvent.off(this._dragStartTarget, L.Draggable.START[i], this._onDown, this);
+		}
+
+		this._enabled = false;
+		this._moved = false;
+	},
+
+	_onDown: function (e) {
+		this._moved = false;
+
+		if (e.shiftKey || ((e.which !== 1) && (e.button !== 1) && !e.touches)) { return; }
+
+		L.DomEvent.stopPropagation(e);
+
+		if (L.Draggable._disabled) { return; }
+
+		L.DomUtil.disableImageDrag();
+		L.DomUtil.disableTextSelection();
+
+		if (this._moving) { return; }
+
+		var first = e.touches ? e.touches[0] : e;
+
+		this._startPoint = new L.Point(first.clientX, first.clientY);
+		this._startPos = this._newPos = L.DomUtil.getPosition(this._element);
+
+		L.DomEvent
+		    .on(document, L.Draggable.MOVE[e.type], this._onMove, this)
+		    .on(document, L.Draggable.END[e.type], this._onUp, this);
+	},
+
+	_onMove: function (e) {
+		if (e.touches && e.touches.length > 1) {
+			this._moved = true;
+			return;
+		}
+
+		var first = (e.touches && e.touches.length === 1 ? e.touches[0] : e),
+		    newPoint = new L.Point(first.clientX, first.clientY),
+		    offset = newPoint.subtract(this._startPoint);
+
+		if (!offset.x && !offset.y) { return; }
+		if (L.Browser.touch && Math.abs(offset.x) + Math.abs(offset.y) < 3) { return; }
+
+		L.DomEvent.preventDefault(e);
+
+		if (!this._moved) {
+			this.fire('dragstart');
+
+			this._moved = true;
+			this._startPos = L.DomUtil.getPosition(this._element).subtract(offset);
+
+			L.DomUtil.addClass(document.body, 'leaflet-dragging');
+			this._lastTarget = e.target || e.srcElement;
+			L.DomUtil.addClass(this._lastTarget, 'leaflet-drag-target');
+		}
+
+		this._newPos = this._startPos.add(offset);
+		this._moving = true;
+
+		L.Util.cancelAnimFrame(this._animRequest);
+		this._animRequest = L.Util.requestAnimFrame(this._updatePosition, this, true, this._dragStartTarget);
+	},
+
+	_updatePosition: function () {
+		this.fire('predrag');
+		L.DomUtil.setPosition(this._element, this._newPos);
+		this.fire('drag');
+	},
+
+	_onUp: function () {
+		L.DomUtil.removeClass(document.body, 'leaflet-dragging');
+
+		if (this._lastTarget) {
+			L.DomUtil.removeClass(this._lastTarget, 'leaflet-drag-target');
+			this._lastTarget = null;
+		}
+
+		for (var i in L.Draggable.MOVE) {
+			L.DomEvent
+			    .off(document, L.Draggable.MOVE[i], this._onMove)
+			    .off(document, L.Draggable.END[i], this._onUp);
+		}
+
+		L.DomUtil.enableImageDrag();
+		L.DomUtil.enableTextSelection();
+
+		if (this._moved && this._moving) {
+			// ensure drag is not fired after dragend
+			L.Util.cancelAnimFrame(this._animRequest);
+
+			this.fire('dragend', {
+				distance: this._newPos.distanceTo(this._startPos)
+			});
+		}
+
+		this._moving = false;
+	}
+});
+
+
+/*
+	L.Handler is a base class for handler classes that are used internally to inject
+	interaction features like dragging to classes like Map and Marker.
+*/
+
+L.Handler = L.Class.extend({
+	initialize: function (map) {
+		this._map = map;
+	},
+
+	enable: function () {
+		if (this._enabled) { return; }
+
+		this._enabled = true;
+		this.addHooks();
+	},
+
+	disable: function () {
+		if (!this._enabled) { return; }
+
+		this._enabled = false;
+		this.removeHooks();
+	},
+
+	enabled: function () {
+		return !!this._enabled;
+	}
+});
+
+
+/*
+ * L.Handler.MapDrag is used to make the map draggable (with panning inertia), enabled by default.
+ */
+
+L.Map.mergeOptions({
+	dragging: true,
+
+	inertia: !L.Browser.android23,
+	inertiaDeceleration: 3400, // px/s^2
+	inertiaMaxSpeed: Infinity, // px/s
+	inertiaThreshold: L.Browser.touch ? 32 : 18, // ms
+	easeLinearity: 0.25,
+
+	// TODO refactor, move to CRS
+	worldCopyJump: false
+});
+
+L.Map.Drag = L.Handler.extend({
+	addHooks: function () {
+		if (!this._draggable) {
+			var map = this._map;
+
+			this._draggable = new L.Draggable(map._mapPane, map._container);
+
+			this._draggable.on({
+				'dragstart': this._onDragStart,
+				'drag': this._onDrag,
+				'dragend': this._onDragEnd
+			}, this);
+
+			if (map.options.worldCopyJump) {
+				this._draggable.on('predrag', this._onPreDrag, this);
+				map.on('viewreset', this._onViewReset, this);
+
+				map.whenReady(this._onViewReset, this);
+			}
+		}
+		this._draggable.enable();
+	},
+
+	removeHooks: function () {
+		this._draggable.disable();
+	},
+
+	moved: function () {
+		return this._draggable && this._draggable._moved;
+	},
+
+	_onDragStart: function () {
+		var map = this._map;
+
+		if (map._panAnim) {
+			map._panAnim.stop();
+		}
+
+		map
+		    .fire('movestart')
+		    .fire('dragstart');
+
+		if (map.options.inertia) {
+			this._positions = [];
+			this._times = [];
+		}
+	},
+
+	_onDrag: function () {
+		if (this._map.options.inertia) {
+			var time = this._lastTime = +new Date(),
+			    pos = this._lastPos = this._draggable._newPos;
+
+			this._positions.push(pos);
+			this._times.push(time);
+
+			if (time - this._times[0] > 200) {
+				this._positions.shift();
+				this._times.shift();
+			}
+		}
+
+		this._map
+		    .fire('move')
+		    .fire('drag');
+	},
+
+	_onViewReset: function () {
+		// TODO fix hardcoded Earth values
+		var pxCenter = this._map.getSize()._divideBy(2),
+		    pxWorldCenter = this._map.latLngToLayerPoint([0, 0]);
+
+		this._initialWorldOffset = pxWorldCenter.subtract(pxCenter).x;
+		this._worldWidth = this._map.project([0, 180]).x;
+	},
+
+	_onPreDrag: function () {
+		// TODO refactor to be able to adjust map pane position after zoom
+		var worldWidth = this._worldWidth,
+		    halfWidth = Math.round(worldWidth / 2),
+		    dx = this._initialWorldOffset,
+		    x = this._draggable._newPos.x,
+		    newX1 = (x - halfWidth + dx) % worldWidth + halfWidth - dx,
+		    newX2 = (x + halfWidth + dx) % worldWidth - halfWidth - dx,
+		    newX = Math.abs(newX1 + dx) < Math.abs(newX2 + dx) ? newX1 : newX2;
+
+		this._draggable._newPos.x = newX;
+	},
+
+	_onDragEnd: function (e) {
+		var map = this._map,
+		    options = map.options,
+		    delay = +new Date() - this._lastTime,
+
+		    noInertia = !options.inertia || delay > options.inertiaThreshold || !this._positions[0];
+
+		map.fire('dragend', e);
+
+		if (noInertia) {
+			map.fire('moveend');
+
+		} else {
+
+			var direction = this._lastPos.subtract(this._positions[0]),
+			    duration = (this._lastTime + delay - this._times[0]) / 1000,
+			    ease = options.easeLinearity,
+
+			    speedVector = direction.multiplyBy(ease / duration),
+			    speed = speedVector.distanceTo([0, 0]),
+
+			    limitedSpeed = Math.min(options.inertiaMaxSpeed, speed),
+			    limitedSpeedVector = speedVector.multiplyBy(limitedSpeed / speed),
+
+			    decelerationDuration = limitedSpeed / (options.inertiaDeceleration * ease),
+			    offset = limitedSpeedVector.multiplyBy(-decelerationDuration / 2).round();
+
+			if (!offset.x || !offset.y) {
+				map.fire('moveend');
+
+			} else {
+				offset = map._limitOffset(offset, map.options.maxBounds);
+
+				L.Util.requestAnimFrame(function () {
+					map.panBy(offset, {
+						duration: decelerationDuration,
+						easeLinearity: ease,
+						noMoveStart: true
+					});
+				});
+			}
+		}
+	}
+});
+
+L.Map.addInitHook('addHandler', 'dragging', L.Map.Drag);
+
+
+/*
+ * L.Handler.DoubleClickZoom is used to handle double-click zoom on the map, enabled by default.
+ */
+
+L.Map.mergeOptions({
+	doubleClickZoom: true
+});
+
+L.Map.DoubleClickZoom = L.Handler.extend({
+	addHooks: function () {
+		this._map.on('dblclick', this._onDoubleClick, this);
+	},
+
+	removeHooks: function () {
+		this._map.off('dblclick', this._onDoubleClick, this);
+	},
+
+	_onDoubleClick: function (e) {
+		var map = this._map,
+		    zoom = map.getZoom() + (e.originalEvent.shiftKey ? -1 : 1);
+
+		if (map.options.doubleClickZoom === 'center') {
+			map.setZoom(zoom);
+		} else {
+			map.setZoomAround(e.containerPoint, zoom);
+		}
+	}
+});
+
+L.Map.addInitHook('addHandler', 'doubleClickZoom', L.Map.DoubleClickZoom);
+
+
+/*
+ * L.Handler.ScrollWheelZoom is used by L.Map to enable mouse scroll wheel zoom on the map.
+ */
+
+L.Map.mergeOptions({
+	scrollWheelZoom: true
+});
+
+L.Map.ScrollWheelZoom = L.Handler.extend({
+	addHooks: function () {
+		L.DomEvent.on(this._map._container, 'mousewheel', this._onWheelScroll, this);
+		L.DomEvent.on(this._map._container, 'MozMousePixelScroll', L.DomEvent.preventDefault);
+		this._delta = 0;
+	},
+
+	removeHooks: function () {
+		L.DomEvent.off(this._map._container, 'mousewheel', this._onWheelScroll);
+		L.DomEvent.off(this._map._container, 'MozMousePixelScroll', L.DomEvent.preventDefault);
+	},
+
+	_onWheelScroll: function (e) {
+		var delta = L.DomEvent.getWheelDelta(e);
+
+		this._delta += delta;
+		this._lastMousePos = this._map.mouseEventToContainerPoint(e);
+
+		if (!this._startTime) {
+			this._startTime = +new Date();
+		}
+
+		var left = Math.max(40 - (+new Date() - this._startTime), 0);
+
+		clearTimeout(this._timer);
+		this._timer = setTimeout(L.bind(this._performZoom, this), left);
+
+		L.DomEvent.preventDefault(e);
+		L.DomEvent.stopPropagation(e);
+	},
+
+	_performZoom: function () {
+		var map = this._map,
+		    delta = this._delta,
+		    zoom = map.getZoom();
+
+		delta = delta > 0 ? Math.ceil(delta) : Math.floor(delta);
+		delta = Math.max(Math.min(delta, 4), -4);
+		delta = map._limitZoom(zoom + delta) - zoom;
+
+		this._delta = 0;
+		this._startTime = null;
+
+		if (!delta) { return; }
+
+		if (map.options.scrollWheelZoom === 'center') {
+			map.setZoom(zoom + delta);
+		} else {
+			map.setZoomAround(this._lastMousePos, zoom + delta);
+		}
+	}
+});
+
+L.Map.addInitHook('addHandler', 'scrollWheelZoom', L.Map.ScrollWheelZoom);
+
+
+/*
+ * Extends the event handling code with double tap support for mobile browsers.
+ */
+
+L.extend(L.DomEvent, {
+
+	_touchstart: L.Browser.msPointer ? 'MSPointerDown' : L.Browser.pointer ? 'pointerdown' : 'touchstart',
+	_touchend: L.Browser.msPointer ? 'MSPointerUp' : L.Browser.pointer ? 'pointerup' : 'touchend',
+
+	// inspired by Zepto touch code by Thomas Fuchs
+	addDoubleTapListener: function (obj, handler, id) {
+		var last,
+		    doubleTap = false,
+		    delay = 250,
+		    touch,
+		    pre = '_leaflet_',
+		    touchstart = this._touchstart,
+		    touchend = this._touchend,
+		    trackedTouches = [];
+
+		function onTouchStart(e) {
+			var count;
+
+			if (L.Browser.pointer) {
+				trackedTouches.push(e.pointerId);
+				count = trackedTouches.length;
+			} else {
+				count = e.touches.length;
+			}
+			if (count > 1) {
+				return;
+			}
+
+			var now = Date.now(),
+				delta = now - (last || now);
+
+			touch = e.touches ? e.touches[0] : e;
+			doubleTap = (delta > 0 && delta <= delay);
+			last = now;
+		}
+
+		function onTouchEnd(e) {
+			if (L.Browser.pointer) {
+				var idx = trackedTouches.indexOf(e.pointerId);
+				if (idx === -1) {
+					return;
+				}
+				trackedTouches.splice(idx, 1);
+			}
+
+			if (doubleTap) {
+				if (L.Browser.pointer) {
+					// work around .type being readonly with MSPointer* events
+					var newTouch = { },
+						prop;
+
+					// jshint forin:false
+					for (var i in touch) {
+						prop = touch[i];
+						if (typeof prop === 'function') {
+							newTouch[i] = prop.bind(touch);
+						} else {
+							newTouch[i] = prop;
+						}
+					}
+					touch = newTouch;
+				}
+				touch.type = 'dblclick';
+				handler(touch);
+				last = null;
+			}
+		}
+		obj[pre + touchstart + id] = onTouchStart;
+		obj[pre + touchend + id] = onTouchEnd;
+
+		// on pointer we need to listen on the document, otherwise a drag starting on the map and moving off screen
+		// will not come through to us, so we will lose track of how many touches are ongoing
+		var endElement = L.Browser.pointer ? document.documentElement : obj;
+
+		obj.addEventListener(touchstart, onTouchStart, false);
+		endElement.addEventListener(touchend, onTouchEnd, false);
+
+		if (L.Browser.pointer) {
+			endElement.addEventListener(L.DomEvent.POINTER_CANCEL, onTouchEnd, false);
+		}
+
+		return this;
+	},
+
+	removeDoubleTapListener: function (obj, id) {
+		var pre = '_leaflet_';
+
+		obj.removeEventListener(this._touchstart, obj[pre + this._touchstart + id], false);
+		(L.Browser.pointer ? document.documentElement : obj).removeEventListener(
+		        this._touchend, obj[pre + this._touchend + id], false);
+
+		if (L.Browser.pointer) {
+			document.documentElement.removeEventListener(L.DomEvent.POINTER_CANCEL, obj[pre + this._touchend + id],
+				false);
+		}
+
+		return this;
+	}
+});
+
+
+/*
+ * Extends L.DomEvent to provide touch support for Internet Explorer and Windows-based devices.
+ */
+
+L.extend(L.DomEvent, {
+
+	//static
+	POINTER_DOWN: L.Browser.msPointer ? 'MSPointerDown' : 'pointerdown',
+	POINTER_MOVE: L.Browser.msPointer ? 'MSPointerMove' : 'pointermove',
+	POINTER_UP: L.Browser.msPointer ? 'MSPointerUp' : 'pointerup',
+	POINTER_CANCEL: L.Browser.msPointer ? 'MSPointerCancel' : 'pointercancel',
+
+	_pointers: [],
+	_pointerDocumentListener: false,
+
+	// Provides a touch events wrapper for (ms)pointer events.
+	// Based on changes by veproza https://github.com/CloudMade/Leaflet/pull/1019
+	//ref http://www.w3.org/TR/pointerevents/ https://www.w3.org/Bugs/Public/show_bug.cgi?id=22890
+
+	addPointerListener: function (obj, type, handler, id) {
+
+		switch (type) {
+		case 'touchstart':
+			return this.addPointerListenerStart(obj, type, handler, id);
+		case 'touchend':
+			return this.addPointerListenerEnd(obj, type, handler, id);
+		case 'touchmove':
+			return this.addPointerListenerMove(obj, type, handler, id);
+		default:
+			throw 'Unknown touch event type';
+		}
+	},
+
+	addPointerListenerStart: function (obj, type, handler, id) {
+		var pre = '_leaflet_',
+		    pointers = this._pointers;
+
+		var cb = function (e) {
+
+			L.DomEvent.preventDefault(e);
+
+			var alreadyInArray = false;
+			for (var i = 0; i < pointers.length; i++) {
+				if (pointers[i].pointerId === e.pointerId) {
+					alreadyInArray = true;
+					break;
+				}
+			}
+			if (!alreadyInArray) {
+				pointers.push(e);
+			}
+
+			e.touches = pointers.slice();
+			e.changedTouches = [e];
+
+			handler(e);
+		};
+
+		obj[pre + 'touchstart' + id] = cb;
+		obj.addEventListener(this.POINTER_DOWN, cb, false);
+
+		// need to also listen for end events to keep the _pointers list accurate
+		// this needs to be on the body and never go away
+		if (!this._pointerDocumentListener) {
+			var internalCb = function (e) {
+				for (var i = 0; i < pointers.length; i++) {
+					if (pointers[i].pointerId === e.pointerId) {
+						pointers.splice(i, 1);
+						break;
+					}
+				}
+			};
+			//We listen on the documentElement as any drags that end by moving the touch off the screen get fired there
+			document.documentElement.addEventListener(this.POINTER_UP, internalCb, false);
+			document.documentElement.addEventListener(this.POINTER_CANCEL, internalCb, false);
+
+			this._pointerDocumentListener = true;
+		}
+
+		return this;
+	},
+
+	addPointerListenerMove: function (obj, type, handler, id) {
+		var pre = '_leaflet_',
+		    touches = this._pointers;
+
+		function cb(e) {
+
+			// don't fire touch moves when mouse isn't down
+			if ((e.pointerType === e.MSPOINTER_TYPE_MOUSE || e.pointerType === 'mouse') && e.buttons === 0) { return; }
+
+			for (var i = 0; i < touches.length; i++) {
+				if (touches[i].pointerId === e.pointerId) {
+					touches[i] = e;
+					break;
+				}
+			}
+
+			e.touches = touches.slice();
+			e.changedTouches = [e];
+
+			handler(e);
+		}
+
+		obj[pre + 'touchmove' + id] = cb;
+		obj.addEventListener(this.POINTER_MOVE, cb, false);
+
+		return this;
+	},
+
+	addPointerListenerEnd: function (obj, type, handler, id) {
+		var pre = '_leaflet_',
+		    touches = this._pointers;
+
+		var cb = function (e) {
+			for (var i = 0; i < touches.length; i++) {
+				if (touches[i].pointerId === e.pointerId) {
+					touches.splice(i, 1);
+					break;
+				}
+			}
+
+			e.touches = touches.slice();
+			e.changedTouches = [e];
+
+			handler(e);
+		};
+
+		obj[pre + 'touchend' + id] = cb;
+		obj.addEventListener(this.POINTER_UP, cb, false);
+		obj.addEventListener(this.POINTER_CANCEL, cb, false);
+
+		return this;
+	},
+
+	removePointerListener: function (obj, type, id) {
+		var pre = '_leaflet_',
+		    cb = obj[pre + type + id];
+
+		switch (type) {
+		case 'touchstart':
+			obj.removeEventListener(this.POINTER_DOWN, cb, false);
+			break;
+		case 'touchmove':
+			obj.removeEventListener(this.POINTER_MOVE, cb, false);
+			break;
+		case 'touchend':
+			obj.removeEventListener(this.POINTER_UP, cb, false);
+			obj.removeEventListener(this.POINTER_CANCEL, cb, false);
+			break;
+		}
+
+		return this;
+	}
+});
+
+
+/*
+ * L.Handler.TouchZoom is used by L.Map to add pinch zoom on supported mobile browsers.
+ */
+
+L.Map.mergeOptions({
+	touchZoom: L.Browser.touch && !L.Browser.android23,
+	bounceAtZoomLimits: true
+});
+
+L.Map.TouchZoom = L.Handler.extend({
+	addHooks: function () {
+		L.DomEvent.on(this._map._container, 'touchstart', this._onTouchStart, this);
+	},
+
+	removeHooks: function () {
+		L.DomEvent.off(this._map._container, 'touchstart', this._onTouchStart, this);
+	},
+
+	_onTouchStart: function (e) {
+		var map = this._map;
+
+		if (!e.touches || e.touches.length !== 2 || map._animatingZoom || this._zooming) { return; }
+
+		var p1 = map.mouseEventToLayerPoint(e.touches[0]),
+		    p2 = map.mouseEventToLayerPoint(e.touches[1]),
+		    viewCenter = map._getCenterLayerPoint();
+
+		this._startCenter = p1.add(p2)._divideBy(2);
+		this._startDist = p1.distanceTo(p2);
+
+		this._moved = false;
+		this._zooming = true;
+
+		this._centerOffset = viewCenter.subtract(this._startCenter);
+
+		if (map._panAnim) {
+			map._panAnim.stop();
+		}
+
+		L.DomEvent
+		    .on(document, 'touchmove', this._onTouchMove, this)
+		    .on(document, 'touchend', this._onTouchEnd, this);
+
+		L.DomEvent.preventDefault(e);
+	},
+
+	_onTouchMove: function (e) {
+		var map = this._map;
+
+		if (!e.touches || e.touches.length !== 2 || !this._zooming) { return; }
+
+		var p1 = map.mouseEventToLayerPoint(e.touches[0]),
+		    p2 = map.mouseEventToLayerPoint(e.touches[1]);
+
+		this._scale = p1.distanceTo(p2) / this._startDist;
+		this._delta = p1._add(p2)._divideBy(2)._subtract(this._startCenter);
+
+		if (this._scale === 1) { return; }
+
+		if (!map.options.bounceAtZoomLimits) {
+			if ((map.getZoom() === map.getMinZoom() && this._scale < 1) ||
+			    (map.getZoom() === map.getMaxZoom() && this._scale > 1)) { return; }
+		}
+
+		if (!this._moved) {
+			L.DomUtil.addClass(map._mapPane, 'leaflet-touching');
+
+			map
+			    .fire('movestart')
+			    .fire('zoomstart');
+
+			this._moved = true;
+		}
+
+		L.Util.cancelAnimFrame(this._animRequest);
+		this._animRequest = L.Util.requestAnimFrame(
+		        this._updateOnMove, this, true, this._map._container);
+
+		L.DomEvent.preventDefault(e);
+	},
+
+	_updateOnMove: function () {
+		var map = this._map,
+		    origin = this._getScaleOrigin(),
+		    center = map.layerPointToLatLng(origin),
+		    zoom = map.getScaleZoom(this._scale);
+
+		map._animateZoom(center, zoom, this._startCenter, this._scale, this._delta, false, true);
+	},
+
+	_onTouchEnd: function () {
+		if (!this._moved || !this._zooming) {
+			this._zooming = false;
+			return;
+		}
+
+		var map = this._map;
+
+		this._zooming = false;
+		L.DomUtil.removeClass(map._mapPane, 'leaflet-touching');
+		L.Util.cancelAnimFrame(this._animRequest);
+
+		L.DomEvent
+		    .off(document, 'touchmove', this._onTouchMove)
+		    .off(document, 'touchend', this._onTouchEnd);
+
+		var origin = this._getScaleOrigin(),
+		    center = map.layerPointToLatLng(origin),
+
+		    oldZoom = map.getZoom(),
+		    floatZoomDelta = map.getScaleZoom(this._scale) - oldZoom,
+		    roundZoomDelta = (floatZoomDelta > 0 ?
+		            Math.ceil(floatZoomDelta) : Math.floor(floatZoomDelta)),
+
+		    zoom = map._limitZoom(oldZoom + roundZoomDelta),
+		    scale = map.getZoomScale(zoom) / this._scale;
+
+		map._animateZoom(center, zoom, origin, scale);
+	},
+
+	_getScaleOrigin: function () {
+		var centerOffset = this._centerOffset.subtract(this._delta).divideBy(this._scale);
+		return this._startCenter.add(centerOffset);
+	}
+});
+
+L.Map.addInitHook('addHandler', 'touchZoom', L.Map.TouchZoom);
+
+
+/*
+ * L.Map.Tap is used to enable mobile hacks like quick taps and long hold.
+ */
+
+L.Map.mergeOptions({
+	tap: true,
+	tapTolerance: 15
+});
+
+L.Map.Tap = L.Handler.extend({
+	addHooks: function () {
+		L.DomEvent.on(this._map._container, 'touchstart', this._onDown, this);
+	},
+
+	removeHooks: function () {
+		L.DomEvent.off(this._map._container, 'touchstart', this._onDown, this);
+	},
+
+	_onDown: function (e) {
+		if (!e.touches) { return; }
+
+		L.DomEvent.preventDefault(e);
+
+		this._fireClick = true;
+
+		// don't simulate click or track longpress if more than 1 touch
+		if (e.touches.length > 1) {
+			this._fireClick = false;
+			clearTimeout(this._holdTimeout);
+			return;
+		}
+
+		var first = e.touches[0],
+		    el = first.target;
+
+		this._startPos = this._newPos = new L.Point(first.clientX, first.clientY);
+
+		// if touching a link, highlight it
+		if (el.tagName && el.tagName.toLowerCase() === 'a') {
+			L.DomUtil.addClass(el, 'leaflet-active');
+		}
+
+		// simulate long hold but setting a timeout
+		this._holdTimeout = setTimeout(L.bind(function () {
+			if (this._isTapValid()) {
+				this._fireClick = false;
+				this._onUp();
+				this._simulateEvent('contextmenu', first);
+			}
+		}, this), 1000);
+
+		L.DomEvent
+			.on(document, 'touchmove', this._onMove, this)
+			.on(document, 'touchend', this._onUp, this);
+	},
+
+	_onUp: function (e) {
+		clearTimeout(this._holdTimeout);
+
+		L.DomEvent
+			.off(document, 'touchmove', this._onMove, this)
+			.off(document, 'touchend', this._onUp, this);
+
+		if (this._fireClick && e && e.changedTouches) {
+
+			var first = e.changedTouches[0],
+			    el = first.target;
+
+			if (el && el.tagName && el.tagName.toLowerCase() === 'a') {
+				L.DomUtil.removeClass(el, 'leaflet-active');
+			}
+
+			// simulate click if the touch didn't move too much
+			if (this._isTapValid()) {
+				this._simulateEvent('click', first);
+			}
+		}
+	},
+
+	_isTapValid: function () {
+		return this._newPos.distanceTo(this._startPos) <= this._map.options.tapTolerance;
+	},
+
+	_onMove: function (e) {
+		var first = e.touches[0];
+		this._newPos = new L.Point(first.clientX, first.clientY);
+	},
+
+	_simulateEvent: function (type, e) {
+		var simulatedEvent = document.createEvent('MouseEvents');
+
+		simulatedEvent._simulated = true;
+		e.target._simulatedClick = true;
+
+		simulatedEvent.initMouseEvent(
+		        type, true, true, window, 1,
+		        e.screenX, e.screenY,
+		        e.clientX, e.clientY,
+		        false, false, false, false, 0, null);
+
+		e.target.dispatchEvent(simulatedEvent);
+	}
+});
+
+if (L.Browser.touch && !L.Browser.pointer) {
+	L.Map.addInitHook('addHandler', 'tap', L.Map.Tap);
+}
+
+
+/*
+ * L.Handler.ShiftDragZoom is used to add shift-drag zoom interaction to the map
+  * (zoom to a selected bounding box), enabled by default.
+ */
+
+L.Map.mergeOptions({
+	boxZoom: true
+});
+
+L.Map.BoxZoom = L.Handler.extend({
+	initialize: function (map) {
+		this._map = map;
+		this._container = map._container;
+		this._pane = map._panes.overlayPane;
+		this._moved = false;
+	},
+
+	addHooks: function () {
+		L.DomEvent.on(this._container, 'mousedown', this._onMouseDown, this);
+	},
+
+	removeHooks: function () {
+		L.DomEvent.off(this._container, 'mousedown', this._onMouseDown);
+		this._moved = false;
+	},
+
+	moved: function () {
+		return this._moved;
+	},
+
+	_onMouseDown: function (e) {
+		this._moved = false;
+
+		if (!e.shiftKey || ((e.which !== 1) && (e.button !== 1))) { return false; }
+
+		L.DomUtil.disableTextSelection();
+		L.DomUtil.disableImageDrag();
+
+		this._startLayerPoint = this._map.mouseEventToLayerPoint(e);
+
+		L.DomEvent
+		    .on(document, 'mousemove', this._onMouseMove, this)
+		    .on(document, 'mouseup', this._onMouseUp, this)
+		    .on(document, 'keydown', this._onKeyDown, this);
+	},
+
+	_onMouseMove: function (e) {
+		if (!this._moved) {
+			this._box = L.DomUtil.create('div', 'leaflet-zoom-box', this._pane);
+			L.DomUtil.setPosition(this._box, this._startLayerPoint);
+
+			//TODO refactor: move cursor to styles
+			this._container.style.cursor = 'crosshair';
+			this._map.fire('boxzoomstart');
+		}
+
+		var startPoint = this._startLayerPoint,
+		    box = this._box,
+
+		    layerPoint = this._map.mouseEventToLayerPoint(e),
+		    offset = layerPoint.subtract(startPoint),
+
+		    newPos = new L.Point(
+		        Math.min(layerPoint.x, startPoint.x),
+		        Math.min(layerPoint.y, startPoint.y));
+
+		L.DomUtil.setPosition(box, newPos);
+
+		this._moved = true;
+
+		// TODO refactor: remove hardcoded 4 pixels
+		box.style.width  = (Math.max(0, Math.abs(offset.x) - 4)) + 'px';
+		box.style.height = (Math.max(0, Math.abs(offset.y) - 4)) + 'px';
+	},
+
+	_finish: function () {
+		if (this._moved) {
+			this._pane.removeChild(this._box);
+			this._container.style.cursor = '';
+		}
+
+		L.DomUtil.enableTextSelection();
+		L.DomUtil.enableImageDrag();
+
+		L.DomEvent
+		    .off(document, 'mousemove', this._onMouseMove)
+		    .off(document, 'mouseup', this._onMouseUp)
+		    .off(document, 'keydown', this._onKeyDown);
+	},
+
+	_onMouseUp: function (e) {
+
+		this._finish();
+
+		var map = this._map,
+		    layerPoint = map.mouseEventToLayerPoint(e);
+
+		if (this._startLayerPoint.equals(layerPoint)) { return; }
+
+		var bounds = new L.LatLngBounds(
+		        map.layerPointToLatLng(this._startLayerPoint),
+		        map.layerPointToLatLng(layerPoint));
+
+		map.fitBounds(bounds);
+
+		map.fire('boxzoomend', {
+			boxZoomBounds: bounds
+		});
+	},
+
+	_onKeyDown: function (e) {
+		if (e.keyCode === 27) {
+			this._finish();
+		}
+	}
+});
+
+L.Map.addInitHook('addHandler', 'boxZoom', L.Map.BoxZoom);
+
+
+/*
+ * L.Map.Keyboard is handling keyboard interaction with the map, enabled by default.
+ */
+
+L.Map.mergeOptions({
+	keyboard: true,
+	keyboardPanOffset: 80,
+	keyboardZoomOffset: 1
+});
+
+L.Map.Keyboard = L.Handler.extend({
+
+	keyCodes: {
+		left:    [37],
+		right:   [39],
+		down:    [40],
+		up:      [38],
+		zoomIn:  [187, 107, 61, 171],
+		zoomOut: [189, 109, 173]
+	},
+
+	initialize: function (map) {
+		this._map = map;
+
+		this._setPanOffset(map.options.keyboardPanOffset);
+		this._setZoomOffset(map.options.keyboardZoomOffset);
+	},
+
+	addHooks: function () {
+		var container = this._map._container;
+
+		// make the container focusable by tabbing
+		if (container.tabIndex === -1) {
+			container.tabIndex = '0';
+		}
+
+		L.DomEvent
+		    .on(container, 'focus', this._onFocus, this)
+		    .on(container, 'blur', this._onBlur, this)
+		    .on(container, 'mousedown', this._onMouseDown, this);
+
+		this._map
+		    .on('focus', this._addHooks, this)
+		    .on('blur', this._removeHooks, this);
+	},
+
+	removeHooks: function () {
+		this._removeHooks();
+
+		var container = this._map._container;
+
+		L.DomEvent
+		    .off(container, 'focus', this._onFocus, this)
+		    .off(container, 'blur', this._onBlur, this)
+		    .off(container, 'mousedown', this._onMouseDown, this);
+
+		this._map
+		    .off('focus', this._addHooks, this)
+		    .off('blur', this._removeHooks, this);
+	},
+
+	_onMouseDown: function () {
+		if (this._focused) { return; }
+
+		var body = document.body,
+		    docEl = document.documentElement,
+		    top = body.scrollTop || docEl.scrollTop,
+		    left = body.scrollLeft || docEl.scrollLeft;
+
+		this._map._container.focus();
+
+		window.scrollTo(left, top);
+	},
+
+	_onFocus: function () {
+		this._focused = true;
+		this._map.fire('focus');
+	},
+
+	_onBlur: function () {
+		this._focused = false;
+		this._map.fire('blur');
+	},
+
+	_setPanOffset: function (pan) {
+		var keys = this._panKeys = {},
+		    codes = this.keyCodes,
+		    i, len;
+
+		for (i = 0, len = codes.left.length; i < len; i++) {
+			keys[codes.left[i]] = [-1 * pan, 0];
+		}
+		for (i = 0, len = codes.right.length; i < len; i++) {
+			keys[codes.right[i]] = [pan, 0];
+		}
+		for (i = 0, len = codes.down.length; i < len; i++) {
+			keys[codes.down[i]] = [0, pan];
+		}
+		for (i = 0, len = codes.up.length; i < len; i++) {
+			keys[codes.up[i]] = [0, -1 * pan];
+		}
+	},
+
+	_setZoomOffset: function (zoom) {
+		var keys = this._zoomKeys = {},
+		    codes = this.keyCodes,
+		    i, len;
+
+		for (i = 0, len = codes.zoomIn.length; i < len; i++) {
+			keys[codes.zoomIn[i]] = zoom;
+		}
+		for (i = 0, len = codes.zoomOut.length; i < len; i++) {
+			keys[codes.zoomOut[i]] = -zoom;
+		}
+	},
+
+	_addHooks: function () {
+		L.DomEvent.on(document, 'keydown', this._onKeyDown, this);
+	},
+
+	_removeHooks: function () {
+		L.DomEvent.off(document, 'keydown', this._onKeyDown, this);
+	},
+
+	_onKeyDown: function (e) {
+		var key = e.keyCode,
+		    map = this._map;
+
+		if (key in this._panKeys) {
+
+			if (map._panAnim && map._panAnim._inProgress) { return; }
+
+			map.panBy(this._panKeys[key]);
+
+			if (map.options.maxBounds) {
+				map.panInsideBounds(map.options.maxBounds);
+			}
+
+		} else if (key in this._zoomKeys) {
+			map.setZoom(map.getZoom() + this._zoomKeys[key]);
+
+		} else {
+			return;
+		}
+
+		L.DomEvent.stop(e);
+	}
+});
+
+L.Map.addInitHook('addHandler', 'keyboard', L.Map.Keyboard);
+
+
+/*
+ * L.Handler.MarkerDrag is used internally by L.Marker to make the markers draggable.
+ */
+
+L.Handler.MarkerDrag = L.Handler.extend({
+	initialize: function (marker) {
+		this._marker = marker;
+	},
+
+	addHooks: function () {
+		var icon = this._marker._icon;
+		if (!this._draggable) {
+			this._draggable = new L.Draggable(icon, icon);
+		}
+
+		this._draggable
+			.on('dragstart', this._onDragStart, this)
+			.on('drag', this._onDrag, this)
+			.on('dragend', this._onDragEnd, this);
+		this._draggable.enable();
+		L.DomUtil.addClass(this._marker._icon, 'leaflet-marker-draggable');
+	},
+
+	removeHooks: function () {
+		this._draggable
+			.off('dragstart', this._onDragStart, this)
+			.off('drag', this._onDrag, this)
+			.off('dragend', this._onDragEnd, this);
+
+		this._draggable.disable();
+		L.DomUtil.removeClass(this._marker._icon, 'leaflet-marker-draggable');
+	},
+
+	moved: function () {
+		return this._draggable && this._draggable._moved;
+	},
+
+	_onDragStart: function () {
+		this._marker
+		    .closePopup()
+		    .fire('movestart')
+		    .fire('dragstart');
+	},
+
+	_onDrag: function () {
+		var marker = this._marker,
+		    shadow = marker._shadow,
+		    iconPos = L.DomUtil.getPosition(marker._icon),
+		    latlng = marker._map.layerPointToLatLng(iconPos);
+
+		// update shadow position
+		if (shadow) {
+			L.DomUtil.setPosition(shadow, iconPos);
+		}
+
+		marker._latlng = latlng;
+
+		marker
+		    .fire('move', {latlng: latlng})
+		    .fire('drag');
+	},
+
+	_onDragEnd: function (e) {
+		this._marker
+		    .fire('moveend')
+		    .fire('dragend', e);
+	}
+});
+
+
+/*
+ * L.Control is a base class for implementing map controls. Handles positioning.
+ * All other controls extend from this class.
+ */
+
+L.Control = L.Class.extend({
+	options: {
+		position: 'topright'
+	},
+
+	initialize: function (options) {
+		L.setOptions(this, options);
+	},
+
+	getPosition: function () {
+		return this.options.position;
+	},
+
+	setPosition: function (position) {
+		var map = this._map;
+
+		if (map) {
+			map.removeControl(this);
+		}
+
+		this.options.position = position;
+
+		if (map) {
+			map.addControl(this);
+		}
+
+		return this;
+	},
+
+	getContainer: function () {
+		return this._container;
+	},
+
+	addTo: function (map) {
+		this._map = map;
+
+		var container = this._container = this.onAdd(map),
+		    pos = this.getPosition(),
+		    corner = map._controlCorners[pos];
+
+		L.DomUtil.addClass(container, 'leaflet-control');
+
+		if (pos.indexOf('bottom') !== -1) {
+			corner.insertBefore(container, corner.firstChild);
+		} else {
+			corner.appendChild(container);
+		}
+
+		return this;
+	},
+
+	removeFrom: function (map) {
+		var pos = this.getPosition(),
+		    corner = map._controlCorners[pos];
+
+		corner.removeChild(this._container);
+		this._map = null;
+
+		if (this.onRemove) {
+			this.onRemove(map);
+		}
+
+		return this;
+	},
+
+	_refocusOnMap: function () {
+		if (this._map) {
+			this._map.getContainer().focus();
+		}
+	}
+});
+
+L.control = function (options) {
+	return new L.Control(options);
+};
+
+
+// adds control-related methods to L.Map
+
+L.Map.include({
+	addControl: function (control) {
+		control.addTo(this);
+		return this;
+	},
+
+	removeControl: function (control) {
+		control.removeFrom(this);
+		return this;
+	},
+
+	_initControlPos: function () {
+		var corners = this._controlCorners = {},
+		    l = 'leaflet-',
+		    container = this._controlContainer =
+		            L.DomUtil.create('div', l + 'control-container', this._container);
+
+		function createCorner(vSide, hSide) {
+			var className = l + vSide + ' ' + l + hSide;
+
+			corners[vSide + hSide] = L.DomUtil.create('div', className, container);
+		}
+
+		createCorner('top', 'left');
+		createCorner('top', 'right');
+		createCorner('bottom', 'left');
+		createCorner('bottom', 'right');
+	},
+
+	_clearControlPos: function () {
+		this._container.removeChild(this._controlContainer);
+	}
+});
+
+
+/*
+ * L.Control.Zoom is used for the default zoom buttons on the map.
+ */
+
+L.Control.Zoom = L.Control.extend({
+	options: {
+		position: 'topleft',
+		zoomInText: '+',
+		zoomInTitle: 'Zoom in',
+		zoomOutText: '-',
+		zoomOutTitle: 'Zoom out'
+	},
+
+	onAdd: function (map) {
+		var zoomName = 'leaflet-control-zoom',
+		    container = L.DomUtil.create('div', zoomName + ' leaflet-bar');
+
+		this._map = map;
+
+		this._zoomInButton  = this._createButton(
+		        this.options.zoomInText, this.options.zoomInTitle,
+		        zoomName + '-in',  container, this._zoomIn,  this);
+		this._zoomOutButton = this._createButton(
+		        this.options.zoomOutText, this.options.zoomOutTitle,
+		        zoomName + '-out', container, this._zoomOut, this);
+
+		this._updateDisabled();
+		map.on('zoomend zoomlevelschange', this._updateDisabled, this);
+
+		return container;
+	},
+
+	onRemove: function (map) {
+		map.off('zoomend zoomlevelschange', this._updateDisabled, this);
+	},
+
+	_zoomIn: function (e) {
+		this._map.zoomIn(e.shiftKey ? 3 : 1);
+	},
+
+	_zoomOut: function (e) {
+		this._map.zoomOut(e.shiftKey ? 3 : 1);
+	},
+
+	_createButton: function (html, title, className, container, fn, context) {
+		var link = L.DomUtil.create('a', className, container);
+		link.innerHTML = html;
+		link.href = '#';
+		link.title = title;
+
+		var stop = L.DomEvent.stopPropagation;
+
+		L.DomEvent
+		    .on(link, 'click', stop)
+		    .on(link, 'mousedown', stop)
+		    .on(link, 'dblclick', stop)
+		    .on(link, 'click', L.DomEvent.preventDefault)
+		    .on(link, 'click', fn, context)
+		    .on(link, 'click', this._refocusOnMap, context);
+
+		return link;
+	},
+
+	_updateDisabled: function () {
+		var map = this._map,
+			className = 'leaflet-disabled';
+
+		L.DomUtil.removeClass(this._zoomInButton, className);
+		L.DomUtil.removeClass(this._zoomOutButton, className);
+
+		if (map._zoom === map.getMinZoom()) {
+			L.DomUtil.addClass(this._zoomOutButton, className);
+		}
+		if (map._zoom === map.getMaxZoom()) {
+			L.DomUtil.addClass(this._zoomInButton, className);
+		}
+	}
+});
+
+L.Map.mergeOptions({
+	zoomControl: true
+});
+
+L.Map.addInitHook(function () {
+	if (this.options.zoomControl) {
+		this.zoomControl = new L.Control.Zoom();
+		this.addControl(this.zoomControl);
+	}
+});
+
+L.control.zoom = function (options) {
+	return new L.Control.Zoom(options);
+};
+
+
+
+/*
+ * L.Control.Attribution is used for displaying attribution on the map (added by default).
+ */
+
+L.Control.Attribution = L.Control.extend({
+	options: {
+		position: 'bottomright',
+		prefix: '<a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>'
+	},
+
+	initialize: function (options) {
+		L.setOptions(this, options);
+
+		this._attributions = {};
+	},
+
+	onAdd: function (map) {
+		this._container = L.DomUtil.create('div', 'leaflet-control-attribution');
+		L.DomEvent.disableClickPropagation(this._container);
+
+		for (var i in map._layers) {
+			if (map._layers[i].getAttribution) {
+				this.addAttribution(map._layers[i].getAttribution());
+			}
+		}
+		
+		map
+		    .on('layeradd', this._onLayerAdd, this)
+		    .on('layerremove', this._onLayerRemove, this);
+
+		this._update();
+
+		return this._container;
+	},
+
+	onRemove: function (map) {
+		map
+		    .off('layeradd', this._onLayerAdd)
+		    .off('layerremove', this._onLayerRemove);
+
+	},
+
+	setPrefix: function (prefix) {
+		this.options.prefix = prefix;
+		this._update();
+		return this;
+	},
+
+	addAttribution: function (text) {
+		if (!text) { return; }
+
+		if (!this._attributions[text]) {
+			this._attributions[text] = 0;
+		}
+		this._attributions[text]++;
+
+		this._update();
+
+		return this;
+	},
+
+	removeAttribution: function (text) {
+		if (!text) { return; }
+
+		if (this._attributions[text]) {
+			this._attributions[text]--;
+			this._update();
+		}
+
+		return this;
+	},
+
+	_update: function () {
+		if (!this._map) { return; }
+
+		var attribs = [];
+
+		for (var i in this._attributions) {
+			if (this._attributions[i]) {
+				attribs.push(i);
+			}
+		}
+
+		var prefixAndAttribs = [];
+
+		if (this.options.prefix) {
+			prefixAndAttribs.push(this.options.prefix);
+		}
+		if (attribs.length) {
+			prefixAndAttribs.push(attribs.join(', '));
+		}
+
+		this._container.innerHTML = prefixAndAttribs.join(' | ');
+	},
+
+	_onLayerAdd: function (e) {
+		if (e.layer.getAttribution) {
+			this.addAttribution(e.layer.getAttribution());
+		}
+	},
+
+	_onLayerRemove: function (e) {
+		if (e.layer.getAttribution) {
+			this.removeAttribution(e.layer.getAttribution());
+		}
+	}
+});
+
+L.Map.mergeOptions({
+	attributionControl: true
+});
+
+L.Map.addInitHook(function () {
+	if (this.options.attributionControl) {
+		this.attributionControl = (new L.Control.Attribution()).addTo(this);
+	}
+});
+
+L.control.attribution = function (options) {
+	return new L.Control.Attribution(options);
+};
+
+
+/*
+ * L.Control.Scale is used for displaying metric/imperial scale on the map.
+ */
+
+L.Control.Scale = L.Control.extend({
+	options: {
+		position: 'bottomleft',
+		maxWidth: 100,
+		metric: true,
+		imperial: true,
+		updateWhenIdle: false
+	},
+
+	onAdd: function (map) {
+		this._map = map;
+
+		var className = 'leaflet-control-scale',
+		    container = L.DomUtil.create('div', className),
+		    options = this.options;
+
+		this._addScales(options, className, container);
+
+		map.on(options.updateWhenIdle ? 'moveend' : 'move', this._update, this);
+		map.whenReady(this._update, this);
+
+		return container;
+	},
+
+	onRemove: function (map) {
+		map.off(this.options.updateWhenIdle ? 'moveend' : 'move', this._update, this);
+	},
+
+	_addScales: function (options, className, container) {
+		if (options.metric) {
+			this._mScale = L.DomUtil.create('div', className + '-line', container);
+		}
+		if (options.imperial) {
+			this._iScale = L.DomUtil.create('div', className + '-line', container);
+		}
+	},
+
+	_update: function () {
+		var bounds = this._map.getBounds(),
+		    centerLat = bounds.getCenter().lat,
+		    halfWorldMeters = 6378137 * Math.PI * Math.cos(centerLat * Math.PI / 180),
+		    dist = halfWorldMeters * (bounds.getNorthEast().lng - bounds.getSouthWest().lng) / 180,
+
+		    size = this._map.getSize(),
+		    options = this.options,
+		    maxMeters = 0;
+
+		if (size.x > 0) {
+			maxMeters = dist * (options.maxWidth / size.x);
+		}
+
+		this._updateScales(options, maxMeters);
+	},
+
+	_updateScales: function (options, maxMeters) {
+		if (options.metric && maxMeters) {
+			this._updateMetric(maxMeters);
+		}
+
+		if (options.imperial && maxMeters) {
+			this._updateImperial(maxMeters);
+		}
+	},
+
+	_updateMetric: function (maxMeters) {
+		var meters = this._getRoundNum(maxMeters);
+
+		this._mScale.style.width = this._getScaleWidth(meters / maxMeters) + 'px';
+		this._mScale.innerHTML = meters < 1000 ? meters + ' m' : (meters / 1000) + ' km';
+	},
+
+	_updateImperial: function (maxMeters) {
+		var maxFeet = maxMeters * 3.2808399,
+		    scale = this._iScale,
+		    maxMiles, miles, feet;
+
+		if (maxFeet > 5280) {
+			maxMiles = maxFeet / 5280;
+			miles = this._getRoundNum(maxMiles);
+
+			scale.style.width = this._getScaleWidth(miles / maxMiles) + 'px';
+			scale.innerHTML = miles + ' mi';
+
+		} else {
+			feet = this._getRoundNum(maxFeet);
+
+			scale.style.width = this._getScaleWidth(feet / maxFeet) + 'px';
+			scale.innerHTML = feet + ' ft';
+		}
+	},
+
+	_getScaleWidth: function (ratio) {
+		return Math.round(this.options.maxWidth * ratio) - 10;
+	},
+
+	_getRoundNum: function (num) {
+		var pow10 = Math.pow(10, (Math.floor(num) + '').length - 1),
+		    d = num / pow10;
+
+		d = d >= 10 ? 10 : d >= 5 ? 5 : d >= 3 ? 3 : d >= 2 ? 2 : 1;
+
+		return pow10 * d;
+	}
+});
+
+L.control.scale = function (options) {
+	return new L.Control.Scale(options);
+};
+
+
+/*
+ * L.Control.Layers is a control to allow users to switch between different layers on the map.
+ */
+
+L.Control.Layers = L.Control.extend({
+	options: {
+		collapsed: true,
+		position: 'topright',
+		autoZIndex: true
+	},
+
+	initialize: function (baseLayers, overlays, options) {
+		L.setOptions(this, options);
+
+		this._layers = {};
+		this._lastZIndex = 0;
+		this._handlingClick = false;
+
+		for (var i in baseLayers) {
+			this._addLayer(baseLayers[i], i);
+		}
+
+		for (i in overlays) {
+			this._addLayer(overlays[i], i, true);
+		}
+	},
+
+	onAdd: function (map) {
+		this._initLayout();
+		this._update();
+
+		map
+		    .on('layeradd', this._onLayerChange, this)
+		    .on('layerremove', this._onLayerChange, this);
+
+		return this._container;
+	},
+
+	onRemove: function (map) {
+		map
+		    .off('layeradd', this._onLayerChange, this)
+		    .off('layerremove', this._onLayerChange, this);
+	},
+
+	addBaseLayer: function (layer, name) {
+		this._addLayer(layer, name);
+		this._update();
+		return this;
+	},
+
+	addOverlay: function (layer, name) {
+		this._addLayer(layer, name, true);
+		this._update();
+		return this;
+	},
+
+	removeLayer: function (layer) {
+		var id = L.stamp(layer);
+		delete this._layers[id];
+		this._update();
+		return this;
+	},
+
+	_initLayout: function () {
+		var className = 'leaflet-control-layers',
+		    container = this._container = L.DomUtil.create('div', className);
+
+		//Makes this work on IE10 Touch devices by stopping it from firing a mouseout event when the touch is released
+		container.setAttribute('aria-haspopup', true);
+
+		if (!L.Browser.touch) {
+			L.DomEvent
+				.disableClickPropagation(container)
+				.disableScrollPropagation(container);
+		} else {
+			L.DomEvent.on(container, 'click', L.DomEvent.stopPropagation);
+		}
+
+		var form = this._form = L.DomUtil.create('form', className + '-list');
+
+		if (this.options.collapsed) {
+			if (!L.Browser.android) {
+				L.DomEvent
+				    .on(container, 'mouseover', this._expand, this)
+				    .on(container, 'mouseout', this._collapse, this);
+			}
+			var link = this._layersLink = L.DomUtil.create('a', className + '-toggle', container);
+			link.href = '#';
+			link.title = 'Layers';
+
+			if (L.Browser.touch) {
+				L.DomEvent
+				    .on(link, 'click', L.DomEvent.stop)
+				    .on(link, 'click', this._expand, this);
+			}
+			else {
+				L.DomEvent.on(link, 'focus', this._expand, this);
+			}
+			//Work around for Firefox android issue https://github.com/Leaflet/Leaflet/issues/2033
+			L.DomEvent.on(form, 'click', function () {
+				setTimeout(L.bind(this._onInputClick, this), 0);
+			}, this);
+
+			this._map.on('click', this._collapse, this);
+			// TODO keyboard accessibility
+		} else {
+			this._expand();
+		}
+
+		this._baseLayersList = L.DomUtil.create('div', className + '-base', form);
+		this._separator = L.DomUtil.create('div', className + '-separator', form);
+		this._overlaysList = L.DomUtil.create('div', className + '-overlays', form);
+
+		container.appendChild(form);
+	},
+
+	_addLayer: function (layer, name, overlay) {
+		var id = L.stamp(layer);
+
+		this._layers[id] = {
+			layer: layer,
+			name: name,
+			overlay: overlay
+		};
+
+		if (this.options.autoZIndex && layer.setZIndex) {
+			this._lastZIndex++;
+			layer.setZIndex(this._lastZIndex);
+		}
+	},
+
+	_update: function () {
+		if (!this._container) {
+			return;
+		}
+
+		this._baseLayersList.innerHTML = '';
+		this._overlaysList.innerHTML = '';
+
+		var baseLayersPresent = false,
+		    overlaysPresent = false,
+		    i, obj;
+
+		for (i in this._layers) {
+			obj = this._layers[i];
+			this._addItem(obj);
+			overlaysPresent = overlaysPresent || obj.overlay;
+			baseLayersPresent = baseLayersPresent || !obj.overlay;
+		}
+
+		this._separator.style.display = overlaysPresent && baseLayersPresent ? '' : 'none';
+	},
+
+	_onLayerChange: function (e) {
+		var obj = this._layers[L.stamp(e.layer)];
+
+		if (!obj) { return; }
+
+		if (!this._handlingClick) {
+			this._update();
+		}
+
+		var type = obj.overlay ?
+			(e.type === 'layeradd' ? 'overlayadd' : 'overlayremove') :
+			(e.type === 'layeradd' ? 'baselayerchange' : null);
+
+		if (type) {
+			this._map.fire(type, obj);
+		}
+	},
+
+	// IE7 bugs out if you create a radio dynamically, so you have to do it this hacky way (see http://bit.ly/PqYLBe)
+	_createRadioElement: function (name, checked) {
+
+		var radioHtml = '<input type="radio" class="leaflet-control-layers-selector" name="' + name + '"';
+		if (checked) {
+			radioHtml += ' checked="checked"';
+		}
+		radioHtml += '/>';
+
+		var radioFragment = document.createElement('div');
+		radioFragment.innerHTML = radioHtml;
+
+		return radioFragment.firstChild;
+	},
+
+	_addItem: function (obj) {
+		var label = document.createElement('label'),
+		    input,
+		    checked = this._map.hasLayer(obj.layer);
+
+		if (obj.overlay) {
+			input = document.createElement('input');
+			input.type = 'checkbox';
+			input.className = 'leaflet-control-layers-selector';
+			input.defaultChecked = checked;
+		} else {
+			input = this._createRadioElement('leaflet-base-layers', checked);
+		}
+
+		input.layerId = L.stamp(obj.layer);
+
+		L.DomEvent.on(input, 'click', this._onInputClick, this);
+
+		var name = document.createElement('span');
+		name.innerHTML = ' ' + obj.name;
+
+		label.appendChild(input);
+		label.appendChild(name);
+
+		var container = obj.overlay ? this._overlaysList : this._baseLayersList;
+		container.appendChild(label);
+
+		return label;
+	},
+
+	_onInputClick: function () {
+		var i, input, obj,
+		    inputs = this._form.getElementsByTagName('input'),
+		    inputsLen = inputs.length;
+
+		this._handlingClick = true;
+
+		for (i = 0; i < inputsLen; i++) {
+			input = inputs[i];
+			obj = this._layers[input.layerId];
+
+			if (input.checked && !this._map.hasLayer(obj.layer)) {
+				this._map.addLayer(obj.layer);
+
+			} else if (!input.checked && this._map.hasLayer(obj.layer)) {
+				this._map.removeLayer(obj.layer);
+			}
+		}
+
+		this._handlingClick = false;
+
+		this._refocusOnMap();
+	},
+
+	_expand: function () {
+		L.DomUtil.addClass(this._container, 'leaflet-control-layers-expanded');
+	},
+
+	_collapse: function () {
+		this._container.className = this._container.className.replace(' leaflet-control-layers-expanded', '');
+	}
+});
+
+L.control.layers = function (baseLayers, overlays, options) {
+	return new L.Control.Layers(baseLayers, overlays, options);
+};
+
+
+/*
+ * L.PosAnimation is used by Leaflet internally for pan animations.
+ */
+
+L.PosAnimation = L.Class.extend({
+	includes: L.Mixin.Events,
+
+	run: function (el, newPos, duration, easeLinearity) { // (HTMLElement, Point[, Number, Number])
+		this.stop();
+
+		this._el = el;
+		this._inProgress = true;
+		this._newPos = newPos;
+
+		this.fire('start');
+
+		el.style[L.DomUtil.TRANSITION] = 'all ' + (duration || 0.25) +
+		        's cubic-bezier(0,0,' + (easeLinearity || 0.5) + ',1)';
+
+		L.DomEvent.on(el, L.DomUtil.TRANSITION_END, this._onTransitionEnd, this);
+		L.DomUtil.setPosition(el, newPos);
+
+		// toggle reflow, Chrome flickers for some reason if you don't do this
+		L.Util.falseFn(el.offsetWidth);
+
+		// there's no native way to track value updates of transitioned properties, so we imitate this
+		this._stepTimer = setInterval(L.bind(this._onStep, this), 50);
+	},
+
+	stop: function () {
+		if (!this._inProgress) { return; }
+
+		// if we just removed the transition property, the element would jump to its final position,
+		// so we need to make it stay at the current position
+
+		L.DomUtil.setPosition(this._el, this._getPos());
+		this._onTransitionEnd();
+		L.Util.falseFn(this._el.offsetWidth); // force reflow in case we are about to start a new animation
+	},
+
+	_onStep: function () {
+		var stepPos = this._getPos();
+		if (!stepPos) {
+			this._onTransitionEnd();
+			return;
+		}
+		// jshint camelcase: false
+		// make L.DomUtil.getPosition return intermediate position value during animation
+		this._el._leaflet_pos = stepPos;
+
+		this.fire('step');
+	},
+
+	// you can't easily get intermediate values of properties animated with CSS3 Transitions,
+	// we need to parse computed style (in case of transform it returns matrix string)
+
+	_transformRe: /([-+]?(?:\d*\.)?\d+)\D*, ([-+]?(?:\d*\.)?\d+)\D*\)/,
+
+	_getPos: function () {
+		var left, top, matches,
+		    el = this._el,
+		    style = window.getComputedStyle(el);
+
+		if (L.Browser.any3d) {
+			matches = style[L.DomUtil.TRANSFORM].match(this._transformRe);
+			if (!matches) { return; }
+			left = parseFloat(matches[1]);
+			top  = parseFloat(matches[2]);
+		} else {
+			left = parseFloat(style.left);
+			top  = parseFloat(style.top);
+		}
+
+		return new L.Point(left, top, true);
+	},
+
+	_onTransitionEnd: function () {
+		L.DomEvent.off(this._el, L.DomUtil.TRANSITION_END, this._onTransitionEnd, this);
+
+		if (!this._inProgress) { return; }
+		this._inProgress = false;
+
+		this._el.style[L.DomUtil.TRANSITION] = '';
+
+		// jshint camelcase: false
+		// make sure L.DomUtil.getPosition returns the final position value after animation
+		this._el._leaflet_pos = this._newPos;
+
+		clearInterval(this._stepTimer);
+
+		this.fire('step').fire('end');
+	}
+
+});
+
+
+/*
+ * Extends L.Map to handle panning animations.
+ */
+
+L.Map.include({
+
+	setView: function (center, zoom, options) {
+
+		zoom = zoom === undefined ? this._zoom : this._limitZoom(zoom);
+		center = this._limitCenter(L.latLng(center), zoom, this.options.maxBounds);
+		options = options || {};
+
+		if (this._panAnim) {
+			this._panAnim.stop();
+		}
+
+		if (this._loaded && !options.reset && options !== true) {
+
+			if (options.animate !== undefined) {
+				options.zoom = L.extend({animate: options.animate}, options.zoom);
+				options.pan = L.extend({animate: options.animate}, options.pan);
+			}
+
+			// try animating pan or zoom
+			var animated = (this._zoom !== zoom) ?
+				this._tryAnimatedZoom && this._tryAnimatedZoom(center, zoom, options.zoom) :
+				this._tryAnimatedPan(center, options.pan);
+
+			if (animated) {
+				// prevent resize handler call, the view will refresh after animation anyway
+				clearTimeout(this._sizeTimer);
+				return this;
+			}
+		}
+
+		// animation didn't start, just reset the map view
+		this._resetView(center, zoom);
+
+		return this;
+	},
+
+	panBy: function (offset, options) {
+		offset = L.point(offset).round();
+		options = options || {};
+
+		if (!offset.x && !offset.y) {
+			return this;
+		}
+
+		if (!this._panAnim) {
+			this._panAnim = new L.PosAnimation();
+
+			this._panAnim.on({
+				'step': this._onPanTransitionStep,
+				'end': this._onPanTransitionEnd
+			}, this);
+		}
+
+		// don't fire movestart if animating inertia
+		if (!options.noMoveStart) {
+			this.fire('movestart');
+		}
+
+		// animate pan unless animate: false specified
+		if (options.animate !== false) {
+			L.DomUtil.addClass(this._mapPane, 'leaflet-pan-anim');
+
+			var newPos = this._getMapPanePos().subtract(offset);
+			this._panAnim.run(this._mapPane, newPos, options.duration || 0.25, options.easeLinearity);
+		} else {
+			this._rawPanBy(offset);
+			this.fire('move').fire('moveend');
+		}
+
+		return this;
+	},
+
+	_onPanTransitionStep: function () {
+		this.fire('move');
+	},
+
+	_onPanTransitionEnd: function () {
+		L.DomUtil.removeClass(this._mapPane, 'leaflet-pan-anim');
+		this.fire('moveend');
+	},
+
+	_tryAnimatedPan: function (center, options) {
+		// difference between the new and current centers in pixels
+		var offset = this._getCenterOffset(center)._floor();
+
+		// don't animate too far unless animate: true specified in options
+		if ((options && options.animate) !== true && !this.getSize().contains(offset)) { return false; }
+
+		this.panBy(offset, options);
+
+		return true;
+	}
+});
+
+
+/*
+ * L.PosAnimation fallback implementation that powers Leaflet pan animations
+ * in browsers that don't support CSS3 Transitions.
+ */
+
+L.PosAnimation = L.DomUtil.TRANSITION ? L.PosAnimation : L.PosAnimation.extend({
+
+	run: function (el, newPos, duration, easeLinearity) { // (HTMLElement, Point[, Number, Number])
+		this.stop();
+
+		this._el = el;
+		this._inProgress = true;
+		this._duration = duration || 0.25;
+		this._easeOutPower = 1 / Math.max(easeLinearity || 0.5, 0.2);
+
+		this._startPos = L.DomUtil.getPosition(el);
+		this._offset = newPos.subtract(this._startPos);
+		this._startTime = +new Date();
+
+		this.fire('start');
+
+		this._animate();
+	},
+
+	stop: function () {
+		if (!this._inProgress) { return; }
+
+		this._step();
+		this._complete();
+	},
+
+	_animate: function () {
+		// animation loop
+		this._animId = L.Util.requestAnimFrame(this._animate, this);
+		this._step();
+	},
+
+	_step: function () {
+		var elapsed = (+new Date()) - this._startTime,
+		    duration = this._duration * 1000;
+
+		if (elapsed < duration) {
+			this._runFrame(this._easeOut(elapsed / duration));
+		} else {
+			this._runFrame(1);
+			this._complete();
+		}
+	},
+
+	_runFrame: function (progress) {
+		var pos = this._startPos.add(this._offset.multiplyBy(progress));
+		L.DomUtil.setPosition(this._el, pos);
+
+		this.fire('step');
+	},
+
+	_complete: function () {
+		L.Util.cancelAnimFrame(this._animId);
+
+		this._inProgress = false;
+		this.fire('end');
+	},
+
+	_easeOut: function (t) {
+		return 1 - Math.pow(1 - t, this._easeOutPower);
+	}
+});
+
+
+/*
+ * Extends L.Map to handle zoom animations.
+ */
+
+L.Map.mergeOptions({
+	zoomAnimation: true,
+	zoomAnimationThreshold: 4
+});
+
+if (L.DomUtil.TRANSITION) {
+
+	L.Map.addInitHook(function () {
+		// don't animate on browsers without hardware-accelerated transitions or old Android/Opera
+		this._zoomAnimated = this.options.zoomAnimation && L.DomUtil.TRANSITION &&
+				L.Browser.any3d && !L.Browser.android23 && !L.Browser.mobileOpera;
+
+		// zoom transitions run with the same duration for all layers, so if one of transitionend events
+		// happens after starting zoom animation (propagating to the map pane), we know that it ended globally
+		if (this._zoomAnimated) {
+			L.DomEvent.on(this._mapPane, L.DomUtil.TRANSITION_END, this._catchTransitionEnd, this);
+		}
+	});
+}
+
+L.Map.include(!L.DomUtil.TRANSITION ? {} : {
+
+	_catchTransitionEnd: function (e) {
+		if (this._animatingZoom && e.propertyName.indexOf('transform') >= 0) {
+			this._onZoomTransitionEnd();
+		}
+	},
+
+	_nothingToAnimate: function () {
+		return !this._container.getElementsByClassName('leaflet-zoom-animated').length;
+	},
+
+	_tryAnimatedZoom: function (center, zoom, options) {
+
+		if (this._animatingZoom) { return true; }
+
+		options = options || {};
+
+		// don't animate if disabled, not supported or zoom difference is too large
+		if (!this._zoomAnimated || options.animate === false || this._nothingToAnimate() ||
+		        Math.abs(zoom - this._zoom) > this.options.zoomAnimationThreshold) { return false; }
+
+		// offset is the pixel coords of the zoom origin relative to the current center
+		var scale = this.getZoomScale(zoom),
+		    offset = this._getCenterOffset(center)._divideBy(1 - 1 / scale),
+			origin = this._getCenterLayerPoint()._add(offset);
+
+		// don't animate if the zoom origin isn't within one screen from the current center, unless forced
+		if (options.animate !== true && !this.getSize().contains(offset)) { return false; }
+
+		this
+		    .fire('movestart')
+		    .fire('zoomstart');
+
+		this._animateZoom(center, zoom, origin, scale, null, true);
+
+		return true;
+	},
+
+	_animateZoom: function (center, zoom, origin, scale, delta, backwards, forTouchZoom) {
+
+		if (!forTouchZoom) {
+			this._animatingZoom = true;
+		}
+
+		// put transform transition on all layers with leaflet-zoom-animated class
+		L.DomUtil.addClass(this._mapPane, 'leaflet-zoom-anim');
+
+		// remember what center/zoom to set after animation
+		this._animateToCenter = center;
+		this._animateToZoom = zoom;
+
+		// disable any dragging during animation
+		if (L.Draggable) {
+			L.Draggable._disabled = true;
+		}
+
+		L.Util.requestAnimFrame(function () {
+			this.fire('zoomanim', {
+				center: center,
+				zoom: zoom,
+				origin: origin,
+				scale: scale,
+				delta: delta,
+				backwards: backwards
+			});
+			// horrible hack to work around a Chrome bug https://github.com/Leaflet/Leaflet/issues/3689
+			setTimeout(L.bind(this._onZoomTransitionEnd, this), 250);
+		}, this);
+	},
+
+	_onZoomTransitionEnd: function () {
+		if (!this._animatingZoom) { return; }
+
+		this._animatingZoom = false;
+
+		L.DomUtil.removeClass(this._mapPane, 'leaflet-zoom-anim');
+
+		this._resetView(this._animateToCenter, this._animateToZoom, true, true);
+
+		if (L.Draggable) {
+			L.Draggable._disabled = false;
+		}
+	}
+});
+
+
+/*
+	Zoom animation logic for L.TileLayer.
+*/
+
+L.TileLayer.include({
+	_animateZoom: function (e) {
+		if (!this._animating) {
+			this._animating = true;
+			this._prepareBgBuffer();
+		}
+
+		var bg = this._bgBuffer,
+		    transform = L.DomUtil.TRANSFORM,
+		    initialTransform = e.delta ? L.DomUtil.getTranslateString(e.delta) : bg.style[transform],
+		    scaleStr = L.DomUtil.getScaleString(e.scale, e.origin);
+
+		bg.style[transform] = e.backwards ?
+				scaleStr + ' ' + initialTransform :
+				initialTransform + ' ' + scaleStr;
+	},
+
+	_endZoomAnim: function () {
+		var front = this._tileContainer,
+		    bg = this._bgBuffer;
+
+		front.style.visibility = '';
+		front.parentNode.appendChild(front); // Bring to fore
+
+		// force reflow
+		L.Util.falseFn(bg.offsetWidth);
+
+		var zoom = this._map.getZoom();
+		if (zoom > this.options.maxZoom || zoom < this.options.minZoom) {
+			this._clearBgBuffer();
+		}
+
+		this._animating = false;
+	},
+
+	_clearBgBuffer: function () {
+		var map = this._map;
+
+		if (map && !map._animatingZoom && !map.touchZoom._zooming) {
+			this._bgBuffer.innerHTML = '';
+			this._bgBuffer.style[L.DomUtil.TRANSFORM] = '';
+		}
+	},
+
+	_prepareBgBuffer: function () {
+
+		var front = this._tileContainer,
+		    bg = this._bgBuffer;
+
+		// if foreground layer doesn't have many tiles but bg layer does,
+		// keep the existing bg layer and just zoom it some more
+
+		var bgLoaded = this._getLoadedTilesPercentage(bg),
+		    frontLoaded = this._getLoadedTilesPercentage(front);
+
+		if (bg && bgLoaded > 0.5 && frontLoaded < 0.5) {
+
+			front.style.visibility = 'hidden';
+			this._stopLoadingImages(front);
+			return;
+		}
+
+		// prepare the buffer to become the front tile pane
+		bg.style.visibility = 'hidden';
+		bg.style[L.DomUtil.TRANSFORM] = '';
+
+		// switch out the current layer to be the new bg layer (and vice-versa)
+		this._tileContainer = bg;
+		bg = this._bgBuffer = front;
+
+		this._stopLoadingImages(bg);
+
+		//prevent bg buffer from clearing right after zoom
+		clearTimeout(this._clearBgBufferTimer);
+	},
+
+	_getLoadedTilesPercentage: function (container) {
+		var tiles = container.getElementsByTagName('img'),
+		    i, len, count = 0;
+
+		for (i = 0, len = tiles.length; i < len; i++) {
+			if (tiles[i].complete) {
+				count++;
+			}
+		}
+		return count / len;
+	},
+
+	// stops loading all tiles in the background layer
+	_stopLoadingImages: function (container) {
+		var tiles = Array.prototype.slice.call(container.getElementsByTagName('img')),
+		    i, len, tile;
+
+		for (i = 0, len = tiles.length; i < len; i++) {
+			tile = tiles[i];
+
+			if (!tile.complete) {
+				tile.onload = L.Util.falseFn;
+				tile.onerror = L.Util.falseFn;
+				tile.src = L.Util.emptyImageUrl;
+
+				tile.parentNode.removeChild(tile);
+			}
+		}
+	}
+});
+
+
+/*
+ * Provides L.Map with convenient shortcuts for using browser geolocation features.
+ */
+
+L.Map.include({
+	_defaultLocateOptions: {
+		watch: false,
+		setView: false,
+		maxZoom: Infinity,
+		timeout: 10000,
+		maximumAge: 0,
+		enableHighAccuracy: false
+	},
+
+	locate: function (/*Object*/ options) {
+
+		options = this._locateOptions = L.extend(this._defaultLocateOptions, options);
+
+		if (!navigator.geolocation) {
+			this._handleGeolocationError({
+				code: 0,
+				message: 'Geolocation not supported.'
+			});
+			return this;
+		}
+
+		var onResponse = L.bind(this._handleGeolocationResponse, this),
+			onError = L.bind(this._handleGeolocationError, this);
+
+		if (options.watch) {
+			this._locationWatchId =
+			        navigator.geolocation.watchPosition(onResponse, onError, options);
+		} else {
+			navigator.geolocation.getCurrentPosition(onResponse, onError, options);
+		}
+		return this;
+	},
+
+	stopLocate: function () {
+		if (navigator.geolocation) {
+			navigator.geolocation.clearWatch(this._locationWatchId);
+		}
+		if (this._locateOptions) {
+			this._locateOptions.setView = false;
+		}
+		return this;
+	},
+
+	_handleGeolocationError: function (error) {
+		var c = error.code,
+		    message = error.message ||
+		            (c === 1 ? 'permission denied' :
+		            (c === 2 ? 'position unavailable' : 'timeout'));
+
+		if (this._locateOptions.setView && !this._loaded) {
+			this.fitWorld();
+		}
+
+		this.fire('locationerror', {
+			code: c,
+			message: 'Geolocation error: ' + message + '.'
+		});
+	},
+
+	_handleGeolocationResponse: function (pos) {
+		var lat = pos.coords.latitude,
+		    lng = pos.coords.longitude,
+		    latlng = new L.LatLng(lat, lng),
+
+		    latAccuracy = 180 * pos.coords.accuracy / 40075017,
+		    lngAccuracy = latAccuracy / Math.cos(L.LatLng.DEG_TO_RAD * lat),
+
+		    bounds = L.latLngBounds(
+		            [lat - latAccuracy, lng - lngAccuracy],
+		            [lat + latAccuracy, lng + lngAccuracy]),
+
+		    options = this._locateOptions;
+
+		if (options.setView) {
+			var zoom = Math.min(this.getBoundsZoom(bounds), options.maxZoom);
+			this.setView(latlng, zoom);
+		}
+
+		var data = {
+			latlng: latlng,
+			bounds: bounds,
+			timestamp: pos.timestamp
+		};
+
+		for (var i in pos.coords) {
+			if (typeof pos.coords[i] === 'number') {
+				data[i] = pos.coords[i];
+			}
+		}
+
+		this.fire('locationfound', data);
+	}
+});
+
+
+}(window, document));
+;
+
+/*
+ * Leaflet plugin to create map icons using Maki Icons from MapBox.
+ *
+ * References:
+ *   Maki Icons: https://www.mapbox.com/maki/
+ *   MapBox Marker API: https://www.mapbox.com/developers/api/static/#markers
+ *
+ * Usage:
+ *   var icon = L.MakiMarkers.icon({icon: "rocket", color: "#b0b", size: "m"});
+ *
+ * License:
+ *   MIT: http://jseppi.mit-license.org/
+ */
+ /*global L:false */
+(function () {
+  "use strict";
+  L.MakiMarkers = {
+    // Available Maki Icons
+    icons: ["airfield","airport","alcohol-shop","america-football","art-gallery","bakery","bank","bar",
+      "baseball","basketball","beer","bicycle","building","bus","cafe","camera","campsite","car",
+      "cemetery","chemist","cinema","circle-stroked","circle","city","clothing-store","college",
+      "commercial","cricket","cross","dam","danger","disability","dog-park","embassy",
+      "emergency-telephone","entrance","farm","fast-food","ferry","fire-station","fuel","garden",
+      "golf","grocery","hairdresser","harbor","heart","heliport","hospital","industrial",
+      "land-use","laundry","library","lighthouse","lodging","logging","london-underground",
+      "marker-stroked","marker","minefield","mobilephone","monument","museum","music","oil-well",
+      "park2","park","parking-garage","parking","pharmacy","pitch","place-of-worship",
+      "playground","police","polling-place","post","prison","rail-above","rail-light",
+      "rail-metro","rail-underground","rail","religious-christian","religious-jewish",
+      "religious-muslim","restaurant","roadblock","rocket","school","scooter","shop","skiing",
+      "slaughterhouse","soccer","square-stroked","square","star-stroked","star","suitcase",
+      "swimming","telephone","tennis","theatre","toilets","town-hall","town","triangle-stroked",
+      "triangle","village","warehouse","waste-basket","water","wetland","zoo"
+    ],
+    defaultColor: "#0a0",
+    defaultIcon: "circle-stroked",
+    defaultSize: "m",
+    apiUrl: "https://api.tiles.mapbox.com/v3/marker/",
+    smallOptions: {
+      iconSize: [20, 50],
+      popupAnchor: [0,-20]
+    },
+    mediumOptions: {
+      iconSize: [30,70],
+      popupAnchor: [0,-30]
+    },
+    largeOptions: {
+      iconSize: [36,90],
+      popupAnchor: [0,-40]
+    }
+  };
+
+  L.MakiMarkers.Icon = L.Icon.extend({
+    options: {
+      //Maki icon: any from https://www.mapbox.com/maki/ (ref: L.MakiMarkers.icons)
+      icon: L.MakiMarkers.defaultIcon,
+      //Marker color: short or long form hex color code
+      color: L.MakiMarkers.defaultColor,
+      //Marker size: "s" (small), "m" (medium), or "l" (large)
+      size: L.MakiMarkers.defaultSize,
+      shadowAnchor: null,
+      shadowSize: null,
+      shadowUrl: null,
+      className: "maki-marker"
+    },
+
+    initialize: function(options) {
+      var pin;
+
+      options = L.setOptions(this, options);
+
+      switch (options.size) {
+        case "s":
+          L.extend(options, L.MakiMarkers.smallOptions);
+          break;
+        case "l":
+          L.extend(options, L.MakiMarkers.largeOptions);
+          break;
+        default:
+          options.size = "m";
+          L.extend(options, L.MakiMarkers.mediumOptions);
+          break;
+      }
+
+
+      pin = "pin-" + options.size;
+
+      if (options.icon !== null) {
+        pin += "-" + options.icon;
+      }
+
+      if (options.color !== null) {
+        if (options.color.charAt(0) === "#") {
+          options.color = options.color.substr(1);
+        }
+
+        pin += "+" + options.color;
+      }
+
+      options.iconUrl = "" + L.MakiMarkers.apiUrl + pin +  ".png";
+      options.iconRetinaUrl = L.MakiMarkers.apiUrl + pin + "@2x.png";
+    }
+  });
+
+  L.MakiMarkers.icon = function(options) {
+    return new L.MakiMarkers.Icon(options);
+  };
+})();
+
+;
+
+/*! Version: 0.43.0
+Date: 2015-05-27 */
+
+/*!
+Copyright (c) 2014 Dominik Moritz
+
+This file is part of the leaflet locate control. It is licensed under the MIT license.
+You can find the project at: https://github.com/domoritz/leaflet-locatecontrol
+*/
+!function(a,b){"function"==typeof define&&define.amd?define(["leaflet"],a):"object"==typeof exports&&(module.exports=a("undefined"!=typeof b&&b.L?L:require("leaflet"))),"undefined"!=typeof b&&b.L&&(b.L.Locate=a(L))}(function(a){return a.Control.Locate=a.Control.extend({options:{position:"topleft",drawCircle:!0,follow:!1,stopFollowingOnDrag:!1,remainActive:!1,markerClass:a.circleMarker,circleStyle:{color:"#136AEC",fillColor:"#136AEC",fillOpacity:.15,weight:2,opacity:.5},markerStyle:{color:"#136AEC",fillColor:"#2A93EE",fillOpacity:.7,weight:2,opacity:.9,radius:5},followCircleStyle:{},followMarkerStyle:{},icon:"fa fa-map-marker",iconLoading:"fa fa-spinner fa-spin",circlePadding:[0,0],metric:!0,onLocationError:function(a){alert(a.message)},onLocationOutsideMapBounds:function(a){a.stop(),alert(a.options.strings.outsideMapBoundsMsg)},setView:!0,keepCurrentZoomLevel:!1,showPopup:!0,strings:{title:"Show me where I am",popup:"You are within {distance} {unit} from this point",outsideMapBoundsMsg:"You seem located outside the boundaries of the map"},locateOptions:{maxZoom:1/0,watch:!0}},initialize:function(b){a.Map.addInitHook(function(){this.options.locateControl&&this.addControl(this)});for(var c in b)"object"==typeof this.options[c]?a.extend(this.options[c],b[c]):this.options[c]=b[c];a.extend(this.options.locateOptions,{setView:!1})},_activate:function(){this.options.setView&&(this._locateOnNextLocationFound=!0),this._active||this._map.locate(this.options.locateOptions),this._active=!0,this.options.follow&&this._startFollowing(this._map)},_deactivate:function(){this._map.stopLocate(),this._map.off("dragstart",this._stopFollowing),this.options.follow&&this._following&&this._stopFollowing(this._map)},drawMarker:function(b){void 0===this._event.accuracy&&(this._event.accuracy=0);var c=this._event.accuracy;this._locateOnNextLocationFound&&(this._isOutsideMapBounds()?this.options.onLocationOutsideMapBounds(this):this.options.keepCurrentZoomLevel||!this.options.drawCircle?b.panTo([this._event.latitude,this._event.longitude]):b.fitBounds(this._event.bounds,{padding:this.options.circlePadding,maxZoom:this.options.keepCurrentZoomLevel?b.getZoom():this.options.locateOptions.maxZoom}),this._locateOnNextLocationFound=!1);var d,e;if(this.options.drawCircle)if(d=this._following?this.options.followCircleStyle:this.options.circleStyle,this._circle){this._circle.setLatLng(this._event.latlng).setRadius(c);for(e in d)this._circle.options[e]=d[e]}else this._circle=a.circle(this._event.latlng,c,d).addTo(this._layer);var f,g;this.options.metric?(f=c.toFixed(0),g="meters"):(f=(3.2808399*c).toFixed(0),g="feet");var h;h=this._following?this.options.followMarkerStyle:this.options.markerStyle,this._marker?this.updateMarker(this._event.latlng,h):this._marker=this.createMarker(this._event.latlng,h).addTo(this._layer);var i=this.options.strings.popup;this.options.showPopup&&i&&this._marker.bindPopup(a.Util.template(i,{distance:f,unit:g}))._popup.setLatLng(this._event.latlng),this._toggleContainerStyle()},createMarker:function(a,b){return this.options.markerClass(a,b)},updateMarker:function(a,b){this._marker.setLatLng(a);for(var c in b)this._marker.options[c]=b[c]},removeMarker:function(){this._layer.clearLayers(),this._marker=void 0,this._circle=void 0},onAdd:function(b){var c=a.DomUtil.create("div","leaflet-control-locate leaflet-bar leaflet-control");this._layer=new a.LayerGroup,this._layer.addTo(b),this._event=void 0;var d={};return a.extend(d,this.options.markerStyle,this.options.followMarkerStyle),this.options.followMarkerStyle=d,d={},a.extend(d,this.options.circleStyle,this.options.followCircleStyle),this.options.followCircleStyle=d,this._link=a.DomUtil.create("a","leaflet-bar-part leaflet-bar-part-single",c),this._link.href="#",this._link.title=this.options.strings.title,this._icon=a.DomUtil.create("span",this.options.icon,this._link),a.DomEvent.on(this._link,"click",a.DomEvent.stopPropagation).on(this._link,"click",a.DomEvent.preventDefault).on(this._link,"click",function(){var a=void 0===this._event||this._map.getBounds().contains(this._event.latlng)||!this.options.setView||this._isOutsideMapBounds();!this.options.remainActive&&this._active&&a?this.stop():this.start()},this).on(this._link,"dblclick",a.DomEvent.stopPropagation),this._resetVariables(),this.bindEvents(b),c},bindEvents:function(a){a.on("locationfound",this._onLocationFound,this),a.on("locationerror",this._onLocationError,this),a.on("unload",this.stop,this)},start:function(){this._activate(),this._event?this.drawMarker(this._map):this._setClasses("requesting")},stop:function(){this._deactivate(),this._cleanClasses(),this._resetVariables(),this.removeMarker()},_onLocationError:function(a){3==a.code&&this.options.locateOptions.watch||(this.stop(),this.options.onLocationError(a))},_onLocationFound:function(a){this._event&&this._event.latlng.lat===a.latlng.lat&&this._event.latlng.lng===a.latlng.lng&&this._event.accuracy===a.accuracy||this._active&&(this._event=a,this.options.follow&&this._following&&(this._locateOnNextLocationFound=!0),this.drawMarker(this._map))},_startFollowing:function(){this._map.fire("startfollowing",this),this._following=!0,this.options.stopFollowingOnDrag&&this._map.on("dragstart",this._stopFollowing,this)},_stopFollowing:function(){this._map.fire("stopfollowing",this),this._following=!1,this.options.stopFollowingOnDrag&&this._map.off("dragstart",this._stopFollowing),this._toggleContainerStyle()},_isOutsideMapBounds:function(){return void 0===this._event?!1:this._map.options.maxBounds&&!this._map.options.maxBounds.contains(this._event.latlng)},_toggleContainerStyle:function(){this._container&&this._setClasses(this._following?"following":"active")},_setClasses:function(b){"requesting"==b?(a.DomUtil.removeClasses(this._container,"active following"),a.DomUtil.addClasses(this._container,"requesting"),a.DomUtil.removeClasses(this._icon,this.options.icon),a.DomUtil.addClasses(this._icon,this.options.iconLoading)):"active"==b?(a.DomUtil.removeClasses(this._container,"requesting following"),a.DomUtil.addClasses(this._container,"active"),a.DomUtil.removeClasses(this._icon,this.options.iconLoading),a.DomUtil.addClasses(this._icon,this.options.icon)):"following"==b&&(a.DomUtil.removeClasses(this._container,"requesting"),a.DomUtil.addClasses(this._container,"active following"),a.DomUtil.removeClasses(this._icon,this.options.iconLoading),a.DomUtil.addClasses(this._icon,this.options.icon))},_cleanClasses:function(){a.DomUtil.removeClass(this._container,"requesting"),a.DomUtil.removeClass(this._container,"active"),a.DomUtil.removeClass(this._container,"following"),a.DomUtil.removeClasses(this._icon,this.options.iconLoading),a.DomUtil.addClasses(this._icon,this.options.icon)},_resetVariables:function(){this._active=!1,this._locateOnNextLocationFound=this.options.setView,this._following=!1}}),a.control.locate=function(b){return new a.Control.Locate(b)},function(){var b=function(b,c,d){d=d.split(" "),d.forEach(function(d){a.DomUtil[b].call(this,c,d)})};a.DomUtil.addClasses=function(a,c){b("addClass",a,c)},a.DomUtil.removeClasses=function(a,c){b("removeClass",a,c)}}(),a.Control.Locate},window);
+//# sourceMappingURL=L.Control.Locate.min.js.map
+;
+
+/* 
+ * Leaflet Control Search v1.8.3 - 2015-09-03 
+ * 
+ * Copyright 2015 Stefano Cudini 
+ * stefano.cudini@gmail.com 
+ * http://labs.easyblog.it/ 
+ * 
+ * Licensed under the MIT license. 
+ * 
+ * Demo: 
+ * http://labs.easyblog.it/maps/leaflet-search/ 
+ * 
+ * Source: 
+ * git@github.com:stefanocudini/leaflet-search.git 
+ * 
+ */
+(function(){L.Control.Search=L.Control.extend({includes:L.Mixin.Events,options:{layer:null,sourceData:null,url:"",jsonpParam:null,propertyName:"title",propertyLoc:"loc",formatData:null,filterData:null,callTip:null,container:"",minLength:1,initial:!0,casesesitive:!1,autoType:!0,delayType:400,tooltipLimit:-1,tipAutoSubmit:!0,autoResize:!0,collapsed:!0,autoCollapse:!1,autoCollapseTime:1200,zoom:null,position:"topleft",textErr:"Location not found",textCancel:"Cancel",textPlaceholder:"Search...",animateLocation:!0,circleLocation:!0,markerLocation:!1,markerIcon:new L.Icon.Default},initialize:function(a){L.Util.setOptions(this,a||{}),this._inputMinSize=this.options.textPlaceholder?this.options.textPlaceholder.length:10,this._layer=this.options.layer||new L.LayerGroup,this._filterData=this.options.filterData||this._defaultFilterData,this._formatData=this.options.formatData||this._defaultFormatData,this._autoTypeTmp=this.options.autoType,this._countertips=0,this._recordsCache={},this._curReq=null},onAdd:function(a){return this._map=a,this._container=L.DomUtil.create("div","leaflet-control-search"),this._input=this._createInput(this.options.textPlaceholder,"search-input"),this._tooltip=this._createTooltip("search-tooltip"),this._cancel=this._createCancel(this.options.textCancel,"search-cancel"),this._button=this._createButton(this.options.textPlaceholder,"search-button"),this._alert=this._createAlert("search-alert"),this.options.collapsed===!1&&this.expand(this.options.collapsed),(this.options.circleLocation||this.options.markerLocation||this.options.markerIcon)&&(this._markerLoc=new L.Control.Search.Marker([0,0],{showCircle:this.options.circleLocation,showMarker:this.options.markerLocation,icon:this.options.markerIcon})),this.setLayer(this._layer),a.on({resize:this._handleAutoresize},this),this._container},addTo:function(a){return this.options.container?(this._container=this.onAdd(a),this._wrapper=L.DomUtil.get(this.options.container),this._wrapper.style.position="relative",this._wrapper.appendChild(this._container)):L.Control.prototype.addTo.call(this,a),this},onRemove:function(a){this._recordsCache={}},_getPath:function(a,b){var c=b.split("."),d=c.pop(),e=c.length,f=c[0],g=1;if(e>0)for(;(a=a[f])&&e>g;)f=c[g++];return a?a[d]:void 0},setLayer:function(a){return this._layer=a,this._layer.addTo(this._map),this._markerLoc&&this._layer.addLayer(this._markerLoc),this},showAlert:function(a){a=a||this.options.textErr,this._alert.style.display="block",this._alert.innerHTML=a,clearTimeout(this.timerAlert);var b=this;return this.timerAlert=setTimeout(function(){b.hideAlert()},this.options.autoCollapseTime),this},hideAlert:function(){return this._alert.style.display="none",this},cancel:function(){return this._input.value="",this._handleKeypress({keyCode:8}),this._input.size=this._inputMinSize,this._input.focus(),this._cancel.style.display="none",this._hideTooltip(),this},expand:function(a){return a="boolean"==typeof a?a:!0,this._input.style.display="block",L.DomUtil.addClass(this._container,"search-exp"),a!==!1&&(this._input.focus(),this._map.on("dragstart click",this.collapse,this)),this.fire("search_expanded"),this},collapse:function(){return this._hideTooltip(),this.cancel(),this._alert.style.display="none",this._input.blur(),this.options.collapsed&&(this._input.style.display="none",this._cancel.style.display="none",L.DomUtil.removeClass(this._container,"search-exp"),this._map.off("dragstart click",this.collapse,this)),this.fire("search_collapsed"),this},collapseDelayed:function(){if(!this.options.autoCollapse)return this;var a=this;return clearTimeout(this.timerCollapse),this.timerCollapse=setTimeout(function(){a.collapse()},this.options.autoCollapseTime),this},collapseDelayedStop:function(){return clearTimeout(this.timerCollapse),this},_createAlert:function(a){var b=L.DomUtil.create("div",a,this._container);return b.style.display="none",L.DomEvent.on(b,"click",L.DomEvent.stop,this).on(b,"click",this.hideAlert,this),b},_createInput:function(a,b){var c=L.DomUtil.create("label",b,this._container),d=L.DomUtil.create("input",b,this._container);return d.type="text",d.size=this._inputMinSize,d.value="",d.autocomplete="off",d.autocorrect="off",d.autocapitalize="off",d.placeholder=a,d.style.display="none",d.role="search",d.id=d.role+d.type+d.size,c.htmlFor=d.id,c.style.display="none",c.value=a,L.DomEvent.disableClickPropagation(d).on(d,"keyup",this._handleKeypress,this).on(d,"keydown",this._handleAutoresize,this).on(d,"blur",this.collapseDelayed,this).on(d,"focus",this.collapseDelayedStop,this),d},_createCancel:function(a,b){var c=L.DomUtil.create("a",b,this._container);return c.href="#",c.title=a,c.style.display="none",c.innerHTML="<span>&otimes;</span>",L.DomEvent.on(c,"click",L.DomEvent.stop,this).on(c,"click",this.cancel,this),c},_createButton:function(a,b){var c=L.DomUtil.create("a",b,this._container);return c.href="#",c.title=a,L.DomEvent.on(c,"click",L.DomEvent.stop,this).on(c,"click",this._handleSubmit,this).on(c,"focus",this.collapseDelayedStop,this).on(c,"blur",this.collapseDelayed,this),c},_createTooltip:function(a){var b=L.DomUtil.create("ul",a,this._container);b.style.display="none";var c=this;return L.DomEvent.disableClickPropagation(b).on(b,"blur",this.collapseDelayed,this).on(b,"mousewheel",function(a){c.collapseDelayedStop(),L.DomEvent.stopPropagation(a)},this).on(b,"mouseover",function(a){c.collapseDelayedStop()},this),b},_createTip:function(a,b){var c;if(this.options.callTip){if(c=this.options.callTip(a,b),"string"==typeof c){var d=L.DomUtil.create("div");d.innerHTML=c,c=d.firstChild}}else c=L.DomUtil.create("li",""),c.innerHTML=a;return L.DomUtil.addClass(c,"search-tip"),c._text=a,L.DomEvent.disableClickPropagation(c).on(c,"click",L.DomEvent.stop,this).on(c,"click",function(b){this._input.value=a,this._handleAutoresize(),this._input.focus(),this._hideTooltip(),this.options.tipAutoSubmit&&this._handleSubmit()},this),c},_getUrl:function(a){return"function"==typeof this.options.url?this.options.url(a):this.options.url},_defaultFilterData:function(a,b){var c,d,e=new RegExp("^[.]$|[[]|()*]","g"),f={};a=a.replace(e,""),c=this.options.initial?"^":"",d=new RegExp(c+a,this.options.casesesitive?void 0:"i");for(var g in b)d.test(g)&&(f[g]=b[g]);return f},showTooltip:function(a){var b;this._countertips=0,this._tooltip.innerHTML="",this._tooltip.currentSelection=-1;for(var c in a){if(++this._countertips==this.options.tooltipLimit)break;b=this._createTip(c,a[c]),this._tooltip.appendChild(b)}return this._countertips>0?(this._tooltip.style.display="block",this._autoTypeTmp&&this._autoType(),this._autoTypeTmp=this.options.autoType):this._hideTooltip(),this._tooltip.scrollTop=0,this._countertips},_hideTooltip:function(){return this._tooltip.style.display="none",this._tooltip.innerHTML="",0},_defaultFormatData:function(a){var b,c=this.options.propertyName,d=this.options.propertyLoc,e={};if(L.Util.isArray(d))for(b in a)e[this._getPath(a[b],c)]=L.latLng(a[b][d[0]],a[b][d[1]]);else for(b in a)e[this._getPath(a[b],c)]=L.latLng(this._getPath(a[b],d));return e},_recordsFromJsonp:function(a,b){L.Control.Search.callJsonp=b;var c=L.DomUtil.create("script","leaflet-search-jsonp",document.getElementsByTagName("body")[0]),d=L.Util.template(this._getUrl(a)+"&"+this.options.jsonpParam+"=L.Control.Search.callJsonp",{s:a});return c.type="text/javascript",c.src=d,{abort:function(){c.parentNode.removeChild(c)}}},_recordsFromAjax:function(a,b){void 0===window.XMLHttpRequest&&(window.XMLHttpRequest=function(){try{return new ActiveXObject("Microsoft.XMLHTTP.6.0")}catch(a){try{return new ActiveXObject("Microsoft.XMLHTTP.3.0")}catch(b){throw new Error("XMLHttpRequest is not supported")}}});var c=L.Browser.ie&&!window.atob&&document.querySelector,d=c?new XDomainRequest:new XMLHttpRequest,e=L.Util.template(this._getUrl(a),{s:a});d.open("GET",e);return d.onload=function(){b(JSON.parse(d.responseText))},d.onreadystatechange=function(){4===d.readyState&&200===d.status&&this.onload()},d.send(),d},_recordsFromLayer:function(){var a,b=this,c={},d=this.options.propertyName;return this._layer.eachLayer(function(e){if(!(e instanceof L.Control.Search.Marker))if(e instanceof L.Marker||e instanceof L.CircleMarker)if(b._getPath(e.options,d))a=e.getLatLng(),a.layer=e,c[b._getPath(e.options,d)]=a;else{if(!b._getPath(e.feature.properties,d))throw new Error("propertyName '"+d+"' not found in marker");a=e.getLatLng(),a.layer=e,c[b._getPath(e.feature.properties,d)]=a}else if(e.hasOwnProperty("feature")){if(!e.feature.properties.hasOwnProperty(d))throw new Error("propertyName '"+d+"' not found in feature");a=e.getBounds().getCenter(),a.layer=e,c[e.feature.properties[d]]=a}else e instanceof L.LayerGroup&&e.eachLayer(function(b){a=b.getLatLng(),a.layer=b,c[b.feature.properties[d]]=a})},this),c},_autoType:function(){var a=this._input.value.length,b=this._tooltip.firstChild._text,c=b.length;if(0===b.indexOf(this._input.value))if(this._input.value=b,this._handleAutoresize(),this._input.createTextRange){var d=this._input.createTextRange();d.collapse(!0),d.moveStart("character",a),d.moveEnd("character",c),d.select()}else this._input.setSelectionRange?this._input.setSelectionRange(a,c):this._input.selectionStart&&(this._input.selectionStart=a,this._input.selectionEnd=c)},_hideAutoType:function(){var a;if((a=this._input.selection)&&a.empty)a.empty();else if(this._input.createTextRange){a=this._input.createTextRange(),a.collapse(!0);var b=this._input.value.length;a.moveStart("character",b),a.moveEnd("character",b),a.select()}else this._input.getSelection&&this._input.getSelection().removeAllRanges(),this._input.selectionStart=this._input.selectionEnd},_handleKeypress:function(a){switch(a.keyCode){case 27:this.collapse();break;case 13:1==this._countertips&&this._handleArrowSelect(1),this._handleSubmit();break;case 38:this._handleArrowSelect(-1);break;case 40:this._handleArrowSelect(1);break;case 37:case 39:case 16:case 17:break;case 8:case 46:this._autoTypeTmp=!1;break;default:if(this._input.value.length?this._cancel.style.display="block":this._cancel.style.display="none",this._input.value.length>=this.options.minLength){var b=this;clearTimeout(this.timerKeypress),this.timerKeypress=setTimeout(function(){b._fillRecordsCache()},this.options.delayType)}else this._hideTooltip()}},searchText:function(a){var b=a.charCodeAt(a.length);this._input.value=a,this._input.style.display="block",L.DomUtil.addClass(this._container,"search-exp"),this._autoTypeTmp=!1,this._handleKeypress({keyCode:b})},_fillRecordsCache:function(){var a,b=this._input.value,c=this;this._curReq&&this._curReq.abort&&this._curReq.abort(),L.DomUtil.addClass(this._container,"search-load"),this.options.layer?(this._recordsCache=this._recordsFromLayer(),a=this._filterData(this._input.value,this._recordsCache),this.showTooltip(a),L.DomUtil.removeClass(this._container,"search-load")):(this.options.sourceData?this._retrieveData=this.options.sourceData:this.options.url&&(this._retrieveData=this.options.jsonpParam?this._recordsFromJsonp:this._recordsFromAjax),this._curReq=this._retrieveData.call(this,b,function(b){c._recordsCache=c._formatData(b),a=c.options.sourceData?c._filterData(c._input.value,c._recordsCache):c._recordsCache,c.showTooltip(a),L.DomUtil.removeClass(c._container,"search-load")}))},_handleAutoresize:function(){this._input.style.maxWidth!=this._map._container.offsetWidth&&(this._input.style.maxWidth=L.DomUtil.getStyle(this._map._container,"width")),this.options.autoResize&&this._container.offsetWidth+45<this._map._container.offsetWidth&&(this._input.size=this._input.value.length<this._inputMinSize?this._inputMinSize:this._input.value.length)},_handleArrowSelect:function(a){var b=this._tooltip.hasChildNodes()?this._tooltip.childNodes:[];for(i=0;i<b.length;i++)L.DomUtil.removeClass(b[i],"search-tip-select");if(1==a&&this._tooltip.currentSelection>=b.length-1)L.DomUtil.addClass(b[this._tooltip.currentSelection],"search-tip-select");else if(-1==a&&this._tooltip.currentSelection<=0)this._tooltip.currentSelection=-1;else if("none"!=this._tooltip.style.display){this._tooltip.currentSelection+=a,L.DomUtil.addClass(b[this._tooltip.currentSelection],"search-tip-select"),this._input.value=b[this._tooltip.currentSelection]._text;var c=b[this._tooltip.currentSelection].offsetTop;c+b[this._tooltip.currentSelection].clientHeight>=this._tooltip.scrollTop+this._tooltip.clientHeight?this._tooltip.scrollTop=c-this._tooltip.clientHeight+b[this._tooltip.currentSelection].clientHeight:c<=this._tooltip.scrollTop&&(this._tooltip.scrollTop=c)}},_handleSubmit:function(){if(this._hideAutoType(),this.hideAlert(),this._hideTooltip(),"none"==this._input.style.display)this.expand();else if(""===this._input.value)this.collapse();else{var a=this._getLocation(this._input.value);a===!1?this.showAlert():(this.showLocation(a,this._input.value),this.fire("search_locationfound",{latlng:a,text:this._input.value,layer:a.layer?a.layer:null}))}},_getLocation:function(a){return this._recordsCache.hasOwnProperty(a)?this._recordsCache[a]:!1},showLocation:function(a,b){return this.options.zoom?this._map.setView(a,this.options.zoom):this._map.panTo(a),this._markerLoc&&(this._markerLoc.setLatLng(a),this._markerLoc.setTitle(b),this._markerLoc.show(),this.options.animateLocation&&this._markerLoc.animate()),this.options.autoCollapse&&this.collapse(),this}}),L.Control.Search.Marker=L.Marker.extend({includes:L.Mixin.Events,options:{radius:10,weight:3,color:"#e03",stroke:!0,fill:!1,title:"",icon:new L.Icon.Default,showCircle:!0,showMarker:!1},initialize:function(a,b){L.setOptions(this,b),L.Marker.prototype.initialize.call(this,a,b),this.options.showCircle&&(this._circleLoc=new L.CircleMarker(a,this.options))},onAdd:function(a){L.Marker.prototype.onAdd.call(this,a),this._circleLoc&&a.addLayer(this._circleLoc),this.hide()},onRemove:function(a){L.Marker.prototype.onRemove.call(this,a),this._circleLoc&&a.removeLayer(this._circleLoc)},setLatLng:function(a){return L.Marker.prototype.setLatLng.call(this,a),this._circleLoc&&this._circleLoc.setLatLng(a),this},setTitle:function(a){return a=a||"",this.options.title=a,this._icon&&(this._icon.title=a),this},show:function(){return this.options.showMarker&&(this._icon&&(this._icon.style.display="block"),this._shadow&&(this._shadow.style.display="block")),this._circleLoc&&this._circleLoc.setStyle({fill:this.options.fill,stroke:this.options.stroke}),this},hide:function(){return this._icon&&(this._icon.style.display="none"),this._shadow&&(this._shadow.style.display="none"),this._circleLoc&&this._circleLoc.setStyle({fill:!1,stroke:!1}),this},animate:function(){if(this._circleLoc){var a=this._circleLoc,b=200,c=10,d=parseInt(a._radius/c),e=this.options.radius,f=2.5*a._radius,g=0;a._timerAnimLoc=setInterval(function(){g+=.5,d+=g,f-=d,a.setRadius(f),e>f&&(clearInterval(a._timerAnimLoc),a.setRadius(e))},b)}return this}}),L.Map.addInitHook(function(){this.options.searchControl&&(this.searchControl=L.control.search(this.options.searchControl),this.addControl(this.searchControl))}),L.control.search=function(a){return new L.Control.Search(a)}}).call(this);
 ;
 
 !function(a,b){"object"==typeof exports&&"undefined"!=typeof module?module.exports=b():"function"==typeof define&&define.amd?define(b):a.moment=b()}(this,function(){"use strict";function a(){return Md.apply(null,arguments)}function b(a){Md=a}function c(a){return"[object Array]"===Object.prototype.toString.call(a)}function d(a){return a instanceof Date||"[object Date]"===Object.prototype.toString.call(a)}function e(a,b){var c,d=[];for(c=0;c<a.length;++c)d.push(b(a[c],c));return d}function f(a,b){return Object.prototype.hasOwnProperty.call(a,b)}function g(a,b){for(var c in b)f(b,c)&&(a[c]=b[c]);return f(b,"toString")&&(a.toString=b.toString),f(b,"valueOf")&&(a.valueOf=b.valueOf),a}function h(a,b,c,d){return Ca(a,b,c,d,!0).utc()}function i(){return{empty:!1,unusedTokens:[],unusedInput:[],overflow:-2,charsLeftOver:0,nullInput:!1,invalidMonth:null,invalidFormat:!1,userInvalidated:!1,iso:!1}}function j(a){return null==a._pf&&(a._pf=i()),a._pf}function k(a){if(null==a._isValid){var b=j(a);a._isValid=!(isNaN(a._d.getTime())||!(b.overflow<0)||b.empty||b.invalidMonth||b.invalidWeekday||b.nullInput||b.invalidFormat||b.userInvalidated),a._strict&&(a._isValid=a._isValid&&0===b.charsLeftOver&&0===b.unusedTokens.length&&void 0===b.bigHour)}return a._isValid}function l(a){var b=h(NaN);return null!=a?g(j(b),a):j(b).userInvalidated=!0,b}function m(a,b){var c,d,e;if("undefined"!=typeof b._isAMomentObject&&(a._isAMomentObject=b._isAMomentObject),"undefined"!=typeof b._i&&(a._i=b._i),"undefined"!=typeof b._f&&(a._f=b._f),"undefined"!=typeof b._l&&(a._l=b._l),"undefined"!=typeof b._strict&&(a._strict=b._strict),"undefined"!=typeof b._tzm&&(a._tzm=b._tzm),"undefined"!=typeof b._isUTC&&(a._isUTC=b._isUTC),"undefined"!=typeof b._offset&&(a._offset=b._offset),"undefined"!=typeof b._pf&&(a._pf=j(b)),"undefined"!=typeof b._locale&&(a._locale=b._locale),Od.length>0)for(c in Od)d=Od[c],e=b[d],"undefined"!=typeof e&&(a[d]=e);return a}function n(b){m(this,b),this._d=new Date(null!=b._d?b._d.getTime():NaN),Pd===!1&&(Pd=!0,a.updateOffset(this),Pd=!1)}function o(a){return a instanceof n||null!=a&&null!=a._isAMomentObject}function p(a){return 0>a?Math.ceil(a):Math.floor(a)}function q(a){var b=+a,c=0;return 0!==b&&isFinite(b)&&(c=p(b)),c}function r(a,b,c){var d,e=Math.min(a.length,b.length),f=Math.abs(a.length-b.length),g=0;for(d=0;e>d;d++)(c&&a[d]!==b[d]||!c&&q(a[d])!==q(b[d]))&&g++;return g+f}function s(){}function t(a){return a?a.toLowerCase().replace("_","-"):a}function u(a){for(var b,c,d,e,f=0;f<a.length;){for(e=t(a[f]).split("-"),b=e.length,c=t(a[f+1]),c=c?c.split("-"):null;b>0;){if(d=v(e.slice(0,b).join("-")))return d;if(c&&c.length>=b&&r(e,c,!0)>=b-1)break;b--}f++}return null}function v(a){var b=null;if(!Qd[a]&&"undefined"!=typeof module&&module&&module.exports)try{b=Nd._abbr,require("./locale/"+a),w(b)}catch(c){}return Qd[a]}function w(a,b){var c;return a&&(c="undefined"==typeof b?y(a):x(a,b),c&&(Nd=c)),Nd._abbr}function x(a,b){return null!==b?(b.abbr=a,Qd[a]=Qd[a]||new s,Qd[a].set(b),w(a),Qd[a]):(delete Qd[a],null)}function y(a){var b;if(a&&a._locale&&a._locale._abbr&&(a=a._locale._abbr),!a)return Nd;if(!c(a)){if(b=v(a))return b;a=[a]}return u(a)}function z(a,b){var c=a.toLowerCase();Rd[c]=Rd[c+"s"]=Rd[b]=a}function A(a){return"string"==typeof a?Rd[a]||Rd[a.toLowerCase()]:void 0}function B(a){var b,c,d={};for(c in a)f(a,c)&&(b=A(c),b&&(d[b]=a[c]));return d}function C(b,c){return function(d){return null!=d?(E(this,b,d),a.updateOffset(this,c),this):D(this,b)}}function D(a,b){return a._d["get"+(a._isUTC?"UTC":"")+b]()}function E(a,b,c){return a._d["set"+(a._isUTC?"UTC":"")+b](c)}function F(a,b){var c;if("object"==typeof a)for(c in a)this.set(c,a[c]);else if(a=A(a),"function"==typeof this[a])return this[a](b);return this}function G(a,b,c){var d=""+Math.abs(a),e=b-d.length,f=a>=0;return(f?c?"+":"":"-")+Math.pow(10,Math.max(0,e)).toString().substr(1)+d}function H(a,b,c,d){var e=d;"string"==typeof d&&(e=function(){return this[d]()}),a&&(Vd[a]=e),b&&(Vd[b[0]]=function(){return G(e.apply(this,arguments),b[1],b[2])}),c&&(Vd[c]=function(){return this.localeData().ordinal(e.apply(this,arguments),a)})}function I(a){return a.match(/\[[\s\S]/)?a.replace(/^\[|\]$/g,""):a.replace(/\\/g,"")}function J(a){var b,c,d=a.match(Sd);for(b=0,c=d.length;c>b;b++)Vd[d[b]]?d[b]=Vd[d[b]]:d[b]=I(d[b]);return function(e){var f="";for(b=0;c>b;b++)f+=d[b]instanceof Function?d[b].call(e,a):d[b];return f}}function K(a,b){return a.isValid()?(b=L(b,a.localeData()),Ud[b]=Ud[b]||J(b),Ud[b](a)):a.localeData().invalidDate()}function L(a,b){function c(a){return b.longDateFormat(a)||a}var d=5;for(Td.lastIndex=0;d>=0&&Td.test(a);)a=a.replace(Td,c),Td.lastIndex=0,d-=1;return a}function M(a){return"function"==typeof a&&"[object Function]"===Object.prototype.toString.call(a)}function N(a,b,c){ie[a]=M(b)?b:function(a){return a&&c?c:b}}function O(a,b){return f(ie,a)?ie[a](b._strict,b._locale):new RegExp(P(a))}function P(a){return a.replace("\\","").replace(/\\(\[)|\\(\])|\[([^\]\[]*)\]|\\(.)/g,function(a,b,c,d,e){return b||c||d||e}).replace(/[-\/\\^$*+?.()|[\]{}]/g,"\\$&")}function Q(a,b){var c,d=b;for("string"==typeof a&&(a=[a]),"number"==typeof b&&(d=function(a,c){c[b]=q(a)}),c=0;c<a.length;c++)je[a[c]]=d}function R(a,b){Q(a,function(a,c,d,e){d._w=d._w||{},b(a,d._w,d,e)})}function S(a,b,c){null!=b&&f(je,a)&&je[a](b,c._a,c,a)}function T(a,b){return new Date(Date.UTC(a,b+1,0)).getUTCDate()}function U(a){return this._months[a.month()]}function V(a){return this._monthsShort[a.month()]}function W(a,b,c){var d,e,f;for(this._monthsParse||(this._monthsParse=[],this._longMonthsParse=[],this._shortMonthsParse=[]),d=0;12>d;d++){if(e=h([2e3,d]),c&&!this._longMonthsParse[d]&&(this._longMonthsParse[d]=new RegExp("^"+this.months(e,"").replace(".","")+"$","i"),this._shortMonthsParse[d]=new RegExp("^"+this.monthsShort(e,"").replace(".","")+"$","i")),c||this._monthsParse[d]||(f="^"+this.months(e,"")+"|^"+this.monthsShort(e,""),this._monthsParse[d]=new RegExp(f.replace(".",""),"i")),c&&"MMMM"===b&&this._longMonthsParse[d].test(a))return d;if(c&&"MMM"===b&&this._shortMonthsParse[d].test(a))return d;if(!c&&this._monthsParse[d].test(a))return d}}function X(a,b){var c;return"string"==typeof b&&(b=a.localeData().monthsParse(b),"number"!=typeof b)?a:(c=Math.min(a.date(),T(a.year(),b)),a._d["set"+(a._isUTC?"UTC":"")+"Month"](b,c),a)}function Y(b){return null!=b?(X(this,b),a.updateOffset(this,!0),this):D(this,"Month")}function Z(){return T(this.year(),this.month())}function $(a){var b,c=a._a;return c&&-2===j(a).overflow&&(b=c[le]<0||c[le]>11?le:c[me]<1||c[me]>T(c[ke],c[le])?me:c[ne]<0||c[ne]>24||24===c[ne]&&(0!==c[oe]||0!==c[pe]||0!==c[qe])?ne:c[oe]<0||c[oe]>59?oe:c[pe]<0||c[pe]>59?pe:c[qe]<0||c[qe]>999?qe:-1,j(a)._overflowDayOfYear&&(ke>b||b>me)&&(b=me),j(a).overflow=b),a}function _(b){a.suppressDeprecationWarnings===!1&&"undefined"!=typeof console&&console.warn&&console.warn("Deprecation warning: "+b)}function aa(a,b){var c=!0;return g(function(){return c&&(_(a+"\n"+(new Error).stack),c=!1),b.apply(this,arguments)},b)}function ba(a,b){te[a]||(_(b),te[a]=!0)}function ca(a){var b,c,d=a._i,e=ue.exec(d);if(e){for(j(a).iso=!0,b=0,c=ve.length;c>b;b++)if(ve[b][1].exec(d)){a._f=ve[b][0];break}for(b=0,c=we.length;c>b;b++)if(we[b][1].exec(d)){a._f+=(e[6]||" ")+we[b][0];break}d.match(fe)&&(a._f+="Z"),va(a)}else a._isValid=!1}function da(b){var c=xe.exec(b._i);return null!==c?void(b._d=new Date(+c[1])):(ca(b),void(b._isValid===!1&&(delete b._isValid,a.createFromInputFallback(b))))}function ea(a,b,c,d,e,f,g){var h=new Date(a,b,c,d,e,f,g);return 1970>a&&h.setFullYear(a),h}function fa(a){var b=new Date(Date.UTC.apply(null,arguments));return 1970>a&&b.setUTCFullYear(a),b}function ga(a){return ha(a)?366:365}function ha(a){return a%4===0&&a%100!==0||a%400===0}function ia(){return ha(this.year())}function ja(a,b,c){var d,e=c-b,f=c-a.day();return f>e&&(f-=7),e-7>f&&(f+=7),d=Da(a).add(f,"d"),{week:Math.ceil(d.dayOfYear()/7),year:d.year()}}function ka(a){return ja(a,this._week.dow,this._week.doy).week}function la(){return this._week.dow}function ma(){return this._week.doy}function na(a){var b=this.localeData().week(this);return null==a?b:this.add(7*(a-b),"d")}function oa(a){var b=ja(this,1,4).week;return null==a?b:this.add(7*(a-b),"d")}function pa(a,b,c,d,e){var f,g=6+e-d,h=fa(a,0,1+g),i=h.getUTCDay();return e>i&&(i+=7),c=null!=c?1*c:e,f=1+g+7*(b-1)-i+c,{year:f>0?a:a-1,dayOfYear:f>0?f:ga(a-1)+f}}function qa(a){var b=Math.round((this.clone().startOf("day")-this.clone().startOf("year"))/864e5)+1;return null==a?b:this.add(a-b,"d")}function ra(a,b,c){return null!=a?a:null!=b?b:c}function sa(a){var b=new Date;return a._useUTC?[b.getUTCFullYear(),b.getUTCMonth(),b.getUTCDate()]:[b.getFullYear(),b.getMonth(),b.getDate()]}function ta(a){var b,c,d,e,f=[];if(!a._d){for(d=sa(a),a._w&&null==a._a[me]&&null==a._a[le]&&ua(a),a._dayOfYear&&(e=ra(a._a[ke],d[ke]),a._dayOfYear>ga(e)&&(j(a)._overflowDayOfYear=!0),c=fa(e,0,a._dayOfYear),a._a[le]=c.getUTCMonth(),a._a[me]=c.getUTCDate()),b=0;3>b&&null==a._a[b];++b)a._a[b]=f[b]=d[b];for(;7>b;b++)a._a[b]=f[b]=null==a._a[b]?2===b?1:0:a._a[b];24===a._a[ne]&&0===a._a[oe]&&0===a._a[pe]&&0===a._a[qe]&&(a._nextDay=!0,a._a[ne]=0),a._d=(a._useUTC?fa:ea).apply(null,f),null!=a._tzm&&a._d.setUTCMinutes(a._d.getUTCMinutes()-a._tzm),a._nextDay&&(a._a[ne]=24)}}function ua(a){var b,c,d,e,f,g,h;b=a._w,null!=b.GG||null!=b.W||null!=b.E?(f=1,g=4,c=ra(b.GG,a._a[ke],ja(Da(),1,4).year),d=ra(b.W,1),e=ra(b.E,1)):(f=a._locale._week.dow,g=a._locale._week.doy,c=ra(b.gg,a._a[ke],ja(Da(),f,g).year),d=ra(b.w,1),null!=b.d?(e=b.d,f>e&&++d):e=null!=b.e?b.e+f:f),h=pa(c,d,e,g,f),a._a[ke]=h.year,a._dayOfYear=h.dayOfYear}function va(b){if(b._f===a.ISO_8601)return void ca(b);b._a=[],j(b).empty=!0;var c,d,e,f,g,h=""+b._i,i=h.length,k=0;for(e=L(b._f,b._locale).match(Sd)||[],c=0;c<e.length;c++)f=e[c],d=(h.match(O(f,b))||[])[0],d&&(g=h.substr(0,h.indexOf(d)),g.length>0&&j(b).unusedInput.push(g),h=h.slice(h.indexOf(d)+d.length),k+=d.length),Vd[f]?(d?j(b).empty=!1:j(b).unusedTokens.push(f),S(f,d,b)):b._strict&&!d&&j(b).unusedTokens.push(f);j(b).charsLeftOver=i-k,h.length>0&&j(b).unusedInput.push(h),j(b).bigHour===!0&&b._a[ne]<=12&&b._a[ne]>0&&(j(b).bigHour=void 0),b._a[ne]=wa(b._locale,b._a[ne],b._meridiem),ta(b),$(b)}function wa(a,b,c){var d;return null==c?b:null!=a.meridiemHour?a.meridiemHour(b,c):null!=a.isPM?(d=a.isPM(c),d&&12>b&&(b+=12),d||12!==b||(b=0),b):b}function xa(a){var b,c,d,e,f;if(0===a._f.length)return j(a).invalidFormat=!0,void(a._d=new Date(NaN));for(e=0;e<a._f.length;e++)f=0,b=m({},a),null!=a._useUTC&&(b._useUTC=a._useUTC),b._f=a._f[e],va(b),k(b)&&(f+=j(b).charsLeftOver,f+=10*j(b).unusedTokens.length,j(b).score=f,(null==d||d>f)&&(d=f,c=b));g(a,c||b)}function ya(a){if(!a._d){var b=B(a._i);a._a=[b.year,b.month,b.day||b.date,b.hour,b.minute,b.second,b.millisecond],ta(a)}}function za(a){var b=new n($(Aa(a)));return b._nextDay&&(b.add(1,"d"),b._nextDay=void 0),b}function Aa(a){var b=a._i,e=a._f;return a._locale=a._locale||y(a._l),null===b||void 0===e&&""===b?l({nullInput:!0}):("string"==typeof b&&(a._i=b=a._locale.preparse(b)),o(b)?new n($(b)):(c(e)?xa(a):e?va(a):d(b)?a._d=b:Ba(a),a))}function Ba(b){var f=b._i;void 0===f?b._d=new Date:d(f)?b._d=new Date(+f):"string"==typeof f?da(b):c(f)?(b._a=e(f.slice(0),function(a){return parseInt(a,10)}),ta(b)):"object"==typeof f?ya(b):"number"==typeof f?b._d=new Date(f):a.createFromInputFallback(b)}function Ca(a,b,c,d,e){var f={};return"boolean"==typeof c&&(d=c,c=void 0),f._isAMomentObject=!0,f._useUTC=f._isUTC=e,f._l=c,f._i=a,f._f=b,f._strict=d,za(f)}function Da(a,b,c,d){return Ca(a,b,c,d,!1)}function Ea(a,b){var d,e;if(1===b.length&&c(b[0])&&(b=b[0]),!b.length)return Da();for(d=b[0],e=1;e<b.length;++e)(!b[e].isValid()||b[e][a](d))&&(d=b[e]);return d}function Fa(){var a=[].slice.call(arguments,0);return Ea("isBefore",a)}function Ga(){var a=[].slice.call(arguments,0);return Ea("isAfter",a)}function Ha(a){var b=B(a),c=b.year||0,d=b.quarter||0,e=b.month||0,f=b.week||0,g=b.day||0,h=b.hour||0,i=b.minute||0,j=b.second||0,k=b.millisecond||0;this._milliseconds=+k+1e3*j+6e4*i+36e5*h,this._days=+g+7*f,this._months=+e+3*d+12*c,this._data={},this._locale=y(),this._bubble()}function Ia(a){return a instanceof Ha}function Ja(a,b){H(a,0,0,function(){var a=this.utcOffset(),c="+";return 0>a&&(a=-a,c="-"),c+G(~~(a/60),2)+b+G(~~a%60,2)})}function Ka(a){var b=(a||"").match(fe)||[],c=b[b.length-1]||[],d=(c+"").match(Ce)||["-",0,0],e=+(60*d[1])+q(d[2]);return"+"===d[0]?e:-e}function La(b,c){var e,f;return c._isUTC?(e=c.clone(),f=(o(b)||d(b)?+b:+Da(b))-+e,e._d.setTime(+e._d+f),a.updateOffset(e,!1),e):Da(b).local()}function Ma(a){return 15*-Math.round(a._d.getTimezoneOffset()/15)}function Na(b,c){var d,e=this._offset||0;return null!=b?("string"==typeof b&&(b=Ka(b)),Math.abs(b)<16&&(b=60*b),!this._isUTC&&c&&(d=Ma(this)),this._offset=b,this._isUTC=!0,null!=d&&this.add(d,"m"),e!==b&&(!c||this._changeInProgress?bb(this,Ya(b-e,"m"),1,!1):this._changeInProgress||(this._changeInProgress=!0,a.updateOffset(this,!0),this._changeInProgress=null)),this):this._isUTC?e:Ma(this)}function Oa(a,b){return null!=a?("string"!=typeof a&&(a=-a),this.utcOffset(a,b),this):-this.utcOffset()}function Pa(a){return this.utcOffset(0,a)}function Qa(a){return this._isUTC&&(this.utcOffset(0,a),this._isUTC=!1,a&&this.subtract(Ma(this),"m")),this}function Ra(){return this._tzm?this.utcOffset(this._tzm):"string"==typeof this._i&&this.utcOffset(Ka(this._i)),this}function Sa(a){return a=a?Da(a).utcOffset():0,(this.utcOffset()-a)%60===0}function Ta(){return this.utcOffset()>this.clone().month(0).utcOffset()||this.utcOffset()>this.clone().month(5).utcOffset()}function Ua(){if("undefined"!=typeof this._isDSTShifted)return this._isDSTShifted;var a={};if(m(a,this),a=Aa(a),a._a){var b=a._isUTC?h(a._a):Da(a._a);this._isDSTShifted=this.isValid()&&r(a._a,b.toArray())>0}else this._isDSTShifted=!1;return this._isDSTShifted}function Va(){return!this._isUTC}function Wa(){return this._isUTC}function Xa(){return this._isUTC&&0===this._offset}function Ya(a,b){var c,d,e,g=a,h=null;return Ia(a)?g={ms:a._milliseconds,d:a._days,M:a._months}:"number"==typeof a?(g={},b?g[b]=a:g.milliseconds=a):(h=De.exec(a))?(c="-"===h[1]?-1:1,g={y:0,d:q(h[me])*c,h:q(h[ne])*c,m:q(h[oe])*c,s:q(h[pe])*c,ms:q(h[qe])*c}):(h=Ee.exec(a))?(c="-"===h[1]?-1:1,g={y:Za(h[2],c),M:Za(h[3],c),d:Za(h[4],c),h:Za(h[5],c),m:Za(h[6],c),s:Za(h[7],c),w:Za(h[8],c)}):null==g?g={}:"object"==typeof g&&("from"in g||"to"in g)&&(e=_a(Da(g.from),Da(g.to)),g={},g.ms=e.milliseconds,g.M=e.months),d=new Ha(g),Ia(a)&&f(a,"_locale")&&(d._locale=a._locale),d}function Za(a,b){var c=a&&parseFloat(a.replace(",","."));return(isNaN(c)?0:c)*b}function $a(a,b){var c={milliseconds:0,months:0};return c.months=b.month()-a.month()+12*(b.year()-a.year()),a.clone().add(c.months,"M").isAfter(b)&&--c.months,c.milliseconds=+b-+a.clone().add(c.months,"M"),c}function _a(a,b){var c;return b=La(b,a),a.isBefore(b)?c=$a(a,b):(c=$a(b,a),c.milliseconds=-c.milliseconds,c.months=-c.months),c}function ab(a,b){return function(c,d){var e,f;return null===d||isNaN(+d)||(ba(b,"moment()."+b+"(period, number) is deprecated. Please use moment()."+b+"(number, period)."),f=c,c=d,d=f),c="string"==typeof c?+c:c,e=Ya(c,d),bb(this,e,a),this}}function bb(b,c,d,e){var f=c._milliseconds,g=c._days,h=c._months;e=null==e?!0:e,f&&b._d.setTime(+b._d+f*d),g&&E(b,"Date",D(b,"Date")+g*d),h&&X(b,D(b,"Month")+h*d),e&&a.updateOffset(b,g||h)}function cb(a,b){var c=a||Da(),d=La(c,this).startOf("day"),e=this.diff(d,"days",!0),f=-6>e?"sameElse":-1>e?"lastWeek":0>e?"lastDay":1>e?"sameDay":2>e?"nextDay":7>e?"nextWeek":"sameElse";return this.format(b&&b[f]||this.localeData().calendar(f,this,Da(c)))}function db(){return new n(this)}function eb(a,b){var c;return b=A("undefined"!=typeof b?b:"millisecond"),"millisecond"===b?(a=o(a)?a:Da(a),+this>+a):(c=o(a)?+a:+Da(a),c<+this.clone().startOf(b))}function fb(a,b){var c;return b=A("undefined"!=typeof b?b:"millisecond"),"millisecond"===b?(a=o(a)?a:Da(a),+a>+this):(c=o(a)?+a:+Da(a),+this.clone().endOf(b)<c)}function gb(a,b,c){return this.isAfter(a,c)&&this.isBefore(b,c)}function hb(a,b){var c;return b=A(b||"millisecond"),"millisecond"===b?(a=o(a)?a:Da(a),+this===+a):(c=+Da(a),+this.clone().startOf(b)<=c&&c<=+this.clone().endOf(b))}function ib(a,b,c){var d,e,f=La(a,this),g=6e4*(f.utcOffset()-this.utcOffset());return b=A(b),"year"===b||"month"===b||"quarter"===b?(e=jb(this,f),"quarter"===b?e/=3:"year"===b&&(e/=12)):(d=this-f,e="second"===b?d/1e3:"minute"===b?d/6e4:"hour"===b?d/36e5:"day"===b?(d-g)/864e5:"week"===b?(d-g)/6048e5:d),c?e:p(e)}function jb(a,b){var c,d,e=12*(b.year()-a.year())+(b.month()-a.month()),f=a.clone().add(e,"months");return 0>b-f?(c=a.clone().add(e-1,"months"),d=(b-f)/(f-c)):(c=a.clone().add(e+1,"months"),d=(b-f)/(c-f)),-(e+d)}function kb(){return this.clone().locale("en").format("ddd MMM DD YYYY HH:mm:ss [GMT]ZZ")}function lb(){var a=this.clone().utc();return 0<a.year()&&a.year()<=9999?"function"==typeof Date.prototype.toISOString?this.toDate().toISOString():K(a,"YYYY-MM-DD[T]HH:mm:ss.SSS[Z]"):K(a,"YYYYYY-MM-DD[T]HH:mm:ss.SSS[Z]")}function mb(b){var c=K(this,b||a.defaultFormat);return this.localeData().postformat(c)}function nb(a,b){return this.isValid()?Ya({to:this,from:a}).locale(this.locale()).humanize(!b):this.localeData().invalidDate()}function ob(a){return this.from(Da(),a)}function pb(a,b){return this.isValid()?Ya({from:this,to:a}).locale(this.locale()).humanize(!b):this.localeData().invalidDate()}function qb(a){return this.to(Da(),a)}function rb(a){var b;return void 0===a?this._locale._abbr:(b=y(a),null!=b&&(this._locale=b),this)}function sb(){return this._locale}function tb(a){switch(a=A(a)){case"year":this.month(0);case"quarter":case"month":this.date(1);case"week":case"isoWeek":case"day":this.hours(0);case"hour":this.minutes(0);case"minute":this.seconds(0);case"second":this.milliseconds(0)}return"week"===a&&this.weekday(0),"isoWeek"===a&&this.isoWeekday(1),"quarter"===a&&this.month(3*Math.floor(this.month()/3)),this}function ub(a){return a=A(a),void 0===a||"millisecond"===a?this:this.startOf(a).add(1,"isoWeek"===a?"week":a).subtract(1,"ms")}function vb(){return+this._d-6e4*(this._offset||0)}function wb(){return Math.floor(+this/1e3)}function xb(){return this._offset?new Date(+this):this._d}function yb(){var a=this;return[a.year(),a.month(),a.date(),a.hour(),a.minute(),a.second(),a.millisecond()]}function zb(){var a=this;return{years:a.year(),months:a.month(),date:a.date(),hours:a.hours(),minutes:a.minutes(),seconds:a.seconds(),milliseconds:a.milliseconds()}}function Ab(){return k(this)}function Bb(){return g({},j(this))}function Cb(){return j(this).overflow}function Db(a,b){H(0,[a,a.length],0,b)}function Eb(a,b,c){return ja(Da([a,11,31+b-c]),b,c).week}function Fb(a){var b=ja(this,this.localeData()._week.dow,this.localeData()._week.doy).year;return null==a?b:this.add(a-b,"y")}function Gb(a){var b=ja(this,1,4).year;return null==a?b:this.add(a-b,"y")}function Hb(){return Eb(this.year(),1,4)}function Ib(){var a=this.localeData()._week;return Eb(this.year(),a.dow,a.doy)}function Jb(a){return null==a?Math.ceil((this.month()+1)/3):this.month(3*(a-1)+this.month()%3)}function Kb(a,b){return"string"!=typeof a?a:isNaN(a)?(a=b.weekdaysParse(a),"number"==typeof a?a:null):parseInt(a,10)}function Lb(a){return this._weekdays[a.day()]}function Mb(a){return this._weekdaysShort[a.day()]}function Nb(a){return this._weekdaysMin[a.day()]}function Ob(a){var b,c,d;for(this._weekdaysParse=this._weekdaysParse||[],b=0;7>b;b++)if(this._weekdaysParse[b]||(c=Da([2e3,1]).day(b),d="^"+this.weekdays(c,"")+"|^"+this.weekdaysShort(c,"")+"|^"+this.weekdaysMin(c,""),this._weekdaysParse[b]=new RegExp(d.replace(".",""),"i")),this._weekdaysParse[b].test(a))return b}function Pb(a){var b=this._isUTC?this._d.getUTCDay():this._d.getDay();return null!=a?(a=Kb(a,this.localeData()),this.add(a-b,"d")):b}function Qb(a){var b=(this.day()+7-this.localeData()._week.dow)%7;return null==a?b:this.add(a-b,"d")}function Rb(a){return null==a?this.day()||7:this.day(this.day()%7?a:a-7)}function Sb(a,b){H(a,0,0,function(){return this.localeData().meridiem(this.hours(),this.minutes(),b)})}function Tb(a,b){return b._meridiemParse}function Ub(a){return"p"===(a+"").toLowerCase().charAt(0)}function Vb(a,b,c){return a>11?c?"pm":"PM":c?"am":"AM"}function Wb(a,b){b[qe]=q(1e3*("0."+a))}function Xb(){return this._isUTC?"UTC":""}function Yb(){return this._isUTC?"Coordinated Universal Time":""}function Zb(a){return Da(1e3*a)}function $b(){return Da.apply(null,arguments).parseZone()}function _b(a,b,c){var d=this._calendar[a];return"function"==typeof d?d.call(b,c):d}function ac(a){var b=this._longDateFormat[a],c=this._longDateFormat[a.toUpperCase()];return b||!c?b:(this._longDateFormat[a]=c.replace(/MMMM|MM|DD|dddd/g,function(a){return a.slice(1)}),this._longDateFormat[a])}function bc(){return this._invalidDate}function cc(a){return this._ordinal.replace("%d",a)}function dc(a){return a}function ec(a,b,c,d){var e=this._relativeTime[c];return"function"==typeof e?e(a,b,c,d):e.replace(/%d/i,a)}function fc(a,b){var c=this._relativeTime[a>0?"future":"past"];return"function"==typeof c?c(b):c.replace(/%s/i,b)}function gc(a){var b,c;for(c in a)b=a[c],"function"==typeof b?this[c]=b:this["_"+c]=b;this._ordinalParseLenient=new RegExp(this._ordinalParse.source+"|"+/\d{1,2}/.source)}function hc(a,b,c,d){var e=y(),f=h().set(d,b);return e[c](f,a)}function ic(a,b,c,d,e){if("number"==typeof a&&(b=a,a=void 0),a=a||"",null!=b)return hc(a,b,c,e);var f,g=[];for(f=0;d>f;f++)g[f]=hc(a,f,c,e);return g}function jc(a,b){return ic(a,b,"months",12,"month")}function kc(a,b){return ic(a,b,"monthsShort",12,"month")}function lc(a,b){return ic(a,b,"weekdays",7,"day")}function mc(a,b){return ic(a,b,"weekdaysShort",7,"day")}function nc(a,b){return ic(a,b,"weekdaysMin",7,"day")}function oc(){var a=this._data;return this._milliseconds=_e(this._milliseconds),this._days=_e(this._days),this._months=_e(this._months),a.milliseconds=_e(a.milliseconds),a.seconds=_e(a.seconds),a.minutes=_e(a.minutes),a.hours=_e(a.hours),a.months=_e(a.months),a.years=_e(a.years),this}function pc(a,b,c,d){var e=Ya(b,c);return a._milliseconds+=d*e._milliseconds,a._days+=d*e._days,a._months+=d*e._months,a._bubble()}function qc(a,b){return pc(this,a,b,1)}function rc(a,b){return pc(this,a,b,-1)}function sc(a){return 0>a?Math.floor(a):Math.ceil(a)}function tc(){var a,b,c,d,e,f=this._milliseconds,g=this._days,h=this._months,i=this._data;return f>=0&&g>=0&&h>=0||0>=f&&0>=g&&0>=h||(f+=864e5*sc(vc(h)+g),g=0,h=0),i.milliseconds=f%1e3,a=p(f/1e3),i.seconds=a%60,b=p(a/60),i.minutes=b%60,c=p(b/60),i.hours=c%24,g+=p(c/24),e=p(uc(g)),h+=e,g-=sc(vc(e)),d=p(h/12),h%=12,i.days=g,i.months=h,i.years=d,this}function uc(a){return 4800*a/146097}function vc(a){return 146097*a/4800}function wc(a){var b,c,d=this._milliseconds;if(a=A(a),"month"===a||"year"===a)return b=this._days+d/864e5,c=this._months+uc(b),"month"===a?c:c/12;switch(b=this._days+Math.round(vc(this._months)),a){case"week":return b/7+d/6048e5;case"day":return b+d/864e5;case"hour":return 24*b+d/36e5;case"minute":return 1440*b+d/6e4;case"second":return 86400*b+d/1e3;case"millisecond":return Math.floor(864e5*b)+d;default:throw new Error("Unknown unit "+a)}}function xc(){return this._milliseconds+864e5*this._days+this._months%12*2592e6+31536e6*q(this._months/12)}function yc(a){return function(){return this.as(a)}}function zc(a){return a=A(a),this[a+"s"]()}function Ac(a){return function(){return this._data[a]}}function Bc(){return p(this.days()/7)}function Cc(a,b,c,d,e){return e.relativeTime(b||1,!!c,a,d)}function Dc(a,b,c){var d=Ya(a).abs(),e=qf(d.as("s")),f=qf(d.as("m")),g=qf(d.as("h")),h=qf(d.as("d")),i=qf(d.as("M")),j=qf(d.as("y")),k=e<rf.s&&["s",e]||1===f&&["m"]||f<rf.m&&["mm",f]||1===g&&["h"]||g<rf.h&&["hh",g]||1===h&&["d"]||h<rf.d&&["dd",h]||1===i&&["M"]||i<rf.M&&["MM",i]||1===j&&["y"]||["yy",j];return k[2]=b,k[3]=+a>0,k[4]=c,Cc.apply(null,k)}function Ec(a,b){return void 0===rf[a]?!1:void 0===b?rf[a]:(rf[a]=b,!0)}function Fc(a){var b=this.localeData(),c=Dc(this,!a,b);return a&&(c=b.pastFuture(+this,c)),b.postformat(c)}function Gc(){var a,b,c,d=sf(this._milliseconds)/1e3,e=sf(this._days),f=sf(this._months);a=p(d/60),b=p(a/60),d%=60,a%=60,c=p(f/12),f%=12;var g=c,h=f,i=e,j=b,k=a,l=d,m=this.asSeconds();return m?(0>m?"-":"")+"P"+(g?g+"Y":"")+(h?h+"M":"")+(i?i+"D":"")+(j||k||l?"T":"")+(j?j+"H":"")+(k?k+"M":"")+(l?l+"S":""):"P0D"}
@@ -352,7 +9653,7 @@ d)}):m.addOption(e.value,d);d.on("$destroy",function(){m.removeOption(e.value)})
 ;
 
 /*
- AngularJS v1.3.18
+ AngularJS v1.3.20-build.147+sha.a665550
  (c) 2010-2014 Google, Inc. http://angularjs.org
  License: MIT
 */
@@ -371,7 +9672,7 @@ h.isDefined(b)&&g.push('target="',b,'" ');g.push('href="',a.replace(/"/g,"&quot;
 ;
 
 /*
- AngularJS v1.4.5
+ AngularJS v1.4.6
  (c) 2010-2015 Google, Inc. http://angularjs.org
  License: MIT
 */
@@ -2974,7 +12275,6 @@ angular.module('manifest', [
   'ngSanitize',
   //'ngTouch',
   //'ngScroll',
-  'leaflet-directive',
   'manifest.directives',
   'manifest.filters',
   'manifest.controllers',
@@ -3022,7 +12322,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'17 September 2015 - 4:24'})
+.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'22 September 2015 - 2:44'})
 
 ;
 ;
@@ -3037,42 +12337,130 @@ angular.module('underscore', [])
   });
 
 
+
+angular.module('manifest.controllers', ['underscore','config'])
 ////////////////////////////////////////////////////////////////////////
-angular.module('manifest.controllers')
 .controller('MapController', [
   '$scope',
   '$http',
-  'leafletData',
+  '_',
   'settings',
-  function ($scope, $http, leafletData, settings) {
+  function ($scope, $http, _, settings) {
 
-    angular.extend($scope, {
-      defaults: {
-        tileLayer: "http://{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png",
-        maxZoom: 14,
-        path: {
-          weight: 10,
-          color: '#800000',
-          opacity: 1
+    $scope.initMap = function() {
+
+      0;
+
+      var osm = L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      });
+      var cycle = L.tileLayer('http://{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.opencyclemap.org/copyright">OpenCycleMap</a> contributors - &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      });
+      var terrain = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer/tile/{z}/{y}/{x}', {
+        maxZoom: 19,
+        attribution: 'Tiles &copy; Esri &mdash; Source: USGS, Esri, TANA, DeLorme, and NPS'
+      });
+      var tileLayers = {
+        "OSM": osm,
+        "Cycle": cycle,
+        "Terrain": terrain
+      };
+
+      var map = L.map('leaflet', {
+        zoomControlPosition: 'bottomleft',
+        scrollWheelZoom: true,
+        doubleClickZoom: true,
+        center: [45, 2],
+        zoom: 7,
+        minZoom: 4,
+        maxZoom: 16,
+        locateButton: true,
+        layers: [osm]
+      });
+
+      L.control.locate().addTo(map);
+      var layers = new L.LayerGroup().addTo(map);
+
+      $http.get(settings.datapath + 'map.csv').success(function(data) {
+        //console.log("got csv data:",data);
+        //$scope.data = data;
+        var ms = new CSV(data, {header:true}).parse();
+        
+        _.each(ms, function(m,k) {
+
+          // if(!layers[m.source]) {
+          //   layers[m.source] = new L.LayerGroup().addTo(overlays);
+          // }
+
+          var icon = 'marker';
+          var color = "#A9A9F5";
+          var size = "s";
+          if(/^citoy_/.test(m.source)) { color = "#81BEF7"; }
+          if(/caravane/.test(m.source)) { color = "#04B431"; }
+          if(/^lieux/.test(m.source)) { color = "#F79F81"; }
+          if(/region/.test(m.scale)) { size = "l"; }
+          if(/ville/.test(m.scale)) { size = "m"; }
+
+          //var customPopup = "<div ng-include ng-init=\"data=leafmarkers['"+m.source+"']['mark_"+k+"'];\" src=\"'partials/marker.html'\"></div>";
+          var customPopup = "<div class='details'>"+
+            "<h3>"+m.name+"</h3>"+
+            "<h4>"+m.address+"</h4>"+
+            "<div>"+m.description+"</div>"+
+            "<div>"+m.contact+"</div>"+
+          "</div>";
+          var customOptions = {
+            'maxWidth': '500',
+            'className' : 'custom'
           }
-      }
-    });
 
-    leafletData.getMap().then(function(map) {
-      0;
-      L.GeoIP.centerMapOnPosition(map, 15);
-    });
+          var theM = L.marker([m.lat, m.lng], {
+            title: m.name,
+            icon: L.MakiMarkers.icon({
+              icon: icon,
+              color: color,
+              size: size
+            })
+          })
+          .bindPopup(customPopup,customOptions)
+          .addTo(layers);
+        });
+        0;
 
-    $http.get(settings.datapath + 'map.csv').success(function(data) {
-      0;
-      $scope.data = data;
-    });
+        L.control.layers(tileLayers).addTo(map);
+        //console.log("overlays !!",layers);
+
+        L.control.search({
+          layer: layers,
+          initial: false,
+          zoom: 9,
+          buildTip: function(text, val) {
+            var type = "ok";
+            return '<div><a href="#" class="'+type+'">YOU'+text+'<b>'+type+'</b></a></div>';
+          }
+        }).addTo(map);
+
+          // L.control.search({
+          //   layer: baselayers,
+          //   initial: false,
+          //   zoom: 18,
+          //   propertyName: 'name',
+          //   buildTip: function(text, val) {
+          //     //var type = val.layer.feature.properties.amenity;
+          //     var type = "test";
+          //     return '<a href="#" class="'+type+'">'+text+'<b>'+type+'</b></a>';
+          //   }
+          // }).addTo(map);
+      });
+    }
+
   }
-]);
+])
 
 
 ////////////////////////////////////////////////////////////////////////
-angular.module('manifest.controllers', ['underscore','config'])
 .controller('manifestController', [
     "$scope",
     "$routeParams",
@@ -3433,9 +12821,10 @@ angular.module('manifest.controllers', ['underscore','config'])
             0;
           }
 
-          _.each($scope.sections, function(p) {
-            p.links = getLinksFromTags(p.tags);
-          });
+          // populate links related to each section
+          // _.each($scope.sections, function(p) {
+          //   p.links = getLinksFromTags(p.tags);
+          // });
 
         })
         .error(function (data, status, headers, config) {
@@ -3487,7 +12876,7 @@ angular.module('manifest.controllers', ['underscore','config'])
             d.links = md2Html(d.links);
 
             d.date = moment(d.date);
-            var seuil = moment().subtract(30,"day");
+            var seuil = moment().subtract(3,"month");
             if(d.date > seuil)
               d.date = d.date.fromNow();
             else

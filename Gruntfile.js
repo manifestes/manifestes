@@ -96,12 +96,22 @@ module.exports = function(grunt) {
         src: [
           'src/vendor/normalize.css/normalize.css',
           'src/vendor/animate.css/animate.min.css',
+          'src/vendor/leaflet/dist/leaflet.css',
+          'src/vendor/leaflet.locatecontrol/dist/L.Control.Locate.min.css',
+          'src/vendor/leaflet-search/dist/leaflet-search.min.css',
           'src/css/styles.css'
         ],
         dest: 'build/css/<%= pkg.name %>.css'
       },
       js: {
         src: [
+          'src/vendor/comma-separated-values/csv.min.js',
+          'src/vendor/leaflet/dist/leaflet-src.js',
+          'src/vendor/angular-simple-logger/dist/index.js',
+          'src/vendor/Leaflet.MakiMarkers/Leaflet.MakiMarkers.js',
+          'src/vendor/leaflet.locatecontrol/dist/L.Control.Locate.min.js',
+          'src/vendor/leaflet-search/dist/leaflet-search.min.js',
+          
           'src/vendor/sigmajs/build/sigma.min.js',
           'src/vendor/sigmajs/build/plugins/sigma.parsers.gexf.min.js',
           'src/vendor/moment/min/moment-with-locales.min.js',

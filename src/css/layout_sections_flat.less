@@ -167,11 +167,24 @@
         font-style: italic;
         text-transform: uppercase;
         cursor: pointer;
+        i {
+          display: none;
+          vertical-align: baseline;
+          font-size: 1.1em;
+          margin-left: 2px;
+          opacity: 0.5;
+        }
         &:hover {
           background: #959892;
+          i {
+            opacity: 1;
+          }
         }
         &.active {
-          background: @redColor; 
+          background: @redColor;
+          i {
+            display: inline-block;
+          }
         }
       }
     }
@@ -235,12 +248,9 @@
       background: rgba(110, 110, 110, 0);
       .transition(all @openDur);
 
-      img.icon {
-        width: 27px;
-        margin: -2px;
-        margin-right: 12px;
-        opacity: 1;
-        .transition(all @openDur);
+      i {
+        vertical-align: baseline;
+        margin-right: 7px;
       }
     }
 
