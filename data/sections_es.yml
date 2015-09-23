@@ -3,6 +3,7 @@
 
 ---
 role: meta
+url: http://utopies-concretes.org
 source:
     github: https://github.com/manifestes/manifestes
     sections: https://github.com/manifestes/manifestes/blob/gh-pages/data/sections_es.yml

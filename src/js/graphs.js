@@ -103,7 +103,7 @@ var loadLinksGraph = function(scope) {
       // doubleclick to open link
       s.bind('doubleClickNode', function(event) {
         console.log("doubleclicked node:",event.data.node);
-        var url = event.data.node.url || "http://manifest.es";
+        var url = event.data.node.url || scope.meta.url;
         var win = window.open(url, '_blank');
         win.focus();
       });

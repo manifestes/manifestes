@@ -3,6 +3,7 @@
 
 ---
 role: meta
+url: http://utopies-concretes.org
 source:
     github: https://github.com/manifestes/manifestes
     sections: https://github.com/manifestes/manifestes/blob/gh-pages/data/sections_fr.yml
@@ -12,13 +13,13 @@ mapcredits:
     caravane:
         name: Caravane des alternatives
         url: http://caravanedesalternatives.weebly.com
-    heterotopies:
+    hetero:
         name: Hétérotopies
         url: http://heterotopies.overblog.com/cartographie
-    lieuxdevie:
+    lieux:
         name: Lieux de vie
         url: https://www.google.com/maps/d/viewer?mid=zCUrDZ_sv7Fw.k9HCrqv3hIVA
-    citoyens:
+    citoy:
         name: Citoyens en Transition
         url: https://www.google.com/maps/d/viewer?mid=zfOpOkMajqj0.k73wlMF5RszU
 graphcredits: >

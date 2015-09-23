@@ -1507,7 +1507,7 @@ div.highlight {
   position: absolute;
   top: 0;
   right: 0;
-  margin: 8px;
+  margin: 9px;
   opacity: 1;
   font-size: 0.9em;
   color: #ababab;
@@ -2176,7 +2176,7 @@ div.highlight {
   width: 100% !important;
 }
 .panel.graph .graphloader {
-  z-index: 99999;
+  z-index: 24;
   position: absolute;
   box-sizing: border-box;
   width: 100%;
@@ -2194,7 +2194,7 @@ div.highlight {
   box-shadow: inset -1px 0px 1px 0px #8a8a8a;
 }
 .panel.graph .control {
-  z-index: 9999;
+  z-index: 22;
   cursor: pointer;
   position: absolute;
   border-radius: 5px;
@@ -2209,7 +2209,7 @@ div.highlight {
   color: #ababab;
 }
 .panel.graph .credits {
-  z-index: 9999;
+  z-index: 22;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -2307,6 +2307,18 @@ div.highlight {
 }
 .leaflet-popup .details {
   font-size: 0.9em;
+}
+.leaflet-popup .details h3 {
+  margin-bottom: 0px;
+}
+.leaflet-popup .details .address {
+  color: #ababab;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+.leaflet-popup .details .contact {
+  color: #ababab;
+  font-style: italic;
 }
 /*.awesome-marker i {
   font-size: 9px;

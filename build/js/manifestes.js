@@ -9662,7 +9662,7 @@ d)}):m.addOption(e.value,d);d.on("$destroy",function(){m.removeOption(e.value)})
 ;
 
 /*
- AngularJS v1.3.20-build.147+sha.a665550
+ AngularJS v1.3.18
  (c) 2010-2014 Google, Inc. http://angularjs.org
  License: MIT
 */
@@ -9681,7 +9681,7 @@ h.isDefined(b)&&g.push('target="',b,'" ');g.push('href="',a.replace(/"/g,"&quot;
 ;
 
 /*
- AngularJS v1.4.6
+ AngularJS v1.4.5
  (c) 2010-2015 Google, Inc. http://angularjs.org
  License: MIT
 */
@@ -9699,7 +9699,7 @@ p.directive("ngView",v);p.directive("ngView",A);v.$inject=["$route","$anchorScro
 ;
 
 /*
- AngularJS v1.3.20-build.147+sha.a665550
+ AngularJS v1.3.18
  (c) 2010-2014 Google, Inc. http://angularjs.org
  License: MIT
 */
@@ -12346,7 +12346,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'23 September 2015 - 4:23'})
+.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'23 September 2015 - 5:21'})
 
 ;
 ;
@@ -12905,7 +12905,7 @@ angular.module('manifest.controllers', ['underscore','config'])
       var tileLayers = {
         "OSM": osm,
         "Cycle": cycle,
-        "Terrain": terrain
+        //"Terrain": terrain
       };
 
       var map = L.map('leaflet', {
@@ -12913,19 +12913,19 @@ angular.module('manifest.controllers', ['underscore','config'])
         scrollWheelZoom: true,
         doubleClickZoom: true,
         center: [47, 2.5],
-        zoom: 6,
+        zoom: 7,
         minZoom: 4,
-        maxZoom: 16,
+        maxZoom: 13,
         locateButton: true,
         layers: [osm]
       });
 
       L.control.zoom({
-        position: 'bottomleft'
+        position: 'topleft', //'bottomleft'
       }).addTo(map);
 
       L.control.locate({
-        position: 'bottomleft',
+        position: 'topleft', //'bottomleft',
         icon: 'fa fa-street-view',
         showPopup: false,
       }).addTo(map);
@@ -12934,7 +12934,7 @@ angular.module('manifest.controllers', ['underscore','config'])
       $http.get(settings.datapath + '_encours/map.csv').success(function(data) {
         //console.log("got csv data:",data);
         //$scope.data = data;
-        var ms = new CSV(data, {header:true}).parse();
+        var ms = new CSV(data, {header:true, cast:false}).parse();
         
         _.each(ms, function(m,k) {
 
@@ -12942,39 +12942,58 @@ angular.module('manifest.controllers', ['underscore','config'])
           //   layers[m.source] = new L.LayerGroup().addTo(overlays);
           // }
 
-          var icon = 'marker';
-          var color = "#A9A9F5";
+          var icon = 'circle';
+          var color = "#000";
           var size = "s";
-          if(/^citoy_/.test(m.source)) { color = "#81BEF7"; }
-          if(/caravane/.test(m.source)) { color = "#04B431"; }
-          if(/^lieux/.test(m.source)) { color = "#F79F81"; }
-          if(/region/.test(m.scale)) { size = "l"; }
-          if(/ville/.test(m.scale)) { size = "m"; }
+          if(/^citoy_/.test(m.source)) { color = "#335664"; }
+          if(/^caravane/.test(m.source)) { color = "#007029"; }
+          if(/^lieux/.test(m.source)) { color = "#742B6A"; }
+          if(/^hetero/.test(m.source)) { color = "#890E6F"; }
+
+          if(/region/.test(m.scale)) {
+            size = "l";
+            icon = "star";
+          }
+          if(/ville/.test(m.scale)) {
+            size = "m";
+            icon = "star";
+          }
+
+          var credit = $scope.meta.mapcredits[m.source.split('_')[0]];
 
           //var customPopup = "<div ng-include ng-init=\"data=leafmarkers['"+m.source+"']['mark_"+k+"'];\" src=\"'partials/marker.html'\"></div>";
           var customPopup = "<div class='details'>"+
             "<h3>"+m.name+"</h3>"+
-            "<h4>"+m.address+"</h4>"+
+            "<div class='address'>"+m.address+"</div>"+
             "<div>"+m.description+"</div>"+
-            "<div>"+m.contact+"</div>"+
+            "<div class='contact'>"+m.contact+"</div>"+
+            "<div>source: "+credit.name+" - "+credit.url+"</div>"+
           "</div>";
           var customOptions = {
             'maxWidth': '500',
             'className' : 'custom'
           }
-
-          var theM = L.marker([m.lat, m.lng], {
-            title: m.name,
-            icon: L.MakiMarkers.icon({
-              icon: icon,
-              color: color,
-              size: size
+          m.lat = parseFloat(m.lat);
+          m.lng = parseFloat(m.lng);
+          if(m.lat && m.lng) {
+            var theM = L.marker([m.lat, m.lng], {
+              title: m.name,
+              icon: L.MakiMarkers.icon({
+                icon: icon,
+                color: color,
+                size: size
+              })
             })
-          })
-          .bindPopup(customPopup,customOptions)
-          .addTo(layers);
+            .bindPopup(customPopup,customOptions)
+            .addTo(layers);
+          } else {
+            if($scope.settings.verbose)
+              console.log("!! no lat/lng for:",m);
+          }
         });
-        console.log("all markers added!");
+        
+        if($scope.settings.verbose)
+          console.log("all markers added!");
 
         L.control.layers(tileLayers).addTo(map);
         //console.log("overlays !!",layers);
@@ -13218,7 +13237,7 @@ var loadLinksGraph = function(scope) {
       // doubleclick to open link
       s.bind('doubleClickNode', function(event) {
         console.log("doubleclicked node:",event.data.node);
-        var url = event.data.node.url || "http://manifest.es";
+        var url = event.data.node.url || scope.meta.url;
         var win = window.open(url, '_blank');
         win.focus();
       });
