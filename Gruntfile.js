@@ -94,11 +94,13 @@ module.exports = function(grunt) {
       },
       css: {
         src: [
+          'src/vendor/leaflet/dist/leaflet.css', // map bug if after normalize.css ?! within concated css
+
           'src/vendor/normalize.css/normalize.css',
-          'src/vendor/animate.css/animate.min.css',
-          'src/vendor/leaflet/dist/leaflet.css',
+
           'src/vendor/leaflet.locatecontrol/dist/L.Control.Locate.min.css',
           'src/vendor/leaflet-search/dist/leaflet-search.min.css',
+
           'src/css/styles.css'
         ],
         dest: 'build/css/<%= pkg.name %>.css'
@@ -106,8 +108,8 @@ module.exports = function(grunt) {
       js: {
         src: [
           'src/vendor/comma-separated-values/csv.min.js',
-          'src/vendor/leaflet/dist/leaflet-src.js',
-          //'src/vendor/angular-simple-logger/dist/index.js',
+
+          'src/vendor/leaflet/dist/leaflet.js',
           'src/vendor/Leaflet.MakiMarkers/Leaflet.MakiMarkers.js',
           'src/vendor/leaflet.locatecontrol/dist/L.Control.Locate.min.js',
           'src/vendor/leaflet-search/dist/leaflet-search.min.js',
@@ -148,6 +150,13 @@ module.exports = function(grunt) {
                     flatten: true,
                     src: ['src/partials/**'],
                     dest: 'build/partials/',
+                    filter: 'isFile'
+                },
+                {
+                    expand: true,
+                    flatten: true,
+                    src: ['src/vendor/leaflet/dist/images/**'],
+                    dest: 'build/css/images/',
                     filter: 'isFile'
                 }
             ]

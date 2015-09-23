@@ -555,6 +555,9 @@ angular.module('manifest.controllers', ['underscore','config'])
         //"Terrain": terrain
       };
 
+      if(!settings.dev)
+        L.Icon.Default.imagePath = "build/images";
+
       var map = L.map('leaflet', {
         zoomControl: false,
         scrollWheelZoom: true,
@@ -643,6 +646,7 @@ angular.module('manifest.controllers', ['underscore','config'])
           console.log("all markers added!");
 
         L.control.layers(tileLayers).addTo(map);
+        
         //console.log("overlays !!",layers);
 
         L.control.search({
@@ -655,17 +659,10 @@ angular.module('manifest.controllers', ['underscore','config'])
           }
         }).addTo(map);
 
-          // L.control.search({
-          //   layer: baselayers,
-          //   initial: false,
-          //   zoom: 18,
-          //   propertyName: 'name',
-          //   buildTip: function(text, val) {
-          //     //var type = val.layer.feature.properties.amenity;
-          //     var type = "test";
-          //     return '<a href="#" class="'+type+'">'+text+'<b>'+type+'</b></a>';
-          //   }
-          // }).addTo(map);
+      }).error(function(err) {
+
+        console.log(err);
+
       });
     }
 
