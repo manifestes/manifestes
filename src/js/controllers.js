@@ -581,7 +581,7 @@ angular.module('manifest.controllers', ['underscore','config'])
       }).addTo(map);
       var layers = new L.LayerGroup().addTo(map);
 
-      $http.get(settings.datapath + '_encours/map.csv').success(function(data) {
+      $http.get(settings.datapath + '/map.csv').success(function(data) {
         //console.log("got csv data:",data);
         //$scope.data = data;
         var ms = new CSV(data, {header:true, cast:false}).parse();

@@ -3192,7 +3192,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'23 September 2015 - 6:23'})
+.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'23 September 2015 - 6:31'})
 
 ;
 ;
@@ -3780,7 +3780,7 @@ angular.module('manifest.controllers', ['underscore','config'])
       }).addTo(map);
       var layers = new L.LayerGroup().addTo(map);
 
-      $http.get(settings.datapath + '_encours/map.csv').success(function(data) {
+      $http.get(settings.datapath + '/map.csv').success(function(data) {
         //console.log("got csv data:",data);
         //$scope.data = data;
         var ms = new CSV(data, {header:true, cast:false}).parse();
