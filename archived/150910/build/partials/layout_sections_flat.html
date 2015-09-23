@@ -1,0 +1,83 @@
+<div
+  class="image cover"
+  back-img="{{settings.datapath}}media/{{p.image.url}}"
+  ng-click="!p.opened && toggleOne(p)">
+  <div class="quote-container">
+    <div class="quote" compile-html="p.quote.content"></div>
+    <div class="author" compile-html="p.quote.author"></div>
+    <div class="imagecredit">image: {{p.image.credit}}</div>
+  </div>
+</div>
+
+<div class="block">
+  <div
+    class="titlebar"
+    ng-click="toggleOne(p)">
+
+    <div ng-if="p.date" class="date">{{p.date}}</div>
+
+    <div
+      class="collapser meta-{{state.toggleall}}"
+      ng-class="{
+        opened: p.opened,
+        down: state.toggleall ? false:!p.opened,
+        up:   state.toggleall ? false:p.opened}"
+      ng-click="toggleAll(!p.opened); $event.stopPropagation();"
+      ng-mouseover="state.toggleall = p.opened ? 'up' : 'down'"
+      ng-mouseout="state.toggleall = null;">
+      <div class="triangle"></div>
+    </div>
+    <div class="h1">
+      <img class="icon" ng-if="p.role=='meta'" src="{{settings.assets}}/images/info.svg"/>
+      <span compile-html="p.title"></span>
+    </div>
+  </div>
+
+  <div class="tags">
+    <span
+      class="tag"
+      ng-class="{active: isTagActive(t)}"
+      ng-repeat="t in p.tags"
+      ng-click="toggleTag(t); $event.stopPropagation();">
+      {{tagsContents[t].label}}
+    </span>
+  </div>
+
+  <div class="h2" compile-html="p.subtitle"></div>
+  <div class="content" compile-html="p.content"></div>
+  <div ng-if="p.links.length > 0" class="links" ng-click="p.currentlink = (p.currentlink+1) % p.links.length;">
+
+    <div class="label">
+      <span class="fright">{{p.links.length}}&nbsp;&nbsp;&nbsp;&nbsp;• •</span>
+      <img class="refresh fright" src="{{settings.assets}}/images/refresh.svg"/>
+      <span class="fright">{{p.currentlink+1}}</span>
+      <span>• •&nbsp;&nbsp;&nbsp;&nbsp;{{meta.menu.examples}}</span>
+    </div>
+
+    <div class="linkslides">
+      <div
+        class="linkslide"
+        ng-repeat="l in p.links"
+        ng-class="{
+          active: p.currentlink==$index,
+          before: p.currentlink>$index,
+          after: p.currentlink<$index}"
+        compile-html="l">
+      </div>
+    </div>
+  </div>
+  <div
+    ng-if="p.opened || (state.term && atLeastContains(p))"
+    ng-click="openComments(p);"
+    class="discuss">
+    <div class="rect">
+      <div class="triangle"></div>
+        {{meta.menu.discusstext}} <span ng-if="p.commentcount">({{p.commentcount}})</span> >
+    </div>
+  </div>
+</div>
+
+<div class="comments" ng-class="{active:state.commenting_slug==p.slug}">
+  <div ng-if="state.commenting_slug==p.slug" class="escape" ng-click="state.commenting_slug = null;">< {{meta.menu.discussback}}</div>
+  <div ng-if="state.commenting_slug==p.slug" id="disqus_thread"></div>
+</div>

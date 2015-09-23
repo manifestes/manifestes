@@ -1,0 +1,117 @@
+<div
+  class="intro"
+  ng-class="{hidden:!state.intro}">
+  <h1>{{meta.intro.title}}</h1>
+  <div class="description">{{meta.intro.description}}</div>
+  <img class="image" src="{{settings.datapath}}/manifestes_splash.jpg"/>
+
+  <div class="foot">
+    <div class="keywords">{{meta.intro.keywords}}</div>
+    <div class="button color-{{getRandomInt()}}" ng-click="state.intro=false;">{{meta.intro.enter}}</div>
+  </div>
+</div>
+
+<div id="container" class="container" ng-class="{hidden:state.intro}">
+
+  <div class="header">
+
+    <div class="menu">
+
+      <div class="arrow back" ng-click="state.intro = true;"></div>
+      
+      <!-- BUTTONS -->
+      <div class="buttons">
+        <div class="button">
+          <img src="{{settings.assets}}/images/menu_lang.svg"/>
+          <span>
+            <a class="setlang" ng-class="{active: state.lang=='es'}" href="http://manifest.es/#/es">es</a>
+            <a class="setlang" ng-class="{active: state.lang=='fr'}" href="http://manifest.es/#/fr">fr</a>
+          </span>
+        </div>
+
+        <a class="button hover" id="print" href="./#/{{state.lang}}/print" target="_blank">
+          <img src="{{settings.assets}}/images/menu_print.svg"/><span>{{meta.menu.print}}</span>
+        </a>
+
+        <div
+          class="button hover"
+          ng-click="changeLayout('links');"
+          ng-class="{active:state.layout=='links'}">
+          <img ng-if="state.layout=='links'" src="{{settings.assets}}/images/menu_links_active.svg"/>
+          <img ng-if="state.layout!='links'" src="{{settings.assets}}/images/menu_links.svg"/>
+          <a class="ext" href="{{meta.source.links}}" target="_blank"><img src="{{settings.assets}}/images/external-link.svg"/></a>
+          <span>{{meta.menu.links}}</span>
+        </div>
+
+        <div
+          class="button hover"
+          ng-click="changeLayout('sections');"
+          ng-class="{active:state.layout=='sections'}">
+          <img ng-if="state.layout=='sections'" src="{{settings.assets}}/images/menu_sections_active.svg"/>
+          <img ng-if="state.layout!='sections'" src="{{settings.assets}}/images/menu_sections.svg"/>
+          <a class="ext" href="{{meta.source.sections}}" target="_blank"><img src="{{settings.assets}}/images/external-link.svg"/></a>
+          <span>{{meta.menu.sections}}</span>
+        </div>
+      </div>
+
+      <!-- TAGS -->
+      <div class="tagsmenu" ng-class="{filtering:state.tags.length}">
+        <div class="tagshat">
+          <div class="tags">
+            <div class="tag inactive" ng-if="!state.tags.length">{{meta.menu.tagsdefault}}</div>
+            <div
+              ng-if="state.tags.length"
+              class="tag"
+              ng-repeat="t in state.tags"
+              ng-click="toggleTag(t);">{{tagsContents[t].label}}
+            </div>
+            <img
+              class="clear"
+              src="{{settings.assets}}/images/clear.svg"
+              ng-click="toggleTag();"/>
+          </div>
+          <span class="label">{{meta.menu.tagslabel}}</span>
+
+        </div>
+
+        <div class="paint"></div>
+
+        <!-- TAGS GRAPH PANEL -->
+        <div class="graphtags">
+          <div id="sigma-tags"></div>
+          <div class="tagdescription">{{state.tagdescription}}</div>
+        </div>
+      </div>
+
+      <!-- SEARCH -->
+      <div class="searchinput">
+        <form autocomplete="off" ng-submit="searchSubmit(input);">
+        <input
+          type="text"
+          placeholder="{{meta.menu.search}}"
+          ng-model="input" 
+          ng-click="$event.stopPropagation();"
+          ng-enter="searchSubmit(input);"
+          ng-class="{highlight:state.search}"/>
+        </form>
+        <img
+          ng-if="input.length>0"
+          class="clear"
+          src="{{settings.assets}}/images/clear.svg"
+          ng-click="searchSubmit();"/>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="wrapper layout-{{state.layout}}">
+
+    <div class="page" ng-include="layoutTemplate();"></div>
+
+    <div class="footer">
+      <div class="content" compile-html="meta.footer.content"></div>
+      <a class="lastupdate" target="_blank" href="{{meta.repo}}">{{meta.footer.lastupdatetext}}<br>{{settings.lastupdate}}</a>
+    </div>
+
+  </div>
+</div>

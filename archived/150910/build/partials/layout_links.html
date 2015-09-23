@@ -1,0 +1,46 @@
+
+
+<div class="panel graph">
+  <div class="graphloader spinner" ng-if="state.graphstatus=='LOADING'">
+    <div class="bounce1"></div>
+    <div class="bounce2"></div>
+    <div class="bounce3"></div>
+  </div>
+
+  <div class="graphloader" ng-if="state.graphstatus=='NO'" ng-click="state.lang=='fr' && loadLinksGraph();">{{meta.menu.loadgraph}}</div>
+
+  <div id="sigma-links"></div>
+</div>
+
+
+<div
+  class="panel links"
+  ng-click="resetFilters();">
+  <div
+    ng-repeat="l in linksArray"
+    class="link"
+    ng-class="{
+      reducedtag:     state.tags.length && !shallShowTags(l,true),
+      reducedsearch:  state.search && !shallShowSearch(l),
+      odd: $index%2==0,
+      even: $index%2==1
+    }"
+    ng-click="
+      (
+        (state.tags.length && shallShowTags(l,true)) ||
+        (state.search && shallShowSearch(l))
+      ) &&
+      $event.stopPropagation();">
+
+    <div class="tags">
+      <span
+        class="tag"
+        ng-class="{active: isTagActive(t)}"
+        ng-repeat="t in l.tags"
+        ng-click="toggleTag(t); $event.stopPropagation();">
+        {{tagsContents[t].label}}
+      </span>
+    </div>
+    <div class="content" compile-html="l.content"></div>
+  </div>
+</div>
