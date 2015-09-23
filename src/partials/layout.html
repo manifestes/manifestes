@@ -32,11 +32,14 @@
 
     <div class="menu">
 
-      <div class="arrow back" ng-click="state.intro = true;"></div>
+      <div class="backintro" ng-click="state.intro = true;">
+        <i class="fa fa-angle-up fa-lg"></i><br>
+        intro
+      </div>
       
       <!-- BUTTONS -->
       <div class="buttons">
-        <div class="button">
+        <div class="button" id="lang">
           <i class="fa fa-globe fa-lg"></i>
           <span>
             <a class="setlang" ng-class="{active: state.lang=='es'}" href="http://manifest.es/#/es">es</a>
@@ -44,19 +47,25 @@
           </span>
         </div>
 
-        <a class="button hover" id="print" href="./#/{{state.lang}}/print" target="_blank">
+        <a
+          class="button hover"
+          id="print"
+          href="./#/{{state.lang}}/print"
+          target="_blank">
           <i class="fa fa-print fa-lg"></i>
           <span>{{meta.menu.print}}</span>
         </a>
 
         <a
           class="button hover"
+          id="calendar"
           href="http://demosphere.eu/fr">
           <i class="fa fa-calendar fa-lg"></i>
           <span>{{meta.menu.calendar}} <i class="fa fa-external-link-square fa-lg"></i></span>
         </a>
         <div
           class="button hover"
+          ng-if="lang=='fr'"
           ng-click="changeLayout('map');"
           ng-class="{active:state.layout=='map'}">
           <i class="fa fa-map-o fa-lg"></i>
@@ -112,7 +121,10 @@
         <!-- TAGS GRAPH PANEL -->
         <div class="graphtags">
           <div id="sigma-tags"></div>
-          <div class="tagdescription">{{state.tagdescription}}</div>
+          <div class="tagdescription">
+            <span ng-if="state.overtag.tag">#{{state.overtag.tag}}</span> <br>
+            {{state.overtag.description}}
+          </div>
         </div>
       </div>
 

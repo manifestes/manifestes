@@ -232,20 +232,20 @@ var loadTagGraph = function(scope) {
         if(!event.data.captor.isDragging) {
           console.log("clickedTag:",event.data.node);
           scope.toggleTag(event.data.node.tag,true);
-          scope.tagDescription(event.data.node.tag);
+          scope.overTag(event.data.node.tag);
         }
       });
       s.bind('clickStage', function(event) {
         if(!event.data.captor.isDragging) {
           scope.toggleTag(null,true);
-          scope.tagDescription();
+          scope.overTag();
         }
       });
       s.bind('overNode', function(event) {
-        scope.tagDescription(event.data.node.tag);
+        scope.overTag(event.data.node.tag);
       });
       s.bind('outNode', function(event) {
-        scope.tagDescription();
+        scope.overTag();
       });
 
       // remember sigma node ids by tag ?

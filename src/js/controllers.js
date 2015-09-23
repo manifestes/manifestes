@@ -151,11 +151,11 @@ angular.module('manifest.controllers', ['underscore','config'])
         return 1;
       }
     };
-    $scope.tagDescription = function(tag) {
+    $scope.overTag = function(tag) {
       if(tag && $scope.tagsContents[tag]) {
-        $scope.state.tagdescription = $scope.tagsContents[tag].description;
+        $scope.state.overtag = $scope.tagsContents[tag];
       } else {
-        $scope.state.tagdescription = $scope.meta.menu.tagsdescription;
+        $scope.state.overtag = {description: $scope.meta.menu.tagsdescription};
       }
       $scope.$apply();
     };
@@ -436,6 +436,7 @@ angular.module('manifest.controllers', ['underscore','config'])
             //$scope.meta.about = md2Html($scope.meta.about);
             $scope.meta.footer.content = md2Html($scope.meta.footer.content);
             $scope.meta.graphcredits = md2Html($scope.meta.graphcredits);
+            $scope.state.overtag = {description: $scope.meta.menu.tagsdescription};
             
             // for html page meta
             $rootScope.htmlmeta = d.htmlmeta;
@@ -451,6 +452,7 @@ angular.module('manifest.controllers', ['underscore','config'])
             _.each(d.tags, function(v,k) {
               var part = v.split(' = ');
               $scope.tagsContents[k] = {
+                tag: k,
                 label: part[0].split('|')[0],
                 description: part[1],
                 icon: /^|/.test(part[0]) ? part[0].split('|')[1] : false

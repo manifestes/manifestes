@@ -233,19 +233,20 @@ span.highlight, div.highlight { /* searched words */
   background: white;
   text-align: center;
 
-  .arrow.back {
+  .backintro {
     z-index: 45;
     cursor: pointer;
     position: absolute;
-    margin: 25px;
-    width: 11px;
-    height: 11px;
-    border-right: 3px solid lightgray;
-    border-bottom: 3px solid lightgray;
-    .transform(rotate(-135deg));
+    margin: 9px 14px;
+    font-size: 0.7em;
+    line-height: 1.6em;
+    text-align: center;
+    color: @veryLightColor;
     &:hover {
-      border-right: 3px solid gray;
-      border-bottom: 3px solid gray;      
+      color: @textColor;
+    }
+    i {
+      font-weight: 900;      
     }
   }
 
@@ -336,17 +337,17 @@ span.highlight, div.highlight { /* searched words */
         height: @graphH;
         left: 0;
         bottom: 0;
-        //padding: 10px;
         background: #ECECEC;
 
         .box-shadow(0px 0px 5px 0px #525252);
         .transition(bottom 0.4s);
         
+        @descH: 65px;
         #sigma-tags {
-          height: @graphH - 45px;
+          height: @graphH - @descH;
           canvas {
             left: 0px;
-            height: @graphH - 45px;
+            height: @graphH - @descH;
           }
         }
         .tagdescription {
@@ -355,11 +356,23 @@ span.highlight, div.highlight { /* searched words */
           bottom: 0;
           width: 100%;
           padding: 15px;
+          //padding-top: 30px;
 
           background: white;
-          color: @lightColor;
+          color: @textColor;
           font-size: 0.75em;
+          line-height: 1.4em;
           text-align: center;
+
+          span {
+/*            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;*/
+            /*text-align: center;*/
+            /*padding-top: 7px;*/
+            color: @lightColor;
+          }
         }
       }
 
@@ -519,7 +532,7 @@ span.highlight, div.highlight { /* searched words */
   font-style: italic;
   text-transform: uppercase;
   cursor: pointer;
-  
+
   i {
     vertical-align: baseline;
     font-size: 1.1em;

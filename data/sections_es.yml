@@ -2,13 +2,14 @@
 
 
 ---
-role: splash
+role: meta
 source:
     github: https://github.com/manifestes/manifestes
     sections: https://github.com/manifestes/manifestes/blob/gh-pages/data/sections_es.yml
     links: https://github.com/manifestes/manifestes/blob/gh-pages/data/links_es.yml
-
 intro:
+    images:
+        - manifeste-utopies-concretes_CC3333
     title: ¡Manifiesto!
     description: >
         colectivo(s) de los territorios comunes autogestionados y alternativas convivialistas DIY voluntarios revolucionarios de la transición social y ecológica en los terceros lugares creativos de los clowns del bricolaje piratas de las utopías libertarias ecofeministas p2p y cooperativistas indignadas activistas de la resiliencia decreciente concreta y desobediente de las convergencias de las luchas
@@ -21,6 +22,8 @@ menu:
     search: buscar
     sections: textes
     links: liens
+    map: mapa
+    calendar: agenda
     print: imprimer
     examples: en pratique(s)
     discusstext: discutir, corregir, proponer
@@ -109,7 +112,7 @@ footer:
 
 ---
 date: 2015-07-15
-role: meta
+role: info
 title: ¿Y si escribiésemos juntos?
 subtitle: Manifiesto(s) de los otros mundos posibles
 slug: ecrire_manifeste
@@ -140,7 +143,7 @@ content: >
 
 ---
 date: 2015-07-15
-role: meta
+role: info
 title: Metodología y herramientas
 subtitle: ¿Cómo funciona este sitio? ¡Escritura colectiva!
 slug: methodo

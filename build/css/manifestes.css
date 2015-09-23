@@ -1247,24 +1247,21 @@ div.highlight {
   background: white;
   text-align: center;
 }
-.header .arrow.back {
+.header .backintro {
   z-index: 45;
   cursor: pointer;
   position: absolute;
-  margin: 25px;
-  width: 11px;
-  height: 11px;
-  border-right: 3px solid lightgray;
-  border-bottom: 3px solid lightgray;
-  -webkit-transform: rotate(-135deg);
-  -moz-transform: rotate(-135deg);
-  -ms-transform: rotate(-135deg);
-  -o-transform: rotate(-135deg);
-  transform: rotate(-135deg);
+  margin: 9px 14px;
+  font-size: 0.7em;
+  line-height: 1.6em;
+  text-align: center;
+  color: #cccccc;
 }
-.header .arrow.back:hover {
-  border-right: 3px solid gray;
-  border-bottom: 3px solid gray;
+.header .backintro:hover {
+  color: #3c3c3c;
+}
+.header .backintro i {
+  font-weight: 900;
 }
 .header .menu {
   z-index: 80;
@@ -1359,11 +1356,11 @@ div.highlight {
   transition: bottom 0.4s;
 }
 .header .menu .tagsmenu .graphtags #sigma-tags {
-  height: 175px;
+  height: 155px;
 }
 .header .menu .tagsmenu .graphtags #sigma-tags canvas {
   left: 0px;
-  height: 175px;
+  height: 155px;
 }
 .header .menu .tagsmenu .graphtags .tagdescription {
   box-sizing: border-box;
@@ -1372,9 +1369,19 @@ div.highlight {
   width: 100%;
   padding: 15px;
   background: white;
-  color: #ababab;
+  color: #3c3c3c;
   font-size: 0.75em;
+  line-height: 1.4em;
   text-align: center;
+}
+.header .menu .tagsmenu .graphtags .tagdescription span {
+  /*            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;*/
+  /*text-align: center;*/
+  /*padding-top: 7px;*/
+  color: #ababab;
 }
 .header .menu .tagsmenu.filtering .tagshat {
   background: #ececec;
@@ -2417,7 +2424,8 @@ body.layout-print .footer {
     -moz-box-shadow: none !important;
     box-shadow: none !important;
   }
-  .header .button#print {
+  .header .button#print,
+  .header .button#lang {
     display: none;
   }
 }
@@ -2483,6 +2491,9 @@ body.layout-print .footer {
     font-size: 1.2em;
     padding: 20px 0px;
     margin-top: 10px;
+  }
+  .header .button#calendar {
+    display: none;
   }
 }
 /* TABLETS ONLY */

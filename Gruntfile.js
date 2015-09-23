@@ -107,22 +107,24 @@ module.exports = function(grunt) {
         src: [
           'src/vendor/comma-separated-values/csv.min.js',
           'src/vendor/leaflet/dist/leaflet-src.js',
-          'src/vendor/angular-simple-logger/dist/index.js',
+          //'src/vendor/angular-simple-logger/dist/index.js',
           'src/vendor/Leaflet.MakiMarkers/Leaflet.MakiMarkers.js',
           'src/vendor/leaflet.locatecontrol/dist/L.Control.Locate.min.js',
           'src/vendor/leaflet-search/dist/leaflet-search.min.js',
           
-          'src/vendor/sigmajs/build/sigma.min.js',
-          'src/vendor/sigmajs/build/plugins/sigma.parsers.gexf.min.js',
+          'src/vendor/sigmajs/sigma.min.js',
+          'src/vendor/sigmajs/plugins/sigma.parsers.gexf.min.js',
+
           'src/vendor/moment/min/moment-with-locales.min.js',
           'src/vendor/underscore/underscore-min.js',
           'src/vendor/angular/angular.min.js',
           'src/vendor/angular-sanitize/angular-sanitize.min.js',
           'src/vendor/angular-route/angular-route.min.js',
-          //'src/vendor/angular-touch/angular-touch.min.js',
+          'src/vendor/angular-touch/angular-touch.min.js',
+          //'src/vendor/angular-animate/angular-animate.min.js',
           //'src/vendor/ngScroll/ngscroll.min.js',
           'src/vendor/fastclick/lib/fastclick.js',
-          //'src/vendor/angular-animate/angular-animate.min.js',
+          
           'src/vendor/markdown/lib/markdown.js',
           'src/vendor/js-yaml/dist/js-yaml.min.js',
           'src/js/*.js'
