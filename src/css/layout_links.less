@@ -12,14 +12,19 @@
   box-sizing: border-box;
   position: fixed;
   left: 0;
+  top: @menuH;
+  bottom: 0;
+
   width: @panelW;
-  height: 100%;
+  &.fullscreen {
+    width: 100% !important;
+  }
   
   .inner-shadow(-1px 0px 1px 0px #8A8A8A);
   background: @veryLightColor;
 
   .graphloader {
-    z-index: 90;
+    z-index: 99999;
     position: absolute;
     box-sizing: border-box;
     width: 100%;
@@ -37,10 +42,36 @@
     .inner-shadow(-1px 0px 1px 0px #8A8A8A);
   }
 
+  .control {
+    z-index: 9999;
+    cursor: pointer;
+    position: absolute;
+    border-radius: 5px;
+    top: 0;
+    right: 0;
+    margin: 9px;
+    padding: 5px;
+    font-size: 0.8em;
+    background: white;
+    &:hover {
+      color: @lightColor;
+    }
+  }
+  .credits {
+    z-index: 9999;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.57);
+    font-size: 0.6em;
+    padding: 3px 6px;
+  }
+
   #sigma-links {
     height: 100%;
     canvas {
       left: 0px;
+      right: 0px;
     }
   }
 }
@@ -58,34 +89,13 @@
     margin: 0px 10px;
     
     .tag {
-      float: right;
-      margin: 2px -1px;
-      padding: 2px 5px;
-      border-radius: 2px;
+      
+      .base-tag();
+
       background: @lightColor;
-      color: white;
       font-size: 10px;
-      font-style: italic;
-      text-transform: uppercase;
-      cursor: pointer;
-      i {
-        display: none;
-        vertical-align: baseline;
-        font-size: 1.1em;
-        margin-left: 2px;
-        opacity: 0.5;
-      }
-      &:hover {
+      &:hover { 
         background: @darkColor;
-        i {
-          opacity: 1;
-        }
-      }
-      &.active {
-        background: @redColor;
-        i {
-          display: inline-block;
-        }
       }
     }
   }

@@ -156,35 +156,15 @@
       right: 0;
       top: 11px;
       margin-right: 10px;
+      
       .tag {
-        float: right;
-        margin: 2px -1px;
-        padding: 2px 5px;
-        border-radius: 2px;
+
+        .base-tag();
+        
         background: @darkColor;
-        color: white;
         font-size: 9px;
-        font-style: italic;
-        text-transform: uppercase;
-        cursor: pointer;
-        i {
-          display: none;
-          vertical-align: baseline;
-          font-size: 1.1em;
-          margin-left: 2px;
-          opacity: 0.5;
-        }
         &:hover {
-          background: #959892;
-          i {
-            opacity: 1;
-          }
-        }
-        &.active {
-          background: @redColor;
-          i {
-            display: inline-block;
-          }
+          background: @lightColor;
         }
       }
     }

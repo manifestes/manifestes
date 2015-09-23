@@ -19,7 +19,6 @@ angular.module('manifest', [
     console.log("App Settings",settings);
     
     var lang = navigator.language;
-    console.log("lang:",lang);
 
     $routeProvider.when('/:lang', {
       templateUrl: settings.assets + '/partials/layout.html',

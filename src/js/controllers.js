@@ -11,135 +11,6 @@ angular.module('underscore', [])
 
 angular.module('manifest.controllers', ['underscore','config'])
 ////////////////////////////////////////////////////////////////////////
-.controller('MapController', [
-  '$scope',
-  '$http',
-  '_',
-  'settings',
-  function ($scope, $http, _, settings) {
-
-    $scope.initMap = function() {
-
-      console.log("initing map !");
-
-      var osm = L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-      });
-      var cycle = L.tileLayer('http://{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '&copy; <a href="http://www.opencyclemap.org/copyright">OpenCycleMap</a> contributors - &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-      });
-      var terrain = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer/tile/{z}/{y}/{x}', {
-        maxZoom: 19,
-        attribution: 'Tiles &copy; Esri &mdash; Source: USGS, Esri, TANA, DeLorme, and NPS'
-      });
-      var tileLayers = {
-        "OSM": osm,
-        "Cycle": cycle,
-        "Terrain": terrain
-      };
-
-      var map = L.map('leaflet', {
-        zoomControl: false,
-        scrollWheelZoom: true,
-        doubleClickZoom: true,
-        center: [47, 2.5],
-        zoom: 6,
-        minZoom: 4,
-        maxZoom: 16,
-        locateButton: true,
-        layers: [osm]
-      });
-
-      L.control.zoom({
-        position: 'bottomleft'
-      }).addTo(map);
-
-      L.control.locate({
-        position: 'bottomleft',
-        icon: 'fa fa-street-view',
-        showPopup: false,
-      }).addTo(map);
-      var layers = new L.LayerGroup().addTo(map);
-
-      $http.get(settings.datapath + '_encours/map.csv').success(function(data) {
-        //console.log("got csv data:",data);
-        //$scope.data = data;
-        var ms = new CSV(data, {header:true}).parse();
-        
-        _.each(ms, function(m,k) {
-
-          // if(!layers[m.source]) {
-          //   layers[m.source] = new L.LayerGroup().addTo(overlays);
-          // }
-
-          var icon = 'marker';
-          var color = "#A9A9F5";
-          var size = "s";
-          if(/^citoy_/.test(m.source)) { color = "#81BEF7"; }
-          if(/caravane/.test(m.source)) { color = "#04B431"; }
-          if(/^lieux/.test(m.source)) { color = "#F79F81"; }
-          if(/region/.test(m.scale)) { size = "l"; }
-          if(/ville/.test(m.scale)) { size = "m"; }
-
-          //var customPopup = "<div ng-include ng-init=\"data=leafmarkers['"+m.source+"']['mark_"+k+"'];\" src=\"'partials/marker.html'\"></div>";
-          var customPopup = "<div class='details'>"+
-            "<h3>"+m.name+"</h3>"+
-            "<h4>"+m.address+"</h4>"+
-            "<div>"+m.description+"</div>"+
-            "<div>"+m.contact+"</div>"+
-          "</div>";
-          var customOptions = {
-            'maxWidth': '500',
-            'className' : 'custom'
-          }
-
-          var theM = L.marker([m.lat, m.lng], {
-            title: m.name,
-            icon: L.MakiMarkers.icon({
-              icon: icon,
-              color: color,
-              size: size
-            })
-          })
-          .bindPopup(customPopup,customOptions)
-          .addTo(layers);
-        });
-        console.log("all markers added!");
-
-        L.control.layers(tileLayers).addTo(map);
-        //console.log("overlays !!",layers);
-
-        L.control.search({
-          layer: layers,
-          initial: false,
-          zoom: 9,
-          buildTip: function(text, val) {
-            var type = "ok";
-            return '<div><a href="#" class="'+type+'">YOU'+text+'<b>'+type+'</b></a></div>';
-          }
-        }).addTo(map);
-
-          // L.control.search({
-          //   layer: baselayers,
-          //   initial: false,
-          //   zoom: 18,
-          //   propertyName: 'name',
-          //   buildTip: function(text, val) {
-          //     //var type = val.layer.feature.properties.amenity;
-          //     var type = "test";
-          //     return '<a href="#" class="'+type+'">'+text+'<b>'+type+'</b></a>';
-          //   }
-          // }).addTo(map);
-      });
-    }
-
-  }
-])
-
-
-////////////////////////////////////////////////////////////////////////
 .controller('manifestController', [
     "$scope",
     "$routeParams",
@@ -166,20 +37,25 @@ angular.module('manifest.controllers', ['underscore','config'])
     $scope.meta = {}; // mainly the meta info at start of section.yml
     $scope.sections = [];
     $scope.tagsContents = {}; // .label & .description dor each tag
-    $scope.sectionNbByTag = {}; // how many sections by tag
     $scope.linksArray = []; // raw list of links
-    $scope.linksByTag = {}; // related links for each tag
+    $scope.linksByTag = {}; // links by tag
+    $scope.sectionNbByTag = {}; // sections by tag (only nb)
     
+    $scope.settings.verbose = false; // to print detailed stats on tags, objects, etc...
+
     $scope.state = {
-      intro: true, //!$scope.settings.dev, // splash fullscreen panel
+      intro: !$scope.settings.dev, // splash fullscreen panel
       introimage: 0, // slideshow of intro splash images
       commenting_slug: null, // current disqus id
       lang: $routeParams.lang,
       layout: layout, // sections/links/map/print/etc...
       tags: [], // list of current filtering tags
       graphstatus: "NO", // loaded or not ?
+      graphfullscreen: false
     };
-    console.log("state:",$scope.state);
+    
+    if($scope.settings.verbose)
+      console.log("state:",$scope.state);
 
     
 
@@ -209,7 +85,8 @@ angular.module('manifest.controllers', ['underscore','config'])
     };
 
     var scrollToup = function() {
-      document.getElementById("container").scrollTo(0,0);
+      // window.scrollTo ... or ....
+      document.getElementById("container").scrollTop = 0;
     };
 
     $scope.openComments = function(p) {
@@ -236,21 +113,44 @@ angular.module('manifest.controllers', ['underscore','config'])
 
 
     $scope.changeLayout = function(lay) {
-      if(lay != $scope.state.layout) {
+      if(lay == $scope.state.layout) return; // unchanged
+      else {
+        
+        // reset tags & search
+        $scope.toggleTag();
+        $scope.searchSubmit();
+
         $scope.state.layout = lay;
         if(lay!='links') {
-          $scope.state.graphstatus="NO";
+          $scope.state.graphstatus = "NO";
           //loadLinksGraph($scope);
         }
         scrollToup();
+        
+        // update tag graph sizes
+        updateTagNodesSizesForLayout($scope,lay);
       }
     };
     $scope.loadLinksGraph = function() {
       loadLinksGraph($scope);
     };
+    $scope.updateGraphSize = function() {
+      $timeout(function() {
+        updateGraphSize();
+      },0)
+    }
 
 
-
+    $scope.tagSorter = function(tag) {
+      var ic = $scope.tagsContents[tag].icon;
+      if(!ic) return -1;
+      else {
+        if(tag=='manifest') return 6;
+        if(tag=='list') return 5;
+        if(tag=='place') return 4;
+        return 1;
+      }
+    };
     $scope.tagDescription = function(tag) {
       if(tag && $scope.tagsContents[tag]) {
         $scope.state.tagdescription = $scope.tagsContents[tag].description;
@@ -498,7 +398,7 @@ angular.module('manifest.controllers', ['underscore','config'])
             });
           });
 
-          if($scope.settings.dev) {
+          if($scope.settings.verbose) {
             console.log("!! declared tags:",_.keys($scope.meta.tags));
             console.log("!! declared tags contents:",$scope.tagsContents);
             console.log("!! all links:",$scope.linksArray);
@@ -530,11 +430,12 @@ angular.module('manifest.controllers', ['underscore','config'])
         jsyaml.loadAll(res, function(d) {
 
           //////////////////////////////////////////// PARSING META
-          if(d.role && d.role=='splash') {
+          if(d.role && d.role=='meta') {
 
             $scope.meta = d;
             //$scope.meta.about = md2Html($scope.meta.about);
             $scope.meta.footer.content = md2Html($scope.meta.footer.content);
+            $scope.meta.graphcredits = md2Html($scope.meta.graphcredits);
             
             // for html page meta
             $rootScope.htmlmeta = d.htmlmeta;
@@ -548,9 +449,11 @@ angular.module('manifest.controllers', ['underscore','config'])
             });
 
             _.each(d.tags, function(v,k) {
+              var part = v.split(' = ');
               $scope.tagsContents[k] = {
-                label: v.split(' = ')[0],
-                description: v.split(' = ')[1],
+                label: part[0].split('|')[0],
+                description: part[1],
+                icon: /^|/.test(part[0]) ? part[0].split('|')[1] : false
               };
             });
             
@@ -618,5 +521,133 @@ angular.module('manifest.controllers', ['underscore','config'])
     })();
       
 
-  }]);
+  }])
+
+////////////////////////////////////////////////////////////////////////
+.controller('MapController', [
+  '$scope',
+  '$http',
+  '_',
+  'settings',
+  function ($scope, $http, _, settings) {
+
+    $scope.initMap = function() {
+
+      console.log("initing map !");
+
+      var osm = L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      });
+      var cycle = L.tileLayer('http://{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.opencyclemap.org/copyright">OpenCycleMap</a> contributors - &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      });
+      var terrain = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer/tile/{z}/{y}/{x}', {
+        maxZoom: 19,
+        attribution: 'Tiles &copy; Esri &mdash; Source: USGS, Esri, TANA, DeLorme, and NPS'
+      });
+      var tileLayers = {
+        "OSM": osm,
+        "Cycle": cycle,
+        "Terrain": terrain
+      };
+
+      var map = L.map('leaflet', {
+        zoomControl: false,
+        scrollWheelZoom: true,
+        doubleClickZoom: true,
+        center: [47, 2.5],
+        zoom: 6,
+        minZoom: 4,
+        maxZoom: 16,
+        locateButton: true,
+        layers: [osm]
+      });
+
+      L.control.zoom({
+        position: 'bottomleft'
+      }).addTo(map);
+
+      L.control.locate({
+        position: 'bottomleft',
+        icon: 'fa fa-street-view',
+        showPopup: false,
+      }).addTo(map);
+      var layers = new L.LayerGroup().addTo(map);
+
+      $http.get(settings.datapath + '_encours/map.csv').success(function(data) {
+        //console.log("got csv data:",data);
+        //$scope.data = data;
+        var ms = new CSV(data, {header:true}).parse();
+        
+        _.each(ms, function(m,k) {
+
+          // if(!layers[m.source]) {
+          //   layers[m.source] = new L.LayerGroup().addTo(overlays);
+          // }
+
+          var icon = 'marker';
+          var color = "#A9A9F5";
+          var size = "s";
+          if(/^citoy_/.test(m.source)) { color = "#81BEF7"; }
+          if(/caravane/.test(m.source)) { color = "#04B431"; }
+          if(/^lieux/.test(m.source)) { color = "#F79F81"; }
+          if(/region/.test(m.scale)) { size = "l"; }
+          if(/ville/.test(m.scale)) { size = "m"; }
+
+          //var customPopup = "<div ng-include ng-init=\"data=leafmarkers['"+m.source+"']['mark_"+k+"'];\" src=\"'partials/marker.html'\"></div>";
+          var customPopup = "<div class='details'>"+
+            "<h3>"+m.name+"</h3>"+
+            "<h4>"+m.address+"</h4>"+
+            "<div>"+m.description+"</div>"+
+            "<div>"+m.contact+"</div>"+
+          "</div>";
+          var customOptions = {
+            'maxWidth': '500',
+            'className' : 'custom'
+          }
+
+          var theM = L.marker([m.lat, m.lng], {
+            title: m.name,
+            icon: L.MakiMarkers.icon({
+              icon: icon,
+              color: color,
+              size: size
+            })
+          })
+          .bindPopup(customPopup,customOptions)
+          .addTo(layers);
+        });
+        console.log("all markers added!");
+
+        L.control.layers(tileLayers).addTo(map);
+        //console.log("overlays !!",layers);
+
+        L.control.search({
+          layer: layers,
+          initial: false,
+          zoom: 9,
+          buildTip: function(text, val) {
+            var type = "ok";
+            return '<div><a href="#" class="'+type+'">YOU'+text+'<b>'+type+'</b></a></div>';
+          }
+        }).addTo(map);
+
+          // L.control.search({
+          //   layer: baselayers,
+          //   initial: false,
+          //   zoom: 18,
+          //   propertyName: 'name',
+          //   buildTip: function(text, val) {
+          //     //var type = val.layer.feature.properties.amenity;
+          //     var type = "test";
+          //     return '<a href="#" class="'+type+'">'+text+'<b>'+type+'</b></a>';
+          //   }
+          // }).addTo(map);
+      });
+    }
+
+  }
+])
   

@@ -3,23 +3,26 @@
   ng-class="{hidden:!state.intro}">
   <div class="splash">
     <div
-      ng-repeat="i in intro.images"
+      ng-repeat="i in meta.intro.images"
       class="image"
-      back-img="{{settings.datapath}}splash/{{intro.images[$index]}}"
+      back-img="{{settings.datapath}}splash/{{i.filename}}"
+      ng-style="{'background-color': i.color}"
       ng-class="{
-        active: state.introimage == $index,
-        left: state.introimage == $index-1,
-        right: state.introimage == $index+1,
+        active: state.introimage % meta.intro.images.length == $index,
+        left: state.introimage % meta.intro.images.length < $index,
+        right: state.introimage % meta.intro.images.length > $index,
       }"
-      ng-click="state.introimage++;"
-      ng-swipe-left="state.introimage--;"
-      ng-swipe-right="state.introimage++;">
+      ng-click="swiping ? ( swiping = false ) : slideSplashImage(true,true);"
+      ng-swipe-left="slideSplashImage(true); swiping=true;"
+      ng-swipe-right="slideSplashImage(false); swiping=true;">
     </div>
   </div>
 
   <div class="foot">
-    <div class="keywords">{{meta.intro.keywords}}</div>
-    <div class="button color-{{getRandomInt()}}" ng-click="state.intro=false;">{{meta.intro.enter}}</div>
+    <!-- <div class="keywords">{{meta.intro.keywords}}</div> -->
+    <div class="button color-{{getRandomInt()}}" ng-click="state.intro=false;">
+      {{meta.intro.enter}}
+    </div>
   </div>
 </div>
 
@@ -66,7 +69,7 @@
           class="button hover"
           ng-click="changeLayout('links');"
           ng-class="{active:state.layout=='links'}">
-          <i class="fa fa-database fa-lg"></i>
+          <i class="fa fa-sitemap fa-lg"></i>
           <a class="ext" href="{{meta.source.links}}" target="_blank">
             <i class="fa fa-file-text fa-lg"></i>
           </a>
@@ -95,10 +98,10 @@
               ng-repeat="t in state.tags"
               ng-click="toggleTag(t);">{{tagsContents[t].label}}
             </div>
-            <img
-              class="clear"
-              src="{{settings.assets}}/images/clear.svg"
-              ng-click="toggleTag();"/>
+            <i
+              ng-click="toggleTag();"
+              class="clear fa fa-times fa-lg">
+            </i>
           </div>
           <span class="label">{{meta.menu.tagslabel}}</span>
 
@@ -124,11 +127,11 @@
           ng-enter="searchSubmit(input);"
           ng-class="{highlight:state.search}"/>
         </form>
-        <img
-          ng-if="input.length>0"
-          class="clear"
-          src="{{settings.assets}}/images/clear.svg"
-          ng-click="searchSubmit();"/>
+        <i
+          ng-if="input.length"
+          ng-click="searchSubmit();"
+          class="clear fa fa-times fa-lg">
+        </i>
       </div>
     </div>
 

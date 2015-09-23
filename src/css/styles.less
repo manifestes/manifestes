@@ -302,6 +302,8 @@ span.highlight, div.highlight { /* searched words */
             vertical-align: middle;
             cursor: pointer;
             opacity: 1;
+            font-size: 0.9em;
+            color: @textColor;
             &:hover {
               opacity: 0.5;
             }
@@ -489,18 +491,53 @@ span.highlight, div.highlight { /* searched words */
           background: @searchYellow;
         }
       }
-      img.clear {
+      .clear {
         cursor: pointer;
         position: absolute;
-        width: 18px;
         top: 0;
         right: 0;
-        margin: 6px;
+        margin: 8px;
         opacity: 1;
+        font-size: 0.9em;
+        color: @lightColor;
         &:hover {
           opacity: 0.5;
         }
       }
+    }
+  }
+}
+
+
+.base-tag {
+  float: right;
+  margin: 2px -1px;
+  padding: 2px 5px;
+  border-radius: 2px;
+  color: white;
+  
+  font-style: italic;
+  text-transform: uppercase;
+  cursor: pointer;
+  
+  i {
+    vertical-align: baseline;
+    font-size: 1.1em;
+    margin-left: 2px;
+  }
+  i.clear {
+    display: none;
+    opacity: 0.5;
+  }
+  &:hover {
+    i.clear {
+      opacity: 1;
+    }
+  }
+  &.active {
+    background: @redColor;
+    i.clear {
+      display: inline-block;
     }
   }
 }

@@ -69,7 +69,7 @@
           class="button hover"
           ng-click="changeLayout('links');"
           ng-class="{active:state.layout=='links'}">
-          <i class="fa fa-database fa-lg"></i>
+          <i class="fa fa-sitemap fa-lg"></i>
           <a class="ext" href="{{meta.source.links}}" target="_blank">
             <i class="fa fa-file-text fa-lg"></i>
           </a>
@@ -98,10 +98,10 @@
               ng-repeat="t in state.tags"
               ng-click="toggleTag(t);">{{tagsContents[t].label}}
             </div>
-            <img
-              class="clear"
-              src="{{settings.assets}}/images/clear.svg"
-              ng-click="toggleTag();"/>
+            <i
+              ng-click="toggleTag();"
+              class="clear fa fa-times fa-lg">
+            </i>
           </div>
           <span class="label">{{meta.menu.tagslabel}}</span>
 
@@ -127,11 +127,11 @@
           ng-enter="searchSubmit(input);"
           ng-class="{highlight:state.search}"/>
         </form>
-        <img
-          ng-if="input.length>0"
-          class="clear"
-          src="{{settings.assets}}/images/clear.svg"
-          ng-click="searchSubmit();"/>
+        <i
+          ng-if="input.length"
+          ng-click="searchSubmit();"
+          class="clear fa fa-times fa-lg">
+        </i>
       </div>
     </div>
 

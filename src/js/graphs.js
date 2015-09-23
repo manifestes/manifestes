@@ -4,6 +4,11 @@ var tagsGraph = null;
 
 
 ////////////////////////////////////////// LINKS GRAPH
+var updateGraphSize = function() {
+  linksGraph.renderers[0].resize();
+  linksGraph.refresh();
+  //console.log("graph size refreshed");
+}
 var filterLinksNodes = function(term) {
   g = linksGraph.graph;
 
@@ -135,7 +140,8 @@ var loadLinksGraph = function(scope) {
         }
       });
 
-      console.log("links graph loaded");
+      if(scope.settings.verbose)
+        console.log("links graph loaded");
 
       s.refresh();
 
@@ -151,6 +157,31 @@ var loadLinksGraph = function(scope) {
 
 
 ////////////////////////////////////////// TAG GRAPH
+var updateTagNodesSizesForLayout = function(scope,layout) {
+  g = tagsGraph.graph;
+
+  var orphans = [];
+  g.nodes().forEach(function(n) {
+    var t = n.tag;
+
+    // get Q: nb of items per tag
+    var Q = (layout=='links') ?
+      (scope.linksByTag[t] ? scope.linksByTag[t].length : false) :
+      scope.sectionNbByTag[t] ;
+    
+    if(Q) {
+      n.size = 18 + Q;
+    } else {
+      orphans.push(t);
+      n.size = 0.2;
+    }
+  });
+  
+  if(scope.settings.verbose)
+    console.log("!! layout="+layout+" : tag nodes unused:",orphans);
+
+  tagsGraph.refresh();
+};
 var updateTagNodes = function(tags) {
   g = tagsGraph.graph;
 
@@ -217,8 +248,8 @@ var loadTagGraph = function(scope) {
         scope.tagDescription();
       });
 
-      var ids = {} ;
-      var orphans = [];
+      // remember sigma node ids by tag ?
+      //var ids = {} ;
 
       // init things on the graph
       s.graph.nodes().forEach(function(n) {
@@ -230,20 +261,10 @@ var loadTagGraph = function(scope) {
         //console.log(n);
         var t = n.label;
         
-        ids[t] = n.id;
+        //ids[t] = n.id;
         n.tag = t;
         n.label = scope.tagsContents[t].label;
-
-        if(scope.meta.tags[t] && scope.linksByTag[t]) {
-          n.size = 18 + scope.linksByTag[t].length;
-        } else {
-          orphans.push(t);
-          n.size = 1;
-          //n.label = t;
-        }
       });
-
-      console.log("!! graph nodes unused:",orphans);
 
       _.each(s.graph.edges(), function(e) {
         //console.log(e);
@@ -268,7 +289,11 @@ var loadTagGraph = function(scope) {
 
       s.refresh();
 
-      console.log("tag graph made",s.graph);
+      if(scope.settings.verbose)
+        console.log("tag graph made",s.graph);
+
+      // init size with current scope.layout
+      updateTagNodesSizesForLayout(scope, scope.state.layout);
     }
   );
 }
