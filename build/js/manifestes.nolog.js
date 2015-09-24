@@ -508,7 +508,7 @@ d)}):m.addOption(e.value,d);d.on("$destroy",function(){m.removeOption(e.value)})
 ;
 
 /*
- AngularJS v1.3.18
+ AngularJS v1.3.20-build.147+sha.a665550
  (c) 2010-2014 Google, Inc. http://angularjs.org
  License: MIT
 */
@@ -527,7 +527,7 @@ h.isDefined(b)&&g.push('target="',b,'" ');g.push('href="',a.replace(/"/g,"&quot;
 ;
 
 /*
- AngularJS v1.4.5
+ AngularJS v1.4.6
  (c) 2010-2015 Google, Inc. http://angularjs.org
  License: MIT
 */
@@ -545,7 +545,7 @@ p.directive("ngView",v);p.directive("ngView",A);v.$inject=["$route","$anchorScro
 ;
 
 /*
- AngularJS v1.3.18
+ AngularJS v1.3.20-build.147+sha.a665550
  (c) 2010-2014 Google, Inc. http://angularjs.org
  License: MIT
 */
@@ -3192,7 +3192,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'23 September 2015 - 6:31'})
+.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'24 September 2015 - 12:25'})
 
 ;
 ;
