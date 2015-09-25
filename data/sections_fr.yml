@@ -43,7 +43,9 @@ intro:
     enter: "consulter & participer"
 menu:
     tagsdefault: toutes
-    tagslabel: filtrer par thématiques
+    tagshat: filtrer par thématiques
+    taggingoff: afficher les thématiques
+    taggingon: masquer les thématiques
     tagsdescription: cliquez sur les thématiques pour filtrer les contenus
     search: chercher
     sections: textes

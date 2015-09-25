@@ -49,6 +49,7 @@ angular.module('manifest.controllers', ['underscore','config'])
       commenting_slug: null, // current disqus id
       lang: $routeParams.lang,
       layout: layout, // sections/links/map/print/etc...
+      tagging: false, // if tags/filtering active or not
       tags: [], // list of current filtering tags
       graphstatus: "NO", // loaded or not ?
       graphfullscreen: false
@@ -166,6 +167,12 @@ angular.module('manifest.controllers', ['underscore','config'])
 
 
 
+    $scope.toggleTagging = function() {
+      $scope.state.tagging = !$scope.state.tagging;
+      $scope.state.taggingtooltip = $scope.state.tagging ? 
+        $scope.meta.menu.taggingon : $scope.meta.menu.taggingoff;
+      $scope.toggleTag();
+    };
 
     $scope.resetFilters = function() {
       $scope.toggleTag();
@@ -437,7 +444,10 @@ angular.module('manifest.controllers', ['underscore','config'])
             $scope.meta.footer.content = md2Html($scope.meta.footer.content);
             $scope.meta.graphcredits = md2Html($scope.meta.graphcredits);
             $scope.state.overtag = {description: $scope.meta.menu.tagsdescription};
-            
+            $scope.state.taggingtooltip = $scope.state.tagging ? 
+              $scope.meta.menu.taggingon : $scope.meta.menu.taggingoff;
+
+
             // for html page meta
             $rootScope.htmlmeta = d.htmlmeta;
 

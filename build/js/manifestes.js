@@ -508,7 +508,7 @@ d)}):m.addOption(e.value,d);d.on("$destroy",function(){m.removeOption(e.value)})
 ;
 
 /*
- AngularJS v1.3.20-build.147+sha.a665550
+ AngularJS v1.3.19
  (c) 2010-2014 Google, Inc. http://angularjs.org
  License: MIT
 */
@@ -545,7 +545,7 @@ p.directive("ngView",v);p.directive("ngView",A);v.$inject=["$route","$anchorScro
 ;
 
 /*
- AngularJS v1.3.20-build.147+sha.a665550
+ AngularJS v1.3.19
  (c) 2010-2014 Google, Inc. http://angularjs.org
  License: MIT
 */
@@ -3192,7 +3192,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'24 September 2015 - 12:25'})
+.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'25 September 2015 - 2:13'})
 
 ;
 ;
@@ -3248,6 +3248,7 @@ angular.module('manifest.controllers', ['underscore','config'])
       commenting_slug: null, // current disqus id
       lang: $routeParams.lang,
       layout: layout, // sections/links/map/print/etc...
+      tagging: false, // if tags/filtering active or not
       tags: [], // list of current filtering tags
       graphstatus: "NO", // loaded or not ?
       graphfullscreen: false
@@ -3365,6 +3366,12 @@ angular.module('manifest.controllers', ['underscore','config'])
 
 
 
+    $scope.toggleTagging = function() {
+      $scope.state.tagging = !$scope.state.tagging;
+      $scope.state.taggingtooltip = $scope.state.tagging ? 
+        $scope.meta.menu.taggingon : $scope.meta.menu.taggingoff;
+      $scope.toggleTag();
+    };
 
     $scope.resetFilters = function() {
       $scope.toggleTag();
@@ -3636,7 +3643,10 @@ angular.module('manifest.controllers', ['underscore','config'])
             $scope.meta.footer.content = md2Html($scope.meta.footer.content);
             $scope.meta.graphcredits = md2Html($scope.meta.graphcredits);
             $scope.state.overtag = {description: $scope.meta.menu.tagsdescription};
-            
+            $scope.state.taggingtooltip = $scope.state.tagging ? 
+              $scope.meta.menu.taggingon : $scope.meta.menu.taggingoff;
+
+
             // for html page meta
             $rootScope.htmlmeta = d.htmlmeta;
 

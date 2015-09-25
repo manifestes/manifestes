@@ -1046,6 +1046,12 @@ a {
 a:hover {
   color: #485361;
 }
+/* hack to allow linebreak within hint.css */
+.hint:after,
+[data-hint]:after {
+  white-space: pre !important;
+  text-align: left;
+}
 span.highlight,
 div.highlight {
   /* searched words */
@@ -1239,12 +1245,21 @@ div.highlight {
   background: white;
   text-align: center;
 }
-.header .backintro {
+.header .action {
+  box-sizing: border-box;
   z-index: 45;
   cursor: pointer;
-  position: absolute;
-  margin: 9px 14px;
-  font-size: 0.7em;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  height: 100%;
+}
+.header .action span {
+  display: block;
+}
+.header .backintro {
+  padding: 9px 10px 9px 20px;
+  font-size: 1.4em;
   line-height: 1.6em;
   text-align: center;
   color: #cccccc;
@@ -1254,6 +1269,33 @@ div.highlight {
 }
 .header .backintro i {
   font-weight: 900;
+}
+.header .tagging {
+  padding: 8px 10px;
+  color: #cccccc;
+}
+.header .tagging .circle {
+  padding: 8px;
+  background: none;
+  border-radius: 40px;
+  width: 24px;
+  text-align: center;
+  font-size: 1.3em;
+}
+.header .tagging.active {
+  color: white;
+}
+.header .tagging.active .circle {
+  background: #883e3e;
+}
+.header .tagging:hover {
+  color: white;
+}
+.header .tagging:hover .circle {
+  background: #cccccc;
+}
+.header .tagging.active:hover .circle {
+  background: #987676;
 }
 .header .menu {
   z-index: 80;
@@ -1271,9 +1313,10 @@ div.highlight {
   box-sizing: border-box;
   position: absolute;
   left: 0;
+  top: 0;
   width: 400px;
   height: 58px;
-  padding-left: 60px;
+  padding-left: 104px;
   background: white;
   border-bottom: 5px solid #cccccc;
 }
@@ -1281,7 +1324,7 @@ div.highlight {
   box-sizing: border-box;
   width: 100%;
   padding: 2px;
-  margin-top: 5px;
+  margin-top: 6px;
   text-align: left;
 }
 .header .menu .tagsmenu .tagshat .tags .tag {
@@ -1382,10 +1425,10 @@ div.highlight {
 .header .menu .tagsmenu.filtering .clear {
   display: inline-block !important;
 }
-.header .menu .tagsmenu:hover .tagshat {
+.header .menu .tagsmenu.active:hover .tagshat {
   border-bottom: none !important;
 }
-.header .menu .tagsmenu:hover .graphtags {
+.header .menu .tagsmenu.active:hover .graphtags {
   bottom: -220px;
 }
 .header .menu .buttons {
@@ -1408,9 +1451,6 @@ div.highlight {
 }
 .header .menu .buttons .button i {
   color: #ababab;
-}
-.header .menu .buttons .button img {
-  width: 15px;
 }
 .header .menu .buttons .button span {
   display: block;
@@ -1462,9 +1502,18 @@ div.highlight {
   color: #883e3e;
   pointer-events: none;
 }
+.header .menu .buttons .button.inactive {
+  pointer-events: none;
+}
+.header .menu .buttons .button.inactive span,
+.header .menu .buttons .button.inactive i {
+  color: #cccccc;
+  font-style: italic;
+}
 .header .menu .searchinput {
   z-index: 35;
   position: absolute;
+  top: 0;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
   -moz-transform: translate(-50%, 0);

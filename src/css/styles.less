@@ -35,6 +35,12 @@ a {
   }
 }
 
+/* hack to allow linebreak within hint.css */
+.hint:after, [data-hint]:after {
+  white-space: pre !important;
+  text-align: left;
+}
+
 
 @veryLightColor: #CCCCCC;
 @lightColor: #ABABAB; // gris menu, tag léger
@@ -43,6 +49,7 @@ a {
 @textColor: #3C3C3C;
 
 @redColor: #883E3E;
+@redGreyColor: #987676;
 @searchYellow: rgba(255, 252, 0, 0.48);
 
 
@@ -226,12 +233,22 @@ span.highlight, div.highlight { /* searched words */
   background: white;
   text-align: center;
 
-  .backintro {
+  .action {
+    box-sizing: border-box;
     z-index: 45;
     cursor: pointer;
-    position: absolute;
-    margin: 9px 14px;
-    font-size: 0.7em;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    height: 100%;
+    span {
+      display: block;
+    }
+  }
+
+  .backintro {
+    padding: 9px 10px 9px 20px;
+    font-size: 1.4em;
     line-height: 1.6em;
     text-align: center;
     color: @veryLightColor;
@@ -242,12 +259,42 @@ span.highlight, div.highlight { /* searched words */
       font-weight: 900;      
     }
   }
+  .tagging {
+    padding: 8px 10px;
+    color: @veryLightColor;
+    .circle {
+      padding: 8px;
+      background: none;
+      border-radius: 40px;
+      width: 24px; 
+      text-align: center;
+      font-size: 1.3em;
+    }
+    &.active {
+      color: white;
+      .circle {
+        background: @redColor;
+      }
+    }
+    &:hover {
+      color: white;
+      .circle {
+        background: @veryLightColor;
+      }
+    }
+    &.active:hover {
+      .circle {
+        background: @redGreyColor;
+      }
+    }
+  }
 
   .menu {
     z-index: 80;
     position: absolute;
     height: @menuH;
     width: 100%;
+
     background: white;
     .box-shadow(0px 0px 4px 0px #525252);
     text-align: left;
@@ -259,9 +306,10 @@ span.highlight, div.highlight { /* searched words */
         box-sizing: border-box;
         position: absolute;
         left: 0;
+        top: 0;
         width: @panelW;
         height: @menuH;
-        padding-left: 60px;
+        padding-left: 104px;
 
         background: white;
         border-bottom: 5px solid @veryLightColor;
@@ -270,7 +318,7 @@ span.highlight, div.highlight { /* searched words */
           box-sizing: border-box;
           width: 100%;
           padding: 2px;
-          margin-top: 5px;
+          margin-top: 6px;
           text-align: left;
           .tag {
             display: inline-block;
@@ -378,7 +426,7 @@ span.highlight, div.highlight { /* searched words */
           display: inline-block !important;
         }
       }
-      &:hover {
+      &.active:hover {
         .tagshat {
           border-bottom: none !important;
         }
@@ -394,6 +442,7 @@ span.highlight, div.highlight { /* searched words */
       right: 0;
       height: @menuH;
       background: white;
+
       .button {
         box-sizing: border-box;
         position: relative;
@@ -411,9 +460,6 @@ span.highlight, div.highlight { /* searched words */
           color: @lightColor;
         }
 
-        img {
-          width: 15px;
-        }
         span {
           display: block;
           color: @lightColor;
@@ -461,12 +507,21 @@ span.highlight, div.highlight { /* searched words */
             pointer-events: none;
           }
         }
+        
+        &.inactive {
+          pointer-events: none;
+          span, i {
+            color: @veryLightColor;
+            font-style: italic;
+          }
+        }
       }
     }
 
     .searchinput {
       z-index: 35;
       position: absolute;
+      top: 0;
       left: 50%;
       .transform(translate(-50%,0));
       display: inline-block;

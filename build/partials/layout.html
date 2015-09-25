@@ -31,13 +31,8 @@
   <div class="header">
 
     <div class="menu">
-
-      <div class="backintro" ng-click="state.intro = true;">
-        <i class="fa fa-angle-up fa-lg"></i><br>
-        intro
-      </div>
       
-      <!-- BUTTONS -->
+      <!-- RIGHT MENU BUTTONS -->
       <div class="buttons">
         <div class="button" id="lang">
           <i class="fa fa-globe fa-lg"></i>
@@ -48,8 +43,9 @@
         </div>
 
         <a
-          class="button hover"
+          class="button hover hint--bottom"
           id="print"
+          data-hint="imprimez&#10;la fenêtre&#10;qui s'ouvre !"
           href="./#/{{state.lang}}/print"
           target="_blank">
           <i class="fa fa-print fa-lg"></i>
@@ -57,15 +53,17 @@
         </a>
 
         <a
-          class="button hover"
+          class="button hover hint--bottom"
           id="calendar"
+          data-hint="http://demosphere.eu"
           href="http://demosphere.eu/fr">
           <i class="fa fa-calendar fa-lg"></i>
           <span>{{meta.menu.calendar}} <i class="fa fa-external-link-square fa-lg"></i></span>
         </a>
         <div
-          class="button hover"
+          class="button hover hint--bottom inactive"
           ng-if="state.lang=='fr'"
+          data-hint="carte"
           ng-click="changeLayout('map');"
           ng-class="{active:state.layout=='map'}">
           <i class="fa fa-map-o fa-lg"></i>
@@ -75,7 +73,8 @@
           <span>{{meta.menu.map}}</span>
         </div>
         <div
-          class="button hover"
+          class="button hover hint--bottom"
+          data-hint="les liens"
           ng-click="changeLayout('links');"
           ng-class="{active:state.layout=='links'}">
           <i class="fa fa-sitemap fa-lg"></i>
@@ -85,7 +84,8 @@
           <span>{{meta.menu.links}}</span>
         </div>
         <div
-          class="button hover"
+          class="button hover hint--bottom"
+          data-hint="les textes"
           ng-click="changeLayout('sections');"
           ng-class="{active:state.layout=='sections'}">
           <i class="fa fa-bullhorn fa-lg"></i>
@@ -96,10 +96,37 @@
         </div>
       </div>
 
+      <!-- BACK To INTRO -->
+      <div
+        class="action backintro hint--bottom"
+        data-hint="retourner à l'intro"
+        ng-click="state.intro = true;">
+        <i class="fa fa-angle-up"></i>
+        <!-- closing div is under to avoid space between inline-blocks -->
+      
+
+      <!-- TAG ACTIVATOR -->
+      </div><div
+        class="action tagging hint--bottom"
+        data-hint="{{state.taggingtooltip}}"
+        ng-class="{active: state.tagging}"
+        ng-click="toggleTagging();">
+        <div class="circle">
+        <i
+          class="fa"
+          ng-class="{
+            'fa-tag': !state.tagging,
+            'fa-tags': state.tagging
+          }">
+        </i>
+        </div>
+      </div>
+
       <!-- TAGS -->
-      <div class="tagsmenu" ng-class="{filtering:state.tags.length}">
+      <div class="tagsmenu" ng-class="{filtering: state.tags.length, active: state.tagging}">
         <div class="tagshat">
-          <div class="tags">
+
+          <div class="tags" ng-if="state.tagging">
             <div class="tag inactive" ng-if="!state.tags.length">{{meta.menu.tagsdefault}}</div>
             <div
               ng-if="state.tags.length"
@@ -107,12 +134,12 @@
               ng-repeat="t in state.tags"
               ng-click="toggleTag(t);">{{tagsContents[t].label}}
             </div>
-            <i
-              ng-click="toggleTag();"
+            <i ng-click="toggleTag();"
               class="clear fa fa-times fa-lg">
             </i>
           </div>
-          <span class="label">{{meta.menu.tagslabel}}</span>
+
+          <span class="label" ng-if="state.tagging">{{meta.menu.tagshat}}</span>
 
         </div>
 

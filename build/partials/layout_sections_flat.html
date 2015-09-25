@@ -33,7 +33,7 @@
     </div>
   </div>
 
-  <div class="tags" ng-include="settings.assets + 'partials/tags.html'"></div>
+  <div ng-if="state.tagging" class="tags" ng-include="settings.assets + 'partials/tags.html'"></div>
 
   <div class="h2" compile-html="e.subtitle"></div>
   <div class="content" compile-html="e.content"></div>

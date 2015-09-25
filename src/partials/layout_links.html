@@ -52,7 +52,7 @@
       ) &&
       $event.stopPropagation();">
 
-    <div class="tags" ng-include="settings.assets + 'partials/tags.html'"></div>
+    <div ng-if="state.tagging" class="tags" ng-include="settings.assets + 'partials/tags.html'"></div>
 
     <div class="content" compile-html="e.content"></div>
   </div>
