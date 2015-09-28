@@ -2374,6 +2374,10 @@ div.highlight {
   color: #ababab;
   font-style: italic;
 }
+.leaflet-popup .details .source {
+  font-style: italic;
+  color: #ababab;
+}
 /*.awesome-marker i {
   font-size: 9px;
   margin-top: 8px;
@@ -2556,6 +2560,12 @@ body.layout-print .footer {
     font-size: 1.2em;
     padding: 20px 0px;
     margin-top: 10px;
+  }
+  .header .action.backintro {
+    padding: 9px 10px;
+  }
+  .header .action.tagging {
+    padding: 8px 0px;
   }
   .header .button#calendar {
     display: none;

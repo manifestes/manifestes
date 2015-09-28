@@ -3193,7 +3193,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'28 September 2015 - 11:55'})
+.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'28 September 2015 - 3:04'})
 
 ;
 ;
@@ -3810,6 +3810,7 @@ angular.module('manifest.controllers', ['underscore','config'])
           if(/^caravane/.test(m.source)) { color = "#007029"; }
           if(/^lieux/.test(m.source)) { color = "#742B6A"; }
           if(/^hetero/.test(m.source)) { color = "#890E6F"; }
+          if(/^resist/.test(m.source)) { color = "#C5856E"; }
 
           if(/region/.test(m.scale)) {
             size = "l";
@@ -3828,7 +3829,7 @@ angular.module('manifest.controllers', ['underscore','config'])
             "<div class='address'>"+m.address+"</div>"+
             "<div>"+m.description+"</div>"+
             "<div class='contact'>"+m.contact+"</div>"+
-            "<div>source: "+credit.name+" - "+credit.url+"</div>"+
+            "<div class='source'>source: "+credit.name+" - "+credit.url+"</div>"+
           "</div>";
           var customOptions = {
             'maxWidth': '500',
