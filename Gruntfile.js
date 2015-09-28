@@ -94,9 +94,14 @@ module.exports = function(grunt) {
       },
       css: {
         src: [
-          'src/vendor/leaflet/dist/leaflet.css', // map bug if after normalize.css ?! within concated css
+          
+          // NB: leaflet & font-awesome dont work if not at the beginning of the css
+          // leaflet is here, font-awesome in external css
+
+          'src/vendor/leaflet/dist/leaflet.css',
 
           'src/vendor/normalize.css/normalize.css',
+          'src/vendor/hint.css/hint.min.css',
 
           'src/vendor/leaflet.locatecontrol/dist/L.Control.Locate.min.css',
           'src/vendor/leaflet-search/dist/leaflet-search.min.css',
@@ -157,6 +162,20 @@ module.exports = function(grunt) {
                     flatten: true,
                     src: ['src/vendor/leaflet/dist/images/**'],
                     dest: 'build/css/images/',
+                    filter: 'isFile'
+                },
+                {
+                    expand: true,
+                    flatten: true,
+                    src: ['src/vendor/font-awesome/fonts/**'],
+                    dest: 'build/fonts/',
+                    filter: 'isFile'
+                },
+                {
+                    expand: true,
+                    flatten: true,
+                    src: ['src/vendor/font-awesome/css/font-awesome.min.css'],
+                    dest: 'build/css/',
                     filter: 'isFile'
                 }
             ]

@@ -9,30 +9,50 @@ source:
     sections: https://github.com/manifestes/manifestes/blob/gh-pages/data/sections_es.yml
     links: https://github.com/manifestes/manifestes/blob/gh-pages/data/links_es.yml
 intro:
+intro:
     images:
-        - manifeste-utopies-concretes_CC3333
-    title: ¡Manifiesto!
-    description: >
+        - manifeste-utopies-concretes_633232
+        - sortir-zone-confort_662D91
+        - collectifs-autogestion_E0A11A
+        - masse-critique_333
+        - manifestation-quotidienne_662D91
+    MAJtitle: ¡Manifiesto!
+    MAJdescription: >
         colectivo(s) de los territorios comunes autogestionados y alternativas convivialistas DIY voluntarios revolucionarios de la transición social y ecológica en los terceros lugares creativos de los clowns del bricolaje piratas de las utopías libertarias ecofeministas p2p y cooperativistas indignadas activistas de la resiliencia decreciente concreta y desobediente de las convergencias de las luchas
     keywords: "# filosofía # política # práctica # convergencias #"
     enter: ">> consultar + participar <<"
 menu:
+    backtip: retourner à l'intro
     tagsdefault: toutes
-    tagslabel: filtrer par thématiques
+    tagshat: filtrer par thématiques
+    taggingoff: activer les thématiques
+    taggingon: masquer les thématiques
     tagsdescription: cliquez sur les thématiques pour filtrer les contenus
-    search: buscar
-    sections: textes
-    links: liens
-    map: mapa
+    search: chercher
+    sections: textos
+    sectionstip: pour comprendre
+    links: enlaces
+    linkstip: pour explorer
+    map: carte
+    maptip: pour visiter
     calendar: agenda
-    print: imprimer
-    examples: en pratique(s)
+    calendartip: http://demosphere.eu
+    print: imprimir
+    printtip: "imprimez\nla fenêtre\nqui s'ouvre !"
     discusstext: discutir, corregir, proponer
     discussback: volver al texto
     loadgraph: no graph yet for the spanish version
 tags:
-    manifest: à propos|question-circle = projet manifeste(s) (liste de discussion, code, twitter)
+    about: à propos|question-circle = projet manifeste(s) (liste de discussion, code, twitter)
     group: collectifs|users = réseaux, coopératives, associatives existant(e)s
+    text: textes|file-text = articles, livres, textes
+    image: images|picture-o = dessins, graphiques
+    audio: sons|volume-up = radios, musique
+    video: films|film = videos, films, documentaires
+    tool: outils|wrench = guides pratiques, tutoriaux
+    list: annuaire|database = base de données, liens
+    place: lieux|map-marker = où ça ? adresses, tiers-lieux
+    time: agenda|calendar-check-o = quand ? calendriers, évenements
     constat: constat = se rendre compte que le monde ne tourne pas rond
     history: histoire = (néo)colonialisme, impérialisme, passif historique
     atom: nucléaire = nucléaire
@@ -64,28 +84,20 @@ tags:
     fun: humour = amusons-nous !
     love: amour = toujours
     dream: rêve = utopies, promesses, idéaux
-    meet: rencontres = rencontrer, découvrir, partager
+    meet: rencontrer = rencontrer, découvrir, partager
     debate: discuter = s'accorder, s'engueuler, débattre
     inegality: inégalités = d'accès, des chances, de €
     solidarity: solidarité = aide pratique
     space: espace public = espaces partagés, ville
-    tool: outils|wrench = guides pratiques, tutoriaux
-    list: annuaire|database = base de données, liens
-    place: lieux|map-marker = où ça ? adresses, tiers-lieux
-    time: agenda|calendar-check-o = quand ? calendriers, évenements
     economy: économie = commerce, échanges
     politics: politique = politique et représentation
     philo: philosophie = réflexion, théorie
     media: médias = information, journalisme
     news: news = actualité chaude
-    text: textes|file-text = articles, livres, textes
-    image: images|picture-o = dessins, graphiques
-    audio: sons|volume-up = radios, musique
-    video: films|film = videos, films, documentaires
     energy: énergie = éolien, électrique, solaire
     words: langage = récits, mots, interprétations
     greenwash: néocapitalisme = récupérations, greenwashing
-    culture: culture = art, culture, création, écriture
+    creation: création = art, culture, création, écriture
     design: design = processus, formes, gameplay
     health: santé = corps, maladie, santé, sport, psychologie
     earth: planète = environnement, climat, pollutions
@@ -93,7 +105,7 @@ tags:
     agriculture: agriculture = cultures, semences
     object: objets = matériel, mobilier, machines
     eat: manger = cuisiner, se nourrir
-    sleep: habiter = logement, habitat, espace privé
+    home: habiter = logement, habitat, espace privé
     move: se déplacer = transports
     work: travail = emploi, chômage, activité remunérée
 footer:
@@ -130,7 +142,7 @@ quote:
         
 
         Y no es triste
-tags: manifest, group
+tags: about, group
 content: >
     ###*objetivos*
 
@@ -154,7 +166,7 @@ image:
 quote:
     author: Pierre Desproges
     content: La inteligencia es la única herramienta que le permite al hombre medir la extensión de su infelicidad.
-tags: manifest
+tags: about
 content: >
     El desglose en **secciones** hace el texto más legible y facilita las discusiones acerca de los **temas** abordados.
 
@@ -245,7 +257,7 @@ image:
 quote:
     author: Séneca
     content: No es porque las cosas son difíciles que no nos atrevemos, sino porque no nos atrevemos que son difíciles
-tags: manifest, tool, list
+tags: about, tool, list
 content: >
 
     - Queremos construir una **reflexión teórica colectiva** para discutir acerca del mundo, componer las diferentes percepciones, formular una lengua común. Pensar de manera diferente es ya comenzar a construir algo

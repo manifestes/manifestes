@@ -15,7 +15,7 @@ angular.module('manifest', [
 
   .config(['$routeProvider','$locationProvider',"settings", function($routeProvider,$locationProvider,settings) {
     
-    // $locationProvider.html5Mode(true);
+    //$locationProvider.html5Mode(true);
     console.log("App Settings",settings);
     
     var lang = navigator.language;

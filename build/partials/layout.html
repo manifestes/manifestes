@@ -45,7 +45,7 @@
         <a
           class="button hover hint--bottom"
           id="print"
-          data-hint="imprimez&#10;la fenêtre&#10;qui s'ouvre !"
+          data-hint="{{meta.menu.printtip}}"
           href="./#/{{state.lang}}/print"
           target="_blank">
           <i class="fa fa-print fa-lg"></i>
@@ -55,7 +55,7 @@
         <a
           class="button hover hint--bottom"
           id="calendar"
-          data-hint="http://demosphere.eu"
+          data-hint="{{meta.menu.calendartip}}"
           href="http://demosphere.eu/fr">
           <i class="fa fa-calendar fa-lg"></i>
           <span>{{meta.menu.calendar}} <i class="fa fa-external-link-square fa-lg"></i></span>
@@ -63,7 +63,7 @@
         <div
           class="button hover hint--bottom inactive"
           ng-if="state.lang=='fr'"
-          data-hint="carte"
+          data-hint="{{meta.menu.maptip}}"
           ng-click="changeLayout('map');"
           ng-class="{active:state.layout=='map'}">
           <i class="fa fa-map-o fa-lg"></i>
@@ -74,7 +74,7 @@
         </div>
         <div
           class="button hover hint--bottom"
-          data-hint="les liens"
+          data-hint="{{meta.menu.linkstip}}"
           ng-click="changeLayout('links');"
           ng-class="{active:state.layout=='links'}">
           <i class="fa fa-sitemap fa-lg"></i>
@@ -85,7 +85,7 @@
         </div>
         <div
           class="button hover hint--bottom"
-          data-hint="les textes"
+          data-hint="{{meta.menu.sectionstip}}"
           ng-click="changeLayout('sections');"
           ng-class="{active:state.layout=='sections'}">
           <i class="fa fa-bullhorn fa-lg"></i>
@@ -99,7 +99,7 @@
       <!-- BACK To INTRO -->
       <div
         class="action backintro hint--bottom"
-        data-hint="retourner à l'intro"
+        data-hint="{{meta.menu.backtip}}"
         ng-click="state.intro = true;">
         <i class="fa fa-angle-up"></i>
         <!-- closing div is under to avoid space between inline-blocks -->

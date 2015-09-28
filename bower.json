@@ -21,6 +21,7 @@
     "normalize.css": "latest",
     "sigmajs": "https://github.com/jacomyal/sigma.js/releases/download/v1.0.3/release-v1.0.3.zip",
     "underscore": "1.5.2",
-    "hint.css": "~1.3.5"
+    "hint.css": "~1.3.5",
+    "font-awesome":"~4.4.0"
   }
 }

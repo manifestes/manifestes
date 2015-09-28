@@ -170,7 +170,7 @@ var updateTagNodesSizesForLayout = function(scope,layout) {
       scope.sectionNbByTag[t] ;
     
     if(Q) {
-      n.size = 18 + Q;
+      n.size = 15 + Q;
     } else {
       orphans.push(t);
       n.size = 0.2;
@@ -263,7 +263,11 @@ var loadTagGraph = function(scope) {
         
         //ids[t] = n.id;
         n.tag = t;
-        n.label = scope.tagsContents[t].label;
+        try {
+          n.label = scope.tagsContents[t].label;
+        } catch(err) {
+          console.log("no tag content for:",t);
+        }
       });
 
       _.each(s.graph.edges(), function(e) {

@@ -26,34 +26,33 @@ mapcredits:
         name: Citoyens en Transition
         url: https://www.google.com/maps/d/viewer?mid=zfOpOkMajqj0.k73wlMF5RszU
 graphcredits: >
-    [graph.gexf](https://github.com/manifestes/manifestes/blob/gh-pages/graph.gexf) produced with [hyphe](http://hyphe.medialab.sciences-po.fr/) and displayed using [sigma.js](http://sigmajs.org/)
+    [graph.gexf](https://github.com/manifestes/manifestes/blob/gh-pages/data/links_fr.gexf) produced with [hyphe](http://hyphe.medialab.sciences-po.fr/) and displayed using [sigma.js](http://sigmajs.org/)
 intro:
     images:
-        - manifeste-utopies-concretes_CC3333
-        - lautre-ment_D1E8C5
-        - machine-philosophique_fff
+        - manifeste-utopies-concretes_633232
+        - sortir-zone-confort_662D91
+        - collectifs-autogestion_E0A11A
         - masse-critique_333
-        - nous-pigeons_FF6633
-    title: manifeste(s)
-    description: >
-        collectif(s) des territoires communs autogérés et alternatives convivialistes DIY bénéloves révolutionnaires de la transition sociale et écologique dans les tiers-lieux créatifs des clowns bricoleurs pirates des utopies libertaires écoféministes p2p et coopératistes indignées activistes de la résilience décroissante concrète et désobéissante des convergences des luttes
-    more_groups: >
-        sobriété heureuse, simplicité volontaire, désargence, chômeur.e.s, colibris, créatifs culturels, pirates, objecteur.euse.s de croissance, empêcheur.euse.s de tourner en rond, AMAPs, alternatif.ive.s, convivialistes, grévistes, écoféministes, 15M, alternatiba, activistes, utopistes concrets, maquisard.e.s, hackers, rassemblements citoyen, universités, fablabs, résitances, grands-parents, désobéissants, transition citoyenne, tiers-lieux, p2p, bénéloves, communs, consom'acteurs, SEL, anarchistes, alliances citoyennes, révolutionnaires, occupy, amis de la terre, 99%, vélistance, indignés, bolo'bolo, éco-villages, institut momentum, bricoleur.se.s, farceurs, clowns, résiliés, squatteur.se.s, décroissants conviviaux, évidences écolos, e-constituante, anarnautes, libertaires, anticapitalistes, anonymous, coopératistes, antifascistes, rebooters, démocratie ouverte, écosociétalistes, écologie, alternatives, non-violence
-    keywords: "# philosophie # politique # pratique # convergences #"
+        - manifestation-quotidienne_662D91
     enter: "consulter & participer"
 menu:
+    backtip: retourner à l'intro
     tagsdefault: toutes
     tagshat: filtrer par thématiques
-    taggingoff: afficher les thématiques
+    taggingoff: activer les thématiques
     taggingon: masquer les thématiques
     tagsdescription: cliquez sur les thématiques pour filtrer les contenus
     search: chercher
     sections: textes
+    sectionstip: pour comprendre
     links: ressources
+    linkstip: pour explorer
     map: carte
+    maptip: pour visiter
     calendar: agenda
+    calendartip: http://demosphere.eu
     print: imprimer
-    examples: en pratique(s)
+    printtip: "imprimez\nla fenêtre\nqui s'ouvre !"
     discusstext: discuter, corriger, proposer
     discussback: revenir au texte
     loadgraph: >
@@ -61,8 +60,16 @@ menu:
         <br><br><br>
         cliquer pour afficher le graphe (6.5Mo)
 tags:
-    manifest: à propos|question-circle = projet manifeste(s) (liste de discussion, code, twitter)
+    about: à propos|question-circle = projet manifeste(s) (liste de discussion, code, twitter)
     group: collectifs|users = réseaux, coopératives, associatives existant(e)s
+    text: textes|file-text = articles, livres, textes
+    image: images|picture-o = dessins, graphiques
+    audio: sons|volume-up = radios, musique
+    video: films|film = videos, films, documentaires
+    tool: outils|wrench = guides pratiques, tutoriaux
+    list: annuaire|database = base de données, liens
+    place: lieux|map-marker = où ça ? adresses, tiers-lieux
+    time: agenda|calendar-check-o = quand ? calendriers, évenements
     constat: constat = se rendre compte que le monde ne tourne pas rond
     history: histoire = (néo)colonialisme, impérialisme, passif historique
     atom: nucléaire = nucléaire
@@ -94,28 +101,20 @@ tags:
     fun: humour = amusons-nous !
     love: amour = toujours
     dream: rêve = utopies, promesses, idéaux
-    meet: rencontres = rencontrer, découvrir, partager
+    meet: rencontrer = rencontrer, découvrir, partager
     debate: discuter = s'accorder, s'engueuler, débattre
     inegality: inégalités = d'accès, des chances, de €
     solidarity: solidarité = aide pratique
     space: espace public = espaces partagés, ville
-    tool: outils|wrench = guides pratiques, tutoriaux
-    list: annuaire|database = base de données, liens
-    place: lieux|map-marker = où ça ? adresses, tiers-lieux
-    time: agenda|calendar-check-o = quand ? calendriers, évenements
     economy: économie = commerce, échanges
     politics: politique = politique et représentation
     philo: philosophie = réflexion, théorie
     media: médias = information, journalisme
     news: news = actualité chaude
-    text: textes|file-text = articles, livres, textes
-    image: images|picture-o = dessins, graphiques
-    audio: sons|volume-up = radios, musique
-    video: films|film = videos, films, documentaires
     energy: énergie = éolien, électrique, solaire
     words: langage = récits, mots, interprétations
     greenwash: néocapitalisme = récupérations, greenwashing
-    culture: culture = art, culture, création, écriture
+    creation: création = art, culture, création, écriture
     design: design = processus, formes, gameplay
     health: santé = corps, maladie, santé, sport, psychologie
     earth: planète = environnement, climat, pollutions
@@ -123,7 +122,7 @@ tags:
     agriculture: agriculture = cultures, semences
     object: objets = matériel, mobilier, machines
     eat: manger = cuisiner, se nourrir
-    sleep: habiter = logement, habitat, espace privé
+    home: habiter = logement, habitat, espace privé
     move: se déplacer = transports
     work: travail = emploi, chômage, activité remunérée
 footer:
@@ -142,7 +141,7 @@ footer:
 
 
 ---
-date: 2015-06-01
+date: 2015-09-27
 role: info
 title: Manifeste(s) des autres mondes possibles
 subtitle: Nous sommes **partout**. Nos démarches sont infiniment **diverses et complémentaires**. Qu'avons-nous **en commun** ?
@@ -160,15 +159,15 @@ quote:
         
 
         Et c'est pas triste
-tags: group, manifest
+tags: group, about
 content: >
     ###*objectifs*
 
-    - **écrire collectivement** un/des manifeste(s) de notre territoire commun: *philosophique, politique, pratique*
+    - **écrire collectivement** un/des manifeste(s) de notre territoire commun: *philosophique, politique, poétique, pratique* **> textes**
 
-    - **partager** nos *inspirations, références, initiatives*
+    - **partager** nos *inspirations, références, initiatives* **> ressources**
 
-    - faciliter l'accès aux **solutions concrètes existantes**
+    - faciliter l'accès aux **solutions concrètes existantes** **> carte et agenda**
 
 
 
@@ -191,7 +190,7 @@ quote:
 
 
         Ce qui donne... de la joie.
-tags: manifest
+tags: about
 content: >
     Ce site est en perpétuelle transformation. Il reflète les pérégrinations physiques et intellectuelles d'une bande de potes décidé.e.s à mieux décortiquer le monde qui nous entoure pour **mieux comprendre là où çà fait mal, afin de riposter comme il se doit**.
 
@@ -211,20 +210,20 @@ title: Qui a écrit tout ça ?
 subtitle: Composition à plusieurs mains !
 slug: who_wrote
 image:
-    url: —
-    credit: —
+    url: chat_heads.jpg
+    credit: Les chats pelés
 quote:
-    author: —
-    content: —
-tags: manifest
+    author: Jean Paulhan, Enigmes de Perse
+    content: Tout a été dit. Sans doute. Si les mots n'avaient changé de sens; et les sens, de mots.
+tags: about
 content: >
-    Les textes et les liens présents sur le site ont été aggrégés en quelques mois depuis de très nombreuses sources (rencontres, sites, films, tracts): les citations, textes, liens proviennent donc en majorité de copiers-collés.
+    Les textes et les liens présents ici ont été aggrégés depuis de très nombreuses sources (rencontres, sites, films, tracts, etc...). Les citations, textes, liens proviennent donc en majorité de **copiers-collés**.
 
 
     La foison de styles qui en résulte peut être déroutante, mais elle permet d'exhiber la multiplicité d'initiatives et de mouvements de pensées et d'actions qui composent les alternatives.
 
 
-    Bienvenue à tou.te.s celles et ceux qui souhaitent nous rejoindre pour continuer la rédaction du projet!
+    Bienvenue à tou.te.s celles et ceux qui souhaitent nous rejoindre pour continuer la rédaction du projet !
 
 
 
@@ -232,7 +231,7 @@ content: >
 date: 2015-06-16
 role: info
 title: Sections de textes synthétiques
-subtitle: Les **sections** et les **liens** permettent de rendre le texte plus lisible et facilitent les discussions sur les **thèmes** abordés.
+subtitle: Les sections permettent de rendre le texte plus lisible et facilitent les discussions sur les thèmes abordés.
 slug: methodo
 image:
     url: FingerBones.jpg
@@ -240,16 +239,16 @@ image:
 quote:
     author: Pierre Desproges
     content: L'intelligence, c'est le seul outil qui permet à l'homme de mesurer l'étendue de son malheur.
-tags: design, manifest
+tags: design, about
 content: >
-    ###Chaque [section](https://github.com/manifestes/manifestes/blob/gh-pages/data/sections_fr.yml) comme celle-ci comporte
+    ###Chaque section comme celle-ci comporte:
 
 
     - un **titre** permettant d'ouvrir ou de fermer la section
 
     - une **illustration** et une **citation**
 
-    - un texte synthétique **théorique** développant une idée
+    - un texte **synthétique** développant une idée
 
     - une liste de **thématiques** (tags) associées
 
@@ -259,28 +258,31 @@ content: >
 date: 2015-09-20
 role: info
 title: Catégories thématiques
-subtitle: "La grille de tags permet d'organiser les textes, liens, lieux... par thématiques"
+subtitle: "La grille de tags permet d'organiser tous les contenus du site: pour l'activer, cliquez sur l'icône à gauche dans le menu"
 slug: about_tags
 image:
-    url: —
-    credit: —
+    url: HansHauger.jpg
+    credit: Hans Hauger
 quote:
-    author: —
-    content: —
-tags: manifest
+    author: Hervé Letellier
+    content: >
+        Maître, la jeunesse est dans la rue. Que faire ?
+
+        Rien. C'est une illusion d'optique: la jeunesse est avant tout dans la tête.
+tags: about
 content: >
     Les thématiques permettent de faciliter la navigation dans le site:
 
 
-    - **en rouge**, les besoins primaires et actes quotidiens: *manger, dormir, se soigner, rencontrer...*
+    - **en vert** - les besoins primaires quotidiens: *manger, dormir, se soigner, rencontrer...*
 
-    - **en vert**, des sujets divers: *nucléaire, pouvoir, autonomie...*
+    - **en gris** - sujets divers: *nucléaire, pouvoir, autonomie...*
 
-    - **en jaune**, les types de contenus: *vidéo, texte, annuaire, collectif, lieux, agendas...*
+    - **en gris clair** - les types de contenus: *vidéo, texte, annuaire, collectif, lieux, agendas...*
 
 
 
-    Ces thématiques sont elles-mêmes liées les unes aux autres (voir le menu *«filtrer par thématiques»* en haut à gauche)
+    Ces thématiques sont elles-mêmes liées les unes aux autres (voir le menu *filtrer par thématiques* en haut à gauche)
 
     La liste est extensible et discutable !
 
@@ -288,20 +290,21 @@ content: >
 
 
 ---
-date: 2015-09-20
+date: 2015-09-27
 role: info
 title: Carte de France des alternatives
 subtitle: Nous sommes partout !
 slug: interactive_map
-tags: place, list, tool, manifest
+tags: place, list, tool, about
 image:
-    url: —
-    credit: —
+    url: GrahamLambkin.jpg
+    credit: Graham Lambkin
 quote:
-    author: —
-    content: —
+    author: Pierre Soulages
+    content: C'est ce que je trouve qui me dit ce que je cherche
 content: >
     La carte reprend les lieux référencés de:
+
 
     - [La caravane des alternatives](http://caravanedesalternatives.weebly.com)
 
@@ -314,13 +317,14 @@ content: >
 
     Car de nombreux lieux n'existent plus ou ne sont pas encore référencés, **mettons collectivement la carte à jour** en corrigeant ou ajoutant:
     
-    - les initiatives que nous connaissons: fermes, maraîchers bio, associations, café, lieux alternatifs
 
-    - **nous-même !** (nom/pseudo, position approximative)
+    - **les initiatives que nous connaissons**: *collectifs, fermes, maraîchers bio, associations, lieux de luttes, cafés et lieux alternatifs...*
+
+    - **nous-mêmes !** *nom, pseudo, position approximative*
 
 
 
-    Plus on est partout, plus on nous entend !
+    Faisons-nous voir !
 
 
 
@@ -333,7 +337,7 @@ role: info
 title: Réseau des sites internet
 subtitle: Exploration des sites et des liens hypertextes pour visualiser les articulations entre les différents mouvements alternatifs
 slug: hyphe_map
-tags: list, tool, manifest
+tags: list, tool, about
 image:
     url: Felix_DrawingAutism.jpg
     credit: Felix, Drawing Autism
@@ -357,7 +361,7 @@ content: >
 
 
 
-    Nous ne sommes évidemment pas capables de juger la pertinence de toutes les initiatives, chacune pouvant changer avec le temps, mais nous vous invitons à nous faire part de vos remarques.
+    Nous ne sommes évidemment pas capables de juger la pertinence de toutes les initiatives, chacune pouvant changer avec le temps: aidez-nous à mettre à jour la carte !
 
 
 
@@ -433,7 +437,7 @@ image:
 quote:
     author: Sénèque
     content: Ce n'est pas parce que les choses sont difficiles que nous n'osons pas, mais parce que nous n'osons pas qu'elles sont difficiles
-tags: list, manifest
+tags: list, about
 content: >
 
     - Nous voulons contruire une **réflexion théorique collective** pour discuter du monde, composer les différentes perceptions, formuler un langage commun. Penser différement, c'est déjà commencer à construire quelque chose
@@ -563,8 +567,8 @@ subtitle: En nature ou en argent, il permet de vivre dignement sans avoir à se 
 slug: basic_income
 tags: basicincome, money, work
 image:
-    url: GrahamLambkin.jpg
-    credit: Graham Lambkin
+    url: BrianMcMullenJasonJagel.jpg
+    credit: Brian McMullen and Jason Jägel
 quote:
     author: Aristote
     content: >

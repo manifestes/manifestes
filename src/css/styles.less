@@ -35,7 +35,7 @@ a {
   }
 }
 
-/* hack to allow linebreak within hint.css */
+/* hack to allow linebreaks, aka « &#10; » within hint.css tooltips */
 .hint:after, [data-hint]:after {
   white-space: pre !important;
   text-align: left;
@@ -59,7 +59,7 @@ a {
 
 @searchInputW: 190px;
 
-@panelW: 400px; //37%;
+@panelW: 400px; //37%; NB: see screen.less for ≠ device sizes
 
 @reducedFlatSectionH: 43px;
 
@@ -178,24 +178,17 @@ span.highlight, div.highlight { /* searched words */
     pointer-events: all;
     cursor: pointer;
     box-sizing: border-box;
-    padding: 20px 0px;
+    padding: 35px 0px;
     font-size: 1.7em;
     font-style: italic;
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
     background: whitesmoke;
     border-top: 2px solid whitesmoke;
-    // background: repeating-linear-gradient(
-    //   to right,
-    //   #f6ba52,
-    //   #f6ba52 10px,
-    //   #ffd180 10px,
-    //   #ffd180 20px
-    // );
     .inner-shadow(0px 6px 13px -3px #525252);
     .transition(padding @openDur);
     &:hover {
-      padding: 40px 0px;
+      color: @darkColor;
     }
   }
 }
@@ -369,7 +362,7 @@ span.highlight, div.highlight { /* searched words */
         background: white;
       }
 
-      @graphH: 220px;
+      @graphH: 350px;
       .graphtags {
         z-index: 27;
         box-sizing: border-box;

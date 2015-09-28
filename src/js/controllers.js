@@ -146,7 +146,7 @@ angular.module('manifest.controllers', ['underscore','config'])
       var ic = $scope.tagsContents[tag].icon;
       if(!ic) return -1;
       else {
-        if(tag=='manifest') return 6;
+        if(tag=='about') return 6;
         if(tag=='list') return 5;
         if(tag=='place') return 4;
         return 1;
@@ -475,6 +475,7 @@ angular.module('manifest.controllers', ['underscore','config'])
 
             //console.log(d);
             d.subtitle = md2Html(d.subtitle);
+            d.subtitletext = totext(d.subtitle);
             if(d.quote) {
               d.quote.content = md2Html(d.quote.content);
               d.quote.author = md2Html(d.quote.author);

@@ -479,12 +479,12 @@
 
 ;
 
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
 /**
  * 1. Set default font family to sans-serif.
- * 2. Prevent iOS and IE text size adjust after device orientation change,
- *    without disabling user zoom.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
  */
 
 html {
@@ -552,7 +552,7 @@ audio:not([controls]) {
 
 /**
  * Address `[hidden]` styling not present in IE 8/9/10.
- * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
  */
 
 [hidden],
@@ -572,8 +572,7 @@ a {
 }
 
 /**
- * Improve readability of focused elements when they are also in an
- * active/hover state.
+ * Improve readability when focused and also mouse hovered in all browsers.
  */
 
 a:active,
@@ -691,6 +690,7 @@ figure {
  */
 
 hr {
+  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
@@ -831,12 +831,15 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /**
  * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
  */
 
 input[type="search"] {
   -webkit-appearance: textfield; /* 1 */
-  box-sizing: content-box; /* 2 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; /* 2 */
+  box-sizing: content-box;
 }
 
 /**
@@ -904,6 +907,13 @@ th {
   padding: 0;
 }
 
+;
+
+/*! Hint.css - v1.3.5 - 2015-06-16
+* http://kushagragour.in/lab/hint/
+* Copyright (c) 2015 Kushagra Gour; Licensed MIT */
+
+.hint--bottom:after,.hint--top:after{margin-left:-18px}.hint,[data-hint]{position:relative;display:inline-block}.hint:after,.hint:before,[data-hint]:after,[data-hint]:before{position:absolute;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);transform:translate3d(0,0,0);visibility:hidden;opacity:0;z-index:1000000;pointer-events:none;-webkit-transition:.3s ease;-moz-transition:.3s ease;transition:.3s ease;-webkit-transition-delay:0ms;-moz-transition-delay:0ms;transition-delay:0ms}.hint--always:after,.hint--always:before,.hint:focus:after,.hint:focus:before,.hint:hover:after,.hint:hover:before,[data-hint]:focus:after,[data-hint]:focus:before,[data-hint]:hover:after,[data-hint]:hover:before{opacity:1;visibility:visible}.hint:hover:after,.hint:hover:before,[data-hint]:hover:after,[data-hint]:hover:before{-webkit-transition-delay:100ms;-moz-transition-delay:100ms;transition-delay:100ms}.hint:before,[data-hint]:before{content:'';position:absolute;background:0 0;border:6px solid transparent;z-index:1000001}.hint:after,[data-hint]:after{content:attr(data-hint);background:#383838;color:#fff;padding:8px 10px;font-size:12px;line-height:12px;white-space:nowrap;text-shadow:0 -1px 0 #000;box-shadow:4px 4px 8px rgba(0,0,0,.3)}.hint--top:before{border-top-color:#383838;margin-bottom:-12px}.hint--bottom:before{border-bottom-color:#383838;margin-top:-12px}.hint--top:after,.hint--top:before{bottom:100%;left:50%}.hint--top:focus:after,.hint--top:focus:before,.hint--top:hover:after,.hint--top:hover:before{-webkit-transform:translateY(-8px);-moz-transform:translateY(-8px);transform:translateY(-8px)}.hint--bottom:after,.hint--bottom:before{top:100%;left:50%}.hint--bottom:focus:after,.hint--bottom:focus:before,.hint--bottom:hover:after,.hint--bottom:hover:before{-webkit-transform:translateY(8px);-moz-transform:translateY(8px);transform:translateY(8px)}.hint--right:before{border-right-color:#383838;margin-left:-12px;margin-bottom:-6px}.hint--right:after{margin-bottom:-14px}.hint--right:after,.hint--right:before{left:100%;bottom:50%}.hint--right:focus:after,.hint--right:focus:before,.hint--right:hover:after,.hint--right:hover:before{-webkit-transform:translateX(8px);-moz-transform:translateX(8px);transform:translateX(8px)}.hint--left:before{border-left-color:#383838;margin-right:-12px;margin-bottom:-6px}.hint--left:after{margin-bottom:-14px}.hint--left:after,.hint--left:before{right:100%;bottom:50%}.hint--left:focus:after,.hint--left:focus:before,.hint--left:hover:after,.hint--left:hover:before{-webkit-transform:translateX(-8px);-moz-transform:translateX(-8px);transform:translateX(-8px)}.hint--error:after{background-color:#b34e4d;text-shadow:0 -1px 0 #592726}.hint--error.hint--top:before{border-top-color:#b34e4d}.hint--error.hint--bottom:before{border-bottom-color:#b34e4d}.hint--error.hint--left:before{border-left-color:#b34e4d}.hint--error.hint--right:before{border-right-color:#b34e4d}.hint--warning:after{background-color:#c09854;text-shadow:0 -1px 0 #6c5328}.hint--warning.hint--top:before{border-top-color:#c09854}.hint--warning.hint--bottom:before{border-bottom-color:#c09854}.hint--warning.hint--left:before{border-left-color:#c09854}.hint--warning.hint--right:before{border-right-color:#c09854}.hint--info:after{background-color:#3986ac;text-shadow:0 -1px 0 #193b4d}.hint--info.hint--top:before{border-top-color:#3986ac}.hint--info.hint--bottom:before{border-bottom-color:#3986ac}.hint--info.hint--left:before{border-left-color:#3986ac}.hint--info.hint--right:before{border-right-color:#3986ac}.hint--success:after{background-color:#458746;text-shadow:0 -1px 0 #1a321a}.hint--success.hint--top:before{border-top-color:#458746}.hint--success.hint--bottom:before{border-bottom-color:#458746}.hint--success.hint--left:before{border-left-color:#458746}.hint--success.hint--right:before{border-right-color:#458746}.hint--always.hint--top:after,.hint--always.hint--top:before{-webkit-transform:translateY(-8px);-moz-transform:translateY(-8px);transform:translateY(-8px)}.hint--always.hint--bottom:after,.hint--always.hint--bottom:before{-webkit-transform:translateY(8px);-moz-transform:translateY(8px);transform:translateY(8px)}.hint--always.hint--left:after,.hint--always.hint--left:before{-webkit-transform:translateX(-8px);-moz-transform:translateX(-8px);transform:translateX(-8px)}.hint--always.hint--right:after,.hint--always.hint--right:before{-webkit-transform:translateX(8px);-moz-transform:translateX(8px);transform:translateX(8px)}.hint--rounded:after{border-radius:4px}.hint--no-animate:after,.hint--no-animate:before{-webkit-transition-duration:0ms;-moz-transition-duration:0ms;transition-duration:0ms}.hint--bounce:after,.hint--bounce:before{-webkit-transition:opacity .3s ease,visibility .3s ease,-webkit-transform .3s cubic-bezier(.71,1.7,.77,1.24);-moz-transition:opacity .3s ease,visibility .3s ease,-moz-transform .3s cubic-bezier(.71,1.7,.77,1.24);transition:opacity .3s ease,visibility .3s ease,transform .3s cubic-bezier(.71,1.7,.77,1.24)}
 ;
 
 /*! Version: 0.43.0
@@ -1046,7 +1056,7 @@ a {
 a:hover {
   color: #485361;
 }
-/* hack to allow linebreak within hint.css */
+/* hack to allow linebreaks, aka « &#10; » within hint.css tooltips */
 .hint:after,
 [data-hint]:after {
   white-space: pre !important;
@@ -1194,7 +1204,7 @@ div.highlight {
   pointer-events: all;
   cursor: pointer;
   box-sizing: border-box;
-  padding: 20px 0px;
+  padding: 35px 0px;
   font-size: 1.7em;
   font-style: italic;
   font-family: 'Lato', sans-serif;
@@ -1211,7 +1221,7 @@ div.highlight {
   transition: padding 0.2s;
 }
 .intro .button:hover {
-  padding: 40px 0px;
+  color: #6a6c67;
 }
 .lastupdate {
   display: inline-block;
@@ -1377,7 +1387,7 @@ div.highlight {
   box-sizing: border-box;
   position: absolute;
   width: 400px;
-  height: 220px;
+  height: 350px;
   left: 0;
   bottom: 0;
   background: #ECECEC;
@@ -1391,11 +1401,11 @@ div.highlight {
   transition: bottom 0.4s;
 }
 .header .menu .tagsmenu .graphtags #sigma-tags {
-  height: 155px;
+  height: 285px;
 }
 .header .menu .tagsmenu .graphtags #sigma-tags canvas {
   left: 0px;
-  height: 155px;
+  height: 285px;
 }
 .header .menu .tagsmenu .graphtags .tagdescription {
   box-sizing: border-box;
@@ -1429,7 +1439,7 @@ div.highlight {
   border-bottom: none !important;
 }
 .header .menu .tagsmenu.active:hover .graphtags {
-  bottom: -220px;
+  bottom: -350px;
 }
 .header .menu .buttons {
   z-index: 40;
@@ -1757,7 +1767,7 @@ div.highlight {
   -ms-transform: translate(-100%, -50%);
   -o-transform: translate(-100%, -50%);
   transform: translate(-100%, -50%);
-  color: #959393;
+  color: #E1E1E1;
   font-size: 0.65em;
   font-style: italic;
   display: none;
@@ -1886,8 +1896,11 @@ div.highlight {
   margin-bottom: 15px;
   line-height: 1.6em;
 }
+.section.layout-flat .block .content ul {
+  margin-bottom: 20px;
+}
 .section.layout-flat .block .content li {
-  margin-bottom: 7px;
+  margin-bottom: 5px;
   margin-left: 20px;
 }
 .section.layout-flat .block .content li li {
@@ -2435,7 +2448,6 @@ body.layout-print .footer {
   margin-left: 20px;
   font-size: 0.9em;
   padding-bottom: 7px;
-  border-bottom: 1px dashed lightgray;
 }
 .wrapper.layout-print .section .block .content li {
   margin-top: 7px;
