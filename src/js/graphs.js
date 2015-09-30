@@ -231,21 +231,21 @@ var loadTagGraph = function(scope) {
       s.bind('clickNode', function(event) {
         if(!event.data.captor.isDragging) {
           console.log("clickedTag:",event.data.node);
-          scope.toggleTag(event.data.node.tag,true);
-          scope.overTag(event.data.node.tag);
+          scope.toggleTag(event.data.node.tag);
+          scope.overTag(event.data.node.tag, true);
         }
       });
       s.bind('clickStage', function(event) {
         if(!event.data.captor.isDragging) {
-          scope.toggleTag(null,true);
-          scope.overTag();
+          scope.toggleTag();
+          scope.overTag(null, true);
         }
       });
       s.bind('overNode', function(event) {
-        scope.overTag(event.data.node.tag);
+        scope.overTag(event.data.node.tag, true);
       });
       s.bind('outNode', function(event) {
-        scope.overTag();
+        scope.overTag(true);
       });
 
       // remember sigma node ids by tag ?

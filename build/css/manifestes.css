@@ -479,12 +479,12 @@
 
 ;
 
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
 /**
  * 1. Set default font family to sans-serif.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
  */
 
 html {
@@ -552,7 +552,7 @@ audio:not([controls]) {
 
 /**
  * Address `[hidden]` styling not present in IE 8/9/10.
- * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
  */
 
 [hidden],
@@ -572,7 +572,8 @@ a {
 }
 
 /**
- * Improve readability when focused and also mouse hovered in all browsers.
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
  */
 
 a:active,
@@ -690,7 +691,6 @@ figure {
  */
 
 hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
@@ -831,15 +831,12 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /**
  * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
- *    (include `-moz` to future-proof).
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
  */
 
 input[type="search"] {
   -webkit-appearance: textfield; /* 1 */
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box; /* 2 */
-  box-sizing: content-box;
+  box-sizing: content-box; /* 2 */
 }
 
 /**
@@ -1373,6 +1370,14 @@ div.highlight {
   font-size: 0.75em;
   color: #ababab;
 }
+.header .menu .tagsmenu .tagshat span.label .mode {
+  cursor: pointer;
+  color: #ababab;
+  text-decoration: underline;
+}
+.header .menu .tagsmenu .tagshat span.label .mode:hover {
+  color: #3c3c3c;
+}
 .header .menu .tagsmenu .paint {
   z-index: 31;
   position: absolute;
@@ -1382,12 +1387,12 @@ div.highlight {
   height: 58px;
   background: white;
 }
-.header .menu .tagsmenu .graphtags {
+.header .menu .tagsmenu .tagspanel {
   z-index: 27;
   box-sizing: border-box;
   position: absolute;
   width: 400px;
-  height: 350px;
+  height: 450px;
   left: 0;
   bottom: 0;
   background: #ECECEC;
@@ -1400,14 +1405,54 @@ div.highlight {
   -ms-transition: bottom 0.4s;
   transition: bottom 0.4s;
 }
-.header .menu .tagsmenu .graphtags #sigma-tags {
-  height: 285px;
+.header .menu .tagsmenu .tagspanel .tagsdisplay {
+  height: 385px;
 }
-.header .menu .tagsmenu .graphtags #sigma-tags canvas {
+.header .menu .tagsmenu .tagspanel .tagsdisplay#sigma-tags canvas {
   left: 0px;
-  height: 285px;
+  height: 385px;
 }
-.header .menu .tagsmenu .graphtags .tagdescription {
+.header .menu .tagsmenu .tagspanel .tagsdisplay#grid-tags {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.header .menu .tagsmenu .tagspanel .tagsdisplay#grid-tags .gridtag {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  width: 20%;
+  height: 29.61538462px;
+  padding: 8px 7px;
+  text-align: left;
+  font-size: 0.65em;
+  color: #3c3c3c;
+  background: #e4e4e4;
+}
+.header .menu .tagsmenu .tagspanel .tagsdisplay#grid-tags .gridtag.important {
+  color: #107a1d;
+}
+.header .menu .tagsmenu .tagspanel .tagsdisplay#grid-tags .gridtag.icon {
+  color: #ababab;
+}
+.header .menu .tagsmenu .tagspanel .tagsdisplay#grid-tags .gridtag.icon i {
+  color: #ababab;
+  font-size: 0.8em;
+  margin-right: 5px;
+}
+.header .menu .tagsmenu .tagspanel .tagsdisplay#grid-tags .gridtag:hover {
+  background: #cccccc;
+}
+.header .menu .tagsmenu .tagspanel .tagsdisplay#grid-tags .gridtag.active {
+  color: white;
+  background: #883e3e;
+}
+.header .menu .tagsmenu .tagspanel .tagsdisplay#grid-tags .gridtag.active i {
+  color: white;
+}
+.header .menu .tagsmenu .tagspanel .tagdescription {
   box-sizing: border-box;
   position: absolute;
   bottom: 0;
@@ -1419,7 +1464,7 @@ div.highlight {
   line-height: 1.4em;
   text-align: center;
 }
-.header .menu .tagsmenu .graphtags .tagdescription span {
+.header .menu .tagsmenu .tagspanel .tagdescription span {
   /*            position: absolute;
             top: 0;
             left: 0;
@@ -1438,8 +1483,8 @@ div.highlight {
 .header .menu .tagsmenu.active:hover .tagshat {
   border-bottom: none !important;
 }
-.header .menu .tagsmenu.active:hover .graphtags {
-  bottom: -350px;
+.header .menu .tagsmenu.active:hover .tagspanel {
+  bottom: -450px;
 }
 .header .menu .buttons {
   z-index: 40;
@@ -2475,7 +2520,7 @@ body.layout-print .footer {
   .intro,
   .intro .button,
   .lastupdate,
-  .menu .graphtags,
+  .menu .tagspanel,
   .section,
   .comments,
   .quote-container,
@@ -2580,7 +2625,7 @@ body.layout-print .footer {
     background-image: none !important;
   }
   .menu .tagshat,
-  .menu .graphtags,
+  .menu .tagspanel,
   .section.layout-flat .image,
   .panel.graph {
     width: 370px !important;
@@ -2599,7 +2644,7 @@ body.layout-print .footer {
     width: 220px !important;
   }
   .menu .tagshat,
-  .menu .graphtags,
+  .menu .tagspanel,
   .section.layout-flat .image,
   .panel.graph {
     width: 480px !important;
@@ -2618,7 +2663,7 @@ body.layout-print .footer {
     width: 280px !important;
   }
   .menu .tagshat,
-  .menu .graphtags,
+  .menu .tagspanel,
   .section.layout-flat .image,
   .panel.graph {
     width: 580px !important;

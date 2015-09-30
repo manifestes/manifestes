@@ -39,7 +39,7 @@ menu:
     backtip: retourner à l'intro
     tagsdefault: toutes
     tagshat: filtrer par thématiques
-    taggingoff: activer les thématiques
+    taggingoff: voir les thématiques
     taggingon: masquer les thématiques
     tagsdescription: cliquez sur les thématiques pour filtrer les contenus
     search: chercher
@@ -62,15 +62,24 @@ menu:
 tags:
     about: à propos|question-circle = projet manifeste(s) (liste de discussion, code, twitter)
     group: collectifs|users = réseaux, coopératives, associatives existant(e)s
+    list: annuaire|database = base de données, liens
+    tool: outils|wrench = guides pratiques, tutoriaux
+    place: lieux|map-marker = où ça ? adresses, tiers-lieux
     text: textes|file-text = articles, livres, textes
     image: images|picture-o = dessins, graphiques
     audio: sons|volume-up = radios, musique
     video: films|film = videos, films, documentaires
-    tool: outils|wrench = guides pratiques, tutoriaux
-    list: annuaire|database = base de données, liens
-    place: lieux|map-marker = où ça ? adresses, tiers-lieux
     time: agenda|calendar-check-o = quand ? calendriers, évenements
-    constat: constat = se rendre compte que le monde ne tourne pas rond
+    eat: _manger = cuisiner, se nourrir
+    health: _santé = corps, maladie, santé, sport, psychologie
+    home: _habiter = logement, habitat, espace privé
+    move: _se déplacer = transports
+    solidarity: _solidarité = aide pratique
+    work: _travail = emploi, chômage, activité remunérée
+    recup: _récup' = recyclage, réutilisation
+    meet: _rencontrer = rencontrer, découvrir, partager
+    constat: _constat = se rendre compte que le monde ne tourne pas rond
+    act: _action = en pratique dans son quotidien
     history: histoire = (néo)colonialisme, impérialisme, passif historique
     atom: nucléaire = nucléaire
     guilty: ennemis = les responsables, les ennemis, on a leurs noms
@@ -95,16 +104,12 @@ tags:
     basicincome: revenu de base = inconditionnel
     boycott: boycott = ne PAS utiliser/acheter/visiter
     slow: ralentir = décroissance, temps long
-    recup: récup' = recyclage, réutilisation
     local: local = à coté de chez soi
-    act: action = en pratique dans son quotidien
     fun: humour = amusons-nous !
     love: amour = toujours
     dream: rêve = utopies, promesses, idéaux
-    meet: rencontrer = rencontrer, découvrir, partager
     debate: discuter = s'accorder, s'engueuler, débattre
     inegality: inégalités = d'accès, des chances, de €
-    solidarity: solidarité = aide pratique
     space: espace public = espaces partagés, ville
     economy: économie = commerce, échanges
     politics: politique = politique et représentation
@@ -116,15 +121,10 @@ tags:
     greenwash: néocapitalisme = récupérations, greenwashing
     creation: création = art, culture, création, écriture
     design: design = processus, formes, gameplay
-    health: santé = corps, maladie, santé, sport, psychologie
     earth: planète = environnement, climat, pollutions
     commons: communs = open(res)sources
     agriculture: agriculture = cultures, semences
     object: objets = matériel, mobilier, machines
-    eat: manger = cuisiner, se nourrir
-    home: habiter = logement, habitat, espace privé
-    move: se déplacer = transports
-    work: travail = emploi, chômage, activité remunérée
 footer:
     lastupdatetext: dernière modification
     content: >
@@ -258,7 +258,7 @@ content: >
 date: 2015-09-20
 role: info
 title: Catégories thématiques
-subtitle: "La grille de tags permet d'organiser tous les contenus du site: pour l'activer, cliquez sur l'icône à gauche dans le menu"
+subtitle: "La grille de tags permet d'organiser tous les contenus du site: pour l'activer, cliquez sur l'icône en haut à gauche dans le menu"
 slug: about_tags
 image:
     url: HansHauger.jpg
@@ -282,7 +282,8 @@ content: >
 
 
 
-    Ces thématiques sont elles-mêmes liées les unes aux autres (voir le menu *filtrer par thématiques* en haut à gauche)
+    Ces thématiques sont elles-mêmes liées les unes aux autres (cliquez sur «*afficher le réseau*»)
+
 
     La liste est extensible et discutable !
 
@@ -1098,7 +1099,7 @@ quote:
     author: Hervé Le Tellier, dialogues socratiques
     content: >
         Pour l'aveugle, l'oiseau chante. Pour le sourd, l'oiseau vole. Qui dit vrai ? Demande au muet.
-tags: culture, plurality
+tags: creation, plurality
 content: >
     Nous pensons qu'il existe toujours une **multitude de formulations** d'un problème et de réponses possibles. Pour mieux saisir le monde,  multiplions les manières de l'aborder: *langues, domaines, dimensions, générations, temporalités*.
 

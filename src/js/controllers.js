@@ -36,7 +36,8 @@ angular.module('manifest.controllers', ['underscore','config'])
 
     $scope.meta = {}; // mainly the meta info at start of section.yml
     $scope.sections = [];
-    $scope.tagsContents = {}; // .label & .description dor each tag
+    $scope.tagsContents = {}; // .tag .label .description .icon for each tag
+    $scope.tagsContentsOrdered = []; // same but array to be able to sort
     $scope.linksArray = []; // raw list of links
     $scope.linksByTag = {}; // links by tag
     $scope.sectionNbByTag = {}; // sections by tag (only nb)
@@ -49,8 +50,11 @@ angular.module('manifest.controllers', ['underscore','config'])
       commenting_slug: null, // current disqus id
       lang: $routeParams.lang,
       layout: layout, // sections/links/map/print/etc...
+
       tagging: false, // if tags/filtering active or not
+      tagsmode: 'grid', // tags display mode: graph OR grid
       tags: [], // list of current filtering tags
+
       graphstatus: "NO", // loaded or not ?
       graphfullscreen: false
     };
@@ -129,7 +133,8 @@ angular.module('manifest.controllers', ['underscore','config'])
         scrollToup();
         
         // update tag graph sizes
-        updateTagNodesSizesForLayout($scope,lay);
+        //if($scope.state.tagsmode=='graph')
+          updateTagNodesSizesForLayout($scope,lay);
       }
     };
     $scope.loadLinksGraph = function() {
@@ -143,7 +148,12 @@ angular.module('manifest.controllers', ['underscore','config'])
 
 
     $scope.tagSorter = function(tag) {
-      var ic = $scope.tagsContents[tag].icon;
+      var tc = tag.label ? tag : ($scope.tagsContents[tag] ? $scope.tagsContents[tag] : null);
+      if(!tc) {
+        console.log("error with tag:",tag);
+        return -1;
+      }
+      var ic = tc.icon;
       if(!ic) return -1;
       else {
         if(tag=='about') return 6;
@@ -152,13 +162,13 @@ angular.module('manifest.controllers', ['underscore','config'])
         return 1;
       }
     };
-    $scope.overTag = function(tag) {
+    $scope.overTag = function(tag,refresh) {
       if(tag && $scope.tagsContents[tag]) {
         $scope.state.overtag = $scope.tagsContents[tag];
       } else {
         $scope.state.overtag = {description: $scope.meta.menu.tagsdescription};
       }
-      $scope.$apply();
+      if(refresh) $scope.$apply();
     };
 
     $scope.isTagActive = function(tag) {
@@ -199,7 +209,8 @@ angular.module('manifest.controllers', ['underscore','config'])
       console.log("state tags:",$scope.state.tags);
       
       // update graph node colors
-      updateTagNodes($scope.state.tags);
+      //if($scope.state.tagsmode=='graph')
+        updateTagNodes($scope.state.tags);
 
       if(refresh) $scope.$apply();
       scrollToup();
@@ -463,11 +474,17 @@ angular.module('manifest.controllers', ['underscore','config'])
               var part = v.split(' = ');
               $scope.tagsContents[k] = {
                 tag: k,
-                label: part[0].split('|')[0],
+                label: part[0].split('|')[0].replace("_",""),
                 description: part[1],
-                icon: /^|/.test(part[0]) ? part[0].split('|')[1] : false
+                icon: /^|/.test(part[0]) ? part[0].split('|')[1] : false,
+                important: /_/.test(part[0]) ? true : false
               };
+              $scope.tagsContentsOrdered.push($scope.tagsContents[k]);
             });
+
+            // $scope.tagsContentsOrdered.sort(function(a,b) {
+            //   return $scope.tagSorter(b) - $scope.tagSorter(a);
+            // });
             
 
             //////////////////////////////////////////// PARSING SECTIONS

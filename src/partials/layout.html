@@ -139,15 +139,34 @@
             </i>
           </div>
 
-          <span class="label" ng-if="state.tagging">{{meta.menu.tagshat}}</span>
+          <span class="label" ng-if="state.tagging">
+            {{meta.menu.tagshat}} 
+            (<span class="mode" ng-if="state.tagsmode=='graph'" ng-click="state.tagsmode='grid';">afficher la grille</span><span class="mode" ng-if="state.tagsmode=='grid'" ng-click="state.tagsmode='graph';">afficher le réseau</span>)
+          </span>
 
         </div>
 
         <div class="paint"></div>
 
-        <!-- TAGS GRAPH PANEL -->
-        <div class="graphtags">
-          <div id="sigma-tags"></div>
+        <!-- TAGS collapsable PANEL -->
+        <div class="tagspanel">
+
+          <!-- either GRAPH -->
+          <div class="tagsdisplay" id="sigma-tags"></div>
+          <!-- either GRID -->
+          <div class="tagsdisplay" id="grid-tags" ng-if="state.tagsmode=='grid'">
+            <div
+              ng-repeat="t in tagsContentsOrdered"
+              ng-click="toggleTag(t.tag);"
+              ng-mouseover="overTag(t.tag);"
+              class="gridtag"
+              ng-class="{
+                icon: t.icon,
+                important: t.important,
+                active: isTagActive(t.tag)
+              }"><i ng-if="t.icon" class="fa fa-{{t.icon}}"></i>{{t.label}}</div>
+          </div>
+
           <div class="tagdescription">
             <span ng-if="state.overtag.tag">#{{state.overtag.tag}}</span> <br>
             {{state.overtag.description}}

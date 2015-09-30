@@ -41,12 +41,14 @@ a {
   text-align: left;
 }
 
-
+@mostLightColor: #E4E4E4;
 @veryLightColor: #CCCCCC;
 @lightColor: #ABABAB; // gris menu, tag léger
 @activeLightColor: #ECECEC;
 @darkColor: #6A6C67; // tag foncé
 @textColor: #3C3C3C;
+
+@greenColor: #107A1D;
 
 @redColor: #883E3E;
 @redGreyColor: #987676;
@@ -349,6 +351,14 @@ span.highlight, div.highlight { /* searched words */
           padding-left: 3px;
           font-size: 0.75em;
           color: @lightColor;
+          .mode {
+            cursor: pointer;
+            color: @lightColor;
+            text-decoration: underline;
+            &:hover {
+              color: @textColor;
+            }
+          }
         }
       }
 
@@ -362,13 +372,13 @@ span.highlight, div.highlight { /* searched words */
         background: white;
       }
 
-      @graphH: 350px;
-      .graphtags {
+      @tagDisplayH: 450px;
+      .tagspanel {
         z-index: 27;
         box-sizing: border-box;
         position: absolute;
         width: @panelW;
-        height: @graphH;
+        height: @tagDisplayH;
         left: 0;
         bottom: 0;
         background: #ECECEC;
@@ -377,13 +387,60 @@ span.highlight, div.highlight { /* searched words */
         .transition(bottom 0.4s);
         
         @descH: 65px;
-        #sigma-tags {
-          height: @graphH - @descH;
-          canvas {
-            left: 0px;
-            height: @graphH - @descH;
+
+        .tagsdisplay {
+          
+          height: @tagDisplayH - @descH;
+
+          &#sigma-tags {
+            canvas {
+              left: 0px;
+              height: @tagDisplayH - @descH;
+            }
+          }
+          &#grid-tags {
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            .gridtag {
+              box-sizing: border-box;
+              cursor: pointer;
+              display: inline-block;
+              overflow: hidden;
+              vertical-align: top;
+              width: 20%;
+              height: (@tagDisplayH - @descH)/13;
+              padding: 8px 7px;
+              text-align: left;
+              font-size: 0.65em;
+
+              color: @textColor;
+              background: @mostLightColor;
+
+              &.important {
+                color: @greenColor;
+              }
+              &.icon {
+                color: @lightColor;
+                i {
+                  color: @lightColor;
+                  font-size: 0.8em;
+                  margin-right: 5px;
+                }
+              }
+              &:hover {
+                background: @veryLightColor;
+              }
+              &.active {
+                color: white;
+                background: @redColor;
+                i { color: white; }
+              }
+            }
           }
         }
+
         .tagdescription {
           box-sizing: border-box;
           position: absolute;
@@ -423,8 +480,8 @@ span.highlight, div.highlight { /* searched words */
         .tagshat {
           border-bottom: none !important;
         }
-        .graphtags {
-          bottom: -@graphH;
+        .tagspanel {
+          bottom: -@tagDisplayH;
         }
       }
     }
