@@ -245,7 +245,7 @@ var loadTagGraph = function(scope) {
         scope.overTag(event.data.node.tag, true);
       });
       s.bind('outNode', function(event) {
-        scope.overTag(true);
+        scope.overTag(null, true);
       });
 
       // remember sigma node ids by tag ?

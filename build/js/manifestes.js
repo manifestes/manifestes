@@ -3192,7 +3192,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'30 September 2015 - 1:42'})
+.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'30 September 2015 - 2:02'})
 
 ;
 ;
@@ -4251,7 +4251,7 @@ var loadTagGraph = function(scope) {
         scope.overTag(event.data.node.tag, true);
       });
       s.bind('outNode', function(event) {
-        scope.overTag(true);
+        scope.overTag(null, true);
       });
 
       // remember sigma node ids by tag ?

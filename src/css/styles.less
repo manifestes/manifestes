@@ -44,7 +44,6 @@ a {
 @mostLightColor: #E4E4E4;
 @veryLightColor: #CCCCCC;
 @lightColor: #ABABAB; // gris menu, tag léger
-@activeLightColor: #ECECEC;
 @darkColor: #6A6C67; // tag foncé
 @textColor: #3C3C3C;
 
@@ -381,7 +380,7 @@ span.highlight, div.highlight { /* searched words */
         height: @tagDisplayH;
         left: 0;
         bottom: 0;
-        background: #ECECEC;
+        background: @mostLightColor;
 
         .box-shadow(0px 0px 5px 0px #525252);
         .transition(bottom 0.4s);
@@ -411,9 +410,10 @@ span.highlight, div.highlight { /* searched words */
               vertical-align: top;
               width: 20%;
               height: (@tagDisplayH - @descH)/13;
-              padding: 8px 7px;
+              padding: 9px 7px;
               text-align: left;
               font-size: 0.65em;
+              text-transform: uppercase;
 
               color: @textColor;
               background: @mostLightColor;
@@ -469,7 +469,7 @@ span.highlight, div.highlight { /* searched words */
 
       &.filtering {
         .tagshat {
-          background: @activeLightColor;
+          background: @mostLightColor;
           border-bottom: 5px solid @redColor;
         }
         .clear {
@@ -541,7 +541,7 @@ span.highlight, div.highlight { /* searched words */
           }
         }
         &.active, &.active:hover {
-          background: @activeLightColor;
+          background: @mostLightColor;
           border-bottom: 5px solid @redColor;
           i {
             color: @redColor;

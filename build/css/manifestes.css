@@ -1395,7 +1395,7 @@ div.highlight {
   height: 450px;
   left: 0;
   bottom: 0;
-  background: #ECECEC;
+  background: #e4e4e4;
   -webkit-box-shadow: 0px 0px 5px 0px #525252;
   -moz-box-shadow: 0px 0px 5px 0px #525252;
   box-shadow: 0px 0px 5px 0px #525252;
@@ -1425,9 +1425,10 @@ div.highlight {
   vertical-align: top;
   width: 20%;
   height: 29.61538462px;
-  padding: 8px 7px;
+  padding: 9px 7px;
   text-align: left;
   font-size: 0.65em;
+  text-transform: uppercase;
   color: #3c3c3c;
   background: #e4e4e4;
 }
@@ -1474,7 +1475,7 @@ div.highlight {
   color: #ababab;
 }
 .header .menu .tagsmenu.filtering .tagshat {
-  background: #ececec;
+  background: #e4e4e4;
   border-bottom: 5px solid #883e3e;
 }
 .header .menu .tagsmenu.filtering .clear {
@@ -1539,7 +1540,7 @@ div.highlight {
 }
 .header .menu .buttons .button.active,
 .header .menu .buttons .button.active:hover {
-  background: #ececec;
+  background: #e4e4e4;
   border-bottom: 5px solid #883e3e;
 }
 .header .menu .buttons .button.active i,

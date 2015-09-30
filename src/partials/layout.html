@@ -154,7 +154,7 @@
           <!-- either GRAPH -->
           <div class="tagsdisplay" id="sigma-tags"></div>
           <!-- either GRID -->
-          <div class="tagsdisplay" id="grid-tags" ng-if="state.tagsmode=='grid'">
+          <div class="tagsdisplay" id="grid-tags" ng-if="state.tagsmode=='grid'" ng-mouseout="overTag();">
             <div
               ng-repeat="t in tagsContentsOrdered"
               ng-click="toggleTag(t.tag);"
