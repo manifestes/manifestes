@@ -8,7 +8,8 @@ source:
     github: https://github.com/manifestes/manifestes
     sections: https://github.com/manifestes/manifestes/blob/gh-pages/data/sections_es.yml
     links: https://github.com/manifestes/manifestes/blob/gh-pages/data/links_es.yml
-intro:
+graph:
+    loader: no graph yet for the spanish version
 intro:
     images:
         - manifeste-utopies-concretes_633232
@@ -41,7 +42,6 @@ menu:
     printtip: "imprimez\nla fenêtre\nqui s'ouvre !"
     discusstext: discutir, corregir, proponer
     discussback: volver al texto
-    loadgraph: no graph yet for the spanish version
 tags:
     about: à propos|question-circle = projet manifeste(s) (liste de discussion, code, twitter)
     group: collectifs|users = réseaux, coopératives, associatives existant(e)s
@@ -773,7 +773,7 @@ quote:
     author: Hervé Le Tellier, dialogues socratiques
     content: >
         Para el ciego, el pájaro canta. Para el sordo, el pájaro vuela. ¿Quién dice la verdad? Pregúntale al mudo.
-tags: culture, plurality
+tags: creation, plurality
 content: >
     Creemos que existe siempre una **multitud de formulaciones** de cualquier problema y de respuestas posibles en consecuencia. Para captar mejor el mundo,  multipliquemos las maneras de abordarlo: *lenguas, dominios, dimensiones, generaciones, temporalidades*.
 
