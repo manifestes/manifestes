@@ -45,6 +45,13 @@ autres outils ... ?
     Zotero (logiciel de gestion de bibliographie avec tag, servant de logiciel de collaboration, social bookmarking, .... )   << fortement recommander... (je cherche des compétences pour l'améliorer)
 
 
+Hyphe/Gephi workflow:
+    export gexf
+    import/merge Ids-Urls-Tags from Refine
+    ForceAtlas2 = échelle 15 - gravitéplusforte (0.8)
+    Modularity > Colors
+    Hyphe inDegree = 2 - 7
+    
 ================ CHANGELOG
 done ! (to be pushed)
 
@@ -99,6 +106,8 @@ done ! (to be pushed)
 
 ================ TODO ROADMAP
 
+    - history browser back button !
+
     - better fonts ? cf http://usemodify.com/keywords/garalde-old-face/
 
     - MAP.csv using GoogleRefine
@@ -124,6 +133,8 @@ done ! (to be pushed)
     - seul nous n'allons nulle part
 
     - ne rougissez pas d'une erreur, vous commettriez une faute
+
+    - institut de co-production de savoirs politiques
 
     - (vous êtes graphiste ? une idée ? aidez-nous !)
 
@@ -227,57 +238,8 @@ plus facilement extensible, souple, permet de se soustraire aux structures/menus
 
 === références / réseaux à ajouter ?
 
-TO CRAWL( maj?)
-http://engraineurs.tumblr.com
-https://oulaviesauvage.wordpress.com
-http://alternative-urbaine.net/
-http://www.la-boutique-militante.com/
-http://marchesurlacop.noblogs.org
-http://www.associations-citoyennes.net/ecologie/
-https://lesechosduvent.wordpress.com/
-http://cestdejatoutdesuite.noblogs.org
-www.bonnes-nouvelles.be
-http://www.ilfauttuertina.net/
-http://www.consommer-juste.fr/
-http://lelabo-ess.org
-http://wiki.commonstransition.org/wiki/Law_for_the_Commons
-http://mouvements.info/
-
 TO SEE+LINKS ?
 http://wos-agencedeshypotheses.com/wos-reportage/rues-marchandes/
-
-YA ADDED ON HYPHE:
-http://michelefirk.noblogs.org/
-http://www.revueducrieur.fr/
-http://www.reporterre.net
-http://laboutiquesansargent.org
-https://lahordepirate.wordpress.com
-https://lesuperflux.wordpress.com
-http://www.achetezmoins.ch/
-http://www.motherearthpeace.org
-http://marchesurlacop.noblogs.org/
-http://caravanedesalternatives.weebly.com/
-http://www.medelu.org/
-http://vecam.org/
-http://autonomiaproject.org/
-http://www.ladecroissance.net/
-http://www.interdemos.net/
-http://monpostdemocrate.info/
-http://lepoing.net
-http://leprojetencommun.net/
-http://reclaimthefields.org/fr/fourcheetchamplibre
-http://nonmarchand.org/pmwiki
-https://decroissons.wordpress.com/habitat/village-associatif-alternatif/
-https://foodhackingbase.org/
-http://www.terredeliensnormandie.org/
-http://www.lafermedesbouillons.fr/
-http://collectifcreatifcastellas.org/
-http://www.motherearthpeace.org/
-http://lesouffledureve.com/
-http://www.rdevolution.org/
-http://tribuvivace.com
-http://justdelete.me/
-
 http://coglode.com/
 
 pour liens fromGF
@@ -286,10 +248,12 @@ pour liens fromGF
 
 
 TO ADD ON MAP ?
+http://gen.ecovillage.org/en/projects/map
 https://decroissons.wordpress.com/habitat/village-associatif-alternatif/
 http://heterotopies.overblog.com
 http://sharewiki.org/en/Lieu_de_vie_ouvert
 voir aussi liste de http://ddchampo.forumactif.org/t389-lieux-acteurs-ecolo-citoyens
+
 
 citations cf
 ne vivons plus comme des esclaves
@@ -381,6 +345,8 @@ La différence avec "sous toutes ces formes" n'est pas hyper claire pour moi.
 J'utilise plus volontier le mot diversité y compris en tant que contraire à la standardisation fondement du système de production capitaliste.
 Il n'y a pas que La (bio)diversité qui est en crise !
 
+culture de la normalisation, standardisation
+plus possible de créer des récits
 
 === RENCONTRONS NOUS !
 pas forcément tout de suite échanger

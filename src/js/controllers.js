@@ -212,6 +212,9 @@ angular.module('manifest.controllers', ['underscore','config'])
       //if($scope.state.tagsmode=='graph')
         updateTagNodes($scope.state.tags);
 
+      if($scope.state.graphstatus=="OK")
+        filterLinksNodesFromTags($scope.state.tags);
+
       if(refresh) $scope.$apply();
       scrollToup();
     };
@@ -327,7 +330,7 @@ angular.module('manifest.controllers', ['underscore','config'])
     };
 
 
-    var md2Html = function(str) {
+    $scope.md2Html = function(str) {
       return str ? markdown.toHTML(str) : "";
     };
 
@@ -401,7 +404,7 @@ angular.module('manifest.controllers', ['underscore','config'])
               });
             }
 
-            var htm = md2Html( l.split('\n')[1] );
+            var htm = $scope.md2Html( l.split('\n')[1] );
 
             // store links as array
             $scope.linksArray.push({
@@ -451,9 +454,7 @@ angular.module('manifest.controllers', ['underscore','config'])
           if(d.role && d.role=='meta') {
 
             $scope.meta = d;
-            //$scope.meta.about = md2Html($scope.meta.about);
-            $scope.meta.footer.content = md2Html($scope.meta.footer.content);
-            $scope.meta.graphcredits = md2Html($scope.meta.graphcredits);
+
             $scope.state.overtag = {description: $scope.meta.menu.tagsdescription};
             $scope.state.taggingtooltip = $scope.state.tagging ? 
               $scope.meta.menu.taggingon : $scope.meta.menu.taggingoff;
@@ -491,18 +492,18 @@ angular.module('manifest.controllers', ['underscore','config'])
           } else { 
 
             //console.log(d);
-            d.subtitle = md2Html(d.subtitle);
+            d.subtitle = $scope.md2Html(d.subtitle);
             d.subtitletext = totext(d.subtitle);
             if(d.quote) {
-              d.quote.content = md2Html(d.quote.content);
-              d.quote.author = md2Html(d.quote.author);
+              d.quote.content = $scope.md2Html(d.quote.content);
+              d.quote.author = $scope.md2Html(d.quote.author);
             }
-            d.content = md2Html(d.content);
+            d.content = $scope.md2Html(d.content);
             d.tags = d.tags ? d.tags.split(', ') : [];
             _.each(d.tags, function(t) {
               $scope.sectionNbByTag[t] = $scope.sectionNbByTag[t] ? $scope.sectionNbByTag[t]+1 : 1;
             });
-            d.links = md2Html(d.links);
+            d.links = $scope.md2Html(d.links);
 
             d.date = moment(d.date);
             var seuil = moment().subtract(3,"month");

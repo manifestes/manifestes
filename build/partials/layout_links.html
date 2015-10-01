@@ -1,33 +1,43 @@
 
 
 <div class="panel graph" ng-class="{fullscreen:state.graphfullscreen}">
+
+<!-- GRAPH LOADER OVERLAY -->
   <div class="graphloader spinner" ng-if="state.graphstatus=='LOADING'">
     <div class="bounce1"></div>
     <div class="bounce2"></div>
     <div class="bounce3"></div>
   </div>
-
   <div
     class="graphloader"
     ng-if="state.graphstatus=='NO'"
     ng-click="state.lang=='fr' && loadLinksGraph();"
-    ng-bind-html="meta.menu.loadgraph">
+    ng-bind-html="meta.graph.loader">
   </div>
 
+  <!-- CONTROLS -->
   <div
-    class="control graphfullscreen"
+    class="control second graphfullscreen hint--bottom"
+    data-hint="{{meta.graph.controlfull}}"
     ng-click="state.graphfullscreen = !state.graphfullscreen; updateGraphSize();">
     <i
-      class="fa fa-lg"
+      class="fa"
       ng-class="{
         'fa-expand': !state.graphfullscreen,
         'fa-compress': state.graphfullscreen
       }">
     </i>
   </div>
+  <div
+    class="control help hint--bottom"
+    data-hint="{{meta.graph.controlhelp}}">
+    <i class="fa fa-question"></i>
+  </div>
 
-  <div class="credits" compile-html="meta.graphcredits"></div>
+  <!-- CREDITS -->
+  <div class="credits" compile-html="md2Html(meta.graph.credits);"></div>
 
+  <!-- GRAPH -->
   <div id="sigma-links"></div>
 </div>
 

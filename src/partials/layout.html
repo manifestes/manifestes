@@ -200,7 +200,7 @@
     <div class="page" ng-include="layoutTemplate();"></div>
 
     <div class="footer">
-      <div class="content" compile-html="meta.footer.content"></div>
+      <div class="content" compile-html="md2Html(meta.footer.content)"></div>
       <a class="lastupdate" target="_blank" href="{{meta.repo}}">{{meta.footer.lastupdatetext}}<br>{{settings.lastupdate}}</a>
     </div>
 

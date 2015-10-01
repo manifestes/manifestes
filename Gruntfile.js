@@ -11,11 +11,11 @@ module.exports = function(grunt) {
         options : {
           context : {
             // hard written html meta within index.html
-            title: "manifeste(s)",
-            author: "collectif(s)",
+            title: "manifeste(s) des utopies concrètes - annuaire et cartographie autogérés des alternatives",
+            author: "collectif(s) des utopies concrètes",
             copyleft: "GNU License v2",
             description: "collectif(s) des territoires communs autogérés et alternatives convivialistes DIY bénéloves révolutionnaires de la transition sociale et écologique dans les tiers-lieux créatifs des clowns bricoleurs pirates des utopies libertaires écoféministes p2p et coopératistes indignées activistes de la résilience décroissante concrète et désobéissante des convergences des luttes",
-            keywords: "manifeste, utopies concrètes, alernatives, décroissance, transition, autogestion, communs, résilience, écologie, convergence, écriture collective, DIY, politique, philosophie"
+            keywords: "manifeste, utopies concrètes, annuaire, carte, alernatives, décroissance, transition, autogestion, communs, résilience, écologie, convergence, écriture collective, DIY, politique, philosophie"
           }
           // context_es : {
           //   title: "Manifiesto(s)",

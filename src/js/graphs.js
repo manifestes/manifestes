@@ -1,6 +1,10 @@
 var linksGraph = null;
 var tagsGraph = null;
 
+var invisibleGray = "rgba(0,0,0,0)";
+var lightGray = "#C5C5C5";
+var yellowColor = "#8D7C0D";
+var redColor = "#883E3E";
 
 
 ////////////////////////////////////////// LINKS GRAPH
@@ -8,33 +12,52 @@ var updateGraphSize = function() {
   linksGraph.renderers[0].resize();
   linksGraph.refresh();
   //console.log("graph size refreshed");
-}
+};
+
+// to highlight nodes based on tags
+var filterLinksNodesFromTags = function(tags) {
+  g = linksGraph.graph;
+  if(tags.length) {
+    g.nodes().forEach(function(n) {
+      var highl = _.intersection(n.attributes.Tags,tags).length;
+      upsetLinkNode(n, highl, redColor, lightGray);
+    });
+  } else {
+    resetLinkNodes();
+  }
+  linksGraph.refresh();
+};
+
+// to highlight nodes based on searched term
 var filterLinksNodes = function(term) {
   g = linksGraph.graph;
-
   if(term) {
     var rgx = new RegExp(term,"gi");
     g.nodes().forEach(function(n) {
-      upsetLinkNode(n,rgx.test(n.savedLabel),true);
+      upsetLinkNode(n, rgx.test(n.savedLabel), yellowColor, lightGray);
     });
     g.edges().forEach(function(e) {
-      e.color = "rgba(0,0,0,0)";
+      e.color = invisibleGray;
     });
   } else {
-    resetLinkNodes();   
+    resetLinkNodes();
   }
-
   linksGraph.refresh();
 };
-var upsetLinkNode = function(n,flag,searchresults) {
+
+// update a node color/label (if color is null, set to original color)
+var upsetLinkNode = function(n,flag,incolor,outcolor) {
   if(flag) {
-    n.color = searchresults ? "#8D7C0D" : n.originalColor;
+    n.color = incolor;
     n.label = n.savedLabel;
   } else {
-    n.color = searchresults ? "#C5C5C5" : "rgba(0,0,0,0)";
+    n.color = outcolor;
     delete n.label;
   }
 };
+
+
+// back to original colors
 var resetLinkNodes = function() {
   linksGraph.graph.nodes().forEach(function(n) {
     n.color = n.originalColor;
@@ -74,13 +97,13 @@ var loadLinksGraph = function(scope) {
         type: 'canvas'
       },
       settings: {
-        labelThreshold: 5,
+        labelThreshold: 6,
         //defaultLabelColor: "rgb(200,200,200)",
         zoomingRatio: 1.5,
         doubleClickZoomingRatio: 1.7,
         defaultLabelSize: 12,
         hideEdgesOnMove: true,
-        drawEdges: true,
+        drawEdges: false,
         doubleClickEnabled: false,
         //labelColor: "node",
       }
@@ -91,8 +114,10 @@ var loadLinksGraph = function(scope) {
 
       // init things on the graph
       s.graph.nodes().forEach(function(n) {
-        n.color = "#9C9C9C";
-        n.originalColor = "#9C9C9C";
+        //n.color = "#9C9C9C";
+        //n.originalColor = "#9C9C9C";
+        n.originalColor = n.color;
+        n.attributes.Tags = n.attributes.Tags ? n.attributes.Tags.split(" ") : null;
         n.savedLabel = n.label;
         //delete n.label;
       });
@@ -103,7 +128,7 @@ var loadLinksGraph = function(scope) {
       // doubleclick to open link
       s.bind('doubleClickNode', function(event) {
         console.log("doubleclicked node:",event.data.node);
-        var url = event.data.node.url || scope.meta.url;
+        var url = event.data.node.attributes.Url || scope.meta.url;
         var win = window.open(url, '_blank');
         win.focus();
       });
@@ -118,15 +143,15 @@ var loadLinksGraph = function(scope) {
           console.log(event.data.node);
 
           s.graph.nodes().forEach(function(n) {
-            upsetLinkNode(n,toKeep[n.id]);
+            upsetLinkNode(n, toKeep[n.id], n.originalColor, invisibleGray);
           });
-          event.data.node.color = "#883E3E";
+          event.data.node.color = redColor;
 
           s.graph.edges().forEach(function(e) {
             if (toKeep[e.source] && toKeep[e.target]) 
               e.color = "#EEEEEE";
             else {
-              e.color = "rgba(0,0,0,0)";
+              e.color = invisibleGray;
             }
           });
           s.refresh();

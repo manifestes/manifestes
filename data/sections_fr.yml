@@ -25,8 +25,17 @@ mapcredits:
     citoy:
         name: Citoyens en Transition
         url: https://www.google.com/maps/d/viewer?mid=zfOpOkMajqj0.k73wlMF5RszU
-graphcredits: >
-    [graph.gexf](https://github.com/manifestes/manifestes/blob/gh-pages/data/links_fr.gexf) produced with [hyphe](http://hyphe.medialab.sciences-po.fr/) and displayed using [sigma.js](http://sigmajs.org/)
+graph:
+    loader: >
+        Vous pouvez également explorer le réseau des sites internet et les liens qu'ils ont entre eux
+        <br><br><br>
+        cliquer pour afficher le graphe
+        <br><br>
+        attention, le temps de chargement peut être long (7.6Mo)
+    credits: >
+        [graph.gexf](https://github.com/manifestes/manifestes/blob/gh-pages/data/links_fr.gexf) produced with [hyphe](http://hyphe.medialab.sciences-po.fr/) and displayed using [sigma.js](http://sigmajs.org/)
+    controlhelp: "chaque point du réseau représente un site internet\n\n- Utilisez la molette de votre souris pour zoomer\n- Cliquez sur un point pour voir les sites voisins (cités ou citant)\n- Double-cliquez pour ouvrir le site dans une nouvelle fenêtre\n\nLes couleurs correspondent aux classes de modularités,\nc-à-d aux communautés détectées selon la structure du réseau"
+    controlfull: "afficher/réduire le plein écran"
 intro:
     images:
         - manifeste-utopies-concretes_633232
@@ -55,10 +64,6 @@ menu:
     printtip: "imprimez\nla fenêtre\nqui s'ouvre !"
     discusstext: discuter, corriger, proposer
     discussback: revenir au texte
-    loadgraph: >
-        Vous pouvez également explorer le réseau des sites internet et les liens qu'ils ont entre eux
-        <br><br><br>
-        cliquer pour afficher le graphe (6.5Mo)
 tags:
     about: à propos|question-circle = à propos de ce projet, contexte, liste de discussion, code source
     group: collectifs|users = groupes, réseaux, coopératives, associations, structures
@@ -137,6 +142,9 @@ footer:
         + le [code source](https://github.com/manifestes/manifestes) de ce site avec [les textes](https://github.com/manifestes/manifestes/blob/gh-pages/data/sections_fr.yml) et [les liens](https://github.com/manifestes/manifestes/blob/gh-pages/data/links_fr.yml)
 
         + le compte twitter [@manifestes](https://twitter.com/manifestes)
+
+        + dites-nous [bonjour@utopies-concretes.org](mailto:bonjour@utopies-concretes.org)
+
 
 
 
