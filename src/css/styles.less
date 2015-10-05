@@ -37,6 +37,7 @@ a {
 
 /* hack to allow linebreaks, aka « &#10; » within hint.css tooltips */
 .hint:after, [data-hint]:after {
+  z-index: 9999999999;
   white-space: pre !important;
   text-align: left;
 }
@@ -577,6 +578,11 @@ span.highlight, div.highlight { /* searched words */
       display: inline-block;
       width: @searchInputW;
       margin: 15px 0px;
+
+      &.inactive {
+        pointer-events: none;
+        display: none;
+      }
 
       input {
         box-sizing: border-box;

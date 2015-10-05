@@ -646,7 +646,7 @@ angular.module('manifest.controllers', ['underscore','config'])
             "<h3>"+m.name+"</h3>"+
             "<div class='address'>"+m.address+"</div>"+
             "<div>"+m.description+"</div>"+
-            "<div class='contact'>"+m.contact+"</div>"+
+            //"<div class='contact'>"+m.contact+"</div>"+
             "<div class='source'>source: "+credit.name+" - "+credit.url+"</div>"+
           "</div>";
           var customOptions = {

@@ -3192,7 +3192,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'01 October 2015 - 2:15'})
+.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'05 October 2015 - 2:39'})
 
 ;
 ;
@@ -3845,7 +3845,7 @@ angular.module('manifest.controllers', ['underscore','config'])
             "<h3>"+m.name+"</h3>"+
             "<div class='address'>"+m.address+"</div>"+
             "<div>"+m.description+"</div>"+
-            "<div class='contact'>"+m.contact+"</div>"+
+            //"<div class='contact'>"+m.contact+"</div>"+
             "<div class='source'>source: "+credit.name+" - "+credit.url+"</div>"+
           "</div>";
           var customOptions = {
@@ -4096,7 +4096,7 @@ var loadLinksGraph = function(scope) {
 
 
   var g = sigma.parsers.gexf(
-    scope.settings.datapath + "links_"+scope.state.lang+".gexf",
+    scope.settings.datapath + "graph.gexf",
     {
       container: 'sigma-links',
       renderer: {
@@ -4162,6 +4162,8 @@ var loadLinksGraph = function(scope) {
             }
           });
           s.refresh();
+        } else {
+          console.log("was only dragging, doing nothing.");
         }
       });
 

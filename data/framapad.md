@@ -1,4 +1,4 @@
-discussion ouverte sur http://manifest.es
+discussion ouverte sur http://utopies-concretes.org
 ================ PRÉAMBULE
 NB: Attention ! le couper/coller ne marche pas bien (plutôt faire copier/coller)
 qui parle ici ?
@@ -52,136 +52,6 @@ Hyphe/Gephi workflow:
     Modularity > Colors
     Hyphe inDegree = 2 - 7
     
-================ CHANGELOG
-done ! (to be pushed)
-
-    - more sections & links !
-
-    - interactive map !
-
-    - ≠ map sources within sections.yml
-
-    Lieux de vie https://www.google.com/maps/d/viewer?mid=zCUrDZ_sv7Fw.k9HCrqv3hIVA
-
-    Hétérotopies https://www.google.com/maps/d/viewer?mid=zWH3cGb_zi2I.kCaJt8ZC4ufk
-
-    cf http://heterotopies.overblog.com/cartographie
-
-    CitoyenTransition https://www.google.com/maps/d/viewer?mid=zfOpOkMajqj0.k73wlMF5RszU
-
-    Caravane http://caravanedesalternatives.weebly.com
-
-    - map.csv contacts removed for privacy
-
-    - copy put on https://framacalc.org/carto to experiment collaborative edit
-
-    - tagfilters on links using OR (not AND!)
-
-    - menu agenda vers demosphere.eu
-
-    - tag graph node sizes based on nb for current view
-
-    - reset tags on view change
-
-    - cross/close symbol on selected tags
-
-    - color / symbols for 'meta' tags (rather than 'annuaire/texte/audio/etc)
-
-    - add [#rawtag] on description mouseover (easier to then add a link)
-
-    - simple graph links button for fullscreen 
-
-    - "intro">> pour revenir au splash
-
-    - tags:
-
-    boycotter, ralentir (> verbs quotidien) | à propos (> mimetype)
-
-    sleep > home
-
-    ajouter longterm, collective, to others, etc... (meta)
-
-    création plutôt que culture (linked to dream)
-
-
-================ TODO ROADMAP
-
-    - history browser back button !
-
-    - better fonts ? cf http://usemodify.com/keywords/garalde-old-face/
-
-    - MAP.csv using GoogleRefine
-
-    - correct links without http ?
-
-    - guess empty addresses ?
-
-    - search and kill: tabs, doublespaces, quotes, empty cells
-
-    - search (woof passagers panier amap vélo cantine atelier habitat logement ...) & auto tag: #farm #collective #home #eat
-
-    - toLowercase for UPPERCASES
-
-    - accroches graphiques et divers noms en intro
-
-    - utopies concrètes — annuaire et carte des alternatives
-
-    - j'ai la somme. je suis con. je consomme
-
-    - pourquoi quelque chose plutot que rien
-
-    - seul nous n'allons nulle part
-
-    - ne rougissez pas d'une erreur, vous commettriez une faute
-
-    - institut de co-production de savoirs politiques
-
-    - (vous êtes graphiste ? une idée ? aidez-nous !)
-
-    - manifeste(s) ...
-
-    - ok. on sait ce qui va pas. on fait QUOI ?
-
-    - une plateforme pour faire du fond
-
-    - TEP: ¡ TOUT est politique !
-
-    - 1ère plateforme d'action philosophique
-
-    - réchauffement systémique
-
-    - (C.O.L.I.B.R.I cf tract)
-
-    - C. E.S.T. F.A.C.I.L.E. : Collectif pour l'Émancipation, la Solidarité, Transmission, Féminisme, Autonomie, ...
-
-    MORE: sobriété heureuse, simplicité volontaire, désargence, chômeur.e.s, colibris, créatifs culturels, pirates, objecteur.euse.s de croissance, empêcheur.euse.s de tourner en rond, AMAPs, alternatif.ive.s, convivialistes, grévistes, écoféministes, 15M, alternatiba, activistes, utopistes concrets, maquisard.e.s, hackers, rassemblements citoyen, universités, fablabs, résitances, grands-parents, désobéissants, transition citoyenne, tiers-lieux, p2p, bénéloves, communs, consom'acteurs, SEL, anarchistes, alliances citoyennes, révolutionnaires, occupy, amis de la terre, 99%, vélistance, indignés, bolo'bolo, éco-villages, institut momentum, bricoleur.se.s, farceurs, clowns, résiliés, squatteur.se.s, décroissants conviviaux, évidences écolos, e-constituante, anarnautes, libertaires, anticapitalistes, anonymous, coopératistes, antifascistes, rebooters, démocratie ouverte, écosociétalistes, écologie, alternatives, non-violence
-
-
-    - random order for links & for sections ??
-
-    - heart/like symbol to count "best" sections or links (demosphere, mediaslibres, etc...) - use firebase ?
-
-    - menu links to prose rather than github ? http://prose.io/#manifestes/manifestes/edit/gh-pages/data/links_fr.yml
-
-    - default color linksgraph based on modularity + auto "tag/paint" known nodes (those cited manually)
-
-    - linksgraph zoom/center controls
-
-    - color neighbors on over graph tags
-
-    - clear tags when click on hidden section
-
-    - simple form (to framacalc ?) to add a section / a link
-
-    - sort sections by lastmodifdate / alphabétique
-
-    - info popup/context on links graph(s)
-
-    - bigger sections & menu/buttons/tags on tablet
-
-    - js lazy loading images
-
-    - nb de resultats de recherche ds le menu pour chaque TEXTE / LIENS / CARTE
 
 
 ================ DISCUSSION GÉNÉRALE / FOND
@@ -238,6 +108,7 @@ plus facilement extensible, souple, permet de se soustraire aux structures/menus
 
 === références / réseaux à ajouter ?
 
+
 TO SEE+LINKS ?
 http://wos-agencedeshypotheses.com/wos-reportage/rues-marchandes/
 http://coglode.com/
@@ -248,9 +119,9 @@ pour liens fromGF
 
 
 TO ADD ON MAP ?
-http://gen.ecovillage.org/en/projects/map
 https://decroissons.wordpress.com/habitat/village-associatif-alternatif/
-http://heterotopies.overblog.com
+http://festivaldesutopiesconcretes.org/festival-de-la-recup/festival-de-la-recup-2014/acteurs-de-la-recup-2014
+http://gen.ecovillage.org/en/projects/map
 http://sharewiki.org/en/Lieu_de_vie_ouvert
 voir aussi liste de http://ddchampo.forumactif.org/t389-lieux-acteurs-ecolo-citoyens
 
@@ -402,6 +273,118 @@ Dans les sections, intégrer/permettre aussi:
     ouaip bravo
 
     +1
+
+
+
+
+
+
+
+================ TODO ROADMAP
+- history browser back button !
+- export graph.pdf to download/ print for links & map
+- better fonts ? cf http://usemodify.com/keywords/garalde-old-face/
+- MAP.csv using GoogleRefine
+
+    - correct links without http ?
+
+    - guess empty addresses ?
+
+    - search and kill: tabs, doublespaces, quotes, empty cells
+
+    - search (woof passagers panier amap vélo cantine atelier habitat logement ...) & auto tag: #farm #collective #home #eat
+
+    - toLowercase for UPPERCASES
+
+- VRAC accroches graphiques et divers noms en intro
+
+    - idées ! http://www.nepasplier.fr/epicerie.htm
+
+    - passage à l'acte, désobéissance, prise de position
+
+    - journalisme, historiens, conviction
+
+    - j'ai la somme. je suis con. je consomme
+
+    - pourquoi quelque chose plutot que rien
+
+    - seul nous n'allons nulle part
+
+    - ne rougissez pas d'une erreur, vous commettriez une faute
+
+    - institut de co-production de savoirs politiques
+
+    - (vous êtes graphiste ? une idée ? aidez-nous !)
+
+    - manifeste(s) ...
+
+    - ok. on sait ce qui va pas. on fait QUOI ?
+
+    - une plateforme pour faire du fond
+
+    - TEP: ¡ TOUT est politique !
+
+    - 1ère plateforme d'action philosophique
+
+    - réchauffement systémique
+
+    - (C.O.L.I.B.R.I cf tract)
+
+    - cette image est moins insupportable que la réalité (image bébé mort ou truc dur)
+
+    - C. E.S.T. F.A.C.I.L.E. : Collectif pour l'Émancipation, la Solidarité, Transmission, Féminisme, Autonomie, ...
+
+    MORE: sobriété heureuse, simplicité volontaire, désargence, chômeur.e.s, colibris, créatifs culturels, pirates, objecteur.euse.s de croissance, empêcheur.euse.s de tourner en rond, AMAPs, alternatif.ive.s, convivialistes, grévistes, écoféministes, 15M, alternatiba, activistes, utopistes concrets, maquisard.e.s, hackers, rassemblements citoyen, universités, fablabs, résitances, grands-parents, désobéissants, transition citoyenne, tiers-lieux, p2p, bénéloves, communs, consom'acteurs, SEL, anarchistes, alliances citoyennes, révolutionnaires, occupy, amis de la terre, 99%, vélistance, indignés, bolo'bolo, éco-villages, institut momentum, bricoleur.se.s, farceurs, clowns, résiliés, squatteur.se.s, décroissants conviviaux, évidences écolos, e-constituante, anarnautes, libertaires, anticapitalistes, anonymous, coopératistes, antifascistes, rebooters, démocratie ouverte, écosociétalistes, écologie, alternatives, non-violence
+
+
+- random order for links & for sections ??
+- heart/like symbol to count "best" sections or links (demosphere, mediaslibres, etc...) - use firebase ?
+- menu links to prose rather than github ? http://prose.io/#manifestes/manifestes/edit/gh-pages/data/links_fr.yml
+- default color linksgraph based on modularity + auto "tag/paint" known nodes (those cited manually)
+- linksgraph zoom/center controls
+- color neighbors on over graph tags
+- clear tags when click on hidden section
+- simple form (to framacalc ?) to add a section / a link
+- sort sections by lastmodifdate / alphabétique
+- info popup/context on links graph(s)
+- bigger sections & menu/buttons/tags on tablet
+- js lazy loading images
+- nb de resultats de recherche ds le menu pour chaque TEXTE / LIENS / CARTE
+
+================ DONE / CHANGELOG
+
+- interactive map !
+
+    - ≠ map sources within sections.yml
+
+    Lieux de vie https://www.google.com/maps/d/viewer?mid=zCUrDZ_sv7Fw.k9HCrqv3hIVA
+
+    Hétérotopies https://www.google.com/maps/d/viewer?mid=zWH3cGb_zi2I.kCaJt8ZC4ufk
+
+    cf http://heterotopies.overblog.com/cartographie
+
+    CitoyenTransition https://www.google.com/maps/d/viewer?mid=zfOpOkMajqj0.k73wlMF5RszU
+
+    Caravane http://caravanedesalternatives.weebly.com
+
+- tagfilters on links using OR (not AND!)
+- menu agenda vers demosphere.eu
+- tag graph node sizes based on nb for current view
+- reset tags on view change
+- cross/close symbol on selected tags
+- color / symbols for 'meta' tags (rather than 'annuaire/texte/audio/etc)
+- add [#rawtag] on description mouseover (easier to then add a link)
+- simple graph links button for fullscreen 
+- "intro">> pour revenir au splash
+- tags:
+
+    boycotter, ralentir (> verbs quotidien) | à propos (> mimetype)
+
+    sleep > home
+
+    ajouter longterm, collective, to others, etc... (meta)
+
+    création plutôt que culture (linked to dream)
 
 
 

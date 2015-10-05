@@ -89,7 +89,7 @@ var loadLinksGraph = function(scope) {
 
 
   var g = sigma.parsers.gexf(
-    scope.settings.datapath + "links_"+scope.state.lang+".gexf",
+    scope.settings.datapath + "graph.gexf",
     {
       container: 'sigma-links',
       renderer: {
@@ -155,6 +155,8 @@ var loadLinksGraph = function(scope) {
             }
           });
           s.refresh();
+        } else {
+          console.log("was only dragging, doing nothing.");
         }
       });
 

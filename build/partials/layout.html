@@ -61,7 +61,7 @@
           <span>{{meta.menu.calendar}} <i class="fa fa-external-link-square fa-lg"></i></span>
         </a>
         <div
-          class="button hover hint--bottom inactive"
+          class="button hover hint--bottom"
           ng-if="state.lang=='fr'"
           data-hint="{{meta.menu.maptip}}"
           ng-click="changeLayout('map');"
@@ -175,7 +175,7 @@
       </div>
 
       <!-- SEARCH -->
-      <div class="searchinput">
+      <div class="searchinput" ng-class="{inactive: state.layout=='map'}">
         <form autocomplete="off" ng-submit="searchSubmit(input);">
         <input
           type="text"

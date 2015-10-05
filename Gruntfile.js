@@ -99,12 +99,11 @@ module.exports = function(grunt) {
           // leaflet is here, font-awesome in external css
 
           'src/vendor/leaflet/dist/leaflet.css',
-
+          
           'src/vendor/normalize.css/normalize.css',
           'src/vendor/hint.css/hint.min.css',
 
           'src/vendor/leaflet.locatecontrol/dist/L.Control.Locate.min.css',
-          'src/vendor/leaflet-search/dist/leaflet-search.min.css',
 
           'src/css/styles.css'
         ],
@@ -167,6 +166,13 @@ module.exports = function(grunt) {
                 {
                     expand: true,
                     flatten: true,
+                    src: ['src/vendor/leaflet-search/images/**'],
+                    dest: 'build/images/',
+                    filter: 'isFile'
+                },
+                {
+                    expand: true,
+                    flatten: true,
                     src: ['src/vendor/font-awesome/fonts/**'],
                     dest: 'build/fonts/',
                     filter: 'isFile'
@@ -175,6 +181,13 @@ module.exports = function(grunt) {
                     expand: true,
                     flatten: true,
                     src: ['src/vendor/font-awesome/css/font-awesome.min.css'],
+                    dest: 'build/css/',
+                    filter: 'isFile'
+                },
+                {
+                    expand: true,
+                    flatten: true,
+                    src: ['src/vendor/leaflet-search/dist/leaflet-search.min.css'],
                     dest: 'build/css/',
                     filter: 'isFile'
                 }
