@@ -1,0 +1,206 @@
+<div
+  class="intro"
+  ng-class="{hidden:!state.intro}">
+  <div class="splash">
+    <div
+      ng-repeat="i in meta.intro.images"
+      class="image"
+      back-img="{{settings.datapath}}splash/{{i.filename}}"
+      ng-style="{'background-color': i.color}"
+      ng-class="{
+        active: state.introimage % meta.intro.images.length == $index,
+        left: state.introimage % meta.intro.images.length < $index,
+        right: state.introimage % meta.intro.images.length > $index,
+      }"
+      ng-click="swiping ? ( swiping = false ) : slideSplashImage(true,true);"
+      ng-swipe-left="slideSplashImage(true); swiping=true;"
+      ng-swipe-right="slideSplashImage(false); swiping=true;">
+    </div>
+  </div>
+
+  <div class="foot">
+    <!-- <div class="keywords">{{meta.intro.keywords}}</div> -->
+    <div class="button color-{{getRandomInt()}}" ng-click="state.intro=false;">
+      {{meta.intro.enter}}
+    </div>
+  </div>
+</div>
+
+<div id="container" class="container" ng-class="{hidden:state.intro}">
+
+  <div class="header">
+
+    <div class="menu">
+      
+      <!-- RIGHT MENU BUTTONS -->
+      <div class="buttons">
+        <div class="button" id="lang">
+          <i class="fa fa-globe"></i>
+          <span>
+            <a class="setlang" ng-class="{active: state.lang=='es'}" href="{{meta.url}}/#/es">es</a>
+            <a class="setlang" ng-class="{active: state.lang=='fr'}" href="{{meta.url}}/#/fr">fr</a>
+          </span>
+        </div>
+
+        <a
+          class="button hover hint--bottom"
+          id="calendar"
+          data-hint="{{meta.menu.calendartip}}"
+          href="http://demosphere.eu/fr">
+          <i class="fa fa-calendar"></i>
+          <span>{{meta.menu.calendar}} <i class="fa fa-external-link-square"></i></span>
+        </a>
+        <div
+          class="button hover hint--bottom"
+          ng-if="state.lang=='fr'"
+          data-hint="{{meta.menu.maptip}}"
+          ng-click="changeLayout('map');"
+          ng-class="{active:state.layout=='map'}">
+          <i class="fa fa-map-o"></i>
+          <a class="ext" href="{{meta.source.map}}" target="_blank">
+            <i class="fa fa-file-text"></i>
+          </a>
+          <span>{{meta.menu.map}}</span>
+        </div>
+        <div
+          class="button hover hint--bottom"
+          data-hint="{{meta.menu.linkstip}}"
+          ng-click="changeLayout('links');"
+          ng-class="{active:state.layout=='links'}">
+          <i class="fa fa-sitemap"></i>
+          <a class="ext" href="{{meta.source.links}}" target="_blank">
+            <i class="fa fa-file-text"></i>
+          </a>
+          <span>{{meta.menu.links}}</span>
+        </div>
+        <div class="buttoncontainer">
+          <div
+            class="inner button hover hint--left"
+            data-hint="{{meta.menu.sectionstip}}"
+            ng-click="changeLayout('sections');"
+            ng-class="{active:state.layout=='sections'}">
+            <i class="fa fa-bullhorn"></i>
+            <a class="ext" href="{{meta.source.sections}}" target="_blank">
+              <i class="fa fa-file-text"></i>
+            </a>
+            <span>{{meta.menu.sections}}</span>
+          </div>
+          <a 
+            class="printer hint--left"
+            data-hint="{{meta.menu.printtip}}"
+            href="./#/{{state.lang}}/sectionsprint"
+            target="_blank"><i class="fa fa-print"></i> {{meta.menu.print}}
+          </a>
+        </div>
+      </div>
+
+      <!-- BACK To INTRO -->
+      <div
+        class="action backintro hint--bottom"
+        data-hint="{{meta.menu.backtip}}"
+        ng-click="state.intro = true;">
+        <i class="fa fa-angle-up"></i>
+        <!-- closing div is under to avoid space between inline-blocks -->
+      
+
+      <!-- TAG ACTIVATOR -->
+      </div><div
+        class="action tagging hint--bottom"
+        data-hint="{{state.taggingtooltip}}"
+        ng-class="{active: state.tagging}"
+        ng-click="toggleTagging();">
+        <div class="circle">
+        <i
+          class="fa"
+          ng-class="{
+            'fa-tag': !state.tagging,
+            'fa-tags': state.tagging
+          }">
+        </i>
+        </div>
+      </div>
+
+      <!-- TAGS -->
+      <div class="tagsmenu" ng-class="{filtering: state.tags.length, active: state.tagging}">
+        <div class="tagshat">
+
+          <div class="tags" ng-if="state.tagging">
+            <div class="tag inactive" ng-if="!state.tags.length">{{meta.menu.tagsdefault}}</div>
+            <div
+              ng-if="state.tags.length"
+              class="tag"
+              ng-repeat="t in state.tags"
+              ng-click="toggleTag(t);">{{tagsContents[t].label}}
+            </div>
+            <i ng-click="toggleTag();"
+              class="clear fa fa-times fa-lg">
+            </i>
+          </div>
+
+          <span class="label" ng-if="state.tagging">
+            {{meta.menu.tagshat}} 
+            (<span class="mode" ng-if="state.tagsmode=='graph'" ng-click="state.tagsmode='grid';">afficher la grille</span><span class="mode" ng-if="state.tagsmode=='grid'" ng-click="state.tagsmode='graph';">afficher le réseau</span>)
+          </span>
+
+        </div>
+
+        <div class="paint"></div>
+
+        <!-- TAGS collapsable PANEL -->
+        <div class="tagspanel">
+
+          <!-- either GRAPH -->
+          <div class="tagsdisplay" id="sigma-tags"></div>
+          <!-- either GRID -->
+          <div class="tagsdisplay" id="grid-tags" ng-if="state.tagsmode=='grid'" ng-mouseout="overTag();">
+            <div
+              ng-repeat="t in tagsContentsOrdered"
+              ng-click="toggleTag(t.tag);"
+              ng-mouseover="overTag(t.tag);"
+              class="gridtag"
+              ng-class="{
+                icon: t.icon,
+                important: t.important,
+                active: isTagActive(t.tag)
+              }"><i ng-if="t.icon" class="fa fa-{{t.icon}}"></i>{{t.label}}</div>
+          </div>
+
+          <div class="tagdescription">
+            <span ng-if="state.overtag.tag">#{{state.overtag.tag}}</span> <br>
+            {{state.overtag.description}}
+          </div>
+        </div>
+      </div>
+
+      <!-- SEARCH -->
+      <div class="searchinput" ng-class="{inactive: state.layout=='map'}">
+        <form autocomplete="off" ng-submit="searchSubmit(input);">
+        <input
+          type="text"
+          placeholder="{{meta.menu.search}}"
+          ng-model="input" 
+          ng-click="$event.stopPropagation();"
+          ng-enter="searchSubmit(input);"
+          ng-class="{highlight:state.search}"/>
+        </form>
+        <i
+          ng-if="input.length"
+          ng-click="searchSubmit();"
+          class="clear fa fa-times fa-lg">
+        </i>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="wrapper layout-{{state.layout}}">
+
+    <div class="page" ng-include="layoutTemplate();"></div>
+
+    <div class="footer">
+      <div class="content" compile-html="md2Html(meta.footer.content)"></div>
+      <a class="lastupdate" target="_blank" href="{{meta.repo}}">{{meta.footer.lastupdatetext}}<br>{{settings.lastupdate}}</a>
+    </div>
+
+  </div>
+</div>

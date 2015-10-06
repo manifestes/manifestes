@@ -1,0 +1,12 @@
+<span
+  class="tag"
+  ng-class="{
+  	active: isTagActive(t),
+  	icon: tagsContents[t].icon
+  }"
+  ng-repeat="t in e.tags | orderBy : tagSorter : true"
+  ng-click="toggleTag(t); $event.stopPropagation();">
+    <span ng-if="!tagsContents[t].icon">{{tagsContents[t].label}}</span>
+    <i ng-if="tagsContents[t].icon" class="fa fa-{{tagsContents[t].icon}} fa-lg"> </i>
+     <i class="clear fa fa-times fa-lg"></i>
+</span>
