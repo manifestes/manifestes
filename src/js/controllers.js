@@ -31,7 +31,7 @@ angular.module('manifest.controllers', ['underscore','config'])
     $scope.settings = settings;
     if($routeParams.forcedev) $scope.settings.dev = true;
     var layout = $routeParams.layout ?
-      (["sections","links","map","print"].indexOf($routeParams.layout)==-1 ? "sections" : $routeParams.layout) :
+      (["sections","sectionsprint","links","map"].indexOf($routeParams.layout)==-1 ? "sections" : $routeParams.layout) :
       "sections";
 
     $scope.meta = {}; // mainly the meta info at start of section.yml

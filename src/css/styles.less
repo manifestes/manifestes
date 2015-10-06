@@ -57,7 +57,9 @@ a {
 
 @openDur: 0.2s;
 @introDur: 0.5s;
-@menuH: 58px;
+@menuH: 65px;
+
+@menuButtonBorder: 5px;
 
 @searchInputW: 190px;
 
@@ -255,7 +257,7 @@ span.highlight, div.highlight { /* searched words */
     }
   }
   .tagging {
-    padding: 8px 10px;
+    padding: 11px 10px;
     color: @veryLightColor;
     .circle {
       padding: 8px;
@@ -307,13 +309,13 @@ span.highlight, div.highlight { /* searched words */
         padding-left: 104px;
 
         background: white;
-        border-bottom: 5px solid @veryLightColor;
+        border-bottom: @menuButtonBorder solid @veryLightColor;
 
         .tags {
           box-sizing: border-box;
           width: 100%;
           padding: 2px;
-          margin-top: 6px;
+          margin-top: 9px;
           text-align: left;
           .tag {
             display: inline-block;
@@ -487,6 +489,7 @@ span.highlight, div.highlight { /* searched words */
       }
     }
 
+
     .buttons {
       z-index: 40;
       position: absolute;
@@ -494,21 +497,75 @@ span.highlight, div.highlight { /* searched words */
       height: @menuH;
       background: white;
 
+      /* FOR A BUTON CONTAINING PRINTER */
+      .buttoncontainer {
+        box-sizing: border-box;
+        position: relative;
+        float: right;
+        width: 78px;
+        height: 100%;
+
+        .printer {
+          z-index: 7;
+          box-sizing: border-box;
+          //display: none;
+          position: absolute;
+          top: 0;
+          height: 23px;
+          width: 100%;
+          padding: 5px;
+
+          text-align: center;
+          color: @lightColor;
+          font-size: 0.7em;
+          background: white;
+          
+          .transition(top 0.2s);
+          border-bottom-left-radius: 6px;
+          border-bottom-right-radius: 6px;
+
+          i {
+            color: @lightColor !important;
+            font-size: 1em;
+          }
+          &:hover {
+            color: @redColor;
+            i { color: @redColor !important; }
+          }
+          
+          /* Hack to hide hint tooltip when link clicked */
+          &:active, &:focus {
+            outline: none;
+            .hint:after, &:after, &:before {
+              display: none;
+            }
+          }
+        }
+        &:hover .printer {
+          //.box-shadow(0px 0px 4px 0px #525252);
+          top: 100%;
+        }
+      }
+
+      /* NORMAL BUTTON LOOK */
       .button {
+        z-index: 10;
         box-sizing: border-box;
         position: relative;
         float: right;
         width: 78px;
         height: 100%;
         padding: 11px 0px;
-        
+
         //border-left: solid 1px #E9E9E9;
         vertical-align: top;
         text-align: center;
         font-size: 0.75em;
-
+        background: white;
+        
         i {
           color: @lightColor;
+          font-size: 1.5em;
         }
 
         span {
@@ -521,11 +578,11 @@ span.highlight, div.highlight { /* searched words */
         }
         a.ext {
           position: absolute;
-          top: 0;
+          top: -4px;
           right: 0;
           padding: 2px 3px;
           i { 
-            font-size: 0.8em;
+            font-size: 0.7em;
           }
           opacity: 0;
           &:hover {
@@ -535,7 +592,7 @@ span.highlight, div.highlight { /* searched words */
         &.hover {
           cursor: pointer;
           &:hover {
-            border-bottom: 5px solid @veryLightColor;
+            border-bottom: @menuButtonBorder solid @veryLightColor;
             a.ext {
               opacity: 0.5;
             }
@@ -543,7 +600,7 @@ span.highlight, div.highlight { /* searched words */
         }
         &.active, &.active:hover {
           background: @mostLightColor;
-          border-bottom: 5px solid @redColor;
+          border-bottom: @menuButtonBorder solid @redColor;
           i {
             color: @redColor;
           }
@@ -577,7 +634,7 @@ span.highlight, div.highlight { /* searched words */
       .transform(translate(-50%,0));
       display: inline-block;
       width: @searchInputW;
-      margin: 15px 0px;
+      margin: 18px 0px;
 
       &.inactive {
         pointer-events: none;
@@ -693,7 +750,8 @@ span.highlight, div.highlight { /* searched words */
 
 @import "layout_links";
 @import "layout_map";
-@import "layout_print";
+
+@import "layout_sectionsprint";
 
 @import "screen";
 
