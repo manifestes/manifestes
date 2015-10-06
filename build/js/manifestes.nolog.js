@@ -3193,7 +3193,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'06 October 2015 - 11:27'})
+.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'06 October 2015 - 2:30'})
 
 ;
 ;
@@ -4105,9 +4105,9 @@ var loadLinksGraph = function(scope) {
         type: 'canvas'
       },
       settings: {
-        labelThreshold: 6,
+        labelThreshold: 5,
         //defaultLabelColor: "rgb(200,200,200)",
-        zoomingRatio: 1.5,
+        zoomingRatio: 1.2,
         doubleClickZoomingRatio: 1.7,
         defaultLabelSize: 12,
         hideEdgesOnMove: true,

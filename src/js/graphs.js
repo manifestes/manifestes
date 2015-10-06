@@ -97,9 +97,9 @@ var loadLinksGraph = function(scope) {
         type: 'canvas'
       },
       settings: {
-        labelThreshold: 6,
+        labelThreshold: 5,
         //defaultLabelColor: "rgb(200,200,200)",
-        zoomingRatio: 1.5,
+        zoomingRatio: 1.2,
         doubleClickZoomingRatio: 1.7,
         defaultLabelSize: 12,
         hideEdgesOnMove: true,

@@ -2457,6 +2457,9 @@ div.highlight {
 .leaflet-popup-content-wrapper {
   border-radius: 6px;
 }
+.leaflet-popup {
+  max-width: 350px;
+}
 .leaflet-popup .details {
   font-size: 0.9em;
 }

@@ -28,6 +28,9 @@ mapcredits:
     fucrecup:
         name: Festival des Utopies Concrètes - Récup'
         url: http://festivaldesutopiesconcretes.org/festival-de-la-recup/festival-de-la-recup-2014/acteurs-de-la-recup-2014
+    misc:
+        name: Utopies Concrètes, ajouts de lieux non encore référencés
+        url: http://utopies-concretes.org
 graph:
     loader: >
         Vous pouvez également explorer le réseau des sites internet et les liens qu'ils ont entre eux
@@ -37,7 +40,7 @@ graph:
         attention, le temps de chargement peut être long (7.8Mo)
     credits: >
         [graph.gexf](https://github.com/manifestes/manifestes/blob/gh-pages/data/graph.gexf) produced with [hyphe](http://hyphe.medialab.sciences-po.fr/) and displayed using [sigma.js](http://sigmajs.org/)
-    controlhelp: "chaque point du réseau représente un site internet\n\n- Utilisez la molette de votre souris pour zoomer\n- Cliquez sur un point pour voir les sites voisins (cités ou citant)\n- Double-cliquez pour ouvrir le site dans une nouvelle fenêtre\n\nLes couleurs correspondent aux classes de modularités,\nc-à-d aux communautés détectées selon la structure du réseau"
+    controlhelp: "Chaque point du réseau représente un site internet\n\n- Utilisez la molette de votre souris pour zoomer\n- Cliquez sur un point pour voir les sites voisins (cités ou citant)\n- Double-cliquez pour ouvrir le site dans une nouvelle fenêtre\n\nLes couleurs correspondent aux classes de modularité,\nc-à-d aux communautés détectées selon la structure du réseau"
     controlfull: "afficher/réduire le plein écran"
 intro:
     images:

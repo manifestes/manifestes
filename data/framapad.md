@@ -52,7 +52,7 @@ Hyphe/Gephi workflow:
     Modularity > Colors
     Hyphe inDegree = 2 - 7
     
-
+Tip: pour éditer directement les contenus: http://prose.io/#manifestes/manifestes/edit/gh-pages/data/links_fr.yml
 
 ================ DISCUSSION GÉNÉRALE / FOND
 === misc, à trier
@@ -106,24 +106,13 @@ Hyphe/Gephi workflow:
 ##sections synthetiques
 plus facilement extensible, souple, permet de se soustraire aux structures/menus classiques: a propos, articles, ... contraignants !
 
-=== références / réseaux à ajouter ?
+
 
 
 TO SEE+LINKS ?
 http://wos-agencedeshypotheses.com/wos-reportage/rues-marchandes/
 http://coglode.com/
 
-pour liens fromGF
-
-    http://www.reporterre.net/Annuaire-des-alternatives
-
-
-TO ADD ON MAP ?
-https://decroissons.wordpress.com/habitat/village-associatif-alternatif/
-http://festivaldesutopiesconcretes.org/festival-de-la-recup/festival-de-la-recup-2014/acteurs-de-la-recup-2014
-http://gen.ecovillage.org/en/projects/map
-http://sharewiki.org/en/Lieu_de_vie_ouvert
-voir aussi liste de http://ddchampo.forumactif.org/t389-lieux-acteurs-ecolo-citoyens
 
 
 citations cf
@@ -281,10 +270,65 @@ Dans les sections, intégrer/permettre aussi:
 
 
 ================ TODO ROADMAP
-- history browser back button !
-- export graph.pdf to download/ print for links & map
-- better fonts ? cf http://usemodify.com/keywords/garalde-old-face/
-- MAP.csv using GoogleRefine
+LIENS et RESSOURCES
+
+    https://alternatiba.eu/les-alternatives/alimentation/
+
+    http://www.reporterre.net/Annuaire-des-alternatives
+
+    pearltrees rdevolution
+
+    liens medias de lulu5449bis
+
+RÉSEAU HYPHE (add/recrawl)
+
+    https://lesechosduvent.wordpress.com/
+
+    https://democratech.co
+
+    http://www.rassemblementcitoyenidf.fr/
+
+    http://www.cl-aligre.org
+
+    http://climatejusticeaction.net/
+
+    http://coalitionclimat21.org
+
+    http://la-trouvaille.org/
+
+    http://www.lecontrepied.org
+
+    http://www.arche-nonviolence.eu/
+
+    http://la-verite-clandestine.org/
+
+    https://www.facebook.com/laveriteclandestine
+
+    http://www.biotonome.fr/
+
+    http://www.demain-en-mains.info/
+
+    remove
+
+    --- http://www.leprogres.fr/
+
+TAGS
+
+    place>map
+
+    time>agenda
+
+    zad
+
+MAP
+
+    https://decroissons.wordpress.com/habitat/village-associatif-alternatif/
+
+    http://gen.ecovillage.org/en/projects/map
+
+    http://sharewiki.org/en/Lieu_de_vie_ouvert
+
+    voir aussi liste de http://ddchampo.forumactif.org/t389-lieux-acteurs-ecolo-citoyens
 
     - correct links without http ?
 
@@ -296,7 +340,11 @@ Dans les sections, intégrer/permettre aussi:
 
     - toLowercase for UPPERCASES
 
-- VRAC accroches graphiques et divers noms en intro
+ACCROCHES graphiques et divers noms en intro
+
+    - Trop de confort rend fort con.
+
+    - altertopies ! imaginaire en actes.
 
     - idées ! http://www.nepasplier.fr/epicerie.htm
 
@@ -336,7 +384,10 @@ Dans les sections, intégrer/permettre aussi:
 
     MORE: sobriété heureuse, simplicité volontaire, désargence, chômeur.e.s, colibris, créatifs culturels, pirates, objecteur.euse.s de croissance, empêcheur.euse.s de tourner en rond, AMAPs, alternatif.ive.s, convivialistes, grévistes, écoféministes, 15M, alternatiba, activistes, utopistes concrets, maquisard.e.s, hackers, rassemblements citoyen, universités, fablabs, résitances, grands-parents, désobéissants, transition citoyenne, tiers-lieux, p2p, bénéloves, communs, consom'acteurs, SEL, anarchistes, alliances citoyennes, révolutionnaires, occupy, amis de la terre, 99%, vélistance, indignés, bolo'bolo, éco-villages, institut momentum, bricoleur.se.s, farceurs, clowns, résiliés, squatteur.se.s, décroissants conviviaux, évidences écolos, e-constituante, anarnautes, libertaires, anticapitalistes, anonymous, coopératistes, antifascistes, rebooters, démocratie ouverte, écosociétalistes, écologie, alternatives, non-violence
 
-
+DIVERS
+- history browser back button !
+- export graph.pdf to download/ print for links & map
+- better fonts ? cf http://usemodify.com/keywords/garalde-old-face/
 - random order for links & for sections ??
 - heart/like symbol to count "best" sections or links (demosphere, mediaslibres, etc...) - use firebase ?
 - menu links to prose rather than github ? http://prose.io/#manifestes/manifestes/edit/gh-pages/data/links_fr.yml

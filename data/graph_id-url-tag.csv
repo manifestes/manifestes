@@ -22,7 +22,7 @@ a3cc6659-fba2-423d-9e3d-4042ea049796,,http://www.underconstruction.fr/?page_id=1
 c4fd2a70-c386-46b9-a350-b5c9b38cc1db,,http://www.cluetrain.com/manifeste.html
 6d36c24f-11f8-46d6-a846-a5d147cb18bc,design,http://bureaudetudes.org
 0a62e833-3528-47e3-bc29-9567600fc346,,http://tahin-party.org
-811985f4-4011-4069-96a3-abf615235228,,http://www.tourdefrancedesalternatives.fr/alternatives/
+811985f4-4011-4069-96a3-abf615235228,place,http://www.tourdefrancedesalternatives.fr/alternatives/
 ee597ca3-e3c4-42a5-a1bc-b073e1bf8ea7,commons,http://bienscommuns.org/signature/appel/index.php?a=du&c=qsudxs
 b6074abb-62c0-4c0a-95d1-14373c5f088d,,http://passansnous.fr/charte/
 bea9b145-a596-48e6-b7b6-21f379d66238,media,http://www.limpossible.fr
@@ -33,7 +33,7 @@ dd42c6c9-25e6-4c98-8149-5b12c087cf6a,web,http://ggouv.fr
 ee7b3328-ebb2-4772-a4c0-d4220720800f,,https://medium.com/@nicolasvoisin/le-manifeste-des-anarnautes-48cc0a5076bc
 17703812-d127-442c-b55b-72741d4a1dee,,http://www.lesconvivialistes.org/abrege-du-manifeste-convivialiste
 495d6ccd-e5b3-47ca-90d9-e863545595fc,,http://www.dailymotion.com/video/xtrtht
-27038f1b-93e6-41ac-86aa-b0cd6902d4b1,,http://beautifultrouble.org
+27038f1b-93e6-41ac-86aa-b0cd6902d4b1,act,http://beautifultrouble.org
 c149e798-a886-4967-8e4c-dd8f8a2b38c1,place list,http://capoupascap.paris
 4cc6adca-5872-402d-aa7b-d2d2b5d754a9,,http://elanglobal.org
 59ac07a6-17a8-43fc-80a7-7ff045985c51,,https://15mpedia.org
@@ -44,7 +44,7 @@ c149e798-a886-4967-8e4c-dd8f8a2b38c1,place list,http://capoupascap.paris
 e2596d2c-4fc5-4ba6-945c-b7504887619c,,http://multinationales.org
 17a23ccc-03aa-47d8-930a-d0e208dd9c38,video,http://www.pierrecarles.org
 c283fe79-6120-4387-b45e-7c5d3de3a6d4,,https://guide.boum.org
-9c7d00eb-c0d0-48a0-b0d6-46b7a4e153ed,,http://zangomedia.fr
+9c7d00eb-c0d0-48a0-b0d6-46b7a4e153ed,media,http://zangomedia.fr
 dc174ce9-556f-44dc-97ac-b1c05fe422a7,place,https://www.google.com/maps/d/embed?mid=zObc46bS4Jts.kM-SMEA0C_m8
 2d28e89e-4ea4-416c-b080-faf0caa2d23b,video,https://www.youtube.com/watch?v=P-yPQEQghMs
 d9d526d3-95b9-4ecf-8d3e-de1ec7ad47e5,,http://decroissance.ch/manifeste-du-roc-suisse/
@@ -73,7 +73,7 @@ eecd338e-0dc1-4d89-8ffc-4acaeb4bf6d6,group,http://gpclimat.be/notre-charte/
 8a0e33af-e8a9-4057-8df3-ac8b6a4a1103,,http://universite-du-nous.org/a-propos-udn/ses-outils/
 80cbfe33-06c5-4e9d-8441-c205f4bbf075,,http://leclimatchange.fr/questions-reponses/
 71739112-2dc5-48ab-b57e-45063c83fa19,list,http://www.spirale.attac.org
-e319a4df-931d-41a7-b7f9-f2e61d849a88,,http://greenpeace.fr/facenuke/
+e319a4df-931d-41a7-b7f9-f2e61d849a88,earth atom,http://greenpeace.fr/facenuke/
 516aa23d-f809-4c50-a8f0-27c96dc83e91,,http://www.primitivi.org
 652b4a75-3321-49a5-bf08-a7ef9714ed0f,move,http://cyclocoop.org
 d5cde0c9-19bd-4d03-bf7e-407c5ac937c6,act fun,https://brigadeclowns.wordpress.com/le-manifeste-de-larmee-des-clowns/
@@ -190,7 +190,7 @@ d71c7421-f9a7-462f-9bef-61f8f85b3b23,eat,http://biocoop.fr
 e07dffce-b892-471d-86ef-d0e067265f06,,https://www.facebook.com/PeupleDuMondeReveillezVousOnVousMent
 9784a9b1-5b0d-4fae-b749-8f6b630c8a07,,http://transition-pays-allevard.blogspot.fr
 56b85ca2-65ba-430b-bd9d-3b39c7423cf4,,http://populiste-impenitent.blogspot.fr
-c99e7c58-36a6-4c3a-beb1-62f95985dca3,,http://comites-ndl.blogspot.fr
+c99e7c58-36a6-4c3a-beb1-62f95985dca3,zad,http://comites-ndl.blogspot.fr
 d29ca51a-588f-4e73-bf37-f55d8e4913eb,money,http://antibanque.blogspot.fr
 e39a561d-986b-41a7-9db5-e3620ef147b8,,http://www.alter-actif.com
 371b1780-c7cc-4b65-bb64-94a0fb25ffb1,,http://jptransition.org
@@ -202,12 +202,12 @@ e39a561d-986b-41a7-9db5-e3620ef147b8,,http://www.alter-actif.com
 d2a08866-20a6-4e19-a117-5bfa43d2f962,,http://www.crystalpalacetransition.org.uk
 fef6d933-1c14-4e4f-99c8-fbc26c32ca43,,http://lutopiste.com
 60b3065c-adfe-46a2-bdeb-2383eec57576,,http://indigenes-republique.fr
-bb4b2788-9d2b-41ca-81bb-ca92b512bc0b,,http://jurislogement.org
+bb4b2788-9d2b-41ca-81bb-ca92b512bc0b,law home,http://jurislogement.org
 5252b56c-3973-4ab7-aa6a-4ca1ffcfcee0,,http://www.agrobio-bretagne.org
 242e9eb6-a697-417e-8ced-5b6cbcc4de68,,https://www.facebook.com/alternatibanarbonne
 191b3ee5-8da2-46b8-8a04-5e796393d6e9,,http://www.convergence-sp.org
 714fa95d-99bd-4afa-bbcd-3fde046768af,,http://parolesdesansvoix.org
-f2c46ea3-f86e-4f2a-b851-4f143013af74,,http://www.libertederire.net
+f2c46ea3-f86e-4f2a-b851-4f143013af74,act fun,http://www.libertederire.net
 b9715ae8-7326-4530-9818-80cbfbc37f34,,http://www.cip-idf.org
 401e2c04-3286-4cce-b2ab-7d9f879830a7,politics,http://eelv.fr
 26006ae3-56fe-46fc-a07c-b77b6c60b429,text,http://editionslibertalia.com
@@ -227,7 +227,7 @@ adf61b0b-8158-47ba-acd6-00c2d8713468,money,http://aidonslargent.org
 4033f16d-53ed-498d-a14b-49fd4bc3f0e6,,http://www.wikiconstructiondurable.fr
 310bfb33-7353-4e2e-96f3-98836ef4f616,,http://alternatiba-nancy.fr
 75f6f6a4-ae73-440f-a794-9317264bbe42,,http://entremonde.net
-fe3a5f99-9fca-4c1e-8809-490b87aaa2a6,,http://www.onthecommons.org
+fe3a5f99-9fca-4c1e-8809-490b87aaa2a6,commons,http://www.onthecommons.org
 a9804f59-f2da-4176-a197-62d30cbe0baf,,https://www.facebook.com/toulouseen.transition
 a93dd8c3-1ae7-470d-950a-48b3b2d96bea,,http://salontransition.fr
 a8c1ee88-0a30-4e00-9a0d-146fa4ede43e,,https://www.facebook.com/Altermondes
@@ -290,7 +290,7 @@ c3a5f6da-074c-454b-9ca2-80a76bdf53c0,,http://www.medialternative.fr
 c11f4be8-809b-46ce-83a3-a84de96b4ed3,,http://journalhorsservice.blogspot.fr
 ea3a8564-6a60-4db5-9b12-ff0570fd0570,,http://rosnypotagers.blogspot.fr
 04af2300-fb71-4267-a4fd-17a6c2e74d92,,http://acteursduparisdurable.fr
-57b7274b-37f5-4fd8-9791-6a71541da02a,,http://semencespaysannes.org
+57b7274b-37f5-4fd8-9791-6a71541da02a,agriculture,http://semencespaysannes.org
 733aebfd-f538-45b4-a320-74d656a5ac74,,http://transitionparisidf.fr
 32b0e852-de64-4652-b7fa-c0c56d81c820,,http://fondation-ekibio.com
 f12eac99-c29b-4c0a-8ed1-249b14ffdc37,,http://developpementdurablerosny93.com
@@ -361,7 +361,7 @@ f5cbdf90-983d-4611-8a23-732f8dedd66a,,http://www.la-boite-militante.org
 2d88d57a-8797-40d1-ae9b-22f2f437543b,,http://www.larevuedurable.com
 9b8caeea-2a36-44ac-861c-e0651fee4359,,http://www.alternatifs.org
 b8accc02-d4b1-4d7c-8f39-5788c8b5ff79,,http://www.bioaddict.fr
-3260a8ca-0b36-4403-96ef-7a290e4eafc7,,http://www.facebook.com/FestivalDesUtopiesConcretes
+3260a8ca-0b36-4403-96ef-7a290e4eafc7,time,http://www.facebook.com/FestivalDesUtopiesConcretes
 c9636b88-e72e-4ce7-8bfd-57bbbaa8b65b,zad boycott,http://combat-monsanto.org
 474fdf54-9b2b-41bd-aa95-a4cff690614a,,https://collectifinnovationsilluminationspolitiques.wordpress.com
 304eb5a7-59c2-4a08-ab37-819193b6aa7a,,http://lemeilleurdesondes.blogspot.fr
@@ -447,7 +447,7 @@ af8474dd-0755-4f84-9e88-3982acba510f,,http://www.transitionmontpelier.org.uk
 7b81bb95-c8ae-4a31-900f-e075ec3df190,,http://savoirenactes.info
 f3e6537b-bace-440f-b509-0d96e0563faa,,http://www.lapointelibertaire.org
 6ced1b96-6029-4d55-9bfb-eb40ee4d6b0f,,http://www.altermundi.com
-bf87ff91-57e4-4d57-914d-4a58064cd919,,http://fermedesbouillons.blogspot.fr
+bf87ff91-57e4-4d57-914d-4a58064cd919,zad place,http://fermedesbouillons.blogspot.fr
 ead23931-dd6b-4645-914f-bba10e3f2159,energy,http://transitionenergetique.org
 cd32d62a-59bc-4eba-8d98-f1c6b7e94ee5,,http://agence-bio.org
 289d5b1a-5970-4387-a6d4-1cbcdd22bd34,,https://twitter.com/Anarnautes
@@ -458,7 +458,7 @@ c08ddff6-2b00-4012-9b17-f51cb07bdff1,,http://democratieouverte.org
 8828c527-e55f-4337-807a-ef53b5f83f5e,,http://sorcieredulogis.blogspot.fr
 6fea53e5-2600-4909-b094-7b4fbd140d64,,https://www.facebook.com/Amis.Monde.diplomatique
 9781ea96-1f59-4ce5-813c-64805a612ba7,,https://mayennetransition.wordpress.com
-9ca7d199-f21e-4c5b-a3de-fb856e276e51,,http://droitaulogement.org
+9ca7d199-f21e-4c5b-a3de-fb856e276e51,home group,http://droitaulogement.org
 3145becb-46b2-416d-adfe-6dc53618926d,,http://www.bio-provence.org
 bfce9a7c-efe0-4502-b191-a15a05be4a3e,,http://musiques-tangentes.asso.fr
 b1bbda40-e6e8-4c17-a286-ffb94cdce09c,,http://www.bio-bretagne-ibb.fr/
@@ -478,13 +478,13 @@ e7785b76-9bce-4c6e-801c-09b3c2fd531f,,http://www.anis.asso.fr
 bfc7f461-ee55-44a9-9cda-009651704d79,,http://www.eau-et-rivieres.asso.fr
 1382b710-0242-47b5-9323-142927901540,,http://www.taca.asso.fr
 c484d397-e983-420a-90e5-52a495e1f982,,http://ipcc.ch
-a5056e16-4249-44a9-bd9a-dd655aa33de5,,http://airparif.asso.fr
+a5056e16-4249-44a9-bd9a-dd655aa33de5,earth,http://airparif.asso.fr
 e31ba50c-f0a0-4732-a609-1801504cefb8,,http://cigales.asso.fr
 bfe3a0e7-7a82-42c5-b7bd-6d2f3cf565bc,,https://ccfd.asso.fr
 9c35c0d0-a9e4-4bd6-b54c-a98f0be738d9,,http://fee.asso.fr
 29705744-4429-4c64-a0bf-0ebc91278fc4,,http://www.cfsi.asso.fr
 8e92b386-0d6b-4bb4-8308-0cd4ef57ab1b,,http://lepassagerclandestin.fr
-45cde08a-c535-47f5-957c-a5cd80dd80ad,,http://www.educationsansfrontieres.org
+45cde08a-c535-47f5-957c-a5cd80dd80ad,education,http://www.educationsansfrontieres.org
 788c6aaf-ec7e-4e47-8166-ace241c23709,,http://solidaires.org
 02065d91-1409-4105-9b65-d7e65c35f06d,media,http://mouvements.info
 c8db96d1-f5c1-4d06-821b-d7d60159c8dc,media,http://www.lagazettedescommunes.com
@@ -527,7 +527,7 @@ f7eb6b61-c373-4a5a-867b-6b658338866b,,http://homme-moderne.org
 fee1a0af-9b92-45b2-af4d-7058f26a31a4,,http://placeaupeuple2012.fr
 24a8ee6f-5e78-45fa-9724-2e44d8c61e6f,,http://www.autrefutur.net
 f1330def-84a8-4e4c-bbc0-20353f01c4c1,,http://pierrerabhi.org
-98445ebf-2a0e-4a65-be3b-5c3dc8fd3559,,http://cnt-ait.info
+98445ebf-2a0e-4a65-be3b-5c3dc8fd3559,group,http://cnt-ait.info
 d45ccba2-4254-469b-98da-cb2f5b8c71ed,,http://www.inra.fr
 8b3a077d-231f-45ff-a54c-a2abfc53c7aa,,http://generation-precaire.org
 8b46070c-f3a0-43da-86f4-1b156fa874aa,,http://www.agirensemblecontrelechomage.org
@@ -549,7 +549,7 @@ e8b751ab-970a-4b7c-b29c-f81887659495,,http://reseau-environnement-sante.fr
 f6cf39f2-9b06-4219-8962-6eebf3fa5f54,,http://ecorev.org
 2df7525c-6ba0-4d18-a866-59d4dfbdbbbb,,http://www.contrepoints.org
 1926443a-22ca-4e15-97c8-b31f052e53d6,,https://reimsmediaslibres.info
-78ad3b18-cbd4-44a6-bc6b-2cb655e93f9e,,https://laruchequiditoui.fr
+78ad3b18-cbd4-44a6-bc6b-2cb655e93f9e,eat,https://laruchequiditoui.fr
 5784dba0-5d26-4e52-81be-5a75673e5794,,http://ragemag.fr
 bee787af-1b0b-41b3-ac8f-7554b6ea6bad,zad,http://ogmdangers.org
 d2e5c7e1-2929-4b06-975a-d6108abd3762,,http://eco-bio.info
@@ -560,7 +560,7 @@ ff18d389-0e63-4d0c-b29b-98ad5897598f,,https://opendemocracy.net
 8b2a0d5e-d119-42b6-bb95-83ce6d75098c,,http://www.associations-citoyennes.net
 ea0b9520-d143-462a-84b3-831e1ce2b14a,,http://anarchistnews.org
 880310ab-d311-428f-b50a-7f248007bbb0,,http://www.semaine-sans-pesticides.fr
-5a35e959-8536-46d8-a4c9-ba0c48108167,,http://lesverts.fr
+5a35e959-8536-46d8-a4c9-ba0c48108167,politics,http://lesverts.fr
 5b2d7fb0-f3e7-46fb-bf89-84d51faf9fc6,agriculture,http://permacultureprinciples.com
 7f1456e2-524b-4327-8ba3-5102e6c10062,eat,http://www.vegetarisme.fr
 7c351fe8-db8d-4b07-8acc-dd10a0c5b61a,object,http://emmaus-france.org
@@ -594,7 +594,7 @@ b8f446df-2c13-4c91-8c33-b4ff8cf72398,genre,http://collectifdroitsdesfemmes.org
 8923cdb7-44c1-4b67-85c3-bfcacaa71cac,,http://germinance.com
 e4ea0b03-489c-4fb6-b9b6-1d9845094f98,,http://bloom0101.org
 abe5c808-bb5f-4dc4-83ec-14010811dec0,,http://www.fondationdefrance.org
-b8170289-d55a-433e-8415-9f454ecc7451,,http://www.agoravox.tv
+b8170289-d55a-433e-8415-9f454ecc7451,media,http://www.agoravox.tv
 f588963b-6378-41d1-9c24-7b2fa0792c04,,http://actualites-news-environnement.com
 85fcda6f-1474-45d2-ac2c-f158d5a0a4ba,media,http://lagedefaire.org
 78f53443-8047-4b8e-aa23-c5e75a39018f,,http://semonslabiodiversite.com
@@ -607,7 +607,7 @@ f172626a-2cc5-4b02-b242-467e490e0d2d,,http://europeecologie.eu
 b2c5d5ce-af62-4bee-8835-166c48954abf,,http://eolien-citoyen.fr
 68c7665b-c58b-4846-bb6f-ad02ff7ccd8d,,http://contreinfo.info
 3a8dc58a-e5bf-4181-ac42-5e34d8089a37,,https://faceauxarmesdelapolice.wordpress.com
-106f9969-a400-415c-9916-42b2625e0a26,,http://www.lutte-ouvriere.org
+106f9969-a400-415c-9916-42b2625e0a26,politics,http://www.lutte-ouvriere.org
 50d3aaa4-cd97-445f-80ad-5e929464294b,,http://athentransition.over-blog.org
 2e9de4f5-ffd8-4036-9c91-97d58dd45329,,http://aprespetrole.unblog.fr
 531733c2-4dd3-4ceb-b2f5-a371c79c8055,pub,http://www.casseursdepub.org
@@ -631,7 +631,7 @@ ae49ca14-c223-413c-a624-d01cb49a8840,,http://les-scop.coop
 06faedca-b09d-4608-afa0-3daa32318ef1,,http://increvablesanarchistes.org
 815d27db-98f0-4813-aa88-5cdfd7f70bc7,,http://democratie-socialisme.org
 f489fb6c-392e-47c7-b99b-eb4a95ed45c9,,http://www.accueil-paysan.com
-bd87f12c-dc66-4fbc-8668-e22b8499fdc0,,http://www.robindestoits.org
+bd87f12c-dc66-4fbc-8668-e22b8499fdc0,tech group,http://www.robindestoits.org
 12d24d0a-f937-4b84-8375-a5ff4743f5b6,media,http://www.lechappee.org
 e6a12f4c-b154-4f9c-a89c-f7c4235db254,,http://www.leprogres.fr
 36aadc56-9cca-46f9-879f-ca6b0d1c8a32,,http://www.enertech.fr
@@ -690,7 +690,7 @@ a8b5a6c2-f639-4a1c-bffa-5165343e906a,commons,http://www.remixthecommons.org
 bb6fd3d1-64ab-4ee2-9e54-da7af52954cc,,http://www.interdemos.net
 83091e44-0fab-4088-bbb9-222572ce353d,,http://tendanceclaire.npa.free.fr
 f8aaab5d-0f30-46d0-879a-586cfc042ad1,,http://newcloudatlas.org
-f769dfaf-e353-4105-b244-445594081553,,https://help.riseup.net/fr/better-web-browsing
+f769dfaf-e353-4105-b244-445594081553,web control tool,https://help.riseup.net/fr/better-web-browsing
 bf7257b4-0c21-4b46-83cd-cbc4290e6331,,https://lite6.framapad.org/p/listedesgroupesetmediasalternatifs
 0d97633e-fa7b-4559-9acc-05f2f5c4cc79,,https://noncestnon20052015.wordpress.com
 114f69e9-83e0-4ed1-b939-9b82c2033d5e,,http://decinestaresistance.weebly.com
@@ -816,7 +816,7 @@ e7eea2df-94aa-4b68-9338-5d7e5bd684f1,,http://arstechnica.com
 4bf31770-9e3a-4976-ba5c-d17e643d9e86,,http://millebabords.org
 e8e1f84d-27fd-47ff-a150-84968a1eae1e,,http://anarkismo.net
 72aa0ce5-0835-4bb0-81ed-2e5ad037f963,,http://www.infini.fr
-af0701ee-0f48-4e65-99b3-58c459c75dd4,,http://www.april.org
+af0701ee-0f48-4e65-99b3-58c459c75dd4,web,http://www.april.org
 e67ac65f-9b06-47ce-8c90-a475d6d0468a,,http://www.novethic.fr
 c1cf9505-4a93-4542-bb50-3c0a5654f060,,http://seldefrance.communityforge.net/
 3e8d4884-7da0-4cd4-bde9-56a95a492d7f,creation space,http://www.echelleinconnue.net
@@ -854,7 +854,7 @@ c06d1222-974e-4bf7-9a97-58b2f070c04d,,http://www.fne.asso.fr
 59389d4f-6686-44e5-82fb-6e16a2876428,,http://fing.org
 ad5f7479-20a6-4dfd-9421-c004b9fd6b81,,http://www.bvoltaire.fr
 924c6d44-36ca-467c-a49e-330938239433,,http://miramap.org
-cc743049-c779-4ab5-9ff1-3f25511bd763,,http://survie.org
+cc743049-c779-4ab5-9ff1-3f25511bd763,media history,http://survie.org
 0214decb-d712-46ee-8c5e-1413c7b71551,,http://comitecharte.org
 28913848-78f1-41b4-9427-e304508b0436,,http://www.europe-solidaire.org
 6e8b0ac0-6f88-4acb-87d8-c75ba52fe0ab,,http://www.bloomassociation.org
@@ -870,11 +870,11 @@ db8f06fc-d248-4614-b1e4-07e42a980e1a,,http://www.fdn.fr
 2e30638d-e351-4f80-942f-ab532514f95b,,http://350action.org
 3aa66fa4-b65e-4eb2-b710-51539d9a2c68,,https://reflets.info
 d8232ac4-b26f-4a9c-9809-d7ed5fd080ed,,http://www.wwf.fr
-40f457cf-cb03-42ce-98dd-ed7c126a23a0,,http://commonstransition.org
+40f457cf-cb03-42ce-98dd-ed7c126a23a0,commons,http://commonstransition.org
 3962db05-fdd8-449c-a4d3-a68147f987bc,,http://deepgreenresistance.org/fr/who-we-are/guiding-principles-of-deep-green-resistance
 2f7ce7f6-0c5b-4813-908a-7bc56c0909ee,,http://www.actupparis.org
 b6a4830b-3b27-4682-9459-7819330a3a32,basicincome,https://twitter.com/revenudebaseFr
-c8ae8c2f-aa3a-4e6e-aa28-b3a4beec1563,,http://www.greenpeace.org
+c8ae8c2f-aa3a-4e6e-aa28-b3a4beec1563,earth,http://www.greenpeace.org
 b133681b-eb74-4831-a4be-37ffcb101c6f,media,http://rebellyon.info
 cfb760fe-ffa3-47b1-93e0-3ed3bcf46e5b,,https://fr.wikipedia.org/wiki/Michel_Bauwens
 747fb709-ce6c-4439-ada9-322dab390a42,,https://twitter.com/Parl_Citoyens
@@ -902,7 +902,7 @@ f3ba9924-94a6-45e8-9ae2-6ac31b5049d4,creation,http://laviemanifeste.com
 2cc6883f-f1ec-4778-8771-ff0657f428af,,http://www.association-la-marmite.fr
 f035b62b-73fc-4048-ab4c-23bd195651c4,,http://citoyensdesdeuxrives.eu
 aa0963cc-5044-42b9-b079-dd60292cc655,,http://democratie-reelle-nimes.over-blog.com
-8ebe7511-f627-46a5-b7fc-017b6b080156,,http://www.habiterre.org
+8ebe7511-f627-46a5-b7fc-017b6b080156,home,http://www.habiterre.org
 12befb9b-d4bb-4156-a524-cd44bdedbd36,,http://www.democratie-libre.org
 848eaef3-8f5c-4e8d-94bc-8ca58a5eaa04,,http://aveclesgrecs.com
 ba0692a5-1192-48ea-937c-33a88f651507,,https://resistance71.wordpress.com
@@ -987,7 +987,7 @@ a37ad492-18e0-4b00-bf10-828bca78e365,,http://bateaubasta.over-blog.org
 e2be0989-9837-48be-b2fe-5c26804fe4b9,,http://rivnord.viabloga.com
 71184e8d-0d86-4493-98b2-77accf0441d8,,http://www.piedsdanslepaf.org
 e8523e8b-c9d0-4fff-a8fe-05f66747f569,,http://www.airelles-video.fr
-5f65f1ca-29c8-4436-ae9b-f3658b3dfa1b,,http://confederationpaysanne.fr
+5f65f1ca-29c8-4436-ae9b-f3658b3dfa1b,agriculture group politics,http://confederationpaysanne.fr
 cb47b7e2-482d-4374-9676-ea75eb2c1715,,http://acontrecourant.org
 8df7b9ae-3bfc-4a9e-baa7-6198090b01aa,media,http://revuesilence.net
 6665d618-c11b-49a9-911e-669b19f1160e,,http://horschamp.org
@@ -1011,7 +1011,7 @@ c75493a2-83c3-4896-a6bc-a66494a0e363,,http://linsoumiselille.net
 07841896-0611-481e-bfc4-6e47497b9639,,http://agora.eu.org
 2630c27e-14cb-439e-a69e-d0ca79678282,,http://patlotch.com
 2486203e-9f78-421f-a1e4-00b71a721358,,http://le-blog-sam-la-touch.over-blog.com
-c799d146-a02a-411c-9bb7-0c0f367cf2bf,,http://lqdn.fr
+c799d146-a02a-411c-9bb7-0c0f367cf2bf,web group,http://lqdn.fr
 ed0a7b7d-5b0c-41cb-a949-5d4e880817fc,media,http://la-bas.org
 65b7c335-9ca5-41ea-8e1a-85b78bc241eb,,http://respire-asbl.be
 c7520a2f-aceb-4b94-b0b3-d1cd460b8f69,,http://www.pierrederuelle.com
@@ -1127,7 +1127,7 @@ eac6ba02-a716-431c-a350-0bd349f2a9b9,money,http://civilisation-sans-argent.org
 7bd620f7-c20b-4107-ba96-5370e20401d9,,http://adsapientia44.blogspot.fr
 486385bd-adf4-4fe4-829b-1c202f623723,,http://www.decisionsdurables.com
 5cfa8319-0899-4393-a6ed-2e3ca44747e2,,http://lecoclicot.blogspot.fr
-3f0dc849-a33c-42c8-806d-096a90ddb396,,https://twitter.com/Alternativeseco
+3f0dc849-a33c-42c8-806d-096a90ddb396,media,https://twitter.com/Alternativeseco
 05b653a5-528e-422e-b285-f67b687d0f42,,http://bambuser.com/channel/convergencesluttes
 85b07712-be82-4f83-b452-2b0ecc450f60,,http://resistancepedagogique.blog4ever.com
 e01f83e1-24bd-46d2-806e-d6f3d95f7c75,,http://lejardindepascaline.blogspot.fr
@@ -1167,7 +1167,7 @@ b75c021f-e32f-4213-a2e3-d9bd10581d2b,,http://www.toitsvivants.org
 6e6d1064-3866-43b7-9033-320bab129d4d,,http://www.fsf.org
 3b9cb866-3151-47ce-b63a-28e77742827f,,http://fsfe.org
 a69e512e-ac03-4379-b28b-e5c36e0fb7f6,,http://www.zones-subversives.com
-1d3c7f62-5d80-4d2d-a5f2-b8813ddc9909,,http://accoucherautrement.free.fr
+1d3c7f62-5d80-4d2d-a5f2-b8813ddc9909,health love,http://accoucherautrement.free.fr
 58f82fa9-6302-40e7-bd35-e65536cf1452,,http://forum-anti-psychiatrie.com
 70ec3b87-2fbf-41e3-bd1e-5a0ee7ade074,,http://www.entreleursmains.org
 bf42ad46-8e50-4378-87b1-7c3d49a88733,,http://1libertaire.free.fr
@@ -1179,7 +1179,7 @@ bf42ad46-8e50-4378-87b1-7c3d49a88733,,http://1libertaire.free.fr
 dd14bc0b-ede9-499b-b67c-6c1ad98055ad,,http://sudeducation92.ouvaton.org
 856d8361-bd51-4bad-9520-49bc8a2af58f,,http://delairafranceinter.ouvaton.org
 99373de8-aa56-4a48-8e60-bc80bac8089e,,http://attacm.ouvaton.org
-0c605e73-167a-4787-9391-0921950f3ee7,,http://www.les-renseignements-genereux.org
+0c605e73-167a-4787-9391-0921950f3ee7,media list,http://www.les-renseignements-genereux.org
 44a64b70-7df6-463b-b273-72d0c144dbfc,,http://non-fides.fr
 5782b562-2949-4afc-8692-e534f7aed30b,,http://monoskop.org
 eced60e4-71d4-4e2d-b6c1-aea2ef228cc7,politics,https://lepartidegauche.fr
@@ -1239,7 +1239,7 @@ ec5f4f8a-2538-4d48-9d47-9acb5b623bb4,,http://www.moicitoyen.org
 40afcc1a-dc53-4ff1-ad97-b6aa2557fb89,,http://transfert.net
 96f6b249-eef2-4169-b7e3-f4598e6705b5,text,http://mutineseditions.free.fr
 06ffa617-29be-490a-9eb4-459bb4a66248,,http://syriza-fr.org
-eeb31bec-4b5d-4058-a3be-a9ed4e5cfbfc,,http://www.sol-reseau.org
+eeb31bec-4b5d-4058-a3be-a9ed4e5cfbfc,money,http://www.sol-reseau.org
 3d4ba6d9-859c-4c5e-ba50-d29b1d85536a,,http://www.septiemecontinent.com
 bb9cf60f-cf69-44d6-9df0-10838dbacb03,,http://www.mouvement-equitable.org
 a04c446c-9b20-47c5-88c8-f5b79e2a6d29,,http://repid.com
@@ -1310,7 +1310,7 @@ f9c7770c-783f-4053-84f4-c2613ac51e7c,,http://lerassemblementcitoyen.org
 f1b76efa-cc86-470e-9442-eae71874a70f,,http://lahulotte.fr
 105430ab-f431-4bb2-a149-9ccbbae2b1dd,,http://cine2000.org
 89f7cbd0-602b-4a65-96fd-19cc4bc86738,,http://luttespaysannes.be
-4203b03f-bc84-437c-ae5a-a95ef4b373ad,,http://theyesmen.org
+4203b03f-bc84-437c-ae5a-a95ef4b373ad,act fun,http://theyesmen.org
 42d50ce4-e07e-49ac-88fb-19660d7ed622,,http://lespetitspoissontrouges.org
 7f975a96-ed62-4c5f-9c71-568659429060,,http://tetaneutral.net
 70c861f1-a0fa-4111-bfd9-395767d1a264,,http://toulibre.org
@@ -1319,7 +1319,7 @@ a9cd16ac-14eb-4fc9-8a1c-541cb2671d7b,,http://tetalab.org
 35b071d5-2ec2-45fb-a621-d53d44e665a1,,https://sarkofrance.wordpress.com
 aefd0297-a6dc-40e1-8515-855a861bca96,,http://www.ffdn.org
 6a2dbaf6-812f-433f-92eb-be04bc3c01ce,,http://helloasso.com
-7aef3e52-c952-4768-9e11-71b3bf17a116,,http://www.audit-citoyen.org
+7aef3e52-c952-4768-9e11-71b3bf17a116,money,http://www.audit-citoyen.org
 7249425f-db09-4d5f-aeb1-4df05c23fd42,,http://incendo.noblogs.org
 e1dcb381-b9d7-40f3-b1ff-ea1dce4b8355,,http://la27eregion.fr
 318bf939-e3c8-4121-88a4-6ee52bbb9a0e,,http://www.intempestive.net
@@ -1328,7 +1328,7 @@ dbbce43f-e369-4d89-9a68-85f9176e4990,,http://friches.net
 ac4f18d2-9182-4134-bbd7-4d657e7161c2,,http://danielbensaid.org
 f0277ea4-30c6-425e-b5b7-7490513a42b2,,http://cras31.info
 ce1f4b19-32bc-4080-bd35-061323a247f2,,http://leciss.org
-d0a68253-3b56-4382-9c42-72a4e33e8357,,http://cafaitgenre.org
+d0a68253-3b56-4382-9c42-72a4e33e8357,genre,http://cafaitgenre.org
 0fa5dec7-1e60-46f1-afc5-42044220870a,,http://getaway.eu.org
 c1cceb95-7bf2-46a9-8bd4-dd32a2dc25de,,http://jetfm.asso.fr
 d9948737-b54f-4632-88e5-b44ab6fa0ba6,,http://anarsonore.free.fr
@@ -1348,7 +1348,7 @@ f3af2378-69a3-4660-955c-6b544bbf02d0,audio,http://radiosenlutte.free.fr
 f4eca87a-785a-489d-817a-8c81ee5f3fef,,http://cntaittoulouse.lautre.net
 ba417c08-a31b-41cc-96be-787e5603747c,zad,http://stoptradesecrets.eu
 17aabc27-856b-4830-8b06-995a5dc2b860,,http://alterezo.be
-4228a8f9-8e08-4f13-a2d9-b817592ec65e,,http://radiolarzac.org
+4228a8f9-8e08-4f13-a2d9-b817592ec65e,audio,http://radiolarzac.org
 5b9fdc2e-b675-4257-b0ad-46ce3be6b957,media,http://www.reportersdespoirs.org
 85a49749-5760-4839-9322-a55ea756309e,,http://www.les7duquebec.com
 ca9fa273-1b58-4c34-9e8f-9eeb4d2581b6,,http://www.wikiberal.org
@@ -1358,7 +1358,7 @@ aaf4ad57-b374-43c4-9e5c-1ba6f35f147d,,http://romeurope.org
 41863a02-5b57-4440-9a64-fb99e043296b,,http://www.plantezcheznous.com
 ab3bf11f-a2ea-4879-8322-b381a04a8fc9,politics,http://www.lcr-lagauche.org
 2dd29cce-1bbd-40ef-9b5a-a7fa37f2895c,,http://snpn.com
-9370b4ea-d8cf-4fb4-89d4-caeb4d907121,,http://www.prescrire.org
+9370b4ea-d8cf-4fb4-89d4-caeb4d907121,health,http://www.prescrire.org
 e209d010-12a8-465e-a56e-6b408a8e3e1e,,http://produitspourlavie.org
 420dc25e-9c7f-472d-80fb-d6c97dc52673,,http://visa-isa.org
 a83295e7-7a9a-4e8a-8a60-4c8edc081035,,http://www.pourclement.org
@@ -1415,7 +1415,7 @@ bf819b4d-132c-429e-8c1a-85de7c3df42d,,https://scalp34.wordpress.com
 533c819b-638a-4f3a-a4b3-0e49a3e89edc,,http://couac.org
 b4069536-861a-4cc7-a0ad-d40c561be7bc,,http://www.clionautes.org
 4c5f9286-e7e7-47b0-8f0a-963a25895ec1,,http://www.pensezbibi.com
-a41298f1-ec38-4a9a-8d82-b32dc364347c,,http://www.radiogrenouille.com
+a41298f1-ec38-4a9a-8d82-b32dc364347c,audio,http://www.radiogrenouille.com
 86e61f14-b67c-4eac-b93f-5160ff4a0b18,,http://equitablecafe.org
 a8e00d07-50de-49b9-9ac7-e672a3e34eca,,http://radioescapades.org
 cc7df87f-70ee-4218-9211-9b77287b40e0,,http://nestormakhno.info
@@ -1446,7 +1446,7 @@ e6d3175f-0850-41f9-a644-fe8ead9386b6,place,http://www.facebook.com/cantinedespyr
 57050e4d-16d0-44cb-b1fc-23780a0fb9f5,education,http://www.educationpopulaire93.fr
 77ad9aeb-81ec-4530-8f0a-c863c93b3a36,,http://ladiscordia.noblogs.org
 08c65cae-0756-442b-82d1-7ad1a7725a50,,http://kamyapoil.free.fr
-63fc2a68-e30c-483f-a117-b9cb572037e6,,http://www.cinemalaclef.fr
+63fc2a68-e30c-483f-a117-b9cb572037e6,video place,http://www.cinemalaclef.fr
 daa8a916-e5e2-4e42-989d-c2b51e2d7575,,http://www.espacenoir.ch
 771bf6dc-aac6-40e2-9300-85836f2dd679,atom,http://vivre-apres-fukushima.fr
 1cb5f83d-2a47-4702-880a-9a6ac6ef739c,,http://menilmontant.typepad.fr
@@ -1499,7 +1499,7 @@ b81af0bc-90fe-42e8-a4df-e8a5266d97f0,,http://adretmorvan.org
 8344fd6b-2951-4a90-b155-99b8f56c72e3,,http://perou-risorangis.blogspot.fr
 4e5a1cb9-3a55-4b4f-a2ec-f267404fef9f,,http://silviacattori.net
 83a4c209-fd5e-43d3-91c3-bed4c88eb101,,http://revdh.revues.org
-e6f0a435-5590-4af4-bd59-38846dd6cb00,,http://www.icem-pedagogie-freinet.org
+e6f0a435-5590-4af4-bd59-38846dd6cb00,education,http://www.icem-pedagogie-freinet.org
 992f004a-757d-484c-98f1-5d6c83636171,,http://revdh.org
 f6901de5-a10c-4653-9352-22ad2861a389,,http://pouruneconstituante.fr
 59228011-52a9-43a1-a7f6-7903f8eac1ac,,http://lechatnoiremeutier.noblogs.org
@@ -1514,15 +1514,15 @@ e5098b4b-2b3b-4975-ae03-47289ca3708a,,http://www.lapetiterockette.org
 9838b3f0-bd7d-45cb-8fb4-e9ea483b1238,,http://www.zonedegratuite.com
 87a5a26c-f5d2-4a47-87f7-94fe95e7edc4,,http://rockette-libre.org
 652a5b83-3f0f-437e-8962-4fa06d9a3648,,http://www.lessuricates.fr
-01c43166-d560-4ce9-8880-c077e124dca4,,http://www.leboncoin.fr
+01c43166-d560-4ce9-8880-c077e124dca4,object,http://www.leboncoin.fr
 d79fb1ff-8d28-44d4-8450-5e93ae80a839,,http://halde.fr
 1e1a6209-89c5-4156-bc72-eeb00a832a96,,http://authueil.org
 bfe0adef-d0de-48de-8e2d-044736115cef,,http://grandmenage.info
 ba312dab-7465-4b4d-b506-b461079a1890,,http://fdh.org
 365609ae-5aae-4f6f-b523-9e6a703e57a6,eat boycott,http://vaderetromonsanto.tumblr.com
-d59076c2-9d53-4b38-8397-5acad56ba6d8,,https://infokiosques.net
+d59076c2-9d53-4b38-8397-5acad56ba6d8,list text,https://infokiosques.net
 4fa2c13f-e15b-47d6-93a4-f4edef802e4d,,http://econo-ecolo.org
-485f6a9f-8c25-43a9-9d39-f65167210559,,http://intransitionmovie.com
+485f6a9f-8c25-43a9-9d39-f65167210559,video,http://intransitionmovie.com
 090dc1b8-a945-40ca-892a-2c0b68fdb8c4,,http://grit-transversales.org
 2cb26892-a9bc-406e-afe9-195c6411593b,,https://collectif8juillet.wordpress.com
 65a8d8d8-252b-4962-a252-1a2a38c51433,,http://ablogm.com/cats
@@ -1583,7 +1583,7 @@ e2ec2206-cd8e-42b4-a7ea-281ebe0f3126,,http://eklablog.fr
 34947f66-caef-426a-86c5-e7b1f40d8917,,http://labriqueinter.net
 f3aa13d5-a114-4656-955d-124e84ef98c1,time,http://foire-autogestion.org
 ef42bd56-3e0e-46de-ac6f-f2e619e0eb63,,http://www.ardelaine.fr
-14ed6447-3f1a-4a4b-84bf-25c7712e667d,,https://nos-oignons.net
+14ed6447-3f1a-4a4b-84bf-25c7712e667d,web control tool,https://nos-oignons.net
 ab1d0c5e-6cfc-4986-bdd8-f7a30f3c1c6f,,https://tails.boum.org
 0964e9ed-658d-4e7b-a269-aa2a5c9cb10a,pub,http://antipub.org
 c479a25e-c9e3-48d7-864a-7d5182b23d94,,https://violenceparfoisoui.wordpress.com
@@ -1718,7 +1718,7 @@ e14d7d2d-8d50-40cf-8c39-c24572bdee4c,,http://www.inventati.org/fr
 1a8ab342-90ca-4a26-ad83-c9cc471e4843,,http://www.lesprairiesordinaires.com
 bfe2cb9d-923d-4504-9d60-e4a619161d2d,,http://libreacces.org
 e1aab8bc-d931-4529-b2b9-6b0bc696427c,,http://mouves.org
-90be5afc-79f2-4cae-a44b-b2a84f2d3eed,,http://lapaillasse.org
+90be5afc-79f2-4cae-a44b-b2a84f2d3eed,place web,http://lapaillasse.org
 65df9cfb-f292-4141-adf0-62d1ac00628c,,http://www.jennar.fr
 f45333ba-f0e3-4d2e-93c2-63a5094137fe,,http://www.l214.com
 b072ddbc-2775-429e-a945-c39fb1daf957,,https://liberonsles.wordpress.com
@@ -1804,11 +1804,11 @@ e1edeeeb-8720-4462-b56a-0bd689a9d7a7,,http://democratech.co
 ad9150fb-7ff4-46b9-a7b4-1a6360393398,control,http://occupydgsi.com
 9cab461a-6624-41ed-a857-2ccbe6ceb086,,http://odebi.org
 3ce60734-8f15-4dbc-ab22-dea14f7da238,,http://facebook.com/groups/gentilsvirus
-e3ce82f1-95c0-4e4c-a60d-f4a86876d25f,,http://www.amisdelaterre.org
+e3ce82f1-95c0-4e4c-a60d-f4a86876d25f,group agriculture,http://www.amisdelaterre.org
 565d20eb-9763-4d1f-b41c-b5fd4f1549f2,,http://www.desobeir.net/le-collectif/le-manifeste/
 a3dc37f5-c568-4e07-9ea5-b5e0597ca937,,https://france.attac.org
 ee7fbc99-9143-446e-9ecb-33cc99c18da9,,https://agoravoting.com
-c5dc6919-4e09-4d40-baf4-c47b9f162a73,,http://www.taranisnews.com
+c5dc6919-4e09-4d40-baf4-c47b9f162a73,media,http://www.taranisnews.com
 f25728d0-2c61-47d2-9f1b-0cdd648fe42f,media,http://cqfd-journal.org
 e7533d2a-077f-4c0d-9467-30d8749be722,text,http://editionsdemilune.com
 f32e4b64-607a-4a6f-83f0-fd81094cb2aa,,http://veilleaugrain.org
@@ -1923,15 +1923,9 @@ be12015f-4994-418f-9227-56cc97a88f8a,,http://www.minorites.org
 605fc180-3409-4415-8054-d455a5f090d1,,http://pacte-civique.org
 8c6d4466-c499-454a-bf5c-a0cdec437a5f,,http://cniid.org
 88dd476f-adcb-412e-b1f1-4647a9ea1c5d,,http://ownirevient.fr
-b681afff-18ed-4e3a-91ab-005c342342fb,,http://www.cee-recherche.fr
-798cb528-e3ee-4faa-98b4-de2887d214ca,,http://www.penseelibre.fr
-e07555e3-34e2-44b5-86e9-96d71d636827,solidarity,http://singa.fr
-b69798af-8e82-44fd-95ed-edc7894772d4,,http://kedistan.fr
-8a5de767-c2e6-4774-9a44-c3e95b53edd1,,http://www.avsf.org
 65d5e63b-ed13-4c0c-a8f5-27d40b8fedd2,atom,http://www.observatoire-du-nucleaire.org
 8d17256b-bed6-4b66-9c92-f6a9bdabef43,,https://lesuperflux.wordpress.com
 d845b426-5193-4a36-8e6a-77d34308900d,time,http://code.demosphere.eu
-a2bca01c-36a6-4e05-8bd3-1ad77bd137f5,,http://rougemidi.org
 3583e076-5560-4cb5-9660-f68533929104,act,http://marchesurlacop.noblogs.org
 1b4db979-4d30-47de-93ac-e90e125fb833,,http://www.autonomiaproject.org
 6f4fcbed-a023-4963-86ba-56d045102ce3,,http://www.collectifcreatifcastellas.org
@@ -1985,7 +1979,7 @@ b3bdd806-db35-4825-9f70-754f0cd15b86,,http://www.motherearthpeace.org
 9832bc84-0ff2-4b87-bc16-f7c6f6c34f71,,http://monpostdemocrate.info
 f5861e13-691d-427a-bfbc-df407d185f3a,politics,http://leprojetencommun.net
 85b809fd-d784-40c3-842c-55fe399ca4c5,,https://foodhackingbase.org
-77d7bf03-efd3-466d-90bc-58a55eab9505,,http://tribuvivace.com
+77d7bf03-efd3-466d-90bc-58a55eab9505,group home,http://tribuvivace.com
 fbe7c5cb-a700-4eda-a073-b8672bfe612e,agriculture group,http://kokopelli-semences.fr/
 c3e0ecf4-dad1-46a5-b9e0-b3cf5676b9f3,,http://www.lepoing.net
 ef8f8bcc-fb6d-48dd-9d4d-d8dae9e64425,,https://decroissons.wordpress.com
@@ -1994,7 +1988,7 @@ d46b8d6b-ea38-41a6-a5f1-ef5275001c51,zad place,http://www.lafermedesbouillons.fr
 5e390103-7501-4c79-9f22-5033230a373d,,http://www.comprendrelemonde.fr
 88402698-b444-4d2d-b6dd-498f24487391,,http://pcscp.org
 6b03d155-7a3c-46e1-a0a5-5cb09dbf9a28,,http://lesperipheriques.org
-62ff7693-950d-426b-b76f-e4eb2b51f0fd,,http://video.squat.net
+62ff7693-950d-426b-b76f-e4eb2b51f0fd,video,http://video.squat.net
 16100db0-a7f4-445f-86c4-292819676e6c,media,http://blogs.mediapart.fr
 57602e29-db24-4b20-8bb6-e4664376e075,,http://chroniques-rebelles.info
 250d5160-0140-4c57-bf13-02c17fadf799,,http://www.convergences.org
@@ -2037,8 +2031,6 @@ a7c53650-869a-413f-a28a-59ffecafe50f,,http://lesaf.org
 026aa30b-eaee-4224-b83a-005b18da84c4,media,http://wedemain.fr
 c697ba5c-deed-40aa-ad85-3fa65d9b3831,time,http://ariege.demosphere.eu
 aa32e80f-316f-4f9e-81e4-4d2112a0a48f,,http://www.anciela.info
-2bfd7339-58f2-40af-8854-47d4a0200f2a,,http://avft.org
-570f8734-1644-4c7d-a35e-452e5580d417,,http://blogyy.net
 4557cfc7-28be-456f-b951-d44a523c1d44,,http://reseau-citoyens-libres.blogspot.com
 b61e997c-ae3b-42d5-a4db-81a7b4dc204f,,http://printempsbio.com
 9738d887-3e36-4c87-8852-bc0b3ace4f9e,,http://recherche-action.fr
@@ -2099,7 +2091,7 @@ a236c9d8-d7c9-425a-9d84-ae93adf70440,,http://www.feve-nv.com
 7af0f4ef-07f0-4206-b307-1c319858c253,,http://www.ficedl.info
 e24ade77-28ce-4163-8258-95e2bff51482,,http://www.errc.org
 e714da86-7468-4d6a-9783-493479d2bffa,,http://www.ewg.org
-3c62efd6-54a6-4640-a0c8-da017a493176,,http://www.flossmanuals.net
+3c62efd6-54a6-4640-a0c8-da017a493176,web tool,http://www.flossmanuals.net
 b554e97c-9fa5-4576-b933-6e31585047a5,,http://www.foeeurope.org
 76f5b900-04a3-4983-be08-e60b719f0cbb,money,http://www.finansol.org
 05fefb3d-7a07-4dc4-a7bc-915bc1b693dd,,http://www.filoche.net
@@ -2216,13 +2208,11 @@ f951792c-aa12-4a8d-9959-3b72bcb33d37,,http://climate-express.be/fr/
 7292f257-5759-476b-be83-bcf36ad56f1d,web tool,https://noblogs.org
 83afe546-c0dd-482a-8dcb-276ff818a0dc,,http://tnova.fr
 98114f82-e0ca-4381-8e49-229e199ed624,,http://fablab.fr
-984cad8b-9f5f-42f5-bace-deb044dc19e4,creation,http://culturevisuelle.org
 a309192c-aa01-42f5-ad2d-8a75d52e4850,,https://www.facebook.com/events/333023593561520
 98c2b8e9-db55-45aa-bb17-82fb0e1e9ff8,,https://twitter.com/Sophie_Chapelle
 8ebbc8c6-19a0-474e-8843-d6882b255250,,https://twitter.com/global_sharing
 8a699a89-50a5-40af-84db-1acba8966ec1,eat fun,https://www.facebook.com/DiscoSoupe
 9d2ae1b7-4684-4884-bccf-0f9f1638ef13,,https://twitter.com/wikileaks
-984cad8b-9f5f-42f5-bace-deb044dc19e4,creation,http://culturevisuelle.org
 85c04e9f-4f17-4719-94e1-ac54d4187d04,,https://planet.squat.net
 867171b3-50fd-4d58-8298-5765d041ea49,,http://comptoir.org
 165ef295-b7bd-4d00-8bba-65b1296c60bf,,http://facebook.com/pages/Alternatiba-AURAY
@@ -2238,7 +2228,7 @@ e876fba9-a7fb-458b-9954-c6937c24934e,,https://twitter.com/nicolasvoisin
 d39dd262-8f37-4f02-8fd9-b7054584e6b4,,https://twitter.com/Denis_Baupin
 d6220266-e19d-45d4-bf1f-c6cd1fc69842,,https://twitter.com/greenpeacefr
 e8e9322c-c1df-4eae-9d6a-03d46de5b48f,zad,https://notavparis.wordpress.com
-e2b58e41-6410-48a2-8cf0-c7ad2e254d25,,https://ni-pigeons-ni-espions.fr
+e2b58e41-6410-48a2-8cf0-c7ad2e254d25,web control,https://ni-pigeons-ni-espions.fr
 dc8415b5-a7a9-45a4-8f09-9c69eaaf328e,,https://twitter.com/simons_fr
 d28f2ed7-717c-46ea-a643-06fb8d55167f,,http://dialoguesenhumanite.org
 e435a575-aa6a-44a8-b519-8085b86bf3bd,,https://securityinabox.org
@@ -2249,10 +2239,6 @@ ea1d66e4-e051-423a-b2db-cb7ec5202bbf,,https://twitter.com/maximcombes
 fc1b47e5-02bf-4118-b727-955966622fdc,,https://twitter.com/edwyplenel
 f2351536-0d93-4e1a-99bd-2e19321a3aa4,,http://ugtg.org
 2d3f4ec5-19ca-441a-a764-a61362c78417,group,http://france-volontaires.org
-2ce1496e-6d1a-4591-a136-77ab3cd3b067,,http://voiretagir.org
-ace9b836-4ed5-4649-9189-d3a72ac68c78,,http://cira.marseille.free.fr
-ed62b1a6-f251-4d59-a4a3-d667e662561e,,http://twitter.com/RACFrance
-bb1bce95-5931-4fc4-b112-c41f31f15914,,http://twitter.com/Climat21
 fd49e477-873d-4292-a092-2efe6128ec5a,,https://lesechosduvent.wordpress.com
 da76ef6d-8cb2-4f15-8c23-14a0349b4019,,http://ilfauttuertina.net
 03277b44-5219-43a4-83a7-eb5bbf96bb2b,,http://alternative-urbaine.net
@@ -2269,8 +2255,6 @@ dc885e84-db5c-4e65-9157-8d966f850893,,http://www.socialisme-libertaire.fr
 e95a27f5-9efc-4bf1-ac4f-8361d324d71f,,http://bioetlocalcestlideal.org
 e1136ded-94c2-4cfa-89de-27a042d8b94f,,http://pmaf.org
 c0533ce3-7782-46b3-b4a8-f14a86c448bb,,http://aligrefm.org
-9ba4ed24-4108-4bbc-b8ad-66f90e0340a3,,http://www.scinfolex.wordpress.com
-a5870491-153c-4026-9782-23ee39988290,,http://www.revue-projet.com
 42622ce7-0226-47d9-9b47-acd11a7fee50,,http://cetri.be
 46c76a34-fc92-4d53-b6a3-df974272202d,,http://transparence-france.org
 717daf34-2f79-49db-bae5-2d08cb2aa50b,agriculture,http://www.incredible-edible-freland.fr
@@ -2281,14 +2265,11 @@ a5870491-153c-4026-9782-23ee39988290,,http://www.revue-projet.com
 256c7583-0f1a-4497-a108-283338a1ffd3,,http://ocparis.canalblog.com
 94734501-aff1-438e-a74f-9ec7de5b06d9,,http://www.aspas-nature.org
 757b422b-2bbf-4315-8427-13d359571d62,,http://fame2012.org
-be8a5d00-1af9-4ac1-9026-b4c582883a1a,,http://twitter.com/blabalade
 ee155581-fe2c-4f84-aee0-ac0051640c05,,http://bilaterals.org
 ae6e8744-da0c-4fc3-9441-0ebeb97c2607,,http://www.haute-normandie-decroissance.fr
 b6a6aeea-074e-43d3-b1b6-a9892d13cc9f,,http://ete-2011-resistance-ndl.blogspot.com
 8d76ec6e-3728-437a-91fc-3a5a2ed180f7,,http://twitter.com/COP21
-57e210fb-19fa-4312-9c17-ccf9ef7d3bbd,,https://twitter.com/alternatiba75
-24bc2297-f3be-4baa-ab59-ab920d6f9d51,,http://www.fredericlordon.fr
-0721d0ba-f709-4098-acb4-b7231278d588,,http://www.cetim.ch
+24bc2297-f3be-4baa-ab59-ab920d6f9d51,economy,http://www.fredericlordon.fr
 e7933724-653d-4ce6-ab25-1198bde00485,audio,http://radiocanut.org
 20f1bffd-3f6a-4ff6-b5b7-d0874323b894,,http://awalls.org
 250a17b0-2e8f-436a-bea9-87afcd7dac9a,,http://oeuvresouvertes.net
@@ -2317,7 +2298,6 @@ da4e1523-9d57-407e-98be-b4b9ea49a49c,media text,http://www.leravi.org
 f1e60e74-456f-43f5-9d51-049763f693ee,,http://www.lachaineducoeur.fr
 4d0a56ea-826b-4de9-8bd0-e2e6c5158a0f,,http://www.comede.org
 acd64e10-c9b4-4fc3-b003-0a9ac864301e,,http://carfree.fr
-1611a7e8-6e86-438b-ad77-e9365a2f41f1,,http://avalanche.noblogs.org
 2232cbf9-59df-40d2-9751-a1e88e9fb74b,,http://acdn.net
 1d4f5ead-0fb0-47ab-8519-f3bd54513261,,http://www.anti-k.org
 7f61777f-ba7a-4d68-8e12-2dcc51e076fd,audio,http://radiosterni.qsdf.org
@@ -2370,7 +2350,7 @@ da5436cd-b35e-45cd-91bb-dbcd16252963,zad,http://collectif-stoptafta67.over-blog.
 ccfedb79-e91c-4a8d-abe1-1529cf2a6f14,,http://www.ladebordante.com
 cb01852b-ead1-4068-9880-c611043485d0,,https://fair.coop
 c5b6ec04-4f1e-464e-8a5d-997c7db3a671,,http://www.eco-echos.com
-dd632d9f-f322-47a5-b381-f572a5d21f7d,,http://www.globalfrackdown.org
+dd632d9f-f322-47a5-b381-f572a5d21f7d,earth,http://www.globalfrackdown.org
 e317f124-4511-45fc-b215-936292397785,,http://horizons.typepad.fr
 cfc830bc-b3be-4aad-9a45-f916e067b49b,,http://letohubohu.free.fr
 c7902fcc-20a8-45c2-87ce-5aabbe0f4893,zad,http://www.stoptafta79.org
@@ -2381,6 +2361,7 @@ e573999d-36dd-4b71-85fa-bf02a610df28,,http://www.francebenevolat.org
 e9589c61-2e41-41c8-8c81-6c58b50540d9,,http://www.espritcabane.com
 58805da4-db67-4d8f-834d-294116131caa,,http://mres-asso.org
 f34e642e-4bac-41fe-935b-2875dc4f2150,,http://jplusb.fr
+68cc2923-c869-40c0-b8e5-79d70ae4ff7e,media,http://www.mediapart.fr
 71540b1f-2139-42bc-935c-8ce1f007f54b,media,http://reporterre.net
 eee78676-4e15-4fe7-88ac-d3c6a5e6b99b,,http://www.conspishorsdenosvies.noblogs.org
 0a9e0645-b8e6-4dcf-b9a9-e5e456be0e61,,https://twitter.com/JonPalais
@@ -2388,7 +2369,7 @@ eee78676-4e15-4fe7-88ac-d3c6a5e6b99b,,http://www.conspishorsdenosvies.noblogs.or
 66898deb-b936-4b19-b3af-ee1e206765a4,,https://twitter.com/hashtag/CrimeClimatiqueStop
 25333882-20a9-4073-b425-d2603fce5c02,,http://www.lalignedhorizon.net
 0f942dff-e165-4c04-a060-1488ac074e41,,https://twitter.com/hashtag/cop21
-989c7f81-77f0-4fd8-97bb-aa18093b7d38,,http://www.energies-renouvelable.com
+989c7f81-77f0-4fd8-97bb-aa18093b7d38,energy,http://www.energies-renouvelable.com
 8af3de05-632f-4607-8d01-016ef2fe9da1,,http://fonda.asso.fr
 5470c5a2-08df-4075-8b66-dbde2317aa17,,https://icezine.wordpress.com
 6f74d230-fcb9-4dbc-8461-c828dc574f63,,http://mai68.org
@@ -2403,8 +2384,58 @@ a29a9e82-389f-4730-b9bc-f20705701245,,http://www.perdre-la-raison.com
 cb08eab9-8b0a-4603-89d0-b3eb9e763673,,http://romainelubrique.org
 dbefa748-7743-4801-94aa-8185554b4492,politics group,http://www.force-ouvriere.fr
 37820018-2696-469b-85db-9ad502445b15,media,http://blog.mondediplo.net
-a28fa096-d64b-46f8-9ba3-5896386dbb02,,http://facebook.com/pages/Mr-Mondialisation
+a28fa096-d64b-46f8-9ba3-5896386dbb02,media,http://facebook.com/pages/Mr-Mondialisation
 e7596d76-d50e-4809-8192-2ad85addd2cf,place list,http://www.scoop.it/t/les-cartes-des-alternatives
 515d5726-c6a5-498e-ab98-5544de937fe7,place,http://heterotopies.overblog.com
-68cc2923-c869-40c0-b8e5-79d70ae4ff7e,media,http://www.mediapart.fr
 2139e7db-b323-4df6-8b73-28a3dd98f8a3,media,http://facebook.com/pages/Basta-Site-dinformation-sur-les-luttes-environnementales-et-sociales
+7824dd64-5865-41f7-81d7-380b1e331d73,,http://franciliens.net
+2c3515ac-d3d8-4bb4-8105-ff20935d2966,,http://netopi.fr
+29712030-19ac-4ce1-834a-cbcf3e023c53,,http://cnvfrance.fr
+c2508c20-bb5d-41e5-888b-caf327f5cf7c,,http://elodiefradet.blogspot.fr
+9aea1bb0-2f0f-44dd-a942-432ca1426273,,http://tri-cycle.org
+304d6bae-3bea-47cd-93f3-7b882f009da0,,http://nvcwiki.com
+d083e400-defe-4e26-ac90-5fa7bcd69228,,http://www.cnvformations.fr
+aae4169f-495f-4176-888c-873d486fe5d9,,http://www.nvc-europe.org
+9ba4ed24-4108-4bbc-b8ad-66f90e0340a3,,http://scinfolex.wordpress.com
+1611a7e8-6e86-438b-ad77-e9365a2f41f1,,http://avalanche.noblogs.org
+ace9b836-4ed5-4649-9189-d3a72ac68c78,,http://cira.marseille.free.fr
+8a5de767-c2e6-4774-9a44-c3e95b53edd1,,http://www.avsf.org
+2bfd7339-58f2-40af-8854-47d4a0200f2a,,http://avft.org
+570f8734-1644-4c7d-a35e-452e5580d417,,http://blogyy.net
+0721d0ba-f709-4098-acb4-b7231278d588,,http://www.cetim.ch
+57e210fb-19fa-4312-9c17-ccf9ef7d3bbd,,https://twitter.com/alternatiba75
+2ce1496e-6d1a-4591-a136-77ab3cd3b067,,http://voiretagir.org
+a2bca01c-36a6-4e05-8bd3-1ad77bd137f5,,http://rougemidi.org
+bb1bce95-5931-4fc4-b112-c41f31f15914,,https://twitter.com/Climat21
+b69798af-8e82-44fd-95ed-edc7894772d4,,http://kedistan.fr
+b681afff-18ed-4e3a-91ab-005c342342fb,,http://www.cee-recherche.fr
+a5870491-153c-4026-9782-23ee39988290,,http://www.revue-projet.com
+798cb528-e3ee-4faa-98b4-de2887d214ca,,http://www.penseelibre.fr
+b836e74e-8092-4b1b-b627-1a2ffd3af012,,http://lesjoyeuxrecycleurs.com
+505ca387-b1af-48fe-a384-9c1a56062405,,http://emmabuntus.sourceforge.net
+be8a5d00-1af9-4ac1-9026-b4c582883a1a,,https://twitter.com/blabalade
+ed62b1a6-f251-4d59-a4a3-d667e662561e,,https://twitter.com/RACFrance
+741a9cd6-2876-4cd7-b12a-2b482a474000,,http://www.lartestpublic.fr
+99ca3683-ecfa-4736-945c-b8a193495245,,http://www.nepasplier.fr
+68d346af-90fe-47dd-893a-b685c9ecd933,,http://www.recupcrea.com
+e07555e3-34e2-44b5-86e9-96d71d636827,solidarity,http://singa.fr
+4f51dcb4-f053-4ee9-a239-c4132ddec3d8,,https://toxictourdetox93.wordpress.com
+aec9ad7e-af33-434c-9672-1d1daffaf642,,http://www.thechangebook.org/
+ead8767a-dfa3-47f5-be07-d0cf8a38c90f,,http://homentic.fr
+90cb1104-d492-486b-ac49-4662a6954274,,http://www.futurs-souhaitables.org
+1eb83b11-3e90-49e9-9c52-3bb65d3979a7,,http://www.les-cabanes.com
+aa281d50-bc3d-4029-bc61-37d58af3a76c,,http://libreaffichage.blogspot.fr
+04d1922f-23c4-4e54-9ab3-25c64c2b11a6,,http://www.sol-violette.fr
+6bcaa362-8ced-48f1-afe9-d63eed65b888,,http://pouvoirdagir.com/
+7e22184d-0dbf-4998-993b-f5fbaeab81d3,,https://twitter.com/FrenchRedFrog
+e540e51a-6e9e-4a3d-ad4e-da50865303c6,,https://twitter.com/oxfamfrance
+3bd36aee-2a0e-4732-bca2-6f1bd0abe065,,http://lemouvementassociatif.org
+137ba293-ea87-407a-bcc8-4776bf72ed59,,http://notbored.org
+522bb2e5-db90-4842-a5eb-c2652d9c71ac,,https://twitter.com/yjadot
+a8c30687-53c3-4d87-8424-c84a0ad45147,,https://twitter.com/sdnfr
+8eec8e22-41e5-42c9-aae4-0edc8dc28889,,http://www.scoop.it/t/l-annuaire-des-acteurs-du-bio-et-du-durable-en-limousin
+0dadbe77-fc0f-412e-bf72-43c59a8d7d31,,http://ecolesdifferentes.free.fr
+61e61c8f-6f56-4361-9c1b-ffeb0f42d960,,http://culturevisuelle.org
+09e3c11a-8401-4380-8080-b5787acb6098,,http://www.utopaille.fr
+6f74ef4f-8e36-45fb-87a5-3e2c35f21d8f,,http://www.inaglobal.fr
+7047b6fc-ce99-4204-a79f-06d1cb02ea35,,http://art-engage.net
