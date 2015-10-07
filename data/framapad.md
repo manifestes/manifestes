@@ -282,6 +282,12 @@ LIENS et RESSOURCES
 
 RÉSEAU HYPHE (add/recrawl)
 
+    http://www.mdb94.phpnet.org
+
+    http://www.viabrachy.com/
+
+    http://colibris.ning.com/
+
     http://www.confluences.net/
 
     https://laconquetedupainmontreuil.wordpress.com/
@@ -308,6 +314,8 @@ RÉSEAU HYPHE (add/recrawl)
 
     http://www.lecontrepied.org
 
+    http://permamap.homentic.fr
+
     http://www.arche-nonviolence.eu/
 
     http://la-verite-clandestine.org/
@@ -317,6 +325,60 @@ RÉSEAU HYPHE (add/recrawl)
     http://www.biotonome.fr/
 
     http://www.demain-en-mains.info/
+
+    http://congresdufutur.fr/
+
+    http://c-f-t.net
+
+    https://enfance-buissonniere.poivron.org
+
+    http://www.lesmaitresignorants.org/
+
+    https://integrarevolucio.net/fr/
+
+    https://rainbowfamilyfrance.wordpress.com/
+
+    http://reseau-andes.viabloga.com/
+
+    http://lacaravanedesespaceslibres.blogspot.fr/
+
+    http://www.decroissance.org/
+
+    http://devenez-vous-meme-clown.zici.fr
+
+    http://www.negawatt.org
+
+    https://ouiaumariagepourtous.wordpress.com/
+
+    http://www.incredible-edible.info/
+
+    http://lesincroyablescomestibles.fr/
+
+    http://gaadjou.joueb.com/
+
+    http://desargence.org/
+
+    http://maisonecologie.lyon.free.fr/
+
+    http://gen.ecovillage.org/
+
+    http://www.reseau-relier.org/
+
+    http://ecolieuxdefrance.free.fr/
+
+    http://decinestaresistance.weebly.com/
+
+    http://www.transitionfrance.fr/
+
+    http://interstice.over-blog.org/
+
+    http://w2eu.info
+
+    LEVEL 2 !!
+
+    http://leramassis.free.fr/
+
+    http://lasocietesolidaireetdurable.com
 
     remove
 
@@ -328,6 +390,8 @@ RÉSEAU HYPHE (add/recrawl)
 
     --- verite clandestine
 
+    --- colibris
+
 TAGS
 
     place>map
@@ -337,6 +401,12 @@ TAGS
     zad
 
 MAP
+
+    more sources !
+
+    http://www.rdevolution.org/-Liens-
+
+    http://permamap.homentic.fr/la-maquette/
 
     https://decroissons.wordpress.com/habitat/village-associatif-alternatif/
 
