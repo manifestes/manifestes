@@ -282,6 +282,16 @@ LIENS et RESSOURCES
 
 RÉSEAU HYPHE (add/recrawl)
 
+    http://www.confluences.net/
+
+    https://laconquetedupainmontreuil.wordpress.com/
+
+    http://www.laconquetedupain.fr/
+
+    http://www.laparisienneliberee.com
+
+    http://agirpourlapaix.be
+
     https://lesechosduvent.wordpress.com/
 
     https://democratech.co
@@ -311,6 +321,12 @@ RÉSEAU HYPHE (add/recrawl)
     remove
 
     --- http://www.leprogres.fr/
+
+    merge
+
+    --- conquetedupain
+
+    --- verite clandestine
 
 TAGS
 
@@ -385,6 +401,10 @@ ACCROCHES graphiques et divers noms en intro
     MORE: sobriété heureuse, simplicité volontaire, désargence, chômeur.e.s, colibris, créatifs culturels, pirates, objecteur.euse.s de croissance, empêcheur.euse.s de tourner en rond, AMAPs, alternatif.ive.s, convivialistes, grévistes, écoféministes, 15M, alternatiba, activistes, utopistes concrets, maquisard.e.s, hackers, rassemblements citoyen, universités, fablabs, résitances, grands-parents, désobéissants, transition citoyenne, tiers-lieux, p2p, bénéloves, communs, consom'acteurs, SEL, anarchistes, alliances citoyennes, révolutionnaires, occupy, amis de la terre, 99%, vélistance, indignés, bolo'bolo, éco-villages, institut momentum, bricoleur.se.s, farceurs, clowns, résiliés, squatteur.se.s, décroissants conviviaux, évidences écolos, e-constituante, anarnautes, libertaires, anticapitalistes, anonymous, coopératistes, antifascistes, rebooters, démocratie ouverte, écosociétalistes, écologie, alternatives, non-violence
 
 DIVERS
+- no result message @page-bottom if no search/tags results
+- clear tags when click on hidden section
+- icons within menu tags TOO
+- colors for links with important tags !
 - history browser back button !
 - export graph.pdf to download/ print for links & map
 - better fonts ? cf http://usemodify.com/keywords/garalde-old-face/
@@ -394,7 +414,7 @@ DIVERS
 - default color linksgraph based on modularity + auto "tag/paint" known nodes (those cited manually)
 - linksgraph zoom/center controls
 - color neighbors on over graph tags
-- clear tags when click on hidden section
+- search input autocomplete with tags (on name+description) > will select the tag(s)
 - simple form (to framacalc ?) to add a section / a link
 - sort sections by lastmodifdate / alphabétique
 - info popup/context on links graph(s)

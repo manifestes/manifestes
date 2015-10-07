@@ -588,6 +588,12 @@ span.highlight, div.highlight { /* searched words */
           &:hover {
             opacity: 1 !important;
           }
+          &:active, &:focus {
+            outline: none;
+            .hint:after, &:after, &:before {
+              display: none;
+            }
+          }
         }
         &.hover {
           cursor: pointer;

@@ -40,6 +40,7 @@ menu:
     calendartip: http://demosphere.eu
     print: imprimir
     printtip: "imprimez\nla fenêtre\nqui s'ouvre !"
+    sourcetip: voir la source
     discusstext: discutir, corregir, proponer
     discussback: volver al texto
 tags:

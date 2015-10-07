@@ -1571,6 +1571,18 @@ div.highlight {
 .header .menu .buttons .button a.ext:hover {
   opacity: 1 !important;
 }
+.header .menu .buttons .button a.ext:active,
+.header .menu .buttons .button a.ext:focus {
+  outline: none;
+}
+.header .menu .buttons .button a.ext:active .hint:after,
+.header .menu .buttons .button a.ext:focus .hint:after,
+.header .menu .buttons .button a.ext:active:after,
+.header .menu .buttons .button a.ext:focus:after,
+.header .menu .buttons .button a.ext:active:before,
+.header .menu .buttons .button a.ext:focus:before {
+  display: none;
+}
 .header .menu .buttons .button.hover {
   cursor: pointer;
 }

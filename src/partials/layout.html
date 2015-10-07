@@ -57,7 +57,7 @@
           ng-click="changeLayout('map');"
           ng-class="{active:state.layout=='map'}">
           <i class="fa fa-map-o"></i>
-          <a class="ext" href="{{meta.source.map}}" target="_blank">
+          <a class="ext hint--bottom" href="{{meta.source.map}}" target="_blank" data-hint="{{meta.menu.sourcetip}}">
             <i class="fa fa-file-text"></i>
           </a>
           <span>{{meta.menu.map}}</span>
@@ -68,7 +68,7 @@
           ng-click="changeLayout('links');"
           ng-class="{active:state.layout=='links'}">
           <i class="fa fa-sitemap"></i>
-          <a class="ext" href="{{meta.source.links}}" target="_blank">
+          <a class="ext hint--bottom" href="{{meta.source.links}}" target="_blank" data-hint="{{meta.menu.sourcetip}}">
             <i class="fa fa-file-text"></i>
           </a>
           <span>{{meta.menu.links}}</span>
@@ -80,7 +80,7 @@
             ng-click="changeLayout('sections');"
             ng-class="{active:state.layout=='sections'}">
             <i class="fa fa-bullhorn"></i>
-            <a class="ext" href="{{meta.source.sections}}" target="_blank">
+            <a class="ext hint--bottom" href="{{meta.source.sections}}" target="_blank" data-hint="{{meta.menu.sourcetip}}">
               <i class="fa fa-file-text"></i>
             </a>
             <span>{{meta.menu.sections}}</span>

@@ -23,7 +23,7 @@ mapcredits:
         name: Lieux de vie
         url: https://www.google.com/maps/d/viewer?mid=zCUrDZ_sv7Fw.k9HCrqv3hIVA
     citoy:
-        name: Citoyens en Transition
+        name: Citoyens en Transition — http://rlpxwwkyjefbku4s.onion
         url: https://www.google.com/maps/d/viewer?mid=zfOpOkMajqj0.k73wlMF5RszU
     fucrecup:
         name: Festival des Utopies Concrètes - Récup'
@@ -37,7 +37,7 @@ graph:
         <br><br><br>
         cliquer pour afficher le graphe
         <br><br>
-        attention, le temps de chargement peut être long (7.8Mo)
+        attention, le temps de chargement peut être long (8.2Mo)
     credits: >
         [graph.gexf](https://github.com/manifestes/manifestes/blob/gh-pages/data/graph.gexf) produced with [hyphe](http://hyphe.medialab.sciences-po.fr/) and displayed using [sigma.js](http://sigmajs.org/)
     controlhelp: "Chaque point du réseau représente un site internet\n\n- Utilisez la molette de votre souris pour zoomer\n- Cliquez sur un point pour voir les sites voisins (cités ou citant)\n- Double-cliquez pour ouvrir le site dans une nouvelle fenêtre\n\nLes couleurs correspondent aux classes de modularité,\nc-à-d aux communautés détectées selon la structure du réseau"
@@ -68,6 +68,7 @@ menu:
     calendartip: http://demosphere.eu
     print: imprimer
     printtip: "imprimez\nla fenêtre\nqui s'ouvre !"
+    sourcetip: voir la source
     discusstext: discuter, corriger, proposer
     discussback: revenir au texte
 tags:
