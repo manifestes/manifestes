@@ -72,45 +72,45 @@ menu:
     discusstext: discuter, corriger, proposer
     discussback: revenir au texte
 tags:
-    about: "à propos|question-circle = à propos de ce projet, contexte\nliste de discussion, code source"
-    group: "collectifs|users = groupes, réseaux, coopératives\nassociations, structures"
-    list: "annuaires|database = bases de données, annuaires\nressources, moteurs de recherche"
-    tool: "outils|wrench = guides et fiches pratiques, tutoriaux\noutils, services, instruments"
-    map: "lieux|map-marker = adresses de lieux physiques\ntiers-lieux"
+    about: "à propos|question-circle = à propos de ce projet, contexte,\nliste de discussion, code source"
+    group: "collectifs|users = groupes, réseaux, coopératives,\nassociations, structures"
+    list: "annuaires|database = bases de données, annuaires,\nressources, moteurs de recherche"
+    tool: "outils|wrench = guides et fiches pratiques, tutoriaux,\noutils, services, instruments"
+    map: "lieux|map-marker = adresses de lieux physiques,\ntiers-lieux"
     text: textes|file-text = articles, livres, textes
-    image: "images|picture-o = images, dessins\nphotos, graphiques"
+    image: "images|picture-o = images, dessins,\nphotos, graphiques"
     audio: sons|volume-up = radios, musiques, sons
-    video: "films|film = videos, films, documentaires\nTV, images mouvantes"
-    calendar: "agenda|calendar-check-o = calendriers, rendez-vous\nfestivals, événements"
+    video: "films|film = videos, films, documentaires,\nTV, images mouvantes"
+    calendar: "agenda|calendar-check-o = calendriers, rendez-vous,\nfestivals, événements"
     eat: _manger = alimentation, cuisine, nourriture
     health: _santé = santé, remèdes, corps, sport
     home: _habiter = logement, habitat, hébergement, terrain
     move: _se déplacer = transports, véhicules
-    subsist: "_solidarité = migrants, sans-papiers, sdf\nsouffrances, survie\ninégalités d'accès, des chances"
-    object: "_objets = récup', recyclage, réutilisation\nfaire, construire soi-même, réappropriation\néquipement, matériel, mobilier, machines"
-    energy: "_énergie = nucléaire, électrique\néolien, solaire"
-    slow: "_ralentir = rencontrer, découvrir, partager\ndécroissance"
-    media: "_médias = information, presse\njournalisme, actualité"
+    subsist: "_solidarité = migrants, sans-papiers, sdf,\nsouffrances, survie,\ninégalités d'accès, des chances"
+    object: "_objets = récup', recyclage, réutilisation,\nfaire, construire soi-même, réappropriation,\néquipement, matériel, mobilier, machines"
+    energy: "_énergie = nucléaire, électrique,\néolien, solaire"
+    slow: "_ralentir = rencontrer, découvrir, partager,\ndécroissance"
+    media: "_médias = information, presse,\njournalisme, actualité"
     act: _action = actions pratiques quotidiennes
-    genre: "genres = patriarcat, féminisme\ngenres, LGBT, famille"
-    education: "éducation = école, université, recherche\napprendre, se former\nenseigner, partages de savoir"
+    genre: "genres = patriarcat, féminisme,\ngenres, LGBT, famille"
+    education: "éducation = école, université, recherche,\napprendre, se former,\nenseigner, partages de savoir"
     work: travail = emploi, chômage, activité remunérée
-    alienation: "aliénation = publicité, propagande, aliénation\nconditionnements, contrôle\nfichage, cloud, surveillance"
-    emancipation: "émancipation = réappropriation, émancipation\nautonomie, autogestion, horizontalité"
-    zad: "zad = grands projets inutiles, lois absurdes\nzones à défendre, radicalités, avant gardes"
-    love: "amour = rêves, utopies, promesses, idéaux\nhumour et amour toujours !"
+    alienation: "aliénation = publicité, propagande, aliénation,\nconditionnements, contrôle,\nfichage, cloud, surveillance"
+    emancipation: "émancipation = réappropriation, émancipation,\nautonomie, autogestion, horizontalité"
+    zad: "zad = grands projets inutiles, lois absurdes,\nzones à défendre, radicalités, avant gardes"
+    love: "amour = rêves, utopies, promesses, idéaux,\nhumour et amour toujours !"
     space: espace public = espaces partagés, communs, ville
-    words: "langage = récits, mots, interprétations, controverses\ns'accorder, s'engueuler, débattre"
-    creation: "création = art, culture, création, écriture\ndesign, processus, formes"
-    science: "science = sciences, techniques\nnanotechnologies, manipulation du vivant"
+    words: "langage = récits, mots, interprétations, controverses,\ns'accorder, s'engueuler, débattre"
+    creation: "création = art, culture, création, écriture,\ndesign, processus, formes"
+    science: "science = sciences, techniques,\nnanotechnologies, manipulation du vivant"
     web: internet = web, numérique
-    companies: "ennemis = néocapitalisme, récupérations, greenwashing\nmultinationales, puissances d'argent... boycott!"
-    history: "histoire = (néo)colonialismes, impérialisme\npassifs historique"
-    law: "juridique = lois, aspects juridiques\ndémarches administratives"
-    economy: "économie = commerce, échanges, monnaie, finance, dette\nrevenu de base inconditionnel"
-    politics: "politique = politique et représentation\ncommuns, open (res)sources"
+    companies: "ennemis = néocapitalisme, récupérations, greenwashing,\nmultinationales, puissances d'argent... boycott!"
+    history: "histoire = (néo)colonialismes, impérialisme,\npassifs historique"
+    law: "juridique = lois, aspects juridiques,\ndémarches administratives"
+    economy: "économie = commerce, échanges, monnaie, finance, dette,\nrevenu de base inconditionnel"
+    politics: "politique = politique et représentation,\ncommuns, open (res)sources"
     philo: philosophie = réflexion, théorie, principes
-    earth: "planète = environnement, climat, pollution\nanimaux, végétaux"
+    earth: "planète = environnement, climat, pollution,\nanimaux, végétaux"
     agriculture: agriculture = (perma)cultures, semences, jardinage, élevage
 footer:
     lastupdatetext: dernière modification
@@ -967,7 +967,7 @@ image:
 quote:
     author: Comité invisible, À nos amis, p.231
     content: Notre force ne naîtra pas de la désignation de l'ennemi, mais de l'effort fait pour entrer les uns dans la géographie des autres.
-tags: words
+tags: words, subsist
 content: >
     *austérité, modèle économique, voie de développement, responsabilité, questions d'immigration, croissance, décroissance, communauté internationale, économie solidaire, transition, démocratie, libertés, écologie, solidarité...*
 
