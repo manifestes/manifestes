@@ -393,7 +393,13 @@ angular.module('manifest.controllers', ['underscore','config'])
           _.each(singlelink, function(l) {
 
             var tgs = l.split('\n')[0].match(/\w+/ig);
-            
+            var isimportant = false;
+
+            _.each(tgs, function(t) {
+              if($scope.tagsContents[t] && $scope.tagsContents[t].important)
+                isimportant = true;
+            });
+
             // (test/dev) just to see links over graph
             if(tgs && tgs.length>2) {
               _.each(tgs, function(t1) {
@@ -409,10 +415,11 @@ angular.module('manifest.controllers', ['underscore','config'])
             // store links as array
             $scope.linksArray.push({
               content: htm,
-              tags: tgs
+              tags: tgs,
+              important: isimportant
             });
 
-            // store links indexed by tag
+            // store links indexed by tag (for taggraph sizes!)
             _.each(tgs, function(t) {
               if(!$scope.linksByTag[t]) $scope.linksByTag[t] = [];
               $scope.linksByTag[t].push(htm);

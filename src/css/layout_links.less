@@ -116,15 +116,22 @@
 
     background: white;
 
+    &.important {
+      border-left: 7px solid @lightGreenColor;
+    }
+
     &.reducedtag, &.reducedsearch {
       background: #ECECEC;
       height: 1px;
       padding: 0;
       cursor: pointer;
+      border-left: none;
     }
     &.reducedsearch {
       background: @searchYellow;
     }
+
+
   }
 }
 

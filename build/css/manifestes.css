@@ -479,12 +479,12 @@
 
 ;
 
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
 /**
  * 1. Set default font family to sans-serif.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
  */
 
 html {
@@ -552,7 +552,7 @@ audio:not([controls]) {
 
 /**
  * Address `[hidden]` styling not present in IE 8/9/10.
- * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
  */
 
 [hidden],
@@ -572,7 +572,8 @@ a {
 }
 
 /**
- * Improve readability when focused and also mouse hovered in all browsers.
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
  */
 
 a:active,
@@ -690,7 +691,6 @@ figure {
  */
 
 hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
@@ -831,15 +831,12 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /**
  * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
- *    (include `-moz` to future-proof).
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
  */
 
 input[type="search"] {
   -webkit-appearance: textfield; /* 1 */
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box; /* 2 */
-  box-sizing: content-box;
+  box-sizing: content-box; /* 2 */
 }
 
 /**
@@ -932,6 +929,7 @@ Date: 2015-05-27 */
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+  -o-user-select: none;
   user-select: none;
 }
 /* LOADING SPINNER, credit: http://tobiasahlin.com/spinkit */
@@ -1390,6 +1388,13 @@ div.highlight {
   transition: bottom 0.4s;
 }
 .header .menu .tagsmenu .tagspanel .tagsdisplay {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
   height: 385px;
 }
 .header .menu .tagsmenu .tagspanel .tagsdisplay#sigma-tags canvas {
@@ -1405,19 +1410,24 @@ div.highlight {
   box-sizing: border-box;
   cursor: pointer;
   display: inline-block;
-  overflow: hidden;
   vertical-align: top;
   width: 20%;
-  height: 29.61538462px;
-  padding: 9px 7px;
+  height: 48.125px;
+  padding: 17px 7px;
+  font-size: 0.6em;
   text-align: left;
-  font-size: 0.65em;
   text-transform: uppercase;
   color: #3c3c3c;
   background: #e4e4e4;
 }
+.header .menu .tagsmenu .tagspanel .tagsdisplay#grid-tags .gridtag .hint:after,
+.header .menu .tagsmenu .tagspanel .tagsdisplay#grid-tags .gridtag:after,
+.header .menu .tagsmenu .tagspanel .tagsdisplay#grid-tags .gridtag:before {
+  text-transform: none;
+}
 .header .menu .tagsmenu .tagspanel .tagsdisplay#grid-tags .gridtag.important {
-  color: #107a1d;
+  color: white;
+  background: #90c396;
 }
 .header .menu .tagsmenu .tagspanel .tagsdisplay#grid-tags .gridtag.icon {
   color: #ababab;
@@ -1433,6 +1443,9 @@ div.highlight {
 .header .menu .tagsmenu .tagspanel .tagsdisplay#grid-tags .gridtag.active {
   color: white;
   background: #883e3e;
+  -webkit-box-shadow: inset 0px 0px 6px 0px #2f2f2f;
+  -moz-box-shadow: inset 0px 0px 6px 0px #2f2f2f;
+  box-shadow: inset 0px 0px 6px 0px #2f2f2f;
 }
 .header .menu .tagsmenu .tagspanel .tagsdisplay#grid-tags .gridtag.active i {
   color: white;
@@ -2439,12 +2452,16 @@ div.highlight {
   overflow: hidden;
   background: white;
 }
+.panel.links .link.important {
+  border-left: 7px solid #90c396;
+}
 .panel.links .link.reducedtag,
 .panel.links .link.reducedsearch {
   background: #ECECEC;
   height: 1px;
   padding: 0;
   cursor: pointer;
+  border-left: none;
 }
 .panel.links .link.reducedsearch {
   background: rgba(255, 252, 0, 0.48);
@@ -2686,6 +2703,10 @@ body.layout-sectionsprint .footer {
 }
 /* TABLETS ONLY */
 @media (min-width: 750px) and (max-width: 1025px) {
+  .tagsmenu .gridtag {
+    padding: 17px 4px !important;
+    font-size: 0.6em !important;
+  }
   .header .menu .searchinput {
     width: 150px !important;
   }
@@ -2705,6 +2726,10 @@ body.layout-sectionsprint .footer {
 }
 /* BIG SCREENS */
 @media (min-width: 1200px) {
+  .tagsmenu .gridtag {
+    padding: 17px 8px !important;
+    font-size: 0.75em !important;
+  }
   .intro h1 {
     font-size: 11em;
   }
@@ -2724,6 +2749,10 @@ body.layout-sectionsprint .footer {
 }
 /* VERY BIG SCREENS */
 @media (min-width: 1450px) {
+  .tagsmenu .gridtag {
+    padding: 16px 11px !important;
+    font-size: 0.9em !important;
+  }
   .intro h1 {
     font-size: 13em;
   }

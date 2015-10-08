@@ -94,7 +94,7 @@
         </div>
       </div>
 
-      <!-- BACK To INTRO -->
+      <!-- BACK TO INTRO -->
       <div
         class="action backintro hint--bottom"
         data-hint="{{meta.menu.backtip}}"
@@ -151,13 +151,14 @@
 
           <!-- either GRAPH -->
           <div class="tagsdisplay" id="sigma-tags"></div>
+
           <!-- either GRID -->
-          <div class="tagsdisplay" id="grid-tags" ng-if="state.tagsmode=='grid'" ng-mouseout="overTag();">
+          <div class="tagsdisplay" id="grid-tags" ng-if="state.tagsmode=='grid'">
             <div
               ng-repeat="t in tagsContentsOrdered"
-              ng-click="toggleTag(t.tag);"
-              ng-mouseover="overTag(t.tag);"
-              class="gridtag"
+              ng-click="toggleTag(t.tag,true);"
+              class="gridtag hint--right"
+              data-hint="{{t.description}}"
               ng-class="{
                 icon: t.icon,
                 important: t.important,

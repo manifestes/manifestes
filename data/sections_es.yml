@@ -44,71 +44,46 @@ menu:
     discusstext: discutir, corregir, proponer
     discussback: volver al texto
 tags:
-    about: à propos|question-circle = projet manifeste(s) (liste de discussion, code, twitter)
-    group: collectifs|users = réseaux, coopératives, associatives existant(e)s
+    about: "à propos|question-circle = à propos de ce projet, contexte\nliste de discussion, code source"
+    group: "collectifs|users = groupes, réseaux, coopératives\nassociations, structures"
+    list: "annuaires|database = bases de données, annuaires\nressources, moteurs de recherche"
+    tool: "outils|wrench = guides et fiches pratiques, tutoriaux\noutils, services, instruments"
+    map: "lieux|map-marker = adresses de lieux physiques\ntiers-lieux"
     text: textes|file-text = articles, livres, textes
-    image: images|picture-o = dessins, graphiques
-    audio: sons|volume-up = radios, musique
-    video: films|film = videos, films, documentaires
-    tool: outils|wrench = guides pratiques, tutoriaux
-    list: annuaire|database = base de données, liens
-    place: lieux|map-marker = où ça ? adresses, tiers-lieux
-    time: agenda|calendar-check-o = quand ? calendriers, évenements
-    constat: constat = se rendre compte que le monde ne tourne pas rond
-    history: histoire = (néo)colonialisme, impérialisme, passif historique
-    atom: nucléaire = nucléaire
-    guilty: ennemis = les responsables, les ennemis, on a leurs noms
-    subsist: subsistance = souffrance, survie, too much
-    genre: patriarcat = patriarcat, féminisme, genre
-    alienation: aliénation = aliené.e.s, conditionné.e.s
-    pub: publicité = publicité
-    control: contrôle = fichage, cloud, surveillance
-    violence: violence = radicalité, violence physique
-    emancipation: émancipation = réappropriation (outils, politique, connaissance)
-    law: juridique = lois, aspects juridiques
-    education: éducation = école, université, recherche
-    learn: apprendre = se former, se renseigner sur un sujet
-    teach: enseigner = partager son savoir
-    autonomy: autogestion = autonomie, moins de délégation
-    diy: diy = faire soi-même, réappropriation, construire
-    tech: techniques = savoir-faire
-    web: internet = monde numérique
-    plurality: diversité = multiplicité des mondes
-    companies: multinationales = puissances d'argent
-    money: argent = monnaie, finance, dette
-    basicincome: revenu de base = inconditionnel
-    boycott: boycott = ne PAS utiliser/acheter/visiter
-    slow: ralentir = décroissance, temps long
-    recup: récup' = recyclage, réutilisation
-    local: local = à coté de chez soi
-    act: action = en pratique dans son quotidien
-    fun: humour = amusons-nous !
-    love: amour = toujours
-    dream: rêve = utopies, promesses, idéaux
-    meet: rencontrer = rencontrer, découvrir, partager
-    debate: discuter = s'accorder, s'engueuler, débattre
-    inegality: inégalités = d'accès, des chances, de €
-    solidarity: solidarité = aide pratique
-    space: espace public = espaces partagés, ville
-    economy: économie = commerce, échanges
-    politics: politique = politique et représentation
-    philo: philosophie = réflexion, théorie
-    media: médias = information, journalisme
-    news: news = actualité chaude
-    energy: énergie = éolien, électrique, solaire
-    words: langage = récits, mots, interprétations
-    greenwash: néocapitalisme = récupérations, greenwashing
-    creation: création = art, culture, création, écriture
-    design: design = processus, formes, gameplay
-    health: santé = corps, maladie, santé, sport, psychologie
-    earth: planète = environnement, climat, pollutions
-    commons: communs = open(res)sources
-    agriculture: agriculture = cultures, semences
-    object: objets = matériel, mobilier, machines
-    eat: manger = cuisiner, se nourrir
-    home: habiter = logement, habitat, espace privé
-    move: se déplacer = transports
+    image: "images|picture-o = images, dessins\nphotos, graphiques"
+    audio: sons|volume-up = radios, musiques, sons
+    video: "films|film = videos, films, documentaires\nTV, images mouvantes"
+    calendar: "agenda|calendar-check-o = calendriers, rendez-vous\nfestivals, événements"
+    eat: _manger = alimentation, cuisine, nourriture
+    health: _santé = santé, remèdes, corps, sport
+    home: _habiter = logement, habitat, hébergement, terrain
+    move: _se déplacer = transports, véhicules
+    subsist: "_solidarité = migrants, sans-papiers, sdf\nsouffrances, survie\ninégalités d'accès, des chances"
+    object: "_objets = récup', recyclage, réutilisation\nfaire, construire soi-même, réappropriation\néquipement, matériel, mobilier, machines"
+    energy: "_énergie = nucléaire, électrique\néolien, solaire"
+    slow: "_ralentir = rencontrer, découvrir, partager\ndécroissance"
+    media: "_médias = information, presse\njournalisme, actualité"
+    act: _action = actions pratiques quotidiennes
+    genre: "genres = patriarcat, féminisme\ngenres, LGBT, famille"
+    education: "éducation = école, université, recherche\napprendre, se former\nenseigner, partages de savoir"
     work: travail = emploi, chômage, activité remunérée
+    alienation: "aliénation = publicité, propagande, aliénation\nconditionnements, contrôle\nfichage, cloud, surveillance"
+    emancipation: "émancipation = réappropriation, émancipation\nautonomie, autogestion, horizontalité"
+    zad: "zad = grands projets inutiles, lois absurdes\nzones à défendre, radicalités, avant gardes"
+    love: "amour = rêves, utopies, promesses, idéaux\nhumour et amour toujours !"
+    space: espace public = espaces partagés, communs, ville
+    words: "langage = récits, mots, interprétations, controverses\ns'accorder, s'engueuler, débattre"
+    creation: "création = art, culture, création, écriture\ndesign, processus, formes"
+    science: "science = sciences, techniques\nnanotechnologies, manipulation du vivant"
+    web: internet = web, numérique
+    companies: "ennemis = néocapitalisme, récupérations, greenwashing\nmultinationales, puissances d'argent... boycott!"
+    history: "histoire = (néo)colonialismes, impérialisme\npassifs historique"
+    law: "juridique = lois, aspects juridiques\ndémarches administratives"
+    economy: "économie = commerce, échanges, monnaie, finance, dette\nrevenu de base inconditionnel"
+    politics: "politique = politique et représentation\ncommuns, open (res)sources"
+    philo: philosophie = réflexion, théorie, principes
+    earth: "planète = environnement, climat, pollution\nanimaux, végétaux"
+    agriculture: agriculture = (perma)cultures, semences, jardinage, élevage
 footer:
     lastupdatetext: última modificación
     content: >
@@ -198,7 +173,7 @@ quote:
     author: Charles Bukowski
     content: >
         ¿Cómo diablos va un ser humano a alegrarse de que una alarma lo despierte a las 6:30 de la mañana para saltar de la cama, vestirse, tragarse de mala gana una tostada, cagar, mear, lavarse los dientes y el pelo, luchar con el trafico para llegar a un lugar donde lo que hace esencialmente es producir montañas de dinero para otro y encima se le pide que se muestre agradecido por tener semejante oportunidad?
-tags: constat
+tags: alienation
 content: >
 
     - **sobre-desarrollo** material, bulimia consumista, derroche alimentario y energético
@@ -304,7 +279,7 @@ image:
 quote:
     author: A.Boyd & S. Duncombe
     content: La política es tanto un asunto de deseo y fantasma como de razón y racionalidad
-tags: violence, plurality
+tags: philo
 content: >
     Seres sociales y sensibles, **infinitamente complejos**, nuestra humanidad nos hace capaces de **lo mejor y de lo peor**.
     
@@ -325,7 +300,7 @@ image:
 quote:
     author: Bertolt Brecht
     content: Quienes luchan no están seguros de ganar, pero quienes no luchan ya han perdido.
-tags: subsist
+tags: science, alienation
 content: >
     Mientras que las catástrofes naturales o acontecimientos históricos mediatizados nos hunden en **estados emocionales pasajeros y estereotipados** (¡dios mío, une epidemia de ébola!), las evoluciones más lentas de nuestras sociedades se desarrollan sin que podamos **medir sus consecuencias a largo plazo**: *ondas, publicidad, OGM, comida basura, polución*
 
@@ -375,7 +350,7 @@ image:
 quote:
     author: Albert Einstein
     content: Los problemas no se arreglan utilizando el sistema de pensamiento que los ha engendrado.
-tags: plurality
+tags: philo, politics, creation
 content: >
     Vivimos en un mundo *atravesado, percibido, vivido, interpretado* por realidades múltiples, plurales, **diversas**, que se **superponen** o **se confrontan**.
 
@@ -398,7 +373,7 @@ image:
 quote:
     author: Malcolm X
     content: Si no estáis alerta, los medios os harán detestar a los oprimidos y amar a quienes les oprimen.
-tags: guilty
+tags: companies
 content: >
     Sospechosos los unos de arrancarle al estado unos cientos de miles de euros, los otros de formar una élite manipuladora, a veces designamos como **culpables** a *políticos, ricos, extranjeros, funcionarios, defraudadores, asistidos, periodistas, extremistas, terroristas*...
 
@@ -437,7 +412,7 @@ quote:
     author: ?
     content: >
         Delegamos todos nuestros poderes a las potencias del dinero: informarse, alimentarse, desplazarse, comunicar, ya no queda ni una sola cosa cotidiana que seamos capaces de asumir por nuestros propios medios. Es el momento de que reaprendamos a vivir en nuestro propio medio.
-tags: money, pub
+tags: economy, alienation
 content: >
     ¿Qué sentido dar a nuestros actos cuando **todo valor** se halla concentrado alrededor de un único instrumento, el dinero?
 
@@ -463,7 +438,7 @@ quote:
     author:  Le Tour de France des Alternatives, collection Reporterre dirigée par Hervé Kempf, 2014
     content: >
         Ya no se trata de hacer la lista, conocida hasta la nausea, de los **no** de aquello que rechazamos, sino de elaborar colectivamente los **sí** que caracterizan los mundos que queremos
-tags: dream, love, education
+tags: love, education
 content: >
     Estamos convencidos de la importancia de *la educación, el arte, la historia, la literatura, la vulgarización científica* para favorecer un **espíritu crítico**, la **apertura a los otros y al mundo**, la **cooperación** en lugar de la competición.
 
@@ -492,7 +467,7 @@ quote:
         [Infokiosques.net](http://www.infokiosques.net), qu'est-ce qu'un infokiosque ?
     content: >
         Esta sociedad nos plantea preguntas, nos impide vivir. A veces nos da ganas de vomitar, siempre nos indigna. Capitalismo, patriarcado, relaciones de dominación, desastres ecológicos, fuerzas del Estado, suficiente para estremecer nuestra bilis entera. A veces quisiéramos cultivar esta bilis, cómo decir, profundizarla, levantarla, llenarla de datos, de argumentos, de ideas de acción. Es mejor conocer lo que criticamos para saber mejor qué es lo que vomitamos y cómo lo vomitamos.
-tags: control, emancipation, agriculture
+tags: companies, alienation, emancipation
 content: >
     Las verdaderas potencias son aquellas que llevan las riendas de las **estructuras materiales de los flujos**: *bancos, multinacionales mediáticas, industria de la construcción, alimentaria, de transportes*. Estas organizaciones poseen la **autoridad**.
 
@@ -519,7 +494,7 @@ image:
 quote:
     author: Comité invisible, À nos amis, p.162
     content: El gobierno consiste en negarle al pueblo toda capacidad política más allá de su voto.
-tags: autonomy, diy
+tags: alienation, emancipation, politics
 content: >
     La lógica del Estado no consiste en crear lazos, sino en mantener una **dependencia de los ciudadanos** con respecto a las *instituciones, convenciones, funciones, reglas, deberes*, para mantener el **orden social**.
 
@@ -544,7 +519,7 @@ image:
 quote:
     author: Jacques Ellul, Les nouveaux possédés, 1973
     content: No es la técnica lo que nos esclaviza, es lo sagrado transferido a la técnica.
-tags: tech, web
+tags: science, web
 content: >
     El desarrollo de las tecnologías *nano, bio, digitales, médicas* es síntoma de un **fantasma de control y de conocimiento total** permanentemente disponible.
 
@@ -572,7 +547,7 @@ image:
 quote:
     author: Desmond Tutu
     content: Si eres neutro en una situación de injusticia, es que te has puesto del lado del opresor
-tags: boycott, slow, act
+tags: slow, act
 content: >
     Dejemos de pensar en *la* **política** representativa, mera institución de poder y de luchas por su conquista.
     Mantengamos o restablezcamos *lo* **político** en les relaciones que tenemos entre *vecinos, colegas, amigos*.
@@ -608,7 +583,7 @@ image:
 quote:
     author: Guy Debord
     content: El aburrimiento es siempre contrarrevolucionario. Siempre.
-tags: fun
+tags: love, slow
 content: >
     Cuando nos llenan de *austeridad*, de *confianza de los consumidores*, de sondeos *si quieres, puedes*, **riámonos en las narices** de lo serio y de las normas.
 
@@ -630,7 +605,7 @@ quote:
     author: Comité invisible, A nuestros amigos, p.199
     content: >
         La secesión es habitar un territorio, asumir nuestra configuración situada del mundo, nuestra manera de morar en él, la forma de vida y las verdades que nos sostienen, y desde ahí entrar en conflicto o en complicidad
-tags: meet, place, space
+tags: slow, emancipation, space
 content: >
     Preferimos las *iniciativas, prácticas, colectivos* **autónomos y autogestionados**, a las experiencias **pilotadas por una autoridad** omnipotente. Sólo la **experiencia** del hecho político provoca la **conciencia de lo colectivo**.
 
@@ -693,7 +668,7 @@ quote:
     author: Robert A. Heinlein
     content: >
         Un ser humano debería saber *cambiar un pañal, planificar una invasión, degollar un cerdo, manejar un buque, concebir un edificio, escribir un soneto, hacer un balance contable, montar un muro, reducir una fractura, sostener a un moribundo, acatar órdenes, dar órdenes, cooperar, actuar solo, resolver ecuaciones, analizar un problema nuevo, aplicar el abono, programar un ordenador, cocinar una buena comida, luchar de manera eficaz, y morir valientemente*. La especialización es buena para los insectos.
-tags: learn
+tags: education, emancipation
 content: >
     Las ideas viven cuando son **expresadas, transmitidas, debatidas, interpretadas, reformuladas**. Cada *posición, visión, punto de vista, cuestionamiento* debe encontrar su lugar a lo largo de esta cadena de comprensión.
 
@@ -717,7 +692,7 @@ image:
 quote:
     author: Bernard Charbonneau
     content: Creer que la técnica es neutra es serlo uno mismo en su lugar. Es prohibirse juzgarla y por consiguiente dejarla cada día más librada a sí misma.
-tags: emancipation, media
+tags: education, emancipation, media
 content: >
     **Reapropiémonos el mundo** en todas sus facetas: *espacios público y geográfico, mediático, semántico*
 
@@ -748,7 +723,7 @@ image:
 quote:
     author: Félix Thiéfaine
     content: Dejad al Estado en el retrete en el que lo habéis encontrado
-tags: greenwash
+tags: companies, economy
 content: >
     Las grandes **potencias monetarias** han comprendido bien cómo utilizar a su favor la jerga seductora de la *economía colaborativa, de intercambio, de horizontalidad, de resiliencia, de libertad de acceso*
 
@@ -774,7 +749,7 @@ quote:
     author: Hervé Le Tellier, dialogues socratiques
     content: >
         Para el ciego, el pájaro canta. Para el sordo, el pájaro vuela. ¿Quién dice la verdad? Pregúntale al mudo.
-tags: creation, plurality
+tags: words, creation, love
 content: >
     Creemos que existe siempre una **multitud de formulaciones** de cualquier problema y de respuestas posibles en consecuencia. Para captar mejor el mundo,  multipliquemos las maneras de abordarlo: *lenguas, dominios, dimensiones, generaciones, temporalidades*.
 
@@ -797,7 +772,7 @@ quote:
     author: "Geoffroy de Lagasnerie, L'art de la révolte: Snowden, Assange, Manning"
     content: >
         "... no politizar la cuestión de la pertenencia, situar fuera de la política el problema de la forma de la comunidad en la que nos encontramos, equivale de hecho a forzarnos a aceptar como intangible un hecho puramente arbitrario y sin significación. No problematizar la cuestión de la pertenencia o, mejor, no darse los medios de hacer aparecer esta cuestión como potencialmente problemática, es implicarnos en una situación forzada, resignarnos a aceptar una situación contingente: el hecho de haber nacido en tal o cual país y de tener tal o cual nacionalidad."
-tags: group, guilty
+tags: group, companies
 content: >
     
     
@@ -816,7 +791,7 @@ quote:
     author: Susan George, Los Usurpadores
     content: >
         La Gran Regresión Neoliberal ha ganado terreno, a pesar de la evidencia abrumadora de su acción deletérea para casi todo el mundo, a excepción de los muy ricos, los grandes empresarios y quienes se lo llevan todo en el gran casino en que se ha convertido la economía mundial. ¿Quién hubiera podido imaginar que esta raza saldría más fortalecida si cabe de la catástrofe financiera de 2007-2008, de la que seguimos pagando las consecuencias?
-tags: group, guilty
+tags: group, companies
 content: >
     
 

@@ -49,6 +49,7 @@ a {
 @textColor: #3C3C3C;
 
 @greenColor: #107A1D;
+@lightGreenColor: #90C396;
 
 @redColor: #883E3E;
 @redGreyColor: #987676;
@@ -392,6 +393,8 @@ span.highlight, div.highlight { /* searched words */
 
         .tagsdisplay {
           
+          .nohighlight();
+
           height: @tagDisplayH - @descH;
 
           &#sigma-tags {
@@ -409,20 +412,24 @@ span.highlight, div.highlight { /* searched words */
               box-sizing: border-box;
               cursor: pointer;
               display: inline-block;
-              overflow: hidden;
               vertical-align: top;
               width: 20%;
-              height: (@tagDisplayH - @descH)/13;
-              padding: 9px 7px;
+              height: (@tagDisplayH - @descH)/8;
+              padding: 17px 7px;
+              font-size: 0.6em;
               text-align: left;
-              font-size: 0.65em;
               text-transform: uppercase;
 
               color: @textColor;
               background: @mostLightColor;
 
+              .hint:after, &:after, &:before {
+                text-transform: none;
+              }
+
               &.important {
-                color: @greenColor;
+                color: white;
+                background: @lightGreenColor;
               }
               &.icon {
                 color: @lightColor;
@@ -438,6 +445,7 @@ span.highlight, div.highlight { /* searched words */
               &.active {
                 color: white;
                 background: @redColor;
+                .inner-shadow(0px 0px 6px 0px #2F2F2F);
                 i { color: white; }
               }
             }

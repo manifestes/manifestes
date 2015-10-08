@@ -53,7 +53,8 @@
       reducedtag:     state.tags.length && !shallShowTags(e,false),
       reducedsearch:  state.search && !shallShowSearch(e),
       odd: $index%2==0,
-      even: $index%2==1
+      even: $index%2==1,
+      important: e.important
     }"
     ng-click="
       (
