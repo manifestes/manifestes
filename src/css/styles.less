@@ -481,16 +481,13 @@ span.highlight, div.highlight { /* searched words */
       &.filtering {
         .tagshat {
           background: @mostLightColor;
-          border-bottom: 5px solid @redColor;
+          border-bottom: @menuButtonBorder solid @redColor;
         }
         .clear {
           display: inline-block !important;
         }
       }
       &.active:hover {
-        .tagshat {
-          border-bottom: none !important;
-        }
         .tagspanel {
           bottom: -@tagDisplayH;
         }

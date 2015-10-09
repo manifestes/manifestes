@@ -282,12 +282,17 @@ LIENS et RESSOURCES
 
 RÉSEAU HYPHE (add/recrawl)
 
+    http://www.habitatparticipatif.net/
+
+    http://www.happycow.net/
 
 TAGS
 
 MAP
 
     more sources !
+
+    http://www.habitatparticipatif.net/cartographie-de-lhabitat-participatif/
 
     http://www.rdevolution.org/-Liens-
 
@@ -300,6 +305,8 @@ MAP
     http://sharewiki.org/en/Lieu_de_vie_ouvert
 
     voir aussi liste de http://ddchampo.forumactif.org/t389-lieux-acteurs-ecolo-citoyens
+
+    - rotate map upside-down ! (only possible with mapbox-gl ?)
 
     - correct links without http ?
 
@@ -381,7 +388,7 @@ DIVERS
 
 ================ DONE / CHANGELOG
 
-TAGS reduced
+TAGS reduced !!
 
     place > map
 

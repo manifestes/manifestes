@@ -1481,9 +1481,6 @@ div.highlight {
 .header .menu .tagsmenu.filtering .clear {
   display: inline-block !important;
 }
-.header .menu .tagsmenu.active:hover .tagshat {
-  border-bottom: none !important;
-}
 .header .menu .tagsmenu.active:hover .tagspanel {
   bottom: -450px;
 }
