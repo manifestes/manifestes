@@ -1,2 +1,4 @@
 User-agent: *
 Disallow: /src/
+Disallow: /data/
+Disallow: /archived/

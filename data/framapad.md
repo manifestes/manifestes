@@ -282,123 +282,8 @@ LIENS et RESSOURCES
 
 RÉSEAU HYPHE (add/recrawl)
 
-    http://www.mdb94.phpnet.org
-
-    http://www.viabrachy.com/
-
-    http://colibris.ning.com/
-
-    http://www.confluences.net/
-
-    https://laconquetedupainmontreuil.wordpress.com/
-
-    http://www.laconquetedupain.fr/
-
-    http://www.laparisienneliberee.com
-
-    http://agirpourlapaix.be
-
-    https://lesechosduvent.wordpress.com/
-
-    https://democratech.co
-
-    http://www.rassemblementcitoyenidf.fr/
-
-    http://www.cl-aligre.org
-
-    http://climatejusticeaction.net/
-
-    http://coalitionclimat21.org
-
-    http://la-trouvaille.org/
-
-    http://www.lecontrepied.org
-
-    http://permamap.homentic.fr
-
-    http://www.arche-nonviolence.eu/
-
-    http://la-verite-clandestine.org/
-
-    https://www.facebook.com/laveriteclandestine
-
-    http://www.biotonome.fr/
-
-    http://www.demain-en-mains.info/
-
-    http://congresdufutur.fr/
-
-    http://c-f-t.net
-
-    https://enfance-buissonniere.poivron.org
-
-    http://www.lesmaitresignorants.org/
-
-    https://integrarevolucio.net/fr/
-
-    https://rainbowfamilyfrance.wordpress.com/
-
-    http://reseau-andes.viabloga.com/
-
-    http://lacaravanedesespaceslibres.blogspot.fr/
-
-    http://www.decroissance.org/
-
-    http://devenez-vous-meme-clown.zici.fr
-
-    http://www.negawatt.org
-
-    https://ouiaumariagepourtous.wordpress.com/
-
-    http://www.incredible-edible.info/
-
-    http://lesincroyablescomestibles.fr/
-
-    http://gaadjou.joueb.com/
-
-    http://desargence.org/
-
-    http://maisonecologie.lyon.free.fr/
-
-    http://gen.ecovillage.org/
-
-    http://www.reseau-relier.org/
-
-    http://ecolieuxdefrance.free.fr/
-
-    http://decinestaresistance.weebly.com/
-
-    http://www.transitionfrance.fr/
-
-    http://interstice.over-blog.org/
-
-    http://w2eu.info
-
-    LEVEL 2 !!
-
-    http://leramassis.free.fr/
-
-    http://lasocietesolidaireetdurable.com
-
-    remove
-
-    --- http://www.leprogres.fr/
-
-    merge
-
-    --- conquetedupain
-
-    --- verite clandestine
-
-    --- colibris
 
 TAGS
-
-    place>map
-
-    time>agenda
-
-    zad
 
 MAP
 
@@ -471,6 +356,7 @@ ACCROCHES graphiques et divers noms en intro
     MORE: sobriété heureuse, simplicité volontaire, désargence, chômeur.e.s, colibris, créatifs culturels, pirates, objecteur.euse.s de croissance, empêcheur.euse.s de tourner en rond, AMAPs, alternatif.ive.s, convivialistes, grévistes, écoféministes, 15M, alternatiba, activistes, utopistes concrets, maquisard.e.s, hackers, rassemblements citoyen, universités, fablabs, résitances, grands-parents, désobéissants, transition citoyenne, tiers-lieux, p2p, bénéloves, communs, consom'acteurs, SEL, anarchistes, alliances citoyennes, révolutionnaires, occupy, amis de la terre, 99%, vélistance, indignés, bolo'bolo, éco-villages, institut momentum, bricoleur.se.s, farceurs, clowns, résiliés, squatteur.se.s, décroissants conviviaux, évidences écolos, e-constituante, anarnautes, libertaires, anticapitalistes, anonymous, coopératistes, antifascistes, rebooters, démocratie ouverte, écosociétalistes, écologie, alternatives, non-violence
 
 DIVERS
+- splash warning sur carte avec rappel respect des lieux appeller, etc... cf citoyenstransition
 - no result message @page-bottom if no search/tags results
 - clear tags when click on hidden section
 - icons within menu tags TOO
@@ -487,12 +373,67 @@ DIVERS
 - search input autocomplete with tags (on name+description) > will select the tag(s)
 - simple form (to framacalc ?) to add a section / a link
 - sort sections by lastmodifdate / alphabétique
-- info popup/context on links graph(s)
+- info tooltip with url ! on links graph(s)
 - bigger sections & menu/buttons/tags on tablet
-- js lazy loading images
 - nb de resultats de recherche ds le menu pour chaque TEXTE / LIENS / CARTE
+- js lazy loading images
+- idea: sort / separate links by date
 
 ================ DONE / CHANGELOG
+
+TAGS reduced
+
+    place > map
+
+    time > agenda
+
+    learn,teach => education
+
+    alienation => emancipation
+
+    dream => love
+
+    money, basicincome => economy
+
+    design => creation
+
+    guilty => companies
+
+    atom => energy
+
+    solidarity => subsist
+
+    local => TRASH
+
+    news => media
+
+    debate => words
+
+    inegality => subsist
+
+    greenwash, boycott => companies
+
+    tech > science
+
+    diy => object
+
+    recup => object
+
+    plurality => creation
+
+    commons => politics
+
+    violence => zad
+
+    pub => alienation
+
+    fun => love
+
+    constat => TRASH
+
+    slow => meet
+
+    control => alienation
 
 - interactive map !
 
