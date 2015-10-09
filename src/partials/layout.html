@@ -3,18 +3,24 @@
   ng-class="{hidden:!state.intro}">
   <div class="splash">
     <div
-      ng-repeat="i in meta.intro.images"
+      class="mouseoverlay"
+      ng-click="swiping ? ( swiping = false ) : slideSplashImage(true,true);"
+      ng-swipe-left="slideSplashImage(true); swiping=true;"
+      ng-swipe-right="slideSplashImage(false); swiping=true;">
+    </div>
+    <i class="arrow right fa fa-caret-right" ng-click="slideSplashImage(true,true)"></i>
+    <i class="arrow left fa fa-caret-left" ng-click="slideSplashImage(false,true)"></i>
+
+    <div
+      ng-repeat="i in state.introimages"
       class="image"
       back-img="{{settings.datapath}}splash/{{i.filename}}"
       ng-style="{'background-color': i.color}"
       ng-class="{
-        active: state.introimage % meta.intro.images.length == $index,
-        left: state.introimage % meta.intro.images.length < $index,
-        right: state.introimage % meta.intro.images.length > $index,
-      }"
-      ng-click="swiping ? ( swiping = false ) : slideSplashImage(true,true);"
-      ng-swipe-left="slideSplashImage(true); swiping=true;"
-      ng-swipe-right="slideSplashImage(false); swiping=true;">
+        active: $index==1,
+        left: $index==0,
+        right: $index==2
+      }">
     </div>
   </div>
 

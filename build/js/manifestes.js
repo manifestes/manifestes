@@ -3193,7 +3193,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'09 October 2015 - 11:57'})
+.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'09 October 2015 - 1:23'})
 
 ;
 ;
@@ -3287,6 +3287,11 @@ angular.module('manifest.controllers', ['underscore','config'])
         $scope.state.introimage +=1;
       else
         $scope.state.introimage -=1;
+      var ims = $scope.meta.intro.images;
+      $scope.state.introimages = [];
+      $scope.state.introimages[0] = ims[($scope.state.introimage+999*ims.length+1)%ims.length];
+      $scope.state.introimages[1] = ims[($scope.state.introimage+999*ims.length)%ims.length];
+      $scope.state.introimages[2] = ims[($scope.state.introimage+999*ims.length-1)%ims.length];
     };
 
     var scrollToup = function() {
@@ -3677,6 +3682,10 @@ angular.module('manifest.controllers', ['underscore','config'])
                 filename: v + ".svg"
               };
             });
+            $scope.state.introimages = [];
+            $scope.state.introimages.push($scope.meta.intro.images[1]);
+            $scope.state.introimages.push($scope.meta.intro.images[0]);
+            $scope.state.introimages.push($scope.meta.intro.images[$scope.meta.intro.images.length-1]);
 
             _.each(d.tags, function(v,k) {
               var part = v.split(' = ');
