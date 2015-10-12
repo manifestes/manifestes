@@ -286,11 +286,29 @@ RÉSEAU HYPHE (add/recrawl)
 
     http://www.happycow.net/
 
+    https://toxictourdetox93.wordpress.com
+
+    http://piratebox.c.la/
+
+    http://piratebox-lille.blogspot.fr/
+
+    http://www.bibliopedia.fr/index.php/Bibliobox
+
+    http://sourisverterennes.free.fr
+
+    https://coopaparis.wordpress.com/
+
+    http://www.lamaisondesbabayagas.fr
+
 TAGS
+
+    creation > formes
 
 MAP
 
     more sources !
+
+    http://umap.openstreetmap.fr/fr/map/carte-des-initiatives-val-d-yerres-senart-val-de-s_16225#12/48.7127/2.5269
 
     http://www.habitatparticipatif.net/cartographie-de-lhabitat-participatif/
 
@@ -362,33 +380,37 @@ ACCROCHES graphiques et divers noms en intro
 
     MORE: sobriété heureuse, simplicité volontaire, désargence, chômeur.e.s, colibris, créatifs culturels, pirates, objecteur.euse.s de croissance, empêcheur.euse.s de tourner en rond, AMAPs, alternatif.ive.s, convivialistes, grévistes, écoféministes, 15M, alternatiba, activistes, utopistes concrets, maquisard.e.s, hackers, rassemblements citoyen, universités, fablabs, résitances, grands-parents, désobéissants, transition citoyenne, tiers-lieux, p2p, bénéloves, communs, consom'acteurs, SEL, anarchistes, alliances citoyennes, révolutionnaires, occupy, amis de la terre, 99%, vélistance, indignés, bolo'bolo, éco-villages, institut momentum, bricoleur.se.s, farceurs, clowns, résiliés, squatteur.se.s, décroissants conviviaux, évidences écolos, e-constituante, anarnautes, libertaires, anticapitalistes, anonymous, coopératistes, antifascistes, rebooters, démocratie ouverte, écosociétalistes, écologie, alternatives, non-violence
 
-DIVERS
-- splash warning sur carte avec rappel respect des lieux appeller, etc... cf citoyenstransition
+URGENT !!!
+- MAP: show/hide layers based on source ! with legend for colors
+- loading spinner when switching/loading layout: sections/links/map (too long!)
+- search results: keep sections closed !
+- export graph.pdf to download/ print for links & map (format brochure ? ;)
+- simple form (to framacalc ?) to add a section / a link
+TODO !!
+- clear tags/search when clicked on hidden section ?
 - no result message @page-bottom if no search/tags results
-- clear tags when click on hidden section
+- grunt minimal js for mobile ! (no hint.css/no sigma, etc...)
 - icons within menu tags TOO
-- colors for links with important tags !
+- linksgraph zoom/center controls
 - history browser back button !
-- export graph.pdf to download/ print for links & map
-- better fonts ? cf http://usemodify.com/keywords/garalde-old-face/
+- search input autocomplete with tags (on name+description) > will select the tag(s) !
+- menu links to prose rather than github ? http://prose.io/#manifestes/manifestes/edit/gh-pages/data/links_fr.yml
+BONUS !
 - random order for links & for sections ??
 - heart/like symbol to count "best" sections or links (demosphere, mediaslibres, etc...) - use firebase ?
-- menu links to prose rather than github ? http://prose.io/#manifestes/manifestes/edit/gh-pages/data/links_fr.yml
-- default color linksgraph based on modularity + auto "tag/paint" known nodes (those cited manually)
-- linksgraph zoom/center controls
-- color neighbors on over graph tags
-- search input autocomplete with tags (on name+description) > will select the tag(s)
-- simple form (to framacalc ?) to add a section / a link
-- sort sections by lastmodifdate / alphabétique
+- better fonts ? cf http://usemodify.com/keywords/garalde-old-face/
 - info tooltip with url ! on links graph(s)
-- bigger sections & menu/buttons/tags on tablet
+- bigger sections & menu/buttons/tags on tablet ?
 - nb de resultats de recherche ds le menu pour chaque TEXTE / LIENS / CARTE
+- sort/separate links/sections by lastmodifdate/alphabétique
+- color neighbors on over graph tags
 - js lazy loading images
-- idea: sort / separate links by date
 
 ================ DONE / CHANGELOG
-
-TAGS reduced !!
+- disclaimer when opening each layout for the first time ! (bandeau de couleur): map: rappel respect des lieux appeller, etc...
+- linksgraph color based on modularity, many websites tagged
+- some tags are "important" and displayed in green
+- TAGS reduced !!
 
     place > map
 

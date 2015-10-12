@@ -51,6 +51,12 @@ angular.module('manifest.controllers', ['underscore','config'])
       lang: $routeParams.lang,
       layout: layout, // sections/links/map/print/etc...
 
+      disclaim: {
+        sections: true,
+        links: true,
+        map: true
+      },
+
       tagging: false, // if tags/filtering active or not
       tagsmode: 'grid', // tags display mode: graph OR grid
       tags: [], // list of current filtering tags
@@ -691,7 +697,8 @@ angular.module('manifest.controllers', ['underscore','config'])
         if($scope.settings.verbose)
           console.log("all markers added!");
 
-        L.control.layers(tileLayers).addTo(map);
+        var layerControl = L.control.layers(null, tileLayers, {position: 'topleft'});
+        layerControl.addTo(map);
         
         //console.log("overlays !!",layers);
 

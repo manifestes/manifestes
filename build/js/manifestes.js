@@ -3193,7 +3193,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'09 October 2015 - 1:23'})
+.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'12 October 2015 - 11:43'})
 
 ;
 ;
@@ -3250,6 +3250,12 @@ angular.module('manifest.controllers', ['underscore','config'])
       commenting_slug: null, // current disqus id
       lang: $routeParams.lang,
       layout: layout, // sections/links/map/print/etc...
+
+      disclaim: {
+        sections: true,
+        links: true,
+        map: true
+      },
 
       tagging: false, // if tags/filtering active or not
       tagsmode: 'grid', // tags display mode: graph OR grid
@@ -3891,7 +3897,8 @@ angular.module('manifest.controllers', ['underscore','config'])
         if($scope.settings.verbose)
           console.log("all markers added!");
 
-        L.control.layers(tileLayers).addTo(map);
+        var layerControl = L.control.layers(null, tileLayers, {position: 'topleft'});
+        layerControl.addTo(map);
         
         //console.log("overlays !!",layers);
 

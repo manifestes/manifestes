@@ -50,6 +50,13 @@ intro:
         - masse-critique_333
         - manifestation-quotidienne_662D91
     enter: "consulter & participer"
+disclaimer:
+    sections: >
+        Vous pouvez consulter les textes dans l'ordre que vous voulez. Pour les applications concrètes, consultez les ressources ou la carte
+    links: >
+        Pour filtrer les liens par thématiques, activez les tags grâce à l'icône en haut à gauche dans le menu
+    map: >
+        Les couleurs des points correspondent aux différentes sources (caravane des alternatives, hétérotopies...). N'oubliez pas qu'ils ne sont pas tous des lieux de passage: observez donc le plus grand respect si vous souhaitez les visiter: renseignez-vous et prévenez avant de débarquer !
 menu:
     backtip: retourner à l'intro
     tagsdefault: toutes

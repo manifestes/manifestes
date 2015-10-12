@@ -202,6 +202,19 @@
 
   <div class="wrapper layout-{{state.layout}}">
 
+    <!-- message displayed the first time you arrived on a layout -->
+    <div
+      ng-if="state.layout!='sectionsprint'"
+      class="disclopener"
+      ng-class="{active: !state.disclaim[state.layout]}"
+      ng-click="state.disclaim[state.layout] = true;">
+      <i class="fa fa-question-circle"></i>
+    </div>
+    <div class="disclaimer" ng-class="{active: state.disclaim[state.layout]}">
+      <span ng-bind-html="md2Html(meta.disclaimer[state.layout])"></span>
+      <i class="fa fa-times" ng-click="state.disclaim[state.layout] = false;"></i>
+    </div>
+
     <div class="page" ng-include="layoutTemplate();"></div>
 
     <div class="footer">
