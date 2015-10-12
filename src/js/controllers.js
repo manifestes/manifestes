@@ -52,9 +52,9 @@ angular.module('manifest.controllers', ['underscore','config'])
       layout: layout, // sections/links/map/print/etc...
 
       disclaim: {
-        sections: true,
-        links: true,
-        map: true
+        sections: !$scope.settings.dev,
+        links: !$scope.settings.dev,
+        map: !$scope.settings.dev
       },
 
       tagging: false, // if tags/filtering active or not

@@ -3193,7 +3193,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'12 October 2015 - 2:36'})
+.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'12 October 2015 - 5:08'})
 
 ;
 ;
@@ -3252,9 +3252,9 @@ angular.module('manifest.controllers', ['underscore','config'])
       layout: layout, // sections/links/map/print/etc...
 
       disclaim: {
-        sections: true,
-        links: true,
-        map: true
+        sections: !$scope.settings.dev,
+        links: !$scope.settings.dev,
+        map: !$scope.settings.dev
       },
 
       tagging: false, // if tags/filtering active or not

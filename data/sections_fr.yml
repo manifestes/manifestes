@@ -89,36 +89,36 @@ tags:
     audio: sons|volume-up = radios, musiques, sons
     video: "films|film = videos, films, documentaires,\nTV, images mouvantes"
     calendar: "agenda|calendar-check-o = calendriers, rendez-vous,\nfestivals, événements"
-    eat: _manger = alimentation, cuisine, nourriture
-    health: _santé = santé, remèdes, corps, sport
-    home: _habiter = logement, habitat, hébergement, terrain
-    move: _se déplacer = transports, véhicules
+    eat: _se nourrir = alimentation, recettes, cuisine, nourriture
+    health: _santé = santé, remèdes, plantes, corps, sport
+    home: "_habiter = logement, habitat, hébergement,\néco-lieux, auto-construction, terrain"
+    move: _se déplacer = transports, véhicules, co-voiturage
     subsist: "_solidarité = migrants, sans-papiers, sdf,\nsouffrances, survie,\ninégalités d'accès, des chances"
-    object: "_objets = récup', recyclage, réutilisation,\nfaire, construire soi-même, réappropriation,\néquipement, matériel, mobilier, machines"
+    object: "_objets = récupération, recyclage, réutilisation,\nressourceries, artisanats, réappropriation,\nsavoirs-faire, construire soi-même, diy,\néquipement, matériel, mobilier, machines"
     energy: "_énergie = nucléaire, électrique,\néolien, solaire"
     slow: "_ralentir = rencontrer, découvrir, partager,\ndécroissance"
     media: "_médias = information, presse,\njournalisme, actualité"
-    act: _action = actions pratiques quotidiennes
+    act: "_action = actions pratiques quotidiennes,\ndésobéissance civile"
     genre: "genres = patriarcat, féminisme,\ngenres, LGBT, famille"
     education: "éducation = école, université, recherche,\napprendre, se former,\nenseigner, partages de savoir"
     work: travail = emploi, chômage, activité remunérée
     alienation: "aliénation = publicité, propagande, aliénation,\nconditionnements, contrôle,\nfichage, cloud, surveillance"
     emancipation: "émancipation = réappropriation, émancipation,\nautonomie, autogestion, horizontalité"
-    zad: "zad = grands projets inutiles, lois absurdes,\nzones à défendre, radicalités, avant gardes"
+    zad: "luttes = grands projets inutiles, lois absurdes,\nsquats, occupations, zad, radicalités, avant-gardes"
     love: "amour = rêves, utopies, promesses, idéaux,\nhumour et amour toujours !"
     space: espace public = espaces partagés, communs, ville
     words: "langage = récits, mots, interprétations, controverses,\ns'accorder, s'engueuler, débattre"
-    creation: "création = art, culture, création, écriture,\ndesign, processus, formes"
+    creation: "formes = création, art, culture, écriture,\ndesign, processus, formes"
     science: "science = sciences, techniques,\nnanotechnologies, manipulation du vivant"
     web: internet = web, numérique
     companies: "ennemis = néocapitalisme, récupérations, greenwashing,\nmultinationales, puissances d'argent... boycott!"
     history: "histoire = (néo)colonialismes, impérialisme,\npassifs historique"
-    law: "juridique = lois, aspects juridiques,\ndémarches administratives"
-    economy: "économie = commerce, échanges, monnaie, finance, dette,\nrevenu de base inconditionnel"
-    politics: "politique = politique et représentation,\ncommuns, open (res)sources"
+    law: "juridique = lois, aspects juridiques,\ndémarches administratives,\nlégislations"
+    economy: "économie = commerce, troc, don, échanges,\nargent, monnaie, finance, dette,\nrevenu de base inconditionnel"
+    politics: "politique = politique et représentation,\nconcertation, décider ensemble,\ncommuns, open (res)sources, démocratie"
     philo: philosophie = réflexion, théorie, principes
     earth: "planète = environnement, climat, pollution,\nanimaux, végétaux"
-    agriculture: agriculture = (perma)cultures, semences, jardinage, élevage
+    agriculture: agriculture = (perma)cultures, graines, semences, jardinage, élevage
 footer:
     lastupdatetext: dernière modification
     content: >
@@ -160,11 +160,11 @@ tags: group, about
 content: >
     ###*objectifs*
 
-    - **écrire collectivement** un/des manifeste(s) de notre territoire commun: *philosophique, politique, poétique, pratique* **> textes**
+    - écrire collectivement un/des manifeste(s) de notre territoire commun: *philosophique, politique, poétique, pratique* **> textes**
 
-    - **partager** nos *inspirations, références, initiatives* **> ressources**
+    - partager nos *inspirations, références, initiatives* **> ressources**
 
-    - faciliter l'accès aux **solutions concrètes existantes** **> carte et agenda**
+    - faciliter l'accès aux solutions concrètes existantes **> carte** et **agenda**
 
 
 
@@ -225,7 +225,7 @@ content: >
 
 
 ---
-date: 2015-06-16
+date: 2015-10-12
 role: info
 title: Sections de textes synthétiques
 subtitle: Les sections permettent de rendre le texte plus lisible et facilitent les discussions sur les thèmes abordés.
@@ -250,9 +250,12 @@ content: >
     - une liste de **thématiques** (tags) associées
 
 
+    Ces contraintes permettent l'accumulation des points de vue, sans avoir à les hiérarchiser. Nous ne cherchons pas à arrêter une vision unique mais bien à composer, dessiner la mosaique des mouvements de pensée existants.
+
+
 
 ---
-date: 2015-09-20
+date: 2015-10-12
 role: info
 title: Catégories thématiques
 subtitle: "La grille de tags permet d'organiser tous les contenus du site: pour l'activer, cliquez sur l'icône en haut à gauche dans le menu"
@@ -271,7 +274,7 @@ content: >
     Les thématiques permettent de faciliter la navigation dans le site:
 
 
-    - **en vert** - les besoins primaires quotidiens: *manger, dormir, se soigner, rencontrer...*
+    - **en vert** - les besoins essentiels: *manger, dormir, se soigner, se vêtir, rencontrer...*
 
     - **en gris** - sujets divers: *nucléaire, pouvoir, autonomie...*
 
