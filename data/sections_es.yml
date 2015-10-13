@@ -21,7 +21,12 @@ intro:
     MAJdescription: >
         colectivo(s) de los territorios comunes autogestionados y alternativas convivialistas DIY voluntarios revolucionarios de la transición social y ecológica en los terceros lugares creativos de los clowns del bricolaje piratas de las utopías libertarias ecofeministas p2p y cooperativistas indignadas activistas de la resiliencia decreciente concreta y desobediente de las convergencias de las luchas
     keywords: "# filosofía # política # práctica # convergencias #"
-    enter: ">> consultar + participar <<"
+    enter: "consultar & participar"
+disclaimer:
+    sections: >
+        Vous pouvez consulter les textes dans l'ordre que vous voulez. Pour les applications concrètes, consultez les ressources ou la carte
+    links: >
+        Pour filtrer les liens par thématiques, activez les tags grâce à l'icône en haut à gauche dans le menu
 menu:
     backtip: retourner à l'intro
     tagsdefault: toutes
