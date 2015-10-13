@@ -31,7 +31,7 @@ angular.module('manifest.controllers', ['underscore','config'])
     $scope.settings = settings;
     if($routeParams.forcedev) $scope.settings.dev = true;
     var layout = $routeParams.layout ?
-      (["sections","sectionsprint","links","map"].indexOf($routeParams.layout)==-1 ? "sections" : $routeParams.layout) :
+      (["sections","sectionsprint","links","map","mapprint"].indexOf($routeParams.layout)==-1 ? "sections" : $routeParams.layout) :
       "sections";
 
     $scope.meta = {}; // mainly the meta info at start of section.yml
@@ -637,6 +637,8 @@ angular.module('manifest.controllers', ['underscore','config'])
         //$scope.data = data;
         var ms = new CSV(data, {header:true, cast:false}).parse();
         
+        $scope.points = ms;
+        
         _.each(ms, function(m,k) {
 
           // if(!layers[m.source]) {
@@ -656,8 +658,12 @@ angular.module('manifest.controllers', ['underscore','config'])
             size = "l";
             icon = "star";
           }
-          if(/ville/.test(m.scale)) {
+          if(/city/.test(m.scale)) {
             size = "m";
+            icon = "star";
+          }
+          if(/zone/.test(m.scale)) {
+            size = "s";
             icon = "star";
           }
 

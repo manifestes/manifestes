@@ -38,7 +38,8 @@
 
     <div class="menu">
       
-      <!-- RIGHT MENU BUTTONS -->
+      <!-- RIGHT MENU BUTTONS, REVERSE ORDER-->
+      
       <div class="buttons">
         <div class="button" id="lang">
           <i class="fa fa-globe"></i>
@@ -57,9 +58,8 @@
           <span>{{meta.menu.calendar}} <i class="fa fa-external-link-square"></i></span>
         </a>
         <div
-          class="button hover hint--bottom"
+          class="button hover"
           ng-if="state.lang=='fr'"
-          data-hint="{{meta.menu.maptip}}"
           ng-click="changeLayout('map');"
           ng-class="{active:state.layout=='map'}">
           <i class="fa fa-map-o"></i>
@@ -69,8 +69,7 @@
           <span>{{meta.menu.map}}</span>
         </div>
         <div
-          class="button hover hint--bottom"
-          data-hint="{{meta.menu.linkstip}}"
+          class="button hover"
           ng-click="changeLayout('links');"
           ng-class="{active:state.layout=='links'}">
           <i class="fa fa-sitemap"></i>
@@ -81,8 +80,7 @@
         </div>
         <div class="buttoncontainer">
           <div
-            class="inner button hover hint--left"
-            data-hint="{{meta.menu.sectionstip}}"
+            class="inner button hover"
             ng-click="changeLayout('sections');"
             ng-class="{active:state.layout=='sections'}">
             <i class="fa fa-bullhorn"></i>
@@ -92,7 +90,7 @@
             <span>{{meta.menu.sections}}</span>
           </div>
           <a 
-            class="printer hint--left"
+            class="printer hint--bottom"
             data-hint="{{meta.menu.printtip}}"
             href="./#/{{state.lang}}/sectionsprint"
             target="_blank"><i class="fa fa-print"></i> {{meta.menu.print}}

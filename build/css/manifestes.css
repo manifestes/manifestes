@@ -1534,8 +1534,9 @@ div.highlight {
 .header .menu .buttons .buttoncontainer .printer {
   z-index: 7;
   box-sizing: border-box;
+  display: none;
   position: absolute;
-  top: 0;
+  top: 100%;
   height: 23px;
   width: 100%;
   padding: 5px;
@@ -1543,11 +1544,6 @@ div.highlight {
   color: #ababab;
   font-size: 0.7em;
   background: white;
-  -webkit-transition: top 0.2s;
-  -moz-transition: top 0.2s;
-  -o-transition: top 0.2s;
-  -ms-transition: top 0.2s;
-  transition: top 0.2s;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
   /* Hack to hide hint tooltip when link clicked */
@@ -1575,10 +1571,9 @@ div.highlight {
   display: none;
 }
 .header .menu .buttons .buttoncontainer:hover .printer {
-  top: 100%;
+  display: block;
 }
 .header .menu .buttons .button {
-  z-index: 10;
   box-sizing: border-box;
   position: relative;
   float: right;
@@ -1830,6 +1825,29 @@ div.highlight {
 }
 .footer .content li {
   margin-bottom: 2px;
+}
+/* PRINT MODES: HIDE MENU/FOOTER */
+body.layout-sectionsprint,
+body.layout-mapprint {
+  position: relative;
+  height: auto;
+  overflow: auto;
+}
+body.layout-sectionsprint .intro,
+body.layout-mapprint .intro,
+body.layout-sectionsprint .disclopener,
+body.layout-mapprint .disclopener,
+body.layout-sectionsprint .footer,
+body.layout-mapprint .footer,
+body.layout-sectionsprint .header,
+body.layout-mapprint .header {
+  display: none;
+}
+body.layout-sectionsprint .container,
+body.layout-mapprint .container {
+  height: auto;
+  position: relative;
+  overflow: hidden;
 }
 .wrapper.layout-sections {
   box-sizing: border-box;
@@ -2609,24 +2627,31 @@ div.highlight {
   font-size: 9px;
   margin-top: 8px;
 }*/
-body.layout-sectionsprint {
-  position: relative;
-  height: auto;
-  overflow: auto;
+.wrapper.layout-mapprint {
+  box-sizing: border-box;
+  font-size: 0.8em;
+  margin-top: 0px;
 }
-body.layout-sectionsprint .intro {
-  display: none;
+.wrapper.layout-mapprint .map {
+  position: inherit;
 }
-body.layout-sectionsprint .container {
-  height: auto;
-  position: relative;
-  overflow: hidden;
+.wrapper.layout-mapprint #leaflet {
+  height: 300px;
 }
-body.layout-sectionsprint .container .header {
-  display: none;
+.wrapper.layout-mapprint .index {
+  text-align: left;
 }
-body.layout-sectionsprint .footer {
-  display: none;
+.wrapper.layout-mapprint .index .point {
+  margin: 5px;
+  display: inline-block;
+  width: 32%;
+}
+.wrapper.layout-mapprint .index .point .contact {
+  color: #ababab;
+}
+.wrapper.layout-mapprint .index .point .source {
+  color: #ababab;
+  font-style: italic;
 }
 .wrapper.layout-sectionsprint {
   box-sizing: border-box;

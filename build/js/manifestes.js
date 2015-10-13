@@ -3193,7 +3193,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'12 October 2015 - 5:08'})
+.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'13 October 2015 - 1:28'})
 
 ;
 ;
@@ -3231,7 +3231,7 @@ angular.module('manifest.controllers', ['underscore','config'])
     $scope.settings = settings;
     if($routeParams.forcedev) $scope.settings.dev = true;
     var layout = $routeParams.layout ?
-      (["sections","sectionsprint","links","map"].indexOf($routeParams.layout)==-1 ? "sections" : $routeParams.layout) :
+      (["sections","sectionsprint","links","map","mapprint"].indexOf($routeParams.layout)==-1 ? "sections" : $routeParams.layout) :
       "sections";
 
     $scope.meta = {}; // mainly the meta info at start of section.yml
@@ -3837,6 +3837,8 @@ angular.module('manifest.controllers', ['underscore','config'])
         //$scope.data = data;
         var ms = new CSV(data, {header:true, cast:false}).parse();
         
+        $scope.points = ms;
+        
         _.each(ms, function(m,k) {
 
           // if(!layers[m.source]) {
@@ -3856,8 +3858,12 @@ angular.module('manifest.controllers', ['underscore','config'])
             size = "l";
             icon = "star";
           }
-          if(/ville/.test(m.scale)) {
+          if(/city/.test(m.scale)) {
             size = "m";
+            icon = "star";
+          }
+          if(/zone/.test(m.scale)) {
+            size = "s";
             icon = "star";
           }
 

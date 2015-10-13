@@ -1,0 +1,16 @@
+
+<div ng-init="initMap();" class="map full" ng-controller="MapController">
+
+  <div id="leaflet" height="100%" width="100%"></div>
+
+
+  <!-- index -->
+  <div class="index">
+    <div class="point" ng-repeat="p in points">
+      <div class="name">{{$index}}. {{p.name}} <span class="source">— {{p.source}}</span></div>
+      <div class="contact">{{p.address}} - {{p.contact}}</div>
+      <div class="description">{{p.description}}</div>
+    </div>
+  </div>
+
+</div>

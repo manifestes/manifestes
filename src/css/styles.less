@@ -544,9 +544,9 @@ span.highlight, div.highlight { /* searched words */
         .printer {
           z-index: 7;
           box-sizing: border-box;
-          //display: none;
+          display: none;
           position: absolute;
-          top: 0;
+          top: 100%;
           height: 23px;
           width: 100%;
           padding: 5px;
@@ -556,7 +556,7 @@ span.highlight, div.highlight { /* searched words */
           font-size: 0.7em;
           background: white;
           
-          .transition(top 0.2s);
+          //.transition(top 0.2s);
           border-bottom-left-radius: 6px;
           border-bottom-right-radius: 6px;
 
@@ -579,13 +579,14 @@ span.highlight, div.highlight { /* searched words */
         }
         &:hover .printer {
           //.box-shadow(0px 0px 4px 0px #525252);
-          top: 100%;
+          display: block;
+          //top: 100%;
         }
       }
 
       /* NORMAL BUTTON LOOK */
       .button {
-        z-index: 10;
+        //z-index: 10;
         box-sizing: border-box;
         position: relative;
         float: right;
@@ -851,6 +852,22 @@ span.highlight, div.highlight { /* searched words */
       margin-bottom: 2px;
     }
   } 
+}
+
+/* PRINT MODES: HIDE MENU/FOOTER */
+
+body.layout-sectionsprint, body.layout-mapprint {
+  position: relative;
+  height: auto;
+  overflow: auto;
+  .intro, .disclopener, .footer, .header {
+    display: none;
+  }
+  .container {
+    height: auto;
+    position: relative;
+    overflow: hidden;
+  }
 }
 
 @import "layout_sections";
