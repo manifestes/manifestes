@@ -12,7 +12,7 @@ source:
 mapcredits:
     caravane:
         name: Caravane des alternatives
-        description: —
+        description: "Lieux et initiatives alternatives,\nécolieux, collectifs"
         url: http://caravanedesalternatives.weebly.com
         color: 477D50
     resistance:
@@ -22,7 +22,7 @@ mapcredits:
         color: 8F5D83
     hetero:
         name: Hétérotopies
-        description: —
+        description: "L’Hétérotopie, c’est un lieu qui héberge l’imaginaire,\nune utopie réalisée que l’on peut visiter,\ntoucher, critiquer, ici et maintenant.\nvoir http://heterotopies.overblog.com/heterotopies-appel-a-contribution"
         url: http://heterotopies.overblog.com/cartographie
         color: C06538
     lieux:
@@ -112,13 +112,13 @@ tags:
     energy: "_énergie = nucléaire, électrique,\néolien, solaire"
     slow: "_ralentir = rencontrer, découvrir, partager,\ndécroissance"
     media: "_médias = information, presse,\njournalisme, actualité"
-    act: "_action = actions pratiques quotidiennes,\ndésobéissance civile"
+    act: "_action = actions pratiques quotidiennes,\ndésobéissance civile, militantisme"
     genre: "genres = patriarcat, féminisme,\ngenres, LGBT, famille,\nracisme, sexisme"
     education: "éducation = école, université, recherche,\napprendre, se former,\nenseigner, partages de savoir"
     work: travail = emploi, chômage, activité remunérée
     alienation: "aliénation = publicité, propagande, aliénation,\nconditionnements, contrôle,\nfichage, cloud, surveillance"
     emancipation: "émancipation = réappropriation, émancipation,\nautonomie, autogestion, horizontalité"
-    zad: "luttes = grands projets inutiles, lois absurdes,\nsquats, occupations, zad, radicalités, avant-gardes"
+    zad: "luttes = grands projets inutiles, lois absurdes,\nsquats, occupations, zad,\nradicalités, avant-gardes"
     love: "amour = rêves, utopies, promesses, idéaux,\nhumour et amour toujours !"
     space: espace public = espaces partagés, communs, ville
     words: "langage = récits, mots, interprétations, controverses,\ns'accorder, s'engueuler, débattre"
@@ -132,7 +132,7 @@ tags:
     politics: "politique = politique et représentation,\nconcertation, décider ensemble,\ncommuns, open (res)sources, démocratie"
     philo: philosophie = réflexion, théorie, principes
     earth: "planète = environnement, climat, déchets, pollution,\neau, animaux, végétaux"
-    agriculture: agriculture = (perma)cultures, graines, semences, jardinage, élevage
+    agriculture: "agriculture = (perma)cultures, graines, semences,\njardinage, élevage"
 footer:
     lastupdatetext: dernière modification
     content: >
