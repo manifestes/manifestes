@@ -5,7 +5,7 @@
   <div class="quote-container">
     <div class="quote" compile-html="e.quote.content"></div>
     <div class="author" compile-html="e.quote.author"></div>
-    <div class="imagecredit">image: {{e.image.credit}}</div>
+    <div class="imagecredit" compile-html="md2Html('image: '+e.image.credit)"></div>
   </div>
 </div>
 
@@ -28,7 +28,6 @@
       <div class="triangle"></div>
     </div>
     <div class="h1">
-      <!--<i ng-if="e.role=='meta'" class="fa fa-question-circle fa-lg"></i>-->
       <span compile-html="e.title"></span>
     </div>
   </div>
@@ -38,26 +37,7 @@
   <div class="h2" compile-html="e.subtitle"></div>
   <div class="content" compile-html="e.content"></div>
 
-<!--   <div ng-if="e.links.length > 0" class="links" ng-click="e.currentlink = (e.currentlink+1) % e.links.length;">
-    <div class="label">
-      <span class="fright">{{e.links.length}}&nbsp;&nbsp;&nbsp;&nbsp;• •</span>
-      <img class="refresh fright" src="{{settings.assets}}/images/refresh.svg"/>
-      <span class="fright">{{e.currentlink+1}}</span>
-      <span>• •&nbsp;&nbsp;&nbsp;&nbsp;{{meta.menu.examples}}</span>
-    </div>
-
-    <div class="linkslides">
-      <div
-        class="linkslide"
-        ng-repeat="l in e.links"
-        ng-class="{
-          active: e.currentlink==$index,
-          before: e.currentlink>$index,
-          after: e.currentlink<$index}"
-        compile-html="l">
-      </div>
-    </div>
-  </div> -->
+  <div ng-if="e.source" class="source" compile-html="md2Html('source: '+e.source)"></div>
 
   <div
     ng-if="e.opened || (state.term && atLeastContains(e))"

@@ -645,29 +645,37 @@ angular.module('manifest.controllers', ['underscore','config'])
           //   layers[m.source] = new L.LayerGroup().addTo(overlays);
           // }
 
+          // I want hue !
+          // #477D50
+          // #CC5B79
+          // #6779AB
+          // #C06538
+          // #766859
+          // #856D2D
+          // #8F5D83
+          // #4A787E
+          // #63862A
+          // #985249
+
+          var credit = $scope.meta.mapcredits[m.source.split('_')[0]];
+          console.log(credit);
+
           var icon = 'circle';
-          var color = "#000";
+          var color = "#"+credit.color || "#000";
           var size = "s";
-          if(/^citoy_/.test(m.source)) { color = "#335664"; }
-          if(/^caravane/.test(m.source)) { color = "#007029"; }
-          if(/^lieux/.test(m.source)) { color = "#742B6A"; }
-          if(/^hetero/.test(m.source)) { color = "#890E6F"; }
-          if(/^resist/.test(m.source)) { color = "#C5856E"; }
 
           if(/region/.test(m.scale)) {
-            size = "l";
-            icon = "star";
+            size = "m";
+            icon = "land-use";
           }
           if(/city/.test(m.scale)) {
             size = "m";
-            icon = "star";
+            icon = "land-use";
           }
           if(/zone/.test(m.scale)) {
-            size = "s";
-            icon = "star";
+            size = "m";
+            icon = "land-use";
           }
-
-          var credit = $scope.meta.mapcredits[m.source.split('_')[0]];
 
           //var customPopup = "<div ng-include ng-init=\"data=leafmarkers['"+m.source+"']['mark_"+k+"'];\" src=\"'partials/marker.html'\"></div>";
           var customPopup = "<div class='details'>"+
@@ -675,7 +683,7 @@ angular.module('manifest.controllers', ['underscore','config'])
             "<div class='address'>"+m.address+"</div>"+
             "<div>"+m.description+"</div>"+
             //"<div class='contact'>"+m.contact+"</div>"+
-            "<div class='source'>source: "+credit.name+" - "+credit.url+"</div>"+
+            //"<div class='source'>source: "+credit.name+" - "+credit.url+"</div>"+
           "</div>";
           var customOptions = {
             'maxWidth': '500',

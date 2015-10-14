@@ -12,25 +12,39 @@ source:
 mapcredits:
     caravane:
         name: Caravane des alternatives
+        description: —
         url: http://caravanedesalternatives.weebly.com
+        color: 477D50
     resistance:
-        name: Utopies concrètes et luttes écologiques et sociales, https://lesechosduvent.wordpress.com/
+        name: Utopies & luttes
+        description: "Utopies concrètes et\nluttes écologiques et sociales,\nhttps://lesechosduvent.wordpress.com/"
         url: https://www.google.com/maps/d/viewer?mid=zB1OZmeGJ7OA.kepycQ8XsohU
+        color: 8F5D83
     hetero:
         name: Hétérotopies
+        description: —
         url: http://heterotopies.overblog.com/cartographie
+        color: C06538
     lieux:
         name: Lieux de vie
+        description: —
         url: https://www.google.com/maps/d/viewer?mid=zCUrDZ_sv7Fw.k9HCrqv3hIVA
+        color: 856D2D
     citoy:
-        name: Citoyens en Transition — http://rlpxwwkyjefbku4s.onion
+        name: Citoyens en Transition
+        description: http://rlpxwwkyjefbku4s.onion
         url: https://www.google.com/maps/d/viewer?mid=zfOpOkMajqj0.k73wlMF5RszU
+        color: CC5B79
     fucrecup:
-        name: Festival des Utopies Concrètes - Récup'
+        name: FUCRécup'
+        description: Festival des Utopies Concrètes - Récup'
         url: http://festivaldesutopiesconcretes.org/festival-de-la-recup/festival-de-la-recup-2014/acteurs-de-la-recup-2014
+        color: 6779AB
     misc:
-        name: Utopies Concrètes, ajouts de lieux non encore référencés
+        name: Utopies Concrètes
+        description: ajouts de lieux non encore référencés
         url: http://utopies-concretes.org
+        color: 766859
 graph:
     loader: >
         Vous pouvez également explorer le réseau des sites internet et les liens qu'ils ont entre eux
@@ -446,6 +460,31 @@ content: >
     - Nous voulons contruire une **réflexion théorique collective** pour discuter du monde, composer les différentes perceptions, formuler un langage commun. Penser différement, c'est déjà commencer à construire quelque chose
 
     - Et, surtout, nous retrouver pour échanger des **pratiques dans nos vies quotidiennes**, hors écrans, rendre visible les réseaux alternatifs existants, faciliter des passages à l'acte collectifs
+
+
+
+
+---
+date: 2015-10-14
+title: Changeons le système, pas le climat !
+subtitle: Occupons-nous des causes, pas des conséquences
+slug: change_system
+image:
+    url: WesMagyar_manwithmask.jpg
+    credit: "[Wes Magyar](http://www.wesmagyar.com)"
+quote:
+    author: Buckminster Fuller
+    content: Tu ne changeras jamais les choses en combattant ce qui existe déjà. Pour changer les choses, construis un nouveau modèle qui rendra l'ancien obsolète
+tags: politics, earth
+source: "[Attac](https://france.attac.org/se-mobiliser/changeons-systeme-pas-climat/)"
+content: >
+    Depuis plusieurs décennies, le climat se modifie du fait de l’activité humaine. Les conférences de l’ONU se succèdent, mais les États ne réduisent pas significativement leurs émissions de gaz à effet de serre, pendant que les multinationales et la finance étendent leur emprise sur nos vies et la planète.
+
+
+    C’est le système global dans lequel nous vivons, notre modèle de développement, qui est insoutenable et qu’il faut transformer. Et les solutions existent !
+
+
+    Nous pouvons enclencher une véritable transition vers un système qui vise, non pas le maintien d’un modèle de croissance infinie, mais l’harmonie entre les humains et la nature et qui réponde aux besoins de la majorité.
 
 
 

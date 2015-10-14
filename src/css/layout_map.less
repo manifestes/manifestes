@@ -7,7 +7,28 @@
   right: 0;
   top: @menuH;
   bottom: 0;
+
+  .legend {
+    z-index: 99;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    
+    font-size: 0.8em;
+    background: white;
+
+    .credit {
+      display: inline-block;
+      margin: 17px 10px 25px 10px;
+    }
+
+    img.marker {
+      margin-bottom: -25px;
+    }
+  }
 }
+
+
 
 #leaflet {
   height: 100%;
