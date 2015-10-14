@@ -673,7 +673,7 @@ angular.module('manifest.controllers', ['underscore','config'])
             icon = "land-use";
           }
           if(/zone/.test(m.scale)) {
-            size = "m";
+            size = "s";
             icon = "land-use";
           }
 

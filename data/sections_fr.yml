@@ -32,8 +32,8 @@ mapcredits:
         color: 856D2D
     citoy:
         name: Citoyens en Transition
-        description: http://rlpxwwkyjefbku4s.onion
-        url: https://www.google.com/maps/d/viewer?mid=zfOpOkMajqj0.k73wlMF5RszU
+        description: Citoyens en Transition
+        url: http://citoyens.en-transition.fr/
         color: CC5B79
     fucrecup:
         name: FUCRécup'
