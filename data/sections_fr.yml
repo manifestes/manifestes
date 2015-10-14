@@ -70,7 +70,7 @@ disclaimer:
     links: >
         Pour filtrer les liens par thématiques, activez les tags grâce à l'icône en haut à gauche dans le menu
     map: >
-        Les couleurs des points correspondent aux différentes sources (caravane des alternatives, hétérotopies...). N'oubliez pas qu'ils ne sont pas tous des lieux de passage: observez donc le plus grand respect si vous souhaitez les visiter: renseignez-vous et prévenez avant de débarquer !
+        Les couleurs des points correspondent aux différentes sources (cf légende). N'oubliez pas qu'ils ne sont pas tous des lieux de passage: observez donc le plus grand respect si vous souhaitez les visiter: renseignez-vous et prévenez avant de débarquer !
 menu:
     backtip: retourner à l'intro
     tagsdefault: toutes
@@ -104,9 +104,9 @@ tags:
     video: "films|film = videos, films, documentaires,\nTV, images mouvantes"
     calendar: "agenda|calendar-check-o = calendriers, rendez-vous,\nfestivals, événements"
     eat: _se nourrir = alimentation, recettes, cuisine, nourriture
-    health: _santé = santé, remèdes, plantes, corps, sport
+    health: "_santé = santé, remèdes, plantes\nbien-être, corps, sport"
     home: "_habiter = logement, habitat, hébergement,\néco-lieux, auto-construction, terrain"
-    move: _se déplacer = transports, véhicules, co-voiturage
+    move: _se déplacer = transports, mobilité, véhicules, co-voiturage
     subsist: "_solidarité = migrants, sans-papiers, sdf,\nsouffrances, survie,\ninégalités d'accès, des chances"
     object: "_objets = récupération, recyclage, réutilisation,\nressourceries, artisanats, réappropriation,\nsavoirs-faire, construire soi-même, diy,\néquipement, matériel, mobilier, machines"
     energy: "_énergie = nucléaire, électrique,\néolien, solaire"
@@ -124,14 +124,14 @@ tags:
     words: "langage = récits, mots, interprétations, controverses,\ns'accorder, s'engueuler, débattre"
     creation: "formes = création, art, culture, écriture,\ndesign, processus, formes"
     science: "science = sciences, techniques,\nnanotechnologies, manipulation du vivant"
-    web: internet = web, numérique
+    web: internet = web, numérique, réseaux
     companies: "ennemis = néocapitalisme, récupérations, greenwashing,\nmultinationales, puissances d'argent... boycott!"
     history: "histoire = (néo)colonialismes, impérialisme,\npassifs historique"
     law: "juridique = lois, aspects juridiques,\ndémarches administratives,\nlégislations"
     economy: "économie = commerce, troc, don, échanges,\nargent, monnaie, finance, dette,\nrevenu de base inconditionnel"
     politics: "politique = politique et représentation,\nconcertation, décider ensemble,\ncommuns, open (res)sources, démocratie"
     philo: philosophie = réflexion, théorie, principes
-    earth: "planète = environnement, climat, pollution,\nanimaux, végétaux"
+    earth: "planète = environnement, climat, déchets, pollution,\neau, animaux, végétaux"
     agriculture: agriculture = (perma)cultures, graines, semences, jardinage, élevage
 footer:
     lastupdatetext: dernière modification
