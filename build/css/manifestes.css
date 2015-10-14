@@ -2538,7 +2538,10 @@ body.layout-mapprint .container {
 }
 .map .legend .credit {
   display: inline-block;
-  margin: 17px 10px 25px 10px;
+  padding: 17px 10px 25px 10px;
+}
+.map .legend .credit.odd {
+  background: #F0F0F0;
 }
 .map .legend img.marker {
   margin-bottom: -25px;
