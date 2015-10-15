@@ -66,7 +66,10 @@ intro:
     enter: "consulter & participer"
 disclaimer:
     sections: >
-        Vous pouvez consulter les textes dans l'ordre que vous voulez. Pour les applications concrètes, consultez les ressources ou la carte
+        Vous pouvez consulter les textes dans l'ordre que vous voulez
+        
+
+        Pour les applications concrètes, consultez les ressources ou la carte
     links: >
         Pour filtrer les liens par thématiques, activez les tags grâce à l'icône en haut à gauche dans le menu
     map: >
