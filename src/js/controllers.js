@@ -616,7 +616,7 @@ angular.module('manifest.controllers', ['underscore','config'])
         center: [47, 2.5],
         zoom: 7,
         minZoom: 4,
-        maxZoom: 13,
+        maxZoom: 15,
         locateButton: true,
         layers: [osm]
       });
@@ -669,12 +669,12 @@ angular.module('manifest.controllers', ['underscore','config'])
             icon = "land-use";
           }
           if(/city/.test(m.scale)) {
-            size = "m";
-            icon = "land-use";
+            size = "s";
+            icon = "circle-stroked";
           }
           if(/zone/.test(m.scale)) {
             size = "s";
-            icon = "land-use";
+            icon = "circle-stroked";
           }
 
           //var customPopup = "<div ng-include ng-init=\"data=leafmarkers['"+m.source+"']['mark_"+k+"'];\" src=\"'partials/marker.html'\"></div>";

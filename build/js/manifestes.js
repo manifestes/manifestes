@@ -3193,7 +3193,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'14 October 2015 - 1:01'})
+.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'19 October 2015 - 12:32'})
 
 ;
 ;
@@ -3816,7 +3816,7 @@ angular.module('manifest.controllers', ['underscore','config'])
         center: [47, 2.5],
         zoom: 7,
         minZoom: 4,
-        maxZoom: 13,
+        maxZoom: 15,
         locateButton: true,
         layers: [osm]
       });
@@ -3869,12 +3869,12 @@ angular.module('manifest.controllers', ['underscore','config'])
             icon = "land-use";
           }
           if(/city/.test(m.scale)) {
-            size = "m";
-            icon = "land-use";
+            size = "s";
+            icon = "circle-stroked";
           }
           if(/zone/.test(m.scale)) {
-            size = "m";
-            icon = "land-use";
+            size = "s";
+            icon = "circle-stroked";
           }
 
           //var customPopup = "<div ng-include ng-init=\"data=leafmarkers['"+m.source+"']['mark_"+k+"'];\" src=\"'partials/marker.html'\"></div>";
