@@ -131,7 +131,7 @@ tags:
     companies: "ennemis = néocapitalisme, récupérations, greenwashing,\nmultinationales, puissances d'argent... boycott!"
     history: "histoire = (néo)colonialismes, impérialisme,\npassifs historique"
     law: "juridique = lois, aspects juridiques,\ndémarches administratives,\nlégislations"
-    economy: "économie = commerce, troc, don, échanges,\nargent, monnaie, finance, dette,\nrevenu de base inconditionnel"
+    economy: "échanges = économie, commerce, troc, don,\nargent, monnaie, finance, dette,\nrevenu de base inconditionnel"
     politics: "politique = politique et représentation,\nconcertation, décider ensemble,\ncommuns, open (res)sources, démocratie"
     philo: philosophie = réflexion, théorie, principes
     earth: "planète = environnement, climat, déchets, pollution,\neau, animaux, végétaux"
@@ -156,7 +156,6 @@ footer:
 
 ---
 date: 2015-09-27
-role: info
 title: Manifeste(s) des autres mondes possibles
 subtitle: Nous sommes **partout**. Nos démarches sont infiniment **diverses et complémentaires**. Qu'avons-nous **en commun** ?
 slug: ecrire_manifeste
@@ -187,7 +186,6 @@ content: >
 
 ---
 date: 2015-07-16
-role: info
 title: Un carnet de recherche
 subtitle: Nous partons du principe que **de nombreuses solutions existent** déjà. Nous cherchons à les rendre plus visibles
 slug: research_notebook
@@ -219,7 +217,6 @@ content: >
 
 ---
 date: 2015-09-20
-role: info
 title: Qui a écrit tout ça ?
 subtitle: Composition à plusieurs mains !
 slug: who_wrote
@@ -243,7 +240,6 @@ content: >
 
 ---
 date: 2015-10-12
-role: info
 title: Sections de textes synthétiques
 subtitle: Les sections permettent de rendre le texte plus lisible et facilitent les discussions sur les thèmes abordés.
 slug: methodo
@@ -273,7 +269,6 @@ content: >
 
 ---
 date: 2015-10-12
-role: info
 title: Catégories thématiques
 subtitle: "La grille de tags permet d'organiser tous les contenus du site: pour l'activer, cliquez sur l'icône en haut à gauche dans le menu"
 slug: about_tags
@@ -309,7 +304,6 @@ content: >
 
 ---
 date: 2015-09-28
-role: info
 title: Carte de France des alternatives
 subtitle: Nous sommes partout !
 slug: interactive_map
@@ -349,11 +343,33 @@ content: >
 
 
 
+---
+date: 2015-10-19
+title: Lieux de la Caravane des alternatives
+subtitle: Charte des écolieux et collectifs de l'annuaire de la caravane des alternatives
+slug: caravane_alternatives
+source: "[Caravane des alternatives](http://caravanedesalternatives.weebly.com/)"
+tags: map, list
+image:
+    url: ericDrooker_jungle.jpg
+    credit: Eric Drooker
+quote:
+    author: Gandhi
+    content: Vous devez être le changement que vous voulez voir dans ce monde.
+content: >
+    La définition des lieux alternatifs ou écolieux est très difficile à définir tant les strates d'alternatives sont multiples et complexes... Ici, ce n'est pas la qualité des points de vente bio mais plutôt la philosophie de l'accueuil qui a été mise en avant.
+
+
+    Ont été référencé les écolieux visant l'**autonomie alimentaire et matérielle (autoconstruction) et accueillant** pour: formations, woofing, passage, ou pour y vivre ! Les écolieux avec une petite surface cultivable ont été privilégiés.
+
+
+    Il est difficile de définir une norme de taille idéale (dépend de l'activité, des habitudes de vie, élevage ou non...). La caravane des alternatives se positionne sur le postulat de 0,5 à 1ha de terre cultivable par personne, à rajouter à cela de la terre pour le bois (chauffage, construction, sauvage). Nous valorisons donc les petites structures entre 1 ha et 40ha, voire même de 1ha à 10ha
+
+
 
 
 ---
 date: 2015-07-15
-role: info
 title: Réseau des sites internet
 subtitle: Exploration des sites et des liens hypertextes pour visualiser les articulations entre les différents mouvements alternatifs
 slug: hyphe_map
