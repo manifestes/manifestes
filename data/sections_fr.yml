@@ -8,7 +8,7 @@ source:
     github: https://github.com/manifestes/manifestes
     sections: https://github.com/manifestes/manifestes/blob/gh-pages/data/sections_fr.yml
     links: https://github.com/manifestes/manifestes/blob/gh-pages/data/links_fr.yml
-    map: https://github.com/manifestes/manifestes/blob/gh-pages/data/map.csv
+    map: https://framacalc.org/carto
 mapcredits:
     caravane:
         name: Caravane des alternatives
@@ -141,15 +141,17 @@ footer:
     content: >
         ##*voir aussi*
 
-        + le [document partagé](https://lite6.framapad.org/p/manifestes)
+        + le [document partagé](https://lite6.framapad.org/p/manifestes): discutoire, choses à faire, historique des modifs
 
         + la liste de discussion [manifestes@lists.riseup.net](https://lists.riseup.net/www/subscribe/manifestes)
 
-        + le [code source](https://github.com/manifestes/manifestes) de ce site avec [les textes](https://github.com/manifestes/manifestes/blob/gh-pages/data/sections_fr.yml) et [les liens](https://github.com/manifestes/manifestes/blob/gh-pages/data/links_fr.yml)
+        + le [code source](https://github.com/manifestes/manifestes) de ce site avec [les textes](https://github.com/manifestes/manifestes/blob/gh-pages/data/sections_fr.yml), [les liens](https://github.com/manifestes/manifestes/blob/gh-pages/data/links_fr.yml) et [les lieux à ajouter/modifier](https://framacalc.org/carto)
+
+        + des [citations en vrac](https://github.com/manifestes/manifestes/blob/gh-pages/data/utiles/quotes_fr.yml) qu'on peut utiliser
 
         + le compte twitter [@manifestes](https://twitter.com/manifestes)
 
-        + dites-nous [bonjour@utopies-concretes.org](mailto:bonjour@utopies-concretes.org)
+        + dites-nous [bonjour@utopies-concretes.org](mailto:bonjour@utopies-concretes.org) !
 
 
 
