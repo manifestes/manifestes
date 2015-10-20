@@ -1,5 +1,14 @@
 ---
 quote:
+    author: Frederic Lordon, [Le parti de la liquette](http://blog.mondediplo.net/2015-10-09-Le-parti-de-la-liquette)
+    content: La réalité du salariat c’est le chantage, et la réalité du chantage c’est qu’il y a une inégalité entre celui qui chante et celui qui fait chanter – on ne se porte pas identiquement à l’une ou l’autre extrémité du revolver. 
+quote:
+    author: Commentaires, Chris Marker
+    content: Savez-vous, dit Elena Andréievna en se penchant sur le samovar, qu’il existe en Amérique du sud une flûte dont le son n’est perceptible qu’à celui qui en joue ?
+quote:
+    author: —
+    content: arrêtez le monde, je voudrai descendre
+quote:
     author: —
     content: L'utopie n'est pas un futur souhaitable mais un ailleurs présent
 quote:
@@ -163,6 +172,25 @@ quote:
 
 
 ---
-images:
-    ENIAC computer, U.S. Army photo from the archives of the ARL Technical Library
+image:
+    url: ericDrooker_tv.jpg
+    credit: Eric Drooker
+image:
+    url: ericDrooker_metro.jpg
+    credit: Eric Drooker
+image:
+    url: ericDrooker_building.jpg
+    credit: Eric Drooker
+image:
+    url: warsheep.jpg
+    credit: —
+image:
+    url: nerougissezpas-revolution.jpg
+    credit: [Ne rougissez pas !](http://www.nerougissezpas.fr/)
+image:
+    url: bollore_mrafrique.jpg
+    credit: [toinov](http://toinov.net/)
+image:
+    url: eniac-computer.jpg
+    credit: ENIAC computer, U.S. Army photo from the archives of the ARL Technical Library
 
