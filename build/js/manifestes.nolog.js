@@ -3193,7 +3193,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'19 October 2015 - 12:32'})
+.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'20 October 2015 - 4:41'})
 
 ;
 ;
@@ -3592,7 +3592,11 @@ angular.module('manifest.controllers', ['underscore','config'])
       return out;
     }
 
-    $scope.getInjectLinks = function() {
+
+
+
+    ///////////////////////////////////////////////////////////////
+    $scope.fetchDataLinks = function() {
       $http
         .get(settings.datapath + "links_"+$scope.state.lang+".yml")
         .success(function(res) {
@@ -3603,7 +3607,9 @@ angular.module('manifest.controllers', ['underscore','config'])
 
           _.each(singlelink, function(l) {
 
-            var tgs = l.split('\n')[0].match(/\w+/ig);
+            var L = l.split('\n');
+
+            var tgs = L[0].match(/\w+/ig);
             var isimportant = false;
 
             _.each(tgs, function(t) {
@@ -3621,13 +3627,14 @@ angular.module('manifest.controllers', ['underscore','config'])
               });
             }
 
-            var htm = $scope.md2Html( l.split('\n')[1] );
+            var htm = $scope.md2Html( L[1] );
 
             // store links as array
             $scope.linksArray.push({
               content: htm,
               tags: tgs,
-              important: isimportant
+              love: L[0][0]=="!",     // marked as special blend love like !
+              important: isimportant  // if it has a least one tag marked as important
             });
 
             // store links indexed by tag (for taggraph sizes!)
@@ -3659,11 +3666,10 @@ angular.module('manifest.controllers', ['underscore','config'])
         });
     };
 
-    ////////////////////////////////////////// GET CONTENTS
-    var sectionsUrl = settings.datapath + "sections_"+$scope.state.lang+".yml";
-
+    ///////////////////////////////////////////////////////////////
+    $scope.fetchDataSections = function(callb) {
     $http
-      .get(sectionsUrl)
+      .get(settings.datapath + "sections_"+$scope.state.lang+".yml")
       .success(function(res) {
 
         jsyaml.loadAll(res, function(d) {
@@ -3742,28 +3748,28 @@ angular.module('manifest.controllers', ['underscore','config'])
 
           }
         });
-        
 
-        // now fetch links and inject them based on tags
-        $scope.getInjectLinks();
-
-        // please wait before loading graphs !
-        $timeout(function() {
-
-          loadTagGraph($scope);
-
-        },500);
-
-        // (to improve) init here to trigger the watch on footer content set though compile-html directive
-        $scope.state.search = "";
-
+        callb();
       })
       .error(function (data, status, headers, config) {
         0;
       });
+    }
 
 
+    ///////////////////////////////////////////////////////////////
+    // fetch data
+    $scope.fetchDataSections( function() {
+      
+      // fetch links
+      $scope.fetchDataLinks();
 
+      // load tag graph 
+      $timeout(function() { loadTagGraph($scope); },500);
+
+      // (to improve ?) init here to trigger the watch on footer content set though compile-html directive
+      $scope.state.search = "";
+    });
 
 
     // disqus

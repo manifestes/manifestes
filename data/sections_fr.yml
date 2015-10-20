@@ -218,7 +218,7 @@ content: >
 
 
 ---
-date: 2015-09-20
+date: 2015-10-20
 title: Qui a écrit tout ça ?
 subtitle: Composition à plusieurs mains !
 slug: who_wrote
@@ -233,7 +233,7 @@ content: >
     Les textes et les liens présents ici ont été aggrégés depuis de très nombreuses sources (rencontres, sites, films, tracts, etc...). Les citations, textes, liens proviennent donc en majorité de **copiers-collés**.
 
 
-    La foison de styles qui en résulte peut être déroutante, mais elle permet d'exhiber la multiplicité d'initiatives et de mouvements de pensées et d'actions qui composent les alternatives.
+    **La foison de styles** qui en résulte peut être *déroutante, maladroite, imparfaite*, mais elle permet d'exhiber la multiplicité d'initiatives et de mouvements de pensées et d'actions qui composent les alternatives.
 
 
     Bienvenue à tou.te.s celles et ceux qui souhaitent nous rejoindre pour continuer la rédaction du projet !
@@ -241,7 +241,7 @@ content: >
 
 
 ---
-date: 2015-10-12
+date: 2015-10-20
 title: Sections de textes synthétiques
 subtitle: Les sections permettent de rendre le texte plus lisible et facilitent les discussions sur les thèmes abordés.
 slug: methodo
@@ -265,7 +265,10 @@ content: >
     - une liste de **thématiques** (tags) associées
 
 
-    Ces contraintes permettent l'accumulation des points de vue, sans avoir à les hiérarchiser. Nous ne cherchons pas à arrêter une vision unique mais bien à composer, dessiner la mosaique des mouvements de pensée existants.
+    Ces contraintes permettent l'accumulation et l'extensibilité des points de vue, sans avoir à les hiérarchiser (cf menus classiques des sites web). Nous ne cherchons pas à arrêter une vision unique mais bien à composer, dessiner la mosaique des mouvements de pensée existants.
+
+
+    C'est plus souple et facilement extensible !
 
 
 
@@ -556,7 +559,7 @@ content: >
 
 
 ---
-date: 2015-06-01
+date: 2015-10-20
 title: Retrouver un équilibre
 subtitle: Supporter, survivre indéfiniment ? Non, là, c'est trop.
 slug: equilibre
@@ -568,7 +571,7 @@ quote:
     content: Ceux qui luttent ne sont pas sûrs de gagner, mais ceux qui ne luttent pas ont déjà perdu.
 tags: science, alienation
 content: >
-    Tandis que les catastrophes naturelles ou évènements historiques médiatisés nous plongent dans des **états émotionnels passagers et stéréotypés** (mon dieu, une épidémie d'ébola !), les évolutions plus lentes de nos société se déroulent sans que l'on puisse en **mesurer les conséquences à long terme**: *ondes, publicité, OGM, malbouffe, pollution*
+    Tandis que les catastrophes naturelles ou évènements historiques médiatisés nous plongent dans des **états émotionnels passagers et stéréotypés** (mon dieu, une épidémie d'ébola !), les évolutions plus lentes de nos société se déroulent sans que l'on puisse en **mesurer les conséquences à long terme et à grande échelle**: *ondes, publicité, OGM, malbouffe, pollution*
 
 
     Comme nous l'ont prouvé l'histoire et les **conditions dramatiques de vie** de certains, nous pourrions certes *survivre* à des situations bien pires. Nous pensons qu'un **équilibre a été perdu** et nous cherchons à rééquilibrer la balance.

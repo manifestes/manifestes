@@ -11,28 +11,11 @@ body {
   font-family: "Inconsolata", sans-serif;
 }
 
-
 .cover {
   background-position: center center;
   background-repeat: no-repeat;
   .background-size(cover);
   background-color: black;
-}
-
-ul, li {
-  margin: 0;
-  padding: 0;
-}
-p {
-  margin: 0;
-  padding: 0;
-}
-a {
-  text-decoration: none;
-  color: #617790;
-  &:hover {
-    color: #485361;
-  }
 }
 
 /* hack to allow linebreaks, aka « &#10; » within hint.css tooltips */
@@ -57,6 +40,8 @@ a {
 
 @yellowColor: #FFCD21;
 
+@blueColor: #617790;
+
 @openDur: 0.2s;
 @introDur: 0.5s;
 @menuH: 65px;
@@ -68,6 +53,24 @@ a {
 @panelW: 400px; //37%; NB: see screen.less for ≠ device sizes
 
 @reducedFlatSectionH: 43px;
+
+
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: @blueColor;
+  &:hover {
+    color: #485361;
+  }
+}
 
 
 span.highlight, div.highlight { /* searched words */

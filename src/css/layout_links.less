@@ -112,12 +112,20 @@
     padding-right: 0;
     border-bottom: 1px solid #D2D2D2;
 
-    overflow: hidden;
-
     background: white;
+
+    .love {
+      z-index: 24;
+      position: absolute;
+      margin-left: -40px;
+      margin-top: 4px;
+      color: @blueColor;
+      font-size: 0.8em;
+    }
 
     &.important {
       border-left: 7px solid @lightGreenColor;
+      .love { margin-left: -47px; } /* hack override border */
     }
 
     &.reducedtag, &.reducedsearch {

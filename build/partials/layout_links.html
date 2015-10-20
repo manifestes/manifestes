@@ -63,6 +63,8 @@
       ) &&
       $event.stopPropagation();">
 
+    <i ng-if="e.love" class="love fa fa-heart"></i>
+
     <div ng-if="state.tagging" class="tags" ng-include="settings.assets + 'partials/tags.html'"></div>
 
     <div class="content" compile-html="e.content"></div>

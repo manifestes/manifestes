@@ -1021,6 +1021,13 @@ body {
   background-size: cover;
   background-color: black;
 }
+/* hack to allow linebreaks, aka « &#10; » within hint.css tooltips */
+.hint:after,
+[data-hint]:after {
+  z-index: 9999999999;
+  white-space: pre !important;
+  text-align: left;
+}
 ul,
 li {
   margin: 0;
@@ -1036,13 +1043,6 @@ a {
 }
 a:hover {
   color: #485361;
-}
-/* hack to allow linebreaks, aka « &#10; » within hint.css tooltips */
-.hint:after,
-[data-hint]:after {
-  z-index: 9999999999;
-  white-space: pre !important;
-  text-align: left;
 }
 span.highlight,
 div.highlight {
@@ -2503,11 +2503,22 @@ body.layout-mapprint .container {
   padding: 6px 0px 6px 15px;
   padding-right: 0;
   border-bottom: 1px solid #D2D2D2;
-  overflow: hidden;
   background: white;
+}
+.panel.links .link .love {
+  z-index: 24;
+  position: absolute;
+  margin-left: -40px;
+  margin-top: 4px;
+  color: #617790;
+  font-size: 0.8em;
 }
 .panel.links .link.important {
   border-left: 7px solid #90c396;
+  /* hack override border */
+}
+.panel.links .link.important .love {
+  margin-left: -47px;
 }
 .panel.links .link.reducedtag,
 .panel.links .link.reducedsearch {
