@@ -698,7 +698,7 @@ angular.module('manifest.controllers', ['underscore','config'])
           // #985249
 
           var credit = $scope.meta.mapcredits[m.source.split('_')[0]];
-          console.log(credit);
+          //console.log(credit);
 
           var icon = 'circle';
           var color = "#"+credit.color || "#000";
