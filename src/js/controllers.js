@@ -35,7 +35,7 @@ angular.module('manifest.controllers', ['underscore','config'])
       "sections";
 
     $scope.meta = {}; // mainly the meta info at start of section.yml
-    $scope.sections = [];
+    $scope.sectionsArray = []; // raw list of sections
     $scope.tagsContents = {}; // .tag .label .description .icon for each tag
     $scope.tagsContentsOrdered = []; // same but array to be able to sort
     $scope.linksArray = []; // raw list of links
@@ -50,6 +50,7 @@ angular.module('manifest.controllers', ['underscore','config'])
       commenting_slug: null, // current disqus id
       lang: $routeParams.lang,
       layout: layout, // sections/links/map/print/etc...
+      loading: false, // we will show loadingspinner when scope not ready
 
       disclaim: {
         sections: !$scope.settings.dev,
@@ -57,9 +58,13 @@ angular.module('manifest.controllers', ['underscore','config'])
         map: !$scope.settings.dev
       },
 
+      count: {}, // will count results if search/tags filtered
+
       tagging: false, // if tags/filtering active or not
       tagsmode: 'grid', // tags display mode: graph OR grid
       tags: [], // list of current filtering tags
+
+      togglesections: null, // wil be 'up' or 'down' to display arrows to open/close all sections
 
       graphstatus: "NO", // loaded or not ?
       graphfullscreen: false
@@ -131,7 +136,8 @@ angular.module('manifest.controllers', ['underscore','config'])
     $scope.changeLayout = function(lay) {
       if(lay == $scope.state.layout) return; // unchanged
       else {
-        
+        $scope.state.loading = true;
+
         // reset tags & search
         $scope.toggleTag();
         $scope.searchSubmit();
@@ -146,8 +152,13 @@ angular.module('manifest.controllers', ['underscore','config'])
         // update tag graph sizes
         //if($scope.state.tagsmode=='graph')
           updateTagNodesSizesForLayout($scope,lay);
+
+        // unlock loader when scope ready (for map, only done after csv received)
+        if(lay!='map')
+          $timeout(function(){ $scope.state.loading = false; });
       }
     };
+
     $scope.loadLinksGraph = function() {
       loadLinksGraph($scope);
     };
@@ -201,6 +212,24 @@ angular.module('manifest.controllers', ['underscore','config'])
       $scope.$apply();
     };
 
+
+    var isElementShown = function(e) {
+      var res = true;
+      if($scope.state.search)
+        res = $scope.shallShowSearch(e);
+      if($scope.state.tags.length)
+        res = res && $scope.shallShowTags(e);
+      return res;
+    };
+    $scope.updateSearchTagCount = function() {
+      $scope.state.count.sections = _.filter($scope.sectionsArray, function(e){
+        return isElementShown(e);
+      }).length;
+      $scope.state.count.links = _.filter($scope.linksArray, function(e){
+        return isElementShown(e);
+      }).length;
+    };
+
     $scope.toggleTag = function(tag,refresh) {
 
       // please set max tags to 5 !
@@ -226,6 +255,8 @@ angular.module('manifest.controllers', ['underscore','config'])
       if($scope.state.graphstatus=="OK")
         filterLinksNodesFromTags($scope.state.tags);
 
+      //$scope.updateSearchTagCount();
+
       if(refresh) $scope.$apply();
       scrollToup();
     };
@@ -236,15 +267,17 @@ angular.module('manifest.controllers', ['underscore','config'])
         $scope.state.search = term;
       }
       else {
-        $scope.input = "";
+        $scope.state.searchinput = "";
         $scope.state.search = "";
-        $scope.toggleAll(false);
+        $scope.toggleAllSections(false);
       }
       
       $scope.rgx.search = new RegExp($scope.state.search,'gi');
 
       if($scope.state.graphstatus=='OK')
         filterLinksNodes($scope.state.search);
+
+      //$scope.updateSearchTagCount();
 
       scrollToup();
     };
@@ -297,7 +330,7 @@ angular.module('manifest.controllers', ['underscore','config'])
     };
     $scope.shallShowSearch = function(o) { // "o" is a section or a link
       var reg = new RegExp($scope.state.search,'gi'); //$scope.rgx.search;
-
+      if($scope.state.search)
       if(o.title) { // a section
         var show = reg.test(totext(o.quote.content));
         _.each(['title','subtitle','content'], function(k) {
@@ -330,8 +363,8 @@ angular.module('manifest.controllers', ['underscore','config'])
         }); // wait for the section to open !
       }
     };
-    $scope.toggleAll = function(status) {
-      _.each($scope.sections, function(p) {
+    $scope.toggleAllSections = function(status) {
+      _.each($scope.sectionsArray, function(p) {
         p.opened = status;
         if(status && !p.commentcount)
           $timeout(function() {
@@ -544,7 +577,7 @@ angular.module('manifest.controllers', ['underscore','config'])
 
             d.layout = 'flat'; //Math.random()<0.2 ? 'grid' : 'flat';
 
-            $scope.sections.push(d);
+            $scope.sectionsArray.push(d);
 
           }
         });
@@ -586,9 +619,10 @@ angular.module('manifest.controllers', ['underscore','config'])
 .controller('MapController', [
   '$scope',
   '$http',
+  '$timeout',
   '_',
   'settings',
-  function ($scope, $http, _, settings) {
+  function ($scope, $http, $timeout, _, settings) {
 
     $scope.initMap = function() {
 
@@ -731,6 +765,9 @@ angular.module('manifest.controllers', ['underscore','config'])
             return '<div><a href="#" class="'+type+'">YOU'+text+'<b>'+type+'</b></a></div>';
           }
         }).addTo(map);
+
+        // when ready, remove loading
+        $timeout(function(){ $scope.state.loading = false; });
 
       }).error(function(err) {
 

@@ -1732,7 +1732,7 @@ div.highlight {
   z-index: 32;
   position: fixed;
   width: 100%;
-  padding: 20px 150px;
+  padding: 5px 0px;
   top: -100%;
   -webkit-transition: top 0.4s;
   -moz-transition: top 0.4s;
@@ -1750,10 +1750,24 @@ div.highlight {
   top: 65px;
 }
 .disclaimer span {
+  box-sizing: border-box;
   font-size: 1.1em;
   font-style: italic;
   line-height: 1.4em;
   color: #3c3c3c;
+}
+.disclaimer span.full {
+  display: inline-block;
+  padding: 15px 150px;
+}
+.disclaimer span.splitted {
+  display: table-cell;
+  padding: 15px 60px;
+  vertical-align: middle;
+}
+.disclaimer span.splitted:first-child {
+  width: 400px;
+  border-right: 1px dashed grey;
 }
 .disclaimer i {
   cursor: pointer;
@@ -1771,6 +1785,16 @@ div.highlight {
 }
 .disclaimer i:hover {
   color: #3c3c3c;
+}
+.loading {
+  z-index: 30;
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 35%;
+  top: 0;
+  bottom: 0;
+  background: lightgray;
 }
 .base-tag {
   float: right;
@@ -2542,7 +2566,7 @@ body.layout-mapprint .container {
   bottom: 0;
 }
 .map .legend {
-  z-index: 99;
+  z-index: 25;
   position: absolute;
   bottom: 0px;
   width: 100%;
@@ -2732,6 +2756,7 @@ body.layout-mapprint .container {
 @media (max-width: 750px) {
   .header .menu .searchinput,
   .header .menu .tagsmenu,
+  .disclaimer span.splitted:first-child,
   .panel.graph {
     display: none;
   }
@@ -2794,9 +2819,9 @@ body.layout-mapprint .container {
     padding: 20px 0px;
     margin-top: 10px;
   }
-  .disclaimer {
-    padding: 20px 40px;
+  .disclaimer span {
     font-size: 0.8em;
+    padding: 20px 50px !important;
   }
   .header .action.backintro {
     padding: 9px 10px;
@@ -2823,6 +2848,7 @@ body.layout-mapprint .container {
   .menu .tagshat,
   .menu .tagspanel,
   .section.layout-flat .image,
+  .disclaimer span.splitted:first-child,
   .panel.graph {
     width: 370px !important;
   }
@@ -2846,6 +2872,7 @@ body.layout-mapprint .container {
   .menu .tagshat,
   .menu .tagspanel,
   .section.layout-flat .image,
+  .disclaimer span.splitted:first-child,
   .panel.graph {
     width: 480px !important;
   }
@@ -2869,6 +2896,7 @@ body.layout-mapprint .container {
   .menu .tagshat,
   .menu .tagspanel,
   .section.layout-flat .image,
+  .disclaimer span.splitted:first-child,
   .panel.graph {
     width: 580px !important;
   }

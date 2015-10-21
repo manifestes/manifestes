@@ -754,12 +754,13 @@ span.highlight, div.highlight { /* searched words */
     color: @textColor;
   }
 }
+
 .disclaimer {
   box-sizing: border-box;
   z-index: 32;
   position: fixed;
   width: 100%;
-  padding: 20px 150px;
+  padding: 5px 0px;
 
   top: -100%;
   .transition(top 0.4s);
@@ -774,11 +775,26 @@ span.highlight, div.highlight { /* searched words */
   background: @yellowColor;
   
   span {
+    box-sizing: border-box;
     font-size: 1.1em;
     font-style: italic;
     line-height: 1.4em;
     color: @textColor;
   }
+  span.full {
+    display: inline-block;
+    padding: 15px 150px;
+  }
+  span.splitted {
+    display: table-cell;
+    padding: 15px 60px;
+    vertical-align: middle;
+  }
+  span.splitted:first-child {
+    width: @panelW;
+    border-right: 1px dashed grey;
+  }
+
   i {
     cursor: pointer;
     position: absolute;
@@ -795,6 +811,16 @@ span.highlight, div.highlight { /* searched words */
   }
 }
 
+.loading {
+  z-index: 30;
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 35%;
+  top: 0;
+  bottom: 0;
+  background: lightgray;
+}
 
 .base-tag {
   float: right;

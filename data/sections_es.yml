@@ -24,9 +24,25 @@ intro:
     enter: "consultar & participar"
 disclaimer:
     sections: >
-        Vous pouvez consulter les textes dans l'ordre que vous voulez. Pour les applications concrètes, consultez les ressources ou la carte
-    links: >
-        Pour filtrer les liens par thématiques, activez les tags grâce à l'icône en haut à gauche dans le menu
+        Vous pouvez consulter les textes dans l'ordre que vous voulez
+        
+
+        Pour les applications concrètes, consultez les ressources ou la carte
+    linksleft: >
+        à gauche, une **approche quantitative**
+
+
+        le réseau de tous les sites internet et des liens qu'ils ont entre eux
+    linksright: >
+        ici, des liens ajoutés **avec nos petites mains**. ça fait un peu fouilli, leur désordre reflète la multiplicité des collectifs et initiatives !
+
+
+        (ce sera toujours mieux que google qui ne nous donne à voir que les plus gros/riches)
+
+
+        pour naviguer par **thématiques, activez les tags** grâce à l'icône en haut à gauche dans le menu.
+    map: >
+        Les couleurs des points correspondent aux différentes sources (cf légende). N'oubliez pas qu'ils ne sont pas tous des lieux de passage: observez donc le plus grand respect si vous souhaitez les visiter: renseignez-vous et prévenez avant de débarquer !
 menu:
     backtip: retourner à l'intro
     tagsdefault: toutes

@@ -17,14 +17,14 @@
     <div ng-if="e.date" class="date">{{e.date}}</div>
 
     <div
-      class="collapser meta-{{state.toggleall}}"
+      class="collapser meta-{{state.togglesections}}"
       ng-class="{
         opened: e.opened,
-        down: state.toggleall ? false:!e.opened,
-        up:   state.toggleall ? false:e.opened}"
-      ng-click="toggleAll(!e.opened); $event.stopPropagation();"
-      ng-mouseover="state.toggleall = e.opened ? 'up' : 'down'"
-      ng-mouseout="state.toggleall = null;">
+        down: state.togglesections ? false:!e.opened,
+        up:   state.togglesections ? false:e.opened}"
+      ng-click="toggleAllSections(!e.opened); $event.stopPropagation();"
+      ng-mouseover="state.togglesections = e.opened ? 'up' : 'down'"
+      ng-mouseout="state.togglesections = null;">
       <div class="triangle"></div>
     </div>
     <div class="h1">
