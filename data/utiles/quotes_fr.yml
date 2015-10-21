@@ -1,17 +1,7 @@
 ---
 quote:
-    author: [bloom0101](http://bloom0101.org)
-    content: >
-        Il n’y a pas de vide, tout est habité, nous sommes chacun d’entre nous le lieu de passage et de nouage de quantités d’affects, de lignées, d’histoires, de significations, de flux matériels qui nous excèdent. [...]
-        
-
-        Construire un monde, c’est construire un ordre, faire une place ou pas à chaque chose, à chaque être, à chaque penchant, et penser cette place, la changer s’il le faut.
-quote:
     author: Chris marker, L'amérique rêve
     content: Ce qui s'est passé *avant* le passé, personne ne s'y intéresse. La conquète du territoire opposait aux Indiens des Européens fraîchement débarqués. Les Indiens y ont perdu la vie, et les Européens la mémoire
-quote:
-    author: —
-    content: La question n'est pas de savoir comment assainir techniquement notre «démocratie», mais de définir contre quoi on se bat
 quote:
     author: Celia Izoard, revue Z n°9, Toulouse
     content: La capacité d'un chercheur à penser l'impact concret des technologies sur la vie des gens est proportionnelle à la distance sociale et physique qui les sépare
@@ -19,15 +9,8 @@ quote:
     author: lettre de N. Wiener à W. Reuther, 1949, revue Z n°9
     content: Toute main-d'œuvre, dès lors qu'elle est mise en concurrence avec un esclave, que l'esclave soit humain ou mécanique, doit accepter les conditions de travail de l'esclave
 quote:
-    author: Coluche, le seul candidat qui n'a pas de raison de mentir
-    content: >
-        Avis à la population
-
-
-        J'appelle les fénéants, les crasseux, les drogués, les alcooliques, les pédés, les femmes, les parasites, les jeunes, les vieux, les artistes, les taulards, les gouines, les apprentis, les Noirs, les piétons, les Arabes, les Français, les chevelus, les fous, les travestis, les anciens communistes, les absentionnistes convaincus, tous ceux qui ne comptent pas pour les hommes politiques à voter pour moi, à s'inscrire dans leur mairie et à colporter la nouvelle.
-
-
-        Tous ensemble pour leur foutre au cul
+    author: Chris Marker, Le Joli Mai, 1h28min
+    content: l'avenir est là ! mais les gens ne le voient pas ... ils attendent l'horizon au loin
 quote:
     author: Frederic Lordon, [Le parti de la liquette](http://blog.mondediplo.net/2015-10-09-Le-parti-de-la-liquette)
     content: La réalité du salariat c’est le chantage, et la réalité du chantage c’est qu’il y a une inégalité entre celui qui chante et celui qui fait chanter – on ne se porte pas identiquement à l’une ou l’autre extrémité du revolver. 
@@ -111,9 +94,6 @@ quote:
 quote:
     author: Charles Bukowski
     content: Vous commencez à sauver le monde en sauvant une personne à la fois, tout le reste, c'est du romantisme grandiose ou de la politique.
-quote:
-    author: Chris Marker, Le Joli Mai, 1h28min
-    content: l'avenir est là ! mais les gens ne le voient pas ... ils attendent l'horizon au loin
 quote:
     author: Manifeste des [Engraineurs](http://www.collectif-lesengraineurs.com/)
     content: >
@@ -202,12 +182,6 @@ quote:
 
 ---
 image:
-    url: ericDrooker_tv.jpg
-    credit: Eric Drooker
-image:
-    url: ericDrooker_metro.jpg
-    credit: Eric Drooker
-image:
     url: ericDrooker_building.jpg
     credit: Eric Drooker
 image:
@@ -219,7 +193,5 @@ image:
 image:
     url: bollore_mrafrique.jpg
     credit: [toinov](http://toinov.net/)
-image:
-    url: eniac-computer.jpg
-    credit: ENIAC computer, U.S. Army photo from the archives of the ARL Technical Library
+
 

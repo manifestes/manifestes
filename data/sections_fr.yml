@@ -133,7 +133,7 @@ tags:
     zad: "luttes = grands projets inutiles, lois absurdes,\nsquats, occupations, zad,\nradicalités, avant-gardes"
     love: "amour = rêves, utopies, promesses, idéaux,\nhumour et amour toujours !"
     space: espace public = espaces partagés, communs, ville
-    words: "langage = récits, mots, interprétations, controverses,\ns'accorder, s'engueuler, débattre"
+    words: "langage = récits, mots, interprétations, controverses, discours,\ns'accorder, s'engueuler, débattre"
     creation: "formes = création, art, culture, écriture,\ndesign, processus, formes"
     science: "science = sciences, techniques,\nnanotechnologies, manipulation du vivant"
     web: internet = web, numérique, réseaux
@@ -192,6 +192,28 @@ content: >
     - partager nos *inspirations, références, initiatives* **> ressources**
 
     - faciliter l'accès aux solutions concrètes existantes **> carte** et **agenda**
+
+
+
+---
+date: 2015-10-21
+title: C'est quoi ce site ?
+subtitle: Nos intentions ne sont pas claires ? contactez-nous !
+slug: cest_quoi
+image:
+    url: eniac-computer.jpg
+    credit: ENIAC computer, U.S. Army, ARL Technical Library
+quote:
+    author: —
+    content: La question n'est pas de savoir comment assainir techniquement notre «démocratie», mais de définir contre quoi on se bat
+tags: about, tool
+content: >
+    **C'est...**
+    un tract web philosophico-politico-pratique, un appel à l'insurrection, un OWNI, une boite à liens, un style de vie, une porte qui en ouvre pleins d'autres, un exercice de style extensible, de la pub pour des initiatives et pensées qu'on trouve chouettes et trop peu connues, un truc pour s'amuser et voir ce dont on est capable, un outil pour archiver des jolies citations, une page d'accueil mieux que google, une boite à idées militantes, un projet incertain et ouvert à toutes les bonnes âmes !
+
+
+    **Ce n'est pas...**
+    un programme ou parti politique, pas un mouvement conspirationniste, pas une volonté d'absorber et de récupérer toutes les alternatives, pas une branche com' du ministère de la bonne conscience, pas un moyen de faire de l'argent, et surtout pas une prétention d'avoir la vérité ou d'être objectif...
 
 
 
@@ -481,19 +503,66 @@ date: 2015-06-01
 title: On fait comment ?
 subtitle: Pour changer quoi que ce soit, il faut commencer partout !
 slug: comment_faire
+tags: list, about
 image:
     url: McMullenJagel.jpg
     credit: Brian McMullen & Jason Jägel
 quote:
     author: Sénèque
     content: Ce n'est pas parce que les choses sont difficiles que nous n'osons pas, mais parce que nous n'osons pas qu'elles sont difficiles
-tags: list, about
 content: >
 
     - Nous voulons contruire une **réflexion théorique collective** pour discuter du monde, composer les différentes perceptions, formuler un langage commun. Penser différement, c'est déjà commencer à construire quelque chose
 
     - Et, surtout, nous retrouver pour échanger des **pratiques dans nos vies quotidiennes**, hors écrans, rendre visible les réseaux alternatifs existants, faciliter des passages à l'acte collectifs
 
+
+
+---
+date: 2015-10-21
+title: Liens pratiques pour participer
+subtitle: Vous êtes convaincu.e ? vous voulez ajouter, modifier des contenus ? rejoignez-nous !
+slug: useful_links
+tags: tool, about
+image:
+    url: ericDrooker_metro.jpg
+    credit: Eric Drooker
+quote:
+    author: Coluche, le seul candidat qui n'a pas de raison de mentir
+    content: >
+        Avis à la population
+
+
+        J'appelle les fénéants, les crasseux, les drogués, les alcooliques, les pédés, les femmes, les parasites, les jeunes, les vieux, les artistes, les taulards, les gouines, les apprentis, les Noirs, les piétons, les Arabes, les Français, les chevelus, les fous, les travestis, les anciens communistes, les absentionnistes convaincus, tous ceux qui ne comptent pas pour les hommes politiques à voter pour moi, à s'inscrire dans leur mairie et à colporter la nouvelle.
+
+
+        Tous ensemble pour leur foutre au cul
+content: >
+    **Pour discuter, commenter**
+
+
+    - sujet précis: «discuter, corriger, proposer» à la fin de chaque section
+
+    - sujets ou idées plus générales: utilisez [le document partagé](https://lite6.framapad.org/p/manifestes) ou envoyez un mail à la [liste de discussion](https://lists.riseup.net/www/subscribe/manifestes)
+
+
+    **Pour ajouter des contenus**, il est pour l'instant nécessaire de passer par le site [github.com](http://github.com), qui héberge le code source (créez un compte, anonyme si besoin). Vous pourrez alors éditer les documents:
+
+
+    - [quotes](https://github.com/manifestes/manifestes/blob/gh-pages/data/utiles/quotes_fr.yml): des citations en vrac non encore utilisées
+
+    - [sections](https://github.com/manifestes/manifestes/blob/gh-pages/data/sections_fr.yml): les sections de texte ici présentes
+
+    - [links](https://github.com/manifestes/manifestes/blob/gh-pages/data/links_fr.yml): la liste de tous les liens de la partie ressources
+
+
+    Éditez et validez votre modification en la décrivant, puis envoyez une «pull-request» pour proposer votre modification aux autres
+
+
+    **Pour les points de la carte**, vous pouvez directement modifier [ce tableau partagé](https://framacalc.org/carto), les modifications seront mises en ligne régulièrement
+
+
+    **Réseau des sites**: n'hésitez pas à nous signaler les sites absents de la [liste](https://github.com/manifestes/manifestes/blob/gh-pages/data/utiles/graph_id-url-tag.csv) du réseau/graphe/galaxie (à gauche dans les ressources)
 
 
 
@@ -564,6 +633,43 @@ content: >
 
     Il **existera toujours** des inégalités et des violences. Ces conflits internes et externes sont normaux, signes de **confrontation d'altérités** et de multiplicité des mondes.
 
+
+
+---
+date: 2015-10-21
+title: Frontières et migrants
+subtitle: Cassons les discours fascisants et haineux qui opposent les pauvres les uns aux autres
+slug: spirale_migrants
+source: "[Jungle de Calais, l'appel des 800](http://www.liberation.fr/france/2015/10/20/jungle-de-calais-l-appel-des-800_1407520)"
+tags: subsist, words
+image:
+    url: ericDrooker_tv.jpg
+    credit: Eric Drooker
+quote:
+    author: "[bloom0101](http://bloom0101.org)"
+    content: >
+        Il n’y a pas de vide, tout est habité, nous sommes chacun d’entre nous le lieu de passage et de nouage de quantités d’affects, de lignées, d’histoires, de significations, de flux matériels qui nous excèdent. [...]
+        
+
+        Construire un monde, c’est construire un ordre, faire une place ou pas à chaque chose, à chaque être, à chaque penchant, et penser cette place, la changer s’il le faut.
+
+content: >
+    La spirale du pire est amorcée.
+
+
+    Les discours réactionnaires ou fascisants ne cessent depuis des années de diviser les gens, d’opposer des catégories toujours plus fragmentées, pour mieux propager leur idéologie haineuse. Aujourd’hui leur propagande avance l’argument qu’il n’y aurait plus de place pour les exilés d’où qu’ils viennent, soi-disant au nom de la défense des plus pauvres des Français.
+
+
+    Cette mise en concurrence des indigences est ignoble.
+
+
+    **Elle nous habitue à l’idée qu’il y aurait des misères défendables et d’autres non.**
+
+
+    Elle sape les fondements des valeurs constitutives de la France. Elle nie notre humanité commune.
+
+
+    Elle nous prépare au pire.
 
 
 
