@@ -170,6 +170,7 @@ date: 2015-09-27
 title: Manifeste(s) des autres mondes possibles
 subtitle: Nous sommes **partout**. Nos démarches sont infiniment **diverses et complémentaires**. Qu'avons-nous **en commun** ?
 slug: ecrire_manifeste
+tags: about
 image:
     url: LilliCarre.jpg
     credit: Lili Carré
@@ -183,7 +184,6 @@ quote:
         
 
         Et c'est pas triste
-tags: group, about
 content: >
     ###*objectifs*
 
@@ -200,13 +200,13 @@ date: 2015-10-21
 title: C'est quoi ce site ?
 subtitle: Nos intentions ne sont pas claires ? contactez-nous !
 slug: cest_quoi
+tags: about
 image:
     url: eniac-computer.jpg
     credit: ENIAC computer, U.S. Army, ARL Technical Library
 quote:
     author: —
     content: La question n'est pas de savoir comment assainir techniquement notre «démocratie», mais de définir contre quoi on se bat
-tags: about
 content: >
     **C'est...**
     un tract web philosophico-politico-pratique, un appel à l'insurrection, un OWNI, une boite à liens, un style de vie, une porte qui en ouvre pleins d'autres, un exercice de style extensible, de la pub pour des initiatives et pensées qu'on trouve chouettes et trop peu connues, un truc pour s'amuser et voir ce dont on est capable, un outil pour archiver des jolies citations, une page d'accueil mieux que google, une boite à idées militantes, un projet incertain et ouvert à toutes les bonnes âmes !
@@ -222,6 +222,7 @@ date: 2015-07-16
 title: Un carnet de recherche
 subtitle: Nous partons du principe que **de nombreuses solutions existent** déjà. Nous cherchons à les rendre plus visibles
 slug: research_notebook
+tags: about
 image:
     url: MarianneBrandt.jpg
     credit: Marianne Brandt
@@ -235,7 +236,6 @@ quote:
 
 
         Ce qui donne... de la joie.
-tags: about
 content: >
     Ce site est en perpétuelle transformation. Il reflète les pérégrinations physiques et intellectuelles d'une bande de potes décidé.e.s à mieux décortiquer le monde qui nous entoure pour **mieux comprendre là où çà fait mal, afin de riposter comme il se doit**.
 
@@ -253,13 +253,13 @@ date: 2015-10-20
 title: Qui a écrit tout ça ?
 subtitle: Composition à plusieurs mains !
 slug: who_wrote
+tags: about, group
 image:
     url: chat_heads.jpg
     credit: Les chats pelés
 quote:
     author: Jean Paulhan, Enigmes de Perse
     content: Tout a été dit. Sans doute. Si les mots n'avaient changé de sens; et les sens, de mots.
-tags: about
 content: >
     Les textes et les liens présents ici ont été aggrégés depuis de très nombreuses sources (rencontres, sites, films, tracts, etc...). Les citations, textes, liens proviennent donc en majorité de **copiers-collés**.
 
@@ -276,13 +276,13 @@ date: 2015-10-20
 title: Sections de textes synthétiques
 subtitle: Les sections permettent de rendre le texte plus lisible et facilitent les discussions sur les thèmes abordés.
 slug: methodo
+tags: creation, about
 image:
     url: FingerBones.jpg
     credit: Rayons X, Hopital des Enfants malades, Paris
 quote:
     author: Pierre Desproges
     content: L'intelligence, c'est le seul outil qui permet à l'homme de mesurer l'étendue de son malheur.
-tags: creation, about
 content: >
     ###Chaque section comme celle-ci comporte:
 
@@ -308,6 +308,7 @@ date: 2015-10-12
 title: Catégories thématiques
 subtitle: "La grille de tags permet d'organiser tous les contenus du site: pour l'activer, cliquez sur l'icône en haut à gauche dans le menu"
 slug: about_tags
+tags: about
 image:
     url: HansHauger.jpg
     credit: Hans Hauger
@@ -317,7 +318,6 @@ quote:
         Maître, la jeunesse est dans la rue. Que faire ?
 
         Rien. C'est une illusion d'optique: la jeunesse est avant tout dans la tête.
-tags: about
 content: >
     Les thématiques permettent de faciliter la navigation dans le site:
 
@@ -443,6 +443,7 @@ date: 2015-06-01
 title: On en a marre !
 subtitle: Un monde s'en va, aidons le à partir
 slug: marre
+tags: alienation
 image:
     url: GeorgeKovenchukStop.jpg
     credit: George Kovenchuk
@@ -450,7 +451,6 @@ quote:
     author: Charles Bukowski
     content: >
         Comment diable un homme peut-il se réjouir d'être réveillé à 6h30 du matin par une alarme, bondir hors de son lit, avaler sans plaisir une tartine, chier, pisser, se brosser les dents et les cheveux, se débattre dans le trafic pour trouver une place, où essentiellement il produit du fric pour quelqu'un d'autre, qui en plus lui demande d'être reconnaissant pour cette opportunité ?
-tags: alienation
 content: >
 
     - **sur-développement** matériel, boulimie consumériste, gaspillage alimentaire et énergétique
@@ -478,6 +478,7 @@ date: 2015-06-01
 title: On leur laisse quoi ?
 subtitle: Altruistes ou simplement parents, nous sommes responsables de ce que nous acceptons aujourd'hui, et de ce qu'on laisse aux générations suivantes
 slug: laisse_quoi
+tags: earth
 image:
     url: antinuke.jpg
     credit: 281_Anti nuke
@@ -485,7 +486,6 @@ quote:
     author: Roland Castro
     content: >
         L’utopie concrête ne part pas de rien même si une bonne dose d’innocence maintenue est nécessaire à son énonciation, il y a donc des preuves qu’il arrive que du sens apparaisse, que l’idée de vivre ensemble s’impose à tous. L’idée de réenchanter le monde se nourrit de ces traces, de ces preuves qui sont des preuves de la volonté, qui nous vient par effraction de sens, par excès de mémoire heureuse, par décision de vie. J’affirme donc qu’il faut préparer une insurrection du sens.
-tags: earth
 content: >
     
     - **Quelle société** (*rapports entre nous*) ? Nos enfants grandissent avec nous. Inspirés de nos comportements, ils se construisent sur les références que nous leur laissons. Quels enfants laisserons-nous à notre planète ?
@@ -571,14 +571,14 @@ date: 2015-10-14
 title: Changeons le système, pas le climat !
 subtitle: Occupons-nous des causes, pas des conséquences
 slug: change_system
+source: "[Attac](https://france.attac.org/se-mobiliser/changeons-systeme-pas-climat/)"
+tags: politics, earth
 image:
     url: WesMagyar_manwithmask.jpg
     credit: "[Wes Magyar](http://www.wesmagyar.com)"
 quote:
     author: Buckminster Fuller
     content: Tu ne changeras jamais les choses en combattant ce qui existe déjà. Pour changer les choses, construis un nouveau modèle qui rendra l'ancien obsolète
-tags: politics, earth
-source: "[Attac](https://france.attac.org/se-mobiliser/changeons-systeme-pas-climat/)"
 content: >
     Depuis plusieurs décennies, le climat se modifie du fait de l’activité humaine. Les conférences de l’ONU se succèdent, mais les États ne réduisent pas significativement leurs émissions de gaz à effet de serre, pendant que les multinationales et la finance étendent leur emprise sur nos vies et la planète.
 
@@ -596,13 +596,13 @@ date: 2015-06-01
 title: Héritages
 subtitle: "privilégiés du nord, responsables, refusons l'ingérence"
 slug: heritages
+tags: history
 image:
     url: AlexanderAlexeieff.jpg
     credit: Alexander Alexeieff
 quote:
     author: Alvin, Toffler
     content: Si vous n'avez pas de stratégie, c'est que vous êtes partie prenante de la stratégie de quelqu'un d'autre.
-tags: history
 content: >
     Vivant dans des villes européennes *du nord*, nous sommes **conscients de la chance relative** que nous avons eue: *école gratuite, services publics, sécurité alimentaire*, mais surtout du **poids de responsabilité** meurtrière que nous portons.
 
@@ -620,13 +620,13 @@ date: 2015-06-01
 title: Inégalités et violences
 subtitle: Il existera toujours des inégalités et des violences
 slug: violence
+tags: philo
 image:
     url: ErwinBlumenfeld.jpg
     credit: Erwin Blumenfeld
 quote:
     author: voir A.Boyd & S. Duncombe
     content: La politique est tout autant affaire de désir et de fantasme que de raison et rationnalité
-tags: philo
 content: >
     Êtres sociaux et sensibles, **infiniment complexes**, notre humanité nous rend capables du **meilleur comme du pire**.
     
@@ -678,13 +678,13 @@ date: 2015-10-20
 title: Retrouver un équilibre
 subtitle: Supporter, survivre indéfiniment ? Non, là, c'est trop.
 slug: equilibre
+tags: science, alienation
 image:
     url: SaschaAlexanderSchneider.jpg
     credit: Sascha Alexander Schneider
 quote:
     author: Berthold Brecht
     content: Ceux qui luttent ne sont pas sûrs de gagner, mais ceux qui ne luttent pas ont déjà perdu.
-tags: science, alienation
 content: >
     Tandis que les catastrophes naturelles ou évènements historiques médiatisés nous plongent dans des **états émotionnels passagers et stéréotypés** (mon dieu, une épidémie d'ébola !), les évolutions plus lentes de nos société se déroulent sans que l'on puisse en **mesurer les conséquences à long terme et à grande échelle**: *ondes, publicité, OGM, malbouffe, pollution*
 
@@ -703,13 +703,13 @@ date: 2015-06-01
 title: Habitudes, dépendances, aliénations
 subtitle: Pourquoi on se fait avoir ?
 slug: alienation, emancipation
+tags: alienation
 image:
     url: divertirdominer.jpg
     credit: revue Offensive
 quote:
     author: Chomsky
     content: Identifier les structures coercitives, autoritaires et hiérarchiques de toutes sortes pour les examiner et mettre à l’épreuve leur légitimité
-tags: alienation
 content: >
     Nous devons nous battre simultanément **contre les structures** qui nous assujettissent et nous contrôlent et **contre nous-mêmes**, gangrénés de l'intérieur par nos habitudes et les idéologies dominantes.
 
@@ -726,13 +726,13 @@ date: 2015-07-16
 title: Stop aux merdias de masse
 subtitle: Finissons-en avec l'abrutissement médiatique des puissants, contrôlant à leur guise l'actualité et les modes de pensées
 slug: stop_medias
+tags: alienation, media
 image:
     url: RokuroTaniuchi.jpg
     credit: Rokuro Taniuchi
 quote:
     author: Pierre Deruelle
     content: Quand le sage montre du doigt le politique vendu au banquier, l’imbécile regarde l’immigré au bout du doigt du politique.
-tags: alienation, media
 content: >
     Nous ne voulons plus être inondés d'images nauséabondes polluant notre *«temps de cerveau disponible»*.
 
@@ -764,13 +764,13 @@ date: 2015-06-01
 title: Ce monde est pluriel
 subtitle: Nous ne cherchons pas à le réduire avec une solution unique 
 slug: monde_pluriel
+tags: philo, politics, creation
 image:
     url: RyuichiYamashiro.jpg
     credit: Ryuichi Yamashiro
 quote:
     author: Albert Eintein
     content: On ne règle pas un problème en utilisant le système de pensée qui l'a engendré.
-tags: philo, politics, creation
 content: >
     Nous vivons dans un monde *traversé, perçu, vécu, interprété* par de multiples, plurielles, **diverses réalités**, qui se **superposent** ou **s'affrontent**.
 
@@ -788,13 +788,13 @@ date: 2015-06-01
 title: Qui sont nos adversaires ?
 subtitle: La faute à qui ?
 slug: adversaires
+tags: companies
 image:
     url: EricRohman.jpg
     credit: Eric Rohman
 quote:
     author: Malcolm X
     content: Si vous n'êtes pas vigilants, les médias arriveront à vous faire détester les gens opprimés et aimer ceux qui les oppriment.
-tags: companies
 content: >
     Soupçonnés pour certains d'extorquer à l'état quelques centaines d'euros, pour d'autres de former une élite manipulatrice, nous désignons parfois comme **coupables** *politiques, riches, étrangers, fonctionnaires, fraudeurs, assistés, journalistes, extrémismes, terrorisme*...
 
@@ -821,6 +821,7 @@ date: 2015-06-01
 title: Argent roi
 subtitle: Jamais l'argent n'a été aussi omniprésent, mais sa rareté artificielle nous enferme dans une course à la compétition et au profit
 slug: argent
+tags: economy, alienation
 image:
     url: alexgross.jpg
     credit: Alex Gross
@@ -831,7 +832,6 @@ quote:
 
 
         Il est temps de réapprendre à vivre dans notre propre milieu.
-tags: economy, alienation
 content: >
     Quels sens donner à nos actes lorsque **toute valeur** est concentrée dans un seul instrument, l'argent ?
 
@@ -848,13 +848,13 @@ date: 2015-10-05
 title: Dettes, dettes, dettes
 subtitle: —
 slug: depts_always
+tags: economy, politics
 image:
     url: —
     credit: —
 quote:
     author: —
     content: —
-tags: economy, politics
 content: >
     —
 
@@ -865,13 +865,13 @@ date: 2015-07-16
 title: Taxer toutes les transactions financières
 subtitle: Du simple retrait de 10€ au distributeur aux spéculateurs financiers, taxer tous les mouvements d'argent
 slug: tax_transactions
+tags: economy, politics, slow
 image:
     url: Masereel.jpg
     credit: Masereel
 quote:
     author: Victor Hugo
     content: Il n'est rien au monde d'aussi puissant qu'une idée dont l'heure est venue.
-tags: economy, politics, slow
 content: >
     D'un très faible pourcentage, cette taxe serait **insignifiante pour les petits échanges**, mais très utile pour limiter les échanges financiers à haute vitesse concernant des montants à multiples zéros.
 
@@ -883,6 +883,7 @@ date: 2015-07-16
 title: Supprimons la publicité
 subtitle: Arrêtons la propagande des multinationales prônant un consumérisme idiot
 slug: kill_ads
+tags: alienation
 image:
     url: JiriSalamoun.jpg
     credit: Jiri Salamoun
@@ -893,7 +894,6 @@ quote:
 
 
         La publicité n'est pas un simple moyen de propagande, c'est l'instrument d'un culte.
-tags: alienation
 content: >
     Polluant nos cerveaux et tous les espaces publics, la publicité (que le client finance par son achat) est le premier symptôme d'une société omnubilée par la consommation et la croissance.
 
@@ -905,6 +905,7 @@ date: 2015-07-02
 title: À quoi on tient ?
 subtitle: Si on y réfléchit, qu'est-ce qui compte vraiment ?
 slug: on_tient_a_quoi
+tags: love, education
 image:
     url: FernandKhnopff.jpg
     credit: Fernand Khnopff
@@ -912,7 +913,6 @@ quote:
     author:  Le Tour de France des Alternatives, collection Reporterre dirigée par Hervé Kempf, 2014
     content: >
         Il ne s’agit plus de faire la liste, connue jusqu’à la nausée, des **non** de ce que nous refusons, mais d’élaborer collectivement des **oui** qui caractérisent les mondes que nous voulons
-tags: love, education
 content: >
     Nous sommes convaincus de l'importance de *l'éducation, l'art, l'histoire, la littérature, la vulgarisation scientifique* pour favoriser un **esprit critique**, une **ouverture aux autres et au monde**, la **coopération** plutôt que la compétition.
 
@@ -937,13 +937,13 @@ date: 2015-10-04
 title: Mangeons local, de saison, mangeons mieux
 subtitle: Boycottons la nourriture industrielle, cuisinons nous-même
 slug: eat_well
+tags: eat, health
 image:
     url: HorstWidmann.jpg
     credit: Horst Widmann
 quote:
     author: proverbe Yuocmyn
     content: Oublie le vrai, oublie le faux, seul le rêve peut transformer le monde
-tags: eat, health
 content: >
     Parmis les actes que nous faisons tous les jours, **celui de se nourir est sans doute celui qui est le plus politique.**
 
@@ -957,6 +957,7 @@ date: 2015-06-01
 title: Pouvoir, autorité, autonomie
 subtitle: Où se trouve le vrai pouvoir ?
 slug: pouvoir
+tags: companies, alienation, emancipation
 image:
     url: ElenaTrofimova.jpg
     credit: Elena Trofimova
@@ -965,7 +966,6 @@ quote:
         [Infokiosques.net](http://www.infokiosques.net), qu'est-ce qu'un infokiosque ?
     content: >
         Cette société nous pose question, nous empêche de vivre. Parfois elle nous fait vomir, toujours elle nous révolte. Capitalisme, patriarcat, rapports de domination, désastres écologiques, forces étatiques, de quoi faire frémir toute notre bile. Parfois nous voudrions cultiver cette bile, comment dire, l’approfondir, la relever, la garnir de données, d’arguments, d’idées d’action. Mieux connaître ce que nous critiquons pour mieux savoir ce que nous vomissons et comment nous le vomissons.
-tags: companies, alienation, emancipation
 content: >
     Les véritables puissances sont celles qui sont aux rênes des **structures matérielles des flux**: *banques, multinationales médiatiques, construction, alimentaire, transport*. Ces organisations détiennent l’**autorité**.
 
@@ -985,13 +985,13 @@ date: 2015-06-01
 title: Déléguer, toujours déléguer ?
 subtitle: État, institutions, ou comment déléguer toute autorité
 slug: deleguer
+tags: alienation, emancipation, politics
 image:
     url: RBagautdinov_1.jpg
     credit: R. Bagautdinov
 quote:
     author: Comité invisible, À nos amis, p.162
     content: Le gouvernement, c'est denier au peuple toute capacité politique au delà de son vote.
-tags: alienation, emancipation, politics
 content: >
     La logique de l'État n'est pas de créer des liens, mais d'entretenir une **dépendance des citoyens** à des *institutions, conventions, fonctions, règles, devoirs*, pour maintenir l'**ordre social**.
 
@@ -1010,13 +1010,13 @@ date: 2015-06-01
 title: Science sacralisée, expropriation
 subtitle: On arrête pas le progrès, émancipation ou servitude ? technologies et science sans conscience
 slug: science
+tags: science, web
 image:
     url: trashphones.jpg
     credit: google ?
 quote:
     author: Jacques Ellul, Les nouveaux possédés, 1973
     content: Ce n'est pas la technique qui nous asservit, c'est le sacré transféré à la technique.
-tags: science, web
 content: >
     Les développement des technologies *nano, bio, numériques, médicales* sont le symptôme d'un **fantasme de contrôle et de connaissance totale** toujours disponible.
 
@@ -1042,13 +1042,13 @@ date: 2015-07-08
 title: Désobéir, prendre position
 subtitle: "Sortons de nos zones de confort et de soumission. Depuis là où nous sommes, reformulons nous-mêmes les questions: tout lien, tout échange, toute action est politique"
 slug: prendre_position
+tags: slow, act
 image:
     url: non.jpg
     credit: Singer
 quote:
     author: Desmond Tutu
     content: Si tu es neutre en situation d'injustice, alors tu as choisi le coté de l'oppresseur
-tags: slow, act
 content: >
     Ne pensons plus à *la* politique représentative, comme institution de pouvoir et de luttes pour sa conquête.
     Entretenons ou rétablissons *le* politique, par les relations que nous avons entre voisins, collègues, amis.
@@ -1075,6 +1075,7 @@ date: 2015-07-16
 title: Boycottons toutes les multinationales
 subtitle: Réapproprions-nous nos outils numériques, choisissons notre banque et avec qui nous faisons commerce
 slug: boycott_companies
+tags: act, companies, economy
 image:
     url: AnneHeathersandEstebanFrances.jpg
     credit: Anne Heathers & Esteban Frances
@@ -1086,7 +1087,6 @@ quote:
 
 
         Le choix que nous faisons dans les urnes est sans effet, alors que nos caddies parlent pour nous... en attendant mieux.
-tags: act, companies, economy
 content: >
     Le portefeuille est notre arme la plus efficace: les banques ne sont rien sans notre argent, et les multinationales ne se développent que si l'on achète leurs produits ou utilise leurs services.
 
@@ -1100,13 +1100,13 @@ content: >
 date: 2015-06-01
 title: Réenchantons, amusons-nous
 slug: amusons_nous
+tags: love, slow
 image:
     url: ericDrooker_kids.jpg
     credit: Eric Drooker
 quote:
     author: Guy Debord
     content: L'ennui est toujours contre-révolutionnaire. Toujours.
-tags: love, slow
 content: >
     Alors qu'on nous bassine *de croissance, d'austérité, de moral des ménages, de sondages en veux-tu en voila*, **rions au nez** du sérieux et des normes.
 
@@ -1121,6 +1121,7 @@ date: 2015-06-01
 title: Rencontrons-nous
 subtitle: "Expérience du collectif, attention et confiance en l'autre, nouvelles formes de collectifs autogérés. Objectif: vivre ensemble"
 slug: rencontrons_nous
+tags: slow, emancipation, space
 image:
     url: RBagautdinov_2.jpg
     credit: R. Bagautdinov
@@ -1128,7 +1129,6 @@ quote:
     author: Comité invisible, À nos amis, p.186
     content: >
         Faire sécession, c'est habiter un territoire, assumer notre configuration situé du monde, notre façon d'y demeurer, la forme de vie et les vérités qui nous portent, et depuis là entre en conflit ou en complicité
-tags: slow, emancipation, space
 content: >
     Nous préférons les *initiatives, pratiques, collectifs* **émergents et autogérés**, aux expériences **pilotées par une autorité** omnipotente. Seule l'**expérience** du fait politique provoque la **conscience du collectif**.
 
@@ -1149,13 +1149,13 @@ date: 2015-06-01
 title: Pratiquer un langage commun
 subtitle: Le langage ne décrit pas le monde, il le construit. Des mots valises à la réalité, pour nous comprendre, soyons précis !
 slug: langage_commun
+tags: words, subsist
 image:
     url: GeorgeKovenchuk.jpg
     credit: George Kovenchuk
 quote:
     author: Comité invisible, À nos amis, p.231
     content: Notre force ne naîtra pas de la désignation de l'ennemi, mais de l'effort fait pour entrer les uns dans la géographie des autres.
-tags: words, subsist
 content: >
     *austérité, modèle économique, voie de développement, responsabilité, questions d'immigration, croissance, décroissance, communauté internationale, économie solidaire, transition, démocratie, libertés, écologie, solidarité...*
 
@@ -1180,6 +1180,7 @@ date: 2015-06-01
 title: Traduire, transmettre, échanger
 subtitle: Plus forts que les idées, leur échange ! pas d’élitisme ni d’expropriation, tout peut être compris, transmis, diffusé.
 slug: transmettre_echanger
+tags: education, emancipation
 image:
     url: CandidoPortinari.jpg
     credit: Candido Portinari
@@ -1187,7 +1188,6 @@ quote:
     author: Robert A. Heinlein
     content: >
         Un être humain devrait savoir *changer une couche-culotte, planifier une invasion, égorger un cochon, manœuvrer un navire, concevoir un bâtiment, écrire un sonnet, faire un bilan comptable, monter un mur, réduire une fracture, soutenir un mourant, prendre des ordres, donner des ordres, coopérer, agir seul, résoudre des équations, analyser un nouveau problème, répandre de l'engrais, programmer un ordinateur, cuisiner un bon repas, se battre efficacement, et mourir bravement*. La spécialisation, c'est bon pour les insectes.
-tags: education, emancipation
 content: >
     Les idées vivent lorsqu'elles sont **exprimées, transmises, débattues, interprétées, reformulées**. Chaque *position, vision, point de vue, questionnement* doit trouver sa place tout au long de cette chaîne de compréhension.
 
@@ -1205,13 +1205,13 @@ date: 2015-06-01
 title: Réappropriation, émancipation
 subtitle: "Informons-nous, disséquons l'ordre et l'origine des choses"
 slug: reappropriation
+tags: education, emancipation, media
 image:
     url: agropirate.jpg
     credit: ?
 quote:
     author: Bernard Charbonneau
     content: Croire que la technique est neutre, c’est l’être soi-même à son endroit. C’est s’interdire de la juger et donc la laisser chaque jour davantage livrée à elle-même.
-tags: education, emancipation, media
 content: >
     **Réapproprions-nous le monde** sous toutes ses formes: *espaces public et géographique, médiatique, sémantique*
 
@@ -1235,6 +1235,7 @@ date: 2015-07-16
 title: Le tirage au sort pour réinvestir le politique
 subtitle: Supprimer le cumul des mandats, et pourvoir les postes à responsabilité au hasard parmis des assemblées de volontaires
 slug: tirage_sort
+tags: emancipation, politics
 image:
     url: R_Bagautdinov.jpg
     credit: R. Bagautdinov
@@ -1242,7 +1243,6 @@ quote:
     author: Alain, 1935
     content: >
         Car enfin le trait le plus visible dans l'homme juste est de ne point vouloir du tout gouverner les autres, et de se gouverner seulement lui-même. Cela décide tout. Autant dire que les pires gouverneront
-tags: emancipation, politics
 content: >
     L'idée que la politique n'est qu'un affaire d'experts permet à des castes oligarchiques et élitistes de monopoliser tous les pouvoirs.
 
@@ -1263,13 +1263,13 @@ date: 2015-06-01
 title: Récupérations
 subtitle: Capitalisme vert, économie collaborative...
 slug: recuperation
+tags: companies, economy
 image:
     url: PaulRand.jpg
     credit: Paul Rand
 quote:
     author: Félix Thiéfaine
     content: Laissez l'État dans les toilettes où vous l'avez trouvé
-tags: companies, economy
 content: >
     Les grandes **puissances d'argent** ont bien compris comment utiliser à leur compte le jargon séducteur de *l’économie collaborative, de partage, d'horizontalité, de résilience, de liberté d'accès*
 
@@ -1287,6 +1287,7 @@ date: 2015-06-01
 title: Sous toutes les formes
 subtitle: Diversité, multidisciplinarité, contre-récits
 slug: formes_diverses
+tags: words, creation, love
 image:
     url: DavidBarth.jpg
     credit: David Barth
@@ -1294,14 +1295,11 @@ quote:
     author: Hervé Le Tellier, dialogues socratiques
     content: >
         Pour l'aveugle, l'oiseau chante. Pour le sourd, l'oiseau vole. Qui dit vrai ? Demande au muet.
-tags: words, creation, love
 content: >
     Nous pensons qu'il existe toujours une **multitude de formulations** d'un problème et de réponses possibles. Pour mieux saisir le monde,  multiplions les manières de l'aborder: *langues, domaines, dimensions, générations, temporalités*.
 
 
     Où sont les **contre-récits**, les nouvelles formes de discours et du faire ? diversifions les interprétations: *poétiques, musicales, graphiques, invisibles, absurdes...*
-
-
 
 
 
