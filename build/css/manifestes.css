@@ -1796,32 +1796,37 @@ div.highlight {
   bottom: 0;
   background: lightgray;
 }
-.base-tag {
+.base-tags {
+  padding-right: 5px;
+  padding-left: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.base-tags .tag {
   float: right;
   margin: 2px -1px;
   padding: 2px 5px;
-  border-radius: 2px;
   color: white;
   font-style: italic;
   text-transform: uppercase;
   cursor: pointer;
 }
-.base-tag i {
+.base-tags .tag i {
   vertical-align: baseline;
   font-size: 1.1em;
   margin-left: 2px;
 }
-.base-tag i.clear {
+.base-tags .tag i.clear {
   display: none;
   opacity: 0.5;
 }
-.base-tag:hover i.clear {
+.base-tags .tag:hover i.clear {
   opacity: 1;
 }
-.base-tag.active {
+.base-tags .tag.active {
   background: #883e3e;
 }
-.base-tag.active i.clear {
+.base-tags .tag.active i.clear {
   display: inline-block;
 }
 .wrapper {
@@ -2029,19 +2034,20 @@ body.layout-mapprint .container {
   position: absolute;
   right: 0;
   top: 11px;
-  margin-right: 10px;
+  padding-right: 5px;
+  padding-left: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background: #6a6c67;
 }
 .section.layout-flat .block .tags .tag {
   float: right;
   margin: 2px -1px;
   padding: 2px 5px;
-  border-radius: 2px;
   color: white;
   font-style: italic;
   text-transform: uppercase;
   cursor: pointer;
-  background: #6a6c67;
-  font-size: 9px;
 }
 .section.layout-flat .block .tags .tag i {
   vertical-align: baseline;
@@ -2060,6 +2066,10 @@ body.layout-mapprint .container {
 }
 .section.layout-flat .block .tags .tag.active i.clear {
   display: inline-block;
+}
+.section.layout-flat .block .tags .tag {
+  background: #6a6c67;
+  font-size: 9px;
 }
 .section.layout-flat .block .tags .tag:hover {
   background: #ababab;
@@ -2483,49 +2493,55 @@ body.layout-mapprint .container {
   text-align: left;
   font-size: 1em;
 }
-.panel.links .tags {
-  float: right;
-  margin: 0px 10px;
-}
-.panel.links .tags .tag {
-  float: right;
-  margin: 2px -1px;
-  padding: 2px 5px;
-  border-radius: 2px;
-  color: white;
-  font-style: italic;
-  text-transform: uppercase;
-  cursor: pointer;
-  background: #ababab;
-  font-size: 10px;
-}
-.panel.links .tags .tag i {
-  vertical-align: baseline;
-  font-size: 1.1em;
-  margin-left: 2px;
-}
-.panel.links .tags .tag i.clear {
-  display: none;
-  opacity: 0.5;
-}
-.panel.links .tags .tag:hover i.clear {
-  opacity: 1;
-}
-.panel.links .tags .tag.active {
-  background: #883e3e;
-}
-.panel.links .tags .tag.active i.clear {
-  display: inline-block;
-}
-.panel.links .tags .tag:hover {
-  background: #6a6c67;
-}
 .panel.links .link {
   padding: 6px 0px 6px 15px;
   padding-right: 0;
   border-bottom: 1px solid #D2D2D2;
   overflow: hidden;
   background: white;
+}
+.panel.links .link .tags {
+  float: right;
+  margin-left: 10px;
+  padding-right: 5px;
+  padding-left: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background: #ababab;
+}
+.panel.links .link .tags .tag {
+  float: right;
+  margin: 2px -1px;
+  padding: 2px 5px;
+  color: white;
+  font-style: italic;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.panel.links .link .tags .tag i {
+  vertical-align: baseline;
+  font-size: 1.1em;
+  margin-left: 2px;
+}
+.panel.links .link .tags .tag i.clear {
+  display: none;
+  opacity: 0.5;
+}
+.panel.links .link .tags .tag:hover i.clear {
+  opacity: 1;
+}
+.panel.links .link .tags .tag.active {
+  background: #883e3e;
+}
+.panel.links .link .tags .tag.active i.clear {
+  display: inline-block;
+}
+.panel.links .link .tags .tag {
+  background: #ababab;
+  font-size: 10px;
+}
+.panel.links .link .tags .tag:hover {
+  background: #6a6c67;
 }
 .panel.links .link .love {
   z-index: 24;
@@ -2551,7 +2567,9 @@ body.layout-mapprint .container {
   border-left: none;
 }
 .panel.links .link.reducedtag .love,
-.panel.links .link.reducedsearch .love {
+.panel.links .link.reducedsearch .love,
+.panel.links .link.reducedtag .tags,
+.panel.links .link.reducedsearch .tags {
   display: none;
 }
 .panel.links .link.reducedsearch {
@@ -2764,9 +2782,6 @@ body.layout-mapprint .container {
   .panel.links {
     margin-left: 0;
   }
-  .panel.links .tags {
-    margin: 0px 5px;
-  }
   /* SECTIONS */
   .section.hidden .image,
   .section.reduced .image {
@@ -2781,7 +2796,6 @@ body.layout-mapprint .container {
     padding: 7px 7px 7px 10px !important;
   }
   .section.reduced .tags {
-    margin-right: 5px !important;
     top: 6px !important;
   }
   .section.reduced .date {

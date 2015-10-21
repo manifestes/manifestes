@@ -58,12 +58,13 @@ menu:
     map: carte
     maptip: pour visiter
     calendar: agenda
-    calendartip: http://demosphere.eu
+    calendartip: démosphère !
     print: imprimir
     printtip: "imprimez\nla fenêtre\nqui s'ouvre !"
     sourcetip: voir la source
     discusstext: discutir, corregir, proponer
     discussback: volver al texto
+tagtip: "filtrer par thématiques"
 tags:
     about: "à propos|question-circle = à propos de ce projet, contexte\nliste de discussion, code source"
     group: "collectifs|users = groupes, réseaux, coopératives\nassociations, structures"

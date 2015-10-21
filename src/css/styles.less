@@ -822,39 +822,45 @@ span.highlight, div.highlight { /* searched words */
   background: lightgray;
 }
 
-.base-tag {
-  float: right;
-  margin: 2px -1px;
-  padding: 2px 5px;
-  border-radius: 2px;
-  color: white;
-  
-  font-style: italic;
-  text-transform: uppercase;
-  cursor: pointer;
 
-  i {
-    vertical-align: baseline;
-    font-size: 1.1em;
-    margin-left: 2px;
-  }
-  i.clear {
-    display: none;
-    opacity: 0.5;
-  }
-  &:hover {
-    i.clear {
-      opacity: 1;
+.base-tags {
+  padding-right: 5px;
+  padding-left: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+
+  .tag {
+    float: right;
+    margin: 2px -1px;
+    padding: 2px 5px;
+    color: white;
+    
+    font-style: italic;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    i {
+      vertical-align: baseline;
+      font-size: 1.1em;
+      margin-left: 2px;
     }
-  }
-  &.active {
-    background: @redColor;
     i.clear {
-      display: inline-block;
+      display: none;
+      opacity: 0.5;
+    }
+    &:hover {
+      i.clear {
+        opacity: 1;
+      }
+    }
+    &.active {
+      background: @redColor;
+      i.clear {
+        display: inline-block;
+      }
     }
   }
 }
-
 
 .wrapper {
   margin-top: @menuH;
