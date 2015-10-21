@@ -2740,8 +2740,9 @@ body.layout-mapprint .container {
     box-shadow: none !important;
   }
   .header .printer,
-  .header .button#lang {
-    display: none;
+  .header .button#lang,
+  .header .ext {
+    display: none !important;
   }
   .hint:after,
   [data-hint]:after,
