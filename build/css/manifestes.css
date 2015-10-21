@@ -479,12 +479,12 @@
 
 ;
 
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
 /**
  * 1. Set default font family to sans-serif.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
  */
 
 html {
@@ -552,7 +552,7 @@ audio:not([controls]) {
 
 /**
  * Address `[hidden]` styling not present in IE 8/9/10.
- * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
  */
 
 [hidden],
@@ -572,7 +572,8 @@ a {
 }
 
 /**
- * Improve readability when focused and also mouse hovered in all browsers.
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
  */
 
 a:active,
@@ -690,7 +691,6 @@ figure {
  */
 
 hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
@@ -831,15 +831,12 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /**
  * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
- *    (include `-moz` to future-proof).
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
  */
 
 input[type="search"] {
   -webkit-appearance: textfield; /* 1 */
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box; /* 2 */
-  box-sizing: content-box;
+  box-sizing: content-box; /* 2 */
 }
 
 /**
@@ -1735,7 +1732,7 @@ div.highlight {
   z-index: 32;
   position: fixed;
   width: 100%;
-  padding: 20px 150px;
+  padding: 5px 0px;
   top: -100%;
   -webkit-transition: top 0.4s;
   -moz-transition: top 0.4s;
@@ -1753,10 +1750,24 @@ div.highlight {
   top: 65px;
 }
 .disclaimer span {
+  box-sizing: border-box;
   font-size: 1.1em;
   font-style: italic;
   line-height: 1.4em;
   color: #3c3c3c;
+}
+.disclaimer span.full {
+  display: inline-block;
+  padding: 15px 150px;
+}
+.disclaimer span.splitted {
+  display: table-cell;
+  padding: 15px 60px;
+  vertical-align: middle;
+}
+.disclaimer span.splitted:first-child {
+  width: 400px;
+  border-right: 1px dashed grey;
 }
 .disclaimer i {
   cursor: pointer;
@@ -1775,32 +1786,47 @@ div.highlight {
 .disclaimer i:hover {
   color: #3c3c3c;
 }
-.base-tag {
+.loading {
+  z-index: 30;
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 35%;
+  top: 0;
+  bottom: 0;
+  background: lightgray;
+}
+.base-tags {
+  padding-right: 5px;
+  padding-left: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.base-tags .tag {
   float: right;
   margin: 2px -1px;
   padding: 2px 5px;
-  border-radius: 2px;
   color: white;
   font-style: italic;
   text-transform: uppercase;
   cursor: pointer;
 }
-.base-tag i {
+.base-tags .tag i {
   vertical-align: baseline;
   font-size: 1.1em;
   margin-left: 2px;
 }
-.base-tag i.clear {
+.base-tags .tag i.clear {
   display: none;
   opacity: 0.5;
 }
-.base-tag:hover i.clear {
+.base-tags .tag:hover i.clear {
   opacity: 1;
 }
-.base-tag.active {
+.base-tags .tag.active {
   background: #883e3e;
 }
-.base-tag.active i.clear {
+.base-tags .tag.active i.clear {
   display: inline-block;
 }
 .wrapper {
@@ -2008,19 +2034,20 @@ body.layout-mapprint .container {
   position: absolute;
   right: 0;
   top: 11px;
-  margin-right: 10px;
+  padding-right: 5px;
+  padding-left: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background: #6a6c67;
 }
 .section.layout-flat .block .tags .tag {
   float: right;
   margin: 2px -1px;
   padding: 2px 5px;
-  border-radius: 2px;
   color: white;
   font-style: italic;
   text-transform: uppercase;
   cursor: pointer;
-  background: #6a6c67;
-  font-size: 9px;
 }
 .section.layout-flat .block .tags .tag i {
   vertical-align: baseline;
@@ -2039,6 +2066,10 @@ body.layout-mapprint .container {
 }
 .section.layout-flat .block .tags .tag.active i.clear {
   display: inline-block;
+}
+.section.layout-flat .block .tags .tag {
+  background: #6a6c67;
+  font-size: 9px;
 }
 .section.layout-flat .block .tags .tag:hover {
   background: #ababab;
@@ -2462,48 +2493,55 @@ body.layout-mapprint .container {
   text-align: left;
   font-size: 1em;
 }
-.panel.links .tags {
-  float: right;
-  margin: 0px 10px;
-}
-.panel.links .tags .tag {
-  float: right;
-  margin: 2px -1px;
-  padding: 2px 5px;
-  border-radius: 2px;
-  color: white;
-  font-style: italic;
-  text-transform: uppercase;
-  cursor: pointer;
-  background: #ababab;
-  font-size: 10px;
-}
-.panel.links .tags .tag i {
-  vertical-align: baseline;
-  font-size: 1.1em;
-  margin-left: 2px;
-}
-.panel.links .tags .tag i.clear {
-  display: none;
-  opacity: 0.5;
-}
-.panel.links .tags .tag:hover i.clear {
-  opacity: 1;
-}
-.panel.links .tags .tag.active {
-  background: #883e3e;
-}
-.panel.links .tags .tag.active i.clear {
-  display: inline-block;
-}
-.panel.links .tags .tag:hover {
-  background: #6a6c67;
-}
 .panel.links .link {
   padding: 6px 0px 6px 15px;
   padding-right: 0;
   border-bottom: 1px solid #D2D2D2;
+  overflow: hidden;
   background: white;
+}
+.panel.links .link .tags {
+  float: right;
+  margin-left: 10px;
+  padding-right: 5px;
+  padding-left: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background: #ababab;
+}
+.panel.links .link .tags .tag {
+  float: right;
+  margin: 2px -1px;
+  padding: 2px 5px;
+  color: white;
+  font-style: italic;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.panel.links .link .tags .tag i {
+  vertical-align: baseline;
+  font-size: 1.1em;
+  margin-left: 2px;
+}
+.panel.links .link .tags .tag i.clear {
+  display: none;
+  opacity: 0.5;
+}
+.panel.links .link .tags .tag:hover i.clear {
+  opacity: 1;
+}
+.panel.links .link .tags .tag.active {
+  background: #883e3e;
+}
+.panel.links .link .tags .tag.active i.clear {
+  display: inline-block;
+}
+.panel.links .link .tags .tag {
+  background: #ababab;
+  font-size: 10px;
+}
+.panel.links .link .tags .tag:hover {
+  background: #6a6c67;
 }
 .panel.links .link .love {
   z-index: 24;
@@ -2528,6 +2566,12 @@ body.layout-mapprint .container {
   cursor: pointer;
   border-left: none;
 }
+.panel.links .link.reducedtag .love,
+.panel.links .link.reducedsearch .love,
+.panel.links .link.reducedtag .tags,
+.panel.links .link.reducedsearch .tags {
+  display: none;
+}
 .panel.links .link.reducedsearch {
   background: rgba(255, 252, 0, 0.48);
 }
@@ -2540,7 +2584,7 @@ body.layout-mapprint .container {
   bottom: 0;
 }
 .map .legend {
-  z-index: 99;
+  z-index: 25;
   position: absolute;
   bottom: 0px;
   width: 100%;
@@ -2714,8 +2758,9 @@ body.layout-mapprint .container {
     box-shadow: none !important;
   }
   .header .printer,
-  .header .button#lang {
-    display: none;
+  .header .button#lang,
+  .header .ext {
+    display: none !important;
   }
   .hint:after,
   [data-hint]:after,
@@ -2730,14 +2775,12 @@ body.layout-mapprint .container {
 @media (max-width: 750px) {
   .header .menu .searchinput,
   .header .menu .tagsmenu,
+  .disclaimer span.splitted:first-child,
   .panel.graph {
     display: none;
   }
   .panel.links {
     margin-left: 0;
-  }
-  .panel.links .tags {
-    margin: 0px 5px;
   }
   /* SECTIONS */
   .section.hidden .image,
@@ -2753,7 +2796,6 @@ body.layout-mapprint .container {
     padding: 7px 7px 7px 10px !important;
   }
   .section.reduced .tags {
-    margin-right: 5px !important;
     top: 6px !important;
   }
   .section.reduced .date {
@@ -2792,9 +2834,9 @@ body.layout-mapprint .container {
     padding: 20px 0px;
     margin-top: 10px;
   }
-  .disclaimer {
-    padding: 20px 40px;
+  .disclaimer span {
     font-size: 0.8em;
+    padding: 20px 50px !important;
   }
   .header .action.backintro {
     padding: 9px 10px;
@@ -2821,6 +2863,7 @@ body.layout-mapprint .container {
   .menu .tagshat,
   .menu .tagspanel,
   .section.layout-flat .image,
+  .disclaimer span.splitted:first-child,
   .panel.graph {
     width: 370px !important;
   }
@@ -2844,6 +2887,7 @@ body.layout-mapprint .container {
   .menu .tagshat,
   .menu .tagspanel,
   .section.layout-flat .image,
+  .disclaimer span.splitted:first-child,
   .panel.graph {
     width: 480px !important;
   }
@@ -2867,6 +2911,7 @@ body.layout-mapprint .container {
   .menu .tagshat,
   .menu .tagspanel,
   .section.layout-flat .image,
+  .disclaimer span.splitted:first-child,
   .panel.graph {
     width: 580px !important;
   }

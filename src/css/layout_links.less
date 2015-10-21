@@ -91,28 +91,28 @@
   text-align: left;
   font-size: 1em;
 
-  .tags {
-    float: right;
-    margin: 0px 10px;
-    
-    .tag {
-      
-      .base-tag();
-
-      background: @lightColor;
-      font-size: 10px;
-      &:hover { 
-        background: @darkColor;
-      }
-    }
-  }
-
   .link {
     padding: 6px 0px 6px 15px;
     padding-right: 0;
     border-bottom: 1px solid #D2D2D2;
-
+    overflow: hidden;
     background: white;
+
+    .tags {
+      float: right;
+      margin-left: 10px;
+      
+      .base-tags();
+      background: @lightColor;
+
+      .tag {
+        background: @lightColor;
+        font-size: 10px;
+        &:hover { 
+          background: @darkColor;
+        }
+      }
+    }
 
     .love {
       z-index: 24;
@@ -134,6 +134,7 @@
       padding: 0;
       cursor: pointer;
       border-left: none;
+      .love, .tags { display: none; }
     }
     &.reducedsearch {
       background: @searchYellow;

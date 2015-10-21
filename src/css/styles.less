@@ -754,12 +754,14 @@ span.highlight, div.highlight { /* searched words */
     color: @textColor;
   }
 }
+
 .disclaimer {
   box-sizing: border-box;
   z-index: 32;
   position: fixed;
+  display: table;
   width: 100%;
-  padding: 20px 150px;
+  padding: 5px 0px;
 
   top: -100%;
   .transition(top 0.4s);
@@ -774,11 +776,26 @@ span.highlight, div.highlight { /* searched words */
   background: @yellowColor;
   
   span {
+    box-sizing: border-box;
     font-size: 1.1em;
     font-style: italic;
     line-height: 1.4em;
     color: @textColor;
   }
+  span.full {
+    display: inline-block;
+    padding: 15px 150px;
+  }
+  span.splitted {
+    display: table-cell;
+    padding: 15px 60px;
+    vertical-align: middle;
+  }
+  span.splitted:first-child {
+    width: @panelW;
+    border-right: 1px dashed grey;
+  }
+
   i {
     cursor: pointer;
     position: absolute;
@@ -795,40 +812,56 @@ span.highlight, div.highlight { /* searched words */
   }
 }
 
+.loading {
+  z-index: 30;
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 35%;
+  top: 0;
+  bottom: 0;
+  background: lightgray;
+}
 
-.base-tag {
-  float: right;
-  margin: 2px -1px;
-  padding: 2px 5px;
-  border-radius: 2px;
-  color: white;
-  
-  font-style: italic;
-  text-transform: uppercase;
-  cursor: pointer;
 
-  i {
-    vertical-align: baseline;
-    font-size: 1.1em;
-    margin-left: 2px;
-  }
-  i.clear {
-    display: none;
-    opacity: 0.5;
-  }
-  &:hover {
-    i.clear {
-      opacity: 1;
+.base-tags {
+  padding-right: 5px;
+  padding-left: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+
+  .tag {
+    float: right;
+    margin: 2px -1px;
+    padding: 2px 5px;
+    color: white;
+    
+    font-style: italic;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    i {
+      vertical-align: baseline;
+      font-size: 1.1em;
+      margin-left: 2px;
     }
-  }
-  &.active {
-    background: @redColor;
     i.clear {
-      display: inline-block;
+      display: none;
+      opacity: 0.5;
+    }
+    &:hover {
+      i.clear {
+        opacity: 1;
+      }
+    }
+    &.active {
+      background: @redColor;
+      i.clear {
+        display: inline-block;
+      }
     }
   }
 }
-
 
 .wrapper {
   margin-top: @menuH;
