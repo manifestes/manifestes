@@ -21,9 +21,6 @@ quote:
     author: —
     content: arrêtez le monde, je voudrai descendre
 quote:
-    author: —
-    content: L'utopie n'est pas un futur souhaitable mais un ailleurs présent
-quote:
     author: Victor Hugo
     content: Il vient une heure où protester ne suffit plus; après la philosophie, il faut l’action; la vive force achève ce que l’idée a ébauché.
 quote:
@@ -51,7 +48,7 @@ quote:
     content: >
          Le déficit de l'Etat était l'objet même des spéculations. A la fin de chaque année, nouveau déficit. Au bout de quatre ou cinq ans, nouvel emprunt. Or chaque nouvel emprunt fournissait à l'aristocratie une nouvelle occasion de rançonner l'Etat qui, maintenu au bord de la banqueroute, était obligé de traiter avec les banquiers dans des conditions toujours plus défavorables.
 quote:
-    author: (sentiers de l'utopie ?)
+    author: Mujeres Creando, Les Sentiers de l'Utopie, J.Jordan & I.Fremeaux
     content: Prends garde au présent que tu crées, car il doit ressembler au futur dont tu rêves
 quote:
     author: (formes vives ?)
@@ -66,7 +63,7 @@ quote:
     author: Daniel Pennac
     content: Le bonheur individuel se doit de produire des retombées collectives, faute de quoi, la société n'est qu'un rêve de prédateur
 quote:
-    author: ?
+    author: —
     content: Le cinéma est un art, la télé est un meuble.
 quote:
     author: anonyme
@@ -181,9 +178,6 @@ quote:
 
 
 ---
-image:
-    url: ericDrooker_building.jpg
-    credit: Eric Drooker
 image:
     url: warsheep.jpg
     credit: —

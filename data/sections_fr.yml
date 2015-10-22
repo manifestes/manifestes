@@ -27,12 +27,12 @@ mapcredits:
         color: C06538
     lieux:
         name: Lieux de vie
-        description: —
+        description: "Lieux de vie, collectifs, bases nomades, \necolieux, fermes autogérées, Zap, Zad, \ncommunautés, squats..."
         url: https://www.google.com/maps/d/viewer?mid=zCUrDZ_sv7Fw.k9HCrqv3hIVA
         color: 856D2D
     citoy:
         name: Citoyens en Transition
-        description: Citoyens en Transition
+        description: "Des alternatives individuelles et collectives \npour la construction d'un vivre ensemble plus riche"   
         url: http://citoyens.en-transition.fr/
         color: CC5B79
     fucrecup:
@@ -386,13 +386,13 @@ title: Lieux de la Caravane des alternatives
 subtitle: Charte des écolieux et collectifs de l'annuaire de la caravane des alternatives
 slug: caravane_alternatives
 source: "[Caravane des alternatives](http://caravanedesalternatives.weebly.com/)"
-tags: map, list
+tags: map, list, group
 image:
     url: ericDrooker_jungle.jpg
     credit: Eric Drooker
 quote:
-    author: Gandhi
-    content: Vous devez être le changement que vous voulez voir dans ce monde.
+    author: —
+    content: L'utopie n'est pas un futur souhaitable mais un ailleurs présent
 content: >
     La définition des lieux alternatifs ou écolieux est très difficile à définir tant les strates d'alternatives sont multiples et complexes... Ici, ce n'est pas la qualité des points de vente bio mais plutôt la philosophie de l'accueuil qui a été mise en avant.
 
@@ -402,6 +402,29 @@ content: >
 
     Il est difficile de définir une norme de taille idéale (dépend de l'activité, des habitudes de vie, élevage ou non...). La caravane des alternatives se positionne sur le postulat de 0,5 à 1ha de terre cultivable par personne, à rajouter à cela de la terre pour le bois (chauffage, construction, sauvage). Nous valorisons donc les petites structures entre 1 ha et 40ha, voire même de 1ha à 10ha
 
+
+
+---
+date: 2015-10-22
+title: Voyageurs en transition
+subtitle: Promouvoir la transition individuelle afin de recentrer l’individu comme acteur des changements
+slug: caravane_alternatives
+source: "[Citoyens en Transition](http://citoyens.en-transition.fr/)"
+tags: map, list, group
+image:
+    url: ericDrooker_building.jpg
+    credit: Eric Drooker
+quote:
+    author: Gandhi
+    content: Sois le changement que tu veux voir dans le monde
+content: >
+    En 2011, une petite poignée de motivés crée l’association et le site web *«Nous sommes Autrement»*. Ce nom incarnait notre volonté de changement, notre envie de faire résonner les modes de vies alternatifs, notre désir d’essaimer des façons d’être et de faire qui nous touchent le cœur. En devenant *«Voyageurs en transition»*, le site marquait un tournant pour Mathieu qui enfourchait son vélo pour voguer au gré de lieux différents, alternatifs ou, pour le dire autrement, qui prônent une vie plus simple, plus harmonieuse mais pas moins ardue à mettre en œuvre. Bastien, lui aussi voyageur à vélo aux valeurs convergentes, se joignait à notre collectif pour en devenir un pilier.
+
+
+    Depuis, *Antoine, Ans, Loïc, les radeaux, Nicolas, la roulotte, Emmanuel, Elodie et Sébastien, Edith et Yann, Laura, Cécile, Chloé, Olivier, Hélène, Benoit, Oriane, Mathias, Pauline, Donatello, Fabien, Claire, Léa et Guillaume* nous on rejoint. Alors, qui sait ? Les prochains ça sera peut-être vous !
+
+
+    Nous voulons rendre les changement plus accessibles à chacun en partageant des expériences de voyages mais aussi de choix de vie encore à la marge. C’est aussi un lieu d’échange et de conseils qui appartient à tous ceux qui en font une réalité.
 
 
 
