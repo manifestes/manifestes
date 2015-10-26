@@ -47,7 +47,7 @@
   }
 
   /* SECTIONS */
-  @betterReducedH: 38px;
+  @betterReducedH: 45px;
   .section {
     &.hidden, &.reduced {
       .image { display: none !important; }
@@ -57,13 +57,14 @@
       .h1 {
         font-size: 0.8em !important;
         margin-left: 11px !important;
-        padding: 7px 7px 7px 10px !important;
+        padding: 10px !important;
       }
       .tags {
         top: 6px !important;
       }
       .date {
-        top: @betterReducedH / 2 !important;
+        //top: @betterReducedH / 2 !important;
+        display: none;
       }
     }
     .image {
@@ -96,6 +97,9 @@
       padding: 20px 0px;
       margin-top: 10px;
     }
+    .splash, .image {
+      bottom: 60px !important;
+    }
   }
   .disclaimer span {
     font-size: 0.8em;
@@ -111,6 +115,12 @@
     .button#calendar {
       display: none;
     }
+  }
+  .link {
+    padding: 10px 0px 10px 10px !important;
+    // &.reducedtag, &.reducedsearch {
+    //   padding: 0px !important;
+    // }
   }
 }
 

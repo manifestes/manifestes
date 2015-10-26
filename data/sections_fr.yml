@@ -50,17 +50,20 @@ graph:
         cliquer pour afficher le graphe
         <br><br>
         attention, le temps de chargement peut être long (8.2Mo)
+    image: links_eniac.jpg
     credits: >
-        [graph.gexf](https://github.com/manifestes/manifestes/blob/gh-pages/data/graph.gexf) produced with [hyphe](http://hyphe.medialab.sciences-po.fr/) and displayed using [sigma.js](http://sigmajs.org/)
+        [graph.gexf](https://github.com/manifestes/manifestes/blob/gh-pages/data/graph.gexf) produit avec l'outil libre [hyphe](http://hyphe.medialab.sciences-po.fr/) et affiché avec [sigma.js](http://sigmajs.org/)
+        
+        
+        voir aussi la [liste des sites web](https://github.com/manifestes/manifestes/blob/gh-pages/data/utiles/graph_id-url-tag.csv) du graphe
     controlhelp: "Chaque point du réseau représente un site internet\n\n- Utilisez la molette de votre souris pour zoomer\n- Cliquez sur un point pour voir les sites voisins (cités ou citant)\n- Double-cliquez pour ouvrir le site dans une nouvelle fenêtre\n\nLes couleurs correspondent aux classes de modularité,\nc-à-d aux communautés détectées selon la structure du réseau"
     controlfull: "afficher/réduire le plein écran"
 intro:
     images:
+        - keep-calm-slow-down_231F20
         - manifeste-utopies-concretes_633232
-        - sortir-zone-confort_662D91
+        - appel-convergence_231F20
         - collectifs-autogestion_E0A11A
-        - masse-critique_333
-        - manifestation-quotidienne_662D91
     enter: "consulter & participer"
 disclaimer:
     sections: >

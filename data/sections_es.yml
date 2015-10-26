@@ -10,13 +10,13 @@ source:
     links: https://github.com/manifestes/manifestes/blob/gh-pages/data/links_es.yml
 graph:
     loader: no graph yet for the spanish version
+    image: links_eniac.jpg
 intro:
     images:
+        - keep-calm-slow-down_231F20
         - manifeste-utopies-concretes_633232
-        - sortir-zone-confort_662D91
+        - appel-convergence_231F20
         - collectifs-autogestion_E0A11A
-        - masse-critique_333
-        - manifestation-quotidienne_662D91
     MAJtitle: ¡Manifiesto!
     MAJdescription: >
         colectivo(s) de los territorios comunes autogestionados y alternativas convivialistas DIY voluntarios revolucionarios de la transición social y ecológica en los terceros lugares creativos de los clowns del bricolaje piratas de las utopías libertarias ecofeministas p2p y cooperativistas indignadas activistas de la resiliencia decreciente concreta y desobediente de las convergencias de las luchas

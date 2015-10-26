@@ -1,0 +1,65 @@
+
+.wrapper.layout-full {
+  margin-top: 0px;
+
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  .page {
+    height: 100%;
+    width: 100%;
+
+    .fullbox {
+      box-sizing: border-box;
+      display: inline-block;
+      position: relative;
+      width: 50%;
+      height: 100%;
+
+      background: black;
+      color: white;
+
+      cursor: pointer;
+
+      .h1 {
+        z-index: 4;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        .transform(translate(-50%,-50%));
+        
+        font-size: 3em;
+        //text-transform: uppercase;
+        font-style: italic;
+        font-weight: 900;
+      }
+      .overlay, .image {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+      }
+      .overlay {
+        z-index: 3;
+        background: black;
+        opacity: 0.8;
+        .transition(opacity 0.2s ease-out);
+      }
+      &:hover {
+        .overlay {
+          opacity: 0.5;
+        }
+      }
+    }
+
+    .jump {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      .transform(translateX(-50%));
+
+      padding: 4px;
+      background: white;
+    }
+  }
+}

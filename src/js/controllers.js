@@ -31,7 +31,7 @@ angular.module('manifest.controllers', ['underscore','config'])
     $scope.settings = settings;
     if($routeParams.forcedev) $scope.settings.dev = true;
     var layout = $routeParams.layout ?
-      (["sections","sectionsprint","links","map","mapprint"].indexOf($routeParams.layout)==-1 ? "sections" : $routeParams.layout) :
+      (["full","sections","sectionsprint","links","map","mapprint"].indexOf($routeParams.layout)==-1 ? "sections" : $routeParams.layout) :
       "sections";
 
     $scope.meta = {}; // mainly the meta info at start of section.yml
@@ -578,11 +578,13 @@ angular.module('manifest.controllers', ['underscore','config'])
             d.layout = 'flat'; //Math.random()<0.2 ? 'grid' : 'flat';
 
             $scope.sectionsArray.push(d);
+            $scope.sectionsFullArray = $scope.sectionsArray.slice(0,2);
 
           }
         });
 
         callb();
+
       })
       .error(function (data, status, headers, config) {
         console.log("error sections",status);

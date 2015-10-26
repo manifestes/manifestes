@@ -3,13 +3,17 @@
 <div class="panel graph" ng-class="{fullscreen:state.graphfullscreen}">
 
 <!-- GRAPH LOADER OVERLAY -->
-  <div class="graphloader spinner" ng-if="state.graphstatus=='LOADING'">
+  <div
+    class="graphloader spinner cover"
+    back-img="{{settings.datapath}}media/{{meta.graph.image}}"
+    ng-if="state.graphstatus=='LOADING'">
     <div class="bounce1"></div>
     <div class="bounce2"></div>
     <div class="bounce3"></div>
   </div>
   <div
-    class="graphloader"
+    class="graphloader cover"
+    back-img="{{settings.datapath}}media/{{meta.graph.image}}"
     ng-if="state.graphstatus=='NO'"
     ng-click="state.lang=='fr' && loadLinksGraph();"
     ng-bind-html="meta.graph.loader">
@@ -17,6 +21,7 @@
 
   <!-- CONTROLS -->
   <div
+    ng-if="state.graphstatus=='OK'"
     class="control second graphfullscreen hint--bottom"
     data-hint="{{meta.graph.controlfull}}"
     ng-click="state.graphfullscreen = !state.graphfullscreen; updateGraphSize();">
@@ -29,6 +34,7 @@
     </i>
   </div>
   <div
+    ng-if="state.graphstatus=='OK'"
     class="control help hint--bottom"
     data-hint="{{meta.graph.controlhelp}}">
     <i class="fa fa-question"></i>

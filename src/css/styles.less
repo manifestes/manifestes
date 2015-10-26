@@ -112,7 +112,7 @@ span.highlight, div.highlight { /* searched words */
 }
 
 
-@bottomEnter: 60px;
+@bottomEnter: 90px;
 
 .intro {
   backface-visibility: hidden;
@@ -840,6 +840,8 @@ span.highlight, div.highlight { /* searched words */
     text-transform: uppercase;
     cursor: pointer;
 
+    line-height: 15px;
+
     i {
       vertical-align: baseline;
       font-size: 1.1em;
@@ -906,10 +908,8 @@ body.layout-sectionsprint, body.layout-mapprint {
   }
 }
 
+@import "layout_full";
 @import "layout_sections";
-@import "layout_sections_flat";
-@import "layout_sections_grid";
-
 @import "layout_links";
 @import "layout_map";
 

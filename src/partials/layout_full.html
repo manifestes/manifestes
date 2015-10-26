@@ -1,0 +1,23 @@
+
+<div
+  ng-repeat="e in sectionsFullArray"
+  class="fullbox">
+
+  <span class="h1" compile-html="e.title"></span>
+  <!-- <span class="h2" compile-html="e.subtitle"></span> -->
+  
+  <div class="overlay"></div>
+  <div class="image cover" back-img="{{settings.datapath}}media/{{e.image.url}}"></div>
+
+</div>
+
+<!--   <div class="panel side" ng-class="{right:$index%2==1}">
+    <div class="quote" compile-html="e.quote.content"></div>
+    <div class="author" compile-html="e.quote.author"></div>
+  </div> -->
+
+</div>
+
+<div class="jump" ng-click="state.layout = 'sections';">
+  Cliquez ici pour voir tous les contenus
+</div>

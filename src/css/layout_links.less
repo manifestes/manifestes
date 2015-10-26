@@ -33,18 +33,19 @@
     padding-top: 50%;
     padding-left: 16%;
     padding-right: 16%;
-    background: lightgray;
+    //background: lightgray;
 
     line-height: 1.4em;
     font-style: italic;
-    color: #878787;
+    //color: #878787;
+    color: white;
     font-size: 0.8em;
 
     .inner-shadow(-1px 0px 1px 0px #8A8A8A);
   }
 
   .control {
-    z-index: 22;
+    z-index: 25;
     cursor: pointer;
     position: absolute;
     border-radius: 5px;
@@ -69,6 +70,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    text-align: left;
     background-color: rgba(255, 255, 255, 0.57);
     font-size: 0.6em;
     padding: 3px 6px;
@@ -92,11 +94,26 @@
   font-size: 1em;
 
   .link {
-    padding: 6px 0px 6px 15px;
+    padding: 15px 0px 15px 20px;
     padding-right: 0;
     border-bottom: 1px solid #D2D2D2;
     overflow: hidden;
     background: white;
+
+    line-height: 1.3em;
+
+    &.odd { background: whitesmoke; }
+
+    a {
+      color: white;
+      background: #748598;
+      padding: 1px 4px;
+      border-radius: 2px;
+      &:hover {
+        color: white;
+        background: @blueColor;
+      }
+    }
 
     .tags {
       float: right;
@@ -117,7 +134,7 @@
     .love {
       z-index: 24;
       position: absolute;
-      margin-left: -40px;
+      margin-left: -48px;
       margin-top: 4px;
       color: @blueColor;
       font-size: 0.8em;
@@ -125,13 +142,13 @@
 
     &.important {
       border-left: 7px solid @lightGreenColor;
-      .love { margin-left: -47px; } /* hack override border */
+      .love { margin-left: -55px; } /* hack override border */
     }
 
     &.reducedtag, &.reducedsearch {
       background: #ECECEC;
       height: 1px;
-      padding: 0;
+      padding: 0px !important;
       cursor: pointer;
       border-left: none;
       .love, .tags { display: none; }
