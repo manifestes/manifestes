@@ -40,6 +40,11 @@ mapcredits:
         description: Festival des Utopies Concrètes - Récup'
         url: http://festivaldesutopiesconcretes.org/festival-de-la-recup/festival-de-la-recup-2014/acteurs-de-la-recup-2014
         color: 6779AB
+    tour:
+        name: Tour de France des Alternatives
+        description: "Partout en France, de simples citoyens montrent\nnon seulement qu’un autre monde est possible,\nmais qu’il existe déjà"
+        url: http://www.tourdefrancedesalternatives.fr/
+        color: 6779AB
     misc:
         name: Utopies Concrètes
         description: ajouts de lieux non encore référencés
