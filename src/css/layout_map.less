@@ -1,4 +1,20 @@
 
+
+// thanks to http://tools.medialab.sciences-po.fr/iwanthue/
+// extracted 10 colors :
+
+// #59A387
+// #C481BC
+// #BB6A3E
+// #5B5261
+// #75AA4A
+// #5A5C2F
+// #739AC1
+// #B29A86
+// #BB5F6B
+// #C29A37
+
+
 .map {
   //backface-visibility: hidden;
   box-sizing: border-box;
@@ -11,15 +27,20 @@
   .legend {
     z-index: 25;
     position: absolute;
-    bottom: 0px;
-    width: 100%;
+    right: 0px;
+    height: 100%;
     
     font-size: 0.8em;
     background: white;
 
+    max-width: 130px;
+
     .credit {
       display: inline-block;
-      padding: 17px 10px 25px 10px;
+      padding: 10px 10px;
+      width: 100%;
+      box-sizing: border-box;
+      
       &.odd {
         background: #F0F0F0;
       }

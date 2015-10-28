@@ -2509,14 +2509,17 @@ body.layout-mapprint .container {
 .map .legend {
   z-index: 25;
   position: absolute;
-  bottom: 0px;
-  width: 100%;
+  right: 0px;
+  height: 100%;
   font-size: 0.8em;
   background: white;
+  max-width: 130px;
 }
 .map .legend .credit {
   display: inline-block;
-  padding: 17px 10px 25px 10px;
+  padding: 10px 10px;
+  width: 100%;
+  box-sizing: border-box;
 }
 .map .legend .credit.odd {
   background: #F0F0F0;
