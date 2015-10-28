@@ -2548,18 +2548,18 @@ body.layout-mapprint .container {
 .leaflet-popup .details h3 {
   margin-bottom: 0px;
 }
+.leaflet-popup .details .descr {
+  margin-bottom: 5px;
+}
 .leaflet-popup .details .address {
   color: #ababab;
   font-style: italic;
   margin-bottom: 5px;
 }
-.leaflet-popup .details .contact {
+.leaflet-popup .details .contact,
+.leaflet-popup .details .web {
   color: #ababab;
   font-style: italic;
-}
-.leaflet-popup .details .source {
-  font-style: italic;
-  color: #ababab;
 }
 /*.awesome-marker i {
   font-size: 9px;

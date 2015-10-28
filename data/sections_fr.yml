@@ -14,42 +14,42 @@ mapcredits:
         name: Caravane des alternatives
         description: "Lieux et initiatives alternatives,\nécolieux, collectifs"
         url: http://caravanedesalternatives.weebly.com
-        color: 59A387
+        color: 477D50
     resistance:
         name: Utopies & luttes
         description: "Utopies concrètes et\nluttes écologiques et sociales"
         url: https://lesechosduvent.wordpress.com
-        color: C481BC
+        color: CC5B79
     hetero:
         name: Hétérotopies
         description: "L’Hétérotopie, c’est un lieu qui héberge l’imaginaire,\nune utopie réalisée que l’on peut visiter,\ntoucher, critiquer, ici et maintenant."
         url: http://heterotopies.overblog.com/cartographie
-        color: BB6A3E
+        color: 6779AB
     lieux:
         name: Lieux de vie
         description: "Lieux de vie, collectifs, bases nomades, \necolieux, fermes autogérées, Zap, Zad, \ncommunautés, squats..."
         url: https://www.google.com/maps/d/viewer?mid=zCUrDZ_sv7Fw.k9HCrqv3hIVA
-        color: 5B5261
+        color: C06538
     citoy:
         name: Citoyens en Transition
         description: "Des alternatives individuelles\net collectives pour la construction\nd'un vivre ensemble plus riche"   
         url: http://citoyens.en-transition.fr/
-        color: 75AA4A
+        color: 766859
     fucrecup:
         name: FUCRécup'
         description: Festival des Utopies Concrètes - Récup'
         url: http://festivaldesutopiesconcretes.org/festival-de-la-recup/festival-de-la-recup-2014/acteurs-de-la-recup-2014
-        color: 5A5C2F
+        color: 856D2D
     tour:
         name: Tour de France des Alternatives
         description: "Partout en France, de simples citoyens montrent\nnon seulement qu’un autre monde est possible,\nmais qu’il existe déjà"
         url: http://www.tourdefrancedesalternatives.fr/
-        color: 739AC1
+        color: 8F5D83
     misc:
         name: Utopies Concrètes
         description: "ajouts de lieux\nnon encore référencés"
         url: http://utopies-concretes.org
-        color: B29A86
+        color: 4A787E
 graph:
     loader: >
         cliquer pour afficher le graphe

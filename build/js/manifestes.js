@@ -3193,7 +3193,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'28 October 2015 - 4:18'})
+.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'28 October 2015 - 4:53'})
 
 ;
 ;
@@ -3857,7 +3857,7 @@ angular.module('manifest.controllers', ['underscore','config'])
         doubleClickZoom: true,
         center: [47, 2.5],
         zoom: 7,
-        minZoom: 4,
+        minZoom: 5,
         maxZoom: 15,
         locateButton: true,
         layers: [osm]
@@ -3887,18 +3887,6 @@ angular.module('manifest.controllers', ['underscore','config'])
           //   layers[m.source] = new L.LayerGroup().addTo(overlays);
           // }
 
-          // I want hue !
-          // #477D50
-          // #CC5B79
-          // #6779AB
-          // #C06538
-          // #766859
-          // #856D2D
-          // #8F5D83
-          // #4A787E
-          // #63862A
-          // #985249
-
           var credit = $scope.meta.mapcredits[m.source.split('_')[0]];
           //console.log(credit);
 
@@ -3923,9 +3911,9 @@ angular.module('manifest.controllers', ['underscore','config'])
           var customPopup = "<div class='details'>"+
             "<h3>"+m.name+"</h3>"+
             "<div class='address'>"+m.address+"</div>"+
-            "<div>"+m.description+"</div>"+
-            //"<div class='contact'>"+m.contact+"</div>"+
-            //"<div class='source'>source: "+credit.name+" - "+credit.url+"</div>"+
+            "<div class='descr'>"+m.description+"</div>"+
+            "<div class='web'>"+m.web+"</div>"+
+            "<div class='contact'>"+m.contact+"</div>"+
           "</div>";
           var customOptions = {
             'maxWidth': '500',
