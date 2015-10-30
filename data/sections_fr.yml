@@ -588,7 +588,7 @@ content: >
     - [links](https://github.com/manifestes/manifestes/blob/gh-pages/data/links_fr.yml): la liste de tous les liens de la partie ressources
 
 
-    Éditez et validez votre modification en la décrivant, puis envoyez une «pull-request» pour proposer votre modification aux autres
+    Éditez et validez votre modification en la décrivant, puis créez une «pull-request» (bouton vert) pour proposer votre modification aux autres
 
 
     **Pour les points de la carte**, vous pouvez directement modifier [ce tableau partagé](https://framacalc.org/carto), les modifications seront mises en ligne régulièrement
