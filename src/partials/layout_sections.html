@@ -3,6 +3,7 @@
   id="p_{{$index}}"
   class="section index-{{$index}} colored-{{$index%10}} role-{{e.role}} layout-{{e.layout}}"
   ng-class="{
+    odd: $index%2==0,
     searched: state.search && shallShowSearch(e),
     hidden: (state.search && !shallShowSearch(e)) || (state.tags.length && !shallShowTags(e,false)),
     reduced: !e.opened,
