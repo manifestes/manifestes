@@ -1176,6 +1176,9 @@ div.highlight {
   -ms-transition: transform 0.4s;
   transition: transform 0.4s;
 }
+.intro .splash .image.full {
+  background-size: cover;
+}
 .intro .splash .image.left,
 .intro .splash .image.right {
   opacity: 1;

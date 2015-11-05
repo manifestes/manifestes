@@ -98,11 +98,10 @@ angular.module('manifest.controllers', ['underscore','config'])
         $scope.state.introimage +=1;
       else
         $scope.state.introimage -=1;
-      var ims = $scope.meta.intro.images;
-      $scope.state.introimages = [];
-      $scope.state.introimages[0] = ims[($scope.state.introimage+999*ims.length+1)%ims.length];
-      $scope.state.introimages[1] = ims[($scope.state.introimage+999*ims.length)%ims.length];
-      $scope.state.introimages[2] = ims[($scope.state.introimage+999*ims.length-1)%ims.length];
+      if($scope.state.introimage < 0)
+        $scope.state.introimage = 0;
+      if($scope.state.introimage > $scope.meta.intro.images.length-1)
+        $scope.state.introimage = $scope.meta.intro.images.length-1;
     };
 
     var scrollToup = function() {
@@ -423,187 +422,192 @@ angular.module('manifest.controllers', ['underscore','config'])
           out = _.union(out, $scope.linksByTag[t]);
       });
       return out;
-    }
-
-
-
-
-    ///////////////////////////////////////////////////////////////
-    $scope.fetchDataLinks = function() {
-      $http
-        .get(settings.datapath + "links_"+$scope.state.lang+".yml")
-        .success(function(res) {
-
-          var singlelink = res.split('\n\n');
-
-          $scope.templinks4graph = [];
-
-          _.each(singlelink, function(l) {
-
-            var L = l.split('\n');
-
-            var tgs = L[0].match(/\w+/ig);
-            var isimportant = false;
-
-            _.each(tgs, function(t) {
-              if($scope.tagsContents[t] && $scope.tagsContents[t].important)
-                isimportant = true;
-            });
-
-            // (test/dev) just to see links over graph
-            if(tgs && tgs.length>2) {
-              _.each(tgs, function(t1) {
-                _.each(tgs, function(t2) {
-                  if(t1!=t2)
-                    $scope.templinks4graph.push([t1,t2]);
-                });
-              });
-            }
-
-            var htm = $scope.md2Html( L[1] );
-
-            // store links as array
-            $scope.linksArray.push({
-              content: htm,
-              tags: tgs,
-              love: L[0][0]=="!",     // marked as special blend love like !
-              important: isimportant  // if it has a least one tag marked as important
-            });
-
-            // store links indexed by tag (for taggraph sizes!)
-            _.each(tgs, function(t) {
-              if(!$scope.linksByTag[t]) $scope.linksByTag[t] = [];
-              $scope.linksByTag[t].push(htm);
-            });
-          });
-
-          if($scope.settings.verbose) {
-            console.log("!! declared tags:",_.keys($scope.meta.tags));
-            console.log("!! declared tags contents:",$scope.tagsContents);
-            console.log("!! all links:",$scope.linksArray);
-            console.log("!! nb of links by tag:",$scope.linksByTag);
-            console.log("!! tags used in sections:",$scope.sectionNbByTag);
-            console.log("!! non used in sections:", _.difference(_.keys($scope.linksByTag), _.keys($scope.sectionNbByTag)));
-            console.log("!! non-declared tags:", _.difference(_.keys($scope.linksByTag), _.keys($scope.meta.tags)));
-            console.log("!! declared tags with 0 link", _.difference(_.keys($scope.meta.tags), _.keys($scope.linksByTag)));
-          }
-
-          // populate links related to each section
-          // _.each($scope.sections, function(p) {
-          //   p.links = getLinksFromTags(p.tags);
-          // });
-
-        })
-        .error(function (data, status, headers, config) {
-          console.log("error links",status);
-        });
     };
 
+
+
     ///////////////////////////////////////////////////////////////
-    $scope.fetchDataSections = function(callb) {
-    $http
+    var fetchDataMeta = function(callb) {
+      $http
+      .get(settings.datapath + "meta_"+$scope.state.lang+".yml")
+      .success(function(res) {
+
+        var m = jsyaml.load(res);
+        $scope.meta = m;
+
+        $scope.state.overtag = {description: m.menu.tagsdescription};
+        $scope.state.taggingtooltip = $scope.state.tagging ? 
+          m.menu.taggingon : m.menu.taggingoff;
+
+
+        // for html page meta
+        $rootScope.htmlmeta = m.htmlmeta;
+
+        // prepare splash images & their back color
+        $scope.meta.intro.images = _.map(m.intro.images, function(v) {
+          return {
+            color: /_/.test(v) ? "#"+v.split("_")[1].split('.')[0] : "#000",
+            filename: v,
+            full: !/_/.test(v)
+          };
+        });
+
+        _.each(m.tags, function(v,k) {
+          var part = v.split(' = ');
+          $scope.tagsContents[k] = {
+            tag: k,
+            label: part[0].split('|')[0].replace("_",""),
+            description: part[1],
+            icon: /^|/.test(part[0]) ? part[0].split('|')[1] : false,
+            important: /_/.test(part[0]) ? true : false
+          };
+          $scope.tagsContentsOrdered.push($scope.tagsContents[k]);
+        });
+
+        // $scope.tagsContentsOrdered.sort(function(a,b) {
+        //   return $scope.tagSorter(b) - $scope.tagSorter(a);
+        // });
+      
+        callb();
+      })
+      .error(function (data, status, headers, config) {
+        console.log("error meta",status);
+      });
+    };
+
+
+    ///////////////////////////////////////////////////////////////
+    var fetchDataSections = function(callb) {
+      $http
       .get(settings.datapath + "sections_"+$scope.state.lang+".yml")
       .success(function(res) {
 
         jsyaml.loadAll(res, function(d) {
 
-          //////////////////////////////////////////// PARSING META
-          if(d.role && d.role=='meta') {
-
-            $scope.meta = d;
-
-            $scope.state.overtag = {description: $scope.meta.menu.tagsdescription};
-            $scope.state.taggingtooltip = $scope.state.tagging ? 
-              $scope.meta.menu.taggingon : $scope.meta.menu.taggingoff;
-
-
-            // for html page meta
-            $rootScope.htmlmeta = d.htmlmeta;
-
-            // prepare splash images & their back color
-            $scope.meta.intro.images = _.map($scope.meta.intro.images, function(v) {
-              return {
-                color: "#"+v.split("_")[1],
-                filename: v + ".svg"
-              };
-            });
-            $scope.state.introimages = [];
-            $scope.state.introimages.push($scope.meta.intro.images[1]);
-            $scope.state.introimages.push($scope.meta.intro.images[0]);
-            $scope.state.introimages.push($scope.meta.intro.images[$scope.meta.intro.images.length-1]);
-
-            _.each(d.tags, function(v,k) {
-              var part = v.split(' = ');
-              $scope.tagsContents[k] = {
-                tag: k,
-                label: part[0].split('|')[0].replace("_",""),
-                description: part[1],
-                icon: /^|/.test(part[0]) ? part[0].split('|')[1] : false,
-                important: /_/.test(part[0]) ? true : false
-              };
-              $scope.tagsContentsOrdered.push($scope.tagsContents[k]);
-            });
-
-            // $scope.tagsContentsOrdered.sort(function(a,b) {
-            //   return $scope.tagSorter(b) - $scope.tagSorter(a);
-            // });
-            
-
-            //////////////////////////////////////////// PARSING SECTIONS
-          } else { 
-
-            //console.log(d);
-            d.subtitle = $scope.md2Html(d.subtitle);
-            d.subtitletext = totext(d.subtitle);
-            if(d.quote) {
-              d.quote.content = $scope.md2Html(d.quote.content);
-              d.quote.author = $scope.md2Html(d.quote.author);
-            }
-            d.content = $scope.md2Html(d.content);
-            d.tags = d.tags ? d.tags.split(', ') : [];
-            _.each(d.tags, function(t) {
-              $scope.sectionNbByTag[t] = $scope.sectionNbByTag[t] ? $scope.sectionNbByTag[t]+1 : 1;
-            });
-            d.links = $scope.md2Html(d.links);
-
-            d.date = moment(d.date);
-            var seuil = moment().subtract(3,"month");
-            if(d.date > seuil)
-              d.date = d.date.fromNow();
-            else
-              d.date = null;
-            
-            d.currentlink = 0;
-
-            d.layout = 'flat'; //Math.random()<0.2 ? 'grid' : 'flat';
-
-            $scope.sectionsArray.push(d);
-            $scope.sectionsFullArray = $scope.sectionsArray.slice(0,2);
-
+          //console.log(d);
+          d.subtitle = $scope.md2Html(d.subtitle);
+          d.subtitletext = totext(d.subtitle);
+          if(d.quote) {
+            d.quote.content = $scope.md2Html(d.quote.content);
+            d.quote.author = $scope.md2Html(d.quote.author);
           }
+          d.content = $scope.md2Html(d.content);
+          d.tags = d.tags ? d.tags.split(', ') : [];
+          _.each(d.tags, function(t) {
+            $scope.sectionNbByTag[t] = $scope.sectionNbByTag[t] ? $scope.sectionNbByTag[t]+1 : 1;
+          });
+          d.links = $scope.md2Html(d.links);
+
+          d.date = moment(d.date);
+          var seuil = moment().subtract(3,"month");
+          if(d.date > seuil)
+            d.date = d.date.fromNow();
+          else
+            d.date = null;
+          
+          d.currentlink = 0;
+
+          d.layout = 'flat'; //Math.random()<0.2 ? 'grid' : 'flat';
+
+          $scope.sectionsArray.push(d);
+          $scope.sectionsFullArray = $scope.sectionsArray.slice(0,2);
         });
-
         callb();
-
       })
       .error(function (data, status, headers, config) {
         console.log("error sections",status);
       });
-    }
+    };
 
 
     ///////////////////////////////////////////////////////////////
-    // fetch data
-    $scope.fetchDataSections( function() {
-      
-      // fetch links
-      $scope.fetchDataLinks();
+    var fetchDataLinks = function() {
+      $http
+      .get(settings.datapath + "links_"+$scope.state.lang+".yml")
+      .success(function(res) {
 
-      // load tag graph 
-      $timeout(function() { loadTagGraph($scope); },500);
+        var singlelink = res.split('\n\n');
 
-      // (to improve ?) init here to trigger the watch on footer content set though compile-html directive
-      $scope.state.search = "";
+        $scope.templinks4graph = [];
+
+        _.each(singlelink, function(l) {
+
+          var L = l.split('\n');
+
+          var tgs = L[0].match(/\w+/ig);
+          var isimportant = false;
+
+          _.each(tgs, function(t) {
+            if($scope.tagsContents[t] && $scope.tagsContents[t].important)
+              isimportant = true;
+          });
+
+          // (test/dev) just to see links over graph
+          if(tgs && tgs.length>2) {
+            _.each(tgs, function(t1) {
+              _.each(tgs, function(t2) {
+                if(t1!=t2)
+                  $scope.templinks4graph.push([t1,t2]);
+              });
+            });
+          }
+
+          var htm = $scope.md2Html( L[1] );
+
+          // store links as array
+          $scope.linksArray.push({
+            content: htm,
+            tags: tgs,
+            love: L[0][0]=="!",     // marked as special blend love like !
+            important: isimportant  // if it has a least one tag marked as important
+          });
+
+          // store links indexed by tag (for taggraph sizes!)
+          _.each(tgs, function(t) {
+            if(!$scope.linksByTag[t]) $scope.linksByTag[t] = [];
+            $scope.linksByTag[t].push(htm);
+          });
+        });
+
+        if($scope.settings.verbose) {
+          console.log("!! declared tags:",_.keys($scope.meta.tags));
+          console.log("!! declared tags contents:",$scope.tagsContents);
+          console.log("!! all links:",$scope.linksArray);
+          console.log("!! nb of links by tag:",$scope.linksByTag);
+          console.log("!! tags used in sections:",$scope.sectionNbByTag);
+          console.log("!! non used in sections:", _.difference(_.keys($scope.linksByTag), _.keys($scope.sectionNbByTag)));
+          console.log("!! non-declared tags:", _.difference(_.keys($scope.linksByTag), _.keys($scope.meta.tags)));
+          console.log("!! declared tags with 0 link", _.difference(_.keys($scope.meta.tags), _.keys($scope.linksByTag)));
+        }
+
+        // populate links related to each section
+        // _.each($scope.sections, function(p) {
+        //   p.links = getLinksFromTags(p.tags);
+        // });
+
+      })
+      .error(function (data, status, headers, config) {
+        console.log("error links",status);
+      });
+    };
+
+
+    ///////////////////////////////////////////////////////////////
+    fetchDataMeta( function() {
+
+      // fetch data
+      fetchDataSections( function() {
+        
+        // fetch links
+        fetchDataLinks();
+
+        // load tag graph 
+        $timeout(function() { loadTagGraph($scope); },500);
+
+        // (to improve ?) init here to trigger the watch on footer content set though compile-html directive
+        $scope.state.search = "";
+
+      });
     });
 
 

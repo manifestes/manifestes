@@ -8,18 +8,25 @@
       ng-swipe-left="slideSplashImage(true); swiping=true;"
       ng-swipe-right="slideSplashImage(false); swiping=true;">
     </div>
-    <i class="arrow right fa fa-caret-right" ng-click="slideSplashImage(true,true)"></i>
-    <i class="arrow left fa fa-caret-left" ng-click="slideSplashImage(false,true)"></i>
+    <i
+      class="arrow right fa fa-caret-right"
+      ng-if="state.introimage < meta.intro.images.length-1"
+      ng-click="slideSplashImage(true,true)"></i>
+    <i
+      class="arrow left fa fa-caret-left"
+      ng-if="state.introimage > 0"
+      ng-click="slideSplashImage(false,true)"></i>
 
     <div
-      ng-repeat="i in state.introimages"
+      ng-repeat="i in meta.intro.images"
       class="image"
       back-img="{{settings.datapath}}splash/{{i.filename}}"
       ng-style="{'background-color': i.color}"
       ng-class="{
-        active: $index==1,
-        left: $index==0,
-        right: $index==2
+        active: $index == state.introimage,
+        left: $index > state.introimage,
+        right: $index < state.introimage,
+        full: i.full
       }">
     </div>
   </div>
