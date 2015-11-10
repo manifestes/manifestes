@@ -3192,7 +3192,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'05 November 2015 - 11:09'})
+.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'10 November 2015 - 1:17'})
 
 ;
 ;
@@ -3663,6 +3663,11 @@ angular.module('manifest.controllers', ['underscore','config'])
           $scope.tagsContentsOrdered.push($scope.tagsContents[k]);
         });
 
+        $scope.meta.mapcreditsof = {};
+        _.each($scope.meta.mapcredits, function(c) {
+          $scope.meta.mapcreditsof[c.slug] = c;
+        });
+
         // $scope.tagsContentsOrdered.sort(function(a,b) {
         //   return $scope.tagSorter(b) - $scope.tagSorter(a);
         // });
@@ -3890,7 +3895,7 @@ angular.module('manifest.controllers', ['underscore','config'])
           //   layers[m.source] = new L.LayerGroup().addTo(overlays);
           // }
 
-          var credit = $scope.meta.mapcredits[m.source.split('_')[0]];
+          var credit = $scope.meta.mapcreditsof[m.source.split('_')[0]];
           //console.log(credit);
 
           var icon = 'circle';

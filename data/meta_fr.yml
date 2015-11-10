@@ -8,46 +8,46 @@ source:
     links: https://github.com/manifestes/manifestes/blob/gh-pages/data/links_fr.yml
     map: https://framacalc.org/carto
 mapcredits:
-    caravane:
-        name: Caravane des alternatives
-        description: "Lieux et initiatives alternatives,\nécolieux, collectifs"
-        url: http://caravanedesalternatives.weebly.com
-        color: 477D50
-    resistance:
-        name: Utopies & luttes
-        description: "Utopies concrètes et\nluttes écologiques et sociales"
-        url: https://lesechosduvent.wordpress.com
-        color: CC5B79
-    hetero:
-        name: Hétérotopies
-        description: "L’Hétérotopie, c’est un lieu qui héberge l’imaginaire,\nune utopie réalisée que l’on peut visiter,\ntoucher, critiquer, ici et maintenant."
-        url: http://heterotopies.overblog.com/cartographie
-        color: 6779AB
-    lieux:
-        name: Lieux de vie
-        description: "Lieux de vie, collectifs, bases nomades, \necolieux, fermes autogérées, Zap, Zad, \ncommunautés, squats..."
-        url: https://www.google.com/maps/d/viewer?mid=zCUrDZ_sv7Fw.k9HCrqv3hIVA
-        color: C06538
-    citoy:
-        name: Citoyens en Transition
-        description: "Des alternatives individuelles\net collectives pour la construction\nd'un vivre ensemble plus riche"   
-        url: http://citoyens.en-transition.fr/
-        color: 766859
-    fucrecup:
-        name: FUCRécup'
-        description: Festival des Utopies Concrètes - Récup'
-        url: http://festivaldesutopiesconcretes.org/festival-de-la-recup/festival-de-la-recup-2014/acteurs-de-la-recup-2014
-        color: 856D2D
-    tour:
-        name: Tour de France des Alternatives
-        description: "Partout en France, de simples citoyens montrent\nnon seulement qu’un autre monde est possible,\nmais qu’il existe déjà"
-        url: http://www.tourdefrancedesalternatives.fr/
-        color: 8F5D83
-    misc:
+    -   slug: misc
         name: Utopies Concrètes
         description: "ajouts de lieux\nnon encore référencés"
         url: http://utopies-concretes.org
         color: 4A787E
+    -   slug: fucrecup
+        name: FUCRécup'
+        description: Festival des Utopies Concrètes - Récup'
+        url: http://festivaldesutopiesconcretes.org/festival-de-la-recup/festival-de-la-recup-2014/acteurs-de-la-recup-2014
+        color: 856D2D        
+    -   slug: caravane
+        name: Caravane des alternatives
+        description: "Lieux et initiatives alternatives,\nécolieux, collectifs"
+        url: http://caravanedesalternatives.weebly.com
+        color: 477D50
+    -   slug: resistance
+        name: Utopies & luttes
+        description: "Utopies concrètes et\nluttes écologiques et sociales"
+        url: https://lesechosduvent.wordpress.com
+        color: CC5B79
+    -   slug: hetero
+        name: Hétérotopies
+        description: "L’Hétérotopie, c’est un lieu qui héberge l’imaginaire,\nune utopie réalisée que l’on peut visiter,\ntoucher, critiquer, ici et maintenant."
+        url: http://heterotopies.overblog.com/cartographie
+        color: 6779AB
+    -   slug: lieux
+        name: Lieux de vie
+        description: "Lieux de vie, collectifs, bases nomades, \necolieux, fermes autogérées, Zap, Zad, \ncommunautés, squats..."
+        url: https://www.google.com/maps/d/viewer?mid=zCUrDZ_sv7Fw.k9HCrqv3hIVA
+        color: C06538
+    -   slug: citoy
+        name: Citoyens en Transition
+        description: "Des alternatives individuelles\net collectives pour la construction\nd'un vivre ensemble plus riche"   
+        url: http://citoyens.en-transition.fr/
+        color: 766859
+    -   slug: tour
+        name: Tour de France des Alternatives
+        description: "Partout en France, de simples citoyens montrent\nnon seulement qu’un autre monde est possible,\nmais qu’il existe déjà"
+        url: http://www.tourdefrancedesalternatives.fr/
+        color: 8F5D83
 graph:
     loader: >
         cliquer pour afficher le graphe
