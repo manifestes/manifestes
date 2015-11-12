@@ -103,7 +103,7 @@ var loadLinksGraph = function(scope) {
         doubleClickZoomingRatio: 1.7,
         defaultLabelSize: 12,
         hideEdgesOnMove: true,
-        drawEdges: false,
+        drawEdges: false, // better with, but for old machines... keep it light
         doubleClickEnabled: false,
         //labelColor: "node",
       }

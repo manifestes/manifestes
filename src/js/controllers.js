@@ -466,9 +466,9 @@ angular.module('manifest.controllers', ['underscore','config'])
           $scope.tagsContentsOrdered.push($scope.tagsContents[k]);
         });
 
-        $scope.meta.mapcreditsof = {};
         _.each($scope.meta.mapcredits, function(c) {
-          $scope.meta.mapcreditsof[c.slug] = c;
+          c.active = true;
+          c.count = 0;
         });
 
         // $scope.tagsContentsOrdered.sort(function(a,b) {
@@ -698,7 +698,7 @@ angular.module('manifest.controllers', ['underscore','config'])
           //   layers[m.source] = new L.LayerGroup().addTo(overlays);
           // }
 
-          var credit = $scope.meta.mapcreditsof[m.source.split('_')[0]];
+          var credit = _.findWhere($scope.meta.mapcredits, {slug: m.source});
           //console.log(credit);
 
           var icon = 'circle';
@@ -734,7 +734,10 @@ angular.module('manifest.controllers', ['underscore','config'])
           m.lng = parseFloat(m.lng);
           if(m.lat && m.lng) {
 
-            var css = "source-"+m.source+" t-"+m.tags.replace(/ /g," t-");
+            // store total count to display stats
+            credit.count += 1;
+
+            var css = "src-"+m.source+" t-"+m.tags.replace(/ /g," t-");
 
             var theM = L.marker([m.lat, m.lng], {
               title: m.name,
@@ -783,7 +786,23 @@ angular.module('manifest.controllers', ['underscore','config'])
       //////////////////////
       $scope.toggleMapLegend = function(c) {
         console.log("Toggling:",c);
-        $scope.state.mapSources
+
+        var isFull = _.findIndex($scope.meta.mapcredits, {active: false})==-1;
+        if(isFull) _.each($scope.meta.mapcredits, function(e) {
+          e.active = false;
+        });
+        
+        c.active = !c.active;
+
+        var isEmpty = _.findIndex($scope.meta.mapcredits, {active: true})==-1;
+        if(isEmpty) _.each($scope.meta.mapcredits, function(e) {
+          e.active = true;
+        });
+
+        $scope.state.mapStyles = _.map($scope.meta.mapcredits, function(e) {
+          var act = e.active ? "block" : "none";
+          return ".src-"+e.slug+ "{ display: "+act+"; }";
+        }).join(" ");
       };
     }
 

@@ -118,8 +118,8 @@ module.exports = function(grunt) {
           'src/vendor/leaflet.locatecontrol/dist/L.Control.Locate.min.js',
           'src/vendor/leaflet-search/dist/leaflet-search.min.js',
           
-          'src/vendor/sigmajs/sigma.min.js',
-          'src/vendor/sigmajs/plugins/sigma.parsers.gexf.min.js',
+          'src/vendor/sigmajs/build/sigma.min.js',
+          'src/vendor/sigmajs/build/plugins/sigma.parsers.gexf.min.js',
 
           'src/vendor/moment/min/moment-with-locales.min.js',
           'src/vendor/underscore/underscore-min.js',

@@ -1,14 +1,25 @@
 
+<style ng-bind-html="state.mapStyles"></style>
+
 <div ng-init="initMap();" class="map full" ng-controller="MapController">
   
   <div class="legend">
     <div
       ng-repeat="c in meta.mapcredits"
       class="credit hint--left"
-      ng-class="{odd:$index%2==1}"
+      ng-click="toggleMapLegend(c);"
+      ng-class="{
+        odd:$index%2==1,
+        active: c.active
+      }"
       data-hint="{{c.description}}">
-      <img class="marker" src="https://api.tiles.mapbox.com/v3/marker/pin-s-circle+{{c.color}}.png">
-      <div class="name"><a href="{{c.url}}" target="_blank">{{c.name}} <i ng-if="c.slug!='misc'" class="fa fa-external-link-square"></i></a></div>
+      <img
+        class="marker"
+        src="https://api.tiles.mapbox.com/v3/marker/pin-s-circle+{{c.color}}.png">
+      <div class="count">{{c.count}}</div>
+      <div class="name">
+        <a href="{{c.url}}" target="_blank">{{c.name}} <i ng-if="c.slug!='misc'" class="fa fa-external-link-square"></i></a>
+      </div>
     </div>
   </div>
   

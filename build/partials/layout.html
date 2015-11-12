@@ -220,7 +220,7 @@
       ng-class="{active: state.disclaim[state.layout]}"
       ng-click="state.disclaim[state.layout]=false;">
 
-      <span ng-if="state.layout!='links'" class="full" ng-bind-html="md2Html(meta.disclaimer[state.layout])"></span>
+      <span ng-if="state.layout!='links'" class="full" compile-html="md2Html(meta.disclaimer[state.layout])"></span>
       
       <span ng-if="state.layout=='links'" class="splitted" ng-bind-html="md2Html(meta.disclaimer['linksleft'])"></span>
       <span ng-if="state.layout=='links'" class="splitted" ng-bind-html="md2Html(meta.disclaimer['linksright'])"></span>
