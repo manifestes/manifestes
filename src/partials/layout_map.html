@@ -11,7 +11,9 @@
         class="marker"
         ng-click="toggleMapLegend(c);"
         src="https://api.tiles.mapbox.com/v3/marker/pin-s-circle+{{c.color}}.png">
-      <div class="name"><a href="{{c.url}}" target="_blank">{{c.name}}</a></div>
+      <div class="name">
+        <a href="{{c.url}}" target="_blank">{{c.name}} <i ng-if="c.slug!='misc'" class="fa fa-external-link-square"></i></a>
+      </div>
     </div>
   </div>
   
