@@ -7,7 +7,10 @@
       class="credit hint--left"
       ng-class="{odd:$index%2==1}"
       data-hint="{{c.description}}">
-      <img class="marker" src="https://api.tiles.mapbox.com/v3/marker/pin-s-circle+{{c.color}}.png">
+      <img
+        class="marker"
+        ng-click="toggleMapLegend(c);"
+        src="https://api.tiles.mapbox.com/v3/marker/pin-s-circle+{{c.color}}.png">
       <div class="name"><a href="{{c.url}}" target="_blank">{{c.name}}</a></div>
     </div>
   </div>

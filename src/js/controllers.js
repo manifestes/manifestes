@@ -67,7 +67,9 @@ angular.module('manifest.controllers', ['underscore','config'])
       togglesections: null, // wil be 'up' or 'down' to display arrows to open/close all sections
 
       graphstatus: "NO", // loaded or not ?
-      graphfullscreen: false
+      graphfullscreen: false,
+
+      mapSources: []
     };
     
     if($scope.settings.verbose)
@@ -726,12 +728,16 @@ angular.module('manifest.controllers', ['underscore','config'])
           m.lat = parseFloat(m.lat);
           m.lng = parseFloat(m.lng);
           if(m.lat && m.lng) {
+
+            var css = "source-"+m.source+" t-"+m.tags.replace(/ /g," t-");
+
             var theM = L.marker([m.lat, m.lng], {
               title: m.name,
               icon: L.MakiMarkers.icon({
                 icon: icon,
                 color: color,
-                size: size
+                size: size,
+                className: css
               })
             })
             .bindPopup(customPopup,customOptions)
@@ -768,6 +774,12 @@ angular.module('manifest.controllers', ['underscore','config'])
         console.log(err);
 
       });
+
+      //////////////////////
+      $scope.toggleMapLegend = function(c) {
+        console.log("Toggling:",c);
+        $scope.state.mapSources
+      };
     }
 
   }
