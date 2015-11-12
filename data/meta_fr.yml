@@ -33,7 +33,7 @@ mapcredits:
         description: "L’Hétérotopie, c’est un lieu qui héberge l’imaginaire,\nune utopie réalisée que l’on peut visiter,\ntoucher, critiquer, ici et maintenant."
         url: http://heterotopies.overblog.com/cartographie
         color: 6779AB
-    -   slug: lieux
+    -   slug: ldv
         name: Lieux de vie
         description: "Lieux de vie, collectifs, bases nomades, \necolieux, fermes autogérées, Zap, Zad, \ncommunautés, squats..."
         url: https://www.google.com/maps/d/viewer?mid=zCUrDZ_sv7Fw.k9HCrqv3hIVA
@@ -90,6 +90,9 @@ disclaimer:
         **pour naviguer par thématiques, activez les tags** grâce à l'icône en haut à gauche dans le menu.
     map: >
         Les couleurs des points correspondent aux différentes sources (cf légende). N'oubliez pas qu'ils ne sont pas tous des lieux de passage: **observez donc le plus grand respect** si vous souhaitez les visiter: renseignez-vous et prévenez avant de débarquer !
+
+
+        Pour ajouter, modifier ou supprimer un lieu, utilisez [ce tableau partagé](http://framacalc.org/carto)
 menu:
     backtip: retourner à l'intro
     tagsdefault: toutes
