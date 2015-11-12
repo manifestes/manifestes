@@ -1,0 +1,175 @@
+
+
+---
+url: http://utopies-concretes.org
+source:
+    github: https://github.com/manifestes/manifestes
+    sections: https://github.com/manifestes/manifestes/blob/gh-pages/data/sections_fr.yml
+    links: https://github.com/manifestes/manifestes/blob/gh-pages/data/links_fr.yml
+    map: https://framacalc.org/carto
+mapcredits:
+    -   slug: misc
+        name: Utopies Concrètes
+        description: "ajouts de lieux\nnon encore référencés"
+        url: http://utopies-concretes.org
+        color: 4A787E
+    -   slug: fucrecup
+        name: FUCRécup'
+        description: Festival des Utopies Concrètes - Récup'
+        url: http://festivaldesutopiesconcretes.org/festival-de-la-recup/festival-de-la-recup-2014/acteurs-de-la-recup-2014
+        color: 856D2D        
+    -   slug: caravane
+        name: Caravane des alternatives
+        description: "Lieux et initiatives alternatives,\nécolieux, collectifs"
+        url: http://caravanedesalternatives.weebly.com
+        color: 477D50
+    -   slug: resistance
+        name: Utopies & luttes
+        description: "Utopies concrètes et\nluttes écologiques et sociales"
+        url: https://lesechosduvent.wordpress.com
+        color: CC5B79
+    -   slug: hetero
+        name: Hétérotopies
+        description: "L’Hétérotopie, c’est un lieu qui héberge l’imaginaire,\nune utopie réalisée que l’on peut visiter,\ntoucher, critiquer, ici et maintenant."
+        url: http://heterotopies.overblog.com/cartographie
+        color: 6779AB
+    -   slug: ldv
+        name: Lieux de vie
+        description: "Lieux de vie, collectifs, bases nomades, \necolieux, fermes autogérées, Zap, Zad, \ncommunautés, squats..."
+        url: https://www.google.com/maps/d/viewer?mid=zCUrDZ_sv7Fw.k9HCrqv3hIVA
+        color: C06538
+    -   slug: citoy
+        name: Citoyens en Transition
+        description: "Des alternatives individuelles\net collectives pour la construction\nd'un vivre ensemble plus riche"   
+        url: http://citoyens.en-transition.fr/
+        color: 766859
+    -   slug: tour
+        name: Tour de France des Alternatives
+        description: "Partout en France, de simples citoyens montrent\nnon seulement qu’un autre monde est possible,\nmais qu’il existe déjà"
+        url: http://www.tourdefrancedesalternatives.fr/
+        color: 8F5D83
+graph:
+    loader: >
+        cliquer pour afficher le graphe
+        <br><br>
+        attention, le temps de chargement peut être long (8.2Mo)
+    image: links_eniac.jpg
+    credits: >
+        [graph.gexf](https://github.com/manifestes/manifestes/blob/gh-pages/data/graph.gexf) produit avec l'outil libre [hyphe](http://hyphe.medialab.sciences-po.fr/) et affiché avec [sigma.js](http://sigmajs.org/)
+        
+        
+        voir aussi la [liste des sites web](https://github.com/manifestes/manifestes/blob/gh-pages/data/utiles/graph_id-url-tag.csv) du graphe
+    controlhelp: "Chaque point du réseau représente un site internet\n\n- Utilisez la molette de votre souris pour zoomer\n- Cliquez sur un point pour voir les sites voisins (cités ou citant)\n- Double-cliquez pour ouvrir le site dans une nouvelle fenêtre\n\nLes couleurs correspondent aux classes de modularité,\nc-à-d aux communautés détectées selon la structure du réseau"
+    controlfull: "afficher/réduire le plein écran"
+intro:
+    images:
+        - keep-calm-slow-down_231F20.svg
+        - manifeste-utopies-concretes_633232.svg
+        - appel-convergence_231F20.svg
+        - chats-peles-main.jpg
+        - collectifs-autogestion_E0A11A.svg
+    enter: "consulter & participer"
+disclaimer:
+    sections: >
+        Vous pouvez consulter les textes dans l'ordre que vous voulez
+        
+
+        Pour les applications concrètes, consultez les ressources ou la carte
+    linksleft: >
+        à gauche, une **approche quantitative**
+
+
+        le réseau de tous les sites internet et des liens qu'ils ont entre eux
+    linksright: >
+        ici, des liens ajoutés **avec nos petites mains**. ça fait un peu fouilli, leur désordre reflète la multiplicité des collectifs et initiatives !
+
+
+        (ce sera toujours mieux que google qui ne nous donne à voir que les plus gros/riches)
+
+
+        **pour naviguer par thématiques, activez les tags** grâce à l'icône en haut à gauche dans le menu.
+    map: >
+        Les couleurs des points correspondent aux différentes sources (cf légende). N'oubliez pas qu'ils ne sont pas tous des lieux de passage: **observez donc le plus grand respect** si vous souhaitez les visiter: renseignez-vous et prévenez avant de débarquer !
+menu:
+    backtip: retourner à l'intro
+    tagsdefault: toutes
+    tagshat: filtrer par thématiques
+    taggingoff: voir les thématiques
+    taggingon: masquer les thématiques
+    tagsdescription: cliquez sur les thématiques pour filtrer les contenus
+    search: chercher
+    sections: textes
+    sectionstip: pour comprendre
+    links: ressources
+    linkstip: pour explorer
+    map: carte
+    maptip: pour visiter
+    calendar: agenda
+    calendartip: démosphère !
+    print: imprimer
+    printtip: "imprimez\nla fenêtre\nqui s'ouvre !"
+    sourcetip: voir la source
+    discusstext: discuter, corriger, proposer
+    discussback: revenir au texte
+tagtip: "filtrer par thématiques"
+tags:
+    about: "à propos|question-circle = à propos de ce projet, contexte,\nliste de discussion, code source"
+    group: "collectifs|users = groupes, réseaux, coopératives,\nassociations, structures"
+    list: "annuaires|database = bases de données, annuaires,\nressources, moteurs de recherche"
+    tool: "outils|wrench = guides et fiches pratiques, tutoriaux,\noutils, services, instruments"
+    map: "lieux|map-marker = adresses de lieux physiques,\ntiers-lieux"
+    text: textes|file-text = articles, livres, textes
+    image: "images|picture-o = images, dessins,\nphotos, graphiques"
+    audio: sons|volume-up = radios, musiques, sons
+    video: "films|film = videos, films, documentaires,\nTV, images mouvantes"
+    calendar: "agenda|calendar-check-o = calendriers, rendez-vous,\nfestivals, événements"
+    eat: _se nourrir = alimentation, recettes, cuisine, nourriture
+    health: "_santé = santé, remèdes, plantes\nbien-être, corps, sport"
+    home: "_habiter = logement, habitat, hébergement,\néco-lieux, auto-construction, terrain"
+    move: _se déplacer = transports, mobilité, véhicules, co-voiturage
+    subsist: "_solidarité = migrants, sans-papiers, sdf,\nsouffrances, survie,\ninégalités d'accès, des chances\ndiscriminations"
+    object: "_objets = récupération, recyclage, réutilisation,\nressourceries, artisanats, réappropriation,\nsavoirs-faire, construire soi-même, diy,\néquipement, matériel, mobilier, machines"
+    energy: "_énergie = nucléaire, électrique,\néolien, solaire"
+    slow: "_ralentir = rencontrer, découvrir, partager,\ncommunication non violente,\ndécroissance"
+    media: "_médias = information, presse,\njournalisme, actualité"
+    act: "_action = actions pratiques quotidiennes,\ndésobéissance civile, militantisme"
+    genre: "genres = patriarcat, féminisme,\ngenres, LGBT, famille,\nracisme, sexisme"
+    education: "éducation = école, université, recherche,\napprendre, se former,\nenseigner, partages de savoir"
+    work: travail = emploi, chômage, activité remunérée
+    alienation: "aliénation = publicité, propagande, aliénation,\nconditionnements, contrôle,\nfichage, cloud, surveillance"
+    emancipation: "émancipation = réappropriation, émancipation,\nautonomie, autogestion, horizontalité"
+    zad: "luttes = grands projets inutiles, lois absurdes,\nsquats, occupations, zad,\nradicalités, avant-gardes"
+    love: "amour = rêves, utopies, promesses, idéaux,\nhumour et amour toujours !"
+    space: espace public = espaces partagés, communs, ville
+    words: "langage = récits, mots, interprétations, controverses, discours,\ns'accorder, s'engueuler, débattre"
+    creation: "formes = création, art, culture, écriture,\ndesign, processus, formes"
+    science: "science = sciences, techniques,\nnanotechnologies, manipulation du vivant"
+    web: internet = web, numérique, réseaux
+    companies: "ennemis = néocapitalisme, récupérations, greenwashing,\nmultinationales, puissances d'argent... boycott!"
+    history: "histoire = (néo)colonialismes, impérialisme,\npassifs historique"
+    law: "juridique = lois, aspects juridiques,\ndémarches administratives,\nlégislations"
+    economy: "économie = échanges, commerce, troc, don,\néconomie, argent, monnaie, finance, dette,\nrevenu de base inconditionnel"
+    politics: "politique = politique et représentation,\nconcertation, décider ensemble,\ncommuns, open (res)sources, démocratie"
+    philo: philosophie = réflexion, théorie, principes
+    earth: "planète = environnement, climat, déchets, pollution,\neau, animaux, végétaux"
+    agriculture: "agriculture = (perma)cultures, graines, semences,\njardinage, élevage"
+footer:
+    lastupdatetext: dernière modification
+    content: >
+        ##*voir aussi*
+
+        + le [document partagé](https://lite6.framapad.org/p/manifestes): discutoire, choses à faire
+
+        + la liste de discussion [manifestes@lists.riseup.net](https://lists.riseup.net/www/subscribe/manifestes)
+
+        + le [code source](https://github.com/manifestes/manifestes) du site et les [dernières modifications](https://github.com/manifestes/manifestes/commits/gh-pages)
+
+        + les contenus: [meta](https://github.com/manifestes/manifestes/blob/gh-pages/data/meta_fr.yml), [sections de texte](https://github.com/manifestes/manifestes/blob/gh-pages/data/sections_fr.yml), [liens](https://github.com/manifestes/manifestes/blob/gh-pages/data/links_fr.yml), [citations en vrac](https://github.com/manifestes/manifestes/blob/gh-pages/data/utiles/quotes_fr.yml)
+
+        + [les lieux de la carte à ajouter/modifier](https://framacalc.org/carto)
+
+        + le compte twitter [@manifestes](https://twitter.com/manifestes)
+
+        + dites-nous [bonjour@utopies-concretes.org](mailto:bonjour@utopies-concretes.org) !
+
+

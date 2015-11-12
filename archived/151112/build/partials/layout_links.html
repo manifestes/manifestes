@@ -1,0 +1,83 @@
+
+
+<div class="panel graph" ng-class="{fullscreen:state.graphfullscreen}">
+
+<!-- GRAPH LOADER OVERLAY -->
+  <div
+    class="graphloader spinner cover"
+    back-img="{{settings.datapath}}media/{{meta.graph.image}}"
+    ng-if="state.graphstatus=='LOADING'">
+    <div class="bounce1"></div>
+    <div class="bounce2"></div>
+    <div class="bounce3"></div>
+  </div>
+  <div
+    class="graphloader cover"
+    back-img="{{settings.datapath}}media/{{meta.graph.image}}"
+    ng-if="state.graphstatus=='NO'"
+    ng-click="state.lang=='fr' && loadLinksGraph();"
+    ng-bind-html="meta.graph.loader">
+  </div>
+
+  <!-- CONTROLS -->
+  <div
+    ng-if="state.graphstatus=='OK'"
+    class="control second graphfullscreen hint--bottom"
+    data-hint="{{meta.graph.controlfull}}"
+    ng-click="state.graphfullscreen = !state.graphfullscreen; updateGraphSize();">
+    <i
+      class="fa"
+      ng-class="{
+        'fa-expand': !state.graphfullscreen,
+        'fa-compress': state.graphfullscreen
+      }">
+    </i>
+  </div>
+  <div
+    ng-if="state.graphstatus=='OK'"
+    class="control help hint--bottom"
+    data-hint="{{meta.graph.controlhelp}}">
+    <i class="fa fa-question"></i>
+  </div>
+
+  <!-- CREDITS -->
+  <div class="credits" compile-html="md2Html(meta.graph.credits);"></div>
+
+  <!-- GRAPH -->
+  <div id="sigma-links"></div>
+</div>
+
+
+<div
+  class="panel links"
+  ng-if="!state.graphfullscreen"
+  ng-click="resetFilters();">
+  <div
+    ng-repeat="e in linksArray"
+    class="link"
+    ng-class="{
+      reducedtag:     state.tags.length && !shallShowTags(e,false),
+      reducedsearch:  state.search && !shallShowSearch(e),
+      odd: $index%2==0,
+      even: $index%2==1,
+      important: e.important
+    }"
+    ng-click="
+      (
+        (state.tags.length && shallShowTags(e,true)) ||
+        (state.search && shallShowSearch(e))
+      ) &&
+      $event.stopPropagation();">
+
+    <i ng-if="e.love" class="love fa fa-heart"></i>
+
+    <div
+      ng-if="state.tagging"
+      class="tags hint--left"
+      data-hint="{{meta.tagtip}}"
+      ng-include="settings.assets + 'partials/tags.html'">
+    </div>
+
+    <div class="content" compile-html="e.content"></div>
+  </div>
+</div>
