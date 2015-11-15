@@ -13,6 +13,15 @@ var updateGraphSize = function() {
   linksGraph.refresh();
   //console.log("graph size refreshed");
 };
+var focusDisplay = function(focus) {
+  if(focus) {
+    linksGraph.settings('drawEdges', true);
+    linksGraph.settings('labelThreshold', 1);
+  } else {
+    linksGraph.settings('drawEdges', false);
+    linksGraph.settings('labelThreshold', 5);
+  }
+};
 
 // to highlight nodes based on tags
 var filterLinksNodesFromTags = function(tags) {
@@ -22,6 +31,7 @@ var filterLinksNodesFromTags = function(tags) {
       var highl = _.intersection(n.attributes.Tags,tags).length;
       upsetLinkNode(n, highl, redColor, lightGray);
     });
+    focusDisplay(true);
   } else {
     resetLinkNodes();
   }
@@ -39,6 +49,7 @@ var filterLinksNodes = function(term) {
     g.edges().forEach(function(e) {
       e.color = invisibleGray;
     });
+    focusDisplay(true);
   } else {
     resetLinkNodes();
   }
@@ -66,6 +77,7 @@ var resetLinkNodes = function() {
   linksGraph.graph.edges().forEach(function(e) {
     e.color = "#EEEEEE";
   });
+  focusDisplay(false);
 };
 
 var loadLinksGraph = function(scope) {
@@ -154,6 +166,7 @@ var loadLinksGraph = function(scope) {
               e.color = invisibleGray;
             }
           });
+          focusDisplay(true);
           s.refresh();
         } else {
           console.log("was only dragging, doing nothing.");
