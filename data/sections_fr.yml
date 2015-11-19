@@ -377,6 +377,35 @@ content: >
 
 
 ---
+slug: how_to_act
+date: 2015-11-12
+title: Quelles actions ?
+subtitle: "«Il faudrait plutôt que...»: réconcilier les différentes manières de voir et d'agir en leur donnant toutes une voix"
+tags: act, words
+content: >
+    Nous sentons bien tous que quelque chose ne va pas, mais nous divergeons souvent sur les réactions à avoir.
+
+
+    - « *nous avons besoin de nouveaux partis, organisons-nous mieux pour renouveller la politique*
+
+    - « *il faut se battre contre l'ennemis, les responsables sont connus, révolution, maintenant*
+
+    - « *chacun doit prendre ses responsabilité, partir à la campagne et cultiver son jardin, l'individu est la base de l'insurrection*
+
+    - « *etc...*
+    
+
+    **Efforçons nous de ne pas dicter** ce que «nous», ou «les gens» devraient faire !
+
+
+    Selon nos parcours de vie, expériences, rencontres, âge, personnalité, nous n'avons pas la même compréhension du monde et ne cherchons pas les mêmes choses. Nous défendons l'une ou l'autre des solution ou luttes existantes
+
+
+    Pour réconcilier ces points de vue variés, documentons les, articulons les entre eux, car **ils sont rarement incompatibles et forment des gestes politiques très complémentaires** !
+
+
+
+---
 date: 2015-10-21
 title: Liens pratiques pour participer
 subtitle: Vous êtes convaincu.e ? vous voulez ajouter, modifier des contenus ? rejoignez-nous !
@@ -470,6 +499,26 @@ content: >
 
     Fuyons l'**ingérence prétentieuse** et manipulatrice dont nous héritons vis-à-vis des pays *du sud*. Pays que nous croyons aider, mais que nous **exploitons par prosélytisme forcené** de la *« démocratie - croissance »* dans le seul but d'accroître notre main-mise des ressources.
 
+
+
+---
+slug: we_can_act
+date: 2015-11-19
+title: On ne peut rien faire ?
+subtitle: C'est comme ça, tout cela nous dépasse. Ce qui se passe en chine, les guerres... vouloir changer tout ça d'un coup est impossible
+tags: act, alienation
+quote:
+    author: Le Dalaï Lama
+    content: Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique... et vous verrez lequel des deux empêche l'autre de dormir
+content: >
+    - *La faute aux politiques ?* Ce sont nous qui les laissons au pouvoir
+
+    - *La faute aux multinationales ?* Nous travaillons pour elles et achetons leurs produits
+
+    - *Le système financier mondial ?* Nous confions notre argent aux mêmes banques
+
+
+    Nous avons beaucoup plus de **clefs d'action au quotidien** que ce que l'on croit !
 
 
 
@@ -580,6 +629,26 @@ content: >
 
 
 ---
+slug: violence_or_not
+date: 2015-11-19
+title: Violence ou non-violence ?
+tags: alienation, act
+source: "[La monnaie de leur pièce](http://www.monde-libertaire.fr/expressions/17163-la-monnaie-de-leur-piece-pleins-feux-sur-le-capital-et-letat), Jean Rat, ([extrait](http://generationsfutur.zici.fr/tribunes/violence-ou-non-violence/))"
+content: >
+    Encore un débat pipé et stupide. Ce qui nous fait violence, ce qui nous viole, c’est **ce que qui nous est imposé malgré nous**. Le patriarcat, l’État, le Capital, sont les institutions de la violence érigée en système.
+
+
+    Plutôt que de nous enfermer dans un discours idéologique de la «non-violence», ou d’assumer à l’inverse un choix idéologique de «violence» , commençons à mettre en pratique une autodéfense pragmatique.
+
+
+    Refuser la violence exercée contre nous est la première des légitimités, peut être bien la seule. Et cette autodéfense est d’autant plus efficace quand elle est collective, quand nous nous serrons les coudes.
+
+
+    **Être dans l’attention et la présence à soi développe l’attention et la présence aux autres**. La plus aboutie des violences, c’est celle que l’on tolère sur soi-même, sur nous-mêmes. Ce qui nous fait crever à petit feu, c’est notre résignation à la violence subie, à la violence que l’on se sent contraint de s’infliger, et qu’on rebalance sur les autres comme un trop plein.
+
+
+
+---
 date: 2015-07-16
 title: Stop aux merdias de masse
 subtitle: Finissons-en avec l'abrutissement médiatique des puissants, contrôlant à leur guise l'actualité et les modes de pensées
@@ -678,7 +747,7 @@ date: 2015-06-01
 title: Qui sont nos adversaires ?
 subtitle: La faute à qui ?
 slug: adversaires
-tags: companies
+tags: companies, act
 image:
     url: EricRohman.jpg
     credit: Eric Rohman
@@ -773,7 +842,7 @@ date: 2015-07-16
 title: Supprimons la publicité
 subtitle: Arrêtons la propagande des multinationales prônant un consumérisme idiot
 slug: kill_ads
-tags: alienation
+tags: alienation, companies
 image:
     url: JiriSalamoun.jpg
     credit: Jiri Salamoun
