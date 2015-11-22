@@ -211,3 +211,30 @@
     margin-left: @betterPanelW !important;
   }
 }
+
+/* VERY BIG SCREENS */
+
+@media (min-width: 1650px) {
+  .tagsmenu .gridtag {
+    padding: 16px 11px !important;
+    font-size: 0.9em !important;
+  }
+
+  .intro h1 { font-size: 13em; }
+  .header .menu .searchinput {
+    width: 280px !important;
+  }
+
+  @betterPanelW: 700px;
+  .menu .tagshat,
+  .menu .tagspanel,
+  .section.layout-flat .image,
+  .disclaimer span.splitted:first-child,
+  .panel.graph {
+    width: @betterPanelW !important;
+  }
+  .section.layout-flat .block,
+  .panel.links {
+    margin-left: @betterPanelW !important;
+  }
+}

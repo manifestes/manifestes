@@ -2031,6 +2031,9 @@ body.layout-mapprint .container {
 .section:hover .image {
   opacity: 1;
 }
+.section.reduced .image {
+  background-image: none !important;
+}
 .section.reduced .imagecredit {
   display: none;
 }
@@ -2877,5 +2880,29 @@ body.layout-mapprint .container {
   .section.layout-flat .block,
   .panel.links {
     margin-left: 580px !important;
+  }
+}
+/* VERY BIG SCREENS */
+@media (min-width: 1650px) {
+  .tagsmenu .gridtag {
+    padding: 16px 11px !important;
+    font-size: 0.9em !important;
+  }
+  .intro h1 {
+    font-size: 13em;
+  }
+  .header .menu .searchinput {
+    width: 280px !important;
+  }
+  .menu .tagshat,
+  .menu .tagspanel,
+  .section.layout-flat .image,
+  .disclaimer span.splitted:first-child,
+  .panel.graph {
+    width: 700px !important;
+  }
+  .section.layout-flat .block,
+  .panel.links {
+    margin-left: 700px !important;
   }
 }
