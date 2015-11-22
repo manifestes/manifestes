@@ -3194,7 +3194,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'15 November 2015 - 10:39'})
+.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'22 November 2015 - 3:41'})
 
 ;
 ;
@@ -3534,9 +3534,9 @@ angular.module('manifest.controllers', ['underscore','config'])
       var reg = new RegExp($scope.state.search,'gi'); //$scope.rgx.search;
       if($scope.state.search)
       if(o.title) { // a section
-        var show = reg.test(totext(o.quote.content));
+        var show = o.hasOwnProperty('quote') && reg.test(totext(o.quote.content));
         _.each(['title','subtitle','content'], function(k) {
-          show = show || reg.test(totext(o[k]));
+          show = show || ( o.hasOwnProperty(k) && reg.test(totext(o[k])) );
         });
       } else { // a link
         var show = reg.test(totext(o.content));

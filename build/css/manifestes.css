@@ -1242,7 +1242,7 @@ div.highlight {
 .lastupdate {
   display: inline-block;
   right: 0;
-  margin-top: 20px;
+  margin: 15px 0px;
   padding: 5px 8px;
   border-radius: 6px;
   font-size: 0.7em;
