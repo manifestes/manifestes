@@ -141,8 +141,13 @@ var loadLinksGraph = function(scope) {
       s.bind('doubleClickNode', function(event) {
         console.log("doubleclicked node:",event.data.node);
         var url = event.data.node.attributes.Url || scope.meta.url;
-        var win = window.open(url, '_blank');
-        win.focus();
+        
+        window.open(url.split(' ')[0], '_blank');
+
+        /*_.each(url.split(' '), function(e) {
+          var win = window.open(e, '_blank');
+          //win.focus();
+        });*/        
       });
       
       // simple click shows neighbors

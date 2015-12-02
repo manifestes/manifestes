@@ -3194,7 +3194,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'22 November 2015 - 4:00'})
+.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'03 December 2015 - 12:00'})
 
 ;
 ;
@@ -4260,8 +4260,13 @@ var loadLinksGraph = function(scope) {
       s.bind('doubleClickNode', function(event) {
         console.log("doubleclicked node:",event.data.node);
         var url = event.data.node.attributes.Url || scope.meta.url;
-        var win = window.open(url, '_blank');
-        win.focus();
+        
+        window.open(url.split(' ')[0], '_blank');
+
+        /*_.each(url.split(' '), function(e) {
+          var win = window.open(e, '_blank');
+          //win.focus();
+        });*/        
       });
       
       // simple click shows neighbors
