@@ -59,7 +59,7 @@ graph:
         
         
         voir aussi la [liste des sites web](https://github.com/manifestes/manifestes/blob/gh-pages/data/utiles/graph_id-url-tag.csv) du graphe
-    controlhelp: "Chaque point du réseau représente un site internet\n\n- Utilisez la molette de votre souris pour zoomer\n- Cliquez sur un point pour voir les sites voisins (cités ou citant)\n- Double-cliquez pour ouvrir le site dans une nouvelle fenêtre\n\nLes couleurs correspondent aux classes de modularité,\nc-à-d aux communautés détectées selon la structure du réseau"
+    controlhelp: "Chaque point du réseau représente un site internet\n\n- Utilisez la molette de votre souris pour zoomer\n- Cliquez sur un point pour voir les sites voisins (cités ou citant)\n- Triple-cliquez pour ouvrir le site dans une nouvelle fenêtre\n\nLes couleurs correspondent aux classes de modularité,\nc-à-d aux communautés détectées selon la structure du réseau"
     controlfull: "afficher/réduire le plein écran"
 intro:
     images:
