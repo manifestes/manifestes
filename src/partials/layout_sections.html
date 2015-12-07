@@ -47,6 +47,7 @@
       ng-if="state.tagging"
       class="tags hint--left"
       data-hint="{{meta.tagtip}}"
+      ng-click="$event.stopPropagation();"
       ng-include="settings.assets + 'partials/tags.html'">
     </div>
 

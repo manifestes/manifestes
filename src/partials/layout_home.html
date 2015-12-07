@@ -1,7 +1,8 @@
 <div
   ng-repeat="e in meta.intro"
   ng-click="changeLayout(e.layout);"
-  class="fullbox">
+  class="fullbox"
+  id="{{e.layout}}">
 
   <span class="h1" compile-html="e.title"></span>
   <span class="h2" compile-html="e.descr"></span>

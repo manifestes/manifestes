@@ -23,14 +23,13 @@ intro:
         descr: des citations et morceaux de textes choisis — pour composer d'autres manières de voir le monde
         image: FingerBones.jpg
         quote:
-            author: A.Gramsci. ou Le Forum du clair-obscur
-            content: Le vieux monde se meurt, le nouveau monde tarde à apparaître et dans ce clair-obscur surgissent les monstres
+            author: Audrey
+            content: Que ceux qui sont déjà conscients se sentent soutenus, et que les autres ouvrent les yeux pour changer, à leur rythme, à leur mesure
         samples:
-            - c'est quoi ce projet ?
-            - que penser du rôle de l'état et des partis politiques ?
-            - quelles positions convergentes sur le fond ?
-            - vous parlez d'agriculture ?
-            - comment participer au projet ?
+            - changement climatique, désastres sociaux... on fait quoi ?
+            - c'est un projet collectif ? comment participer ?
+            - quelles convergences entre les mouvements alternatifs ?
+            - violence ou non violence ? avec ou sans l'État ?
     -   layout: links
         title: liens
         descr: consulter des textes, vidéos, trouver des médias libres — une sélection d'articles, projets qui méritent d'être connus
@@ -39,9 +38,9 @@ intro:
             author: Bernard Werber
             content: L'important n'est pas de convaincre, mais de donner à réfléchir
         samples:
-            - quels sont médias libres ?
+            - quelles radios et télés indépendantes ?
             - quelles vidéos à propos du travail ?
-            - ouvrir un site au hasard !
+            - découvrir un site au hasard !
     -   layout: network
         title: réseau
         descr: un graphe de près de 3000 sites internet de collectifs, structures, médias, blogs — positions relatives et interconnexions
@@ -110,7 +109,7 @@ network:
     loading: >
         le réseau est en cours d'affichage
         <br><br>
-        attention, le temps de chargement peut être long (8.2Mo)
+        attention, le temps de chargement peut être long (9.6Mo)
         <br><br>
         merci pour votre patience
     image: links_eniac.jpg
@@ -124,7 +123,7 @@ disclaimer:
         Vous pouvez consulter les textes dans l'ordre que vous voulez
         
 
-        Pour les applications concrètes, consultez les ressources ou la carte
+        Pour les applications concrètes, consultez les liens ou la carte
     links: >
         ici, des liens ajoutés **avec nos petites mains**. ça fait un peu fouilli, leur désordre reflète la multiplicité des collectifs et initiatives !
 
@@ -141,7 +140,7 @@ disclaimer:
 
         - cliquez sur un point pour voir les sites voisins (cités ou citant)
 
-        - double-cliquez sur un point pour ouvrir le site dans une nouvelle fenêtre
+        - triple-cliquez sur un point pour ouvrir le site dans une nouvelle fenêtre
 
 
         **Les couleurs correspondent aux classes de modularité**, c-à-d aux communautés détectées selon la structure du réseau

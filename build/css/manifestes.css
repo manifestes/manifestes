@@ -1494,6 +1494,7 @@ div.highlight {
   width: 270px;
   vertical-align: middle;
   border: 1px solid lightgray;
+  border-left: none;
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
   text-align: left;
@@ -1535,35 +1536,35 @@ div.highlight {
   box-sizing: border-box;
   height: 100%;
   padding: 11px 0px 10px 13px;
-  width: 133px;
+  width: 41px;
   vertical-align: top;
   cursor: pointer;
   color: white;
-  background: #6a6c67;
+  background: #ababab;
   border-top-left-radius: 40px;
   border-bottom-left-radius: 40px;
   text-align: left;
   font-size: 1.3em;
 }
-.header .menu .tagactivator.active {
-  color: white;
-  background: #883e3e;
-}
-.header .menu .tagactivator:hover {
-  color: white;
-  background: #987676;
-}
-.header .menu .tagactivator.active:hover {
-  background: #987676;
+.header .menu .tagactivator:hover i {
+  color: #cccccc;
 }
 .header .menu .tagactivator .within {
-  display: inline-block;
+  display: none;
   width: 85px;
   font-size: 0.5em;
   font-style: italic;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: antialiased;
+}
+.header .menu .tagactivator.active {
+  color: white;
+  background: #6a6c67;
+  width: 133px;
+}
+.header .menu .tagactivator.active .within {
+  display: inline-block;
 }
 .header .tagspanel {
   z-index: 27;
@@ -1578,11 +1579,11 @@ div.highlight {
   -webkit-box-shadow: 0px 0px 5px 0px #525252;
   -moz-box-shadow: 0px 0px 5px 0px #525252;
   box-shadow: 0px 0px 5px 0px #525252;
-  -webkit-transition: top 0.5s;
-  -moz-transition: top 0.5s;
-  -o-transition: top 0.5s;
-  -ms-transition: top 0.5s;
-  transition: top 0.5s;
+  -webkit-transition: top 0.4s;
+  -moz-transition: top 0.4s;
+  -o-transition: top 0.4s;
+  -ms-transition: top 0.4s;
+  transition: top 0.4s;
 }
 .header .tagspanel.active {
   top: 65px;
@@ -1742,6 +1743,9 @@ div.highlight {
   font-style: italic;
   line-height: 1.4em;
   color: #3c3c3c;
+}
+.disclaimer span.left {
+  text-align: left;
 }
 .disclaimer span.full {
   display: inline-block;
@@ -1929,11 +1933,6 @@ body.layout-mapprint .container {
   -o-transition: all 0.2s ease-out;
   -ms-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
-  -webkit-transition-delay: 0.1s;
-  -moz-transition-delay: 0.1s;
-  -ms-transition-delay: 0.1s;
-  -o-transition-delay: 0.1s;
-  transition-delay: 0.1s;
 }
 .wrapper.layout-home .page .fullbox .quote-container {
   z-index: 4;
@@ -1974,11 +1973,6 @@ body.layout-mapprint .container {
   -o-transition: bottom 0.2s ease-out;
   -ms-transition: bottom 0.2s ease-out;
   transition: bottom 0.2s ease-out;
-  -webkit-transition-delay: 0.2s;
-  -moz-transition-delay: 0.2s;
-  -ms-transition-delay: 0.2s;
-  -o-transition-delay: 0.2s;
-  transition-delay: 0.2s;
 }
 .wrapper.layout-home .page .fullbox .samples .ex {
   text-align: left;
@@ -2010,9 +2004,6 @@ body.layout-mapprint .container {
   -o-transition: opacity 0.2s ease-out;
   -ms-transition: opacity 0.2s ease-out;
   transition: opacity 0.2s ease-out;
-}
-.wrapper.layout-home .page .fullbox:hover {
-  border: 10px solid #883e3e;
 }
 .wrapper.layout-home .page .fullbox:hover .h1 {
   bottom: 65%;
@@ -2843,6 +2834,9 @@ body.layout-mapprint .container {
   .layout-home .fullbox {
     width: 100% !important;
     height: 80% !important;
+  }
+  .layout-home .fullbox#network {
+    display: none;
   }
   /* SECTIONS */
   .section.hidden .image,

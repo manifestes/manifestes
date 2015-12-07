@@ -34,8 +34,8 @@ angular.module('manifest.controllers', ['underscore','config'])
     var layout = $routeParams.layout ?
       (["home","sections","sectionsprint","links","network","map","mapprint"].indexOf($routeParams.layout)==-1 ? "sections" : $routeParams.layout) :
       "home";
-    //var tags = [];
-    var tags = $routeParams.tags ? $routeParams.tags.split(',') : [];
+    var tags = [];
+    //var tags = $routeParams.tags ? $routeParams.tags.split(',') : [];
     var intro = !$routeParams.layout;
 
     $scope.meta = {}; // mainly the meta info at start of section.yml
@@ -92,7 +92,7 @@ angular.module('manifest.controllers', ['underscore','config'])
 
     $scope.updatePath = function() {
       var st = $scope.state;
-      $location.path('/'+st.lang+'/'+st.layout+'/'+st.tags.join(','), false);
+      $location.path('/'+st.lang+'/'+st.layout, false); //+'/'+st.tags.join(','), false);
     }
 
 

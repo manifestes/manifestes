@@ -513,6 +513,7 @@ span.highlight, div.highlight { /* searched words */
 
         vertical-align: middle;
         border: 1px solid lightgray;
+        border-left: none;
         //border-style: solid none solid none;
         border-top-right-radius: 40px;
         border-bottom-right-radius: 40px;
@@ -554,35 +555,43 @@ span.highlight, div.highlight { /* searched words */
       box-sizing: border-box;
       height: 100%;
       padding: 11px 0px 10px 13px;
-      width: 133px;
+      width: 41px;
       vertical-align: top;
       cursor: pointer;
       
       color: white;
-      background: @darkColor;
+      background: @lightColor;
       border-top-left-radius: 40px;
       border-bottom-left-radius: 40px;
          
       text-align: left;
       font-size: 1.3em;
 
-      &.active {
-        color: white;
-        background: @redColor;
-      }
+      //.transition(width 0.4s);
+
       &:hover {
-        color: white;
-        background: @redGreyColor;
+        i {
+          color: @veryLightColor;
+        }
       }
-      &.active:hover {
-        background: @redGreyColor;
-      }
+      // &.active:hover {
+      //   background: @redGreyColor;
+      // }
       .within {
-        display: inline-block;
+        display: none;
         width: 85px;
         font-size: 0.5em;
         font-style: italic;
         .no-font-smoothing();
+      }
+
+      &.active {
+        color: white;
+        background: @darkColor;
+        width: 133px;
+        .within {
+          display: inline-block;
+        }
       }
     }
   }
@@ -601,7 +610,7 @@ span.highlight, div.highlight { /* searched words */
 
     border-bottom: @borderPanel solid white;
     .box-shadow(0px 0px 5px 0px #525252);
-    .transition(top 0.5s);
+    .transition(top 0.4s);
 
     &.active {
       top: @menuH;
@@ -772,6 +781,9 @@ span.highlight, div.highlight { /* searched words */
     font-style: italic;
     line-height: 1.4em;
     color: @textColor;
+  }
+  span.left {
+    text-align: left;
   }
   span.full {
     display: inline-block;
