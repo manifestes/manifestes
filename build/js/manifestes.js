@@ -3157,6 +3157,7 @@ angular.module('manifest', [
   .config(['$routeProvider','$locationProvider',"settings", function($routeProvider,$locationProvider,settings) {
     
     //$locationProvider.html5Mode(true);
+
     console.log("App Settings",settings);
     
     var lang = navigator.language;
@@ -3169,15 +3170,21 @@ angular.module('manifest', [
 
     $routeProvider.when('/:lang/:layout', {
       templateUrl: settings.assets + '/partials/layout.html',
-      controller: 'manifestController'
-      // reloadOnSearch: false
+      controller: 'manifestController',
+      //reloadOnSearch: false
     });
 
-    $routeProvider.when('/:lang/:layout/:forcedev', {
+    $routeProvider.when('/:lang/:layout/:tags', {
       templateUrl: settings.assets + '/partials/layout.html',
-      controller: 'manifestController'
-      // reloadOnSearch: false
+      controller: 'manifestController',
+      //reloadOnSearch: false
     });
+
+    // $routeProvider.when('/:lang/:layout/:forcedev', {
+    //   templateUrl: settings.assets + '/partials/layout.html',
+    //   controller: 'manifestController'
+    //   // reloadOnSearch: false
+    // });
 
     $routeProvider.otherwise({
       redirectTo: '/fr'
@@ -3194,7 +3201,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'04 December 2015 - 9:33'})
+.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'07 December 2015 - 11:19'})
 
 ;
 ;
@@ -3228,12 +3235,16 @@ angular.module('manifest.controllers', ['underscore','config'])
     
     moment.locale('fr');
 
-    //console.log("settings:",settings);
+    console.log("from controller:",settings);
+
     $scope.settings = settings;
-    if($routeParams.forcedev) $scope.settings.dev = true;
+    
     var layout = $routeParams.layout ?
-      (["full","sections","sectionsprint","links","map","mapprint"].indexOf($routeParams.layout)==-1 ? "sections" : $routeParams.layout) :
-      "sections";
+      (["home","sections","sectionsprint","links","network","map","mapprint"].indexOf($routeParams.layout)==-1 ? "sections" : $routeParams.layout) :
+      "home";
+    //var tags = [];
+    var tags = $routeParams.tags ? $routeParams.tags.split(',') : [];
+    var intro = !$routeParams.layout;
 
     $scope.meta = {}; // mainly the meta info at start of section.yml
     $scope.sectionsArray = []; // raw list of sections
@@ -3246,7 +3257,7 @@ angular.module('manifest.controllers', ['underscore','config'])
     $scope.settings.verbose = false; // to print detailed stats on tags, objects, etc...
 
     $scope.state = {
-      intro: !$scope.settings.dev, // splash fullscreen panel
+      intro: intro, // splash fullscreen panel
       introimage: 0, // slideshow of intro splash images
       commenting_slug: null, // current disqus id
       lang: $routeParams.lang,
@@ -3256,19 +3267,20 @@ angular.module('manifest.controllers', ['underscore','config'])
       disclaim: {
         sections: !$scope.settings.dev,
         links: !$scope.settings.dev,
-        map: !$scope.settings.dev
+        network: !$scope.settings.dev,
+        map: !$scope.settings.dev,
       },
 
       count: {}, // will count results if search/tags filtered
 
-      tagging: false, // if tags/filtering active or not
+      tagging: tags.length>0, // if tags/filtering active or not
       tagsmode: 'grid', // tags display mode: graph OR grid
-      tags: [], // list of current filtering tags
+      tagspanel: false,
+      tags: tags, // list of current filtering tags
 
       togglesections: null, // wil be 'up' or 'down' to display arrows to open/close all sections
 
-      graphstatus: "NO", // loaded or not ?
-      graphfullscreen: false,
+      networkstatus: "NO", // loaded or not ?
 
       mapSources: []
     };
@@ -3286,6 +3298,10 @@ angular.module('manifest.controllers', ['underscore','config'])
     //   //window.scrollBy(0,-40);
     // };
 
+    $scope.updatePath = function() {
+      var st = $scope.state;
+      $location.path('/'+st.lang+'/'+st.layout+'/'+st.tags.join(','), false);
+    }
 
 
     $scope.layoutTemplate = function() {
@@ -3303,8 +3319,8 @@ angular.module('manifest.controllers', ['underscore','config'])
         $scope.state.introimage -=1;
       if($scope.state.introimage < 0)
         $scope.state.introimage = 0;
-      if($scope.state.introimage > $scope.meta.intro.images.length-1)
-        $scope.state.introimage = $scope.meta.intro.images.length-1;
+      if($scope.state.introimage > $scope.meta.splash.images.length-1)
+        $scope.state.introimage = $scope.meta.splash.images.length-1;
     };
 
     var scrollToup = function() {
@@ -3338,37 +3354,37 @@ angular.module('manifest.controllers', ['underscore','config'])
     $scope.changeLayout = function(lay) {
       if(lay == $scope.state.layout) return; // unchanged
       else {
+
         $scope.state.loading = true;
 
         // reset tags & search
-        $scope.toggleTag();
-        $scope.searchSubmit();
+        //$scope.toggleTag();
+        //$scope.searchSubmit();
 
         $scope.state.layout = lay;
-        if(lay!='links') {
-          $scope.state.graphstatus = "NO";
-          //loadLinksGraph($scope);
-        }
-        scrollToup();
+        // if(lay!='network') {
+        //   $scope.state.networkstatus = "NO";
+        //   //loadLinksGraph($scope);
+        // }
+
+        //scrollToup();
         
         // update tag graph sizes
         //if($scope.state.tagsmode=='graph')
-          updateTagNodesSizesForLayout($scope,lay);
+          //updateTagNodesSizesForLayout($scope,lay);
 
         // unlock loader when scope ready (for map, only done after csv received)
         if(lay!='map')
           $timeout(function(){ $scope.state.loading = false; });
+
+        $scope.updatePath();
+
       }
     };
 
-    $scope.loadLinksGraph = function() {
-      loadLinksGraph($scope);
+    $scope.networkControl = function(what) {
+      controlLinksGraph(what);
     };
-    $scope.updateGraphSize = function() {
-      $timeout(function() {
-        updateGraphSize();
-      },0)
-    }
 
 
     $scope.tagSorter = function(tag) {
@@ -3395,8 +3411,14 @@ angular.module('manifest.controllers', ['underscore','config'])
       if(refresh) $scope.$apply();
     };
 
-    $scope.isTagActive = function(tag) {
-      return $scope.state.tags.indexOf(tag)!=-1;
+    $scope.isTagActive = function(tagslug) {
+      return $scope.state.tags.indexOf(tagslug)!=-1;
+    };
+    $scope.isTagAutoComplete = function(tag) {
+      if($scope.state.searchinput && $scope.state.searchinput.length>3) {
+        return (tag.label+" "+tag.description).indexOf($scope.state.searchinput)!=-1;
+      } else
+        return false;
     };
 
 
@@ -3452,15 +3474,15 @@ angular.module('manifest.controllers', ['underscore','config'])
       
       // update graph node colors
       //if($scope.state.tagsmode=='graph')
-        updateTagNodes($scope.state.tags);
+        //updateTagNodes($scope.state.tags);
 
-      if($scope.state.graphstatus=="OK")
-        filterLinksNodesFromTags($scope.state.tags);
+      //if($scope.state.networkstatus=="OK")
+      filterLinksNodesFromTags($scope.state.tags);
 
       //$scope.updateSearchTagCount();
 
       if(refresh) $scope.$apply();
-      scrollToup();
+      //scrollToup();
     };
 
 
@@ -3476,7 +3498,7 @@ angular.module('manifest.controllers', ['underscore','config'])
       
       $scope.rgx.search = new RegExp($scope.state.search,'gi');
 
-      if($scope.state.graphstatus=='OK')
+      if($scope.state.networkstatus=='OK')
         filterLinksNodes($scope.state.search);
 
       //$scope.updateSearchTagCount();
@@ -3647,7 +3669,7 @@ angular.module('manifest.controllers', ['underscore','config'])
         $rootScope.htmlmeta = m.htmlmeta;
 
         // prepare splash images & their back color
-        $scope.meta.intro.images = _.map(m.intro.images, function(v) {
+        $scope.meta.splash.images = _.map(m.splash.images, function(v) {
           return {
             color: /_/.test(v) ? "#"+v.split("_")[1].split('.')[0] : "#000",
             filename: v,
@@ -3809,8 +3831,12 @@ angular.module('manifest.controllers', ['underscore','config'])
         // fetch links
         fetchDataLinks();
 
-        // load tag graph 
-        $timeout(function() { loadTagGraph($scope); },500);
+        // load graphs ?
+        $timeout(function() {
+          //loadTagGraph($scope);
+          if($scope.state.layout=='network')
+            loadLinksGraph($scope);
+        },500);
 
         // (to improve ?) init here to trigger the watch on footer content set though compile-html directive
         $scope.state.search = "";
@@ -4117,6 +4143,7 @@ angular.module('manifest.filters', [])
   });
 ;
 
+
 var linksGraph = null;
 var tagsGraph = null;
 
@@ -4127,11 +4154,22 @@ var redColor = "#883E3E";
 
 
 ////////////////////////////////////////// LINKS GRAPH
-var updateGraphSize = function() {
-  linksGraph.renderers[0].resize();
-  linksGraph.refresh();
-  //console.log("graph size refreshed");
+var controlLinksGraph = function(what) {
+  var c = linksGraph.camera;
+  if(what=='reset')
+    c.goTo({ ratio: 1, x: 0, y: 0 });
+  if(what=='zoomin')
+    c.goTo({ ratio: c.ratio / 1.4 });
+  if(what=='zoomout')
+    c.goTo({ ratio: c.ratio * 1.4 });
 };
+
+// var updateGraphSize = function() {
+//   linksGraph.renderers[0].resize();
+//   linksGraph.refresh();
+//   //console.log("graph size refreshed");
+// };
+
 var focusDisplay = function(focus) {
   if(focus) {
     linksGraph.settings('drawEdges', true);
@@ -4201,7 +4239,8 @@ var resetLinkNodes = function() {
 
 var loadLinksGraph = function(scope) {
 
-  scope.state.graphstatus = "LOADING";
+  console.log("Fetching links network...");
+  scope.state.networkstatus = "LOADING";
   
   try {
     sigma.classes.graph.addMethod('neighbors', function(nodeId) {
@@ -4220,11 +4259,11 @@ var loadLinksGraph = function(scope) {
 
 
   var g = sigma.parsers.gexf(
-    scope.settings.datapath + "graph.gexf",
+    scope.settings.datapath + "network.gexf",
     {
-      container: 'sigma-links',
+      container: 'sigma-network',
       renderer: {
-        container: document.getElementById('sigma-links'),
+        container: document.getElementById('sigma-network'),
         type: 'canvas'
       },
       settings: {
@@ -4304,12 +4343,11 @@ var loadLinksGraph = function(scope) {
         }
       });
 
-      if(scope.settings.verbose)
-        console.log("links graph loaded");
+      console.log("links graph loaded");
 
       s.refresh();
 
-      scope.state.graphstatus = "OK";
+      scope.state.networkstatus = "OK";
 
       scope.$apply();
     });

@@ -16,6 +16,7 @@ angular.module('manifest', [
   .config(['$routeProvider','$locationProvider',"settings", function($routeProvider,$locationProvider,settings) {
     
     //$locationProvider.html5Mode(true);
+
     console.log("App Settings",settings);
     
     var lang = navigator.language;
@@ -28,15 +29,21 @@ angular.module('manifest', [
 
     $routeProvider.when('/:lang/:layout', {
       templateUrl: settings.assets + '/partials/layout.html',
-      controller: 'manifestController'
-      // reloadOnSearch: false
+      controller: 'manifestController',
+      //reloadOnSearch: false
     });
 
-    $routeProvider.when('/:lang/:layout/:forcedev', {
+    $routeProvider.when('/:lang/:layout/:tags', {
       templateUrl: settings.assets + '/partials/layout.html',
-      controller: 'manifestController'
-      // reloadOnSearch: false
+      controller: 'manifestController',
+      //reloadOnSearch: false
     });
+
+    // $routeProvider.when('/:lang/:layout/:forcedev', {
+    //   templateUrl: settings.assets + '/partials/layout.html',
+    //   controller: 'manifestController'
+    //   // reloadOnSearch: false
+    // });
 
     $routeProvider.otherwise({
       redirectTo: '/fr'

@@ -4,9 +4,67 @@
 url: http://utopies-concretes.org
 source:
     github: https://github.com/manifestes/manifestes
+    meta: https://github.com/manifestes/manifestes/blob/gh-pages/data/meta_fr.yml
     sections: https://github.com/manifestes/manifestes/blob/gh-pages/data/sections_fr.yml
     links: https://github.com/manifestes/manifestes/blob/gh-pages/data/links_fr.yml
+    network: https://github.com/manifestes/manifestes/blob/gh-pages/data/utiles/network_id-url-tag.csv
     map: https://framacalc.org/carto
+splash:
+    images:
+        - keep-calm-slow-down_231F20.svg
+        - manifeste-utopies-concretes_633232.svg
+        - appel-convergence_231F20.svg
+        - chats-peles-main.jpg
+        - collectifs-autogestion_E0A11A.svg
+    enter: "consulter & participer"
+intro:
+    -   layout: sections
+        title: textes
+        descr: des citations et morceaux de textes choisis — pour composer d'autres manières de voir le monde
+        image: FingerBones.jpg
+        quote:
+            author: A.Gramsci. ou Le Forum du clair-obscur
+            content: Le vieux monde se meurt, le nouveau monde tarde à apparaître et dans ce clair-obscur surgissent les monstres
+        samples:
+            - c'est quoi ce projet ?
+            - que penser du rôle de l'état et des partis politiques ?
+            - quelles positions convergentes sur le fond ?
+            - vous parlez d'agriculture ?
+            - comment participer au projet ?
+    -   layout: links
+        title: liens
+        descr: consulter des textes, vidéos, trouver des médias libres — une sélection d'articles, projets qui méritent d'être connus
+        image: ErwinBlumenfeld.jpg
+        quote:
+            author: Bernard Werber
+            content: L'important n'est pas de convaincre, mais de donner à réfléchir
+        samples:
+            - quels sont médias libres ?
+            - quelles vidéos à propos du travail ?
+            - ouvrir un site au hasard !
+    -   layout: network
+        title: réseau
+        descr: un graphe de près de 3000 sites internet de collectifs, structures, médias, blogs — positions relatives et interconnexions
+        image: DavidBarth.jpg
+        quote:
+            author: Proverbe mexicain
+            content: Ils ont essayé de nous enterrer, ils ne savaient pas que nous étions des graines
+        samples:
+            - comment s'articulent les alternatives ?
+            - quels médias autour des mouvements libertaires ?
+            - quels sont les sites autour de la transition ?
+            - qui est cité par Médiapart ? Reporterre ? Bastamag ?
+    -   layout: map
+        title: carte
+        descr: une carte interactive qui agrège les lieux référencés par la caravane des alternatives, les hétérotopies, lieux de vie et bases nomades — à visiter !
+        image: Shigeru_Hatsuyama.jpg
+        quote:
+            author: Chris Marker, Le Joli Mai, 1h28min
+            content: l'avenir est là ! mais les gens ne le voient pas ... ils attendent l'horizon au loin
+        samples:
+            - où sont les lieux de luttes ?
+            - où puis-je trouver un café associatif près de chez moi ?
+            - qu'y a t'il autour de Montpellier ?
 mapcredits:
     -   slug: misc
         name: Utopies Concrètes
@@ -48,39 +106,26 @@ mapcredits:
         description: "Partout en France, de simples citoyens montrent\nnon seulement qu’un autre monde est possible,\nmais qu’il existe déjà"
         url: http://www.tourdefrancedesalternatives.fr/
         color: 8F5D83
-graph:
-    loader: >
-        cliquer pour afficher le graphe
+network:
+    loading: >
+        le réseau est en cours d'affichage
         <br><br>
         attention, le temps de chargement peut être long (8.2Mo)
+        <br><br>
+        merci pour votre patience
     image: links_eniac.jpg
     credits: >
-        [graph.gexf](https://github.com/manifestes/manifestes/blob/gh-pages/data/graph.gexf) produit avec l'outil libre [hyphe](http://hyphe.medialab.sciences-po.fr/) et affiché avec [sigma.js](http://sigmajs.org/)
+        [network.gexf](https://github.com/manifestes/manifestes/blob/gh-pages/data/network.gexf) produit avec l'outil libre [hyphe](http://hyphe.medialab.sciences-po.fr/) et affiché avec [sigma.js](http://sigmajs.org/)
         
         
-        voir aussi la [liste des sites web](https://github.com/manifestes/manifestes/blob/gh-pages/data/utiles/graph_id-url-tag.csv) du graphe
-    controlhelp: "Chaque point du réseau représente un site internet\n\n- Utilisez la molette de votre souris pour zoomer\n- Cliquez sur un point pour voir les sites voisins (cités ou citant)\n- Triple-cliquez pour ouvrir le site dans une nouvelle fenêtre\n\nLes couleurs correspondent aux classes de modularité,\nc-à-d aux communautés détectées selon la structure du réseau"
-    controlfull: "afficher/réduire le plein écran"
-intro:
-    images:
-        - keep-calm-slow-down_231F20.svg
-        - manifeste-utopies-concretes_633232.svg
-        - appel-convergence_231F20.svg
-        - chats-peles-main.jpg
-        - collectifs-autogestion_E0A11A.svg
-    enter: "consulter & participer"
+        voir aussi la [liste des sites web](https://github.com/manifestes/manifestes/blob/gh-pages/data/utiles/network_id-url-tag.csv) du réseau
 disclaimer:
     sections: >
         Vous pouvez consulter les textes dans l'ordre que vous voulez
         
 
         Pour les applications concrètes, consultez les ressources ou la carte
-    linksleft: >
-        à gauche, une **approche quantitative**
-
-
-        le réseau de tous les sites internet et des liens qu'ils ont entre eux
-    linksright: >
+    links: >
         ici, des liens ajoutés **avec nos petites mains**. ça fait un peu fouilli, leur désordre reflète la multiplicité des collectifs et initiatives !
 
 
@@ -88,25 +133,33 @@ disclaimer:
 
 
         **pour naviguer par thématiques, activez les tags** grâce à l'icône en haut à gauche dans le menu.
+    network: >
+        **le réseau de tous les sites internet** et des liens qu'ils ont entre eux (approche quantitative)
+
+
+        - utilisez la molette de votre souris pour zoomer
+
+        - cliquez sur un point pour voir les sites voisins (cités ou citant)
+
+        - double-cliquez sur un point pour ouvrir le site dans une nouvelle fenêtre
+
+
+        **Les couleurs correspondent aux classes de modularité**, c-à-d aux communautés détectées selon la structure du réseau
     map: >
         Les couleurs des points correspondent aux différentes sources (cf légende). N'oubliez pas qu'ils ne sont pas tous des lieux de passage: **observez donc le plus grand respect** si vous souhaitez les visiter: renseignez-vous et prévenez avant de débarquer !
 
 
         Pour ajouter, modifier ou supprimer un lieu, utilisez [ce tableau partagé](http://framacalc.org/carto)
 menu:
-    backtip: retourner à l'intro
-    tagsdefault: toutes
-    tagshat: filtrer par thématiques
+    backtip: retourner à l'introduction
+    hometip: page d'accueil
     taggingoff: voir les thématiques
-    taggingon: masquer les thématiques
-    tagsdescription: cliquez sur les thématiques pour filtrer les contenus
+    taggingon: désactiver les thématiques
     search: chercher
     sections: textes
-    sectionstip: pour comprendre
-    links: ressources
-    linkstip: pour explorer
+    links: liens
+    network: réseau
     map: carte
-    maptip: pour visiter
     calendar: agenda
     calendartip: démosphère !
     print: imprimer

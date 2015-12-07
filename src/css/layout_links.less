@@ -6,109 +6,30 @@
   }
 }
 
-
-.panel.graph {
-  backface-visibility: hidden;
-  box-sizing: border-box;
-  position: fixed;
-  left: 0;
-  top: @menuH;
-  bottom: 0;
-
-  width: @panelW;
-  &.fullscreen {
-    width: 100% !important;
-  }
-  
-  .inner-shadow(-1px 0px 1px 0px #8A8A8A);
-  background: @veryLightColor;
-
-  .graphloader {
-    cursor: pointer;
-    z-index: 24;
-    position: absolute;
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    padding-top: 50%;
-    padding-left: 16%;
-    padding-right: 16%;
-    //background: lightgray;
-
-    line-height: 1.4em;
-    font-style: italic;
-    //color: #878787;
-    color: white;
-    font-size: 0.8em;
-
-    .inner-shadow(-1px 0px 1px 0px #8A8A8A);
-  }
-
-  .control {
-    z-index: 25;
-    cursor: pointer;
-    position: absolute;
-    border-radius: 5px;
-    width: 13px;
-    top: 0;
-    right: 0;
-    margin: 9px;
-    padding: 5px;
-    text-align: center;
-    font-size: 0.8em;
-    background: white;
-    &:hover {
-      color: @lightColor;
-    }
-  }
-  .second {
-    top: 32px;
-  }
-
-  .credits {
-    z-index: 22;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    text-align: left;
-    background-color: rgba(255, 255, 255, 0.57);
-    font-size: 0.6em;
-    padding: 3px 6px;
-  }
-
-  #sigma-links {
-    height: 100%;
-    canvas {
-      left: 0px;
-      right: 0px;
-    }
-  }
-}
-
 .panel.links {
   box-sizing: border-box;
-  margin-left: @panelW;
   padding: 0;
 
   text-align: left;
-  font-size: 1em;
+
+  @rightSpace: 250px;
+  @borderG: 15px;
 
   .link {
-    padding: 15px 0px 15px 20px;
-    padding-right: 0;
+    padding: 20px @rightSpace 20px 100px;
     border-bottom: 1px solid #D2D2D2;
     overflow: hidden;
     background: white;
 
-    line-height: 1.3em;
+    line-height: 1.5em;
 
     &.odd { background: whitesmoke; }
 
     a {
       color: white;
       background: #748598;
-      padding: 1px 4px;
-      border-radius: 2px;
+      padding: 3px 7px;
+      border-radius: 4px;
       &:hover {
         color: white;
         background: @blueColor;
@@ -117,7 +38,7 @@
 
     .tags {
       float: right;
-      margin-left: 10px;
+      margin-right: -@rightSpace;
       
       .base-tags();
       background: @lightColor;
@@ -134,14 +55,15 @@
     .love {
       z-index: 24;
       position: absolute;
-      margin-left: -48px;
+      margin-left: -52px;
       margin-top: 4px;
       color: @blueColor;
-      font-size: 0.8em;
+      font-size: 1.2em;
     }
 
     &.important {
-      border-left: 7px solid @lightGreenColor;
+      border-left: @borderG solid @lightGreenColor;
+      padding: 20px @rightSpace 20px 100px-@borderG;
       .love { margin-left: -55px; } /* hack override border */
     }
 

@@ -10,7 +10,7 @@
     </div>
     <i
       class="arrow right fa fa-caret-right"
-      ng-if="state.introimage < meta.intro.images.length-1"
+      ng-if="state.introimage < meta.splash.images.length-1"
       ng-click="slideSplashImage(true,true)"></i>
     <i
       class="arrow left fa fa-caret-left"
@@ -18,7 +18,7 @@
       ng-click="slideSplashImage(false,true)"></i>
 
     <div
-      ng-repeat="i in meta.intro.images"
+      ng-repeat="i in meta.splash.images"
       class="image"
       back-img="{{settings.datapath}}splash/{{i.filename}}"
       ng-style="{'background-color': i.color}"
@@ -32,9 +32,9 @@
   </div>
 
   <div class="foot">
-    <!-- <div class="keywords">{{meta.intro.keywords}}</div> -->
+    <!-- <div class="keywords">{{meta.splash.keywords}}</div> -->
     <div class="button color-{{getRandomInt()}}" ng-click="state.intro=false;">
-      {{meta.intro.enter}}
+      {{meta.splash.enter}}
     </div>
   </div>
 </div>
@@ -43,10 +43,9 @@
 
   <div class="header">
 
-    <div class="menu">
+    <div class="menu" >
       
       <!-- RIGHT MENU BUTTONS, REVERSE ORDER-->
-      
       <div class="buttons">
         <div class="button" id="lang">
           <i class="fa fa-globe"></i>
@@ -77,9 +76,21 @@
         </div>
         <div
           class="button hover"
+          id="network"
+          ng-if="state.lang=='fr'"
+          ng-click="changeLayout('network');"
+          ng-class="{active:state.layout=='network'}">
+          <i class="fa fa-sitemap"></i>
+          <a class="ext hint--bottom" href="{{meta.source.network}}" target="_blank" data-hint="{{meta.menu.sourcetip}}">
+            <i class="fa fa-file-text"></i>
+          </a>
+          <span>{{meta.menu.network}}</span>
+        </div>
+        <div
+          class="button hover"
           ng-click="changeLayout('links');"
           ng-class="{active:state.layout=='links'}">
-          <i class="fa fa-sitemap"></i>
+          <i class="fa fa-th-list"></i>
           <a class="ext hint--bottom" href="{{meta.source.links}}" target="_blank" data-hint="{{meta.menu.sourcetip}}">
             <i class="fa fa-file-text"></i>
           </a>
@@ -105,111 +116,107 @@
         </div>
       </div>
 
+
       <!-- BACK TO INTRO -->
+      <div class="minimenu">
+        <div
+          class="action backintro hint--right"
+          data-hint="{{meta.menu.backtip}}"
+          ng-click="state.intro = true;">
+          <i class="fa fa-angle-up"></i>
+        </div>
+        <div
+          class="action home hint--right"
+          data-hint="{{meta.menu.hometip}}"
+          ng-click="changeLayout('home');"
+          ng-class="{active:state.layout=='home'}">
+          <i class="fa fa-home"></i>
+        </div>
+      <!-- closing div is under to avoid space between inline-blocks -->
+      </div>
+
+      <!-- SEARCH ZONE -->
       <div
-        class="action backintro hint--bottom"
-        data-hint="{{meta.menu.backtip}}"
-        ng-click="state.intro = true;">
-        <i class="fa fa-angle-up"></i>
-        <!-- closing div is under to avoid space between inline-blocks -->
-      
+        class="searchinput"
+        ng-class="{inactive: state.layout=='map' || state.layout=='full' || state.layout=='home'}"
+        ng-mouseover="state.tagspanel=true;">
 
-      <!-- TAG ACTIVATOR -->
-      </div><div
-        class="action tagging hint--bottom"
-        data-hint="{{state.taggingtooltip}}"
-        ng-class="{active: state.tagging}"
-        ng-click="toggleTagging();">
-        <div class="circle">
-        <i
-          class="fa"
-          ng-class="{
-            'fa-tag': !state.tagging,
-            'fa-tags': state.tagging
-          }">
-        </i>
-        </div>
-      </div>
-
-      <!-- TAGS -->
-      <div class="tagsmenu" ng-class="{filtering: state.tags.length, active: state.tagging}">
-        <div class="tagshat">
-
-          <div class="tags" ng-if="state.tagging">
-            <div class="tag inactive" ng-if="!state.tags.length">{{meta.menu.tagsdefault}}</div>
-            <div
-              ng-if="state.tags.length"
-              class="tag"
-              ng-repeat="t in state.tags"
-              ng-click="toggleTag(t);">{{tagsContents[t].label}}
-            </div>
-            <i ng-click="toggleTag();"
-              class="clear fa fa-times fa-lg">
-            </i>
-          </div>
-
-          <span class="label" ng-if="state.tagging">
-            {{meta.menu.tagshat}} 
-            (<span class="mode" ng-if="state.tagsmode=='graph'" ng-click="state.tagsmode='grid';">afficher la grille</span><span class="mode" ng-if="state.tagsmode=='grid'" ng-click="state.tagsmode='graph';">afficher le réseau</span>)
-          </span>
-
-        </div>
-
-        <div class="paint"></div>
-
-        <!-- TAGS collapsable PANEL -->
-        <div class="tagspanel">
-
-          <!-- either GRAPH -->
-          <div class="tagsdisplay" id="sigma-tags"></div>
-
-          <!-- either GRID -->
-          <div class="tagsdisplay" id="grid-tags" ng-if="state.tagsmode=='grid'">
-            <div
-              ng-repeat="t in tagsContentsOrdered"
-              ng-click="toggleTag(t.tag,true);"
-              class="gridtag hint--right"
-              data-hint="{{t.description}}"
-              ng-class="{
-                icon: t.icon,
-                important: t.important,
-                active: isTagActive(t.tag)
-              }"><i ng-if="t.icon" class="fa fa-{{t.icon}}"></i>{{t.label}}</div>
-          </div>
-
-          <div class="tagdescription">
-            <span ng-if="state.overtag.tag">#{{state.overtag.tag}}</span> <br>
-            {{state.overtag.description}}
-          </div>
-        </div>
-      </div>
-
-      <!-- SEARCH -->
-      <div class="searchinput" ng-class="{inactive: state.layout=='map'}">
-        <form autocomplete="off" ng-submit="searchSubmit(state.searchinput);">
-        <input
-          type="text"
-          placeholder="{{meta.menu.search}}"
-          ng-model="state.searchinput" 
-          ng-click="$event.stopPropagation();"
-          ng-enter="searchSubmit(state.searchinput);"
-          ng-class="{highlight:state.search}"/>
-        </form>
-        <i
+        <!-- TAG ACTIVATOR -->
+        <div
+          class="tagactivator hint--bottom"
+          data-hint="{{state.taggingtooltip}}"
+          ng-class="{active: state.tagging}"
+          ng-click="toggleTagging();">
+          <i
+            class="fa"
+            ng-class="{
+              'fa-tag': !state.tagging,
+              'fa-tags': state.tagging
+            }"></i>
+          <!-- SEARCH IN... -->
+          <div class="within" ng-if="!state.tags.length">dans toutes les thématiques</div>
+          <div class="within" ng-if="state.tags.length>0">dans {{state.tags.length}} thématiques</div>
+        </div><form autocomplete="off" ng-submit="searchSubmit(state.searchinput);">
+          <!-- TEXTFIELD -->
+          <input
+            type="text"
+            placeholder="{{meta.menu.search}}"
+            ng-model="state.searchinput" 
+            ng-click="$event.stopPropagation();"
+            ng-enter="searchSubmit(state.searchinput);"
+            ng-class="{highlight:state.search}"/>
+          <i
           ng-if="state.searchinput.length"
-          ng-click="searchSubmit();"
-          class="clear fa fa-times fa-lg">
-        </i>
+          ng-click="searchSubmit(); toggleTag(t); state.tagspanel=false;"
+          class="clearinput fa fa-times fa-lg"></i>
+          <i
+          ng-click="state.searchinput.length && searchSubmit(state.searchinput);"
+          class="goinput fa fa-search fa-lg"></i>
+        </form>
+
       </div>
+    </div>
+
+    <!-- TAGS COLLAPSABLE PANEL -->
+    <div
+      class="tagspanel"
+      ng-class="{filtering: state.tags.length, active: state.tagging && state.tagspanel}">
+      <!-- either GRAPH -->
+      <div class="tagsdisplay" id="sigma-tags"></div>
+      <!-- either GRID -->
+      <div class="tagsdisplay" id="grid-tags" ng-if="state.tagsmode=='grid'">
+        <div
+          ng-repeat="t in tagsContentsOrdered"
+          ng-click="toggleTag(t.tag);"
+          class="gridtag"
+          data-hint="{{t.description}}"
+          ng-focus="true"
+          ng-class="{
+            icon: t.icon,
+            important: t.important,
+            active: isTagActive(t.tag),
+            popuped: isTagAutoComplete(t),
+            'hint--left': $index%10>7,
+            'hint--bottom': $index%10<8
+          }"><i ng-if="t.icon" class="meta fa fa-{{t.icon}}"></i>{{t.label}}</div>
+      </div>
+      <!--
+      <div class="tagdescription">
+        <span ng-if="state.overtag.tag">#{{state.overtag.tag}}</span> <br>
+        {{state.overtag.description}}
+
+        (<span class="displaymode" ng-if="state.tagsmode=='graph'" ng-click="state.tagsmode='grid';">afficher la grille</span><span class="displaymode" ng-if="state.tagsmode=='grid'" ng-click="state.tagsmode='graph';">afficher le réseau</span>)
+      </div>
+      -->
     </div>
 
   </div>
 
-  <div class="wrapper layout-{{state.layout}}">
+  <div class="wrapper layout-{{state.layout}}" ng-mouseover="state.tagspanel=false;">
 
     <!-- message displayed the first time you arrived on a layout -->
     <div
-      ng-if="state.layout!='sectionsprint'"
+      ng-if="state.layout!='sectionsprint'&&state.layout!='home'"
       class="disclopener"
       ng-class="{active: !state.disclaim[state.layout]}"
       ng-click="state.disclaim[state.layout] = true;">
@@ -217,17 +224,18 @@
     </div>
     <div
       class="disclaimer"
+      ng-if="state.layout!='sectionsprint'&&state.layout!='home'"
       ng-class="{active: state.disclaim[state.layout]}"
       ng-click="state.disclaim[state.layout]=false;">
 
       <span ng-if="state.layout=='sections'"
       class="full" compile-html="md2Html(meta.disclaimer[state.layout])"></span>
-
+      <span ng-if="state.layout=='links'"
+      class="full" compile-html="md2Html(meta.disclaimer[state.layout])"></span>
+      <span ng-if="state.layout=='network'"
+      class="full" compile-html="md2Html(meta.disclaimer[state.layout])"></span>
       <span ng-if="state.layout=='map'"
       class="full" compile-html="md2Html(meta.disclaimer[state.layout])"></span>
-      
-      <span ng-if="state.layout=='links'" class="splitted" ng-bind-html="md2Html(meta.disclaimer['linksleft'])"></span>
-      <span ng-if="state.layout=='links'" class="splitted" ng-bind-html="md2Html(meta.disclaimer['linksright'])"></span>
 
       <i class="fa fa-times" ng-click="state.disclaim[state.layout] = false;"></i>
     </div>

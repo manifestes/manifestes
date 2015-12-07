@@ -1,5 +1,5 @@
 angular.module('config', [])
 
-.constant('settings', {dev:true,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'../data/',assets:'./',lastupdate:'04 December 2015 - 9:33'})
+.constant('settings', {dev:true,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'../data/',assets:'./',lastupdate:'07 December 2015 - 11:19'})
 
 ;

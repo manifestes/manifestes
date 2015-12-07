@@ -1,0 +1,45 @@
+<div class="network">
+
+  <!-- NETWORK LOADER OVERLAY -->
+  <div
+    class="networkloader cover"
+    back-img="{{settings.datapath}}media/{{meta.network.image}}"
+    ng-if="state.networkstatus!='OK'">
+    <div class="spinner">
+      <div class="bounce1"></div>
+      <div class="bounce2"></div>
+      <div class="bounce3"></div>
+    </div>
+    <div class="message" ng-bind-html="meta.network.loading"></div>
+  </div>
+
+  <!-- CONTROLS -->
+  <div class="controls">
+    <div
+      ng-if="state.networkstatus=='OK'"
+      class="control zoom"
+      ng-click="networkControl('zoomin');">
+      <i class="fa fa-plus"></i>
+    </div>
+    <div
+      ng-if="state.networkstatus=='OK'"
+      class="control zoom"
+      ng-click="networkControl('zoomout');">
+      <i class="fa fa-minus"></i>
+    </div>
+    <div
+      ng-if="state.networkstatus=='OK'"
+      class="control reset hint--right"
+      data-hint="reset view"
+      ng-click="networkControl('reset');">
+      <i class="fa fa-arrows-alt"></i>
+    </div>
+  </div>
+
+  <!-- CREDITS -->
+  <div class="credits" compile-html="md2Html(meta.network.credits);"></div>
+
+  <!-- NETWORK -->
+  <div id="sigma-network"></div>
+  
+</div>

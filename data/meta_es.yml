@@ -4,12 +4,10 @@
 url: http://utopies-concretes.org
 source:
     github: https://github.com/manifestes/manifestes
+    meta: https://github.com/manifestes/manifestes/blob/gh-pages/data/meta_es.yml
     sections: https://github.com/manifestes/manifestes/blob/gh-pages/data/sections_es.yml
     links: https://github.com/manifestes/manifestes/blob/gh-pages/data/links_es.yml
-graph:
-    loader: no graph yet for the spanish version
-    image: links_eniac.jpg
-intro:
+splash:
     images:
         - manifeste-utopies-concretes_633232.svg
         - appel-convergence_231F20.svg
@@ -19,42 +17,56 @@ intro:
         colectivo(s) de los territorios comunes autogestionados y alternativas convivialistas DIY voluntarios revolucionarios de la transición social y ecológica en los terceros lugares creativos de los clowns del bricolaje piratas de las utopías libertarias ecofeministas p2p y cooperativistas indignadas activistas de la resiliencia decreciente concreta y desobediente de las convergencias de las luchas
     keywords: "# filosofía # política # práctica # convergencias #"
     enter: "consultar & participar"
+intro:
+    -   layout: sections
+        title: textos
+        descr: des citations et morceaux de textes choisis — pour composer d'autres manières de voir le monde
+        image: FingerBones.jpg
+        quote:
+            author: A.Gramsci. ou Le Forum du clair-obscur
+            content: Le vieux monde se meurt, le nouveau monde tarde à apparaître et dans ce clair-obscur surgissent les monstres
+        samples:
+            - c'est quoi ce projet ?
+            - que penser du rôle de l'état et des partis politiques ?
+            - quelles positions convergentes sur le fond ?
+            - vous parlez d'agriculture ?
+            - comment participer au projet ?
+    -   layout: enlaces
+        title: liens
+        descr: consulter des textes, vidéos, trouver des médias libres — une sélection d'articles, projets qui méritent d'être connus
+        image: ErwinBlumenfeld.jpg
+        quote:
+            author: Bernard Werber
+            content: L'important n'est pas de convaincre, mais de donner à réfléchir
+        samples:
+            - quels sont médias libres ?
+            - quelles vidéos à propos du travail ?
+            - ouvrir un site au hasard !
 disclaimer:
     sections: >
         Vous pouvez consulter les textes dans l'ordre que vous voulez
         
 
         Pour les applications concrètes, consultez les ressources ou la carte
-    linksleft: >
-        à gauche, une **approche quantitative**
-
-
-        le réseau de tous les sites internet et des liens qu'ils ont entre eux
-    linksright: >
+    links: >
         ici, des liens ajoutés **avec nos petites mains**. ça fait un peu fouilli, leur désordre reflète la multiplicité des collectifs et initiatives !
 
 
         (ce sera toujours mieux que google qui ne nous donne à voir que les plus gros/riches)
 
 
-        pour naviguer par **thématiques, activez les tags** grâce à l'icône en haut à gauche dans le menu.
-    map: >
-        Les couleurs des points correspondent aux différentes sources (cf légende). N'oubliez pas qu'ils ne sont pas tous des lieux de passage: observez donc le plus grand respect si vous souhaitez les visiter: renseignez-vous et prévenez avant de débarquer !
+        **pour naviguer par thématiques, activez les tags** grâce à l'icône en haut à gauche dans le menu.
 menu:
-    backtip: retourner à l'intro
-    tagsdefault: toutes
-    tagshat: filtrer par thématiques
-    taggingoff: activer les thématiques
-    taggingon: masquer les thématiques
-    tagsdescription: cliquez sur les thématiques pour filtrer les contenus
-    search: chercher
+    backtip: retourner à l'introduction
+    hometip: page d'accueil
+    taggingoff: voir les thématiques
+    taggingon: désactiver les thématiques
+    search: buscar
     sections: textos
-    sectionstip: pour comprendre
     links: enlaces
-    linkstip: pour explorer
+    network: réseau
     map: carte
-    maptip: pour visiter
-    calendar: agenda
+    calendar: calendario
     calendartip: démosphère !
     print: imprimir
     printtip: "imprimez\nla fenêtre\nqui s'ouvre !"
@@ -63,46 +75,46 @@ menu:
     discussback: volver al texto
 tagtip: "filtrer par thématiques"
 tags:
-    about: "à propos|question-circle = à propos de ce projet, contexte\nliste de discussion, code source"
-    group: "collectifs|users = groupes, réseaux, coopératives\nassociations, structures"
-    list: "annuaires|database = bases de données, annuaires\nressources, moteurs de recherche"
-    tool: "outils|wrench = guides et fiches pratiques, tutoriaux\noutils, services, instruments"
-    map: "lieux|map-marker = adresses de lieux physiques\ntiers-lieux"
+    about: "à propos|question-circle = à propos de ce projet, contexte,\nliste de discussion, code source"
+    group: "collectifs|users = groupes, réseaux, coopératives,\nassociations, structures"
+    list: "annuaires|database = bases de données, annuaires,\nressources, moteurs de recherche"
+    tool: "outils|wrench = guides et fiches pratiques, tutoriaux,\noutils, services, instruments"
+    map: "lieux|map-marker = adresses de lieux physiques,\ntiers-lieux"
     text: textes|file-text = articles, livres, textes
-    image: "images|picture-o = images, dessins\nphotos, graphiques"
+    image: "images|picture-o = images, dessins,\nphotos, graphiques"
     audio: sons|volume-up = radios, musiques, sons
-    video: "films|film = videos, films, documentaires\nTV, images mouvantes"
-    calendar: "agenda|calendar-check-o = calendriers, rendez-vous\nfestivals, événements"
-    eat: _manger = alimentation, cuisine, nourriture
-    health: _santé = santé, remèdes, corps, sport
-    home: _habiter = logement, habitat, hébergement, terrain
-    move: _se déplacer = transports, véhicules
-    subsist: "_solidarité = migrants, sans-papiers, sdf\nsouffrances, survie\ninégalités d'accès, des chances"
-    object: "_objets = récup', recyclage, réutilisation\nfaire, construire soi-même, réappropriation\néquipement, matériel, mobilier, machines"
-    energy: "_énergie = nucléaire, électrique\néolien, solaire"
-    slow: "_ralentir = rencontrer, découvrir, partager\ndécroissance"
-    media: "_médias = information, presse\njournalisme, actualité"
-    act: _action = actions pratiques quotidiennes
-    genre: "genres = patriarcat, féminisme\ngenres, LGBT, famille"
-    education: "éducation = école, université, recherche\napprendre, se former\nenseigner, partages de savoir"
+    video: "films|film = videos, films, documentaires,\nTV, images mouvantes"
+    calendar: "agenda|calendar-check-o = calendriers, rendez-vous,\nfestivals, événements"
+    eat: _se nourrir = alimentation, recettes, cuisine, nourriture
+    health: "_santé = santé, remèdes, plantes\nbien-être, corps, sport"
+    home: "_habiter = logement, habitat, hébergement,\néco-lieux, auto-construction, terrain"
+    move: _se déplacer = transports, mobilité, véhicules, co-voiturage
+    subsist: "_solidarité = migrants, sans-papiers, sdf,\nsouffrances, survie,\ninégalités d'accès, des chances\ndiscriminations"
+    object: "_objets = récupération, recyclage, réutilisation,\nressourceries, artisanats, réappropriation,\nsavoirs-faire, construire soi-même, diy,\néquipement, matériel, mobilier, machines"
+    energy: "_énergie = nucléaire, électrique,\néolien, solaire"
+    slow: "_ralentir = rencontrer, découvrir, partager,\ncommunication non violente,\ndécroissance"
+    media: "_médias = information, presse,\njournalisme, actualité"
+    act: "_action = actions pratiques quotidiennes,\ndésobéissance civile, militantisme"
+    genre: "genres = patriarcat, féminisme,\ngenres, LGBT, famille,\nracisme, sexisme"
+    education: "éducation = école, université, recherche,\napprendre, se former,\nenseigner, partages de savoir"
     work: travail = emploi, chômage, activité remunérée
-    alienation: "aliénation = publicité, propagande, aliénation\nconditionnements, contrôle\nfichage, cloud, surveillance"
-    emancipation: "émancipation = réappropriation, émancipation\nautonomie, autogestion, horizontalité"
-    zad: "zad = grands projets inutiles, lois absurdes\nzones à défendre, radicalités, avant gardes"
-    love: "amour = rêves, utopies, promesses, idéaux\nhumour et amour toujours !"
+    alienation: "aliénation = publicité, propagande, aliénation,\nconditionnements, contrôle,\nfichage, cloud, surveillance"
+    emancipation: "émancipation = réappropriation, émancipation,\nautonomie, autogestion, horizontalité"
+    zad: "luttes = grands projets inutiles, lois absurdes,\nsquats, occupations, zad,\nradicalités, avant-gardes"
+    love: "amour = rêves, utopies, promesses, idéaux,\nhumour et amour toujours !"
     space: espace public = espaces partagés, communs, ville
-    words: "langage = récits, mots, interprétations, controverses\ns'accorder, s'engueuler, débattre"
-    creation: "création = art, culture, création, écriture\ndesign, processus, formes"
-    science: "science = sciences, techniques\nnanotechnologies, manipulation du vivant"
-    web: internet = web, numérique
-    companies: "ennemis = néocapitalisme, récupérations, greenwashing\nmultinationales, puissances d'argent... boycott!"
-    history: "histoire = (néo)colonialismes, impérialisme\npassifs historique"
-    law: "juridique = lois, aspects juridiques\ndémarches administratives"
-    economy: "économie = commerce, échanges, monnaie, finance, dette\nrevenu de base inconditionnel"
-    politics: "politique = politique et représentation\ncommuns, open (res)sources"
+    words: "langage = récits, mots, interprétations, controverses, discours,\ns'accorder, s'engueuler, débattre"
+    creation: "formes = création, art, culture, écriture,\ndesign, processus, formes"
+    science: "science = sciences, techniques,\nnanotechnologies, manipulation du vivant"
+    web: internet = web, numérique, réseaux
+    companies: "ennemis = néocapitalisme, récupérations, greenwashing,\nmultinationales, puissances d'argent... boycott!"
+    history: "histoire = (néo)colonialismes, impérialisme,\npassifs historique"
+    law: "juridique = lois, aspects juridiques,\ndémarches administratives,\nlégislations"
+    economy: "économie = échanges, commerce, troc, don,\néconomie, argent, monnaie, finance, dette,\nrevenu de base inconditionnel"
+    politics: "politique = politique et représentation,\nconcertation, décider ensemble,\ncommuns, open (res)sources, démocratie"
     philo: philosophie = réflexion, théorie, principes
-    earth: "planète = environnement, climat, pollution\nanimaux, végétaux"
-    agriculture: agriculture = (perma)cultures, semences, jardinage, élevage
+    earth: "planète = environnement, climat, déchets, pollution,\neau, animaux, végétaux"
+    agriculture: "agriculture = (perma)cultures, graines, semences,\njardinage, élevage"
 footer:
     lastupdatetext: última modificación
     content: >

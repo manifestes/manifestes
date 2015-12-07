@@ -83,7 +83,7 @@ module.exports = function(grunt) {
           paths: ["assets"]
         },
         files: {
-          "src/css/styles.css": "src/css/styles.less"
+          "src/css/styles.css": "src/css/main.less"
         }
       }
     },

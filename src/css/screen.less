@@ -45,6 +45,10 @@
   .panel.links {
     margin-left: 0;
   }
+  .layout-home .fullbox {
+    width: 100% !important;
+    height: 80% !important;
+  }
 
   /* SECTIONS */
   @betterReducedH: 45px;
@@ -107,20 +111,17 @@
   }
   .header {
     .action.backintro {
-      padding: 9px 10px;
+      //padding: 9px 10px;
     }
     .action.tagging {
       padding: 11px 0px;
     }
-    .button#calendar {
+    .button#calendar, .button#network {
       display: none;
     }
   }
   .link {
     padding: 10px 0px 10px 10px !important;
-    // &.reducedtag, &.reducedsearch {
-    //   padding: 0px !important;
-    // }
   }
 }
 
@@ -128,29 +129,17 @@
 /* TABLETS ONLY */
 
 @media (min-width: 750px) and (max-width: 1025px) {
-  .tagsmenu .gridtag {
-    padding: 17px 4px !important;
-    font-size: 0.6em !important;
+  .tagspanel .gridtag {
+    padding: 12px 6px !important;
+    font-size: 0.65em !important;
   }
-  .header .menu .searchinput {
-    width: 150px !important;
+  .header .menu .searchinput input {
+    width: 160px !important;
   }
-
-  .section.reduced .image {
-    background-image: none !important;
-  }
-
   @betterPanelW: 370px;
-  .menu .tagshat,
-  .menu .tagspanel,
-  .section.layout-flat .image,
-  .disclaimer span.splitted:first-child,
-  .panel.graph {
-    width: @betterPanelW !important;
-  }
-  .section.layout-flat .block,
-  .panel.links {
-    margin-left: @betterPanelW !important;
+  .section.layout-flat {
+    .image { width: @betterPanelW !important; }
+    .block { margin-left: @betterPanelW !important; }
   }
 }
 
@@ -159,27 +148,17 @@
 /* BIG SCREENS */
 
 @media (min-width: 1200px) {
-  .tagsmenu .gridtag {
-    padding: 17px 8px !important;
-    font-size: 0.75em !important;
+  .tagspanel .gridtag {
+    // padding: 17px 8px !important;
+    // font-size: 0.75em !important;
   }  
-
-  .intro h1 { font-size: 11em; }
-  .header .menu .searchinput {
-    width: 220px !important;
+  .header .menu .searchinput input {
+    width: 320px !important;
   }
-
   @betterPanelW: 480px;
-  .menu .tagshat,
-  .menu .tagspanel,
-  .section.layout-flat .image,
-  .disclaimer span.splitted:first-child,
-  .panel.graph {
-    width: @betterPanelW !important;
-  }
-  .section.layout-flat .block,
-  .panel.links {
-    margin-left: @betterPanelW !important;
+  .section.layout-flat {
+    .image { width: @betterPanelW !important; }
+    .block { margin-left: @betterPanelW !important; }
   }
 }
 
@@ -188,53 +167,34 @@
 /* VERY BIG SCREENS */
 
 @media (min-width: 1450px) {
-  .tagsmenu .gridtag {
-    padding: 16px 11px !important;
-    font-size: 0.9em !important;
+  .tagspanel .gridtag {
+    // padding: 16px 11px !important;
+    // font-size: 0.9em !important;
   }
-
-  .intro h1 { font-size: 13em; }
-  .header .menu .searchinput {
-    width: 280px !important;
+  .header .menu .searchinput input {
+    width: 380px !important;
   }
-
   @betterPanelW: 580px;
-  .menu .tagshat,
-  .menu .tagspanel,
-  .section.layout-flat .image,
-  .disclaimer span.splitted:first-child,
-  .panel.graph {
-    width: @betterPanelW !important;
-  }
-  .section.layout-flat .block,
-  .panel.links {
-    margin-left: @betterPanelW !important;
+  .section.layout-flat {
+    .image { width: @betterPanelW !important; }
+    .block { margin-left: @betterPanelW !important; }
   }
 }
 
-/* VERY BIG SCREENS */
+/* VERY MOST BIG SCREENS */
 
 @media (min-width: 1650px) {
-  .tagsmenu .gridtag {
-    padding: 16px 11px !important;
-    font-size: 0.9em !important;
+  .tagspanel .gridtag {
+    // padding: 16px 11px !important;
+    // font-size: 0.9em !important;
   }
-
-  .intro h1 { font-size: 13em; }
-  .header .menu .searchinput {
-    width: 280px !important;
+  .header .menu .searchinput input {
+    width: 410px !important;
   }
-
   @betterPanelW: 700px;
-  .menu .tagshat,
-  .menu .tagspanel,
-  .section.layout-flat .image,
-  .disclaimer span.splitted:first-child,
-  .panel.graph {
-    width: @betterPanelW !important;
-  }
-  .section.layout-flat .block,
-  .panel.links {
-    margin-left: @betterPanelW !important;
+  .section.layout-flat {
+    .image { width: @betterPanelW !important; }
+    .block { margin-left: @betterPanelW !important; }
   }
 }
+
