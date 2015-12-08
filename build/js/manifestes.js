@@ -3201,7 +3201,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'08 December 2015 - 12:28'})
+.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'08 December 2015 - 12:33'})
 
 ;
 ;
@@ -4154,14 +4154,15 @@ var redColor = "#883E3E";
 
 
 ////////////////////////////////////////// LINKS GRAPH
+var zRatio = 1.1;
 var controlLinksGraph = function(what) {
   var c = linksGraph.camera;
   if(what=='reset')
     c.goTo({ ratio: 1, x: 0, y: 0 });
   if(what=='zoomin')
-    c.goTo({ ratio: c.ratio / 1.4 });
+    c.goTo({ ratio: c.ratio / zRatio });
   if(what=='zoomout')
-    c.goTo({ ratio: c.ratio * 1.4 });
+    c.goTo({ ratio: c.ratio * zRatio });
 };
 
 // var updateGraphSize = function() {
@@ -4267,7 +4268,7 @@ var loadLinksGraph = function(scope) {
         type: 'canvas'
       },
       settings: {
-        labelThreshold: 5,
+        labelThreshold: 4,
         //defaultLabelColor: "rgb(200,200,200)",
         zoomingRatio: 1.2,
         doubleClickZoomingRatio: 1.7,

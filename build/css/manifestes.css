@@ -1896,7 +1896,7 @@ body.layout-mapprint .container {
   z-index: 4;
   box-sizing: border-box;
   position: absolute;
-  bottom: 50%;
+  bottom: 55%;
   left: 0;
   width: 100%;
   -webkit-transform: translate(0, 0);
@@ -1943,7 +1943,7 @@ body.layout-mapprint .container {
   color: #ababab;
   text-align: left;
   font-family: 'Merriweather', serif;
-  font-size: 1.3em;
+  font-size: 1.2em;
   line-height: 1.3em;
   font-style: italic;
   -moz-osx-font-smoothing: grayscale;
@@ -2832,10 +2832,12 @@ body.layout-mapprint .container {
     margin-left: 0;
   }
   .layout-home .fullbox {
+    font-size: 0.8em !important;
     width: 100% !important;
     height: 80% !important;
   }
-  .layout-home .fullbox#network {
+  .layout-home .fullbox#network,
+  .layout-home .fullbox .samples {
     display: none;
   }
   /* SECTIONS */
@@ -2906,7 +2908,7 @@ body.layout-mapprint .container {
     display: none;
   }
   .link {
-    padding: 10px 0px 10px 10px !important;
+    padding: 12px !important;
   }
 }
 /* TABLETS ONLY */

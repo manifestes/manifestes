@@ -9,14 +9,15 @@ var redColor = "#883E3E";
 
 
 ////////////////////////////////////////// LINKS GRAPH
+var zRatio = 1.1;
 var controlLinksGraph = function(what) {
   var c = linksGraph.camera;
   if(what=='reset')
     c.goTo({ ratio: 1, x: 0, y: 0 });
   if(what=='zoomin')
-    c.goTo({ ratio: c.ratio / 1.4 });
+    c.goTo({ ratio: c.ratio / zRatio });
   if(what=='zoomout')
-    c.goTo({ ratio: c.ratio * 1.4 });
+    c.goTo({ ratio: c.ratio * zRatio });
 };
 
 // var updateGraphSize = function() {
@@ -122,7 +123,7 @@ var loadLinksGraph = function(scope) {
         type: 'canvas'
       },
       settings: {
-        labelThreshold: 5,
+        labelThreshold: 4,
         //defaultLabelColor: "rgb(200,200,200)",
         zoomingRatio: 1.2,
         doubleClickZoomingRatio: 1.7,

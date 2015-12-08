@@ -26,7 +26,7 @@ intro:
             author: Audrey
             content: Que ceux qui sont déjà conscients se sentent soutenus, et que les autres ouvrent les yeux pour changer, à leur rythme, à leur mesure
         samples:
-            - changement climatique, désastres sociaux... on fait quoi ?
+            - changement climatique, désastres sociaux... on ne peux rien faire ?
             - c'est un projet collectif ? comment participer ?
             - quelles convergences entre les mouvements alternatifs ?
             - violence ou non violence ? avec ou sans l'État ?
@@ -131,7 +131,7 @@ disclaimer:
         (ce sera toujours mieux que google qui ne nous donne à voir que les plus gros/riches)
 
 
-        **pour naviguer par thématiques, activez les tags** grâce à l'icône en haut à gauche dans le menu.
+        **pour naviguer par thématiques, activez les tags** grâce à l'icône en haut à gauche dans le menu (ne marche pas sur mobile)
     network: >
         **le réseau de tous les sites internet** et des liens qu'ils ont entre eux (approche quantitative)
 
