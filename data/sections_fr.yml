@@ -436,11 +436,11 @@ content: >
     **Pour ajouter des contenus**, il est pour l'instant nécessaire de passer par le site [github.com](http://github.com), qui héberge le code source (créez un compte, anonyme si besoin). Vous pourrez alors éditer les documents :
 
 
-    - [quotes](https://github.com/manifestes/manifestes/blob/gh-pages/data/utiles/quotes_fr.yml) : des citations en vrac non encore utilisées
+    - [quotes](https://github.com/manifestes/manifestes/blob/gh-pages/data/utiles/quotes_fr.yml) : des citations !
 
     - [sections](https://github.com/manifestes/manifestes/blob/gh-pages/data/sections_fr.yml) : les sections de texte ici présentes
 
-    - [links](https://github.com/manifestes/manifestes/blob/gh-pages/data/links_fr.yml) : la liste de tous les liens de la partie ressources
+    - [links](https://github.com/manifestes/manifestes/blob/gh-pages/data/links_fr.yml) : la liste de tous les liens
 
 
     Éditez et validez votre modification en la décrivant, puis créez une «pull-request» (bouton vert) pour proposer votre modification aux autres
