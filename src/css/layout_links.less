@@ -1,23 +1,33 @@
 .wrapper.layout-links {
   box-sizing: border-box;
-
-  .sections {
-    height: 100%;
-  }
 }
 
 .panel.links {
   box-sizing: border-box;
+
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
+  
+  -webkit-column-gap: 0px;
+  -moz-column-gap: 0px;
+  column-gap: 0px;
+
+/*  -webkit-column-rule:  2px outset red;
+  -moz-column-rule: 2px outset red;
+  column-rule: 2px outset red;*/
+  
   padding: 0;
 
   text-align: left;
 
-  @rightSpace: 250px;
   @borderG: 15px;
 
   .link {
-    padding: 20px @rightSpace 20px 100px;
-    border-bottom: 1px solid #D2D2D2;
+    box-sizing: border-box;
+
+    padding: 17px 20px;
+    border: 1px solid #DEDADA;
     overflow: hidden;
     background: white;
 
@@ -38,7 +48,6 @@
 
     .tags {
       float: right;
-      margin-right: -@rightSpace;
       
       .base-tags();
       background: @lightColor;
@@ -63,7 +72,6 @@
 
     &.important {
       border-left: @borderG solid @lightGreenColor;
-      padding: 20px @rightSpace 20px 100px-@borderG;
       .love { margin-left: -55px; } /* hack override border */
     }
 
@@ -77,6 +85,13 @@
     }
     &.reducedsearch {
       background: @searchYellow;
+    }
+    &.image {
+      padding: 0;
+      line-height: 0;
+      .image, img {
+        width: 100%;
+      }
     }
 
 
