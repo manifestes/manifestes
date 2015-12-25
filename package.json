@@ -16,6 +16,7 @@
     "grunt-preprocess": "~4.0.0",
     "grunt-strip": "~0.2.1",
     "request": "^2.51.0",
-    "underscore": "^1.7.0"
+    "underscore": "^1.7.0",
+    "grunt-tree": "~0.4.9"
   }
 }
