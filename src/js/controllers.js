@@ -607,6 +607,24 @@ angular.module('manifest.controllers', ['underscore','config'])
         //   p.links = getLinksFromTags(p.tags);
         // });
 
+        $http
+          .get(settings.datapath + "expo.json")
+          .success(function(data) {
+            //console.log(data);
+            var N = $scope.linksArray.length-1;
+            _.each(data, function(v,k) {
+              var im = {
+                name: k,
+                image: settings.datapath + "expo/" + v
+              };
+              console.log(im);
+              $scope.linksArray.splice(N*Math.random(), 0, im);
+            });
+          })
+          .error(function (data, status, headers, config) {
+            console.log("error expo",status);
+          });
+
       })
       .error(function (data, status, headers, config) {
         console.log("error links",status);
@@ -630,7 +648,7 @@ angular.module('manifest.controllers', ['underscore','config'])
             loadLinksGraph($scope);
         },500);
 
-        // (to improve ?) init here to trigger the watch on footer content set though compile-html directive
+        // (to improve ?) init here to trigger the watch on footer content set though compile-here directive
         $scope.state.search = "";
 
       });

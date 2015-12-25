@@ -6,7 +6,6 @@ angular.module('manifest', [
   'ngRoute',
   'ngSanitize',
   'ngTouch',
-  'akoenig.deckgrid',
   //'ngScroll',
   'manifest.directives',
   'manifest.filters',
