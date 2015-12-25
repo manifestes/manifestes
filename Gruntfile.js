@@ -4,6 +4,30 @@ module.exports = function(grunt) {
 
     pkg: grunt.file.readJSON('package.json'),
 
+    tree: {
+      options: {
+        // md5: boolean or number [1-32] | default: false 
+        // format: | boolean default: false 
+        // type: array | default: [] 
+        // recurse: boolean | default: true 
+        // cwd: string | default: "" 
+        // ext: object 
+        //      ext.level: boolean or number [1-N] | default: false 
+        //      ext.hyphen: string | default: "-" 
+        // exclude: array | default: [] 
+        // uncpath: boolean | default: false 
+        prettify: true
+      },
+      your_target: {
+        files: [
+            {
+                src: ['data/expo'],
+                dest: 'data/expo.json'
+            }
+        ]
+      }
+    },
+
     preprocess : {
       prod : {
         src : 'src/index.html',
@@ -243,10 +267,13 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-preprocess');
   grunt.loadNpmTasks('grunt-strip');
   grunt.loadNpmTasks('grunt-execute');
+  
+  // outputs json list of files in folder
+  grunt.loadNpmTasks('grunt-tree');
 
   //grunt.registerTask('prod',    ['ngconstant:production', 'execute','jshint','env:prod','less:prod','concat:js','concat:css','copy','strip','uglify','preprocess:prod']);
 
   // we first set constants to prod to build, then go back to dev
-  grunt.registerTask('default', ['ngconstant:production','jshint','env:prod','less:prod','concat:js','concat:css','copy','strip','uglify','preprocess:prod','ngconstant:development']);
+  grunt.registerTask('default', ['tree','ngconstant:production','jshint','env:prod','less:prod','concat:js','concat:css','copy','strip','uglify','preprocess:prod','ngconstant:development']);
 
 };
