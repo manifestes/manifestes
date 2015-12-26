@@ -145,7 +145,10 @@
         <div
           class="tagactivator hint--bottom"
           data-hint="{{state.taggingtooltip}}"
-          ng-class="{active: state.tagging}"
+          ng-class="{
+            active: state.tagging,
+            filtered: state.tags.length>0
+          }"
           ng-click="toggleTagging();">
           <i
             class="fa"

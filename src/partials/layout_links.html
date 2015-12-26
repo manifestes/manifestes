@@ -1,6 +1,8 @@
 <div
   class="panel links"
-  ng-click="resetFilters();">
+  ng-class="{
+    filtered: state.tags.length || state.search
+  }">
   <div
     ng-repeat="e in linksArray"
     class="link"
@@ -11,26 +13,20 @@
       even: $index%2==1,
       important: e.important,
       image: e.image
-    }"
-    ng-click="
-      (
-        (state.tags.length && shallShowTags(e,true)) ||
-        (state.search && shallShowSearch(e))
-      ) &&
-      $event.stopPropagation();">
+    }">
+
+    <div ng-if="e.content" class="content" compile-here="e.content"></div>
+    <div ng-if="e.image" class="image">
+      <img src="{{e.image}}"/>
+    </div>
 
     <i ng-if="e.love" class="love fa fa-heart"></i>
 
     <div
       ng-if="state.tagging"
-      class="tags hint--left"
+      class="tags hint--top"
       data-hint="{{meta.tagtip}}"
       ng-include="settings.assets + 'partials/tags.html'">
-    </div>
-
-    <div ng-if="e.content" class="content" compile-here="e.content"></div>
-    <div ng-if="e.image" class="image">
-      <img src="{{e.image}}"/>
     </div>
 
   </div>

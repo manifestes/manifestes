@@ -182,7 +182,7 @@ angular.module('manifest.controllers', ['underscore','config'])
     $scope.tagSorter = function(tag) {
       var tc = tag.label ? tag : ($scope.tagsContents[tag] ? $scope.tagsContents[tag] : null);
       if(!tc) {
-        console.log("error with tag:",tag);
+        //console.log("no sort for tag:",tag);
         return -1;
       }
       var ic = tc.icon;
@@ -248,7 +248,7 @@ angular.module('manifest.controllers', ['underscore','config'])
 
     $scope.toggleTag = function(tag,refresh) {
 
-      // please set max tags to 5 !
+      // please set max tags to 5 ! (?)
 
       if(!tag)
         $scope.state.tags = [];
@@ -264,6 +264,8 @@ angular.module('manifest.controllers', ['underscore','config'])
       }
       console.log("state tags:",$scope.state.tags);
       
+      scrollToup();
+
       // update graph node colors
       //if($scope.state.tagsmode=='graph')
         //updateTagNodes($scope.state.tags);
@@ -274,7 +276,6 @@ angular.module('manifest.controllers', ['underscore','config'])
       //$scope.updateSearchTagCount();
 
       if(refresh) $scope.$apply();
-      //scrollToup();
     };
 
 
@@ -606,8 +607,9 @@ angular.module('manifest.controllers', ['underscore','config'])
         // _.each($scope.sections, function(p) {
         //   p.links = getLinksFromTags(p.tags);
         // });
-
-        $http
+        
+        // inject some random images ?
+        /*$http
           .get(settings.datapath + "expo.json")
           .success(function(data) {
             //console.log(data);
@@ -623,7 +625,7 @@ angular.module('manifest.controllers', ['underscore','config'])
           })
           .error(function (data, status, headers, config) {
             console.log("error expo",status);
-          });
+          });*/
 
       })
       .error(function (data, status, headers, config) {
