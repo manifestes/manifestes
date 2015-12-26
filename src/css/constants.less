@@ -1,5 +1,21 @@
 /* ---------------------------------------- */
-/* PREFIXES */
+/* PREFIXES & FUNCTIONS */
+
+.base-columns(@a, @b) {
+  -webkit-column-count: @a;
+  -moz-column-count: @a;
+  column-count: @a;
+  
+  -webkit-column-gap: @b;
+  -moz-column-gap: @b;
+  column-gap: @b;
+
+  -webkit-perspective:1;
+
+/*-webkit-column-rule:  @c outset red;
+  -moz-column-rule: @c outset red;
+  column-rule: @c outset red;*/
+}
 
 .no-font-smoothing() {
   -moz-osx-font-smoothing: grayscale;

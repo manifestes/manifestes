@@ -4,18 +4,14 @@
 
 .panel.links {
   box-sizing: border-box;
+  position: relative;
 
-  -webkit-column-count: 4;
-  -moz-column-count: 4;
-  column-count: 4;
-  
-  -webkit-column-gap: 0px;
-  -moz-column-gap: 0px;
-  column-gap: 0px;
+  .base-columns(4, 1px);
 
-/*  -webkit-column-rule:  2px outset red;
-  -moz-column-rule: 2px outset red;
-  column-rule: 2px outset red;*/
+  background: @veryLightColor;
+  &.filtered {
+    background: @searchYellow;
+  }
   
   padding: 0;
 
@@ -26,20 +22,27 @@
   .link {
     box-sizing: border-box;
 
+    /* Hack to avoid block break amongst columns when filtering */
+    -webkit-column-break-inside: avoid; /* Chrome, Safari */
+    page-break-inside: avoid;           /* Theoretically FF 20+ */
+    break-inside: avoid-column;         /* IE 11 */
+    display:table;                      /* Actually FF 20+ */
+
     padding: 17px 20px;
-    border: 1px solid #DEDADA;
-    overflow: hidden;
+    margin: 20px 15px;
+    
     background: white;
 
-    line-height: 1.5em;
+    font-size: 0.9em;
+    line-height: 1.3em;
 
-    &.odd { background: whitesmoke; }
+    &.odd { background: @mostLightColor; }
 
     a {
       color: white;
       background: #748598;
-      padding: 3px 7px;
-      border-radius: 4px;
+      padding: 2px 4px;
+      //border-radius: 4px;
       &:hover {
         color: white;
         background: @blueColor;
@@ -47,44 +50,42 @@
     }
 
     .tags {
-      float: right;
-      
       .base-tags();
-      background: @lightColor;
-
+      margin-top: 15px;
+      margin-bottom: -15px; // eat the .link padding !
+      width: 100%;
+      text-align: right;
       .tag {
-        background: @lightColor;
-        font-size: 10px;
-        &:hover { 
-          background: @darkColor;
-        }
+        font-size: 0.7em;
       }
     }
 
     .love {
       z-index: 24;
-      position: absolute;
-      margin-left: -52px;
-      margin-top: 4px;
+      float: left;
+      margin-top: 15px;
       color: @blueColor;
       font-size: 1.2em;
     }
 
     &.important {
+      /*
       border-left: @borderG solid @lightGreenColor;
-      .love { margin-left: -55px; } /* hack override border */
+      .love { margin-left: -55px; }
+      */
     }
 
     &.reducedtag, &.reducedsearch {
-      background: #ECECEC;
+      display: none;
+      /*
+      background: none;
       height: 1px;
       padding: 0px !important;
+      margin: 0px !important;
       cursor: pointer;
       border-left: none;
       .love, .tags, .content { display: none; }
-    }
-    &.reducedsearch {
-      background: @searchYellow;
+      */
     }
     &.image {
       padding: 0;

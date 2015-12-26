@@ -567,16 +567,11 @@ span.highlight, div.highlight { /* searched words */
       text-align: left;
       font-size: 1.3em;
 
-      //.transition(width 0.4s);
-
       &:hover {
         i {
           color: @veryLightColor;
         }
       }
-      // &.active:hover {
-      //   background: @redGreyColor;
-      // }
       .within {
         display: none;
         width: 85px;
@@ -592,6 +587,9 @@ span.highlight, div.highlight { /* searched words */
         .within {
           display: inline-block;
         }
+      }
+      &.filtered {
+        background: @redColor;
       }
     }
   }
@@ -678,7 +676,7 @@ span.highlight, div.highlight { /* searched words */
           }
           &.active {
             color: white;
-            background: @filterYellow;
+            background: @redColor;
             //.inner-shadow(0px 0px 5px -2px #2F2F2F);
             i.meta { color: white; }
             i.close { display: block; }
@@ -828,16 +826,12 @@ span.highlight, div.highlight { /* searched words */
 
 
 .base-tags {
-  padding-right: 5px;
-  padding-left: 4px;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
 
   .tag {
     float: right;
     margin: 2px -1px;
     padding: 2px 5px;
-    color: white;
+    color: @darkColor;
     
     font-style: italic;
     text-transform: uppercase;
@@ -855,12 +849,14 @@ span.highlight, div.highlight { /* searched words */
       opacity: 0.5;
     }
     &:hover {
+      color: @veryDarkColor;
       i.clear {
         opacity: 1;
       }
     }
     &.active {
-      background: @filterYellow;
+      color: white;
+      background: @redColor;
       i.clear {
         display: inline-block;
       }
