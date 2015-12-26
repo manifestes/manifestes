@@ -173,11 +173,11 @@ tags:
     list: "annuaires|database = bases de données, annuaires,\nressources, moteurs de recherche"
     tool: "outils|wrench = guides et fiches pratiques, tutoriaux,\noutils, services, instruments"
     map: "lieux|map-marker = adresses de lieux physiques,\ntiers-lieux"
-    text: textes|file-text = articles, livres, textes
-    image: "images|picture-o = images, dessins,\nphotos, graphiques"
-    audio: sons|volume-up = radios, musiques, sons
-    video: "films|film = videos, films, documentaires,\nTV, images mouvantes"
     calendar: "agenda|calendar-check-o = calendriers, rendez-vous,\nfestivals, événements"
+    text: textes|file-text = articles, livres, textes
+    audio: sons|volume-up = radios, musiques, sons
+    image: "images|picture-o = images, dessins,\nphotos, graphiques"
+    video: "films|film = videos, films, documentaires,\nTV, images mouvantes"
     eat: _se nourrir = alimentation, recettes, cuisine, nourriture
     health: "_santé = santé, remèdes, plantes\nbien-être, corps, sport"
     home: "_habiter = logement, habitat, hébergement,\néco-lieux, auto-construction, terrain"
