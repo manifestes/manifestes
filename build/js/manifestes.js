@@ -3201,7 +3201,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'08 December 2015 - 12:33'})
+.constant('settings', {dev:false,disquskey:'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',datapath:'data/',assets:'build/',lastupdate:'27 December 2015 - 10:09'})
 
 ;
 ;
@@ -3390,7 +3390,7 @@ angular.module('manifest.controllers', ['underscore','config'])
     $scope.tagSorter = function(tag) {
       var tc = tag.label ? tag : ($scope.tagsContents[tag] ? $scope.tagsContents[tag] : null);
       if(!tc) {
-        console.log("error with tag:",tag);
+        //console.log("no sort for tag:",tag);
         return -1;
       }
       var ic = tc.icon;
@@ -3456,7 +3456,7 @@ angular.module('manifest.controllers', ['underscore','config'])
 
     $scope.toggleTag = function(tag,refresh) {
 
-      // please set max tags to 5 !
+      // please set max tags to 5 ! (?)
 
       if(!tag)
         $scope.state.tags = [];
@@ -3472,6 +3472,8 @@ angular.module('manifest.controllers', ['underscore','config'])
       }
       console.log("state tags:",$scope.state.tags);
       
+      scrollToup();
+
       // update graph node colors
       //if($scope.state.tagsmode=='graph')
         //updateTagNodes($scope.state.tags);
@@ -3482,7 +3484,6 @@ angular.module('manifest.controllers', ['underscore','config'])
       //$scope.updateSearchTagCount();
 
       if(refresh) $scope.$apply();
-      //scrollToup();
     };
 
 
@@ -3814,6 +3815,25 @@ angular.module('manifest.controllers', ['underscore','config'])
         // _.each($scope.sections, function(p) {
         //   p.links = getLinksFromTags(p.tags);
         // });
+        
+        // inject some random images ?
+        /*$http
+          .get(settings.datapath + "expo.json")
+          .success(function(data) {
+            //console.log(data);
+            var N = $scope.linksArray.length-1;
+            _.each(data, function(v,k) {
+              var im = {
+                name: k,
+                image: settings.datapath + "expo/" + v
+              };
+              console.log(im);
+              $scope.linksArray.splice(N*Math.random(), 0, im);
+            });
+          })
+          .error(function (data, status, headers, config) {
+            console.log("error expo",status);
+          });*/
 
       })
       .error(function (data, status, headers, config) {
@@ -3838,7 +3858,7 @@ angular.module('manifest.controllers', ['underscore','config'])
             loadLinksGraph($scope);
         },500);
 
-        // (to improve ?) init here to trigger the watch on footer content set though compile-html directive
+        // (to improve ?) init here to trigger the watch on footer content set though compile-here directive
         $scope.state.search = "";
 
       });
@@ -4081,7 +4101,7 @@ angular.module('manifest.directives', [])
   // to be able to use directives (especially href!) on the ng-binded-html !
   // thanks to:
   // http://stackoverflow.com/questions/17417607/angular-ng-bind-html-unsafe-and-directive-within-it
-  .directive('compileHtml', ['$compile', function ($compile) {
+  .directive('compileHere', ['$compile', function ($compile) {
     return function(scope, element, attrs) {
       //var ensureCompileRunsOnce = scope.$watch(
       scope.$watch(
@@ -4092,8 +4112,8 @@ angular.module('manifest.directives', [])
         },
         function(val) {
           
-          //element.html( scope.highlight(scope.$eval(attrs.compileHtml)) )
-          element.html( scope.highlight(scope.$eval(attrs.compileHtml)) );
+          //element.html( scope.highlight(scope.$eval(attrs.compileHere)) )
+          element.html( scope.highlight(scope.$eval(attrs.compileHere)) );
 
           // compile the new DOM and link it to the current
           // scope.

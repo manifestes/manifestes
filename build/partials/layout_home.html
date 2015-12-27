@@ -4,16 +4,16 @@
   class="fullbox"
   id="{{e.layout}}">
 
-  <span class="h1" compile-html="e.title"></span>
-  <span class="h2" compile-html="e.descr"></span>
+  <span class="h1" compile-here="e.title"></span>
+  <span class="h2" compile-here="e.descr"></span>
   
   <div class="quote-container">
-    <div class="quote" compile-html="e.quote.content"></div>
-    <div class="author" compile-html="e.quote.author"></div>
+    <div class="quote" compile-here="e.quote.content"></div>
+    <div class="author" compile-here="e.quote.author"></div>
   </div>
   
   <div class="samples">
-    <div class="ex">par example ...</div>
+    <div class="ex">par exemple ...</div>
     <div
       class="sample"
       ng-repeat="s in e.samples"

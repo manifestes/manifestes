@@ -16,9 +16,9 @@
     back-img="{{settings.datapath}}media/{{e.image.url}}"
     ng-click="!e.opened && toggleOne(e)">
     <div class="quote-container">
-      <div class="quote" compile-html="e.quote.content"></div>
-      <div class="author" compile-html="e.quote.author"></div>
-      <div class="imagecredit" compile-html="md2Html('image: '+e.image.credit)"></div>
+      <div class="quote" compile-here="e.quote.content"></div>
+      <div class="author" compile-here="e.quote.author"></div>
+      <div class="imagecredit" compile-here="md2Html('image: '+e.image.credit)"></div>
     </div>
   </div>
 
@@ -39,7 +39,7 @@
         <div class="triangle"></div>
       </div>
       <div class="h1">
-        <span compile-html="e.title"></span>
+        <span compile-here="e.title"></span>
       </div>
     </div>
 
@@ -51,10 +51,10 @@
       ng-include="settings.assets + 'partials/tags.html'">
     </div>
 
-    <div class="h2" compile-html="e.subtitle"></div>
-    <div class="content" compile-html="e.content"></div>
+    <div class="h2" compile-here="e.subtitle"></div>
+    <div class="content" compile-here="e.content"></div>
 
-    <div ng-if="e.source" class="source" compile-html="md2Html('source: '+e.source)"></div>
+    <div ng-if="e.source" class="source" compile-here="md2Html('source: '+e.source)"></div>
 
     <div
       ng-if="e.opened || (state.term && atLeastContains(e))"

@@ -145,7 +145,10 @@
         <div
           class="tagactivator hint--bottom"
           data-hint="{{state.taggingtooltip}}"
-          ng-class="{active: state.tagging}"
+          ng-class="{
+            active: state.tagging,
+            filtered: state.tags.length>0
+          }"
           ng-click="toggleTagging();">
           <i
             class="fa"
@@ -229,13 +232,13 @@
       ng-click="state.disclaim[state.layout]=false;">
 
       <span ng-if="state.layout=='sections'"
-      class="full" compile-html="md2Html(meta.disclaimer[state.layout])"></span>
+      class="full" compile-here="md2Html(meta.disclaimer[state.layout])"></span>
       <span ng-if="state.layout=='links'"
-      class="full left" compile-html="md2Html(meta.disclaimer[state.layout])"></span>
+      class="full left" compile-here="md2Html(meta.disclaimer[state.layout])"></span>
       <span ng-if="state.layout=='network'"
-      class="full left" compile-html="md2Html(meta.disclaimer[state.layout])"></span>
+      class="full left" compile-here="md2Html(meta.disclaimer[state.layout])"></span>
       <span ng-if="state.layout=='map'"
-      class="full" compile-html="md2Html(meta.disclaimer[state.layout])"></span>
+      class="full" compile-here="md2Html(meta.disclaimer[state.layout])"></span>
 
       <!-- <span class="close">fermer</span> -->
       <i class="fa fa-times" ng-click="state.disclaim[state.layout] = false;"></i>
@@ -254,7 +257,7 @@
       <!--<div class="count" ng-if="state.search || state.tags.length">
         filtre: {{state.count.sections}} / {{sectionsArray.length}} section(s) & {{state.count.links}} / {{linksArray.length}} lien(s)
       </div>-->
-      <div class="content" compile-html="md2Html(meta.footer.content)"></div>
+      <div class="content" compile-here="md2Html(meta.footer.content)"></div>
       <a class="lastupdate" target="_blank" href="{{meta.repo}}">{{meta.footer.lastupdatetext}}<br>{{settings.lastupdate}}</a>
 
       <div><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a></div>
