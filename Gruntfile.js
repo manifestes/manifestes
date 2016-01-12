@@ -65,7 +65,6 @@ module.exports = function(grunt) {
         constants: {
           settings: {
             dev: true,
-            disquskey: 'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',
             datapath: '../data/',
             assets: './',
             lastupdate: '<%= grunt.template.today("dd mmmm yyyy - h:MM") %>'
@@ -79,7 +78,6 @@ module.exports = function(grunt) {
         constants: {
           settings: {
             dev: false,
-            disquskey: 'OqPLew400064q8tSFhTrqowfNxZC9jR2Lit9A9Pe1Xwej5M83vVu1cILYamM5cbG',
             datapath: 'data/',
             assets: 'build/',
             lastupdate: '<%= grunt.template.today("dd mmmm yyyy - h:MM") %>'
