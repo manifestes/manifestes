@@ -32,7 +32,7 @@ angular.module('manifest.controllers', ['underscore','config'])
     $scope.settings = settings;
     
     var layout = $routeParams.layout ?
-      (["home","sections","sectionsprint","links","network","map","mapprint"].indexOf($routeParams.layout)==-1 ? "sections" : $routeParams.layout) :
+      (["home","sections","texts","sectionsprint","links","network","map","mapprint"].indexOf($routeParams.layout)==-1 ? "sections" : $routeParams.layout) :
       "home";
     var tags = [];
     //var tags = $routeParams.tags ? $routeParams.tags.split(',') : [];
@@ -51,7 +51,6 @@ angular.module('manifest.controllers', ['underscore','config'])
     $scope.state = {
       intro: intro, // splash fullscreen panel
       introimage: 0, // slideshow of intro splash images
-      commenting_slug: null, // current disqus id
       lang: $routeParams.lang,
       layout: layout, // sections/links/map/print/etc...
       loading: false, // we will show loadingspinner when scope not ready
@@ -118,24 +117,6 @@ angular.module('manifest.controllers', ['underscore','config'])
     var scrollToup = function() {
       // window.scrollTo ... or ....
       document.getElementById("container").scrollTop = 0;
-    };
-
-    $scope.openComments = function(p) {
-      $scope.state.commenting_slug = p.slug;
-      $timeout(function(){
-        var disqus_shortname = 'manifestes';
-        var disqus_identifier = $scope.state.commenting_slug;
-        var disqus_url = 'http://manifest.es/'+disqus_identifier;
-
-        console.log("reloading comments: ",disqus_url);
-        DISQUS.reset({
-          reload: true,
-          config: function () {
-            this.page.identifier = disqus_identifier;  
-            this.page.url = disqus_url;
-          }
-        });
-      }); // timeout to be sure disqus div is here ?
     };
     
     $scope.getRandomInt = function() {
@@ -374,63 +355,16 @@ angular.module('manifest.controllers', ['underscore','config'])
 
     $scope.toggleOne = function(p) {
       p.opened = !p.opened ;
-      if(!p.commentcount) {
-        $timeout(function() {
-          updateCommentsCount(p);
-        }); // wait for the section to open !
-      }
     };
     $scope.toggleAllSections = function(status) {
       _.each($scope.sectionsArray, function(p) {
         p.opened = status;
-        if(status && !p.commentcount)
-          $timeout(function() {
-            updateCommentsCount(p);
-          });
       });
     };
 
 
     $scope.md2Html = function(str) {
       return str ? markdown.toHTML(str) : "";
-    };
-
-
-    ////////////////////////////////////////// GET COMMENTS COUNT
-    var updateCommentsCount = function(p) {
-      var params = {
-        api_key: settings.disquskey,
-        forum : "manifestes",
-        thread : "ident:"+p.slug,
-        callback: "JSON_CALLBACK"
-      };
-      
-      var serialize = function(obj, prefix) {
-        var str = [];
-        for(var p in obj) {
-          if (obj.hasOwnProperty(p)) {
-            var k = prefix ? prefix + "[" + p + "]" : p, v = obj[p];
-            str.push(typeof v == "object" ?
-            serialize(v, k) :
-            encodeURIComponent(k) + "=" + encodeURIComponent(v));
-          }
-        }
-        return str.join("&");
-      }
-
-      var url = "https://disqus.com/api/3.0/threads/set.jsonp?"+serialize(params);
-      // console.log(url);
-
-      $http.jsonp(url)
-        .success(function(data){
-          var res = data.response;
-          var count = res.length ? res[0].posts : 0;
-          //console.log("found comments count:",count);
-          p.commentcount = count;
-        })
-        .error(function (data, status, headers, config) {
-          console.log("error disqus",status);
-        });
     };
 
     var getLinksFromTags = function(tags) {
@@ -508,8 +442,8 @@ angular.module('manifest.controllers', ['underscore','config'])
         jsyaml.loadAll(res, function(d) {
 
           //console.log(d);
-          d.subtitle = $scope.md2Html(d.subtitle);
-          d.subtitletext = totext(d.subtitle);
+          //d.subtitle = $scope.md2Html(d.subtitle);
+          if(d.subtitle) d.subtitletext = totext(d.subtitle);
           if(d.quote) {
             d.quote.content = $scope.md2Html(d.quote.content);
             d.quote.author = $scope.md2Html(d.quote.author);
@@ -655,15 +589,6 @@ angular.module('manifest.controllers', ['underscore','config'])
 
       });
     });
-
-
-    // disqus
-    (function() {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = '//manifestes.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-      
 
   }])
 

@@ -56,20 +56,6 @@
 
     <div ng-if="e.source" class="source" compile-here="md2Html('source: '+e.source)"></div>
 
-    <div
-      ng-if="e.opened || (state.term && atLeastContains(e))"
-      ng-click="openComments(e); $event.stopPropagation();"
-      class="discuss">
-      <div class="rect">
-        <div class="triangle"></div>
-          {{meta.menu.discusstext}} <span ng-if="e.commentcount">({{e.commentcount}})</span> >
-      </div>
-    </div>
-  </div>
-
-  <div class="comments" ng-class="{active:state.commenting_slug==e.slug}">
-    <div ng-if="state.commenting_slug==e.slug" class="escape" ng-click="state.commenting_slug = null;">< {{meta.menu.discussback}}</div>
-    <div ng-if="state.commenting_slug==e.slug" id="disqus_thread"></div>
   </div>
 
 </div>

@@ -56,7 +56,9 @@
       display: none;
     }
   }
-
+  
+  .wrapper.layout-texts { .base-columns(1, 0px); }
+  
   /* SECTIONS */
   @betterReducedH: 45px;
   .section {
@@ -91,12 +93,6 @@
     .block {
       margin-left: 0 !important;
       .content { padding: 20px !important; }
-    }
-    .comments {
-      #disqus_thread {
-        padding: 0 !important;
-        padding-top: 2em !important;
-      }
     }
   }
   .intro {
@@ -144,6 +140,7 @@
     width: 160px !important;
   }
   .panel.links { .base-columns(3, 0px); }
+  .wrapper.layout-texts { .base-columns(2, 0px); }
   @betterPanelW: 370px;
   .section.layout-flat {
     .image { width: @betterPanelW !important; }
@@ -151,6 +148,12 @@
   }
 }
 
+
+/* RELATIVELY SMALL */
+
+@media (min-width: 1026px) and (max-width: 1199px) {
+  .wrapper.layout-texts { .base-columns(3, 0px); }
+}
 
 
 /* BIG SCREENS */
@@ -164,6 +167,7 @@
     width: 320px !important;
   }
   .panel.links { .base-columns(4, 0px); }
+  .wrapper.layout-texts { .base-columns(3, 0px); }
   @betterPanelW: 480px;
   .section.layout-flat {
     .image { width: @betterPanelW !important; }
@@ -184,6 +188,7 @@
     width: 380px !important;
   }
   .panel.links { .base-columns(5, 0px); }
+  .wrapper.layout-texts { .base-columns(4, 0px); }
   @betterPanelW: 580px;
   .section.layout-flat {
     .image { width: @betterPanelW !important; }
@@ -202,6 +207,7 @@
     width: 410px !important;
   }
   .panel.links { .base-columns(6, 0px); }
+  .wrapper.layout-texts { .base-columns(4, 0px); }
   @betterPanelW: 700px;
   .section.layout-flat {
     .image { width: @betterPanelW !important; }
