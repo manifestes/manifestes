@@ -1,0 +1,41 @@
+
+<div class="col-container">
+  <div
+    ng-repeat="e in sectionsArray"
+    id="p_{{$index}}"
+    class="section"
+    ng-click="toggleOne(e);"
+    ng-class="{
+      searched: state.search && shallShowSearch(e),
+      hidden: (state.search && !shallShowSearch(e)) || (state.tags.length && !shallShowTags(e,false)),
+      opened: e.opened,
+      'bordered-{{$index%10}}': e.opened
+    }">
+
+    <!--
+    <div ng-if="e.date" class="date">{{e.date}}</div>
+    <div ng-if="e.source" class="source" compile-here="md2Html('source: '+e.source)"></div>
+    -->
+
+    <div class="h1"><span class="wtin" compile-here="e.title"></span></div>
+    
+    <div
+      class="image cover"
+      back-img="{{settings.datapath}}media/{{e.image.url}}">
+      <div class="quote-container">
+        <div class="quote" compile-here="e.quote.content"></div>
+        <div class="author" compile-here="e.quote.author"></div>
+      </div>
+      <div class="content colored-{{$index%10}}" compile-here="e.content"></div>
+      <div class="h2 colored-{{$index%10}}"><span class="wtin" compile-here="e.subtitle"></span></div>
+      <div class="imagecredit" compile-here="md2Html(e.image.credit)"></div>
+    </div>
+    <div
+      ng-if="state.tagging"
+      class="tags hint--bottom colored-{{$index%10}}"
+      data-hint="{{meta.tagtip}}"
+      ng-click="$event.stopPropagation();"
+      ng-include="settings.assets + 'partials/tags.html'">
+    </div>
+  </div>
+</div>
