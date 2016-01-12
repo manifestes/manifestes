@@ -3,6 +3,26 @@
 
 ---
 quote:
+    author: [Décroissance, vocabulaire pour une nouvelle ère](http://lepassagerclandestin.fr/catalogue/hors-collection/decroissance-vocabulaire-pour-une-nouvelle-ere.html)
+    content: Lorsque la langue usuelle ne permet plus d’exprimer ce qui demande à être articulé d’urgence, c’est qu’il est temps d’apprendre un nouveau vocabulaire.
+    tags: words
+quote:
+    author: Paulo Coelho
+    content: C'est votre exemple qui change le monde, pas vos opinions
+quote:
+    author: R. Aron
+    content: La politique est à la fois l’art des choix sans retour et des longs desseins
+    tags: politics
+quote:
+    author: [Le temps de l'État, Lundi.am](https://lundi.am/le-temps-de-l-etat)
+    content: Un Empire qu’il est devenu inutile de prendre de vitesse tant il court seul à sa perte. Ce texte qui aurait pu être un éloge de la paresse, se termine discrètement en éloge de la patience.
+quote:
+    author: Jean Baudrillard, Cool Memories
+    content: L’intelligence est ralentie, mais il faut d’abord prendre les choses de vitesse.
+quote:
+    author: Pierre Deruelle
+    content: Quand le sage montre du doigt le politique vendu au banquier, l’imbécile regarde l’immigré au bout du doigt du politique.
+quote:
     author: Descartes (de crédit)
     content: Je dépense donc je suis
 quote:
@@ -64,7 +84,7 @@ quote:
 quote:
     author: Anatole
     content: La nature permet l'autonomie gratuite. Et ça, pour le capital, c'est inacceptable
-quote:
+#quote:
     author: anonyme
     content: un végétarien en hummer pollue moins qu'un omnivore en vélo
 quote:
@@ -328,6 +348,9 @@ quote:
     author: Aldous Huxley, Le meilleur des mondes
     content: L'expérience, ce n'est pas ce qui arrive à quelqu'un, c'est ce que quelqu'un fait avec ce qui lui arrive.
 #quote:
+    author: Yves Citton
+    content: On peut certes attendre que les « vérités » filtrent d’elles-mêmes, lentement, depuis quelques revues et groupuscules d’avant-garde, ou qu’elles deviennent magiquement « virales » par la grâce d’Internet, mais ici aussi, il serait urgent d’accélérer les choses (1°) en exigeant une réforme politiques des infrastructures médiatiques actuellement soumises aux aberrations du marché et (2°) en concentrant l’activisme artistique et politique sur le détournement, le court-circuitage ou le piratage des circulations médiatiques.
+#quote:
     author: l'An 01
     content: >
         On arrête tout
@@ -420,9 +443,6 @@ quote:
 #quote:
     author: Chomsky
     content: Identifier les structures coercitives, autoritaires et hiérarchiques de toutes sortes pour les examiner et mettre à l’épreuve leur légitimité
-#quote:
-    author: Pierre Deruelle
-    content: Quand le sage montre du doigt le politique vendu au banquier, l’imbécile regarde l’immigré au bout du doigt du politique.
 #quote:
     author: "[LANDEYves](https://twitter.com/LANDEYves/status/665317969057071105)"
     content: >

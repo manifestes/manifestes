@@ -1,9 +1,9 @@
 
 
 ---
-date: 2015-09-27
-title: Manifeste(s) des autres mondes possibles
-subtitle: Nous sommes **partout**. Nos démarches sont infiniment **diverses et complémentaires**. Qu'avons-nous **en commun** ?
+date: 2016-01-07
+title: Autres mondes possibles
+subtitle: Nous sommes partout. Nos démarches sont infiniment diverses et complémentaires. Qu'avons-nous en commun ?
 slug: ecrire_manifeste
 tags: about
 image:
@@ -20,20 +20,20 @@ quote:
 
         Et c'est pas triste
 content: >
-    ###*objectifs*
+    #objectifs
 
-    - écrire collectivement un/des manifeste(s) de notre territoire commun : *philosophique, politique, poétique, pratique* **> textes**
+    - écrire collectivement un manifeste de notre territoire commun philosophique, politique, poétique, pratique **>> textes**
 
-    - partager nos *inspirations, références, initiatives* **> ressources**
+    - partager et archiver nos inspirations, références, initiatives **>> réseau et liens**
 
-    - faciliter l'accès aux solutions concrètes existantes **> carte** et **agenda**
+    - faciliter l'accès aux solutions concrètes existantes **>> carte et agenda**
 
 
 
 ---
-date: 2015-10-21
+date: 2016-01-07
 title: C'est quoi ce site ?
-subtitle: Nos intentions ne sont pas claires ? contactez-nous !
+subtitle: Si nos intentions ne sont pas claires, contactez-nous !
 slug: cest_quoi
 tags: about
 image:
@@ -43,20 +43,21 @@ quote:
     author: —
     content: La question n'est pas de savoir comment assainir techniquement notre «démocratie», mais de définir contre quoi on se bat
 content: >
-    **C'est...**
-    un tract web philosophico-politico-pratique, un appel à l'insurrection, un OWNI, une boite à liens, un style de vie, une porte qui en ouvre pleins d'autres, un exercice de style extensible, de la pub pour des initiatives et pensées qu'on trouve chouettes et trop peu connues, un truc pour s'amuser et voir ce dont on est capable, un outil pour archiver des jolies citations, une page d'accueil mieux que google, une boite à idées militantes, un projet incertain et ouvert à toutes les bonnes âmes !
+    #C'est
 
+    un tract web philosophico-politico-pratique, un appel à l'insurrection, un OWNI, une boite à liens, un style de vie, une porte qui en ouvre pleins d'autres, un exercice de style extensible, de la visibilité pour des initiatives et pensées qu'on trouve chouettes et trop peu connues, un truc pour s'amuser et voir ce dont on est capable, un portail, un outil pour archiver des jolies citations, une page d'accueil mieux que google, une boite à idées militantes, un projet indépendant ouvert à toutes les bonnes âmes !
 
-    **Ce n'est pas...**
+    #Ce n'est pas
+
     un programme ou parti politique, pas un mouvement conspirationniste, pas une volonté d'absorber et de récupérer toutes les alternatives, pas une branche com' du ministère de la bonne conscience, pas un moyen de faire de l'argent, et surtout pas une prétention d'avoir la vérité ou d'être objectif...
 
 
 
 ---
+slug: research_notebook
 date: 2015-07-16
 title: Un carnet de recherche
-subtitle: Nous partons du principe que **de nombreuses solutions existent** déjà. Nous cherchons à les rendre plus visibles
-slug: research_notebook
+subtitle: Nous partons du principe que de nombreuses solutions existent déjà. Nous cherchons à les rendre plus visibles
 tags: about
 image:
     url: MarianneBrandt.jpg
@@ -75,18 +76,32 @@ content: >
     Ce site est en perpétuelle transformation. Il reflète les pérégrinations physiques et intellectuelles d'une bande de potes décidé.e.s à mieux décortiquer le monde qui nous entoure pour **mieux comprendre là où çà fait mal, afin de riposter comme il se doit**.
 
 
-    Ce site permet en outre de garder au chaud des idées ou références qui transitent *dans des articles, au travers de discussions, rencontres*, afin de pouvoir les retrouver si nécessaire. Nous ne sommes donc que très rarement les auteurs : *nous copions, nous inspirons, traduisons...*
+    Ce site permet en outre de garder au chaud des idées ou références qui transitent dans des articles, au travers de discussions, rencontres, afin de pouvoir les retrouver si nécessaire. Nous ne sommes donc que très rarement les auteurs : **nous copions, nous inspirons, traduisons...**
 
 
-    Nous vous invitons à participer à ce projet de recherche comme vous le souhaitez: *ajout de liens manquants, formulation ou précision de points théoriques, démasquage de faux amis...* à travers le [document partagé](http://lite6.framapad.org/p/manifestes), la [liste de discussion](http://lists.riseup.net/www/subscribe/manifestes), ou directement dans le [code source](https://github.com/manifestes/manifestes/blob/gh-pages/data).
+    **Nous vous invitons à participer** à ce projet de recherche comme vous le souhaitez: ajout de liens manquants, formulation ou précision de points théoriques, démasquage de faux amis... à travers le [document partagé](http://lite6.framapad.org/p/manifestes), la [liste de discussion](http://lists.riseup.net/www/subscribe/manifestes), ou directement dans le [code source](https://github.com/manifestes/manifestes/blob/gh-pages/data).
 
 
+
+---
+slug: why_another_site
+date: 2016-01-07
+title: Ce site est particulier
+subtitle: Pourquoi faire encore un site ? il y en a déjà beaucoup d'autres
+content: >
+    Ce projet tend à formuler une synthèse de différentes idées et initiatives des mondes « alternatifs »
+    
+
+    Sur la forme, nous nous efforçons d'aller « droit au but » pour rendre la lecture plus agréable. Pour faciliter la réappropriation de l'outil et des contenus, le code est libre et volontairement simple.
+    
+    
+    Plutôt qu'une accumulation d'articles d'actualité (que le réseau et les liens permettent d'explorer), nous nous efforçons de parfaire l'analyse de fond sur le long terme
 
 
 ---
 date: 2015-10-20
 title: Qui a écrit tout ça ?
-subtitle: Composition à plusieurs mains !
+subtitle: Agrégations, compositions à plusieurs mains !
 slug: who_wrote
 tags: about, group
 image:
@@ -176,7 +191,7 @@ content: >
 ---
 date: 2015-09-28
 title: Carte de France des alternatives
-subtitle: Nous sommes partout !
+subtitle: Nous sommes partout ! Géographie des alternatives dans les pays francophones
 slug: interactive_map
 tags: map, list, about
 image:
@@ -297,10 +312,10 @@ content: >
 
 
 ---
-date: 2015-06-01
+slug: marre
+date: 2016-01-07
 title: On en a marre !
 subtitle: Un monde s'en va, aidons-le à partir
-slug: marre
 tags: alienation
 image:
     url: GeorgeKovenchukStop.jpg
@@ -321,13 +336,25 @@ content: >
 
     - illusion de participation démocratique, extrémismes
 
-    - triple **rupture de lien** :
-        - dans la relation avec le **monde vivant** : *urbanisation intelligente, gestion des ressources renouvelables*
+    - normalisation et uniformisation des discours médiatiques dominants
 
-        - dans la relation avec **soi-même** : *patience, intériorité, méditation, conscience et connaissance de soi*
 
-        - dans la relation à **autrui** : *multiplication des médiations et des services, écoute et partage autour de communs*
 
+---
+slug: which_relations
+date: 2016-01-10
+title: Quelles relations ?
+subtitle: Quels rapports à la nature ? Quels rapports entre nous ?
+tags: alienation, earth
+content: >
+    Rétablissons les liens et les relations que nous entretenons
+
+
+    - avec le **monde vivant** : *urbanisation intelligente ? gestion des ressources renouvelables*
+
+    - avec **nous-mêmes** : *patience, intériorité, méditation, conscience et connaissance de soi*
+
+    - avec **autrui** : *multiplication des médiations et des services, écoute et partage autour de communs*
 
 
 
@@ -359,7 +386,7 @@ content: >
 ---
 date: 2015-06-01
 title: On fait comment ?
-subtitle: Pour changer quoi que ce soit, il faut commencer partout !
+subtitle: Pour changer quoi que ce soit, il faut commencer partout, tout le temps
 slug: comment_faire
 tags: list, about
 image:
@@ -380,7 +407,7 @@ content: >
 slug: how_to_act
 date: 2015-11-12
 title: Quelles actions ?
-subtitle: "«Il faudrait plutôt que...» : réconcilier les différentes manières de voir et d'agir en leur donnant toutes une voix"
+subtitle: "« Il faudrait plutôt que... » : réconcilier les différentes manières de voir et d'agir en leur donnant toutes une voix"
 tags: act, words
 content: >
     Nous sentons bien tous que quelque chose ne va pas, mais nous divergeons souvent sur les réactions à avoir.
@@ -402,6 +429,19 @@ content: >
 
 
     Pour réconcilier ces points de vue variés, documentons les, articulons les entre eux, car **ils sont rarement incompatibles et forment des gestes politiques très complémentaires** !
+
+
+
+---
+slug: deep_solutions
+date: 2016-01-07
+title: Fausses solutions
+subtitle: Ami terrien, le problème est grave et profond. Il ne sera pas réglé avec 3 coups de chiffons
+content: >
+    Ceux qui proposent des solutions au problème climatique permettant de maintenir la croissance, qu'elle soit « verte » ou « durable », ne questionnent jamais les rapports de classes, le productivisme et l'industrialisation.
+
+
+    Nous explorons les alternatives à un système qui ne fonctionne plus, et dont les bouleversements climatiques et sociaux ne sont que les symptômes les plus visibles.
 
 
 
@@ -428,9 +468,7 @@ content: >
     **Pour discuter, commenter**
 
 
-    - sujet précis : «discuter, corriger, proposer» à la fin de chaque section
-
-    - sujets ou idées plus générales : utilisez [le document partagé](https://lite6.framapad.org/p/manifestes) ou envoyez un mail à la [liste de discussion](https://lists.riseup.net/www/subscribe/manifestes)
+    - sujets ou idées générales : utilisez [le document partagé](https://lite6.framapad.org/p/manifestes) ou envoyez un mail à la [liste de discussion](https://lists.riseup.net/www/subscribe/manifestes)
 
 
     **Pour ajouter des contenus**, il est pour l'instant nécessaire de passer par le site [github.com](http://github.com), qui héberge le code source (créez un compte, anonyme si besoin). Vous pourrez alors éditer les documents :
@@ -450,6 +488,23 @@ content: >
 
 
     **Réseau des sites** : n'hésitez pas à nous signaler les sites absents de la [liste](https://github.com/manifestes/manifestes/blob/gh-pages/data/utiles/graph_id-url-tag.csv) du réseau/graphe/galaxie (à gauche dans les ressources)
+
+
+
+---
+date: 2016-01-07
+title: Faites passer le message !
+subtitle: Le seul mode de diffusion de cette initiative est celui de nos réseaux. Merci de relayer largement l'information autour de vous !
+slug: spread_word
+tags: about
+content: >
+    Cette initiative ne peut faire effet que si elle est relayée, diffusée, débattue, reformulée
+
+
+    Pour donner du poid aux idées qu'elle soulève, elle a besoin de vous !
+
+
+    **Parlez-en autour de vous**, à vos ami.e.s, famille, collègues, pour montrer que nous pouvons construire des projets hors des flux médiatiques habituels
 
 
 
@@ -479,8 +534,8 @@ content: >
 
 
 ---
-date: 2015-06-01
-title: Héritages
+date: 2016-01-10
+title: Héritages, colonialisme
 subtitle: "Privilégiés du nord, responsables, refusons l'ingérence"
 slug: heritages
 tags: history
@@ -505,7 +560,7 @@ content: >
 slug: we_can_act
 date: 2015-11-19
 title: On ne peut rien faire ?
-subtitle: C'est comme ça, tout cela nous dépasse. Ce qui se passe en chine, les guerres... vouloir changer tout ça d'un coup est impossible
+subtitle: Ce qui se passe en Chine, les guerres... vouloir changer tout ça d'un coup est impossible... vraiment ?
 tags: act, alienation
 quote:
     author: Le Dalaï Lama
@@ -525,7 +580,7 @@ content: >
 ---
 date: 2015-06-01
 title: Inégalités et violences
-subtitle: Il existera toujours des inégalités et des violences
+subtitle: Il existera toujours des inégalités et des violences. Contre qui la violence est-elle la plus insupportable ?
 slug: violence
 tags: philo
 image:
@@ -539,6 +594,9 @@ content: >
     
 
     Il **existera toujours** des inégalités et des violences. Ces conflits internes et externes sont normaux, signes de **confrontation d'altérités** et de multiplicité des mondes.
+
+
+    La véritable question est de savoir contre qui et contre quoi la violence est adressée !
 
 
 
@@ -632,13 +690,14 @@ content: >
 slug: violence_or_not
 date: 2015-11-19
 title: Violence ou non-violence ?
+subtitle: Pour un monde plus apaisé, il faut d'abord refuser la violence exercée contre nous
 tags: alienation, act
 source: "[La monnaie de leur pièce](http://www.monde-libertaire.fr/expressions/17163-la-monnaie-de-leur-piece-pleins-feux-sur-le-capital-et-letat), Jean Rat, ([extrait](http://generationsfutur.zici.fr/tribunes/violence-ou-non-violence/))"
 content: >
     Encore un débat pipé et stupide. Ce qui nous fait violence, ce qui nous viole, c’est **ce que qui nous est imposé malgré nous**. Le patriarcat, l’État, le Capital, sont les institutions de la violence érigée en système.
 
 
-    Plutôt que de nous enfermer dans un discours idéologique de la «non-violence», ou d’assumer à l’inverse un choix idéologique de «violence» , commençons à mettre en pratique une autodéfense pragmatique.
+    Plutôt que de nous enfermer dans un discours idéologique de la « non-violence », ou d’assumer à l’inverse un choix idéologique de « violence », commençons à mettre en pratique une autodéfense pragmatique.
 
 
     Refuser la violence exercée contre nous est la première des légitimités, peut être bien la seule. Et cette autodéfense est d’autant plus efficace quand elle est collective, quand nous nous serrons les coudes.
@@ -649,22 +708,58 @@ content: >
 
 
 ---
-date: 2015-07-16
+slug: i_cant
+date: 2016-01-07
+title: je n'ai pas le temps ni l'argent
+subtitle: C'est bien beau tout ça, mais le boulot me prend tout mon temps, seuls les classes aisées peuvent se permettre de profiter d'autres manières de vivre
+content: >
+    Ce qui manque, ce sont des réseaux, de nouveaux rapports entre nous pour faire émerger d'autres manières de vivre ensemble
+
+
+    La plupart des alternatives ne coûtent pas plus cher et ne nous rendent pas la vie plus compliquée (au contraire!)
+
+
+    Le passage à l'acte est plutôt une question d'information (qui, où, comment ?) et de courage: nous devons travailler sur nos peurs et nos habitudes pour passer à l'acte; y trouver du plaisir et du sens !
+
+
+
+---
+slug: you_small
+date: 2016-01-07
+title: C'est un petit milieu déjà convaincu
+subtitle: Ceux et celles qui liront cela sont déjà convaincu.e.s. Comment traverser les différentes classes populaires ?
+content: >
+    Il est difficile de dépasser les classes culturelles et sociales qui nous amènent à rencontrer, cotoyer des gens qui finalement ont le même profil que nous.
+
+
+    Efforçons nous d'avoir une démarche modeste et de donner la voix au plus grand nombre. Dans la pratique, c'est au travers de discussions, rencontres que nous arriverons à comprendre et à diffuser les messages disséminés dans ce site
+
+
+    Appliquons-nous, discutons en, les idées sont plus contagieuses qu'on croit !
+
+
+
+
+---
+date: 2016-01-07
 title: Stop aux merdias de masse
 subtitle: Finissons-en avec l'abrutissement médiatique des puissants, contrôlant à leur guise l'actualité et les modes de pensées
 slug: stop_medias
-tags: alienation, media
+tags: alienation, media, education
 image:
     url: RokuroTaniuchi.jpg
     credit: Rokuro Taniuchi
 quote:
-    author: Pierre Deruelle
-    content: Quand le sage montre du doigt le politique vendu au banquier, l’imbécile regarde l’immigré au bout du doigt du politique.
+    author: Yves Citton
+    content: On peut certes attendre que les « vérités » filtrent d’elles-mêmes, lentement, depuis quelques revues et groupuscules d’avant-garde, ou qu’elles deviennent magiquement « virales » par la grâce d’Internet, mais ici aussi, il serait urgent d’accélérer les choses (1°) en exigeant une réforme politiques des infrastructures médiatiques actuellement soumises aux aberrations du marché et (2°) en concentrant l’activisme artistique et politique sur le détournement, le court-circuitage ou le piratage des circulations médiatiques.
 content: >
     Nous ne voulons plus être inondés d'images nauséabondes polluant notre *«temps de cerveau disponible»*.
 
 
-    Écartons-nous des chaines de radios et télévision mercantiles et soutenons les médias indépendants porteurs d'autres discours.
+    **N'attendons plus des médias** classiques qu'ils nous informent, cherchons et soutenons des **alternatives indépendantes** porteuses d'autres discours, informons-nous **par nous-même** pour nous faire une opinion personnelle réfléchie.
+
+
+    Où sont les zones d'éducation et d'apprentissage gratuites, **émancipatrices et autonomisantes** ?
 
 
 
@@ -743,9 +838,9 @@ content: >
 
 
 ---
-date: 2015-06-01
+date: 2016-01-07
 title: Qui sont nos adversaires ?
-subtitle: La faute à qui ?
+subtitle: La faute à qui ? Faux problèmes et débats stériles
 slug: adversaires
 tags: companies, act
 image:
@@ -801,28 +896,28 @@ content: >
     Instaurons des **revenus inconditionnels** minimum et maximum, élargissons la **sphère de la gratuité**, arrêtons de tout mesurer à l'aune du temps et du coût.
 
 
+    Les spéculations et exploitations mondialisées nous maintiennent dans un rapport absurde au prix de ce qui nous entoure : *logement, nourriture, objets...* : parfois très élevés, parfois ridiculement bas. Sachons réévaluer ce que nous sommes prêt.e.s à dépenser en plus ou en moins dans notre quotidien.
+
+
 
 ---
-date: 2015-10-05
+date: 2016-01-07
 title: Dettes, dettes, dettes
 subtitle: —
 slug: depts_always
 tags: economy, politics
-image:
-    url: —
-    credit: —
-quote:
-    author: —
-    content: —
 content: >
-    —
+    La dette publique en France a dépassé les 2000 milliards d’euros mi-2014
+    
+
+    Les intérêts de cette dettes coûtent environ 1500€ par seconde à l’État, soit plus de 45 milliards d’euros pour la seule année 2014.
 
 
 
 ---
 date: 2015-07-16
 title: Taxer toutes les transactions financières
-subtitle: Du simple retrait de 10€ au distributeur aux spéculateurs financiers, taxer tous les mouvements d'argent
+subtitle: Du simple retrait de 10€ au distributeur aux spéculateurs financiers, taxer tous les transferts d'argent
 slug: tax_transactions
 tags: economy, politics, slow
 image:
@@ -862,7 +957,7 @@ content: >
 ---
 date: 2015-07-02
 title: À quoi on tient ?
-subtitle: Si on y réfléchit, qu'est-ce qui compte vraiment ?
+subtitle: Si on réfléchit, qu'est-ce qui compte vraiment ?
 slug: on_tient_a_quoi
 tags: love, education
 image:
@@ -912,6 +1007,22 @@ content: >
 
 
 ---
+slug: eat_meat
+date: 2016-01-07
+title: Manger de la viande ?
+subtitle: Comprendre les conditions de production et l'impact de notre surconsommation
+quote:
+    author: anonyme
+    content: un végétarien en hummer pollue moins qu'un omnivore en vélo
+content: >
+    - 1945: (ticket de rationnement) 200g de viande /pers. /semaine
+    - aujourd'hui: 230g de viande /pers. /jour 
+    élevage > exploitation intensive, abattage industriel
+    éleveur > exploitant agricole
+
+
+
+---
 date: 2015-11-18
 title: Relocaliser l'économie
 slug: local_market
@@ -934,6 +1045,7 @@ content: >
 ---
 date: 2015-11-18
 title: Décentraliser la production d'énergie
+subtitle: Au plus proche des besoins
 slug: energy_prod
 source: "[http://montreuil-climat.org](http://montreuil-climat.org)"
 tags: energy, emancipation
@@ -948,7 +1060,7 @@ content: >
 ---
 date: 2015-06-01
 title: Pouvoir, autorité, autonomie
-subtitle: Où se trouve le vrai pouvoir ?
+subtitle: Où se trouve le vrai pouvoir ? Agissons en nos noms
 slug: pouvoir
 tags: companies, alienation, emancipation
 image:
@@ -973,9 +1085,10 @@ content: >
 
 
 ---
-date: 2015-11-10
-title: Prise de pouvoir, avec ou sans l'État ?
 slug: get_power_with_state
+date: 2016-01-10
+title: Reprise du pouvoir, avec ou sans l'État ?
+subtitle: Entrainons-nous à nous gouverner nous-même, luttons contre les oppressions, multiplions les médiations
 tags: politics, emancipation
 source: "[Alain Bihr, Étatistes et libertaires, revue Ballast](http://www.revue-ballast.fr/alain-bihr/)"
 quote:
@@ -1001,7 +1114,7 @@ content: >
 ---
 date: 2015-06-01
 title: Déléguer, toujours déléguer ?
-subtitle: État, institutions, ou comment déléguer toute autorité
+subtitle: État, institutions, ou comment déléguer toute autorité. À qui accordons nous notre confiance ?
 slug: deleguer
 tags: alienation, emancipation, politics
 image:
@@ -1017,13 +1130,14 @@ content: >
     Nous ne voulons plus voter en espérant *chèque en blanc* qu'une poignée de promesses soient tenues. Nous savons en outre qu'il est **absurde de donner le pouvoir** à ceux qui le réclament le plus.
 
 
-    Nous ne pourrons pas maîtriser et prendre en charge toutes les facettes de notre environnement. Il est parfois nécessaire de  déléguer, mais en réelle connaissance des acteurs concernés.
+    Production d'objets, services, savoirs-faire, organisations collectives... jusqu'où sommes-nous prêt.e.s à déléguer la gestion de nos vies aux multinationales ou à un État soumis aux lois du marché ? Qui sont réellement les acteurs à qui nous accordons notre confiance, notre vote ou notre argent ?
 
 
 
 ---
 date: 2015-11-18
 title: N'attendons rien des décideurs
+subtitle: Quels sont les intérêts des élites ? Mobilisons-nous par le bas
 slug: dont_wait_elite
 source: "[http://montreuil-climat.org](http://montreuil-climat.org)"
 tags: politics, emancipation
@@ -1036,10 +1150,10 @@ content: >
 
 
 ---
+slug: science
 date: 2015-06-01
 title: Science sacralisée, expropriation
 subtitle: On arrête pas le progrès, émancipation ou servitude ? technologies et science sans conscience
-slug: science
 tags: science, web
 image:
     url: trashphones.jpg
@@ -1054,7 +1168,10 @@ content: >
     Fasciné.e.s par les **scientifiques omniscients**, nouveaux gourous de nos sociétés consuméristes, nous attendons d'eux qu'ils **améliorerent notre condition** par une *compréhension-domination* toujours plus grande de l'homme et de son monde.
 
 
-    Par une **ultra-fluidité apparente** d'appareils et de services, les technologies nous rendent **toujours plus dépendants** en **mystifiant** notre rapport au monde.
+    *Le progrès technique, c'est le progrès social et la liberté ?*
+
+
+    Faux ! Par une **ultra-fluidité apparente** d'appareils et de services, les technologies nous rendent **toujours plus dépendants** en **mystifiant** notre rapport au monde.
 
 
     Les produits des innovations **contrarient** *notre sécurité, notre confort et nos libertés* bien plus qu'ils ne se mettent à notre service : *nucléaire, OGM, surveillance, géo-ingénierie*...
@@ -1064,6 +1181,21 @@ content: >
 
 
     Les machines ne sauront jamais mieux que **nous** ce que nous sommes, avons besoin, etc...
+
+
+
+---
+slug: control_technologies
+date: 2016-01-07
+title: Qui contrôle les technologies ?
+subtitle: Ne laissons pas Internet et le numérique aux mains des États et des professionnels du Big Data !
+source: Z
+content: >
+    Combien de gens savent ce qu'il se passe lorsqu'on envoie un mail ?
+    
+
+    Quelle attitude vis-à-vis des dispositifs, appareils ? ils expriment la relation que nous entretenons avec l'économie, les entreprises, l'État, la police (et pas seulement avec Apple ou Google)
+
 
 
 
@@ -1129,6 +1261,7 @@ content: >
 ---
 date: 2015-06-01
 title: Réenchantons, amusons-nous
+subtitle: Prenons plaisir à changer, amplifions l'émergence de la bonne humeur
 slug: amusons_nous
 tags: love, slow
 image:
@@ -1175,7 +1308,7 @@ content: >
 
 
 ---
-date: 2015-06-01
+date: 2016-01-07
 title: Pratiquer un langage commun
 subtitle: Le langage ne décrit pas le monde, il le construit. Des mots valises à la réalité, pour nous comprendre, soyons précis !
 slug: langage_commun
@@ -1197,11 +1330,23 @@ content: >
     **Qualifier** ce dont on parle, pour mieux saisir le sens et la complexité des situations.
 
 
+
+
+
+---
+slug: listening_kindness
+date: 2016-01-07
+title: Présence, écoute, bienveillance
+subtitle: Circulation de la parole, espaces de la conversation
+tags: words, love
+content: >
     Ne nous obstinons pas à faire consensus, cherchons un **langage commun**. Nous acceptons les dissonances et les désaccords, ils n’empêchent pas des formes d’harmonie et de justesse.
     
 
-    C'est le processus de **circulation de la parole**, *des affects, des attentions partagées*, qui nous fait parler le même langage, et former ensemble un territoire commun, où chaque personne et discours trouve sa place : *bienveillance, ouverture, respect*
+    C'est le processus de **circulation de la parole**, *des affects, des attentions partagées*, qui nous fait parler le même langage, et former ensemble un territoire commun, où chaque personne et discours trouve sa place : *bienveillance, écoute, ouverture, respect*
 
+
+    Ce processus prend du temps, sachons trouver les bonnes médiations, les bonnes distances: appronfondissons nos échanges et conversations !
 
 
 
@@ -1231,7 +1376,7 @@ content: >
 
 
 ---
-date: 2015-06-01
+date: 2016-01-07
 title: Réappropriation, émancipation
 subtitle: "Informons-nous, disséquons l'ordre et l'origine des choses"
 slug: reappropriation
@@ -1252,11 +1397,7 @@ content: >
     Pour comprendre des situations **de plus en plus complexes**, nous avons besoin de temps et de prudence pour éviter les raccourcis réducteurs, les logiques des discours superficiels et **comprendre les non-dits** qui les accompagnent.
 
 
-    **N'attendons plus des médias** classiques qu'ils nous informent, cherchons des **alternatives indépendantes** et informons-nous **par nous-même** pour nous faire une opinion personnelle réfléchie.
-
-
-    Où sont les zones d'éducation et d'apprentissage gratuites, **émancipatrices et autonomisantes** ?
-
+    Quels arguments ? Quelle démonstrations ? Quelle autorités et quel processus de formation du savoir ?
 
 
 
@@ -1332,6 +1473,6 @@ content: >
     Où sont les **contre-récits**, les nouvelles formes de discours et du faire ? diversifions les interprétations et les traductions : *poétiques, musicales, graphiques, scientifiques, invisibles, absurdes...*
 
 
-    Mélangeons et utilisons les languages, habitudes, techniques de tous les domaines, de toutes les disciplines, pour donner à voir leurs différences et spécificités
+    Mélangeons et utilisons les langages, habitudes, techniques de tous les domaines, de toutes les disciplines, pour donner à voir leurs différences et spécificités
 
 
