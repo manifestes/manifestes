@@ -172,7 +172,7 @@ tags:
     group: "collectifs|users = groupes, réseaux, coopératives,\nassociations, structures"
     list: "annuaires|database = bases de données, annuaires,\nressources, moteurs de recherche"
     tool: "outils|wrench = guides et fiches pratiques, tutoriaux,\noutils, services, instruments"
-    map: "lieux|map-marker = adresses de lieux physiques,\ntiers-lieux"
+    map: "lieux|map-marker = cartes, adresses de lieux physiques,\ntiers-lieux"
     calendar: "agenda|calendar-check-o = calendriers, rendez-vous,\nfestivals, événements"
     text: textes|file-text = articles, livres, textes
     audio: sons|volume-up = radios, musiques, sons
