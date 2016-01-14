@@ -32,17 +32,21 @@ angular.module('manifest.controllers', ['underscore','config'])
     $scope.settings = settings;
     
     var layout = $routeParams.layout ?
-      (["home","sections","texts","sectionsprint","links","network","map","mapprint"].indexOf($routeParams.layout)==-1 ? "sections" : $routeParams.layout) :
+      (["home","sections","sectionsprint","links","network","map","mapprint"].indexOf($routeParams.layout)==-1 ? "sections" : $routeParams.layout) :
       "home";
     var tags = [];
     //var tags = $routeParams.tags ? $routeParams.tags.split(',') : [];
     var intro = !$routeParams.layout;
 
     $scope.meta = {}; // mainly the meta info at start of section.yml
-    $scope.sectionsArray = []; // raw list of sections
+    $scope.sectionArray = []; // full list of sections
+    $scope.sectionFiltArray = []; // displayed list of sections
+    $scope.linkArray = []; // full list of links
+    $scope.linkFiltArray = []; // displayed list of links
+
     $scope.tagsContents = {}; // .tag .label .description .icon for each tag
     $scope.tagsContentsOrdered = []; // same but array to be able to sort
-    $scope.linksArray = []; // raw list of links
+    
     $scope.linksByTag = {}; // links by tag
     $scope.sectionNbByTag = {}; // sections by tag (only nb)
     
@@ -219,10 +223,10 @@ angular.module('manifest.controllers', ['underscore','config'])
       return res;
     };
     $scope.updateSearchTagCount = function() {
-      $scope.state.count.sections = _.filter($scope.sectionsArray, function(e){
+      $scope.state.count.sections = _.filter($scope.sectionArray, function(e){
         return isElementShown(e);
       }).length;
-      $scope.state.count.links = _.filter($scope.linksArray, function(e){
+      $scope.state.count.links = _.filter($scope.linkArray, function(e){
         return isElementShown(e);
       }).length;
     };
@@ -251,8 +255,10 @@ angular.module('manifest.controllers', ['underscore','config'])
       //if($scope.state.tagsmode=='graph')
         //updateTagNodes($scope.state.tags);
 
-      //if($scope.state.networkstatus=="OK")
-      filterLinksNodesFromTags($scope.state.tags);
+      updateArrays();
+
+      if($scope.state.networkstatus=="OK")
+        filterLinksNodesFromTags($scope.state.tags);
 
       //$scope.updateSearchTagCount();
 
@@ -272,8 +278,10 @@ angular.module('manifest.controllers', ['underscore','config'])
       
       $scope.rgx.search = new RegExp($scope.state.search,'gi');
 
+      updateArrays();
+
       if($scope.state.networkstatus=='OK')
-        filterLinksNodes($scope.state.search);
+        filterLinksNodesFromTerm($scope.state.search);
 
       //$scope.updateSearchTagCount();
 
@@ -286,6 +294,55 @@ angular.module('manifest.controllers', ['underscore','config'])
     $scope.rgx.search = new RegExp("",'gi'); // is updated after each keystroke on search input
     var totext = function(htm) {
       return htm.replace(/<[^>]+>/gm,'');
+    };
+
+
+    var shallShowSearch = function(o) { // "o" is a section or a link
+      var reg = new RegExp($scope.state.search,'gi'); //$scope.rgx.search;
+      if($scope.state.search)
+      if(o.title) { // a section
+        var show = o.hasOwnProperty('quote') && reg.test(totext(o.quote.content));
+        _.each(['title','subtitle','content'], function(k) {
+          show = show || ( o.hasOwnProperty(k) && reg.test(totext(o[k])) );
+        });
+      } else { // a link
+        var show = reg.test(totext(o.content));
+      }
+      return show;
+    };
+    var shallShowTags = function(o,onlyintersect) { // "o" is a section or a link
+      if($scope.state.tags.length && o.tags) {
+        var interslen = _.intersection(o.tags,$scope.state.tags).length;
+        if(onlyintersect) {
+          return interslen == $scope.state.tags.length;
+        }
+        else {
+          return interslen > 0;
+        }
+      } else
+        return true;
+    }
+
+    var updateArrays = function() {
+      console.log("updateArrays!");
+
+      if(!$scope.state.search && !$scope.state.tags.length) {
+        $scope.sectionFiltArray = $scope.sectionArray;
+        $scope.linkFiltArray = $scope.linkArray;
+      } else {
+
+        if($scope.state.layout=="sections")
+          $scope.sectionFiltArray = _.filter($scope.sectionArray, function(e) {
+            return ($scope.state.search && shallShowSearch(e)) || ($scope.state.tags.length && shallShowTags(e,false));
+          });
+
+
+        if($scope.state.layout=="links")
+          $scope.linkFiltArray = _.filter($scope.linkArray, function(e) {
+            return ($scope.state.search && shallShowSearch(e)) || ($scope.state.tags.length && shallShowTags(e,false));
+          });
+      }
+      //$scope.$apply();
     };
 
 
@@ -326,38 +383,13 @@ angular.module('manifest.controllers', ['underscore','config'])
         }
       }
     };
-    $scope.shallShowSearch = function(o) { // "o" is a section or a link
-      var reg = new RegExp($scope.state.search,'gi'); //$scope.rgx.search;
-      if($scope.state.search)
-      if(o.title) { // a section
-        var show = o.hasOwnProperty('quote') && reg.test(totext(o.quote.content));
-        _.each(['title','subtitle','content'], function(k) {
-          show = show || ( o.hasOwnProperty(k) && reg.test(totext(o[k])) );
-        });
-      } else { // a link
-        var show = reg.test(totext(o.content));
-      }
-      return show;
-    };
-    $scope.shallShowTags = function(o,onlyintersect) { // "o" is a section or a link
-      if($scope.state.tags.length && o.tags) {
-        var interslen = _.intersection(o.tags,$scope.state.tags).length;
-        if(onlyintersect) {
-          return interslen == $scope.state.tags.length;
-        }
-        else {
-          return interslen > 0;
-        }
-      } else
-        return true;
-    }
 
 
     $scope.toggleOne = function(p) {
       p.opened = !p.opened ;
     };
     $scope.toggleAllSections = function(status) {
-      _.each($scope.sectionsArray, function(p) {
+      _.each($scope.sectionArray, function(p) {
         p.opened = status;
       });
     };
@@ -466,9 +498,9 @@ angular.module('manifest.controllers', ['underscore','config'])
 
           d.layout = 'flat'; //Math.random()<0.2 ? 'grid' : 'flat';
 
-          $scope.sectionsArray.push(d);
-          $scope.sectionsFullArray = $scope.sectionsArray.slice(0,2);
+          $scope.sectionArray.push(d);
         });
+        $scope.sectionFiltArray = $scope.sectionArray;
         callb();
       })
       .error(function (data, status, headers, config) {
@@ -512,7 +544,7 @@ angular.module('manifest.controllers', ['underscore','config'])
           var htm = $scope.md2Html( L[1] );
 
           // store links as array
-          $scope.linksArray.push({
+          $scope.linkArray.push({
             content: htm,
             tags: tgs,
             love: L[0][0]=="!",     // marked as special blend love like !
@@ -525,11 +557,14 @@ angular.module('manifest.controllers', ['underscore','config'])
             $scope.linksByTag[t].push(htm);
           });
         });
+        
+        $scope.linkFiltArray = $scope.linkArray;
+  
 
         if($scope.settings.verbose) {
           console.log("!! declared tags:",_.keys($scope.meta.tags));
           console.log("!! declared tags contents:",$scope.tagsContents);
-          console.log("!! all links:",$scope.linksArray);
+          console.log("!! all links:",$scope.linkArray);
           console.log("!! nb of links by tag:",$scope.linksByTag);
           console.log("!! tags used in sections:",$scope.sectionNbByTag);
           console.log("!! non used in sections:", _.difference(_.keys($scope.linksByTag), _.keys($scope.sectionNbByTag)));
@@ -547,14 +582,14 @@ angular.module('manifest.controllers', ['underscore','config'])
           .get(settings.datapath + "expo.json")
           .success(function(data) {
             //console.log(data);
-            var N = $scope.linksArray.length-1;
+            var N = $scope.linkArray.length-1;
             _.each(data, function(v,k) {
               var im = {
                 name: k,
                 image: settings.datapath + "expo/" + v
               };
               console.log(im);
-              $scope.linksArray.splice(N*Math.random(), 0, im);
+              $scope.linkArray.splice(N*Math.random(), 0, im);
             });
           })
           .error(function (data, status, headers, config) {

@@ -49,7 +49,9 @@ body {
 
 @openDur: 0.2s;
 @introDur: 0.5s;
+
 @menuH: 65px;
+@tagspanelW: 106px;
 
 @menuButtonBorder: 5px;
 
@@ -563,9 +565,9 @@ span.highlight, div.highlight { /* searched words */
     .tagactivator {
       z-index: 35;
       box-sizing: border-box;
+      position: relative;
       height: 100%;
-      padding: 11px 0px 10px 13px;
-      width: 41px;
+      width: 50px;
       vertical-align: top;
       cursor: pointer;
       
@@ -577,6 +579,9 @@ span.highlight, div.highlight { /* searched words */
       text-align: left;
       font-size: 1.3em;
 
+      i {
+        .absolute-centered();
+      }
       &:hover {
         i {
           color: @veryLightColor;
@@ -593,7 +598,6 @@ span.highlight, div.highlight { /* searched words */
       &.active {
         color: white;
         background: @darkColor;
-        width: 133px;
         .within {
           display: inline-block;
         }
@@ -604,118 +608,76 @@ span.highlight, div.highlight { /* searched words */
     }
   }
 
-  @tagDisplayH: 180px;
-  @borderPanel: 5px;
   .tagspanel {
     z-index: 27;
     box-sizing: border-box;
-    position: absolute;
-    width: 100%;
-    height: @tagDisplayH;
-    left: 0;
-    top: -@tagDisplayH;
-    background: @mostLightColor;
+    position: fixed;
+    width: @tagspanelW;
+    left: -@tagspanelW;
+    top: @menuH;
+    bottom: 0;
 
-    border-bottom: @borderPanel solid white;
+    background: @darkColor;
+
+    border-right: 2px solid white;
     .box-shadow(0px 0px 5px 0px #525252);
-    .transition(top 0.4s);
+    .transition(left 0.4s);
 
     &.active {
-      top: @menuH;
+      left: 0;
     }
-    
-    .tagsdisplay {
-      .nohighlight();
+  
+    .nohighlight();
 
-      height: 100%;
-
-      &#sigma-tags {
-        canvas {
-          left: 0px;
-          height: @tagDisplayH;
-        }
-      }
-      &#grid-tags {
-        position: absolute;
-        left: 0;
-        top: 0;
-
-        [data-hint].popuped:before, [data-hint].popuped:after {
-          visibility: visible;
-          opacity: 1;
-        }
-
-        .gridtag {
-          box-sizing: border-box;
-          cursor: pointer;
-          display: inline-block;
-          vertical-align: top;
-          width: 10%;
-          height: 25%;
-          padding: 14px 13px;
-
-          .no-font-smoothing();
-
-          font-size: 0.85em;
-          text-align: left;
-          font-style: italic;
-          text-transform: uppercase;
-          color: white;
-          background: @darkColor;
-
-          .hint:after, &:after, &:before {
-            text-transform: none;
-            font-style: normal;
-          }
-
-          i.close { display: none;}
-
-          &.important {
-            background: @darkGreenColor;
-          }
-          &.icon {
-            color: @lightColor;
-            i.meta {
-              color: @lightColor;
-              font-size: 0.8em;
-              margin-right: 5px;
-            }
-          }
-          &:hover {
-            background: @veryDarkColor;
-          }
-          &.active {
-            color: white;
-            background: @redColor;
-            //.inner-shadow(0px 0px 5px -2px #2F2F2F);
-            i.meta { color: white; }
-            i.close { display: block; }
-          }
-        }
-      }
-    }
-
-    .tagdescription {
+    /*
+    [data-hint].popuped:before, [data-hint].popuped:after {
+      visibility: visible;
+      opacity: 1;
+    }*/
+    .gridtag {
       box-sizing: border-box;
-      position: absolute;
-      bottom: 0;
+      cursor: pointer;
+      display: block;
+      vertical-align: top;
       width: 100%;
-      padding: 15px;
-      //padding-top: 30px;
+      padding: 2px 12px;
 
-      background: white;
-      color: @textColor;
-      font-size: 0.75em;
-      line-height: 1.4em;
-      text-align: center;
+      .no-font-smoothing();
 
-      .displaymode {
-        cursor: pointer;
+      font-size: 0.7em;
+      text-align: left;
+      font-style: italic;
+      //text-transform: uppercase;
+      color: white;
+
+      .hint:after, &:after, &:before {
+        text-transform: none;
+        font-style: normal;
+      }
+
+      i.close { display: none;}
+
+      &.important {
+        //background: @darkGreenColor;
+      }
+      &.icon {
         color: @lightColor;
-        text-decoration: underline;
-        &:hover {
-          color: @textColor;
+        i.meta {
+          color: @lightColor;
+          font-size: 0.8em;
+          width: 15px;
+          margin-right: 5px;
         }
+      }
+      &:hover {
+        background: @veryDarkColor;
+      }
+      &.active {
+        color: white;
+        background: @redColor;
+        //.inner-shadow(0px 0px 5px -2px #2F2F2F);
+        i.meta { color: white; }
+        i.close { display: block; }
       }
     }
 
@@ -726,11 +688,6 @@ span.highlight, div.highlight { /* searched words */
       }
       .clear {
         display: inline-block !important;
-      }
-    }
-    &.active:hover {
-      .tagspanel {
-        bottom: -@tagDisplayH;
       }
     }
   }
@@ -876,8 +833,30 @@ span.highlight, div.highlight { /* searched words */
 
 .wrapper {
   margin-top: @menuH;
+  padding-left: 0;
+
+  .transition(padding-left 0.4s);
+  
+  &.tagsbordered {
+    padding-left: @tagspanelW;
+  }
 }
 
+.emptyresult {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  font-size: 1em;
+  text-align: center;
+  font-style: italic;
+  color: @darkColor;
+  background: @veryLightColor;
+  cursor: pointer;
+  div {
+    width: 100%;
+    .absolute-centered();
+  }
+}
 
 .footer {
   background: white;
@@ -920,7 +899,6 @@ body.layout-sectionsprint, body.layout-mapprint {
 
 @import "layout_home";
 @import "layout_sections";
-@import "layout_texts";
 @import "layout_links";
 @import "layout_network";
 @import "layout_map";

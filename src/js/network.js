@@ -52,7 +52,7 @@ var filterLinksNodesFromTags = function(tags) {
 };
 
 // to highlight nodes based on searched term
-var filterLinksNodes = function(term) {
+var filterLinksNodesFromTerm = function(term) {
   g = linksGraph.graph;
   if(term) {
     var rgx = new RegExp(term,"gi");

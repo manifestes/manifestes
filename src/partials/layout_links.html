@@ -1,14 +1,8 @@
-<div
-  class="panel links"
-  ng-class="{
-    filtered: state.tags.length || state.search
-  }">
+<div class="panel links">
   <div
-    ng-repeat="e in linksArray"
+    ng-repeat="e in linkFiltArray"
     class="link"
     ng-class="{
-      reducedtag:     state.tags.length && !shallShowTags(e,false),
-      reducedsearch:  state.search && !shallShowSearch(e),
       odd: $index%2==0,
       even: $index%2==1,
       important: e.important,
@@ -21,13 +15,23 @@
     </div>
 
     <i ng-if="e.love" class="love fa fa-heart"></i>
-
+    <!--
     <div
       ng-if="state.tagging"
       class="tags hint--top"
       data-hint="{{meta.tagtip}}"
       ng-include="settings.assets + 'partials/tags.html'">
     </div>
+    -->
+  </div>
+</div>
 
+<div
+  class="emptyresult"
+  ng-if="(state.search || state.tags.length) && linkFiltArray.length==0"
+  ng-click="resetFilters();">
+  <div>
+    aucun résultat (pour l'instant) pour cette requête précise et pertinente<br>
+    cliquez ici pour annuler le filtrage
   </div>
 </div>

@@ -139,7 +139,7 @@
       <div
         class="searchinput"
         ng-class="{inactive: state.layout=='map' || state.layout=='full' || state.layout=='home'}"
-        ng-mouseover="state.tagspanel=true;">
+        >
 
         <!-- TAG ACTIVATOR -->
         <div
@@ -156,9 +156,6 @@
               'fa-tag': !state.tagging,
               'fa-tags': state.tagging
             }"></i>
-          <!-- SEARCH IN... -->
-          <div class="within" ng-if="!state.tags.length">dans toutes les thématiques</div>
-          <div class="within" ng-if="state.tags.length>0">dans {{state.tags.length}} thématiques</div>
         </div><form autocomplete="off" ng-submit="searchSubmit(state.searchinput);">
           <!-- TEXTFIELD -->
           <input
@@ -170,7 +167,7 @@
             ng-class="{highlight:state.search}"/>
           <i
           ng-if="state.searchinput.length"
-          ng-click="searchSubmit(); toggleTag(t); state.tagspanel=false;"
+          ng-click="searchSubmit(); toggleTag(t);"
           class="clearinput fa fa-times fa-lg"></i>
           <i
           ng-click="state.searchinput.length && searchSubmit(state.searchinput);"
@@ -183,39 +180,34 @@
     <!-- TAGS COLLAPSABLE PANEL -->
     <div
       class="tagspanel"
-      ng-class="{filtering: state.tags.length, active: state.tagging && state.tagspanel}">
-      <!-- either GRAPH -->
-      <div class="tagsdisplay" id="sigma-tags"></div>
-      <!-- either GRID -->
-      <div class="tagsdisplay" id="grid-tags" ng-if="state.tagsmode=='grid'">
-        <div
-          ng-repeat="t in tagsContentsOrdered"
-          ng-click="toggleTag(t.tag);"
-          class="gridtag"
-          data-hint="{{t.description}}"
-          ng-focus="true"
-          ng-class="{
-            icon: t.icon,
-            important: t.important,
-            active: isTagActive(t.tag),
-            popuped: isTagAutoComplete(t),
-            'hint--left': $index%10>7,
-            'hint--bottom': $index%10<8
-          }"><i ng-if="t.icon" class="meta fa fa-{{t.icon}}"></i>{{t.label}}</div>
-      </div>
-      <!--
-      <div class="tagdescription">
-        <span ng-if="state.overtag.tag">#{{state.overtag.tag}}</span> <br>
-        {{state.overtag.description}}
-
-        (<span class="displaymode" ng-if="state.tagsmode=='graph'" ng-click="state.tagsmode='grid';">afficher la grille</span><span class="displaymode" ng-if="state.tagsmode=='grid'" ng-click="state.tagsmode='graph';">afficher le réseau</span>)
-      </div>
-      -->
+      ng-class="{
+        filtering: state.tags.length,
+        active: state.tagging
+      }">
+      <div
+        ng-repeat="t in tagsContentsOrdered"
+        ng-click="toggleTag(t.tag);"
+        class="gridtag hint--right"
+        data-hint="{{t.description}}"
+        ng-focus="true"
+        ng-class="{
+          icon: t.icon,
+          important: t.important,
+          active: isTagActive(t.tag),
+          popuped: isTagAutoComplete(t),
+          'hint--bottom': $index==0
+        }"><i ng-if="t.icon" class="meta fa fa-{{t.icon}}"></i>{{t.label}}</div>
     </div>
 
   </div>
 
-  <div class="wrapper layout-{{state.layout}}" ng-mouseover="state.tagspanel=false;">
+  <div
+    class="wrapper layout-{{state.layout}}"
+    ng-class="{
+      tagsbordered: state.tagging,
+      searched: state.search,
+      filtered: state.tags.length
+    }">
 
     <!-- message displayed the first time you arrived on a layout -->
     <div
@@ -255,7 +247,7 @@
 
     <div class="footer">
       <!--<div class="count" ng-if="state.search || state.tags.length">
-        filtre: {{state.count.sections}} / {{sectionsArray.length}} section(s) & {{state.count.links}} / {{linksArray.length}} lien(s)
+        filtre: {{state.count.sections}} / {{sectionArray.length}} section(s) & {{state.count.links}} / {{linkArray.length}} lien(s)
       </div>-->
       <div class="content" compile-here="md2Html(meta.footer.content)"></div>
       <a class="lastupdate" target="_blank" href="{{meta.repo}}">{{meta.footer.lastupdatetext}}<br>{{settings.lastupdate}}</a>

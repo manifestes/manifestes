@@ -119,12 +119,18 @@
 .absolute-centered() {
   box-sizing: border-box;
   position: absolute;
-  width: 100%;
   left: 50%;
   top: 50%;
   .transform(translate(-50%,-50%));
 }
-
+.absolute-vertical-centered() {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  .transform(translate(0,-50%));
+}
 
 
 /* LOADING SPINNER, credit: http://tobiasahlin.com/spinkit */

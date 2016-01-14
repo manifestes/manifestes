@@ -1,6 +1,11 @@
 .wrapper.layout-links {
   box-sizing: border-box;
 }
+.wrapper.searched, .wrapper.filtered {
+  .links {
+    //background: @searchYellow !important;
+  }
+}
 
 .panel.links {
   box-sizing: border-box;
@@ -9,9 +14,6 @@
   .base-columns(4, 1px);
 
   background: @veryLightColor;
-  &.filtered {
-    background: @searchYellow;
-  }
   
   padding: 20px 0px 50px 0px;
 
@@ -77,18 +79,6 @@
       */
     }
 
-    &.reducedtag, &.reducedsearch {
-      display: none;
-      /*
-      background: none;
-      height: 1px;
-      padding: 0px !important;
-      margin: 0px !important;
-      cursor: pointer;
-      border-left: none;
-      .love, .tags, .content { display: none; }
-      */
-    }
     &.image {
       padding: 0;
       line-height: 0;
