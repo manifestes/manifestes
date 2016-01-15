@@ -11,11 +11,11 @@ source:
     map: https://framacalc.org/carto
 splash:
     images:
-        - keep-calm-slow-down_231F20.svg
-        - manifeste-utopies-concretes_633232.svg
-        - appel-convergence_231F20.svg
-        - chats-peles-main.jpg
-        - collectifs-autogestion_E0A11A.svg
+        - urgent-de-ralentir_000.svg
+        - manifeste-utopies-concretes_000.svg
+        - prendre-position_000.svg
+        - collectifs-transition_000.svg
+        - espoirs-fous_000.svg
     enter: "consulter & participer"
 intro:
     -   layout: sections
