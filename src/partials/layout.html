@@ -39,7 +39,11 @@
   </div>
 </div>
 
-<div id="container" class="container" ng-class="{hidden:state.intro}">
+<div
+  id="container"
+  class="container"
+  ng-class="{hidden:state.intro}"
+  ng-click="state.disclaim[state.layout]=false;">
 
   <div class="header">
 
@@ -187,7 +191,7 @@
       <div
         ng-repeat="t in tagsContentsOrdered"
         ng-click="toggleTag(t.tag);"
-        class="gridtag hint--right"
+        class="gridtag"
         data-hint="{{t.description}}"
         ng-focus="true"
         ng-class="{
@@ -195,7 +199,8 @@
           important: t.important,
           active: isTagActive(t.tag),
           popuped: isTagAutoComplete(t),
-          'hint--bottom': $index==0
+          'hint--bottom': $index==0,
+          'hint--right': $index>0
         }"><i ng-if="t.icon" class="meta fa fa-{{t.icon}}"></i>{{t.label}}</div>
     </div>
 
@@ -214,7 +219,7 @@
       ng-if="state.layout!='sectionsprint'&&state.layout!='home'"
       class="disclopener"
       ng-class="{active: !state.disclaim[state.layout]}"
-      ng-click="state.disclaim[state.layout] = true;">
+      ng-click="state.disclaim[state.layout]=true; $event.stopPropagation();">
       <i class="fa fa-question-circle"></i>
     </div>
     <div

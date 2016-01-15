@@ -36,14 +36,14 @@
         z-index: 4;
         box-sizing: border-box;
         position: absolute;
-        bottom: 55%;
+        bottom: 60%;
         left: 0;
         width: 100%;
         .transform(translate(0,0));
         
         padding: 0 40px;
 
-        font-size: 5.2em;
+        font-size: 4.5em;
         //text-transform: uppercase;
         line-height: 0.9em;
         font-style: italic;
@@ -63,6 +63,7 @@
         padding: 0 50px;
         opacity: 0;
 
+        color: @redColor;
         font-family: 'Lato', sans-serif;
         font-size: 1.15em;
         font-style: italic;
@@ -75,55 +76,25 @@
         box-sizing: border-box;
         position: absolute;
         bottom: 0;
-        padding: 20px 60px;
+        padding: 10px 60px;
+        opacity: 0.6;
         
         color: @lightColor;
         text-align: left;
         font-family: 'Merriweather', serif;
-        font-size: 1.2em;
+        font-size: 1.1em;
         line-height: 1.3em;
         font-style: italic;
         
         .no-font-smoothing();
 
         .author {
-          margin-top: 30px;
+          margin-top: 15px;
           text-align: right;
           font-size: 0.5em;
         }
-      }
-      .samples {
-        z-index: 4;
-        box-sizing: border-box;
-        position: absolute;
-        bottom: -50%;
-        left: 0;
-        width: 100%;
-        .transform(translate(0,0));
 
-        text-align: left;
-
-        .ex {
-          text-align: left;
-          font-size: 0.8em;
-          font-style: italic;
-          margin-bottom: 7px;
-          margin-left: 10px;
-        }
-        .sample {
-          box-sizing: border-box;
-          display: block;
-          width: 100%;
-          font-size: 0.8em;
-          padding: 6px 10px;
-          background: @redColor;
-          &:hover {
-            //background: @redGreyColor;
-          }
-        }
-
-        .transition(bottom @transdur ease-out);
-        //.transition-delay(0.2s);
+        .transition(padding @transdur ease-out);
       }
       .overlay, .image {
         position: absolute;
@@ -144,14 +115,10 @@
           color: @redColor;
         }
         .h2 {
-          top: 40%;
+          top: 35%;
           opacity: 1;
         }
         .quote-container {
-          display: none;
-        }
-        .samples {
-          bottom: 0;
         }
         .overlay {
           opacity: 0.9;
