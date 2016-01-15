@@ -3201,7 +3201,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,datapath:'data/',assets:'build/',lastupdate:'15 January 2016 - 4:04'})
+.constant('settings', {dev:false,datapath:'data/',assets:'build/',lastupdate:'15 January 2016 - 10:11'})
 
 ;
 ;

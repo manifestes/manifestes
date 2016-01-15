@@ -2661,9 +2661,30 @@ body.layout-mapprint .container {
 @media (max-width: 750px) {
   .header .menu .searchinput,
   .header .menu .tagsmenu,
-  .disclaimer span.splitted:first-child {
+  .button#calendar,
+  .button#network {
     display: none;
   }
+  .disclaimer div {
+    font-size: 0.9em !important;
+    padding: 20px 50px !important;
+  }
+  /* HOME */
+  .layout-home .fullbox {
+    font-size: 0.8em !important;
+    width: 100% !important;
+    height: 80% !important;
+  }
+  .layout-home .fullbox .quote-container {
+    padding: 10px 30px !important;
+  }
+  .layout-home .fullbox .h2 {
+    padding: 0px 30px !important;
+  }
+  .layout-home .fullbox#network {
+    display: none;
+  }
+  /* LINKS */
   .panel.links {
     -webkit-column-count: 1;
     -moz-column-count: 1;
@@ -2678,20 +2699,7 @@ body.layout-mapprint .container {
   }
   .panel.links .link {
     margin: 15px 7px !important;
-  }
-  .layout-home .fullbox {
-    font-size: 0.8em !important;
-    width: 100% !important;
-    height: 80% !important;
-  }
-  .layout-home .fullbox .quote-container {
-    padding: 10px 30px !important;
-  }
-  .layout-home .fullbox .h2 {
-    padding: 0px 30px !important;
-  }
-  .layout-home .fullbox#network {
-    display: none;
+    padding: 12px !important;
   }
   /* SECTIONS */
   .section {
@@ -2729,6 +2737,10 @@ body.layout-mapprint .container {
     margin-left: 0 !important;
     padding: 30px 20px 30px 30px !important;
   }
+  .section .block .source {
+    left: 0 !important;
+  }
+  /* SPLASH */
   .intro .splash .arrow {
     font-size: 1.4em !important;
   }
@@ -2740,20 +2752,6 @@ body.layout-mapprint .container {
   .intro .splash,
   .intro .image {
     bottom: 60px !important;
-  }
-  .disclaimer span {
-    font-size: 0.8em;
-    padding: 20px 50px !important;
-  }
-  .header .action.tagging {
-    padding: 11px 0px;
-  }
-  .header .button#calendar,
-  .header .button#network {
-    display: none;
-  }
-  .link {
-    padding: 12px !important;
   }
 }
 /* TABLETS ONLY */
