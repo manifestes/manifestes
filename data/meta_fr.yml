@@ -19,6 +19,7 @@ splash:
     enter: "consulter & participer"
 intro:
     -   layout: sections
+        icon: fa-bullhorn
         title: textes
         descr: des citations et morceaux de textes choisis — pour composer d'autres manières de voir le monde
         image: FingerBones.jpg
@@ -26,6 +27,7 @@ intro:
             author: Audrey
             content: Que ceux qui sont déjà conscients se sentent soutenus, et que les autres ouvrent les yeux pour changer, à leur rythme, à leur mesure
     -   layout: links
+        icon: fa-th-list
         title: liens
         descr: consulter des textes, vidéos, trouver des médias libres — une sélection d'articles, projets qui méritent d'être connus
         image: ErwinBlumenfeld.jpg
@@ -33,6 +35,7 @@ intro:
             author: Bernard Werber
             content: L'important n'est pas de convaincre, mais de donner à réfléchir
     -   layout: network
+        icon: fa-sitemap
         title: réseau
         descr: un graphe de près de 3000 sites internet de collectifs, structures, médias, blogs — positions relatives et interconnexions
         image: DavidBarth.jpg
@@ -40,6 +43,7 @@ intro:
             author: Proverbe mexicain
             content: Ils ont essayé de nous enterrer, ils ne savaient pas que nous étions des graines
     -   layout: map
+        icon: fa-map-o
         title: carte
         descr: une carte interactive qui agrège les lieux référencés par la caravane des alternatives, les hétérotopies, lieux de vie et bases nomades — à visiter !
         image: Shigeru_Hatsuyama.jpg
@@ -145,13 +149,13 @@ menu:
     calendartip: démosphère !
     print: imprimer
     printtip: "imprimez\nla fenêtre\nqui s'ouvre !"
-    sourcetip: voir la source
+    sourcetip: voir les données brutes
     discusstext: discuter, corriger, proposer
     discussback: revenir au texte
 tagtip: "filtrer par thématiques"
 tags:
     about: "à propos|question-circle = à propos de ce projet, contexte,\nliste de discussion, code source"
-    group: "collectifs|users = groupes, réseaux, coopératives,\nassociations, structures"
+    group: "collectifs|users = groupes, réseaux, coopératives,\ncollectifs, associations, structures"
     list: "annuaires|database = bases de données, annuaires,\nressources, moteurs de recherche"
     tool: "outils|wrench = guides et fiches pratiques, tutoriaux,\noutils, services, instruments"
     map: "lieux|map-marker = cartes, adresses de lieux physiques,\ntiers-lieux"

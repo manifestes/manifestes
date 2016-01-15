@@ -51,7 +51,7 @@ body {
 @introDur: 0.5s;
 
 @menuH: 65px;
-@tagspanelW: 106px;
+@tagspanelW: 120px;
 
 @menuButtonBorder: 5px;
 
@@ -288,6 +288,7 @@ span.highlight, div.highlight { /* searched words */
   background: white;
   text-align: center;
 
+  /* extreme left buttons */
   .minimenu {
     z-index: 45;
     box-sizing: border-box;
@@ -455,7 +456,7 @@ span.highlight, div.highlight { /* searched words */
         &.hover {
           cursor: pointer;
           &:hover {
-            border-bottom: @menuButtonBorder solid @veryLightColor;
+            background: @mostLightColor;
             a.ext {
               opacity: 0.5;
             }
@@ -463,7 +464,7 @@ span.highlight, div.highlight { /* searched words */
         }
         &.active, &.active:hover {
           background: @redColor;
-          border-bottom: @menuButtonBorder none @redColor;
+          //border-bottom: @menuButtonBorder none @redColor;
           i {
             color: white;
           }
@@ -567,7 +568,7 @@ span.highlight, div.highlight { /* searched words */
       box-sizing: border-box;
       position: relative;
       height: 100%;
-      width: 47px;
+      width: 61px;
       vertical-align: top;
       cursor: pointer;
       
@@ -621,19 +622,21 @@ span.highlight, div.highlight { /* searched words */
     background: @darkColor;
 
     border-right: 2px solid white;
-    .transition(left 0.4s);
+    .transition(all 0.4s);
 
     &.active {
       left: 0 !important;
       .box-shadow(0px 0px 5px 0px #525252);
+
+      /* show hint tooltips on the fly if searching term */
+      [data-hint].popuped:before, [data-hint].popuped:after {
+        visibility: visible;
+        opacity: 1;
+      }
     }
   
     .nohighlight();
-    /*
-    [data-hint].popuped:before, [data-hint].popuped:after {
-      visibility: visible;
-      opacity: 1;
-    }*/
+
     .gridtag {
       box-sizing: border-box;
       cursor: pointer;
@@ -644,7 +647,7 @@ span.highlight, div.highlight { /* searched words */
 
       .no-font-smoothing();
 
-      font-size: 0.7em;
+      font-size: 0.8em;
       text-align: left;
       font-style: italic;
       //text-transform: uppercase;
@@ -661,15 +664,20 @@ span.highlight, div.highlight { /* searched words */
         //background: @darkGreenColor;
       }
       &.icon {
+        width: 20% !important;
         color: @lightColor;
+        padding: 4px !important;
+        margin-bottom: 5px;
+        text-align: center;
         i.meta {
           color: @lightColor;
-          font-size: 0.8em;
-          width: 15px;
-          margin-right: 5px;
+          font-size: 1.1em;
+        }
+        span {
+          display: none;
         }
       }
-      &:hover {
+      &:hover, &.popuped {
         background: @veryDarkColor;
       }
       &.active {
@@ -724,7 +732,7 @@ span.highlight, div.highlight { /* searched words */
   box-sizing: border-box;
   z-index: 32;
   position: fixed;
-  display: table;
+  //display: table;
   width: 100%;
   padding: 5px 0px;
 
@@ -740,28 +748,16 @@ span.highlight, div.highlight { /* searched words */
   text-align: center;
   background: @yellowColor;
   
-  span {
+  .full {
     box-sizing: border-box;
+    padding: 15px 150px;
     font-size: 1.1em;
     font-style: italic;
     line-height: 1.4em;
     color: @textColor;
-  }
-  span.left {
-    text-align: left;
-  }
-  span.full {
-    display: inline-block;
-    padding: 15px 150px;
-  }
-  span.splitted {
-    display: table-cell;
-    padding: 15px 60px;
-    vertical-align: middle;
-  }
-  span.splitted:first-child {
-    width: @panelW;
-    border-right: 1px dashed grey;
+    &.left {
+      text-align: left;
+    }
   }
 
   i {
@@ -865,7 +861,7 @@ span.highlight, div.highlight { /* searched words */
 
   text-align: right;
 
-  .box-shadow(0px 0px 4px 0px #BABABA);
+  //.box-shadow(0px 0px 4px 0px #BABABA);
 
   font-size: 0.8em;
 

@@ -53,7 +53,7 @@ quote:
 quote:
     author: Alice
     content: Je fais partie de la première génération dans l'histoire de l'Humanité à avoir jamais eu un niveau de vie aussi élevé, et paradoxalement, aucune des personnes que je connais ne fabrique quoi que ce soit de réellement nécessaire
-quote:
+#quote:
     author: Alice
     content: Le fait de ne rien changer au système n'annule pas pour autant ma responsabilité
 quote:
@@ -332,7 +332,7 @@ quote:
 quote:
     author: Proverbe amérindien.
     content: Quand le dernier arbre sera abattu, la dernière rivière empoisonnée, le dernier poisson pêché, alors vous découvrirez que l'argent ne se mange pas.
-quote:
+#quote:
     author: Coluche
     content: On ne peut pas dire la vérité à la télé, il y a trop de gens qui regardent.
 quote:
@@ -347,9 +347,10 @@ quote:
 quote:
     author: Aldous Huxley, Le meilleur des mondes
     content: L'expérience, ce n'est pas ce qui arrive à quelqu'un, c'est ce que quelqu'un fait avec ce qui lui arrive.
-#quote:
+quote:
     author: Yves Citton
     content: On peut certes attendre que les « vérités » filtrent d’elles-mêmes, lentement, depuis quelques revues et groupuscules d’avant-garde, ou qu’elles deviennent magiquement « virales » par la grâce d’Internet, mais ici aussi, il serait urgent d’accélérer les choses (1°) en exigeant une réforme politiques des infrastructures médiatiques actuellement soumises aux aberrations du marché et (2°) en concentrant l’activisme artistique et politique sur le détournement, le court-circuitage ou le piratage des circulations médiatiques.
+    tags: media
 #quote:
     author: l'An 01
     content: >
@@ -401,7 +402,7 @@ quote:
     author: Charles Bukowski
     content: >
         Comment diable un homme peut-il se réjouir d'être réveillé à 6h30 du matin par une alarme, bondir hors de son lit, avaler sans plaisir une tartine, chier, pisser, se brosser les dents et les cheveux, se débattre dans le trafic pour trouver une place, où essentiellement il produit du fric pour quelqu'un d'autre, qui en plus lui demande d'être reconnaissant pour cette opportunité ?
-#quote:
+quote:
     author: Roland Castro
     content: >
         L’utopie concrête ne part pas de rien même si une bonne dose d’innocence maintenue est nécessaire à son énonciation, il y a donc des preuves qu’il arrive que du sens apparaisse, que l’idée de vivre ensemble s’impose à tous. L’idée de réenchanter le monde se nourrit de ces traces, de ces preuves qui sont des preuves de la volonté, qui nous vient par effraction de sens, par excès de mémoire heureuse, par décision de vie. J’affirme donc qu’il faut préparer une insurrection du sens.

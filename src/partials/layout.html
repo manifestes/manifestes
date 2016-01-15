@@ -199,9 +199,10 @@
           important: t.important,
           active: isTagActive(t.tag),
           popuped: isTagAutoComplete(t),
-          'hint--bottom': $index==0,
-          'hint--right': $index>0
-        }"><i ng-if="t.icon" class="meta fa fa-{{t.icon}}"></i>{{t.label}}</div>
+          'hint--bottom': t.icon,
+          'hint--right': !t.icon
+        }"><i ng-if="t.icon" class="meta fa fa-{{t.icon}}"></i><span>{{t.label}}</span>
+      </div>
     </div>
 
   </div>
@@ -228,14 +229,14 @@
       ng-class="{active: state.disclaim[state.layout]}"
       ng-click="state.disclaim[state.layout]=false;">
 
-      <span ng-if="state.layout=='sections'"
-      class="full" compile-here="md2Html(meta.disclaimer[state.layout])"></span>
-      <span ng-if="state.layout=='links'"
-      class="full left" compile-here="md2Html(meta.disclaimer[state.layout])"></span>
-      <span ng-if="state.layout=='network'"
-      class="full left" compile-here="md2Html(meta.disclaimer[state.layout])"></span>
-      <span ng-if="state.layout=='map'"
-      class="full" compile-here="md2Html(meta.disclaimer[state.layout])"></span>
+      <div ng-if="state.layout=='sections'"
+      class="full" compile-here="md2Html(meta.disclaimer[state.layout])"></div>
+      <div ng-if="state.layout=='links'"
+      class="full" compile-here="md2Html(meta.disclaimer[state.layout])"></div>
+      <div ng-if="state.layout=='network'"
+      class="full left" compile-here="md2Html(meta.disclaimer[state.layout])"></div>
+      <div ng-if="state.layout=='map'"
+      class="full" compile-here="md2Html(meta.disclaimer[state.layout])"></div>
 
       <!-- <span class="close">fermer</span> -->
       <i class="fa fa-times" ng-click="state.disclaim[state.layout] = false;"></i>

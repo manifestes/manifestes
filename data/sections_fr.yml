@@ -368,14 +368,18 @@ image:
     url: antinuke.jpg
     credit: 281_Anti nuke
 quote:
-    author: Roland Castro
-    content: >
-        L’utopie concrête ne part pas de rien même si une bonne dose d’innocence maintenue est nécessaire à son énonciation, il y a donc des preuves qu’il arrive que du sens apparaisse, que l’idée de vivre ensemble s’impose à tous. L’idée de réenchanter le monde se nourrit de ces traces, de ces preuves qui sont des preuves de la volonté, qui nous vient par effraction de sens, par excès de mémoire heureuse, par décision de vie. J’affirme donc qu’il faut préparer une insurrection du sens.
+    author: Alice
+    content: Le fait de ne rien changer au système n'annule pas pour autant ma responsabilité
 content: >
     
-    - **Quelle société** (*rapports entre nous*) ? Nos enfants grandissent avec nous. Inspirés de nos comportements, ils se construisent sur les références que nous leur laissons. Quels enfants laisserons-nous à notre planète ?
+    #**Quelle société** (*rapports entre nous*) ?
 
-    - **Quelle écologie** (*rapport au monde*) ? Quelle planète, quel rapport à la nature et au vivant laisserons-nous à nos enfants ?
+    Nos enfants grandissent avec nous. Inspirés de nos comportements, ils se construisent sur les références que nous leur laissons. Quels enfants laisserons-nous à notre planète ?
+
+
+    #**Quelle écologie** (*rapport au monde*) ?
+
+    Quelle planète, quel rapport à la nature et au vivant laisserons-nous à nos enfants ?
 
     
     *« dis, maman, pourquoi personne n'a rien fait ? »*
@@ -750,8 +754,8 @@ image:
     url: RokuroTaniuchi.jpg
     credit: Rokuro Taniuchi
 quote:
-    author: Yves Citton
-    content: On peut certes attendre que les « vérités » filtrent d’elles-mêmes, lentement, depuis quelques revues et groupuscules d’avant-garde, ou qu’elles deviennent magiquement « virales » par la grâce d’Internet, mais ici aussi, il serait urgent d’accélérer les choses (1°) en exigeant une réforme politiques des infrastructures médiatiques actuellement soumises aux aberrations du marché et (2°) en concentrant l’activisme artistique et politique sur le détournement, le court-circuitage ou le piratage des circulations médiatiques.
+    author: Coluche
+    content: On ne peut pas dire la vérité à la télé, il y a trop de gens qui regardent.
 content: >
     Nous ne voulons plus être inondés d'images nauséabondes polluant notre *«temps de cerveau disponible»*.
 
@@ -765,7 +769,7 @@ content: >
 
 ---
 date: 2015-11-14
-title: Terrorismes, attentats, horreur, sidération
+title: Terrorismes, horreur, sidération
 subtitle: 11 septembre, Charlie Hebdo, 13 novembre, l'état d'urgence nous apparaît tout à coup
 slug: terrorism_horror
 tags: alienation, media, companies
@@ -988,10 +992,10 @@ content: >
 
 ---
 date: 2015-10-04
-title: Mangeons local, de saison, mangeons mieux
+title: Mangeons mieux, local, de saison
 subtitle: Boycottons la nourriture industrielle, cuisinons nous-même
 slug: eat_well
-tags: eat, health
+tags: agriculture, eat, health
 image:
     url: HorstWidmann.jpg
     credit: Horst Widmann

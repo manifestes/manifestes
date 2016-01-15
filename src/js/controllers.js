@@ -192,7 +192,7 @@ angular.module('manifest.controllers', ['underscore','config'])
       return $scope.state.tags.indexOf(tagslug)!=-1;
     };
     $scope.isTagAutoComplete = function(tag) {
-      if($scope.state.searchinput && $scope.state.searchinput.length>3) {
+      if($scope.state.searchinput && $scope.state.searchinput.length>2) {
         return (tag.label+" "+tag.description).indexOf($scope.state.searchinput)!=-1;
       } else
         return false;
