@@ -25,12 +25,6 @@ intro:
         quote:
             author: A.Gramsci. ou Le Forum du clair-obscur
             content: Le vieux monde se meurt, le nouveau monde tarde à apparaître et dans ce clair-obscur surgissent les monstres
-        samples:
-            - c'est quoi ce projet ?
-            - que penser du rôle de l'état et des partis politiques ?
-            - quelles positions convergentes sur le fond ?
-            - vous parlez d'agriculture ?
-            - comment participer au projet ?
     -   layout: enlaces
         title: liens
         descr: consulter des textes, vidéos, trouver des médias libres — une sélection d'articles, projets qui méritent d'être connus
@@ -38,10 +32,6 @@ intro:
         quote:
             author: Bernard Werber
             content: L'important n'est pas de convaincre, mais de donner à réfléchir
-        samples:
-            - quels sont médias libres ?
-            - quelles vidéos à propos du travail ?
-            - ouvrir un site au hasard !
 disclaimer:
     sections: >
         Vous pouvez consulter les textes dans l'ordre que vous voulez
