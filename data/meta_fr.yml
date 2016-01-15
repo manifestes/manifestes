@@ -95,7 +95,7 @@ network:
     loading: >
         le réseau est en cours d'affichage
         <br><br>
-        attention, le temps de chargement peut être long (9.6Mo)
+        attention, le temps de chargement peut être long (13Mo)
         <br><br>
         merci pour votre patience
     image: links_eniac.jpg
