@@ -2217,7 +2217,7 @@ body.layout-mapprint .container {
   background: black;
 }
 .wrapper.layout-sections .section.opened .h2 {
-  display: none;
+  opacity: 0;
 }
 .wrapper.layout-sections .section.opened .block {
   height: auto;

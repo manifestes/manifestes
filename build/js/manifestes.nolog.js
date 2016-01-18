@@ -3201,7 +3201,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,datapath:'data/',assets:'build/',lastupdate:'18 January 2016 - 12:14'})
+.constant('settings', {dev:false,datapath:'data/',assets:'build/',lastupdate:'18 January 2016 - 1:26'})
 
 ;
 ;
@@ -3484,7 +3484,7 @@ angular.module('manifest.controllers', ['underscore','config'])
         $scope.toggleAllSections(false);
       }
       
-      $scope.rgx.search = new RegExp($scope.state.search,'gi');
+      $scope.rgx.search = new RegExp($scope.state.search,'i');
 
       updateArrays();
 
@@ -3499,14 +3499,14 @@ angular.module('manifest.controllers', ['underscore','config'])
     
     $scope.rgx = {};
     $scope.rgx.inlnk = new RegExp("<[^>]*>","gi");
-    $scope.rgx.search = new RegExp("",'gi'); // is updated after each keystroke on search input
+    $scope.rgx.search = new RegExp("",'i'); // is updated after each keystroke on search input
     var totext = function(htm) {
       return htm.replace(/<[^>]+>/gm,'');
     };
 
 
     var shallShowSearch = function(o) { // "o" is a section or a link
-      var reg = new RegExp($scope.state.search,'gi'); //$scope.rgx.search;
+      var reg = $scope.rgx.search;
       if($scope.state.search)
       if(o.title) { // a section
         var show = o.hasOwnProperty('quote') && reg.test(totext(o.quote.content));
@@ -3555,9 +3555,10 @@ angular.module('manifest.controllers', ['underscore','config'])
 
 
     $scope.highlight = function(html) {
+      var out = "";
       if(!$scope.state.search || $scope.state.search.length<3) {
 
-        return $sce.trustAsHtml(html);
+        out = $sce.trustAsHtml(html);
 
       } else {
         
@@ -3567,29 +3568,31 @@ angular.module('manifest.controllers', ['underscore','config'])
 
         if(!rgxp.test(text)) { // if flattened html don't matches
 
-          return $sce.trustAsHtml(html);
+          out = $sce.trustAsHtml(html);
 
         } else {
 
           var inlnkmatches = html.match($scope.rgx.inlnk);
-        
+
           // if at least one link rawtag matches, highlight all
           if(inlnkmatches && rgxp.test( inlnkmatches.join("") )) {
 
-            return $sce.trustAsHtml('<div class="highlight">'+html+'</div>');
+            out = $sce.trustAsHtml('<div class="highlight">'+html+'</div>');
 
           } else {
 
-            if( !rgxp.test(html) ) { // if html don't match, but flattened text matches, higlight all
-              return $sce.trustAsHtml('<div class="highlight">'+html+'</div>');
+            if( !rgxp.test(html) ) { // (never ?) if html don't match, but flattened text matches, higlight all
+              out = $sce.trustAsHtml('<div class="highlight">'+html+'</div>');
             } else {
-              return $sce.trustAsHtml(html.replace(rgxp,'<span class="highlight">$&</span>'));
+              var globreg = new RegExp($scope.state.search,'gi');
+              out = $sce.trustAsHtml(html.replace(globreg,'<span class="highlight">$&</span>'));
             }
 
           }
 
         }
       }
+      return out;
     };
 
 
@@ -4180,7 +4183,7 @@ var filterLinksNodesFromTags = function(tags) {
 var filterLinksNodesFromTerm = function(term) {
   g = linksGraph.graph;
   if(term) {
-    var rgx = new RegExp(term,"gi");
+    var rgx = new RegExp(term,"i");
     g.nodes().forEach(function(n) {
       upsetLinkNode(n, rgx.test(n.savedLabel), yellowColor, lightGray);
     });

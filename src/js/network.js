@@ -55,7 +55,7 @@ var filterLinksNodesFromTags = function(tags) {
 var filterLinksNodesFromTerm = function(term) {
   g = linksGraph.graph;
   if(term) {
-    var rgx = new RegExp(term,"gi");
+    var rgx = new RegExp(term,"i");
     g.nodes().forEach(function(n) {
       upsetLinkNode(n, rgx.test(n.savedLabel), yellowColor, lightGray);
     });
