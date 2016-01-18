@@ -41,7 +41,7 @@ var filterLinksNodesFromTags = function(tags) {
   g = linksGraph.graph;
   if(tags.length) {
     g.nodes().forEach(function(n) {
-      var highl = _.intersection(n.attributes.Tags,tags).length;
+      var highl = _.intersection(n.attributes.tags,tags).length;
       upsetLinkNode(n, highl, redColor, lightGray);
     });
     focusDisplay(true);
@@ -143,7 +143,7 @@ var loadLinksGraph = function(scope) {
         //n.color = "#9C9C9C";
         //n.originalColor = "#9C9C9C";
         n.originalColor = n.color;
-        n.attributes.Tags = n.attributes.Tags ? n.attributes.Tags.split(" ") : null;
+        n.attributes.tags = n.attributes.tags ? n.attributes.tags.split(" ") : null;
         n.savedLabel = n.label;
         //delete n.label;
       });
@@ -154,14 +154,14 @@ var loadLinksGraph = function(scope) {
       // doubleclick to open link
       s.bind('doubleClickNode', function(event) {
         console.log("doubleclicked node:",event.data.node);
-        var url = event.data.node.attributes.Url || scope.meta.url;
+        var urls = event.data.node.attributes.urls || scope.meta.url;
         
-        window.open(url.split(' ')[0], '_blank');
+        //window.open(url.split(' ')[0], '_blank');
 
-        /*_.each(url.split(' '), function(e) {
+        _.each(urls.split(' '), function(e) {
           var win = window.open(e, '_blank');
           //win.focus();
-        });*/        
+        });
       });
       
       // simple click shows neighbors

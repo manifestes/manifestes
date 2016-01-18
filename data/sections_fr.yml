@@ -1029,6 +1029,9 @@ title: Relocaliser l'économie
 slug: local_market
 source: "[http://montreuil-climat.org](http://montreuil-climat.org)"
 tags: agriculture, economy
+image:
+    url: warsheep.jpg
+    credit: —
 content: >
     Plus les marchandises et les passagers parcourent de longues distances, plus cela pollue. Le fret mondial était  responsable, en 2010, de 15% des émissions de gaz à effet de serre. Autant dire que la délocalisation des industries à l'autre bout de la planète, en plus d'être une catastrophe sociale, est une catastrohe écologique
 
@@ -1142,6 +1145,9 @@ subtitle: Quels sont les intérêts des élites ? Mobilisons-nous par le bas
 slug: dont_wait_elite
 source: "[http://montreuil-climat.org](http://montreuil-climat.org)"
 tags: politics, emancipation
+image:
+    url: nerougissezpas-revolution.jpg
+    credit: "[Ne rougissez pas !](http://www.nerougissezpas.fr/)"
 content: >
     Les décideurs politiques (états) et économiques (multinationales) ne pourront pas concilier leur volonté de croissance infinie (produire plus) avec la décroissance nécessaire des productions, des gaspillages
 
