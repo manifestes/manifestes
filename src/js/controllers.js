@@ -412,6 +412,21 @@ angular.module('manifest.controllers', ['underscore','config'])
     };
 
 
+    $scope.subscribeList = function(email) {
+      $http
+      .post("https://lists.riseup.net/www", {
+        email: email,
+        list: "manifestes",
+        action: "subrequest"
+      })
+      .success(function(res) {
+        console.log(res);
+      })
+      .error(function (data, status, headers, config) {
+        console.log("error mailing",data,status,headers,config);
+      });
+    }
+
 
     ///////////////////////////////////////////////////////////////
     var fetchDataMeta = function(callb) {

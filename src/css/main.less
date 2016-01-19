@@ -114,6 +114,32 @@ span.highlight, div.highlight { /* searched words */
 .bordered-8 { border: #C5D3C1 solid @bd !important; }
 .bordered-9 { border: #E8D9A0 solid @bd !important; }
 
+
+.mailing {
+  margin-top: 30px;
+  .label {
+    margin-bottom: 5px; 
+  }
+  input.email {
+    width: 145px;
+    padding: 5px;
+    font-style: italic;
+  }
+  .subscribe {
+    display: inline-block;
+    padding: 6px 9px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    background: @blueColor;
+    cursor: pointer;
+    &:hover {
+      background: @darkColor;
+    }
+  }
+}
+
+
 .container {
   box-sizing: border-box;
   position: fixed;

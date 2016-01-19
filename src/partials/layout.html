@@ -256,6 +256,30 @@
         filtre: {{state.count.sections}} / {{sectionArray.length}} section(s) & {{state.count.links}} / {{linkArray.length}} lien(s)
       </div>-->
       <div class="content" compile-here="md2Html(meta.footer.content)"></div>
+
+      <form
+        class="mailing"
+        action="https://lists.riseup.net/www"
+        method="POST"
+        target="_blank">
+        <div class="label">inscrivez-vous sur la liste de discussion</div>
+        <input
+          class="email"
+          type="email"
+          name="email"
+          placeholder="moi@courriel.org"
+          ng-model="state.email" 
+          ng-click="$event.stopPropagation();"
+          ng-enter="subscribeList(state.email);"/>
+        <input type="hidden" name="list" value="manifestes">
+        <input type="hidden" name="action" value="subrequest">
+        <input
+          class="subscribe"
+          type="submit"
+          name="action_subrequest"
+          value="inscrire">
+      </form>
+
       <a class="lastupdate" target="_blank" href="{{meta.repo}}">{{meta.footer.lastupdatetext}}<br>{{settings.lastupdate}}</a>
 
       <div><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a></div>
