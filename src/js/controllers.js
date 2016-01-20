@@ -722,6 +722,8 @@ angular.module('manifest.controllers', ['underscore','config'])
           var color = "#"+credit.color || "#000";
           var size = "s";
 
+          // icons use maki-markers: https://www.mapbox.com/maki/
+
           if(/region/.test(m.scale)) {
             size = "m";
             icon = "land-use";
@@ -733,6 +735,10 @@ angular.module('manifest.controllers', ['underscore','config'])
           if(/zone/.test(m.scale)) {
             size = "s";
             icon = "circle-stroked";
+          }
+          if(/human/.test(m.tags)) {
+            size = "s";
+            icon = "heart";
           }
 
           //var customPopup = "<div ng-include ng-init=\"data=leafmarkers['"+m.source+"']['mark_"+k+"'];\" src=\"'partials/marker.html'\"></div>";

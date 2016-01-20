@@ -25,21 +25,25 @@
   bottom: 0;
 
   .legend {
+    box-sizing: border-box;
     z-index: 25;
     position: absolute;
     right: 0px;
     height: 100%;
-    
-    font-size: 0.8em;
+    max-width: 160px;
+    padding-top: 32px;
+
+    font-size: 0.75em;
     background: white;
 
-    max-width: 130px;
-
     cursor: pointer;
+    text-align: right;
+
+    .box-shadow(0px 0px 7px 0px #525252);
 
     .credit {
       display: inline-block;
-      padding: 10px 2px;
+      padding: 10px;
       width: 100%;
       box-sizing: border-box;
       
@@ -59,7 +63,7 @@
     .count {
       position: absolute;
       top: 5px;
-      left: 45%;
+      left: 12px;
       padding: 0px 2px;
       margin-left: 10px;
 
@@ -71,7 +75,8 @@
       border: 1px solid #C3C3C3;
     }
     img.marker {
-      margin-bottom: -25px;
+      float: left;
+      margin: 0px 10px -25px 1px;
     }
   }
 }
