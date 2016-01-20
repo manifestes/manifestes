@@ -1110,6 +1110,29 @@ div.highlight {
 .bordered-9 {
   border: #e8d9a0 solid 9px !important;
 }
+.mailing {
+  margin-top: 30px;
+}
+.mailing .label {
+  margin-bottom: 6px;
+}
+.mailing input.email {
+  width: 145px;
+  padding: 5px;
+  font-style: italic;
+}
+.mailing .subscribe {
+  display: inline-block;
+  padding: 6px 9px;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  background: #617790;
+  cursor: pointer;
+}
+.mailing .subscribe:hover {
+  background: #6a6c67;
+}
 .container {
   box-sizing: border-box;
   position: fixed;

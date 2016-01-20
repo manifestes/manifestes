@@ -3201,7 +3201,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,datapath:'data/',assets:'build/',lastupdate:'18 January 2016 - 1:26'})
+.constant('settings', {dev:false,datapath:'data/',assets:'build/',lastupdate:'20 January 2016 - 11:32'})
 
 ;
 ;
@@ -3619,6 +3619,21 @@ angular.module('manifest.controllers', ['underscore','config'])
       return out;
     };
 
+
+    $scope.subscribeList = function(email) {
+      $http
+      .post("https://lists.riseup.net/www", {
+        email: email,
+        list: "manifestes",
+        action: "subrequest"
+      })
+      .success(function(res) {
+        console.log(res);
+      })
+      .error(function (data, status, headers, config) {
+        console.log("error mailing",data,status,headers,config);
+      });
+    }
 
 
     ///////////////////////////////////////////////////////////////
