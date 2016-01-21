@@ -2162,7 +2162,7 @@ body.layout-mapprint .container {
 }
 .wrapper.layout-sections .section .block .image {
   box-sizing: border-box;
-  display: inline-block;
+  display: none;
   position: absolute;
   left: 0;
   top: 0;
@@ -2244,6 +2244,9 @@ body.layout-mapprint .container {
 }
 .wrapper.layout-sections .section.opened .block {
   height: auto;
+}
+.wrapper.layout-sections .section.opened .image {
+  display: inline-block;
 }
 .wrapper.layout-sections .section.opened .image .imagecredit {
   display: block;
