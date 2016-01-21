@@ -293,7 +293,8 @@ angular.module('manifest.controllers', ['underscore','config'])
     $scope.rgx.inlnk = new RegExp("<[^>]*>","gi");
     $scope.rgx.search = new RegExp("",'i'); // is updated after each keystroke on search input
     var totext = function(htm) {
-      return htm.replace(/<[^>]+>/gm,'');
+      if(htm) return htm.replace(/<[^>]+>/gm,'');
+      else return "";
     };
 
 

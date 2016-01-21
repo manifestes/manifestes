@@ -3201,7 +3201,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,datapath:'data/',assets:'build/',lastupdate:'21 January 2016 - 3:20'})
+.constant('settings', {dev:false,datapath:'data/',assets:'build/',lastupdate:'21 January 2016 - 3:47'})
 
 ;
 ;
@@ -3501,7 +3501,8 @@ angular.module('manifest.controllers', ['underscore','config'])
     $scope.rgx.inlnk = new RegExp("<[^>]*>","gi");
     $scope.rgx.search = new RegExp("",'i'); // is updated after each keystroke on search input
     var totext = function(htm) {
-      return htm.replace(/<[^>]+>/gm,'');
+      if(htm) return htm.replace(/<[^>]+>/gm,'');
+      else return "";
     };
 
 
