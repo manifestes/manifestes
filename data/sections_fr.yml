@@ -40,7 +40,7 @@ image:
     url: eniac-computer.jpg
     credit: ENIAC computer, U.S. Army, ARL Technical Library
 quote:
-    author: —
+    author: 
     content: La question n'est pas de savoir comment assainir techniquement notre «démocratie», mais de définir contre quoi on se bat
 content: >
     #C'est
@@ -88,11 +88,17 @@ slug: why_another_site
 date: 2016-01-07
 title: Ce site est particulier
 subtitle: Pourquoi faire encore un site ? il y en a déjà beaucoup d'autres
+image:
+    url: spiritisme.jpeg
+    credit: 
+quote:
+    author: 
+    content: Si on ne fait rien, personne ne le fera à notre place
 content: >
     Ce projet tend à formuler une synthèse de différentes idées et initiatives des mondes « alternatifs »
     
 
-    Sur la forme, nous nous efforçons d'aller « droit au but » pour rendre la lecture plus agréable. Pour faciliter la réappropriation de l'outil et des contenus, le code est libre et volontairement simple.
+    Sur la forme, nous nous efforçons d'aller «droit au but» pour rendre la lecture plus agréable. Pour faciliter la réappropriation de l'outil et des contenus, le code est libre et volontairement simple.
     
     
     Plutôt qu'une accumulation d'articles d'actualité (que le réseau et les liens permettent d'explorer), nous nous efforçons de parfaire l'analyse de fond sur le long terme
@@ -240,7 +246,7 @@ image:
     url: ericDrooker_jungle.jpg
     credit: Eric Drooker
 quote:
-    author: —
+    author: 
     content: L'utopie n'est pas un futur souhaitable mais un ailleurs présent
 content: >
     La définition des lieux alternatifs ou écolieux est très difficile à définir tant les strates d'alternatives sont multiples et complexes... Ici, ce n'est pas la qualité des points de vente bio mais plutôt la philosophie de l'accueil qui a été mise en avant.
@@ -323,7 +329,7 @@ image:
 quote:
     author: Charles Bukowski
     content: >
-        Comment diable un homme peut-il se réjouir d'être réveillé à 6h30 du matin par une alarme, bondir hors de son lit, avaler sans plaisir une tartine, chier, pisser, se brosser les dents et les cheveux, se débattre dans le trafic pour trouver une place, où essentiellement il produit du fric pour quelqu'un d'autre, qui en plus lui demande d'être reconnaissant pour cette opportunité ?
+        Comment diable un homme peut-il se réjouir d'être réveillé à 6h30 du matin par une alarme, bondir hors de son lit, avaler sans plaisir une tartine, chier, pisser, se brosser les dents et les cheveux, se débattre dans le trafic pour trouver une place, où essentiellement il produit du fric pour quelqu'un d'autre, qui en plus lui demande d'être reconnaissant pour cette opportunité ?
 content: >
 
     - **sur-développement** matériel, boulimie consumériste, gaspillage alimentaire et énergétique
@@ -346,6 +352,12 @@ date: 2016-01-10
 title: Quelles relations ?
 subtitle: Quels rapports à la nature ? Quels rapports entre nous ?
 tags: alienation, earth
+image:
+    url: isaacCordal_resistance.jpg
+    credit: Isaac Cordal
+quote:
+    author: Mark Twain
+    content: Dans 20 ans, vous regretterez davantage les choses que vous n'avez pas faites, plutôt que celles que vous avez faites. Alors sortez des sentiers battus. Mettez les voiles. Explorez. Rêvez. Découvrez.
 content: >
     Rétablissons les liens et les relations que nous entretenons
 
@@ -382,7 +394,7 @@ content: >
     Quelle planète, quel rapport à la nature et au vivant laisserons-nous à nos enfants ?
 
     
-    *« dis, maman, pourquoi personne n'a rien fait ? »*
+    *«dis, maman, pourquoi personne n'a rien fait ?»*
     
 
     
@@ -411,8 +423,14 @@ content: >
 slug: how_to_act
 date: 2015-11-12
 title: Quelles actions ?
-subtitle: "« Il faudrait plutôt que... » : réconcilier les différentes manières de voir et d'agir en leur donnant toutes une voix"
+subtitle: "«Il faudrait plutôt que...» : réconcilier les différentes manières de voir et d'agir en leur donnant toutes une voix"
 tags: act, words
+image:
+    url: graffiti68.jpg
+    credit: 
+quote:
+    author: Paulo Coelho
+    content: C'est votre exemple qui change le monde, pas vos opinions
 content: >
     Nous sentons bien tous que quelque chose ne va pas, mais nous divergeons souvent sur les réactions à avoir.
 
@@ -441,8 +459,14 @@ slug: deep_solutions
 date: 2016-01-07
 title: Fausses solutions
 subtitle: Ami terrien, le problème est grave et profond. Il ne sera pas réglé avec 3 coups de chiffons
+image:
+    url: g7family.jpg
+    credit: 
+quote:
+    author: Charles-Maurice de Talleyrand-Périgord
+    content: Si les gens savaient par quels petits hommes ils sont gouvernés, ils se révolteraient vite.
 content: >
-    Ceux qui proposent des solutions au problème climatique permettant de maintenir la croissance, qu'elle soit « verte » ou « durable », ne questionnent jamais les rapports de classes, le productivisme et l'industrialisation.
+    Ceux qui proposent des solutions au problème climatique permettant de maintenir la croissance, qu'elle soit «verte» ou «durable», ne questionnent jamais les rapports de classes, le productivisme et l'industrialisation.
 
 
     Nous explorons les alternatives à un système qui ne fonctionne plus, et dont les bouleversements climatiques et sociaux ne sont que les symptômes les plus visibles.
@@ -501,6 +525,12 @@ title: Faites passer le message !
 subtitle: Le seul mode de diffusion de cette initiative est celui de nos réseaux. Merci de relayer largement l'information autour de vous !
 slug: spread_word
 tags: about
+image:
+    url: tuca_vieira_push.jpg
+    credit: Tuca Vieira
+quote:
+    author: 
+    content: Le silence de vos pantoufles ne masque pas le bruit des bottes
 content: >
     Cette initiative ne peut faire effet que si elle est relayée, diffusée, débattue, reformulée
 
@@ -556,7 +586,39 @@ content: >
     Cette *responsabilité* n'est pas à confondre avec la *culpabilité*, car nous faisons partie **du problème et de la solution**.
 
 
-    Fuyons l'**ingérence prétentieuse** et manipulatrice dont nous héritons vis-à-vis des pays *du sud*. Pays que nous croyons aider, mais que nous **exploitons par prosélytisme forcené** de la *« démocratie - croissance »* dans le seul but d'accroître notre main-mise des ressources.
+    Fuyons l'**ingérence prétentieuse** et manipulatrice dont nous héritons vis-à-vis des pays *du sud*. Pays que nous croyons aider, mais que nous **exploitons par prosélytisme forcené** de la *«démocratie - croissance»* dans le seul but d'accroître notre main-mise des ressources.
+
+
+
+---
+date: 2016-01-20
+title: Contre la Françafrique
+subtitle: Un système qui perdure au mépris des peuples en Afrique comme en France. Avant d'aider, commençons par ne pas nuire
+tags: history, politics, economy
+image:
+    url: lagarde.jpg
+    credit: 
+quote:
+    author: François-Xavier Verschave
+    content: >
+        La Françafrique, c’est comme un iceberg. Vous avez la face du dessus, la partie émergée de l’iceberg : la France meilleure amie de l’Afrique, patrie des droits de l’homme, etc. Et puis ensuite, vous avez 90% de la relation qui est immergée : l’ensemble des mécanismes de maintien de la domination française en Afrique avec des alliés africains
+source: "[Association Survie](http://survie.org/)"
+content: >
+    Plus de 50 ans après les indépendances, tout en prétendant avoir modifié ses pratiques, la France poursuit son ingérence dans des anciennes colonies africaines : soutien aux dictateurs, maintien de bases militaires et redéploiement dans de nouveaux pays, domination économique et tutelle monétaire (Franc CFA), appui aux entreprises française pour le pillage des ressources et la récupération des marchés publics, aide publique au développement détournée de sa fonction première, réseaux d'influence médiatiques, culturels et linguistiques (francophonie)
+
+    Revendications :
+    
+
+    - La fin de l'interventionnisme militaire et le retrait progressif de l'armée française d'Afrique
+    
+    - Une diplomatie qui soutienne les peuples et le respect des droits humains
+
+    - Une justice indépendante et la fin de l'impunité en matière de crimes liés à la Françafrique, ce qui implique notamment la vérité et la justice sur le rôle de la France dans le génocide des Tutsi au Rwanda
+
+    - Un cadre juridique et législatif pour les activités économiques, permettant la fin du pillage des ressources et la transparence économique et fiscale
+
+    - Un rôle accru du Parlement français en matière de contrôle de la politique étrangère et de la coopération
+
 
 
 
@@ -566,6 +628,9 @@ date: 2015-11-19
 title: On ne peut rien faire ?
 subtitle: Ce qui se passe en Chine, les guerres... vouloir changer tout ça d'un coup est impossible... vraiment ?
 tags: act, alienation
+image:
+    url: PeterGarritano_machines.jpg
+    credit: 
 quote:
     author: Le Dalaï Lama
     content: Si vous avez l'impression que vous êtes trop petit pour pouvoir changer quelque chose, essayez donc de dormir avec un moustique... et vous verrez lequel des deux empêche l'autre de dormir
@@ -696,12 +761,18 @@ date: 2015-11-19
 title: Violence ou non-violence ?
 subtitle: Pour un monde plus apaisé, il faut d'abord refuser la violence exercée contre nous
 tags: alienation, act
+image:
+    url: tuca_vieira_mexico.jpg
+    credit: Tuca Vieira
+quote:
+    author: Albert Camus
+    content: Le mal qu’éprouve une seule personne devient vite une peste collective 
 source: "[La monnaie de leur pièce](http://www.monde-libertaire.fr/expressions/17163-la-monnaie-de-leur-piece-pleins-feux-sur-le-capital-et-letat), Jean Rat, ([extrait](http://generationsfutur.zici.fr/tribunes/violence-ou-non-violence/))"
 content: >
     Encore un débat pipé et stupide. Ce qui nous fait violence, ce qui nous viole, c’est **ce que qui nous est imposé malgré nous**. Le patriarcat, l’État, le Capital, sont les institutions de la violence érigée en système.
 
 
-    Plutôt que de nous enfermer dans un discours idéologique de la « non-violence », ou d’assumer à l’inverse un choix idéologique de « violence », commençons à mettre en pratique une autodéfense pragmatique.
+    Plutôt que de nous enfermer dans un discours idéologique de la «non-violence», ou d’assumer à l’inverse un choix idéologique de «violence», commençons à mettre en pratique une autodéfense pragmatique.
 
 
     Refuser la violence exercée contre nous est la première des légitimités, peut être bien la seule. Et cette autodéfense est d’autant plus efficace quand elle est collective, quand nous nous serrons les coudes.
@@ -716,6 +787,12 @@ slug: i_cant
 date: 2016-01-07
 title: je n'ai pas le temps ni l'argent
 subtitle: C'est bien beau tout ça, mais le boulot me prend tout mon temps, seuls les classes aisées peuvent se permettre de profiter d'autres manières de vivre
+image:
+    url: chat_run.jpg
+    credit: Les chats pelés
+quote:
+    author: 
+    content: La vie est courte, il faut savoir prendre son temps !
 content: >
     Ce qui manque, ce sont des réseaux, de nouveaux rapports entre nous pour faire émerger d'autres manières de vivre ensemble
 
@@ -732,6 +809,12 @@ slug: you_small
 date: 2016-01-07
 title: C'est un petit milieu déjà convaincu
 subtitle: Ceux et celles qui liront cela sont déjà convaincu.e.s. Comment traverser les différentes classes populaires ?
+image:
+    url: dontbelieve.jpg
+    credit: 
+quote:
+    author: 
+    content: Ceux qui pensent que c’est impossible sont priés de ne pas déranger ceux qui essaient
 content: >
     Il est difficile de dépasser les classes culturelles et sociales qui nous amènent à rencontrer, cotoyer des gens qui finalement ont le même profil que nous.
 
@@ -809,9 +892,8 @@ image:
     url: BrianMcMullenJasonJagel.jpg
     credit: Brian McMullen and Jason Jägel
 quote:
-    author: Aristote
-    content: >
-        Il est aussi dans l'intérêt d'un tyran de garder son peuple pauvre, pour qu'il soit si occupé à ses tâches quotidiennes qu'il n'aie pas le temps pour la rébellion.
+    author: Anatole
+    content: La nature permet l'autonomie gratuite. Et ça, pour le capital, c'est inacceptable
 content: >
     Le revenu ou dotation universelle inconditionnelle permet à chacun de satisfaire ses besoins primaires. Il permet, du moins de manière transitionnelle, à ceux qui sont entièrement aliénés par leur travail de sortir la tête de l'eau et d'enfin choisir leur activité.
 
@@ -866,7 +948,7 @@ content: >
     Sachons **détecter cet ennemi** lorsqu'il apparaît en nous ou autour de nous et apprenons à **réagir ensemble** à ses manifestations.
 
 
-    *« C'est à cause de... »* ? prendre du recul et évaluer si la cible est bien la bonne. **Témoin ou victime** d'un abus de pouvoir ou d'une oppression, **ré-agissons** ! N'affrontons pas les individus eux-mêmes, mais **leurs comportements**.
+    *«C'est à cause de...»* ? prendre du recul et évaluer si la cible est bien la bonne. **Témoin ou victime** d'un abus de pouvoir ou d'une oppression, **ré-agissons** ! N'affrontons pas les individus eux-mêmes, mais **leurs comportements**.
 
 
     Oublions les **personnalités politiques**, *amies ou ennemies*. Parler d'eux, c'est déjà perdre du temps et leur donner de l'importance.
@@ -907,7 +989,7 @@ content: >
 ---
 date: 2016-01-07
 title: Dettes, dettes, dettes
-subtitle: —
+subtitle: 
 slug: depts_always
 tags: economy, politics
 content: >
@@ -946,12 +1028,8 @@ image:
     url: JiriSalamoun.jpg
     credit: Jiri Salamoun
 quote:
-    author: Manifeste [Technologos.fr](http://www.technologos.fr)
-    content: >
-        Nous pensons que pour oublier les vicissitudes du travail, les humains s'abandonnent aux biens de consommation, au point d'ériger la consommation en «culture».
-
-
-        La publicité n'est pas un simple moyen de propagande, c'est l'instrument d'un culte.
+    author: Abbé Pierre
+    content: On ne peut pas, sous prétexte qu'il est impossible de tout faire en un jour, ne rien faire du tout
 content: >
     Polluant nos cerveaux et tous les espaces publics, la publicité (que le client finance par son achat) est le premier symptôme d'une société omnubilée par la consommation et la croissance.
 
@@ -1015,11 +1093,8 @@ slug: eat_meat
 date: 2016-01-07
 title: Manger de la viande ?
 subtitle: Comprendre les conditions de production et l'impact de notre surconsommation
-quote:
-    author: anonyme
-    content: un végétarien en hummer pollue moins qu'un omnivore en vélo
 content: >
-    —
+    Un végétarien en hummer pollue moins qu'un omnivore en vélo
 
 
 
@@ -1031,7 +1106,10 @@ source: "[http://montreuil-climat.org](http://montreuil-climat.org)"
 tags: agriculture, economy
 image:
     url: warsheep.jpg
-    credit: —
+    credit: 
+quote: 
+    author: Antoine de Saint Exupéry
+    content: Nous n'héritons pas la terre de nos ancêtres, nous l'empruntons à nos enfants
 content: >
     Plus les marchandises et les passagers parcourent de longues distances, plus cela pollue. Le fret mondial était  responsable, en 2010, de 15% des émissions de gaz à effet de serre. Autant dire que la délocalisation des industries à l'autre bout de la planète, en plus d'être une catastrophe sociale, est une catastrohe écologique
 
@@ -1053,6 +1131,12 @@ subtitle: Au plus proche des besoins
 slug: energy_prod
 source: "[http://montreuil-climat.org](http://montreuil-climat.org)"
 tags: energy, emancipation
+image:
+    url: computer_army.jpg
+    credit: BRLESC-I, US Army
+quote:
+    author: "Celia Izoard, [revue Z](http://zite.fr) n°9"
+    content: La capacité d'un chercheur à penser l'impact concret des technologies sur la vie des gens est proportionnelle à la distance sociale et physique qui les sépare
 content: >
     Nous avons besoin d'une production d'énergie fondée sur les besoins des populations, pas sur la recherche du profit. Le système nucléaire français est archicentralisé, archidépendant des importations d'uranium, de plus en plus vieillissant et dangereux.
 
@@ -1148,6 +1232,9 @@ tags: politics, emancipation
 image:
     url: nerougissezpas-revolution.jpg
     credit: "[Ne rougissez pas !](http://www.nerougissezpas.fr/)"
+quote:
+    author: Victor Hugo
+    content: Il vient une heure où protester ne suffit plus; après la philosophie, il faut l’action; la vive force achève ce que l’idée a ébauché.
 content: >
     Les décideurs politiques (états) et économiques (multinationales) ne pourront pas concilier leur volonté de croissance infinie (produire plus) avec la décroissance nécessaire des productions, des gaspillages
 
@@ -1196,7 +1283,10 @@ slug: control_technologies
 date: 2016-01-07
 title: Qui contrôle les technologies ?
 subtitle: Ne laissons pas Internet et le numérique aux mains des États et des professionnels du Big Data !
-source: Z
+image:
+    url: google.jpg
+    credit: 
+source: "[revue Z](http://zite.fr) n°9"
 content: >
     Combien de gens savent ce qu'il se passe lorsqu'on envoie un mail ?
     
@@ -1249,13 +1339,9 @@ image:
     url: AnneHeathersandEstebanFrances.jpg
     credit: Anne Heathers & Esteban Frances
 quote:
-    author: "[Saker francophone](http://lesakerfrancophone.net/ogm-aux-us-larroseur-arrose/)"
+    author: Aristote
     content: >
-        Le peuple a été dépossédé de sa légitimité souveraine, exit le citoyen, cette dernière est passée aux mains des marchands, place au consommateur, détenteur de la souveraineté post-moderne.
-        [...]
-
-
-        Le choix que nous faisons dans les urnes est sans effet, alors que nos caddies parlent pour nous... en attendant mieux.
+        Il est aussi dans l'intérêt d'un tyran de garder son peuple pauvre, pour qu'il soit si occupé à ses tâches quotidiennes qu'il n'aie pas le temps pour la rébellion.
 content: >
     Le portefeuille est notre arme la plus efficace : les banques ne sont rien sans notre argent, et les multinationales ne se développent que si l'on achète leurs produits ou utilise leurs services.
 
@@ -1306,7 +1392,7 @@ content: >
     Nous pensons que la richesse d'un collectif provient plus des **échanges** et des expériences de **terrain** qu'il permet que de sa structure organisationnelle.
 
 
-    *« la mobilisation continue ? »*
+    *«la mobilisation continue ?»*
 
 
     Elle ne continue pas toute seule. À nous de l'**incarner dans les faits** si nous la souhaitons. Le peuple n'est pas dans la rue, il se rencontre dans la rue. Ce que nous cherchons, ce n'est pas le réveil ou la révolte d'une population fictive préexistante, c'est la magie qui s'opère lorsque des gens différents **se rencontrent et créent des liens** : *une attention nouvelle, une écoute de un à un...*
@@ -1346,6 +1432,12 @@ date: 2016-01-07
 title: Présence, écoute, bienveillance
 subtitle: Circulation de la parole, espaces de la conversation
 tags: words, love
+image:
+    url: tuca_vieira_hand.jpg
+    credit: Tuca Vieira
+quote:
+    author: Gérard Paris-Clavel
+    content: Un raciste est quelqu'un qui se trompe de colère
 content: >
     Ne nous obstinons pas à faire consensus, cherchons un **langage commun**. Nous acceptons les dissonances et les désaccords, ils n’empêchent pas des formes d’harmonie et de justesse.
     

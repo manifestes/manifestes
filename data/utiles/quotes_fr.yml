@@ -1,7 +1,10 @@
 ---
 # already used quotes have a #preceded line !
 
----
+--
+quote:
+    author: Alejandro Jodorowsky
+    content: Un oiseau né en cage pense que voler est une maladie
 quote:
     author: "Alexis de Tocqueville, De la Démocratie en Amérique, vol II, [extrait](http://www.panarchy.org/tocqueville/democratie.1840.html)"
     content: >
@@ -15,15 +18,15 @@ quote:
 
 
         C'est ainsi que tous les jours il rend moins utile et plus rare l'emploi du libre arbitre; qu'il renferme l'action de la volonté dans un plus petit espace, et dérobe peu a peu chaque citoyen jusqu'à l'usage de lui-même.
-quote:
-    author: —
+#quote:
+    author: 
     content: Si on ne fait rien, personne ne le fera à notre place
     tags: #act
 quote:
     author: [Décroissance, vocabulaire pour une nouvelle ère](http://lepassagerclandestin.fr/catalogue/hors-collection/decroissance-vocabulaire-pour-une-nouvelle-ere.html)
     content: Lorsque la langue usuelle ne permet plus d’exprimer ce qui demande à être articulé d’urgence, c’est qu’il est temps d’apprendre un nouveau vocabulaire.
     tags: words
-quote:
+#quote:
     author: Paulo Coelho
     content: C'est votre exemple qui change le monde, pas vos opinions
 quote:
@@ -42,10 +45,10 @@ quote:
 quote:
     author: Descartes (de crédit)
     content: Je dépense donc je suis
-quote:
-    author: —
+#quote:
+    author: 
     content: Ceux qui pensent que c’est impossible sont priés de ne pas déranger ceux qui essaient
-quote:
+#quote:
     author: Albert Camus
     content: Le mal qu’éprouve une seule personne devient vite une peste collective 
 quote:
@@ -58,10 +61,10 @@ quote:
 
         
         C'est cet idéal qui donne leur importance aux puissances financières
-quote:
+#quote:
     author: Gérard Paris-Clavel
     content: Un raciste est quelqu'un qui se trompe de colère
-quote:
+#quote:
     author: Mark Twain
     content: Dans 20 ans, vous regretterez davantage les choses que vous n'avez pas faites, plutôt que celles que vous avez faites. Alors sortez des sentiers battus. Mettez les voiles. Explorez. Rêvez. Découvrez.
 quote:
@@ -77,7 +80,7 @@ quote:
     author: Alice
     content: Si nous ne prenons pas le problème à bras-le-corps, un bain de sang généralisé est beaucoup plus probable qu'une transition pacifique et démocratique
 quote:
-    author: ?
+    author: 
     content: Ceux qui sont cause des guerres ne meurent jamais
 quote:
     author: Albert Einstein
@@ -85,7 +88,7 @@ quote:
 quote:
     author: Hitler
     content: Un mensonge répété 10 fois reste un mensonge, un mensonge répété 10000 fois devient une vérité
-quote:
+#quote:
     author: Abbé Pierre
     content: On ne peut pas, sous prétexte qu'il est impossible de tout faire en un jour, ne rien faire du tout
 quote:
@@ -98,20 +101,20 @@ quote:
 quote:
     author: Pierre Bourdieu
     content: La télévision a une sorte de monopole de fait sur la formation des cerveaux s'une partie très importante de la population. Or, en mettant l'accent sur les faits divers, en remplissant ce temps rare avec du vide, du rien ou de presque rien, on écarte les informations pertinentes que devrait posséder le citoyen pour exercer ses droits démocratiques
-quote:
+#quote:
     author: Anatole
     content: La nature permet l'autonomie gratuite. Et ça, pour le capital, c'est inacceptable
-#quote:
-    author: anonyme
-    content: un végétarien en hummer pollue moins qu'un omnivore en vélo
+quote:
+    author: 
+    content: Un végétarien en hummer pollue moins qu'un omnivore en vélo
 quote:
     author: A.Gramsci. ou Le Forum du clair-obscur
     content: Le vieux monde se meurt, le nouveau monde tarde à apparaître et dans ce clair-obscur surgissent les monstres
 quote:
-    author: à qui profite le crime ?
-    content: minorités — privilégiées — urbaines — au pouvoir
-quote:
-    author: anonyme
+    author: 
+    content: À qui profite le crime ? minorités — privilégiées — urbaines — au pouvoir
+#quote:
+    author: 
     content: Le silence de vos pantoufles ne masque pas le bruit des bottes
 quote:
     author: Comité invisible, À nos amis
@@ -176,7 +179,7 @@ quote:
 quote:
     author: Mark Twain
     content: Ils ne savaient pas que c'était impossible, alors ils l'ont fait
-quote:
+#quote:
     author: Charles-Maurice de Talleyrand-Périgord
     content: Si les gens savaient par quels petits hommes ils sont gouvernés, ils se révolteraient vite.
 quote:
@@ -197,7 +200,7 @@ quote:
 quote:
     author: Chris marker, L'amérique rêve
     content: Ce qui s'est passé *avant* le passé, personne ne s'y intéresse. La conquète du territoire opposait aux Indiens des Européens fraîchement débarqués. Les Indiens y ont perdu la vie, et les Européens la mémoire
-quote:
+#quote:
     author: Celia Izoard, revue Z n°9, Toulouse
     content: La capacité d'un chercheur à penser l'impact concret des technologies sur la vie des gens est proportionnelle à la distance sociale et physique qui les sépare
 quote:
@@ -210,9 +213,9 @@ quote:
     author: Pouchkine — Commentaires, Chris Marker
     content: Savez-vous, dit Elena Andréievna en se penchant sur le samovar, qu’il existe en Amérique du Sud une flûte dont le son n’est perceptible qu’à celui qui en joue ?
 quote:
-    author: —
-    content: arrêtez le monde, je voudrai descendre
-quote:
+    author: 
+    content: Arrêtez le monde, je voudrai descendre
+#quote:
     author: Victor Hugo
     content: Il vient une heure où protester ne suffit plus; après la philosophie, il faut l’action; la vive force achève ce que l’idée a ébauché.
 quote:
@@ -255,7 +258,7 @@ quote:
     author: Daniel Pennac
     content: Le bonheur individuel se doit de produire des retombées collectives, faute de quoi, la société n'est qu'un rêve de prédateur
 quote:
-    author: —
+    author: 
     content: Le cinéma est un art, la télé est un meuble.
 quote:
     author: anonyme
@@ -297,8 +300,8 @@ quote:
         empoisonne notre santé
         condamne à l'exclusion les indisciplinés
         au seul profit de ces privilégiés
-quote:
-    author: anonyme
+#quote:
+    author: 
     content: La vie est courte, il faut savoir prendre son temps !
 quote:
     author: Eugène Varlin
@@ -343,7 +346,7 @@ quote:
 quote:
     author: G.B. Shaw
     content: L'homme ne cesse pas de jouer quand il devient vieux, il devient vieux quand il cesse de jouer.
-quote: 
+#quote: 
     author: Antoine de Saint Exupéry
     content: Nous n'héritons pas la terre de nos ancêtres, nous l'empruntons à nos enfants
 quote:
@@ -353,7 +356,7 @@ quote:
     author: Coluche
     content: On ne peut pas dire la vérité à la télé, il y a trop de gens qui regardent.
 quote:
-    author: —
+    author: 
     content: L'utopie n'est pas l'horizon mais le point de départ
 quote:
     author: Howard Zinn
@@ -418,7 +421,7 @@ quote:
 #quote:
     author: Charles Bukowski
     content: >
-        Comment diable un homme peut-il se réjouir d'être réveillé à 6h30 du matin par une alarme, bondir hors de son lit, avaler sans plaisir une tartine, chier, pisser, se brosser les dents et les cheveux, se débattre dans le trafic pour trouver une place, où essentiellement il produit du fric pour quelqu'un d'autre, qui en plus lui demande d'être reconnaissant pour cette opportunité ?
+        Comment diable un homme peut-il se réjouir d'être réveillé à 6h30 du matin par une alarme, bondir hors de son lit, avaler sans plaisir une tartine, chier, pisser, se brosser les dents et les cheveux, se débattre dans le trafic pour trouver une place, où essentiellement il produit du fric pour quelqu'un d'autre, qui en plus lui demande d'être reconnaissant pour cette opportunité ?
 quote:
     author: Roland Castro
     content: >
@@ -491,7 +494,7 @@ quote:
 #quote:
     author: Victor Hugo
     content: Il n'est rien au monde d'aussi puissant qu'une idée dont l'heure est venue.
-#quote:
+quote:
     author: Manifeste [Technologos.fr](http://www.technologos.fr)
     content: >
         Nous pensons que pour oublier les vicissitudes du travail, les humains s'abandonnent aux biens de consommation, au point d'ériger la consommation en «culture».
@@ -522,7 +525,7 @@ quote:
 #quote:
     author: Desmond Tutu
     content: Si tu es neutre en situation d'injustice, alors tu as choisi le coté de l'oppresseur
-#quote:
+quote:
     author: "[Saker francophone](http://lesakerfrancophone.net/ogm-aux-us-larroseur-arrose/)"
     content: >
         Le peuple a été dépossédé de sa légitimité souveraine, exit le citoyen, cette dernière est passée aux mains des marchands, place au consommateur, détenteur de la souveraineté post-moderne.
