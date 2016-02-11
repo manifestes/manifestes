@@ -4,9 +4,11 @@ NOM,ADRESSE,LAT,LNG,SCALE,CONTACT,WEB,DESCRIPTION,SOURCE,TAGS,COMMENTAIRE
 ,,"5 chiffres après","la virgule !","zone > city > region (ou rien si précis)","téléphone - mail - contact","url du site web (ou des sites, séparés par "" - "")","apparaîtra en popup. pas plus de 3/4 phrases","≠ jeux de données (caravane, hétérotopies, etc...)","pour filtrer tous les points sur la carte",
 ,,,,,,,,,,
 ,,,,,,,,,,
-,,,,,,,,,,
-"Points de vente L'Age de Faire",,,,,,http://magasin.lagedefaire-lejournal.fr,,,,"connexion dynamique ?"
-"Carte annonces PasserelleEco",,,,,,http://www.ecovillageglobal.fr/,,,,"connexion dynamique ?"
+"Carte Socioeco de l'ESS",,,,,,http://www.socioeco.org/solutions_fr.html,,,,"intégration dynamique ?"
+"Réseau Fermes d'avenir",,,,,,"http://www.fermesdavenir.org/ - https://www.google.com/maps/d/viewer?mid=zzRmBZs-kmTI.kfrKdPaEgGn4",,,,"intégration dynamique ?"
+"Carte initiatives de transition en Ardèche",,,,,,http://www.oui-transition07.org,,,,"intégration dynamique ?"
+"Points de vente L'Age de Faire",,,,,,http://magasin.lagedefaire-lejournal.fr,,,,"intégration dynamique ?"
+"Carte annonces PasserelleEco",,,,,,http://www.ecovillageglobal.fr/,,,,"intégration dynamique ?"
 ,,,,,,,,,,
 Art'Kafé,"Le village 07170 Mirabel France",,,,"06 12 90 02 74",http://www.zarinakhan.org/index.php?p=1_54_Art-Kaf,"En l'an 2000 la Compagnie Zarina Khan s'est installée en Ardèche, à Mirabel, où elle a ouvert le premier Centre Culturel Rural:le Art'Kafé. Ici, le public est invité, non pas à « consommer » de l'Art mais à traverser l'espace de création. Les ateliers d'écriture et de théâtre s'enchaînent, enfants, anciens, intellectuels et analphabètes se réunissent, et de leurs mots naissent des pièces exportées au loin afin que les pensées circulent et fassent réseaux de citoyens. Villages et sites naturels sont mis en scène",gf,,
 "Changement de Cap","Quartier les Plaines (à l'Entrée du Village, à côté de la pépinière ""Reynouard"") 07230 ",,,,"06 51 05 57 34",,"Recyclerie engagée : pour donner vos inutiles et acheter tout ce dont vous avez besoin pour vraiment pas cher du tout ! POur rencontrer des gens, être bénévoles, et tout un tas de surprises, une adresse incontournable !",gf,,
