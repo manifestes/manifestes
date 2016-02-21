@@ -703,6 +703,99 @@ angular.module('manifest.controllers', ['underscore','config'])
       }).addTo(map);
       var layers = new L.LayerGroup().addTo(map);
 
+      // prepare credits
+      var credits = {};
+      _.each($scope.meta.mapcredits, function(c) {
+        credits[c.slug] = c;
+      });
+
+      // business to add a point
+      ////////////////////////////////////////////////
+      var addMarker = function(m) {
+        var credit = credits[m.source];
+        //console.log(credit);
+
+        // MakiMarkers !
+        var icon = 'circle';
+        //var color = "#"+credit.color || "#000";
+        var size = [7,7];
+        // icons use maki-markers: https://www.mapbox.com/maki/
+        if(/region/.test(m.scale)) {
+          size = [10,10];
+          //icon = "land-use";
+        }
+        if(/city/.test(m.scale)) {
+          //size = [12,12];
+          //icon = "circle-stroked";
+        }
+        if(/zone/.test(m.scale)) {
+          //size = [10,10];
+          //icon = "circle-stroked";
+        }
+        if(/human/.test(m.tags)) {
+          //size = "s";
+          //icon = "heart";
+        }
+        if(/list/.test(m.tags)) {
+          size = [15,15];
+        }
+
+
+        //var customPopup = "<div ng-include ng-init=\"data=leafmarkers['"+m.source+"']['mark_"+k+"'];\" src=\"'partials/marker.html'\"></div>";
+        var customPopup = "<div class='details'>"+
+          "<h3>"+m.name+"</h3>";
+        if(m.address)
+          customPopup += "<div class='address'>"+m.address+"</div>";
+        if(m.description)
+          customPopup += "<div class='descr'>"+m.description+"</div>";
+        if(m.web)
+          customPopup += "<div class='web'>"+m.web+"</div>";
+        if(m.contact)
+          customPopup += "<div class='contact'>"+m.contact+"</div>";
+        customPopup += "</div>";
+
+        var customOptions = {
+          'maxWidth': '500',
+          'className' : 'custom'
+        }
+        m.lat = parseFloat(m.lat);
+        m.lng = parseFloat(m.lng);
+        if(m.lat && m.lng) {
+
+          // store total count to display counts within legend
+          credit.count += 1;
+
+          var css =
+            "markdiv"+
+            " markdiv-"+credit.color;
+          if(m.source)
+            css += " src-"+m.source;
+          if(m.tags)
+            css += " t-"+m.tags.replace(/ /g," t-");
+            
+          var theM = L.marker([m.lat, m.lng], {
+            title: m.name,
+            icon: new L.DivIcon({
+              iconSize: size,
+              className: css 
+            })
+            /*icon: L.MakiMarkers.icon({
+              icon: icon,
+              color: color,
+              size: size,
+              className: css
+            })*/
+          })
+          .bindPopup(customPopup,customOptions)
+          .addTo(layers);
+        } else {
+          if($scope.settings.verbose)
+            console.log("!! no lat/lng for:",m);
+        }
+      };
+
+      // fetch local data
+      ////////////////////////////////////////////////
       $http.get(settings.datapath + '/map.csv').success(function(data) {
         //console.log("got csv data:",data);
         //$scope.data = data;
@@ -716,68 +809,8 @@ angular.module('manifest.controllers', ['underscore','config'])
           //   layers[m.source] = new L.LayerGroup().addTo(overlays);
           // }
 
-          var credit = _.findWhere($scope.meta.mapcredits, {slug: m.source});
-          //console.log(credit);
-
-          var icon = 'circle';
-          var color = "#"+credit.color || "#000";
-          var size = "s";
-
-          // icons use maki-markers: https://www.mapbox.com/maki/
-
-          if(/region/.test(m.scale)) {
-            size = "m";
-            icon = "land-use";
-          }
-          if(/city/.test(m.scale)) {
-            size = "s";
-            icon = "circle-stroked";
-          }
-          if(/zone/.test(m.scale)) {
-            size = "s";
-            icon = "circle-stroked";
-          }
-          if(/human/.test(m.tags)) {
-            size = "s";
-            icon = "heart";
-          }
-
-          //var customPopup = "<div ng-include ng-init=\"data=leafmarkers['"+m.source+"']['mark_"+k+"'];\" src=\"'partials/marker.html'\"></div>";
-          var customPopup = "<div class='details'>"+
-            "<h3>"+m.name+"</h3>"+
-            "<div class='address'>"+m.address+"</div>"+
-            "<div class='descr'>"+m.description+"</div>"+
-            "<div class='web'>"+m.web+"</div>"+
-            "<div class='contact'>"+m.contact+"</div>"+
-          "</div>";
-          var customOptions = {
-            'maxWidth': '500',
-            'className' : 'custom'
-          }
-          m.lat = parseFloat(m.lat);
-          m.lng = parseFloat(m.lng);
-          if(m.lat && m.lng) {
-
-            // store total count to display stats
-            credit.count += 1;
-
-            var css = "src-"+m.source+" t-"+m.tags.replace(/ /g," t-");
-
-            var theM = L.marker([m.lat, m.lng], {
-              title: m.name,
-              icon: L.MakiMarkers.icon({
-                icon: icon,
-                color: color,
-                size: size,
-                className: css
-              })
-            })
-            .bindPopup(customPopup,customOptions)
-            .addTo(layers);
-          } else {
-            if($scope.settings.verbose)
-              console.log("!! no lat/lng for:",m);
-          }
+          addMarker(m);
+          
         });
         
         if($scope.settings.verbose)
@@ -787,6 +820,33 @@ angular.module('manifest.controllers', ['underscore','config'])
         layerControl.addTo(map);
         
         //console.log("overlays !!",layers);
+        // now fetch the external data
+        var toFetch = _.filter($scope.meta.mapcredits, {type: "geojson"});
+        _.each(toFetch, function(dat) {
+          
+          console.log("fetching url: "+dat.geojson);
+          addMarker({
+            source : dat.slug,
+            name : "test",
+            description : "test",
+            web : "test",
+            lat : 51.50,
+            lng : -0.46
+          });
+          // $http.get(dat.geojson)
+          //   .success(function(geoj) {
+          //     console.log(geoj);
+          //     _.each(geoj.FeatureCollection, function(m) {
+          //       console.log(m);
+                
+          //     });
+          //   })
+          //   .error(function(err) {
+          //     console.log(err);
+          //   });
+        });
+
+
 
         L.control.search({
           layer: layers,
@@ -798,14 +858,24 @@ angular.module('manifest.controllers', ['underscore','config'])
           }
         }).addTo(map);
 
+        updateMapStyles();
+
         // when ready, remove loading
         $timeout(function(){ $scope.state.loading = false; });
 
       }).error(function(err) {
-
         console.log(err);
-
       });
+
+      var updateMapStyles = function() {
+        $scope.state.mapStyles = _.map($scope.meta.mapcredits, function(e) {
+          var act = e.active ? "block" : "none";
+          var css = 
+            ".markdiv-"+e.color+" {background: #"+e.color+";} " +
+            ".src-"+e.slug+" { display: "+act+"; }";
+          return css;
+        }).join(" ");
+      };
 
       //////////////////////
       $scope.toggleMapLegend = function(c) {
@@ -823,13 +893,9 @@ angular.module('manifest.controllers', ['underscore','config'])
           e.active = true;
         });
 
-        $scope.state.mapStyles = _.map($scope.meta.mapcredits, function(e) {
-          var act = e.active ? "block" : "none";
-          return ".src-"+e.slug+ "{ display: "+act+"; }";
-        }).join(" ");
+        updateMapStyles();
       };
     }
-
   }
 ])
   

@@ -101,6 +101,27 @@ mapcredits:
         description: "Générations Futur est une association\nqui promeut les médias libres et toutes\nles actions bénéloves et solidaires"
         url: http://generationsfutur.zici.fr/
         color: 985249
+    -   slug: report
+        name: Reporterre
+        description: Le quotidien de l'écologie
+        url: http://reporterre.net
+        type: geojson
+        geojson: http://reporterre.net/spip.php?page=gis_json&objets=articles&limit=500
+        color: 5db678
+    -   slug: basta
+        name: Bastamag
+        description: Portail de la presse indépendante
+        url: http://portail.bastamag.net
+        type: geojson
+        geojson: http://portail.bastamag.net/spip.php?page=gis_json&objets=syndic_articles&limit=500
+        color: bc4a4a
+    -   slug: passeco
+        name: Passerelle Éco
+        description: "Le réseau des éco-annonces\nde la revue Passerelle Éco"
+        url: http://www.ecovillageglobal.fr
+        type: geojson
+        geojson: http://www.ecovillageglobal.fr/spip.php?page=gis_json&objets=annonces&limit=500
+        color: c7d12c
 network:
     loading: >
         le réseau est en cours d'affichage
@@ -141,7 +162,12 @@ disclaimer:
 
         **Les couleurs correspondent aux classes de modularité**, c-à-d aux communautés détectées selon la structure du réseau
     map: >
-        Les couleurs des points correspondent aux différentes sources (cf légende). N'oubliez pas qu'ils ne sont pas tous des lieux de passage: **observez donc le plus grand respect** si vous souhaitez les visiter: renseignez-vous et prévenez avant de débarquer !
+        - Les **couleurs** des points correspondent aux différentes sources (cf légende)
+
+        - Les points **les plus gros** renvoient vers d'autres cartes
+
+
+        N'oubliez pas qu'ils ne sont pas tous des lieux de passage: **observez donc le plus grand respect** si vous souhaitez les visiter: renseignez-vous et prévenez avant de débarquer !
 
 
         Pour ajouter, modifier ou supprimer un lieu, utilisez [ce tableau partagé](http://framacalc.org/carto)
