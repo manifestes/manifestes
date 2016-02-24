@@ -2458,13 +2458,13 @@ body.layout-mapprint .container {
   border-radius: 10px;
   /*opacity: 0.8;*/
 }
-.map .legend {
+.map .legendwrapper {
   box-sizing: border-box;
   z-index: 25;
   position: absolute;
   right: 0px;
   height: 100%;
-  max-width: 160px;
+  max-width: 175px;
   padding-top: 32px;
   font-size: 0.75em;
   background: white;
@@ -2473,24 +2473,28 @@ body.layout-mapprint .container {
   -webkit-box-shadow: 0px 0px 7px 0px #525252;
   -moz-box-shadow: 0px 0px 7px 0px #525252;
   box-shadow: 0px 0px 7px 0px #525252;
+  overflow-y: auto;
 }
-.map .legend .credit {
+.map .legendwrapper .legend {
+  height: auto;
+}
+.map .legendwrapper .credit {
   display: inline-block;
-  padding: 10px;
+  padding: 6px 10px;
   width: 100%;
   box-sizing: border-box;
   opacity: 0.2;
 }
-.map .legend .credit.odd {
+.map .legendwrapper .credit.odd {
   background: #F0F0F0;
 }
-.map .legend .credit i {
+.map .legendwrapper .credit i {
   font-size: 0.8em;
 }
-.map .legend .credit.active {
+.map .legendwrapper .credit.active {
   opacity: 1;
 }
-.map .legend .count {
+.map .legendwrapper .count {
   position: absolute;
   top: 5px;
   left: 12px;
@@ -2503,7 +2507,7 @@ body.layout-mapprint .container {
   border-radius: 4px;
   border: 1px solid #C3C3C3;
 }
-.map .legend img.marker {
+.map .legendwrapper img.marker {
   float: left;
   margin: 0px 10px -25px 1px;
 }
@@ -2653,11 +2657,11 @@ body.layout-mapprint .container {
     padding-left: 190px !important;
   }
 }
-@media (max-height: 600px) {
+/*@media (max-height: 600px) {
   .map .legend {
     display: none;
   }
-}
+}*/
 /* PHONES & TABLETS */
 @media (max-width: 1025px) {
   .container,

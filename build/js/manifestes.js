@@ -1,6 +1,251 @@
 !function(t,e){"function"==typeof define&&define.amd?define([],e):"object"==typeof module&&module.exports?module.exports=e():t.CSV=e()}(this,function(){"use strict";function t(t){var e=typeof t;return"function"===e||"object"===e&&!!t}function e(t){return"string"==typeof t}function n(t){return!isNaN(+t)}function i(t){return 0==t||1==t}function r(t){return null==t}function o(t){return null!=t}function c(t,e){return o(t)?t:e}function u(t,e){for(var n=0,i=t.length;i>n&&e(t[n],n)!==!1;n+=1);}function s(t){return t.replace(/"/g,'\\"')}function a(t){return"attrs["+t+"]"}function l(t,e){return n(t)?"Number("+a(e)+")":i(t)?"Boolean("+a(e)+" == true)":"String("+a(e)+")"}function f(t,n,i,r){var o=[];return 3==arguments.length?(n?g(n)?u(i,function(i,r){e(n[r])?n[r]=n[r].toLowerCase():t[n[r]]=n[r],o.push("deserialize[cast["+r+"]]("+a(r)+")")}):u(i,function(t,e){o.push(l(t,e))}):u(i,function(t,e){o.push(a(e))}),o="return ["+o.join(",")+"]"):(n?g(n)?u(i,function(i,c){e(n[c])?n[c]=n[c].toLowerCase():t[n[c]]=n[c],o.push('"'+s(r[c])+'": deserialize[cast['+c+"]]("+a(c)+")")}):u(i,function(t,e){o.push('"'+s(r[e])+'": '+l(t,e))}):u(i,function(t,e){o.push('"'+s(r[e])+'": '+a(e))}),o="return {"+o.join(",")+"}"),Function("attrs","deserialize","cast",o)}function h(t,e){var n,i=0;return u(e,function(e){var r,o=e;-1!=p.indexOf(e)&&(o="\\"+o),r=t.match(RegExp(o,"g")),r&&r.length>i&&(i=r.length,n=e)}),n||e[0]}var p=["|","^"],d=[",",";","  ","|","^"],m=["\r\n","\r","\n"],g=Array.isArray||function(t){return"[object Array]"===toString.call(t)},y=function(){function n(t,n){if(n||(n={}),g(t))this.mode="encode";else{if(!e(t))throw Error("Incompatible format!");this.mode="parse"}this.data=t,this.options={header:c(n.header,!1),cast:c(n.cast,!0)};var i=n.lineDelimiter||n.line,r=n.cellDelimiter||n.delimiter;this.isParser()?(this.options.lineDelimiter=i||h(this.data,m),this.options.cellDelimiter=r||h(this.data,d),this.data=o(this.data,this.options.lineDelimiter)):this.isEncoder()&&(this.options.lineDelimiter=i||"\r\n",this.options.cellDelimiter=r||",")}function i(t,e,n,i,r){t(new e(n,i,r))}function o(t,e){return t.slice(-e.length)!=e&&(t+=e),t}function s(n){return g(n)?"array":t(n)?"object":e(n)?"string":r(n)?"null":"primitive"}return n.prototype.set=function(t,e){return this.options[t]=e},n.prototype.isParser=function(){return"parse"==this.mode},n.prototype.isEncoder=function(){return"encode"==this.mode},n.prototype.parse=function(t){function e(){s={escaped:!1,quote:!1,cell:!0}}function n(){m.cell=""}function r(){m.line=[]}function o(t){m.line.push(s.escaped?t.slice(1,-1).replace(/""/g,'"'):t),n(),e()}function c(t){o(t.slice(0,1-p.lineDelimiter.length))}function u(){d?g(d)?(a=f(y,p.cast,m.line,d),(u=function(){i(t,a,m.line,y,p.cast)})()):d=m.line:(a||(a=f(y,p.cast,m.line)),(u=function(){i(t,a,m.line,y,p.cast)})())}if("parse"==this.mode){if(0===this.data.trim().length)return[];var s,a,l,h=this.data,p=this.options,d=p.header,m={cell:"",line:[]},y=this.deserialize;t||(l=[],t=function(t){l.push(t)}),1==p.lineDelimiter.length&&(c=o);var v,A,D,b=h.length,j=p.cellDelimiter.charCodeAt(0),w=p.lineDelimiter.charCodeAt(p.lineDelimiter.length-1);for(e(),v=0,A=0;b>v;v++)D=h.charCodeAt(v),s.cell&&(s.cell=!1,34==D)?s.escaped=!0:s.escaped&&34==D?s.quote=!s.quote:(s.escaped&&s.quote||!s.escaped)&&(D==j?(o(m.cell+h.slice(A,v)),A=v+1):D==w&&(c(m.cell+h.slice(A,v)),A=v+1,u(),r()));return l?l:this}},n.prototype.deserialize={string:function(t){return t+""},number:function(t){return+t},"boolean":function(t){return!!t}},n.prototype.serialize={object:function(t){var e=this,n=Object.keys(t),i=Array(n.length);return u(n,function(n,r){i[r]=e[s(t[n])](t[n])}),i},array:function(t){var e=this,n=Array(t.length);return u(t,function(t,i){n[i]=e[s(t)](t)}),n},string:function(t){return'"'+(t+"").replace(/"/g,'""')+'"'},"null":function(){return""},primitive:function(t){return t}},n.prototype.encode=function(t){function n(t){return t.join(c.cellDelimiter)}if("encode"==this.mode){if(0==this.data.length)return"";var i,r,o=this.data,c=this.options,a=c.header,l=o[0],f=this.serialize,h=0;t||(r=Array(o.length),t=function(t,e){r[e+h]=t}),a&&(g(a)||(i=Object.keys(l),a=i),t(n(f.array(a)),0),h=1);var p,d=s(l);return"array"==d?(g(c.cast)?(p=Array(c.cast.length),u(c.cast,function(t,n){e(t)?p[n]=t.toLowerCase():(p[n]=t,f[t]=t)})):(p=Array(l.length),u(l,function(t,e){p[e]=s(t)})),u(o,function(e,i){var r=Array(p.length);u(e,function(t,e){r[e]=f[p[e]](t)}),t(n(r),i)})):"object"==d&&(i=Object.keys(l),g(c.cast)?(p=Array(c.cast.length),u(c.cast,function(t,n){e(t)?p[n]=t.toLowerCase():(p[n]=t,f[t]=t)})):(p=Array(i.length),u(i,function(t,e){p[e]=s(l[t])})),u(o,function(e,r){var o=Array(i.length);u(i,function(t,n){o[n]=f[p[n]](e[t])}),t(n(o),r)})),r?r.join(c.lineDelimiter):this}},n.prototype.forEach=function(t){return this[this.mode](t)},n}();return y.parse=function(t,e){return new y(t,e).parse()},y.encode=function(t,e){return new y(t,e).encode()},y.forEach=function(t,e,n){return 2==arguments.length&&(n=e),new y(t,e).forEach(n)},y});
 ;
 
+/* Copyright 2015 William Summers, MetaTribal LLC
+ * adapted from https://developer.mozilla.org/en-US/docs/JXON
+ *
+ * Licensed under the MIT License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     https://opensource.org/licenses/MIT
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/**
+ * @author William Summers
+ *
+ */
+ 
+var xmlToJSON = (function () {
+
+    this.version = "1.3";
+
+    var options = { // set up the default options
+        mergeCDATA: true, // extract cdata and merge with text
+        grokAttr: true, // convert truthy attributes to boolean, etc
+        grokText: true, // convert truthy text/attr to boolean, etc
+        normalize: true, // collapse multiple spaces to single space
+        xmlns: true, // include namespaces as attribute in output
+        namespaceKey: '_ns', // tag name for namespace objects
+        textKey: '_text', // tag name for text nodes
+        valueKey: '_value', // tag name for attribute values
+        attrKey: '_attr', // tag for attr groups
+        cdataKey: '_cdata', // tag for cdata nodes (ignored if mergeCDATA is true)
+        attrsAsObject: true, // if false, key is used as prefix to name, set prefix to '' to merge children and attrs.
+        stripAttrPrefix: true, // remove namespace prefixes from attributes
+        stripElemPrefix: true, // for elements of same name in diff namespaces, you can enable namespaces and access the nskey property
+        childrenAsArray: true // force children into arrays
+    };
+
+    var prefixMatch = new RegExp(/(?!xmlns)^.*:/);
+    var trimMatch = new RegExp(/^\s+|\s+$/g);
+
+    this.grokType = function (sValue) {
+        if (/^\s*$/.test(sValue)) {
+            return null;
+        }
+        if (/^(?:true|false)$/i.test(sValue)) {
+            return sValue.toLowerCase() === "true";
+        }
+        if (isFinite(sValue)) {
+            return parseFloat(sValue);
+        }
+        return sValue;
+    };
+
+    this.parseString = function (xmlString, opt) {
+        return this.parseXML(this.stringToXML(xmlString), opt);
+    }
+
+    this.parseXML = function (oXMLParent, opt) {
+
+        // initialize options
+        for (var key in opt) {
+            options[key] = opt[key];
+        }
+
+        var vResult = {},
+            nLength = 0,
+            sCollectedTxt = "";
+
+        // parse namespace information
+        if (options.xmlns && oXMLParent.namespaceURI) {
+            vResult[options.namespaceKey] = oXMLParent.namespaceURI;
+        }
+
+        // parse attributes
+        // using attributes property instead of hasAttributes method to support older browsers
+        if (oXMLParent.attributes && oXMLParent.attributes.length > 0) {
+            var vAttribs = {};
+
+            for (nLength; nLength < oXMLParent.attributes.length; nLength++) {
+                var oAttrib = oXMLParent.attributes.item(nLength);
+                vContent = {};
+                var attribName = '';
+
+                if (options.stripAttrPrefix) {
+                    attribName = oAttrib.name.replace(prefixMatch, '');
+
+                } else {
+                    attribName = oAttrib.name;
+                }
+
+                if (options.grokAttr) {
+                    vContent[options.valueKey] = this.grokType(oAttrib.value.replace(trimMatch, ''));
+                } else {
+                    vContent[options.valueKey] = oAttrib.value.replace(trimMatch, '');
+                }
+
+                if (options.xmlns && oAttrib.namespaceURI) {
+                    vContent[options.namespaceKey] = oAttrib.namespaceURI;
+                }
+
+                if (options.attrsAsObject) { // attributes with same local name must enable prefixes
+                    vAttribs[attribName] = vContent;
+                } else {
+                    vResult[options.attrKey + attribName] = vContent;
+                }
+            }
+
+            if (options.attrsAsObject) {
+                vResult[options.attrKey] = vAttribs;
+            } else {}
+        }
+
+        // iterate over the children
+        if (oXMLParent.hasChildNodes()) {
+            for (var oNode, sProp, vContent, nItem = 0; nItem < oXMLParent.childNodes.length; nItem++) {
+                oNode = oXMLParent.childNodes.item(nItem);
+
+                if (oNode.nodeType === 4) {
+                    if (options.mergeCDATA) {
+                        sCollectedTxt += oNode.nodeValue;
+                    } else {
+                        if (vResult.hasOwnProperty(options.cdataKey)) {
+                            if (vResult[options.cdataKey].constructor !== Array) {
+                                vResult[options.cdataKey] = [vResult[options.cdataKey]];
+                            }
+                            vResult[options.cdataKey].push(oNode.nodeValue);
+
+                        } else {
+                            if (options.childrenAsArray) {
+                                vResult[options.cdataKey] = [];
+                                vResult[options.cdataKey].push(oNode.nodeValue);
+                            } else {
+                                vResult[options.cdataKey] = oNode.nodeValue;
+                            }
+                        }
+                    }
+                } /* nodeType is "CDATASection" (4) */
+                else if (oNode.nodeType === 3) {
+                    sCollectedTxt += oNode.nodeValue;
+                } /* nodeType is "Text" (3) */
+                else if (oNode.nodeType === 1) { /* nodeType is "Element" (1) */
+
+                    if (nLength === 0) {
+                        vResult = {};
+                    }
+
+                    // using nodeName to support browser (IE) implementation with no 'localName' property
+                    if (options.stripElemPrefix) {
+                        sProp = oNode.nodeName.replace(prefixMatch, '');
+                    } else {
+                        sProp = oNode.nodeName;
+                    }
+
+                    vContent = xmlToJSON.parseXML(oNode);
+
+                    if (vResult.hasOwnProperty(sProp)) {
+                        if (vResult[sProp].constructor !== Array) {
+                            vResult[sProp] = [vResult[sProp]];
+                        }
+                        vResult[sProp].push(vContent);
+
+                    } else {
+                        if (options.childrenAsArray) {
+                            vResult[sProp] = [];
+                            vResult[sProp].push(vContent);
+                        } else {
+                            vResult[sProp] = vContent;
+                        }
+                        nLength++;
+                    }
+                }
+            }
+        } else if (!sCollectedTxt) { // no children and no text, return null
+            if (options.childrenAsArray) {
+                vResult[options.textKey] = [];
+                vResult[options.textKey].push(null);
+            } else {
+                vResult[options.textKey] = null;
+            }
+        }
+
+        if (sCollectedTxt) {
+            if (options.grokText) {
+                var value = this.grokType(sCollectedTxt.replace(trimMatch, ''));
+                if (value !== null && value !== undefined) {
+                    vResult[options.textKey] = value;
+                }
+            } else if (options.normalize) {
+                vResult[options.textKey] = sCollectedTxt.replace(trimMatch, '').replace(/\s+/g, " ");
+            } else {
+                vResult[options.textKey] = sCollectedTxt.replace(trimMatch, '');
+            }
+        }
+
+        return vResult;
+    }
+
+
+    // Convert xmlDocument to a string
+    // Returns null on failure
+    this.xmlToString = function (xmlDoc) {
+        try {
+            var xmlString = xmlDoc.xml ? xmlDoc.xml : (new XMLSerializer()).serializeToString(xmlDoc);
+            return xmlString;
+        } catch (err) {
+            return null;
+        }
+    }
+
+    // Convert a string to XML Node Structure
+    // Returns null on failure
+    this.stringToXML = function (xmlString) {
+        try {
+            var xmlDoc = null;
+
+            if (window.DOMParser) {
+
+                var parser = new DOMParser();
+                xmlDoc = parser.parseFromString(xmlString, "text/xml");
+
+                return xmlDoc;
+            } else {
+                xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+                xmlDoc.async = false;
+                xmlDoc.loadXML(xmlString);
+
+                return xmlDoc;
+            }
+        } catch (e) {
+            return null;
+        }
+    }
+
+    return this;
+}).call({});
+
+if (typeof module != "undefined" && module !== null && module.exports) module.exports = xmlToJSON;
+else if (typeof define === "function" && define.amd) define(function() {return xmlToJSON});
+
+;
+
 /*
  Leaflet, a JavaScript library for mobile-friendly interactive maps. http://leafletjs.com
  (c) 2010-2013, Vladimir Agafonkin
@@ -3200,12 +3445,21 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,datapath:'data/',assets:'build/',lastupdate:'21 February 2016 - 10:23'})
+.constant('settings', {dev:false,datapath:'data/',assets:'build/',lastupdate:'24 February 2016 - 6:46'})
 
 ;
 ;
 
 'use strict';
+
+var replaceURLWithHTMLLinks = function(text) {
+    var exp = /(\b(https?):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+    return text.replace(exp,"<a target='_blank' href='$1'>$1</a>"); 
+};
+var totext = function(htm) {
+  if(htm) return htm.replace(/<[^>]+>/gm,'');
+  else return "";
+};
 
 /* Controllers */
 
@@ -3499,11 +3753,6 @@ angular.module('manifest.controllers', ['underscore','config'])
     $scope.rgx = {};
     $scope.rgx.inlnk = new RegExp("<[^>]*>","gi");
     $scope.rgx.search = new RegExp("",'i'); // is updated after each keystroke on search input
-    var totext = function(htm) {
-      if(htm) return htm.replace(/<[^>]+>/gm,'');
-      else return "";
-    };
-
 
     var shallShowSearch = function(o) { // "o" is a section or a link
       var reg = $scope.rgx.search;
@@ -3892,7 +4141,7 @@ angular.module('manifest.controllers', ['underscore','config'])
         scrollWheelZoom: true,
         doubleClickZoom: true,
         center: [47, 2.5],
-        zoom: 7,
+        zoom: 6,
         minZoom: 5,
         maxZoom: 15,
         locateButton: true,
@@ -3920,7 +4169,9 @@ angular.module('manifest.controllers', ['underscore','config'])
       ////////////////////////////////////////////////
       var addMarker = function(m) {
         var credit = credits[m.source];
-        //console.log(credit);
+        if(!credit)
+          credit = credits['misc'];
+          
 
         // MakiMarkers !
         var icon = 'circle';
@@ -3955,8 +4206,9 @@ angular.module('manifest.controllers', ['underscore','config'])
           customPopup += "<div class='address'>"+m.address+"</div>";
         if(m.description)
           customPopup += "<div class='descr'>"+m.description+"</div>";
-        if(m.web)
-          customPopup += "<div class='web'>"+m.web+"</div>";
+        if(m.web) {
+          customPopup += "<div class='web'>"+replaceURLWithHTMLLinks(m.web)+"</div>";
+        }
         if(m.contact)
           customPopup += "<div class='contact'>"+m.contact+"</div>";
         customPopup += "</div>";
@@ -4001,9 +4253,10 @@ angular.module('manifest.controllers', ['underscore','config'])
         }
       };
 
-      // fetch local data
+      
       ////////////////////////////////////////////////
-      $http.get(settings.datapath + '/map.csv').success(function(data) {
+      // fetch local data
+      $http.get(settings.datapath+'/map.csv').success(function(data) {
         //console.log("got csv data:",data);
         //$scope.data = data;
         var ms = new CSV(data, {header:true, cast:false}).parse();
@@ -4027,34 +4280,109 @@ angular.module('manifest.controllers', ['underscore','config'])
         layerControl.addTo(map);
         
         //console.log("overlays !!",layers);
-        // now fetch the external data
+
+
+        ///////////////////////////////////////////////////////////////
+        // now fetch the external geojson data
         var toFetch = _.filter($scope.meta.mapcredits, {type: "geojson"});
         _.each(toFetch, function(dat) {
-          
-          console.log("fetching url: "+dat.geojson);
-          addMarker({
-            source : dat.slug,
-            name : "test",
-            description : "test",
-            web : "test",
-            lat : 51.50,
-            lng : -0.46
-          });
-          // $http.get(dat.geojson)
-          //   .success(function(geoj) {
-          //     console.log(geoj);
-          //     _.each(geoj.FeatureCollection, function(m) {
-          //       console.log(m);
-                
-          //     });
-          //   })
-          //   .error(function(err) {
-          //     console.log(err);
-          //   });
+          $http.get(settings.datapath+'/'+dat.geojson)
+          //$http.get(dat.geojson)
+            .success(function(geoj) {
+              console.log(dat.slug,geoj);
+              _.each(geoj.features, function(m) {
+
+                // specifics !
+                var name = totext(m.properties.title);
+                var article_url = "";
+                var web =  "";
+                if(dat.slug=='reporterre') {
+                  name = name.replace(/Il y a \d* jours./,"");
+                  web = dat.url +"/"+ m.properties.title.match(/href:\'([^\']*)\'/)[1];
+                }
+                if(dat.slug=='bastamag') {
+                  web = m.properties.title.match(/<a href=\'([^\']*)\'/)[1];
+                }
+                if(dat.slug=='passerelle')
+                  web = dat.url +"/"+ m.properties.title.match(/<a href=\"([^\"]*)\"/)[1];
+
+                addMarker({
+                  source: dat.slug,
+                  name: name,
+                  description: m.properties.description,
+                  web: web,
+                  lat: m.geometry.coordinates[1],
+                  lng: m.geometry.coordinates[0]
+                });
+              });
+            })
+            .error(function(err) {
+              console.log(err);
+            });
         });
 
+        ///////////////////////////////////////////////////////////////
+        // now fetch the external demosphere
+        var demos = _.findWhere($scope.meta.mapcredits, {type: "demosphere"});
+        if(!demos.hide) {
+          _.each(demos.json, function(u) {
+            $http.get(u + "/event-list-json", { params: {
+              //startTime: 1456182001,
+              //endTime: 1456763106,
+              place__latitude: true,
+              place__longitude: true,
+              place__zoom: true,
+              topics: true,
+              url: true
+              //random=0.40452415758106963
+            }}).success(function(json) {
+                console.log("Demosph:",json);
+                _.each(json.events, function(e) {
+                  addMarker({
+                    source: "demosphere",
+                    name: e.time,
+                    description: e.title,
+                    address: e.place_city_name,
+                    web: u+e.url,
+                    lat: e.place__latitude,
+                    lng: e.place__longitude
+                  });
+                });
+              })
+              .error(function(err) {
+                console.log(err);
+              });
+          });
+        }
+
+        ///////////////////////////////////////////////////////////////
+        // now fetch the external xml
+        var agedefaire = _.findWhere($scope.meta.mapcredits, {type: "xml"});
+          $http.get(settings.datapath+'/'+agedefaire.xml)
+          //$http.get(agedefaire.xml)
+            .success(function(xml) {
+              var json = xmlToJSON.parseString(xml, {
+                childrenAsArray: false
+              });
+              console.log("Age de:",json);
+              _.each(json.markers.marker, function(m) {
+                addMarker({
+                  source: "agedefaire",
+                  name: m._attr.name._value,
+                  description: "Point de vente de L'âge de faire",
+                  address: m._attr.address._value,
+                  lat: m._attr.lat._value,
+                  lng: m._attr.lng._value
+                });
+              });
+            })
+            .error(function(err) {
+              console.log(err);
+            });
 
 
+        ///////////////////////////////////////////////////////////////
+        // init search (must do it ansync when all finished !)
         L.control.search({
           layer: layers,
           initial: false,

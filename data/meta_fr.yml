@@ -77,7 +77,7 @@ mapcredits:
         url: http://heterotopies.overblog.com/cartographie
         color: 6779AB
     -   slug: ldv
-        name: Lieux de vie
+        name: "Lieux de vie\nBases nomades"
         description: "Lieux de vie, collectifs, bases nomades, \necolieux, fermes autogérées, Zap, Zad, \ncommunautés, squats..."
         url: https://www.google.com/maps/d/viewer?mid=zCUrDZ_sv7Fw.k9HCrqv3hIVA
         color: C06538
@@ -101,27 +101,49 @@ mapcredits:
         description: "Générations Futur est une association\nqui promeut les médias libres et toutes\nles actions bénéloves et solidaires"
         url: http://generationsfutur.zici.fr/
         color: 985249
-    -   slug: report
-        name: Reporterre
+    -   slug: reporterre
+        name: Articles Reporterre
         description: Le quotidien de l'écologie
         url: http://reporterre.net
         type: geojson
-        geojson: http://reporterre.net/spip.php?page=gis_json&objets=articles&limit=500
+        geojson: map_report.geojson
+        _geojson: http://reporterre.net/spip.php?page=gis_json&objets=articles&limit=500
         color: 5db678
-    -   slug: basta
-        name: Bastamag
+    -   slug: bastamag
+        name: Portail Bastamag
         description: Portail de la presse indépendante
         url: http://portail.bastamag.net
         type: geojson
-        geojson: http://portail.bastamag.net/spip.php?page=gis_json&objets=syndic_articles&limit=500
+        geojson: map_basta.geojson
+        _geojson: http://portail.bastamag.net/spip.php?page=gis_json&objets=syndic_articles&limit=500
         color: bc4a4a
-    -   slug: passeco
-        name: Passerelle Éco
+    -   slug: passerelle
+        name: Annonces Passerelle Éco
         description: "Le réseau des éco-annonces\nde la revue Passerelle Éco"
         url: http://www.ecovillageglobal.fr
         type: geojson
-        geojson: http://www.ecovillageglobal.fr/spip.php?page=gis_json&objets=annonces&limit=500
+        geojson: map_passeco.geojson
+        _geojson: http://www.ecovillageglobal.fr/spip.php?page=gis_json&objets=annonces&limit=500
         color: c7d12c
+    -   slug: agedefaire
+        name: Points de vente L'âge de faire
+        description: Des outils pour changer le monde
+        url: http://www.lagedefaire-lejournal.fr/
+        type: xml
+        xml: map_agedefaire.xml
+        _xml: http://magasin.lagedefaire-lejournal.fr/index.php?controller=stores?ajax=1&all=1
+        color: 95b5d5
+    -   slug: demosphere
+        name: Démosphère
+        description: "Le réseau des éco-annonces\nde la revue Passerelle Éco"
+        url: http://www.demosphere.eu/
+        type: demosphere
+        json:
+            - http://montpellier.demosphere.eu
+            - http://paris.demosphere.eu
+            - http://gard.demosphere.eu
+        color: ed9522
+        hide: true  
 network:
     loading: >
         le réseau est en cours d'affichage

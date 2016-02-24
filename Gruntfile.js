@@ -134,6 +134,7 @@ module.exports = function(grunt) {
       js: {
         src: [
           'src/vendor/comma-separated-values/csv.min.js',
+          'src/vendor/xmlToJSON.js/lib/xmlToJSON.js',
 
           'src/vendor/leaflet/dist/leaflet.js',
           'src/vendor/Leaflet.MakiMarkers/Leaflet.MakiMarkers.js',

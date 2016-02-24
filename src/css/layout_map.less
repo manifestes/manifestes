@@ -29,13 +29,13 @@
     /*opacity: 0.8;*/
   }
 
-  .legend {
+  .legendwrapper {
     box-sizing: border-box;
     z-index: 25;
     position: absolute;
     right: 0px;
     height: 100%;
-    max-width: 160px;
+    max-width: 175px;
     padding-top: 32px;
 
     font-size: 0.75em;
@@ -46,9 +46,14 @@
 
     .box-shadow(0px 0px 7px 0px #525252);
 
+    overflow-y: auto; 
+    .legend {
+      height: auto;
+    }
+
     .credit {
       display: inline-block;
-      padding: 10px;
+      padding: 6px 10px;
       width: 100%;
       box-sizing: border-box;
       

@@ -1,5 +1,14 @@
 'use strict';
 
+var replaceURLWithHTMLLinks = function(text) {
+    var exp = /(\b(https?):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+    return text.replace(exp,"<a target='_blank' href='$1'>$1</a>"); 
+};
+var totext = function(htm) {
+  if(htm) return htm.replace(/<[^>]+>/gm,'');
+  else return "";
+};
+
 /* Controllers */
 
 angular.module('underscore', [])
@@ -292,11 +301,6 @@ angular.module('manifest.controllers', ['underscore','config'])
     $scope.rgx = {};
     $scope.rgx.inlnk = new RegExp("<[^>]*>","gi");
     $scope.rgx.search = new RegExp("",'i'); // is updated after each keystroke on search input
-    var totext = function(htm) {
-      if(htm) return htm.replace(/<[^>]+>/gm,'');
-      else return "";
-    };
-
 
     var shallShowSearch = function(o) { // "o" is a section or a link
       var reg = $scope.rgx.search;
@@ -685,7 +689,7 @@ angular.module('manifest.controllers', ['underscore','config'])
         scrollWheelZoom: true,
         doubleClickZoom: true,
         center: [47, 2.5],
-        zoom: 7,
+        zoom: 6,
         minZoom: 5,
         maxZoom: 15,
         locateButton: true,
@@ -713,7 +717,9 @@ angular.module('manifest.controllers', ['underscore','config'])
       ////////////////////////////////////////////////
       var addMarker = function(m) {
         var credit = credits[m.source];
-        //console.log(credit);
+        if(!credit)
+          credit = credits['misc'];
+          
 
         // MakiMarkers !
         var icon = 'circle';
@@ -748,8 +754,9 @@ angular.module('manifest.controllers', ['underscore','config'])
           customPopup += "<div class='address'>"+m.address+"</div>";
         if(m.description)
           customPopup += "<div class='descr'>"+m.description+"</div>";
-        if(m.web)
-          customPopup += "<div class='web'>"+m.web+"</div>";
+        if(m.web) {
+          customPopup += "<div class='web'>"+replaceURLWithHTMLLinks(m.web)+"</div>";
+        }
         if(m.contact)
           customPopup += "<div class='contact'>"+m.contact+"</div>";
         customPopup += "</div>";
@@ -794,9 +801,10 @@ angular.module('manifest.controllers', ['underscore','config'])
         }
       };
 
-      // fetch local data
+      
       ////////////////////////////////////////////////
-      $http.get(settings.datapath + '/map.csv').success(function(data) {
+      // fetch local data
+      $http.get(settings.datapath+'/map.csv').success(function(data) {
         //console.log("got csv data:",data);
         //$scope.data = data;
         var ms = new CSV(data, {header:true, cast:false}).parse();
@@ -820,34 +828,109 @@ angular.module('manifest.controllers', ['underscore','config'])
         layerControl.addTo(map);
         
         //console.log("overlays !!",layers);
-        // now fetch the external data
+
+
+        ///////////////////////////////////////////////////////////////
+        // now fetch the external geojson data
         var toFetch = _.filter($scope.meta.mapcredits, {type: "geojson"});
         _.each(toFetch, function(dat) {
-          
-          console.log("fetching url: "+dat.geojson);
-          addMarker({
-            source : dat.slug,
-            name : "test",
-            description : "test",
-            web : "test",
-            lat : 51.50,
-            lng : -0.46
-          });
-          // $http.get(dat.geojson)
-          //   .success(function(geoj) {
-          //     console.log(geoj);
-          //     _.each(geoj.FeatureCollection, function(m) {
-          //       console.log(m);
-                
-          //     });
-          //   })
-          //   .error(function(err) {
-          //     console.log(err);
-          //   });
+          $http.get(settings.datapath+'/'+dat.geojson)
+          //$http.get(dat.geojson)
+            .success(function(geoj) {
+              console.log(dat.slug,geoj);
+              _.each(geoj.features, function(m) {
+
+                // specifics !
+                var name = totext(m.properties.title);
+                var article_url = "";
+                var web =  "";
+                if(dat.slug=='reporterre') {
+                  name = name.replace(/Il y a \d* jours./,"");
+                  web = dat.url +"/"+ m.properties.title.match(/href:\'([^\']*)\'/)[1];
+                }
+                if(dat.slug=='bastamag') {
+                  web = m.properties.title.match(/<a href=\'([^\']*)\'/)[1];
+                }
+                if(dat.slug=='passerelle')
+                  web = dat.url +"/"+ m.properties.title.match(/<a href=\"([^\"]*)\"/)[1];
+
+                addMarker({
+                  source: dat.slug,
+                  name: name,
+                  description: m.properties.description,
+                  web: web,
+                  lat: m.geometry.coordinates[1],
+                  lng: m.geometry.coordinates[0]
+                });
+              });
+            })
+            .error(function(err) {
+              console.log(err);
+            });
         });
 
+        ///////////////////////////////////////////////////////////////
+        // now fetch the external demosphere
+        var demos = _.findWhere($scope.meta.mapcredits, {type: "demosphere"});
+        if(!demos.hide) {
+          _.each(demos.json, function(u) {
+            $http.get(u + "/event-list-json", { params: {
+              //startTime: 1456182001,
+              //endTime: 1456763106,
+              place__latitude: true,
+              place__longitude: true,
+              place__zoom: true,
+              topics: true,
+              url: true
+              //random=0.40452415758106963
+            }}).success(function(json) {
+                console.log("Demosph:",json);
+                _.each(json.events, function(e) {
+                  addMarker({
+                    source: "demosphere",
+                    name: e.time,
+                    description: e.title,
+                    address: e.place_city_name,
+                    web: u+e.url,
+                    lat: e.place__latitude,
+                    lng: e.place__longitude
+                  });
+                });
+              })
+              .error(function(err) {
+                console.log(err);
+              });
+          });
+        }
+
+        ///////////////////////////////////////////////////////////////
+        // now fetch the external xml
+        var agedefaire = _.findWhere($scope.meta.mapcredits, {type: "xml"});
+          $http.get(settings.datapath+'/'+agedefaire.xml)
+          //$http.get(agedefaire.xml)
+            .success(function(xml) {
+              var json = xmlToJSON.parseString(xml, {
+                childrenAsArray: false
+              });
+              console.log("Age de:",json);
+              _.each(json.markers.marker, function(m) {
+                addMarker({
+                  source: "agedefaire",
+                  name: m._attr.name._value,
+                  description: "Point de vente de L'âge de faire",
+                  address: m._attr.address._value,
+                  lat: m._attr.lat._value,
+                  lng: m._attr.lng._value
+                });
+              });
+            })
+            .error(function(err) {
+              console.log(err);
+            });
 
 
+        ///////////////////////////////////////////////////////////////
+        // init search (must do it ansync when all finished !)
         L.control.search({
           layer: layers,
           initial: false,

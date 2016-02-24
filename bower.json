@@ -22,6 +22,7 @@
     "moment": "~2.10.3",
     "normalize.css": "latest",
     "sigmajs": "https://github.com/jacomyal/sigma.js/archive/master.zip",
-    "underscore": "latest"
+    "underscore": "latest",
+    "xmlToJSON.js": "~1.3.2"
   }
 }
