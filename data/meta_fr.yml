@@ -45,7 +45,7 @@ intro:
     -   layout: map
         icon: fa-map-o
         title: carte
-        descr: une carte interactive qui agrège les lieux référencés par la caravane des alternatives, les hétérotopies, lieux de vie et bases nomades — à visiter !
+        descr: "agrégation de plus de 3000 lieux : caravane des alternatives, hétérotopies, articles Reporterre et Bastamag, annonces Passerelle éco, lieux de vie et bases nomades — à visiter !"
         image: Shigeru_Hatsuyama.jpg
         quote:
             author: Chris Marker, Le Joli Mai, 1h28min

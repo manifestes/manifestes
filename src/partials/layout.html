@@ -1,12 +1,16 @@
+<!--
+      ng-click="swiping ? ( swiping = false ) : slideSplashImage(true,true);"
+      ng-swipe-left="slideSplashImage(true); swiping=true;"
+      ng-swipe-right="slideSplashImage(false); swiping=true;">
+-->
+
 <div
   class="intro"
   ng-class="{hidden:!state.intro}">
   <div class="splash">
     <div
       class="mouseoverlay"
-      ng-click="swiping ? ( swiping = false ) : slideSplashImage(true,true);"
-      ng-swipe-left="slideSplashImage(true); swiping=true;"
-      ng-swipe-right="slideSplashImage(false); swiping=true;">
+      ng-click="slideSplashImage(true,true);">
     </div>
     <i
       class="arrow right fa fa-caret-right"
