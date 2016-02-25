@@ -2,6 +2,22 @@
 
 /* App */
 
+var replaceURLWithHTMLLinks = function(text) {
+    var exp = /(\b(https?):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+    return text.replace(exp,"<a target='_blank' href='$1'>$1</a>"); 
+};
+var totext = function(htm) {
+  if(htm) return htm.replace(/<[^>]+>/gm,'');
+  else return "";
+};
+
+/* Controllers */
+
+angular.module('underscore', [])
+  .factory('_', function() {
+    return window._; // assumes underscore has already been loaded on the page
+  });
+  
 angular.module('manifest', [
   'ngRoute',
   'ngSanitize',
@@ -9,7 +25,8 @@ angular.module('manifest', [
   //'ngScroll',
   'manifest.directives',
   'manifest.filters',
-  'manifest.controllers',
+  'manifest.maincontroller',
+  'manifest.mapcontroller',
   'config'
 ])
 
@@ -23,25 +40,25 @@ angular.module('manifest', [
 
     $routeProvider.when('/:lang', {
       templateUrl: settings.assets + '/partials/layout.html',
-      controller: 'manifestController'
+      controller: 'mainController'
       // reloadOnSearch: false
     });
 
     $routeProvider.when('/:lang/:layout', {
       templateUrl: settings.assets + '/partials/layout.html',
-      controller: 'manifestController',
+      controller: 'mainController',
       //reloadOnSearch: false
     });
 
     $routeProvider.when('/:lang/:layout/:tags', {
       templateUrl: settings.assets + '/partials/layout.html',
-      controller: 'manifestController',
+      controller: 'mainController',
       //reloadOnSearch: false
     });
 
     // $routeProvider.when('/:lang/:layout/:forcedev', {
     //   templateUrl: settings.assets + '/partials/layout.html',
-    //   controller: 'manifestController'
+    //   controller: 'mainController'
     //   // reloadOnSearch: false
     // });
 

@@ -3387,6 +3387,22 @@ s=!0}return s}for(;o>a;a++)if(t=e[a],"_"!==t){if(!i(e.charCodeAt(a)))return!1;s=
 
 /* App */
 
+var replaceURLWithHTMLLinks = function(text) {
+    var exp = /(\b(https?):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+    return text.replace(exp,"<a target='_blank' href='$1'>$1</a>"); 
+};
+var totext = function(htm) {
+  if(htm) return htm.replace(/<[^>]+>/gm,'');
+  else return "";
+};
+
+/* Controllers */
+
+angular.module('underscore', [])
+  .factory('_', function() {
+    return window._; // assumes underscore has already been loaded on the page
+  });
+  
 angular.module('manifest', [
   'ngRoute',
   'ngSanitize',
@@ -3394,7 +3410,8 @@ angular.module('manifest', [
   //'ngScroll',
   'manifest.directives',
   'manifest.filters',
-  'manifest.controllers',
+  'manifest.maincontroller',
+  'manifest.mapcontroller',
   'config'
 ])
 
@@ -3408,25 +3425,25 @@ angular.module('manifest', [
 
     $routeProvider.when('/:lang', {
       templateUrl: settings.assets + '/partials/layout.html',
-      controller: 'manifestController'
+      controller: 'mainController'
       // reloadOnSearch: false
     });
 
     $routeProvider.when('/:lang/:layout', {
       templateUrl: settings.assets + '/partials/layout.html',
-      controller: 'manifestController',
+      controller: 'mainController',
       //reloadOnSearch: false
     });
 
     $routeProvider.when('/:lang/:layout/:tags', {
       templateUrl: settings.assets + '/partials/layout.html',
-      controller: 'manifestController',
+      controller: 'mainController',
       //reloadOnSearch: false
     });
 
     // $routeProvider.when('/:lang/:layout/:forcedev', {
     //   templateUrl: settings.assets + '/partials/layout.html',
-    //   controller: 'manifestController'
+    //   controller: 'mainController'
     //   // reloadOnSearch: false
     // });
 
@@ -3445,47 +3462,29 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,datapath:'data/',assets:'build/',lastupdate:'24 February 2016 - 6:46'})
+.constant('settings', {dev:false,datapath:'data/',assets:'build/',lastupdate:'25 February 2016 - 10:56'})
 
 ;
 ;
 
 'use strict';
 
-var replaceURLWithHTMLLinks = function(text) {
-    var exp = /(\b(https?):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
-    return text.replace(exp,"<a target='_blank' href='$1'>$1</a>"); 
-};
-var totext = function(htm) {
-  if(htm) return htm.replace(/<[^>]+>/gm,'');
-  else return "";
-};
-
-/* Controllers */
-
-angular.module('underscore', [])
-  .factory('_', function() {
-    return window._; // assumes underscore has already been loaded on the page
-  });
-
-
-
-angular.module('manifest.controllers', ['underscore','config'])
+angular.module('manifest.maincontroller', ['underscore','config'])
 ////////////////////////////////////////////////////////////////////////
-.controller('manifestController', [
-    "$scope",
-    "$routeParams",
-    "$http",
-    "_",
-    "$document",
-    "$window",
-    "$location",
-    "$timeout",
-    "$sce",
-    "$rootScope",
-    "settings",
-    function ($scope, $routeParams, $http, _, $document, $window, $location, $timeout, $sce, $rootScope, settings) {
-    
+.controller('mainController', [
+  "$scope",
+  "$routeParams",
+  "$http",
+  "_",
+  "$document",
+  "$window",
+  "$location",
+  "$timeout",
+  "$sce",
+  "$rootScope",
+  "settings",
+  function ($scope, $routeParams, $http, _, $document, $window, $location, $timeout, $sce, $rootScope, settings) {
+  
     moment.locale('fr');
 
     console.log("from controller:",settings);
@@ -3593,7 +3592,7 @@ angular.module('manifest.controllers', ['underscore','config'])
       if(lay == $scope.state.layout) return; // unchanged
       else {
 
-        $scope.state.loading = true;
+        //$scope.state.loading = true;
 
         // reset tags & search
         //$scope.toggleTag();
@@ -3612,8 +3611,7 @@ angular.module('manifest.controllers', ['underscore','config'])
           //updateTagNodesSizesForLayout($scope,lay);
 
         // unlock loader when scope ready (for map, only done after csv received)
-        if(lay!='map')
-          $timeout(function(){ $scope.state.loading = false; });
+        //if(lay!='map') $timeout(function(){ $scope.state.loading = false; });
 
         $scope.updatePath();
 
@@ -3928,6 +3926,12 @@ angular.module('manifest.controllers', ['underscore','config'])
           c.count = 0;
         });
 
+        // prepare credits
+        $scope.meta.mapcreditsOf = {};
+        _.each($scope.meta.mapcredits, function(c) {
+          $scope.meta.mapcreditsOf[c.slug] = c;
+        });
+
         // $scope.tagsContentsOrdered.sort(function(a,b) {
         //   return $scope.tagSorter(b) - $scope.tagSorter(a);
         // });
@@ -4034,7 +4038,7 @@ angular.module('manifest.controllers', ['underscore','config'])
         });
         
         $scope.linkFiltArray = $scope.linkArray;
-  
+
 
         if($scope.settings.verbose) {
           console.log("!! declared tags:",_.keys($scope.meta.tags));
@@ -4088,11 +4092,12 @@ angular.module('manifest.controllers', ['underscore','config'])
         fetchDataLinks();
 
         // load graphs ?
-        $timeout(function() {
-          //loadTagGraph($scope);
-          if($scope.state.layout=='network')
+        if($scope.state.layout=='network') {
+          $timeout(function() {
+            //loadTagGraph($scope);
             loadLinksGraph($scope);
-        },500);
+          },500);
+        }
 
         // (to improve ?) init here to trigger the watch on footer content set though compile-here directive
         $scope.state.search = "";
@@ -4100,8 +4105,13 @@ angular.module('manifest.controllers', ['underscore','config'])
       });
     });
 
-  }])
+  }
+]);
+;
 
+'use strict';
+
+angular.module('manifest.mapcontroller', ['underscore','config'])
 ////////////////////////////////////////////////////////////////////////
 .controller('MapController', [
   '$scope',
@@ -4110,6 +4120,36 @@ angular.module('manifest.controllers', ['underscore','config'])
   '_',
   'settings',
   function ($scope, $http, $timeout, _, settings) {
+
+    ///////////////////////////////////////////////////////////////
+    var updateMapStyles = function() {
+      $scope.state.mapStyles = _.map($scope.meta.mapcredits, function(e) {
+        var act = e.active ? "block" : "none";
+        var css = 
+          ".markdiv-"+e.color+" {background: #"+e.color+";} " +
+          ".src-"+e.slug+" { display: "+act+"; }";
+        return css;
+      }).join(" ");
+    };
+
+    ///////////////////////////////////////////////////////////////
+    $scope.toggleMapLegend = function(c) {
+      //console.log("Toggling:",c);
+
+      var isFull = _.findIndex($scope.meta.mapcredits, {active: false})==-1;
+      if(isFull) _.each($scope.meta.mapcredits, function(e) {
+        e.active = false;
+      });
+      
+      if(c) c.active = !c.active;
+
+      var isEmpty = _.findIndex($scope.meta.mapcredits, {active: true})==-1;
+      if(isEmpty || !c) _.each($scope.meta.mapcredits, function(e) {
+        e.active = true;
+      });
+
+      updateMapStyles();
+    };
 
     $scope.initMap = function() {
 
@@ -4157,26 +4197,21 @@ angular.module('manifest.controllers', ['underscore','config'])
         icon: 'fa fa-street-view',
         showPopup: false,
       }).addTo(map);
+
       var layers = new L.LayerGroup().addTo(map);
 
-      // prepare credits
-      var credits = {};
-      _.each($scope.meta.mapcredits, function(c) {
-        credits[c.slug] = c;
-      });
-
+      ///////////////////////////////////////////////////////////////
       // business to add a point
-      ////////////////////////////////////////////////
       var addMarker = function(m) {
-        var credit = credits[m.source];
-        if(!credit)
-          credit = credits['misc'];
+        var credit = $scope.meta.mapcreditsOf['misc'];
+        if($scope.meta.mapcreditsOf.hasOwnProperty(m.source))
+          credit = $scope.meta.mapcreditsOf[m.source];
           
 
         // MakiMarkers !
         var icon = 'circle';
         //var color = "#"+credit.color || "#000";
-        var size = [7,7];
+        var size = [8,8];
         // icons use maki-markers: https://www.mapbox.com/maki/
         if(/region/.test(m.scale)) {
           size = [10,10];
@@ -4252,38 +4287,35 @@ angular.module('manifest.controllers', ['underscore','config'])
             console.log("!! no lat/lng for:",m);
         }
       };
-
       
-      ////////////////////////////////////////////////
-      // fetch local data
-      $http.get(settings.datapath+'/map.csv').success(function(data) {
-        //console.log("got csv data:",data);
-        //$scope.data = data;
-        var ms = new CSV(data, {header:true, cast:false}).parse();
-        
-        $scope.points = ms;
-        
-        _.each(ms, function(m,k) {
+      ///////////////////////////////////////////////////////////////
+      var fetch_local = function(callb) {
+        $http.get(settings.datapath+'/map.csv')
+          .success(function(data) {
+            //console.log("got csv data:",data);
+            //$scope.data = data;
+            var ms = new CSV(data, {header:true, cast:false}).parse();
+            
+            $scope.points = ms;
+            
+            _.each(ms, function(m,k) {
 
-          // if(!layers[m.source]) {
-          //   layers[m.source] = new L.LayerGroup().addTo(overlays);
-          // }
+              // if(!layers[m.source]) {
+              //   layers[m.source] = new L.LayerGroup().addTo(overlays);
+              // }
 
-          addMarker(m);
-          
-        });
-        
-        if($scope.settings.verbose)
-          console.log("all markers added!");
+              addMarker(m);
+              
+            });
+            callb();
+          })
+          .error(function(err) {
+            console.log(err);
+          });
+      };
 
-        var layerControl = L.control.layers(null, tileLayers, {position: 'topleft'});
-        layerControl.addTo(map);
-        
-        //console.log("overlays !!",layers);
-
-
-        ///////////////////////////////////////////////////////////////
-        // now fetch the external geojson data
+      ///////////////////////////////////////////////////////////////
+      var fetch_geojson = function(callb) {
         var toFetch = _.filter($scope.meta.mapcredits, {type: "geojson"});
         _.each(toFetch, function(dat) {
           $http.get(settings.datapath+'/'+dat.geojson)
@@ -4320,120 +4352,104 @@ angular.module('manifest.controllers', ['underscore','config'])
               console.log(err);
             });
         });
+        // well.. not really async here :)
+        callb();
+      };
 
-        ///////////////////////////////////////////////////////////////
-        // now fetch the external demosphere
+      ///////////////////////////////////////////////////////////////
+      var fetch_demosphere = function(callb) {
         var demos = _.findWhere($scope.meta.mapcredits, {type: "demosphere"});
-        if(!demos.hide) {
-          _.each(demos.json, function(u) {
-            $http.get(u + "/event-list-json", { params: {
-              //startTime: 1456182001,
-              //endTime: 1456763106,
-              place__latitude: true,
-              place__longitude: true,
-              place__zoom: true,
-              topics: true,
-              url: true
-              //random=0.40452415758106963
-            }}).success(function(json) {
-                console.log("Demosph:",json);
-                _.each(json.events, function(e) {
-                  addMarker({
-                    source: "demosphere",
-                    name: e.time,
-                    description: e.title,
-                    address: e.place_city_name,
-                    web: u+e.url,
-                    lat: e.place__latitude,
-                    lng: e.place__longitude
-                  });
-                });
-              })
-              .error(function(err) {
-                console.log(err);
-              });
-          });
-        }
-
-        ///////////////////////////////////////////////////////////////
-        // now fetch the external xml
-        var agedefaire = _.findWhere($scope.meta.mapcredits, {type: "xml"});
-          $http.get(settings.datapath+'/'+agedefaire.xml)
-          //$http.get(agedefaire.xml)
-            .success(function(xml) {
-              var json = xmlToJSON.parseString(xml, {
-                childrenAsArray: false
-              });
-              console.log("Age de:",json);
-              _.each(json.markers.marker, function(m) {
+        _.each(demos.json, function(u) {
+          $http.get(u + "/event-list-json", { params: {
+            //startTime: 1456182001,
+            //endTime: 1456763106,
+            place__latitude: true,
+            place__longitude: true,
+            place__zoom: true,
+            topics: true,
+            url: true
+            //random=0.40452415758106963
+          }}).success(function(json) {
+              console.log("Demosph:",json);
+              _.each(json.events, function(e) {
                 addMarker({
-                  source: "agedefaire",
-                  name: m._attr.name._value,
-                  description: "Point de vente de L'âge de faire",
-                  address: m._attr.address._value,
-                  lat: m._attr.lat._value,
-                  lng: m._attr.lng._value
+                  source: "demosphere",
+                  name: e.time,
+                  description: e.title,
+                  address: e.place_city_name,
+                  web: u+e.url,
+                  lat: e.place__latitude,
+                  lng: e.place__longitude
                 });
               });
+              callb();
             })
             .error(function(err) {
               console.log(err);
             });
+        });
+      };
 
+      ///////////////////////////////////////////////////////////////
+      var fetch_agedefaire = function(callb) {
+        var agedefaire = _.findWhere($scope.meta.mapcredits, {type: "xml"});
+        $http.get(settings.datapath+'/'+agedefaire.xml)
+        //$http.get(agedefaire.xml)
+          .success(function(xml) {
+            var json = xmlToJSON.parseString(xml, {
+              childrenAsArray: false
+            });
+            console.log("Age de:",json);
+            _.each(json.markers.marker, function(m) {
+              addMarker({
+                source: "agedefaire",
+                name: m._attr.name._value,
+                description: "Point de vente de L'âge de faire",
+                address: m._attr.address._value,
+                lat: m._attr.lat._value,
+                lng: m._attr.lng._value
+              });
+            });
+            callb();
+          })
+          .error(function(err) {
+            console.log(err);
+          });
+      };
+      ///////////////////////////////////////////////////////////////
+      // now DO things
+      fetch_local(function() {
+        fetch_geojson(function() {
+          fetch_agedefaire(function() {
+            
+            var layerControl = L.control.layers(null, tileLayers, {position: 'topleft'});
+            layerControl.addTo(map);
+            //console.log("overlays !!",layers);
+            L.control.search({
+              layer: layers,
+              initial: false,
+              zoom: 9,
+              buildTip: function(text, val) {
+                var type = "ok";
+                return '<div><a href="#" class="'+type+'">YOU'+text+'<b>'+type+'</b></a></div>';
+              }
+            }).addTo(map);
+            
+            updateMapStyles();
 
-        ///////////////////////////////////////////////////////////////
-        // init search (must do it ansync when all finished !)
-        L.control.search({
-          layer: layers,
-          initial: false,
-          zoom: 9,
-          buildTip: function(text, val) {
-            var type = "ok";
-            return '<div><a href="#" class="'+type+'">YOU'+text+'<b>'+type+'</b></a></div>';
-          }
-        }).addTo(map);
+            // when ready, remove loading
+            //$timeout(function(){ $scope.state.loading = false; });
+            //$scope.state.mapstatus = "DONE";
 
-        updateMapStyles();
-
-        // when ready, remove loading
-        $timeout(function(){ $scope.state.loading = false; });
-
-      }).error(function(err) {
-        console.log(err);
+          });
+        });
       });
+    };
 
-      var updateMapStyles = function() {
-        $scope.state.mapStyles = _.map($scope.meta.mapcredits, function(e) {
-          var act = e.active ? "block" : "none";
-          var css = 
-            ".markdiv-"+e.color+" {background: #"+e.color+";} " +
-            ".src-"+e.slug+" { display: "+act+"; }";
-          return css;
-        }).join(" ");
-      };
+    $scope.initMap();
 
-      //////////////////////
-      $scope.toggleMapLegend = function(c) {
-        console.log("Toggling:",c);
-
-        var isFull = _.findIndex($scope.meta.mapcredits, {active: false})==-1;
-        if(isFull) _.each($scope.meta.mapcredits, function(e) {
-          e.active = false;
-        });
-        
-        c.active = !c.active;
-
-        var isEmpty = _.findIndex($scope.meta.mapcredits, {active: true})==-1;
-        if(isEmpty) _.each($scope.meta.mapcredits, function(e) {
-          e.active = true;
-        });
-
-        updateMapStyles();
-      };
-    }
   }
-])
-  
+]);
 ;
 
 'use strict';

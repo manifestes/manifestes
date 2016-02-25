@@ -1,16 +1,15 @@
-
-<style ng-bind-html="state.mapStyles"></style>
-
 <div class="map full" ng-controller="MapController">
-  
-  <div class="legendwrapper">
+
+  <style ng-bind-html="state.mapStyles"></style>
+
+  <div class="legendwrapper" ng-click="toggleMapLegend();">
     <div class="legend">
       <div
         ng-repeat="c in meta.mapcredits"
         ng-if="!c.hide"
         class="credit hint--left"
         style="border-left: 5px solid #{{c.color}};"
-        ng-click="toggleMapLegend(c);"
+        ng-click="toggleMapLegend(c); $event.stopPropagation();"
         ng-class="{
           odd:$index%2==1,
           active: c.active
@@ -27,5 +26,5 @@
     </div>
   </div>
   
-  <div ng-init="initMap();" id="leaflet" height="100%" width="100%"></div>
+  <div id="leaflet" height="100%" width="100%"></div>
 </div>
