@@ -70,11 +70,13 @@ mapcredits:
         name: Utopies & luttes
         description: "Utopies concrètes et\nluttes écologiques et sociales"
         url: https://lesechosduvent.wordpress.com
+        url_map: https://www.google.com/maps/d/embed?mid=zB1OZmeGJ7OA.kepycQ8XsohU
         color: CC5B79
     -   slug: hetero
         name: Hétérotopies
         description: "L’Hétérotopie, c’est un lieu qui héberge l’imaginaire,\nune utopie réalisée que l’on peut visiter,\ntoucher, critiquer, ici et maintenant."
         url: http://heterotopies.overblog.com/cartographie
+        url_map: https://www.google.com/maps/d/embed?mid=zWH3cGb_zi2I.kCaJt8ZC4ufk
         color: 6779AB
     -   slug: ldv
         name: "Lieux de vie\nBases nomades"
@@ -125,6 +127,13 @@ mapcredits:
         geojson: map_passeco.geojson
         _geojson: http://www.ecovillageglobal.fr/spip.php?page=gis_json&objets=annonces&limit=500
         color: c7d12c
+    -   slug: ecoles
+        name: Réseau des écoles alternatives
+        description: Réseau pour l'école de la vie
+        url: https://www.google.com/maps/d/viewer?mid=zJ1PitvzVPN0.kN_S8AWMFbDQ
+        type: geojson
+        geojson: map_ecoles.geojson
+        color: d59454
     -   slug: agedefaire
         name: Points de vente L'âge de faire
         description: Des outils pour changer le monde
@@ -133,11 +142,17 @@ mapcredits:
         xml: map_agedefaire.xml
         _xml: http://magasin.lagedefaire-lejournal.fr/index.php?controller=stores?ajax=1&all=1
         color: 95b5d5
+    -   slug: ffdn
+        name: Fournisseurs d'accès internet FFDN
+        description: "Fournisseurs d'Accès à Internet respectant\nla Neutralité du Net et gérés par des bénévoles"
+        url: https://db.ffdn.org/
+        json: map_ffdn.json
+        _json: https://db.ffdn.org/isp/map_data.json
+        color: ce67c5
     -   slug: demosphere
         name: Démosphère
         description: "Le réseau des éco-annonces\nde la revue Passerelle Éco"
         url: http://www.demosphere.eu/
-        type: demosphere
         json:
             - http://montpellier.demosphere.eu
             - http://paris.demosphere.eu

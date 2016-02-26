@@ -213,10 +213,11 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
               console.log(dat.slug,geoj);
               _.each(geoj.features, function(m) {
 
-                // specifics !
+                // default
                 var name = totext(m.properties.title);
-                var article_url = "";
+                var description = m.properties.description;
                 var web =  "";
+
                 if(dat.slug=='reporterre') {
                   name = name.replace(/Il y a \d* jours./,"");
                   web = dat.url +"/"+ m.properties.title.match(/href:\'([^\']*)\'/)[1];
@@ -224,13 +225,17 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
                 if(dat.slug=='bastamag') {
                   web = m.properties.title.match(/<a href=\'([^\']*)\'/)[1];
                 }
-                if(dat.slug=='passerelle')
+                if(dat.slug=='passerelle') {
                   web = dat.url +"/"+ m.properties.title.match(/<a href=\"([^\"]*)\"/)[1];
+                }
+                if(dat.slug=='ecoles') {
+                  name = m.properties.Name;
+                }
 
                 addMarker({
                   source: dat.slug,
                   name: name,
-                  description: m.properties.description,
+                  description: description,
                   web: web,
                   lat: m.geometry.coordinates[1],
                   lng: m.geometry.coordinates[0]
@@ -246,8 +251,57 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
       };
 
       ///////////////////////////////////////////////////////////////
+      var fetch_agedefaire = function(callb) {
+        var agedefaire = _.findWhere($scope.meta.mapcredits, {type: "xml"});
+        $http.get(settings.datapath+'/'+agedefaire.xml)
+        //$http.get(agedefaire.xml)
+          .success(function(xml) {
+            var json = xmlToJSON.parseString(xml, {
+              childrenAsArray: false
+            });
+            //console.log("Age de:",json);
+            _.each(json.markers.marker, function(m) {
+              addMarker({
+                source: "agedefaire",
+                name: m._attr.name._value,
+                description: "Point de vente de L'âge de faire",
+                address: m._attr.address._value,
+                lat: m._attr.lat._value,
+                lng: m._attr.lng._value
+              });
+            });
+            callb();
+          })
+          .error(function(err) {
+            console.log(err);
+          });
+      };
+
+      ///////////////////////////////////////////////////////////////
+      var fetch_ffdn = function(callb) {
+        var ffdn = _.findWhere($scope.meta.mapcredits, {slug: "ffdn"});
+        $http.get(settings.datapath+'/'+ffdn.json)
+          .success(function(json) {
+            _.each(json, function(m) {
+              if(m.coordinates)
+                addMarker({
+                  source: "ffdn",
+                  name: m.shortname || " ", // warning not to crash the leaflet-search !
+                  description: m.popup,
+                  lat: m.coordinates.latitude,
+                  lng: m.coordinates.longitude
+                });
+            });
+            callb();
+          })
+          .error(function(err) {
+            console.log(err);
+          });
+      };
+
+      ///////////////////////////////////////////////////////////////
       var fetch_demosphere = function(callb) {
-        var demos = _.findWhere($scope.meta.mapcredits, {type: "demosphere"});
+        var demos = _.findWhere($scope.meta.mapcredits, {slug: "demosphere"});
         _.each(demos.json, function(u) {
           $http.get(u + "/event-list-json", { params: {
             //startTime: 1456182001,
@@ -279,57 +333,33 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
         });
       };
 
-      ///////////////////////////////////////////////////////////////
-      var fetch_agedefaire = function(callb) {
-        var agedefaire = _.findWhere($scope.meta.mapcredits, {type: "xml"});
-        $http.get(settings.datapath+'/'+agedefaire.xml)
-        //$http.get(agedefaire.xml)
-          .success(function(xml) {
-            var json = xmlToJSON.parseString(xml, {
-              childrenAsArray: false
-            });
-            console.log("Age de:",json);
-            _.each(json.markers.marker, function(m) {
-              addMarker({
-                source: "agedefaire",
-                name: m._attr.name._value,
-                description: "Point de vente de L'âge de faire",
-                address: m._attr.address._value,
-                lat: m._attr.lat._value,
-                lng: m._attr.lng._value
-              });
-            });
-            callb();
-          })
-          .error(function(err) {
-            console.log(err);
-          });
-      };
+
       ///////////////////////////////////////////////////////////////
       // now DO things
       fetch_local(function() {
         fetch_geojson(function() {
           fetch_agedefaire(function() {
-            
-            var layerControl = L.control.layers(null, tileLayers, {position: 'topleft'});
-            layerControl.addTo(map);
-            //console.log("overlays !!",layers);
-            L.control.search({
-              layer: layers,
-              initial: false,
-              zoom: 9,
-              buildTip: function(text, val) {
-                var type = "ok";
-                return '<div><a href="#" class="'+type+'">YOU'+text+'<b>'+type+'</b></a></div>';
-              }
-            }).addTo(map);
-            
-            updateMapStyles();
+            fetch_ffdn(function() {
 
-            // when ready, remove loading
-            //$timeout(function(){ $scope.state.loading = false; });
-            //$scope.state.mapstatus = "DONE";
+              var layerControl = L.control.layers(null, tileLayers, {position: 'topleft'});
+              layerControl.addTo(map);
+              //console.log("overlays !!",layers);
+              L.control.search({
+                layer: layers,
+                initial: false,
+                zoom: 9,
+                buildTip: function(text, val) {
+                  var type = "ok";
+                  return '<div><a href="#" class="'+type+'">YOU'+text+'<b>'+type+'</b></a></div>';
+                }
+              }).addTo(map);
+              
+              updateMapStyles();
 
+              // when ready, remove loading
+              //$timeout(function(){ $scope.state.loading = false; });
+              //$scope.state.mapstatus = "DONE";
+            });
           });
         });
       });

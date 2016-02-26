@@ -2660,7 +2660,7 @@ body.layout-mapprint .container {
     padding-left: 190px !important;
   }
 }
-@media (max-height: 550px) {
+@media (max-height: 630px) {
   .map .legend {
     display: none;
   }
