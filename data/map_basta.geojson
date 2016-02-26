@@ -857,6 +857,25 @@
 "icon_size": [34,32],
 "icon_anchor": [17,32],
 "popup_anchor": [1,-26.67]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.3806, 43.2804]},
+		"id":"167",
+		"properties": {
+			"title":"<a href='http:\/\/www.equaltimes.org\/l-aquarius-bateau-de-la-solidarite' target='_blank'>L'Aquarius, bateau de la solidarit\u00e9, part au secours des r\u00e9fugi\u00e9s<\/a>",
+			"description":"<span class=\"ville\">Marseille (13000)<\/span>Dans le port de Marseille, la coque orange fluo de l'Aquarius, longue de 77 m\u00e8tres, est visible de loin. Des marins chargent des dizaines de cartons sur le pont. \u00c0 la cha\u00eene, des m\u00e9decins et des infirmi\u00e8res, gilet blanc flanqu\u00e9 du logo de \u00ab M\u00e9decins du monde \u00bb, les portent \u00e0 l'int\u00e9rieur du bateau.\u00a0&nbsp;(...)"
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.368408, 43.292657]},
+		"id":"168",
+		"properties": {
+			"title":"<a href='http:\/\/www.leravi.org\/spip.php?article2281' target='_blank'>Voyage exp\u00e9rimental<\/a>",
+			"description":"<span class=\"ville\">Marseille (13007)<\/span>Inqui\u00e8tes pour leurs jeunes ou d\u00e9sabus\u00e9es par leur exp\u00e9rience, Amina, Taourati, Cherasade et Cha\u00efnese r\u00eavent d'un centre de formation professionnelle innovant, accueillant, qui casse les st\u00e9r\u00e9otypes et s'ouvre \u00e0 la culture. \u00c7a existe ! Petite balade dans un monde de l'exp\u00e9rimentation. En sortant au m\u00e9tro\u00a0&nbsp;(...)"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-117.png",
+"icon_size": [32,33],
+"icon_anchor": [16,33],
+"popup_anchor": [1,-27.5]
 		}}
 	]
 }
