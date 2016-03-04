@@ -3462,7 +3462,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,datapath:'data/',assets:'build/',lastupdate:'26 February 2016 - 11:36'})
+.constant('settings', {dev:false,datapath:'data/',assets:'build/',lastupdate:'04 March 2016 - 8:50'})
 
 ;
 ;
@@ -4252,6 +4252,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
           'maxWidth': '500',
           'className' : 'custom'
         }
+        m.credit = credit;
         m.lat = parseFloat(m.lat);
         m.lng = parseFloat(m.lng);
         if(m.lat && m.lng) {
@@ -4269,6 +4270,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
             
           var theM = L.marker([m.lat, m.lng], {
             title: m.name,
+            raw: _.pick(m,['description','address','credit']),
             icon: new L.DivIcon({
               iconSize: size,
               className: css 
@@ -4321,7 +4323,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
           $http.get(settings.datapath+'/'+dat.geojson)
           //$http.get(dat.geojson)
             .success(function(geoj) {
-              0;
+              //console.log(dat.slug,geoj);
               _.each(geoj.features, function(m) {
 
                 // default
@@ -4459,9 +4461,21 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
                 layer: layers,
                 initial: false,
                 zoom: 9,
-                buildTip: function(text, val) {
-                  var type = "ok";
-                  return '<div><a href="#" class="'+type+'">YOU'+text+'<b>'+type+'</b></a></div>';
+                //container: "searchinputformap",
+                // formatData: function(json) { // to also search within descriptions ?
+                //   var jsonret = {};
+                //   for(i in json) {
+                //     console.log(json[i]);
+                //     jsonret["gan"] = L.latLng( json[i][ propLoc[0] ], json[i][ propLoc[1] ] );
+                //   }
+                //   return {yo:"trop"};
+                // },
+                callTip: function(text, val) {
+                  var d = val.layer.options.raw;
+                  var sou = '<span class="markdiv-'+d.credit.color+' source">'+d.credit.slug+'</span> ';
+                  var add = d.address ? ' <span class="address">'+totext(d.address)+'</span>' : "";
+                  var des = d.description ? ' <span class="description">'+totext(d.description)+'</span>' : "";
+                  return '<div>'+sou+text+add+des+'</div>';
                 }
               }).addTo(map);
               

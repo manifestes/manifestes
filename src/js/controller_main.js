@@ -18,7 +18,7 @@ angular.module('manifest.maincontroller', ['underscore','config'])
   
     moment.locale('fr');
 
-    console.log("from controller:",settings);
+    console.log("from main controller:",settings);
 
     $scope.settings = settings;
     

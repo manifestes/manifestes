@@ -1107,6 +1107,29 @@ div.highlight {
 .bordered-9 {
   border: #e8d9a0 solid 9px !important;
 }
+/*
+COLORS FOR TAGS (with overwriting/priorities)
+.tgc
+
+.tgc-video, .tgc-audio
+.tgc-media, .tgc-text, .tgc-words
+.tgc-list, .tgc-tool
+.tgc-agriculture
+
+.tgc-group, .tgc-politics, .tgc-slow
+
+.tgc-health, .tgc-eat
+.tgc-move, .tgc-home, .tgc-energy, .tgc-work
+.tgc-history, .tgc-law, .tgc-economy, .tgc-education
+
+.tgc-love, .tgc-genre, .tgc-creation
+.tgc-science, .tgc-web
+.tgc-philo, .tgc-alienation, .tgc-emancipation
+.tgc-act, .tgc-zad
+.tgc-map, .tgc-calendar
+.tgc-about
+
+*/
 .mailing {
   margin-top: 30px;
 }
@@ -2519,6 +2542,30 @@ body.layout-mapprint .container {
 }
 .leaflet-control-container {
   text-align: left;
+}
+.leaflet-control-search .search-tooltip {
+  max-width: 700px;
+  max-height: 350px;
+}
+.leaflet-control-search .search-tip {
+  margin: 0px;
+  padding: 2px 0px;
+  border-radius: 0px !important;
+  border-top: 1px solid #b6b6b6;
+}
+.leaflet-control-search .search-tip .source {
+  padding: 5px;
+  color: white;
+  margin-right: 2px;
+}
+.leaflet-control-search .search-tip .address {
+  color: #b1b1b1;
+  margin-left: 2px;
+}
+.leaflet-control-search .search-tip .description {
+  color: #4583b7;
+  font-style: italic;
+  margin-left: 2px;
 }
 .leaflet-popup-content {
   margin: 9px 9px;
