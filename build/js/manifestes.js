@@ -3462,7 +3462,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,datapath:'data/',assets:'build/',lastupdate:'04 March 2016 - 8:50'})
+.constant('settings', {dev:false,datapath:'data/',assets:'build/',lastupdate:'07 March 2016 - 2:06'})
 
 ;
 ;
@@ -4211,7 +4211,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
         // MakiMarkers !
         var icon = 'circle';
         //var color = "#"+credit.color || "#000";
-        var size = [8,8];
+        var size = [9,9];
         // icons use maki-markers: https://www.mapbox.com/maki/
         if(/region/.test(m.scale)) {
           size = [10,10];
@@ -4230,7 +4230,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
           //icon = "heart";
         }
         if(/list/.test(m.tags)) {
-          size = [15,15];
+          size = [14,14];
         }
 
 
@@ -4591,6 +4591,16 @@ angular.module('manifest.filters', [])
   .filter('allowurl', function($sce) {
     return function(url) {
       return $sce.trustAsResourceUrl(url);
+    }
+  })
+
+  // makes list of tag css classes from array
+  .filter('classitag', function() {
+    return function(list) {
+      if(list.length<1)
+        return "";
+      else
+        return "tgc-"+list.join(" tgc-");
     }
   })
 

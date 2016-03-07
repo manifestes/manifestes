@@ -1107,28 +1107,31 @@ div.highlight {
 .bordered-9 {
   border: #e8d9a0 solid 9px !important;
 }
+/* COLORS FOR TAGS (with overwriting/priorities) */
 /*
-COLORS FOR TAGS (with overwriting/priorities)
-.tgc
+.tgc-video, .tgc-audio {background: #C3D794 !important;}
 
-.tgc-video, .tgc-audio
-.tgc-media, .tgc-text, .tgc-words
-.tgc-list, .tgc-tool
-.tgc-agriculture
+.tgc-text {background: #C3D794 !important;}
 
-.tgc-group, .tgc-politics, .tgc-slow
+.tgc-health, .tgc-eat, .tgc-agriculture, .tgc-earth {background: #C3D794 !important;}
 
-.tgc-health, .tgc-eat
+.tgc-group, .tgc-politics, .tgc-slow {background: #E3CD7D !important;}
+
 .tgc-move, .tgc-home, .tgc-energy, .tgc-work
-.tgc-history, .tgc-law, .tgc-economy, .tgc-education
 
-.tgc-love, .tgc-genre, .tgc-creation
-.tgc-science, .tgc-web
-.tgc-philo, .tgc-alienation, .tgc-emancipation
-.tgc-act, .tgc-zad
-.tgc-map, .tgc-calendar
-.tgc-about
+.tgc-philo, .tgc-alienation, .tgc-emancipation, .tgc-history, .tgc-law, .tgc-economy, .tgc-education {background: #ADD7DB !important;}
 
+.tgc-love, .tgc-genre, .tgc-creation {background: #E8B887 !important;}
+
+.tgc-science, .tgc-web {background: #D9C8DA !important;}
+
+.tgc-act, .tgc-zad {background: #EDB4AA !important;}
+
+.tgc-map {background: #EDB4AA !important;}
+
+.tgc-calendar, .tgc-list {background: #E8D9A0 !important;}
+
+.tgc-about {background: #CFC5A3 !important;}
 */
 .mailing {
   margin-top: 30px;
@@ -2812,6 +2815,10 @@ body.layout-mapprint .container {
   .section .imagecredit {
     display: none !important;
   }
+  .section .h1 {
+    font-size: 0.8em !important;
+    padding: 10px !important;
+  }
   .section .h2 {
     height: 100px !important;
   }
@@ -2823,9 +2830,8 @@ body.layout-mapprint .container {
   .section.opened .h1 {
     background: black !important;
   }
-  .section .h1 {
-    font-size: 0.8em !important;
-    padding: 10px !important;
+  .section.opened .h2 {
+    display: none !important;
   }
   .section .block .content {
     margin-left: 0 !important;
