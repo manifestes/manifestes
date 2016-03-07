@@ -100,7 +100,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
         // MakiMarkers !
         var icon = 'circle';
         //var color = "#"+credit.color || "#000";
-        var size = [8,8];
+        var size = [9,9];
         // icons use maki-markers: https://www.mapbox.com/maki/
         if(/region/.test(m.scale)) {
           size = [10,10];
@@ -119,7 +119,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
           //icon = "heart";
         }
         if(/list/.test(m.tags)) {
-          size = [15,15];
+          size = [14,14];
         }
 
 

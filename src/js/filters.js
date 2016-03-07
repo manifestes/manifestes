@@ -26,6 +26,16 @@ angular.module('manifest.filters', [])
     }
   })
 
+  // makes list of tag css classes from array
+  .filter('classitag', function() {
+    return function(list) {
+      if(list.length<1)
+        return "";
+      else
+        return "tgc-"+list.join(" tgc-");
+    }
+  })
+
   .filter('adjoin', function() {
     return function(list,max) {
       return list.join(", ");
