@@ -120,7 +120,7 @@ mapcredits:
         _geojson: http://portail.bastamag.net/spip.php?page=gis_json&objets=syndic_articles&limit=500
         color: bc4a4a
     -   slug: passerelle
-        name: Annonces Passerelle Éco
+        name: Annonces de la revue Passerelle Éco
         description: "Le réseau des éco-annonces\nde la revue Passerelle Éco"
         url: http://www.ecovillageglobal.fr
         type: geojson
