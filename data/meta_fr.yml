@@ -149,14 +149,6 @@ mapcredits:
         json: map_ffdn.json
         _json: https://db.ffdn.org/isp/map_data.json
         color: ce67c5
-    -   slug: DDDDDD
-        name: 
-        description: 
-        url: 
-        json: 
-        _json: 
-        color: ed9522
-        hide: true
     -   slug: demosphere
         name: Démosphère
         description: "Le réseau des éco-annonces\nde la revue Passerelle Éco"
