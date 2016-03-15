@@ -656,11 +656,11 @@
 "popup_anchor": [1,-27.5]
 		}},
 		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [8.907503, 41.665645]},
+		"geometry": {"type": "Point", "coordinates": [1.2249327, 6.1258459]},
 		"id":"143",
 		"properties": {
 			"title":"<a href='http:\/\/www.bastamag.net\/Avec-l-agroecologie-un-village' target='_blank'>Avec l'agro\u00e9cologie, un village togolais sort de la fatalit\u00e9 et de la pauvret\u00e9 - Basta !<\/a>",
-			"description":"<span class=\"ville\">Propriano (20110)<\/span>A l\u2019initiative d\u2019un couple Togolais, le Centre international de l\u2019agro-pastoralisme forme la population \u00e0 l\u2019agro\u00e9cologie, \u00e0 la cuisine et \u00e0 la transformation des produits. Ou comment sortir de la fatalit\u00e9 et de la pauvret\u00e9 gr\u00e2ce \u00e0 de nouvelles m\u00e9thodes agricoles. Reportage dans le village de Baaga, au nord&nbsp;(...)"
+			"description":"<span class=\"ville\">Lom\u00e9 (20110)<\/span>A l\u2019initiative d\u2019un couple Togolais, le Centre international de l\u2019agro-pastoralisme forme la population \u00e0 l\u2019agro\u00e9cologie, \u00e0 la cuisine et \u00e0 la transformation des produits. Ou comment sortir de la fatalit\u00e9 et de la pauvret\u00e9 gr\u00e2ce \u00e0 de nouvelles m\u00e9thodes agricoles. Reportage dans le village de Baaga, au nord&nbsp;(...)"
 		  ,
 "icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
 "icon_size": [34,32],
@@ -876,6 +876,87 @@
 "icon_size": [32,33],
 "icon_anchor": [16,33],
 "popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.096576, 43.640227]},
+		"id":"169",
+		"properties": {
+			"title":"<a href='http:\/\/www.leravi.org\/spip.php?article2276' target='_blank'>A l'\u00e9cole des d\u00e9tenus<\/a>",
+			"description":"<span class=\"ville\">Salon-de-Provence (13300)<\/span>Les \u00ab pensionnaires \u00bb du centre de d\u00e9tention de Salon-de-Provence purgent des longues peines allant de 2 ans \u00e0 la perp\u00e9tuit\u00e9. Cette prison est dot\u00e9e d'une \u00ab unit\u00e9 p\u00e9dagogique \u00bb de l'Education nationale pour ceux qui souhaitent passer un dipl\u00f4me\u2026 Tout se d\u00e9roule comme dans n'importe quelle \u00e9cole. Les\u00a0&nbsp;(...)"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-117.png",
+"icon_size": [32,33],
+"icon_anchor": [16,33],
+"popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.267633, 48.806911]},
+		"id":"170",
+		"properties": {
+			"title":"<a href='http:\/\/www.terraeco.net\/Le-traiteur-qui-veut-donner-un,64558.html' target='_blank'>Le traiteur qui veut donner un coup de jeune \u00e0 l'emploi des seniors<\/a>",
+			"description":"<span class=\"ville\">Clamart (92140)<\/span>Cr\u00e9er des jobs pour les plus de 50 ans en vendant \u00ab la cuisine de mamie \u00bb. Tel est le concept de Nos Grands-m\u00e8res ont du talent, une jeune enseigne de restauration \u00e0 emporter pr\u00e9sente dans quelques gares franciliennes."
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-16.png",
+"icon_size": [32,33],
+"icon_anchor": [16,33],
+"popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.242921, 48.890171]},
+		"id":"171",
+		"properties": {
+			"title":"<a href='http:\/\/www.terraeco.net\/Baluchon,64629.html' target='_blank'>Baluchon, un Robin des Bois en cuisine<\/a>",
+			"description":"<span class=\"ville\">Puteaux (92800)<\/span>Un chiffre d\u2019affaires de 1,4 million d\u2019euros et 38 anciens ch\u00f4meurs salari\u00e9s. Pas mal pour une entreprise d\u2019insertion n\u00e9e il y a trois ans en Seine-Saint-Denis et qui concocte des plateaux-repas pour les cols blancs de La D\u00e9fense."
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-16.png",
+"icon_size": [32,33],
+"icon_anchor": [16,33],
+"popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [26.1342123, 39.2074811]},
+		"id":"172",
+		"properties": {
+			"title":"<a href='https:\/\/www.mediapart.fr\/journal\/international\/020316\/refugies-lesbos-des-solidarites-contre-la-honte-europeenne' target='_blank'>R\u00e9fugi\u00e9s: \u00e0 Lesbos, des solidarit\u00e9s contre la honte europ\u00e9enne<\/a>",
+			"description":"<span class=\"ville\">Mytil\u00e8ne (81100)<\/span>Chaque jour, les gilets de sauvetage abandonn\u00e9s sur les plages sont ramass\u00e9s et d\u00e9vers\u00e9s dans une d\u00e9charge de l'\u00eele. \u00a9 Am\u00e9lie Poinssot Ils sont plus de 500 000 \u00e0 \u00eatre pass\u00e9s par cette \u00eele grecque en 2015, d\u00e9j\u00e0 plus de 70 000 depuis le d\u00e9but de l'ann\u00e9e et de plus en plus de femmes et de jeunes enfants.\u00a0&nbsp;(...)"
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.334325, 48.836307]},
+		"id":"173",
+		"properties": {
+			"title":"<a href='http:\/\/www.terraeco.net\/A-Saint-Vincent-de-Paul-l-hopital,64658.html' target='_blank'>A Saint-Vincent-de-Paul, l'h\u00f4pital transforme la charit\u00e9 <\/a>",
+			"description":"<span class=\"ville\">Paris (75014)<\/span>Dans l'ancien \u00e9tablissement parisien, abandonn\u00e9 en 2012, logements d'urgence et start-up se c\u00f4toient\u2026 pour le meilleur et pour quelques mois. Reportage."
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.388184, 48.657206]},
+		"id":"174",
+		"properties": {
+			"title":"<a href='http:\/\/mouvements.info\/voisinmalin-le-community-building-en-pratique\/' target='_blank'>VoisinMalin, le community building en pratique<\/a>",
+			"description":"<span class=\"ville\">Grigny (91350)<\/span>Dans cet entretien, Mathilde Panot nous pr\u00e9sente l\u2019action de l\u2019association VoisinMalin, qui op\u00e8re depuis 2011 dans plusieurs quartiers d\u00e9laiss\u00e9s par les services publics. Les \u00ab voisin-e-s \u00bb, des personnes ressources du quartier, sont mobilis\u00e9s pour aller \u00e0 la rencontre des habitants et, forts de cette&nbsp;(...)"
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.382425, 48.885998]},
+		"id":"175",
+		"properties": {
+			"title":"<a href='http:\/\/www.streetpress.com\/sujet\/1457456128-vent-se-leve-tolards-handicapes-mentaux-surtout-comediens' target='_blank'>Au vent se l\u00e8ve, ils sont taulards ou handicap\u00e9s mentaux mais surtout com\u00e9diens<\/a>",
+			"description":"<span class=\"ville\">Paris (75019)<\/span>Les deux com\u00e9diens s\u2019avancent sous les projecteurs. Apr\u00e8s une longue pause, la quinquag\u00e9naire aux grandes lunettes brise timidement le silence du petit th\u00e9\u00e2tre."
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-117.png",
+"icon_size": [32,33],
+"icon_anchor": [16,33],
+"popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-1.530258, 47.223312]},
+		"id":"176",
+		"properties": {
+			"title":"<a href='http:\/\/www.kaizen-magazine.com\/nantes-en-chemin-vers-la-transition-energetique\/' target='_blank'>Nantes en chemin vers la transition \u00e9nerg\u00e9tique<\/a>",
+			"description":"<span class=\"ville\">Nantes (44000)<\/span>D\u00e9veloppement de la mobilit\u00e9 douce et des \u00e9nergies renouvelables : Nantes M\u00e9tropole montre des voies pour enclencher la transition."
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-127.png",
+"icon_size": [33,32],
+"icon_anchor": [16.5,32],
+"popup_anchor": [1,-26.67]
 		}}
 	]
 }
