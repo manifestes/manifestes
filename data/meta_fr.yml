@@ -149,6 +149,13 @@ mapcredits:
         json: map_ffdn.json
         _json: https://db.ffdn.org/isp/map_data.json
         color: ce67c5
+    -   slug: circuitscourts
+        name: Circuits courts en Belgique
+        description: —
+        url: http://www.circuits-courts.be
+        json: map_circuitscourts.json
+        _json: http://www.circuits-courts.be/get_json_data.php?data=ext
+        color: c6bc90
     -   slug: demosphere
         name: Démosphère
         description: "Le réseau des éco-annonces\nde la revue Passerelle Éco"

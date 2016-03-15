@@ -3462,7 +3462,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,datapath:'data/',assets:'build/',lastupdate:'07 March 2016 - 2:06'})
+.constant('settings', {dev:false,datapath:'data/',assets:'build/',lastupdate:'15 March 2016 - 6:09'})
 
 ;
 ;
@@ -4413,6 +4413,29 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
       };
 
       ///////////////////////////////////////////////////////////////
+      var fetch_circuitscourts = function(callb) {
+        var cc = _.findWhere($scope.meta.mapcredits, {slug: "circuitscourts"});
+        $http.get(settings.datapath+'/'+cc.json)
+          .success(function(json) {
+            _.each(json, function(m) {
+              addMarker({
+                source: "circuitscourts",
+                name: m.nom || " ", // warning not to crash the leaflet-search !
+                description: m.comm,
+                address: m.loc,
+                web: m.web,
+                lat: m.lat,
+                lng: m.lng
+              });
+            });
+            callb();
+          })
+          .error(function(err) {
+            0;
+          });
+      };
+
+      ///////////////////////////////////////////////////////////////
       var fetch_demosphere = function(callb) {
         var demos = _.findWhere($scope.meta.mapcredits, {slug: "demosphere"});
         _.each(demos.json, function(u) {
@@ -4448,42 +4471,47 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
 
 
       ///////////////////////////////////////////////////////////////
-      // now DO things
+      // now DO things (do it async please !)
       fetch_local(function() {
         fetch_geojson(function() {
           fetch_agedefaire(function() {
             fetch_ffdn(function() {
+              fetch_circuitscourts(function() {
 
-              var layerControl = L.control.layers(null, tileLayers, {position: 'topleft'});
-              layerControl.addTo(map);
-              //console.log("overlays !!",layers);
-              L.control.search({
-                layer: layers,
-                initial: false,
-                zoom: 9,
-                //container: "searchinputformap",
-                // formatData: function(json) { // to also search within descriptions ?
-                //   var jsonret = {};
-                //   for(i in json) {
-                //     console.log(json[i]);
-                //     jsonret["gan"] = L.latLng( json[i][ propLoc[0] ], json[i][ propLoc[1] ] );
-                //   }
-                //   return {yo:"trop"};
-                // },
-                callTip: function(text, val) {
-                  var d = val.layer.options.raw;
-                  var sou = '<span class="markdiv-'+d.credit.color+' source">'+d.credit.slug+'</span> ';
-                  var add = d.address ? ' <span class="address">'+totext(d.address)+'</span>' : "";
-                  var des = d.description ? ' <span class="description">'+totext(d.description)+'</span>' : "";
-                  return '<div>'+sou+text+add+des+'</div>';
-                }
-              }).addTo(map);
-              
-              updateMapStyles();
 
-              // when ready, remove loading
-              //$timeout(function(){ $scope.state.loading = false; });
-              //$scope.state.mapstatus = "DONE";
+                var layerControl = L.control.layers(null, tileLayers, {position: 'topleft'});
+                layerControl.addTo(map);
+                //console.log("overlays !!",layers);
+                L.control.search({
+                  layer: layers,
+                  initial: false,
+                  zoom: 9,
+                  //container: "searchinputformap",
+                  // formatData: function(json) { // to also search within descriptions ?
+                  //   var jsonret = {};
+                  //   for(i in json) {
+                  //     console.log(json[i]);
+                  //     jsonret["gan"] = L.latLng( json[i][ propLoc[0] ], json[i][ propLoc[1] ] );
+                  //   }
+                  //   return {yo:"trop"};
+                  // },
+                  callTip: function(text, val) {
+                    var d = val.layer.options.raw;
+                    var sou = '<span class="markdiv-'+d.credit.color+' source">'+d.credit.slug+'</span> ';
+                    var add = d.address ? ' <span class="address">'+totext(d.address)+'</span>' : "";
+                    var des = d.description ? ' <span class="description">'+totext(d.description)+'</span>' : "";
+                    return '<div>'+sou+text+add+des+'</div>';
+                  }
+                }).addTo(map);
+                
+                updateMapStyles();
+
+                // when ready, remove loading
+                //$timeout(function(){ $scope.state.loading = false; });
+                //$scope.state.mapstatus = "DONE";
+
+
+              });
             });
           });
         });
