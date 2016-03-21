@@ -3462,7 +3462,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,datapath:'data/',assets:'build/',lastupdate:'15 March 2016 - 6:09'})
+.constant('settings', {dev:false,datapath:'data/',assets:'build/',lastupdate:'21 March 2016 - 6:01'})
 
 ;
 ;
@@ -4415,6 +4415,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
       ///////////////////////////////////////////////////////////////
       var fetch_circuitscourts = function(callb) {
         var cc = _.findWhere($scope.meta.mapcredits, {slug: "circuitscourts"});
+        if(!cc.hide)
         $http.get(settings.datapath+'/'+cc.json)
           .success(function(json) {
             _.each(json, function(m) {
@@ -4433,6 +4434,8 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
           .error(function(err) {
             0;
           });
+        else
+          callb();
       };
 
       ///////////////////////////////////////////////////////////////

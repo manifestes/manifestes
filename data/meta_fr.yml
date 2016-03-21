@@ -156,6 +156,7 @@ mapcredits:
         json: map_circuitscourts.json
         _json: http://www.circuits-courts.be/get_json_data.php?data=ext
         color: c6bc90
+        hide: true
     -   slug: demosphere
         name: Démosphère
         description: "Le réseau des éco-annonces\nde la revue Passerelle Éco"

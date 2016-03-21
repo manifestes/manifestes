@@ -304,6 +304,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
       ///////////////////////////////////////////////////////////////
       var fetch_circuitscourts = function(callb) {
         var cc = _.findWhere($scope.meta.mapcredits, {slug: "circuitscourts"});
+        if(!cc.hide)
         $http.get(settings.datapath+'/'+cc.json)
           .success(function(json) {
             _.each(json, function(m) {
@@ -322,6 +323,8 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
           .error(function(err) {
             console.log(err);
           });
+        else
+          callb();
       };
 
       ///////////////////////////////////////////////////////////////
