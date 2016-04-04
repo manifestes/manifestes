@@ -350,6 +350,11 @@
 		"properties": {
 			"title":"<a href='http:\/\/www.bastamag.net\/Des-fournisseurs-d-energie-publics' target='_blank'>Des fournisseurs d'\u00e9nergie publics, locaux, \u00e9colos et rentables... Mais interdits en France ! - Basta !<\/a>",
 			"description":"<span class=\"ville\">Metz (57050)<\/span>Des dizaines de villes allemandes choisissent de reprendre la main sur leur \u00e9nergie gr\u00e2ce \u00e0 des r\u00e9gies communales. Ces entreprises publiques locales (...)"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-16.png",
+"icon_size": [32,33],
+"icon_anchor": [16,33],
+"popup_anchor": [1,-27.5]
 		}},
 		{"type": "Feature",
 		"geometry": {"type": "Point", "coordinates": [6.616703, 48.145032]},
@@ -369,6 +374,11 @@
 		"properties": {
 			"title":"<a href='http:\/\/www.bastamag.net\/Jeunesse-en-quete-d-utilite' target='_blank'>Jeunesse en qu\u00eate d'utilit\u00e9 sociale - Basta !<\/a>",
 			"description":"<span class=\"ville\">Rochejean (25370)<\/span>Exp\u00e9rimenter de nouveaux rapports au travail, de nouvelles relations entre producteurs et consommateurs, privil\u00e9gier l'utilit\u00e9 sociale et non le (...)"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-16.png",
+"icon_size": [32,33],
+"icon_anchor": [16,33],
+"popup_anchor": [1,-27.5]
 		}},
 		{"type": "Feature",
 		"geometry": {"type": "Point", "coordinates": [-2.54332, 47.689375]},
@@ -956,6 +966,63 @@
 "icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-127.png",
 "icon_size": [33,32],
 "icon_anchor": [16.5,32],
+"popup_anchor": [1,-26.67]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.4347, 48.864001]},
+		"id":"177",
+		"properties": {
+			"title":"<a href='http:\/\/www.altermondes.org\/le-nouveau-centenaire-a-montreuil-un-si-long-combat-contre-le-mal-logement\/' target='_blank'>Le Nouveau Centenaire \u00e0 Montreuil : un si long combat contre le mal-logement<\/a>",
+			"description":"<span class=\"ville\">Montreuil (93100)<\/span>Apr\u00e8s 35 ann\u00e9es pass\u00e9es \u00e0 survivre dans une extr\u00eame pr\u00e9carit\u00e9, 193 travailleurs Sonink\u00e9s, originaires du Mali et de Mauritanie, ont enfin pos\u00e9 leurs valises au Nouveau Centenaire, une r\u00e9sidence sociale qu\u2019ils ont contribu\u00e9 \u00e0 cr\u00e9er. Ce concept d\u2019habitat collectif et participatif, in\u00e9dit en France, leur permet&nbsp;(...)"
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-96.1385687, 19.2002198]},
+		"id":"178",
+		"properties": {
+			"title":"<a href='http:\/\/www.lecourrier.ch\/137458\/la_monnaie_indigene_qui_conquiert_le_mexique' target='_blank'>La monnaie indig\u00e8ne qui conquiert le Mexique<\/a>",
+			"description":"<span class=\"ville\">Veracruz ()<\/span>Pens\u00e9 \u00e0 l\u2019origine comme une r\u00e9ponse \u00e0 la pauvret\u00e9 d\u2019une communaut\u00e9 rurale, le t\u00famin et son fonctionnement atypique gagnent les populations urbaines branch\u00e9es."
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [28.8563242548506, 47.0000225]},
+		"id":"179",
+		"properties": {
+			"title":"<a href='http:\/\/www.courrierdesbalkans.fr\/articles\/moldavie-eco-villages.html' target='_blank'>Agriculture : les \u00ab \u00e9co-villages \u00bb fleurissent en Moldavie - Le Courrier des Balkans<\/a>",
+			"description":"<span class=\"ville\">Chisinau ()<\/span>Permaculture, co-housing, agriculture non-m\u00e9canis\u00e9e... Les \u00ab \u00e9co-villages \u00bb fleurissent en Moldavie. Enqu\u00eate sur un ph\u00e9nom\u00e8ne qui participe au renouveau du mouvement \u00e9cologiste dans le pays."
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+"icon_size": [34,32],
+"icon_anchor": [17,32],
+"popup_anchor": [1,-26.67]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.3469, 48.8589]},
+		"id":"180",
+		"properties": {
+			"title":"<a href='http:\/\/www.reporterre.net\/Les-jeunes-delegues-de-l-ONU-creent-le-statut-de-refugie-climatique' target='_blank'>Les jeunes \u00ab\u00a0d\u00e9l\u00e9gu\u00e9s\u00a0\u00bb de l\u2019ONU cr\u00e9ent le statut de r\u00e9fugi\u00e9 climatique<\/a>",
+			"description":"<span class=\"ville\">Paris (75000)<\/span>Pr\u00e8s de 80 lyc\u00e9ens primo-arrivants ont jou\u00e9, l\u2019espace d\u2019une journ\u00e9e, les repr\u00e9sentants de l\u2019ONU. Au coeur de leur discussion, la migration environnementale."
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-117.png",
+"icon_size": [32,33],
+"icon_anchor": [16,33],
+"popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [4.370621, 43.836665]},
+		"id":"181",
+		"properties": {
+			"title":"<a href='http:\/\/www.reporterre.net\/Pour-se-liberer-de-la-grande-distribution-les-boutiques-paysannes-se' target='_blank'>Pour se lib\u00e9rer de la grande distribution, les boutiques paysannes se multiplient<\/a>",
+			"description":"<span class=\"ville\">N\u00eemes (30000)<\/span>Les boutiques tenues par des producteurs se multiplient en France. Elles permettent d'\u00e9chapper \u00e0 la pression des grandes enseignes et sont soutenus par un engagement militant et des r\u00e8gles \u00e9thiques.  N\u00eemes, reportage  La camionnette blanche d\u00e9boule en trombe sur le parking de la zone commerciale de\u00a0&nbsp;(...)"
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-3.874035, 48.505579]},
+		"id":"182",
+		"properties": {
+			"title":"<a href='http:\/\/www.bastamag.net\/Medias-de-proximite-Dans-le-Finistere-de-jeunes-agriculteurs-lancent-leur' target='_blank'>De jeunes agriculteurs lancent leur \u00e9picerie locale et participative<\/a>",
+			"description":"<span class=\"ville\">Pleyber-Christ (29410)<\/span>Quatre jeunes agriculteurs bretons ont imagin\u00e9 un concept d'\u00e9picerie locale paysanne et collaborative : \u00c9locop. Regroup\u00e9s au sein d'une association, ils proposent des produits locaux, garantis sans OGM et sans antibiotiques, issus de fili\u00e8res de production durable. En attendant l'ouverture du\u00a0&nbsp;(...)"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+"icon_size": [34,32],
+"icon_anchor": [17,32],
 "popup_anchor": [1,-26.67]
 		}}
 	]
