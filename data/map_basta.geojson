@@ -1024,6 +1024,113 @@
 "icon_size": [34,32],
 "icon_anchor": [17,32],
 "popup_anchor": [1,-26.67]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-58.4460878, -34.6143904]},
+		"id":"183",
+		"properties": {
+			"title":"<a href='http:\/\/www.altermondes.org\/madygraf-les-defis-dune-usine-sans-patron-a-buenos-aires\/' target='_blank'>MadyGraf\u00a0: les d\u00e9fis d\u2019une usine sans patron \u00e0 Buenos Aires | Altermondes<\/a>",
+			"description":"<span class=\"ville\">Buenos Aires ()<\/span>Lorsque la direction de MadyGraf a annonc\u00e9 sa faillite en 2014, une partie des ouvriers de l\u2019imprimerie a r\u00e9cup\u00e9r\u00e9 l\u2019usine en autogestion. Sans patron, \u00e0 salaires \u00e9gaux et face aux pr\u00e9jug\u00e9s persistants \u00e0 l\u2019encontre de cette gouvernance \u2013 qui n\u2019est pas sans difficult\u00e9, ils assurent aujourd\u2019hui 80% de la&nbsp;(...)"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-16.png",
+"icon_size": [32,33],
+"icon_anchor": [16,33],
+"popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [38.7612525, 9.0107934]},
+		"id":"184",
+		"properties": {
+			"title":"<a href='http:\/\/www.kaizen-magazine.com\/ethiopie-l-ecologie-dans-des-camps-de-refugies\/' target='_blank'>\u00c9thiopie : l'\u00e9cologie en graines dans des camps de r\u00e9fugi\u00e9s<\/a>",
+			"description":"<span class=\"ville\">Addis-Abeba ()<\/span>Seul \u00c9tat stable de la corne de l\u2019Afrique, l\u2019\u00c9thiopie accueille actuellement 500 000 r\u00e9fugi\u00e9s. Face \u00e0 cet afflux, la capitale Addis Abeba a pris conscience de la n\u00e9cessit\u00e9 de prot\u00e9ger ses ressources et ainsi d\u2019aider les populations d\u00e9plac\u00e9es. Ses camps de r\u00e9fugi\u00e9s deviennent de plus en plus&nbsp;(...)"
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.285095, 48.91076]},
+		"id":"185",
+		"properties": {
+			"title":"<a href='http:\/\/bondyblog.liberation.fr\/201604070001\/brassard-noir-sur-gilets-jaunes\/' target='_blank'>Brassard noir sur gilets jaunes<\/a>",
+			"description":"<span class=\"ville\">Asni\u00e8res-sur-Seine (92600)<\/span>Situ\u00e9e en plein milieu du quartier populaire d\u2019Asni\u00e8res les Courtilles, \u00e0 la limite de la ville de Gennevilliers (92), la r\u00e9gie de quartier d\u2019Asni\u00e8res est la seule association d\u2019insertion par l\u2019activit\u00e9 \u00e9conomique (IAE) implant\u00e9e dans la&nbsp;(...)"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-16.png",
+"icon_size": [32,33],
+"icon_anchor": [16,33],
+"popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-2.952126, 47.63816]},
+		"id":"186",
+		"properties": {
+			"title":"<a href='http:\/\/www.eco-bretons.info\/ecomag\/dossier\/habitat-participatif-%C2%AB%C2%A0multiplier-petits-bonheurs-et-diviser-petits-emb%C3%AAtements%C2%A0%C2%BB' target='_blank'>Habitat participatif. \u00ab\u00a0Multiplier les petits bonheurs et diviser les petits emb\u00eatements\u00a0\u00bb<\/a>",
+			"description":"<span class=\"ville\">Bono (56400)<\/span>Depuis juillet 2014, le FIL, un habitat d'un genre nouveau, a vu le jour au Bono (56), pr\u00e8s de Vannes. Au c\u0153ur d'un lotissement en plein d\u00e9veloppement, quatre foyers se sont install\u00e9s avec un projet un peu particulier : mettre en place un habitat participatif. En Bretagne, ce sont pas moins de 15&nbsp;(...)"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-70.png",
+"icon_size": [33,33],
+"icon_anchor": [16.5,33],
+"popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.315869, 48.829198]},
+		"id":"187",
+		"properties": {
+			"title":"<a href='http:\/\/www.streetpress.com\/sujet\/1460481240-les-grands-voisins-village-utopique-paris' target='_blank'>Les Grands voisins, un village utopique en plein Paris<\/a>",
+			"description":"<span class=\"ville\">Paris (75014)<\/span>Dans l\u2019ancien h\u00f4pital, Saint-Vincent-de-Paul, plus de 70 assos et entreprises solidaires ont pos\u00e9 leurs valises. A Paris, sur plus de 3 hectares, s\u2019organise une petite vie entre ferme urbaine, ateliers bricolage et h\u00e9bergements."
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.598006, 44.844784]},
+		"id":"188",
+		"properties": {
+			"title":"<a href='http:\/\/rue89bordeaux.com\/2016\/04\/non-mixite-zones-reservees-femmes-bordeaux\/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=non-mixite-zones-reservees-femmes-bordeaux' target='_blank'>Non-mixit\u00e9 : ces zones r\u00e9serv\u00e9es aux femmes \u00e0 Bordeaux<\/a>",
+			"description":"<span class=\"ville\">Bordeaux (33000)<\/span>Ce lundi, Recup\u2019R propose un atelier bricolage r\u00e9serv\u00e9 aux femmes. L\u2019agglom\u00e9ration bordelaise recueille en son sein, quelques discr\u00e8tes bulles de non-mixit\u00e9. Dans une ville pens\u00e9e par et pour les hommes, elles se veulent espace-temps de r\u00e9pit pour certaines, de revendication pour&nbsp;(...)"
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-3.79168, 48.533781]},
+		"id":"189",
+		"properties": {
+			"title":"<a href='http:\/\/www.eco-bretons.info\/ecomag\/s%C3%A9rie\/buzuk-une-monnaie-locale-et-sociale' target='_blank'>Le Buzuk, une monnaie locale et sociale | Eco-bretons<\/a>",
+			"description":"<span class=\"ville\">Plourin-l\u00e8s-Morlaix (29600)<\/span>'aventure du Buzuk d\u00e9marre en mai 2012. Suite \u00e0 une soir\u00e9e-d\u00e9bat organis\u00e9e par l'Adess, un groupe de r\u00e9flexion se met en place. Depuis, une association, Pour une monnaie locale en pays de Morlaix, a \u00e9t\u00e9 cr\u00e9\u00e9e et une dizaine de b\u00e9n\u00e9voles porte ce projet au sein d'un comit\u00e9 de pilotage. L'Adess a mis un&nbsp;(...)"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-129.png",
+"icon_size": [32,33],
+"icon_anchor": [16,33],
+"popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.381415, 48.857022]},
+		"id":"190",
+		"properties": {
+			"title":"<a href='http:\/\/www.bastamag.net\/A-Menilmontant-un-autre-football-est-possible' target='_blank'>\u00c0 M\u00e9nilmontant, un autre football est possible<\/a>",
+			"description":"<span class=\"ville\">Paris (75011)<\/span>Loin du foot professionnel et de ses d\u00e9rives, une bande de copains a fond\u00e9 dans l'Est parisien un club d'un genre nouveau. Ici, il est autant question de l'accueil des r\u00e9fugi\u00e9s ou d'anti-fascisme que de ballon rond. Un engagement politique \u00e0 coup de fumig\u00e8nes et de messages provocateurs, qui d\u00e9tonne\u00a0&nbsp;(...)"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-117.png",
+"icon_size": [32,33],
+"icon_anchor": [16,33],
+"popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.60384, 43.343121]},
+		"id":"191",
+		"properties": {
+			"title":"<a href='http:\/\/www.bastamag.net\/A-Roquevaire-l-eau-vitale-est-gratuite' target='_blank'>\u00c0 Roquevaire, l'eau \u00ab vitale \u00bb est gratuite<\/a>",
+			"description":"<span class=\"ville\">Roquevaire (13360)<\/span>Trente m\u00e8tres cubes d'eau potable pour un euro ! C'est le prix d\u00e9risoire que payent chaque ann\u00e9e les habitants de Roquevaire, dans les Bouches-du-Rh\u00f4ne, suite \u00e0 une d\u00e9cision de la municipalit\u00e9. Celle-ci consid\u00e8re que l'eau est un bien commun de l'humanit\u00e9, et que chaque habitant de la commune doit\u00a0&nbsp;(...)"
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [6.1466014, 46.2017559]},
+		"id":"192",
+		"properties": {
+			"title":"<a href='http:\/\/www.lecourrier.ch\/138431\/l_ilot_13_ou_la_reussite_d_un_quartier_gere_en_communaute' target='_blank'>L\u2019Il\u00f4t 13 ou la r\u00e9ussite d\u2019un quartier g\u00e9r\u00e9 en communaut\u00e9<\/a>",
+			"description":"<span class=\"ville\">Gen\u00e8ve ()<\/span>L\u2019Il\u00f4t 13 f\u00eate ses 30 ans, l\u2019occasion de revenir sur la cr\u00e9ation d\u2019un lieu unique, premier t\u00e9moin de l\u2019autogestion \u00e0 la genevoise."
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.598006, 44.844784]},
+		"id":"193",
+		"properties": {
+			"title":"<a href='http:\/\/rue89bordeaux.com\/2016\/04\/un-fonds-regional-investissement-pour-transition-energetique\/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=un-fonds-regional-investissement-pour-transition-energetique' target='_blank'>Un fonds r\u00e9gional d'investissement pour la transition \u00e9nerg\u00e9tique<\/a>",
+			"description":"<span class=\"ville\">Bordeaux (33000)<\/span>Un fonds r\u00e9gional d\u2019investissement de plus de 8 millions d\u2019euros d\u00e9di\u00e9 aux \u00e9nergies renouvelables vient d\u2019\u00eatre cr\u00e9e par la nouvelle Grande R\u00e9gion. Le projet, pr\u00e9sent\u00e9 lundi 11 avril \u00e0 Bordeaux, a pour but d\u2019agir en faveur de la transition&nbsp;(...)"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-127.png",
+"icon_size": [33,32],
+"icon_anchor": [16.5,32],
+"popup_anchor": [1,-26.67]
 		}}
 	]
 }

@@ -23,6 +23,20 @@
   line-height: 0;
 
   border-right: @hsect solid transparent;
+  &.status-draft {
+    border-left: @hsect solid rgba(0,0,0,0.2);
+  }
+
+  .date {
+    float: left;
+    .absolute-vertical-centered();
+    text-transform: none;
+    font-style: italic;
+    color: gray;
+    text-align: left;
+    margin-left: 15px;
+    font-size: 0.65em;
+  }
 
   .tags {
     .base-tags();

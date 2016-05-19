@@ -3462,7 +3462,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,datapath:'data/',assets:'build/',lastupdate:'21 March 2016 - 6:01'})
+.constant('settings', {dev:false,datapath:'data/',assets:'build/',lastupdate:'19 May 2016 - 6:01'})
 
 ;
 ;
@@ -3960,14 +3960,14 @@ angular.module('manifest.maincontroller', ['underscore','config'])
             d.quote.author = $scope.md2Html(d.quote.author);
           }
           d.content = $scope.md2Html(d.content);
-          d.tags = d.tags ? d.tags.split(', ') : [];
+          d.tags = d.tags ? d.tags.split(' ') : [];
           _.each(d.tags, function(t) {
             $scope.sectionNbByTag[t] = $scope.sectionNbByTag[t] ? $scope.sectionNbByTag[t]+1 : 1;
           });
           d.links = $scope.md2Html(d.links);
 
           d.date = moment(d.date);
-          var seuil = moment().subtract(3,"month");
+          var seuil = moment().subtract(6,"month");
           if(d.date > seuil)
             d.date = d.date.fromNow();
           else
@@ -3977,7 +3977,8 @@ angular.module('manifest.maincontroller', ['underscore','config'])
 
           d.layout = 'flat'; //Math.random()<0.2 ? 'grid' : 'flat';
 
-          $scope.sectionArray.push(d);
+          if($scope.settings.dev || !d.status || d.status != 'draft')
+            $scope.sectionArray.push(d);
         });
         $scope.sectionFiltArray = $scope.sectionArray;
         callb();

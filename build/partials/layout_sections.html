@@ -2,16 +2,13 @@
 <div
   ng-repeat="e in sectionFiltArray"
   id="p_{{$index}}"
-  class="section colored-{{$index%10}}"
+  class="section colored-{{$index%10}} status-{{e.status}}"
   ng-click="toggleOne(e);"
   ng-class="{
     opened: e.opened
   }">
-
+  
   <!--
-  <div ng-if="e.date" class="date">{{e.date}}</div>
-  
-  
   <div
     ng-if="state.tagging"
     class="tags hint--bottom colored-{{$index%10}}"
@@ -21,7 +18,12 @@
   </div>
   -->
 
-  <div class="h1"><span class="wtin" compile-here="e.title"></span></div><div class="h2"><span class="wtin" compile-here="e.subtitle"></span></div>
+  <div class="h1">
+    <span class="wtin" compile-here="e.title"></span>
+    <span ng-if="e.date" class="date">{{e.date}}</span>
+  </div><div class="h2">
+    <span class="wtin" compile-here="e.subtitle"></span>
+  </div>
   <div class="block">
     <div
       class="image cover"

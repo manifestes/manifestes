@@ -2088,6 +2088,28 @@ body.layout-mapprint .container {
   border-right: 60px solid transparent;
   /* ---------------------- OPENED SECTION */
 }
+.wrapper.layout-sections .section.status-draft {
+  border-left: 60px solid rgba(0, 0, 0, 0.2);
+}
+.wrapper.layout-sections .section .date {
+  float: left;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  text-transform: none;
+  font-style: italic;
+  color: gray;
+  text-align: left;
+  margin-left: 15px;
+  font-size: 0.65em;
+}
 .wrapper.layout-sections .section .tags {
   background: black;
   font-size: 0.7em;

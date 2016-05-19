@@ -254,7 +254,7 @@ tags:
     energy: "_énergie = nucléaire, électrique,\néolien, solaire"
     slow: "_ralentir = rencontrer, découvrir, partager,\ncommunication non violente,\ndécroissance"
     media: "_médias = information, presse,\njournalisme, actualité"
-    act: "_action = actions pratiques quotidiennes,\ndésobéissance civile, militantisme"
+    act: "_action = actions pratiques quotidiennes,\ndésobéissance civile, militantisme\nsortir de sa zone de confort"
     education: "éducation = école, université, recherche,\napprendre, se former,\nenseigner, partages de savoir"
     work: travail = emploi, chômage, activité remunérée
     alienation: "aliénation = publicité, propagande, aliénation,\nconditionnements, contrôle,\nfichage, cloud, surveillance"
@@ -275,6 +275,11 @@ tags:
     philo: philosophie = réflexion, théorie, principes
     earth: "planète = environnement, climat, déchets, pollution,\neau, animaux, végétaux"
     agriculture: "agriculture = (perma)cultures, graines, semences,\njardinage, élevage"
+moretags:
+    violence: "violences = brutalité, casse, violences\nmatérielles et psychologiques"
+    spirit: "spiritualité = foi, religions, spiritualités,\ndieux, idéologies, énergies"
+    open: "transparence = ouverture, transparence, accessibilité, médiations"
+    time: "temps = temporalités, rythmes, rapports aux temps,\nfuturisme, présentisme"
 footer:
     lastupdatetext: dernière modification
     content: >
