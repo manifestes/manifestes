@@ -40,6 +40,7 @@ body {
 @redColor: #883E3E;
 @redGreyColor: #987676;
 
+@pastelColor: #DBCF90;
 @searchYellow: rgba(255, 252, 0, 0.48);
 @yellowColor: #FFCD21;
 
@@ -338,7 +339,10 @@ span.highlight, div.highlight { /* searched words */
   left: 0;
   width: 100%;
   height: @menuH;
+  
   background: white;
+  .box-shadow(0px 0px 4px 0px #525252);
+  
   text-align: center;
 
   /* extreme left buttons */
@@ -390,14 +394,17 @@ span.highlight, div.highlight { /* searched words */
     }
   }
 
+  .addzone {
+    height: 350px;
+    background: @mostLightColor; 
+  }
+
   .menu {
     z-index: 80;
     position: absolute;
     height: @menuH;
     width: 100%;
-
     background: white;
-    .box-shadow(0px 0px 4px 0px #525252);
     text-align: left;
 
     .buttons {
@@ -659,6 +666,25 @@ span.highlight, div.highlight { /* searched words */
       &.filtered {
         background: @redColor;
       }
+    }
+  }
+
+  .addzonetrigger {
+    box-sizing: border-box;
+    display: inline-block;
+    height: @searchInputH;
+    margin: 9px;
+    width: 190px;
+    text-align: center;
+    border-radius: 40px;
+    border: #d8d8d8 1px solid;
+    color: white;
+    background: @pastelColor;
+    font-style: italic;
+    cursor: pointer;
+    div {
+      height: 100%;
+      line-height: 100%;
     }
   }
 

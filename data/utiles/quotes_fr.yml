@@ -3,6 +3,78 @@
 
 ---
 quote:
+    author: "[Lundi.am](https://lundi.am/revolution-n-est-pas-un-mot-dans-nos-bouches)"
+    content: >
+        Stratégiquement, la situation est des plus simples : nous voulons destituer ce qui nous gouverne ; et ce qui gouverne veut se maintenir, à n’importe quel prix. Il n’y a pas de question de « violence » là-dedans : il y a deux volontés qui s’affrontent : nous voulons les renverser et ils ne le veulent pas. Libre à eux. L’affaire sera tranchée sous les yeux de tous. En attendant, il n’y a plus de position neutre : tous ceux qui s’expriment autour de ce qui gronde en France en ce moment se rangent d’un côté ou de l’autre, pour la destitution du gouvernement ou contre elle. Entre les deux, il n’y a rien. Car « révolution » n’est pas un mot dans nos bouches, mais un feu dans notre cœur.
+quote:
+    author: "[Lundi.am](https://lundi.am/Le-14-mai-manifestons-contre-les-violences-policieres)"
+    content: >
+        Derrière les affrontements avec la police il n’y a pas qu’un délire de jeunesse viriliste, mais la prise en compte d’un rapport de force, le début d’un retournement de la normalité, le refus de la place que l’on nous réserve.
+quote:
+    author: 
+    content: >
+
+quote:
+    author: 
+    content: >
+        Ne croyez pas une chose simplement, sur des ouï-dire
+        Ne croyez pas sur la foi des traditions parce qu'elle sont en honneur depuis de nombreuses générations
+        Ne croyez pas une chose parce que l'opinion générale la tient pour vraie ou parce que les gens en parlent beaucoup
+
+quote:
+    author: Basshô
+    content: >
+        Rien ne dit
+        Dans le chant de la cigale
+
+
+        Qu'elle est près de sa fin.
+quote:
+    author: Anonyme
+    content: >
+        Les fleurs tombent
+        En toute saison
+
+
+        Mais où va leur parfum ?
+quote:
+    author: Etienne de la Boétie - Servitude Volontaire ?
+    content: >
+        Les Hommes naissent libres
+        Mais ils sont partout dans les chaînes
+    tags: violence
+quote:
+    autor: Rykyû
+    content: >
+        Combats ta honte.
+        Oublie ton orgueil.
+        Et apprends tout ce que tu peux
+        Des autres.
+
+
+        Voila le fondement
+        D'une vie accomplie.
+quote:
+    author: Maître Sozan
+    content: >
+        Pour réaliser l'éveil ici et maintenant,
+        Nous devons être libérés
+        De l'idée du juste et du faux
+
+
+        Lorsque le juste et le faux se livrent bataille
+        L'esprit est malade
+    tags: creation spirit
+quote:
+    author: Zenki Shibayama
+    content: >
+        Ne dites pas que la lune existe
+        Lorsque les nuages s'en vont
+
+
+        Elle a toujours été là
+        Parfaitement claire
+quote:
     author: "[Lettre aux mouvements, Rennes, 4 mai 2016](https://lundi.am/Un-zadiste-en-prison-Lettre-aux-mouvements)"
     content: >
         Nous n’avons pas encore gagné, le chemin sera peut-être encore long et douloureux, mais nous savons que nous voulons gagner d’un seul corps, que nos mouvements sont forts, que le pouvoir les craint comme la peste. Des cabanes de palettes de la ZAD aux maisons du peuple des centres-villes, des places occupées aux fermes qui ne veulent pas disparaître, il nous revient dès à présent de penser l’impossible.
@@ -249,7 +321,7 @@ quote:
     author: James LOVELOCK, Gaïa. Une médecine pour la planète, p. 186
     content: Je m’attendrais plus à voir une chèvre occuper avec succès un poste de jardinier qu’à voir les humains devenir des intendants responsables de la Terre
 quote:
-    author: T.S. Eliot (dernière question par François Taddeï)
+    author: T.S. Eliot
     content: >
         Où est passée la *vie* que l'on a perdue en la vivant ?
 
@@ -318,12 +390,15 @@ quote:
     author: Horace Walpole
     content: Quel que soit ton conseil, qu'il soit bref
 quote:
+    author: Gandhi
+    content: Sois le changement que tu veux voir dans le monde
+quote:
     author: Chris marker, L'amérique rêve
     content: Ce qui s'est passé *avant* le passé, personne ne s'y intéresse. La conquète du territoire opposait aux Indiens des Européens fraîchement débarqués. Les Indiens y ont perdu la vie, et les Européens la mémoire
 #quote:
     author: Celia Izoard, revue Z n°9, Toulouse
     content: La capacité d'un chercheur à penser l'impact concret des technologies sur la vie des gens est proportionnelle à la distance sociale et physique qui les sépare
-quote:
+#quote:
     author: lettre de N. Wiener à W. Reuther, 1949, revue Z n°9
     content: Toute main-d'œuvre, dès lors qu'elle est mise en concurrence avec un esclave, que l'esclave soit humain ou mécanique, doit accepter les conditions de travail de l'esclave
 quote:
@@ -532,9 +607,6 @@ quote:
 #quote:
     author: —
     content: L'utopie n'est pas un futur souhaitable mais un ailleurs présent
-#quote:
-    author: Gandhi
-    content: Sois le changement que tu veux voir dans le monde
 #quote:
     author: Deleuze
     content: Être de gauche ou de droite, ce n'est pas une question de morale, mais de perception du monde.

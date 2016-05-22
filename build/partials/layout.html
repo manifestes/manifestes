@@ -51,7 +51,8 @@
 
   <div class="header">
 
-    <div class="menu" >
+    <!-- TOP MENU -->
+    <div class="menu">
       
       <!-- RIGHT MENU BUTTONS, REVERSE ORDER-->
       <div class="buttons">
@@ -124,7 +125,6 @@
         </div>
       </div>
 
-
       <!-- BACK TO INTRO -->
       <div class="minimenu">
         <div
@@ -184,9 +184,22 @@
           ng-click="state.searchinput.length && searchSubmit(state.searchinput);"
           class="goinput fa fa-search fa-lg"></i>
         </form>
-
       </div>
+
+      <!-- ADD ZONE TRIGGER -->
+      <!--
+      <div class="addzonetrigger" ng-click="state.addzone = true;">
+        <div>{{meta.menu.addzone}}</div>
+      </div>
+      -->
+
     </div>
+
+    <!-- ADD ZONE -->
+    <!--
+    <div class="addzone" ng-if="state.addzone">
+    </div>
+    -->
 
     <!-- TAGS COLLAPSABLE PANEL -->
     <div

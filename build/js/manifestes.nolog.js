@@ -3462,7 +3462,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,datapath:'data/',assets:'build/',lastupdate:'19 May 2016 - 6:01'})
+.constant('settings', {dev:false,datapath:'data/',assets:'build/',lastupdate:'22 May 2016 - 11:27'})
 
 ;
 ;
@@ -3977,6 +3977,7 @@ angular.module('manifest.maincontroller', ['underscore','config'])
 
           d.layout = 'flat'; //Math.random()<0.2 ? 'grid' : 'flat';
 
+          // only pushing normal sections if prod (draft sections are only visible if dev)
           if($scope.settings.dev || !d.status || d.status != 'draft')
             $scope.sectionArray.push(d);
         });

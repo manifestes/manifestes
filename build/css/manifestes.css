@@ -1345,6 +1345,9 @@ div.highlight {
   width: 100%;
   height: 65px;
   background: white;
+  -webkit-box-shadow: 0px 0px 4px 0px #525252;
+  -moz-box-shadow: 0px 0px 4px 0px #525252;
+  box-shadow: 0px 0px 4px 0px #525252;
   text-align: center;
   /* extreme left buttons */
 }
@@ -1387,15 +1390,16 @@ div.highlight {
 .header .minimenu span {
   display: block;
 }
+.header .addzone {
+  height: 350px;
+  background: #e4e4e4;
+}
 .header .menu {
   z-index: 80;
   position: absolute;
   height: 65px;
   width: 100%;
   background: white;
-  -webkit-box-shadow: 0px 0px 4px 0px #525252;
-  -moz-box-shadow: 0px 0px 4px 0px #525252;
-  box-shadow: 0px 0px 4px 0px #525252;
   text-align: left;
 }
 .header .menu .buttons {
@@ -1654,6 +1658,24 @@ div.highlight {
 }
 .header .menu .tagactivator.filtered {
   background: #883e3e;
+}
+.header .addzonetrigger {
+  box-sizing: border-box;
+  display: inline-block;
+  height: 47px;
+  margin: 9px;
+  width: 190px;
+  text-align: center;
+  border-radius: 40px;
+  border: #d8d8d8 1px solid;
+  color: white;
+  background: #dbcf90;
+  font-style: italic;
+  cursor: pointer;
+}
+.header .addzonetrigger div {
+  height: 100%;
+  line-height: 100%;
 }
 .header .tagspanel {
   z-index: 27;
@@ -2089,7 +2111,11 @@ body.layout-mapprint .container {
   /* ---------------------- OPENED SECTION */
 }
 .wrapper.layout-sections .section.status-draft {
-  border-left: 60px solid rgba(0, 0, 0, 0.2);
+  border-left: 60px solid rgba(0, 0, 0, 0.3);
+}
+.wrapper.layout-sections .section.status-draft .h1 .wtin {
+  font-weight: 600;
+  color: #444;
 }
 .wrapper.layout-sections .section .date {
   float: left;

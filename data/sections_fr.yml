@@ -1,38 +1,9 @@
 
 
 ---
-date: 2016-01-07
-title: Autres mondes possibles
-subtitle: Nous sommes partout. Nos démarches sont infiniment diverses et complémentaires. Qu'avons-nous en commun ?
-tags: about
-image:
-    url: LilliCarre.jpg
-    credit: Lili Carré
-quote:
-    author: l'An 01
-    content: >
-        On arrête tout
-        
-
-        On réfléchit
-        
-
-        Et c'est pas triste
-content: >
-    #objectifs
-
-    - écrire collectivement un manifeste de notre territoire commun philosophique, politique, poétique, pratique **>> textes**
-
-    - partager et archiver nos inspirations, références, initiatives **>> réseau et liens**
-
-    - faciliter l'accès aux solutions concrètes existantes **>> carte et agenda**
-
-
-
----
-date: 2016-01-07
+date: 2016-05-20
 title: C'est quoi ce site ?
-subtitle: Si nos intentions ne sont pas claires, contactez-nous !
+subtitle: Un portail de pratiques et d'idées alternatives, un manifeste, des cartographies... Si nos intentions ne sont pas claires, contactez-nous !
 tags: about
 image:
     url: eniac-computer.jpg
@@ -51,72 +22,122 @@ content: >
 
 
 ---
-status: draft
 date: 2016-01-07
-title: Pourquoi tant de blabla ?
-subtitle: Prenons le temps de bien définir les problèmes et la manière de les aborder 
-tags: about open politics words
+title: Objectif(s)
+subtitle: Nous sommes partout. Nos démarches sont infiniment diverses et complémentaires. Qu'avons-nous en commun ?
+tags: about
+image:
+    url: LilliCarre.jpg
+    credit: Lili Carré
+quote:
+    author: l'An 01
+    content: >
+        On arrête tout
+        
+
+        On réfléchit
+        
+
+        Et c'est pas triste
 content: >
-    Nous pensons nécessaire de définir le plus clairement possible la philosophie du projet, pour que le visiteur puisse comprendre quelle est la position du site, la discuter si besoin, mais ne pas considérer ce site comme une simple boite à outils
+    **Quels autres mondes possibles ?**
 
 
-    Nous pensons que tout objet technique porte avec lui un sens politique, nous souhaitons donc donner la plus grande place possible au sens qui nous tiennent à cœur
+    - *textes* — **écrire collectivement** un manifeste de notre territoire commun philosophique, politique, poétique, pratique
+
+    - *réseau et liens* — **partager et archiver** nos inspirations, références, initiatives
+
+    - *carte et agenda* — **faciliter** l'accès aux solutions concrètes existantes
 
 
 ---
 status: draft
-date: 2016-04-23
+date: 2016-05-20
+title: Pourquoi tout ce blabla ?
+subtitle: La situation est critique. Prenons le temps de bien définir les problèmes et la manière de les aborder 
+tags: about open politics words
+content: >
+    Tout objet technique (ce site y compris) porte avec lui un sens politique.
+
+
+    Nous pensons nécessaire de définir le plus clairement (et joliment) possible la philosophie du projet, pour que le visiteur puisse comprendre à quoi sert ce site, ses objectifs... les discuter si besoin
+
+
+    **Construire un espace commun d'action et de réflexion collective**
+
+
+---
+status: draft
+date: 2016-05-20
 title: Le désastre est inévitable
 subtitle: Seules les réactions face à l'effondrement diffèrent
 tags: act words
 content: >
-    Malgré de nombreuses incertitudes, nous savons d'ores-et-déjà que nous courrons au désastre social, écologique, énergétique et économique. Il y a bien sûr de nombreux scénarios possibles: rapide ou graduel, plus ou moins violent ou injuste, préservant une part plus ou moins grande de la population mondiale.
+    Malgré de nombreuses incertitudes, nous savons d'ores-et-déjà que nous courrons au **désastre social, écologique, énergétique et économique**. Il y a bien sûr de nombreux scénarios possibles: *rapide ou graduel, plus ou moins violent ou injuste, préservant une part plus ou moins grande de la population mondiale...*
 
 
-    Quelles réactions individuelles, collectives et structurelles souhaitons-nous ?
+    **Quelles réactions individuelles, collectives et structurelles souhaitons-nous ?**
 
 
 ---
 status: draft
+date: 2016-05-20
 title: C'est pas si grave ?
-subtitle: Réactions émotionnelles rassurantes face à l'effondrement
+subtitle: "Réactions rassurantes face à l'effondrement. Jusqu'ici tout va bien ?"
 tags: spirit act words
 content: >
-    Si le futur est incertain, informations contradictoires..., on préfère projeter le présent et se rassurer 
-    réation nihiliste: Par peur de l'inconnu et manque d'informations, on préfère minimiser
-    Comme la grenouille dans le bain marie, nous = Difficulté d'appréhender des changements lents
-    Notre système émotionnel réagit bien mieux face à des situations rapides (peur/défense)
-    Si tout le groupe continue dans une direction qui déssert tout le monde, il est difficile de changer lorsqu'il y a peu de cohésion sociales
+    - *« Il y a toujours eu des catastrophes naturelles et des conflits sociaux, on trouvera bien quelque chose pour résoudre tout ça... »*
     
-    «il y a toujours eu des problèmes et des catastrophes naturelles»
-    «on trouvera bien quelque chose pour résoudre tout ça»
-    «c'est le destin de toute façon»
-    «c'est exagéré, ce n'est pas démontré, cela ne me concerne(ra) pas
-    «on ne sait pas de quoi demain sera fait... autant profiter maintenant»
-    «Pourquoi je changerai moi alors que mon voisin ne fait rien ?»
-    «Il y a toujours des oppositions, il faut voir les choses du bon coté ! vous êtes trop pessimistes... vraiment ?
-    «Vivre avec le nucléaire c'est vivre avec la mort, c'est normal, c'est le risque.
-    «Le monde peut bien exploser, et alors ? ce n'est pas de ma faute et ça m'empêchera pas de dormir
+    - *« C'est exagéré, ce n'est pas démontré... cela ne me concerne(ra) pas »*
+    
+    - *« On ne sait pas de quoi demain sera fait... autant profiter maintenant »*
+    
+    - *« Pourquoi je changerai moi alors que mon voisin ne fait rien ? »*
+
+    - *« Le monde est déjà vieux. Pour le changer, bon courage »*
+
+    Nous réagissons facilement face à des situations rapides (instincts peur/défense), mais appréhende difficilement les changements plus lents (plusieurs années), d'autant plus lorsqu'il y a peu de cohésion sociale
+
+
+    Face à un futur incertain, par manque d'information ou traversé.e d'informations contradictoires, nous nous rassurons en minimisant, ou en projetant le présent
+
+
+    *« la science trouvera bien une solution »* ... vraiment ?
 
 
 ---
 status: draft
 date: 2016-04-23
-title: Nous avons besoin d'informations
-subtitle: Pour comprendre la complexité et l'ampleur du désastre
+title: Se rendre compte
+subtitle: Nous avons besoin d'informations pour saisir la complexité et l'ampleur du désastre
 tags: media
 content: >
-
-    Nous savons que les types d'organisations actuellement dominants sur la planète (économie, énergie, urbanisme, culture, information) ne sont absolument pas préparés pour l'effondrement, et au contraire nous y conduisent de plus en plus vite
-
-    Une réponse adaptée nécessite de l'information (bien comprendre ce qui nous arrive) et des mesures permettant une transition la moins traumatique et plus digne pour l'Humanité
-
-    Nous manquons d'informations sur l'ampleur de l'effondrement, sur sa complexité, l'imprévisibilité des phénomènes de rétro-alimentation
-    La grande majorité de la population mondiale sous estime l'ampleur du déclin énergétique, les implications du réchauffement et de la perte de biodiversité
+    La grande majorité de la population mondiale sous estime l'ampleur du déclin énergétique, les implications du réchauffement climatique et de la perte de biodiversité
 
 
-    Théories de cycles persuadée qu'il y a réversibilité partout
-    focalisée sur la croissance, le développement et les chiffres de la bourse
+    Les types d'organisations actuellement dominants sur la planète — *économie, énergie, urbanisme, culture, information...* — ne sont absolument pas préparés pour l'effondrement. Au contraire, ils nous y conduisent de plus en plus vite.
+
+
+    Nous devons rechercher et valoriser les médias produisant des analyses de fond, afin de mieux comprendre la complexité et l'imprévisibilité de ces phénomènes; et y apporter la réponse la moins traumatique et plus digne pour l'Humanité
+
+
+---
+status: draft
+date: 2016-05-20
+title: Si ça te plaît pas, modifie !
+subtitle: Arrête de râler, aide-nous plutôt à ajuster les textes ! Tout le site peut être modifié comme sur Wikipedia
+tags: about words
+content: >
+    Nous ne pensons pas détenir la vérité absolue.
+
+
+    Nous essayons simplement de formuler ce qui nous tient à cœur.
+
+
+    Si certains passages ne te plaisent pas, contacte-nous pour les améliorer !
+
+
+    Si tu as des citations, des liens, des morceaux de texte qui te tiennent à cœur, partage-les !
 
 
 ---
@@ -198,17 +219,21 @@ title: Plusieurs niveaux de lecture
 subtitle: Un seul objet, plusieurs approches possibles
 tags: about tool words
 content: >
-    Le site est construit de manière à permettre différents niveaux de lecture:
-    Faire le lien entre objets de communication, et outil d'analyse plus profond
-    - en introduction, ≠ accroches (images et slogans d'introduction): comprendre le projet en une image
-    - textes synthétiques: pour composer les ≠ réflexions
-    - approfondi: liens, ressources que l'on peut consulter pendant des heures pour se faire sa propre opinion
-    - pratiques: où (carte) ? et quand (agenda demosphère) ?
+    Ce site permet différents rythmes de lecture (cf menu en haut)
+
+
+    - *en quelques mots* — **l'accroche introductive** résumant le projet
+
+    - *en quelques phrases* — **les textes** que vous êtes en train de lire, composition de ≠ réflexions synthétiques
+
+    - *pendant des heures* — **le réseau** et une sélection de **liens** externes : autres sites qu'on peut consulter pour se faire sa propre opinion
+
+    - *maintenant !* — **la carte** : informations pratiques pour passer à l'acte
 
 
 ---
 date: 2016-01-07
-title: Ce site est particulier
+title: Encore un site alternatif ?
 subtitle: Pourquoi faire encore un site ? il y en a déjà beaucoup d'autres
 tags: about
 image:
@@ -246,15 +271,6 @@ content: >
 
 
     Bienvenue à tou.te.s celles et ceux qui souhaitent nous rejoindre pour continuer la rédaction du projet !
-
-
----
-status: draft
-date: 2016-05-08
-title: Si ça vous plaît pas, modifiez !
-subtitle: Les contenus de ce site sont en perpétuel ajustement, rejoignez-nous !
-tags: about words
-content: —
 
 
 ---
@@ -382,30 +398,6 @@ content: >
 
 
     Il est difficile de définir une norme de taille idéale (dépend de l'activité, des habitudes de vie, élevage ou non...). La caravane des alternatives se positionne sur le postulat de 0,5 à 1ha de terre cultivable par personne, à rajouter à cela de la terre pour le bois (chauffage, construction, sauvage). Nous valorisons donc les petites structures entre 1 ha et 40ha, voire même de 1ha à 10ha
-
-
-
----
-date: 2015-10-22
-title: Voyageurs en transition
-subtitle: Promouvoir la transition individuelle afin de recentrer l’individu comme acteur des changements
-tags: map list group
-image:
-    url: ericDrooker_building.jpg
-    credit: Eric Drooker
-quote:
-    author: Gandhi
-    content: Sois le changement que tu veux voir dans le monde
-source: "[Citoyens en Transition](http://citoyens.en-transition.fr/)"
-content: >
-    En 2011, une petite poignée de motivés crée l’association et le site web *«Nous sommes Autrement»*. Ce nom incarnait notre volonté de changement, notre envie de faire résonner les modes de vies alternatifs, notre désir d’essaimer des façons d’être et de faire qui nous touchent le cœur. En devenant *«Voyageurs en transition»*, le site marquait un tournant pour Mathieu qui enfourchait son vélo pour voguer au gré de lieux différents, alternatifs ou, pour le dire autrement, qui prônent une vie plus simple, plus harmonieuse mais pas moins ardue à mettre en œuvre. Bastien, lui aussi voyageur à vélo aux valeurs convergentes, se joignait à notre collectif pour en devenir un pilier.
-
-
-    Depuis, *Antoine, Ans, Loïc, les radeaux, Nicolas, la roulotte, Emmanuel, Elodie et Sébastien, Edith et Yann, Laura, Cécile, Chloé, Olivier, Hélène, Benoit, Oriane, Mathias, Pauline, Donatello, Fabien, Claire, Léa et Guillaume* nous ont rejoint. Alors, qui sait ? Les prochains ça sera peut-être vous !
-
-
-    Nous voulons rendre les changement plus accessibles à chacun en partageant des expériences de voyages mais aussi de choix de vie encore à la marge. C’est aussi un lieu d’échange et de conseils qui appartient à tous ceux qui en font une réalité.
-
 
 
 ---
@@ -616,13 +608,19 @@ content: >
 ---
 status: draft
 date: 2016-01-07
-title: Transparence et vulnérabilité
+title: Réseaux informels et transparence
 subtitle: On recense tous les mouvements... ce sont les RG qui vont être contents !
 tags: open politics
 content: >
-    Cartographier, resencer, rendre visible les réseaux informels, dispersés ne va pas leur nuire.
+    Cartographier, recenser, rendre visible les réseaux informels, dispersés ne va pas leur nuire.
+
+
     Tout ce qui est présent sur ce présent site l'est aussi sur google, par facebook, par twitter; sauf que ces acteurs là ont bien plus de données que nous ! Nous leur léguons déjà tout car nous utilisons leurs tuyaux et services pour la plupart de nos communications sur internet
+
+
     Il est donc plus que temps de mettre en pratique la réappropriation de ces questions (big data, archivage, sélection) avant que l'avance qu'ils ont sur nous ne devienne insurmontable.
+
+    
     Il était un temps où nous pouvions nous-même, localement, « concurrencer » les fabriquants d'objets et les fournisseurs de services; car nous pouvions en peu de temps nous mettre à proposer les mêmes biens. Quelle que soit notre position vis-à-vis des technologies, nous devons à minima comprendre comment elle fonctionnent pour qu'elle ne nous envahissent pas totalement !
 
 
@@ -1216,8 +1214,8 @@ content: >
 
 ---
 status: draft
-date: 2015-07-16
-title: Supprimons la publicité
+date: 2016-05-19
+title: La pub, instrument d'un culte
 subtitle: Arrêtons la propagande des multinationales prônant un consumérisme idiot
 tags: alienation companies
 image:
@@ -1240,7 +1238,9 @@ source: "[Collectif des déboulonneurs](http://www.deboulonneurs.org))"
 content: >
     L'affichage publicitaire, c'est la confiscation de l'espace public et son exploitation mercantile. Nous sommes libres de lire ou non un journal, d'écouter ou non la radio, de regarder ou non la télévision... mais pas de flâner sans être confronté à un incessant défilé d'images et de slogans. Laide et dangereuse, cette débauche graphique salit notre cadre de vie, réduit notre liberté de penser et notre faculté de rêver.
 
+
     La publicité crée de faux besoins et pousse à la surconsommation, au gaspillage et à la pollution. La publicité fait l'apologie de comportements irresponsables, individualistes et sexistes. À l'échelle de la planète, la publicité engouffre plus de 1000 milliards d'euros par an : c'est le premier budget mondial, à égalité avec les dépenses militaires. La publicité est l'un des fondements de ce système toujours plus avide de croissance et d'argent. Nous n'en voulons pas, nous préférons plus de bonheur, d'éducation et de lien social
+
 
     Nous exigeons que toutes les affiches soient limitées au format 50x70cm (taille maximale de l'affichage associatif ou politique), et que des contraintes strictes de densité soient mises en place et respectées. Nous demandons aussi la suppression de tous les panneaux lumineux et numériques, qui sont encore plus envahissants et inutilement énergivores
 
@@ -1748,18 +1748,25 @@ content: >
 
 
 ---
-status: draft
 date: 2016-03-20
 title: Travail et «progrès»
-subtitle: Nous ne sommes pas des moyens de production, nous en sommes la fin
+subtitle: L'Homme est est sur cette terre, la fin pour laquelle toute production humaine doit être un moyen
 tags: object work economy
+image:
+    url: ericDrooker_building.jpg
+    credit: Eric Drooker
+quote:
+    author: lettre de N. Wiener à W. Reuther, 1949, revue Z n°9
+    content: Toute main-d'œuvre, dès lors qu'elle est mise en concurrence avec un esclave, que l'esclave soit humain ou mécanique, doit accepter les conditions de travail de l'esclave
 source: "Métiers oubliés, métiers d'autrefois - John Seymour"
 content: >
-    Le rêve de notre civilisation fortement industrielle et technologique va devenir rapidement un cauchemar. Inventer des moyens encore plus raffinés et compliqués pour fabriquer ce que nous croyons être nécessaire est peut-être un «progrès» pour les scientifiques, mais c'est l'enfer pour les hommes et les femmes qui doivent se traîner jusqu'aux tristes lieux où l'on fabrique ces choses pour surveiller des cadrans et presser des boutons, et il est intolérable pour les ouvriers et les ouvrières, toujours plus nombreux, de s'entendre dire qu'ils sont «en trop».
+    **Le rêve de notre civilisation fortement industrielle et technologique va devenir rapidement un cauchemar.** Inventer des moyens encore plus raffinés et compliqués pour fabriquer ce que nous croyons être nécessaire est peut-être un «progrès» pour les scientifiques, mais c'est l'enfer pour les hommes et les femmes qui doivent se traîner jusqu'aux tristes lieux où l'on fabrique ces choses pour surveiller des cadrans et presser des boutons, et il est intolérable pour les ouvriers et les ouvrières, toujours plus nombreux, de s'entendre dire qu'ils sont «en trop».
 
-    Des êtres humains en trop ? La grande industrie a eu, depuis ses débuts, une forte tendance à considérer ses ouvriers comme de simples éléments de machine. Comme celle-ci, le travailleur devient juste un moyen pour une fin.
 
-    Non, l'homme n'est pas un moyen; il est une fin. Il est, sur cette terre, la fin pour laquelle toute production humaine doit être un moyen.
+    **Des êtres humains en trop ?** La grande industrie a eu, depuis ses débuts, une forte tendance à considérer ses ouvriers comme de simples éléments de machine. Comme celle-ci, le travailleur devient juste un moyen pour une fin.
+
+
+    **Non, l'homme n'est pas un moyen; il est une fin.** Il est, sur cette terre, la fin pour laquelle toute production humaine doit être un moyen.
 
 
 ---

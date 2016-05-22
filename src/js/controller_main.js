@@ -508,6 +508,7 @@ angular.module('manifest.maincontroller', ['underscore','config'])
 
           d.layout = 'flat'; //Math.random()<0.2 ? 'grid' : 'flat';
 
+          // only pushing normal sections if prod (draft sections are only visible if dev)
           if($scope.settings.dev || !d.status || d.status != 'draft')
             $scope.sectionArray.push(d);
         });
