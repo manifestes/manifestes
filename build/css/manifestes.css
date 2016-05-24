@@ -1723,7 +1723,7 @@ div.highlight {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: antialiased;
-  font-size: 0.8em;
+  font-size: 0.9em;
   text-align: left;
   font-style: italic;
   color: white;
@@ -1738,7 +1738,7 @@ div.highlight {
   display: none;
 }
 .header .tagspanel .gridtag.icon {
-  width: 20% !important;
+  width: 33% !important;
   color: #ababab;
   padding: 4px !important;
   margin-bottom: 5px;
@@ -2290,6 +2290,9 @@ body.layout-mapprint .container {
 .wrapper.layout-sections .section .block .content p {
   margin-bottom: 9px;
 }
+.wrapper.layout-sections .section .block .content ul {
+  margin-bottom: 10px;
+}
 .wrapper.layout-sections .section .block .source {
   position: absolute;
   bottom: 0;
@@ -2746,17 +2749,20 @@ body.layout-mapprint .container {
 }
 /* HEIGHT WILL CHANGE TAGS-GRID, MAP LEGEND, ... */
 @media (max-height: 690px) {
+  /* tag collapsible panel when window height is small */
+  /*
   .tagspanel {
     width: 195px !important;
     left: -195px !important;
-  }
-  .tagspanel .gridtag {
-    width: 50% !important;
-    padding: 2px 0px 2px 5px !important;
+    .gridtag {
+      width: 50% !important;
+      padding: 2px 0px 2px 5px !important;
+    }
   }
   .wrapper.tagsbordered {
     padding-left: 190px !important;
   }
+  */
 }
 @media (max-height: 630px) {
   .map .legend {

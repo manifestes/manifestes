@@ -3462,7 +3462,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,datapath:'data/',assets:'build/',lastupdate:'22 May 2016 - 11:27'})
+.constant('settings', {dev:false,datapath:'data/',assets:'build/',lastupdate:'24 May 2016 - 10:45'})
 
 ;
 ;
@@ -3910,13 +3910,13 @@ angular.module('manifest.maincontroller', ['underscore','config'])
         });
 
         _.each(m.tags, function(v,k) {
-          var part = v.split(' = ');
+          var parts = v.split(' = ');
           $scope.tagsContents[k] = {
             tag: k,
-            label: part[0].split('|')[0].replace("_",""),
-            description: part[1],
-            icon: /^|/.test(part[0]) ? part[0].split('|')[1] : false,
-            important: /_/.test(part[0]) ? true : false
+            label: parts[1 ].replace("_",""),
+            description: parts[2],
+            icon: parts[0]=="" ? "globe" : parts[0],
+            important: /_/.test(parts[1]) ? true : false
           };
           $scope.tagsContentsOrdered.push($scope.tagsContents[k]);
         });
