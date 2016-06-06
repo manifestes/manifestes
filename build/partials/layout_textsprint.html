@@ -1,0 +1,21 @@
+
+<div
+  ng-repeat="p in textArray"
+  class="section"
+  ng-class="{pagebreakafter: ($index)%2==1}">
+
+  <div class="image cover" back-img="{{settings.datapath}}media/{{p.image.url}}"></div>
+
+  <div class="block">
+    <div class="h1" compile-here="p.title"></div>
+    <div class="h2" compile-here="p.subtitle"></div>
+    <div class="content" compile-here="p.content"></div>
+<!--     <div class="links" compile-here="p.links"></div>
+    <div ng-if="state.lang=='es'" class="links" compile-here="p.links"></div>
+    <div ng-if="state.lang=='fr'" class="links">
+      <ul>
+        <li ng-repeat="l in p.links" compile-here="l"></li>
+      </ul>
+    </div> -->
+  </div>
+</div>

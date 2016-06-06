@@ -1,0 +1,26 @@
+<div class="panel bricks quotes">
+  <div
+    ng-repeat="e in quoteFiltArray"
+    class="link"
+    ng-class="{
+      odd: $index%2==0,
+      even: $index%2==1,
+      used: e.used
+    }">
+
+      <div class="quote-container">
+        <div class="quote" compile-here="md2Html(e.content)"></div>
+        <div class="author" compile-here="md2Html(e.author) "></div>
+      </div> 
+  </div>
+</div>
+
+<div
+  class="emptyresult"
+  ng-if="(state.search || state.tags.length) && quoteFiltArray.length==0"
+  ng-click="resetFilters();">
+  <div>
+    aucun résultat (pour l'instant) pour cette requête précise et pertinente<br>
+    cliquez ici pour annuler le filtrage
+  </div>
+</div>

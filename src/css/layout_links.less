@@ -8,7 +8,7 @@
   }
 }
 
-.panel.links {
+.panel.bricks {
   box-sizing: border-box;
   position: relative;
 
@@ -35,13 +35,12 @@
     padding: 17px 20px;
     margin: 20px 10px;
     margin-top: 0;
-    
-    background: white;
 
     font-size: 0.9em;
     line-height: 1.3em;
 
-    &.odd { background: @mostLightColor; }
+    // background: white;
+    // &.odd { background: @mostLightColor; }
 
     a {
       color: white;
@@ -92,3 +91,32 @@
   }
 }
 
+
+.panel.bricks.quotes {
+  background: black;
+  .link {
+    color: #d4d4d4;
+    background: #383737;
+    
+    &.used {
+    background: #8D6128;
+    }
+    .quote-container {
+      font-family: 'Merriweather', serif;
+      font-style: italic;
+      line-height: 1.5em;
+
+      .quote {
+        p {
+          margin-bottom: 12px;
+        }
+      }
+      .author {
+        margin-top: 15px;
+        text-align: right;
+        font-style: italic;
+        color: #969696;
+      }
+    }
+  }
+}

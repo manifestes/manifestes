@@ -99,27 +99,37 @@
           class="button hover"
           ng-click="changeLayout('links');"
           ng-class="{active:state.layout=='links'}">
-          <i class="fa fa-th-list"></i>
+          <i class="fa fa-heart"></i>
           <a class="ext hint--bottom" href="{{meta.source.links}}" target="_blank" data-hint="{{meta.menu.sourcetip}}">
             <i class="fa fa-file-text"></i>
           </a>
           <span>{{meta.menu.links}}</span>
         </div>
+        <div
+          class="button hover"
+          ng-click="changeLayout('quotes');"
+          ng-class="{active:state.layout=='quotes'}">
+          <i class="fa fa-quote-left"></i>
+          <a class="ext hint--bottom" href="{{meta.source.quotes}}" target="_blank" data-hint="{{meta.menu.sourcetip}}">
+            <i class="fa fa-file-text"></i>
+          </a>
+          <span>{{meta.menu.quotes}}</span>
+        </div>
         <div class="buttoncontainer">
           <div
             class="inner button hover"
-            ng-click="changeLayout('sections');"
-            ng-class="{active:state.layout=='sections'}">
+            ng-click="changeLayout('texts');"
+            ng-class="{active:state.layout=='texts'}">
             <i class="fa fa-bullhorn"></i>
-            <a class="ext hint--bottom" href="{{meta.source.sections}}" target="_blank" data-hint="{{meta.menu.sourcetip}}">
+            <a class="ext hint--bottom" href="{{meta.source.texts}}" target="_blank" data-hint="{{meta.menu.sourcetip}}">
               <i class="fa fa-file-text"></i>
             </a>
-            <span>{{meta.menu.sections}}</span>
+            <span>{{meta.menu.texts}}</span>
           </div>
           <a 
             class="printer hint--bottom"
             data-hint="{{meta.menu.printtip}}"
-            href="./#/{{state.lang}}/sectionsprint"
+            href="./#/{{state.lang}}/textsprint"
             target="_blank"><i class="fa fa-print"></i> {{meta.menu.print}}
           </a>
         </div>
@@ -211,17 +221,20 @@
       <div
         ng-repeat="t in tagsContentsOrdered"
         ng-click="toggleTag(t.tag);"
-        class="gridtag"
+        class="gridtag tb-{{t.tag}}"
         data-hint="{{t.description}}"
         ng-focus="true"
         ng-class="{
-          icon: t.icon,
+          'tb-noleft': $index%2==0,
+          'tb-noright': $index%2==1,
           important: t.important,
           active: isTagActive(t.tag),
           popuped: isTagAutoComplete(t),
-          'hint--bottom': t.icon,
-          'hint--right': !t.icon
-        }"><i ng-if="t.icon" class="meta fa fa-{{t.icon}}"></i><span>{{t.label}}</span>
+          'hint--bottom': $index<2,
+          'hint--right': $index>1
+        }">
+          <i class="meta fa fa-{{t.icon}}"></i>
+          <div>{{t.label}}</div>
       </div>
     </div>
 
@@ -237,7 +250,7 @@
 
     <!-- message displayed the first time you arrived on a layout -->
     <div
-      ng-if="state.layout!='sectionsprint'&&state.layout!='home'"
+      ng-if="state.layout!='textsprint'&&state.layout!='home'"
       class="disclopener"
       ng-class="{active: !state.disclaim[state.layout]}"
       ng-click="state.disclaim[state.layout]=true; $event.stopPropagation();">
@@ -245,11 +258,11 @@
     </div>
     <div
       class="disclaimer"
-      ng-if="state.layout!='sectionsprint'&&state.layout!='home'"
+      ng-if="state.layout!='textsprint'&&state.layout!='home'"
       ng-class="{active: state.disclaim[state.layout]}"
       ng-click="state.disclaim[state.layout]=false;">
 
-      <div ng-if="state.layout=='sections'"
+      <div ng-if="state.layout=='texts'"
       class="full" compile-here="md2Html(meta.disclaimer[state.layout])"></div>
       <div ng-if="state.layout=='links'"
       class="full" compile-here="md2Html(meta.disclaimer[state.layout])"></div>
@@ -257,6 +270,8 @@
       class="full left" compile-here="md2Html(meta.disclaimer[state.layout])"></div>
       <div ng-if="state.layout=='map'"
       class="full left" compile-here="md2Html(meta.disclaimer[state.layout])"></div>
+      <div ng-if="state.layout=='quotes'"
+      class="full" compile-here="md2Html(meta.disclaimer[state.layout])"></div>
 
       <!-- <span class="close">fermer</span> -->
       <i class="fa fa-times" ng-click="state.disclaim[state.layout] = false;"></i>
@@ -273,7 +288,7 @@
 
     <div class="footer">
       <!--<div class="count" ng-if="state.search || state.tags.length">
-        filtre: {{state.count.sections}} / {{sectionArray.length}} section(s) & {{state.count.links}} / {{linkArray.length}} lien(s)
+        filtre: {{state.count.texts}} / {{textArray.length}} section(s) & {{state.count.links}} / {{linkArray.length}} lien(s)
       </div>-->
       <div class="content" compile-here="md2Html(meta.footer.content)"></div>
 

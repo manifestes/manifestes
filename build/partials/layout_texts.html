@@ -1,0 +1,46 @@
+
+<div
+  ng-repeat="e in textFiltArray"
+  id="p_{{$index}}"
+  class="section t-{{e.tags[0]}} status-{{e.status}}"
+  ng-click="toggleOne(e);"
+  ng-class="{
+    opened: e.opened
+  }">
+
+  <div class="h1">
+    <span class="wtin" compile-here="e.title"></span>
+    <span ng-if="e.date" class="date">{{e.date}}</span>
+  </div><div class="h2">
+    <span class="wtin" compile-here="e.subtitle"></span>
+    <div
+      class="tags hint--left"
+      data-hint="{{meta.tagtip}}"
+      ng-click="$event.stopPropagation();"
+      ng-include="settings.assets + 'partials/tags.html'">
+    </div>
+  </div>
+  <div class="block">
+    <div
+      class="image cover"
+      back-img="{{settings.datapath}}media/{{e.image.url}}">
+      <div class="quote-container">
+        <div class="quote" compile-here="e.quote.content"></div>
+        <div class="author" compile-here="e.quote.author"></div>
+      </div> 
+      <div class="imagecredit" compile-here="md2Html(e.image.credit)"></div>
+    </div>
+    <div class="content" compile-here="e.content"></div>
+    <div ng-if="e.source" class="source" compile-here="md2Html('source: '+e.source)"></div>
+  </div>
+</div>
+
+<div
+  class="emptyresult"
+  ng-if="(state.search || state.tags.length) && textFiltArray.length==0"
+  ng-click="resetFilters();">
+  <div>
+    aucun résultat (pour l'instant) pour cette requête précise et pertinente<br>
+    cliquez ici pour annuler le filtrage
+  </div>
+</div>

@@ -10,6 +10,8 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
   'settings',
   function ($scope, $http, $timeout, _, settings) {
 
+    var themappath = settings.datapath + '/map';
+
     ///////////////////////////////////////////////////////////////
     var updateMapStyles = function() {
       $scope.state.mapStyles = _.map($scope.meta.mapcredits, function(e) {
@@ -181,7 +183,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
       
       ///////////////////////////////////////////////////////////////
       var fetch_local = function(callb) {
-        $http.get(settings.datapath+'/map.csv')
+        $http.get(themappath+'/map.csv')
           .success(function(data) {
             //console.log("got csv data:",data);
             //$scope.data = data;
@@ -209,7 +211,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
       var fetch_geojson = function(callb) {
         var toFetch = _.filter($scope.meta.mapcredits, {type: "geojson"});
         _.each(toFetch, function(dat) {
-          $http.get(settings.datapath+'/'+dat.geojson)
+          $http.get(themappath+'/'+dat.geojson)
           //$http.get(dat.geojson)
             .success(function(geoj) {
               //console.log(dat.slug,geoj);
@@ -255,7 +257,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
       ///////////////////////////////////////////////////////////////
       var fetch_agedefaire = function(callb) {
         var agedefaire = _.findWhere($scope.meta.mapcredits, {type: "xml"});
-        $http.get(settings.datapath+'/'+agedefaire.xml)
+        $http.get(themappath+'/'+agedefaire.xml)
         //$http.get(agedefaire.xml)
           .success(function(xml) {
             var json = xmlToJSON.parseString(xml, {
@@ -282,7 +284,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
       ///////////////////////////////////////////////////////////////
       var fetch_ffdn = function(callb) {
         var ffdn = _.findWhere($scope.meta.mapcredits, {slug: "ffdn"});
-        $http.get(settings.datapath+'/'+ffdn.json)
+        $http.get(themappath+'/'+ffdn.json)
           .success(function(json) {
             _.each(json, function(m) {
               if(m.coordinates)
@@ -305,7 +307,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
       var fetch_circuitscourts = function(callb) {
         var cc = _.findWhere($scope.meta.mapcredits, {slug: "circuitscourts"});
         if(!cc.hide)
-        $http.get(settings.datapath+'/'+cc.json)
+        $http.get(themappath+'/'+cc.json)
           .success(function(json) {
             _.each(json, function(m) {
               addMarker({

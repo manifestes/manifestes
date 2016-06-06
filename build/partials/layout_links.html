@@ -1,7 +1,7 @@
-<div class="panel links">
+<div class="panel bricks links">
   <div
     ng-repeat="e in linkFiltArray"
-    class="link"
+    class="link t-{{e.tags[0]}}"
     ng-class="{
       odd: $index%2==0,
       even: $index%2==1,

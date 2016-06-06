@@ -3462,7 +3462,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,datapath:'data/',assets:'build/',lastupdate:'24 May 2016 - 10:45'})
+.constant('settings', {dev:false,datapath:'data/',assets:'build/',lastupdate:'06 June 2016 - 11:08'})
 
 ;
 ;
@@ -3492,23 +3492,25 @@ angular.module('manifest.maincontroller', ['underscore','config'])
     $scope.settings = settings;
     
     var layout = $routeParams.layout ?
-      (["home","sections","sectionsprint","links","network","map","mapprint"].indexOf($routeParams.layout)==-1 ? "sections" : $routeParams.layout) :
+      (["home","texts","textsprint","quotes","links","network","map","mapprint"].indexOf($routeParams.layout)==-1 ? "texts" : $routeParams.layout) :
       "home";
     var tags = [];
     //var tags = $routeParams.tags ? $routeParams.tags.split(',') : [];
     var intro = !$routeParams.layout;
 
-    $scope.meta = {}; // mainly the meta info at start of section.yml
-    $scope.sectionArray = []; // full list of sections
-    $scope.sectionFiltArray = []; // displayed list of sections
+    $scope.meta = {}; // mainly the meta info at start of text.yml
+    $scope.textArray = []; // full list of texts
+    $scope.textFiltArray = []; // displayed list of texts
     $scope.linkArray = []; // full list of links
     $scope.linkFiltArray = []; // displayed list of links
+    $scope.quoteArray = []; // full list of quotes
+    $scope.quoteFiltArray = []; // displayed list of quotes
 
     $scope.tagsContents = {}; // .tag .label .description .icon for each tag
     $scope.tagsContentsOrdered = []; // same but array to be able to sort
     
     $scope.linksByTag = {}; // links by tag
-    $scope.sectionNbByTag = {}; // sections by tag (only nb)
+    $scope.textNbByTag = {}; // texts by tag (only nb)
     
     $scope.settings.verbose = false; // to print detailed stats on tags, objects, etc...
 
@@ -3516,11 +3518,11 @@ angular.module('manifest.maincontroller', ['underscore','config'])
       intro: intro, // splash fullscreen panel
       introimage: 0, // slideshow of intro splash images
       lang: $routeParams.lang,
-      layout: layout, // sections/links/map/print/etc...
+      layout: layout, // texts/links/map/print/etc...
       loading: false, // we will show loadingspinner when scope not ready
 
       disclaim: {
-        sections: !$scope.settings.dev,
+        texts: !$scope.settings.dev,
         links: !$scope.settings.dev,
         network: !$scope.settings.dev,
         map: !$scope.settings.dev,
@@ -3533,7 +3535,7 @@ angular.module('manifest.maincontroller', ['underscore','config'])
       tagspanel: false,
       tags: tags, // list of current filtering tags
 
-      togglesections: null, // wil be 'up' or 'down' to display arrows to open/close all sections
+      toggletexts: null, // wil be 'up' or 'down' to display arrows to open/close all texts
 
       networkstatus: "NO", // loaded or not ?
 
@@ -3562,8 +3564,8 @@ angular.module('manifest.maincontroller', ['underscore','config'])
     $scope.layoutTemplate = function() {
       return $scope.settings.assets+'partials/layout_'+$scope.state.layout+'.html';
     };
-    $scope.sectionTemplate = function(s) {
-      return $scope.settings.assets+'partials/layout_sections_'+s.layout+'.html';
+    $scope.textTemplate = function(s) {
+      return $scope.settings.assets+'partials/layout_texts_'+s.layout+'.html';
     };
 
     $scope.slideSplashImage = function(forward) {
@@ -3682,7 +3684,7 @@ angular.module('manifest.maincontroller', ['underscore','config'])
       return res;
     };
     $scope.updateSearchTagCount = function() {
-      $scope.state.count.sections = _.filter($scope.sectionArray, function(e){
+      $scope.state.count.texts = _.filter($scope.textArray, function(e){
         return isElementShown(e);
       }).length;
       $scope.state.count.links = _.filter($scope.linkArray, function(e){
@@ -3698,10 +3700,10 @@ angular.module('manifest.maincontroller', ['underscore','config'])
         $scope.state.tags = [];
       else {
         if($scope.state.tags) {
-          if($scope.state.tags.indexOf(tag)==-1)
-            $scope.state.tags.push(tag);
+          if($scope.state.tags[0]==tag)
+            $scope.state.tags = [];
           else
-            $scope.state.tags = _.without($scope.state.tags,tag);
+            $scope.state.tags = [tag];
         } else {
           $scope.state.tags = [tag];
         }
@@ -3732,7 +3734,7 @@ angular.module('manifest.maincontroller', ['underscore','config'])
       else {
         $scope.state.searchinput = "";
         $scope.state.search = "";
-        $scope.toggleAllSections(false);
+        $scope.toggleAlltexts(false);
       }
       
       $scope.rgx.search = new RegExp($scope.state.search,'i');
@@ -3752,20 +3754,24 @@ angular.module('manifest.maincontroller', ['underscore','config'])
     $scope.rgx.inlnk = new RegExp("<[^>]*>","gi");
     $scope.rgx.search = new RegExp("",'i'); // is updated after each keystroke on search input
 
-    var shallShowSearch = function(o) { // "o" is a section or a link
+    var shallShowSearch = function(o) { // "o" is a text or a link
       var reg = $scope.rgx.search;
       if($scope.state.search)
-      if(o.title) { // a section
+      if(o.title) { // a text
         var show = o.hasOwnProperty('quote') && reg.test(totext(o.quote.content));
         _.each(['title','subtitle','content'], function(k) {
           show = show || ( o.hasOwnProperty(k) && reg.test(totext(o[k])) );
         });
-      } else { // a link
-        var show = reg.test(totext(o.content));
+      } else { 
+        if(o.author) { // a quote
+          var show = reg.test(totext(o.author)) || reg.test(totext(o.content));
+        } else { // a link
+          var show = reg.test(totext(o.content));
+        }
       }
       return show;
     };
-    var shallShowTags = function(o,onlyintersect) { // "o" is a section or a link
+    var shallShowTags = function(o,onlyintersect) { // "o" is a text or a link
       if($scope.state.tags.length && o.tags) {
         var interslen = _.intersection(o.tags,$scope.state.tags).length;
         if(onlyintersect) {
@@ -3782,18 +3788,24 @@ angular.module('manifest.maincontroller', ['underscore','config'])
       console.log("updateArrays!");
 
       if(!$scope.state.search && !$scope.state.tags.length) {
-        $scope.sectionFiltArray = $scope.sectionArray;
+        $scope.textFiltArray = $scope.textArray;
         $scope.linkFiltArray = $scope.linkArray;
+        $scope.quoteFiltArray = $scope.quoteArray;
       } else {
 
-        if($scope.state.layout=="sections")
-          $scope.sectionFiltArray = _.filter($scope.sectionArray, function(e) {
+        if($scope.state.layout=="texts")
+          $scope.textFiltArray = _.filter($scope.textArray, function(e) {
             return ($scope.state.search && shallShowSearch(e)) || ($scope.state.tags.length && shallShowTags(e,false));
           });
 
 
         if($scope.state.layout=="links")
           $scope.linkFiltArray = _.filter($scope.linkArray, function(e) {
+            return ($scope.state.search && shallShowSearch(e)) || ($scope.state.tags.length && shallShowTags(e,false));
+          });
+
+        if($scope.state.layout=="quotes")
+          $scope.quoteFiltArray = _.filter($scope.quoteArray, function(e) {
             return ($scope.state.search && shallShowSearch(e)) || ($scope.state.tags.length && shallShowTags(e,false));
           });
       }
@@ -3846,8 +3858,8 @@ angular.module('manifest.maincontroller', ['underscore','config'])
     $scope.toggleOne = function(p) {
       p.opened = !p.opened ;
     };
-    $scope.toggleAllSections = function(status) {
-      _.each($scope.sectionArray, function(p) {
+    $scope.toggleAlltexts = function(status) {
+      _.each($scope.textArray, function(p) {
         p.opened = status;
       });
     };
@@ -3945,9 +3957,9 @@ angular.module('manifest.maincontroller', ['underscore','config'])
 
 
     ///////////////////////////////////////////////////////////////
-    var fetchDataSections = function(callb) {
+    var fetchDatatexts = function(callb) {
       $http
-      .get(settings.datapath + "sections_"+$scope.state.lang+".yml")
+      .get(settings.datapath + "texts_"+$scope.state.lang+".yml")
       .success(function(res) {
 
         jsyaml.loadAll(res, function(d) {
@@ -3962,7 +3974,7 @@ angular.module('manifest.maincontroller', ['underscore','config'])
           d.content = $scope.md2Html(d.content);
           d.tags = d.tags ? d.tags.split(' ') : [];
           _.each(d.tags, function(t) {
-            $scope.sectionNbByTag[t] = $scope.sectionNbByTag[t] ? $scope.sectionNbByTag[t]+1 : 1;
+            $scope.textNbByTag[t] = $scope.textNbByTag[t] ? $scope.textNbByTag[t]+1 : 1;
           });
           d.links = $scope.md2Html(d.links);
 
@@ -3977,15 +3989,15 @@ angular.module('manifest.maincontroller', ['underscore','config'])
 
           d.layout = 'flat'; //Math.random()<0.2 ? 'grid' : 'flat';
 
-          // only pushing normal sections if prod (draft sections are only visible if dev)
+          // only pushing normal texts if prod (draft texts are only visible if dev)
           if($scope.settings.dev || !d.status || d.status != 'draft')
-            $scope.sectionArray.push(d);
+            $scope.textArray.push(d);
         });
-        $scope.sectionFiltArray = $scope.sectionArray;
+        $scope.textFiltArray = $scope.textArray;
         callb();
       })
       .error(function (data, status, headers, config) {
-        console.log("error sections",status);
+        console.log("error texts",status);
       });
     };
 
@@ -4047,14 +4059,14 @@ angular.module('manifest.maincontroller', ['underscore','config'])
           console.log("!! declared tags contents:",$scope.tagsContents);
           console.log("!! all links:",$scope.linkArray);
           console.log("!! nb of links by tag:",$scope.linksByTag);
-          console.log("!! tags used in sections:",$scope.sectionNbByTag);
-          console.log("!! non used in sections:", _.difference(_.keys($scope.linksByTag), _.keys($scope.sectionNbByTag)));
+          console.log("!! tags used in texts:",$scope.textNbByTag);
+          console.log("!! non used in texts:", _.difference(_.keys($scope.linksByTag), _.keys($scope.textNbByTag)));
           console.log("!! non-declared tags:", _.difference(_.keys($scope.linksByTag), _.keys($scope.meta.tags)));
           console.log("!! declared tags with 0 link", _.difference(_.keys($scope.meta.tags), _.keys($scope.linksByTag)));
         }
 
-        // populate links related to each section
-        // _.each($scope.sections, function(p) {
+        // populate links related to each text
+        // _.each($scope.texts, function(p) {
         //   p.links = getLinksFromTags(p.tags);
         // });
         
@@ -4083,15 +4095,36 @@ angular.module('manifest.maincontroller', ['underscore','config'])
       });
     };
 
+///////////////////////////////////////////////////////////////
+    var fetchDataQuotes = function() {
+      $http
+      .get(settings.datapath + "quotes_"+$scope.state.lang+".yml")
+      .success(function(res) {
+
+        var quotes = jsyaml.load(res);
+        _.each(quotes, function(q) {
+          $scope.quoteArray.push(q);
+        });        
+        $scope.quoteFiltArray = $scope.quoteArray;
+
+      })
+      .error(function (data, status, headers, config) {
+        console.log("error quotes",status);
+      });
+    };
 
     ///////////////////////////////////////////////////////////////
     fetchDataMeta( function() {
 
       // fetch data
-      fetchDataSections( function() {
+      fetchDatatexts( function() {
         
+        // fetch quotes (don't care if not async)
+        fetchDataQuotes();
+
         // fetch links
         fetchDataLinks();
+        
 
         // load graphs ?
         if($scope.state.layout=='network') {
@@ -4122,6 +4155,8 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
   '_',
   'settings',
   function ($scope, $http, $timeout, _, settings) {
+
+    var themappath = settings.datapath + '/map';
 
     ///////////////////////////////////////////////////////////////
     var updateMapStyles = function() {
@@ -4294,7 +4329,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
       
       ///////////////////////////////////////////////////////////////
       var fetch_local = function(callb) {
-        $http.get(settings.datapath+'/map.csv')
+        $http.get(themappath+'/map.csv')
           .success(function(data) {
             //console.log("got csv data:",data);
             //$scope.data = data;
@@ -4322,7 +4357,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
       var fetch_geojson = function(callb) {
         var toFetch = _.filter($scope.meta.mapcredits, {type: "geojson"});
         _.each(toFetch, function(dat) {
-          $http.get(settings.datapath+'/'+dat.geojson)
+          $http.get(themappath+'/'+dat.geojson)
           //$http.get(dat.geojson)
             .success(function(geoj) {
               //console.log(dat.slug,geoj);
@@ -4368,7 +4403,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
       ///////////////////////////////////////////////////////////////
       var fetch_agedefaire = function(callb) {
         var agedefaire = _.findWhere($scope.meta.mapcredits, {type: "xml"});
-        $http.get(settings.datapath+'/'+agedefaire.xml)
+        $http.get(themappath+'/'+agedefaire.xml)
         //$http.get(agedefaire.xml)
           .success(function(xml) {
             var json = xmlToJSON.parseString(xml, {
@@ -4395,7 +4430,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
       ///////////////////////////////////////////////////////////////
       var fetch_ffdn = function(callb) {
         var ffdn = _.findWhere($scope.meta.mapcredits, {slug: "ffdn"});
-        $http.get(settings.datapath+'/'+ffdn.json)
+        $http.get(themappath+'/'+ffdn.json)
           .success(function(json) {
             _.each(json, function(m) {
               if(m.coordinates)
@@ -4418,7 +4453,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
       var fetch_circuitscourts = function(callb) {
         var cc = _.findWhere($scope.meta.mapcredits, {slug: "circuitscourts"});
         if(!cc.hide)
-        $http.get(settings.datapath+'/'+cc.json)
+        $http.get(themappath+'/'+cc.json)
           .success(function(json) {
             _.each(json, function(m) {
               addMarker({
