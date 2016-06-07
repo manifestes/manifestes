@@ -1121,7 +1121,7 @@ content: >
 date: 2015-06-01
 title: Ce monde est pluriel
 subtitle: Nous ne cherchons pas à le réduire avec une solution unique 
-tags: philo politics creation
+tags: creation philo politics
 image:
     url: RyuichiYamashiro.jpg
     credit: Ryuichi Yamashiro
@@ -1570,6 +1570,7 @@ content: >
 
 
 ---
+status: draft
 date: 2016-01-07
 title: Qui contrôle les technologies ?
 subtitle: Ne laissons pas Internet et le numérique aux mains des États et des professionnels du Big Data !

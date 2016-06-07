@@ -92,108 +92,77 @@ span.highlight, div.highlight { /* searched words */
 // thanks to http://tools.medialab.sciences-po.fr/iwanthue/
 // settings: C = 0 0.69 / L = 1.06 1.33
 
-// .colored-0 { background: #E8B887; }
-// .colored-1 { background: #ADD7DB; }
-// .colored-2 { background: #C3D794; }
-// .colored-3 { background: #D9C8DA; }
-// .colored-4 { background: #EDB4AA; }
-// .colored-5 { background: #CFC5A3; }
-// .colored-6 { background: #A4DAB0; }
-// .colored-7 { background: #E3CD7D; }
-// .colored-8 { background: #C5D3C1; }
-// .colored-9 { background: #E8D9A0; }
-
-/*
-@bd: 9px;
-.bordered-0 { border: #E8B887 solid @bd !important; }
-.bordered-1 { border: #ADD7DB solid @bd !important; }
-.bordered-2 { border: #C3D794 solid @bd !important; }
-.bordered-3 { border: #D9C8DA solid @bd !important; }
-.bordered-4 { border: #EDB4AA solid @bd !important; }
-.bordered-5 { border: #CFC5A3 solid @bd !important; }
-.bordered-6 { border: #A4DAB0 solid @bd !important; }
-.bordered-7 { border: #E3CD7D solid @bd !important; }
-.bordered-8 { border: #C5D3C1 solid @bd !important; }
-.bordered-9 { border: #E8D9A0 solid @bd !important; }
-*/
-
 
 /* COLORS FOR TAGS (with overwriting/priorities) */
 .t-about, .t-group, .t-list, .t-tool {
   background-color: #C7C9C6;
 }
 .t-map, .t-calendar {
-  background-color: #C0BCAD
+  background-color: #A4A198;
 }
 .t-text, .t-image, .t-audio, .t-video {
   background-color: #C7C9C6;
 }
+.t-earth, .t-agriculture, .t-health, .t-eat {
+  background-color: #97C9A2;
+}
 .t-home, .t-move, .t-object, .t-energy, .t-work, .t-slow {
-  background-color: #D9C8DA;
+  background-color: #E8B887;
 }
 .t-education, .t-media {
   background-color: #ADD7DB;
 }
-.t-subsist, .t-act, .t-love, .t-genre, .t-zad, .t-words, .t-companies {
+.t-alienation, .t-emancipation {
+  background-color: #85C6CC;
+}
+.t-subsist, .t-act, .t-love, .t-genre, .t-zad, .t-words {
   background-color: #EDB4AA;
 }
-.t-alienation, .t-emancipation {
-  background-color: #ADD7DB;
+.t-creation, .t-space {
+  background-color: #EDB8E5; 
 }
 .t-science, .t-web {
-  background-color: #D9C8DA;
-}
-.t-history, .t-law, .t-economy, .t-politics, .t-philo, .t-creation, .t-space {
   background-color: #E8D9A0;
 }
-.t-earth, .t-agriculture, .t-health, .t-eat {
-  background-color: #A4DAB0;
+.t-companies, .t-history, .t-law, .t-economy, .t-politics, .t-philo {
+  background-color: #D9C8DA;
 }
 
-// ... then duplicated below for tags within left panel
+// ... then duplicated below for bordered color
 @bbs: 5px;
-/* COLORS FOR TAGS (with overwriting/priorities) */
-.tb-about, .tb-group, .tb-list, .tb-tool, .tb-map, .tb-calendar {
+.tb-about, .tb-group, .tb-list, .tb-tool {
   border: @bbs solid #C7C9C6;
+}
+.tb-map, .tb-calendar {
+  border: @bbs solid #A4A198;
 }
 .tb-text, .tb-image, .tb-audio, .tb-video {
   border: @bbs solid #C7C9C6;
 }
+.tb-earth, .tb-agriculture, .tb-health, .tb-eat {
+  border: @bbs solid #97C9A2;
+}
 .tb-home, .tb-move, .tb-object, .tb-energy, .tb-work, .tb-slow {
-  border: @bbs solid #D9C8DA;
+  border: @bbs solid #E8B887;
 }
 .tb-education, .tb-media {
   border: @bbs solid #ADD7DB;
 }
-.tb-subsist, .tb-act, .tb-love, .tb-genre, .tb-zad, .tb-words, .tb-companies {
+.tb-alienation, .tb-emancipation {
+  border: @bbs solid #85C6CC;
+}
+.tb-subsist, .tb-act, .tb-love, .tb-genre, .tb-zad, .tb-words {
   border: @bbs solid #EDB4AA;
 }
-.tb-alienation, .tb-emancipation {
-  border: @bbs solid #ADD7DB;
+.tb-creation, .tb-space {
+  border: @bbs solid #EDB8E5; 
 }
 .tb-science, .tb-web {
-  border: @bbs solid #D9C8DA;
-}
-.tb-history, .tb-law, .tb-economy, .tb-politics, .tb-philo, .tb-creation, .tb-space {
   border: @bbs solid #E8D9A0;
 }
-.tb-earth, .tb-agriculture, .tb-health, .tb-eat {
-  border: @bbs solid #A4DAB0;
+.tb-companies, .tb-history, .tb-law, .tb-economy, .tb-politics, .tb-philo {
+  border: @bbs solid #D9C8DA;
 }
-
-.tb-noleft {
-  border-top: none;
-  border-bottom: none;
-  border-left: none;
-}
-.tb-noright {
-  border-top: none;
-  border-bottom: none;
-  border-right: none;
-}
-// .colordiff {
-//   background-opacity: 0.6;
-// }
 
 
 
@@ -752,7 +721,7 @@ span.highlight, div.highlight { /* searched words */
     bottom: 0;
     padding-top: 5px;
 
-    background: @darkColor;
+    background: #525252;
 
     border-right: 2px solid white;
     .transition(all 0.4s);
@@ -777,8 +746,9 @@ span.highlight, div.highlight { /* searched words */
       vertical-align: top;
 
       width: 50%;
+      height: 38px;
       
-      padding: 3px;
+      padding: 6px 0px;
       margin-bottom: 0px;
       text-align: center;
 
@@ -786,11 +756,32 @@ span.highlight, div.highlight { /* searched words */
 
       font-size: 0.8em;
       font-style: italic;
-      color: @lightColor;
+      color: #BFBFBF;
+      // border: 2px solid @darkColor;
 
       .hint:after, &:after, &:before {
         text-transform: none;
         font-style: normal;
+      }
+
+      i {
+        position: absolute;
+        display: block;
+        width: 100%;
+      }
+      .label {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        font-size: 0.9em;
+      }
+      .back {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.6);
       }
 
       i.close { display: none;}
@@ -799,23 +790,16 @@ span.highlight, div.highlight { /* searched words */
         /*background: @darkGreenColor;*/
       }
 
-      i.meta {
-        color: @lightColor;
-        font-size: 1.1em;
-      }
-
-      div {
-        font-size: 0.9em;
-      }
-
       &:hover, &.popuped {
         background: @veryDarkColor;
       }
       &.active {
         color: white;
-        background: @redColor;
+        background: black;
+        .back {
+          background: none;
+        }
         //.inner-shadow(0px 0px 5px -2px #2F2F2F);
-        i.meta { color: white; }
         i.close { display: block; }
       }
     }
@@ -926,12 +910,16 @@ span.highlight, div.highlight { /* searched words */
   top: 50%;
   .transform(translate(0,-50%));
 
+  margin-right: 7px;
+
+  font-size: 0.9em;
+
   .tag {
     float: right;
     margin: 3px;
-    padding: 3px 3px 6px 6px;
+    padding: 3px 3px 4px 5px;
     width: 17px;
-    border-radius: 9px;
+    border-radius: 7px;
     
     text-align: center;
     color: @darkColor;
