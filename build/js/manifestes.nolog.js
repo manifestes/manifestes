@@ -3462,7 +3462,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,datapath:'data/',assets:'build/',lastupdate:'07 June 2016 - 12:31'})
+.constant('settings', {dev:false,datapath:'data/',assets:'build/',lastupdate:'07 June 2016 - 4:13'})
 
 ;
 ;
@@ -4256,7 +4256,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
         // MakiMarkers !
         var icon = 'circle';
         //var color = "#"+credit.color || "#000";
-        var size = [9,9];
+        var size = [8,8];
         // icons use maki-markers: https://www.mapbox.com/maki/
         if(/region/.test(m.scale)) {
           size = [10,10];
@@ -4364,6 +4364,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
       ///////////////////////////////////////////////////////////////
       var fetch_geojson = function(callb) {
         var toFetch = _.filter($scope.meta.mapcredits, {type: "geojson"});
+        0;
         _.each(toFetch, function(dat) {
           $http.get(themappath+'/'+dat.geojson)
           //$http.get(dat.geojson)
@@ -4386,7 +4387,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
                 if(dat.slug=='passerelle') {
                   web = dat.url +"/"+ m.properties.title.match(/<a href=\"([^\"]*)\"/)[1];
                 }
-                if(dat.slug=='ecoles') {
+                if(dat.slug=='ecoles' || dat.slug=='fermesavenir') {
                   name = m.properties.Name;
                 }
 

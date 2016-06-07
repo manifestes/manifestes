@@ -5,19 +5,22 @@
     content: >
         Politics are about trust and being able to rely on someone or representation. Because love and listening takes away fears, and ego
 -
-    author: ?
+    author:
     content: >
         Si ceux qu’on appelle à tout rompre depuis des décennies « casseurs » sont la cible principale des autorités, ce n’est pas comme certains le prétendent parce qu’ils sont extérieurs au mouvement, mais précisément parce qu’il faut, pour le pouvoir, qu’ils le deviennent. Il n’est pas possible de juger une personne isolément pour les manifestations de ces mouvements, quand nous sommes des milliers à outrepasser les ordres de dispersion, à encercler les centres-villes, à subir les gaz et les tirs de ﬂash-ball. Les chants, les pierres, les techniques de protection contre les gaz lacrymogènes, la force symbolique et matérielle des tracteurs, les masques, les totems-tritons : comme en novembre 2012 dans le bois de Rohanne sur la ZAD, derrière les différents moyens d’expression, et derrière les débats qu’ils suscitent, c’est un mouvement commun qui, le temps d’une journée, construit un rapport de force à même de faire reculer les projets gouvernementaux. Et c’est bien d’abord cet outrage collectif que la justice cherche à punir.
 -
-    auhor: ?
-    content: Non seulement les espèces disparaissent, mais les mots les gestes de la solidarité humaine aussi
+    used: true
+    author: Félix Guattari, Les trois écologies, 1989
+    content: Non seulement les espèces disparaissent, mais les mots, les phrases, les gestes de la solidarité humaine aussi
 -
-    author: Anonyme
+    used: true
+    author:
     content: Be careful with each other, so we can be dangerous together
 -
     author: Hubert Félix Thiéfaine
     content: C’est pas parce qu’on a mis le pied dedans qu’on doit y mettre les mains
 -
+    used: true
     author: Martin Luther King
     content: Nous devons apprendre à vivre ensemble comme des frères, sinon nous allons mourir tous ensemble comme des idiots
 -
@@ -35,7 +38,8 @@
     content: >
         When we are sleeping, aeroplanes carry memories of the horrors we have given our silent consent to into the night sky of our cities, and leave them there, to gather like clouds and condense into our dreams before morning
 -
-    author: ?
+    used: true
+    author:
     content: >
         Seuls ceux qui ne bougent pas ne se rendent pas compte qu'ils ont des chaînes
 -
@@ -59,8 +63,9 @@
     content: >
         Derrière les affrontements avec la police il n’y a pas qu’un délire de jeunesse viriliste, mais la prise en compte d’un rapport de force, le début d’un retournement de la normalité, le refus de la place que l’on nous réserve.
 -
-    author: anonyme
-    content: on n’entre pas dans un monde meilleur sans effraction
+    used: true
+    author:
+    content: On n'entre pas dans un monde meilleur sans effraction
     tags: violence
 -
     author: Dharmapada
@@ -120,6 +125,7 @@
 
         C'est cela seul que vous aurez vous-même éprouvé, expérimenté et reconnu pour vrai, qui sera conforme à votre bien et à celui des autres, cela, croyez-le et conformez-y votre conduite
 -
+    used: true
     author: Basshô
     content: >
         Rien ne dit
@@ -128,7 +134,8 @@
 
         Qu'elle est près de sa fin.
 -
-    author: Anonyme
+    used: true
+    author:
     content: >
         Les fleurs tombent
         En toute saison
@@ -192,18 +199,21 @@
     content: >
         Espérer ou craindre est une maladresse qui diffère l’action et la retarde en dévotions passives et tristes. Seule la compréhension de ce qui a *déjà eu lieu* et de ce qui est *maintenant en train de se faire* importe à ceux et celles qui font reposer l’avenir sur leurs forces actuelles. Craindre ou espérer, c’est négliger de se compter soi-même comme terme du problème.
 -
+    used: true
     author: "Spinoza, Éthique, V, 39"
     content: >
         Qui a un corps possédant un très grand nombre d’aptitudes, la plus grande partie de son Âme est éternelle.
 -
-    author: —
+    used: true
+    author:
     content: >
         Affronter le réel, c'est cogner la finance, pas la jeunesse
 -
     author: "[L'autonomie ou rien](lundi.am/)"
     content: C’est changer radicalement de partition que nous désirons. Inventer une musique qui soit faite d’autre chose que de l’organisation machinale, aveugle, déshumanisante de nos existences.
 -
-    author: "[Le coup d'après](lundi.am/)"
+    used: true
+    author: "[Le coup d'après](https://lundi.am/Le-coup-d-apres)"
     content: Le temps qu’on passe à devoir se convaincre mutuellement de la nécessité de l’une ou l’autre manière de faire, ce temps est en pure perte. La question n’est pas d’être ou de ne pas être violent. La question est d’être offensif, ou inoffensif.
 -
     author: Panos
@@ -236,6 +246,7 @@
     author: 
     content: Nos rêves ne rentrent pas dans vos urnes
 -
+    user: true
     author: 
     content: Les bourgeois nous traitent comme des chiens. Il est temps de mordre.
 -
@@ -280,6 +291,7 @@
     content: L'ironie, c'est que les Etats qui coopèrent avec Facebook et Twitter en savent beaucoup plus sur leurs citoyens que ceux, comme l'Iran, où l'Etat contrôle internet avec une poigne de fer, mais n'a aucun accès légal aux entreprises de médias sociaux. (…) Quand, avec 150 likes, Facebook peut nous connaître mieux que nos parents et, avec 300 likes, mieux que notre compagne ou compagnon, le monde paraît bien prévisible, pour les gouvernements et pour les entreprises. Et la prévisibilité, c'est le contrôle
     tags: web politics
 -
+    used: true
     author: Condorcet
     content: Le suffrage universel peut conduire à la dictature des imbéciles lorsqu’il n’est pas assorti d’une instruction publique éclairant les esprits
 -
@@ -291,10 +303,12 @@
     content: On ne peut pas laisser des élections changer quoi que ce soit
     tags: politics
 -
+    used; true
     author: Frank Zappa
-    content: La politique, c'est la division «divertissement» du complexe militaro-industriel
+    content: La politique, c'est la division *divertissement* du complexe militaro-industriel
     tags: politics
 -
+    used: true
     author: Kafka
     content: Un monde de mensonges ne peut être détruit par la vérité, seulement par un monde de vérité
 -
@@ -327,7 +341,6 @@
     content: Lorsque la langue usuelle ne permet plus d’exprimer ce qui demande à être articulé d’urgence, c’est qu’il est temps d’apprendre un nouveau vocabulaire.
     tags: words
 -
-    used: true
     author: Paulo Coelho
     content: C'est votre exemple qui change le monde, pas vos opinions
 -
@@ -386,7 +399,8 @@
     author: Alice
     content: Si nous ne prenons pas le problème à bras-le-corps, un bain de sang généralisé est beaucoup plus probable qu'une transition pacifique et démocratique
 -
-    author: —
+    used: true
+    author:
     content: Ceux qui sont cause des guerres ne meurent jamais
 -
     author: Albert Einstein
@@ -416,13 +430,13 @@
     author: —
     content: Un végétarien en hummer pollue moins qu'un omnivore en vélo
 -
-    author: A.Gramsci. ou Le Forum du clair-obscur
+    used: true
+    author: A. Gramsci ou Le Forum du clair-obscur
     content: Le vieux monde se meurt, le nouveau monde tarde à apparaître et dans ce clair-obscur surgissent les monstres
 -
     author: 
     content: À qui profite le crime ? minorités — privilégiées — urbaines — au pouvoir
 -
-    used: true
     author: 
     content: Le silence de vos pantoufles ne masque pas le bruit des bottes
 -
@@ -481,6 +495,7 @@
     author: Helen Keller
     content: Aucun pessimiste n'a jamais découvert le secret des étoiles, navigué jusqu'à des terres inconnues, ou ouvert un nouveau chemin pour l'esprit humain
 -
+    used: true
     author: Anaïs Nin
     content: Vint un temps où le risque de rester à l'étroit dans un bourgeon était plus douloureux que le risque d'éclore
 -
@@ -506,9 +521,11 @@
     author: Margaret Mead
     content: Ne doutez pas qu’un petit nombre de personnes déterminées puisse changer le monde. En fait, ça a même toujours marché comme ça.
 -
+    used: true
     author: Horace Walpole
     content: Quel que soit ton conseil, qu'il soit bref
 -
+    used: true
     author: Gandhi
     content: Sois le changement que tu veux voir dans le monde
 -
@@ -521,7 +538,8 @@
 -
     used: true
     author: lettre de N. Wiener à W. Reuther, 1949, revue Z n°9
-    content: Toute main-d'œuvre, dès lors qu'elle est mise en concurrence avec un esclave, que l'esclave soit humain ou mécanique, doit accepter les conditions de travail de l'esclave
+    content: >
+        Toute main-d'œuvre, dès lors qu'elle est mise en concurrence avec un esclave, que l'esclave soit humain ou mécanique, doit accepter les conditions de travail de l'esclave
 -
     author: Frederic Lordon, [Le parti de la liquette](http://blog.mondediplo.net/2015-10-09-Le-parti-de-la-liquette)
     content: La réalité du salariat c’est le chantage, et la réalité du chantage c’est qu’il y a une inégalité entre celui qui chante et celui qui fait chanter – on ne se porte pas identiquement à l’une ou l’autre extrémité du revolver. 
@@ -604,6 +622,7 @@
 
         Le malheur des hommes ne doit jamais être un reste muet de la politique. Il fonde un droit absolu à se lever et à s'adresser à ceux qui détiennent le pouvoir.
 -
+    used: true
     author: Charles Bukowski
     content: >
         Vous commencez à sauver le monde en sauvant une personne à la fois, tout le reste, c'est du romantisme grandiose ou de la politique.
@@ -658,6 +677,7 @@
 
         Ils ne nous respectent pas car nous sommes leurs enfants maltraîtés. Ils nous baisent matin, midi et soir, et, tant qu'ils nous bordent en nous embrassant, tant qu'ils nous chuchotent à l'oreille : «Papa t'aime, Papa va s'occuper de toi», nous fermons les yeux et nous nous endormons, troquant nos corps, nos âmes, contre les vernis rassurants de la «civilisation» et de la «sécurité», fausses idoles de notre rêve humide du XXe siècle.
 -
+    used: true
     author: Comité invisible, À nos amis
     content: Nous ne vivons pas une crise du capitalisme, mais au contraire le triomphe du capitalisme de crise.
 -
@@ -713,7 +733,6 @@
     content: >
         La question n'est pas de savoir comment assainir techniquement notre «démocratie», mais de définir contre quoi on se bat
 -
-    used: true
     author: Evelyne Pieiller, Manière de voir 136, p.90
     content: >
         Il n'y a pas de recette formelle

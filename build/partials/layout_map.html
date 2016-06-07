@@ -30,7 +30,10 @@
     <div
       ng-repeat="c in meta.mapjumps"
       ng-click="mapJumpTo(c);"
-      class="cities">
+      class="jump"
+      ng-class="{
+        global: c.zoom<10
+      }">
         {{c.name}}
     </div>
   </div>

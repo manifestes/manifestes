@@ -2686,7 +2686,7 @@ body.layout-mapprint .container {
   bottom: 0;
 }
 .map .markdiv {
-  border-radius: 10px;
+  /*border-radius: 10px;*/
   /*opacity: 0.8;*/
 }
 .map .jumps {
@@ -2694,17 +2694,19 @@ body.layout-mapprint .container {
   position: absolute;
   bottom: 0;
   left: 0;
-  margin: 10px;
   text-align: left;
 }
-.map .jumps .cities {
-  padding: 3px 6px;
+.map .jumps .jump {
+  padding: 3px 5px;
   cursor: pointer;
   background: white;
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
-.map .jumps .cities:hover {
-  color: lightgrey;
+.map .jumps .jump.global {
+  color: lightgray;
+}
+.map .jumps .jump:hover {
+  background: #E7E7E7;
 }
 .map .legendwrapper {
   box-sizing: border-box;
