@@ -26,5 +26,14 @@
     </div>
   </div>
   
+  <div class="jumps">
+    <div
+      ng-repeat="c in meta.mapjumps"
+      ng-click="mapJumpTo(c);"
+      class="cities">
+        {{c.name}}
+    </div>
+  </div>
+
   <div id="leaflet" height="100%" width="100%"></div>
 </div>

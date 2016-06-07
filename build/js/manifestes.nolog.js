@@ -3462,7 +3462,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,datapath:'data/',assets:'build/',lastupdate:'06 June 2016 - 11:08'})
+.constant('settings', {dev:false,datapath:'data/',assets:'build/',lastupdate:'07 June 2016 - 12:31'})
 
 ;
 ;
@@ -4159,6 +4159,12 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
     var themappath = settings.datapath + '/map';
 
     ///////////////////////////////////////////////////////////////
+    $scope.mapJumpTo = function(c) {
+      c.pos = c.pos.split(',');
+      $scope.map.setView(c.pos,c.zoom);
+    };
+
+    ///////////////////////////////////////////////////////////////
     var updateMapStyles = function() {
       $scope.state.mapStyles = _.map($scope.meta.mapcredits, function(e) {
         var act = e.active ? "block" : "none";
@@ -4236,6 +4242,8 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
       }).addTo(map);
 
       var layers = new L.LayerGroup().addTo(map);
+
+      $scope.map = map;
 
       ///////////////////////////////////////////////////////////////
       // business to add a point

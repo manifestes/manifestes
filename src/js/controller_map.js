@@ -13,6 +13,12 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
     var themappath = settings.datapath + '/map';
 
     ///////////////////////////////////////////////////////////////
+    $scope.mapJumpTo = function(c) {
+      c.pos = c.pos.split(',');
+      $scope.map.setView(c.pos,c.zoom);
+    };
+
+    ///////////////////////////////////////////////////////////////
     var updateMapStyles = function() {
       $scope.state.mapStyles = _.map($scope.meta.mapcredits, function(e) {
         var act = e.active ? "block" : "none";
@@ -91,6 +97,8 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
 
       var layers = new L.LayerGroup().addTo(map);
 
+      $scope.map = map;
+
       ///////////////////////////////////////////////////////////////
       // business to add a point
       var addMarker = function(m) {
@@ -102,7 +110,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
         // MakiMarkers !
         var icon = 'circle';
         //var color = "#"+credit.color || "#000";
-        var size = [9,9];
+        var size = [8,8];
         // icons use maki-markers: https://www.mapbox.com/maki/
         if(/region/.test(m.scale)) {
           size = [10,10];
@@ -210,6 +218,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
       ///////////////////////////////////////////////////////////////
       var fetch_geojson = function(callb) {
         var toFetch = _.filter($scope.meta.mapcredits, {type: "geojson"});
+        console.log(toFetch);
         _.each(toFetch, function(dat) {
           $http.get(themappath+'/'+dat.geojson)
           //$http.get(dat.geojson)
@@ -232,7 +241,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
                 if(dat.slug=='passerelle') {
                   web = dat.url +"/"+ m.properties.title.match(/<a href=\"([^\"]*)\"/)[1];
                 }
-                if(dat.slug=='ecoles') {
+                if(dat.slug=='ecoles' || dat.slug=='fermesavenir') {
                   name = m.properties.Name;
                 }
 

@@ -51,6 +51,49 @@ intro:
         quote:
             author: Chris Marker, Le Joli Mai, 1h28min
             content: l'avenir est là ! mais les gens ne le voient pas ... ils attendent l'horizon au loin
+mapjumps:
+    -   name: Europe
+        pos: 46.85662,11.4744874
+        zoom: 5
+    -   name: Belgique
+        pos: 50.740103,4.4652104
+        zoom: 8
+    -   name: Bruxelles
+        pos: 50.8674147,4.3709253
+        zoom: 12
+    -   name: Espagne
+        pos: 40.0976169,-3.7787672  
+        zoom: 6
+    -   name: France
+        pos: 47,2.5  
+        zoom: 6
+    -   name: Bordeaux
+        pos: 44.8592206,-0.5730951
+        zoom: 12
+    -   name: Lille
+        pos: 50.6377039,3.0571164
+        zoom: 12
+    -   name: Lyon
+        pos: 45.7555548,4.8392404
+        zoom: 12
+    -   name: Marseille
+        pos: 43.3161612,5.405304
+        zoom: 12
+    -   name: Montpellier
+        pos: 43.6098923,3.8745044
+        zoom: 12
+    -   name: Nantes
+        pos: 47.2187333,-1.5511823
+        zoom: 12
+    -   name: Paris
+        pos: 48.8605322,2.3550299
+        zoom: 12
+    -   name: Strasbourg
+        pos: 48.5763616,7.7638091
+        zoom: 12
+    -   name: Toulouse
+        pos: 43.600057,1.4307794
+        zoom: 12
 mapcredits:
     -   slug: misc
         name: Utopies Concrètes
@@ -152,12 +195,19 @@ mapcredits:
         color: ce67c5
     -   slug: circuitscourts
         name: Circuits courts en Belgique
-        description: —
+        description: "alternatives de consommation, d'épargne\net de production locales, équitables,\ndurables, saines, et transparentes"
         url: http://www.circuits-courts.be
         json: map_circuitscourts.json
         _json: http://www.circuits-courts.be/get_json_data.php?data=ext
         color: c6bc90
-        hide: true
+    -   slug: fermesavenir
+        name: Fermes d'avenir
+        description: Réseau Fermes d'avenir
+        url: http://www.fermesdavenir.org/
+        type: geojson
+        geojson: map_fermesavenir.geojson
+        _kmz: https://mapsengine.google.com/map/kml?mid=1fy6Fta6qnNkzLroBSTNCggzIVXY
+        color: de85ca
     -   slug: demosphere
         name: Démosphère
         description: "Le réseau des éco-annonces\nde la revue Passerelle Éco"
@@ -187,6 +237,9 @@ disclaimer:
         
 
         Pour les applications concrètes, consultez les liens ou la carte
+
+
+        **Les couleurs** correspondent aux thématiques
     links: >
         ici, des liens ajoutés **avec nos petites mains**. ça fait un peu fouilli, leur désordre reflète la multiplicité des collectifs et initiatives !
 

@@ -25,10 +25,34 @@
   bottom: 0;
 
   .markdiv {
-    border-radius: 10px;
+    /*border-radius: 10px;*/
     /*opacity: 0.8;*/
   }
 
+  .jumps {
+    z-index: 25;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    text-align: left;
+
+    .jump {
+      padding: 3px 5px;
+      cursor: pointer;
+      
+      background: white;
+      font-size: 0.7em;
+      
+      &.global {
+        color: lightgray;
+      }
+
+      &:hover {
+        background: #E7E7E7;
+      }
+    }
+  }
   .legendwrapper {
     box-sizing: border-box;
     z-index: 25;

@@ -4,7 +4,7 @@
   	active: isTagActive(t),
   }"
   ng-repeat="t in e.tags | orderBy : tagSorter : true"
-  ng-click="toggleTag(t); $event.stopPropagation();">
+  ng-click="state.tagging=true; toggleTag(t); $event.stopPropagation();">
     <i class="fa fa-{{tagsContents[t].icon}}"> </i>
      <!-- <i class="clear fa fa-times fa-lg"></i> -->
 </span>

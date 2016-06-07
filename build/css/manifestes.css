@@ -1047,19 +1047,6 @@ div.highlight {
   padding: 2px 4px;
   background: rgba(255, 252, 0, 0.48);
 }
-/*
-@bd: 9px;
-.bordered-0 { border: #E8B887 solid @bd !important; }
-.bordered-1 { border: #ADD7DB solid @bd !important; }
-.bordered-2 { border: #C3D794 solid @bd !important; }
-.bordered-3 { border: #D9C8DA solid @bd !important; }
-.bordered-4 { border: #EDB4AA solid @bd !important; }
-.bordered-5 { border: #CFC5A3 solid @bd !important; }
-.bordered-6 { border: #A4DAB0 solid @bd !important; }
-.bordered-7 { border: #E3CD7D solid @bd !important; }
-.bordered-8 { border: #C5D3C1 solid @bd !important; }
-.bordered-9 { border: #E8D9A0 solid @bd !important; }
-*/
 /* COLORS FOR TAGS (with overwriting/priorities) */
 .t-about,
 .t-group,
@@ -1069,7 +1056,7 @@ div.highlight {
 }
 .t-map,
 .t-calendar {
-  background-color: #c0bcad;
+  background-color: #B7B4AC;
 }
 .t-text,
 .t-image,
@@ -1077,58 +1064,61 @@ div.highlight {
 .t-video {
   background-color: #C7C9C6;
 }
-.t-home,
-.t-move,
-.t-object,
-.t-energy,
-.t-work,
-.t-slow {
-  background-color: #D9C8DA;
-}
-.t-education,
-.t-media {
-  background-color: #ADD7DB;
-}
-.t-subsist,
-.t-act,
-.t-love,
-.t-genre,
-.t-zad,
-.t-words,
-.t-companies {
-  background-color: #EDB4AA;
-}
-.t-alienation,
-.t-emancipation {
-  background-color: #ADD7DB;
-}
-.t-science,
-.t-web {
-  background-color: #D9C8DA;
-}
-.t-history,
-.t-law,
-.t-economy,
-.t-politics,
-.t-philo,
-.t-creation,
-.t-space {
-  background-color: #E8D9A0;
-}
 .t-earth,
 .t-agriculture,
 .t-health,
 .t-eat {
   background-color: #A4DAB0;
 }
-/* COLORS FOR TAGS (with overwriting/priorities) */
+.t-home,
+.t-move,
+.t-object,
+.t-energy,
+.t-work,
+.t-slow {
+  background-color: #E8B887;
+}
+.t-education,
+.t-media {
+  background-color: #ADD7DB;
+}
+.t-alienation,
+.t-emancipation {
+  background-color: #95CBD1;
+}
+.t-subsist,
+.t-act,
+.t-love,
+.t-genre,
+.t-zad,
+.t-words {
+  background-color: #EDB4AA;
+}
+.t-creation,
+.t-space {
+  background-color: #EDB8E5;
+}
+.t-science,
+.t-web {
+  background-color: #E8D9A0;
+}
+.t-companies,
+.t-history,
+.t-law,
+.t-economy,
+.t-politics,
+.t-philo {
+  background-color: #D9C8DA;
+}
 .tb-about,
 .tb-group,
 .tb-list,
-.tb-tool,
+.tb-tool {
+  border: 5px solid #c7c9c6;
+}
 .tb-map,
 .tb-calendar {
-  border: 5px solid #c7c9c6;
+  border: 5px solid #b7b4ac;
 }
 .tb-text,
 .tb-image,
@@ -1136,59 +1126,51 @@ div.highlight {
 .tb-video {
   border: 5px solid #c7c9c6;
 }
-.tb-home,
-.tb-move,
-.tb-object,
-.tb-energy,
-.tb-work,
-.tb-slow {
-  border: 5px solid #d9c8da;
-}
-.tb-education,
-.tb-media {
-  border: 5px solid #add7db;
-}
-.tb-subsist,
-.tb-act,
-.tb-love,
-.tb-genre,
-.tb-zad,
-.tb-words,
-.tb-companies {
-  border: 5px solid #edb4aa;
-}
-.tb-alienation,
-.tb-emancipation {
-  border: 5px solid #add7db;
-}
-.tb-science,
-.tb-web {
-  border: 5px solid #d9c8da;
-}
-.tb-history,
-.tb-law,
-.tb-economy,
-.tb-politics,
-.tb-philo,
-.tb-creation,
-.tb-space {
-  border: 5px solid #e8d9a0;
-}
 .tb-earth,
 .tb-agriculture,
 .tb-health,
 .tb-eat {
   border: 5px solid #a4dab0;
 }
-.tb-noleft {
-  border-top: none;
-  border-bottom: none;
-  border-left: none;
+.tb-home,
+.tb-move,
+.tb-object,
+.tb-energy,
+.tb-work,
+.tb-slow {
+  border: 5px solid #e8b887;
 }
-.tb-noright {
-  border-top: none;
-  border-bottom: none;
-  border-right: none;
+.tb-education,
+.tb-media {
+  border: 5px solid #add7db;
+}
+.tb-alienation,
+.tb-emancipation {
+  border: 5px solid #95cbd1;
+}
+.tb-subsist,
+.tb-act,
+.tb-love,
+.tb-genre,
+.tb-zad,
+.tb-words {
+  border: 5px solid #edb4aa;
+}
+.tb-creation,
+.tb-space {
+  border: 5px solid #edb8e5;
+}
+.tb-science,
+.tb-web {
+  border: 5px solid #e8d9a0;
+}
+.tb-companies,
+.tb-history,
+.tb-law,
+.tb-economy,
+.tb-politics,
+.tb-philo {
+  border: 5px solid #d9c8da;
 }
 .mailing {
   margin-top: 30px;
@@ -1743,7 +1725,7 @@ div.highlight {
   top: 65px;
   bottom: 0;
   padding-top: 5px;
-  background: #6a6c67;
+  background: #525252;
   border-right: 2px solid white;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -1776,7 +1758,8 @@ div.highlight {
   display: inline-block;
   vertical-align: top;
   width: 50%;
-  padding: 3px;
+  height: 38px;
+  padding: 6px 0px;
   margin-bottom: 0px;
   text-align: center;
   -moz-osx-font-smoothing: grayscale;
@@ -1784,7 +1767,7 @@ div.highlight {
   -moz-osx-font-smoothing: antialiased;
   font-size: 0.8em;
   font-style: italic;
-  color: #ababab;
+  color: #BFBFBF;
 }
 .header .tagspanel .gridtag .hint:after,
 .header .tagspanel .gridtag:after,
@@ -1792,18 +1775,30 @@ div.highlight {
   text-transform: none;
   font-style: normal;
 }
+.header .tagspanel .gridtag i {
+  position: absolute;
+  display: block;
+  width: 100%;
+}
+.header .tagspanel .gridtag .label {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  font-size: 0.9em;
+}
+.header .tagspanel .gridtag .back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
 .header .tagspanel .gridtag i.close {
   display: none;
 }
 .header .tagspanel .gridtag.important {
   /*background: @darkGreenColor;*/
-}
-.header .tagspanel .gridtag i.meta {
-  color: #ababab;
-  font-size: 1.1em;
-}
-.header .tagspanel .gridtag div {
-  font-size: 0.9em;
 }
 .header .tagspanel .gridtag:hover,
 .header .tagspanel .gridtag.popuped {
@@ -1811,10 +1806,10 @@ div.highlight {
 }
 .header .tagspanel .gridtag.active {
   color: white;
-  background: #883e3e;
+  background: black;
 }
-.header .tagspanel .gridtag.active i.meta {
-  color: white;
+.header .tagspanel .gridtag.active .back {
+  background: none;
 }
 .header .tagspanel .gridtag.active i.close {
   display: block;
@@ -1917,13 +1912,15 @@ div.highlight {
   -ms-transform: translate(0, -50%);
   -o-transform: translate(0, -50%);
   transform: translate(0, -50%);
+  margin-right: 7px;
+  font-size: 0.9em;
 }
 .base-tags .tag {
   float: right;
   margin: 3px;
-  padding: 3px 3px 6px 6px;
+  padding: 3px 3px 4px 5px;
   width: 17px;
-  border-radius: 9px;
+  border-radius: 7px;
   text-align: center;
   color: #6a6c67;
   cursor: pointer;
@@ -2202,13 +2199,15 @@ body.layout-mapprint .container {
   -ms-transform: translate(0, -50%);
   -o-transform: translate(0, -50%);
   transform: translate(0, -50%);
+  margin-right: 7px;
+  font-size: 0.9em;
 }
 .wrapper.layout-texts .section .tags .tag {
   float: right;
   margin: 3px;
-  padding: 3px 3px 6px 6px;
+  padding: 3px 3px 4px 5px;
   width: 17px;
-  border-radius: 9px;
+  border-radius: 7px;
   text-align: center;
   color: #6a6c67;
   cursor: pointer;
@@ -2322,7 +2321,7 @@ body.layout-mapprint .container {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: antialiased;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.6);
 }
 .wrapper.layout-texts .section .block .image .quote-container .author {
   margin-top: 20px;
@@ -2475,7 +2474,7 @@ body.layout-mapprint .container {
   /*-webkit-column-rule:  @c outset red;
   -moz-column-rule: @c outset red;
   column-rule: @c outset red;*/
-  background: #cccccc;
+  background: #727272;
   padding: 20px 0px 50px 0px;
   text-align: left;
 }
@@ -2496,6 +2495,7 @@ body.layout-mapprint .container {
   margin-top: 0;
   font-size: 0.9em;
   line-height: 1.3em;
+  background: whitesmoke;
 }
 .panel.bricks .link a {
   color: white;
@@ -2516,6 +2516,8 @@ body.layout-mapprint .container {
   -ms-transform: translate(0, -50%);
   -o-transform: translate(0, -50%);
   transform: translate(0, -50%);
+  margin-right: 7px;
+  font-size: 0.9em;
   margin-top: 15px;
   margin-bottom: -15px;
   width: 100%;
@@ -2524,9 +2526,9 @@ body.layout-mapprint .container {
 .panel.bricks .link .tags .tag {
   float: right;
   margin: 3px;
-  padding: 3px 3px 6px 6px;
+  padding: 3px 3px 4px 5px;
   width: 17px;
-  border-radius: 9px;
+  border-radius: 7px;
   text-align: center;
   color: #6a6c67;
   cursor: pointer;
@@ -2580,7 +2582,7 @@ body.layout-mapprint .container {
   background: #383737;
 }
 .panel.bricks.quotes .link.used {
-  background: #8D6128;
+  border: 3px solid #8D6128;
 }
 .panel.bricks.quotes .link .quote-container {
   font-family: 'Merriweather', serif;
@@ -2686,6 +2688,23 @@ body.layout-mapprint .container {
 .map .markdiv {
   border-radius: 10px;
   /*opacity: 0.8;*/
+}
+.map .jumps {
+  z-index: 25;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 10px;
+  text-align: left;
+}
+.map .jumps .cities {
+  padding: 3px 6px;
+  cursor: pointer;
+  background: white;
+  font-size: 0.8em;
+}
+.map .jumps .cities:hover {
+  color: lightgrey;
 }
 .map .legendwrapper {
   box-sizing: border-box;
@@ -2877,6 +2896,9 @@ body.layout-mapprint .container {
     -moz-box-shadow: none !important;
     box-shadow: none !important;
   }
+  .section .tags {
+    display: none;
+  }
   .header .printer,
   .header .button#lang,
   .header .ext {
@@ -2916,7 +2938,8 @@ body.layout-mapprint .container {
     display: none;
   }
   /* LINKS */
-  .panel.links {
+  .panel.links,
+  .panel.quotes {
     -webkit-column-count: 1;
     -moz-column-count: 1;
     column-count: 1;
@@ -2928,7 +2951,8 @@ body.layout-mapprint .container {
   -moz-column-rule: @c outset red;
   column-rule: @c outset red;*/
   }
-  .panel.links .link {
+  .panel.links .link,
+  .panel.quotes .link {
     margin: 15px 7px !important;
     padding: 12px !important;
   }
@@ -2997,7 +3021,8 @@ body.layout-mapprint .container {
   .header .menu .searchinput input {
     width: 160px !important;
   }
-  .panel.links {
+  .panel.links,
+  .panel.quotes {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
@@ -3012,7 +3037,8 @@ body.layout-mapprint .container {
 }
 /* RELATIVELY SMALL */
 @media (min-width: 1026px) and (max-width: 1199px) {
-  .panel.links {
+  .panel.links,
+  .panel.quotes {
     -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
@@ -3030,7 +3056,8 @@ body.layout-mapprint .container {
   .header .menu .searchinput input {
     width: 320px !important;
   }
-  .panel.links {
+  .panel.links,
+  .panel.quotes {
     -webkit-column-count: 4;
     -moz-column-count: 4;
     column-count: 4;
@@ -3048,7 +3075,8 @@ body.layout-mapprint .container {
   .header .menu .searchinput input {
     width: 380px !important;
   }
-  .panel.links {
+  .panel.links,
+  .panel.quotes {
     -webkit-column-count: 5;
     -moz-column-count: 5;
     column-count: 5;
@@ -3066,7 +3094,8 @@ body.layout-mapprint .container {
   .header .menu .searchinput input {
     width: 410px !important;
   }
-  .panel.links {
+  .panel.links,
+  .panel.quotes {
     -webkit-column-count: 6;
     -moz-column-count: 6;
     column-count: 6;
