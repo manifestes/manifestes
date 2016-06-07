@@ -303,7 +303,7 @@
     content: On ne peut pas laisser des élections changer quoi que ce soit
     tags: politics
 -
-    used; true
+    used: true
     author: Frank Zappa
     content: La politique, c'est la division *divertissement* du complexe militaro-industriel
     tags: politics

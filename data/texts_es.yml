@@ -636,8 +636,6 @@ content: >
 
 
 
-
-
 ---
 date: 2015-06-15
 title: ¡De todas las formas!
@@ -659,95 +657,8 @@ content: >
 
 
     
-    
-    
----
-date: 2015-07-15
-title: "salidas del capitalismo + neoliberalismo"
-subtitle: Organizar nuestro saber-acción
-slug: links_reaction
-image:
-    url: Bacchus_Velazquez.jpg
-    credit: El Triunfo de Baco, Velázquez
-quote:
-    author: "Geoffroy de Lagasnerie, L'art de la révolte: Snowden, Assange, Manning"
-    content: >
-        "... no politizar la cuestión de la pertenencia, situar fuera de la política el problema de la forma de la comunidad en la que nos encontramos, equivale de hecho a forzarnos a aceptar como intangible un hecho puramente arbitrario y sin significación. No problematizar la cuestión de la pertenencia o, mejor, no darse los medios de hacer aparecer esta cuestión como potencialmente problemática, es implicarnos en una situación forzada, resignarnos a aceptar una situación contingente: el hecho de haber nacido en tal o cual país y de tener tal o cual nacionalidad."
-tags: group, companies
-content: >
-    
-    
-
-    
-
----
-date: 2015-07-15
-title: "amigos y enemigos"
-subtitle: algunos lugares dónde encontrar a los que son menos de fiar
-slug: links_friends_enemies
-image:
-    url: grosz-les-piliers-de-la-societe-1926.jpg
-    credit: Otto Grosz
-quote:
-    author: Susan George, Los Usurpadores
-    content: >
-        La Gran Regresión Neoliberal ha ganado terreno, a pesar de la evidencia abrumadora de su acción deletérea para casi todo el mundo, a excepción de los muy ricos, los grandes empresarios y quienes se lo llevan todo en el gran casino en que se ha convertido la economía mundial. ¿Quién hubiera podido imaginar que esta raza saldría más fortalecida si cabe de la catástrofe financiera de 2007-2008, de la que seguimos pagando las consecuencias?
-tags: group, companies
-content: >
-    
 
 
-
-
----
-date: 2015-07-15
-title: "economías alternativas"
-subtitle: consumo + intercambio
-slug: links_economy
-image: 
-    url: Shigeru_Hatsuyama.jpg
-    credit: Shigeru Hatsuyama
-quote:
-    author: Mujeres creando
-    content: >
-        Cuida el presente que creas, porque debe parecerse al futuro que sueñas
-tags: group, economy
-content: > 
-    
-    
-    
-    
----
-date: 2015-07-15
-title: "Comer, salud"
-subtitle: Cuidarse
-slug: links_eat
-image:
-    url: Arcimboldo_FourSeasons.jpg
-    credit: Arcimboldo, Four Seasons
-quote:
-    author: __
-    content: __
-tags: eat, health
-content: >  
-    
-
-
-
----
-date: 2015-07-15
-title: "medios + internet"
-subtitle: Informarse
-slug: links_medias
-image:
-    url: David_Palumbo.jpg
-    credit: David Palumbo
-quote:
-    author: 
-    content: >
-tags: media, web
-content: >
-    
     
 
 
