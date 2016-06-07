@@ -3036,6 +3036,9 @@ body.layout-mapprint .container {
   -moz-column-rule: @c outset red;
   column-rule: @c outset red;*/
   }
+  .section .date {
+    display: none;
+  }
 }
 /* RELATIVELY SMALL */
 @media (min-width: 1026px) and (max-width: 1199px) {
