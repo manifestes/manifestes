@@ -349,7 +349,7 @@ footer:
 
         + le [code source](https://github.com/manifestes/manifestes) du site et les [dernières modifications](https://github.com/manifestes/manifestes/commits/gh-pages)
 
-        + les contenus: [meta](https://github.com/manifestes/manifestes/blob/gh-pages/data/meta_fr.yml), [sections de texte](https://github.com/manifestes/manifestes/blob/gh-pages/data/texts_fr.yml), [liens](https://github.com/manifestes/manifestes/blob/gh-pages/data/links_fr.yml), [citations en vrac](https://github.com/manifestes/manifestes/blob/gh-pages/data/utiles/quotes_fr.yml)
+        + les contenus: [meta](https://github.com/manifestes/manifestes/blob/gh-pages/data/meta_fr.yml), [textes](https://github.com/manifestes/manifestes/blob/gh-pages/data/texts_fr.yml), [citations](https://github.com/manifestes/manifestes/blob/gh-pages/data/quotes_fr.yml), [liens](https://github.com/manifestes/manifestes/blob/gh-pages/data/links_fr.yml)
 
         + [les lieux de la carte à ajouter/modifier](https://framacalc.org/carto)
 

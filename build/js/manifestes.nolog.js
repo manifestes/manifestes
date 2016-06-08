@@ -3462,7 +3462,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,datapath:'data/',assets:'build/',lastupdate:'08 June 2016 - 10:20'})
+.constant('settings', {dev:false,datapath:'data/',assets:'build/',lastupdate:'08 June 2016 - 10:23'})
 
 ;
 ;
