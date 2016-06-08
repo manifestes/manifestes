@@ -1114,23 +1114,23 @@ div.highlight {
 .tb-group,
 .tb-list,
 .tb-tool {
-  border: 5px solid #c7c9c6;
+  border-left: 7px solid #c7c9c6;
 }
 .tb-map,
 .tb-calendar {
-  border: 5px solid #b7b4ac;
+  border-left: 7px solid #b7b4ac;
 }
 .tb-text,
 .tb-image,
 .tb-audio,
 .tb-video {
-  border: 5px solid #c7c9c6;
+  border-left: 7px solid #c7c9c6;
 }
 .tb-earth,
 .tb-agriculture,
 .tb-health,
 .tb-eat {
-  border: 5px solid #a4dab0;
+  border-left: 7px solid #a4dab0;
 }
 .tb-home,
 .tb-move,
@@ -1138,15 +1138,15 @@ div.highlight {
 .tb-energy,
 .tb-work,
 .tb-slow {
-  border: 5px solid #e8b887;
+  border-left: 7px solid #e8b887;
 }
 .tb-education,
 .tb-media {
-  border: 5px solid #add7db;
+  border-left: 7px solid #add7db;
 }
 .tb-alienation,
 .tb-emancipation {
-  border: 5px solid #95cbd1;
+  border-left: 7px solid #95cbd1;
 }
 .tb-subsist,
 .tb-act,
@@ -1154,15 +1154,15 @@ div.highlight {
 .tb-genre,
 .tb-zad,
 .tb-words {
-  border: 5px solid #edb4aa;
+  border-left: 7px solid #edb4aa;
 }
 .tb-creation,
 .tb-space {
-  border: 5px solid #edb8e5;
+  border-left: 7px solid #edb8e5;
 }
 .tb-science,
 .tb-web {
-  border: 5px solid #e8d9a0;
+  border-left: 7px solid #e8d9a0;
 }
 .tb-companies,
 .tb-history,
@@ -1170,7 +1170,7 @@ div.highlight {
 .tb-economy,
 .tb-politics,
 .tb-philo {
-  border: 5px solid #d9c8da;
+  border-left: 7px solid #d9c8da;
 }
 .mailing {
   margin-top: 30px;
@@ -2474,7 +2474,7 @@ body.layout-mapprint .container {
   /*-webkit-column-rule:  @c outset red;
   -moz-column-rule: @c outset red;
   column-rule: @c outset red;*/
-  background: #727272;
+  background: #cccccc;
   padding: 20px 0px 50px 0px;
   text-align: left;
 }

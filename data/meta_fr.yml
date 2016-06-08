@@ -222,7 +222,7 @@ network:
     loading: >
         le réseau est en cours d'affichage
         <br><br>
-        attention, le temps de chargement peut être long (7.7Mo)
+        attention, le temps de chargement peut être long (8.8Mo)
         <br><br>
         merci pour votre patience
     image: links_eniac.jpg
@@ -256,7 +256,7 @@ disclaimer:
 
         - cliquez sur un point pour voir les sites voisins (cités ou citant)
 
-        - triple-cliquez sur un point pour ouvrir le site dans une nouvelle fenêtre
+        - double-cliquez sur un point pour ouvrir le site dans une nouvelle fenêtre
 
 
         **Les couleurs correspondent aux classes de modularité**, c-à-d aux communautés détectées selon la structure du réseau

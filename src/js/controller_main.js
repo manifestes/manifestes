@@ -52,8 +52,10 @@ angular.module('manifest.maincontroller', ['underscore','config'])
       layout: layout, // texts/links/map/print/etc...
       loading: false, // we will show loadingspinner when scope not ready
 
+      // always hide for dev. starting open for prod
       disclaim: {
         texts: !$scope.settings.dev,
+        quotes: !$scope.settings.dev,
         links: !$scope.settings.dev,
         network: !$scope.settings.dev,
         map: !$scope.settings.dev,
