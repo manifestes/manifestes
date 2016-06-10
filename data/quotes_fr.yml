@@ -1,10 +1,6 @@
 
 
 -
-    author: ?
-    content: >
-        Politics are about trust and being able to rely on someone or representation. Because love and listening takes away fears, and ego
--
     author:
     content: >
         Si ceux qu’on appelle à tout rompre depuis des décennies « casseurs » sont la cible principale des autorités, ce n’est pas comme certains le prétendent parce qu’ils sont extérieurs au mouvement, mais précisément parce qu’il faut, pour le pouvoir, qu’ils le deviennent. Il n’est pas possible de juger une personne isolément pour les manifestations de ces mouvements, quand nous sommes des milliers à outrepasser les ordres de dispersion, à encercler les centres-villes, à subir les gaz et les tirs de ﬂash-ball. Les chants, les pierres, les techniques de protection contre les gaz lacrymogènes, la force symbolique et matérielle des tracteurs, les masques, les totems-tritons : comme en novembre 2012 dans le bois de Rohanne sur la ZAD, derrière les différents moyens d’expression, et derrière les débats qu’ils suscitent, c’est un mouvement commun qui, le temps d’une journée, construit un rapport de force à même de faire reculer les projets gouvernementaux. Et c’est bien d’abord cet outrage collectif que la justice cherche à punir.
@@ -12,10 +8,6 @@
     used: true
     author: Félix Guattari, Les trois écologies, 1989
     content: Non seulement les espèces disparaissent, mais les mots, les phrases, les gestes de la solidarité humaine aussi
--
-    used: true
-    author:
-    content: Be careful with each other, so we can be dangerous together
 -
     author: Hubert Félix Thiéfaine
     content: C’est pas parce qu’on a mis le pied dedans qu’on doit y mettre les mains
@@ -34,23 +26,10 @@
     author: "[Le Saker Francophone](http://lesakerfrancophone.fr/)"
     content: Le chaos du monde ne naît pas de l'âme des peuples, des races ou des religions, mais de l'insatiable appétit des puissants. Les humbles veillent.
 -
-    author: Robert Montgomery
-    content: >
-        When we are sleeping, aeroplanes carry memories of the horrors we have given our silent consent to into the night sky of our cities, and leave them there, to gather like clouds and condense into our dreams before morning
--
     used: true
     author:
     content: >
         Seuls ceux qui ne bougent pas ne se rendent pas compte qu'ils ont des chaînes
--
-    author: Nikos Kazastzsakis(?)
-    content: >
-        don't say: « i am very small to take the responsability to save the world »
-        say: « i and only i have the responsibility to save the world»
-        —
-        i don't hope anything
-        i don't fear anything
-        i'm free
 -
     author: "[Lundi.am](https://lundi.am/Rennes-occupation-de-la-Maison-du-Peuple)"
     content: Mort au public. Vive le commun !
@@ -216,13 +195,6 @@
     author: "[Le coup d'après](https://lundi.am/Le-coup-d-apres)"
     content: Le temps qu’on passe à devoir se convaincre mutuellement de la nécessité de l’une ou l’autre manière de faire, ce temps est en pure perte. La question n’est pas d’être ou de ne pas être violent. La question est d’être offensif, ou inoffensif.
 -
-    author: Panos
-    content: Nobody can dig the truth. It will just grow like a flower out of the shit
--
-    author: —
-    content: politics are about trust and being able to rely on someone or representation. because love and listening takes away fear and egos
-    tags: politics love
--
     author: Thibault Calmus
     content: La cartographie des désirs définit la méthodologie de toute révolution.
 -
@@ -249,30 +221,6 @@
     user: true
     author: 
     content: Les bourgeois nous traitent comme des chiens. Il est temps de mordre.
--
-    author: Bill Mollison
-    content: Es un sistema abierto, porque acepta informacion de cualquier fuente ya sea cientifica o tradicional, y no tiene por la tanto ninguna forma didactica o fija de hacer las cosas
--
-    author: Lala
-    content: Hay personas que se hallan despiertas incluso cuando estan dormidas. Otras, en cambio, aunque aparenten estar despiertas, se encuentran profundamente dormidas
--
-    author: Gail Godwin
-    content: Los suenos tratan de transmitirnos un mensaje, pero no lo hacen en el lenguaje de la vigilia
-    tags: creation
-
-
--
-    author: Ashleigh Brilliant
-    content: La mejor razon para sonar es que durante el sueno no hay razones
-    tags: creation
--
-    author: Herman Melville
-    content: >
-        No lo encontrarás en ningún mapa.
-
-        Los lugares de verdad no están.
-    tags: philo
-
 -
     author: P. Freire
     content: >
@@ -547,6 +495,7 @@
     author: Pouchkine — Commentaires, Chris Marker
     content: Savez-vous, dit Elena Andréievna en se penchant sur le samovar, qu’il existe en Amérique du Sud une flûte dont le son n’est perceptible qu’à celui qui en joue ?
 -
+    used: true
     author: 
     content: Arrêtez le monde, je voudrai descendre
 -

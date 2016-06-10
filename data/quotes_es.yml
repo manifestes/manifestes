@@ -1,6 +1,27 @@
 
 
 -
+    author: Bill Mollison
+    content: Es un sistema abierto, porque acepta informacion de cualquier fuente ya sea cientifica o tradicional, y no tiene por la tanto ninguna forma didactica o fija de hacer las cosas
+-
+    author: Lala
+    content: Hay personas que se hallan despiertas incluso cuando estan dormidas. Otras, en cambio, aunque aparenten estar despiertas, se encuentran profundamente dormidas
+-
+    author: Gail Godwin
+    content: Los suenos tratan de transmitirnos un mensaje, pero no lo hacen en el lenguaje de la vigilia
+    tags: creation
+-
+    author: Ashleigh Brilliant
+    content: La mejor razon para sonar es que durante el sueno no hay razones
+    tags: creation
+-
+    author: Herman Melville
+    content: >
+        No lo encontrarás en ningún mapa.
+
+        Los lugares de verdad no están.
+    tags: philo
+-
     author: Susan George, Los Usurpadores
     content: >
         La Gran Regresión Neoliberal ha ganado terreno, a pesar de la evidencia abrumadora de su acción deletérea para casi todo el mundo, a excepción de los muy ricos, los grandes empresarios y quienes se lo llevan todo en el gran casino en que se ha convertido la economía mundial. ¿Quién hubiera podido imaginar que esta raza saldría más fortalecida si cabe de la catástrofe financiera de 2007-2008, de la que seguimos pagando las consecuencias?
@@ -12,3 +33,4 @@
     author: "Geoffroy de Lagasnerie, L'art de la révolte: Snowden, Assange, Manning"
     content: >
         ... no politizar la cuestión de la pertenencia, situar fuera de la política el problema de la forma de la comunidad en la que nos encontramos, equivale de hecho a forzarnos a aceptar como intangible un hecho puramente arbitrario y sin significación. No problematizar la cuestión de la pertenencia o, mejor, no darse los medios de hacer aparecer esta cuestión como potencialmente problemática, es implicarnos en una situación forzada, resignarnos a aceptar una situación contingente: el hecho de haber nacido en tal o cual país y de tener tal o cual nacionalidad.
+

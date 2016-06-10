@@ -4,9 +4,12 @@
 url: http://utopies-concretes.org
 source:
     github: https://github.com/manifestes/manifestes
-    meta: https://github.com/manifestes/manifestes/blob/gh-pages/data/meta_es.yml
-    texts: https://github.com/manifestes/manifestes/blob/gh-pages/data/texts_es.yml
-    links: https://github.com/manifestes/manifestes/blob/gh-pages/data/links_es.yml
+    meta: https://github.com/manifestes/manifestes/blob/gh-pages/data/meta_fr.yml
+    texts: https://github.com/manifestes/manifestes/blob/gh-pages/data/texts_fr.yml
+    quotes: https://github.com/manifestes/manifestes/blob/gh-pages/data/quotes_fr.yml
+    links: https://github.com/manifestes/manifestes/blob/gh-pages/data/links_fr.yml
+    network: https://github.com/manifestes/manifestes/blob/gh-pages/data/utiles/network_in.csv
+    map: https://framacalc.org/carto
 splash:
     images:
         - urgent-de-ralentir_000.svg
@@ -14,56 +17,48 @@ splash:
         - prendre-position_000.svg
         - collectifs-transition_000.svg
         - espoirs-fous_000.svg
-    MAJtitle: ¡Manifiesto!
-    MAJdescription: >
-        colectivo(s) de los territorios comunes autogestionados y alternativas convivialistas DIY voluntarios revolucionarios de la transición social y ecológica en los terceros lugares creativos de los clowns del bricolaje piratas de las utopías libertarias ecofeministas p2p y cooperativistas indignadas activistas de la resiliencia decreciente concreta y desobediente de las convergencias de las luchas
-    keywords: "# filosofía # política # práctica # convergencias #"
-    enter: "consultar & participar"
+    enter: read & edit
 intro:
     -   layout: texts
-        title: textos
+        icon: fa-bullhorn
+        title: texts
         descr: des citations et morceaux de textes choisis — pour composer d'autres manières de voir le monde
         image: FingerBones.jpg
         quote:
-            author: A.Gramsci. ou Le Forum du clair-obscur
-            content: Le vieux monde se meurt, le nouveau monde tarde à apparaître et dans ce clair-obscur surgissent les monstres
-    -   layout: enlaces
-        title: liens
+            author: Audrey
+            content: Que ceux qui sont déjà conscients se sentent soutenus, et que les autres ouvrent les yeux pour changer, à leur rythme, à leur mesure
+    -   layout: links
+        icon: fa-th-list
+        title: links
         descr: consulter des textes, vidéos, trouver des médias libres — une sélection d'articles, projets qui méritent d'être connus
         image: ErwinBlumenfeld.jpg
         quote:
             author: Bernard Werber
             content: L'important n'est pas de convaincre, mais de donner à réfléchir
+
 disclaimer:
     texts: >
-        Vous pouvez consulter les textes dans l'ordre que vous voulez
-        
-
-        Pour les applications concrètes, consultez les ressources ou la carte
+        to be set !
     links: >
-        ici, des liens ajoutés **avec nos petites mains**. ça fait un peu fouilli, leur désordre reflète la multiplicité des collectifs et initiatives !
-
-
-        (ce sera toujours mieux que google qui ne nous donne à voir que les plus gros/riches)
-
-
-        **pour naviguer par thématiques, activez les tags** grâce à l'icône en haut à gauche dans le menu.
+        to be set !
+    quotes: >
+        to be used !
 menu:
-    backtip: retourner à l'introduction
-    hometip: page d'accueil
-    taggingoff: voir les thématiques
-    taggingon: désactiver les thématiques
-    search: buscar
-    texts: textos
-    links: enlaces
-    network: réseau
-    map: carte
-    calendar: calendario
+    backtip: back to splash
+    hometip: home
+    taggingoff: see tags
+    taggingon: turn tags off
+    search: search
+    addzone: add !
+    texts: texts
+    quotes: quotes
+    links: links
+    calendar: calendar
     calendartip: démosphère !
-    print: imprimir
-    printtip: "imprimez\nla fenêtre\nqui s'ouvre !"
-    sourcetip: voir la source
-tagtip: filtrer par thématiques
+    print: print
+    printtip: "print\nthe opening\nwindow !"
+    sourcetip: see raw data
+tagtip: filter by tag
 tags:
     about: "question = à propos = à propos de ce projet, contexte,\nliste de discussion, code source"
     group: "users = collectifs = groupes, réseaux, coopératives,\ncollectifs, associations, structures"
@@ -106,15 +101,14 @@ tags:
     politics: "bank = politique = politique et représentation,\nconcertation, décider ensemble,\ncommuns, open (res)sources, démocratie"
     philo: "puzzle-piece = philosophie = réflexion, théorie, principes,\nidéologies"
 footer:
-    lastupdatetext: última modificación
+    lastupdatetext: last update
     content: >
-        ##*ver también*
+        ##*see also*
 
-        + el [documento compartido](https://lite6.framapad.org/p/manifestes)
+        + [source code](https://github.com/manifestes/manifestes)
 
-        + la lista de discusión [manifestes@lists.riseup.net](https://lists.riseup.net/www/subscribe/manifestes)
+        + twitter [@manifestes](https://twitter.com/manifestes)
 
-        + el [código fuente](https://github.com/manifestes/manifestes) de esta página con [los textos](https://github.com/manifestes/manifestes/blob/gh-pages/data/texts_es.yml) y [los enlaces](https://github.com/manifestes/manifestes/blob/gh-pages/data/links_es.yml)
+        + say hello to [bonjour@utopies-concretes.org](mailto:bonjour@utopies-concretes.org) !
 
-        + la cuenta twitter [@manifestes](https://twitter.com/manifestes)
 

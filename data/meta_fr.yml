@@ -231,6 +231,9 @@ network:
         
         
         voir aussi la [liste des sites web](https://github.com/manifestes/manifestes/blob/gh-pages/data/utiles/network_in.csv) du réseau
+
+
+        date de mise à jour: début juin 2016
 disclaimer:
     texts: >
         Vous pouvez consulter les textes dans l'ordre que vous voulez
@@ -292,8 +295,6 @@ menu:
     print: imprimer
     printtip: "imprimez\nla fenêtre\nqui s'ouvre !"
     sourcetip: voir les données brutes
-    discusstext: discuter, corriger, proposer
-    discussback: revenir au texte
 tagtip: "filtrer par thématiques"
 tags:
     about: "question = à propos = à propos de ce projet, contexte,\nliste de discussion, code source"

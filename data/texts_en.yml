@@ -1,0 +1,31 @@
+
+
+---
+date: 2016-06-10
+title: We need translators !
+subtitle: If you feel helping us, please contact us !
+tags: about
+image:
+    url: eniac-computer.jpg
+    credit: ENIAC computer, U.S. Army, ARL Technical Library
+quote:
+    author:
+    content: Be careful with each other, so we can be dangerous together
+content: >
+    At the moment we have a lot of contents in french, but if you have ideas and energy to share, contact us to build something in english too !
+
+
+---
+date: 2016-06-10
+title: Technically simple
+subtitle: It's dead simple to edit all the contents
+tags: web tool about
+image:
+    url: LilliCarre.jpg
+    credit: Lili Carré
+content: >
+    We edit all the texts, quotes, links through [github.com](http://github.com/manifestes/manifestes)
+
+
+    If you haven't an account yet, create it, and start editing the files !
+
