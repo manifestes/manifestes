@@ -1,5 +1,10 @@
 
 
+
+-
+    author: Jean Starobinski
+    content: >
+        Comprendre, c'est reconnaître que toutes les significations demeurent en suspens tant que l'on n'a pas achevé de se comprendre soi-même
 -
     author:
     content: >
@@ -12,19 +17,33 @@
     author: Hubert Félix Thiéfaine
     content: C’est pas parce qu’on a mis le pied dedans qu’on doit y mettre les mains
 -
+    author: Albert Camus
+    content: >
+        Notre tâche d'homme est de trouver les quelques formules qui apaiseront l'angoisse infinie des âmes libres. Nous avons à recoudre ce qui est déchiré, à rendre la justice imaginable dans un monde si évidemment injuste, le bonheur significatif pour des peuples empoisonnés par le malheur du siècle.
+
+
+        Naturellement, c'est une tâche surhumaine. Mais on appelle surhumaines les tâches que les hommes mettent longtemps à accomplir. Voila tout.
+-
     used: true
     author: Martin Luther King
     content: Nous devons apprendre à vivre ensemble comme des frères, sinon nous allons mourir tous ensemble comme des idiots
 -
     author: Karl Marx, postface de la seconde édition allemande du Capital
     content: >
-        Désormais il ne s'agit plus de savoir si tel ou tel théorème est vrai, mais s'il est bien ou mal sonnant, agréable ou non à la police, utile ou nuisible au capital. La recherche désintéressée fait place au pugilat payé, l'investigation consciencieuse à la mauvaise conscience, aux misérables subterfuges de l'apologétique
+        Désormais il ne s'agit plus de savoir si tel ou tel théorème est vrai, mais s'il est bien ou mal sonnant, agréable ou non à la police, utile ou nuisible au capital.
+
+
+        La recherche désintéressée fait place au pugilat payé, l'investigation consciencieuse à la mauvaise conscience, aux misérables subterfuges de l'apologétique
 -
     author: Albert Camus
     content: Toute forme de mépris, lorsqu'elle intervient en politique, prépare ou instaure le fascisme
 -
     author: "[Le Saker Francophone](http://lesakerfrancophone.fr/)"
-    content: Le chaos du monde ne naît pas de l'âme des peuples, des races ou des religions, mais de l'insatiable appétit des puissants. Les humbles veillent.
+    content: >
+        Le chaos du monde ne naît pas de l'âme des peuples, des races ou des religions, mais de l'insatiable appétit des puissants.
+
+
+        Les humbles veillent.
 -
     used: true
     author:
