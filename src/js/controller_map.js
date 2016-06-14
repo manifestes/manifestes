@@ -421,6 +421,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
       });
     };
 
+    // Do things !
     $scope.initMap();
 
   }

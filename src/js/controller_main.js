@@ -227,6 +227,9 @@ angular.module('manifest.maincontroller', ['underscore','config'])
 
     $scope.toggleTag = function(tag,refresh) {
 
+      // erase searchterm if exist ?
+      //$scope.searchSubmit();
+
       // please set max tags to 5 ! (?)
 
       if(!tag)
@@ -466,17 +469,6 @@ angular.module('manifest.maincontroller', ['underscore','config'])
           $scope.tagsContentsOrdered.push($scope.tagsContents[k]);
         });
 
-        _.each($scope.meta.mapcredits, function(c) {
-          c.active = true;
-          c.count = 0;
-        });
-
-        // prepare credits
-        $scope.meta.mapcreditsOf = {};
-        _.each($scope.meta.mapcredits, function(c) {
-          $scope.meta.mapcreditsOf[c.slug] = c;
-        });
-
         // $scope.tagsContentsOrdered.sort(function(a,b) {
         //   return $scope.tagSorter(b) - $scope.tagSorter(a);
         // });
@@ -490,7 +482,7 @@ angular.module('manifest.maincontroller', ['underscore','config'])
 
 
     ///////////////////////////////////////////////////////////////
-    var fetchDatatexts = function(callb) {
+    var fetchDatatexts = function() {
       $http
       .get(settings.datapath + "texts_"+$scope.state.lang+".yml")
       .success(function(res) {
@@ -527,13 +519,11 @@ angular.module('manifest.maincontroller', ['underscore','config'])
             $scope.textArray.push(d);
         });
         $scope.textFiltArray = $scope.textArray;
-        callb();
       })
       .error(function (data, status, headers, config) {
         console.log("error texts",status);
       });
     };
-
 
     ///////////////////////////////////////////////////////////////
     var fetchDataLinks = function() {
@@ -628,7 +618,7 @@ angular.module('manifest.maincontroller', ['underscore','config'])
       });
     };
 
-///////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////
     var fetchDataQuotes = function() {
       $http
       .get(settings.datapath + "quotes_"+$scope.state.lang+".yml")
@@ -647,30 +637,54 @@ angular.module('manifest.maincontroller', ['underscore','config'])
     };
 
     ///////////////////////////////////////////////////////////////
+    var fetchDataMap = function() {
+      $http
+      .get(settings.datapath + "map_"+$scope.state.lang+".yml")
+      .success(function(res) {
+        var mapset = jsyaml.load(res);
+        $scope.meta = _.extend($scope.meta, mapset);
+
+        // prepare map credits
+        _.each($scope.meta.mapcredits, function(c) {
+          c.active = true;
+          c.count = 0;
+        });
+        $scope.meta.mapcreditsOf = {};
+        _.each($scope.meta.mapcredits, function(c) {
+          $scope.meta.mapcreditsOf[c.slug] = c;
+        });
+      })
+      .error(function (data, status, headers, config) {
+        console.log("error quotes",status);
+      });
+    }
+
+    ///////////////////////////////////////////////////////////////
     fetchDataMeta( function() {
 
-      // fetch data
-      fetchDatatexts( function() {
-        
-        // fetch quotes (don't care if not async)
+      // Load .yml depending on view
+      if($scope.state.layout=='texts') {
+        fetchDatatexts();
+      }
+      if($scope.state.layout=='quotes') {
         fetchDataQuotes();
-
-        // fetch links
+      }
+      if($scope.state.layout=='links') {
         fetchDataLinks();
-        
+      }
+      if($scope.state.layout=='map') {
+        fetchDataMap();
+      }
+      if($scope.state.layout=='network') {
+        $timeout(function() {
+          //loadTagGraph($scope);
+          loadLinksGraph($scope);
+        },500);
+      }
 
-        // load graphs ?
-        if($scope.state.layout=='network') {
-          $timeout(function() {
-            //loadTagGraph($scope);
-            loadLinksGraph($scope);
-          },500);
-        }
+      // (to improve ?) init here to trigger the watch on footer content set though compile-here directive
+      $scope.state.search = "";
 
-        // (to improve ?) init here to trigger the watch on footer content set though compile-here directive
-        $scope.state.search = "";
-
-      });
     });
 
   }

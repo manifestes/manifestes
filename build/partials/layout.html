@@ -59,8 +59,9 @@
         <div class="button" id="lang">
           <i class="fa fa-globe"></i>
           <span>
-            <a class="setlang" ng-class="{active: state.lang=='es'}" href="{{meta.url}}/#/es">es</a>
             <a class="setlang" ng-class="{active: state.lang=='fr'}" href="{{meta.url}}/#/fr">fr</a>
+            <a class="setlang" ng-class="{active: state.lang=='es'}" href="{{meta.url}}/#/es">es</a>
+            <a class="setlang" ng-class="{active: state.lang=='en'}" href="{{meta.url}}/#/en">en</a>
           </span>
         </div>
 
@@ -107,7 +108,6 @@
         </div>
         <div
           class="button hover"
-          ng-if="state.lang=='fr'"
           ng-click="changeLayout('quotes');"
           ng-class="{active:state.layout=='quotes'}">
           <i class="fa fa-quote-left"></i>
