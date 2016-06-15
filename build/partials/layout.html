@@ -59,9 +59,13 @@
         <div class="button" id="lang">
           <i class="fa fa-globe"></i>
           <span>
-            <a class="setlang" ng-class="{active: state.lang=='fr'}" href="{{meta.url}}/#/fr">fr</a>
-            <a class="setlang" ng-class="{active: state.lang=='es'}" href="{{meta.url}}/#/es">es</a>
-            <a class="setlang" ng-class="{active: state.lang=='en'}" href="{{meta.url}}/#/en">en</a>
+            <a
+              ng-repeat="l in settings.langs"
+              class="setlang"
+              ng-class="{active: state.lang==l}"
+              href="{{meta.url}}/#/{{l}}"
+              >{{l}}
+            </a>
           </span>
         </div>
 

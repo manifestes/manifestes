@@ -1315,7 +1315,10 @@ content: >
     L'affichage publicitaire, c'est la confiscation de l'espace public et son exploitation mercantile. Nous sommes libres de lire ou non un journal, d'écouter ou non la radio, de regarder ou non la télévision... mais pas de flâner sans être confronté à un incessant défilé d'images et de slogans. Laide et dangereuse, cette débauche graphique salit notre cadre de vie, réduit notre liberté de penser et notre faculté de rêver.
 
 
-    **La publicité crée de faux besoins et pousse à la surconsommation**, au gaspillage et à la pollution. La publicité fait l'apologie de comportements irresponsables, individualistes et sexistes. À l'échelle de la planète, la publicité engouffre plus de 1000 milliards d'euros par an : c'est le premier budget mondial, à égalité avec les dépenses militaires. La publicité est l'un des fondements de ce système toujours plus avide de croissance et d'argent. Nous n'en voulons pas.
+    **La publicité crée de faux besoins et pousse à la surconsommation**, au gaspillage et à la pollution. La publicité fait l'apologie de comportements irresponsables, individualistes et sexistes. À l'échelle de la planète, la publicité engouffre plus de 1000 milliards d'euros par an : c'est le premier budget mondial, à égalité avec les dépenses militaires. La publicité est l'un des fondements de ce système toujours plus avide de croissance et d'argent.
+
+
+    Nous n'en voulons plus.
 
 
 ---
@@ -1571,24 +1574,27 @@ content: >
 
 
 ---
-status: draft
 date: 2016-05-29
 title: Représentation populaire
-subtitle: Défiez-vous des ambitieux, des parvenus, et de ceux qui briguent vos suffrages
+subtitle: Voter aux élections ? Défiez-vous des ambitieux, des parvenus, et de ceux qui briguent vos suffrages
 tags: politics election
+image:
+quote:
+    author: Wolfgang Schäuble, ministre allemand de l’Economie
+    content: On ne peut pas laisser des élections changer quoi que ce soit
 source: Commune de Paris. Appel aux électeurs. mars 1871
 content: >
     Citoyen-nes,
 
 
-    Ne perdez pas de vue que les hommes qui vous serviront le mieux sont ceux que vous choisirez parmi vous, vivant votre vie, souffrant des mêmes maux.
+    Ne perdez pas de vue que **les hommes qui vous serviront le mieux sont ceux que vous choisirez parmi vous**, vivant votre vie, souffrant des mêmes maux.
     Défiez-vous autant des ambitieux que des parvenus ; les uns comme les autres ne consultent que leur propre intérêt et finissent toujours par se considérer comme indispensables. Défiez-vous également des parleurs, incapables de passer à l'action ; ils sacrifieront tout à un beau discours, à un effet oratoire ou à un mot spirituel.
 
 
     Évitez également ceux que la fortune a trop favorisés, car trop rarement celui qui possède la fortune est disposé à regarder le travailleur comme un frère. Enfin, cherchez des hommes aux convictions sincères, des hommes du peuple, résolus, actifs, ayant un sens droit et une honnêteté reconnue.
 
 
-    Portez vos préférences sur ceux qui ne brigueront pas vos suffrages ; le véritable mérite est modeste, et c'est aux électeurs à choisir leurs hommes, et non à ceux-ci de se présenter.
+    **Portez vos préférences sur ceux qui ne brigueront pas vos suffrages**; le véritable mérite est modeste, et c'est aux électeurs à choisir leurs hommes, et non à ceux-ci de se présenter.
     
 
     Citoyen-nes,
@@ -1702,31 +1708,41 @@ content: >
 
 
 ---
-status: draft
 date: 2016-04-07
 title: Un vide
-subtitle: C’est toute notre civilisation industrielle qui a perdu sa légitimité et qui tourne désormais sur elle-même dans un vide angoissant
+subtitle: "C'est toute notre civilisation industrielle qui a perdu sa légitimité et qui tourne désormais sur elle-même dans un vide angoissant"
 tags: space politics media
+image:
+quote:
+    author: M Chapsal
+    content: "Il va falloir rêver car, pour que les choses deviennent possibles, il faut d'abord les rêver"
 source: "[Rejoindre les Nuits Debout pour explorer directement ce qui nous fait tenir ensemble](https://www.change.org/u/523727159)"
 content: >
     **Le vide.**
 
 
-    Le vide de légitimité dans lequel se prennent quasiment toutes les décisions collectives aujourd’hui. Vide du pouvoir intellectuel aussi, représenté par une pléiade minuscule constituée essentiellement d’hommes blancs et vieux, toujours les mêmes, qui tournent en rond, de plateaux de télévision en colonnes de journaux, pour donner à leurs peurs et leurs haines la forme d’*« opinions »*.
+    Le vide de légitimité dans lequel se prennent quasiment toutes les décisions collectives aujourd’hui. Vide du pouvoir intellectuel aussi, représenté par une pléiade minuscule constituée essentiellement d’hommes blancs et vieux, toujours les mêmes, qui tournent en rond, de plateaux de télévision en colonnes de journaux, pour donner à leurs peurs et leurs haines la forme d’*opinions*.
 
 
-    La vaine promesse d’un progrès continu pour tous est venue buter sur la crise écologique globale. On nous promettait l’émancipation des hommes, mais on avait oublié un détail : elle se déployait sur une planète, la Terre, et il n’y en avait qu’une.
+    **La vaine promesse d’un progrès continu pour tous est venue buter sur la crise écologique globale**. On nous promettait l’émancipation des hommes, mais on avait oublié un détail : elle se déployait sur une planète, la Terre, et il n’y en avait qu’une.
 
 
     On sait qu’on ne peut continuer comme cela, mais on ne sait pas comment s’arrêter. **Il est devenu plus facile d’envisager la fin du monde que la fin du capitalisme.**
 
 
 ---
-status: draft
 date: 2016-04-07
 title: Les places, espaces de possibles
 subtitle: Un espace pour reconstruire notre légitimité et notre vivre ensemble
 tags: space politics words
+image:
+quote:
+    author: "[Sur un mur exerçons le hasard](https://lundi.am/Sur-un-mur-exercons-le-hasard)"
+    content: >
+        Quoi qu’il arrive, partout, occuper et surgir est devenu une évidence : ZAD, Autoroutes, Rues, Ponts, Places, Immeubles, Théâtres, Cinémas, McDo, Supermarchés, Lycées, Universités, Maisons de Grève, Usines, Chantiers, Boulangeries (« on occupe même deux minutes » criait-on dans les cortèges).
+
+
+        Continuons le début.
 source: "[Rejoindre les Nuits Debout pour explorer directement ce qui nous fait tenir ensemble](https://www.change.org/u/523727159)"
 content: >
     **N’importe qui peut y venir.** Pas de mandat, pas de titre, pas de diplôme : la place est un espace générique où peut s’exercer l’égale capacité de tous. Chacun, au gré de ses disponibilités, de son désir, peut s’y arrêter, participer à tel ou tel segment du processus collectif, partir, revenir. La place est un espace d’initiative. Pas de programme, pas de structure : tout se décide sur la place, les structures naissent progressivement, comme de fines cristallisations à la surface d’une eau agitée. Pas de centre, mais un milieu – autant signe de convergence de nos lignes diverses qu’environnement concret où nous éprouvons ce qu’on peut ensemble.
@@ -1871,11 +1887,14 @@ content: >
 
 
 ---
-status: draft
 date: 2016-03-20
 title: Achète à ton voisin
 subtitle: "Artisanat et savoir-faire local: proximité des besoins"
 tags: work object economy
+image:
+quote:
+    author: Descartes (de crédit)
+    content: Je dépense donc je suis
 source: "Métiers oubliés, métiers d'autrefois - John Seymour"
 content: >
     Les objets fabriqués à la main peuvent être initialement plus chers que ceux faits en série, mais le sont-ils à long terme ? Il est sûrement plus économique de payer un ami et voisin — un artisan local — pour qu'il vous fasse quelque chose qui vous convienne, que de débourser un peu moins pour un objet de basse qualité produit en série aux antipodes et Dieu sait par qui.

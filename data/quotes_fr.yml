@@ -1,4 +1,54 @@
 
+
+-
+    author: Yonas Friedman
+    content: >
+        La clef, pour réaliser une utopie, c'est la communication
+
+
+        Et il n'y a pas de substitut à la communication face-à-face
+
+
+        Les technologies de la communication omettent la majeure partie de l'information
+
+
+        La communication requiert une certaine proximité
+-
+    author: Jacques A. Bertrand, Les Autres c'est vraiment que de pauvres types
+    content: >
+        Les autres c'est des gens bizarres. Vous pensez qu'ils sont comme vous, mais pas du tout. Ils sont comme les autres.
+-
+    author: Thomas Sankara
+    content: >
+        Je veux parler au nom de tous les laissés-pour-compte, parce que je suis un homme et rien de ce qui est humain ne m'est étranger
+-
+    author: Yonas Friedman
+    content: >
+        La France c'est 540 milliards de mètres carrés.
+        Un loyer annuel de 1€ par mètre carré rapporterat 540 milliards d'euros par an.
+        Chaque citoyen français est actionnaire de la République
+        Le loyer proposé rapporterait 10.000€ par an à chaque citoyen français
+-
+    author: Yonas Friedman
+    content: >
+        Nous vivons avec plus d'objets que nous ne pouvons en utiliser; nous cohabitons avec plus d'individus que nous sommes en mesure de supporter... Dès lors, se pose la question: Comment vivre avec les autres sans être chef et sans être esclave ?
+-
+    author: Yonas Friedman
+    content: >
+        Notre chance c'est de ne pas savoir tout.
+
+
+        Peut-être savoir assez c'est déjà trop
+-
+    author: Yonas Friedman
+    content: L'histoire se fait à l'insu de ceux qui la font
+-
+    author: Les deux jambes du militantisme, par Astra Taylor, Monde Diplomatique
+    content: >
+        Faire en sorte que nos semblables prennent conscience d'un problème - l'un des objectifs privilégiés par l'activisme contemporain - peut se révéler fort utile.
+
+
+        Mais l'éducation n'est pas la même chose que l'organisation, laquelle n'implique pas uniquement d'éclairer l'individu qui reçoit votre message, mais aussi d'agréger des personnes autour d'un intérêt commun afin qu'elle puisse combiner leurs forces.
 -
     author: Yonas Friedman
     content: >
@@ -204,9 +254,13 @@
     content: >
         Il s’agit à chaque fois de refuser de soumettre nos existences aux diktats de l’économie, qui cherche ici ou là à détruire des lieux de vie pour construire ses infrastructures, et partout à pressuriser les conditions de vie et de travail pour nous rendre encore plus dépendants de l’argent
 -
+    used: true
     author: "[Sur un mur exerçons le hasard](https://lundi.am/Sur-un-mur-exercons-le-hasard)"
     content: >
-        Quoi qu’il arrive, partout, occuper et surgir est devenu une évidence : ZAD, Autoroutes, Rues, Ponts, Places, Immeubles, Théâtres, Cinémas, McDo, Supermarchés, Lycées, Universités, Maisons de Grève, Usines, Chantiers, Boulangeries (« on occupe même deux minutes » criait-on dans les cortèges). Continuons le début.
+        Quoi qu’il arrive, partout, occuper et surgir est devenu une évidence : ZAD, Autoroutes, Rues, Ponts, Places, Immeubles, Théâtres, Cinémas, McDo, Supermarchés, Lycées, Universités, Maisons de Grève, Usines, Chantiers, Boulangeries (« on occupe même deux minutes » criait-on dans les cortèges).
+
+
+        Continuons le début.
 -
     author: "[Sur un mur exerçons le hasard](https://lundi.am/Sur-un-mur-exercons-le-hasard)"
     content: >
@@ -281,6 +335,7 @@
     content: Aucune raison d’endurer un an et demi de campagne électorale dont il est déjà prévu qu’elle s’achève par un chantage à la démocratie. Formons plutôt un tissu humain assez riche pour rendre obscène la bêtise régnante, et dérisoire l’idée que glisser une enveloppe dans une urne puisse constituer un geste - a fortiori un geste politique.
     tags: politics
 -
+    used: true
     author: Wolfgang Schäuble, ministre allemand de l’Economie
     content: On ne peut pas laisser des élections changer quoi que ce soit
     tags: politics
@@ -339,6 +394,7 @@
     author: Pierre Deruelle
     content: Quand le sage montre du doigt le politique vendu au banquier, l’imbécile regarde l’immigré au bout du doigt du politique.
 -
+    used: true
     author: Descartes (de crédit)
     content: Je dépense donc je suis
 -
@@ -368,6 +424,7 @@
     author: Mark Twain
     content: Dans 20 ans, vous regretterez davantage les choses que vous n'avez pas faites, plutôt que celles que vous avez faites. Alors sortez des sentiers battus. Mettez les voiles. Explorez. Rêvez. Découvrez.
 -
+    used: true
     author: M Chapsal
     content: Il va falloir rêver car, pour que les choses deviennent possibles, il faut d'abord les rêver
 -

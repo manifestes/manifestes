@@ -67,6 +67,7 @@ module.exports = function(grunt) {
         constants: {
           settings: {
             dev: true,
+            langs: ['fr','es','en'],
             datapath: '../data/',
             assets: './',
             lastupdate: '<%= grunt.template.today("dd mmmm yyyy - h:MM") %>'
@@ -80,6 +81,7 @@ module.exports = function(grunt) {
         constants: {
           settings: {
             dev: false,
+            langs: ['fr','es','en'],
             datapath: 'data/',
             assets: 'build/',
             lastupdate: '<%= grunt.template.today("dd mmmm yyyy - h:MM") %>'
