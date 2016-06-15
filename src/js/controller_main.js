@@ -637,29 +637,6 @@ angular.module('manifest.maincontroller', ['underscore','config'])
     };
 
     ///////////////////////////////////////////////////////////////
-    var fetchDataMap = function() {
-      $http
-      .get(settings.datapath + "map_"+$scope.state.lang+".yml")
-      .success(function(res) {
-        var mapset = jsyaml.load(res);
-        $scope.meta = _.extend($scope.meta, mapset);
-
-        // prepare map credits
-        _.each($scope.meta.mapcredits, function(c) {
-          c.active = true;
-          c.count = 0;
-        });
-        $scope.meta.mapcreditsOf = {};
-        _.each($scope.meta.mapcredits, function(c) {
-          $scope.meta.mapcreditsOf[c.slug] = c;
-        });
-      })
-      .error(function (data, status, headers, config) {
-        console.log("error quotes",status);
-      });
-    }
-
-    ///////////////////////////////////////////////////////////////
     fetchDataMeta( function() {
 
       // Load .yml depending on view
@@ -673,7 +650,7 @@ angular.module('manifest.maincontroller', ['underscore','config'])
         fetchDataLinks();
       }
       if($scope.state.layout=='map') {
-        fetchDataMap();
+        // fetch is done within map controller !
       }
       if($scope.state.layout=='network') {
         $timeout(function() {

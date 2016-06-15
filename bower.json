@@ -23,6 +23,7 @@
     "normalize.css": "latest",
     "sigmajs": "https://github.com/jacomyal/sigma.js/archive/master.zip",
     "underscore": "latest",
-    "xmlToJSON.js": "~1.3.2"
+    "xmlToJSON.js": "~1.3.2",
+    "async": "~1.5.2"
   }
 }

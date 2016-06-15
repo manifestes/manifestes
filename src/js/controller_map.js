@@ -13,6 +13,31 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
     var themappath = settings.datapath + '/map';
 
     ///////////////////////////////////////////////////////////////
+    var fetchDataMap = function(callb) {
+      $http
+      .get(settings.datapath + "map_"+$scope.state.lang+".yml")
+      .success(function(res) {
+        var mapset = jsyaml.load(res);
+        $scope.meta = _.extend($scope.meta, mapset);
+
+        // prepare map credits
+        _.each($scope.meta.mapcredits, function(c) {
+          c.active = true;
+          c.count = 0;
+        });
+        $scope.meta.mapcreditsOf = {};
+        _.each($scope.meta.mapcredits, function(c) {
+          $scope.meta.mapcreditsOf[c.slug] = c;
+        });
+
+        callb();
+      })
+      .error(function (data, status, headers, config) {
+        console.log("error quotes",status);
+      });
+    }
+
+    ///////////////////////////////////////////////////////////////
     $scope.mapJumpTo = function(c) {
       c.pos = c.pos.split(',');
       $scope.map.setView(c.pos,c.zoom);
@@ -190,135 +215,113 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
       };
       
       ///////////////////////////////////////////////////////////////
-      var fetch_local = function(callb) {
-        $http.get(themappath+'/map.csv')
-          .success(function(data) {
-            //console.log("got csv data:",data);
-            //$scope.data = data;
-            var ms = new CSV(data, {header:true, cast:false}).parse();
-            
-            $scope.points = ms;
-            
-            _.each(ms, function(m,k) {
+      var fetch_csv = function(c,callb) {
+        console.log("Fetch csv:",c.slug,c);
+        $http
+        .get(themappath +'/'+ c.csv)
+        .success(function(data) {
+          //console.log("got csv data:",data);
+          //$scope.data = data;
+          var ms = new CSV(data, {header:true, cast:false}).parse();
+          
+          $scope.points = ms;
+          
+          _.each(ms, function(m,k) {
 
-              // if(!layers[m.source]) {
-              //   layers[m.source] = new L.LayerGroup().addTo(overlays);
-              // }
+            // if(!layers[m.source]) {
+            //   layers[m.source] = new L.LayerGroup().addTo(overlays);
+            // }
 
-              addMarker(m);
-              
-            });
-            callb();
-          })
-          .error(function(err) {
-            console.log(err);
+            addMarker(m);
+            
           });
-      };
-
-      ///////////////////////////////////////////////////////////////
-      var fetch_geojson = function(callb) {
-        var toFetch = _.filter($scope.meta.mapcredits, {type: "geojson"});
-        console.log(toFetch);
-        _.each(toFetch, function(dat) {
-          $http.get(themappath+'/'+dat.geojson)
-          //$http.get(dat.geojson)
-            .success(function(geoj) {
-              //console.log(dat.slug,geoj);
-              _.each(geoj.features, function(m) {
-
-                // default
-                var name = totext(m.properties.title);
-                var description = m.properties.description;
-                var web =  "";
-
-                if(dat.slug=='reporterre') {
-                  name = name.replace(/Il y a \d* jours./,"");
-                  web = dat.url +"/"+ m.properties.title.match(/href:\'([^\']*)\'/)[1];
-                }
-                if(dat.slug=='bastamag') {
-                  web = m.properties.title.match(/<a href=\'([^\']*)\'/)[1];
-                }
-                if(dat.slug=='passerelle') {
-                  web = dat.url +"/"+ m.properties.title.match(/<a href=\"([^\"]*)\"/)[1];
-                }
-                if(dat.slug=='ecoles' || dat.slug=='fermesavenir') {
-                  name = m.properties.Name;
-                }
-
-                addMarker({
-                  source: dat.slug,
-                  name: name,
-                  description: description,
-                  web: web,
-                  lat: m.geometry.coordinates[1],
-                  lng: m.geometry.coordinates[0]
-                });
-              });
-            })
-            .error(function(err) {
-              console.log(err);
-            });
+          callb();
+        })
+        .error(function(err) {
+          console.log(err);
         });
-        // well.. not really async here :)
-        callb();
       };
 
       ///////////////////////////////////////////////////////////////
-      var fetch_agedefaire = function(callb) {
-        var agedefaire = _.findWhere($scope.meta.mapcredits, {type: "xml"});
-        $http.get(themappath+'/'+agedefaire.xml)
-        //$http.get(agedefaire.xml)
-          .success(function(xml) {
-            var json = xmlToJSON.parseString(xml, {
-              childrenAsArray: false
+      var fetch_geojson = function(c,callb) {
+        console.log("Fetch geojson:",c.slug,c);
+        $http
+        .get(themappath+'/'+c.geojson)
+        .success(function(geoj) {
+          //console.log(c.slug,geoj);
+          _.each(geoj.features, function(m) {
+
+            // default
+            var name = totext(m.properties.title);
+            var description = m.properties.description;
+            var web =  "";
+
+            if(c.slug=='reporterre') {
+              name = name.replace(/Il y a \d* jours./,"");
+              web = c.url +"/"+ m.properties.title.match(/href:\'([^\']*)\'/)[1];
+            }
+            if(c.slug=='bastamag') {
+              web = m.properties.title.match(/<a href=\'([^\']*)\'/)[1];
+            }
+            if(c.slug=='passerelle') {
+              web = c.url +"/"+ m.properties.title.match(/<a href=\"([^\"]*)\"/)[1];
+            }
+            if(c.slug=='ecoles' || c.slug=='fermesavenir') {
+              name = m.properties.Name;
+            }
+
+            addMarker({
+              source: c.slug,
+              name: name,
+              description: description,
+              web: web,
+              lat: m.geometry.coordinates[1],
+              lng: m.geometry.coordinates[0]
             });
-            //console.log("Age de:",json);
-            _.each(json.markers.marker, function(m) {
-              addMarker({
-                source: "agedefaire",
-                name: m._attr.name._value,
-                description: "Point de vente de L'âge de faire",
-                address: m._attr.address._value,
-                lat: m._attr.lat._value,
-                lng: m._attr.lng._value
-              });
-            });
-            callb();
-          })
-          .error(function(err) {
-            console.log(err);
           });
+          callb();
+        })
+        .error(function(err) {
+          console.log(err);
+        });
       };
 
       ///////////////////////////////////////////////////////////////
-      var fetch_ffdn = function(callb) {
-        var ffdn = _.findWhere($scope.meta.mapcredits, {slug: "ffdn"});
-        $http.get(themappath+'/'+ffdn.json)
-          .success(function(json) {
-            _.each(json, function(m) {
-              if(m.coordinates)
-                addMarker({
-                  source: "ffdn",
-                  name: m.shortname || " ", // warning not to crash the leaflet-search !
-                  description: m.popup,
-                  lat: m.coordinates.latitude,
-                  lng: m.coordinates.longitude
-                });
-            });
-            callb();
-          })
-          .error(function(err) {
-            console.log(err);
+      var fetch_xml = function(c,callb) {
+        console.log("Fetch xml:",c.slug,c);
+        $http
+        .get(themappath+'/'+c.xml)
+        .success(function(xml) {
+          var json = xmlToJSON.parseString(xml, {
+            childrenAsArray: false
           });
+          //console.log("Age de:",json);
+          _.each(json.markers.marker, function(m) {
+            addMarker({
+              source: c.slug,
+              name: m._attr.name._value,
+              description: "Point de vente de L'âge de faire",
+              address: m._attr.address._value,
+              lat: m._attr.lat._value,
+              lng: m._attr.lng._value
+            });
+          });
+          callb();
+        })
+        .error(function(err) {
+          console.log(err);
+        });
       };
 
       ///////////////////////////////////////////////////////////////
-      var fetch_circuitscourts = function(callb) {
-        var cc = _.findWhere($scope.meta.mapcredits, {slug: "circuitscourts"});
-        if(!cc.hide)
-        $http.get(themappath+'/'+cc.json)
-          .success(function(json) {
-            _.each(json, function(m) {
+      var fetch_json = function(c,callb) {
+        console.log("Fetch json:",c.slug,c);
+        $http
+        .get(themappath+'/'+c.json)
+        .success(function(json) {
+          _.each(json, function(m) {
+
+            if(c.slug=="circuitscourts")
               addMarker({
                 source: "circuitscourts",
                 name: m.nom || " ", // warning not to crash the leaflet-search !
@@ -328,101 +331,135 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
                 lat: m.lat,
                 lng: m.lng
               });
-            });
-            callb();
-          })
-          .error(function(err) {
-            console.log(err);
+
+            if(c.slug=="ffdn" && m.coordinates)
+              addMarker({
+                source: "ffdn",
+                name: m.shortname || " ", // warning not to crash the leaflet-search !
+                description: m.popup,
+                lat: m.coordinates.latitude,
+                lng: m.coordinates.longitude
+              });
           });
-        else
           callb();
+        })
+        .error(function(err) {
+          console.log(err);
+        });
       };
 
       ///////////////////////////////////////////////////////////////
-      var fetch_demosphere = function(callb) {
-        var demos = _.findWhere($scope.meta.mapcredits, {slug: "demosphere"});
-        _.each(demos.json, function(u) {
-          $http.get(u + "/event-list-json", { params: {
-            //startTime: 1456182001,
+      var fetch_demosphere = function(c,callback) {
+        console.log("Fetch demosphere:",c.slug,c);
+        async.each(c.cities, function(demcity,callb) {
+          var nowtmstp = parseInt(Date.now()/1000);
+          //console.log("date",nowtmstp);
+          var p = {
+            startTime: nowtmstp,
             //endTime: 1456763106,
             place__latitude: true,
             place__longitude: true,
             place__zoom: true,
             topics: true,
-            url: true
-            //random=0.40452415758106963
-          }}).success(function(json) {
-              console.log("Demosph:",json);
-              _.each(json.events, function(e) {
-                addMarker({
-                  source: "demosphere",
-                  name: e.time,
-                  description: e.title,
-                  address: e.place_city_name,
-                  web: u+e.url,
-                  lat: e.place__latitude,
-                  lng: e.place__longitude
-                });
+            url: true,
+            random: 0.40452415758106963
+          };
+          $http
+          .get(demcity + "/event-list-json", { params: p })
+          .success(function(json) {
+            //console.log("Demosph:",json);
+            _.each(json.events, function(e) {
+              addMarker({
+                source: "demosphere",
+                name: e.time,
+                description: e.title,
+                address: e.place_city_name,
+                web: u+e.url,
+                lat: e.place__latitude,
+                lng: e.place__longitude
               });
-              callb();
-            })
-            .error(function(err) {
-              console.log(err);
             });
+            callb();
+          })
+          .error(function(err) {
+            console.log(err);
+            callb();
+          });
+        }, function(err) {
+          console.log("All demosphere done.");
+          callback();
         });
       };
 
+      ///////////////////////////////////////////////////////////////
+      var buildSearchControl = function() {
+        var layerControl = L.control.layers(null, tileLayers, {position: 'topleft'});
+        layerControl.addTo(map);
+        //console.log("overlays !!",layers);
+        L.control.search({
+          layer: layers,
+          initial: false,
+          zoom: 9,
+          //container: "searchinputformap",
+          // formatData: function(json) { // to also search within descriptions ?
+          //   var jsonret = {};
+          //   for(i in json) {
+          //     console.log(json[i]);
+          //     jsonret["gan"] = L.latLng( json[i][ propLoc[0] ], json[i][ propLoc[1] ] );
+          //   }
+          //   return {yo:"trop"};
+          // },
+          callTip: function(text, val) {
+            var d = val.layer.options.raw;
+            var sou = '<span class="markdiv-'+d.credit.color+' source">'+d.credit.slug+'</span> ';
+            var add = d.address ? ' <span class="address">'+totext(d.address)+'</span>' : "";
+            var des = d.description ? ' <span class="description">'+totext(d.description)+'</span>' : "";
+            return '<div>'+sou+text+add+des+'</div>';
+          }
+        }).addTo(map);
+      };
 
       ///////////////////////////////////////////////////////////////
-      // now DO things (do it async please !)
-      fetch_local(function() {
-        fetch_geojson(function() {
-          fetch_agedefaire(function() {
-            fetch_ffdn(function() {
-              fetch_circuitscourts(function() {
-
-
-                var layerControl = L.control.layers(null, tileLayers, {position: 'topleft'});
-                layerControl.addTo(map);
-                //console.log("overlays !!",layers);
-                L.control.search({
-                  layer: layers,
-                  initial: false,
-                  zoom: 9,
-                  //container: "searchinputformap",
-                  // formatData: function(json) { // to also search within descriptions ?
-                  //   var jsonret = {};
-                  //   for(i in json) {
-                  //     console.log(json[i]);
-                  //     jsonret["gan"] = L.latLng( json[i][ propLoc[0] ], json[i][ propLoc[1] ] );
-                  //   }
-                  //   return {yo:"trop"};
-                  // },
-                  callTip: function(text, val) {
-                    var d = val.layer.options.raw;
-                    var sou = '<span class="markdiv-'+d.credit.color+' source">'+d.credit.slug+'</span> ';
-                    var add = d.address ? ' <span class="address">'+totext(d.address)+'</span>' : "";
-                    var des = d.description ? ' <span class="description">'+totext(d.description)+'</span>' : "";
-                    return '<div>'+sou+text+add+des+'</div>';
-                  }
-                }).addTo(map);
-                
-                updateMapStyles();
-
-                // when ready, remove loading
-                //$timeout(function(){ $scope.state.loading = false; });
-                //$scope.state.mapstatus = "DONE";
-
-
-              });
-            });
-          });
-        });
+      // now FETCH data
+      var toFetch = _.filter($scope.meta.mapcredits, function(e) {
+        return !!e.type; //["csv","json","geojson","xml"].indexOf(e.type) != -1;
       });
+      console.log("Maps to Fetch:", toFetch);
+      async.each(toFetch, function(c,callb) {
+
+        if(c.type=="csv") // local
+          fetch_csv(c,callb);
+        else if(c.type=="geojson") //report,bastam,passeco,fermesavenir
+          fetch_geojson(c,callb);
+        else if(c.type=="xml") //agedefaire
+          fetch_xml(c,callb);
+        else if(c.type=="json") //ffdn,circuitscours
+          fetch_json(c,callb);
+        else if(c.type=="demosphere")
+          fetch_demosphere(c,callb);
+        else {
+          console.log("Unkwnown map type !",c);
+          callb();
+        }
+
+      }, function(err) {
+        console.log("All map data fetchs done. Bravo.");
+
+        buildSearchControl();
+        updateMapStyles();
+
+        // when ready, remove loading
+        //$timeout(function(){ $scope.state.loading = false; });
+        //$scope.state.mapstatus = "DONE";
+      });
+
     };
 
     // Do things !
-    $scope.initMap();
+    fetchDataMap(function() {
+      $scope.initMap();  
+    });
+    
 
   }
 ]);

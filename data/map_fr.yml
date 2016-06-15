@@ -48,123 +48,127 @@ mapcredits:
     -   slug: misc
         name: Utopies Concrètes
         description: "ajouts de lieux\nnon encore référencés"
-        url: http://utopies-concretes.org
         color: 4A787E
+        url: http://utopies-concretes.org
+        type: csv
+        csv: map.csv
     -   slug: fucrecup
         name: FUCRécup'
         description: Festival des Utopies Concrètes - Récup'
+        color: 856D2D
         url: http://festivaldesutopiesconcretes.org/festival-de-la-recup/festival-de-la-recup-2014/acteurs-de-la-recup-2014
-        color: 856D2D        
     -   slug: caravane
         name: Caravane des alternatives
         description: "Lieux et initiatives alternatives,\nécolieux, collectifs"
-        url: http://caravanedesalternatives.weebly.com
         color: 477D50
+        url: http://caravanedesalternatives.weebly.com
     -   slug: resistance
         name: Utopies & luttes
         description: "Utopies concrètes et\nluttes écologiques et sociales"
+        color: CC5B79
         url: https://lesechosduvent.wordpress.com
         url_map: https://www.google.com/maps/d/embed?mid=zB1OZmeGJ7OA.kepycQ8XsohU
-        color: CC5B79
     -   slug: hetero
         name: Hétérotopies
         description: "L’Hétérotopie, c’est un lieu qui héberge l’imaginaire,\nune utopie réalisée que l’on peut visiter,\ntoucher, critiquer, ici et maintenant."
+        color: 6779AB
         url: http://heterotopies.overblog.com/cartographie
         url_map: https://www.google.com/maps/d/embed?mid=zWH3cGb_zi2I.kCaJt8ZC4ufk
-        color: 6779AB
     -   slug: ldv
         name: "Lieux de vie\nBases nomades"
         description: "Lieux de vie, collectifs, bases nomades, \necolieux, fermes autogérées, Zap, Zad, \ncommunautés, squats..."
-        url: https://www.google.com/maps/d/viewer?mid=zCUrDZ_sv7Fw.k9HCrqv3hIVA
         color: C06538
+        url: https://www.google.com/maps/d/viewer?mid=zCUrDZ_sv7Fw.k9HCrqv3hIVA
     -   slug: citoy
         name: Citoyens en Transition
         description: "Des alternatives individuelles\net collectives pour la construction\nd'un vivre ensemble plus riche"   
-        url: http://citoyens.en-transition.fr/
         color: 766859
+        url: http://citoyens.en-transition.fr/
     -   slug: tour
         name: Tour de France des Alternatives
         description: "Partout en France, de simples citoyens montrent\nnon seulement qu’un autre monde est possible,\nmais qu’il existe déjà"
-        url: http://www.tourdefrancedesalternatives.fr/
         color: 8F5D83
+        url: http://www.tourdefrancedesalternatives.fr/
     -   slug: colib
         name: Groupes Locaux Colibris
         description: "Aujourd’hui Colibris compte un réseau de 55 groupes locaux animés par des citoyens bénévoles.\nLes groupes locaux participent activement à la vie et à la gouvernance de Colibris et\nportent localement les valeurs et les messages du mouvement national"
-        url: http://www.colibris-lemouvement.org/ensemble/rejoindre-un-groupe-local
         color: 63862A
+        url: http://www.colibris-lemouvement.org/ensemble/rejoindre-un-groupe-local
     -   slug: gf
         name: Bénéloves
         description: "Générations Futur est une association\nqui promeut les médias libres et toutes\nles actions bénéloves et solidaires"
-        url: http://generationsfutur.zici.fr/
         color: 985249
+        url: http://generationsfutur.zici.fr/
     -   slug: reporterre
         name: Articles Reporterre
         description: Le quotidien de l'écologie
+        color: 5db678
         url: http://reporterre.net
         type: geojson
         geojson: map_report.geojson
         _geojson: http://reporterre.net/spip.php?page=gis_json&objets=articles&limit=500
-        color: 5db678
     -   slug: bastamag
         name: Portail Bastamag
         description: Portail de la presse indépendante
+        color: bc4a4a
         url: http://portail.bastamag.net
         type: geojson
         geojson: map_basta.geojson
         _geojson: http://portail.bastamag.net/spip.php?page=gis_json&objets=syndic_articles&limit=500
-        color: bc4a4a
     -   slug: passerelle
         name: Annonces de la revue Passerelle Éco
         description: "Le réseau des éco-annonces\nde la revue Passerelle Éco"
+        color: c7d12c
         url: http://www.ecovillageglobal.fr
         type: geojson
         geojson: map_passeco.geojson
         _geojson: http://www.ecovillageglobal.fr/spip.php?page=gis_json&objets=annonces&limit=500
-        color: c7d12c
     -   slug: ecoles
         name: Réseau des écoles alternatives
         description: Réseau pour l'école de la vie
+        color: d59454
         url: https://www.google.com/maps/d/viewer?mid=zJ1PitvzVPN0.kN_S8AWMFbDQ
         type: geojson
         geojson: map_ecoles.geojson
-        color: d59454
     -   slug: agedefaire
         name: Points de vente L'âge de faire
         description: Des outils pour changer le monde
+        color: 95b5d5
         url: http://www.lagedefaire-lejournal.fr/
         type: xml
         xml: map_agedefaire.xml
         _xml: http://magasin.lagedefaire-lejournal.fr/index.php?controller=stores?ajax=1&all=1
-        color: 95b5d5
     -   slug: ffdn
         name: Fournisseurs d'accès internet FFDN
         description: "Fournisseurs d'Accès à Internet respectant\nla Neutralité du Net et gérés par des bénévoles"
+        color: ce67c5
         url: https://db.ffdn.org/
+        type: json
         json: map_ffdn.json
         _json: https://db.ffdn.org/isp/map_data.json
-        color: ce67c5
     -   slug: circuitscourts
         name: Circuits courts en Belgique
         description: "alternatives de consommation, d'épargne\net de production locales, équitables,\ndurables, saines, et transparentes"
+        color: c6bc90
         url: http://www.circuits-courts.be
+        type: json
         json: map_circuitscourts.json
         _json: http://www.circuits-courts.be/get_json_data.php?data=ext
-        color: c6bc90
     -   slug: fermesavenir
         name: Fermes d'avenir
         description: Réseau Fermes d'avenir
+        color: de85ca
         url: http://www.fermesdavenir.org/
         type: geojson
         geojson: map_fermesavenir.geojson
         _kmz: https://mapsengine.google.com/map/kml?mid=1fy6Fta6qnNkzLroBSTNCggzIVXY
-        color: de85ca
     -   slug: demosphere
         name: Démosphère
-        description: "Le réseau des éco-annonces\nde la revue Passerelle Éco"
-        url: http://www.demosphere.eu/
-        json:
-            - http://montpellier.demosphere.eu
-            - http://paris.demosphere.eu
-            - http://gard.demosphere.eu
+        description: "Démosphère est un agenda web indépendant\nde toute organisation ou parti"
         color: ed9522
-        hide: true  
+        url: http://www.demosphere.eu/
+        type: demosphere
+        cities:
+            - http://paris.demosphere.eu
+        
+

@@ -156,6 +156,8 @@ module.exports = function(grunt) {
           'src/vendor/angular-touch/angular-touch.min.js',
           //'src/vendor/angular-animate/angular-animate.min.js',
           //'src/vendor/ngScroll/ngscroll.min.js',
+
+          'src/vendor/async/dist/async.min.js',
           'src/vendor/fastclick/lib/fastclick.js',
           
           'src/vendor/markdown/lib/markdown.js',
