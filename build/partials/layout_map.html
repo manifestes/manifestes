@@ -7,7 +7,7 @@
       <div
         ng-repeat="c in meta.mapcredits"
         ng-if="!c.hide"
-        class="credit hint--left"
+        class="credit hint--bottom"
         style="border-left: 5px solid #{{c.color}};"
         ng-click="toggleMapLegend(c); $event.stopPropagation();"
         ng-class="{
@@ -19,8 +19,14 @@
           class="marker"
           src="https://api.tiles.mapbox.com/v3/marker/pin-s-circle+{{c.color}}.png">-->
         <div class="count">{{c.count}}</div>
+        <!--
+        hint.css is cut if parent have overflow
+        see https://github.com/chinchang/hint.css/issues/78
+        -->
         <div class="name">
-          {{c.name}} <a href="{{c.url}}" target="_blank"><i ng-if="c.slug!='misc'" class="fa fa-external-link-square"></i></a>
+          <span ng-if="!settings.smallDevice">{{c.name}} </span>
+          <span ng-if="settings.smallDevice">{{c.slug}} </span>
+          <a href="{{c.url}}" target="_blank"><i ng-if="c.slug!='misc'" class="fa fa-external-link-square"></i></a>
         </div>
       </div>
     </div>

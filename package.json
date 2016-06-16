@@ -1,7 +1,7 @@
 {
   "name": "manifestes",
   "description": "manifestes",
-  "devDependencies": {
+  "dependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-clean": "~0.4.1",
     "grunt-contrib-concat": "~0.3.0",
@@ -17,6 +17,7 @@
     "grunt-strip": "~0.2.1",
     "request": "^2.51.0",
     "underscore": "^1.7.0",
-    "grunt-tree": "~0.4.9"
+    "grunt-tree": "~0.4.9",
+    "grunt-curl": "^2.2.0"
   }
 }

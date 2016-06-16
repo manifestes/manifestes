@@ -19,9 +19,9 @@
 }
 
 @media (max-height: 630px) {
-  .map .legend {
+/*  .map .legend {
     display: none;
-  }
+  }*/
 }
 
 
@@ -54,6 +54,14 @@
   }
   .hint:after, [data-hint]:after, [data-hint]:before {
     display: none;
+  }
+
+  /* MAP */
+  .map .legendwrapper {
+    max-width: 97px !important;
+    .credit {
+      min-height: 25px;
+    }
   }
 }
 
@@ -91,11 +99,6 @@
       margin: 15px 7px !important;
       padding: 12px !important;
     }
-  }
-
-  /* MAP */
-  .map .legend {
-    display: none;
   }
   
   /* SECTIONS */

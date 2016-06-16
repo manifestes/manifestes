@@ -21,7 +21,8 @@ angular.module('manifest.maincontroller', ['underscore','config'])
     console.log("from main controller:",settings);
 
     $scope.settings = settings;
-    
+    $scope.settings.smallDevice = $window.innerWidth < 1025;
+
     var layout = $routeParams.layout ?
       (["home","texts","textsprint","quotes","links","network","map","mapprint"].indexOf($routeParams.layout)==-1 ? "texts" : $routeParams.layout) :
       "home";

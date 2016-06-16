@@ -257,6 +257,16 @@ module.exports = function(grunt) {
           document: true
         }
       }
+    },
+
+    // fetch data for some maps
+    curl: {
+      'data/map/map_agefa.xml': 'http://magasin.lagedefaire-lejournal.fr/index.php?controller=stores?ajax=1&all=1',
+      'data/map/map_basta.geojson':'http://portail.bastamag.net/spip.php?page=gis_json&objets=syndic_articles&limit=500',
+      'data/map/map_circc.json':'http://www.circuits-courts.be/get_json_data.php?data=ext',
+      'data/map/map_ffdn.json':'https://db.ffdn.org/isp/map_data.json',
+      'data/map/map_passeco.geojson':'http://www.ecovillageglobal.fr/spip.php?page=gis_json&objets=annonces&limit=500',
+      'data/map/map_report.geojson':'http://reporterre.net/spip.php?page=gis_json&objets=articles&limit=500'
     }
 
 
@@ -272,6 +282,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-preprocess');
   grunt.loadNpmTasks('grunt-strip');
   grunt.loadNpmTasks('grunt-execute');
+  grunt.loadNpmTasks('grunt-curl');
   
   // outputs json list of files in folder
   grunt.loadNpmTasks('grunt-tree');
@@ -280,5 +291,6 @@ module.exports = function(grunt) {
 
   // we first set constants to prod to build, then go back to dev
   grunt.registerTask('default', ['ngconstant:production','jshint','env:prod','less:prod','concat:js','concat:css','copy','strip','uglify','preprocess:prod','ngconstant:development']);
+  grunt.registerTask('map',['curl']);
 
 };

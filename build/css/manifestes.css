@@ -2725,9 +2725,16 @@ body.layout-mapprint .container {
   box-shadow: 0px 0px 7px 0px #525252;
 }
 .map .legendwrapper .legend {
-  height: auto;
+  max-height: 95%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.map .legendwrapper .legend .hint--bottom::after {
+  font-size: 0.75em;
+  left: 20px !important;
 }
 .map .legendwrapper .credit {
+  position: relative;
   display: inline-block;
   padding: 6px 6px 6px 35px;
   width: 100%;
@@ -2870,9 +2877,9 @@ body.layout-mapprint .container {
   */
 }
 @media (max-height: 630px) {
-  .map .legend {
+  /*  .map .legend {
     display: none;
-  }
+  }*/
 }
 /* PHONES & TABLETS */
 @media (max-width: 1025px) {
@@ -2910,6 +2917,13 @@ body.layout-mapprint .container {
   [data-hint]:after,
   [data-hint]:before {
     display: none;
+  }
+  /* MAP */
+  .map .legendwrapper {
+    max-width: 97px !important;
+  }
+  .map .legendwrapper .credit {
+    min-height: 25px;
   }
 }
 /* PHONES ONLY */
@@ -2957,10 +2971,6 @@ body.layout-mapprint .container {
   .panel.quotes .link {
     margin: 15px 7px !important;
     padding: 12px !important;
-  }
-  /* MAP */
-  .map .legend {
-    display: none;
   }
   /* SECTIONS */
   .section {
