@@ -32,15 +32,20 @@
     </div>
   </div>
   
-  <div class="jumps">
-    <div
-      ng-repeat="c in meta.mapjumps"
-      ng-click="mapJumpTo(c);"
-      class="jump"
-      ng-class="{
-        global: c.zoom<10
-      }">
-        {{c.name}}
+  <div class="jumper">
+    <div class="button leaflet-bar leaflet-control">
+      <i class="fa fa-sign-in"></i>
+    </div>
+    <div class="jumps">
+      <div
+        ng-repeat="c in meta.mapjumps"
+        ng-click="mapJumpTo(c);"
+        class="jump"
+        ng-class="{
+          global: c.zoom<10
+        }">
+          {{c.name}}
+      </div>
     </div>
   </div>
 

@@ -290,7 +290,7 @@
 
     <div class="page" ng-include="layoutTemplate();"></div>
 
-    <div class="footer">
+    <div ng-if="!state.layout!=map" class="footer">
       <!--<div class="count" ng-if="state.search || state.tags.length">
         filtre: {{state.count.texts}} / {{textArray.length}} section(s) & {{state.count.links}} / {{linkArray.length}} lien(s)
       </div>-->

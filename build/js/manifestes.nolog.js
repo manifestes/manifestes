@@ -3466,7 +3466,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,langs:['fr','es','en'],datapath:'data/',assets:'build/',lastupdate:'16 June 2016 - 11:02'})
+.constant('settings', {dev:false,langs:['fr','es','en'],datapath:'data/',assets:'build/',lastupdate:'16 June 2016 - 5:23'})
 
 ;
 ;
@@ -4199,7 +4199,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
       }).join(" ");
     };
 
-    $scope.initMap = function() {
+    var initMap = function() {
 
       0;
 
@@ -4215,10 +4215,61 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
         maxZoom: 19,
         attribution: 'Tiles &copy; Esri &mdash; Source: USGS, Esri, TANA, DeLorme, and NPS'
       });
+      var OpenTopoMap = L.tileLayer('http://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+        maxZoom: 17,
+        attribution: 'Map data: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
+      });
+      var Thunderforest_TransportDark = L.tileLayer('http://{s}.tile.thunderforest.com/transport-dark/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        maxZoom: 19
+      });
+      var Thunderforest_Pioneer = L.tileLayer('http://{s}.tile.thunderforest.com/pioneer/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      });
+      var MapQuestOpen_Aerial = L.tileLayer('http://otile{s}.mqcdn.com/tiles/1.0.0/{type}/{z}/{x}/{y}.{ext}', {
+        type: 'sat',
+        ext: 'jpg',
+        attribution: 'Tiles Courtesy of <a href="http://www.mapquest.com/">MapQuest</a> &mdash; Portions Courtesy NASA/JPL-Caltech and U.S. Depart. of Agriculture, Farm Service Agency',
+        subdomains: '1234'
+      });
+      var Stamen_TonerLite = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.{ext}', {
+        attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        subdomains: 'abcd',
+        minZoom: 0,
+        maxZoom: 20,
+        ext: 'png'
+      });
+      var Esri_NatGeoWorldMap = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',
+        maxZoom: 16
+      });
+      var CartoDB_Positron = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
+        subdomains: 'abcd',
+        maxZoom: 19
+      });
+      var CartoDB_DarkMatter = L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
+        subdomains: 'abcd',
+        maxZoom: 19
+      });
+      var HikeBike_HillShading = L.tileLayer('http://{s}.tiles.wmflabs.org/hillshading/{z}/{x}/{y}.png', {
+        maxZoom: 15,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      });
       var tileLayers = {
-        "OSM": osm,
+        "Positron": CartoDB_Positron,
+        "DarkMatter": CartoDB_DarkMatter,
+        "OSM Grey": osm,
         "Cycle": cycle,
-        //"Terrain": terrain
+        "Topographic": OpenTopoMap,
+        "TransportDark": Thunderforest_TransportDark,
+        "Light B&W": Stamen_TonerLite,
+        "Natural Geo": Esri_NatGeoWorldMap,
+        "OldStyle": Thunderforest_Pioneer,
+        "Terrain noLabel": terrain,
+        "Relief noLabel": HikeBike_HillShading,
+        "Satellite": MapQuestOpen_Aerial
       };
 
       if(!settings.dev)
@@ -4233,7 +4284,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
         minZoom: 5,
         maxZoom: 15,
         locateButton: true,
-        layers: [osm]
+        layers: [CartoDB_Positron]
       });
 
       L.control.zoom({
@@ -4248,10 +4299,10 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
 
       $scope.layers = new L.LayerGroup().addTo(map);
 
-      $scope.map = map;
+      var layerControl = L.control.layers(tileLayers, null, {position: 'topleft'});
+      layerControl.addTo(map);
 
-      var layerControl = L.control.layers(null, tileLayers, {position: 'topleft'});
-      layerControl.addTo($scope.map);
+      $scope.map = map;
 
     };
 
@@ -4266,7 +4317,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
       // MakiMarkers !
       var icon = 'circle';
       //var color = "#"+credit.color || "#000";
-      var size = [8,8];
+      var size = [9,9];
       // icons use maki-markers: https://www.mapbox.com/maki/
       if(/region/.test(m.scale)) {
         size = [10,10];
@@ -4301,7 +4352,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
       }
       if(m.contact)
         customPopup += "<div class='contact'>"+m.contact+"</div>";
-      customPopup += "</div>";
+      customPopup += "<div class='source'>— "+m.source+"</div></div>";
 
       var customOptions = {
         'maxWidth': '500',
@@ -4568,7 +4619,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
     ///////////////////////////////////////////////////////////////
     // load a map credit
     var loadCredit = function(c,callb) {
-      if(c.type=="csv") // local
+      if(c.type=="csv") // csv
         fetch_csv(c,callb);
       else if(c.type=="geojson") //report,bastam,passeco,fermesavenir
         fetch_geojson(c,callb);
@@ -4616,17 +4667,14 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
     ///////////////////////////////////////////////////////////////
     // DO THINGS !!
     fetchDataMap(function() {
-      $scope.initMap();
+      
+      initMap();
 
       ///////////////////////////////////////////////////////////////
       // now FETCH data (only of big screen)
       if(!$scope.settings.smallDevice) {
 
-        var toFetch = _.filter($scope.meta.mapcredits, function(e) {
-          return !!e.type; //["csv","json","geojson","xml"].indexOf(e.type) != -1;
-        });
-        0;
-        async.each(toFetch, function(c,callb) {
+        async.each($scope.meta.mapcredits, function(c,callb) {
 
           loadCredit(c,callb);
 

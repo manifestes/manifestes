@@ -29,30 +29,55 @@
     /*opacity: 0.8;*/
   }
 
-  .jumps {
-    z-index: 25;
+  .jumper {
+    z-index: 9999;
     position: absolute;
     bottom: 0;
     left: 0;
-    
-    text-align: left;
 
-    .jump {
-      padding: 3px 5px;
-      cursor: pointer;
-      
-      background: white;
-      font-size: 0.7em;
-      
-      &.global {
-        color: lightgray;
+    .jumps {
+      z-index: 8889;
+      position: absolute;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      text-align: left;
+      display: none;
+
+      .jump {
+        
+        padding: 3px 5px;
+        cursor: pointer;
+        
+        background: white;
+        font-size: 0.7em;
+        
+        &.global {
+          color: lightgray;
+        }
+
+        &:hover {
+          background: #E7E7E7;
+        }
       }
-
-      &:hover {
-        background: #E7E7E7;
+    }
+    .button {
+      z-index: 8888;
+      background: white;
+      margin: 10px;
+      width: 25px;
+      height: 25px;
+      line-height: 25px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    &:hover {
+      .jumps {
+        display: block;
       }
     }
   }
+
   .legendwrapper {
     box-sizing: border-box;
     z-index: 25;
@@ -186,6 +211,10 @@
     }
     .contact, .web {
       color: @lightColor;
+      font-style: italic;
+    }
+    .source {
+      color: @veryLightColor;
       font-style: italic;
     }
   }

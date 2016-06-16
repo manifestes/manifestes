@@ -2799,6 +2799,34 @@
 "popup_anchor": [1,-26.67],
 "shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
 "shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [2.9347932, 42.52284]},
+"id":"2873",
+"properties": {
+	"title":"<a href=\"11703\">Projet \u00c9colieu \/ \u00c9colocation<\/a>",
+	"description":"Projet : Bonjour, Je me r\u00e9installe 66 dans le courant de l'\u00e9t\u00e9 et projette de m'installer au vert, au plus proche de la nature, au moins dans une maison avec terrain, au mieux en \u00e9colieu, et \u00e0&nbsp;(...)"
+	,
+"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/3d\/e252395153632e8f44e4ddb6d6f50d.png?1460669431",
+"icon_size": [32,32],
+"icon_anchor": [16,32],
+"popup_anchor": [1,-26.67],
+"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [-2.986703, 47.6660041]},
+"id":"2874",
+"properties": {
+	"title":"<a href=\"11704\">Formation 14 Jours \u00abPermaculture &amp; Design&nbsp;(...)<\/a>",
+	"description":"Projet : \"Intention: exp\u00e9rimenter pour mieux comprendre le fonctionnement de la Nature pour travailler avec elle. Les participants acqui\u00e8rent des outils et des connaissances pour concevoir des&nbsp;(...)"
+	,
+"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/47\/d891f04c87362d0da8cde4aa81ba51.png?1460667791",
+"icon_size": [32,32],
+"icon_anchor": [16,32],
+"popup_anchor": [1,-26.67],
+"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+"shadow_size": [32,32]
 }}
 	]
 }

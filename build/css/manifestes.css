@@ -2689,24 +2689,44 @@ body.layout-mapprint .container {
   /*border-radius: 10px;*/
   /*opacity: 0.8;*/
 }
-.map .jumps {
-  z-index: 25;
+.map .jumper {
+  z-index: 9999;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.map .jumper .jumps {
+  z-index: 8889;
   position: absolute;
   bottom: 0;
   left: 0;
   text-align: left;
+  display: none;
 }
-.map .jumps .jump {
+.map .jumper .jumps .jump {
   padding: 3px 5px;
   cursor: pointer;
   background: white;
   font-size: 0.7em;
 }
-.map .jumps .jump.global {
+.map .jumper .jumps .jump.global {
   color: lightgray;
 }
-.map .jumps .jump:hover {
+.map .jumper .jumps .jump:hover {
   background: #E7E7E7;
+}
+.map .jumper .button {
+  z-index: 8888;
+  background: white;
+  margin: 10px;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 1em;
+  cursor: pointer;
+}
+.map .jumper:hover .jumps {
+  display: block;
 }
 .map .legendwrapper {
   box-sizing: border-box;
@@ -2827,6 +2847,10 @@ body.layout-mapprint .container {
 .leaflet-popup .details .contact,
 .leaflet-popup .details .web {
   color: #ababab;
+  font-style: italic;
+}
+.leaflet-popup .details .source {
+  color: #cccccc;
   font-style: italic;
 }
 /*.awesome-marker i {
