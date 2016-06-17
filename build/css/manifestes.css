@@ -2686,7 +2686,7 @@ body.layout-mapprint .container {
   bottom: 0;
 }
 .map .markdiv {
-  /*border-radius: 10px;*/
+  border-radius: 10px;
   /*opacity: 0.8;*/
 }
 .map .jumper {
@@ -2744,8 +2744,18 @@ body.layout-mapprint .container {
   -moz-box-shadow: 0px 0px 7px 0px #525252;
   box-shadow: 0px 0px 7px 0px #525252;
 }
+.map .legendwrapper .legendtoggler {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.map .legendwrapper .legendtoggler i {
+  padding: 5px;
+  margin: 15px 7px;
+  font-size: 1.3em;
+}
 .map .legendwrapper .legend {
-  max-height: 95%;
+  max-height: 85%;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -2948,6 +2958,9 @@ body.layout-mapprint .container {
   }
   .map .legendwrapper .credit {
     min-height: 25px;
+  }
+  .map .markdiv {
+    border-radius: none;
   }
 }
 /* PHONES ONLY */

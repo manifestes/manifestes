@@ -3469,7 +3469,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,langs:['fr','es','en'],datapath:'data/',assets:'build/',lastupdate:'17 June 2016 - 9:55'})
+.constant('settings', {dev:false,langs:['fr','es','en'],datapath:'data/',assets:'build/',lastupdate:'17 June 2016 - 7:25'})
 
 ;
 ;
@@ -4320,10 +4320,10 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
       // MakiMarkers !
       var icon = 'circle';
       //var color = "#"+credit.color || "#000";
-      var size = [9,9];
+      var size = $scope.settings.smallDevice ? [12,12] : [9,9];
       // icons use maki-markers: https://www.mapbox.com/maki/
       if(/region/.test(m.scale)) {
-        size = [10,10];
+        size = [12,12];
         //icon = "land-use";
       }
       if(/city/.test(m.scale)) {
@@ -4673,13 +4673,26 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
     };
 
     ///////////////////////////////////////////////////////////////
+    $scope.toggleMapLegendAll = function() {
+      async.each($scope.meta.mapcredits, function(c,callb) {
+        c.active = true;
+        if(!c.loaded)
+          loadCredit(c,callb);
+        else
+          callb();
+      }, function(err) {
+        buildSearchControl();
+        updateMapStyles();
+      });
+    };
+    $scope.toggleMapLegendNone = function() {
+      _.each($scope.meta.mapcredits, function(c) {
+        c.active = false;
+      });
+      updateMapStyles();
+    };
     $scope.toggleMapLegend = function(c) {
       //console.log("Toggling:",c);
-
-      /*var isFull = _.findIndex($scope.meta.mapcredits, {active: false})==-1;
-      if(isFull) _.each($scope.meta.mapcredits, function(e) {
-        e.active = false;
-      });*/
       
       if(c) {
         c.active = !c.active;
@@ -4693,12 +4706,6 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
           updateMapStyles();
         }
       }
-
-      /*var isEmpty = _.findIndex($scope.meta.mapcredits, {active: true})==-1;
-      if(isEmpty || !c) _.each($scope.meta.mapcredits, function(e) {
-        e.active = true;
-      });*/
-
     };
 
     ///////////////////////////////////////////////////////////////

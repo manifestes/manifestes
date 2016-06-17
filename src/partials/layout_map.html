@@ -2,7 +2,11 @@
 
   <style ng-bind-html="state.mapStyles"></style>
 
-  <div class="legendwrapper" ng-click="toggleMapLegend();">
+  <div class="legendwrapper">
+    <div class="legendtoggler">
+      <i class="fa fa-toggle-on" ng-click="toggleMapLegendAll();"></i>
+      <i class="fa fa-toggle-off" ng-click="toggleMapLegendNone();"></i>
+    </div>
     <div class="legend">
       <div
         ng-repeat="c in meta.mapcredits"

@@ -25,7 +25,7 @@
   bottom: 0;
 
   .markdiv {
-    /*border-radius: 10px;*/
+    border-radius: 10px;
     /*opacity: 0.8;*/
   }
 
@@ -95,8 +95,19 @@
 
     .box-shadow(0px 0px 7px 0px #525252);
 
+    .legendtoggler {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      i {
+        padding: 5px;
+        margin: 15px 7px;
+        font-size: 1.3em;
+      }
+    }
+
     .legend {
-      max-height: 95%;
+      max-height: 85%;
       overflow-y: scroll;
       overflow-x: hidden;
       .hint--bottom::after {
