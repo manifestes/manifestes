@@ -254,7 +254,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
     
     ///////////////////////////////////////////////////////////////
     var fetch_csv = function(c,callb) {
-      console.log("Fetch csv:",c.slug,c);
+      //console.log("Fetch csv:",c.slug,c);
       $http
       .get(mappathprefix+c.slug+'.csv')
       .success(function(data) {
@@ -286,7 +286,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
 
     ///////////////////////////////////////////////////////////////
     var fetch_geojson = function(c,callb) {
-      console.log("Fetch geojson:",c.slug,c);
+      //console.log("Fetch geojson:",c.slug,c);
       $http
       .get(mappathprefix+c.slug+'.geojson')
       .success(function(geoj) {
@@ -332,7 +332,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
 
     ///////////////////////////////////////////////////////////////
     var fetch_xml = function(c,callb) {
-      console.log("Fetch xml:",c.slug,c);
+      //console.log("Fetch xml:",c.slug,c);
       $http
       .get(mappathprefix+c.slug+'.xml')
       .success(function(xml) {
@@ -361,7 +361,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
 
     ///////////////////////////////////////////////////////////////
     var fetch_json = function(c,callb) {
-      console.log("Fetch json:",c.slug,c);
+      //console.log("Fetch json:",c.slug,c);
       $http
       .get(mappathprefix+c.slug+'.json')
       .success(function(json) {
@@ -410,29 +410,63 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
           place__zoom: true,
           topics: true,
           url: true,
+          //limit: 1,
           random: 0.40452415758106963
         };
-        $http
-        .get(demcity + "/event-list-json", { params: p })
-        .success(function(json) {
-          //console.log("Demosph:",json);
-          _.each(json.events, function(e) {
-            addMarker({
-              source: "demosphere",
-              name: e.time,
-              description: e.title,
-              address: e.place_city_name,
-              web: u+e.url,
-              lat: e.place__latitude,
-              lng: e.place__longitude
-            });
-          });
-          callb();
-        })
-        .error(function(err) {
-          console.log(err);
-          callb();
+
+        var str = "";
+        for(var key in p) {
+          if(str!="") {
+            str+="&";
+          }
+          str += key+"="+encodeURIComponent(p[key]);
+        }
+        var demo = demcity+"/event-list-json"//;+"?"+str;
+        console.log("URL",demo);
+        //var url = "http://whateverorigin.org/get?url="+demo+"&callback=?";
+        //var url = "http://cors.io/?u="+demo;
+        var url = demo;
+        $http({
+            method: 'GET',
+            url: url
+        }).
+        success(function(status) {
+          console.log("S",status);
+        }).
+        error(function(status) {
+          console.log("E",status);
         });
+
+        // $http({
+        //   url: url,
+        //   //params: p,
+        //   method: 'GET',
+        //   transformResponse: [function (data) {
+        //       // Do whatever you want!
+        //       console.log("Here is the",data);
+        //       return data;
+        //   }]
+        // });
+
+        // $http
+        // .get(demcity + "/event-list-json", { params: p })
+        // //.get(url)
+        // .success(function(json) {
+        //   console.log("Demosph:",json);
+        //   _.each(json.events, function(e) {
+        //     addMarker({
+        //       source: "demosphere",
+        //       name: e.time,
+        //       description: e.title,
+        //       address: e.place_city_name,
+        //       web: u+e.url,
+        //       lat: e.place__latitude,
+        //       lng: e.place__longitude
+        //     });
+        //   });
+        //   callb();
+        // });
+
       }, function(err) {
         console.log("All demosphere done.");
         c.loaded = true;

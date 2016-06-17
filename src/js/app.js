@@ -67,7 +67,10 @@ angular.module('manifest', [
     });
 
   }])
-  
+  // .config(function($httpProvider){
+  //   $httpProvider.defaults.useXDomain = true;
+  //   delete $httpProvider.defaults.headers.common['X-Requested-With'];
+  // })
   .run(function() {
     FastClick.attach(document.body);
   });
