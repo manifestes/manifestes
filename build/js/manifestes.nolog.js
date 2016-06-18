@@ -3469,7 +3469,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,langs:['fr','es','en'],datapath:'data/',assets:'build/',lastupdate:'17 June 2016 - 7:25'})
+.constant('settings', {dev:false,langs:['fr','es','en'],datapath:'data/',assets:'build/',lastupdate:'18 June 2016 - 9:58'})
 
 ;
 ;
@@ -4320,10 +4320,10 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
       // MakiMarkers !
       var icon = 'circle';
       //var color = "#"+credit.color || "#000";
-      var size = $scope.settings.smallDevice ? [12,12] : [9,9];
+      var size = $scope.settings.smallDevice ? [13,13] : [9,9];
       // icons use maki-markers: https://www.mapbox.com/maki/
       if(/region/.test(m.scale)) {
-        size = [12,12];
+        size = $scope.settings.smallDevice ? [14,14] : [11,11];
         //icon = "land-use";
       }
       if(/city/.test(m.scale)) {
@@ -4339,7 +4339,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
         //icon = "heart";
       }
       if(/list/.test(m.tags)) {
-        size = [14,14];
+        size = $scope.settings.smallDevice ? [17,17] : [15,15];
       }
 
 
@@ -4427,7 +4427,9 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
         callb();
       })
       .error(function(err) {
+        c.loaded = false;
         0;
+        callb();
       });
     };
 
@@ -4473,7 +4475,9 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
         callb();
       })
       .error(function(err) {
+        c.loaded = false;
         0;
+        callb();
       });
     };
 
@@ -4502,7 +4506,9 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
         callb();
       })
       .error(function(err) {
+        c.loaded = false;
         0;
+        callb();
       });
     };
 
@@ -4539,7 +4545,9 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
         callb();
       })
       .error(function(err) {
+        c.loaded = false;
         0;
+        callb();
       });
     };
 
@@ -4616,7 +4624,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
 
       }, function(err) {
         0;
-        c.loaded = true;
+        c.loaded = false;
         c.active = true;
         callback();
       });
@@ -4714,28 +4722,32 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
       
       initMap();
 
-      ///////////////////////////////////////////////////////////////
-      // now FETCH data (only of big screen)
-      if(!$scope.settings.smallDevice) {
+      $timeout(function() {
 
-        async.each($scope.meta.mapcredits, function(c,callb) {
+        // now FETCH data (only of big screen)
+        if(!$scope.settings.smallDevice) {
 
-          loadCredit(c,callb);
+          async.each($scope.meta.mapcredits, function(c,callb) {
 
-        }, function(err) {
+            loadCredit(c,callb);
+
+          }, function(err) {
+            0;
+
+            buildSearchControl();
+            updateMapStyles();
+            //$scope.$apply();
+
+            // when ready, remove loading
+            //$timeout(function(){ $scope.state.loading = false; });
+            //$scope.state.mapstatus = "DONE";
+          });
+        } else {
           0;
-
-          buildSearchControl();
-          updateMapStyles();
-          //$scope.$apply();
-
-          // when ready, remove loading
-          //$timeout(function(){ $scope.state.loading = false; });
-          //$scope.state.mapstatus = "DONE";
-        });
-      } else {
-        0;
-      }
+        }
+        
+      })
+      
     });
     
 
