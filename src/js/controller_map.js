@@ -55,6 +55,13 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
       }).join(" ");
     };
 
+    // $scope.activeCount = function() {
+    //   return _.filter($scope.meta.mapcredits, function(c) {
+    //     return c.active;
+    //   }).length;
+    // };
+
+    ///////////////////////////////////////////////////////////////
     var initMap = function() {
 
       console.log("initing map !");
@@ -586,33 +593,29 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
       
       initMap();
 
-      $timeout(function() {
+      // now FETCH data (only of big screen)
+      if(!$scope.settings.smallDevice) {
 
-        // now FETCH data (only of big screen)
-        if(!$scope.settings.smallDevice) {
+        async.parallel(
+          _.map($scope.meta.mapcredits, function(c) {
+            return function(callb) { loadCredit(c,callb); };
+          })
+          , function(err,results) {
 
-          async.parallel(
-            _.map($scope.meta.mapcredits, function(c) {
-              return function(callb) { loadCredit(c,callb); };
-            })
-            , function(err,results) {
+          console.log("All map data fetchs done. Bravo.");
 
-            console.log("All map data fetchs done. Bravo.");
+          buildSearchControl();
+          updateMapStyles();
+          //$scope.$apply();
 
-            buildSearchControl();
-            updateMapStyles();
-            //$scope.$apply();
+          // when ready, remove loading
+          //$timeout(function(){ $scope.state.loading = false; });
+          //$scope.state.mapstatus = "DONE";
+        });
 
-            // when ready, remove loading
-            //$timeout(function(){ $scope.state.loading = false; });
-            //$scope.state.mapstatus = "DONE";
-          });
-
-        } else {
-          console.log("Not loading map data 'cause small screen");
-        }
-        
-      });
+      } else {
+        console.log("Not loading map data 'cause small screen");
+      }
       
     });
     
