@@ -150,6 +150,8 @@ module.exports = function(grunt) {
 
           'src/vendor/moment/min/moment-with-locales.min.js',
           'src/vendor/underscore/underscore-min.js',
+          'src/vendor/zepto/zepto.min.js',
+
           'src/vendor/angular/angular.min.js',
           'src/vendor/angular-sanitize/angular-sanitize.min.js',
           'src/vendor/angular-route/angular-route.min.js',

@@ -168,7 +168,45 @@ mapcredits:
         color: ed9522
         url: http://www.demosphere.eu/
         type: demosphere
+        dontload: true
         cities:
+            - http://bxl.demosphere.eu
+            - http://liege.demosphere.eu
+            - http://04.demosphere.eu
+            - http://alter49.org
+            - http://ariege.demosphere.eu
+            - http://berry.demosphere.eu
+            - http://bearn.demosphere.eu
+            - http://carcassonne.demosphere.eu
+            - http://comminges.demosphere.eu
+            - http://dunkerque.demosphere.eu
+            - http://gard.demosphere.eu
+            - http://gironde.demosphere.eu
+            - http://05.demosphere.eu
+            - http://herault.demosphere.eu
+            - http://lille.demosphere.eu
+            - http://limoges.demosphere.eu
+            - http://lot.demosphere.eu
+            - http://lozere.demosphere.eu
+            - http://maraispoitevin.demosphere.eu
+            - http://marseille.demosphere.eu
+            - http://nice.demosphere.eu
             - http://paris.demosphere.eu
-        
-
+            - http://pays-basque.demosphere.eu
+            - http://picardie.demosphere.eu
+            - http://poitiers.demosphere.eu
+            - http://63.demosphere.eu
+            - http://rennes.demosphere.eu
+            - http://rouen.demosphere.eu
+            - http://sarthe.demosphere.eu
+            - http://tarn.demosphere.eu
+            - http://toulouse.demosphere.eu
+            - https://www.kinimatorama.net
+            - http://chiapas.demosphere.eu
+            - http://aragon.demosphere.eu
+            - http://axendamazucu.org
+            - http://agendasocialburgos.org
+            - http://cantabria.demosphere.eu
+            - http://elotrovalladolid.es
+            - http://agendadelhenares.org
+            - http://agendatamettit.tf

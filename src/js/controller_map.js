@@ -176,6 +176,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
       if($scope.meta.mapcreditsOf.hasOwnProperty(m.source))
         credit = $scope.meta.mapcreditsOf[m.source];
         
+      if(!m.name) m.name = " "; // warning not to crash the leaflet-search !
 
       // MakiMarkers !
       var icon = 'circle';
@@ -218,7 +219,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
       customPopup += "<div class='source'>— "+m.source+"</div></div>";
 
       var customOptions = {
-        'maxWidth': '500',
+        'maxWidth': '470',
         'className' : 'custom'
       }
       m.credit = credit;
@@ -312,7 +313,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
             web = c.url +"/"+ m.properties.title.match(/href:\'([^\']*)\'/)[1];
           }
           if(c.slug=='basta') {
-            web = m.properties.title.match(/<a href=\'([^\']*)\'/)[1];
+            web = m.properties.description.match(/<a href=\'([^\']*)\'/)[1];
           }
           if(c.slug=='passeco') {
             web = c.url +"/"+ m.properties.title.match(/<a href=\"([^\"]*)\"/)[1];
@@ -383,7 +384,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
           if(c.slug=="circc")
             addMarker({
               source: "circc",
-              name: m.nom || " ", // warning not to crash the leaflet-search !
+              name: m.nom,
               description: m.comm,
               address: m.loc,
               web: m.web,
@@ -394,7 +395,7 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
           if(c.slug=="ffdn" && m.coordinates)
             addMarker({
               source: "ffdn",
-              name: m.shortname || " ", // warning not to crash the leaflet-search !
+              name: m.shortname,
               description: m.popup,
               lat: m.coordinates.latitude,
               lng: m.coordinates.longitude
@@ -427,74 +428,46 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
     };
     var fetch_a_demo = function(c,basedemurl,callb) {
 
-      var nowtmstp = parseInt(Date.now()/1000);
-      //console.log("date",nowtmstp);
       var p = {
-        startTime: nowtmstp,
-        //endTime: 1456763106,
+        startTime: parseInt(moment().valueOf()/1000),
+        endTime: parseInt(moment().add(4,'days').valueOf()/1000),
         place__latitude: true,
         place__longitude: true,
-        place__zoom: true,
-        topics: true,
+        //place__zoom: true,
+        //topics: true,
         url: true,
-        //limit: 1,
-        random: 0.40452415758106963
+        //limit: 10,
+        //random: 0.4987987
       };
 
       var str = "";
       for(var key in p) {
-        if(str!="") {
-          str+="&";
-        }
-        str += key+"="+encodeURIComponent(p[key]);
+        if(str!="") str+="&";
+        str += key+"="+p[key];//encodeURIComponent(p[key]);
       }
-      var demo = basedemurl+"/event-list-json"//;+"?"+str;
-      console.log("URL",demo);
-      //var url = "http://whateverorigin.org/get?url="+demo+"&callback=?";
-      //var url = "http://cors.io/?u="+demo;
-      var url = demo;
-      $http({
-          method: 'GET',
-          url: url
-      }).
-      success(function(status) {
-        console.log("S",status);
-      }).
-      error(function(status) {
-        console.log("E",status);
+      var demourl = basedemurl+"/event-list-json?"+str;//place__latitude=true&place__longitude=true&url=true&limit=7";//?"+str;
+      //console.log(demourl);
+      /*
+        bacause of CORS
+        did not succeed with $http
+        neither with http://whateverorigin.org (don't accept GET params)
+        but like that seems OK
+      */
+      $.getJSON('http://cors.io?u='+encodeURIComponent(demourl), function(data){
+        //console.log("RECEIVED:",data)
+        _.each(data.events, function(e) {
+          addMarker({
+            source: "demos",
+            name: e.title,
+            description: moment(e.start_time*1000).format("dddd Do MMMM, H[h]mm"),
+            address: e.place__city__name,
+            web: basedemurl+e.url,
+            lat: e.place__latitude,
+            lng: e.place__longitude
+          });
+        });
+        callb();
       });
-
-      // $http({
-      //   url: url,
-      //   //params: p,
-      //   method: 'GET',
-      //   transformResponse: [function (data) {
-      //       // Do whatever you want!
-      //       console.log("Here is the",data);
-      //       return data;
-      //   }]
-      // });
-
-      // $http
-      // .get(basedemurl + "/event-list-json", { params: p })
-      // //.get(url)
-      // .success(function(json) {
-      //   console.log("Demosph:",json);
-      //   _.each(json.events, function(e) {
-      //     addMarker({
-      //       source: "demosphere",
-      //       name: e.time,
-      //       description: e.title,
-      //       address: e.place_city_name,
-      //       web: u+e.url,
-      //       lat: e.place__latitude,
-      //       lng: e.place__longitude
-      //     });
-      //   });
-      //   callb();
-      // });
-
-      callb();
     };
 
     ///////////////////////////////////////////////////////////////
@@ -539,8 +512,8 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
         fetch_xml(c,callb);
       else if(c.type=="json") //ffdn,circuitscours
         fetch_json(c,callb);
-      // else if(c.type=="demosphere")
-      //   fetch_demosphere(c,callb);
+      else if(c.type=="demosphere")
+        fetch_demosphere(c,callb);
       else {
         console.log("Unkwnown map type !",c);
         callb();
@@ -549,8 +522,11 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
 
     ///////////////////////////////////////////////////////////////
     $scope.toggleMapLegendAll = function() {
+      var credits = _.filter($scope.meta.mapcredits, function(c) {
+        return !c.dontload;
+      });
       async.parallel(
-        _.map($scope.meta.mapcredits, function(c) {
+        _.map(credits, function(c) {
           return function(callb) {
             c.active = true;
             if(!c.loaded)
@@ -596,8 +572,12 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
       // now FETCH data (only of big screen)
       if(!$scope.settings.smallDevice) {
 
+        var credits = _.filter($scope.meta.mapcredits, function(c) {
+          return !c.dontload;
+        });
         async.parallel(
-          _.map($scope.meta.mapcredits, function(c) {
+
+          _.map(credits, function(c) {
             return function(callb) { loadCredit(c,callb); };
           })
           , function(err,results) {
@@ -606,7 +586,9 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
 
           buildSearchControl();
           updateMapStyles();
-          //$scope.$apply();
+          
+
+          $scope.$apply();
 
           // when ready, remove loading
           //$timeout(function(){ $scope.state.loading = false; });
