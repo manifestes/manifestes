@@ -138,7 +138,12 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
       if(!settings.dev)
         L.Icon.Default.imagePath = "build/images";
 
-      var map = L.map('leaflet', {
+      // recurrent error: Map container already initialized ?
+      // seems controllers are loaded 2 times ! weird..
+      if($scope.map)
+        $scope.map.remove();
+
+      $scope.map = L.map('leaflet', {
         zoomControl: false,
         scrollWheelZoom: true,
         doubleClickZoom: true,
@@ -152,20 +157,18 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
 
       L.control.zoom({
         position: 'topleft', //'bottomleft'
-      }).addTo(map);
+      }).addTo($scope.map);
 
       L.control.locate({
         position: 'topleft', //'bottomleft',
         icon: 'fa fa-street-view',
         showPopup: false,
-      }).addTo(map);
+      }).addTo($scope.map);
 
-      $scope.layers = new L.LayerGroup().addTo(map);
+      $scope.layers = new L.LayerGroup().addTo($scope.map);
 
       var layerControl = L.control.layers(tileLayers, null, {position: 'topleft'});
-      layerControl.addTo(map);
-
-      $scope.map = map;
+      layerControl.addTo($scope.map);
 
     };
 
