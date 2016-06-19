@@ -167,7 +167,6 @@
         ng-class="{inactive: state.layout=='map' || state.layout=='full' || state.layout=='home'}"
         >
 
-        <!-- TAG ACTIVATOR -->
         <div
           class="tagactivator hint--bottom"
           data-hint="{{state.taggingtooltip}}"
@@ -183,7 +182,6 @@
               'fa-tags': state.tagging
             }"></i>
         </div><form autocomplete="off" ng-submit="searchSubmit(state.searchinput);">
-          <!-- TEXTFIELD -->
           <input
             type="text"
             placeholder="{{meta.menu.search}}"
@@ -207,7 +205,6 @@
         <div>{{meta.menu.addzone}}</div>
       </div>
       -->
-
     </div>
 
     <!-- ADD ZONE -->
@@ -241,7 +238,6 @@
           <div class="label">{{t.label}}</div>
       </div>
     </div>
-
   </div>
 
   <div
@@ -253,7 +249,7 @@
     }">
 
     <!-- message displayed the first time you arrived on a layout -->
-    <div
+<!--     <div
       ng-if="state.layout!='textsprint'&&state.layout!='home'"
       class="disclopener"
       ng-class="{active: !state.disclaim[state.layout]}"
@@ -277,26 +273,27 @@
       <div ng-if="state.layout=='quotes'"
       class="full" compile-here="md2Html(meta.disclaimer[state.layout])"></div>
 
-      <!-- <span class="close">fermer</span> -->
       <i class="fa fa-times" ng-click="state.disclaim[state.layout] = false;"></i>
-    </div>
+    </div> -->
 
     <!-- loading spinner while not ready -->
+    <!--
     <div class="loading spinner" ng-if="state.loading">
       <div class="bounce1"></div>
       <div class="bounce2"></div>
       <div class="bounce3"></div>
     </div>
+    -->
 
     <div class="page" ng-include="layoutTemplate();"></div>
 
-    <div ng-if="!state.layout!=map" class="footer">
+    <div ng-if="!state.layout!='map'" class="footer">
       <!--<div class="count" ng-if="state.search || state.tags.length">
         filtre: {{state.count.texts}} / {{textArray.length}} section(s) & {{state.count.links}} / {{linkArray.length}} lien(s)
       </div>-->
       <div class="content" compile-here="md2Html(meta.footer.content)"></div>
 
-      <form
+<!--       <form
         class="mailing"
         action="https://lists.riseup.net/www"
         method="POST"
@@ -317,7 +314,7 @@
           type="submit"
           name="action_subrequest"
           value="inscrire">
-      </form>
+      </form> -->
 
       <a class="lastupdate" target="_blank" href="{{meta.repo}}">{{meta.footer.lastupdatetext}}<br>{{settings.lastupdate}}</a>
 

@@ -26,7 +26,7 @@ angular.module('manifest', [
   'manifest.directives',
   'manifest.filters',
   'manifest.maincontroller',
-  'manifest.mapcontroller',
+  //'manifest.mapcontroller',
   'config'
 ])
 
@@ -40,25 +40,25 @@ angular.module('manifest', [
 
     $routeProvider.when('/:lang', {
       templateUrl: settings.assets + '/partials/layout.html',
-      controller: 'mainController'
+      controller: 'MainController'
       // reloadOnSearch: false
     });
 
     $routeProvider.when('/:lang/:layout', {
       templateUrl: settings.assets + '/partials/layout.html',
-      controller: 'mainController',
+      controller: 'MainController',
       //reloadOnSearch: false
     });
 
-    $routeProvider.when('/:lang/:layout/:tags', {
-      templateUrl: settings.assets + '/partials/layout.html',
-      controller: 'mainController',
-      //reloadOnSearch: false
-    });
+    // $routeProvider.when('/:lang/:layout/:tags', {
+    //   templateUrl: settings.assets + '/partials/layout.html',
+    //   controller: 'MainController',
+    //   //reloadOnSearch: false
+    // });
 
     // $routeProvider.when('/:lang/:layout/:forcedev', {
     //   templateUrl: settings.assets + '/partials/layout.html',
-    //   controller: 'mainController'
+    //   controller: 'MainController'
     //   // reloadOnSearch: false
     // });
 

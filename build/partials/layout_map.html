@@ -1,4 +1,4 @@
-<div class="map full" ng-controller="MapController">
+<div class="map full">
 
   <style ng-bind-html="state.mapStyles"></style>
 
@@ -34,7 +34,10 @@
         <div class="name">
           <span ng-if="!settings.smallDevice">{{c.name}} </span>
           <span ng-if="settings.smallDevice">{{c.slug}} </span>
-          <a href="{{c.url}}" target="_blank"><i ng-if="c.slug!='misc'" class="fa fa-external-link-square"></i></a>
+          <a href="{{c.url}}" target="_blank">
+            <i ng-if="c.slug!='misc' && !c.loading" class="fa fa-external-link-square"></i>
+            <i ng-if="c.loading" class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+          </a>
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "dependencies": {
     "Leaflet.MakiMarkers": "~1.0.1",
-    "angular": "1.3.5",
+    "angular": "1.4.6",
     "angular-animate": "latest",
     "angular-route": "latest",
     "angular-sanitize": "~1.3.6",

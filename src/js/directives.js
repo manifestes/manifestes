@@ -41,13 +41,14 @@ angular.module('manifest.directives', [])
   // to be able to use directives (especially href!) on the ng-binded-html !
   // thanks to:
   // http://stackoverflow.com/questions/17417607/angular-ng-bind-html-unsafe-and-directive-within-it
+
   .directive('compileHere', ['$compile', function ($compile) {
     return function(scope, element, attrs) {
       //var ensureCompileRunsOnce = scope.$watch(
       scope.$watch(
-        function(scope) {
+        function(scop) {
           // watch search term
-          return scope.state.search;
+          return scop.state.search;
           //return scope.rgx.search;
         },
         function(val) {
@@ -66,3 +67,5 @@ angular.module('manifest.directives', [])
       );
     };
   }]);
+
+  
