@@ -3469,7 +3469,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,langs:['fr','es','en'],datapath:'data/',assets:'build/',lastupdate:'18 June 2016 - 9:58'})
+.constant('settings', {dev:false,langs:['fr','es','en'],datapath:'data/',assets:'build/',lastupdate:'19 June 2016 - 8:54'})
 
 ;
 ;
@@ -4554,80 +4554,87 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
     ///////////////////////////////////////////////////////////////
     var fetch_demosphere = function(c,callback) {
       console.log("Fetch demosphere:",c.slug,c);
-      async.each(c.cities, function(demcity,callb) {
-        var nowtmstp = parseInt(Date.now()/1000);
-        //console.log("date",nowtmstp);
-        var p = {
-          startTime: nowtmstp,
-          //endTime: 1456763106,
-          place__latitude: true,
-          place__longitude: true,
-          place__zoom: true,
-          topics: true,
-          url: true,
-          //limit: 1,
-          random: 0.40452415758106963
-        };
-
-        var str = "";
-        for(var key in p) {
-          if(str!="") {
-            str+="&";
-          }
-          str += key+"="+encodeURIComponent(p[key]);
-        }
-        var demo = demcity+"/event-list-json"//;+"?"+str;
-        console.log("URL",demo);
-        //var url = "http://whateverorigin.org/get?url="+demo+"&callback=?";
-        //var url = "http://cors.io/?u="+demo;
-        var url = demo;
-        $http({
-            method: 'GET',
-            url: url
-        }).
-        success(function(status) {
-          console.log("S",status);
-        }).
-        error(function(status) {
-          console.log("E",status);
-        });
-
-        // $http({
-        //   url: url,
-        //   //params: p,
-        //   method: 'GET',
-        //   transformResponse: [function (data) {
-        //       // Do whatever you want!
-        //       console.log("Here is the",data);
-        //       return data;
-        //   }]
-        // });
-
-        // $http
-        // .get(demcity + "/event-list-json", { params: p })
-        // //.get(url)
-        // .success(function(json) {
-        //   console.log("Demosph:",json);
-        //   _.each(json.events, function(e) {
-        //     addMarker({
-        //       source: "demosphere",
-        //       name: e.time,
-        //       description: e.title,
-        //       address: e.place_city_name,
-        //       web: u+e.url,
-        //       lat: e.place__latitude,
-        //       lng: e.place__longitude
-        //     });
-        //   });
-        //   callb();
-        // });
-
-      }, function(err) {
-        console.log("All demosphere done.");
-        c.loaded = false;
-        c.active = true;
-        callback();
+      async.parallel(
+        _.map(c.cities, function(basedemurl) {
+          return function(callb) { fetch_a_demo(c,basedemurl,callb); };
+        })
+        , function(err,results) {
+          console.log("All demosphere done.");
+          c.loaded = false;
+          c.active = true;
+          callback();
       });
+    };
+    var fetch_a_demo = function(c,basedemurl,callb) {
+
+      var nowtmstp = parseInt(Date.now()/1000);
+      //console.log("date",nowtmstp);
+      var p = {
+        startTime: nowtmstp,
+        //endTime: 1456763106,
+        place__latitude: true,
+        place__longitude: true,
+        place__zoom: true,
+        topics: true,
+        url: true,
+        //limit: 1,
+        random: 0.40452415758106963
+      };
+
+      var str = "";
+      for(var key in p) {
+        if(str!="") {
+          str+="&";
+        }
+        str += key+"="+encodeURIComponent(p[key]);
+      }
+      var demo = basedemurl+"/event-list-json"//;+"?"+str;
+      console.log("URL",demo);
+      //var url = "http://whateverorigin.org/get?url="+demo+"&callback=?";
+      //var url = "http://cors.io/?u="+demo;
+      var url = demo;
+      $http({
+          method: 'GET',
+          url: url
+      }).
+      success(function(status) {
+        console.log("S",status);
+      }).
+      error(function(status) {
+        console.log("E",status);
+      });
+
+      // $http({
+      //   url: url,
+      //   //params: p,
+      //   method: 'GET',
+      //   transformResponse: [function (data) {
+      //       // Do whatever you want!
+      //       console.log("Here is the",data);
+      //       return data;
+      //   }]
+      // });
+
+      // $http
+      // .get(basedemurl + "/event-list-json", { params: p })
+      // //.get(url)
+      // .success(function(json) {
+      //   console.log("Demosph:",json);
+      //   _.each(json.events, function(e) {
+      //     addMarker({
+      //       source: "demosphere",
+      //       name: e.time,
+      //       description: e.title,
+      //       address: e.place_city_name,
+      //       web: u+e.url,
+      //       lat: e.place__latitude,
+      //       lng: e.place__longitude
+      //     });
+      //   });
+      //   callb();
+      // });
+
+      callb();
     };
 
     ///////////////////////////////////////////////////////////////
@@ -4682,15 +4689,19 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
 
     ///////////////////////////////////////////////////////////////
     $scope.toggleMapLegendAll = function() {
-      async.each($scope.meta.mapcredits, function(c,callb) {
-        c.active = true;
-        if(!c.loaded)
-          loadCredit(c,callb);
-        else
-          callb();
-      }, function(err) {
-        buildSearchControl();
-        updateMapStyles();
+      async.parallel(
+        _.map($scope.meta.mapcredits, function(c) {
+          return function(callb) {
+            c.active = true;
+            if(!c.loaded)
+              loadCredit(c,callb);
+            else
+              callb();
+          };
+        })
+        , function(err,results) {
+          buildSearchControl();
+          updateMapStyles();
       });
     };
     $scope.toggleMapLegendNone = function() {
@@ -4727,11 +4738,12 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
         // now FETCH data (only of big screen)
         if(!$scope.settings.smallDevice) {
 
-          async.each($scope.meta.mapcredits, function(c,callb) {
+          async.parallel(
+            _.map($scope.meta.mapcredits, function(c) {
+              return function(callb) { loadCredit(c,callb); };
+            })
+            , function(err,results) {
 
-            loadCredit(c,callb);
-
-          }, function(err) {
             console.log("All map data fetchs done. Bravo.");
 
             buildSearchControl();
@@ -4742,11 +4754,12 @@ angular.module('manifest.mapcontroller', ['underscore','config'])
             //$timeout(function(){ $scope.state.loading = false; });
             //$scope.state.mapstatus = "DONE";
           });
+
         } else {
           console.log("Not loading map data 'cause small screen");
         }
         
-      })
+      });
       
     });
     
