@@ -3516,7 +3516,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,langs:['fr','es','en'],datapath:'data/',assets:'build/',lastupdate:'20 June 2016 - 9:30'})
+.constant('settings', {dev:false,langs:['fr','es','en'],datapath:'data/',assets:'build/',lastupdate:'20 June 2016 - 9:21'})
 
 ;
 ;
@@ -4482,6 +4482,11 @@ angular.module('manifest.maincontroller', ['underscore','config'])
           }
           if(c.slug=='ecole' || c.slug=='fermav') {
             name = m.properties.Name;
+          }
+          if(c.slug=='collec') {
+            name = m.properties.name;
+            description = "Collecteurs de déchets";
+            web = m.properties.description;
           }
 
           addMarker({

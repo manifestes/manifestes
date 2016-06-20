@@ -960,6 +960,11 @@ angular.module('manifest.maincontroller', ['underscore','config'])
           if(c.slug=='ecole' || c.slug=='fermav') {
             name = m.properties.Name;
           }
+          if(c.slug=='collec') {
+            name = m.properties.name;
+            description = "Collecteurs de déchets";
+            web = m.properties.description;
+          }
 
           addMarker({
             source: c.slug,

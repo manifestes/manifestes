@@ -1667,6 +1667,18 @@
 "icon_size": [32,33],
 "icon_anchor": [16,33],
 "popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [1.834087, 48.968726]},
+		"id":"213",
+		"properties": {
+			"title":"\u00c9p\u00f4ne (78680)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.bastamag.net\/L-antithese-des-centres-commerciaux-un-supermarche-bio-a-basse-consommation-d' target='_blank'>L&#8217;antith\u00e8se des centres commerciaux&nbsp;: un supermarch\u00e9 bio \u00e0 basse consommation d&#8217;\u00e9nergie soutenu par la finance solidaire<\/a><\/div>\n\t<div class=\"texte\">Situ\u00e9e \u00e0 50 kilom\u00e8tres \u00e0 l\u2019ouest de Paris, entre Ep\u00f4ne et Mantes-la-ville, la biocoop du Mantois est l\u2019un des premiers b\u00e2timents commerciaux vraiment \u00e9colos d\u2019\u00eele-de-France. Solidement isol\u00e9e, la construction r\u00e9cup\u00e8re l\u2019eau de pluie, et produit de l\u2019\u00e9lectricit\u00e9 via des panneaux solaires pos\u00e9s sur une&nbsp;(...)<\/div>\n<\/div>"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-70.png",
+"icon_size": [33,33],
+"icon_anchor": [16.5,33],
+"popup_anchor": [1,-27.5]
 		}}
 	]
 }

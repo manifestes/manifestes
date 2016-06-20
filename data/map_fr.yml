@@ -162,6 +162,13 @@ mapcredits:
         url: http://www.fermesdavenir.org/
         type: geojson
         _kmz: https://mapsengine.google.com/map/kml?mid=1fy6Fta6qnNkzLroBSTNCggzIVXY
+    -   slug: collec
+        name: Collecteurs de déchets
+        description: "Un Trash Hero jette aussi peu\nde déchets que possible,\nréutilise autant que possible"
+        color: 00008b
+        url: https://framacarte.org/fr/map/collecteur-de-dechets-trash-heroes_3556
+        type: geojson
+        _geojson: https://framacarte.org/fr/datalayer/5289/
     -   slug: demos
         name: Démosphère
         description: "Démosphère est un agenda web indépendant\nde toute organisation ou parti"
