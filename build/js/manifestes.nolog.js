@@ -3516,7 +3516,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,langs:['fr','es','en'],datapath:'data/',assets:'build/',lastupdate:'19 June 2016 - 10:00'})
+.constant('settings', {dev:false,langs:['fr','es','en'],datapath:'data/',assets:'build/',lastupdate:'20 June 2016 - 9:25'})
 
 ;
 ;
@@ -4724,7 +4724,7 @@ angular.module('manifest.maincontroller', ['underscore','config'])
       if(c) {
         c.active = !c.active;
         
-        if(c.active && !c.loaded) {
+        if(c.active && !c.loaded && !c.loading) {
           loadCredit(c, function() {
             buildSearchControl();
             updateMapStyles();

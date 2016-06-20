@@ -1201,7 +1201,7 @@ angular.module('manifest.maincontroller', ['underscore','config'])
       if(c) {
         c.active = !c.active;
         
-        if(c.active && !c.loaded) {
+        if(c.active && !c.loaded && !c.loading) {
           loadCredit(c, function() {
             buildSearchControl();
             updateMapStyles();
