@@ -3516,7 +3516,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,langs:['fr','es','en'],datapath:'data/',assets:'build/',lastupdate:'20 June 2016 - 9:25'})
+.constant('settings', {dev:false,langs:['fr','es','en'],datapath:'data/',assets:'build/',lastupdate:'21 June 2016 - 10:54'})
 
 ;
 ;
@@ -4340,10 +4340,10 @@ angular.module('manifest.maincontroller', ['underscore','config'])
       // MakiMarkers !
       var icon = 'circle';
       //var color = "#"+credit.color || "#000";
-      var size = $scope.settings.smallDevice ? [13,13] : [9,9];
+      var size = $scope.settings.smallDevice ? [15,15] : [9,9];
       // icons use maki-markers: https://www.mapbox.com/maki/
       if(/region/.test(m.scale)) {
-        size = $scope.settings.smallDevice ? [14,14] : [11,11];
+        size = $scope.settings.smallDevice ? [17,17] : [11,11];
         //icon = "land-use";
       }
       if(/city/.test(m.scale)) {
@@ -4359,7 +4359,7 @@ angular.module('manifest.maincontroller', ['underscore','config'])
         //icon = "heart";
       }
       if(/list/.test(m.tags)) {
-        size = $scope.settings.smallDevice ? [17,17] : [15,15];
+        size = $scope.settings.smallDevice ? [19,19] : [15,15];
       }
 
 

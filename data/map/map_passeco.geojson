@@ -1,90 +1,6 @@
 {"type": "FeatureCollection",
 	"features": [
 		{"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [7.1790785, 43.9210587]},
-"id":"2671",
-"properties": {
-	"title":"<a href=\"11475\">Cr\u00e9ation d'un \u00c9co-Lieu Int\u00e9grant des Personnes&nbsp;(...)<\/a>",
-	"description":"Projet : \u00e9co-lieu visant \u00e0 l'accueil, l'h\u00e9bergement et la th\u00e9rapie avec le cheval des personnes en situation de handicap + exploitation agricole \u00e9cologique, h\u00f4teli\u00e8re (\u00e9co-chalets), installations&nbsp;(...)"
-	,
-"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/72\/7d4247b16daff336e9b02b1d573ac5.png?1460667791",
-"icon_size": [32,32],
-"icon_anchor": [16,32],
-"popup_anchor": [1,-26.67],
-"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
-"shadow_size": [32,32]
-}},
-{"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [4.8725016, 44.0066403]},
-"id":"2672",
-"properties": {
-	"title":"<a href=\"11477\">Type Woofing<\/a>",
-	"description":"Cherche :  jardinier bricoleur r\u00eaveur pour remise en \u00e9tat et entretien jardin permaculturel. Offre : pension bio, chambre lumineuse dans pavillon calme, moments de m\u00e9ditation partag\u00e9e. &diams;&nbsp;(...)"
-	,
-"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/e9\/0050aa580b65fb64cce3b4210e27ef.png?1460667789",
-"icon_size": [32,32],
-"icon_anchor": [16,32],
-"popup_anchor": [1,-26.67],
-"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
-"shadow_size": [32,32]
-}},
-{"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [2.539666, 44.3766151]},
-"id":"2673",
-"properties": {
-	"title":"<a href=\"11478\">Vend Yourte Contemporaine Rainier 9M40 \/ 70&nbsp;(...)<\/a>",
-	"description":"Vend  :  yourte contemporaine Rainier, 70m\u00b2 habitables, diam 9m40, H 4m50, plancher d\u00e9montable, isolation feutrine, toile murs \u00e9tanche. &diams; Possible de construire mezzanine pour surface de 90m\u00b2.&nbsp;(...)"
-	,
-"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/ca\/bb5220bb22692442451343becfdfec.png?1460667791",
-"icon_size": [32,32],
-"icon_anchor": [16,32],
-"popup_anchor": [1,-26.67],
-"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
-"shadow_size": [32,32]
-}},
-{"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [1.370189, 43.104488]},
-"id":"2674",
-"properties": {
-	"title":"<a href=\"11479\">Qui N'Essaie Rien N'a Rien ! Alors Je&nbsp;(...)<\/a>",
-	"description":"Projet : donner des cours de th\u00e9\u00e2tre itin\u00e9rants et sillonner la France ! Cherche  :  une roule baraque (caravane) pour me suivre et me servir d'habitat, en bon \u00e9tat, \u00e0 donner, pr\u00eater ou vendre \u00e0 petit&nbsp;(...)"
-	,
-"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/13\/33491c246e4ca59652d4dcbd49d043.png?1460669431",
-"icon_size": [32,32],
-"icon_anchor": [16,32],
-"popup_anchor": [1,-26.67],
-"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
-"shadow_size": [32,32]
-}},
-{"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [5.32539, 49.25283]},
-"id":"2675",
-"properties": {
-	"title":"<a href=\"11480\">Vends Bel Espace \u00e0 Vivre dans Structure&nbsp;(...)<\/a>",
-	"description":"Vend :  ancienne ferme en U, 6653m\u00b2, habitation 440m\u00b2 isol\u00e9e avec mat\u00e9riaux \u00e9co (paille bio, ouate de cellulose, laine de bois, paille compress\u00e9e, enduits terre\/paille et chaux\/chanvre, peinture chaux&nbsp;(...)"
-	,
-"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/53\/e71923e618a3a6a7a252e3e3a224ab.png?1462805790",
-"icon_size": [32,32],
-"icon_anchor": [16,32],
-"popup_anchor": [1,-26.67],
-"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
-"shadow_size": [32,32]
-}},
-{"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [1.391458, 43.15179]},
-"id":"2676",
-"properties": {
-	"title":"<a href=\"11481\">Projet d'\u00c9co-Lieu en Ari\u00e8ge ou R\u00e9gion Sud-Ouest<\/a>",
-	"description":"Projet : Former un groupe de partenaires pour cr\u00e9er ensemble un lieu de ressourcement, d'\u00e9veil et d\u2019accueil. Le faire rayonner dans l'ouverture sur l'ext\u00e9rieure par des activit\u00e9s sociales et&nbsp;(...)"
-	,
-"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/13\/33491c246e4ca59652d4dcbd49d043.png?1460669431",
-"icon_size": [32,32],
-"icon_anchor": [16,32],
-"popup_anchor": [1,-26.67],
-"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
-"shadow_size": [32,32]
-}},
-{"type": "Feature",
 "geometry": {"type": "Point", "coordinates": [5.5703031, 43.2924385]},
 "id":"2677",
 "properties": {
@@ -2864,6 +2780,62 @@
 	"description":"Journ\u00e9e  :  pour d\u00e9couvrir les jardins, apprendre et faire tout en se rencontrant et en partageant, partant du principe que chacun a quelque chose \u00e0 apprendre de l'autre et vice versa !  &diams;&nbsp;(...)"
 	,
 "icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/5c\/0bda0a628ef475c001f9b751d5a8ae.png?1460669431",
+"icon_size": [32,32],
+"icon_anchor": [16,32],
+"popup_anchor": [1,-26.67],
+"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [2.0313499, 44.4368808]},
+"id":"2888",
+"properties": {
+	"title":"<a href=\"11719\">D\u00e9tente et Bien-\u00catre : Weekend le Cocon<\/a>",
+	"description":"Projet : Je vous propose un grand week-end de d\u00e9tente dans le calme verdoyant du Mas de Jammes, \u00e9co-lieu en Aveyron massage des mains et des pieds, massage complet aux pierres chaudes, relaxation,&nbsp;(...)"
+	,
+"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/ca\/bb5220bb22692442451343becfdfec.png?1460667791",
+"icon_size": [32,32],
+"icon_anchor": [16,32],
+"popup_anchor": [1,-26.67],
+"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [-1.6800197, 48.1113387]},
+"id":"2889",
+"properties": {
+	"title":"<a href=\"11721\">Architecte \/ Charpentier Aide Projet Eco-Construct<\/a>",
+	"description":"Projet : Je suis Architecte et Charpentier, 20 ans exp\u00e9rience, r\u00e9alisations vari\u00e9es, site internet en cours. Je suis heureux de travailler pour des r\u00e9alisations vivantes, \u00e9colo, en bonne relation avec&nbsp;(...)"
+	,
+"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/23\/097cbd956742dda7c8063f0ce491e6.png?1460667791",
+"icon_size": [32,32],
+"icon_anchor": [16,32],
+"popup_anchor": [1,-26.67],
+"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [2.1092316, 44.5480051]},
+"id":"2890",
+"properties": {
+	"title":"<a href=\"11723\">Le Broglio Veut s'\u00c9largir<\/a>",
+	"description":"Projet : Les buttes potag\u00e8res existent d\u00e9j\u00e0, les arbres commencent \u00e0 produire, nous pouvons cohabiter \u00e0 20 l'\u00e9t\u00e9... Ce n'est plus une \u00e9table mais une maison bien confortable (plancher chauffant et&nbsp;(...)"
+	,
+"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/ca\/bb5220bb22692442451343becfdfec.png?1460667791",
+"icon_size": [32,32],
+"icon_anchor": [16,32],
+"popup_anchor": [1,-26.67],
+"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [4.0236755, 44.4177724]},
+"id":"2891",
+"properties": {
+	"title":"<a href=\"11725\">Chien de Berger<\/a>",
+	"description":"Projet : Chien de berger border collier crois\u00e9 berger picard, m\u00e2le, 1 an, dress\u00e9 sur troupeau caprin, bon caract\u00e8re, \u00e0 vendre prix 400 euros, cause surnombre chiens de travail. Demande : De bons soins&nbsp;(...)"
+	,
+"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/bd\/e3d2ab78264e95749d88639d3b5206.png?1460669431",
 "icon_size": [32,32],
 "icon_anchor": [16,32],
 "popup_anchor": [1,-26.67],

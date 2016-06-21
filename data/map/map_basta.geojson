@@ -1679,6 +1679,54 @@
 "icon_size": [33,33],
 "icon_anchor": [16.5,33],
 "popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.387691, 48.655897]},
+		"id":"215",
+		"properties": {
+			"title":"Grigny (91350)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.bastamag.net\/Ces-villes-qui-experimentent-les' target='_blank'>Ces villes qui exp\u00e9rimentent les services publics gratuits - Basta&nbsp;!<\/a><\/div>\n\t<div class=\"texte\">Les exp\u00e9riences de gratuit\u00e9 se multiplient dans les services publics locaux. Transports en commun totalement gratuits \u00e0 Aubagne ou Ch\u00e2teauroux, (...)<\/div>\n<\/div>"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-16.png",
+"icon_size": [32,33],
+"icon_anchor": [16,33],
+"popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.208628, 48.555891]},
+		"id":"216",
+		"properties": {
+			"title":"Boissy-sous-Saint-Yon (91790)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.kaizen-magazine.com\/retour-la-terre-en-ile-de-france\/' target='_blank'>Retour \u00e0 la terre en \u00cele-de-France<\/a><\/div>\n\t<div class=\"texte\">L\u2019Ile-de-France est autonome \u00e0 moins de 5% pour la viande, 5% pour les fruits, et 10% pour les l\u00e9gumes. Pourtant quelques irr\u00e9ductibles franciliens ouvrent la voie pour acqu\u00e9rir davantage d\u2019ind\u00e9pendance.<\/div>\n<\/div>"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+"icon_size": [34,32],
+"icon_anchor": [17,32],
+"popup_anchor": [1,-26.67]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.093901, 49.037728]},
+		"id":"217",
+		"properties": {
+			"title":"Pontoise (95000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.bastamag.net\/Alternatiba-cet-autre-monde-qui' target='_blank'>Alternatiba&nbsp;: cet &#171;&nbsp;autre monde&nbsp;&#187; qui vient d&#8217;en bas - Basta&nbsp;!<\/a><\/div>\n\t<div class=\"texte\">Un premier village des alternatives sociales et \u00e9cologiques, Alternatiba, s\u2019est tenu en \u00cele-de-France, \u00e0 Gonesse (Val d\u2019Oise). L\u2019occasion pour les (...)<\/div>\n<\/div>"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-117.png",
+"icon_size": [32,33],
+"icon_anchor": [16,33],
+"popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.45993, 48.851739]},
+		"id":"218",
+		"properties": {
+			"title":"Fontenay-sous-Bois (94120)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.kaizen-magazine.com\/batir-sans-exclure\/' target='_blank'>B\u00e2tir sans exclure - Kaizen magazine<\/a><\/div>\n\t<div class=\"texte\">Depuis vingt-cinq ans, Solidarit\u00e9s Nouvelles pour le Logement propose \u00ab d\u2019agir ensemble pour le logement \u00bb. Gr\u00e2ce \u00e0 la mobilisation de citoyens b\u00e9n\u00e9voles,<\/div>\n<\/div>"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-70.png",
+"icon_size": [33,33],
+"icon_anchor": [16.5,33],
+"popup_anchor": [1,-27.5]
 		}}
 	]
 }
