@@ -124,18 +124,18 @@ content: >
 
 
 ---
-status: draft
 date: 2016-06-17
 title: Une société sans école
-subtitle: 
+subtitle: "Vers une véritable éducation qui prépare à la vie, qui donne le goût d'inventer et d'expérimenter"
 tags: education
 image:
 quote:
-    author: 
-    content:
+    author: P. Freire
+    content: >
+        Personne n'éduque autrui, personne ne s'éduque seul, les hommes s'éduquent ensemble par l'intermédiaire du monde
 source: Une société sans école, Ivan Illich
 content: >
-    L'Ecole obligatoire, la scolarité prolongée, la course aux diplômes, autant de faux progrès. Dévotions rituelles où la société de consommation se rend à elle-même son propre culte, où elle produit des élèves dociles prêts à obéïr aux institutions, à consommer. A tout cela, il faut substituer **une véritable éducation qui prépare à la vie, qui donne le goût d'inventer et d'expérimenter**. Il faut libérer la jeunesse de cette longue gestation scolaire qui la conforme au modèle officiel. Alors, les nations pauvres cesseront d'imiter cette coûteuse erreur.
+    L'Ecole obligatoire, la scolarité prolongée, la course aux diplômes, autant de faux progrès. Dévotions rituelles où la société de consommation se rend à elle-même son propre culte, où elle produit des élèves dociles prêts à obéïr aux institutions, à consommer. À tout cela, il faut substituer **une véritable éducation qui prépare à la vie, qui donne le goût d'inventer et d'expérimenter**. Il faut libérer la jeunesse de cette longue gestation scolaire qui la conforme au modèle officiel. Alors, les nations pauvres cesseront d'imiter cette coûteuse erreur.
 
 
     Plus de crédits démesurés aus institutions (scolaires ou autres). **Que les moyens d'aquérir ou de transmettre un savoir soient mis en commun et librement accessible à tous**. Plus de maîtres à la fois gardiens de l'ordre établi, prédicateurs et thérapeutes. Mais des échanges entre égaux, des éducateurs indépendants...
@@ -1124,26 +1124,36 @@ content: >
 
 
 ---
-status: draft
 date: 2016-04-19
 title: Le pouvoir de poser la question
-subtitle: On lutte contre quoi ? Le droit de poser les bonnes questions
+subtitle: On lutte pour quoi ? Le droit de poser les bonnes questions
 tags: politics philo
+image:
+quote:
+    author: Martin Luther King
+    content: >
+        À la fin, nous ne nous souviendrons pas des mots de nos ennemis, mais du silence de nos amis.
 source: Luc Boltanski, Arnaud Desquerre, Vers l’extrême, Editions Dehors, 2014, pp. 58-59
 content: >
-    Car les luttes politiques se jouent toujours à la frontière du dicible et de l’indicible. Elles ont pour enjeu non seulement des options dans des domaines particuliers, mais aussi et surtout la clôture du champ de la problématique acceptable. **La définition de ce qui fait problème, de ce qui est urgent**, des « questions » centrales qui, qu’on le veuille ou non, s’imposent à tous.
+    Car les luttes politiques se jouent toujours à la frontière du dicible et de l’indicible. Elles ont pour enjeu non seulement *des options dans des domaines particuliers*, mais aussi et surtout *la clôture du champ de la problématique acceptable*. **La définition de ce qui fait problème, de ce qui est urgent**, des *questions* centrales qui, qu’on le veuille ou non, s’imposent à tous.
 
 
-    C’est ainsi, par exemple, que la nécessité d’apporter une solution à la *question juive* a pu, dans la France de la première moitié du XXe siècle, être, très généralement, considérée comme un problème *vital*, y compris par ceux qui auraient préféré le résoudre par les moyens *humains*, tolérants et pacifiques. En politique aussi, les catastrophes sont toujours possibles.
+    C’est ainsi, par exemple, que la nécessité d’apporter une solution à la *question juive* a pu, dans la France de la première moitié du XXe siècle, être, très généralement, considérée comme *un problème vital*, y compris par ceux qui auraient préféré le résoudre par des *moyens humains*, tolérants et pacifiques.
+
+
+    En politique aussi, les catastrophes sont toujours possibles.
 
 
 ---
-status: draft
 date: 2016-04-19
 title: Ce monde tient sur notre impuissance
 subtitle: Réfléchir aux bonnes questions que nous voudrions poser à ce monde nécessite de faire un pas de côté, pour échapper aux maîtres des écrans
 tags: media alienation
-source: "Serge Quadruppani[Le pouvoir de poser la question](lundi.am//)"
+image:
+quote:
+    author: Antonin Artaud
+    content: Ce qu'il y a encore d'infernal dans ce temps, c'est de s'attarder artistiquement sur des formes au lieu d'être comme des suppliciés que l'on brûle et qui font des signes sur leur bûcher
+source: "Serge Quadruppani, [Le pouvoir de poser la question](https://lundi.am/Le-pouvoir-de-poser-la-question)"
 content: >
     *Ce qui fait tenir ce monde* n’est pas, comme le répètent encore quelques benêts militants, que *les gens* auraient besoin d’être *conscientisés*. Que le personnel des partis de gouvernement mérite le mépris universel, qu’une hyperbourgeoisie prédatrice ravage la planète en provoquant des guerres et des catastrophes, qu’il y ait quelque chose de pourri dans notre mode de vie, **ce sont désormais des faits acquis** auprès d’un très grand nombre de gens, comme le démontrent tant de conversations dans ces lieux où les puissants ne vont jamais, du bistrot aux transports en commun en passant par les centres commerciaux.
 
@@ -1323,24 +1333,30 @@ content: >
 
 
 ---
-status: draft
 date: 2016-02-27
 title: La pub, instrument d'un culte
 subtitle: Incessant défilé d'images et de slogans mercantiles dans l'espace public
 tags: companies alienation education
+image:
+quote:
+    author: "Manifeste [Technologos.fr](http://www.technologos.fr)"
+    content: >
+        Nous pensons que pour oublier les vicissitudes du travail, les humains s'abandonnent aux biens de consommation, au point d'ériger la consommation en *culture*.
+
+
+        La publicité n'est pas un simple moyen de propagande, c'est l'instrument d'un culte.
 source: "[Collectif des déboulonneurs](http://www.deboulonneurs.org)"
 content: >
     L'affichage publicitaire, c'est la confiscation de l'espace public et son exploitation mercantile. Nous sommes libres de lire ou non un journal, d'écouter ou non la radio, de regarder ou non la télévision... mais pas de flâner sans être confronté à un incessant défilé d'images et de slogans. Laide et dangereuse, cette débauche graphique salit notre cadre de vie, réduit notre liberté de penser et notre faculté de rêver.
 
 
-    **La publicité crée de faux besoins et pousse à la surconsommation**, au gaspillage et à la pollution. La publicité fait l'apologie de comportements irresponsables, individualistes et sexistes. À l'échelle de la planète, la publicité engouffre plus de 1000 milliards d'euros par an : c'est le premier budget mondial, à égalité avec les dépenses militaires. La publicité est l'un des fondements de ce système toujours plus avide de croissance et d'argent.
+    **La publicité crée de faux besoins et pousse à la surconsommation**, au gaspillage et à la pollution. La publicité fait l'apologie de comportements irresponsables, individualistes et sexistes. À l'échelle de la planète, la publicité engouffre plus de 1000 milliards d'euros par an : **c'est le premier budget mondial, à égalité avec les dépenses militaires**. La publicité est l'un des fondements de ce système toujours plus avide de croissance et d'argent.
 
 
-    Nous n'en voulons plus.
+    **Nous n'en voulons plus.**
 
 
 ---
-status: draft
 date: 2016-05-19
 title: Suppression de la publicité
 subtitle: Arrêtons la propagande des multinationales prônant un consumérisme idiot
@@ -1409,31 +1425,39 @@ content: >
 
 
 ---
-status: draft
-date: 2016-01-07
+date: 2016-07-20
 title: Devenir végétarien
 subtitle: Si tu ne le fais pas pour les autres, fais-le pour toi
 tags: agriculture earth eat
 image:
 quote:
-    author: —
+    author:
     content: Un végétarien en hummer pollue moins qu'un omnivore en vélo
 source: "[Ce que manger veut dire](http://www.monde-diplomatique.fr/mav/142/)"
 content: >
-    On n’a jamais mangé autant de viande dans le monde qu’aujourd’hui : 60 millions d’animaux meurent chaque année pour nourrir les hommes. 
+    On n’a jamais mangé autant de viande dans le monde qu’aujourd’hui : 60 millions d’animaux meurent chaque année pour nourrir les hommes. Même si l'on souhaite ignorer le problème de la souffrance animale, notamment dans le cadre de l'élevage intensif, **on ne peut pas continuer à manger de la viande sans être conscient de certains faits** :
 
-    Même si l'on souhaite ignorer le problème de la souffrance animale, notamment dans le cadre de l'élevage intensif, on ne peut pas continuer à manger de la viande sans être conscient de certains faits :
 
-    Il faut 15 500 litres d’eau pour produire un kg de viande de bœuf. 5 000 litres pour un kilo de fromage, 4 800 litres pour un kilo de porc et 3 900 litres pour un kilo de poulet.
+    - Il faut 15 500 litres d’eau pour produire un kg de viande de bœuf
 
-    La production d’une calorie animale nécessite quatre fois plus de terres que la production d’une calorie végétale. l’élevage emploie 70 % des terres cultivées.  
+    - 5 000 litres pour un kilo de fromage
 
-    Epuisement des sols, utilisation abusive des ressources en eau, pollution des nappes phréatiques, changement climatique, manque de surfaces agricoles : ce rythme est intenable. 
+    - 4 800 litres pour un kilo de porc
+
+    - 3 900 litres pour un kilo de poulet
+
+    - la production d’une calorie animale nécessite quatre fois plus de terres que la production d’une calorie végétale
+
+    - **l’élevage emploie 70 % des terres cultivées dans le monde**
+
+
+    Epuisement des sols, utilisation abusive des ressources en eau, pollution des nappes phréatiques, changement climatique, manque de surfaces agricoles : **ce rythme est intenable**.
 
 
 ---
 date: 2015-11-18
 title: Relocaliser l'économie
+subtitle: "Relocaliser les productions agricoles, permettre aux petits paysans de vivre de leur travail, c'est fournir une alimentation de qualité et non polluante"
 tags: agriculture economy
 image:
     url: warsheep.jpg
@@ -1502,11 +1526,15 @@ content: >
 
 
 ---
-status: draft
 date: 2016-05-05
 title: "État, police, économie"
-subtitle: Réformes, réformes, réformes, relances de la croissance
+subtitle: "Dans une situation économique de crise, l’État se déleste de ses fonctions sociales pour se recentrer sur l’essentiel : relancer l’économie"
 tags: politics economy alienation
+image:
+quote:
+    author: "[Décroissance, vocabulaire pour une nouvelle ère](http://lepassagerclandestin.fr/catalogue/hors-collection/decroissance-vocabulaire-pour-une-nouvelle-ere.html)"
+    content: >
+        Lorsque la langue usuelle ne permet plus d’exprimer ce qui demande à être articulé d’urgence, c’est qu’il est temps d'apprendre un nouveau vocabulaire.
 source: "[L'autonomie ou rien](lundi.am//)"
 content: >
     Le capitalisme est une totalité duale, avec des structures **économiques** : *travail, valeur, marchandise, argent* d’un côté et des catégories nécessaires à son **fonctionnement et sa reproduction** : *droit, justice, police, armée, gouvernement* de l’autre.
@@ -1686,19 +1714,24 @@ content: >
 
 
 ---
-status: draft
-date: 2016-06-17
+date: 2016-06-19
 title: La paresse
-subtitle:
+subtitle: "Cette paresse qui permet à beaucoup d’entre nous de continuer à vivre dans un système que l’on vomit"
 tags: act philo politics
 image:
 quote:
+    author: Martin Luther King
+    content: >
+        Ce qui m’effraie, ce n’est pas l’oppression des méchants, c’est l’indifférence des bons.
 source: "[Alors qu’est-ce que ça donne, Nuit Debout ?](https://blogs.mediapart.fr/gazette-debout/blog/160616/alors-qu-est-ce-que-ca-donne-nuit-debout)"
 content: >
     Il y a de la paresse, sûrement, dans cette volonté de reléguer au second plan la question du sens, **cette même paresse qui permet à beaucoup d’entre nous de continuer à vivre dans un système que l’on vomit**, à travailler dans des entreprises dont on méprise et subit l’organisation, les valeurs.
 
 
-    Un système qui nous conduit à mettre des cravates ou des talons aiguilles, à faire machinalement des sourires à ceux qu’on déteste ou des enfants à ceux qu’on aime, à voter utile, à voter inutile. **Bref à se concentrer sur le pas suivant plutôt que sur la destination pour ne pas voir l’abîme.**
+    Un système qui nous conduit à mettre des cravates ou des talons aiguilles, à faire machinalement des sourires à ceux qu’on déteste ou des enfants à ceux qu’on aime, à voter utile, à voter inutile.
+
+
+    **Bref à se concentrer sur le pas suivant plutôt que sur la destination pour ne pas voir l’abîme.**
 
 
 ---

@@ -12,10 +12,12 @@
 
         Pourquoi voulez-vous exclure de votre vie toute inquiétude, toute souffrance, toute mélancolie alors que vous ignorez leur travail en vous ?
 -
+    used: true
     author: Martin Luther King
     content: >
         Ce qui m’effraie, ce n’est pas l’oppression des méchants, c’est l’indifférence des bons.
 -
+    used: true
     author: Martin Luther King
     content: >
         À la fin, nous ne nous souviendrons pas des mots de nos ennemis, mais du silence de nos amis.
@@ -355,6 +357,7 @@
     author: 
     content: Les bourgeois nous traitent comme des chiens. Il est temps de mordre.
 -
+    used: true
     author: P. Freire
     content: >
         Personne n'éduque autrui, personne ne s'éduque seul, les hommes s'éduquent ensemble par l'intermédiaire du monde
@@ -364,8 +367,9 @@
     content: Il ne s’agit plus de dire que des personnes très riches s’arrogent fortune et pouvoir, nous avons plutôt affaire à des entités qui comprennent **aussi bien des éléments humains que non humains**, comme les logiciels de la finance. Ces formations sont des assemblages d’agents économiques puissants, de marchés, de technologies et de gouvernements
     tags: companies
 -
+    used: true
     author: Antonin Artaud
-    content: Ce qu'il y a encore d'infernal dans ce temps, c'est de s'attarder artistiquement sur des formes au lieu d'être comme des suppliciés que l'on brûle et qui font des signes sur leur bucher
+    content: Ce qu'il y a encore d'infernal dans ce temps, c'est de s'attarder artistiquement sur des formes au lieu d'être comme des suppliciés que l'on brûle et qui font des signes sur leur bûcher
     tags: creation act
 -
     author: Hossein Derakhshan, blogueur, Iran
@@ -419,8 +423,10 @@
     content: Si on ne fait rien, personne ne le fera à notre place
     tags: act
 -
+    used: true
     author: "[Décroissance, vocabulaire pour une nouvelle ère](http://lepassagerclandestin.fr/catalogue/hors-collection/decroissance-vocabulaire-pour-une-nouvelle-ere.html)"
-    content: Lorsque la langue usuelle ne permet plus d’exprimer ce qui demande à être articulé d’urgence, c’est qu’il est temps d’apprendre un nouveau vocabulaire.
+    content: >
+        Lorsque la langue usuelle ne permet plus d’exprimer ce qui demande à être articulé d’urgence, c’est qu’il est temps d'apprendre un nouveau vocabulaire.
     tags: words
 -
     author: Paulo Coelho
@@ -512,7 +518,7 @@
     content: La nature permet l'autonomie gratuite. Et ça, pour le capital, c'est inacceptable
 -
     used: true
-    author: —
+    author:
     content: Un végétarien en hummer pollue moins qu'un omnivore en vélo
 -
     used: true
@@ -950,9 +956,10 @@
     author: Victor Hugo
     content: Il n'est rien au monde d'aussi puissant qu'une idée dont l'heure est venue.
 -
+    used: true
     author: "Manifeste [Technologos.fr](http://www.technologos.fr)"
     content: >
-        Nous pensons que pour oublier les vicissitudes du travail, les humains s'abandonnent aux biens de consommation, au point d'ériger la consommation en «culture».
+        Nous pensons que pour oublier les vicissitudes du travail, les humains s'abandonnent aux biens de consommation, au point d'ériger la consommation en *culture*.
 
 
         La publicité n'est pas un simple moyen de propagande, c'est l'instrument d'un culte.
