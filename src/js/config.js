@@ -1,5 +1,5 @@
 angular.module('config', [])
 
-.constant('settings', {dev:true,langs:['fr','es','en'],datapath:'../data/',assets:'./',lastupdate:'21 June 2016 - 10:54'})
+.constant('settings', {dev:true,langs:['fr','es','en'],datapath:'../data/',assets:'./',lastupdate:'23 June 2016 - 10:23'})
 
 ;

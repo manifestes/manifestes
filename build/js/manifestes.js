@@ -3516,7 +3516,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,langs:['fr','es','en'],datapath:'data/',assets:'build/',lastupdate:'21 June 2016 - 10:54'})
+.constant('settings', {dev:false,langs:['fr','es','en'],datapath:'data/',assets:'build/',lastupdate:'23 June 2016 - 10:23'})
 
 ;
 ;
@@ -4456,6 +4456,7 @@ angular.module('manifest.maincontroller', ['underscore','config'])
     };
 
     ///////////////////////////////////////////////////////////////
+    var MAXDESCR = 400;
     var fetch_geojson = function(c,callb) {
       //console.log("Fetch geojson:",c.slug,c);
       c.loading = true;
@@ -4465,28 +4466,36 @@ angular.module('manifest.maincontroller', ['underscore','config'])
         //console.log(c.slug,geoj);
         _.each(geoj.features, function(m) {
 
+          var prop = m.properties;
+
           // default
-          var name = totext(m.properties.title);
-          var description = m.properties.description;
+          var name = totext(prop.title);
+          var description = prop.description;
           var web =  "";
 
           if(c.slug=='report') {
             name = name.replace(/Il y a \d* jours./,"");
-            web = c.url +"/"+ m.properties.title.match(/href:\'([^\']*)\'/)[1];
+            web = c.url +"/"+ prop.title.match(/href:\'([^\']*)\'/)[1];
           }
           if(c.slug=='basta') {
-            web = m.properties.description.match(/<a href=\'([^\']*)\'/)[1];
+            web = prop.description.match(/<a href=\'([^\']*)\'/)[1];
           }
           if(c.slug=='passeco') {
-            web = c.url +"/"+ m.properties.title.match(/<a href=\"([^\"]*)\"/)[1];
+            web = c.url +"/"+ prop.title.match(/<a href=\"([^\"]*)\"/)[1];
           }
           if(c.slug=='ecole' || c.slug=='fermav') {
-            name = m.properties.Name;
+            name = prop.Name;
           }
           if(c.slug=='collec') {
-            name = m.properties.name;
+            name = prop.name;
             description = "Collecteurs de déchets";
-            web = m.properties.description;
+            web = prop.description;
+          }
+          if(c.slug=="cnlii") {
+            var ds = totext(prop.description).replace(/{{.*}}/,"");
+            name = prop.name;
+            description = ds.substring(0,MAXDESCR)+" [...]";
+            web = /\[\[.*\]\]/.test(ds) ? ds.match(/\[\[(.*)\]\]/)[1].split('|')[0] : "";
           }
 
           addMarker({
@@ -4588,9 +4597,29 @@ angular.module('manifest.maincontroller', ['underscore','config'])
     var fetch_demosphere = function(c,callback) {
       console.log("Fetch demosphere:",c.slug,c);
       c.loading = true;
+
+      // prepairing common parameters
+      var params = {
+        startTime: parseInt(moment().valueOf()/1000),
+        endTime: parseInt(moment().add(4,'days').valueOf()/1000),
+        place__latitude: true,
+        place__longitude: true,
+        //place__zoom: true,
+        //topics: true,
+        url: true,
+        //limit: 10,
+        //random: 0.4987987
+      };
+      var str = "";
+      for(var key in params) {
+        if(str!="") str+="&";
+        str += key+"="+params[key];//encodeURIComponent(p[key]);
+      }
+      var flatparams = "/event-list-json?"+str;
+
       async.parallel(
-        _.map(c.cities, function(basedemurl) {
-          return function(callb) { fetch_a_demo(c,basedemurl,callb); };
+        _.map(c.cities, function(baseurl) {
+          return function(callb) { fetch_a_demo(c,baseurl,baseurl+flatparams,callb); };
         })
         , function(err,results) {
           console.log("All demosphere done.");
@@ -4603,34 +4632,14 @@ angular.module('manifest.maincontroller', ['underscore','config'])
           callback();
       });
     };
-    var fetch_a_demo = function(c,basedemurl,callb) {
-
-      var p = {
-        startTime: parseInt(moment().valueOf()/1000),
-        endTime: parseInt(moment().add(4,'days').valueOf()/1000),
-        place__latitude: true,
-        place__longitude: true,
-        //place__zoom: true,
-        //topics: true,
-        url: true,
-        //limit: 10,
-        //random: 0.4987987
-      };
-
-      var str = "";
-      for(var key in p) {
-        if(str!="") str+="&";
-        str += key+"="+p[key];//encodeURIComponent(p[key]);
-      }
-      var demourl = basedemurl+"/event-list-json?"+str;//place__latitude=true&place__longitude=true&url=true&limit=7";//?"+str;
-      //console.log(demourl);
+    var fetch_a_demo = function(c,baseurl,longurl,callb) {
       /*
         bacause of CORS
         did not succeed with $http
         neither with http://whateverorigin.org (don't accept GET params)
         but like that seems OK
       */
-      $.getJSON('http://cors.io?u='+encodeURIComponent(demourl), function(data){
+      $.getJSON('http://cors.io?u='+encodeURIComponent(longurl), function(data){
         //console.log("RECEIVED:",data)
         _.each(data.events, function(e) {
           addMarker({
@@ -4638,7 +4647,7 @@ angular.module('manifest.maincontroller', ['underscore','config'])
             name: e.title,
             description: moment(e.start_time*1000).format("dddd Do MMMM, H[h]mm"),
             address: e.place__city__name,
-            web: basedemurl+e.url,
+            web: baseurl+e.url,
             lat: e.place__latitude,
             lng: e.place__longitude
           });
