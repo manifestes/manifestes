@@ -269,7 +269,8 @@ module.exports = function(grunt) {
       'data/map/map_ffdn.json':'https://db.ffdn.org/isp/map_data.json',
       'data/map/map_passeco.geojson':'http://www.ecovillageglobal.fr/spip.php?page=gis_json&objets=annonces&limit=500',
       'data/map/map_report.geojson':'http://reporterre.net/spip.php?page=gis_json&objets=articles&limit=500',
-      'data/map/map_collec.geojson':'https://framacarte.org/fr/datalayer/5289/'
+      'data/map/map_collec.geojson':'https://framacarte.org/fr/datalayer/5289/',
+      'data/map/map_cnlii.geojson':'https://umap.openstreetmap.fr/fr/datalayer/91000/'
     }
 
 

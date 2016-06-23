@@ -51,6 +51,54 @@ mapcredits:
         color: 4A787E
         url: http://utopies-concretes.org
         type: csv
+    -   slug: demos
+        name: Démosphère
+        description: "Démosphère est un agenda web\nindépendant de toute\norganisation ou parti"
+        color: ed9522
+        url: http://www.demosphere.eu/
+        type: demosphere
+        dontload: true
+        cities:
+            - http://bxl.demosphere.eu
+            - http://liege.demosphere.eu
+            - http://04.demosphere.eu
+            - http://alter49.org
+            - http://ariege.demosphere.eu
+            - http://berry.demosphere.eu
+            - http://bearn.demosphere.eu
+            - http://carcassonne.demosphere.eu
+            - http://comminges.demosphere.eu
+            - http://dunkerque.demosphere.eu
+            - http://gard.demosphere.eu
+            - http://gironde.demosphere.eu
+            - http://05.demosphere.eu
+            - http://herault.demosphere.eu
+            - http://lille.demosphere.eu
+            - http://limoges.demosphere.eu
+            - http://lot.demosphere.eu
+            - http://lozere.demosphere.eu
+            - http://maraispoitevin.demosphere.eu
+            - http://marseille.demosphere.eu
+            - http://nice.demosphere.eu
+            - http://paris.demosphere.eu
+            - http://pays-basque.demosphere.eu
+            - http://picardie.demosphere.eu
+            - http://poitiers.demosphere.eu
+            - http://63.demosphere.eu
+            - http://rennes.demosphere.eu
+            - http://rouen.demosphere.eu
+            - http://sarthe.demosphere.eu
+            - http://tarn.demosphere.eu
+            - http://toulouse.demosphere.eu
+            - https://www.kinimatorama.net
+            - http://chiapas.demosphere.eu
+            - http://aragon.demosphere.eu
+            - http://axendamazucu.org
+            - http://agendasocialburgos.org
+            - http://cantabria.demosphere.eu
+            - http://elotrovalladolid.es
+            - http://agendadelhenares.org
+            - http://agendatamettit.tf
     -   slug: fuc
         name: FUCRécup'
         description: "Festival des Utopies\nConcrètes - Récup'"
@@ -135,8 +183,8 @@ mapcredits:
         url: https://www.google.com/maps/d/viewer?mid=zJ1PitvzVPN0.kN_S8AWMFbDQ
         type: geojson
     -   slug: agefa
-        name: Points de vente L'âge de faire
-        description: Des outils pour changer le monde
+        name: L'âge de faire
+        description: "Revue des outils pour\nchanger le monde"
         color: 95b5d5
         url: http://www.lagedefaire-lejournal.fr/
         type: xml
@@ -169,51 +217,11 @@ mapcredits:
         url: https://framacarte.org/fr/map/collecteur-de-dechets-trash-heroes_3556
         type: geojson
         _geojson: https://framacarte.org/fr/datalayer/5289/
-    -   slug: demos
-        name: Démosphère
-        description: "Démosphère est un agenda web indépendant\nde toute organisation ou parti"
-        color: ed9522
-        url: http://www.demosphere.eu/
-        type: demosphere
-        dontload: true
-        cities:
-            - http://bxl.demosphere.eu
-            - http://liege.demosphere.eu
-            - http://04.demosphere.eu
-            - http://alter49.org
-            - http://ariege.demosphere.eu
-            - http://berry.demosphere.eu
-            - http://bearn.demosphere.eu
-            - http://carcassonne.demosphere.eu
-            - http://comminges.demosphere.eu
-            - http://dunkerque.demosphere.eu
-            - http://gard.demosphere.eu
-            - http://gironde.demosphere.eu
-            - http://05.demosphere.eu
-            - http://herault.demosphere.eu
-            - http://lille.demosphere.eu
-            - http://limoges.demosphere.eu
-            - http://lot.demosphere.eu
-            - http://lozere.demosphere.eu
-            - http://maraispoitevin.demosphere.eu
-            - http://marseille.demosphere.eu
-            - http://nice.demosphere.eu
-            - http://paris.demosphere.eu
-            - http://pays-basque.demosphere.eu
-            - http://picardie.demosphere.eu
-            - http://poitiers.demosphere.eu
-            - http://63.demosphere.eu
-            - http://rennes.demosphere.eu
-            - http://rouen.demosphere.eu
-            - http://sarthe.demosphere.eu
-            - http://tarn.demosphere.eu
-            - http://toulouse.demosphere.eu
-            - https://www.kinimatorama.net
-            - http://chiapas.demosphere.eu
-            - http://aragon.demosphere.eu
-            - http://axendamazucu.org
-            - http://agendasocialburgos.org
-            - http://cantabria.demosphere.eu
-            - http://elotrovalladolid.es
-            - http://agendadelhenares.org
-            - http://agendatamettit.tf
+    -   slug: cnlii
+        name: Lieux CNLII
+        description: "Coordination nationale des\nlieux intermédiaires et\nindépendants"
+        color: 417271
+        url: http://cnlii.org
+        type: geojson
+        _geojson: https://umap.openstreetmap.fr/fr/datalayer/91000/
+
