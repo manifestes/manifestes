@@ -2937,6 +2937,13 @@ body.layout-mapprint .container {
     -ms-transition: none !important;
     transition: none !important;
   }
+  .layout-home .fullbox .h1 {
+    bottom: 65% !important;
+  }
+  .layout-home .fullbox .h2 {
+    top: 38% !important;
+    opacity: 1 !important;
+  }
   .section .image {
     -webkit-box-shadow: none !important;
     -moz-box-shadow: none !important;
