@@ -2,7 +2,8 @@
 var linksGraph = null;
 var tagsGraph = null;
 
-var invisibleGray = "rgba(0,0,0,0)";
+var invisible = "rgba(0,0,0,0)";
+var invisibleGray = "#C3C3C3";
 var lightGray = "#C5C5C5";
 var yellowColor = "#8D7C0D";
 var redColor = "#883E3E";
@@ -182,7 +183,7 @@ var loadLinksGraph = function(scope) {
             if (toKeep[e.source] && toKeep[e.target]) 
               e.color = "#EEEEEE";
             else {
-              e.color = invisibleGray;
+              e.color = invisible;
             }
           });
           focusDisplay(true);
