@@ -10,6 +10,21 @@ var totext = function(htm) {
   if(htm) return htm.replace(/<[^>]+>/gm,'');
   else return "";
 };
+var totextwithbreak = function(htm) {
+  if(htm) return htm.replace(/<[^>]+>/gm,'<br>').replace(/(<br> *)+/gm,'<br>');
+  else return "";
+};
+var killhtmlimages = function(htm) {
+  if(htm) return htm.replace(/<img[^>]+>/gm,'');
+  else return "";
+}
+var truncatetext = function(str) {
+  if(str.length>400)
+    return str.substring(0,400)+" [...]";
+  else
+    return str;
+};
+
 
 /* Controllers */
 

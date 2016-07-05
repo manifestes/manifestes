@@ -3446,6 +3446,21 @@ var totext = function(htm) {
   if(htm) return htm.replace(/<[^>]+>/gm,'');
   else return "";
 };
+var totextwithbreak = function(htm) {
+  if(htm) return htm.replace(/<[^>]+>/gm,'<br>').replace(/(<br> *)+/gm,'<br>');
+  else return "";
+};
+var killhtmlimages = function(htm) {
+  if(htm) return htm.replace(/<img[^>]+>/gm,'');
+  else return "";
+}
+var truncatetext = function(str) {
+  if(str.length>400)
+    return str.substring(0,400)+" [...]";
+  else
+    return str;
+};
+
 
 /* Controllers */
 
@@ -3516,7 +3531,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,langs:['fr','es','en'],datapath:'data/',assets:'build/',lastupdate:'05 July 2016 - 9:01'})
+.constant('settings', {dev:false,langs:['fr','es','en'],datapath:'data/',assets:'build/',lastupdate:'05 July 2016 - 11:44'})
 
 ;
 ;
@@ -4456,7 +4471,6 @@ angular.module('manifest.maincontroller', ['underscore','config'])
     };
 
     ///////////////////////////////////////////////////////////////
-    var MAXDESCR = 400;
     var fetch_geojson = function(c,callb) {
       //console.log("Fetch geojson:",c.slug,c);
       c.loading = true;
@@ -4494,7 +4508,7 @@ angular.module('manifest.maincontroller', ['underscore','config'])
           if(c.slug=="cnlii") {
             var ds = totext(prop.description).replace(/{{.*}}/,"");
             name = prop.name;
-            description = ds.substring(0,MAXDESCR)+" [...]";
+            description = truncatetext(ds);
             web = /\[\[.*\]\]/.test(ds) ? ds.match(/\[\[(.*)\]\]/)[1].split('|')[0] : "";
           }
 
@@ -4580,6 +4594,16 @@ angular.module('manifest.maincontroller', ['underscore','config'])
               lat: m.coordinates.latitude,
               lng: m.coordinates.longitude
             });
+
+          if(c.slug=="oasis")
+            addMarker({
+              source: "oasis",
+              name: m.title,
+              description: truncatetext(totextwithbreak(m.html)),
+              lat: m.geo.lat,
+              lng: m.geo.lng
+            });
+
         });
         c.loaded = true;
         c.loading = false;

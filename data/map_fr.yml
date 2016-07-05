@@ -149,6 +149,12 @@ mapcredits:
         color: 63862A
         url: http://www.colibris-lemouvement.org/ensemble/rejoindre-un-groupe-local
         type: csv
+    -   slug: oasis
+        name: Oasis Colibris
+        description: "Les oasis du\nmouvement Colibris"
+        color: bce8f1
+        url: http://www.colibris-lemouvement.org/oasis/les-oasis-en-france
+        type: json
     -   slug: gf
         name: Bénéloves
         description: "Générations Futur est une\nassociation qui promeut\nles médias libres et toutes\nles actions bénéloves et solidaires"
