@@ -2913,11 +2913,6 @@ body.layout-mapprint .container {
   }
   */
 }
-@media (max-height: 630px) {
-  /*  .map .legend {
-    display: none;
-  }*/
-}
 /* PHONES & TABLETS */
 @media (max-width: 1025px) {
   .container,
@@ -2971,6 +2966,9 @@ body.layout-mapprint .container {
   }
   .map .markdiv {
     border-radius: none;
+  }
+  .button#ninja {
+    display: none;
   }
 }
 /* PHONES ONLY */

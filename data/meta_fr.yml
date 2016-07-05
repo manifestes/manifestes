@@ -123,6 +123,8 @@ menu:
     links: liens
     network: réseau
     map: carte
+    ninja: ninja
+    ninjatip: "naviguer au hasard\nparmi les sites du réseau"
     calendar: agenda
     calendartip: démosphère !
     print: imprimer
