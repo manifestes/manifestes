@@ -258,7 +258,7 @@
     }">
 
     <!-- message displayed the first time you arrived on a layout -->
-<!--     <div
+      <div
       ng-if="state.layout!='textsprint'&&state.layout!='home'"
       class="disclopener"
       ng-class="{active: !state.disclaim[state.layout]}"
@@ -283,7 +283,7 @@
       class="full" compile-here="md2Html(meta.disclaimer[state.layout])"></div>
 
       <i class="fa fa-times" ng-click="state.disclaim[state.layout] = false;"></i>
-    </div> -->
+    </div>
 
     <!-- loading spinner while not ready -->
     <!--
@@ -302,7 +302,7 @@
       </div>-->
       <div class="content" compile-here="md2Html(meta.footer.content)"></div>
 
-<!--       <form
+      <form
         class="mailing"
         action="https://lists.riseup.net/www"
         method="POST"
@@ -323,7 +323,7 @@
           type="submit"
           name="action_subrequest"
           value="inscrire">
-      </form> -->
+      </form>
 
       <a class="lastupdate" target="_blank" href="{{meta.repo}}">{{meta.footer.lastupdatetext}}<br>{{settings.lastupdate}}</a>
 
