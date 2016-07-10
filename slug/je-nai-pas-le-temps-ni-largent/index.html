@@ -22,6 +22,8 @@
 		<meta itemprop="image" content="http://utopies-concretes.org/je-nai-pas-le-temps-ni-largent/je-nai-pas-le-temps-ni-largent.png"> 
 		<!-- Opengraph -->
 		<meta property="og:image" content="http://utopies-concretes.org/je-nai-pas-le-temps-ni-largent/je-nai-pas-le-temps-ni-largent.png"/>
+		<meta property="og:image:width" content="750"/>
+		<meta property="og:image:height" content="560"/>
 		<meta property="og:title" content="Utopies Concrètes ♥ je n&#x27;ai pas le temps ni l&#x27;argent"/>
 		<meta property="og:type" content="website"/>
 		<meta property="og:description" content="Manifeste(s), annuaire et cartographies des alternatives - collectif(s) des territoires communs autogérés et alternatives convivialistes DIY bénéloves révolutionnaires de la transition sociale et écologique dans les tiers-lieux créatifs des clowns bricoleurs pirates des utopies libertaires écoféministes p2p et coopératistes indignées activistes de la résilience décroissante concrète et désobéissante des convergences des luttes"/>
@@ -33,7 +35,8 @@
 		<meta name="DC.creator" content="http://utopies-concretes.org">
 		<meta name="DC.publisher" content="http://utopies-concretes.org">
 		<!-- Twitter card -->
-		<meta name="twitter:card" content="photo"/>
+		<meta name="twitter:card" content="summary_large_image"/>
+		<meta name="twitter:creator" content="@manifestes"/>
 		<meta name="twitter:site" content="@manifestes"/>
 		<meta name="twitter:title" content="Utopies Concrètes ♥ je n&#x27;ai pas le temps ni l&#x27;argent"/>
 		<meta name="twitter:image" content="http://utopies-concretes.org/je-nai-pas-le-temps-ni-largent/je-nai-pas-le-temps-ni-largent.png"/>
@@ -114,6 +117,12 @@
 				font-family: 'Lato', sans-serif;
 				font-style: italic;
 			}
+			.backtoroot {
+				padding-top: 10px;
+				font-family: 'Lato', sans-serif;
+				font-style: italic;
+				opacity: 0.5;
+			}
 			.quotecontainer {
 				position: absolute;
 				bottom: 0px;
@@ -134,6 +143,7 @@
 			}
 			a {
 				color: whitesmoke;
+				text-decoration: none;
 			}
 			@media (max-width: 600px) {
 				.back { padding: 15px; }
@@ -148,7 +158,7 @@
 			}
 			/* for screenshot */
 			@media (min-width: 750px) and (max-width: 750px) and (min-height: 560px) and (max-height: 560px) {
-				#share { display: none !important; }
+				#share, .backtoroot { display: none !important; }
 			}
 			#share {
 				position: absolute;
@@ -194,6 +204,11 @@
 			</div>
 			<div class="subtitle">
 				C&#x27;est bien beau tout ça, mais le boulot me prend tout mon temps, seuls les classes aisées peuvent se permettre de profiter d&#x27;autres manières de vivre
+			</div>
+			<div class="backtoroot">
+				<a href="http://utopies-concretes.org" target="_blank">
+					<i class="fa fa-chevron-left"></i> lire sur http://utopies-concretes.org
+				</a>
 			</div>
 			<div class="quotecontainer">
 				<div class="quote"><p>La vie est courte, il faut savoir prendre son temps !</p></div>
