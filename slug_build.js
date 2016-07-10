@@ -45,13 +45,14 @@ fs.readFile('slug_template.html', function(error, data) {
 				p.pageauthor = "http://utopies-concretes.org";
 				p.pageimage = "http://utopies-concretes.org/"+p.slug+"/"+p.slug+".png";
 				p.pagetitle = "Utopies Concrètes ♥ "+p.title;
-				p.pagekeywords = "manifeste, convergence des luttes, utopies concrètes, annuaire, carte, alernatives, décroissance, transition, autogestion, communs, résilience, écologie, convergence, écriture collective, DIY, politique, philosophie";
-				p.pagedescr = "Manifeste(s), annuaire et cartographies des alternatives - collectif(s) des territoires communs autogérés et alternatives convivialistes DIY bénéloves révolutionnaires de la transition sociale et écologique dans les tiers-lieux créatifs des clowns bricoleurs pirates des utopies libertaires écoféministes p2p et coopératistes indignées activistes de la résilience décroissante concrète et désobéissante des convergences des luttes";
+				p.pagekeywords = p.title +" "+p.subtitle;
+				p.pagedescr = p.subtitle;
 				p.pageurl = "http://utopies-concretes.org/slug/"+p.slug;
 				
 				// Social share
 				p.shareurl = "http://utopies-concretes.org/slug/"+p.slug;
-				p.sharetext = "Utopies Concrètes ♥ "+p.title;
+				p.sharetitle = "Utopies Concrètes ♥ "+p.title; // short ! (twitter message)
+				p.sharetext = p.subtitle; // may be longer (caption/description)
 				p.shareimage = "http://utopies-concretes.org/"+p.slug+"/"+p.slug+".png";
 				
 				console.log("Do: ",p.slug);

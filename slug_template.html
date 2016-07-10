@@ -90,7 +90,7 @@
 			.share-btn.facebook { background: #3B5998; }
 			.share-btn.tumblr { background: #36465d; }
 			.share-btn.pinterest { background: #BD2125; }
-			.share-btn.stumbleupon { background: #EB4823; }
+			.share-btn.stumbleupon { background: #EB4924; }
 			.share-btn.reddit { background: #ff5700; }
 			.share-btn.linkedin    { background: #4875B4; }
 			.share-btn.email { background: #444444; }
@@ -173,9 +173,10 @@
 	</head>
 	<body style="background-image:url('../../data/media/{{image.url}}');">
 		<div class="back">
+			<!-- refer to https://github.com/vinkla/awesome-share -->
 			<div id="share">
 				<!-- Twitter -->
-				<a href="http://twitter.com/share?url={{shareurl}}&text={{sharetext}}&via=manifestes" target="_blank" class="share-btn twitter">
+				<a href="http://twitter.com/share?url={{shareurl}}&text={{sharetitle}}&via=manifestes" target="_blank" class="share-btn twitter">
 				<i class="fa fa-twitter"></i>
 				</a>
 				<!-- Google Plus -->
@@ -187,17 +188,21 @@
 				<i class="fa fa-facebook"></i>
 				</a>
 				<!-- Tumblr -->
-				<a href="http://tumblr.com/widgets/share/tool?canonicalUrl={{shareimage}}" target="_blank" class="share-btn tumblr">
+				<a href="http://tumblr.com/widgets/share/tool?posttype=photo&title={{sharetitle}}&content={{shareimage}}&caption={{sharetext}}&tags=utopies" target="_blank" class="share-btn tumblr">
 				<i class="fa fa-tumblr"></i>
 				</a>
 				<!-- Pinterest -->
 				<a href="http://pinterest.com/pin/create/link/?url={{shareurl}}" target="_blank" class="share-btn pinterest">
 				<i class="fa fa-pinterest"></i>
 				</a>
-				<!-- LinkedIn -->
+				<!-- Stumble -->
+				<a href="http://www.stumbleupon.com/submit?url={{shareurl}}&title={{sharetext}}" target="_blank" class="share-btn stumbleupon">
+				<i class="fa fa-stumbleupon"></i>
+				</a>
+				<!-- LinkedIn
 				<a href="http://www.linkedin.com/shareArticle?url={{shareurl}}&title={{sharetext}}&summary={{sharetext}}&source={{shareurl}}" target="_blank" class="share-btn linkedin">
 				<i class="fa fa-linkedin"></i>
-				</a>
+				</a> -->
 				<!-- Email -->
 				<a href="mailto:?subject={{sharetitle}}&body={{shareurl}} — {{sharetext}}" target="_blank" class="share-btn email">
 				<i class="fa fa-envelope"></i>
