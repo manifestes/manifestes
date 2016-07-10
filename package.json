@@ -9,15 +9,20 @@
     "grunt-contrib-jshint": "~0.4.3",
     "grunt-contrib-less": "~0.9.0",
     "grunt-contrib-uglify": "~0.2.0",
-    "grunt-ng-constant": "^1.0.0",
+    "grunt-curl": "^2.2.0",
     "grunt-env": "~0.4.0",
     "grunt-execute": "^0.2.2",
     "grunt-lib-contrib": "~0.6.1",
+    "grunt-ng-constant": "^1.0.0",
     "grunt-preprocess": "~4.0.0",
     "grunt-strip": "~0.2.1",
+    "grunt-tree": "~0.4.9",
+    "handlebars": "^4.0.5",
+    "js-yaml": "^3.6.1",
+    "mkdirp": "^0.5.1",
+    "node-markdown": "^0.1.1",
     "request": "^2.51.0",
     "underscore": "^1.7.0",
-    "grunt-tree": "~0.4.9",
-    "grunt-curl": "^2.2.0"
+    "webshot": "^0.18.0"
   }
 }
