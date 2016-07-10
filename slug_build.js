@@ -57,7 +57,7 @@ fs.readFile('slug_template.html', function(error, data) {
 				var html = template(p);
 
 				if(p.status && p.status=='draft') return;
-				//if(!p.image || !p.image.url) return;
+				if(!p.image || !p.image.url) return;
 				//if(j>7) return;
 
 				// create mini dir for this page if not exists
