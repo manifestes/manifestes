@@ -43,7 +43,7 @@ fs.readFile('slug_template.html', function(error, data) {
 
 				// Social meta
 				p.pageauthor = "http://utopies-concretes.org";
-				p.pageimage = "http://utopies-concretes.org/"+p.slug+"/"+p.slug+".png";
+				p.pageimage = "http://utopies-concretes.org/slug/"+p.slug+"/"+p.slug+".png";
 				p.pagetitle = "Utopies Concrètes ♥ "+p.title;
 				p.pagekeywords = p.title +" "+p.subtitle;
 				p.pagedescr = p.subtitle;
@@ -53,7 +53,7 @@ fs.readFile('slug_template.html', function(error, data) {
 				p.shareurl = "http://utopies-concretes.org/slug/"+p.slug;
 				p.sharetitle = "Utopies Concrètes ♥ "+p.title; // short ! (twitter message)
 				p.sharetext = p.subtitle; // may be longer (caption/description)
-				p.shareimage = "http://utopies-concretes.org/"+p.slug+"/"+p.slug+".png";
+				p.shareimage = "http://utopies-concretes.org/slug/"+p.slug+"/"+p.slug+".png";
 				
 				console.log("Do: ",p.slug);
 				
