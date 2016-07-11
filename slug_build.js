@@ -55,6 +55,9 @@ fs.readFile('slug_template.html', function(error, data) {
 				p.sharetext = p.subtitle; // may be longer (caption/description)
 				p.shareimage = "http://utopies-concretes.org/slug/"+p.slug+"/"+p.slug+".png";
 				
+				p.imagewidth = 750;
+				p.imageheight = 400;
+				
 				console.log("Do: ",p.slug);
 				
 				var html = template(p);
@@ -76,12 +79,12 @@ fs.readFile('slug_template.html', function(error, data) {
 							{
 								siteType:'url',
 								screenSize: {
-									width: 750,
-									height: 560
+									width: p.imagewidth,
+									height: p.imageheight
 								},
 								shotSize: {
-									width: 750,
-									height: 560
+									width: p.imagewidth,
+									height: p.imageheight
 								}
 							},
 							function(e) { if(e) console.log(e); }
