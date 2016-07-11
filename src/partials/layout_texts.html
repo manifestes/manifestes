@@ -29,17 +29,17 @@
         <div class="author" compile-here="e.quote.author"></div>
       </div> 
       <div class="imagecredit" compile-here="md2Html(e.image.credit)"></div>
+      <a
+        ng-if="state.lang=='fr'"
+        class="sharebutton"
+        href="{{e.sharelink}}"
+        target="_blank">
+        <div>partager</div>
+        <i class="fa fa-share-alt"></i>
+      </a>
     </div>
     <div class="content" compile-here="e.content"></div>
     <div ng-if="e.source" class="source" compile-here="md2Html('source: '+e.source)"></div>
-    <a
-      ng-if="state.lang=='fr'"
-      class="sharebutton"
-      href="{{e.sharelink}}"
-      target="_blank">
-      <div>partager</div>
-      <i class="fa fa-share-alt"></i>
-    </a>
   </div>
 </div>
 
