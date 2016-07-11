@@ -2663,6 +2663,42 @@
 "icon_size": [33,33],
 "icon_anchor": [16.5,33],
 "popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [18.0710935, 59.3251172]},
+		"id":"298",
+		"properties": {
+			"title":"Stockholm",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/En-Suede-la-maison-naturelle-fait-pousser-fruits-et-legumes' target='_blank'>En Su\u00e8de, la maison naturelle fait pousser fruits et l\u00e9gumes<\/a><\/div>\n\t<div class=\"texte\">Le concept de maison naturelle, entour\u00e9e d\u2019une serre cr\u00e9ant un microclimat, permet d\u2019utiliser l\u2019\u00e9nergie de l\u2019environnement pour chauffer les habitations. Il s\u2019inscrit dans la dynamique de transition \u00e9nerg\u00e9tique port\u00e9e par les pouvoirs publics de ce pays scandinave depuis pr\u00e8s de trente&nbsp;(...)<\/div>\n<\/div>","id_mot": "70"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-70.png",
+"icon_size": [33,33],
+"icon_anchor": [16.5,33],
+"popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.386763, 48.9464]},
+		"id":"299",
+		"properties": {
+			"title":"Stains (93240)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.bastamag.net\/Etudiants-paysagistes-et-gamins-des-cites-embellissent-ensemble-un-quartier' target='_blank'>Etudiants paysagistes et gamins des cit&#233;s embellissent ensemble un quartier populaire de Seine-Saint-Denis<\/a><\/div>\n\t<div class=\"texte\">D\u00e9couvrir comment poussent les fruits et l\u00e9gumes, apprendre \u00e0 \u00e9lever des poules, am\u00e9nager des balan\u00e7oires et des jeux alors que le quartier en manque cruellement... \u00c0 Stains en Seine-Saint-Denis, la mise en culture \u2013 et surtout en commun \u2013 d\u2019une friche urbaine a f\u00e9d\u00e9r\u00e9 les habitants, et surtout les&nbsp;(...)<\/div>\n<\/div>","id_mot": "117"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-117.png",
+"icon_size": [33,33],
+"icon_anchor": [16.5,33],
+"popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.260882, 43.529314]},
+		"id":"300",
+		"properties": {
+			"title":"Velaux (13880)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/marsactu.fr\/a-velaux-cooperative-citoyenne-reamorcer-centrale-hydroelectrique\/' target='_blank'>\u00c0 Velaux, une coop\u00e9rative citoyenne pour r\u00e9amorcer la centrale hydro\u00e9lectrique<\/a><\/div>\n\t<div class=\"texte\">\u00c0 Velaux, une coop\u00e9rative citoyenne souhaite remettre en service une des deux centrales hydro\u00e9lectriques install\u00e9es sur l\u2019Arc. L\u2019\u00e9quipement doit \u00eatre enti\u00e8rement r\u00e9nov\u00e9 pour pouvoir \u00e0 nouveau produire de l\u2019\u00e9lectricit\u00e9. Apr\u00e8s r\u00e9novation, l\u2019ancien moulin doit permettre l\u2019approvisionnement de l\u2019\u00e9quivalent de 150&nbsp;(...)<\/div>\n<\/div>","id_mot": "127"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-127.png",
+"icon_size": [33,33],
+"icon_anchor": [16.5,33],
+"popup_anchor": [1,-27.5]
 		}}
 	]
 }

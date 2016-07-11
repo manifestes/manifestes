@@ -130,6 +130,22 @@ menu:
     print: imprimer
     printtip: "imprimez\nla fenêtre\nqui s'ouvre !"
     sourcetip: voir les données brutes
+    pad:
+        texts:
+            link: "http://lite6.framapad.org/p/manifestes"
+            text: suggérer ou<br>modifier un texte
+        quotes:
+            link: "http://lite6.framapad.org/p/manifestes"
+            text: ajouter une<br>citation
+        links:
+            link: "http://lite6.framapad.org/p/manifestes"
+            text: suggérer ou<br>modifier un lien
+        network:
+            link: "http://annuel.framapad.org/p/3615ninja"
+            text: suggérer un site<br>signaler un intru
+        map:
+            link: "http://framacalc.org/carto"
+            text: ajouter ou<br>modifier un lieu
 tagtip: "filtrer par thématiques"
 tags:
     about: "question = à propos = à propos de ce projet, contexte,\nliste de discussion, code source"

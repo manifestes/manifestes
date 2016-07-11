@@ -53,7 +53,7 @@
     display: none;
   }
   .header {
-    .printer, .button#lang, .ext {
+    .printer, .button#lang, .ext, .padbutton {
       display: none !important;
     }
   }
@@ -188,10 +188,13 @@
 }
 
 
-/* RELATIVELY SMALL */
+/* RELATIVELY SMALL - normal CSS */
 
 @media (min-width: 1026px) and (max-width: 1199px) {
   .panel.links, .panel.quotes { .base-columns(3, 0px); }
+  .button#calendar {
+    display: none !important;
+  }
 }
 
 
@@ -203,7 +206,7 @@
     // font-size: 0.75em !important;
   }  
   .header .menu .searchinput input {
-    width: 320px !important;
+    width: 250px !important;
   }
   .panel.links, .panel.quotes { .base-columns(4, 0px); }
 }
@@ -218,7 +221,7 @@
     // font-size: 0.9em !important;
   }
   .header .menu .searchinput input {
-    width: 380px !important;
+    width: 300px !important;
   }
   .panel.links, .panel.quotes { .base-columns(5, 0px); }
 }
@@ -231,7 +234,7 @@
     // font-size: 0.9em !important;
   }
   .header .menu .searchinput input {
-    width: 410px !important;
+    width: 320px !important;
   }
   .panel.links, .panel.quotes { .base-columns(6, 0px); }
 }

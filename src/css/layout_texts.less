@@ -175,6 +175,35 @@
       font-style: italic;
       color: @textColor;
     }
+    .sharebutton {
+      box-sizing: border-box;
+      display: inline-block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 8px 15px;
+      vertical-align: top;
+      border-top-left-radius: 20px;
+      background: white;
+      color: @lightColor;
+      font-size: 0.8em;
+      &:hover {
+        background: @mostLightColor;
+      }
+      i {
+        vertical-align: middle;
+        font-size: 1.3em;
+        margin-left: 5px;
+      }
+      div {
+        vertical-align: middle;
+        display: inline-block;
+        line-height: 14px;
+        font-size: 0.9em;
+        text-align: left;
+        font-style: italic;
+      }
+    }
   }
 
   &:hover {

@@ -417,9 +417,35 @@ span.highlight, div.highlight { /* searched words */
     }
   }
 
-  .addzone {
-    height: 350px;
-    background: @mostLightColor; 
+  .padbutton {
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    height: 47px;
+    margin: 9px 0px;
+    padding: 4px;
+    line-height: 47px;
+    vertical-align: top;
+    border-radius: 40px;
+    border: 1px solid lightgray;
+    background: white;
+    color: @lightColor;
+    &:hover {
+      background: @mostLightColor;
+    }
+    i {
+      .absolute-vertical-centered();
+      font-size: 1.3em;
+      margin: 0px 12px;
+    }
+    div {
+      margin-left: 36px;
+      margin-right: 15px;
+      display: inline-block;
+      line-height: 14px;
+      font-size: 0.8em;
+      text-align: left;
+    }
   }
 
   .menu {
@@ -578,6 +604,7 @@ span.highlight, div.highlight { /* searched words */
       z-index: 35;
       position: relative;
       display: inline-block;
+      vertical-align: top;
       height: @searchInputH;
       margin: 9px;
 
@@ -605,7 +632,7 @@ span.highlight, div.highlight { /* searched words */
         padding: 5px 35px;
         //padding-right: 24px;
 
-        width: 270px;
+        width: 160px;
 
         vertical-align: middle;
         border: 1px solid lightgray;

@@ -4,12 +4,14 @@
 
   <div class="legendwrapper">
     <div class="legendtoggler">
-      <i
-        class="fa fa-check-square-o"
-        ng-click="toggleMapLegendAll();"></i>
-      <i
-        class="fa fa-square-o"
-        ng-click="toggleMapLegendNone();"></i>
+      <div class="selectmap" ng-click="toggleMapLegendAll();">
+        select all
+        <i class="fa fa-check-square-o"></i>
+      </div>
+      <div class="selectmap" ng-click="toggleMapLegendNone();">
+        select none
+        <i class="fa fa-square-o"></i>
+      </div>
     </div>
     <div class="legend">
       <div

@@ -85,6 +85,9 @@
 				color: #e2e2e2;
 				outline: none;
 			}
+			.share-btn i {
+				vertical-align: middle;
+			}
 			.share-btn.twitter { background: #55acee; }
 			.share-btn.google-plus { background: #dd4b39; }
 			.share-btn.facebook { background: #3B5998; }
@@ -94,6 +97,7 @@
 			.share-btn.reddit { background: #ff5700; }
 			.share-btn.linkedin    { background: #4875B4; }
 			.share-btn.email { background: #444444; }
+			.share-btn.image { background: #539c54; }
 
 			.back {
 				position: absolute;
@@ -116,12 +120,6 @@
 				text-align: left;
 				font-family: 'Lato', sans-serif;
 				font-style: italic;
-			}
-			.backtoroot {
-				padding-top: 10px;
-				font-family: 'Lato', sans-serif;
-				font-style: italic;
-				opacity: 0.5;
 			}
 			.quotecontainer {
 				position: absolute;
@@ -149,6 +147,24 @@
 				color: lightgrey;
 				text-decoration: underline;
 			}
+			a.backtoroot {
+				display: inline-block;
+				margin-top: 15px;
+				font-family: 'Lato', sans-serif;
+				font-style: italic;
+				color: black;
+				text-decoration: none;
+				background: white;
+				border-radius: 13px;
+				padding: 4px 11px;
+				opacity: 0.5;
+			}
+			a.backtoroot:hover {
+				opacity: 1;
+			}
+			a.backtoroot i {
+				margin-right: 5px;
+			}
 			@media (max-width: 600px) {
 				.back { padding: 15px; }
 				.title { font-size: 1.3em; }
@@ -168,6 +184,7 @@
 				.share, .backtoroot { display: none !important; }
 			}
 			.share {
+				z-index: 99999;
 				position: absolute;
 				left: 20px;
 				bottom: 20px;
@@ -210,6 +227,9 @@
 				<a href="mailto:?subject=Utopies Concrètes ♥ Fausses solutions&body=http://utopies-concretes.org/slug/fausses-solutions — Ami terrien, le problème est grave et profond. Il ne sera pas réglé avec 3 coups de chiffons" target="_blank" class="share-btn email">
 				<i class="fa fa-envelope"></i>
 				</a>
+				<a href="http://utopies-concretes.org/fausses-solutions/fausses-solutions.png" target="_blank" class="share-btn image">
+				<i class="fa fa-camera"></i>
+				</a>
 			</div>
 			<div class="title">
 				Fausses solutions
@@ -217,11 +237,9 @@
 			<div class="subtitle">
 				Ami terrien, le problème est grave et profond. Il ne sera pas réglé avec 3 coups de chiffons
 			</div>
-			<div class="backtoroot">
-				<a href="http://utopies-concretes.org" target="_blank">
-					<i class="fa fa-chevron-left"></i> lire sur http://utopies-concretes.org
-				</a>
-			</div>
+			<a class="backtoroot" href="http://utopies-concretes.org" target="_blank">
+				<i class="fa fa-chevron-left"></i> lire sur http://utopies-concretes.org
+			</a>
 			<div class="quotecontainer">
 				<div class="quote"><p>Si les gens savaient par quels petits hommes ils sont gouvernés, ils se révolteraient vite.</p></div>
 				<div class="author"><p>Charles-Maurice de Talleyrand-Périgord</p></div>

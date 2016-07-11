@@ -3460,7 +3460,21 @@ var truncatetext = function(str) {
   else
     return str;
 };
-
+function slugify(str) {
+  if(!str || str.length<2) return "";
+  str = str.replace(/\?|!/g,"");
+  str = str.replace(/^\s+|\s+$/g, ''); // trim
+  str = str.toLowerCase();
+  // remove accents, swap ñ for n, etc
+  var from = "àáäâèéëêìíïîòóöôùúüûñç·/_,:;";
+  var to   = "aaaaeeeeiiiioooouuuunc------";
+  for (var i=0, l=from.length ; i<l ; i++)
+  str = str.replace(new RegExp(from.charAt(i), 'g'), to.charAt(i));
+  str = str.replace(/[^a-z0-9 -]/g, '') // remove invalid chars
+    .replace(/\s+/g, '-') // collapse whitespace and replace by -
+    .replace(/-+/g, '-'); // collapse dashes
+  return str;
+}
 
 /* Controllers */
 
@@ -3531,7 +3545,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,langs:['fr','es','en'],datapath:'data/',assets:'build/',lastupdate:'05 July 2016 - 11:44'})
+.constant('settings', {dev:false,langs:['fr','es','en'],datapath:'data/',assets:'build/',lastupdate:'11 July 2016 - 9:42'})
 
 ;
 ;
@@ -3590,7 +3604,7 @@ angular.module('manifest.maincontroller', ['underscore','config'])
       lang: $routeParams.lang,
       layout: layout, // texts/links/map/print/etc...
       loading: false, // we will show loadingspinner when scope not ready
-
+      
       // always hide for dev. starting open for prod
       disclaim: {
         texts: !$scope.settings.dev,
@@ -3664,7 +3678,9 @@ angular.module('manifest.maincontroller', ['underscore','config'])
     $scope.changeLayout = function(lay) {
       if(lay == $scope.state.layout) return; // unchanged
       else {
-
+        if($scope.state.lang=='fr')
+          $scope.state.pad = $scope.meta.menu.pad[lay];
+        
         //$scope.state.loading = true;
 
         // reset tags & search
@@ -4007,6 +4023,9 @@ angular.module('manifest.maincontroller', ['underscore','config'])
           $scope.tagsContentsOrdered.push($scope.tagsContents[k]);
         });
 
+        $scope.state.pad = $scope.meta.menu.hasOwnProperty('pad') ?
+          $scope.meta.menu.pad[$scope.state.layout] : "";
+
         // $scope.tagsContentsOrdered.sort(function(a,b) {
         //   return $scope.tagSorter(b) - $scope.tagSorter(a);
         // });
@@ -4048,9 +4067,11 @@ angular.module('manifest.maincontroller', ['underscore','config'])
           else
             d.date = null;
           
+          d.sharelink = "http://utopies-concretes.org/slug/"+slugify(d.title);
+
           d.currentlink = 0;
 
-          d.layout = 'flat'; //Math.random()<0.2 ? 'grid' : 'flat';
+          //d.layout = 'flat'; //Math.random()<0.2 ? 'grid' : 'flat';
 
           // only pushing normal texts if prod (draft texts are only visible if dev)
           if($scope.settings.dev || !d.status || d.status != 'draft')

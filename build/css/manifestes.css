@@ -1429,9 +1429,44 @@ div.highlight {
 .header .minimenu span {
   display: block;
 }
-.header .addzone {
-  height: 350px;
+.header .padbutton {
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  height: 47px;
+  margin: 9px 0px;
+  padding: 4px;
+  line-height: 47px;
+  vertical-align: top;
+  border-radius: 40px;
+  border: 1px solid lightgray;
+  background: white;
+  color: #ababab;
+}
+.header .padbutton:hover {
   background: #e4e4e4;
+}
+.header .padbutton i {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  font-size: 1.3em;
+  margin: 0px 12px;
+}
+.header .padbutton div {
+  margin-left: 36px;
+  margin-right: 15px;
+  display: inline-block;
+  line-height: 14px;
+  font-size: 0.8em;
+  text-align: left;
 }
 .header .menu {
   z-index: 80;
@@ -1588,6 +1623,7 @@ div.highlight {
   z-index: 35;
   position: relative;
   display: inline-block;
+  vertical-align: top;
   height: 47px;
   margin: 9px;
 }
@@ -1610,7 +1646,7 @@ div.highlight {
   overflow: hidden;
   height: 100%;
   padding: 5px 35px;
-  width: 270px;
+  width: 160px;
   vertical-align: middle;
   border: 1px solid lightgray;
   border-left: none;
@@ -2360,6 +2396,35 @@ body.layout-mapprint .container {
   font-style: italic;
   color: #3c3c3c;
 }
+.wrapper.layout-texts .section .block .sharebutton {
+  box-sizing: border-box;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 8px 15px;
+  vertical-align: top;
+  border-top-left-radius: 20px;
+  background: white;
+  color: #ababab;
+  font-size: 0.8em;
+}
+.wrapper.layout-texts .section .block .sharebutton:hover {
+  background: #e4e4e4;
+}
+.wrapper.layout-texts .section .block .sharebutton i {
+  vertical-align: middle;
+  font-size: 1.3em;
+  margin-left: 5px;
+}
+.wrapper.layout-texts .section .block .sharebutton div {
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 14px;
+  font-size: 0.9em;
+  text-align: left;
+  font-style: italic;
+}
 .wrapper.layout-texts .section:hover .h1,
 .wrapper.layout-texts .section:hover .h2 {
   background: none;
@@ -2745,20 +2810,26 @@ body.layout-mapprint .container {
   box-shadow: 0px 0px 7px 0px #525252;
 }
 .map .legendwrapper .legendtoggler {
+  z-index: 999999;
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 15px;
+  font-style: italic;
+  font-size: 0.8em;
 }
-.map .legendwrapper .legendtoggler i {
-  padding: 5px;
-  margin: 15px 7px;
+.map .legendwrapper .legendtoggler .selectmap {
+  margin: 3px;
+  border: 1px solid lightgray;
+  padding: 2px 6px;
+  background: white;
+  text-align: right;
+}
+.map .legendwrapper .legendtoggler .selectmap i {
   font-size: 1.3em;
-  /*&.off {
-          opacity: 0.4;
-        }*/
+  vertical-align: sub;
 }
 .map .legendwrapper .legend {
-  max-height: 85%;
+  max-height: 75%;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -2949,7 +3020,8 @@ body.layout-mapprint .container {
   }
   .header .printer,
   .header .button#lang,
-  .header .ext {
+  .header .ext,
+  .header .padbutton {
     display: none !important;
   }
   .hint:after,
@@ -3095,7 +3167,7 @@ body.layout-mapprint .container {
     display: none;
   }
 }
-/* RELATIVELY SMALL */
+/* RELATIVELY SMALL - normal CSS */
 @media (min-width: 1026px) and (max-width: 1199px) {
   .panel.links,
   .panel.quotes {
@@ -3110,11 +3182,14 @@ body.layout-mapprint .container {
   -moz-column-rule: @c outset red;
   column-rule: @c outset red;*/
   }
+  .button#calendar {
+    display: none !important;
+  }
 }
 /* BIG SCREENS */
 @media (min-width: 1200px) {
   .header .menu .searchinput input {
-    width: 320px !important;
+    width: 250px !important;
   }
   .panel.links,
   .panel.quotes {
@@ -3133,7 +3208,7 @@ body.layout-mapprint .container {
 /* VERY BIG SCREENS */
 @media (min-width: 1450px) {
   .header .menu .searchinput input {
-    width: 380px !important;
+    width: 300px !important;
   }
   .panel.links,
   .panel.quotes {
@@ -3152,7 +3227,7 @@ body.layout-mapprint .container {
 /* VERY MOST BIG SCREENS */
 @media (min-width: 1650px) {
   .header .menu .searchinput input {
-    width: 410px !important;
+    width: 320px !important;
   }
   .panel.links,
   .panel.quotes {

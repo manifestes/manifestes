@@ -96,21 +96,27 @@
     .box-shadow(0px 0px 7px 0px #525252);
 
     .legendtoggler {
+      z-index: 999999;
       position: absolute;
       right: 0;
-      bottom: 0;
-      i {
-        padding: 5px;
-        margin: 15px 7px;
-        font-size: 1.3em;
-        /*&.off {
-          opacity: 0.4;
-        }*/
+      bottom: 15px;
+      font-style: italic;
+      font-size: 0.8em;
+      .selectmap {
+        margin: 3px;
+        border: 1px solid lightgray;
+        padding: 2px 6px;
+        background: white;
+        text-align: right;
+        i {
+          font-size: 1.3em;
+          vertical-align: sub;
+        }
       }
     }
 
     .legend {
-      max-height: 85%;
+      max-height: 75%;
       overflow-y: scroll;
       overflow-x: hidden;
       .hint--bottom::after {

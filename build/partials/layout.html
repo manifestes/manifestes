@@ -208,12 +208,16 @@
         </form>
       </div>
 
-      <!-- ADD ZONE TRIGGER -->
-      <!--
-      <div class="addzonetrigger" ng-click="state.addzone = true;">
-        <div>{{meta.menu.addzone}}</div>
-      </div>
-      -->
+      <!-- ADD ZONE -->
+      <a
+        ng-if="state.lang=='fr' && state.layout!='home'"
+        class="padbutton"
+        href="{{state.pad.link}}"
+        target="_blank">
+        <i class="fa fa-plus-circle"></i>
+        <div ng-bind-html="state.pad.text"></div>
+      </a>
+      
     </div>
 
     <!-- ADD ZONE -->
@@ -258,7 +262,7 @@
     }">
 
     <!-- message displayed the first time you arrived on a layout -->
-    <div
+      <div
       ng-if="state.layout!='textsprint'&&state.layout!='home'"
       class="disclopener"
       ng-class="{active: !state.disclaim[state.layout]}"
