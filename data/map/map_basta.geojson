@@ -1313,7 +1313,7 @@
 		"id":"183",
 		"properties": {
 			"title":"Buenos Aires",
-			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.altermondes.org\/madygraf-les-defis-dune-usine-sans-patron-a-buenos-aires\/' target='_blank'>MadyGraf&nbsp;: les d\u00e9fis d\u2019une usine sans patron \u00e0 Buenos Aires | Altermondes<\/a><\/div>\n\t<div class=\"texte\">Lorsque la direction de MadyGraf a annonc\u00e9 sa faillite en 2014, une partie des ouvriers de l\u2019imprimerie a r\u00e9cup\u00e9r\u00e9 l\u2019usine en autogestion. Sans patron, \u00e0 salaires \u00e9gaux et face aux pr\u00e9jug\u00e9s persistants \u00e0 l\u2019encontre de cette gouvernance \u2013 qui n\u2019est pas sans difficult\u00e9, ils assurent aujourd\u2019hui 80% de la&nbsp;(...)<\/div>\n<\/div>","id_mot": "16"
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.altermondes.org\/madygraf-les-defis-dune-usine-sans-patron-a-buenos-aires\/' target='_blank'>MadyGraf&nbsp;: les d\u00e9fis d\u2019une usine sans patron \u00e0 Buenos Aires<\/a><\/div>\n\t<div class=\"texte\">Lorsque la direction de MadyGraf a annonc\u00e9 sa faillite en 2014, une partie des ouvriers de l\u2019imprimerie a r\u00e9cup\u00e9r\u00e9 l\u2019usine en autogestion. Sans patron, \u00e0 salaires \u00e9gaux et face aux pr\u00e9jug\u00e9s persistants \u00e0 l\u2019encontre de cette gouvernance \u2013 qui n\u2019est pas sans difficult\u00e9, ils assurent aujourd\u2019hui 80% de la&nbsp;(...)<\/div>\n<\/div>","id_mot": "16"
 		  ,
 "icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-16.png",
 "icon_size": [33,33],
@@ -2633,9 +2633,9 @@
 		"id":"295",
 		"properties": {
 			"title":"Notre-Dame-des-Landes (44130)",
-			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.bastamag.net\/Jours-tranquilles-a-la-zone-a-defendre-plus-determinee-que-jamais-apres-le' target='_blank'>Jours tranquilles dans la &#171;&nbsp;Zone \u00e0 d\u00e9fendre&nbsp;&#187;, plus d\u00e9termin\u00e9e que jamais apr\u00e8s le r\u00e9f\u00e9rendum<\/a><\/div>\n\t<div class=\"texte\">Une majorit\u00e9 d\u2019\u00e9lecteurs de Loire-Atlantique, appel\u00e9s aux urnes ce 26 mai, ont approuv\u00e9 la construction d\u2019un a\u00e9roport \u00e0 Notre-dame-des-Landes. Les opposants au projet, qui contestaient d\u00e8s le d\u00e9part le p\u00e9rim\u00e8tre de la consultation \u2014 un seul d\u00e9partement alors que deux r\u00e9gions sont concern\u00e9es \u2014 ne sont&nbsp;(...)<\/div>\n<\/div>"
-			,
-"icon": "http:\/\/portail.bastamag.net\/squelettes\/ppi\/images\/marker_defaut.png",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.bastamag.net\/Jours-tranquilles-a-la-zone-a-defendre-plus-determinee-que-jamais-apres-le' target='_blank'>Jours tranquilles dans la &#171;&nbsp;Zone \u00e0 d\u00e9fendre&nbsp;&#187;, plus d\u00e9termin\u00e9e que jamais apr\u00e8s le r\u00e9f\u00e9rendum<\/a><\/div>\n\t<div class=\"texte\">Une majorit\u00e9 d\u2019\u00e9lecteurs de Loire-Atlantique, appel\u00e9s aux urnes ce 26 mai, ont approuv\u00e9 la construction d\u2019un a\u00e9roport \u00e0 Notre-dame-des-Landes. Les opposants au projet, qui contestaient d\u00e8s le d\u00e9part le p\u00e9rim\u00e8tre de la consultation \u2014 un seul d\u00e9partement alors que deux r\u00e9gions sont concern\u00e9es \u2014 ne sont&nbsp;(...)<\/div>\n<\/div>","id_mot": "219"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-219.png",
 "icon_size": [33,33],
 "icon_anchor": [16.5,33],
 "popup_anchor": [1,-27.5]
@@ -2696,6 +2696,126 @@
 			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/marsactu.fr\/a-velaux-cooperative-citoyenne-reamorcer-centrale-hydroelectrique\/' target='_blank'>\u00c0 Velaux, une coop\u00e9rative citoyenne pour r\u00e9amorcer la centrale hydro\u00e9lectrique<\/a><\/div>\n\t<div class=\"texte\">\u00c0 Velaux, une coop\u00e9rative citoyenne souhaite remettre en service une des deux centrales hydro\u00e9lectriques install\u00e9es sur l\u2019Arc. L\u2019\u00e9quipement doit \u00eatre enti\u00e8rement r\u00e9nov\u00e9 pour pouvoir \u00e0 nouveau produire de l\u2019\u00e9lectricit\u00e9. Apr\u00e8s r\u00e9novation, l\u2019ancien moulin doit permettre l\u2019approvisionnement de l\u2019\u00e9quivalent de 150&nbsp;(...)<\/div>\n<\/div>","id_mot": "127"
 		  ,
 "icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-127.png",
+"icon_size": [33,33],
+"icon_anchor": [16.5,33],
+"popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.414808, 48.87657]},
+		"id":"302",
+		"properties": {
+			"title":"Bagnolet (93170)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.bastamag.net\/La-bergerie-des-Malassis-rumine-la-ville' target='_blank'>Quand un berger et ses ch\u00e8vres r\u00e9enchantent Paris et sa banlieue - Basta&nbsp;!<\/a><\/div>\n\t<div class=\"texte\">Un troupeau de ch\u00e8vres arpentant les rues de Paris et de Bagnolet en qu\u00eate de p\u00e2turages. Des l\u00e9gumes en bas des immeubles. Des ateliers manuels avec les jeunes du quartier. Ce sont quelques unes des activit\u00e9s propos\u00e9es par l\u2019association Sors de Terre, install\u00e9e depuis huit ans \u00e0 Bagnolet, en&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+"icon_size": [33,33],
+"icon_anchor": [16.5,33],
+"popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-101.9555531, 19.6888512]},
+		"id":"303",
+		"properties": {
+			"title":"Cher\u00e1n (60270)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/cqfd-journal.org\/Cheran-la-lumineuse' target='_blank'>Mexique&nbsp;: autogouvernement contre narco-\u00c9tat<\/a><\/div>\n\t<div class=\"texte\">C\u2019est l\u2019histoire d\u2019un David contre deux Goliaths. L\u00e0 o\u00f9 la collusion entre crime organis\u00e9 et pouvoir d\u2019\u00c9tat ne laissait gu\u00e8re de choix, hors la fuite ou la soumission, le courage de quelques femmes a mis en d\u00e9route l\u2019arbitraire et fait \u00e9clore une utopie contagieuse. Dans les montagnes du Michoac\u00e1n, voyage&nbsp;(...)<\/div>\n<\/div>","id_mot": "215"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-215.png",
+"icon_size": [33,33],
+"icon_anchor": [16.5,33],
+"popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [7.6098994, 43.792458]},
+		"id":"304",
+		"properties": {
+			"title":"Vintimille (18034)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.humanite.fr\/dans-la-vallee-de-la-roya-la-solidarite-des-passeurs-citoyens-609970' target='_blank'>Dans la vall\u00e9e de la Roya, la solidarit\u00e9 des &#171;&nbsp;passeurs-citoyens&nbsp;&#187; <\/a><\/div>\n\t<div class=\"texte\">\u00c0 la fronti\u00e8re franco-italienne, un r\u00e9seau de solidarit\u00e9 avec les exil\u00e9s bloqu\u00e9s \u00e0 Vintimille s\u2019est constitu\u00e9 dans la clandestinit\u00e9. Menac\u00e9s de poursuite judiciaire pour leur avoir offert un repas ou fait passer la fronti\u00e8re, ces citoyens solidaires veulent faire de leur combat une cause&nbsp;(...)<\/div>\n<\/div>","id_mot": "41"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/ppi\/images\/marker_defaut.png",
+"icon_size": [33,33],
+"icon_anchor": [16.5,33],
+"popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-1.726696, 48.117141]},
+		"id":"305",
+		"properties": {
+			"title":"Rennes (35000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/jefklak.org\/?p=3078' target='_blank'>&#171;&nbsp;On est fort.e.s quand on arrive \u00e0 composer ensemble&nbsp;&#187;<\/a><\/div>\n\t<div class=\"texte\">Discussion crois\u00e9e sur la lutte contre la loi Travail et la violence d\u2019\u00c9tat \u00e0 Rennes  Propos recueillis par Cl\u00e9mence Durand et Ferdinand Cazalis Depuis le d\u00e9but du mouvement contre la loi Travail et son monde, les habitant.e.s de Rennes r\u00e9sistent et s\u2019organisent avec une constante d\u00e9termination. Face&nbsp;(...)<\/div>\n<\/div>"
+			,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/ppi\/images\/marker_defaut.png",
+"icon_size": [33,33],
+"icon_anchor": [16.5,33],
+"popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [18.0710935, 59.3251172]},
+		"id":"306",
+		"properties": {
+			"title":"Stockholm",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.reporterre.net\/En-Suede-un-abattoir-mobile-pour-eviter-la-souffrance-animale' target='_blank'>En Su\u00e8de, un abattoir mobile pour \u00e9viter la souffrance animale<\/a><\/div>\n\t<div class=\"texte\">En France, les scandales dans les abattoirs ont provoqu\u00e9 une r\u00e9flexion et une mission d\u2019enqu\u00eate parlementaire a \u00e9t\u00e9 lanc\u00e9e. Elle pourrait s\u2019inspirer d\u2019une exp\u00e9rience su\u00e9doise : une entreprise y pratique l\u2019abattage \u00e0 la ferme, \u00e9rigeant la viande \u00ab \u00e9thique \u00bb et sans souffrace en mod\u00e8le&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+"icon_size": [33,33],
+"icon_anchor": [16.5,33],
+"popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.949416, 50.420639]},
+		"id":"307",
+		"properties": {
+			"title":"H\u00e9nin-Beaumont (62110)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.bastamag.net\/Medias-de-proximite-A-Henin-Beaumont-Nuit-debout-tente-de-braver-la-grisaille' target='_blank'>Nuit debout \u00e0 H\u00e9nin-Beaumont&nbsp;: comment braver la grisaille du Front national<\/a><\/div>\n\t<div class=\"texte\">Nuit debout existe aussi \u00e0 H\u00e9nin-Beaumont dans le Nord-Pas-de-Calais, la municipalit\u00e9 fer de lance du Front national, dirig\u00e9e depuis 2014 par l\u2019un de ses vice-pr\u00e9sidents Steeve Briois. Si le rassemblement est loin d\u2019y mobiliser les foules, il remplit une fonction qui est peut-\u00eatre devenue vitale apr\u00e8s&nbsp;(...)<\/div>\n<\/div>","id_mot": "215"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-215.png",
+"icon_size": [33,33],
+"icon_anchor": [16.5,33],
+"popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.287842, 51.014228]},
+		"id":"308",
+		"properties": {
+			"title":"Grande-Synthe (59760)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.bastamag.net\/A-Grande-Synthe-dans-le-Nord-les-elus-conjuguent-ecologie-et-lutte-contre-les' target='_blank'>Conjuguer accueil des migrants, \u00e9cologie et \u00e9mancipation sociale&nbsp;: l&#8217;\u00e9tonnant exemple de Grande-Synthe<\/a><\/div>\n\t<div class=\"texte\">Grande-Synthe, dans le Nord, est l\u2019une des rares villes qui accueillent des centaines de migrants dignement. Malgr\u00e9 30% de sa population active au ch\u00f4mage et un tiers de foyers vivant en dessous du seuil de pauvret\u00e9, c\u2019est aussi l\u00e0 que se m\u00e8nent des politiques \u00e9cologiques et sociales ambitieuses. Le&nbsp;(...)<\/div>\n<\/div>","id_mot": "215"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-215.png",
+"icon_size": [33,33],
+"icon_anchor": [16.5,33],
+"popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [23.7279843, 37.9841493]},
+		"id":"309",
+		"properties": {
+			"title":"Ath\u00e8nes",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.equaltimes.org\/solidarite-squats-et-autogestion' target='_blank'>Solidarit\u00e9, squats et autogestion au secours des migrants en Gr\u00e8ce<\/a><\/div>\n\t<div class=\"texte\">Dans la cour int\u00e9rieure du squat de Dervenion, Samir pr\u00e9pare une salade dans une bassine g\u00e9ante, tandis qu\u2019un cuisinier iranien travesti frit avec savoir-faire des galettes de pomme de terre. \u00c0 l\u2019entr\u00e9e de cet espace collectif situ\u00e9 dans le quartier Exarchia, des femmes afghanes et africaines&nbsp;(...)<\/div>\n<\/div>","id_mot": "41"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/ppi\/images\/marker_defaut.png",
+"icon_size": [33,33],
+"icon_anchor": [16.5,33],
+"popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [3.874164, 43.593686]},
+		"id":"310",
+		"properties": {
+			"title":"Montpellier (34000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/reporterre.net\/A-Montpellier-Nuit-debout-cree-une-ZAD-ecologique-en-quartier-populaire' target='_blank'>A Montpellier, Nuit debout cr\u00e9e une ZAD \u00e9cologique en quartier populaire<\/a><\/div>\n\t<div class=\"texte\">Les habitants d\u2019un quartier populaire occupent un parc menac\u00e9 par des constructions. Ce poumon vert est indispensable pour l\u2019harmonie de la vie ici et la lutte contre la criminalit\u00e9. Le mouvement Nuit debout a redonn\u00e9 de l\u2019\u00e9nergie aux habitants en lutte. Les enfants appr\u00e9cient : ils jouent dans le&nbsp;(...)<\/div>\n<\/div>","id_mot": "219"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-219.png",
+"icon_size": [33,33],
+"icon_anchor": [16.5,33],
+"popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [6.6327025, 46.5218269]},
+		"id":"311",
+		"properties": {
+			"title":"Lausanne",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.lecourrier.ch\/140908\/les_ruches_essaiment_en_ville_mario_togni' target='_blank'>Les ruches essaiment en ville Mario Togni<\/a><\/div>\n\t<div class=\"texte\">Les abeilles dopent la biodiversit\u00e9 urbaine tout en produisant un miel de grande qualit\u00e9. Reportage.<\/div>\n<\/div>","id_mot": "71"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
 "icon_size": [33,33],
 "icon_anchor": [16.5,33],
 "popup_anchor": [1,-27.5]
