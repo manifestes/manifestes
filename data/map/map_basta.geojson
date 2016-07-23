@@ -2819,6 +2819,30 @@
 "icon_size": [33,33],
 "icon_anchor": [16.5,33],
 "popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.459518, 48.704761]},
+		"id":"312",
+		"properties": {
+			"title":"Montgeron (91230)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.bastamag.net\/Grace-au-recyclage-une-association-permet-aux-familles-populaires-d-acquerir-un' target='_blank'>Gr\u00e2ce au recyclage, une association permet aux familles populaires d&#8217;acqu\u00e9rir un ordinateur pour 50 euros - Basta&nbsp;!<\/a><\/div>\n\t<div class=\"texte\">A Montgeron en Essonne, mais aussi dans les communes voisines de Corbeil et de Ris-Orangis, un r\u00e9seau de ressourceries r\u00e9cup\u00e8re les objets en fin de vie pour leur offrir une seconde jeunesse et les remettre en circulation. Mais La fabrique \u00e0 neuf va plus loin : elle r\u00e9pare les ordinateurs pour les&nbsp;(...)<\/div>\n<\/div>","id_mot": "118"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-118.png",
+"icon_size": [33,33],
+"icon_anchor": [16.5,33],
+"popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [6.153556, 48.696057]},
+		"id":"313",
+		"properties": {
+			"title":"Nancy (54000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.bastamag.net\/Menacee-par-les-promoteurs-une-MJC-et-son-jardin-partage-offrent-une' target='_blank'>A Nancy, jardin partag\u00e9 et \u00e9ducation populaire s&#8217;opposent \u00e0 la convoitise des promoteurs immobiliers<\/a><\/div>\n\t<div class=\"texte\">Apprentissage du mara\u00eechage, animation d\u2019activit\u00e9s p\u00e9riscolaires \u00ab alternatives \u00bb, insertion de jeunes aux parcours scolaires difficiles... \u00c0 Nancy, la MJC des Trois-Maisons \u00e9tend sa mission d\u2019\u00e9ducation populaire bien au-del\u00e0 des murs de son enceinte. Elle a ainsi r\u00e9am\u00e9nag\u00e9 une ancienne \u00e9cole en ateliers&nbsp;(...)<\/div>\n<\/div>","id_mot": "117"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-117.png",
+"icon_size": [33,33],
+"icon_anchor": [16.5,33],
+"popup_anchor": [1,-27.5]
 		}}
 	]
 }

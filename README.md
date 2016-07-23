@@ -18,12 +18,13 @@ start building your own !
 ## Build locally
 
 > git clone https://github.com/manifestes/manifestes.git
-
 > npm install
-
 > bower install
-
 > grunt
+
+> grunt map
+
+> node slug_build.js
 
 ## License
 GNU GENERAL PUBLIC LICENSE Version 2
