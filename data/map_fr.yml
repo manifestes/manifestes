@@ -155,6 +155,13 @@ mapcredits:
         color: bce8f1
         url: http://www.colibris-lemouvement.org/oasis/les-oasis-en-france
         type: json
+        _howto: >
+            src: http://colibris.cc/oasis/wakka.php?wiki=VisualiserCarte2/iframe
+            console Chrome:
+            var m = marker.map(function(e) { return {geo:e._latlng, title:e.options.title, html:e._popup._content}; })
+            copy()
+            save as map_oasis.json
+            parse as custom .json
     -   slug: gf
         name: Bénéloves
         description: "Générations Futur est une\nassociation qui promeut\nles médias libres et toutes\nles actions bénéloves et solidaires"
