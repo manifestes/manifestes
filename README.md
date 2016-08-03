@@ -1,12 +1,21 @@
 # Manifeste(s)
+
 a very simple github hosted page to display content within sections
 
-- contents & medias are set within the `data` folder
-    - text sections are yaml documents containing markdown `data/sections.yml`
-    - tagged links are listed within `data/links.yml`
-    - images are stored within the `data/media` folder
+all the code is ready to be put on a FTP server, or served through github gh-pages (like here)
 
-start building your own !
+you can consult it offline
+
+
+- all contents are set in the `data` folder, using yaml documents containing markdown
+    + meta (menu, tags, tooltips) in `data/meta.yml`
+    + text sections in `data/sections.yml`
+    + tagged links in `data/links.yml`
+    + quotes in `data/quotes.yml`
+    + map sources in `data/map.yml`
+    + images within the `data/media` folder
+
+fork or download this project and start your own !
 
 ## Goals
 
@@ -17,17 +26,27 @@ start building your own !
 
 ## Build locally
 
+### Fetch and install dependencies
 > git clone https://github.com/manifestes/manifestes.git
 > npm install
 > bower install
+
+### build & minify
 > grunt
 
+### fetch map geojson
 > grunt map
 
+### build slug images
 > node slug_build.js
 
-## License
+will produce index.html and preview .png used to share text sections
+
+## Licenses
 GNU GENERAL PUBLIC LICENSE Version 2
+Creative Commons
+Move Commons
+
 
 
 
