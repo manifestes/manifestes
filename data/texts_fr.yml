@@ -62,6 +62,8 @@ title: Pourquoi tout ce blabla ?
 subtitle: La situation est critique. Prenons le temps de bien définir les problèmes et la manière de les aborder 
 tags: words politics
 image:
+    url: Isol.jpg
+    credit: Isol
 quote:
     author: A. Gramsci ou Le Forum du clair-obscur
     content: Le vieux monde se meurt, le nouveau monde tarde à apparaître et dans ce clair-obscur surgissent les monstres
@@ -78,6 +80,8 @@ title: Le désastre est inévitable
 subtitle: Seules les réactions face à l'effondrement diffèrent
 tags: act words
 image:
+    url: 3dAudience.jpg
+    credit: 
 quote:
     author: Félix Guattari, Les trois écologies, 1989
     content: Non seulement les espèces disparaissent, mais les mots, les phrases, les gestes de la solidarité humaine aussi
@@ -97,6 +101,8 @@ title: C'est pas si grave ?
 subtitle: "Réactions rassurantes face à l'effondrement. Jusqu'ici tout va bien ?"
 tags: philo words act
 image:
+    url: KevinFaingnaert_Matavenero.jpg
+    credit: Kevin Faingnaert
 quote:
     author: Martin Luther King
     content: Nous devons apprendre à vivre ensemble comme des frères, sinon nous allons mourir tous ensemble comme des idiots
@@ -128,6 +134,12 @@ date: 2016-07-21
 title: École violente et inégalitaire
 subtitle: "Le système éducatif français est à l'image de la société qui l'a construit : violent et inégalitaire"
 tags: education
+image:
+    url: prisonnierDuSpectacle.jpg
+    credit: 
+quote:
+    author: H. Arendt
+    content: C'est avec l'éducation que nous décidons si nous aimons assez nos enfants pour ne pas les rejeter de notre monde, ni les abandonner à eux-mêmes, leur enlever la chance d'entreprendre quelque chose de neuf
 source: "[Manifeste Debout l'École](http://nuitdebouteduc.wix.com/comeduc), Nuit Debout Paris"
 content: >
     **Inégalitaire** car il ne se contente pas de refléter les inégalités sociales existantes mais les perpétue et les aggrave. **Violent** car cette reproduction, le tri et le dressage qu'elle opère, sont oppressifs pour les élèves de la maternelle à l'université.
@@ -145,6 +157,8 @@ title: Une société sans école
 subtitle: "Vers une véritable éducation qui prépare à la vie, qui donne le goût d'inventer et d'expérimenter"
 tags: education
 image:
+    url: AnisGras_LaperoMathematiques.jpg
+    credit: Anis Gras
 quote:
     author: P. Freire
     content: >
@@ -163,6 +177,8 @@ title: Se rendre compte
 subtitle: Nous avons besoin d'informations pour saisir la complexité et l'ampleur du désastre
 tags: media education
 image:
+    url: arton6207-76652.jpg
+    credit: 
 quote:
     author: 
     content: Les bourgeois nous traitent comme des chiens. Il est temps de mordre.
@@ -182,6 +198,8 @@ title: Ça te plaît pas ? modifie !
 subtitle: Arrête de râler, aide-nous plutôt à ajuster les textes ! Tout le site peut être modifié comme sur Wikipedia
 tags: words about
 image:
+    url: MauriceSendak.jpg
+    credit: Maurice Sendak
 quote:
     author:
     content: >
@@ -294,6 +312,8 @@ title: Plusieurs niveaux de lecture
 subtitle: Un seul objet, plusieurs approches possibles
 tags: creation about text
 image:
+    url: MaxBruckner.jpg
+    credit: Max Brückner
 quote:
     author: Horace Walpole
     content: Quel que soit ton conseil, qu'il soit bref
@@ -544,6 +564,8 @@ title: Conditionnement collectif
 subtitle: "Pour étouffer toute révolte, il faut faire en sorte que l'accès au savoir devienne de plus en plus difficile et élitiste"
 tags: media education alienation
 image:
+    url: information.jpg
+    credit: 
 quote:
     author: Condorcet
     content: Le suffrage universel peut conduire à la dictature des imbéciles lorsqu’il n’est pas assorti d’une instruction publique éclairant les esprits
@@ -686,6 +708,8 @@ title: Réseaux informels et transparence
 subtitle: On recense tous les mouvements... ce sont les RG qui vont être contents !
 tags: web emancipation
 image:
+    url: JooHeeYoon.jpg
+    credit: Joo Hee Yoon
 quote:
     author: "Spinoza, Éthique, V, 39"
     content: >
@@ -835,6 +859,8 @@ title: Je suis contre la violence
 subtitle: Contre la violence de la police, des gouvernements et de cette société capitaliste
 tags: zad economy politics
 image:
+    url: policeMirror.jpg
+    credit: 
 quote:
     author:
     content: On n'entre pas dans un monde meilleur sans effraction
@@ -860,6 +886,8 @@ title: Décès de deux personnes
 subtitle: Tout le monde ne reçoit pas les obsèques d'État
 tags: politics subsist
 image:
+    url: ThatcherReagan.jpg
+    credit: 
 quote:
     author:
     content: Ceux qui sont cause des guerres ne meurent jamais
@@ -948,6 +976,8 @@ title: La question des réfugiés
 subtitle: Ne nous laissons pas distraire par ceux qui ont le pouvoir de poser les grandes questions du moment
 tags: subsist media work
 image:
+    url: burningTV.jpg
+    credit: 
 quote:
     author: Comité invisible, À nos amis
     content: Nous ne vivons pas une crise du capitalisme, mais au contraire le triomphe du capitalisme de crise.
@@ -1010,6 +1040,8 @@ title: L'urgence de prendre son temps
 subtitle: Faut-il se presser ? Faut-il prendre son temps ?
 tags: philo love slow
 image:
+    url: dices.jpg
+    credit: 
 quote:
     author: 
     content: Arrêtez le monde, je voudrai descendre
@@ -1101,7 +1133,7 @@ title: C'est un petit milieu déjà convaincu
 subtitle: Ceux et celles qui liront cela sont déjà convaincu.e.s. Comment traverser les différentes classes populaires ?
 tags: words time
 image:
-    url: dontbelieve.jpg
+    url: autreMonde.jpg
     credit: 
 quote:
     author: 
@@ -1145,6 +1177,8 @@ title: Le pouvoir de poser la question
 subtitle: On lutte pour quoi ? Le droit de poser les bonnes questions
 tags: politics philo
 image:
+    url: Isol_2.jpg
+    credit: 
 quote:
     author: Martin Luther King
     content: >
@@ -1166,6 +1200,8 @@ title: Ce monde tient sur notre impuissance
 subtitle: Réfléchir aux bonnes questions que nous voudrions poser à ce monde nécessite de faire un pas de côté, pour échapper aux maîtres des écrans
 tags: media alienation
 image:
+    url: zuckerberg.jpg
+    credit: 
 quote:
     author: Antonin Artaud
     content: Ce qu'il y a encore d'infernal dans ce temps, c'est de s'attarder artistiquement sur des formes au lieu d'être comme des suppliciés que l'on brûle et qui font des signes sur leur bûcher
@@ -1182,6 +1218,9 @@ date: 2015-11-14
 title: Terrorismes, horreur, sidération
 subtitle: "11 septembre, Charlie Hebdo, 13 novembre, l'état d'urgence nous apparaît tout à coup"
 tags: alienation media companies
+image:
+    url: RobinWood.jpg
+    credit: "[Robin Wood](http://robinwood.de)"
 quote:
     author: "[LANDEYves](https://twitter.com/LANDEYves/status/665317969057071105)"
     content: >

@@ -2357,7 +2357,7 @@ body.layout-mapprint .container {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: antialiased;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
 }
 .wrapper.layout-texts .section .block .image .quote-container .author {
   margin-top: 20px;
