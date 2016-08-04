@@ -28,7 +28,9 @@ fork or download this project and start your own !
 
 ### Fetch and install dependencies
 > git clone https://github.com/manifestes/manifestes.git
+> 
 > npm install
+> 
 > bower install
 
 ### build & minify
@@ -44,9 +46,10 @@ will produce index.html and preview .png used to share text sections
 warning: needs to have a running local web server
 
 ## Licenses
-GNU GENERAL PUBLIC LICENSE Version 2
-Creative Commons
-Move Commons
+
+- GNU GENERAL PUBLIC LICENSE Version 2
+- Creative Commons
+- Move Commons
 
 
 
