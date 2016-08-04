@@ -41,6 +41,7 @@ fork or download this project and start your own !
 > node slug_build.js
 
 will produce index.html and preview .png used to share text sections
+warning: needs to have a running local web server
 
 ## Licenses
 GNU GENERAL PUBLIC LICENSE Version 2

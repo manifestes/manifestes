@@ -44,14 +44,14 @@ fs.readFile('slug_template.html', function(error, data) {
 				// Social meta
 				p.pageauthor = "http://utopies-concretes.org";
 				p.pageimage = "http://utopies-concretes.org/slug/"+p.slug+"/"+p.slug+".png";
-				p.pagetitle = "Utopies Concrètes ♥ "+p.title;
+				p.pagetitle = "♥ Utopies Concrètes — "+p.title;
 				p.pagekeywords = p.title +" "+p.subtitle;
 				p.pagedescr = p.subtitle;
 				p.pageurl = "http://utopies-concretes.org/slug/"+p.slug;
 				
 				// Social share
 				p.shareurl = "http://utopies-concretes.org/slug/"+p.slug;
-				p.sharetitle = "Utopies Concrètes ♥ "+p.title; // short ! (twitter message)
+				p.sharetitle = "♥ Utopies Concrètes — "+p.title; // short ! (twitter message)
 				p.sharetext = p.subtitle; // may be longer (caption/description)
 				p.shareimage = "http://utopies-concretes.org/slug/"+p.slug+"/"+p.slug+".png";
 				
@@ -72,7 +72,7 @@ fs.readFile('slug_template.html', function(error, data) {
 					fs.writeFile("slug/"+p.slug+"/index.html", html, function(err) {
 						if(err) console.log(err);
 						var url = "http://localhost/manifestes/slug/"+p.slug+"/index.html";
-						//console.log("url: ",url);
+						//console.log("Wrote index file: ",p.slug);
 						webshot(
 							url, 
 							"slug/"+p.slug+"/"+p.slug+".png",
@@ -87,7 +87,10 @@ fs.readFile('slug_template.html', function(error, data) {
 									height: p.imageheight
 								}
 							},
-							function(e) { if(e) console.log(e); }
+							function(e) {
+								if(e) console.log(e);
+								console.log("Webshot done: ",p.slug);
+							}
 						);
 					});
 				});
