@@ -2843,6 +2843,30 @@
 "icon_size": [33,33],
 "icon_anchor": [16.5,33],
 "popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.386404, 48.851768]},
+		"id":"314",
+		"properties": {
+			"title":"Paris (75011)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.streetpress.com\/sujet\/1469710280-etudiants-grandes-ecoles-coachent-refugies' target='_blank'>Des \u00e9tudiants de grandes \u00e9coles coachent des r\u00e9fugi\u00e9s qui veulent reprendre les cours<\/a><\/div>\n\t<div class=\"texte\">Depuis d\u00e9but 2016, des \u00e9tudiants de Sciences Po et de l\u2019ESCP proposent \u00e0 des r\u00e9fugi\u00e9s des ateliers de fran\u00e7ais et du coaching. Gr\u00e2ce \u00e0 l\u2019asso Wintegreat, Fadi va int\u00e9grer une licence de langues.<\/div>\n<\/div>","id_mot": "117"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-117.png",
+"icon_size": [33,33],
+"icon_anchor": [16.5,33],
+"popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [6.1466014, 46.2017559]},
+		"id":"315",
+		"properties": {
+			"title":"Gen\u00e8ve",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.lecourrier.ch\/141282\/aux_vergers_le_commerce_sera_social_et_solidaire' target='_blank'>Aux Vergers, le commerce sera social et solidaire<\/a><\/div>\n\t<div class=\"texte\">Journaliste : Nathalie Gerber Mccrae  (2) L\u2019\u00e9coquartier en construction \u00e0 Meyrin privil\u00e9gie les synergies et l\u2019innovation pour ses futures arcades. \u00ab Arcades \u00e0 Meyrin cherchent locataires en phase avec l\u2019\u00e9conomie sociale et solidaire. Activit\u00e9s polluantes et individualistes s\u2019abstenir. \u00bb La petite&nbsp;(...)<\/div>\n<\/div>","id_mot": "70"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-70.png",
+"icon_size": [33,33],
+"icon_anchor": [16.5,33],
+"popup_anchor": [1,-27.5]
 		}}
 	]
 }

@@ -3545,7 +3545,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,langs:['fr','es','en'],datapath:'data/',assets:'build/',lastupdate:'03 August 2016 - 4:26'})
+.constant('settings', {dev:false,langs:['fr','es','en'],datapath:'data/',assets:'build/',lastupdate:'12 August 2016 - 9:08'})
 
 ;
 ;
@@ -4076,6 +4076,8 @@ angular.module('manifest.maincontroller', ['underscore','config'])
           // only pushing normal texts if prod (draft texts are only visible if dev)
           if($scope.settings.dev || !d.status || d.status != 'draft')
             $scope.textArray.push(d);
+
+          0;
         });
         $scope.textFiltArray = $scope.textArray;
       })
@@ -4832,7 +4834,7 @@ angular.module('manifest.maincontroller', ['underscore','config'])
     fetchDataMeta( function() {
 
       // Load .yml depending on view
-      if($scope.state.layout=='texts') {
+      if($scope.state.layout=='texts' || $scope.state.layout=='textsprint') {
         fetchDataTexts();
       }
       if($scope.state.layout=='quotes') {

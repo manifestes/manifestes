@@ -270,7 +270,16 @@ module.exports = function(grunt) {
       'data/map/map_passeco.geojson':'http://www.ecovillageglobal.fr/spip.php?page=gis_json&objets=annonces&limit=500',
       'data/map/map_report.geojson':'http://reporterre.net/spip.php?page=gis_json&objets=articles&limit=500',
       'data/map/map_collec.geojson':'https://framacarte.org/fr/datalayer/5289/',
-      'data/map/map_cnlii.geojson':'https://umap.openstreetmap.fr/fr/datalayer/91000/'
+      'data/map/map_cnlii.geojson':'https://umap.openstreetmap.fr/fr/datalayer/91000/',
+      '-data/map/map_horstafta.json':'https://www.monquartier-horstafta.org/?q=maptaftajson'
+      // 'communecter': {
+      //   src: {
+      //     url: 'http://qa.communecter.org/network/search/simplyautocomplete',
+      //     method: 'POST',
+      //     body: 'locality=&searchType%5B%5D=organizations&searchBy=INSEE&indexMin=0&indexMax=2000&sourceKey%5B%5D=BretagneTelecom'
+      //   },
+      //   dest:'data/map/map_communecter.json'
+      // }
     }
 
 
