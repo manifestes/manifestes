@@ -4,7 +4,7 @@ a very simple github hosted page to display content within sections
 
 all the code is ready to be put on a FTP server, or served through github gh-pages (like here)
 
-you can consult it offline
+you can consult it offline ☀♥😃
 
 
 - all contents are set in the `data` folder, using yaml documents containing markdown
