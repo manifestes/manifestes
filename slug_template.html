@@ -131,7 +131,7 @@
 				font-style: italic;
 			}
 			.quote {
-				font-size: 1.35em;
+				font-size: 1.25em;
 			}
 			.author {
 				font-size: 0.8em;
@@ -179,9 +179,10 @@
 				.subtitle { padding-right: 60%; }
 				.quotecontainer { margin: 0px 50px 40px 60%; }
 			}
-			/* for screenshot */
+			/* special size for screenshot */
 			@media (min-width: {{imagewidth}}px) and (max-width: {{imagewidth}}px) and (min-height: {{imageheight}}px) and (max-height: {{imageheight}}px) {
-				.share, .backtoroot { display: none !important; }
+				.share { display: none !important; }
+				/*.backtoroot { display: none !important; }*/
 			}
 			.share {
 				z-index: 99999;

@@ -226,15 +226,8 @@ image:
     url: ericDrooker_metro.jpg
     credit: Eric Drooker
 quote:
-    author: Coluche, le seul candidat qui n'a pas de raison de mentir
-    content: >
-        Avis à la population
-
-
-        J'appelle les fainéants, les crasseux, les drogués, les alcooliques, les pédés, les femmes, les parasites, les jeunes, les vieux, les artistes, les taulards, les gouines, les apprentis, les noirs, les piétons, les arabes, les français, les chevelus, les fous, les travestis, les anciens communistes, les absentionnistes convaincus, tous ceux qui ne comptent pas pour les hommes politiques à voter pour moi, à s'inscrire dans leur mairie et à colporter la nouvelle.
-
-
-        Tous ensemble pour leur foutre au cul
+    author: Ralph Waldo Emerson
+    content: Adopte le rythme de la nature, son secret est la patience.
 content: >
     **Pour discuter, commenter**
 
@@ -1283,17 +1276,20 @@ content: >
 
 
 ---
-status: draft
-date: 2016-02-25
+date: 2016-09-10
 title: Convictions religieuses
 subtitle: Nous sommes tous composés de mélanges entre différentes cultures et foi
 tags: love
+image:
+quote:
+    author: Pouchkine — Commentaires, Chris Marker
+    content: Savez-vous, dit Elena Andréievna en se penchant sur le samovar, qu’il existe en Amérique du Sud une flûte dont le son n’est perceptible qu’à celui qui en joue ?
 source: cf mail ?
 content: >
-    Toutes les convictions, athées ou non, sont respectables. Une vraie pensée libre, c'est un carrefour, une croisée des chemins entre différentes convictions, idées qui se croisent, s'entrecroisent, se superposent, se mélangent au cours d'une vie, dans la même personne. Les débats qui reviennent à discuter à n'en plus finir sur quelle étiquette on va mettre sur telle ou telle conviction sont dangereux.
+    Toutes les convictions, athées ou non, sont respectables. Une vraie pensée libre, c'est un carrefour, une croisée des chemins entre différentes convictions, idées qui se croisent, s'entrecroisent, se superposent, se mélangent au cours d'une vie, dans la même personne.
 
 
-    Les religions, ce n'est pas un mal en soi. C'est ce qu'en font les états, les classes dominantes qui posent problème, car ils les instrumentalisent.
+    Les débats qui reviennent à discuter à n'en plus finir sur quelle étiquette on va mettre sur telle ou telle conviction sont dangereux.
 
 
 ---
@@ -1555,6 +1551,30 @@ content: >
 
 
 ---
+date: 2016-09-10
+title: "Certains commandent, d'autres obéissent"
+subtitle: La quête de profits, pour les uns, et la nécessité de « gagner sa vie », pour les autres
+tags: subsist work
+image:
+    url: hometohome.jpg
+    credit: 
+quote:
+    author: "[Lettre aux mouvements, Rennes, 4 mai 2016](https://lundi.am/Un-zadiste-en-prison-Lettre-aux-mouvements)"
+    content: >
+        Il s’agit à chaque fois de refuser de soumettre nos existences aux diktats de l’économie, qui cherche ici ou là à détruire des lieux de vie pour construire ses infrastructures, et partout à pressuriser les conditions de vie et de travail pour nous rendre encore plus dépendants de l’argent
+source: "Manière de voir n°122 - Où se cachent les pouvoirs ?"
+content: >
+    Centre d'appels, cabinet d'experts-comptables, boulangerie... Sur les lieux de production, le rapport de domination s'exprime simplement : certains commandent, d'autres obéissent.
+
+
+    Peu d'individu iraient, naturellement, se poster sur une chaîne de montage pour répéter les mêmes gestes, respecter les mêmes cadences et produire des richesses qui profiteront à autrui. Mais la quête de profits, pour les uns, et la nécessité de « gagner sa vie », pour les autres, semblent fournir - du moins, pour l'heure - une justification suffisante à ce mode d'organisation.
+
+
+    Un modèle managérial si satisfaisant qu'on l'applique désormais au pilotage de la société.
+
+
+
+---
 date: 2015-06-01
 title: Pouvoir, autorité, autonomie
 subtitle: Où se trouve le vrai pouvoir ? Agissons en nos noms
@@ -1563,10 +1583,14 @@ image:
     url: ElenaTrofimova.jpg
     credit: Elena Trofimova
 quote:
-    author: >
-        [Infokiosques.net](http://www.infokiosques.net), qu'est-ce qu'un infokiosque ?
+    author: Zenki Shibayama
     content: >
-        Cette société nous pose question, nous empêche de vivre. Parfois elle nous fait vomir, toujours elle nous révolte. Capitalisme, patriarcat, rapports de domination, désastres écologiques, forces étatiques, de quoi faire frémir toute notre bile. Parfois nous voudrions cultiver cette bile, comment dire, l’approfondir, la relever, la garnir de données, d’arguments, d’idées d’action. Mieux connaître ce que nous critiquons pour mieux savoir ce que nous vomissons et comment nous le vomissons.
+        Ne dites pas que la lune existe
+        Lorsque les nuages s'en vont
+
+
+        Elle a toujours été là
+        Parfaitement claire
 content: >
     Les véritables puissances sont celles qui sont aux rênes des **structures matérielles des flux** : *banques, multinationales médiatiques, construction, alimentaire, transport*. Ces organisations détiennent l’**autorité**.
 
@@ -1585,6 +1609,8 @@ title: "État, police, économie"
 subtitle: "Dans une situation économique de crise, l’État se déleste de ses fonctions sociales pour se recentrer sur l’essentiel : relancer l’économie"
 tags: politics economy alienation
 image:
+    url: sombrelac.jpg
+    credit: 
 quote:
     author: "[Décroissance, vocabulaire pour une nouvelle ère](http://lepassagerclandestin.fr/catalogue/hors-collection/decroissance-vocabulaire-pour-une-nouvelle-ere.html)"
     content: >
@@ -1606,6 +1632,8 @@ title: Autonomie et vie commune
 subtitle: "Construisons collectivement nos propres règles, une puissance d’agir collective grandissante"
 tags: politics emancipation
 image:
+    url: guitarenue.jpg
+    credit: 
 quote:
     author: "Sébastien Thiéry, [Considérant Calais](https://lundi.am/Considerant-Calais)"
     content: >
@@ -1792,7 +1820,10 @@ content: >
     Combien de gens savent ce qu'il se passe lorsqu'on envoie un mail ?
     
 
-    Quelle attitude vis-à-vis des dispositifs, appareils ? ils expriment la relation que nous entretenons avec l'économie, les entreprises, l'État, la police (et pas seulement avec Apple ou Google)
+    Quelle attitude tenir vis-à-vis de dispositifs, appareils toujours plus nouveauw et complexes ?
+
+
+    Ces écrans expriment la relation que nous entretenons avec l'économie, les entreprises, l'État, la police. Pas seulement avec Apple, Google ou autres Facebook...
 
 
 
@@ -1802,6 +1833,8 @@ title: La paresse
 subtitle: "Cette paresse qui permet à beaucoup d’entre nous de continuer à vivre dans un système que l’on vomit"
 tags: act philo politics
 image:
+    url: burntcar.jpg
+    credit: 
 quote:
     author: Martin Luther King
     content: >
@@ -1874,6 +1907,8 @@ title: Un vide
 subtitle: "C'est toute notre civilisation industrielle qui a perdu sa légitimité et qui tourne désormais sur elle-même dans un vide angoissant"
 tags: space politics media
 image:
+    url: mines.jpg
+    credit: 
 quote:
     author: M Chapsal
     content: "Il va falloir rêver car, pour que les choses deviennent possibles, il faut d'abord les rêver"
@@ -2008,9 +2043,8 @@ image:
     url: CandidoPortinari.jpg
     credit: Candido Portinari
 quote:
-    author: Robert A. Heinlein
-    content: >
-        Un être humain devrait savoir *changer une couche-culotte, planifier une invasion, égorger un cochon, manœuvrer un navire, concevoir un bâtiment, écrire un sonnet, faire un bilan comptable, monter un mur, réduire une fracture, soutenir un mourant, prendre des ordres, donner des ordres, coopérer, agir seul, résoudre des équations, analyser un nouveau problème, répandre de l'engrais, programmer un ordinateur, cuisiner un bon repas, se battre efficacement, et mourir bravement*. La spécialisation, c'est bon pour les insectes.
+    author: "Montesquieu, L'Esprit des Lois"
+    content: Pour qu'on ne puisse abuser du pouvoir, il faut que, par la disposition des choses, le pouvoir arrête le pouvoir
 content: >
     Les idées vivent lorsqu'elles sont **exprimées, transmises, débattues, interprétées, reformulées**. Chaque *position, vision, point de vue, questionnement* doit trouver sa place tout au long de cette chaîne de compréhension.
 

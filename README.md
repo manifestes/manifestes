@@ -1,28 +1,23 @@
 # Manifeste(s)
 
-a very simple github hosted page to display content within sections
+a simple website to display contents within sections, and change the world
 
-all the code is ready to be put on a FTP server, or served through github gh-pages (like here)
-
-you can consult it offline ☀♥😃
-
-
+- ☀ as less code as possible
+- ♥ easily read contents and collaborate
+- 😃 minify time spent on your computer
+- can be consulted offline 
+- ready to be put on a FTP server
+- can be served through github gh-pages (like here)
 - all contents are set in the `data` folder, using yaml documents containing markdown
     + meta (menu, tags, tooltips) in `data/meta.yml`
     + text sections in `data/sections.yml`
     + tagged links in `data/links.yml`
     + quotes in `data/quotes.yml`
     + map sources in `data/map.yml`
-    + images within the `data/media` folder
+    + images in the `data/media` folder (prefixed by _ if unused yet)
+    + misc documents in the `data/files` folder
 
 fork or download this project and start your own !
-
-## Goals
-
-- faciliter l'écriture et la lecture collective.
-- minimiser le temps passé face à l'écran
-- code minimal
-- bonne humeur
 
 ## Build locally
 
@@ -50,6 +45,8 @@ warning: needs to have a running local web server
 - GNU GENERAL PUBLIC LICENSE Version 2
 - Creative Commons
 - Move Commons
+- Please ask for anything
+- Love
 
 
 

@@ -1,6 +1,57 @@
 
 
 -
+    author:
+    content: Nos désirs sont désordre
+-
+    author: Carlos Ruiz Zafón
+    content: >
+        En fin de compte, quel est le sens d'une science capable d'envoyer un homme sur la lune, mais incapable de mettre un morceau de pain sur la table de chaque être humain ?
+-
+    author: Loïc Schneider
+    content: >
+        Face à l'injustice, il n'y a que deux chemins, celui de l'indignation ou de l'indifférence.
+
+        L'un est un combat l'autre une soumission
+-
+    author: Keny Arkana
+    content: >
+        Suis ta route, chacun a la sienne — méfie toi des temps modernes qui fabriquent les êtres humains à la chaine
+-
+    author:
+    content: >
+        N'apprends pas à ton enfant à être riche, apprends-lui à être heureux.
+
+
+        Quand il grandira, il connaîtra la valeur des choses et non leur prix.
+-
+    author:
+    content: >
+        L'esprit, c'est comme un parachute, pour que ça marche, il faut l'ouvrir
+-
+    author:
+    content: >
+        Quand le sang de tes veines retournera à la mer, et que la terre de tes os retournera dans le sol, alors te rapelleras-tu que cette terre ne t'appartient pas, mais que c'est toi qui appartient à cette terre
+-
+    author:
+    content: >
+        Matérialisme: acheter des choses dont nous n'avons pas besoin avec de l'argent que nous n'avons pas pour impressionner des gens qui n'en n'ont rien à foutre
+-
+    author: Coluche
+    content: >
+        Il y a 3 millions de personnes qui veulent du travail.
+
+
+        C'est pas vrai, de l'argent leur suffirait
+-
+    author: Emile Zola, 1888
+    content: >
+        Mon inquiétude unique devant le journalisme actuel, c'est l'état de surexcitation nerveuse dans lequel il tient la Nation.
+
+
+        Aujourd'hui, remarquez quelle importance démesurée prend le moindre fait. Quand une affaire est finie, une autre commence. Les journaux ne cessent de vivre dans cette existence casse-cou. Si les sujets d'émotion manquent, ils en inventent...
+
+-
     author: 
     content: On ne sait ce qu'on cherche que l'orsqu'on l'a trouvé
 -
@@ -11,6 +62,7 @@
     author: Keny Arkana
     content: Vos lois sont immorales, ma délinquance a des principes
 -
+    used: true
     author: Ralph Waldo Emerson
     content: Adopte le rythme de la nature, son secret est la patience.
 -
@@ -368,6 +420,7 @@
         L'esprit est malade
     tags: creation spirit
 -
+    used: true
     author: Zenki Shibayama
     content: >
         Ne dites pas que la lune existe
@@ -384,6 +437,7 @@
 
         Ceci est une invitation.
 -
+    used: true
     author: "[Lettre aux mouvements, Rennes, 4 mai 2016](https://lundi.am/Un-zadiste-en-prison-Lettre-aux-mouvements)"
     content: >
         Il s’agit à chaque fois de refuser de soumettre nos existences aux diktats de l’économie, qui cherche ici ou là à détruire des lieux de vie pour construire ses infrastructures, et partout à pressuriser les conditions de vie et de travail pour nous rendre encore plus dépendants de l’argent
@@ -420,6 +474,7 @@
     author: Thibault Calmus
     content: La cartographie des désirs définit la méthodologie de toute révolution.
 -
+    used: true
     author: "?. internetactu, Qui sera responsable des «maladies de la connexion» ?"
     content: >
         Les plateformes de réseaux sociaux agissent comme une extension de nos pratiques sociales. Mais, comme avec toute extension technologique, nous avons tendance à être fascinés par sa puissance et son échelle. Cependant, nous choisissons trop souvent d’ignorer ou de minimiser «les amputations» et les implications qu’elles produisent.
@@ -725,6 +780,7 @@
     author: Frederic Lordon, [Le parti de la liquette](http://blog.mondediplo.net/2015-10-09-Le-parti-de-la-liquette)
     content: La réalité du salariat c’est le chantage, et la réalité du chantage c’est qu’il y a une inégalité entre celui qui chante et celui qui fait chanter – on ne se porte pas identiquement à l’une ou l’autre extrémité du revolver. 
 -
+    used: true
     author: Pouchkine — Commentaires, Chris Marker
     content: Savez-vous, dit Elena Andréievna en se penchant sur le samovar, qu’il existe en Amérique du Sud une flûte dont le son n’est perceptible qu’à celui qui en joue ?
 -
@@ -772,7 +828,8 @@
     content: >
         L'homme est le seul animal qui rougisse; c'est d'ailleurs le seul animal qui ait à rougir de quelque chose.
 -
-    author: Montesquieu, L'Esprit des Lois
+    used: true
+    author: "Montesquieu, L'Esprit des Lois"
     content: Pour qu'on ne puisse abuser du pouvoir, il faut que, par la disposition des choses, le pouvoir arrête le pouvoir
 -
     author: Daniel Pennac
@@ -966,13 +1023,12 @@
     author: Sénèque
     content: Ce n'est pas parce que les choses sont difficiles que nous n'osons pas, mais parce que nous n'osons pas qu'elles sont difficiles
 -
-    used: true
     author: Coluche, le seul candidat qui n'a pas de raison de mentir
     content: >
         Avis à la population
 
 
-        J'appelle les fénéants, les crasseux, les drogués, les alcooliques, les pédés, les femmes, les parasites, les jeunes, les vieux, les artistes, les taulards, les gouines, les apprentis, les Noirs, les piétons, les Arabes, les Français, les chevelus, les fous, les travestis, les anciens communistes, les absentionnistes convaincus, tous ceux qui ne comptent pas pour les hommes politiques à voter pour moi, à s'inscrire dans leur mairie et à colporter la nouvelle.
+        J'appelle les fainéants, les crasseux, les drogués, les alcooliques, les pédés, les femmes, les parasites, les jeunes, les vieux, les artistes, les taulards, les gouines, les apprentis, les noirs, les piétons, les arabes, les français, les chevelus, les fous, les travestis, les anciens communistes, les absentionnistes convaincus, tous ceux qui ne comptent pas pour les hommes politiques à voter pour moi, à s'inscrire dans leur mairie et à colporter la nouvelle.
 
 
         Tous ensemble pour leur foutre au cul
@@ -1063,7 +1119,6 @@
     author: proverbe Yuocmyn
     content: Oublie le vrai, oublie le faux, seul le rêve peut transformer le monde
 -
-    used: true
     author: "[Infokiosques.net](http://www.infokiosques.net), qu'est-ce qu'un infokiosque ?"
     content: >
         Cette société nous pose question, nous empêche de vivre. Parfois elle nous fait vomir, toujours elle nous révolte. Capitalisme, patriarcat, rapports de domination, désastres écologiques, forces étatiques, de quoi faire frémir toute notre bile. Parfois nous voudrions cultiver cette bile, comment dire, l’approfondir, la relever, la garnir de données, d’arguments, d’idées d’action. Mieux connaître ce que nous critiquons pour mieux savoir ce que nous vomissons et comment nous le vomissons.
@@ -1107,7 +1162,6 @@
     content: >
         Notre force ne naîtra pas de la désignation de l'ennemi, mais de l'effort fait pour entrer les uns dans la géographie des autres.
 -
-    used: true
     author: Robert A. Heinlein
     content: >
         Un être humain devrait savoir *changer une couche-culotte, planifier une invasion, égorger un cochon, manœuvrer un navire, concevoir un bâtiment, écrire un sonnet, faire un bilan comptable, monter un mur, réduire une fracture, soutenir un mourant, prendre des ordres, donner des ordres, coopérer, agir seul, résoudre des équations, analyser un nouveau problème, répandre de l'engrais, programmer un ordinateur, cuisiner un bon repas, se battre efficacement, et mourir bravement*. La spécialisation, c'est bon pour les insectes.
