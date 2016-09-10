@@ -1807,23 +1807,28 @@ content: >
 
 
 ---
-status: draft
-date: 2016-01-07
+date: 2016-09-10
 title: Qui contrôle les technologies ?
 subtitle: Ne laissons pas Internet et le numérique aux mains des États et des professionnels du Big Data !
 tags: web companies
+quote:
+    author: Dumbledore
+    content: Ce ne sont pas nos aptitudes qui montrent ce que nous sommes, ce sont nos choix.
 image:
     url: google.jpg
     credit: 
 source: "[revue Z](http://zite.fr) n°9"
 content: >
-    Combien de gens savent ce qu'il se passe lorsqu'on envoie un mail ?
+    *Combien de gens savent ce qu'il se passe lorsqu'on envoie un mail ? Lorsqu'on se connecte sur Facebook ?*
     
 
-    Quelle attitude tenir vis-à-vis de dispositifs, appareils toujours plus nouveauw et complexes ?
+    Quelle attitude tenir vis-à-vis de dispositifs et appareils toujours plus nouveaux et complexes ?
 
 
-    Ces écrans expriment la relation que nous entretenons avec l'économie, les entreprises, l'État, la police. Pas seulement avec Apple, Google ou autres Facebook...
+    **Ces écrans expriment la relation que nous entretenons avec l'économie, les entreprises, l'État, la police.**
+
+
+    *Pas seulement avec Apple, Google ou autres Facebook...*
 
 
 
@@ -1849,6 +1854,30 @@ content: >
 
     **Bref à se concentrer sur le pas suivant plutôt que sur la destination pour ne pas voir l’abîme.**
 
+
+---
+date: 2016-09-10
+title: Quitte ton taff et ta mégalopole
+subtitle: "Le plus dur, c'est dans la tête. Avec les potes et un peu d'organisation, on peut tout changer en moins de 2 mois"
+tags: act work
+quote:
+    author:
+    content: Le travail fixe la vue à perte de vie
+image:
+content: >
+    Voila, tu économise un peu, quelques mois de réserve pour tenir entre les futur chômage, RSA et autres dépenses pragmatiques...
+
+
+    Regarde tes rêves, organise-toi
+
+
+    Fixe une date pour arrêter de payer ce loyer insupportable, arrêter de suer pour ce travail fatiguant, insignifiant et mal payé
+
+
+    Il n'y a rien à perdre.
+
+
+    Tout à gagner.
 
 ---
 date: 2015-07-08

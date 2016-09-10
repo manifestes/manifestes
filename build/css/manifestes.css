@@ -1756,8 +1756,8 @@ div.highlight {
   z-index: 27;
   box-sizing: border-box;
   position: fixed;
-  width: 170px;
-  left: -170px;
+  width: 350px;
+  left: -350px;
   top: 65px;
   bottom: 0;
   padding-top: 5px;
@@ -1793,15 +1793,14 @@ div.highlight {
   cursor: pointer;
   display: inline-block;
   vertical-align: top;
-  width: 50%;
-  height: 38px;
+  width: 25%;
+  height: 50px;
   padding: 6px 0px;
   margin-bottom: 0px;
   text-align: center;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: antialiased;
-  font-size: 0.8em;
   font-style: italic;
   color: #BFBFBF;
 }
@@ -1810,17 +1809,19 @@ div.highlight {
 .header .tagspanel .gridtag:before {
   text-transform: none;
   font-style: normal;
+  color: black;
 }
 .header .tagspanel .gridtag i {
   position: absolute;
   display: block;
   width: 100%;
+  font-size: 1.2em;
 }
 .header .tagspanel .gridtag .label {
   position: absolute;
   width: 100%;
-  top: 50%;
-  font-size: 0.9em;
+  top: 55%;
+  font-size: 0.75em;
 }
 .header .tagspanel .gridtag .back {
   position: absolute;
@@ -1988,7 +1989,7 @@ div.highlight {
   transition: padding-left 0.4s;
 }
 .wrapper.tagsbordered {
-  padding-left: 170px;
+  padding-left: 350px;
 }
 .emptyresult {
   position: relative;

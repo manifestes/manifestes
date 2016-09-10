@@ -90,6 +90,7 @@
     author:
     content: Semer des graines, ouvrir des brèches, construire des ponts, allumer des mèches
 -
+    used: true
     author:
     content: Le travail fixe la vue à perte de vie
 -
@@ -168,6 +169,7 @@
     content: >
         Il est plus facile de professer en paroles un humanisme de bon aloi, que de rendre service à son voisin de palier.
 -
+    used: true
     author: Dumbledore
     content: Ce ne sont pas nos aptitudes qui montrent ce que nous sommes, ce sont nos choix.
 -

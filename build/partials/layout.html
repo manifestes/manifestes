@@ -236,15 +236,13 @@
       <div
         ng-repeat="t in tagsContentsOrdered"
         ng-click="toggleTag(t.tag);"
-        class="gridtag t-{{t.tag}}"
+        class="gridtag t-{{t.tag}} hint--right hint--warning"
         data-hint="{{t.description}}"
         ng-focus="true"
         ng-class="{
           important: t.important,
           active: isTagActive(t.tag),
-          popuped: isTagAutoComplete(t),
-          'hint--bottom': $index<2,
-          'hint--right': $index>1
+          popuped: isTagAutoComplete(t)
         }">
           <div class="back"></div>
           <i class="fa fa-{{t.icon}}"></i>
