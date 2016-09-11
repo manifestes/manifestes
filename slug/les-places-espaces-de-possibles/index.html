@@ -131,7 +131,7 @@
 				font-style: italic;
 			}
 			.quote {
-				font-size: 1.35em;
+				font-size: 1.25em;
 			}
 			.author {
 				font-size: 0.8em;
@@ -179,9 +179,10 @@
 				.subtitle { padding-right: 60%; }
 				.quotecontainer { margin: 0px 50px 40px 60%; }
 			}
-			/* for screenshot */
+			/* special size for screenshot */
 			@media (min-width: 750px) and (max-width: 750px) and (min-height: 400px) and (max-height: 400px) {
-				.share, .backtoroot { display: none !important; }
+				.share { display: none !important; }
+				/*.backtoroot { display: none !important; }*/
 			}
 			.share {
 				z-index: 99999;
@@ -191,7 +192,7 @@
 			}
 		</style>
 	</head>
-	<body style="background-image:url('../../data/media/');">
+	<body style="background-image:url('../../data/media/grasshighway.jpg');">
 		<div class="back">
 			<!-- refer to https://github.com/vinkla/awesome-share -->
 			<div class="share">

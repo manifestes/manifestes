@@ -2867,6 +2867,78 @@
 "icon_size": [33,33],
 "icon_anchor": [16.5,33],
 "popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.995641, 47.23086]},
+		"id":"316",
+		"properties": {
+			"title":"Besan\u00e7on (25000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.lutopik.com\/article\/au-cafe-du-faire-ensemble' target='_blank'>Au caf\u00e9 du faire ensemble<\/a><\/div>\n\t<div class=\"texte\">Le Caf\u00e9 des pratiques semble avoir r\u00e9ussi son pari, ouvrir ses portes \u00e0 des gens de tout \u00e2ge, de tout milieu et de toutes les cultures. Chacun peut apprendre ou enseigner des savoir-faire tr\u00e8s vari\u00e9s, le tout dans une ambiance chaleureuse&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+"icon_size": [33,33],
+"icon_anchor": [16.5,33],
+"popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.728714, 45.188804]},
+		"id":"317",
+		"properties": {
+			"title":"Grenoble (38000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.placegrenet.fr\/2016\/08\/23\/la-bonne-pioche-premiere-epicerie-grenobloise-100-sans-emballages\/99442' target='_blank'>La Bonne Pioche, \u00e9picerie 100&nbsp;% sans emballages<\/a><\/div>\n\t<div class=\"texte\">L\u2019\u00e9picerie La Bonne Pioche ouvrira ses portes le 12 septembre prochain en plein c\u0153ur de Grenoble. Son concept : proposer des produits \u2026 Lire la suite \u2192  Cet article La Bonne Pioche, premi\u00e8re \u00e9picerie grenobloise 100 % sans emballages est apparu en premier sur Place&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+"icon_size": [33,33],
+"icon_anchor": [16.5,33],
+"popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.355352, 48.85878]},
+		"id":"319",
+		"properties": {
+			"title":"Paris (75003)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/A-Paris-l-Amap-Transpedegouine-et-feministe-cultive-la-diversite' target='_blank'>\u00c0 Paris, l&#8217;Amap Transp\u00e9d\u00e9gouine et f\u00e9ministe cultive la diversit\u00e9<\/a><\/div>\n\t<div class=\"texte\">Depuis 2010, Jean-Michel et Christophe fournissent en l\u00e9gumes cette Amap d\u2019un genre particulier : le soutien aux paysans va de pair avec la lutte contre les discriminations de genre et d\u2019orientation sexuelle.  Paris, reportage  Cagettes de choux raves et de salades, pains dor\u00e9s, sachets de&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+"icon_size": [33,33],
+"icon_anchor": [16.5,33],
+"popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.353831, 48.878731]},
+		"id":"320",
+		"properties": {
+			"title":"Paris (75010)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.bastamag.net\/Quand-Francais-Syriens-ou-Afghans-cuisinent-ensemble-pour-abolir-les-frontieres-et-detendre-l-atmosphere' target='_blank'>Quand Fran\u00e7ais, Syriens ou Afghans cuisinent ensemble pour abolir les fronti\u00e8res et d\u00e9tendre l&#8217;atmosph\u00e8re<\/a><\/div>\n\t<div class=\"texte\">D\u2019un c\u00f4t\u00e9 les camps de migrants fuyant guerres, terrorismes et dictatures, install\u00e9s sous les ponts du m\u00e9tro parisien. De l\u2019autre, les habitants, les commer\u00e7ants, les passants qui vaquent \u00e0 leurs occupations. Gr\u00e2ce \u00e0 la cuisine, ce mur invisible s\u2019estompe peu \u00e0 peu. De ces b\u00e9n\u00e9voles qui concoctent un&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+"icon_size": [33,33],
+"icon_anchor": [16.5,33],
+"popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.3806, 43.2804]},
+		"id":"321",
+		"properties": {
+			"title":"Marseille (13000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.bastamag.net\/Quand-l-ecologie-populaire-permet-de-lutter-contre-la-desesperance-sociale-et' target='_blank'>Quand l&#8217;\u00e9cologie populaire permet de lutter contre la d\u00e9sesp\u00e9rance sociale et la criminalit\u00e9<\/a><\/div>\n\t<div class=\"texte\">Dans les quartiers nord de Marseille, marqu\u00e9s par le ch\u00f4mage massif et la violence, une initiative pourrait bien am\u00e9liorer un peu la vie des habitants. La cit\u00e9 de Font-Vert, enclav\u00e9e g\u00e9ographiquement et sinistr\u00e9e socialement, exp\u00e9rimente des jardins en pied d\u2019immeubles, cultiv\u00e9s par les habitants. Une&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+"icon_size": [33,33],
+"icon_anchor": [16.5,33],
+"popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-1.674128, 48.101111]},
+		"id":"322",
+		"properties": {
+			"title":"Rennes (35000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/lejournalminimal.fr\/une-startup-bretonne-invente-le-livret-arbre\/' target='_blank'>Une startup bretonne invente le \"Livret Arbre\"<\/a><\/div>\n\t<div class=\"texte\">EcoTree n\u2019est pas une banque mais une startup sp\u00e9cialis\u00e9e dans le placement vert : elle propose de la compensation carbone par le biais de la plantation d\u2019arbres.<\/div>\n<\/div>","id_mot": "75"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+"icon_size": [33,33],
+"icon_anchor": [16.5,33],
+"popup_anchor": [1,-27.5]
 		}}
 	]
 }

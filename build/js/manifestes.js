@@ -3545,7 +3545,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,langs:['fr','es','en'],datapath:'data/',assets:'build/',lastupdate:'10 September 2016 - 5:54'})
+.constant('settings', {dev:false,langs:['fr','es','en'],datapath:'data/',assets:'build/',lastupdate:'11 September 2016 - 2:57'})
 
 ;
 ;

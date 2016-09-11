@@ -201,7 +201,7 @@ image:
     url: MauriceSendak.jpg
     credit: Maurice Sendak
 quote:
-    author:
+    author: Rosa Luxemburg
     content: >
         Seul.e.s ceux et celles qui ne bougent pas ne se rendent pas compte qu'ils ont des chaînes
 content: >
@@ -1281,10 +1281,12 @@ title: Convictions religieuses
 subtitle: Nous sommes tous composés de mélanges entre différentes cultures et foi
 tags: love
 image:
+    url: indiangirl.jpg
+    credit: 
 quote:
     author: Pouchkine — Commentaires, Chris Marker
     content: Savez-vous, dit Elena Andréievna en se penchant sur le samovar, qu’il existe en Amérique du Sud une flûte dont le son n’est perceptible qu’à celui qui en joue ?
-source: ???
+source: JF
 content: >
     Toutes les convictions, athées ou non, sont respectables. Une vraie pensée libre, c'est un carrefour, une croisée des chemins entre différentes convictions, idées qui se croisent, s'entrecroisent, se superposent, se mélangent au cours d'une vie, dans la même personne.
 
@@ -1388,6 +1390,8 @@ title: La pub, instrument d'un culte
 subtitle: Incessant défilé d'images et de slogans mercantiles dans l'espace public
 tags: companies alienation education
 image:
+    url: miroir.jpg
+    credit: 
 quote:
     author: "Manifeste [Technologos.fr](http://www.technologos.fr)"
     content: >
@@ -1480,6 +1484,8 @@ title: Devenir végétarien
 subtitle: Si tu ne le fais pas pour les autres, fais-le pour toi
 tags: agriculture earth eat
 image:
+    url: Stalker_Tarkovski.jpg
+    credit: Stalker, Tarkovsky
 quote:
     author:
     content: Un végétarien en hummer pollue moins qu'un omnivore à vélo
@@ -1961,6 +1967,8 @@ title: Les places, espaces de possibles
 subtitle: Un espace pour reconstruire notre légitimité et notre vivre ensemble
 tags: space politics words
 image:
+    url: grasshighway.jpg
+    credit: 
 quote:
     author: "[Sur un mur exerçons le hasard](https://lundi.am/Sur-un-mur-exercons-le-hasard)"
     content: >
@@ -2116,6 +2124,8 @@ title: Achète à ton voisin
 subtitle: "Artisanat et savoir-faire local: proximité des besoins"
 tags: work object economy
 image:
+    url: fruitscouleurs.jpg
+    credit: 
 quote:
     author: Descartes (de crédit)
     content: Je dépense donc je suis
@@ -2156,6 +2166,8 @@ title: Production en série
 subtitle: Avons-nous besoin d'autant d'objets ?
 tags: object companies
 image:
+    url: reveAborigene_3.jpg
+    credit: Rêve de l'Aborigène
 quote:
     author:
     content: >
@@ -2181,6 +2193,8 @@ title: Rendements et production de blé
 subtitle: "Un mécanisme économique permet de diviser par cent le nombre d'heures de travail nécessaires pour produire un quintal de blé"
 tags: work economy
 image:
+    url: miroircasse.jpg
+    credit: 
 quote:
     author: Basshô
     content: >
@@ -2249,6 +2263,8 @@ title: Politique représentative classique
 subtitle: Qui est encore assez naïf pour croire qu’une « victoire électorale » permettra d’infliger un recul sérieux au commandement capitaliste ?
 tags: politics companies
 image:
+    url: etoilesescalier.jpg
+    credit: 
 quote:
     author: Kafka
     content: Un monde de mensonges ne peut être détruit par la vérité, seulement par un monde de vérité
@@ -2266,6 +2282,8 @@ title: Politique de la vie quotidienne
 subtitle: "Terminons-en avec la politique comme sphère séparée de la vie quotidienne, pratiquons la!"
 tags: words politics emancipation
 image:
+    url: anthroposcene.jpg
+    credit: Anthroposcène
 quote:
     author: Anaïs Nin
     content: Vint un temps où le risque de rester à l'étroit dans un bourgeon était plus douloureux que le risque d'éclore
