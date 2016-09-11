@@ -1663,7 +1663,9 @@ date: 2016-08-22
 title: État mafia, mafia des médias
 subtitle: Impossibilité de l'état démocratique classique à partir de certaines dimensions, et impossibilité de la communication globale
 tags: politics philo
-image: 
+image:
+    url: arbreseul.jpg
+    credit: 
 quote:
     author: José Hernandez
     content: La loi est faite pour tous, mais elle ne régit que le pauvre
@@ -1866,10 +1868,12 @@ date: 2016-09-10
 title: Quitte ton taff et ta mégalopole
 subtitle: "Le plus dur, c'est dans la tête. Avec les potes et un peu d'organisation, on peut tout changer en moins de 2 mois"
 tags: act work
+image:
+    url: ErnstHaeckel_partdown.jpg
+    credit: 
 quote:
     author:
     content: Le travail fixe la vue à perte de vie
-image:
 content: >
     Voila, tu économise un peu, quelques mois de réserve pour tenir entre les futur chômage, RSA et autres dépenses pragmatiques...
 

@@ -189,7 +189,7 @@ angular.module('manifest.maincontroller', ['underscore','config'])
     };
     $scope.isTagAutoComplete = function(tag) {
       if($scope.state.searchinput && $scope.state.searchinput.length>2) {
-        return (tag.label+" "+tag.description).indexOf($scope.state.searchinput)!=-1;
+        return (tag.tag+" "+tag.label+" "+tag.description).indexOf($scope.state.searchinput)!=-1;
       } else
         return false;
     };
