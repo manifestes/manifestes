@@ -2939,6 +2939,90 @@
 "icon_size": [33,33],
 "icon_anchor": [16.5,33],
 "popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [1.428524, 43.606596]},
+		"id":"323",
+		"properties": {
+			"title":"Toulouse (31000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.bastamag.net\/Habitat-cooperatif-economique-et-bioclimatique-quand-le-reve-s-apprete-a' target='_blank'>Habitat coop\u00e9ratif, \u00e9conomique et bioclimatique&nbsp;: quand le r\u00eave s&#8217;appr\u00eate \u00e0 devenir r\u00e9alit\u00e9<\/a><\/div>\n\t<div class=\"texte\">B\u00e2tir son propre cadre de vie, avec des logements aux loyers peu chers, tout en combinant \u00e9cologie et solidarit\u00e9s, locales comme internationales. C\u2019est ce que tentent les participants de la coop\u00e9rative d\u2019habitants Mas Coop, pr\u00e8s de Toulouse. Ils sont int\u00e9rimaires, cadres, ch\u00f4meurs ou retrait\u00e9s et&nbsp;(...)<\/div>\n<\/div>","id_mot": "70"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-70.png",
+"icon_size": [33,33],
+"icon_anchor": [16.5,33],
+"popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-1.675302, 48.097461]},
+		"id":"324",
+		"properties": {
+			"title":"Rennes (35000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.bastamag.net\/Quand-le-slam-poesie-sociale-et-participative-connecte-toutes-les-generations' target='_blank'>Quand le slam, po\u00e9sie sociale et participative, connecte toutes les g\u00e9n\u00e9rations, de 8 \u00e0 88 ans<\/a><\/div>\n\t<div class=\"texte\">La po\u00e9sie n\u2019est pas un mus\u00e9e. C\u2019est un art vivant et une pratique tr\u00e8s contemporaine. C\u2019est ainsi qu\u2019Aur\u00e9lia et Charlotte, salari\u00e9es de l\u2019association rennaise Slam Connexion, con\u00e7oivent le slam. Apparu aux \u00c9tats-Unis dans les ann\u00e9es 1980, le slam est ouvert \u00e0 celles et ceux qui souhaitent exprimer leur&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+"icon_size": [33,33],
+"icon_anchor": [16.5,33],
+"popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [1.074048, 49.449669]},
+		"id":"346",
+		"properties": {
+			"title":"Rouen (76000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.bastamag.net\/L-extraordinaire-productivite-d-un-petit-potager-de-50-m2-un-exemple-pour' target='_blank'>L&#8217;extraordinaire productivit\u00e9 d&#8217;un petit potager de 50 m2&nbsp;: un exemple pour nourrir la ville de demain&nbsp;?<\/a><\/div>\n\t<div class=\"texte\">Dans la banlieue de Rouen, un jardinier amateur arrive \u00e0 produire 300 kg de fruits et l\u00e9gumes par an, avec son potager d\u2019\u00e0 peine 50 m2. Et ce, sans pesticides ni engrais chimiques. Optimiser l\u2019espace, favoriser les \u00e9changes entre v\u00e9g\u00e9taux, bien choisir les endroits o\u00f9 pousseront tels types de&nbsp;(...)<\/div>\n<\/div>"
+			,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/ppi\/images\/marker_defaut.png",
+"icon_size": [33,33],
+"icon_anchor": [16.5,33],
+"popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.848021, 44.683423]},
+		"id":"347",
+		"properties": {
+			"title":"Laguiole (12210)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.bastamag.net\/Cette-petite-cooperative-fromagere-qui-paie-ses-agriculteurs-bien-mieux-que-les' target='_blank'>Cette petite coop\u00e9rative fromag\u00e8re qui paie ses agriculteurs bien mieux que les g\u00e9ants agroalimentaires<\/a><\/div>\n\t<div class=\"texte\">Une petite coop\u00e9rative fromag\u00e8re de l\u2019Aubrac paie ses \u00e9leveurs laitiers bien mieux que les g\u00e9ants agroalimentaires : ses adh\u00e9rents re\u00e7oivent 80% de plus par litre de lait compar\u00e9 aux prix pratiqu\u00e9s par Lactalis, Danone ou Bel. Quelle sont les cl\u00e9s du succ\u00e8s ? Ici, pas de multiples interm\u00e9diaires, ni&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+"icon_size": [33,33],
+"icon_anchor": [16.5,33],
+"popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [6.180416, 49.098513]},
+		"id":"348",
+		"properties": {
+			"title":"Metz (57000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.bastamag.net\/Agriculture-urbaine-comment-les-jardins-etudiants-fleurissent-aux-abords-des' target='_blank'>Agriculture urbaine&nbsp;: comment les jardins \u00e9tudiants fleurissent aux abords des r\u00e9sidences universitaires<\/a><\/div>\n\t<div class=\"texte\">\u00c0 proximit\u00e9 des campus, des \u00ab maisons de l\u2019\u00e9tudiant \u00bb ou des r\u00e9sidences du Crous, les projets de jardins partag\u00e9s, bas\u00e9s sur des d\u00e9marches solidaires et autog\u00e9r\u00e9es, attirent de plus en plus de jeunes gens \u00e0 mesure qu\u2019ils fleurissent sur le territoire. Inspir\u00e9es des \u00ab Incroyables comestibles \u00bb, ces&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+"icon_size": [33,33],
+"icon_anchor": [16.5,33],
+"popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [7.773946, 48.584695]},
+		"id":"353",
+		"properties": {
+			"title":"Strasbourg (67000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.rue89strasbourg.com\/la-fabrique-bricolage-112183?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+Rue89Strasbourg+%28Rue89+Strasbourg%29' target='_blank'>Strasbourg&nbsp;: La Fabrique, l&#8217;endroit qu&#8217;ont r\u00eav\u00e9 les bricolos du dimanche<\/a><\/div>\n\t<div class=\"texte\">La Fabrique est un atelier de fabrication partag\u00e9 \u00e0 l\u2019ouest de Strasbourg. Depuis un an, l\u2019association met \u00e0 disposition des bricoleurs occasionnels comme professionnels une quarantaine de machines-outils pour r\u00e9aliser leurs projets.<\/div>\n<\/div>","id_mot": "118"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-118.png",
+"icon_size": [33,33],
+"icon_anchor": [16.5,33],
+"popup_anchor": [1,-27.5]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [113.7676736, 34.2156961]},
+		"id":"354",
+		"properties": {
+			"title":"Changge",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/Pour-se-liberer-des-semenciers-des-agriculteurs-redecouvrent-le-mais-population' target='_blank'>Pour se lib\u00e9rer des semenciers, des agriculteurs red\u00e9couvrent le ma\u00efs population<\/a><\/div>\n\t<div class=\"texte\">Un agriculteur qui veut planter du ma\u00efs ne peut qu\u2019acheter des semences \u00ab hybrides \u00bb, propri\u00e9t\u00e9 des semenciers. Mais une alternative existe maintenant : le programme \u00ab l\u2019Aquitaine cultive la biodiversit\u00e9 \u00bb d\u00e9veloppe les ma\u00efs paysans \u2014 dits \u00ab population \u00bb - et sans&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
+		  ,
+"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+"icon_size": [33,33],
+"icon_anchor": [16.5,33],
+"popup_anchor": [1,-27.5]
 		}}
 	]
 }
