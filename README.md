@@ -5,7 +5,7 @@ a simple website to display contents within sections, and change the world
 - ☀ as less code as possible
 - ♥ easily read contents and collaborate
 - 😃 minify time spent on your computer
-- can be consulted offline 
+- 🌀 can be consulted offline 
 - ready to be put on a FTP server
 - can be served through github gh-pages (like here)
 - all contents are set in the `data` folder, using yaml documents containing markdown
