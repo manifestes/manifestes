@@ -990,6 +990,8 @@ title: Menace de l'islam ?
 subtitle: "Sortir de la domestication des esprits, vite"
 tags: media love
 image:
+    url: calvin-hobbes.jpg
+    credit: 
 quote:
     author: Frank Zappa
     content: La politique, c'est la division *divertissement* du complexe militaro-industriel
@@ -1756,6 +1758,8 @@ title: Représentation populaire
 subtitle: Voter aux élections ? Défiez-vous des ambitieux, des parvenus, et de ceux qui briguent vos suffrages
 tags: politics election
 image:
+    url: eoliennes.jpg
+    credit: 
 quote:
     author: Wolfgang Schäuble, ministre allemand de l’Economie
     content: On ne peut pas laisser des élections changer quoi que ce soit
