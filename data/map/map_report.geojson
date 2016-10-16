@@ -1,1125 +1,1287 @@
 {"type": "FeatureCollection",
 	"features": [
 		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [23.466796875, 38.2105620105377]},
-		"id":"1",
+		"geometry": {"type": "Point", "coordinates": [0.8352046, 47.3687029]},
+		"id":"119",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6757'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH70\/arton6757-9ffbb.jpg?1434537860' width='100' height='70' \/>Gr\u00e8ce\u00a0: rendons-leur la d\u00e9mocratie<small class='fine'>\u00a0<\/small>!<\/a><br><br>Il y a 616 jours.<div class=nettoyeur><\/div>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10516'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH149\/arton10516-c1c5a.jpg?1474382928' width='100' height='149' style='margin-right:5px;float:left;' \/><b style='color:black;'>RENDEZ-VOUS<\/b><br>Festival de la for\u00eat et du bois, \u00e0 Montlouis-sur-Loire (Indre-et-Loire)<\/a><br>Le 29 octobre 2016.<div class=nettoyeur><\/div>",
 			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [13.801801801802,23.003003003003],"icon_anchor": [9,38]			
-		
 
+		"icon": "\/images\/marker.png",	
+		"icon_size": [19.285714285714,32.142857142857],		"icon_anchor": [9,38]	
+		
 		}},
 		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [134.755, -24.7761086]},
-		"id":"3",
+		"geometry": {"type": "Point", "coordinates": [2.44895339012146, 48.83627461107706]},
+		"id":"121",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6760'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH76\/arton6760-72da6.jpg?1434537860' width='100' height='76' \/>Des villes d'Australie visent l'autonomie \u00e9nerg\u00e9tique<\/a><br><br>Il y a 614 jours.<div class=nettoyeur><\/div>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10549'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH149\/arton10549-d6362.jpg?1475432013' width='100' height='149' style='margin-right:5px;float:left;' \/><b style='color:black;'>RENDEZ-VOUS<\/b><br>\u00ab<small class='fine'>\u00a0<\/small>Le Medef nous les brise<small class='fine'>\u00a0<\/small>\u00bb\u00a0: \u00ab<small class='fine'>\u00a0<\/small>Cabaret d\u2019Urgence<small class='fine'>\u00a0<\/small>\u00bb \u00e0 Paris<\/a><br>Le 16 octobre 2016.<div class=nettoyeur><\/div>",
 			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [13.807228915663,23.012048192771],"icon_anchor": [9,38]			
-		
 
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [-1.00724989770593, 45.88868225]},
-		"id":"4",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6770'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH67\/arton6770-edb49.jpg?1434537860' width='100' height='67' \/>Une nouvelle <span class='caps'>ZAD<\/span> s'oppose \u00e0 un incin\u00e9rateur en Charente-Maritime<\/a><br><br>Il y a 614 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [13.807228915663,23.012048192771],"icon_anchor": [9,38]			
+		"icon": "\/images\/marker.png",	
+		"icon_size": [36,60],		"icon_anchor": [9,38]	
 		
+		}}
+		,
 
-		}},
 		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.4169921875, 48.6648455298589]},
-		"id":"5",
+		"geometry": {"type": "Point", "coordinates": [5.6387219, 44.1748545]},
+		"id":"122",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6292'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH141\/arton6292-ab702.jpg?1434537860' width='100' height='141' \/>Op\u00e9ration Vigie nature 13\u00a0septembre<\/a><br><br>Il y a 730 jours.<div class=nettoyeur><\/div>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10515'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH141\/arton10515-b6de7.jpg?1475138287' width='100' height='141' style='margin-right:5px;float:left;' \/>Foire bio et festival Ar'Lire \u00e0 Montfroc (Dr\u00f4me)<\/a><br>publi\u00e9 le 1er octobre 2016.<div class=nettoyeur><\/div>",
 			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [13.538461538462,22.564102564103],"icon_anchor": [9,38]			
-		
 
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.38436, 48.889343]},
-		"id":"6",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6811'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH67\/arton6811-35210.jpg?1434537860' width='100' height='67' \/>L\u2019enfance mis\u00e9rable des fr\u00e8res Kouachi <\/a><br><br>Il y a 606 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [13.829268292683,23.048780487805],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [1.8896484375, 46.8842244406935]},
-		"id":"7",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6823'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH67\/arton6823-ea2fe.jpg?1434537860' width='100' height='67' \/><span class='caps'>GRECE<\/span> - A Skouries, la qu\u00eate de l'or d\u00e9truit la nature <\/a><br><br>Il y a 602 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [13.840490797546,23.067484662577],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.3436357, 48.8532871]},
-		"id":"8",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6872'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH67\/arton6872-4ce52.jpg?1434537860' width='100' height='67' \/>Les fast-food bio ont la patate savoureuse<\/a><br><br>Il y a 592 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [13.869158878505,23.115264797508],"icon_anchor": [9,38]			
-		
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
 
 		}},
 		{"type": "Feature",
 		"geometry": {"type": "Point", "coordinates": [5.4474738, 43.5298424]},
-		"id":"9",
+		"id":"123",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6881'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH65\/arton6881-70fbf.jpg?1434537860' width='100' height='65' \/>Derri\u00e8re les rails de la gare d'Aix, le potager prosp\u00e8re<\/a><br><br>Il y a 587 jours.<div class=nettoyeur><\/div>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10391'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH150\/arton10391-5bcd1.jpg?1475243274' width='100' height='150' style='margin-right:5px;float:left;' \/>11<sup class='typo_exposants'>e<\/sup> \u00e9dition des Journ\u00e9es du film sur l'environnement, \u00e0 Aix-en-Provence (Bouches-du-Rh\u00f4ne)<\/a><br>publi\u00e9 le 30 septembre 2016.<div class=nettoyeur><\/div>",
 			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [13.883830455259,23.139717425432],"icon_anchor": [9,38]			
-		
 
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [3.6888649, 46.3531367]},
-		"id":"10",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6889'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH65\/arton6889-90bd3.jpg?1434537861' width='100' height='65' \/>En Auvergne, un absurde projet de golf d\u00e9vore des terres agricoles<\/a><br><br>Il y a 587 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [13.883830455259,23.139717425432],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [-1.5518632, 47.2996846]},
-		"id":"11",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6900'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH140\/arton6900-e4b50.jpg?1434537861' width='100' height='140' \/>Le 4\u00a0f\u00e9vrier, d\u00e9bat sur la r\u00e9pression des luttes environnementales<\/a><br><br>Il y a 587 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [13.883830455259,23.139717425432],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.5289296, 48.9372068]},
-		"id":"12",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6909'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH67\/arton6909-72f4f.jpg?1434537861' width='100' height='67' \/>\u00ab<small class='fine'>\u00a0<\/small>Vivre ensemble, c\u2019est reconna\u00eetre l\u2019autre comme diff\u00e9rent<small class='fine'>\u00a0<\/small>\u00bb<\/a><br><br>Il y a 585 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [13.889763779528,23.149606299213],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.32003101155031, 48.85881005]},
-		"id":"13",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6911'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH99\/arton6911-2e442.jpg?1434537861' width='100' height='99' \/>Monsieur le Cam\u00e9l\u00e9on, que signifie le vivre ensemble<small class='fine'>\u00a0<\/small>?<\/a><br><br>Il y a 555 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [13.98347107438,23.305785123967],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.415796, 48.8795658]},
-		"id":"14",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6912'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH67\/arton6912-9b144.jpg?1434537861' width='100' height='67' \/>Le halal se met au bio <\/a><br><br>Il y a 585 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [13.889763779528,23.149606299213],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [4.67160051824518, 49.69801175]},
-		"id":"15",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6926'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH63\/arton6926-d9e2c.jpg?1434537861' width='100' height='63' \/>La chasse peut-elle rimer avec biodiversit\u00e9<small class='fine'>\u00a0<\/small>? Conversation en for\u00eat entre un naturaliste et un chasseur<\/a><br><br>Il y a 563 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [13.957585644372,23.26264274062],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [0.0878861, 44.3144497]},
-		"id":"16",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6929'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH63\/arton6929-c8ce5.jpg?1434537861' width='100' height='63' \/>Dans le Lot-et-Garonne, le projet de Center Parcs accueilli comme \u00ab<small class='fine'>\u00a0<\/small>le veau d'or<small class='fine'>\u00a0<\/small>\u00bb est vivement critiqu\u00e9 par le Conseil \u00e9conomique et social<\/a><br><br>Il y a 549 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.003338898164,23.338898163606],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.3580232, 48.935773]},
-		"id":"17",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6938'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH67\/arton6938-37688.jpg?1434537861' width='100' height='67' \/>A Saint Denis, l'<span class='caps'>AMAP<\/span> est anarchiste et \u00e7a marche tr\u00e8s bien<\/a><br><br>Il y a 574 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [13.923076923077,23.205128205128],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [1.8264482, 49.6013403]},
-		"id":"18",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6953'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH67\/arton6953-52706.jpg?1434537861' width='100' height='67' \/>Apr\u00e8s la ferme-usine des mille vaches, les trois mille cochons de Picardie<\/a><br><br>Il y a 573 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [13.926163723917,23.210272873194],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [5.47397281258444, 44.68101845]},
-		"id":"19",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6954'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH67\/arton6954-c41be.jpg?1434537861' width='100' height='67' \/><span class='caps'>CHRONIQUE<\/span> - La nature n'a pas de morale<\/a><br><br>Il y a 573 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [13.926163723917,23.210272873194],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.32003101155031, 48.85881005]},
-		"id":"20",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6984'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH125\/arton6984-a906a.jpg?1434537861' width='100' height='125' \/>Pourquoi je\u00fbner pour le climat<small class='fine'>\u00a0<\/small>?<\/a><br><br>Il y a 563 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [13.957585644372,23.26264274062],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [1.7459042, 43.9607495]},
-		"id":"21",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6985'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH67\/arton6985-c14fb.jpg?1434537861' width='100' height='67' \/><span class='caps'>EXCLUSIF<\/span> - Des vestiges arch\u00e9ologiques retrouv\u00e9s sur le site du barrage de Sivens<\/a><br><br>Il y a 565 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [13.951219512195,23.252032520325],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.32003101155031, 48.85881005]},
-		"id":"22",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6990'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH66\/arton6990-7344a.jpg?1434537861' width='100' height='66' \/>Le tout tofu n'est pas une lubie de bobo<\/a><br><br>Il y a 563 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [13.957585644372,23.26264274062],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [7.7507127, 48.584614]},
-		"id":"23",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6999'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH142\/arton6999-a1622.jpg?1434537861' width='100' height='142' \/>Convergence pour fermer Fessenheim 7\u00a0mars<\/a><br><br>Il y a 560 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [13.967213114754,23.27868852459],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [7.2683912, 43.7009358]},
-		"id":"24",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7002'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH66\/arton7002-79c0b.jpg?1434537861' width='100' height='66' \/>Pr\u00e8s de Nice, un immense gaspillage de terres fertiles se pr\u00e9pare<\/a><br><br>Il y a 542 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.027027027027,23.378378378378],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.46835239474902, 27.2188905]},
-		"id":"25",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7014'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH67\/arton7014-772dc.jpg?1434537861' width='100' height='67' \/>En Alg\u00e9rie, la r\u00e9volte pacifique contre le gaz de schiste <\/a><br><br>Il y a 558 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [13.973684210526,23.289473684211],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.32003101155031, 48.85881005]},
-		"id":"28",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7023'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH66\/arton7023-131e9.jpg?1434537861' width='100' height='66' \/>Les toits pourraient \u00eatre le garde-manger de Paris<\/a><br><br>Il y a 549 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.003338898164,23.338898163606],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [0.4822983, 44.7028324]},
-		"id":"29",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7041'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH126\/arton7041-29e6e.jpg?1434537861' width='100' height='126' \/>R\u00e9union contre les golfs de R\u00e9alville <\/a><br><br>Il y a 546 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.013422818792,23.355704697987],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.4412184, 48.8623357]},
-		"id":"30",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7050'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH103\/arton7050-735fd.jpg?1434537861' width='100' height='103' \/>Tchernobyl, le Blayais, Fukushima. Projections, spectacles et d\u00e9bats \u00e0 Montreuil<\/a><br><br>Il y a 548 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.006688963211,23.344481605351],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [1.9737186, 47.9200018]},
-		"id":"31",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7061'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH102\/arton7061-7f111.jpg?1434537861' width='100' height='102' \/>L'\u00e9vasion fiscale \u00e0 travers l'exemple de la famille Mulliez (Auchan)<\/a><br><br>Il y a 548 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.006688963211,23.344481605351],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.46835239474902, 27.2188905]},
-		"id":"32",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7067'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH67\/arton7067-6126e.jpg?1434537861' width='100' height='67' \/>L'ombre des essais nucl\u00e9aires plane sur la contestation du gaz de schiste en Alg\u00e9rie<\/a><br><br>Il y a 548 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.006688963211,23.344481605351],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [1.9090697, 48.9958047]},
-		"id":"33",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7083'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH112\/arton7083-a8160.jpg?1434537861' width='100' height='112' \/>R\u00e9union contre les grands projets inutiles dans les Yvelines<\/a><br><br>Il y a 545 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.016806722689,23.361344537815],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [-0.6085356, 47.4234644]},
-		"id":"34",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7081'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH69\/arton7081-9f257.jpg?1434537861' width='100' height='69' \/>Face au changement climatique, les semences paysannes sont l'avenir de l'agriculture<\/a><br><br>Il y a 545 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.016806722689,23.361344537815],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.240206, 48.8356649]},
-		"id":"36",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7092'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH67\/arton7092-bbad2.jpg?1434537862' width='100' height='67' \/>\u00ab<small class='fine'>\u00a0<\/small>Mise en Seine des changements climatiques<small class='fine'>\u00a0<\/small>\u00bb\u00a0: colloque sur le r\u00f4le de la Seine face aux enjeux climatiques<\/a><br><br>Il y a 532 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.061855670103,23.436426116838],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [-0.9244473, 45.6742681]},
-		"id":"37",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7106'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH70\/arton7106-a5cff.jpg?1434537862' width='100' height='70' \/>Danger des pesticides\u00a0: la veuve d'un agriculteur t\u00e9moigne <\/a><br><br>Il y a 539 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.037351443124,23.39558573854],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.32003101155031, 48.85881005]},
-		"id":"38",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7111'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH131\/arton7111-aa9d1.jpg?1434537862' width='100' height='131' \/>Une journ\u00e9e pour red\u00e9couvrir le lien entre humains et r\u00e8gne v\u00e9g\u00e9tal<\/a><br><br>Il y a 541 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.030456852792,23.384094754653],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [4.8323239, 45.7575926]},
-		"id":"39",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7112'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH54\/arton7112-d2819.jpg?1434537862' width='100' height='54' \/>Le jardin autog\u00e9r\u00e9 des Pendarts, \u00e0 Lyon, f\u00eate le printemps<\/a><br><br>Il y a 540 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.033898305085,23.389830508475],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [5.20443694882273, 44.72964575]},
-		"id":"40",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7117'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH67\/arton7117-1aa8d.jpg?1434537862' width='100' height='67' \/>Il faut parler de la vieillesse, m\u00eame si \u00e7a d\u00e9range<\/a><br><br>Il y a 541 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.030456852792,23.384094754653],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [5.7210773, 45.182478]},
-		"id":"41",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7133'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH68\/arton7133-98db0.jpg?1434537862' width='100' height='68' \/>A Grenoble, l'alliance \u00e9colo-gauche-citoyens, \u00e7a marche<small class='fine'>\u00a0<\/small>!<\/a><br><br>Il y a 535 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.051282051282,23.418803418803],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [1.66577421697537, 44.6249918]},
-		"id":"42",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7148'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH67\/arton7148-77c86.jpg?1434537862' width='100' height='67' \/>Des Maisons pour faire vivre les semences paysannes... libres <\/a><br><br>Il y a 536 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.047781569966,23.412969283276],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [-1.7361111, 46.505]},
-		"id":"43",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7158'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH108\/arton7158-3e589.jpg?1434537862' width='100' height='108' \/>Journ\u00e9e d'action contre l\u2019industrialisation de l'agriculture et le groupe Avril-Sofiprot\u00e9ol<\/a><br><br>Il y a 527 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.07972270364,23.466204506066],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.3096318, 45.6871839]},
-		"id":"44",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7173'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH66\/arton7173-2348a.jpg?1434537862' width='100' height='66' \/>En Creuse, la ferme-usine des Mille veaux suscite la pol\u00e9mique<\/a><br><br>Il y a 529 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.072538860104,23.454231433506],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [5.7210773, 45.182478]},
-		"id":"45",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7190'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH51\/arton7190-bbebc.jpg?1434537862' width='100' height='51' \/>Manifestation \u00e0 Grenoble contre le Center Parcs<\/a><br><br>Il y a 529 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.072538860104,23.454231433506],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.4412184, 48.8623357]},
-		"id":"46",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7191'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH71\/arton7191-1596d.jpg?1434537862' width='100' height='71' \/>La main verte des Roms de Montreuil<\/a><br><br>Il y a 529 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.072538860104,23.454231433506],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [1.4442469, 43.6044622]},
-		"id":"47",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7208'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH130\/arton7208-2c3f2.jpg?1434537862' width='100' height='130' \/>Vivre le territoire autrement. Colloque pour une alternative \u00e0 l'orthodoxie lib\u00e9rale \u00e0 l'Universit\u00e9 de Toulouse <\/a><br><br>Il y a 520 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.105263157895,23.508771929825],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [4.2523237, 47.0151891]},
-		"id":"48",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7282'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH66\/arton7282-ba4ee.jpg?1434537862' width='100' height='66' \/>Les grands crus de Bourgogne commencent \u00e0 s'adapter au changement climatique<\/a><br><br>Il y a 509 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.146690518784,23.577817531306],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.3521334, 48.8565056]},
-		"id":"49",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7292'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH66\/arton7292-e4540.jpg?1434537862' width='100' height='66' \/>Rencontre de Reporterre\u00a0: Faisons de l\u2019agriculture une solution au changement climatique<\/a><br><br>Il y a 516 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.120141342756,23.533568904594],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [5.47397281258444, 44.68101845]},
-		"id":"50",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7313'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH68\/arton7313-98054.jpg?1434537862' width='100' height='68' \/>Sous le vent des herbes de la Dame de onze heures<\/a><br><br>Il y a 511 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.139037433155,23.565062388592],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.46835239474902, 27.2188905]},
-		"id":"51",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7348'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH67\/arton7348-2c57d.jpg?1434537862' width='100' height='67' \/>En Alg\u00e9rie, le refus du gaz de schiste prend une ampleur nationale<\/a><br><br>Il y a 508 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.150537634409,23.584229390681],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [-1.2889243601145, 45.9239805]},
-		"id":"52",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7394'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH68\/arton7394-0dd73.jpg?1434537862' width='100' height='68' \/>Une nouvelle <span class='caps'>ZAD<\/span> s'est install\u00e9e \u00e0 Ol\u00e9ron. Enjeu\u00a0: un projet ostr\u00e9icole industriel<\/a><br><br>Il y a 499 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.185792349727,23.642987249545],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [1.564724, 47.7231524]},
-		"id":"53",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7398'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH68\/arton7398-d98cd.jpg?1434537862' width='100' height='68' \/>Une \u00e9cole install\u00e9e \u00e0 l'ombre d'une centrale nucl\u00e9aire au m\u00e9pris des r\u00e8gles de s\u00e9curit\u00e9, c'est la France<\/a><br><br>Il y a 488 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.230483271375,23.717472118959],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [-0.1276474, 51.5073219]},
-		"id":"54",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7434'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH67\/arton7434-c00a8.jpg?1434537862' width='100' height='67' \/>Elections au Royaume-Uni\u00a0: personne n'en parle, mais les Verts sont bien l\u00e0<\/a><br><br>Il y a 494 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.205882352941,23.676470588235],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [19.0404707, 47.4983815]},
-		"id":"55",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7444'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH69\/arton7444-138a4.jpg?1434537862' width='100' height='69' \/>Vous voulez des emplois<small class='fine'>\u00a0<\/small>? Choisissez la d\u00e9croissance<\/a><br><br>Il y a 492 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.214022140221,23.690036900369],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.1771353, 41.3825596]},
-		"id":"56",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7453'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH67\/arton7453-ccae5.jpg?1434537863' width='100' height='67' \/>Ni capitalisme, ni Etat - la Coop\u00e9rative int\u00e9grale s'\u00e9panouit \u00e0 Barcelone<\/a><br><br>Il y a 483 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.251407129456,23.75234521576],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.1771353, 41.3825596]},
-		"id":"57",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7462'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH67\/arton7462-147da.jpg?1434537863' width='100' height='67' \/>Hors Etat et hors march\u00e9, la Coop\u00e9rative int\u00e9grale de Barcelone n'est pas encore au paradis<\/a><br><br>Il y a 475 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.285714285714,23.809523809524],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [1.4442469, 43.6044622]},
-		"id":"58",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7570'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH75\/arton7570-8a293.jpg?1434537863' width='100' height='75' \/>A Sivens, une video montre que des gendarmes violents accusent faussement des opposants<\/a><br><br>Il y a 472 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.298850574713,23.831417624521],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [-2.76437899768111, 47.82504545]},
-		"id":"59",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7640'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH66\/arton7640-8eb50.jpg?1435124687' width='100' height='66' \/>Quand une multinationale s'ach\u00e8te une for\u00eat pour en faire un parc \u00e9olien industriel<\/a><br><br>Il y a 446 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.41935483871,24.032258064516],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [-1.7271466, 47.2115054]},
-		"id":"60",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7656'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH68\/arton7656-32ac0.jpg?1434954082' width='100' height='68' \/>Ch\u00f4meurs et paysans, \u00e0 Cou\u00ebron, ils mettent la terre en commun<\/a><br><br>Il y a 448 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.409638554217,24.016064257028],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.25731799862742, 50.514681]},
-		"id":"61",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7673'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH70\/arton7673-d1b82.jpg?1434537863' width='100' height='70' \/>Des partisans d'une ferme-usine menacent par le feu l'association \u00e9cologiste<\/a><br><br>Il y a 457 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.366863905325,23.944773175542],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.40107305981761, 48.8618271]},
-		"id":"62",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7738'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH67\/arton7738-67afc.jpg?1435394900' width='100' height='67' \/>\u00ab<small class='fine'>\u00a0<\/small>Le climat<small class='fine'>\u00a0<\/small>? Bien s\u00fbr qu'on y pense.<small class='fine'>\u00a0<\/small>\u00bb Paroles d'habitants sur le changement climatique<\/a><br><br>Il y a 443 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.434077079108,24.056795131846],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [5.3699525, 43.2961743]},
-		"id":"63",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7767'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH69\/arton7767-e17c5.jpg?1436257542' width='100' height='69' \/>\u00ab<small class='fine'>\u00a0<\/small>On voit bien que \u00e7a part \u00e0 la d\u00e9rive, mais on ne peut rien faire.<small class='fine'>\u00a0<\/small>\u00bb Paroles d'un caf\u00e9 marseillais sur le changement climatique<\/a><br><br>Il y a 433 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.484472049689,24.140786749482],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [5.3699525, 43.2961743]},
-		"id":"64",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7862'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH70\/arton7862-9e123.jpg?1437032543' width='100' height='70' \/>\u00c0 Marseille, sur la plage, le changement climatique est pris avec fatalisme<\/a><br><br>Il y a 424 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.53164556962,24.2194092827],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [-1.2889243601145, 45.9239805]},
-		"id":"65",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7881'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH64\/arton7881-d4762.jpg?1437984057' width='100' height='64' \/>Dans le bassin Marennes-Ol\u00e9ron, la lutte contre les fermes-usines d'hu\u00eetres est engag\u00e9e<\/a><br><br>Il y a 413 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.591792656587,24.319654427646],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [4.8060329, 43.9493143]},
-		"id":"66",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7941'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH65\/arton7941-dc88f.jpg?1441183288' width='100' height='65' \/>Quand un ancien tri postal devient le refuge des \u00e2mes meurtries et des \u00e2mes fleuries<\/a><br><br>Il y a 376 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.816901408451,24.694835680751],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.3772525, 51.0347708]},
-		"id":"67",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7964'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH68\/arton7964-d0b3b.jpg?1441352967' width='100' height='68' \/>Il invente un crayon g\u00e9ant pour signer la p\u00e9tition anti <span class='caps'>TAFTA<\/span><\/a><br><br>Il y a 374 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.830188679245,24.716981132075],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [1.4866387, 48.4470039]},
-		"id":"68",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7967'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH67\/arton7967-068c2.jpg?1441957793' width='100' height='67' \/>Sauvez les arbres... \u00e0 Chartres et ailleurs<\/a><br><br>Il y a 367 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.877697841727,24.796163069544],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [-1.7103294, 47.3819408]},
-		"id":"69",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=8100'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH80\/arton8100-908d8.jpg?1442912507' width='100' height='80' \/>Notre-Dame-des-Landes, \u00e0 nouveau sous pression, imagine un avenir heureux<\/a><br><br>Il y a 356 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.955665024631,24.926108374384],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [-1.7103294, 47.3819408]},
-		"id":"70",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=8108'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH72\/arton8108-0cc10.jpg?1442992382' width='100' height='72' \/>A Notre-Dame-des-Landes, le juge fait un petit tour et puis s'en va<\/a><br><br>Il y a 355 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [14.962962962963,24.938271604938],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [3.4548603, 49.9869789]},
-		"id":"71",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=8119'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH67\/arton8119-49e57.jpg?1443688226' width='100' height='67' \/>Au march\u00e9 de Bohain, les gens parlent du climat, mais ne croient pas \u00e0 la <span class='caps'>COP<\/span> 21<\/a><br><br>Il y a 347 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [15.022670025189,25.037783375315],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.4065806, 48.925002]},
-		"id":"72",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=8159'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH75\/arton8159-eba94.jpg?1443688226' width='100' height='75' \/>Le premier proc\u00e8s contre un data center s'ouvre aujourd'hui<\/a><br><br>Il y a 347 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [15.022670025189,25.037783375315],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [6.48828506469727, 44.8440760446938]},
-		"id":"73",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=8166'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH75\/arton8166-9da13.jpg?1444035867' width='100' height='75' \/>La brebis brigasque sauv\u00e9e par des \u00e9leveurs passionn\u00e9s <\/a><br><br>Il y a 130 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [18.666666666667,31.111111111111],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [6.5077646, 51.1080819]},
-		"id":"76",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=8197'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH67\/arton8197-86190.jpg?1444205193' width='100' height='67' \/>Le coup d\u2019\u00e9clat estival des militants anti-charbon allemands<\/a><br><br>Il y a 341 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [15.06905370844,25.115089514066],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [13.3888599, 52.5170365]},
-		"id":"77",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=8227'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH67\/arton8227-afb58.jpg?1444461306' width='100' height='67' \/>Les citoyens allemands vent debout contre le trait\u00e9 Tafta <\/a><br><br>Il y a 338 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [15.092783505155,25.154639175258],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [5.3943269, 43.3301378]},
-		"id":"78",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=8357'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH142\/arton8357-f9ab3.jpg?1446285546' width='100' height='142' \/>Rencontre de Reporterre\u00a0: A Marseille,  le 4\u00a0novembre, on rappe sur le climat<\/a><br><br>Il y a 317 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [15.269754768392,25.449591280654],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.3897276, 48.8682925]},
-		"id":"79",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=8397'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH142\/arton8397-beae4.jpg?1447001297' width='100' height='142' \/>Rencontre de Reporterre\u00a0: \u00c0 Paris, le 10\u00a0novembre, on prend soin des \u00ab<small class='fine'>\u00a0<\/small>biens communs<small class='fine'>\u00a0<\/small>\u00bb <\/a><br><br>Il y a 313 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [15.305785123967,25.509641873278],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [5.24404, 45.2594]},
-		"id":"82",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=8670'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH142\/arton8670-eeeb8.jpg?1450106049' width='100' height='142' \/>Week-end festif \u00e0 Roybon (Is\u00e8re) pour l'inauguration de la bulle tropicale<\/a><br><br>Il y a 269 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [15.761755485893,26.269592476489],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.3827348, 48.8540231]},
-		"id":"83",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=8698'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH142\/arton8698-b3be9.jpg?1450479519' width='100' height='142' \/>Les Jardins au Secours du Climat<small class='fine'>\u00a0<\/small>! (\u00e0 Paris)<\/a><br><br>Il y a 241 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [16.123711340206,26.872852233677],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.38328452672889, 48.8666429]},
-		"id":"91",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=9037'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH40\/arton9037-78720.jpg?1455558489' width='100' height='40' \/>Grand banquet contre l'\u00e9tat d'urgence \u00e0 Paris<\/a><br><br>Il y a 205 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [16.705882352941,27.843137254902],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [5.23015584568443, 45.2382552]},
-		"id":"92",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=9045'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH68\/arton9045-df740.jpg?1455696191' width='100' height='68' \/>\u00c0 Roybon, la Zad oubli\u00e9e retrouve l'esprit de la for\u00eat<\/a><br><br>Il y a 208 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [16.651162790698,27.751937984496],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.3454999, 48.8665777]},
-		"id":"93",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=9172'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH142\/arton9172-e7fd0.jpg?1456848136' width='100' height='142' \/>Fukushima, cinq ans apr\u00e8s, comment vivent les habitants<small class='fine'>\u00a0<\/small>? conf\u00e9rence-d\u00e9bat \u00e0 Paris<\/a><br><br>Il y a 182 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [17.172413793103,28.620689655172],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.2956951, 49.8941708]},
-		"id":"94",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=9217'});\" >Deux associations attaquent la ferme-usine des Mille vaches pour \u00ab<small class='fine'>\u00a0<\/small>maltraitance animale<small class='fine'>\u00a0<\/small>\u00bb<\/a><br><br>Il y a 188 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [17.042016806723,28.403361344538],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.3521562, 48.8564915]},
-		"id":"95",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=9236'});\" >Volkswagen fait l'objet d'une information judiciaire pour \u00ab<small class='fine'>\u00a0<\/small>tromperie aggrav\u00e9e<small class='fine'>\u00a0<\/small>\u00bb<\/a><br><br>Il y a 187 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [17.063291139241,28.438818565401],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [7.7291312, 48.57559]},
-		"id":"96",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=9243'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH142\/arton9243-f7ecd.jpg?1457552652' width='100' height='142' \/>Week-end \u00ab<small class='fine'>\u00a0<\/small>Fukussenheim<small class='fine'>\u00a0<\/small>\u00bb \u00e0 Strasbourg (Bas-Rhin)<\/a><br><br>Il y a 184 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [17.128205128205,28.547008547009],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [5.8752472, 45.1145026]},
-		"id":"97",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=9273'});\" >A Chamrousse, 600 personnes r\u00e9unies \u00e0 2 400 m\u00e8tres d'altitude contre l'extension de la station de ski<\/a><br><br>Il y a 181 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [17.194805194805,28.658008658009],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [-0.1276473, 51.5073219]},
-		"id":"98",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=9287'});\" >\u00c0 Londres, des pigeons pour contr\u00f4ler la qualit\u00e9 de l'air<\/a><br><br>Il y a 180 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [17.217391304348,28.695652173913],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.3237983, 48.8920158]},
-		"id":"99",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=9347'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH55\/arton9347-07a83.jpg?1458751460' width='100' height='55' \/>Projection \u2013 d\u00e9bat \u00ab<small class='fine'>\u00a0<\/small>Le Prix des Mots<small class='fine'>\u00a0<\/small>\u00bb en soutien \u00e0 Bastamag \u00e0 Paris<\/a><br><br>Il y a 166 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [17.555555555556,29.259259259259],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [-1.7103293, 47.3819408]},
-		"id":"100",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=9457'});\" >Le projet d'a\u00e9roport est \u00ab<small class='fine'>\u00a0<\/small>surdimensionn\u00e9<small class='fine'>\u00a0<\/small>\u00bb, selon les experts du <span class='caps'>CGEDD<\/span><\/a><br><br>Il y a 159 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [17.741626794258,29.569377990431],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [0.58470183874502, 43.6463869]},
-		"id":"101",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=9559'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH141\/arton9559-d98ba.jpg?1460981577' width='100' height='141' \/>Nuit debout \u00e0 Auch (Gers)<\/a><br><br>Il y a 144 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [18.185567010309,30.309278350515],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.3621046, 48.8690483]},
-		"id":"102",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=9560'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH53\/arton9560-1285a.jpg?1460981578' width='100' height='53' \/>Nuit debout, l'\u00e9tape d'apr\u00e8s &mdash; soir\u00e9e-d\u00e9bat \u00e0 Paris<\/a><br><br>Il y a 145 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [18.153846153846,30.25641025641],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.3404385, 48.8668373]},
-		"id":"103",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=9562'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH67\/arton9562-b6e35.jpg?1460985329' width='100' height='67' \/>Conf\u00e9rence sur les nouvelles techniques de modification g\u00e9n\u00e9tique \u00e0 Paris<\/a><br><br>Il y a 139 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [18.349206349206,30.582010582011],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.3524626, 48.8411341]},
-		"id":"104",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=9654'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH142\/arton9654-5ff11.jpg?1461763859' width='100' height='142' \/>Projection du film \u00ab<small class='fine'>\u00a0<\/small>Mon voyage sans fin<small class='fine'>\u00a0<\/small>\u00bb, \u00e0 Paris<\/a><br><br>Il y a 131 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [18.629834254144,31.049723756906],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [-0.4143125, 44.5682236]},
-		"id":"106",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=9875'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH70\/arton9875-9d874.png?1464615535' width='100' height='70' \/>Un lopin collectif contre la <span class='caps'>LGV<\/span> Sud-Ouest, \u00e0 Landiras (Gironde)<\/a><br><br>Il y a 100 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [20,33.333333333333],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [1.17298, 43.4168]},
-		"id":"107",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10002'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH138\/arton10002-74fa8.jpg?1465832486' width='100' height='138' \/>AgitaTerre<small class='fine'>\u00a0<\/small>! le festival des alternatives durables et locales, \u00e0 Poucharramet (Haute-Garonne)<\/a><br><br>Il y a 71 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [21.917355371901,36.528925619835],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [5.379180908203125, 48.520356607112106]},
-		"id":"108",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10186'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH142\/arton10186-2df85.jpg?1467989842' width='100' height='142' \/>Manifestation de r\u00e9occupation de la for\u00eat de Mandres-en-Barrois, pr\u00e8s de Bure (Meuse)<\/a><br><br>Il y a 58 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [23.111111111111,38.518518518519],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [5.27618, 44.569]},
-		"id":"109",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10240'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH142\/arton10240-5fe2b.jpg?1468599503' width='100' height='142' \/>\u00c0 la d\u00e9couverte des chauves-souris \u00e0 Saint-Nazaire-le-D\u00e9sert (Dr\u00f4me)<\/a><br><br>Il y a 54 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [23.538461538462,39.230769230769],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.2967038, 46.2604737]},
-		"id":"110",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10241'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH139\/arton10241-ede4c.jpg?1468599503' width='100' height='139' \/>Festival Stop mines, \u00e0 Bord-Saint-Georges (Creuse)<\/a><br><br>Il y a 51 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [23.881188118812,39.80198019802],"icon_anchor": [9,38]			
-		
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
 
 		}},
 		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [5.7946369, 46.7855687]},
-		"id":"111",
+		"geometry": {"type": "Point", "coordinates": [-4.6982968, 48.5567105]},
+		"id":"120",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10250'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH140\/arton10250-212f9.jpg?1468858243' width='100' height='140' \/>Festival \u00e9cocitoyen Les R\u00e9sistives, \u00e0 Besain (Jura)<\/a><br><br>Il y a 51 jours.<div class=nettoyeur><\/div>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10554'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton10554-2b2ce.jpg?1475075268' width='100' height='67' style='margin-right:5px;float:left;' \/>\u00c0 louer\u00a0: maison sans d\u00e9chet et sans poubelle<\/a><br>publi\u00e9 le 27 septembre 2016.<div class=nettoyeur><\/div>",
 			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [23.881188118812,39.80198019802],"icon_anchor": [9,38]			
-		
 
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [1.1738659, 43.1263293]},
-		"id":"112",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10251'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH142\/arton10251-c12bf.jpg?1468858243' width='100' height='142' \/>March\u00e9 \u00f4 initiatives \u00e0 Sainte-Croix-Volvestre (Ari\u00e8ge)<\/a><br><br>Il y a 50 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [24,40],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [1.0994535684585571, 49.446965361738336]},
-		"id":"113",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10252'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH57\/arton10252-c6fc8.jpg?1468858243' width='100' height='57' \/>Exposition Arbres au Mus\u00e9um d'histoire naturelle de Rouen (Seine-Maritime)<\/a><br><br>Il y a 55 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [23.428571428571,39.047619047619],"icon_anchor": [9,38]			
-		
-
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [-0.623494, 44.7598921]},
-		"id":"114",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10262'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH145\/arton10262-00271.jpg?1469031312' width='100' height='145' \/>Urbanisation et perte de terre agricole\u00a0: comment y mettre un terme<small class='fine'>\u00a0<\/small>?  Rencontre-d\u00e9bat \u00e0 Gradignan (Gironde)<\/a><br><br>Il y a 52 jours.<div class=nettoyeur><\/div>",
-			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [23.764705882353,39.607843137255],"icon_anchor": [9,38]			
-		
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
 
 		}},
 		{"type": "Feature",
 		"geometry": {"type": "Point", "coordinates": [6.4484742, 49.1687234]},
 		"id":"115",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10290'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH34\/arton10290-fa103.jpg?1469459295' width='100' height='34' \/>Action et discussions autour des \u00e9nergies fossiles, \u00e0 Volmerange-l\u00e8s-Boulay (Moselle)<\/a><br><br>Il y a 24 jours.<div class=nettoyeur><\/div>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10290'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH34\/arton10290-fa103.jpg?1469459295' width='100' height='34' style='margin-right:5px;float:left;' \/>Action et discussions autour des \u00e9nergies fossiles, \u00e0 Volmerange-l\u00e8s-Boulay (Moselle)<\/a><br>publi\u00e9 le 19 ao\u00fbt 2016.<div class=nettoyeur><\/div>",
 			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [28.216216216216,47.027027027027],"icon_anchor": [9,38]			
-		
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
 
 		}},
 		{"type": "Feature",
 		"geometry": {"type": "Point", "coordinates": [0.8524345, 44.4761675]},
 		"id":"116",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10291'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH142\/arton10291-d2c28.jpg?1469460760' width='100' height='142' \/>Camp Climat \u2013 Esp\u00e8re 2016, \u00e0 Saint-Aubin (Lot-et-Garonne)<\/a><br><br>Il y a 38 jours.<div class=nettoyeur><\/div>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10291'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH142\/arton10291-d2c28.jpg?1469460760' width='100' height='142' style='margin-right:5px;float:left;' \/>Camp Climat \u2013 Esp\u00e8re 2016, \u00e0 Saint-Aubin (Lot-et-Garonne)<\/a><br>publi\u00e9 le 5 ao\u00fbt 2016.<div class=nettoyeur><\/div>",
 			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [25.636363636364,42.727272727273],"icon_anchor": [9,38]			
-		
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
 
 		}},
 		{"type": "Feature",
 		"geometry": {"type": "Point", "coordinates": [-2.1315203, 47.7655213]},
 		"id":"117",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10292'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH152\/arton10292-804b4.jpg?1469460760' width='100' height='152' \/>Les oc\u00e9ans et le Japon \u00e0 l'honneur du Festival Photo \u00ab<small class='fine'>\u00a0<\/small>Peuples et Nature<small class='fine'>\u00a0<\/small>\u00bb, \u00e0 La Gacilly (Morbihan)<\/a><br><br>Il y a 42 jours.<div class=nettoyeur><\/div>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10292'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH152\/arton10292-804b4.jpg?1469460760' width='100' height='152' style='margin-right:5px;float:left;' \/>Les oc\u00e9ans et le Japon \u00e0 l'honneur du Festival Photo \u00ab<small class='fine'>\u00a0<\/small>Peuples et Nature<small class='fine'>\u00a0<\/small>\u00bb, \u00e0 La Gacilly (Morbihan)<\/a><br>publi\u00e9 le 1er ao\u00fbt 2016.<div class=nettoyeur><\/div>",
 			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [25.04347826087,41.739130434783],"icon_anchor": [9,38]			
-		
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
 
 		}},
 		{"type": "Feature",
 		"geometry": {"type": "Point", "coordinates": [-0.5723555, 44.8390677]},
 		"id":"118",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10305'});\" ><img class='spip_logo spip_logo_left spip_logos' alt='' style='margin-right:5px;' src='local\/cache-vignettes\/L100xH100\/arton10305-84dff.jpg?1469649055' width='100' height='100' \/>Soir\u00e9e-d\u00e9bat Non au projet de golf \u00e0 Villenave-d'Ornon, \u00e0 Bordeaux (Gironde)<\/a><br><br>Il y a 46 jours.<div class=nettoyeur><\/div>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10305'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH100\/arton10305-84dff.jpg?1469649055' width='100' height='100' style='margin-right:5px;float:left;' \/>Soir\u00e9e-d\u00e9bat Non au projet de golf \u00e0 Villenave-d'Ornon, \u00e0 Bordeaux (Gironde)<\/a><br>publi\u00e9 le 28 juillet 2016.<div class=nettoyeur><\/div>",
 			"description":"",
-"icon": "\/images\/marker.png",	
-"icon_size": [24.5,40.833333333333],"icon_anchor": [9,38]			
-		
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [1.1738659, 43.1263293]},
+		"id":"112",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10251'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH142\/arton10251-c12bf.jpg?1468858243' width='100' height='142' style='margin-right:5px;float:left;' \/>March\u00e9 \u00f4 initiatives \u00e0 Sainte-Croix-Volvestre (Ari\u00e8ge)<\/a><br>publi\u00e9 le 24 juillet 2016.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.7946369, 46.7855687]},
+		"id":"111",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10250'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH140\/arton10250-212f9.jpg?1468858243' width='100' height='140' style='margin-right:5px;float:left;' \/>Festival \u00e9cocitoyen Les R\u00e9sistives, \u00e0 Besain (Jura)<\/a><br>publi\u00e9 le 23 juillet 2016.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.2967038, 46.2604737]},
+		"id":"110",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10241'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH139\/arton10241-ede4c.jpg?1468599503' width='100' height='139' style='margin-right:5px;float:left;' \/>Festival Stop mines, \u00e0 Bord-Saint-Georges (Creuse)<\/a><br>publi\u00e9 le 23 juillet 2016.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.623494, 44.7598921]},
+		"id":"114",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10262'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH145\/arton10262-00271.jpg?1469031312' width='100' height='145' style='margin-right:5px;float:left;' \/>Urbanisation et perte de terre agricole\u00a0: comment y mettre un terme<small class='fine'>\u00a0<\/small>?  Rencontre-d\u00e9bat \u00e0 Gradignan (Gironde)<\/a><br>publi\u00e9 le 22 juillet 2016.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.27618, 44.569]},
+		"id":"109",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10240'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH142\/arton10240-5fe2b.jpg?1468599503' width='100' height='142' style='margin-right:5px;float:left;' \/>\u00c0 la d\u00e9couverte des chauves-souris \u00e0 Saint-Nazaire-le-D\u00e9sert (Dr\u00f4me)<\/a><br>publi\u00e9 le 20 juillet 2016.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [1.0994535684585571, 49.446965361738336]},
+		"id":"113",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10252'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH57\/arton10252-c6fc8.jpg?1468858243' width='100' height='57' style='margin-right:5px;float:left;' \/>Exposition Arbres au Mus\u00e9um d'histoire naturelle de Rouen (Seine-Maritime)<\/a><br>publi\u00e9 le 19 juillet 2016.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.379180908203125, 48.520356607112106]},
+		"id":"108",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10186'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH142\/arton10186-2df85.jpg?1467989842' width='100' height='142' style='margin-right:5px;float:left;' \/>Manifestation de r\u00e9occupation de la for\u00eat de Mandres-en-Barrois, pr\u00e8s de Bure (Meuse)<\/a><br>publi\u00e9 le 16 juillet 2016.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [1.17298, 43.4168]},
+		"id":"107",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10002'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH138\/arton10002-74fa8.jpg?1465832486' width='100' height='138' style='margin-right:5px;float:left;' \/>AgitaTerre<small class='fine'>\u00a0<\/small>! le festival des alternatives durables et locales, \u00e0 Poucharramet (Haute-Garonne)<\/a><br>publi\u00e9 le 3 juillet 2016.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.4143125, 44.5682236]},
+		"id":"106",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=9875'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH70\/arton9875-9d874.png?1464615535' width='100' height='70' style='margin-right:5px;float:left;' \/>Un lopin collectif contre la <span class='caps'>LGV<\/span> Sud-Ouest, \u00e0 Landiras (Gironde)<\/a><br>publi\u00e9 le 4 juin 2016.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [6.48828506469727, 44.8440760446938]},
+		"id":"73",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=8166'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH75\/arton8166-9da13.jpg?1444035867' width='100' height='75' style='margin-right:5px;float:left;' \/>La brebis brigasque sauv\u00e9e par des \u00e9leveurs passionn\u00e9s <\/a><br>publi\u00e9 le 5 mai 2016.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.3524626, 48.8411341]},
+		"id":"104",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=9654'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH142\/arton9654-5ff11.jpg?1461763859' width='100' height='142' style='margin-right:5px;float:left;' \/>Projection du film \u00ab<small class='fine'>\u00a0<\/small>Mon voyage sans fin<small class='fine'>\u00a0<\/small>\u00bb, \u00e0 Paris<\/a><br>publi\u00e9 le 4 mai 2016.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.3404385, 48.8668373]},
+		"id":"103",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=9562'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton9562-b6e35.jpg?1460985329' width='100' height='67' style='margin-right:5px;float:left;' \/>Conf\u00e9rence sur les nouvelles techniques de modification g\u00e9n\u00e9tique \u00e0 Paris<\/a><br>publi\u00e9 le 26 avril 2016.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [0.58470183874502, 43.6463869]},
+		"id":"101",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=9559'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH141\/arton9559-d98ba.jpg?1460981577' width='100' height='141' style='margin-right:5px;float:left;' \/>Nuit debout \u00e0 Auch (Gers)<\/a><br>publi\u00e9 le 21 avril 2016.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.3621046, 48.8690483]},
+		"id":"102",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=9560'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH53\/arton9560-1285a.jpg?1460981578' width='100' height='53' style='margin-right:5px;float:left;' \/>Nuit debout, l'\u00e9tape d'apr\u00e8s &mdash; soir\u00e9e-d\u00e9bat \u00e0 Paris<\/a><br>publi\u00e9 le 20 avril 2016.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-1.7103293, 47.3819408]},
+		"id":"100",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=9457'});\" >Le projet d'a\u00e9roport est \u00ab<small class='fine'>\u00a0<\/small>surdimensionn\u00e9<small class='fine'>\u00a0<\/small>\u00bb, selon les experts du <span class='caps'>CGEDD<\/span><\/a><br>publi\u00e9 le 6 avril 2016.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.3237983, 48.8920158]},
+		"id":"99",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=9347'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH55\/arton9347-07a83.jpg?1458751460' width='100' height='55' style='margin-right:5px;float:left;' \/>Projection \u2013 d\u00e9bat \u00ab<small class='fine'>\u00a0<\/small>Le Prix des Mots<small class='fine'>\u00a0<\/small>\u00bb en soutien \u00e0 Bastamag \u00e0 Paris<\/a><br>publi\u00e9 le 30 mars 2016.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.1276473, 51.5073219]},
+		"id":"98",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=9287'});\" >\u00c0 Londres, des pigeons pour contr\u00f4ler la qualit\u00e9 de l'air<\/a><br>publi\u00e9 le 16 mars 2016.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.8752472, 45.1145026]},
+		"id":"97",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=9273'});\" >A Chamrousse, 600 personnes r\u00e9unies \u00e0 2 400 m\u00e8tres d'altitude contre l'extension de la station de ski<\/a><br>publi\u00e9 le 15 mars 2016.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.3454999, 48.8665777]},
+		"id":"93",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=9172'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH142\/arton9172-e7fd0.jpg?1456848136' width='100' height='142' style='margin-right:5px;float:left;' \/>Fukushima, cinq ans apr\u00e8s, comment vivent les habitants<small class='fine'>\u00a0<\/small>? conf\u00e9rence-d\u00e9bat \u00e0 Paris<\/a><br>publi\u00e9 le 14 mars 2016.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [7.7291312, 48.57559]},
+		"id":"96",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=9243'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH142\/arton9243-f7ecd.jpg?1457552652' width='100' height='142' style='margin-right:5px;float:left;' \/>Week-end \u00ab<small class='fine'>\u00a0<\/small>Fukussenheim<small class='fine'>\u00a0<\/small>\u00bb \u00e0 Strasbourg (Bas-Rhin)<\/a><br>publi\u00e9 le 12 mars 2016.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.3521562, 48.8564915]},
+		"id":"95",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=9236'});\" >Volkswagen fait l'objet d'une information judiciaire pour \u00ab<small class='fine'>\u00a0<\/small>tromperie aggrav\u00e9e<small class='fine'>\u00a0<\/small>\u00bb<\/a><br>publi\u00e9 le 9 mars 2016.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.2956951, 49.8941708]},
+		"id":"94",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=9217'});\" >Deux associations attaquent la ferme-usine des Mille vaches pour \u00ab<small class='fine'>\u00a0<\/small>maltraitance animale<small class='fine'>\u00a0<\/small>\u00bb<\/a><br>publi\u00e9 le 8 mars 2016.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.38328452672889, 48.8666429]},
+		"id":"91",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=9037'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH40\/arton9037-78720.jpg?1455558489' width='100' height='40' style='margin-right:5px;float:left;' \/>Grand banquet contre l'\u00e9tat d'urgence \u00e0 Paris<\/a><br>publi\u00e9 le 20 f\u00e9vrier 2016.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.23015584568443, 45.2382552]},
+		"id":"92",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=9045'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH68\/arton9045-df740.jpg?1455696191' width='100' height='68' style='margin-right:5px;float:left;' \/>\u00c0 Roybon, la Zad oubli\u00e9e retrouve l'esprit de la for\u00eat<\/a><br>publi\u00e9 le 17 f\u00e9vrier 2016.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.3827348, 48.8540231]},
+		"id":"83",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=8698'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH142\/arton8698-b3be9.jpg?1450479519' width='100' height='142' style='margin-right:5px;float:left;' \/>Les Jardins au Secours du Climat<small class='fine'>\u00a0<\/small>! (\u00e0 Paris)<\/a><br>publi\u00e9 le 15 janvier 2016.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.24404, 45.2594]},
+		"id":"82",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=8670'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH142\/arton8670-eeeb8.jpg?1450106049' width='100' height='142' style='margin-right:5px;float:left;' \/>Week-end festif \u00e0 Roybon (Is\u00e8re) pour l'inauguration de la bulle tropicale<\/a><br>publi\u00e9 le 18 d\u00e9cembre 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.3897276, 48.8682925]},
+		"id":"79",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=8397'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH142\/arton8397-beae4.jpg?1447001297' width='100' height='142' style='margin-right:5px;float:left;' \/>Rencontre de Reporterre\u00a0: \u00c0 Paris, le 10\u00a0novembre, on prend soin des \u00ab<small class='fine'>\u00a0<\/small>biens communs<small class='fine'>\u00a0<\/small>\u00bb <\/a><br>publi\u00e9 le 4 novembre 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.3943269, 43.3301378]},
+		"id":"78",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=8357'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH142\/arton8357-f9ab3.jpg?1446285546' width='100' height='142' style='margin-right:5px;float:left;' \/>Rencontre de Reporterre\u00a0: A Marseille,  le 4\u00a0novembre, on rappe sur le climat<\/a><br>publi\u00e9 le 31 octobre 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [13.3888599, 52.5170365]},
+		"id":"77",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=8227'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton8227-afb58.jpg?1444461306' width='100' height='67' style='margin-right:5px;float:left;' \/>Les citoyens allemands vent debout contre le trait\u00e9 Tafta <\/a><br>publi\u00e9 le 10 octobre 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [6.5077646, 51.1080819]},
+		"id":"76",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=8197'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton8197-86190.jpg?1444205193' width='100' height='67' style='margin-right:5px;float:left;' \/>Le coup d\u2019\u00e9clat estival des militants anti-charbon allemands<\/a><br>publi\u00e9 le 7 octobre 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [3.4548603, 49.9869789]},
+		"id":"71",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=8119'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton8119-49e57.jpg?1443688226' width='100' height='67' style='margin-right:5px;float:left;' \/>Au march\u00e9 de Bohain, les gens parlent du climat, mais ne croient pas \u00e0 la <span class='caps'>COP<\/span> 21<\/a><br>publi\u00e9 le 1er octobre 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.4065806, 48.925002]},
+		"id":"72",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=8159'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH75\/arton8159-eba94.jpg?1443688226' width='100' height='75' style='margin-right:5px;float:left;' \/>Le premier proc\u00e8s contre un data center s'ouvre aujourd'hui<\/a><br>publi\u00e9 le 1er octobre 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-1.7103294, 47.3819408]},
+		"id":"70",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=8108'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH72\/arton8108-0cc10.jpg?1442992382' width='100' height='72' style='margin-right:5px;float:left;' \/>A Notre-Dame-des-Landes, le juge fait un petit tour et puis s'en va<\/a><br>publi\u00e9 le 23 septembre 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-1.7103294, 47.3819408]},
+		"id":"69",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=8100'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH80\/arton8100-908d8.jpg?1442912507' width='100' height='80' style='margin-right:5px;float:left;' \/>Notre-Dame-des-Landes, \u00e0 nouveau sous pression, imagine un avenir heureux<\/a><br>publi\u00e9 le 22 septembre 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [1.4866387, 48.4470039]},
+		"id":"68",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7967'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton7967-068c2.jpg?1441957793' width='100' height='67' style='margin-right:5px;float:left;' \/>Sauvez les arbres... \u00e0 Chartres et ailleurs<\/a><br>publi\u00e9 le 11 septembre 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.3772525, 51.0347708]},
+		"id":"67",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7964'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH68\/arton7964-d0b3b.jpg?1441352967' width='100' height='68' style='margin-right:5px;float:left;' \/>Il invente un crayon g\u00e9ant pour signer la p\u00e9tition anti <span class='caps'>TAFTA<\/span><\/a><br>publi\u00e9 le 4 septembre 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [4.8060329, 43.9493143]},
+		"id":"66",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7941'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH65\/arton7941-dc88f.jpg?1441183288' width='100' height='65' style='margin-right:5px;float:left;' \/>Quand un ancien tri postal devient le refuge des \u00e2mes meurtries et des \u00e2mes fleuries<\/a><br>publi\u00e9 le 2 septembre 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-1.2889243601145, 45.9239805]},
+		"id":"65",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7881'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH64\/arton7881-d4762.jpg?1437984057' width='100' height='64' style='margin-right:5px;float:left;' \/>Dans le bassin Marennes-Ol\u00e9ron, la lutte contre les fermes-usines d'hu\u00eetres est engag\u00e9e<\/a><br>publi\u00e9 le 27 juillet 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.3699525, 43.2961743]},
+		"id":"64",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7862'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH70\/arton7862-9e123.jpg?1437032543' width='100' height='70' style='margin-right:5px;float:left;' \/>\u00c0 Marseille, sur la plage, le changement climatique est pris avec fatalisme<\/a><br>publi\u00e9 le 16 juillet 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.3699525, 43.2961743]},
+		"id":"63",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7767'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH69\/arton7767-e17c5.jpg?1436257542' width='100' height='69' style='margin-right:5px;float:left;' \/>\u00ab<small class='fine'>\u00a0<\/small>On voit bien que \u00e7a part \u00e0 la d\u00e9rive, mais on ne peut rien faire.<small class='fine'>\u00a0<\/small>\u00bb Paroles d'un caf\u00e9 marseillais sur le changement climatique<\/a><br>publi\u00e9 le 7 juillet 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.40107305981761, 48.8618271]},
+		"id":"62",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7738'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton7738-67afc.jpg?1435394900' width='100' height='67' style='margin-right:5px;float:left;' \/>\u00ab<small class='fine'>\u00a0<\/small>Le climat<small class='fine'>\u00a0<\/small>? Bien s\u00fbr qu'on y pense.<small class='fine'>\u00a0<\/small>\u00bb Paroles d'habitants sur le changement climatique<\/a><br>publi\u00e9 le 27 juin 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-2.76437899768111, 47.82504545]},
+		"id":"59",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7640'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH66\/arton7640-8eb50.jpg?1435124687' width='100' height='66' style='margin-right:5px;float:left;' \/>Quand une multinationale s'ach\u00e8te une for\u00eat pour en faire un parc \u00e9olien industriel<\/a><br>publi\u00e9 le 24 juin 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-1.7271466, 47.2115054]},
+		"id":"60",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7656'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH68\/arton7656-32ac0.jpg?1434954082' width='100' height='68' style='margin-right:5px;float:left;' \/>Ch\u00f4meurs et paysans, \u00e0 Cou\u00ebron, ils mettent la terre en commun<\/a><br>publi\u00e9 le 22 juin 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.25731799862742, 50.514681]},
+		"id":"61",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7673'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH70\/arton7673-d1b82.jpg?1434537863' width='100' height='70' style='margin-right:5px;float:left;' \/>Des partisans d'une ferme-usine menacent par le feu l'association \u00e9cologiste<\/a><br>publi\u00e9 le 13 juin 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [1.4442469, 43.6044622]},
+		"id":"58",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7570'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH75\/arton7570-8a293.jpg?1434537863' width='100' height='75' style='margin-right:5px;float:left;' \/>A Sivens, une video montre que des gendarmes violents accusent faussement des opposants<\/a><br>publi\u00e9 le 29 mai 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.1771353, 41.3825596]},
+		"id":"57",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7462'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton7462-147da.jpg?1434537863' width='100' height='67' style='margin-right:5px;float:left;' \/>Hors Etat et hors march\u00e9, la Coop\u00e9rative int\u00e9grale de Barcelone n'est pas encore au paradis<\/a><br>publi\u00e9 le 26 mai 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.1771353, 41.3825596]},
+		"id":"56",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7453'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton7453-ccae5.jpg?1434537863' width='100' height='67' style='margin-right:5px;float:left;' \/>Ni capitalisme, ni Etat - la Coop\u00e9rative int\u00e9grale s'\u00e9panouit \u00e0 Barcelone<\/a><br>publi\u00e9 le 18 mai 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [1.564724, 47.7231524]},
+		"id":"53",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7398'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH68\/arton7398-d98cd.jpg?1434537862' width='100' height='68' style='margin-right:5px;float:left;' \/>Une \u00e9cole install\u00e9e \u00e0 l'ombre d'une centrale nucl\u00e9aire au m\u00e9pris des r\u00e8gles de s\u00e9curit\u00e9, c'est la France<\/a><br>publi\u00e9 le 13 mai 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [19.0404707, 47.4983815]},
+		"id":"55",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7444'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH69\/arton7444-138a4.jpg?1434537862' width='100' height='69' style='margin-right:5px;float:left;' \/>Vous voulez des emplois<small class='fine'>\u00a0<\/small>? Choisissez la d\u00e9croissance<\/a><br>publi\u00e9 le 9 mai 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.1276474, 51.5073219]},
+		"id":"54",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7434'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton7434-c00a8.jpg?1434537862' width='100' height='67' style='margin-right:5px;float:left;' \/>Elections au Royaume-Uni\u00a0: personne n'en parle, mais les Verts sont bien l\u00e0<\/a><br>publi\u00e9 le 7 mai 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-1.2889243601145, 45.9239805]},
+		"id":"52",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7394'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH68\/arton7394-0dd73.jpg?1434537862' width='100' height='68' style='margin-right:5px;float:left;' \/>Une nouvelle <span class='caps'>ZAD<\/span> s'est install\u00e9e \u00e0 Ol\u00e9ron. Enjeu\u00a0: un projet ostr\u00e9icole industriel<\/a><br>publi\u00e9 le 2 mai 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.46835239474902, 27.2188905]},
+		"id":"51",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7348'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton7348-2c57d.jpg?1434537862' width='100' height='67' style='margin-right:5px;float:left;' \/>En Alg\u00e9rie, le refus du gaz de schiste prend une ampleur nationale<\/a><br>publi\u00e9 le 23 avril 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [4.2523237, 47.0151891]},
+		"id":"48",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7282'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH66\/arton7282-ba4ee.jpg?1434537862' width='100' height='66' style='margin-right:5px;float:left;' \/>Les grands crus de Bourgogne commencent \u00e0 s'adapter au changement climatique<\/a><br>publi\u00e9 le 22 avril 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.47397281258444, 44.68101845]},
+		"id":"50",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7313'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH68\/arton7313-98054.jpg?1434537862' width='100' height='68' style='margin-right:5px;float:left;' \/>Sous le vent des herbes de la Dame de onze heures<\/a><br>publi\u00e9 le 20 avril 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.3521334, 48.8565056]},
+		"id":"49",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7292'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH66\/arton7292-e4540.jpg?1434537862' width='100' height='66' style='margin-right:5px;float:left;' \/>Rencontre de Reporterre\u00a0: Faisons de l\u2019agriculture une solution au changement climatique<\/a><br>publi\u00e9 le 15 avril 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [1.4442469, 43.6044622]},
+		"id":"47",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7208'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH130\/arton7208-2c3f2.jpg?1434537862' width='100' height='130' style='margin-right:5px;float:left;' \/>Vivre le territoire autrement. Colloque pour une alternative \u00e0 l'orthodoxie lib\u00e9rale \u00e0 l'Universit\u00e9 de Toulouse <\/a><br>publi\u00e9 le 11 avril 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-1.7361111, 46.505]},
+		"id":"43",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7158'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH108\/arton7158-3e589.jpg?1434537862' width='100' height='108' style='margin-right:5px;float:left;' \/>Journ\u00e9e d'action contre l\u2019industrialisation de l'agriculture et le groupe Avril-Sofiprot\u00e9ol<\/a><br>publi\u00e9 le 4 avril 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.7210773, 45.182478]},
+		"id":"45",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7190'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH51\/arton7190-bbebc.jpg?1434537862' width='100' height='51' style='margin-right:5px;float:left;' \/>Manifestation \u00e0 Grenoble contre le Center Parcs<\/a><br>publi\u00e9 le 2 avril 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.4412184, 48.8623357]},
+		"id":"46",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7191'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH71\/arton7191-1596d.jpg?1434537862' width='100' height='71' style='margin-right:5px;float:left;' \/>La main verte des Roms de Montreuil<\/a><br>publi\u00e9 le 2 avril 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.3096318, 45.6871839]},
+		"id":"44",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7173'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH66\/arton7173-2348a.jpg?1434537862' width='100' height='66' style='margin-right:5px;float:left;' \/>En Creuse, la ferme-usine des Mille veaux suscite la pol\u00e9mique<\/a><br>publi\u00e9 le 2 avril 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.240206, 48.8356649]},
+		"id":"36",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7092'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton7092-bbad2.jpg?1434537862' width='100' height='67' style='margin-right:5px;float:left;' \/>\u00ab<small class='fine'>\u00a0<\/small>Mise en Seine des changements climatiques<small class='fine'>\u00a0<\/small>\u00bb\u00a0: colloque sur le r\u00f4le de la Seine face aux enjeux climatiques<\/a><br>publi\u00e9 le 30 mars 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.7210773, 45.182478]},
+		"id":"41",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7133'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH68\/arton7133-98db0.jpg?1434537862' width='100' height='68' style='margin-right:5px;float:left;' \/>A Grenoble, l'alliance \u00e9colo-gauche-citoyens, \u00e7a marche<small class='fine'>\u00a0<\/small>!<\/a><br>publi\u00e9 le 27 mars 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [1.66577421697537, 44.6249918]},
+		"id":"42",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7148'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton7148-77c86.jpg?1434537862' width='100' height='67' style='margin-right:5px;float:left;' \/>Des Maisons pour faire vivre les semences paysannes... libres <\/a><br>publi\u00e9 le 26 mars 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.9244473, 45.6742681]},
+		"id":"37",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7106'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH70\/arton7106-a5cff.jpg?1434537862' width='100' height='70' style='margin-right:5px;float:left;' \/>Danger des pesticides\u00a0: la veuve d'un agriculteur t\u00e9moigne <\/a><br>publi\u00e9 le 23 mars 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [4.8323239, 45.7575926]},
+		"id":"39",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7112'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH54\/arton7112-d2819.jpg?1434537862' width='100' height='54' style='margin-right:5px;float:left;' \/>Le jardin autog\u00e9r\u00e9 des Pendarts, \u00e0 Lyon, f\u00eate le printemps<\/a><br>publi\u00e9 le 22 mars 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.32003101155031, 48.85881005]},
+		"id":"38",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7111'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH131\/arton7111-aa9d1.jpg?1434537862' width='100' height='131' style='margin-right:5px;float:left;' \/>Une journ\u00e9e pour red\u00e9couvrir le lien entre humains et r\u00e8gne v\u00e9g\u00e9tal<\/a><br>publi\u00e9 le 21 mars 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.20443694882273, 44.72964575]},
+		"id":"40",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7117'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton7117-1aa8d.jpg?1434537862' width='100' height='67' style='margin-right:5px;float:left;' \/>Il faut parler de la vieillesse, m\u00eame si \u00e7a d\u00e9range<\/a><br>publi\u00e9 le 21 mars 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [7.2683912, 43.7009358]},
+		"id":"24",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7002'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH66\/arton7002-79c0b.jpg?1434537861' width='100' height='66' style='margin-right:5px;float:left;' \/>Pr\u00e8s de Nice, un immense gaspillage de terres fertiles se pr\u00e9pare<\/a><br>publi\u00e9 le 20 mars 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.6085356, 47.4234644]},
+		"id":"34",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7081'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH69\/arton7081-9f257.jpg?1434537861' width='100' height='69' style='margin-right:5px;float:left;' \/>Face au changement climatique, les semences paysannes sont l'avenir de l'agriculture<\/a><br>publi\u00e9 le 17 mars 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [1.9090697, 48.9958047]},
+		"id":"33",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7083'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH112\/arton7083-a8160.jpg?1434537861' width='100' height='112' style='margin-right:5px;float:left;' \/>R\u00e9union contre les grands projets inutiles dans les Yvelines<\/a><br>publi\u00e9 le 17 mars 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [0.4822983, 44.7028324]},
+		"id":"29",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7041'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH126\/arton7041-29e6e.jpg?1434537861' width='100' height='126' style='margin-right:5px;float:left;' \/>R\u00e9union contre les golfs de R\u00e9alville <\/a><br>publi\u00e9 le 16 mars 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.46835239474902, 27.2188905]},
+		"id":"32",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7067'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton7067-6126e.jpg?1434537861' width='100' height='67' style='margin-right:5px;float:left;' \/>L'ombre des essais nucl\u00e9aires plane sur la contestation du gaz de schiste en Alg\u00e9rie<\/a><br>publi\u00e9 le 14 mars 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [1.9737186, 47.9200018]},
+		"id":"31",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7061'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH102\/arton7061-7f111.jpg?1434537861' width='100' height='102' style='margin-right:5px;float:left;' \/>L'\u00e9vasion fiscale \u00e0 travers l'exemple de la famille Mulliez (Auchan)<\/a><br>publi\u00e9 le 14 mars 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.4412184, 48.8623357]},
+		"id":"30",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7050'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH103\/arton7050-735fd.jpg?1434537861' width='100' height='103' style='margin-right:5px;float:left;' \/>Tchernobyl, le Blayais, Fukushima. Projections, spectacles et d\u00e9bats \u00e0 Montreuil<\/a><br>publi\u00e9 le 14 mars 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.32003101155031, 48.85881005]},
+		"id":"28",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7023'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH66\/arton7023-131e9.jpg?1434537861' width='100' height='66' style='margin-right:5px;float:left;' \/>Les toits pourraient \u00eatre le garde-manger de Paris<\/a><br>publi\u00e9 le 13 mars 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [0.0878861, 44.3144497]},
+		"id":"16",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6929'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH63\/arton6929-c8ce5.jpg?1434537861' width='100' height='63' style='margin-right:5px;float:left;' \/>Dans le Lot-et-Garonne, le projet de Center Parcs accueilli comme \u00ab<small class='fine'>\u00a0<\/small>le veau d'or<small class='fine'>\u00a0<\/small>\u00bb est vivement critiqu\u00e9 par le Conseil \u00e9conomique et social<\/a><br>publi\u00e9 le 13 mars 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.32003101155031, 48.85881005]},
+		"id":"13",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6911'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH99\/arton6911-2e442.jpg?1434537861' width='100' height='99' style='margin-right:5px;float:left;' \/>Monsieur le Cam\u00e9l\u00e9on, que signifie le vivre ensemble<small class='fine'>\u00a0<\/small>?<\/a><br>publi\u00e9 le 7 mars 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.46835239474902, 27.2188905]},
+		"id":"25",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7014'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton7014-772dc.jpg?1434537861' width='100' height='67' style='margin-right:5px;float:left;' \/>En Alg\u00e9rie, la r\u00e9volte pacifique contre le gaz de schiste <\/a><br>publi\u00e9 le 4 mars 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [7.7507127, 48.584614]},
+		"id":"23",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6999'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH142\/arton6999-a1622.jpg?1434537861' width='100' height='142' style='margin-right:5px;float:left;' \/>Convergence pour fermer Fessenheim 7\u00a0mars<\/a><br>publi\u00e9 le 2 mars 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.32003101155031, 48.85881005]},
+		"id":"20",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6984'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH125\/arton6984-a906a.jpg?1434537861' width='100' height='125' style='margin-right:5px;float:left;' \/>Pourquoi je\u00fbner pour le climat<small class='fine'>\u00a0<\/small>?<\/a><br>publi\u00e9 le 27 f\u00e9vrier 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.32003101155031, 48.85881005]},
+		"id":"22",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6990'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH66\/arton6990-7344a.jpg?1434537861' width='100' height='66' style='margin-right:5px;float:left;' \/>Le tout tofu n'est pas une lubie de bobo<\/a><br>publi\u00e9 le 27 f\u00e9vrier 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [4.67160051824518, 49.69801175]},
+		"id":"15",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6926'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH63\/arton6926-d9e2c.jpg?1434537861' width='100' height='63' style='margin-right:5px;float:left;' \/>La chasse peut-elle rimer avec biodiversit\u00e9<small class='fine'>\u00a0<\/small>? Conversation en for\u00eat entre un naturaliste et un chasseur<\/a><br>publi\u00e9 le 27 f\u00e9vrier 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [1.7459042, 43.9607495]},
+		"id":"21",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6985'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton6985-c14fb.jpg?1434537861' width='100' height='67' style='margin-right:5px;float:left;' \/><span class='caps'>EXCLUSIF<\/span> - Des vestiges arch\u00e9ologiques retrouv\u00e9s sur le site du barrage de Sivens<\/a><br>publi\u00e9 le 25 f\u00e9vrier 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.47397281258444, 44.68101845]},
+		"id":"19",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6954'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton6954-c41be.jpg?1434537861' width='100' height='67' style='margin-right:5px;float:left;' \/><span class='caps'>CHRONIQUE<\/span> - La nature n'a pas de morale<\/a><br>publi\u00e9 le 17 f\u00e9vrier 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [1.8264482, 49.6013403]},
+		"id":"18",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6953'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton6953-52706.jpg?1434537861' width='100' height='67' style='margin-right:5px;float:left;' \/>Apr\u00e8s la ferme-usine des mille vaches, les trois mille cochons de Picardie<\/a><br>publi\u00e9 le 17 f\u00e9vrier 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.3580232, 48.935773]},
+		"id":"17",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6938'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton6938-37688.jpg?1434537861' width='100' height='67' style='margin-right:5px;float:left;' \/>A Saint Denis, l'<span class='caps'>AMAP<\/span> est anarchiste et \u00e7a marche tr\u00e8s bien<\/a><br>publi\u00e9 le 16 f\u00e9vrier 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.415796, 48.8795658]},
+		"id":"14",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6912'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton6912-9b144.jpg?1434537861' width='100' height='67' style='margin-right:5px;float:left;' \/>Le halal se met au bio <\/a><br>publi\u00e9 le 5 f\u00e9vrier 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.5289296, 48.9372068]},
+		"id":"12",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6909'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton6909-72f4f.jpg?1434537861' width='100' height='67' style='margin-right:5px;float:left;' \/>\u00ab<small class='fine'>\u00a0<\/small>Vivre ensemble, c\u2019est reconna\u00eetre l\u2019autre comme diff\u00e9rent<small class='fine'>\u00a0<\/small>\u00bb<\/a><br>publi\u00e9 le 5 f\u00e9vrier 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-1.5518632, 47.2996846]},
+		"id":"11",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6900'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH140\/arton6900-e4b50.jpg?1434537861' width='100' height='140' style='margin-right:5px;float:left;' \/>Le 4\u00a0f\u00e9vrier, d\u00e9bat sur la r\u00e9pression des luttes environnementales<\/a><br>publi\u00e9 le 3 f\u00e9vrier 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.4474738, 43.5298424]},
+		"id":"9",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6881'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH65\/arton6881-70fbf.jpg?1434537860' width='100' height='65' style='margin-right:5px;float:left;' \/>Derri\u00e8re les rails de la gare d'Aix, le potager prosp\u00e8re<\/a><br>publi\u00e9 le 3 f\u00e9vrier 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [3.6888649, 46.3531367]},
+		"id":"10",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6889'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH65\/arton6889-90bd3.jpg?1434537861' width='100' height='65' style='margin-right:5px;float:left;' \/>En Auvergne, un absurde projet de golf d\u00e9vore des terres agricoles<\/a><br>publi\u00e9 le 3 f\u00e9vrier 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.3436357, 48.8532871]},
+		"id":"8",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6872'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton6872-4ce52.jpg?1434537860' width='100' height='67' style='margin-right:5px;float:left;' \/>Les fast-food bio ont la patate savoureuse<\/a><br>publi\u00e9 le 29 janvier 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [1.8896484375, 46.8842244406935]},
+		"id":"7",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6823'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton6823-ea2fe.jpg?1434537860' width='100' height='67' style='margin-right:5px;float:left;' \/><span class='caps'>GRECE<\/span> - A Skouries, la qu\u00eate de l'or d\u00e9truit la nature <\/a><br>publi\u00e9 le 19 janvier 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.38436, 48.889343]},
+		"id":"6",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6811'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton6811-35210.jpg?1434537860' width='100' height='67' style='margin-right:5px;float:left;' \/>L\u2019enfance mis\u00e9rable des fr\u00e8res Kouachi <\/a><br>publi\u00e9 le 15 janvier 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-1.00724989770593, 45.88868225]},
+		"id":"4",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6770'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton6770-edb49.jpg?1434537860' width='100' height='67' style='margin-right:5px;float:left;' \/>Une nouvelle <span class='caps'>ZAD<\/span> s'oppose \u00e0 un incin\u00e9rateur en Charente-Maritime<\/a><br>publi\u00e9 le 7 janvier 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [134.755, -24.7761086]},
+		"id":"3",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6760'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH76\/arton6760-72da6.jpg?1434537860' width='100' height='76' style='margin-right:5px;float:left;' \/>Des villes d'Australie visent l'autonomie \u00e9nerg\u00e9tique<\/a><br>publi\u00e9 le 7 janvier 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [23.466796875, 38.2105620105377]},
+		"id":"1",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6757'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH70\/arton6757-9ffbb.jpg?1434537860' width='100' height='70' style='margin-right:5px;float:left;' \/>Gr\u00e8ce\u00a0: rendons-leur la d\u00e9mocratie<small class='fine'>\u00a0<\/small>!<\/a><br>publi\u00e9 le 5 janvier 2015.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.4169921875, 48.6648455298589]},
+		"id":"5",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6292'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH141\/arton6292-ab702.jpg?1434537860' width='100' height='141' style='margin-right:5px;float:left;' \/>Op\u00e9ration Vigie nature 13\u00a0septembre<\/a><br>publi\u00e9 le 13 septembre 2014.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
 
 		}}
 	]
