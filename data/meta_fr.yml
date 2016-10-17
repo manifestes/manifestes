@@ -132,13 +132,13 @@ menu:
     sourcetip: voir les données brutes
     pad:
         texts:
-            link: "http://lite6.framapad.org/p/manifestes"
+            link: "http://annuel.framapad.org/p/manifestes"
             text: suggérer ou<br>modifier un texte
         quotes:
-            link: "http://lite6.framapad.org/p/manifestes"
+            link: "http://annuel.framapad.org/p/manifestes"
             text: ajouter une<br>citation
         links:
-            link: "http://lite6.framapad.org/p/manifestes"
+            link: "http://annuel.framapad.org/p/manifestes"
             text: suggérer ou<br>modifier un lien
         network:
             link: "http://annuel.framapad.org/p/3615ninja"
@@ -195,7 +195,7 @@ footer:
     content: >
         ##*voir aussi*
 
-        + le [document partagé](https://lite6.framapad.org/p/manifestes): discutoire, choses à faire
+        + le [document partagé](https://annuel.framapad.org/p/manifestes): discutoire, choses à faire
 
         + la liste de discussion [manifestes@lists.riseup.net](https://lists.riseup.net/www/subscribe/manifestes)
 

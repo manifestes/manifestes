@@ -6,9 +6,9 @@ a simple website to display contents within sections, and change the world
 - ♥ easily read contents and collaborate
 - 😃 minify time spent on your computer
 - 🌀 can be consulted offline 
-- ready to be put on a FTP server
+- ➡ ready to be put on a FTP server
 - can be served through github gh-pages (like here)
-- all contents are set in the `data` folder, using yaml documents containing markdown
+- 💬 all contents are set in the `data` folder, using yaml documents containing markdown
     + meta (menu, tags, tooltips) in `data/meta.yml`
     + text sections in `data/sections.yml`
     + tagged links in `data/links.yml`
