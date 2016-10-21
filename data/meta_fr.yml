@@ -187,7 +187,7 @@ tags:
     law: "balance-scale = juridique = lois, aspects juridiques,\ndémarches administratives,\nlégislations"
     economy: "money = économie = échanges, commerce, troc, don,\néconomie, argent, monnaie, finance, dette,\nrevenu de base inconditionnel"
     politics: "bank = politique = politique et représentation,\nconcertation, décider ensemble,\ncommuns, open (res)sources, démocratie"
-    philo: "puzzle-piece = philosophie = réflexion, théorie, principes,\nidéologies"
+    philo: "puzzle-piece = philosophie = réflexion, théories, principes,\nidéologies, spiritualités"
 moretags:
     ?time: "hourglass-3 = temps = temporalités, rythmes, rapports aux temps,\nfuturisme, présentisme"
 footer:

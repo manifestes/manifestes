@@ -1,0 +1,32 @@
+The Critical Engineering Working Group
+Berlin, October 2011-2016
+
+Julian Oliver
+Gordan Savičić
+Danja Vasiliev
+
+THE CRITICAL ENGINEERING MANIFESTO
+
+0. L’ingénieur critique considère l’ingénierie comme le langage le plus percutant de notre époque modélisant nos manières de nous déplacer, communiquer et penser. Le rôle de l’ingénieur critique est d’étudier et d’exploiter ce langage – de montrer son influence.
+
+1. L’ingénieur critique considère notre dépendance à la technologie comme un défi autant qu’une menace. Plus la dépendance est grande plus il importe d'en analyser le fonctionnement interne indépendamment des droits de propriétés et dispositions légales.
+
+2. L’ingénieur est conscient que chaque avancée technologique met à mal notre héritage techno-politique.
+
+3. L’ingénieur critique déconstruit et incite à la méfiance face aux expériences utilisateurs luxuriantes.
+
+4. L’ingénieur critique ne se laisse pas impressionner par les contraintes de l’implémentation. Il en explore les méthodes d’influence et leurs effets spécifiques.
+
+5. L’ingénieur critique reconnaît que chaque travail d’ingénierie formate l’utilisateur proportionnellement à la dépendance de ce dernier au travail d’ingénierie.
+
+6. En décrivant les interrelations des dispositifs, corps, agents et forces des réseaux, l’ingénieur critique élargit le concept de ‘machine’.
+
+7. L’ingénieur critique observe l’espace entre la production et la consommation des technologies. En agissant rapidement, l’ingénieur critique peut déstabiliser cet espace provoquant des moments de déséquilibre et de déception.
+
+8. L’ingénieur critique se tourne vers l’histoire de l’art, l’architecture, l’activisme, la philosophie et l’innovation pour y trouver des travaux exemplaires d’ingénierie critique. Les stratégies, idées, agendas, de ces disciplines seront adoptées, re-agencées et développées.
+
+9. L’ingénieur critique constate que le code écrit s’immisce dans les secteurs du social et du psychologique régulant les comportements entre les personnes et les machines avec lesquelles elles interagissent. Prenant conscience de ce fait, l’ingénieur critique cherche à reconstruire les contraintes et actions sociales des utilisateurs en procédant à des fouilles numériques.
+
+10. L’ingénieur critique considère l’utilisation de la vulnérabilité d’un système comme la forme la plus souhaitable de dénonciation.
+
+Translation into French by Benedicte Jacobs.
