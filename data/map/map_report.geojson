@@ -8,22 +8,47 @@
 			"description":"",
 
 		"icon": "\/images\/marker.png",	
-		"icon_size": [19.285714285714,32.142857142857],		"icon_anchor": [9,38]	
+		"icon_size": [22.5,37.5],		"icon_anchor": [9,38]	
 		
+		}}
+		,
+
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [10.605926513671875, 55.84833710649607]},
+		"id":"126",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10746'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton10746-628f0.jpg?1477038197' width='100' height='67' style='margin-right:5px;float:left;' \/>L\u2019\u00eele danoise de Sams\u00f8 apprend \u00e0 vivre sans p\u00e9trole<\/a><br>publi\u00e9 le 21 octobre 2016.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [10.605926513671875, 55.84833710649607]},
+		"id":"127",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10746'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton10746-628f0.jpg?1477038197' width='100' height='67' style='margin-right:5px;float:left;' \/>L\u2019\u00eele danoise de Sams\u00f8 apprend \u00e0 vivre sans p\u00e9trole<\/a><br>publi\u00e9 le 21 octobre 2016.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
 		}},
 		{"type": "Feature",
 		"geometry": {"type": "Point", "coordinates": [2.44895339012146, 48.83627461107706]},
 		"id":"121",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10549'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH149\/arton10549-d6362.jpg?1475432013' width='100' height='149' style='margin-right:5px;float:left;' \/><b style='color:black;'>RENDEZ-VOUS<\/b><br>\u00ab<small class='fine'>\u00a0<\/small>Le Medef nous les brise<small class='fine'>\u00a0<\/small>\u00bb\u00a0: \u00ab<small class='fine'>\u00a0<\/small>Cabaret d\u2019Urgence<small class='fine'>\u00a0<\/small>\u00bb \u00e0 Paris<\/a><br>Le 16 octobre 2016.<div class=nettoyeur><\/div>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10549'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH149\/arton10549-d6362.jpg?1475432013' width='100' height='149' style='margin-right:5px;float:left;' \/>\u00ab<small class='fine'>\u00a0<\/small>Le Medef nous les brise<small class='fine'>\u00a0<\/small>\u00bb\u00a0: \u00ab<small class='fine'>\u00a0<\/small>Cabaret d\u2019Urgence<small class='fine'>\u00a0<\/small>\u00bb \u00e0 Paris<\/a><br>publi\u00e9 le 16 octobre 2016.<div class=nettoyeur><\/div>",
 			"description":"",
 
-		"icon": "\/images\/marker.png",	
-		"icon_size": [36,60],		"icon_anchor": [9,38]	
-		
-		}}
-		,
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
 
+		}},
 		{"type": "Feature",
 		"geometry": {"type": "Point", "coordinates": [5.6387219, 44.1748545]},
 		"id":"122",

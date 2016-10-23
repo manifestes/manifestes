@@ -4,6 +4,7 @@ var fs = require('fs');
 var mkdirp = require('mkdirp');
 var yaml = require('js-yaml');
 var md = require("node-markdown").Markdown;
+var S = require('string');
 
 function slugify(str) {
 	if(!str || str.length<2) return "";
@@ -21,7 +22,7 @@ function slugify(str) {
 	return str;
 }
 
-	// init template
+// init template
 fs.readFile('slug_template.html', function(error, data) {
 	if (!error) {
 	    var html = data.toString();
@@ -58,13 +59,18 @@ fs.readFile('slug_template.html', function(error, data) {
 				p.imagewidth = 750;
 				p.imageheight = 400;
 				
-				console.log("Do: ",p.slug);
-				
+				var shouldDo = !process.argv[2];
+
+				if(!!process.argv[2] && S(p.slug).startsWith(process.argv[2]))
+					shouldDo = true; 
 				var html = template(p);
 
 				if(p.status && p.status=='draft') return;
+				if(!shouldDo) return;
 				//if(!p.image || !p.image.url) return;
 				//if(j>7) return;
+
+				console.log("Do: ",p.slug);
 
 				// create mini dir for this page if not exists
 				mkdirp('slug/'+p.slug, function(err) { 

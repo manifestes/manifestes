@@ -3047,6 +3047,30 @@
 			"icon_size": [33,33],
 			"icon_anchor": [16.5,16.5],
 			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [4.8353, 45.7579]},
+		"id":"357",
+		"properties": {
+			"title":"Lyon (69000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.alterecoplus.fr\/une-residence-etudiante-commun\/00012345' target='_blank'>Une r\u00e9sidence \u00e9tudiante hors du commun<\/a><\/div>\n\t<div class=\"texte\">\u00ab M\u00fbrir, c\u2019est trouver sa place dans le monde \u00bb, \u00e9crivait en 1946 Emmanuel Mounier, le fondateur du \u00ab personnalisme \u00bb. Portant son nom, la nouvelle r\u00e9sidence \u00e9tudiante lyonnaise cr\u00e9\u00e9e par l\u2019association Habitat et humanisme offre des loyers tr\u00e8s mod\u00e9r\u00e9s aux \u00e9tudiants en \u00e9change de deux heures hebdomadaires&nbsp;(...)<\/div>\n<\/div>","id_mot": "70"
+		  ,
+			"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-70.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [10.8430234, 44.6464053]},
+		"id":"358",
+		"properties": {
+			"title":"",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.bastamag.net\/En-Italie-une-cooperative-resiste-a-la-Mafia-calabraise-et-offre-un-autre-futur' target='_blank'>En Italie, une coop\u00e9rative r\u00e9siste \u00e0 la Mafia calabraise et offre un autre futur \u00e0 la jeunesse<\/a><\/div>\n\t<div class=\"texte\">La coop\u00e9rative sociale Valle del Marro s\u2019est d\u00e9velopp\u00e9e au c\u0153ur de la Calabre. Dans une r\u00e9gion o\u00f9 l\u2019emprise de la \u2019Ndranghetta \u2013 la mafia calabraise \u2013 a d\u00e9courag\u00e9 bien des initiatives, la coop\u00e9rative r\u00e9cup\u00e8re les biens \u2013 b\u00e2timents ou terrains \u2013 que la justice a repris au crime organis\u00e9 et s\u2019en sert comme&nbsp;(...)<\/div>\n<\/div>","id_mot": "16"
+		  ,
+			"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-16.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
 		}}
 	]
 }

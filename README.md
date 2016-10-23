@@ -42,6 +42,11 @@ fork or download this project and start your own !
 will produce index.html and preview .png used to share text sections
 warning: needs to have a running local web server
 
+> node slug_build.js abcd
+
+will only (re) produce the text sections whose slug starts with «abcd» (useful to avoid doing them all for each change)
+
+
 ## Licenses
 
 - GNU GENERAL PUBLIC LICENSE Version 2

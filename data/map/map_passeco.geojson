@@ -1,431 +1,11 @@
 {"type": "FeatureCollection",
 	"features": [
 		{"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [4.5978938, 44.2625187]},
-"id":"3168",
-"properties": {
-	"title":"<a href=\"12040\">Rejoindre un \u00c9colieu<\/a>",
-	"description":"Projet : Bonjour , je cherche \u00e0 rejoindre un lieu de vie v\u00e9gan dans le sud de la France. J'\u00e9tudie toutes propositions s\u00e9rieuses ( bail ,achat de parcelle , \u00e9change de services ,participation active&nbsp;(...)"
-	,
-			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/bd\/e3d2ab78264e95749d88639d3b5206.png?1460669431",
-			"icon_size": [32,32],
-			"icon_anchor": [16,16],
-			"popup_anchor": [0,0],
-			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
-			"shadow_size": [32,32]
-}},
-{"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [2.5596544, 42.6965026]},
-"id":"3169",
-"properties": {
-	"title":"<a href=\"12041\">Recherche Jardini\u00e8r\u22c5e Enthousiaste et Cr\u00e9ati (Ve)<\/a>",
-	"description":"Projet : bonjour, je suis seule sur un grand jardin, et j'aurai besoin d'un coup de main cet automne (voir plus longtemps si affinit\u00e9s) pour: installer une irrigation en goutte \u00e0 goutte, entretenir&nbsp;(...)"
-	,
-			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/3d\/e252395153632e8f44e4ddb6d6f50d.png?1460669431",
-			"icon_size": [32,32],
-			"icon_anchor": [16,16],
-			"popup_anchor": [0,0],
-			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
-			"shadow_size": [32,32]
-}},
-{"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [3.82938, 44.0648]},
-"id":"3170",
-"properties": {
-	"title":"<a href=\"12043\">CCP \u2013 du 5 au 16 Octobre 2016 \u00e0 Soudorgues (30)<\/a>",
-	"description":"Projet : Semis Direct Co-organise le CCP du 5 au 16 octobre \u00e0 Soudorgues dans le Gard. Pierre-Yves Petit interviendra dans diff\u00e9rents modules sur la production v\u00e9g\u00e9tale.&nbsp;(...)"
-	,
-			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/bd\/e3d2ab78264e95749d88639d3b5206.png?1460669431",
-			"icon_size": [32,32],
-			"icon_anchor": [16,16],
-			"popup_anchor": [0,0],
-			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
-			"shadow_size": [32,32]
-}},
-{"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [4.95878, 45.0766289]},
-"id":"3171",
-"properties": {
-	"title":"<a href=\"12045\">Habitat Group\u00e9 Cherche Familles<\/a>",
-	"description":"Projet : Le projet d'habitat group\u00e9 \"Les Fabriqu\u00e9s\" se situe sur la commune de Cl\u00e9rieux dans la Dr\u00f4me des collines. C'est un projet d'am\u00e9nagement d'un ancien moulinage de soie, en habitations&nbsp;(...)"
-	,
-			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/d4\/c6aa3e887268dd6597952395c8eed5.png?1460667791",
-			"icon_size": [32,32],
-			"icon_anchor": [16,16],
-			"popup_anchor": [0,0],
-			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
-			"shadow_size": [32,32]
-}},
-{"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [4.06978193839203, 48.3047668438019]},
-"id":"3172",
-"properties": {
-	"title":"<a href=\"12047\">Recherche Logement T5-6 Vosges Haut Rhin<\/a>",
-	"description":"Projet : Famille monoparentale 3 enfants recherche logement minimum 4 chambres et jardin-cour-terrain , secteur bois\u00e9 et eau, proche la Bresse, munster, Colmar,... Pourquoi pas colocation ou&nbsp;(...)"
-	,
-			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/46\/bd9a3d5053ab05eeedb7978f1a9dee.png?1461393980",
-			"icon_size": [32,32],
-			"icon_anchor": [16,16],
-			"popup_anchor": [0,0],
-			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
-			"shadow_size": [32,32]
-}},
-{"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [-0.2892349, 47.9839779]},
-"id":"3173",
-"properties": {
-	"title":"<a href=\"12048\">Vends Terrain de Loisirs de 4660 m\u00b2 avec Chalet<\/a>",
-	"description":"Projet : Vends terrain de 4660M2 cl\u00f4tur\u00e9 arbor\u00e9 diverses essences (ch\u00e2taigniers, noisetiers, noyer, pommiers, poiriers, pruniers, p\u00eachers, cerisiers petits fruitiers comme groseilles, cassis,&nbsp;(...)"
-	,
-			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/9a\/016d855d6e9dc7c4626a30f9b1230c.png?1460669430",
-			"icon_size": [32,32],
-			"icon_anchor": [16,16],
-			"popup_anchor": [0,0],
-			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
-			"shadow_size": [32,32]
-}},
-{"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [6.17107, 45.4794]},
-"id":"3174",
-"properties": {
-	"title":"<a href=\"12050\">Un Moment \u00c9tymos. . . (Foire \u00e0 l'\u00c9tymologie)<\/a>",
-	"description":"Projet : Une nouvelle fa\u00e7on de passer un excellent moment ensemble avec nos amis mots. Le Lundi 26 septembre 2016, \u00e0 19h Salle de la Mairie de la Table (73110) au chef-Lieu avec un repas partag\u00e9 \u00e0&nbsp;(...)"
-	,
-			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/9b\/d76d0f1f5b275ab3f00cb105798a7e.png?1460669432",
-			"icon_size": [32,32],
-			"icon_anchor": [16,16],
-			"popup_anchor": [0,0],
-			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
-			"shadow_size": [32,32]
-}},
-{"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [1.9358457, 45.3762412]},
-"id":"3175",
-"properties": {
-	"title":"<a href=\"12051\">Cherche Salrie Boulange Traditionnelle en Vue d'une Reprise<\/a>",
-	"description":"Projet : Paysan boulanger en Corr\u00e8ze, nous cultivons nos mati\u00e8res 1\u00e8res que nous transformons et vendons en circuits courts. Couple install\u00e9 en agriculture biologique, nous travaillons sur un four \u00e0&nbsp;(...)"
-	,
-			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/fd\/cbec951a05c4c699150d54a434f17d.png?1460669432",
-			"icon_size": [32,32],
-			"icon_anchor": [16,16],
-			"popup_anchor": [0,0],
-			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
-			"shadow_size": [32,32]
-}},
-{"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [-1.0606751, 46.5552047]},
-"id":"3176",
-"properties": {
-	"title":"<a href=\"12052\">Recherche des Gens Qui Souhaitent Apprendre a R\u00e9nover Maison ,&nbsp;(...)<\/a>",
-	"description":"Projet : recherche des gens qui souhaitent apprendre a r\u00e9nover maison , produire des l\u00e9gumes, g\u00e9r\u00e9 un grand poulailler etc... A vrai dire, s\u2019affranchir autant qu\u2019on peut, des contraintes.financi\u00e8res.&nbsp;(...)"
-	,
-			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/e5\/88dd482e7caabaa1035bbb03f7c0bb.png?1460669432",
-			"icon_size": [32,32],
-			"icon_anchor": [16,16],
-			"popup_anchor": [0,0],
-			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
-			"shadow_size": [32,32]
-}},
-{"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [5.183249, 44.0674373]},
-"id":"3177",
-"properties": {
-	"title":"<a href=\"12053\">Propose une Jolie Cabane pour l'Hiver<\/a>",
-	"description":"Projet : Nous habitons une jolie cabane (structure serre, environ 100m\u00b2) \u00e0 l'or\u00e9e d'un bois au pied du Mont Ventoux. Cette hiver nous la quittons pour 3 mois et nous avons 2 chats. Offre : Nous&nbsp;(...)"
-	,
-			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/e9\/0050aa580b65fb64cce3b4210e27ef.png?1460667789",
-			"icon_size": [32,32],
-			"icon_anchor": [16,16],
-			"popup_anchor": [0,0],
-			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
-			"shadow_size": [32,32]
-}},
-{"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [5.3970648, 43.8757936]},
-"id":"3178",
-"properties": {
-	"title":"<a href=\"12054\">Recherche d'une Location Campagnarde pour l'Hiver (ou Plus. .&nbsp;(...)<\/a>",
-	"description":"Projet : Bonjour, j'aimerais passer l'hiver dans la r\u00e9gion d'Apt pour la d\u00e9couvrir avant une \u00e9ventuelle installation plus durable. Demande : Je cherche donc soit une chambre en colocation, soit dans&nbsp;(...)"
-	,
-			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/e9\/0050aa580b65fb64cce3b4210e27ef.png?1460667789",
-			"icon_size": [32,32],
-			"icon_anchor": [16,16],
-			"popup_anchor": [0,0],
-			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
-			"shadow_size": [32,32]
-}},
-{"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [2.0313499, 44.4368808]},
-"id":"3179",
-"properties": {
-	"title":"<a href=\"12055\">Bonjour! les Habitants du Mas de Jammes, Fabien, Marie et Galaad,&nbsp;(...)<\/a>",
-	"description":"Projet : Bonjour! Les habitants du Mas de Jammes, Fabien, Marie et Galaad, cherchent des colocataires \u00e0 partir du mois d'octobre, et ce jusqu'\u00e0 juin (pendant l'\u00e9t\u00e9, les maisons sont lou\u00e9es en gites,&nbsp;(...)"
-	,
-			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/ca\/bb5220bb22692442451343becfdfec.png?1460667791",
-			"icon_size": [32,32],
-			"icon_anchor": [16,16],
-			"popup_anchor": [0,0],
-			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
-			"shadow_size": [32,32]
-}},
-{"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [-4.0910437, 48.1958514]},
-"id":"3180",
-"properties": {
-	"title":"<a href=\"12056\">Lieu de Vie avec Trois Principes Fondateurs: 1-une Nourriture&nbsp;(...)<\/a>",
-	"description":"Projet : Lieu de vie avec trois principes fondateurs : 1- Une nourriture v\u00e9g\u00e9tarienne la plus vivante possible ; 2- Une belle dimension spirituelle sans besoin de religion, et une r\u00e9elle maturit\u00e9&nbsp;(...)"
-	,
-			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/1f\/5724b8ebd035e60de0eb5162b0d35b.png?1460669431",
-			"icon_size": [32,32],
-			"icon_anchor": [16,16],
-			"popup_anchor": [0,0],
-			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
-			"shadow_size": [32,32]
-}},
-{"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [6.2253165, 43.6283799]},
-"id":"3182",
-"properties": {
-	"title":"<a href=\"12059\">Recherche de Partenaires Projet Eco Ferme<\/a>",
-	"description":"Projet : Bonjour \u00e0 toutes et tous, Je dispose d'un terrain cl\u00f4tur\u00e9 de 26 hectares dans le Haut Var qui est enti\u00e8rement cl\u00f4tur\u00e9, il s'agit de d\u00e9buter sous forme associative un projet collaboratif d'\u00e9co&nbsp;(...)"
-	,
-			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/d6\/95fd83b3ad6f860ceae79c28eb137e.png?1460669432",
-			"icon_size": [32,32],
-			"icon_anchor": [16,16],
-			"popup_anchor": [0,0],
-			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
-			"shadow_size": [32,32]
-}},
-{"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [1.62558, 43.8129]},
-"id":"3183",
-"properties": {
-	"title":"<a href=\"12060\">Vds Mob Autoconstruite 2010<\/a>",
-	"description":"Offre : MOB 3 ch ,145m2 +gge 70m2 attenant+ terrasse 50m2 sur terrain 1600 m2-poele de Masse (co\u00fbt chauff 120eur\/ an)+isolation cellulose et li\u00e8ge-r\u00e9cup eau de pluie 8m3 -TS transformable en&nbsp;(...)"
-	,
-			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/b9\/329403064dde310c0fbb7c2ef8a6cb.png?1460669277",
-			"icon_size": [32,32],
-			"icon_anchor": [16,16],
-			"popup_anchor": [0,0],
-			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
-			"shadow_size": [32,32]
-}},
-{"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [4.6720274, 45.1008014]},
-"id":"3184",
-"properties": {
-	"title":"<a href=\"12062\">Formation pour Animer des S\u00e9ances d'\u00c9ducation \u00c9motionnelle<\/a>",
-	"description":"Projet : Stage \"Animer des s\u00e9ances d'\u00e9ducation \u00e9motionnelle (niveau 1)\" aupr\u00e8s d'\u00e9l\u00e8ves ou de groupes d'enfants pour harmoniser le climat de la classe et renforcer les comp\u00e9tences psycho-sociales. Du&nbsp;(...)"
-	,
-			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/a0\/53ad0c6b26af9fcde411ef201c8964.png?1460667848",
-			"icon_size": [32,32],
-			"icon_anchor": [16,16],
-			"popup_anchor": [0,0],
-			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
-			"shadow_size": [32,32]
-}},
-{"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [2.9904837, 49.2853295]},
-"id":"3185",
-"properties": {
-	"title":"<a href=\"12063\">Stage M\u00e9ditation et Vivre Ensemble<\/a>",
-	"description":"Projet : L'objet de ce stage consistera \u00e0 d\u00e9couvrir la M\u00e9ditation Naturelle par un ensemble de m\u00e9ditations cibl\u00e9es sur chacun des niveaux de l'\u00catre\u00a0: respiration, ressenti du corps, \u00e9motion, intuition,&nbsp;(...)"
-	,
-			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/7d\/a36cbac13135f1ab3f3c84dfd59bd8.png?1460669431",
-			"icon_size": [32,32],
-			"icon_anchor": [16,16],
-			"popup_anchor": [0,0],
-			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
-			"shadow_size": [32,32]
-}},
-{"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [0.7046455, 44.4056615]},
-"id":"3186",
-"properties": {
-	"title":"<a href=\"12064\">Salon Ecologique<\/a>",
-	"description":"Projet : Bonjour, L'association Horizon vert organise son 28 eme salon \u00e9cologique le 1er et 2 octobre prochain. Le th\u00e8me de cette ann\u00e9e est la biodiversit\u00e9. Le salon se d\u00e9roule au parc des expos de&nbsp;(...)"
-	,
-			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/f8\/3ef23be5a4388b5bb3990d1517b0e9.png?1460669431",
-			"icon_size": [32,32],
-			"icon_anchor": [16,16],
-			"popup_anchor": [0,0],
-			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
-			"shadow_size": [32,32]
-}},
-{"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [-0.721277151127591, 45.73027025]},
-"id":"3187",
-"properties": {
-	"title":"<a href=\"12065\">\u00c9change de Services<\/a>",
-	"description":"Projet : Bonjour ! Je dois passer 3 semaines \u00e0 Saujon (proche de Royan) et je cherche \u00e0 me loger. Tout l'\u00e9t\u00e9, j'ai fait du gardiennage de maison\/appart + animaux domestiques et plantes\/jardin ! Si&nbsp;(...)"
-	,
-			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/40\/fd8724af2d00006b90d23d87edd7d0.png?1460669430",
-			"icon_size": [32,32],
-			"icon_anchor": [16,16],
-			"popup_anchor": [0,0],
-			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
-			"shadow_size": [32,32]
-}},
-{"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [-0.0242746, 42.8831178]},
-"id":"3188",
-"properties": {
-	"title":"<a href=\"12067\">La Ferme des Cascades un Lieu \u00e0 Revitaliser<\/a>",
-	"description":"Projet : lieu de vie autonome avec grand partage humain dans montagne \u00e0 fort potentiel agro\u00e9cologique et \u00e9conomique (40 ans de client\u00e8le). D\u00e9j\u00e0 d\u00e9velopp\u00e9:\u00e9levage laitier brebis-ch\u00e8vres-vaches avec&nbsp;(...)"
-	,
-			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/b6\/b712d487b1542a2d1e24ca1d717821.png?1460669430",
-			"icon_size": [32,32],
-			"icon_anchor": [16,16],
-			"popup_anchor": [0,0],
-			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
-			"shadow_size": [32,32]
-}},
-{"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [6.18785153860908, 44.1640832]},
-"id":"3190",
-"properties": {
-	"title":"<a href=\"12071\">B\u00e9n\u00e9volat Hiver<\/a>",
-	"description":"Projet : Je travaille actuellement en m\u00e9diation culturelle dans un mus\u00e9e au sud est de la France. Je suis en questionnement de mon souhait de mode de vie et d'avenir professionnel, pour cela&nbsp;(...)"
-	,
-			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/cc\/7c840a0152dd510b3d7f361fc21fb9.png?1460669431",
-			"icon_size": [32,32],
-			"icon_anchor": [16,16],
-			"popup_anchor": [0,0],
-			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
-			"shadow_size": [32,32]
-}},
-{"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [5.047774, 45.0922562]},
-"id":"3191",
-"properties": {
-	"title":"<a href=\"12072\">A Vendre Local Artisanal<\/a>",
-	"description":"Offre : Local artisanal conviendrait \u00e0 une activit\u00e9 respectueuse de l'environnement. Atelier 100 m2,avec une pi\u00e8ce bureau et une salle d'exposition 40 m2 plus auvent de 50m2 Terrain de 1300m2,dans&nbsp;(...)"
-	,
-			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/d4\/c6aa3e887268dd6597952395c8eed5.png?1460667791",
-			"icon_size": [32,32],
-			"icon_anchor": [16,16],
-			"popup_anchor": [0,0],
-			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
-			"shadow_size": [32,32]
-}},
-{"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [2.8964865, 48.9589146]},
-"id":"3192",
-"properties": {
-	"title":"<a href=\"12073\">Recherche Hangar Atelier Remise<\/a>",
-	"description":"Projet : je souhaite la realisation d'un atelier participatif entretient automobile depannage electromenager travaux d'amelioration du batiment sous la forme d'une association avec echange et&nbsp;(...)"
-	,
-			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/a6\/085b63718e8e8d3861840525ca897c.png?1460669430",
-			"icon_size": [32,32],
-			"icon_anchor": [16,16],
-			"popup_anchor": [0,0],
-			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
-			"shadow_size": [32,32]
-}},
-{"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [0.63874, 44.95135]},
-"id":"3193",
-"properties": {
-	"title":"<a href=\"12074\">Introduction \u00e0 la Permaculture<\/a>",
-	"description":"Offre : 2 jours d'introduction \u00e0 la Permaculture en Dordogne sur un site superbe: Tikal Lodge; www.tikal-nature.com Avec Karine Mery et Pierre-Yves Petit, tous deux formateurs de l'UPP.&nbsp;(...)"
-	,
-			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/c7\/ed34736b8c1b9c8b1a917b257bac33.png?1460667791",
-			"icon_size": [32,32],
-			"icon_anchor": [16,16],
-			"popup_anchor": [0,0],
-			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
-			"shadow_size": [32,32]
-}},
-{"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [2.8913576, 42.6948476]},
-"id":"3194",
-"properties": {
-	"title":"<a href=\"12075\">Changer de Mode Vie et Vivre Ensemble<\/a>",
-	"description":"Projet : Incorporer un collectif inter-g\u00e9n\u00e9rationnel actif et bienveillant souhaitant s\u2019\u00e9largir et o\u00f9 pouvoir vivre concr\u00e8tement, sainement et \u00eatre activement heureuse avec ind\u00e9pendance. Rencontrer des&nbsp;(...)"
-	,
-			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/3d\/e252395153632e8f44e4ddb6d6f50d.png?1460669431",
-			"icon_size": [32,32],
-			"icon_anchor": [16,16],
-			"popup_anchor": [0,0],
-			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
-			"shadow_size": [32,32]
-}},
-{"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [-1.24543696075455, 49.0918952]},
-"id":"3195",
-"properties": {
-	"title":"<a href=\"12076\">Petite Place , Autonome, sur Terrain avec Eau .<\/a>",
-	"description":"Projet : Installation future dans la r\u00e9gion Offre : Petit coup de main, surveillance, gardiennage, maison , animaux domestiques, poules. Demande : Un coin autonome avec acc\u00e8s \u00e0 l'eau , sur un&nbsp;(...)"
-	,
-			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/07\/bec3ffa52b72082ad28d8d8ae6ffb6.png?1460669431",
-			"icon_size": [32,32],
-			"icon_anchor": [16,16],
-			"popup_anchor": [0,0],
-			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
-			"shadow_size": [32,32]
-}},
-{"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [3.0777594, 44.1006693]},
-"id":"3196",
-"properties": {
-	"title":"<a href=\"12077\">Financement de la Prochaine F\u00eate des Simples<\/a>",
-	"description":"Projet : Apr\u00e8s deux ans de pause , La FETE DES SIMPLES fait son retour \u00e0 Rosans (05) en 2017. Le syndicat Simples (Syndicat national de producteurs et cueilleurs de plantes m\u00e9dicinales) d\u00e9marre la&nbsp;(...)"
-	,
-			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/ca\/bb5220bb22692442451343becfdfec.png?1460667791",
-			"icon_size": [32,32],
-			"icon_anchor": [16,16],
-			"popup_anchor": [0,0],
-			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
-			"shadow_size": [32,32]
-}},
-{"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [-2.0476869, 48.4539775]},
-"id":"3197",
-"properties": {
-	"title":"<a href=\"12078\">Formation-Action \u00abMieux Agir Ensemble\u00bb<\/a>",
-	"description":"Projet : \"Mieux agir ensemble''  &diams;  Sur une semaine du 19 au 23 septembre (possibilit\u00e9 de place de secours in extremis)  &diams;  Sur deux week-end, les 26-27 novembre et les 9-10-11&nbsp;(...)"
-	,
-			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/9f\/4ee51c12ba9e30e4eed789bc7eb69d.png?1460669431",
-			"icon_size": [32,32],
-			"icon_anchor": [16,16],
-			"popup_anchor": [0,0],
-			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
-			"shadow_size": [32,32]
-}},
-{"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [1.90764, 44.3047]},
-"id":"3198",
-"properties": {
-	"title":"<a href=\"12079\">Recherche Location<\/a>",
-	"description":"Projet : utiliser les plantes m\u00e9dicinales Demande : Une premi\u00e8re exp\u00e9rience dans le domaine agricole, (connaissance soins aux animaux), une formation en plantes m\u00e9dicinales et aromatiques, font que&nbsp;(...)"
-	,
-			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/ca\/bb5220bb22692442451343becfdfec.png?1460667791",
-			"icon_size": [32,32],
-			"icon_anchor": [16,16],
-			"popup_anchor": [0,0],
-			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
-			"shadow_size": [32,32]
-}},
-{"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [6.3971662, 46.0015361]},
-"id":"3199",
-"properties": {
-	"title":"<a href=\"12080\">Chalet Autonome de Moyenne Montagne Chetche Locataires pour&nbsp;(...)<\/a>",
-	"description":"Projet : Famille de 4, nous renovons notre chalet en site isol\u00e9 depuis 6 ans. Nous avons d\u00e9cid\u00e9 cette ann\u00e9e de faire une pause avec nos deux enfants et voulons decouvrir pendant l'ann\u00e9e scolaire&nbsp;(...)"
-	,
-			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/f9\/ab21167f8f8710f74847fe8478b36d.png?1460669430",
-			"icon_size": [32,32],
-			"icon_anchor": [16,16],
-			"popup_anchor": [0,0],
-			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
-			"shadow_size": [32,32]
-}},
-{"type": "Feature",
 "geometry": {"type": "Point", "coordinates": [-1.4921232, 47.2971979]},
 "id":"3200",
 "properties": {
 	"title":"<a href=\"12082\">Rejoindre un Eco-Hameau ou Village en Loire Atlantique<\/a>",
-	"description":"Projet : Bonjour tous, je cherche \u00e0 me rapprocher encore un peu plus de la\/ma Nature et mes valeurs en rejoignant, avec mon chat, dans la mesure des possibles, un lieu d\u00e9j\u00e0 existant en Loire&nbsp;(...)"
+	"description":"Cherche :  \u00e9co-hameau d\u00e9j\u00e0 existant Offre :  F VG, enthousiaste, sensible avec connaissances en psycho, micro-nutrition, p\u00e9dagogue d'enfants et d'adultes, peintre, hyper sociable, artiste et motiv\u00e9e,&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/9e\/75e3ede759750309730501b46121bc.png?1460667791",
 			"icon_size": [32,32],
@@ -438,8 +18,8 @@
 "geometry": {"type": "Point", "coordinates": [3.35528302489692, 43.5914424]},
 "id":"3201",
 "properties": {
-	"title":"<a href=\"12084\">Ruine Cadastr\u00e9e, Murs en Bon \u00c9tat et Terrain en Pente Compos\u00e9&nbsp;(...)<\/a>",
-	"description":"Offre : Ruine cadastr\u00e9e, murs en bon \u00e9tat et terrain en pente compos\u00e9 essentiellement de futaies rocailleuses de 2ha14. B\u00e2tisse 5m X 9m, tr\u00e8s beau potentiel de restauration (rare dans la r\u00e9gion).&nbsp;(...)"
+	"title":"<a href=\"12084\">Ruine 45 m\u00b2 Cadastr\u00e9e, Futaies Rocailleuses 2Ha14. Isol\u00e9e, Arbor\u00e9e&nbsp;(...)<\/a>",
+	"description":"Offre :  Ruine 45m\u00b2 cadastr\u00e9e, futaies rocailleuses 2ha14. Isol\u00e9e, arbor\u00e9e ch\u00e2taigniers et ch\u00eanes verts. Acc\u00e8s par chemin \u00e9troit de 700m ok pour camionnettes.  &diams;  Orientation sud, eau de source par&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/13\/d7222f7fa29696361b1d8e1a0da8c4.png?1460667791",
 			"icon_size": [32,32],
@@ -453,7 +33,7 @@
 "id":"3202",
 "properties": {
 	"title":"<a href=\"12085\">Cherche Location<\/a>",
-	"description":"Projet : Bonjour; Famille de 4 personnes (un couple, un petit gars de 3 ans et un autre de 3 mois) cherche maison en location \u00e0 la campagne, avec possibilit\u00e9 de potager et poulailler, \u00e0 compter&nbsp;(...)"
+	"description":"Projet :  Famille cherche location \u00e0 la campagne, avec potager et poulaillern entre Brest et Quimper  &diams;  Toutes propositions alternatives envisageables"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/1f\/5724b8ebd035e60de0eb5162b0d35b.png?1460669431",
 			"icon_size": [32,32],
@@ -467,7 +47,7 @@
 "id":"3203",
 "properties": {
 	"title":"<a href=\"12087\">Cherche Personnes pour Compl\u00e9menter Activit\u00e9 de Maraichage<\/a>",
-	"description":"Projet : Bonjour ! Nous avons achet\u00e9 une ferme avec 4 hectares il y a 1 ans, souhaitant retourner \u00e0 un mode de vie plus sein. Mais on s'est rendu compte qu'\u00e0 deux c'est difficile et que nous avons&nbsp;(...)"
+	"description":"Projet : Couple avec ferme 4ha souhaite partager cette vie  &diams;  Animaux + auto suffisants en l\u00e9gumes. Cherche  :  personnes pour rejoindre notre projet, afin de le rendre plus vivant, plus&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/5c\/bc26fbe23effcdf9b5ac35ac29e021.png?1460667791",
 			"icon_size": [32,32],
@@ -481,7 +61,7 @@
 "id":"3204",
 "properties": {
 	"title":"<a href=\"12088\">Groupe de Mutualisation de Projet Avant D\u00e9part Collectif<\/a>",
-	"description":"Projet : Nous sommes un groupe associatif de quelques dizaines de personnes cr\u00e9\u00e9 en juin 2016. Nous souhaitons d\u00e9m\u00e9nager dans 3 ans dans le m\u00eame voisinage, afin de partager des projets collectifs,&nbsp;(...)"
+	"description":"Projet :  Groupe associatif cr\u00e9\u00e9 en juin souhaitons d\u00e9m\u00e9nager dans 3 ans afin de partager des projets collectifs, autour des notions de convivialit\u00e9, d\u2019altruisme et d\u2019\u00e9quit\u00e9  &diams;  partage de&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/c2\/7d7a4fc2c72000b1387a142de885a8.png?1460667791",
 			"icon_size": [32,32],
@@ -495,7 +75,7 @@
 "id":"3205",
 "properties": {
 	"title":"<a href=\"12086\">\u00ab les Grands Champs \u00bb<\/a>",
-	"description":"Projet : Une belle opportunit\u00e9 de terrain se pr\u00e9sente \u00e0 F\u00e9ternes, sur le Plateau de Gavot, au-dessus d\u2019Evain-les-Bains \u2013 74500 - \u00ab Les Grands Champs \u00bb comprennent 5 terrains de 800 m2 avec un COS de&nbsp;(...)"
+	"description":"\u00ab Les Grands Champs \u00bb 5 terrains de 800 m2 avec un COS de 250m2 constructible \u00e0 140 000\u20ac chacun Projet  :  type \u00ab Oasis \u00bb Colibris : \u00e9cohabitat partag\u00e9, \u00e9cohameau : mutualisation d\u2019espaces et de services,&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/f9\/ab21167f8f8710f74847fe8478b36d.png?1460669430",
 			"icon_size": [32,32],
@@ -509,7 +89,7 @@
 "id":"3206",
 "properties": {
 	"title":"<a href=\"12089\">Cherchons Partenaire pour \u00c9levage de Ch\u00e8vres<\/a>",
-	"description":"Offre : Bonjour, En pleine restructuration de notre petite \u00e9quipe nous sommes \u00e0 la recherche d\u2019une personne sp\u00e9cialement int\u00e9ress\u00e9e par le troupeau de ch\u00e8vres (vente directe de fromages) m\u00eame si elle&nbsp;(...)"
+	"description":"Cherche  :  Chevrier(e) : vente directe de fromages + autres activit\u00e9s\u00a0: potager, verger, camping, ferme p\u00e9dagogique, plantes aromatiques, accueil social  &diams;  R\u00e9partition des t\u00e2ches en fonction&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/5c\/bc26fbe23effcdf9b5ac35ac29e021.png?1460667791",
 			"icon_size": [32,32],
@@ -523,7 +103,7 @@
 "id":"3207",
 "properties": {
 	"title":"<a href=\"12090\">Faire Garder mes Ch\u00e8vres Race Massif Central<\/a>",
-	"description":"Demande  :  faire garder un couple de ch\u00e8vres de race Massif Central (bouc + ch\u00e8vre allaitante), et s\u00e9par\u00e9ment une chevettre trop jeune pour se faire prendre cette ann\u00e9e. Possibilit\u00e9 de les faire&nbsp;(...)"
+	"description":"Demande  :  Faire garder un couple de ch\u00e8vres de race Massif Central et s\u00e9par\u00e9ment une chevrette autour de Pamiers, Foix, Lavelanet pour quelques semaines\/mois, le temps de trouver un logement&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/13\/33491c246e4ca59652d4dcbd49d043.png?1460669431",
 			"icon_size": [32,32],
@@ -537,7 +117,7 @@
 "id":"3208",
 "properties": {
 	"title":"<a href=\"12093\">Ehs Cherche Zone Blanche<\/a>",
-	"description":"Projet : Retrait\u00e9e franco-suisse de 68 ans, EHS (\u00e9lectro-hypersensible) R\u00caVE d'un endroit non pollu\u00e9 par antennes, portables, lignes \u00e0 hautes-tensions,etc. Demande : Reste-t-il sur cette terre un&nbsp;(...)"
+	"description":"Projet :  Retrait\u00e9e franco-suisse de 68 ans, EHS (\u00e9lectro-hypersensible) R\u00caVE d'un endroit non pollu\u00e9 par antennes. Passionn\u00e9e par les SEMENCES et la SANT\u00c9. Demande :  Espace pur, une ZONE BLANCHE pour&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/71\/489263eacea63f3238422a1fcf27fb.png?1460669431",
 			"icon_size": [32,32],
@@ -551,7 +131,7 @@
 "id":"3209",
 "properties": {
 	"title":"<a href=\"12095\">Vente d'une Propri\u00e9t\u00e9 Id\u00e9ale pour Habitat Group\u00e9<\/a>",
-	"description":"Projet : recherche un habitat group\u00e9 \u00e0 Annecy - cherche une petite structure 2 ou 3 familles - avec pi\u00e8ces communes communs \u00e0 Annecy ou 5\/10 km \u00e0 la ronde pour nous rapprocher de nos enfants qui&nbsp;(...)"
+	"description":"A vendre  :  propri\u00e9t\u00e9 15000 m\u00b2 avec logements ind\u00e9pendants"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/d6\/95fd83b3ad6f860ceae79c28eb137e.png?1460669432",
 			"icon_size": [32,32],
@@ -579,7 +159,7 @@
 "id":"3211",
 "properties": {
 	"title":"<a href=\"12098\">F 59Ans Cherche Rencontres et Partages<\/a>",
-	"description":"Projet : F 59ans. Jardini\u00e8re d'enfants souhaite autre r\u00e9gion, nouvelles rencontres, nouveaux partages. Je suis en harmonie avec le rythme des saisons. J'aime les enfants, la nature, la vie simple&nbsp;(...)"
+	"description":"Personne  :  F 59ans. Jardini\u00e8re d'enfants souhaite rencontres, partages en harmonie avec le rythme des saisons. J'aime les enfants, la nature, la vie simple, danser, cuisiner, marcher, nager.&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/bd\/e3d2ab78264e95749d88639d3b5206.png?1460669431",
 			"icon_size": [32,32],
@@ -593,7 +173,7 @@
 "id":"3212",
 "properties": {
 	"title":"<a href=\"12097\">Recherche Location ou Colocation-C\u00f4te Atlantique<\/a>",
-	"description":"Projet : Annie 59 ans. Jardini\u00e8re d'enfants depuis 16 ans dans une \u00e9cole dans les C\u00e9vennes. D\u00e9sire changer de r\u00e9gion pour s'installer. Un nouvel espace de vie avec ATELIER JEUX en bois et laine pour&nbsp;(...)"
+	"description":"Projet :  Annie 59 ans. Jardini\u00e8re d'enfants depuis 16 ans, d\u00e9sire changer de r\u00e9gion pour cr\u00e9er espace de vie avec ATELIER JEUX en bois et laine pour enfants et atelier massage Shiatsu pour adultes.&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/bd\/e3d2ab78264e95749d88639d3b5206.png?1460669431",
 			"icon_size": [32,32],
@@ -607,7 +187,7 @@
 "id":"3213",
 "properties": {
 	"title":"<a href=\"12102\">Invitez la Permaculture au Jardin<\/a>",
-	"description":"Projet :  Jardin familial de 4000m\u00b2 permaculture. Samedis  :  d\u00e9couverte de la permaculture au jardin et des techniques de jardinage respectueuses du sol et du vivant Dimanches  :  visite du jardin&nbsp;(...)"
+	"description":"Projet :  Jardin familial de 4000m\u00b2 permaculture. Dimanche  :  visite du jardin \u00e0 10h15, 6\u20ac\/pers, gratuit -12ans."
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/9f\/4ee51c12ba9e30e4eed789bc7eb69d.png?1460669431",
 			"icon_size": [32,32],
@@ -663,7 +243,7 @@
 "id":"3217",
 "properties": {
 	"title":"<a href=\"12106\">Cherchons \u00e0 Int\u00e9grer un \u00c9co Lieu Interg\u00e9n\u00e9rationnel Existant<\/a>",
-	"description":"Projet : Daniel et Ameline, couple de 130 ans, dynamiques, cr\u00e9atifs et joyeux souhaitent int\u00e9grer un \u00e9co lieu interg\u00e9n\u00e9rationnel d\u00e9j\u00e0 existant, \u00e0 la campagne, ouvert aux animaux, dans l'esprit des oasis&nbsp;(...)"
+	"description":"Projet :  Couple de 130 ans, dynamiques, cr\u00e9atifs et joyeux souhaitent int\u00e9grer un \u00e9colieu interg\u00e9n\u00e9rationnel d\u00e9j\u00e0 existant, \u00e0 la campagne, ouvert aux animaux, dans l'esprit des oasis Colibris pour y&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/40\/fd8724af2d00006b90d23d87edd7d0.png?1460669430",
 			"icon_size": [32,32],
@@ -677,7 +257,7 @@
 "id":"3218",
 "properties": {
 	"title":"<a href=\"12107\">Ecologie Spirituelle<\/a>",
-	"description":"Projet : \u00c9cologie spirituelle. Cherche \u00e9covillage ou \u00e9colieu, existant ou \u00e0 cr\u00e9er sur valeurs spirituelles indielles (INDE !) : yoga, m\u00e9ditation, etc. Demande : Lieu et personnes int\u00e9ress\u00e9es, ou&nbsp;(...)"
+	"description":"Projet :  \u00c9cologie spirituelle sur valeurs spirituelles indielles : yoga, m\u00e9ditation. Cherche\u00a0 :  Ecovillage ou \u00e9colieu, existant ou \u00e0 cr\u00e9er Demande : Lieu et personnes int\u00e9ress\u00e9es, de pr\u00e9f\u00e9rence Sud&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/f9\/ab21167f8f8710f74847fe8478b36d.png?1460669430",
 			"icon_size": [32,32],
@@ -691,7 +271,7 @@
 "id":"3219",
 "properties": {
 	"title":"<a href=\"12108\">Cr\u00e9ation d'un Oasis Paysan<\/a>",
-	"description":"Projet :  Cr\u00e9ation d'un oasis paysan dont les valeurs sont  &diams; \u00a0l'autonomie alimentaire (ferme vivri\u00e8re) l'autonomie de pens\u00e9e (engagement \u00ab\u00a0politique\u00a0\u00bb, acte en conscience) autonomie \u00e9nerg\u00e9tique...&nbsp;(...)"
+	"description":"Projet :  Cr\u00e9ation d'un oasis paysan, autonomie alimentaire\/ pens\u00e9e \/ \u00e9nerg\u00e9tique... pour atteindre le plus de d\u00e9tachement possible face \u00e0 la soci\u00e9t\u00e9 et vivre libre  &diams;  qualit\u00e9 de relations&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/e5\/88dd482e7caabaa1035bbb03f7c0bb.png?1460669432",
 			"icon_size": [32,32],
@@ -705,7 +285,7 @@
 "id":"3220",
 "properties": {
 	"title":"<a href=\"12109\">Habitat Participatif \u00e0 Saint-Denis (93)<\/a>",
-	"description":"Projet : Il s'agit d'un projet d'habitat participatif qui se situe au c\u0153ur du quartier de Brise-Echalas, porte d'entr\u00e9e du centre ancien de la ville de Saint-Denis. Reliant le quartier de la&nbsp;(...)"
+	"description":"Projet :  HP accueille de nouveaux habitants  &diams;  8-10 logements 40 \u00e0 100m\u00b2 pr\u00e9vus + local commercial ou associatif Offre :  immeuble neuf \u00e0 concevoir de A \u00e0 Z avec le groupe de futurs habitants&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/c2\/7d7a4fc2c72000b1387a142de885a8.png?1460667791",
 			"icon_size": [32,32],
@@ -733,7 +313,7 @@
 "id":"3222",
 "properties": {
 	"title":"<a href=\"12111\">Recherche Terrain pour Vivre en Yourte<\/a>",
-	"description":"Projet : Fanny, Nicolas et Louna ( 6 ans ), Projet d'habitation en yourte. Offre : Loyer, troc, Demande : recherchons terrain pouvant nous accueillir avec notre yourte contemporaine (8 m de&nbsp;(...)"
+	"description":"Projet : Famille recherche terrain pour vivre en yourte Offre : Loyer, troc, gens paisibles, bio et locavores Demande :  terrain pour yourte diam\u00e8tre 8m. Minimum 1000m\u00b2 + Atelier\/local pour&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/8d\/09dd13d4f082e6e12e35a2c48db803.png?1460669430",
 			"icon_size": [32,32],
@@ -747,7 +327,7 @@
 "id":"3223",
 "properties": {
 	"title":"<a href=\"12113\">(86) Permaculture Humaine<\/a>",
-	"description":"Projet : Stage de 2 jours \u00e0 la Ferme des Ch\u00e2taigniers, 37160 BUXEUIL : http:\/\/panier-bio-buxeuil.over-blog.fr\/ Anim\u00e9 par Alain Dieudonn\u00e9 - titulaire du CCP (Certificat de Conception en permaculture)&nbsp;(...)"
+	"description":"Offre : Stage permaculture humaine Demande :  150\u20ac \/2 jours - cours, repas VG bio, h\u00e9bergement possible"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/a5\/f49fae74ce11a99d7393f3eba861e1.png?1460669430",
 			"icon_size": [32,32],
@@ -761,7 +341,7 @@
 "id":"3224",
 "properties": {
 	"title":"<a href=\"12114\">(86) Mise en Place d'un Jardin en Permaculture<\/a>",
-	"description":"Projet : Stage de 2 jours \u00e0 la Ferme des Ch\u00e2taigniers, 37160 BUXEUIL : http:\/\/panier-bio-buxeuil.over-blog.fr\/ Anim\u00e9 par Alain Dieudonn\u00e9 - titulaire du CCP (Certificat de Conception en Permaculture)&nbsp;(...)"
+	"description":"Offre :  Stage Mise en place jardin permaculture, Demande : 150\u20ac\/2jours - cours, repas VG bio, h\u00e9bergement possible"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/a5\/f49fae74ce11a99d7393f3eba861e1.png?1460669430",
 			"icon_size": [32,32],
@@ -775,7 +355,7 @@
 "id":"3225",
 "properties": {
 	"title":"<a href=\"12115\">Jeune Femme Handicap\u00e9e et son P\u00e8re Ag\u00e9<\/a>",
-	"description":"Projet : Autour d'une jeune femme handicap\u00e9e et de son p\u00e8re ag\u00e9 Offre : logement offert et petit mi-temps r\u00e9mun\u00e9r\u00e9 Demande : Je cherche une personne ou un couple qui pourrait apporter une aide&nbsp;(...)"
+	"description":"Projet : Femme handicap\u00e9e et son p\u00e8re \u00e2g\u00e9 Offre : Logement + mi-temps r\u00e9mun\u00e9r\u00e9 Cherche  :  personne\/couple pour aider femme handicap\u00e9e-moteur et son p\u00e8re 90 ans. Bon dos pour porter charges lourdes,&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/40\/fd8724af2d00006b90d23d87edd7d0.png?1460669430",
 			"icon_size": [32,32],
@@ -789,7 +369,7 @@
 "id":"3226",
 "properties": {
 	"title":"<a href=\"12116\">En Vue D\u00e9m\u00e9nagement Recherche d'un \u00c9co-Lieu ou Habitat&nbsp;(...)<\/a>",
-	"description":"Projet : Bonjour, Elodie, 39 ans , maman de 2 gar\u00e7ons 6 et 15 ans ayant pour projet de quitter la r\u00e9gion parisienne avant la d\u00e9pression !!!! j'ai le projet de rejoindre une terre un lieu o\u00f9 l'on&nbsp;(...)"
+	"description":"Projet :  F infirmi\u00e8re + 2 enfants souhaitent quitter Paris Cherche  :  \u00e9co-lieu ou HG ou coloc avec personnes partageant aspirations similaires Offre :  loyer, relations humaines saines, cuisine&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/13\/d7222f7fa29696361b1d8e1a0da8c4.png?1460667791",
 			"icon_size": [32,32],
@@ -803,7 +383,7 @@
 "id":"3227",
 "properties": {
 	"title":"<a href=\"12117\">Connivences<\/a>",
-	"description":"Projet : Femme fleur, un enfant de 16 mois sous les p\u00e9tales, cherche homme mi po\u00e8te mi aventurier, pour partager joie de vivre et la l\u00e9g\u00e8ret\u00e9 d'une qu\u00eate existentielle ! Offre : Echangeons quelques&nbsp;(...)"
+	"description":"Projet :  F fleur, enfant 16 mois sous les p\u00e9tales, cherche H mi po\u00e8te mi aventurier, pour partager joie de vivre !"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/cb\/20b5b347d558415f445676e9eb1663.png?1460669431",
 			"icon_size": [32,32],
@@ -817,7 +397,7 @@
 "id":"3228",
 "properties": {
 	"title":"<a href=\"12118\">Habitat Partag\u00e9, \u00c9co-Lieu<\/a>",
-	"description":"Projet : Habitat partag\u00e9, Cr\u00e9ation d'une SCI pour racheter le lieu, sur lequel 3 personnes vivent et devront vendre si elles ne peuvent pas trouver des partenaire de SCI pour acheter le lieu...&nbsp;(...)"
+	"description":"Projet :  HP cherche partenaires en SCI pour racheter le lieu  &diams;  120m\u00b2 habitables, 200m\u00b2 am\u00e9nageables, terrain 3000m\u00b2, verger, serre"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/5c\/bc26fbe23effcdf9b5ac35ac29e021.png?1460667791",
 			"icon_size": [32,32],
@@ -845,7 +425,7 @@
 "id":"3230",
 "properties": {
 	"title":"<a href=\"12120\">Ferme Ard\u00e9choise en Vente<\/a>",
-	"description":"Projet : Ferme pour un projet collectif ou pas, avec un potentiel en permaculture, polyculture \u00e9levage, agro- tourisme,... Offre : A 25 minutes d\u2019Annonay, situ\u00e9e dans un hameau expos\u00e9 plein&nbsp;(...)"
+	"description":"A vendre  :  Ferme potentiel permaculture, polyculture \u00e9levage, agro- tourisme  &diams;  maison 140m\u00b2 + hangar de 80m\u00b2 + cave de 42m\u00b2 + terrain 7ha  &diams;  autonomie en eau 8mois\/an  &diams;  Prix&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/a0\/53ad0c6b26af9fcde411ef201c8964.png?1460667848",
 			"icon_size": [32,32],
@@ -859,7 +439,7 @@
 "id":"3231",
 "properties": {
 	"title":"<a href=\"12122\">Location Maison et \/ ou Bout de Terrain pour Yourte<\/a>",
-	"description":"Projet : Nous souhaitons accueillir sur notre lieu une personne ou une famille souhaitant se mettre au vert. Offre : Maison avec deux chambres situ\u00e9e dans un hameau isol\u00e9 mais proche de toutes les&nbsp;(...)"
+	"description":"Projet : Location maison 2 chb hameau isol\u00e9 et\/ou bout de terrain pour yourte pour personne\/famille souhaitant se mettre au vert. Demande : Loyer et\/ou aide \u00e0 la&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/ca\/bb5220bb22692442451343becfdfec.png?1460667791",
 			"icon_size": [32,32],
@@ -873,7 +453,7 @@
 "id":"3232",
 "properties": {
 	"title":"<a href=\"12125\">Recherche Location ou Coloc en Sud Ouest<\/a>",
-	"description":"Projet : Bonjour!! j'ai 33 ans, je reviens de quelques ann\u00e9es en Espagne et je souhaite m'installer dans un cadre naturel et sain, respectant l'envirronement, proche de personnes engag\u00e9es&nbsp;(...)"
+	"description":"Cherche  :  Loc ou coloc dans cadre naturel et sain, respectant l'environnement, proche de personnes engag\u00e9es soucieuses de valeurs essentielles comme le partage, le respect de soi et des autres.&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/ae\/7bf876ddf570ceaf496832d3b50498.png?1460667791",
 			"icon_size": [32,32],
@@ -915,7 +495,7 @@
 "id":"3235",
 "properties": {
 	"title":"<a href=\"12129\">Cherche Partenaires en co-Habitation pour Projets Alternatifs<\/a>",
-	"description":"Projet : Cr\u00e9ation d'un mini collectif visant l'autonomie alimentaire\/artistique et favorisant l'\u00e9change de savoirs et de services. Demande : Bonjour \u00e0 toutes et \u00e0 tous. Voil\u00e0, je propose une&nbsp;(...)"
+	"description":"Projet : Cr\u00e9ation d'un mini collectif visant l'autonomie alimentaire\/artistique et favorisant l'\u00e9change de savoirs et de services. Cohabitation sur le terrain pour tipi, yourte, camion, caravane,&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/47\/d891f04c87362d0da8cde4aa81ba51.png?1460667791",
 			"icon_size": [32,32],
@@ -942,8 +522,8 @@
 "geometry": {"type": "Point", "coordinates": [0.132972600080519, 45.18154515]},
 "id":"3237",
 "properties": {
-	"title":"<a href=\"12131\">Confort Post P\u00e9trole s'Appuyant sur un Mini Collectif. >Lieu: 1 ha&nbsp;(...)<\/a>",
-	"description":"Projet  :  confort post p\u00e9trole s'appuyant sur un mini collectif. Lieu  :  1 ha proximit\u00e9 Dordogne, b\u00e2ti agr\u00e9able et b\u00e2ti \u00e0 revoir, d\u00e9croissance engag\u00e9e, \u00e9tudierais association pour avancer soit : 1&nbsp;(...)"
+	"title":"<a href=\"12131\">Confort Post P\u00e9trole avec Mini Collectif, 1 ha Proximit\u00e9 Dordogne,&nbsp;(...)<\/a>",
+	"description":"Projet  :  Confort post p\u00e9trole avec mini collectif, 1 ha proximit\u00e9 Dordogne, b\u00e2ti agr\u00e9able et b\u00e2ti \u00e0 revoir, d\u00e9croissance engag\u00e9e, croiser low-techs et permaculture.  Cherche\u00a0 :  1 associ\u00e9(e) avec&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/c7\/ed34736b8c1b9c8b1a917b257bac33.png?1460667791",
 			"icon_size": [32,32],
@@ -971,7 +551,7 @@
 "id":"3239",
 "properties": {
 	"title":"<a href=\"12133\">Une Doula en Ard\u00e8che. . . Accompagnement P\u00e9rinatale pour une&nbsp;(...)<\/a>",
-	"description":"Projet : Doux comme Doula... Jenny Doula en Ard\u00e8che vous proposse ses services \u00e0 domicile: Accompagnement \u00e0 la naissance et \u00e0 la parentalit\u00e9, Art-Th\u00e9rapie P\u00e9rinatale, C\u00e9l\u00e9bration et Rithuel, Art&nbsp;(...)"
+	"description":"Projet : Accompagnement p\u00e9rinatale pour une naissance en conscience. Offre : Accompagnement personnalis\u00e9. Adaptable aux besoins de chacun, respect de vos choix et de vos&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/a0\/53ad0c6b26af9fcde411ef201c8964.png?1460667848",
 			"icon_size": [32,32],
@@ -999,7 +579,7 @@
 "id":"3241",
 "properties": {
 	"title":"<a href=\"12135\">A l'Abordage !<\/a>",
-	"description":"Projet : Trouver un foyer pour notre famille! Offre : Petite famille : Fabien, 40 ans, musicien, cuisinier et boulanger, Amandine 33 ans danseuse et administratrice, et Till, 2 ans... \u00c9change \u00e0&nbsp;(...)"
+	"description":"Cherche  :  foyer chaud pour famille Offre :  \u00c9change \u00e0 inventer"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/d4\/c6aa3e887268dd6597952395c8eed5.png?1460667791",
 			"icon_size": [32,32],
@@ -1013,7 +593,7 @@
 "id":"3242",
 "properties": {
 	"title":"<a href=\"12136\">Recherche Location Dr\u00f4me des Collines<\/a>",
-	"description":"Projet : Jardini\u00e8re en permaculture cherche lieu de vie !! Demande : Jardini\u00e8re en permaculture cherche lieu de vie, une maison avec deux chambres et ext\u00e9rieur dans la dr\u00f4me des collines. Un loyer de&nbsp;(...)"
+	"description":"Jardini\u00e8re en permaculture Cherche  :  Lieu de vie, 2 chb + ext\u00e9rieur Offre  :  Loyer 500\u20ac et\/ou services"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/d4\/c6aa3e887268dd6597952395c8eed5.png?1460667791",
 			"icon_size": [32,32],
@@ -1027,7 +607,7 @@
 "id":"3243",
 "properties": {
 	"title":"<a href=\"12137\">Hameau \u00e0 Vendre avec 7 Batiments Dont 2 Maisons sur 4&nbsp;(...)<\/a>",
-	"description":"Offre :  sur 4 hectares plus 1074m2: HAMEAU A VENDRE en pierre traditionnel, toit en Lauze, secteur Brassac, sud-Tarn. On vend car on n'a plus les finances pour r\u00e9nover notre \u00e9co-lieux. Il n'y a&nbsp;(...)"
+	"description":"A vendre :  Hameau 4 hectares + 1074m2  &diams;  pas de vis a vis  &diams;  Maison 206m\u00b2 : 4 chambres, salon, sdb avec baignoire, cuisine, simple vitrage, chauffage fioul, \u00e9lectricit\u00e9 aux normes&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/b9\/329403064dde310c0fbb7c2ef8a6cb.png?1460669277",
 			"icon_size": [32,32],
@@ -1037,13 +617,13 @@
 			"shadow_size": [32,32]
 }},
 {"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [-1.9948156, 47.8975829]},
+"geometry": {"type": "Point", "coordinates": [-2.3980799, 47.9323786]},
 "id":"3244",
 "properties": {
 	"title":"<a href=\"12138\">Recherche d'une Maison si Possible avec Terrain<\/a>",
-	"description":"Projet : Nous sommes un jeune couple du Finist\u00e8re s'expatriant du cot\u00e9 du Morbihan Ile et vilaine(secteur Ploermel).Ma copine commen\u00e7ant une formation chef de culture en horticulture Mi-Octobre et&nbsp;(...)"
+	"description":"Projet :  Couple s'expatriant pour raisons pro Cherche  :  Maison avec terrain \u00e0 louer pour installer mara\u00eechage bio \/plantes m\u00e9dicinales avec transformation \u00e0 long&nbsp;(...)"
 	,
-			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/23\/097cbd956742dda7c8063f0ce491e6.png?1460667791",
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/47\/d891f04c87362d0da8cde4aa81ba51.png?1460667791",
 			"icon_size": [32,32],
 			"icon_anchor": [16,16],
 			"popup_anchor": [0,0],
@@ -1055,7 +635,7 @@
 "id":"3245",
 "properties": {
 	"title":"<a href=\"12139\">Un Petit Coin de Paradis, en Qu\u00eate d'Autonomie<\/a>",
-	"description":"Projet : Nous recherchons des personnes suppl\u00e9mentaires pour ce joindre \u00e0 notre projet de cr\u00e9ation d'un \"\u00e9colieu\" Description du projet : Nous souhaitons acheter un terrain de 5 \u00e0 6 hectares avec de&nbsp;(...)"
+	"description":"Projet :  acheter terrain 5-6 ha avec b\u00e2tisses \u00e0 r\u00e9nover, for\u00eat, prairie, source.  &diams;  Habitat perso -caravane, yourte, cabane, etc + lieux de vie commune  &diams;  autonomie&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/8d\/09dd13d4f082e6e12e35a2c48db803.png?1460669430",
 			"icon_size": [32,32],
@@ -1069,7 +649,7 @@
 "id":"3246",
 "properties": {
 	"title":"<a href=\"12140\">Cherche Terres avec Source<\/a>",
-	"description":"Projet : Bonjour, je suis \u00e0 la recherche de plusieurs hectares \u00e0 vendre avec une source et\/ou puits (eau potable), o\u00f9 m'installer en permaculture, et y d\u00e9velopper un projet d'accueil touristique en&nbsp;(...)"
+	"description":"Projet : Cherche ha \u00e0 acheter avec source et\/ou puits pour permaculture et projet d'accueil touristique en habitats insolites et compl\u00e8tement \u00e9cologique. Pr\u00e9sence d'un march\u00e9 \u00e0 max 15km. &diams;&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/13\/33491c246e4ca59652d4dcbd49d043.png?1460669431",
 			"icon_size": [32,32],
@@ -1097,7 +677,7 @@
 "id":"3248",
 "properties": {
 	"title":"<a href=\"12146\">Stage Mensuel Gratuit de Permaculture<\/a>",
-	"description":"Projet : Stage gratuit de Permaculture \u00ab J\u2019apprends \u00e0 me conna\u00eetre et \u00e0 me lib\u00e9rer de mes croyances limitantes pour appr\u00e9hender et r\u00e9aliser le monde de demain \u00bb Formation gratuite, accessible \u00e0 tous du&nbsp;(...)"
+	"description":"Projet : Stage mensuel de Permaculture  &diams;  R\u00e9alisation personnelle, bien \u00eatre, coop\u00e9ration, permaculture et sa philosophie, design et cr\u00e9ation, philosophie de la&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/ca\/496226cdf951a5c09d1e10af45e22e.png?1464894018",
 			"icon_size": [32,32],
@@ -1111,7 +691,7 @@
 "id":"3249",
 "properties": {
 	"title":"<a href=\"12145\">Travail en Commun<\/a>",
-	"description":"Projet : Je recherche une activit\u00e9 en lien avec ma formation et une production artisanale soucieuse de maintenir l'esprit de la tradition paysanne. j'ai l'intention d'accompagner une confection&nbsp;(...)"
+	"description":"Cherche  :  activit\u00e9 production artisanale dans l'esprit de la tradition paysanne.Accompagner confection fermi\u00e8re naturelle en y associant recettes populaires \u00e0 base de plantes. >Demande entraide et&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/f9\/ab21167f8f8710f74847fe8478b36d.png?1460669430",
 			"icon_size": [32,32],
@@ -1125,7 +705,7 @@
 "id":"3251",
 "properties": {
 	"title":"<a href=\"12150\">Mis \u00e0 Disposition d'un Terrain pour Permaculture<\/a>",
-	"description":"Projet : Nous mettons \u00e0 disposition un terrain d'environ 800m2 avec un point d'eau pour d\u00e9marrer un potager permanent en permaculture. Nous sommes situ\u00e9s dans un village \u00e0 proximit\u00e9 de Pontoise,&nbsp;(...)"
+	"description":"Offre : Terrain d'environ 800m2 avec un point d'eau pour d\u00e9marrer un potager permanent en permaculture"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/d1\/c9161e266ccfe1bd9e9408734c7abd.png?1460669432",
 			"icon_size": [32,32],
@@ -1139,9 +719,9 @@
 "id":"3252",
 "properties": {
 	"title":"<a href=\"12151\">Recherche Terrain dans Coloc pour Poser une Yourte-Agglo&nbsp;(...)<\/a>",
-	"description":"Projet : Nous sommes un couple de grenoblois qui souhaitons exp\u00e9rimenter la vie en collectivit\u00e9 ET la vie au grand air, du coup, on appr\u00e9cierait beaucoup poser une yourte (pas trop grande) sur le&nbsp;(...)"
+	"description":"Projet : Couple souhaite exp\u00e9rimenter la vie en collectivit\u00e9 et au grand air Cherche  :  terrain dans coloc existante pour poser une yourte"
 	,
-			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/e5\/88dd482e7caabaa1035bbb03f7c0bb.png?1460669432",
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/cb\/20b5b347d558415f445676e9eb1663.png?1460669431",
 			"icon_size": [32,32],
 			"icon_anchor": [16,16],
 			"popup_anchor": [0,0],
@@ -1153,7 +733,7 @@
 "id":"3253",
 "properties": {
 	"title":"<a href=\"12152\">Woofing en Asie<\/a>",
-	"description":"Projet : Bonjour, Je pars mi f\u00e9vrier pour l'Asie o\u00f9 je vais y passer une ann\u00e9e. Je suis accompagn\u00e9e de Yannis. Notre id\u00e9e est de voyager de ferme en lieu dans un esprit d'\u00e9change solidaire, pour&nbsp;(...)"
+	"description":"Projet : Couple, d\u00e9part pour l'Asie pour 1an : objectif voyager de lieu en lieu avec esprit d'\u00e9change solidaire, d\u00e9couverte des pratiques culturales, des modes de vie et des langues. Offre : Des&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/9e\/75e3ede759750309730501b46121bc.png?1460667791",
 			"icon_size": [32,32],
@@ -1167,7 +747,7 @@
 "id":"3254",
 "properties": {
 	"title":"<a href=\"12153\">Un \u00c9co-Hameau Pr\u00e8s de Royan (17)<\/a>",
-	"description":"Projet : Nous cr\u00e9ons un \u00e9co-hameau : lieu de vie \u00e0 partager en coop\u00e9rative d'habitants, pr\u00e8s de l'oc\u00e9an (Royan), avec une maison commune, une salle d'activit\u00e9s, potager, animaux et de multiples&nbsp;(...)"
+	"description":"Projet : Cr\u00e9ation d'un \u00e9co-hameau \u00e0 partager en coop\u00e9rative d'habitants, avec maison commune, salle d'activit\u00e9s, potager, animaux et multiples activit\u00e9s \u00e0 caract\u00e8re artistique, culturel, \u00e9ducatif etc.&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/40\/fd8724af2d00006b90d23d87edd7d0.png?1460669430",
 			"icon_size": [32,32],
@@ -1181,7 +761,7 @@
 "id":"3255",
 "properties": {
 	"title":"<a href=\"12154\">Cherche Personnes pour Cr\u00e9er un Ecolieu<\/a>",
-	"description":"Projet : Nous sommes un jeune couple avec une petite fille de 1 ans et habitons dans une ferme avec 4 hectares de terrain en Saone et loire. Nous sommes autonomes en l\u00e9gumes et oeufs et avons pas&nbsp;(...)"
+	"description":"Couple + enfant 1an et habitons ferme + terrain 4ha, autonomes en l\u00e9gumes et \u0153ufs + animaux Projet :  cr\u00e9er ferme p\u00e9dagogique, cr\u00e9er \u00e9picerie locavore, produire l\u00e9gumes.  &diams;  D\u00e9but printemps 2017&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/5c\/bc26fbe23effcdf9b5ac35ac29e021.png?1460667791",
 			"icon_size": [32,32],
@@ -1195,7 +775,7 @@
 "id":"3256",
 "properties": {
 	"title":"<a href=\"12156\">Maison \u00c9cologique Normand en Pleins Coeur d'une R\u00e9serve&nbsp;(...)<\/a>",
-	"description":"Offre : Pour amoureux de nature, maison normande de 90 m\u00b2, sur terrain de 3000 m\u00b2 avec d\u00e9pendance de 90 m\u00b2.un puit, arbres fruitiers La maison propose salle, salon et cuisine d'une pi\u00e8ce, un bureau,&nbsp;(...)"
+	"description":"A vendre  :  Maison 90 m\u00b2 + terrain 3000 m\u00b2 + d\u00e9pendance 90 m\u00b2 + puit + arbres fruitiers  &diams;  travaux a pr\u00e9voir.  &diams;  Prix 150000\u20ac"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/49\/a0571d73fc50a78797cc7d6577e516.png?1462216656",
 			"icon_size": [32,32],
@@ -1205,13 +785,13 @@
 			"shadow_size": [32,32]
 }},
 {"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [7.0495, 48.2203]},
+"geometry": {"type": "Point", "coordinates": [-4.04403012572015, 48.2452998]},
 "id":"3257",
 "properties": {
 	"title":"<a href=\"12157\">Recherche Location en Finist\u00e8re Sud<\/a>",
-	"description":"Projet : Recherche notamment dans la moiti\u00e9 Sud du Finist\u00e8re un logement \u00e0 louer (3 chambres au moins) dans ferme, ou autre \u00e0 la campagne, avec un loyer pas trop \u00e9lev\u00e9. Cela dans un secteur o\u00f9 vivent&nbsp;(...)"
+	"description":"Cherche :  location 3 chb min \u00e0 la campagne avec petit loyer  &diams;  Secteur alternatif"
 	,
-			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/40\/82ce48aa21271999ef2efaa6af69c9.png?1464966297",
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/1f\/5724b8ebd035e60de0eb5162b0d35b.png?1460669431",
 			"icon_size": [32,32],
 			"icon_anchor": [16,16],
 			"popup_anchor": [0,0],
@@ -1237,7 +817,7 @@
 "id":"3259",
 "properties": {
 	"title":"<a href=\"12160\">Coop\u00e9rative d'Habitants en Bourgogne<\/a>",
-	"description":"Projet : En r\u00e9sum\u00e9 : Un groupe existant qui cherche \u00e0 accueillir de nouveaux habitants. Un domaine de 25 hectares, avec ressource en eau, corps de ferme, parcelle constructible, terres de p\u00e2ture et&nbsp;(...)"
+	"description":"Projet :  Groupe cherche \u00e0 accueillir de nouveaux habitants sur domaine 25ha, avec eau, ferme, parcelle constructible, terres de p\u00e2ture et terres mara\u00eech\u00e8res.  &diams;  Volont\u00e9 d'autonomie&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/5c\/bc26fbe23effcdf9b5ac35ac29e021.png?1460667791",
 			"icon_size": [32,32],
@@ -1251,7 +831,7 @@
 "id":"3260",
 "properties": {
 	"title":"<a href=\"12162\">Chantier Participatif<\/a>",
-	"description":"Projet : L'association Cheval de Loire am\u00e9nage un potager biologique \u00e0 vocation p\u00e9dagogique. Ainsi, nous souhaitons construire des toilettes s\u00e8ches dans le but de sensibiliser les passagers du&nbsp;(...)"
+	"description":"Projet : Association Cheval de Loire am\u00e9nage potager biologique \u00e0 vocation p\u00e9dagogique. Demande  :  construire toilettes s\u00e8ches dans le but de sensibiliser \u00e0 l'\u00e9cologie pratique. Cherche :  Bois,&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/92\/5e714bab62758468a955279614c018.png?1460667791",
 			"icon_size": [32,32],
@@ -1279,7 +859,7 @@
 "id":"3262",
 "properties": {
 	"title":"<a href=\"12164\">Am\u00e8nagement Naturel du Paysage<\/a>",
-	"description":"Projet : L'association Cheval de Loire am\u00e9nage un potager biologique \u00e0 Contign\u00e9 (nord Angers). L'objectif est de sensibiliser les passagers du Domaine le Puits au jardinage naturel. Offre :&nbsp;(...)"
+	"description":"Projet : Association Cheval de Loire am\u00e9nage un potager biologique dont l''objectif est de sensibiliser au jardinage naturel. Cherche  : personnes pour le nettoyage, le travail du sol,&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/92\/5e714bab62758468a955279614c018.png?1460667791",
 			"icon_size": [32,32],
@@ -1289,13 +869,13 @@
 			"shadow_size": [32,32]
 }},
 {"type": "Feature",
-"geometry": {"type": "Point", "coordinates": [7.0495, 48.2203]},
+"geometry": {"type": "Point", "coordinates": [-4.04403012572015, 48.2452998]},
 "id":"3263",
 "properties": {
 	"title":"<a href=\"12159\">Emploi Jardinier Biologique<\/a>",
-	"description":"Projet : Comp\u00e9tent en paysagisme en approche biologique (excellente exp\u00e9rience) notamment dans les styles anglais et fran\u00e7ais, je recherche un emploi de jardinier de pr\u00e9f\u00e9rence dans un parc de manoir&nbsp;(...)"
+	"description":"Cherche  :  Emploi jardinier biologique, comp\u00e9tences en paysagisme dans parc de manoir ou ch\u00e2teau"
 	,
-			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/40\/82ce48aa21271999ef2efaa6af69c9.png?1464966297",
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/1f\/5724b8ebd035e60de0eb5162b0d35b.png?1460669431",
 			"icon_size": [32,32],
 			"icon_anchor": [16,16],
 			"popup_anchor": [0,0],
@@ -1307,7 +887,7 @@
 "id":"3264",
 "properties": {
 	"title":"<a href=\"12166\">Ecolieu en Plein Conscience sur la R\u00e9gion Basque<\/a>",
-	"description":"Projet : Nous recherchons des personnes int\u00e9ress\u00e9s pour cr\u00e9er un \u00e9colieu sur la r\u00e9gion Basque proche BAB. Nous recherchons un lieu proche de la nature et des personnes volontaires. Nos valeurs  :&nbsp;(...)"
+	"description":"Projet : Cr\u00e9er un \u00e9colieu proche de la nature Cherche  :  personnes volontaires. &diams;  Valeurs : entraide, solidarit\u00e9 et partage, mode de vie en conscience et sobri\u00e9t\u00e9. Offre  :  transmettre nos&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/ae\/7bf876ddf570ceaf496832d3b50498.png?1460667791",
 			"icon_size": [32,32],
@@ -1321,7 +901,7 @@
 "id":"3266",
 "properties": {
 	"title":"<a href=\"12168\">Happy-Terre, pour Vivre Ensemble l'\u00c9cologie et la Spiritualit\u00e9.<\/a>",
-	"description":"Projet : Lieu de vie interg\u00e9n\u00e9rationnel pour 12 \u00e0 15 personnes, situ\u00e9 dans un \u00e9crin de verdure ouvert sur les C\u00e9vennes et l\u2019Ard\u00e8che, le projet Happy-Terre, en cours de cr\u00e9ation, s\u2019inscrit dans la lign\u00e9e&nbsp;(...)"
+	"description":"Projet :  Cr\u00e9ation d'un lieu de vie interg\u00e9n\u00e9rationnel de 12 \u00e0 15 personnes  &diams;  SCI Happy-Terre, \u00e9co-lieu-\u00e9cole  &diams;  terrain 18000 m\u00b2 : Lieu d\u2019accueil, de ressourcement et de transmission \/&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/bd\/e3d2ab78264e95749d88639d3b5206.png?1460669431",
 			"icon_size": [32,32],
@@ -1335,7 +915,7 @@
 "id":"3267",
 "properties": {
 	"title":"<a href=\"12169\">\" la Divine Providence \"<\/a>",
-	"description":"Projet : R\u00e9alisation d'un Eco-lieu partager ( AMAP), d'un g\u00eete, d'un jardin permaculture et agro-forestiere, Ouverture d'une table d\u2019h\u00f4tes vente de produits bio, remise en \u00e9tat d'un pressoir \u00e0 pommes&nbsp;(...)"
+	"description":"Projet : R\u00e9alisation d'un Eco-lieu partag\u00e9 - AMAP, g\u00eete, jardin permaculture et agro-forestiere, ouverture d'une table d\u2019h\u00f4tes, vente de produits bio, remise en \u00e9tat d'un pressoir \u00e0 pommes, cr\u00e9ation&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/5f\/a4278da50da8a045b7dbc1a0969ad9.png?1475043952",
 			"icon_size": [32,32],
@@ -1349,7 +929,7 @@
 "id":"3268",
 "properties": {
 	"title":"<a href=\"12170\">Aide pour Maraichage-Permaculture<\/a>",
-	"description":"Projet : Bonjour ami(e)s , Je m'appelle Dominique et suis en reconversion dans la permaculture. Mon mode de vie est simple : alimentation v\u00e9g\u00e9tarienne, respect de la nature &amp; amour de soi et des&nbsp;(...)"
+	"description":"Projet : H en reconversion dans la permaculture, mode de vie est simple, alimentation VG, respect de la nature &amp; amour de soi et des autres, souhaite cr\u00e9er un jardin-for\u00eat en ville et offrir du bio&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/b9\/329403064dde310c0fbb7c2ef8a6cb.png?1460669277",
 			"icon_size": [32,32],
@@ -1377,7 +957,7 @@
 "id":"3270",
 "properties": {
 	"title":"<a href=\"12172\">Atelier \u00abExp\u00e9rimentez l'\u00c9cologie Relationnelle : se Relier \u00e0 Soi, au&nbsp;(...)<\/a>",
-	"description":"Projet : Vous aspirez \u00e0 agir au service du bien commun...Vous ressentez parfois le besoin de vous relier pour \u00ab retrouver du sens \u00bb? Comment Lib\u00e9rer et mobiliser vos capacit\u00e9s \u00e0 vous impliquer&nbsp;(...)"
+	"description":"Projet :  Atelier \"Exp\u00e9rimentez l'\u00e9cologie relationnelle : se relier \u00e0 Soi, au Groupe, \u00e0 la Nature\" Offre : Atelier d'\u00e9cologie relationnelle Tarif  :  acompte de 90\u20ac + participation&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/47\/d891f04c87362d0da8cde4aa81ba51.png?1460667791",
 			"icon_size": [32,32],
@@ -1405,7 +985,7 @@
 "id":"3272",
 "properties": {
 	"title":"<a href=\"12174\">Pr\u00e9sentation du Village Esp\u00e9rance<\/a>",
-	"description":"Offre : Pr\u00e9sentation du Village Esp\u00e9rance Celui-ci existe depuis 35 ans, et il n\u2019a cess\u00e9, de fa\u00e7on continue, de d\u00e9velopper son potentiel d\u2019\u00e9nergie cr\u00e9atrice, mat\u00e9riellement et moralement. Pourquoi en&nbsp;(...)"
+	"description":"Pr\u00e9sentation du Village Esp\u00e9rance, \u00e0 haut potentiel d\u2019\u00e9nergie cr\u00e9atrice, mat\u00e9riellement et moralement depuis 35 ans.  &diams;  Terrain 10 ha dot\u00e9 d\u2019une source d'eau, pleine nature, bois et terres de&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/1f\/5724b8ebd035e60de0eb5162b0d35b.png?1460669431",
 			"icon_size": [32,32],
@@ -1433,7 +1013,7 @@
 "id":"3274",
 "properties": {
 	"title":"<a href=\"12176\">Atelier Exp\u00e9rimentez le Processus R\u00eave du Dragon*, R\u00e9alisez vos&nbsp;(...)<\/a>",
-	"description":"Projet : Atelier \u00ab Aller au bout de ses R\u00eaves et de ses Projets - exp\u00e9rimentez le processus R\u00eave du Dragon*\u00bb : Le \u00ab R\u00eave du Dragon* \u00bb est un processus syst\u00e9mique pour structurer et optimiser la r\u00e9ussite&nbsp;(...)"
+	"description":"Atelier  :  \u00ab Aller au bout de ses R\u00eaves et de ses Projets - exp\u00e9rimentez le processus R\u00eave du Dragon \u00bb : s\u2019engager pour d\u00e9velopper notre plein potentiel, renforcer les communaut\u00e9s \u00e0 laquelle nous&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/47\/d891f04c87362d0da8cde4aa81ba51.png?1460667791",
 			"icon_size": [32,32],
@@ -1447,7 +1027,7 @@
 "id":"3275",
 "properties": {
 	"title":"<a href=\"12177\">Recherche Coin de Verdure Autour de Bordeaux pour Installer notre&nbsp;(...)<\/a>",
-	"description":"Projet : Bonjour, bonjour !!! L'association DIALOGUE cherche un coin de Nature o\u00f9 installer\u00a0 sa yourte ! Notre yourte a pour but d'accueillir une partie de nos activit\u00e9s d'\u00e9ducation bienveillante et&nbsp;(...)"
+	"description":"Association Dialogue cherche un coin de Nature o\u00f9 installer sa yourte Projet :  La yourte a pour but d'accueillir les activit\u00e9s d'\u00e9ducation bienveillante et soutien \u00e0 la parentalit\u00e9 Offre : Pr\u00eat,&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/6d\/a8e22bf1fa2682f3efe1206807feae.png?1460669431",
 			"icon_size": [32,32],
@@ -1461,7 +1041,7 @@
 "id":"3276",
 "properties": {
 	"title":"<a href=\"12178\">Recherche Maison Campagne<\/a>",
-	"description":"Projet : installation d'un rucher avancer avec la permaculture Demande : Location au sud de la France Nous, deux femmes avec chat et trois ruches, cherchons maison (chauffage bois) avec terrain&nbsp;(...)"
+	"description":"Projet :  Installation d'un rucher + permaculture Demande : Location pour 2F avec 1 chat et 3 ruches, maison chauffage bois + terrain et d\u00e9pendance"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/c7\/ed34736b8c1b9c8b1a917b257bac33.png?1460667791",
 			"icon_size": [32,32],
@@ -1475,7 +1055,7 @@
 "id":"3277",
 "properties": {
 	"title":"<a href=\"12180\">Recherche \u00c9colieu de Vie (Permaculture) Sud Loire<\/a>",
-	"description":"Demande : recherche lieu de vie permaculture sud loire bonjour, je cherche \u00e0 cr\u00e9er ou participer \u00e0 un lieu de vie si possible en permaculture, tendant sur l'autonomie. je cherche dans le sud loire \u00e0&nbsp;(...)"
+	"description":"Cherche  :  cr\u00e9er ou participer lieu de vie permaculture tendant sur l'autonomie. Offre  :  j'aime cuisiner, glaner et jardiner."
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/92\/5e714bab62758468a955279614c018.png?1460667791",
 			"icon_size": [32,32],
@@ -1489,7 +1069,7 @@
 "id":"3278",
 "properties": {
 	"title":"<a href=\"12181\">Reprise d'une Activit\u00e9 Agricole Caprine<\/a>",
-	"description":"Projet : Urgent, cherche personnes int\u00e9ress\u00e9s pour travailler sur une petite ferme de montagne qui fonctionne bien. Les terres et les b\u00e2timents seront en bail \u00e0 ferme, possibilit\u00e9 d'une installation&nbsp;(...)"
+	"description":"Urgent Cherche  :  personnes int\u00e9ress\u00e9s pour travailler sur ferme de montagne. Terres et b\u00e2timents en bail ferme, possibilit\u00e9 d'installation en tant que chef d'exploitation, logement en&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/13\/33491c246e4ca59652d4dcbd49d043.png?1460669431",
 			"icon_size": [32,32],
@@ -1503,7 +1083,7 @@
 "id":"3279",
 "properties": {
 	"title":"<a href=\"12182\">Recherche Contacts Production et Transformation Plantes<\/a>",
-	"description":"Projet : Costumi\u00e8re, je m'int\u00e9resse de pr\u00e8s aux couleurs naturelles issues des plantes. Pour d\u00e9velopper un projet d'installation agricole autour des plantes tinctoriales( pastel des teinturiers,&nbsp;(...)"
+	"description":"Costumi\u00e8re, utilise couleurs naturelles issues des plantes. Projet :  installation agricole autour des plantes tinctoriales, souhaite apprendre la production et la transformation des plantes en&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/8d\/09dd13d4f082e6e12e35a2c48db803.png?1460669430",
 			"icon_size": [32,32],
@@ -1531,7 +1111,7 @@
 "id":"3281",
 "properties": {
 	"title":"<a href=\"12184\">Jeunes Agriculteurs Cherchent Partager Leur Quotidien&nbsp;(...)<\/a>",
-	"description":"Projet : Bonjour, Nous sommes 1 couple avec une petite, tout juste install\u00e9s sur une partie des terres de mes parents. Nous produisons des c\u00e9r\u00e9ales que nous transformons un pain, brioche, pizzas...&nbsp;(...)"
+	"description":"Couple avec 1 enfant install\u00e9s. Produit c\u00e9r\u00e9ales, transforme en pain, brioche, pizzas... Bient\u00f4t poules + potager et verger bio, biodynamie et permaculture Offre :  Le g\u00eete et le couvert, nos&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/f7\/77f77fdc0394204538e09078912640.png?1460669432",
 			"icon_size": [32,32],
@@ -1545,7 +1125,7 @@
 "id":"3282",
 "properties": {
 	"title":"<a href=\"12188\">Propose Colocation !<\/a>",
-	"description":"Offre : Bonjour! nous habitons, moi et mon fils de 3ans et demi, dans un petit village medieval du lot, et proposons de partager notre lieu, maison spacieuse, 3chambres, \u00e9tage,petit jardin, grande&nbsp;(...)"
+	"description":"Offre :  Partager avec F et enfant 3ans, maison 3 chb, \u00e9tage, jardin, cave, chauffage au bois, toilettes s\u00e8ches... Demande :  292\u20ac\/mois soit la moiti\u00e9 du&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/29\/c25f9e803afa9f73f7b343d1e28dfc.png?1460667791",
 			"icon_size": [32,32],
@@ -1559,7 +1139,7 @@
 "id":"3283",
 "properties": {
 	"title":"<a href=\"12190\">Partager un Terrain<\/a>",
-	"description":"Projet : Je cultive des plantes medicinales depuis peu, je les transforme, et distille pour des eaux florales. Offre : Je souhaite partager ce terrain d'un demi hectare ( car je cultive que&nbsp;(...)"
+	"description":"Projet :  Cultive et transforme plantes m\u00e9dicinales Offre :  Souhaite partager terrain 1\/2ha dans une id\u00e9e d'entraide et de partage de savoirs. Demande :  Coups de mains, \u00e9changes&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/29\/c25f9e803afa9f73f7b343d1e28dfc.png?1460667791",
 			"icon_size": [32,32],
@@ -1587,7 +1167,7 @@
 "id":"3285",
 "properties": {
 	"title":"<a href=\"12191\">Partager, Accompagner. . . \u00catre avec Vous !<\/a>",
-	"description":"Projet : Bonjour, Je cherche \u00e0 int\u00e9grer un lieu ou \u00e9colieu o\u00f9 je puisse m'investir et \u00e0 la fois rendre un\/des service(s) utile(s). J'y aurai un habitat l\u00e9ger que vous pourriez me proposer ou un habitat&nbsp;(...)"
+	"description":"Cherche  :  \u00e0 int\u00e9grer \u00e9colieu existant o\u00f9 m'investir. HL ou HD, contre services, petit loyer ou coloc Offre  :  tenue de boutique me rendre aux march\u00e9s locaux, aide \u00e0 la r\u00e9colte et tous travaux de&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/ca\/bb5220bb22692442451343becfdfec.png?1460667791",
 			"icon_size": [32,32],
@@ -1643,7 +1223,7 @@
 "id":"3289",
 "properties": {
 	"title":"<a href=\"12196\">Jardiner, Restaurer et \u00c9tudier<\/a>",
-	"description":"Souhaite :  int\u00e9grer un \"\u00e9colieux\" pour vie saine. Offre : Mes acquis, ma force de travail, ma participation active. J'ai 29 ans, dynamique et curieuse d'apprendre. Demande :  Logement ou coloc. Je&nbsp;(...)"
+	"description":"Souhaite :  int\u00e9grer un \u00e9colieu pour vie saine et bien entour\u00e9e Offre :  force de travail, 29 ans, dynamique et curieuse d'apprendre. Demande :  \u00eatre log\u00e9e ou coloc&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/3d\/e252395153632e8f44e4ddb6d6f50d.png?1460669431",
 			"icon_size": [32,32],
@@ -1657,7 +1237,7 @@
 "id":"3290",
 "properties": {
 	"title":"<a href=\"12083\">Compagne ou Compagnon d'Aventure pour Voyage<\/a>",
-	"description":"Projet : Parcourir un pays \u00e9tranger sur plusieurs mois pour exp\u00e9rimenter, trouver du travail, apprendre une autre langue ou acc\u00e9der \u00e0 des lieux authentiques et y rester un moment pour partager ou&nbsp;(...)"
+	"description":"Projet : Parcourir pays \u00e9tranger sur plusieurs mois pour exp\u00e9rimenter, travailler, apprendre la langue ou acc\u00e9der \u00e0 des lieux authentiques et y rester pour partager ou faire ce qui est propos\u00e9. A&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/e5\/88dd482e7caabaa1035bbb03f7c0bb.png?1460669432",
 			"icon_size": [32,32],
@@ -1727,7 +1307,7 @@
 "id":"3295",
 "properties": {
 	"title":"<a href=\"12200\">Partenariat<\/a>",
-	"description":"Cherche : associ\u00e9(e) pour cr\u00e9ation cabinet m\u00e9dical, dans lieu de vie ou autre, pr\u00e9f\u00e9rence sud Offre : Psychoth\u00e9rapie, naturopathie, coaching personnel  &diams;  exp\u00e9riment\u00e9, avec&nbsp;(...)"
+	"description":"Cherche : associ\u00e9(e) pour cr\u00e9ation cabinet m\u00e9dical, dans lieu de vie ou autre, pr\u00e9f\u00e9rence sud Offre : Psychoth\u00e9rapie, naturopathie, coaching personnel  &diams;  exp\u00e9rience et&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/e9\/0050aa580b65fb64cce3b4210e27ef.png?1460667789",
 			"icon_size": [32,32],
@@ -1769,7 +1349,7 @@
 "id":"3301",
 "properties": {
 	"title":"<a href=\"12207\">Jeune Femme Vivant dans un \u00c9colieu en Dordogne Recherche&nbsp;(...)<\/a>",
-	"description":"Projet : Hello ! Je m\u2019appelle H\u00e9l\u00e8ne, je vis dans l\u2019\u00e9cohameau Interval \u00e0 Saint-Pierre de Frugie o\u00f9 je suis l\u2019heureuse propri\u00e9taire d\u2019une belle maison en paille avec vue sur la campagne de plus de 100 m2.&nbsp;(...)"
+	"description":"Projet :  Ecohameau Interval \u00e0 Saint-Pierre de Frugie avec une vingtaine de personnes, multi-g\u00e9n\u00e9rationnel , peu de r\u00e8gles, avec le c\u0153ur de chacun. Je suis H\u00e9l\u00e8ne, th\u00e9rapeute globale, heureuse&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/c7\/ed34736b8c1b9c8b1a917b257bac33.png?1460667791",
 			"icon_size": [32,32],
@@ -1796,8 +1376,8 @@
 "geometry": {"type": "Point", "coordinates": [2.4976209, 43.6294985]},
 "id":"3303",
 "properties": {
-	"title":"<a href=\"12209\">Co-Loc dans Collectif \u00c9co-Hameau pour Personne Zen<\/a>",
-	"description":"Hameau Sapiens :  Collectif dans hameau isol\u00e9 \u00e0 restaurer pour cr\u00e9er lieu de repos, artistique et alternatif. Le projet red\u00e9marre, personne pour l'instant.  &diams;  7 b\u00e2timents sur 4ha de terrain,&nbsp;(...)"
+	"title":"<a href=\"12209\">Coloc dans Collectif \u00c9co-Hameau pour Personne Zen<\/a>",
+	"description":"Projet  :  Collectif dans hameau isol\u00e9 \u00e0 restaurer (7 b\u00e2ts sur 4ha de terrain, bonne terre) \u00e0 500m d'alt en for\u00eat avec du soleil toute l'ann\u00e9e ! \u00c0 restaurer pour cr\u00e9er lieu de repos, artistique et&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/b9\/329403064dde310c0fbb7c2ef8a6cb.png?1460669277",
 			"icon_size": [32,32],
@@ -1811,7 +1391,7 @@
 "id":"3304",
 "properties": {
 	"title":"<a href=\"12203\">Invention de V\u00e9hicules<\/a>",
-	"description":"Projet :  \u00c0 nous le nomadisme ! J'invente des v\u00e9hicules individuels utilitaires, plus efficaces qu'une voiture et qui permettent d'aller partout en toute autonomie. Propose :  sac \u00e0 dos \u00e0 roulette,&nbsp;(...)"
+	"description":"Projet :  \u00c0 nous le nomadisme ! J'invente des v\u00e9hicules individuels utilitaires etplus efficaces qu'une voiture car autonomes. Propose :  sac \u00e0 dos \u00e0 roulette, cabines \u00e0 sommeil, boutique&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/a0\/a6825d689eb7adf50cd6a4c5884d6f.png?1460667791",
 			"icon_size": [32,32],
@@ -1825,7 +1405,7 @@
 "id":"3305",
 "properties": {
 	"title":"<a href=\"12211\">Projet en Cours ou Existant<\/a>",
-	"description":"Projet : convivialit\u00e9 Offre : partage, solidarit\u00e9, respect, art th\u00e9rapie, coaching Demande : couple un enfant 9 ans disposant 50keuros, \u00e9tudie toute proposition vivre ensemble sur un m\u00eame lieu dans&nbsp;(...)"
+	"description":"Couple un enfant 9 ans disposant 50k\u20ac Projet :  vivre ensemble sur un m\u00eame lieu dans le Vaucluse avec convivialit\u00e9, partage, respect, art th\u00e9rapie, coaching."
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/e9\/0050aa580b65fb64cce3b4210e27ef.png?1460667789",
 			"icon_size": [32,32],
@@ -1839,7 +1419,7 @@
 "id":"3306",
 "properties": {
 	"title":"<a href=\"12212\">Accueil en Wwoofing Toute l'Ann\u00e9e<\/a>",
-	"description":"Projet : Nous sommes deux amis qui venons d'achet\u00e9 une ferme \u00e0 retaper dans l'Aveyron avec 3 ha de prairie et 10 ha de for\u00eat. Nous y avons d\u00e9j\u00e0 install\u00e9 un jardin d'automne, des toilette s\u00e8ches et&nbsp;(...)"
+	"description":"Projet :  Deux amis avec ferme \u00e0 retaper dans l'Aveyron, 3 ha de prairie et 10 ha de for\u00eat. jardin d'automne, toilette s\u00e8che. Connaissances en vannerie sauvage, plantes sauvages, rocket stove,&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/ca\/bb5220bb22692442451343becfdfec.png?1460667791",
 			"icon_size": [32,32],
@@ -1853,7 +1433,7 @@
 "id":"3307",
 "properties": {
 	"title":"<a href=\"12213\">Un \u00c9colieu pour \u00c9coquille<\/a>",
-	"description":"Projet : Souhaite trouver rapidement un lieu en Normandie (Orne, Calvados, Manche) o\u00f9 construire une \u00e9coquille. Pr\u00eate \u00e0 rejoindre un groupe d\u00e9j\u00e0 constitu\u00e9 dans hameau avec parcelle de 2000 m2 minimum ou&nbsp;(...)"
+	"description":"Cherche  :  un lieu en Basse Normandie o\u00f9 construire une \u00e9coquille.  &diams;  2000 m2 minimum, \u00e9ventuellement dans hameau existant, ou beau terrain bois\u00e9&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/07\/bec3ffa52b72082ad28d8d8ae6ffb6.png?1460669431",
 			"icon_size": [32,32],
@@ -1881,7 +1461,7 @@
 "id":"3309",
 "properties": {
 	"title":"<a href=\"12215\">Cr\u00e9ation d'une Oasis<\/a>",
-	"description":"Projet : Anim\u00e9 par un esprit de \u00ab faire ensemble \u00bb nous d\u00e9cidons aujourd\u2019hui de mutualiser des espaces et des services, sur notre propri\u00e9t\u00e9 de 3 ha avec lac. Aussi nous recherchons des b\u00e9n\u00e9voles pour la&nbsp;(...)"
+	"description":"Projet :  Mutualiser des espaces et des services sur notre terrain de 3 ha avec lac, buttes de permaculture,poulailler et serre. Proche de l\u2019autosuffisance alimentaire.  Cherche\u00a0 :  B\u00e9n\u00e9voles pour&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/b6\/b712d487b1542a2d1e24ca1d717821.png?1460669430",
 			"icon_size": [32,32],
@@ -1895,7 +1475,7 @@
 "id":"3310",
 "properties": {
 	"title":"<a href=\"12216\">Cherche Coloc Simple, Nature, Tr\u00e8s Calme !!<\/a>",
-	"description":"Projet : bonjour, je cherches d\u00e8s que possible soit une chambre meubl\u00e9e modeste mais correcte au calme!! soit un studio meubl\u00e9,ind\u00e9pendant,autonome,\"isol\u00e9\",ou grande caravane,chalet en bois...de&nbsp;(...)"
+	"description":"Cherche\u00a0 :  Chambre meubl\u00e9e, studio meubl\u00e9, grande caravane, chalet en bois autonome et isol\u00e9 dans le Languedoc. Loyer  :  250-300 \u20acTTC\u00a0max ; Coups de main possible, \u00e9nergie&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/13\/d7222f7fa29696361b1d8e1a0da8c4.png?1460667791",
 			"icon_size": [32,32],
@@ -1909,7 +1489,7 @@
 "id":"3311",
 "properties": {
 	"title":"<a href=\"12217\">D\u00e9velopper un Jardin en Permaculture<\/a>",
-	"description":"Projet : Je souhaite cr\u00e9er et d\u00e9velopper un jardin en permaculture sur un terrain de 250 \u00e0 300 m2. Le terrain est situ\u00e9 au coeur d'une zone viticole de monoculture. Le d\u00e9fi, malgr\u00e9 la s\u00e9cheresse, sera&nbsp;(...)"
+	"description":"Projet :  Jardin en permaculture sur terrain de 300 m\u00b2 dans zone viticole Offre :  Possibilit\u00e9 de logement en \u00e9change d'aide pendant les travaux. Recherche\u00a0 :  Personnes motiv\u00e9s avec un minimum de&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/a0\/a6825d689eb7adf50cd6a4c5884d6f.png?1460667791",
 			"icon_size": [32,32],
@@ -1923,7 +1503,7 @@
 "id":"3312",
 "properties": {
 	"title":"<a href=\"12218\">Cr\u00e9ation d'une Sci<\/a>",
-	"description":"Projet : En cours d'acquisition de foncier sous forme de sci sur le fond de la ria d'etel (56), je recherche des porteurs de projets en arbo ou v\u00e9g\u00e9tal. j'\u00e9l\u00e8ve des brebis et vaches de races locales&nbsp;(...)"
+	"description":"Projet :  Acquisition en cours du foncier sous forme de SCI sur le fond de la Ria d'etel (56). Actuellement \u00e9levage de brebis et vaches de races locales en biodynamie, transfo. et vente direct.&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/47\/d891f04c87362d0da8cde4aa81ba51.png?1460667791",
 			"icon_size": [32,32],
@@ -1937,7 +1517,7 @@
 "id":"3313",
 "properties": {
 	"title":"<a href=\"12219\">A Soustons Ecolieux Artistique et de Construction<\/a>",
-	"description":"Projet : Nous avons ouvert un \u00e9colieux \u00e0 Soustons 40140 \u00e0 vocation de faire de l'art ( peinture sculture etc ) et nous construisons des maisons intelligentes et \u00e9conomiques , ex ronde et pivotante ,&nbsp;(...)"
+	"description":"Projet :  Ecolieu \u00e0 Soustons 40140 \u00e0 vocation artistique, construction de maisons intelligentes et \u00e9conomiques sur 3Ha de terrain et for\u00eat. remise en \u00e9tat de v\u00eatements. Cherche  :  Personnes calmes&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/37\/ef2732e61ff2bbba3e22c5056e6563.png?1460669430",
 			"icon_size": [32,32],
@@ -1951,7 +1531,7 @@
 "id":"3314",
 "properties": {
 	"title":"<a href=\"12220\">Le Train est en Gare Aujourd'Hui \u00e0 Lauret : le Prendrez-Vous&nbsp;(...)<\/a>",
-	"description":"Projet : Vous qui \u00eates int\u00e9ress\u00e9s par l'habitat participatif, c'est le moment, ne laissez pas passer l'occasion, venez vous renseigner, nous rencontrer, nous rejoindre. Comme bien souvent dans ce&nbsp;(...)"
+	"description":"Projet\u00a0: Habitats participatif en phase de compromis pour l'achat du terrain. Plan en cours avec architecte, 7 foyers en milieu rural (Montpellier \u00e0 30 Km) dans un charmant village, terrain de 21a,&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/13\/d7222f7fa29696361b1d8e1a0da8c4.png?1460667791",
 			"icon_size": [32,32],
@@ -1965,7 +1545,7 @@
 "id":"3315",
 "properties": {
 	"title":"<a href=\"12221\">Colocation As la Campagne sur Tres Grand Terrain<\/a>",
-	"description":"Offre : Je part de mas colocation as la fin du moi je cherche une personne pour me remplace dans ce petit lieu de paradis dans une petite maison dans un lieu dit sur un grand terrain parfait pour&nbsp;(...)"
+	"description":"Offre :  Colocation \u00e0 partir de fin octobre pour me remplacer dans ce petit lieu de paradis, maison avec terrain, parfait pour le jardinage et la m\u00e9ditation. Loyer de 180\u20ac&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/88\/12be95713264ab0ebd8e598e884a89.png?1460667791",
 			"icon_size": [32,32],
@@ -1979,7 +1559,7 @@
 "id":"3316",
 "properties": {
 	"title":"<a href=\"12222\">Ferme Aveyronnaise Cherche Permaculteurs<\/a>",
-	"description":"Projet : > Nous souhaitons diffuser une annonce concernant notre ferme familiale. N'ayant pas de contact dans le \"r\u00e9seau permacole\" nous vous contactons gr\u00e2ce au livre des Herv\u00e9-Gruyer qui nous a&nbsp;(...)"
+	"description":"Projet\u00a0 :  La ferme se situe vers Centres en Aveyron \u00e0 500 m d'altitude plantation de ch\u00e2taigners, ch\u00eanes, haies depuis 20 ans. Ouvert \u00e0 tout projet solide inscrit dans un partenariat \u00e0 long terme\u00a0:&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/ca\/bb5220bb22692442451343becfdfec.png?1460667791",
 			"icon_size": [32,32],
@@ -1993,7 +1573,7 @@
 "id":"3317",
 "properties": {
 	"title":"<a href=\"12223\">Rencontre<\/a>",
-	"description":"Projet : rencontre Offre : sur Nantes 44 , homme 45 ans autodidacte , ind\u00e9pendant , autonome , zen , propose a fille sereine , si entente , de partager un lieu de vie \u00e9coresponsable , permaculture&nbsp;(...)"
+	"description":"Rencontre  :  Homme 45 ans autodidacte , ind\u00e9pendant, zen , propose \u00e0 fille sereine de partager un lieu de vie \u00e9coresponsable en permaculture sur Nantes&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/9e\/75e3ede759750309730501b46121bc.png?1460667791",
 			"icon_size": [32,32],
@@ -2007,7 +1587,7 @@
 "id":"3318",
 "properties": {
 	"title":"<a href=\"12224\">Accueil Nomade, \u00c9cobois des Alternatifs, Sobri\u00e9t\u00e9 Heureuse<\/a>",
-	"description":"Projet : PAMS Accueil nomade, \u00e9cobois des alternatifs, sobri\u00e9t\u00e9 heureuse, sans addiction. 12ha de bois, serre ateliers + matos, buttes, cabane, r\u00e9serve d'eau, marres 2ha de prairies \u00e0 demi grillag\u00e9es&nbsp;(...)"
+	"description":"Projet :  PAMS, accueil nomade, sobri\u00e9t\u00e9 heureuse, sans addiction, 12ha de bois, serre ateliers, cabane, 2ha de prairies, argile, champignons, ruisseau, \u00e0 450m d'altitude, village toutes commodit\u00e9s,&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/a0\/a6825d689eb7adf50cd6a4c5884d6f.png?1460667791",
 			"icon_size": [32,32],
@@ -2021,7 +1601,7 @@
 "id":"3319",
 "properties": {
 	"title":"<a href=\"12226\">Repas \u00e0 la Ferme<\/a>",
-	"description":"Projet : petite ferme dans for\u00eat, sur pentes, vall\u00e9e perdue face ruines touristiques Mara\u00eechage, table d'h\u00f4te, install\u00e9s depuis 10ans, bio, permaculture Cherche : partenaires projet collectif&nbsp;(...)"
+	"description":"Projet :  Petite ferme dans for\u00eat, vall\u00e9e perdue face ruines touristiques, table d'h\u00f4te, install\u00e9s depuis 10ans, permaculture Cherche  :  Partenaires projet collectif pour d\u00e9veloppement agro-culturel&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/fd\/cbec951a05c4c699150d54a434f17d.png?1460669432",
 			"icon_size": [32,32],
@@ -2035,7 +1615,7 @@
 "id":"3320",
 "properties": {
 	"title":"<a href=\"12225\">\u00abItin\u00e9rance \u00c9cosolidaire pour Vivre Debout\u00bb Ehs et Leurs Supporters&nbsp;(...)<\/a>",
-	"description":"Projet : \"Itin\u00e9rance \u00e9cosolidaire pour vivre debout\" EHS et leurs supporters et chercheurs de v\u00e9rit\u00e9 Poursuivre chemin de vie et de traverse au plus loin des CEM et sans addictions De source en&nbsp;(...)"
+	"description":"Projet :  Itin\u00e9rance \u00e9cosolidaire, chercheurs de v\u00e9rit\u00e9, loin des CEM et sans addictions. De source en \u00e9colieu - du bio \u00e0 la foret, marcher dans la beaut\u00e9, hors hexagone en va-nu-pieds, \u00e0 cheval, en&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/a0\/a6825d689eb7adf50cd6a4c5884d6f.png?1460667791",
 			"icon_size": [32,32],
@@ -2049,7 +1629,7 @@
 "id":"3321",
 "properties": {
 	"title":"<a href=\"12229\">Cours de Musique et Danse Traditionnelle en Ari\u00e8ge<\/a>",
-	"description":"Offre : Notre association propose des cours de musique (chant, cornemuse (boha), hautbois(abo\u00e8s), accord\u00e9on diatonique et violon) et de danses traditionnelles en Ari\u00e8ge (St Girons), ainsi que des&nbsp;(...)"
+	"description":"Association propose cours de musique (chant, cornemuse (boha), hautbois(abo\u00e8s), accord\u00e9on diatonique et violon) et de danses traditionnelles en Ari\u00e8ge (St Girons). Rencontres musiciens danseurs&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/13\/33491c246e4ca59652d4dcbd49d043.png?1460669431",
 			"icon_size": [32,32],
@@ -2063,7 +1643,7 @@
 "id":"3322",
 "properties": {
 	"title":"<a href=\"12228\">Gardiennage de votre Ferme<\/a>",
-	"description":"Projet : jeune couple dynamique, respectueux vous propose de garder votre ferme (jardin et\/ou animaux), en ari\u00e8ge, de pr\u00e9f\u00e9rence dans le couserans\/volvestre, pendant vos absences, m\u00eame longues, par&nbsp;(...)"
+	"description":"Offre\u00a0: Jeune couple dynamique propose gardiennage dans ferme en Ari\u00e8ge, de pr\u00e9f. dans le Couserans\/Volvestre en \u00e9change d\u2019un logement sur place. Exp\u00e9riences avec animaux et&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/13\/33491c246e4ca59652d4dcbd49d043.png?1460669431",
 			"icon_size": [32,32],
@@ -2077,7 +1657,7 @@
 "id":"3323",
 "properties": {
 	"title":"<a href=\"12231\">Stage M\u00e9ditation et Vivre Ensemble<\/a>",
-	"description":"Projet : L\u2019objet de ce stage consistera \u00e0 d\u00e9couvrir la M\u00e9ditation Naturelle par un ensemble de m\u00e9ditations cibl\u00e9es sur chacun des niveaux de l\u2019\u00catre : respiration, ressenti du corps, \u00e9motion, intuition,&nbsp;(...)"
+	"description":"Offre :  Stage de d\u00e9couverte \u00e0 la M\u00e9ditation Naturelle sur chaque niveaux de l\u2019\u00catre, exercices d\u2019expression de ses \u00e9motions, outils de gouvernance coop\u00e9rative avec m\u00e9diation et r\u00e9solution de conflits.&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/7d\/a36cbac13135f1ab3f3c84dfd59bd8.png?1460669431",
 			"icon_size": [32,32],
@@ -2091,7 +1671,7 @@
 "id":"3324",
 "properties": {
 	"title":"<a href=\"12239\">Restaurant Participatif<\/a>",
-	"description":"Projet : Le restaurant participatif crudi v\u00e9g\u00e9tarien ouvre ses portes. Aux LUCIOLES vous pourrez vous restaurer d'une autre fa\u00e7on : germinations, cru, cr\u00e9atif et&nbsp;(...)"
+	"description":"Propose  :  nouveau restaurant participatif crudi v\u00e9g\u00e9tarien, pour vous restaurer d'une autre fa\u00e7on : germinations, cru, cr\u00e9atif et vivant"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/67\/905b00d3d4df482e65182b8bad5a27.png?1461290960",
 			"icon_size": [32,32],
@@ -2105,9 +1685,527 @@
 "id":"3325",
 "properties": {
 	"title":"<a href=\"12240\">Yourte Contemporaine Neuve<\/a>",
-	"description":"Projet : Bonjour, Je vends ma yourte autoconstruite suite \u00e0 un changement de projet. Elle n'a jamais servie elle est donc enti\u00e8rement neuve ! Offre : Toute l'ossature est en m\u00e9l\u00e8ze (imputrescible).&nbsp;(...)"
+	"description":"A vendre  :  yourte autoconstruite neuve  &diams;  ossature est en m\u00e9l\u00e8ze, 45 m2 environ, 72 perches, poteaux centraux en ch\u00eane + fen\u00eatre et porte-fenetre double vitrage + toile en acrylique +&nbsp;(...)"
 	,
 			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/bd\/e3d2ab78264e95749d88639d3b5206.png?1460669431",
+			"icon_size": [32,32],
+			"icon_anchor": [16,16],
+			"popup_anchor": [0,0],
+			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+			"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [1.170717, 44.5654395]},
+"id":"3327",
+"properties": {
+	"title":"<a href=\"12243\">Initiation \u00e0 la M\u00e9diation<\/a>",
+	"description":"Propose  :  2 jours d'ateliers pour comprendre et acqu\u00e9rir des techniques de r\u00e9solution du conflit; Comprendre la posture du m\u00e9diateur et travailler \u00e0 la mettre en oeuvre; D\u00e9couvrir et renforcer ses&nbsp;(...)"
+	,
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/29\/c25f9e803afa9f73f7b343d1e28dfc.png?1460667791",
+			"icon_size": [32,32],
+			"icon_anchor": [16,16],
+			"popup_anchor": [0,0],
+			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+			"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [4.51008, 44.8761]},
+"id":"3328",
+"properties": {
+	"title":"<a href=\"12241\">R\u00e9nover Maison Typique Ard\u00e9choise en Pierres, Sur\u00e9lever Toit, Monter&nbsp;(...)<\/a>",
+	"description":"Projet :  R\u00e9nover maison typique ard\u00e9choise en pierres, sur\u00e9lever toit, monter murs bardage bois et nouvelle charpente. Demande  :  Personne avec comp\u00e9tences en charpente\/b\u00e2ti ancien pour&nbsp;(...)"
+	,
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/a0\/53ad0c6b26af9fcde411ef201c8964.png?1460667848",
+			"icon_size": [32,32],
+			"icon_anchor": [16,16],
+			"popup_anchor": [0,0],
+			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+			"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [5.2520532, 46.6797311]},
+"id":"3329",
+"properties": {
+	"title":"<a href=\"12244\">Cours Certifi\u00e9 de Permaculture du 25 F\u00e9vrier au 6 Mars 2017&nbsp;(...)<\/a>",
+	"description":"CCP :  sur l'Ecolieu \u00d4 Saveur de l'Instant avec Monika Frank et intervenants  &diams;  Prise de responsabilit\u00e9, autonomie individuelle et collective, mise en pratique des principes et m\u00e9thodes de&nbsp;(...)"
+	,
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/5c\/bc26fbe23effcdf9b5ac35ac29e021.png?1460667791",
+			"icon_size": [32,32],
+			"icon_anchor": [16,16],
+			"popup_anchor": [0,0],
+			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+			"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [5.6322327, 45.6113382]},
+"id":"3330",
+"properties": {
+	"title":"<a href=\"12247\">Recherche Terrain pour Exp\u00e9rimentation Permaculture et Vivre&nbsp;(...)<\/a>",
+	"description":"Projet :  Cr\u00e9ation lieu d'exp\u00e9rimentation en permaculture et agroforesterie proche Lyon ou ailleurs, pour \u00e9v\u00e9nements art, CNV, festivals, formation, LSF.  &diams;  l\u2019am\u00e9nager progressivement pour le&nbsp;(...)"
+	,
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/8d\/09dd13d4f082e6e12e35a2c48db803.png?1460669430",
+			"icon_size": [32,32],
+			"icon_anchor": [16,16],
+			"popup_anchor": [0,0],
+			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+			"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [2.3491069, 43.2130358]},
+"id":"3331",
+"properties": {
+	"title":"<a href=\"12249\">Recherche Location Petit Loyer, Aude, Herault, Pyr\u00e9n\u00e9es&nbsp;(...)<\/a>",
+	"description":"Cherche\u00a0 :  Location ou colocation proche de la nature avec du terrain, de l'eau et de l'\u00e9lectricit\u00e9 dans les D\u00e9partements de l\u2019Aude, l\u2019 Herault et Pyr\u00e9n\u00e9es orientales. Mes valeurs : partage, solidarit\u00e9,&nbsp;(...)"
+	,
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/13\/d7222f7fa29696361b1d8e1a0da8c4.png?1460667791",
+			"icon_size": [32,32],
+			"icon_anchor": [16,16],
+			"popup_anchor": [0,0],
+			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+			"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [0.9445152, 44.9722373]},
+"id":"3333",
+"properties": {
+	"title":"<a href=\"12251\">Rencontre Amoureuse Fusionnelle<\/a>",
+	"description":"Projet :  Reconqu\u00e9rir le Paradis originel perdu, je propose une relation amoureuse fusionnelle avec Femme. Etant une belle \u00e2me, une H\u00e9ro\u00efne \u00e9ternelle au milieu d'esclaves r\u00e9sign\u00e9s et morts, capable de&nbsp;(...)"
+	,
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/c7\/ed34736b8c1b9c8b1a917b257bac33.png?1460667791",
+			"icon_size": [32,32],
+			"icon_anchor": [16,16],
+			"popup_anchor": [0,0],
+			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+			"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [6.14189102641127, 46.77389325]},
+"id":"3334",
+"properties": {
+	"title":"<a href=\"12254\">\u00c9change de Travaux contre Logement<\/a>",
+	"description":"Cadre  :  Ancienne ferme situ\u00e9e dans le Jura \u00e0 875 m, vie simple, valeurs de l' Arche de Lanza Del Vasto : non-violence et spiritualit\u00e9.  Echange  :  Logement rudimentaire en \u00e9change de travaux dans&nbsp;(...)"
+	,
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/97\/28a8718b2163d7dd95f4874ce56c8a.png?1460669430",
+			"icon_size": [32,32],
+			"icon_anchor": [16,16],
+			"popup_anchor": [0,0],
+			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+			"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [4.21037419877922, 46.8440759848272]},
+"id":"3335",
+"properties": {
+	"title":"<a href=\"12253\">Noyers \u00e0 D\u00e9biter sur Place<\/a>",
+	"description":"Offre :  5 noyers \u00e0 d\u00e9biter sur place, de diam\u00e8tres 20 cm \u00e0 70 cm.  &diams;  De pr\u00e9f\u00e9rence pour artisan menuisier ou tourneur sur bois"
+	,
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/5c\/bc26fbe23effcdf9b5ac35ac29e021.png?1460667791",
+			"icon_size": [32,32],
+			"icon_anchor": [16,16],
+			"popup_anchor": [0,0],
+			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+			"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [-1.5541361, 47.2186371]},
+"id":"3336",
+"properties": {
+	"title":"<a href=\"12255\">Achat de Lieu ou \/ et Colocation V\u00e9g\u00e9talienne<\/a>",
+	"description":"Cherche personnes VG avec apport financier pour acqu\u00e9rir maison \u00e0 Nantes agglo avec une chambre \u00e0 soi, un jardin, qualit\u00e9 de vie rurbaine, feng-shui et bienveillance, le tout en cr\u00e9ant une SCI.&nbsp;(...)"
+	,
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/9e\/75e3ede759750309730501b46121bc.png?1460667791",
+			"icon_size": [32,32],
+			"icon_anchor": [16,16],
+			"popup_anchor": [0,0],
+			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+			"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [-3.8937689, 48.439236]},
+"id":"3337",
+"properties": {
+	"title":"<a href=\"12256\">Le Futur au F\u00e9minin-F\u00eate du Vivant<\/a>",
+	"description":"Association F\u00eate du Vivant  &diams;  Animations le Futur au F\u00e9minin : Feter la vie, l'imaginaire, le vrai : AG, danses, chansons, chamanisme  &diams;  Restauration VG ; Entr\u00e9e&nbsp;(...)"
+	,
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/1f\/5724b8ebd035e60de0eb5162b0d35b.png?1460669431",
+			"icon_size": [32,32],
+			"icon_anchor": [16,16],
+			"popup_anchor": [0,0],
+			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+			"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [2.39654002010551, 47.0891755677555]},
+"id":"3338",
+"properties": {
+	"title":"<a href=\"12121\">Recherche d'un R\u00e9seau dans le Cher<\/a>",
+	"description":"Cherche  :  r\u00e9seau permacole \/ alternatifs \/ caf\u00e9s culturels"
+	,
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/fc\/e4d20cd5aeca0955b9e2c53fb47665.png?1462025182",
+			"icon_size": [32,32],
+			"icon_anchor": [16,16],
+			"popup_anchor": [0,0],
+			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+			"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [5.84735977596393, 47.2021687688122]},
+"id":"3339",
+"properties": {
+	"title":"<a href=\"12252\">Cherche Lieu pour Poser une Yourte et \/ ou Partenaire pour&nbsp;(...)<\/a>",
+	"description":"Projet\u00a0 :  Heureux propri\u00e9taire d'une heliyourte de 50m2 cherche un terrain contre un loyer ou une participation sur le quart sud ouest, \u00e9ventuellement ailleurs. Petite capacit\u00e9 d'investissement pour&nbsp;(...)"
+	,
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/0a\/00b3954961162ecf19e838bacffaf3.png?1460669430",
+			"icon_size": [32,32],
+			"icon_anchor": [16,16],
+			"popup_anchor": [0,0],
+			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+			"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [5.18188983890024, 43.99386435]},
+"id":"3340",
+"properties": {
+	"title":"<a href=\"12257\">Colocation \/ Habitat Partag\u00e9 \/ \u00c9colieu<\/a>",
+	"description":"Projet  :  Envie de nature et de partage, femme de 54ans actuellement animatrice\/intervenante culture sp\u00e9cialis\u00e9e en art plastique, praticienne en massage m\u00e9tamorphique. Cherche\u00a0 :  Logement apr\u00e8s&nbsp;(...)"
+	,
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/e9\/0050aa580b65fb64cce3b4210e27ef.png?1460667789",
+			"icon_size": [32,32],
+			"icon_anchor": [16,16],
+			"popup_anchor": [0,0],
+			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+			"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [2.6224853, 42.6709665]},
+"id":"3341",
+"properties": {
+	"title":"<a href=\"12258\">Eco-Site dans les Pyr\u00e9n\u00e9es Orientales<\/a>",
+	"description":"Projet :  Place tranquille, mer et neige \u00e0 port\u00e9e d\u2019\u0153il avec chantiers \u00e9colos souhaitons partager espace rustique avec personnes courageuses pour faire \u00e9merger un lieu de vie.  Partage\u00a0 :  Amiti\u00e9,&nbsp;(...)"
+	,
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/3d\/e252395153632e8f44e4ddb6d6f50d.png?1460669431",
+			"icon_size": [32,32],
+			"icon_anchor": [16,16],
+			"popup_anchor": [0,0],
+			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+			"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [1.90764, 44.3047]},
+"id":"3342",
+"properties": {
+	"title":"<a href=\"12259\">Cultiver des Plantes M\u00e9dicinales, les Transformer et Utiliser nos&nbsp;(...)<\/a>",
+	"description":"Projet :  Cultiver des plantes m\u00e9dicinales, les transformer et utiliser nos belles plantes pour le palais et le plaisir de l'autre le tout dans un esprit nature. Seule avec famille de 2 et 4&nbsp;(...)"
+	,
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/ca\/bb5220bb22692442451343becfdfec.png?1460667791",
+			"icon_size": [32,32],
+			"icon_anchor": [16,16],
+			"popup_anchor": [0,0],
+			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+			"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [6.1253992, 43.3421172]},
+"id":"3343",
+"properties": {
+	"title":"<a href=\"12260\">Agriculture Bio et Amap<\/a>",
+	"description":"Projet\u00a0 :  Altermondialiste d\u00e9croissant et Colibri, je suis indigo dans le temp\u00e9rament, hypersensible, sur le Chemin de l'Eveil et libre de toutes contraintes .Motiv\u00e9, dynamique, j'ai le sens de&nbsp;(...)"
+	,
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/d6\/95fd83b3ad6f860ceae79c28eb137e.png?1460669432",
+			"icon_size": [32,32],
+			"icon_anchor": [16,16],
+			"popup_anchor": [0,0],
+			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+			"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [4.8489303, 45.2450813]},
+"id":"3344",
+"properties": {
+	"title":"<a href=\"12261\">Eco-Habitat en Dr\u00f4me des Collines<\/a>",
+	"description":"Projet :  Cr\u00e9ation eco-habitat en Dr\u00f4me des collines dans ferme en partie r\u00e9nov\u00e9e 180m2 + d\u00e9pendances sur 6 Ha. D\u00e9but d'activit\u00e9 de mara\u00eechage bio. 2 chevaux. Activit\u00e9s culturelles. Chambres d'h\u00f4tes.&nbsp;(...)"
+	,
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/d4\/c6aa3e887268dd6597952395c8eed5.png?1460667791",
+			"icon_size": [32,32],
+			"icon_anchor": [16,16],
+			"popup_anchor": [0,0],
+			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+			"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [-1.8924499, 48.2153539]},
+"id":"3346",
+"properties": {
+	"title":"<a href=\"12262\">Colocation Bas\u00e9e sur l'\u00c9cologie Pratique<\/a>",
+	"description":"Cherche  :  Colocation avec des seniors bas\u00e9e sur l'\u00e9cologie pratique (permaculture, vie simple et tol\u00e9rante). m\u00e9ditation, yoga ou autres pour me pr\u00e9parer lors de ma retraite (2-3&nbsp;(...)"
+	,
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/23\/097cbd956742dda7c8063f0ce491e6.png?1460667791",
+			"icon_size": [32,32],
+			"icon_anchor": [16,16],
+			"popup_anchor": [0,0],
+			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+			"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [6.0820018, 44.5611978]},
+"id":"3347",
+"properties": {
+	"title":"<a href=\"12264\">Couple avec Jeunes Enfants Recherche Lieu de Vie<\/a>",
+	"description":"Projet :  Jeune couple, professeure d'espagnol et charpentier, avec deux enfants (1-3ans) recherche terrain constructible, maison \u00e0 r\u00e9nover ou projet collectif existant pour s'installer dans les&nbsp;(...)"
+	,
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/9b\/59dc791489aa446c7f083c98847e76.png?1460669431",
+			"icon_size": [32,32],
+			"icon_anchor": [16,16],
+			"popup_anchor": [0,0],
+			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+			"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [3.3843304, 45.2952895]},
+"id":"3350",
+"properties": {
+	"title":"<a href=\"12265\">Catalogue de Formations de l'Association Dasa<\/a>",
+	"description":"Nouveau  :  Catalogue de formations de l'association DASA 16-17\u00a0: initiatives rurales, jeunesse, habitat, ressourcerie culturelle."
+	,
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/20\/9300da86575f4742016c41b669fdec.png?1460669432",
+			"icon_size": [32,32],
+			"icon_anchor": [16,16],
+			"popup_anchor": [0,0],
+			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+			"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [-3.5826144, 47.7955209]},
+"id":"3351",
+"properties": {
+	"title":"<a href=\"12266\">Creer l'Abondance dans votre Vie<\/a>",
+	"description":"Offre : Stage d'initiation, Mara\u00eechage et Permaculture Samedi 22 et Dimanche 23 Octobre 2016 Ferme Mara\u00eech\u00e8re Poul Ar Raned, Clohars Carno\u00ebt (29) L'association Ploemeuroise Fleurs de Permaculture et&nbsp;(...)"
+	,
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/1f\/5724b8ebd035e60de0eb5162b0d35b.png?1460669431",
+			"icon_size": [32,32],
+			"icon_anchor": [16,16],
+			"popup_anchor": [0,0],
+			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+			"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [3.9414414, 45.2209087]},
+"id":"3352",
+"properties": {
+	"title":"<a href=\"12267\">La Cit\u00e9 des Roches<\/a>",
+	"description":"Projet :  La cit\u00e9 des Roches, o\u00f9 la yourte accueille l'humain. Ouvert sur le monde\u00a0: Journ\u00e9es portes ouvertes, formations diverses, devoirs des occupants: entretenir, construire, fabriquer, cr\u00e9er,&nbsp;(...)"
+	,
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/20\/9300da86575f4742016c41b669fdec.png?1460669432",
+			"icon_size": [32,32],
+			"icon_anchor": [16,16],
+			"popup_anchor": [0,0],
+			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+			"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [5.82208, 45.9668]},
+"id":"3353",
+"properties": {
+	"title":"<a href=\"12268\">Vends Maison 4Pi\u00e8ces + Jardin Perma<\/a>",
+	"description":"Offre :  Maison en pierre dans hameau \u00e0 2km de toutes commodit\u00e9es,terrain 500m2, permaculture. Chauffage au bois, caves + garage. Belle expo, terrasse de 68 m2. Aucun travaux. 198000&nbsp;(...)"
+	,
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/f7\/77f77fdc0394204538e09078912640.png?1460669432",
+			"icon_size": [32,32],
+			"icon_anchor": [16,16],
+			"popup_anchor": [0,0],
+			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+			"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [2.8844713, 42.6953868]},
+"id":"3354",
+"properties": {
+	"title":"<a href=\"12270\">Vivre Ensemble<\/a>",
+	"description":"Projet :  JF de 29 ans qui aime apprendre. Cherche  :  Colloc. ou communaut\u00e9 pour rencontrer personnes de coeur, apprendre et travailler dans le but d'\u00e9conomiser. Offre :  Mes capacit\u00e9s. Mon&nbsp;(...)"
+	,
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/3d\/e252395153632e8f44e4ddb6d6f50d.png?1460669431",
+			"icon_size": [32,32],
+			"icon_anchor": [16,16],
+			"popup_anchor": [0,0],
+			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+			"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [-0.676166, 44.872105]},
+"id":"3355",
+"properties": {
+	"title":"<a href=\"12271\">Quelle Eau Boire au Quotidien ? Conf\u00e9rence-20H30<\/a>",
+	"description":"Projet :  Vitalisation, dynamisation et structuration de l\u2019eau avec mises en application. Point sur la qualit\u00e9 de l\u2019eau . Regard sur les filtrations existantes. >Anim\u00e9s par Lo\u00efc SALLET, chercheur&nbsp;(...)"
+	,
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/6d\/a8e22bf1fa2682f3efe1206807feae.png?1460669431",
+			"icon_size": [32,32],
+			"icon_anchor": [16,16],
+			"popup_anchor": [0,0],
+			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+			"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [-0.676166, 44.872105]},
+"id":"3356",
+"properties": {
+	"title":"<a href=\"12272\">\u00ab informer mon Eau pour la Sant\u00e9 et la Conscience \u00bb-Atelier&nbsp;(...)<\/a>",
+	"description":"Projet : Plong\u00e9e dans le sujet de l\u2019eau en tant que support r\u00e9cepteur\/\u00e9metteur. Vitalisation, dynamisation, structuration, information de l\u2019eau. D\u00e9couvertes et mises en application exp\u00e9rimentales de&nbsp;(...)"
+	,
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/6d\/a8e22bf1fa2682f3efe1206807feae.png?1460669431",
+			"icon_size": [32,32],
+			"icon_anchor": [16,16],
+			"popup_anchor": [0,0],
+			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+			"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [-0.3685667, 43.2957547]},
+"id":"3357",
+"properties": {
+	"title":"<a href=\"12273\">Couple Cherche Terres pour Installation<\/a>",
+	"description":"Projet :  Couple la quarantaine, sans enfant cherchons endroit pour une nouvelle vie, aimerions faire de l'A.B. et petit \u00e9levage dans but vivrier puis vente en circuit court. Pr\u00eats \u00e0 faire&nbsp;(...)"
+	,
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/ae\/7bf876ddf570ceaf496832d3b50498.png?1460667791",
+			"icon_size": [32,32],
+			"icon_anchor": [16,16],
+			"popup_anchor": [0,0],
+			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+			"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [3.5066795, 50.743719]},
+"id":"3358",
+"properties": {
+	"title":"<a href=\"12155\">Stage de 5 Jours sur la Permaculture Humaine avec Bernard&nbsp;(...)<\/a>",
+	"description":"Projet : Stage Permaculture Humaine  &diams;  am\u00e9liorer relations humaines dans tous les domaines, mais surtout dans le but de concevoir ensemble un projet viable ; qu'il soit \u00e9conomique, social,&nbsp;(...)"
+	,
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/e5\/88dd482e7caabaa1035bbb03f7c0bb.png?1460669432",
+			"icon_size": [32,32],
+			"icon_anchor": [16,16],
+			"popup_anchor": [0,0],
+			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+			"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [1.9365856, 44.8401996]},
+"id":"3359",
+"properties": {
+	"title":"<a href=\"12274\">Phyto\u00e9puration des Eaux Grises avec Gestion de Toilette&nbsp;(...)<\/a>",
+	"description":"Offre : Stage Pratico\/Th\u00e9orico Contenu: -Visite de deux phyto\u00e9purations sur place avec aire de compostage, (pas de perte de temps en d\u00e9placement), deux types de toilettes s\u00e8ches \u00e0 s\u00e9paration d'urine&nbsp;(...)"
+	,
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/29\/c25f9e803afa9f73f7b343d1e28dfc.png?1460667791",
+			"icon_size": [32,32],
+			"icon_anchor": [16,16],
+			"popup_anchor": [0,0],
+			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+			"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [0.66656, 44.86186]},
+"id":"3360",
+"properties": {
+	"title":"<a href=\"12275\">Projet d'\u00c9colieu<\/a>",
+	"description":"Projet : Le projet d'\u00e9colieu,\" la Rose de J\u00e9rico\", a \u00e9t\u00e9 tu\u00e9 dans l'oeuf par un maire et son conseil municipal r\u00e9trograde. Cependant une place est possible pour une yourte ou caravane \" habill\u00e9e \". Si&nbsp;(...)"
+	,
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/c7\/ed34736b8c1b9c8b1a917b257bac33.png?1460667791",
+			"icon_size": [32,32],
+			"icon_anchor": [16,16],
+			"popup_anchor": [0,0],
+			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+			"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [3.68186, 44.2079]},
+"id":"3361",
+"properties": {
+	"title":"<a href=\"12276\">Appel \u00e0 Candidature pour la Gestion du Site de la Roquette&nbsp;(...)<\/a>",
+	"description":"Projet : La Commune de Molezon recherche les futurs habitants et gestionnaires du site de la Roquette, dont elle est propri\u00e9taire. Ce site comprend une maison d'habitation avec une partie \u00ab\u00a0g\u00eete\u00a0\u00bb,&nbsp;(...)"
+	,
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/31\/75e3d76f6e1e46d8027cb989145e58.png?1460669432",
+			"icon_size": [32,32],
+			"icon_anchor": [16,16],
+			"popup_anchor": [0,0],
+			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+			"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [3.16388284831195, 46.36746405]},
+"id":"3362",
+"properties": {
+	"title":"<a href=\"12277\">Terres Communes<\/a>",
+	"description":"Projet : Recherche une ou plusieurs personnes, afin d'acheter un terrain dans l'allier afin de cr\u00e9er un mini village autonome, avec jardin commun. l'id\u00e9e est d'avoir son petit coin perso sur le&nbsp;(...)"
+	,
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/67\/905b00d3d4df482e65182b8bad5a27.png?1461290960",
+			"icon_size": [32,32],
+			"icon_anchor": [16,16],
+			"popup_anchor": [0,0],
+			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+			"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [1.87929, 44.1281]},
+"id":"3363",
+"properties": {
+	"title":"<a href=\"12279\">Jardin Associatif Cherche Partenaire<\/a>",
+	"description":"Projet : Le Jardin des Funambules, jardin associatif d'inspiration permacole cr\u00e9\u00e9 en 2012, cherche un partenaire. Sur une parcelle d'1ha, pr\u00e9sence de buttes de culture, d'une mare centrale, d'un&nbsp;(...)"
+	,
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/b9\/329403064dde310c0fbb7c2ef8a6cb.png?1460669277",
+			"icon_size": [32,32],
+			"icon_anchor": [16,16],
+			"popup_anchor": [0,0],
+			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+			"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [2.4869009, 48.7737116]},
+"id":"3364",
+"properties": {
+	"title":"<a href=\"12280\">Particulier Cherche Locataire (Meubl\u00e9) Permaculteur Pas Rebut\u00e9 par&nbsp;(...)<\/a>",
+	"description":"Projet : Je me suis install\u00e9e depuis ao\u00fbt 2016 avec mon compagnon dans une grande maison avec un grand terrain de 810m2 et une d\u00e9pendance de 28m2 au fond du jardin que nous faisons r\u00e9nover&nbsp;(...)"
+	,
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/c2\/7d7a4fc2c72000b1387a142de885a8.png?1460667791",
+			"icon_size": [32,32],
+			"icon_anchor": [16,16],
+			"popup_anchor": [0,0],
+			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+			"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [3.862452, 43.6978777]},
+"id":"3365",
+"properties": {
+	"title":"<a href=\"12282\">Vente d'une Grande Maison Bioclimatique \u00c9cologique<\/a>",
+	"description":"Projet : maison de 177 m2, class\u00e9e B et A, 7 pi\u00e8ces, 6 chambres sur deux niveaux, grands volumes, plafonds chataignier, mezzanine, 2 s d'eau et 2 WC s\u00e9par\u00e9s, po\u00eale \u00e0 bois central, eau chaude solaire,&nbsp;(...)"
+	,
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/13\/d7222f7fa29696361b1d8e1a0da8c4.png?1460667791",
+			"icon_size": [32,32],
+			"icon_anchor": [16,16],
+			"popup_anchor": [0,0],
+			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+			"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [2.50656973024198, 44.31585745]},
+"id":"3366",
+"properties": {
+	"title":"<a href=\"12283\">Location dans l'Aveyron : Maison de Caract\u00e8re (7 Pi\u00e8ces) +&nbsp;(...)<\/a>",
+	"description":"Projet : Nous proposons cette location prioritairement en meubl\u00e9, nous pouvons aussi envisager une location vide ou une colocation s\u00e9nior. Offre : Grande maison de caract\u00e8re (7 pi\u00e8ces) ind\u00e9pendante&nbsp;(...)"
+	,
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/ca\/bb5220bb22692442451343becfdfec.png?1460667791",
+			"icon_size": [32,32],
+			"icon_anchor": [16,16],
+			"popup_anchor": [0,0],
+			"shadow": "http:\/\/www.ecovillageglobal.fr\/plugins\/paeco\/squelettes\/images\/marker_defaut_shadow.png",
+			"shadow_size": [32,32]
+}},
+{"type": "Feature",
+"geometry": {"type": "Point", "coordinates": [7.10905, 43.5836]},
+"id":"3367",
+"properties": {
+	"title":"<a href=\"12284\">Famille 2 Enfants 10 et 12 Ans Recherche Communaut\u00e9 France Sud,&nbsp;(...)<\/a>",
+	"description":"Projet : Bonjour, Nous sommes une famille avec 2 enfants de 10 et 12 ans en IEF; recherchons un projet existant ou \u00e0 construire , autonome financi\u00e8rement, et si possible en \u00e9nergie et nourriture.&nbsp;(...)"
+	,
+			"icon": "http:\/\/www.ecovillageglobal.fr\/local\/cache-gd2\/72\/7d4247b16daff336e9b02b1d573ac5.png?1460667791",
 			"icon_size": [32,32],
 			"icon_anchor": [16,16],
 			"popup_anchor": [0,0],
