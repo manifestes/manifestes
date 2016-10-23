@@ -3545,7 +3545,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,langs:['fr','es','en'],datapath:'data/',assets:'build/',lastupdate:'12 September 2016 - 1:39'})
+.constant('settings', {dev:false,langs:['fr','es','en'],datapath:'data/',assets:'build/',lastupdate:'23 October 2016 - 9:00'})
 
 ;
 ;
@@ -4686,7 +4686,11 @@ angular.module('manifest.maincontroller', ['underscore','config'])
         neither with http://whateverorigin.org (don't accept GET params)
         but like that seems OK
       */
-      $.getJSON('http://cors.io?u='+encodeURIComponent(longurl), function(data){
+      
+      // cors.io went down !
+      //$.getJSON('http://cors.io?u='+encodeURIComponent(longurl), function(data) {
+      
+      $.getJSON('https://crossorigin.me/'+longurl, function(data) {
         //console.log("RECEIVED:",data)
         _.each(data.events, function(e) {
           addMarker({
