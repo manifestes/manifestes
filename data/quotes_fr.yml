@@ -1,6 +1,33 @@
 
 
 -
+    used: true
+    author: [Comment habiter la terre](http://www.lyber-eclat.net/livres/comment-habiter-la-terre-poche-17/), Yona Friedman
+    content: >
+        Le but de la brochure est d’amener le lecteur à reconsidérer la place de l’homme-habitant dans un écosystème et de l’amener à réfléchir, dans un contexte de pénurie ou de crise durable ou temporaire, à des solutions de survie de son espèce. Si le langage utilisé permet de stimuler cette réflexion, alors le but de cet ouvrage sera atteint.
+-
+    author: 
+    content: l'échec scolaire est une invention de l'école de la société du malaise
+-
+    author: Gandhi
+    content: Nous avons mieux à faire de la vie que d'en accélérer le rythme
+-
+    author: Pierre Rabhi
+    content: À l'échelle du temps géologique, nous sommes arrivés dans les trois dernières minutes d'une planète née il y a vingt-quatre heures.
+-
+    author: Pierre Rabhi, 24 août 2010
+    content: >
+        Nous vivons en disharmonie avec notre pulsion cardiaque qui nous dit : « tranquille, tranquille... » L'intelligence de la vie a mis en nous une cadence que la vitesse a changée. Parce que nous ne voulons pas renoncer à la frénésie, nous nous dotons d'instruments supplémentares pour la supporter. Et nous voici prolongés de téléphones et d'ordinateurs portables, appendices censés nous faciliter les choses, eux qui nous tiennent par le nombre fou de messages à traiter ou par leur incessante obsolescence. Car nous sommes dans le mythe d'un toujours plus indéfini, sans jamais pouvoir atteindre une satisfaction que nous plaçons de plus en plus haut.
+-
+    author: Paul Virilio, Esthétique de la disparition
+    content: Ce qui est venu avec l'engin rapide ce ne sont même plus les hasards du voyage, c'est la surprise de l'accident
+-
+    author: Milan Kundera, La Lenteur
+    content: Quand les choses se passent trop vite, personne ne peut être sûr de rien, de rien du tout, même pas de soi-même
+-
+    author: Milan Kundera, La Lenteur
+    content: Le degré de la vitesse est directement proportionnel à l'intensité de l'oubli
+-
     author: Henry David Thoreau
     content: >
         C'est le voluptueux, c'est le dissipé, qui lancent les modes que si scrupuleusement suit le troupeau
@@ -13,6 +40,7 @@
     content: >
         Le chaos, c’est soit le désastre définitif, et on n’en sort pas. Soit c’est la renaissance d’autre chose. Nous sommes dans une phase de chaotisation générale, le modèle de société sur lequel on a tout fondé arrive à sa fin
 -
+    used: true
     author: Pierre Rabhi
     content: >
         Si personne ne commence, ça ne changera jamais. Être vivant, c’est affirmer. Je n’ai pas été le moulin bêlant qui se lamente sur le monde qui va mal. Les lamentations, ça remplit les bibliothèques.
@@ -422,9 +450,9 @@
     author: Hi King
     content: Pour accomplir des choses importantes, il faut savoir faire avancer son armée contre soi-même
 -
+    used: true
     author: Jean Starobinski
-    content: >
-        Comprendre, c'est reconnaître que toutes les significations demeurent en suspens tant que l'on n'a pas achevé de se comprendre soi-même
+    content: Comprendre, c'est reconnaître que toutes les significations demeurent en suspens tant que l'on n'a pas achevé de se comprendre soi-même
 -
     used: true
     author: Félix Guattari, Les trois écologies, 1989
@@ -544,6 +572,8 @@
     author: Basshô
     content: >
         Rien ne dit
+
+
         Dans le chant de la cigale
 
 
@@ -553,6 +583,8 @@
     author:
     content: >
         Les fleurs tombent
+
+
         En toute saison
 
 
@@ -594,6 +626,8 @@
 
 
         Elle a toujours été là
+
+
         Parfaitement claire
 -
     author: "[Lettre aux mouvements, Rennes, 4 mai 2016](https://lundi.am/Un-zadiste-en-prison-Lettre-aux-mouvements)"
@@ -640,9 +674,9 @@
     author: Thibault Calmus
     content: La cartographie des désirs définit la méthodologie de toute révolution.
 -
-    author: "Paul Virilio, cité dans [Qui sera responsable des «maladies de la connexion» ?](http://internetactu.blog.lemonde.fr/2016/02/25/qui-sera-responsable-des-maladies-de-la-connexion/)"
+    author: "Paul Virilio, cité dans [Qui sera responsable des « maladies de la connexion » ?](http://internetactu.blog.lemonde.fr/2016/02/25/qui-sera-responsable-des-maladies-de-la-connexion/)"
     content: >
-        Les plateformes de réseaux sociaux agissent comme une extension de nos pratiques sociales. Mais, comme avec toute extension technologique, nous avons tendance à être fascinés par sa puissance et son échelle. Cependant, nous choisissons trop souvent d’ignorer ou de minimiser «les amputations» et les implications qu’elles produisent.
+        Les plateformes de réseaux sociaux agissent comme une extension de nos pratiques sociales. Mais, comme avec toute extension technologique, nous avons tendance à être fascinés par sa puissance et son échelle. Cependant, nous choisissons trop souvent d’ignorer ou de minimiser « les amputations » et les implications qu’elles produisent.
 
 
         **L’invention du navire est aussi l’invention du naufrage**
@@ -788,6 +822,7 @@
     author: M Chapsal
     content: Il va falloir rêver car, pour que les choses deviennent possibles, il faut d'abord les rêver
 -
+    used: true
     author: Alice
     content: Je fais partie de la première génération dans l'histoire de l'Humanité à avoir jamais eu un niveau de vie aussi élevé, et paradoxalement, aucune des personnes que je connais ne fabrique quoi que ce soit de réellement nécessaire
 -
@@ -825,7 +860,11 @@
 -
     used: true
     author: Anatole
-    content: La nature permet l'autonomie gratuite. Et ça, pour le capital, c'est inacceptable
+    content: >
+        La nature permet l'autonomie gratuite.
+
+
+        Et ça, pour le capital, c'est inacceptable
 -
     used: true
     author:
@@ -911,7 +950,7 @@
     author: Charles-Maurice de Talleyrand-Périgord
     content: Si les gens savaient par quels petits hommes ils sont gouvernés, ils se révolteraient vite.
 -
-    author: Michel Frois, précurseur de la «communication» moderne (entreprises, politiques, médias)
+    author: Michel Frois, précurseur de la « communication » moderne (entreprises, politiques, médias)
     content: Pour se servir de la presse, il faut d'abord la servir
 -
     author: "Propaganda, Edward L. Bernays, neveu de Sigmun Freud (techniques de com' et RP: armée, économie, politique)"
@@ -1080,7 +1119,7 @@
 
         [...]
 
-        Ils ne nous respectent pas car nous sommes leurs enfants maltraîtés. Ils nous baisent matin, midi et soir, et, tant qu'ils nous bordent en nous embrassant, tant qu'ils nous chuchotent à l'oreille : «Papa t'aime, Papa va s'occuper de toi», nous fermons les yeux et nous nous endormons, troquant nos corps, nos âmes, contre les vernis rassurants de la «civilisation» et de la «sécurité», fausses idoles de notre rêve humide du XXe siècle.
+        Ils ne nous respectent pas car nous sommes leurs enfants maltraîtés. Ils nous baisent matin, midi et soir, et, tant qu'ils nous bordent en nous embrassant, tant qu'ils nous chuchotent à l'oreille : « Papa t'aime, Papa va s'occuper de toi », nous fermons les yeux et nous nous endormons, troquant nos corps, nos âmes, contre les vernis rassurants de la «civilisation» et de la « sécurité », fausses idoles de notre rêve humide du XXe siècle.
 -
     used: true
     author: Comité invisible, À nos amis
@@ -1099,9 +1138,9 @@
     author: Antoine de Saint Exupéry
     content: Nous n'héritons pas la terre de nos ancêtres, nous l'empruntons à nos enfants
 -
+    used: true
     author: Proverbe amérindien.
-    content: >
-        Quand le dernier arbre sera abattu, la dernière rivière empoisonnée, le dernier poisson pêché, alors vous découvrirez que l'argent ne se mange pas.
+    content: Quand le dernier arbre sera abattu, la dernière rivière empoisonnée, le dernier poisson pêché, alors vous découvrirez que l'argent ne se mange pas.
 -
     used: true
     author: Coluche
@@ -1122,7 +1161,6 @@
         On peut certes attendre que les « vérités » filtrent d’elles-mêmes, lentement, depuis quelques revues et groupuscules d’avant-garde, ou qu’elles deviennent magiquement « virales » par la grâce d’Internet, mais ici aussi, il serait urgent d’accélérer les choses (1°) en exigeant une réforme politiques des infrastructures médiatiques actuellement soumises aux aberrations du marché et (2°) en concentrant l’activisme artistique et politique sur le détournement, le court-circuitage ou le piratage des circulations médiatiques.
     tags: media
 -
-    used: true
     author: l'An 01
     content: >
         On arrête tout
@@ -1281,7 +1319,6 @@
     content: >
         Il ne s’agit plus de faire la liste, connue jusqu’à la nausée, des **non** de ce que nous refusons, mais d’élaborer collectivement des **oui** qui caractérisent les mondes que nous voulons
 -
-    used: true
     author: proverbe Yuocmyn
     content: Oublie le vrai, oublie le faux, seul le rêve peut transformer le monde
 -
@@ -1342,7 +1379,6 @@
     content: >
         Car enfin le trait le plus visible dans l'homme juste est de ne point vouloir du tout gouverner les autres, et de se gouverner seulement lui-même. Cela décide tout. Autant dire que les pires gouverneront
 -
-    used: true
     author: Félix Thiéfaine
     content: Laissez l'État dans les toilettes où vous l'avez trouvé
 -

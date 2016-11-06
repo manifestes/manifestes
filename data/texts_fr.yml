@@ -30,15 +30,9 @@ image:
     url: LilliCarre.jpg
     credit: Lili Carré
 quote:
-    author: l'An 01
+    author: "[Comment habiter la terre](http://www.lyber-eclat.net/livres/comment-habiter-la-terre-poche-17/), Yona Friedman"
     content: >
-        On arrête tout
-        
-
-        On réfléchit
-        
-
-        Et c'est pas triste
+        Le but de la brochure est d’amener le lecteur à reconsidérer la place de l’homme-habitant dans un écosystème et de l’amener à réfléchir, dans un contexte de pénurie ou de crise durable ou temporaire, à des solutions de survie de son espèce. Si le langage utilisé permet de stimuler cette réflexion, alors le but de cet ouvrage sera atteint.
 content: >
     Quels autres mondes possibles ?
 
@@ -169,6 +163,25 @@ content: >
 
 
     Plus de crédits démesurés aux institutions (scolaires ou autres). **Que les moyens d'aquérir ou de transmettre un savoir soient mis en commun et librement accessible à tous**. Plus de maîtres à la fois gardiens de l'ordre établi, prédicateurs et thérapeutes. Mais des échanges entre égaux, des éducateurs indépendants...
+
+
+---
+date: 2016-10-06
+title: Éducation et confiance
+subtitle: Quel est le but d'une éducation où l'éduqué ne vaut que par son devenir ?
+tags: love education emancipation
+image:
+    url: calais.jpg
+    credit: 
+quote:
+    author: Jean Starobinski
+    content: Comprendre, c'est reconnaître que toutes les significations demeurent en suspens tant que l'on n'a pas achevé de se comprendre soi-même
+source: Yves Bonnardel
+content: >
+    L'éducation signe une absence de confiance envers la personne qui la subit, à qui elle adresse un discours implicite de négation : « **Tu n'es pas comme il faudrait que tu sois**; pour que je t'aime et pour que tu aies plein droit à exister, le *toi* que tu es devra mourir et céder la place à *mieux*. »
+
+
+    Le mépris est fondamentalement contenu dans cette idée qu'il faut amener chacun quelque part ailleurs que là où il (en) est, que **ce qui compte n'est pas ce qu'il est** (qui est ce qu'il ressent, ce qu'il aime, ce qu'il veut, ce qu'il refuse...), mais **ce qu'il doit devenir**. Éduquer vient du latin *ex-ducere* : conduire hors de... Éloigner à soi-même ? Une relation d'éducation est définie par le but que l'un a sur l'autre, c'est une relation où l'éduqué n'est plus que le futur être que l'éducateur veut qu'il devienne, n'est plus regardé qu'à l'aune de ce projet qui scrute l'avenir en piétinant le présent. C'est-à-dire que l'éduqué ne vaut pas en lui-même, ne vaut pas par lui-même ; **il ne vaut pas au présent**, ni n'apparaît plus à lui-même suffisant. Mépris : étymologiquement *mes-prix*, *mauvais prix*, peu de valeur. Minus, mineur. On peut présumer qu'un tel mépris est finement perçu par tout éduqué, qui l'intègre.
 
 
 ---
@@ -1270,7 +1283,11 @@ image:
     credit: Brian McMullen and Jason Jägel
 quote:
     author: Anatole
-    content: "La nature permet l'autonomie gratuite. Et ça, pour le capital, c'est inacceptable"
+    content: >
+        La nature permet l'autonomie gratuite.
+
+
+        Et ça, pour le capital, c'est inacceptable
 content: >
     Le revenu ou dotation universelle inconditionnelle permet à chacun de satisfaire ses besoins primaires. Il permet, du moins de manière transitionnelle, à ceux qui sont entièrement aliénés par leur travail de sortir la tête de l'eau et d'enfin choisir leur activité.
 
@@ -1344,6 +1361,28 @@ content: >
 
     Oublions les **personnalités politiques**, *amies ou ennemies*. Parler d'eux, c'est déjà perdre du temps et leur donner de l'importance.
 
+
+---
+date: 2015-10-06
+title: Nous ne sommes pas amis avec tout le monde
+subtitle: Refaire le monde, c’est prendre le risque de déplaire à ceux qui ne veulent pas du tout que le monde soit refait
+tags: words companies zad
+image:
+    url: discours-politique.jpg
+    credit: 
+quote:
+    author: Pierre Rabhi
+    content: >
+        Si personne ne commence, ça ne changera jamais. Être vivant, c’est affirmer. Je n’ai pas été le moulin bêlant qui se lamente sur le monde qui va mal. Les lamentations, ça remplit les bibliothèques.
+source: "[Nuit Debout, quelles perspectives ?](http://www.bastamag.net/Nuit-Debout-quelles-perspectives)"
+content: >
+        Le risque est que le mouvement soit poussé, notamment par les médias, « dans un sens qu’ils croient contrôlable, vers le *citoyennisme intransitif*, c’est-à-dire le débat pour le débat, qui ne tranche rien, ne décide rien, et surtout ne clive rien. Une sorte de rêve démocratique cotonneux et inoffensif ». Qui fasse même oublier la raison première de ce rassemblement, « renverser la loi El Khomri et son monde ».
+
+
+        Or ce pays est ravagé par deux violences à grande échelle : **la violence du capital et la violence identitaire raciste**. Nous ne sommes pas ici pour faire de l’animation citoyenne *All inclusive* (incluant tout le monde). Nous sommes ici pour faire de la politique, nous ne sommes pas amis avec tout le monde, nous n’apportons pas la paix. **Nous n’avons pas pour objectif l’unanimité démocratique, nous avons même comme projet de contrarier quelques personnes**.
+
+
+        Refaire le monde, c’est prendre le risque de déplaire à ceux qui ne veulent pas du tout que le monde soit refait.
 
 
 
@@ -1490,8 +1529,8 @@ image:
     url: HorstWidmann.jpg
     credit: Horst Widmann
 quote:
-    author: proverbe Yuocmyn
-    content: Oublie le vrai, oublie le faux, seul le rêve peut transformer le monde
+    author: Proverbe amérindien.
+    content: Quand le dernier arbre sera abattu, la dernière rivière empoisonnée, le dernier poisson pêché, alors vous découvrirez que l'argent ne se mange pas.
 content: >
     Parmi les actes que nous faisons tous les jours, **celui de se nourrir est sans doute celui qui est le plus politique.**
 
@@ -1617,6 +1656,8 @@ quote:
 
 
         Elle a toujours été là
+
+
         Parfaitement claire
 content: >
     Les véritables puissances sont celles qui sont aux rênes des **structures matérielles des flux** : *banques, multinationales médiatiques, construction, alimentaire, transport*. Ces organisations détiennent l’**autorité**.
@@ -1755,7 +1796,7 @@ content: >
 ---
 date: 2015-11-18
 title: N'attendons rien des décideurs
-subtitle: Quels sont les intérêts des élites ? Mobilisons-nous par le bas
+subtitle: Quels sont les intérêts des élites ? Mobilisons-nous par nous-mêmes
 tags: politics emancipation
 image:
     url: nerougissezpas-revolution.jpg
@@ -1832,7 +1873,7 @@ content: >
 ---
 date: 2015-06-01
 title: Science sacralisée, expropriation
-subtitle: On arrête pas le progrès, émancipation ou servitude ? technologies et science sans conscience
+subtitle: On n'arrête pas le progrès, émancipation ou servitude ? Technologies et science sans conscience
 tags: science web
 image:
     url: trashphones.jpg
@@ -1937,7 +1978,7 @@ content: >
 ---
 date: 2016-09-10
 title: Quitte ton taff et ta mégalopole
-subtitle: "Le plus dur, c'est dans la tête. Avec les potes et un peu d'organisation, on peut tout changer en moins de 2 mois"
+subtitle: Le plus dur, c'est dans la tête. Avec les potes et un peu d'organisation, on peut tout changer en moins de deux mois
 tags: act work
 image:
     url: ErnstHaeckel_partdown.jpg
@@ -2062,7 +2103,7 @@ content: >
 ---
 date: 2015-06-01
 title: Rencontrons-nous
-subtitle: "Expérience du collectif, attention et confiance en l'autre, nouvelles formes de collectifs autogérés. Objectif : vivre ensemble"
+subtitle: Expérience du collectif, attention et confiance en l'autre, nouvelles formes de collectifs autogérés, vivre ensemble
 tags: slow emancipation space
 image:
     url: RBagautdinov_2.jpg
@@ -2087,7 +2128,7 @@ content: >
 ---
 date: 2016-10-21
 title: ZAD et soulèvement populaire
-subtitle: "S'il est vital pour les gouvernants d'écraser la zad, c'est qu'elle constitue une démonstration insolente d'une vie possible sans eux. Et d'une vie meilleure."
+subtitle: S'il est vital pour les gouvernants d'écraser la zad, c'est qu'elle constitue une démonstration insolente d'une vie possible sans eux. Une vie meilleure
 tags: emancipation zad space
 image:
     url: reveAborigene-2.jpg
@@ -2219,7 +2260,7 @@ content: >
 ---
 date: 2016-03-20
 title: Achète à ton voisin
-subtitle: "Artisanat et savoir-faire local: proximité des besoins"
+subtitle: Artisanat et savoir-faire local, proximité des besoins et des productions
 tags: work object economy
 image:
     url: fruitscouleurs.jpg
@@ -2270,6 +2311,8 @@ quote:
     author:
     content: >
         Les fleurs tombent
+
+
         En toute saison
 
 
@@ -2297,6 +2340,8 @@ quote:
     author: Basshô
     content: >
         Rien ne dit
+
+
         Dans le chant de la cigale
 
 
@@ -2343,8 +2388,8 @@ image:
     url: PaulRand.jpg
     credit: Paul Rand
 quote:
-    author: Félix Thiéfaine
-    content: Laissez l'État dans les toilettes où vous l'avez trouvé
+    author: Alice
+    content: Je fais partie de la première génération dans l'histoire de l'Humanité à avoir jamais eu un niveau de vie aussi élevé, et paradoxalement, aucune des personnes que je connais ne fabrique quoi que ce soit de réellement nécessaire
 content: >
     Les grandes **puissances d'argent** ont bien compris comment utiliser à leur compte le jargon séducteur de *l’économie collaborative, de partage, d'horizontalité, de résilience, de liberté d'accès*
 
