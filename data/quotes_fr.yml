@@ -2,7 +2,7 @@
 
 -
     used: true
-    author: [Comment habiter la terre](http://www.lyber-eclat.net/livres/comment-habiter-la-terre-poche-17/), Yona Friedman
+    author: "[Comment habiter la terre](http://www.lyber-eclat.net/livres/comment-habiter-la-terre-poche-17/), Yona Friedman"
     content: >
         Le but de la brochure est d’amener le lecteur à reconsidérer la place de l’homme-habitant dans un écosystème et de l’amener à réfléchir, dans un contexte de pénurie ou de crise durable ou temporaire, à des solutions de survie de son espèce. Si le langage utilisé permet de stimuler cette réflexion, alors le but de cet ouvrage sera atteint.
 -
@@ -13,7 +13,8 @@
     content: Nous avons mieux à faire de la vie que d'en accélérer le rythme
 -
     author: Pierre Rabhi
-    content: À l'échelle du temps géologique, nous sommes arrivés dans les trois dernières minutes d'une planète née il y a vingt-quatre heures.
+    content: >
+        À l'échelle du temps géologique, nous sommes arrivés dans les trois dernières minutes d'une planète née il y a vingt-quatre heures.
 -
     author: Pierre Rabhi, 24 août 2010
     content: >
