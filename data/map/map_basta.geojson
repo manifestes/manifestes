@@ -3071,6 +3071,138 @@
 			"icon_size": [33,33],
 			"icon_anchor": [16.5,16.5],
 			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-3.7035824, 40.4167047]},
+		"id":"359",
+		"properties": {
+			"title":"Madrid",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.bastamag.net\/Bienvenue-dans-la-redaction-d-un-journal-cooperatif-et-independant-entierement' target='_blank'>Bienvenue dans la r\u00e9daction d&#8217;un journal coop\u00e9ratif et ind\u00e9pendant enti\u00e8rement dirig\u00e9 par des femmes<\/a><\/div>\n\t<div class=\"texte\">Fond\u00e9 dans le sillage des mouvements sociaux qui ont \u00e9merg\u00e9 en Espagne, La Marea, revue et site d\u2019information ind\u00e9pendants et tourn\u00e9s vers l\u2019investigation, cultive son ind\u00e9pendance \u00e9conomique et \u00e9ditoriale gr\u00e2ce \u00e0 sa forme coop\u00e9rative. Elle associe journalistes, personnels administratifs et lecteurs dans&nbsp;(...)<\/div>\n<\/div>","id_mot": "128"
+		  ,
+			"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-128.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [7.114639, 43.595715]},
+		"id":"360",
+		"properties": {
+			"title":"Antibes (06600)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.alterecoplus.fr\/terraotherm-start-up-veut-stopper-rechauffement-climatique\/00012488' target='_blank'>Terraotherm, la start-up qui veut stopper le r\u00e9chauffement climatique<\/a><\/div>\n\t<div class=\"texte\">Professeur de physique \u00e0 l\u2019universit\u00e9 de Lille I, Jaouad Zemmouri est aussi conseiller scientifique dans Starklab, une soci\u00e9t\u00e9 de services en recherche et d\u00e9veloppement cr\u00e9\u00e9e par son \u00e9pouse, Audrey Keunebrock. C\u2019est \u00e0 Antibes, en 2012, apr\u00e8s une journ\u00e9e de travail chez un client, que lui vient l\u2019id\u00e9e \u00e0&nbsp;(...)<\/div>\n<\/div>","id_mot": "127"
+		  ,
+			"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-127.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [7.8494005, 47.9960901]},
+		"id":"361",
+		"properties": {
+			"title":"Fribourg-en-Brisgau",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.bastamag.net\/Vauban-l-ecoquartier-du-futur' target='_blank'>Vauban, l&#8217;\u00e9coquartier du futur \u00e9cologiquement exemplaire, mais socialement discutable - Basta&nbsp;!<\/a><\/div>\n\t<div class=\"texte\">Construit sur une base militaire d\u00e9saffect\u00e9e, le quartier Vauban, pr\u00e8s de Fribourg en Allemagne, est devenu la vitrine europ\u00e9enne des \u00e9coquartiers. (...)<\/div>\n<\/div>","id_mot": "70"
+		  ,
+			"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-70.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.424947, 43.345075]},
+		"id":"362",
+		"properties": {
+			"title":"Lescar (64230)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.bastamag.net\/Pres-de-Pau-des-compagnons-d' target='_blank'>Pr\u00e8s de Pau, des compagnons d&#8217;Emma\u00fcs r\u00e9alisent leurs utopies - Basta&nbsp;!<\/a><\/div>\n\t<div class=\"texte\">\u00c0 Lescar, les 125 membres de la communaut\u00e9 Emma\u00fcs ont de l\u2019\u00e9nergie et des id\u00e9es. Professionnels de la r\u00e9cup\u00e9ration, ils se sont lanc\u00e9s dans (...)<\/div>\n<\/div>","id_mot": "70"
+		  ,
+			"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-70.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-1.582866, 47.50172]},
+		"id":"363",
+		"properties": {
+			"title":"Saffr\u00e9 (44390)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/Biolait-la-cooperative-des-paysans-qui-echappe-a-la-crise' target='_blank'>Biolait, la coop\u00e9rative des paysans qui \u00e9chappe \u00e0 la crise<\/a><\/div>\n\t<div class=\"texte\">N\u00e9e il y a 20 ans, la coop\u00e9rative Biolait n\u2019a cess\u00e9 de grandir et fournit aujourd\u2019hui 28 % du march\u00e9 fran\u00e7ais de lait bio. Sa particularit\u00e9 : conserver l\u2019esprit solidaire des coop\u00e9ratives et assurer une transparence compl\u00e8te vis-\u00e0-vis de ses membres et des&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
+		  ,
+			"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.150804, 45.613396]},
+		"id":"365",
+		"properties": {
+			"title":"Villefontaine (38090)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.bastamag.net\/L-habitat-en-terre-une-voie-alternative-de-construction-bloquee-par-les-lobbys' target='_blank'>La construction en terre, une technique performante et \u00e9cologique entrav\u00e9e par les lobbies du ciment<\/a><\/div>\n\t<div class=\"texte\">En Is\u00e8re, le Domaine de la terre est un quartier d\u2019habitat social unique en France. Les 70 logements y sont tous construits en terre crue, une ressource naturelle et locale, 100% recyclable et non polluante. Trente ans apr\u00e8s avoir \u00e9t\u00e9 b\u00e2ti, ce quartier apporte la preuve qu\u2019il est possible d\u2019\u00e9difier \u00e0&nbsp;(...)<\/div>\n<\/div>","id_mot": "70"
+		  ,
+			"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-70.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.601841, 44.841493]},
+		"id":"366",
+		"properties": {
+			"title":"Bordeaux (33000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/rue89bordeaux.com\/2016\/10\/epiceries-solidaires-etendent-rayons-gironde\/' target='_blank'>Faire son shopping pour rester digne<\/a><\/div>\n\t<div class=\"texte\">S\u2019il n\u2019y a pas de chocolatine \u00e0 15 centimes, les \u00e9piceries sociales et solidaires proposent de quoi se mijoter des petits plats \u00e0 des prix plus que comp\u00e9titifs. Face \u00e0 la pr\u00e9carit\u00e9, elles se multiplient en Gironde, et s\u2019ouvrent \u00e0 un public de plus en plus&nbsp;(...)<\/div>\n<\/div>","id_mot": "16"
+		  ,
+			"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-16.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [6.1466014, 46.2017559]},
+		"id":"367",
+		"properties": {
+			"title":"Gen\u00e8ve",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.mediapart.fr\/journal\/economie\/291016\/une-nouvelle-monnaie-s-installe-sur-la-frontiere-franco-suisse' target='_blank'>Une nouvelle monnaie s\u2019installe sur la fronti\u00e8re franco-suisse<\/a><\/div>\n\t<div class=\"texte\">C\u2019est une premi\u00e8re pour la France : la cr\u00e9ation d\u2019une monnaie locale compl\u00e9mentaire, partag\u00e9e avec la Suisse. Le l\u00e9man vient de f\u00eater un an de mise en circulation et monte en puissance, se heurtant \u00e0 un probl\u00e8me, celui du taux de change.<\/div>\n<\/div>","id_mot": "129"
+		  ,
+			"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-129.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.935836, 43.132382]},
+		"id":"368",
+		"properties": {
+			"title":"Toulon (83000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.leravi.org\/spip.php?article2497' target='_blank'>Se restaurer\u2026<\/a><\/div>\n\t<div class=\"texte\">A Toulon, le restaurant le Mistral Gagnant offre une seconde chance \u00e0 des mineurs en r\u00e9insertion avec pour mot d\u2019ordre \u00ab l\u2019estime de soi et le go\u00fbt des autres \u00bb\u2026<\/div>\n<\/div>","id_mot": "120"
+		  ,
+			"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-120.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.6253361, 6.4990718]},
+		"id":"369",
+		"properties": {
+			"title":"Porto-Novo",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.lagedefaire-lejournal.fr\/premiere-amap-benin\/' target='_blank'>Une premi\u00e8re Amap au B\u00e9nin<\/a><\/div>\n\t<div class=\"texte\">Dans les paniers de cette Amap (1), on trouve des carottes, des concombres, mais aussi des ananas, des bottes d\u2019amarante \u00ab fot\u00eat\u00ea \u00bb\u2026 L\u2019Amap B\u00e9nin est la premi\u00e8re de ce pays d\u2019Afrique de l\u2019Ouest, situ\u00e9 entre le Togo et le Nig\u00e9ria. Aujourd\u2019hui, elle rassemble 40 producteurs et 200 amapiens dans la r\u00e9gion de&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
+		  ,
+			"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.03034, 45.260549]},
+		"id":"370",
+		"properties": {
+			"title":"Hauterives (26390)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.bastamag.net\/Comment-le-mouvement-des-semences-libres-veut-liberer-les-paysans-des-trusts' target='_blank'>Des semences libres pour d\u00e9livrer les paysans des g\u00e9ants agro-industriels<\/a><\/div>\n\t<div class=\"texte\">emer, s\u00e9lectionner, \u00e9changer librement ses semences : ces pratiques ancestrales contribuent \u00e0 l\u2019autonomie des paysans et \u00e0 la diversit\u00e9 des cultures. Mais ces derni\u00e8res d\u00e9cennies, \u00e0 cause d\u2019une r\u00e9glementation de plus en plus complexe, une partie des savoirs a \u00e9t\u00e9 perdue. Refusant la mainmise de quelques&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
+		  ,
+			"icon": "http:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
 		}}
 	]
 }

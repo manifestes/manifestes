@@ -1,18 +1,66 @@
 {"type": "FeatureCollection",
 	"features": [
 		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [0.8352046, 47.3687029]},
-		"id":"119",
+		"geometry": {"type": "Point", "coordinates": [1.8710543, 46.1689442]},
+		"id":"130",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10516'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH149\/arton10516-c1c5a.jpg?1474382928' width='100' height='149' style='margin-right:5px;float:left;' \/><b style='color:black;'>RENDEZ-VOUS<\/b><br>Festival de la for\u00eat et du bois, \u00e0 Montlouis-sur-Loire (Indre-et-Loire)<\/a><br>Le 29 octobre 2016.<div class=nettoyeur><\/div>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10916'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH141\/arton10916-422b8.jpg?1479128874' width='100' height='141' style='margin-right:5px;float:left;' \/><b style='color:black;'>RENDEZ-VOUS<\/b><br>Journ\u00e9e d'information contre un projet minier \u00e0 Gu\u00e9ret (Creuse)<\/a><br>Le 19 novembre 2016.<div class=nettoyeur><\/div>",
 			"description":"",
 
 		"icon": "\/images\/marker.png",	
-		"icon_size": [22.5,37.5],		"icon_anchor": [9,38]	
+		"icon_size": [36,60],		"icon_anchor": [9,38]	
 		
 		}}
 		,
 
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [3.6059407, 43.9912933]},
+		"id":"131",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10933'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH137\/arton10933-59f01.jpg?1479311151' width='100' height='137' style='margin-right:5px;float:left;' \/>\u00ab<small class='fine'>\u00a0<\/small>M\u00e9dias environnement et nous<small class='fine'>\u00a0<\/small>\u00bb, la 21<sup class='typo_exposants'>e<\/sup> \u00e9dition des \u00e9codialogues du Vigan (Gard)<\/a><br>publi\u00e9 le 17 novembre 2016.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.1874811, 48.6991805]},
+		"id":"129",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10785'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH142\/arton10785-32f43.jpg?1477912797' width='100' height='142' style='margin-right:5px;float:left;' \/>Tafta \/ Ceta\u00a0: \u00e0 qui profitent ces trait\u00e9s<small class='fine'>\u00a0<\/small>? forum \u00e0 Orsay (Essonne)<\/a><br>publi\u00e9 le 12 novembre 2016.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [1.9086066, 47.9027336]},
+		"id":"128",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10819'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH82\/arton10819-e883a.jpg?1477912797' width='100' height='82' style='margin-right:5px;float:left;' \/>Film \u00ab<small class='fine'>\u00a0<\/small>El impenetrable<small class='fine'>\u00a0<\/small>\u00bb \u00e0 Orl\u00e9ans<\/a><br>publi\u00e9 le 6 novembre 2016.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [0.8352046, 47.3687029]},
+		"id":"119",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=10516'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH149\/arton10516-c1c5a.jpg?1474382928' width='100' height='149' style='margin-right:5px;float:left;' \/>Festival de la for\u00eat et du bois, \u00e0 Montlouis-sur-Loire (Indre-et-Loire)<\/a><br>publi\u00e9 le 29 octobre 2016.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+
+		}},
 		{"type": "Feature",
 		"geometry": {"type": "Point", "coordinates": [10.605926513671875, 55.84833710649607]},
 		"id":"126",
