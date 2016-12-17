@@ -1,6 +1,17 @@
 
 
 -
+    author: 
+    content: >
+        La vérité, c'est qu'il y a une quantité incroyable de gouttes qui ne font pas déborder le vase
+-
+    author: Jean-Yves Girard, Le Fantôme de la transparence
+    content: >
+        On ne trouvera donc pas la raison dans les chiffres : leur utilisation est à la fois raisonnable et incantatoire
+-
+    author: Bossuet
+    content: Dieu se rit des créatures qui se plaignent des effets dont ils chérissent les causes
+-
     used: true
     author: "[Comment habiter la terre](http://www.lyber-eclat.net/livres/comment-habiter-la-terre-poche-17/), Yona Friedman"
     content: >
@@ -481,7 +492,8 @@
         La recherche désintéressée fait place au pugilat payé, l'investigation consciencieuse à la mauvaise conscience, aux misérables subterfuges de l'apologétique
 -
     author: Albert Camus
-    content: Toute forme de mépris, lorsqu'elle intervient en politique, prépare ou instaure le fascisme
+    content: >
+        Toute forme de mépris, lorsqu'elle intervient en politique, prépare ou instaure le fascisme
 -
     author: "[Le Saker Francophone](http://lesakerfrancophone.fr/)"
     content: >
