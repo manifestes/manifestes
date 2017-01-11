@@ -1132,13 +1132,18 @@ angular.module('manifest.maincontroller', ['underscore','config'])
         bacause of CORS
         did not succeed with $http
         neither with http://whateverorigin.org (don't accept GET params)
-        but like that seems OK
+        but like following... seems OK (?)
       */
       
       // cors.io went down !
       //$.getJSON('http://cors.io?u='+encodeURIComponent(longurl), function(data) {
       
+      // crossorigin.me blocked us ?
       $.getJSON('https://crossorigin.me/'+longurl, function(data) {
+
+      // direct call is not allowed :(
+      //$.getJSON(longurl, function(data) {
+      
         //console.log("RECEIVED:",data)
         _.each(data.events, function(e) {
           addMarker({

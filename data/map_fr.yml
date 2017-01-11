@@ -52,12 +52,13 @@ mapcredits:
         url: http://utopies-concretes.org
         type: csv
     -   slug: demos
+        dontload: true
+        hide: true
         name: Démosphère
         description: "Démosphère est un agenda web\nindépendant de toute\norganisation ou parti"
         color: ed9522
         url: http://www.demosphere.eu/
         type: demosphere
-        dontload: true
         cities:
             - http://bxl.demosphere.eu
             - http://liege.demosphere.eu
