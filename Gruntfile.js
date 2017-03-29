@@ -265,13 +265,13 @@ module.exports = function(grunt) {
     curl: {
       'data/map/map_agefa.xml': 'http://magasin.lagedefaire-lejournal.fr/index.php?controller=stores?ajax=1&all=1',
       'data/map/map_basta.geojson':'http://portail.bastamag.net/spip.php?page=gis_json&objets=syndic_articles&limit=500',
-      // offline ? 'data/map/map_circc.json':'http://www.circuits-courts.be/get_json_data.php?data=ext',
+      // OFFLINE ? 'data/map/map_circc.json':'http://www.circuits-courts.be/get_json_data.php?data=ext',
       'data/map/map_ffdn.json':'https://db.ffdn.org/isp/map_data.json',
       'data/map/map_passeco.geojson':'http://www.ecovillageglobal.fr/spip.php?page=gis_json&objets=annonces&limit=500',
       'data/map/map_report.geojson':'http://reporterre.net/spip.php?page=gis_json&objets=articles&limit=500',
       'data/map/map_collec.geojson':'https://framacarte.org/fr/datalayer/5289/',
       'data/map/map_cnlii.geojson':'https://umap.openstreetmap.fr/fr/datalayer/91000/'
-      //'data/map/_map_horstafta.json':'https://www.monquartier-horstafta.org/?q=maptaftajson'
+      // TO DO, PARSE: 'data/map/_map_horstafta.json':'https://www.monquartier-horstafta.org/?q=maptaftajson'
       // 'communecter': {
       //   src: {
       //     url: 'http://qa.communecter.org/network/search/simplyautocomplete',
