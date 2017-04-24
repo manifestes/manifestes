@@ -55,7 +55,7 @@ network:
     loading: >
         le réseau est en cours d'affichage
         <br><br>
-        attention, le temps de chargement peut être long (9.3Mo)
+        attention, le temps de chargement peut être long (8.4Mo)
         <br><br>
         merci pour votre patience
     image: links_eniac.jpg
@@ -63,7 +63,7 @@ network:
         [network.gexf](https://github.com/manifestes/manifestes/blob/gh-pages/data/network.gexf) produit avec l'outil libre [hyphe](http://hyphe.medialab.sciences-po.fr/) et affiché avec [sigma.js](http://sigmajs.org/)
         
         
-        voir [les données](https://github.com/manifestes/manifestes/blob/gh-pages/data/utiles/)
+        les nœuds de degré <10 sont ici masqués. voir [les données complètes](https://github.com/manifestes/manifestes/blob/gh-pages/data/utiles/)
 
 
         date de mise à jour: mi-avril 2017
