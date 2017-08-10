@@ -125,9 +125,10 @@ module.exports = function(grunt) {
           // leaflet is here, font-awesome in external css
 
           'src/vendor/leaflet/dist/leaflet.css',
-          'src/vendor/hint.css/hint.min.css',
 
           'src/vendor/normalize.css/normalize.css',
+
+          'src/vendor/hint.css/hint.min.css',
 
           'src/vendor/leaflet.locatecontrol/dist/L.Control.Locate.min.css',
 

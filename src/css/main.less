@@ -20,9 +20,11 @@ body {
 
 /* hack to allow linebreaks, aka « &#10; » within hint.css tooltips */
 /* https://github.com/chinchang/hint.css/issues/100 */
-/*[class*=hint--]:after {
+[class*=hint--]:after {
+  z-index: 9999999;
   white-space: pre;
-}*/
+  text-align: left;
+}
 /*[data-hint]:after {
   text-align: left;
 }*/
@@ -679,6 +681,8 @@ span.highlight, div.highlight { /* searched words */
       z-index: 35;
       box-sizing: border-box;
       position: relative;
+      display: inline-block;
+
       height: 100%;
       width: 61px;
       vertical-align: top;
@@ -770,6 +774,7 @@ span.highlight, div.highlight { /* searched words */
 
     .gridtag {
       box-sizing: border-box;
+      position: relative;
       cursor: pointer;
       display: inline-block;
       vertical-align: top;
