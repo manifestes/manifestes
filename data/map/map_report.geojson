@@ -67,7 +67,23 @@
 
 ,
 
-		{"type": "Fs\/marker_rond.png",	
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-3.1723677, 47.965194]},
+		"id":"476",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=12691'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton12691-dabbc.jpg?1499940032' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>D\u00e9chets nucl\u00e9aires<\/span><br>Les d\u00e9chets radioactifs des mines d'uranium empoisonnent la Bretagne<\/a><br>publi\u00e9 le 12 juillet 2017.<div class=nettoyeur><\/div>",
+			"description":"",
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-3.1977999, 48.02929]},
+		"id":"478",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=12691'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton12691-dabbc.jpg?1499940032' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>D\u00e9chets nucl\u00e9aires<\/span><br>Les d\u00e9chets radioactifs des mines d'uranium empoisonnent la Bretagne<\/a><br>publi\u00e9 le 12 juillet 2017.<div class=nettoyeur><\/div>",
+			"description":"",
+		"icon": "\/images\/marker_rond.png",	
 		"icon_size": [12,12],
 		"icon_anchor": [6,6]		
 		}}
@@ -399,30 +415,7 @@
 		"geometry": {"type": "Point", "coordinates": [-3.855599, 48.3916742]},
 		"id":"388",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=12203'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton12203-cc99b.jpg?1499940034' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>Mille Vaches et fermes-usines<\/span><br>Le \u00ab<small class='fine'>\u00a0<\/small>ch\u00e2teau d\u2019eau<small class='fine'>\u00a0<\/small>\u00bb du Finist\u00e8re menac\u00e9 par l'\u00e9pandage d'une ferme-usine<\/a><br>publi\u00e9 le 12 mai 2017.<div class=nettoyeur><\/div>",
-			"description":"",
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]		
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [-3.855599, 48.3916742]},
-		"id":"389",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=12203'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton12203-cc99b.jpg?1499940034' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>Mille Vaches et fermes-usines<\/span><br>Le \u00ab<small class='fine'>\u00a0<\/small>ch\u00e2teau d\u2019eau<small class='fine'>\u00a0<\/small>\u00bb du Finist\u00e8re menac\u00e9 par l'\u00e9pandage d'une ferme-usine<\/a><br>publi\u00e9 le 12 mai 2017.<div class=nettoyeur><\/div>",
-			"description":"",
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]		
-		}}
-
-,
-
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [-72.2626209, -13.3103187]},
-		"id":"418",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=12376'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton12376-90028.jpg?1499940034' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>Notre-Dame-des-Landes<\/span><br>Au P\u00e9rou, un projet d\u2019a\u00e9roport pr\u00e8s du Machu Picchu menace les terres qu\u00e9chuas<\/a><br>publi\u00e9 le 17 juin 2017.<div class=nettoyeur><\/div>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=12203'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton12203-cc99b.jpg?1499940034' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>Mille Vaches et fermes-usines<\/span><br>Le \u00ab<small class='fine'>\u00a0<\/small>ch\u00e2teau d\u2019eau<small class='fine'><span style='color:black;'>Notre-Dame-des-Landes<\/span><br>Au P\u00e9rou, un projet d\u2019a\u00e9roport pr\u00e8s du Machu Picchu menace les terres qu\u00e9chuas<\/a><br>publi\u00e9 le 17 juin 2017.<div class=nettoyeur><\/div>",
 			"description":"",
 		"icon": "\/images\/marker_rond.png",	
 		"icon_size": [12,12],
@@ -824,7 +817,32 @@
 		"geometry": {"type": "Point", "coordinates": [2.3621046, 48.8690483]},
 		"id":"102",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=9560'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH53\/arton9560-1285a.jpg?1499940036' width='100' height='53' style='margin-right:5px;float:left;' \/><span style='color:black;'>Nuit debout<\/spaft;' \/><span style='color:black;'>Etalement urbain<\/span><br>\u00c0 Fr\u00e9jus, le maire <span class='caps'>FN<\/span> poursuit le b\u00e9tonnage de la C\u00f4te d'azur<\/a><br>publi\u00e9 le 27 juin 2017.<div class=nettoyeur><\/div>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=9560'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH53\/arton9560-1285a.jpg?1499940036' width='100' height='53' style='margin-right:5px;float:left;' \/><span style='color:black;'>Nuit debout<\/span><br>Nuit debout, l'\u00e9tape d'apr\u00e8s &mdash; soir\u00e9e-d\u00e9bat \u00e0 Paris<\/a><br>publi\u00e9 le 20 avril 2016.<div class=nettoyeur><\/div>",
+			"description":"",
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.452863480614702, 48.9098125]},
+		"id":"458",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=9492'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton9492-1312b.jpg?1499940036' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>Nuit debout<\/span><br>Jolie M\u00f4me lutte joyeusement avec la Nuit debout<\/a><br>publi\u00e9 le 9 avril 2016.<div class=nettoyeur><\/div>",
+			"description":"",
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+		}}
+
+
+
+,
+
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [6.7360182, 43.4330308]},
+		"id":"449",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=12557'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton12557-a1adf.jpg?1499940036' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>Etalement urbain<\/span><br>\u00c0 Fr\u00e9jus, le maire <span class='caps'>FN<\/span> poursuit le b\u00e9tonnage de la C\u00f4te d'azur<\/a><br>publi\u00e9 le 27 juin 2017.<div class=nettoyeur><\/div>",
 			"description":"",
 		"icon": "\/images\/marker_rond.png",	
 		"icon_size": [12,12],
