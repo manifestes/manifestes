@@ -81,7 +81,7 @@ will only (re) produce the text sections whose slug starts with «abcd» (useful
     + delete column *NAME*
 
 - **fetch previous WEs Tags**
-    + open previous `utiles/network_in.csv` as other GoogleRefine project
+    + open previous `data/network/network_in.csv` as other GoogleRefine project
     + on `new_network_in.csv` : add new column based on Id column (with no facet! GREL language) `cell.cross("network_in.csv", "Id")[0].cells["Tags"].value`
     + Verify tags column is well filled, eventually add new tags on WEs
 
@@ -115,9 +115,9 @@ will only (re) produce the text sections whose slug starts with «abcd» (useful
 
 ### commit changes online
 - replace `temp/` files you produced:
-    + `data/network.gexf`
-    + `data/utiles/network_in.csv`
-    + `data/utiles/network_links.csv`
+    + `data/network/network.gexf`
+    + `data/network/network_in.csv`
+    + `data/network/network_links.csv`
 - update `data/meta_fr.yml` information keys:
     + network.loading (size)
     + network.credits (date updated)

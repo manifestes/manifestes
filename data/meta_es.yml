@@ -6,6 +6,7 @@ source:
     github: https://github.com/manifestes/manifestes
     meta: https://github.com/manifestes/manifestes/blob/gh-pages/data/meta_es.yml
     texts: https://github.com/manifestes/manifestes/blob/gh-pages/data/texts_es.yml
+    quotes: https://github.com/manifestes/manifestes/blob/gh-pages/data/quotes_es.yml
     links: https://github.com/manifestes/manifestes/blob/gh-pages/data/links_es.yml
 splash:
     images:

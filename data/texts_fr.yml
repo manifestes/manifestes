@@ -323,7 +323,7 @@ content: >
     **Pour les points de la carte**, vous pouvez directement modifier [ce tableau partagé](https://framacalc.org/carto), les modifications seront mises en ligne régulièrement
 
 
-    **Réseau des sites** : n'hésitez pas à nous signaler les sites absents de la [liste](https://github.com/manifestes/manifestes/blob/gh-pages/data/utiles/network_in.csv) du réseau (galaxie des liens)
+    **Réseau des sites** : n'hésitez pas à nous signaler les sites absents de la [liste](https://github.com/manifestes/manifestes/blob/gh-pages/data/network/network_in.csv) du réseau (galaxie des liens)
 
 
 ---
@@ -568,7 +568,7 @@ content: >
 
 
 
-    Nous ne sommes évidemment pas capables de juger la pertinence de toutes les initiatives, chacune pouvant changer avec le temps : aidez-nous à mettre à jour [cette liste](https://github.com/manifestes/manifestes/blob/gh-pages/data/utiles/network_in.csv) en nous signalant les faux-amis ou les absents !
+    Nous ne sommes évidemment pas capables de juger la pertinence de toutes les initiatives, chacune pouvant changer avec le temps : aidez-nous à mettre à jour [cette liste](https://github.com/manifestes/manifestes/blob/gh-pages/data/network/network_in.csv) en nous signalant les faux-amis ou les absents !
 
 
 
