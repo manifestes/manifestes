@@ -1,0 +1,172 @@
+<div class="ninja">
+
+    <div
+        class="settings in hint--bottom-right"
+        ng-class="{active:settings}"
+        data-hint="les sites cités&#xa;entre {{state.ninja.in.min}} et {{state.ninja.in.max}} fois">
+        <div class="block setting min">
+            <span>min</span>
+            <div><input
+                select-on-click
+                type="number"
+                ng-model="state.in.min"
+                min="0"
+                max="{{state.ninja.in.max}}"
+                ng-change="updateNinjaSettings();"/></div>
+        </div>
+        <div class="block filter" ng-click="resetNinjaSettings();">
+            <div>{{ninjalist.length}}</div>
+        </div>
+        <div class="block setting max">
+            <span>max</span>
+            <div><input
+                select-on-click
+                type="number"
+                ng-model="state.ninja.in.max"
+                min="{{state.ninja.in.min}}"
+                max="{{state.ninja.in.MAX}}"
+                ng-change="updateNinjaSettings();"/></div>
+        </div>
+    </div>
+    <div
+        class="settings out hint--bottom-left"
+        ng-class="{active:state.ninja.settings}"
+        data-hint="les sites citant les autres&#xa;entre {{state.ninja.out.min}} et {{state.ninja.out.max}} fois">
+        <div class="block setting min">
+            <span>min</span>
+            <div><input
+                select-on-click
+                type="number"
+                ng-model="state.ninja.out.min"
+                min="0"
+                max="{{state.ninja.out.max}}"
+                ng-change="updateNinjaSettings();"/></div>
+        </div>
+        <div class="block filter" ng-click="resetNinjaSettings();">
+            <div>{{ninjalist.length}}</div>
+        </div>
+        <div class="block setting max">
+            <span>max</span>
+            <div><input
+                select-on-click
+                type="number"
+                ng-model="state.ninja.out.max"
+                min="{{state.ninja.out.min}}"
+                max="{{state.ninja.out.MAX}}"
+                ng-change="updateNinjaSettings();"/></div>
+        </div>
+    </div>
+
+    <!-- ////////////////////////////////////////////////// -->
+
+    <div class="header" ng-class="{customing:settings}">
+        <div class="block degree in">
+            <span ng-if="!state.ninja.settings">entrants</span>
+            <span ng-if="state.ninja.settings">nombre de liens entrants</span>
+            <div class="count" ng-if="!state.ninja.settings">{{state.ninja.current.ins.length}}</div>
+            <div class="details" ng-if="state.ninja.current.ins">
+                <div
+                    class="site"
+                    ng-repeat="e in state.ninja.current.ins">
+                    <div class="degcount">{{e.count}}</div>
+                    <div ng-click="loadNowNinja(e);">{{e.Url}}</div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="block button refresh hint--right"
+            ng-click="loadRandomNinja();"
+            data-hint="un site au hasard">
+            <i class="fa fa-magic"></i>
+        </div>
+        <div 
+            ng-click="state.ninja.settings = !state.ninja.settings;"
+            class="block button setter hint--bottom"
+            ng-class="{active: state.ninja.settings}"
+            data-hint="filtrer">
+            <i class="fa fa-sliders"></i>
+        </div>
+        <div
+            class="block button hint--bottom"
+            ng-click="state.ninja.searching = !state.ninja.searching;"
+            data-hint="chercher un site">
+            <i class="fa" ng-class="{
+                'fa-search':!state.ninja.searching,
+                'fa-times':state.ninja.searching
+            }"></i>
+        </div>
+        <div ng-if="state.ninja.searching" class="search">
+            <form autocomplete="off">
+            <input
+                autofocus
+                type="text"
+                placeholder="http://..."
+                ng-model="state.ninja.input"
+                ng-change="updateNinjaSuggestions();"/>
+            <div class="suggestions" ng-if="state.ninja.suggestions.length">
+                <div
+                    class="suggestion"
+                    ng-class="{odd:$index%2==0}"
+                    ng-repeat="u in state.ninja.suggestions"
+                    ng-click="loadNinjaNow(u);">
+                    <span class="degcount">{{u.InDegree}}</span>
+                    {{u.Urls|killhttp}}
+                </div>
+            </div>
+            </form>
+        </div>
+        <div> </div>
+        <div
+            ng-click="refreshNinjaFrame('https://annuel.framapad.org/p/manifestes');"
+            class="block button flag hint--bottom"
+            data-hint="suggérer un site&#xa;ou signaler un intru">
+            <i class="fa fa-commenting"></i>
+            <span>suggérer signaler</span>
+        </div>
+        <div class="block degree out">
+            <span ng-if="!state.ninja.settings">sortants</span>
+            <span ng-if="state.ninja.settings">nombre de liens sortants</span>
+            <div class="count" ng-if="!state.ninja.settings">{{state.ninja.current.outs.length}}</div>
+            <div class="details" ng-if="state.ninja.current.outs">
+                <div
+                    class="site"
+                    ng-repeat="e in state.ninja.current.outs">
+                    <div class="degcount">{{e.count}}</div>
+                    <div ng-click="loadNowNinja(e);">{{e.Url|killhttp}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ////////////////////////////////////////////////// -->
+
+    <div class="banner" ng-class="{visible: !state.ninja.intro && !state.ninja.settings}">
+        <div class="urls">
+            <span class="visiting nohighlight" ng-if="state.ninja.current">vous visitez :</span>
+            <span
+                class="url"
+                ng-repeat="u in state.ninja.current.UrlsArray">
+                <a class="nohighlight" href="{{u}}" target="_blank"><i class="fa fa-external-link-square"></i></a>
+                <span ng-click="refreshNinjaFrame(u);">{{u|killhttp|limitTo:50}}</span>
+            </span>
+        </div>
+    </div>
+
+    <!-- ////////////////////////////////////////////////// -->
+
+    <div class="splash" ng-if="state.ninja.intro">
+        <div class="text">
+            <p><b>L'internet est cassé</b></p>
+            <p>3615 Ninja répare l'internet</p>
+            <p>Clique sur la baguette magique <i class="fa fa-magic"></i> pour afficher un site au hasard parmi les <i>{{count}} sites des <a href="http://utopies-concretes.org" target="_blank">Utopies Concrètes</a></i>
+            <p>Les informations affichées <i>— liens hypertextes entrants et sortants —</i> permettent de mieux comprendre la position du site dans l'espace intersidéral de l'internet <i>— cité par qui / citant qui ?</i></p>
+            <p><b>Bonne navigation !</b></p>
+            <p><i>PS: Certains sites comme Facebook ou Twitter ne peuvent pas être chargés ici. Clique sur <i class="fa fa-external-link-square"></i> pour les ouvrir dans un nouvel onglet</i></p>
+        </div>
+    </div>
+    <div class="frame">
+        <iframe ng-src="{{url}}"></iframe>
+    </div>
+
+</div>
+

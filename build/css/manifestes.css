@@ -2969,6 +2969,395 @@ body.layout-mapprint .container {
   color: #ababab;
   font-style: italic;
 }
+/* hack to allow linebreaks, aka « &#10; » within hint.css tooltips */
+/* see https://github.com/chinchang/hint.css/issues/100 */
+[data-hint]::after,
+[data-hint]:after {
+  z-index: 999999;
+  white-space: pre !important;
+  text-align: left;
+  line-height: 0.9rem;
+}
+.ninja {
+  /* //////////////////////////////////// */
+  /* //////////////////////////////////// */
+}
+.ninja .block {
+  box-sizing: border-box;
+  display: table-cell;
+  position: relative;
+  width: 50px;
+  top: 0;
+}
+.ninja .button {
+  cursor: pointer;
+}
+.ninja .button i {
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+}
+.ninja .button:hover {
+  background: #474747;
+}
+.ninja .degcount {
+  display: inline-block;
+  width: 27px;
+  padding: 1px 4px;
+  margin-right: 5px;
+  text-align: left;
+}
+.ninja .settings {
+  z-index: 100;
+  position: absolute;
+  display: table;
+  top: 0;
+  -webkit-transition: top 0.4s;
+  -moz-transition: top 0.4s;
+  -o-transition: top 0.4s;
+  -ms-transition: top 0.4s;
+  transition: top 0.4s;
+  width: 150px;
+  background: darkred;
+}
+.ninja .settings.active {
+  top: 50px;
+}
+.ninja .settings.in {
+  left: 0;
+}
+.ninja .settings.out {
+  right: 0;
+}
+.ninja .settings .filter {
+  display: table-cell;
+  height: 50px;
+  cursor: pointer;
+}
+.ninja .settings .filter div {
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 62%;
+  font-size: 0.8rem;
+  color: white;
+  font-style: italic;
+}
+.ninja .settings .setting {
+  display: table-cell;
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+.ninja .settings .setting span {
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  color: whitesmoke;
+  font-style: italic;
+  font-size: 0.65em;
+}
+.ninja .settings .setting div {
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 64%;
+  width: 83%;
+  height: 50%;
+}
+.ninja .settings .setting div input {
+  box-sizing: border-box;
+  border: none;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 0.7em;
+}
+.ninja .header {
+  z-index: 110;
+  box-sizing: border-box;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 50px;
+  background: black;
+  color: whitesmoke;
+  /*&.customing .setter { color: @colorMagic; }*/
+}
+.ninja .header .refresh {
+  background: #599f7f;
+}
+.ninja .header .refresh:hover {
+  background: #72b496;
+}
+.ninja .header .search {
+  box-sizing: border-box;
+  height: 50px;
+  font-size: 1em;
+}
+.ninja .header .search form {
+  /*.absolute-vertical-centered();*/
+  height: 100%;
+  width: 100%;
+}
+.ninja .header .search form input {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  border: none;
+  padding: 4px 14px;
+}
+.ninja .header .search .suggestions {
+  max-height: 300px;
+  width: 100%;
+  background: white;
+  color: grey;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.ninja .header .search .suggestions .suggestion {
+  font-size: 0.8em;
+  padding: 2px 4px 2px 3px;
+}
+.ninja .header .search .suggestions .suggestion.odd {
+  background: #f2f2f2;
+}
+.ninja .header .search .suggestions .suggestion:hover {
+  background: lightgrey;
+  cursor: pointer;
+}
+.ninja .header .degree {
+  background: #366650;
+  text-align: center;
+}
+.ninja .header .degree span:first-child {
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  color: whitesmoke;
+  font-style: italic;
+  font-size: 0.65em;
+}
+.ninja .header .degree .count {
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 64%;
+  color: white;
+  font-size: 1.1em;
+}
+.ninja .header .degree.in {
+  left: 0;
+}
+.ninja .header .degree.in .details {
+  left: 0;
+}
+.ninja .header .degree.out {
+  right: 0;
+}
+.ninja .header .degree.out .details {
+  right: 0;
+}
+.ninja .header .degree .details {
+  box-sizing: border-box;
+  position: absolute;
+  top: 50px;
+  width: 300px;
+  padding: 3px 2px;
+  background: grey;
+  text-align: left;
+  font-size: 0.7rem;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+.ninja .header .degree .details .site div {
+  display: inline-block;
+}
+.ninja .header .degree .details .site .degcount {
+  background: none;
+}
+.ninja .header .degree .details .site:hover {
+  background: darkgrey;
+}
+.ninja .header .degree:hover .details {
+  display: block;
+}
+.ninja .header.customing .degree {
+  background: darkred;
+}
+.ninja .header .setter i {
+  font-size: 1.6rem;
+}
+.ninja .header .setter div {
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 0px 2px;
+  font-size: 0.55rem;
+  background: white;
+  font-size: 0.7rem;
+}
+.ninja .header .flag {
+  line-height: 10px;
+  text-align: center;
+}
+.ninja .header .flag i {
+  top: 27%;
+  font-size: 0.9em;
+}
+.ninja .header .flag span {
+  position: absolute;
+  left: 0px;
+  top: 47%;
+  font-size: 0.6em;
+  font-style: italic;
+}
+.ninja .banner {
+  z-index: 80;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 28px;
+  padding: 0px 8px;
+  overflow: hidden;
+  font-size: 0.8em;
+  background: #f0d075;
+  border-bottom: 7px solid #599f7f;
+  top: 0;
+  -webkit-transition: top 0.4s;
+  -moz-transition: top 0.4s;
+  -o-transition: top 0.4s;
+  -ms-transition: top 0.4s;
+  transition: top 0.4s;
+}
+.ninja .banner.visible {
+  top: 50px;
+}
+.ninja .banner .urls {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+.ninja .banner .urls .url {
+  margin: 0px 5px;
+  text-decoration: underline;
+  color: #353574;
+  font-style: italic;
+  cursor: pointer;
+}
+.ninja .banner .urls .url a {
+  color: #353574;
+}
+.ninja .banner .urls .url a:hover,
+.ninja .banner .urls .url span:hover {
+  color: black;
+}
+.ninja .splash {
+  z-index: 60;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  top: 50px;
+  bottom: 0;
+  background: #f0d075;
+  overflow-y: scroll;
+  font-size: 1.1em;
+}
+.ninja .splash .text {
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.ninja .splash .text .fa {
+  font-size: 1.2rem;
+  padding: 0px 5px;
+}
+.ninja .splash .text a {
+  color: darkblue;
+}
+.ninja .frame {
+  z-index: 50;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  top: 78px;
+  bottom: 0;
+}
+.ninja .frame iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+@media (max-width: 925px) {
+  .urls .visiting {
+    display: none;
+  }
+  .splash .text {
+    left: 0 !important;
+    top: 0 !important;
+    -webkit-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -o-transform: none !important;
+    transform: none !important;
+    padding: 30px;
+  }
+}
 /* HEIGHT WILL CHANGE TAGS-GRID, MAP LEGEND, ... */
 @media (max-height: 690px) {
   /* tag collapsible panel when window height is small */
