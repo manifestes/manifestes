@@ -3,7 +3,7 @@ var fs = require('fs');
 var request = require('request');
 var _ = require('underscore');
 
-var dataurl = "http://localhost/hasard/data/network_links.csv";
+var dataurl = "http://localhost/manifestes/data/network/network_links.csv";
 console.log("Request:",dataurl);
 
 var links = {};
@@ -42,12 +42,12 @@ request({ uri: dataurl }, function(error,response,body) {
 		_.each(links, function(v,k) {
 			//console.log(v,k);
 			csv.stringify(links[k].in, {header:true}, function(err, data) {
-				fs.writeFile("data/links/"+k+"_in.csv", data, function(err) {
+				fs.writeFile("data/network/links/"+k+"_in.csv", data, function(err) {
 					if(err) console.log(err);
 				});		
 			});
 			csv.stringify(links[k].out, {header:true}, function(err, data) {
-				fs.writeFile("data/links/"+k+"_out.csv", data, function(err) {
+				fs.writeFile("data/network/links/"+k+"_out.csv", data, function(err) {
 					if(err) console.log(err);
 				});		
 			});
