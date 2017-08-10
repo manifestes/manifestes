@@ -146,6 +146,9 @@ menu:
         map:
             link: "http://framacalc.org/carto"
             text: ajouter ou<br>modifier un lieu
+        ninja:
+            link: "http://annuel.framapad.org/p/manifestes"
+            text: suggérer un site<br>signaler un intru
 tagtip: "filtrer par thématiques"
 tags:
     about: "question = à propos = à propos de ce projet, contexte,\nliste de discussion, code source"

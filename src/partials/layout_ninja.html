@@ -2,14 +2,14 @@
 
     <div
         class="settings in hint--bottom-right"
-        ng-class="{active:settings}"
+        ng-class="{active:state.ninja.settings}"
         data-hint="les sites cités&#xa;entre {{state.ninja.in.min}} et {{state.ninja.in.max}} fois">
         <div class="block setting min">
             <span>min</span>
             <div><input
                 select-on-click
                 type="number"
-                ng-model="state.in.min"
+                ng-model="state.ninja.in.min"
                 min="0"
                 max="{{state.ninja.in.max}}"
                 ng-change="updateNinjaSettings();"/></div>
@@ -116,13 +116,6 @@
             </form>
         </div>
         <div> </div>
-        <div
-            ng-click="refreshNinjaFrame('https://annuel.framapad.org/p/manifestes');"
-            class="block button flag hint--bottom"
-            data-hint="suggérer un site&#xa;ou signaler un intru">
-            <i class="fa fa-commenting"></i>
-            <span>suggérer signaler</span>
-        </div>
         <div class="block degree out">
             <span ng-if="!state.ninja.settings">sortants</span>
             <span ng-if="state.ninja.settings">nombre de liens sortants</span>
@@ -156,9 +149,7 @@
 
     <div class="splash" ng-if="state.ninja.intro">
         <div class="text">
-            <p><b>L'internet est cassé</b></p>
-            <p>3615 Ninja répare l'internet</p>
-            <p>Clique sur la baguette magique <i class="fa fa-magic"></i> pour afficher un site au hasard parmi les <i>{{count}} sites des <a href="http://utopies-concretes.org" target="_blank">Utopies Concrètes</a></i>
+            <p>Clique sur la baguette magique <i class="fa fa-magic"></i> pour afficher un site au hasard parmi les <i>{{state.ninja.count}} sites des <a href="http://utopies-concretes.org" target="_blank">Utopies Concrètes</a></i>
             <p>Les informations affichées <i>— liens hypertextes entrants et sortants —</i> permettent de mieux comprendre la position du site dans l'espace intersidéral de l'internet <i>— cité par qui / citant qui ?</i></p>
             <p><b>Bonne navigation !</b></p>
             <p><i>PS: Certains sites comme Facebook ou Twitter ne peuvent pas être chargés ici. Clique sur <i class="fa fa-external-link-square"></i> pour les ouvrir dans un nouvel onglet</i></p>

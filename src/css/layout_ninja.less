@@ -16,6 +16,18 @@
 }
 
 .ninja {
+
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: @menuH;
+  bottom: 0;
+  background: white;
+  overflow: hidden;
+
+  font-family: 'Lato', sans-serif;
+
   .block {
     box-sizing: border-box;
     display: table-cell;
@@ -42,7 +54,7 @@
   /* //////////////////////////////////// */
 
   .settings {
-    z-index: 100;
+    z-index: 70;
     position: absolute;
     display: table;
     top: 0;
@@ -104,7 +116,7 @@
   /* //////////////////////////////////// */
 
   .header {
-    z-index: 110;
+    z-index: 80;
     box-sizing: border-box;
     position: relative;
     display: table;
@@ -132,6 +144,7 @@
           width: 100%;
           border: none;
           padding: 4px 14px;
+          color: gray;
         }
       }
       .suggestions {
@@ -146,6 +159,7 @@
         .suggestion {
           font-size: 0.8em;
           padding: 2px 4px 2px 3px;
+          text-align: left;
           &.odd {
             background: #f2f2f2;
           }
@@ -246,7 +260,7 @@
   }
 
   .banner {
-    z-index: 80;
+    z-index: 50;
     box-sizing: border-box;
     position: absolute;
     width: 100%;
@@ -265,7 +279,11 @@
     .transition(top 0.4s);
 
     .urls {
-      .absolute-vertical-centered();
+      box-sizing: border-box;
+      position: absolute;
+      top: 50%;
+      .transform(translate(0,-50%));
+      
       .url {
         margin: 0px 5px;
         text-decoration: underline;
@@ -284,7 +302,7 @@
 
 
   .splash {
-    z-index: 60;
+    z-index: 30;
     box-sizing: border-box;
     position: absolute;
     width: 100%;
@@ -306,7 +324,7 @@
   }
 
   .frame {
-    z-index: 50;
+    z-index: 20;
     box-sizing: border-box;
     position: absolute;
     width: 100%;
