@@ -12,6 +12,12 @@ angular.module('manifest.filters', [])
   //   }
   // })
 
+  .filter('killhttp', function() {
+    return function(str) {
+      return str.replace(/https*:\/\//,"");
+    }
+  })
+  
   .filter('allowvimeo', function($sce) {
     return function(url) {
       var vid = url.match(/[0-9]+/)[0];

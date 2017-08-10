@@ -280,6 +280,12 @@ module.exports = function(grunt) {
       //   },
       //   dest:'data/map/map_communecter.json'
       // }
+    },
+
+    execute: {
+        target: {
+            src: ['prepair_hyperlinks_counts.js']
+        }
     }
 
 
@@ -305,5 +311,8 @@ module.exports = function(grunt) {
   // we first set constants to prod to build, then go back to dev
   grunt.registerTask('default', ['ngconstant:production','jshint','env:prod','less:prod','concat:js','concat:css','copy','strip','uglify','preprocess:prod','ngconstant:development']);
   grunt.registerTask('map',['curl']);
+  grunt.registerTask('links', ['execute']);
+
+  
 
 };

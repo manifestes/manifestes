@@ -73,7 +73,16 @@ angular.module('manifest.maincontroller', ['underscore','config'])
 
       networkstatus: "NO", // loaded or not ?
 
-      mapSources: []
+      mapSources: [],
+
+      ninja: {
+        input: "",
+        in: {min:0,max:0,MAX:0},
+        out: {min:0,max:0,MAX:0},
+        count: 0,
+        intro: true,
+        settings: false
+      }
     };
     
     if($scope.settings.verbose)
@@ -647,7 +656,7 @@ angular.module('manifest.maincontroller', ['underscore','config'])
 
 
     ///////////////////////////////////////////////////////////////
-    ///////////////////////////////////////////////////////////////
+    ////////////////////// MAP !! /////////////////////////////////
     ///////////////////////////////////////////////////////////////
 
     var mappathprefix = settings.datapath+'/map/map_';
@@ -1254,7 +1263,121 @@ angular.module('manifest.maincontroller', ['underscore','config'])
     };
 
     ///////////////////////////////////////////////////////////////
-    // DO THINGS !!
+    ////////////////////// NINJA !! ///////////////////////////////
+    ///////////////////////////////////////////////////////////////
+
+    $scope.resetNinjaSettings = function() {
+      var ninj = $scope.state.ninja;
+      $scope.ninjalist = $scope.ninjalist_original;
+      ninj.count = $scope.ninjalist.length;
+      ninj.in.min = 0;
+      ninj.in.max = ninj.in.MAX;
+      ninj.out.min = 0;
+      ninj.out.max = ninj.out.MAX;
+
+      // $scope.state.ninja.count = $scope.ninjalist.length;
+      // $scope.state.ninja.in.min = 0;
+      // $scope.state.ninja.in.max = $scope.state.ninja.in.MAX;
+      // $scope.state.ninja.out.min = 0;
+      // $scope.state.ninja.out.max = $scope.state.ninja.out.MAX;
+    }
+    $scope.updateNinjaSettings = function() {
+      var sta = $scope.state.ninja;
+      $scope.ninjalist = _.filter($scope.ninjalist_original, function(e) {
+        return (e.InDegree >= sta.in.min) && (e.InDegree <= sta.in.max) &&
+            (e.OutDegree >= sta.out.min) && (e.OutDegree <= sta.out.max);
+      });
+      $scope.state.ninja.count = $scope.ninjalist.length;
+    };
+
+    $scope.refreshNinjaFrame = function(url) {
+      $scope.state.ninja.intro = false;
+      $scope.ninjaurl = $sce.trustAsResourceUrl(url);
+    };
+    $scope.loadRandomNinja = function() {
+      if($scope.ninjalist.length==0)
+        $scope.resetNinjaSettings();
+      $scope.loadNowNinja( _.sample($scope.ninjalist) );
+    }
+    $scope.loadNowNinja = function(e) {
+      var sta = $scope.state.ninja;
+
+      sta.intro = false;
+      sta.settings = false;
+      sta.searching = false;
+      sta.current = e;
+      $scope.refreshNinjaFrame(e.Url);
+      // get detail of links
+      $http.get("http://utopies-concretes.org/data/network/links/"+e.Id+"_in.csv")
+      .success(function(data) {
+        $scope.state.ninja.current.ins = _.map(new CSV(data, {header:true, cast:true}).parse(), function(i) {
+          return _.extend($scope.ninjalistById[i.id], {count:parseInt(i.count)});
+        });
+        $scope.state.ninja.current.ins = _.sortBy($scope.state.ninja.current.ins,'count').reverse();
+        if(!$scope.current.ins) $scope.current.ins = [];
+      });
+
+      $http.get("http://utopies-concretes.org/data/network/links/"+e.Id+"_out.csv")
+      .success(function(data) {
+        $scope.state.ninja.current.outs = _.map(new CSV(data, {header:true, cast:true}).parse(), function(i) {
+          return _.extend($scope.ninjalistById[i.id], {count:parseInt(i.count)});
+        });
+        $scope.state.ninja.current.outs = _.sortBy($scope.state.ninja.current.outs,'count').reverse();
+        if(!$scope.state.ninja.current.outs) $scope.current.outs = [];
+      });
+    };
+    $scope.updateNinjaSuggestions = function() {
+      $scope.ninjasuggestions = [];
+      if($scope.state.ninja.input.length>1) {
+        var rg = new RegExp($scope.state.ninja.input,'i');
+        _.each($scope.ninjalist, function(l) {
+          if(rg.test(l.Urls))
+            $scope.ninjasuggestions.push(l);
+        })
+      }
+    };
+
+    $scope.initNinja = function() {
+      var url = "http://utopies-concretes.org/data/network/network_in.csv";
+      $http
+      .get(url)
+      .success(function(data) {
+        //console.log(data);
+
+        $scope.ninjalist = new CSV(data, {header:true, cast:true}).parse();
+        $scope.state.ninja.count = $scope.list.length;
+        
+        //console.log(list);
+        var maxIn = 0;
+        var maxOut = 0;
+        _.each($scope.list, function(l) {
+          l.UrlsArray = l.Urls.split(" ");
+          l.Url = l.UrlsArray[0];
+          l.InDegree = parseInt(l.InDegree);
+          l.OutDegree = parseInt(l.OutDegree);
+          maxIn = Math.max(maxIn,l.InDegree);
+          maxOut = Math.max(maxOut,l.OutDegree);
+        });
+        $scope.list = _.sortBy($scope.ninjalist, function(e) {
+          return e.Url.replace(/https*:\/\/(www\.)*/,"");
+        });
+        $scope.state.ninja.in.MAX = maxIn;
+        $scope.state.ninja.out.MAX = maxOut;
+
+        $scope.ninjalist_original = $scope.ninjalist;
+        $scope.ninjalistById = _.indexBy($scope.ninjalist, 'Id');
+        
+        $scope.resetNinjaSettings();
+      })
+      .error(function(err) {
+        console.log(err);
+      });
+    };
+
+
+    ///////////////////////////////////////////////////////////////
+    ///////////////////// DO THINGS !! ////////////////////////////
+    ///////////////////////////////////////////////////////////////
     var initMap = function() {
       fetchDataMap(function() {
         
@@ -1308,6 +1431,9 @@ angular.module('manifest.maincontroller', ['underscore','config'])
           //loadTagGraph($scope);
           loadLinksGraph($scope);
         },500);
+      }
+      if($scope.state.layout=='ninja') {
+        initNinja();
       }
 
       // (to improve ?) init here to trigger the watch on footer content set though compile-here directive

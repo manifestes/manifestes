@@ -46,6 +46,16 @@ warning: needs to have a running local web server
 
 will only (re) produce the text sections whose slug starts with «abcd» (useful to avoid doing them all for each change)
 
+### build ninja links
+> grunt links
+
+- will run `prepair_hyperlinks_counts.js`
+- aka will load `http://localhost/manifestes/data/network/network_links.csv` (make sure you have this repo available on a local webserver)
+- will compute *Source, Target, HyperlinkCount* columns and produce, for each {{ID}} entity:
+    - `data/network/links/{{ID}}_in.csv`
+    - `data/network/links/{{ID}}_out.csv`
+- ... containing list of *id,count* links
+
 
 ## How to DIY the .gexf network of websites
 ### with Hyphe

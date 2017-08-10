@@ -38,6 +38,21 @@ angular.module('manifest.directives', [])
     };
   })
 
+  // useful for inputs
+  .directive('selectOnClick', ['$window', function ($window) {
+      return {
+          restrict: 'A',
+          link: function (scope, element, attrs) {
+              element.on('click', function () {
+                  if (!$window.getSelection().toString()) {
+                      // Required for mobile Safari
+                      this.setSelectionRange(0, this.value.length)
+                  }
+              });
+          }
+      };
+  }])
+
   // to be able to use directives (especially href!) on the ng-binded-html !
   // thanks to:
   // http://stackoverflow.com/questions/17417607/angular-ng-bind-html-unsafe-and-directive-within-it

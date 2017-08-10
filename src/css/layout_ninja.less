@@ -1,0 +1,335 @@
+@colorMagic: #599f7f;
+@colorMagicDark: #366650;
+@colorOrange: #f0d075;
+
+@banner: 28px;
+@menu: 50px;
+
+/* hack to allow linebreaks, aka « &#10; » within hint.css tooltips */
+/* see https://github.com/chinchang/hint.css/issues/100 */
+
+[data-hint]::after, [data-hint]:after {
+  z-index: 999999;
+  white-space: pre !important;
+  text-align: left;
+  line-height: 0.9rem;
+}
+
+.ninja {
+  .block {
+    box-sizing: border-box;
+    display: table-cell;
+    position: relative;
+    width: @menu;
+    top: 0;
+  }
+  .button {
+    cursor: pointer;
+    i {
+      .absolute-centered();
+      font-size: 1.5rem;
+    }
+    &:hover { background: #474747; }
+  }
+  .degcount {
+    display: inline-block;
+    width: 27px;
+    padding: 1px 4px;
+    margin-right: 5px;
+    text-align: left;
+  }
+
+  /* //////////////////////////////////// */
+
+  .settings {
+    z-index: 100;
+    position: absolute;
+    display: table;
+    top: 0;
+    &.active {
+      top: @menu;
+    }
+    .transition(top 0.4s);
+    width: 3*@menu;
+    background: darkred;
+    &.in {
+      left: 0;
+    }
+    &.out {
+      right: 0; 
+    }
+    .filter {
+      display: table-cell;
+      height: @menu;
+      cursor: pointer;
+      div {
+        .absolute-centered();
+        top: 62%;
+        font-size: 0.8rem;
+        color: white;
+        font-style: italic;
+      }
+    }
+    .setting {
+      display: table-cell;
+      position: relative;
+      width: @menu;
+      height: @menu;
+      span {
+        position: absolute;
+        top: 4px;
+        left: 50%;
+        .transform(translate(-50%,0));
+        color: whitesmoke;
+        font-style: italic;
+        font-size: 0.65em;
+      }
+      div {
+        .absolute-centered();
+        top: 64%;
+        width: 83%;
+        height: 50%;
+        input {
+          box-sizing: border-box;
+          border: none;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          font-size: 0.7em;
+        }
+      }
+    }
+  }
+
+  /* //////////////////////////////////// */
+
+  .header {
+    z-index: 110;
+    box-sizing: border-box;
+    position: relative;
+    display: table;
+    width: 100%;
+    height: @menu;
+
+    background: black;
+    color: whitesmoke;
+
+    .refresh {
+      background: @colorMagic;
+      &:hover { background: #72b496; }
+    }
+    .search {
+      box-sizing: border-box;
+      height: @menu;
+      font-size: 1em;
+      form {
+        /*.absolute-vertical-centered();*/
+        height: 100%;
+        width: 100%;
+        input {
+          box-sizing: border-box;
+          height: 100%;
+          width: 100%;
+          border: none;
+          padding: 4px 14px;
+        }
+      }
+      .suggestions {
+        max-height: 300px;
+        width: 100%;
+        
+        background: white;
+        color: grey;
+        
+        overflow-x: hidden;
+        overflow-y: scroll;
+        .suggestion {
+          font-size: 0.8em;
+          padding: 2px 4px 2px 3px;
+          &.odd {
+            background: #f2f2f2;
+          }
+          &:hover {
+            background: lightgrey;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .degree {
+      background: @colorMagicDark;
+      text-align: center;
+      span:first-child {
+        position: absolute;
+        top: 4px;
+        left: 50%;
+        .transform(translate(-50%,0));
+        color: whitesmoke;
+        font-style: italic;
+        font-size: 0.65em;
+      }
+      .count {
+        .absolute-centered();
+        top: 64%;
+        color: white;
+        font-size: 1.1em;
+      }
+      &.in {
+        left: 0;
+        .details {left:0;}
+      }
+      &.out {
+        right: 0;
+        .details {right:0;}
+      }
+      .details {
+        box-sizing: border-box;
+        position: absolute;
+        top: @menu;
+        width: 300px;
+        padding: 3px 2px;
+        background: grey;
+        text-align: left;
+        font-size: 0.7rem;
+        color: white;
+
+        cursor: pointer;
+        display: none;
+
+        .site {
+          div {
+            display: inline-block;
+          }
+          .degcount {
+            background: none;
+          }
+          &:hover {
+            background: darkgrey;
+          }
+        }
+      }
+      &:hover .details {
+        display: block;
+      }
+    }
+    &.customing .degree { background: darkred; }
+
+    .setter {
+      i {
+        font-size: 1.6rem;
+      }
+      div {
+        .absolute-centered();
+        padding: 0px 2px;
+        font-size: 0.55rem;
+        background: white;
+        font-size: 0.7rem;
+      }
+    }
+    /*&.customing .setter { color: @colorMagic; }*/
+
+    .flag {
+      line-height: 10px;
+      text-align: center;
+      i {
+        top: 27%;
+        font-size: 0.9em;
+      }
+      span {
+        position: absolute;
+        left: 0px;
+        top: 47%;
+        font-size: 0.6em;
+        font-style: italic;
+      }
+    }
+  }
+
+  .banner {
+    z-index: 80;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: @banner;
+    padding: 0px 8px;
+    overflow: hidden;
+    font-size: 0.8em;
+    background: @colorOrange;
+
+    border-bottom: 7px solid @colorMagic;
+
+    top: 0;
+    &.visible {
+      top: @menu;
+    }
+    .transition(top 0.4s);
+
+    .urls {
+      .absolute-vertical-centered();
+      .url {
+        margin: 0px 5px;
+        text-decoration: underline;
+        color: #353574;
+        font-style: italic;
+        cursor: pointer;
+        a {
+          color: #353574;
+        }
+        a:hover, span:hover {
+          color: black;
+        }
+      }
+    }
+  }
+
+
+  .splash {
+    z-index: 60;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    top: @menu;
+    bottom: 0;
+    background: @colorOrange;
+    overflow-y: scroll;
+    font-size: 1.1em; 
+    .text {
+      .absolute-centered();
+      .fa {
+        font-size: 1.2rem;
+        padding: 0px 5px;
+      }
+      a {
+        color: darkblue;
+      }
+    }
+  }
+
+  .frame {
+    z-index: 50;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    top: @menu + @banner;
+    bottom: 0;
+    
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  }
+}
+
+
+@media (max-width: 925px) {
+  .urls .visiting {
+    display: none;
+  }
+  .splash .text {
+    left: 0 !important;
+    top: 0 !important;
+    .erase-transform();
+    padding: 30px;
+  }
+}
