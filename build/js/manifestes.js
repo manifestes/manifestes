@@ -3545,7 +3545,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,langs:['fr','es','en'],datapath:'data/',assets:'build/',lastupdate:'10 August 2017 - 1:35'})
+.constant('settings', {dev:false,langs:['fr','es','en'],datapath:'data/',assets:'build/',lastupdate:'10 August 2017 - 4:05'})
 
 ;
 ;
@@ -3576,7 +3576,7 @@ angular.module('manifest.maincontroller', ['underscore','config'])
     $scope.settings.smallDevice = $window.innerWidth < 1025;
 
     var layout = $routeParams.layout ?
-      (["home","texts","textsprint","quotes","links","network","map","mapprint"].indexOf($routeParams.layout)==-1 ? "texts" : $routeParams.layout) :
+      (["home","texts","textsprint","quotes","links","network","map","mapprint","ninja"].indexOf($routeParams.layout)==-1 ? "texts" : $routeParams.layout) :
       "home";
     var tags = [];
     //var tags = $routeParams.tags ? $routeParams.tags.split(',') : [];
@@ -4843,8 +4843,9 @@ angular.module('manifest.maincontroller', ['underscore','config'])
     };
 
     $scope.refreshNinjaFrame = function(url) {
+      console.log("Ninja loading", url);
       $scope.state.ninja.intro = false;
-      $scope.ninjaurl = $sce.trustAsResourceUrl(url);
+      $scope.state.ninja.url = $sce.trustAsResourceUrl(url);
     };
     $scope.loadRandomNinja = function() {
       if($scope.ninjalist.length==0)
@@ -4859,6 +4860,7 @@ angular.module('manifest.maincontroller', ['underscore','config'])
       sta.searching = false;
       sta.current = e;
       $scope.refreshNinjaFrame(e.Url);
+
       // get detail of links
       $http.get("http://utopies-concretes.org/data/network/links/"+e.Id+"_in.csv")
       .success(function(data) {
@@ -4866,7 +4868,7 @@ angular.module('manifest.maincontroller', ['underscore','config'])
           return _.extend($scope.ninjalistById[i.id], {count:parseInt(i.count)});
         });
         $scope.state.ninja.current.ins = _.sortBy($scope.state.ninja.current.ins,'count').reverse();
-        if(!$scope.current.ins) $scope.current.ins = [];
+        if(!$scope.state.ninja.current.ins) $scope.state.ninja.current.ins = [];
       });
 
       $http.get("http://utopies-concretes.org/data/network/links/"+e.Id+"_out.csv")
@@ -4875,21 +4877,21 @@ angular.module('manifest.maincontroller', ['underscore','config'])
           return _.extend($scope.ninjalistById[i.id], {count:parseInt(i.count)});
         });
         $scope.state.ninja.current.outs = _.sortBy($scope.state.ninja.current.outs,'count').reverse();
-        if(!$scope.state.ninja.current.outs) $scope.current.outs = [];
+        if(!$scope.state.ninja.current.outs) $scope.state.ninja.current.outs = [];
       });
     };
     $scope.updateNinjaSuggestions = function() {
-      $scope.ninjasuggestions = [];
+      $scope.state.ninja.suggestions = [];
       if($scope.state.ninja.input.length>1) {
         var rg = new RegExp($scope.state.ninja.input,'i');
         _.each($scope.ninjalist, function(l) {
           if(rg.test(l.Urls))
-            $scope.ninjasuggestions.push(l);
+            $scope.state.ninja.suggestions.push(l);
         })
       }
     };
 
-    $scope.initNinja = function() {
+    var initNinja = function() {
       var url = "http://utopies-concretes.org/data/network/network_in.csv";
       $http
       .get(url)
@@ -4897,12 +4899,12 @@ angular.module('manifest.maincontroller', ['underscore','config'])
         //console.log(data);
 
         $scope.ninjalist = new CSV(data, {header:true, cast:true}).parse();
-        $scope.state.ninja.count = $scope.list.length;
+        $scope.state.ninja.count = $scope.ninjalist.length;
         
         //console.log(list);
         var maxIn = 0;
         var maxOut = 0;
-        _.each($scope.list, function(l) {
+        _.each($scope.ninjalist, function(l) {
           l.UrlsArray = l.Urls.split(" ");
           l.Url = l.UrlsArray[0];
           l.InDegree = parseInt(l.InDegree);
@@ -4910,7 +4912,7 @@ angular.module('manifest.maincontroller', ['underscore','config'])
           maxIn = Math.max(maxIn,l.InDegree);
           maxOut = Math.max(maxOut,l.OutDegree);
         });
-        $scope.list = _.sortBy($scope.ninjalist, function(e) {
+        $scope.ninjalist = _.sortBy($scope.ninjalist, function(e) {
           return e.Url.replace(/https*:\/\/(www\.)*/,"");
         });
         $scope.state.ninja.in.MAX = maxIn;

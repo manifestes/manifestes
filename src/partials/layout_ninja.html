@@ -108,7 +108,7 @@
                     class="suggestion"
                     ng-class="{odd:$index%2==0}"
                     ng-repeat="u in state.ninja.suggestions"
-                    ng-click="loadNinjaNow(u);">
+                    ng-click="loadNowNinja(u);">
                     <span class="degcount">{{u.InDegree}}</span>
                     {{u.Urls|killhttp}}
                 </div>
@@ -156,7 +156,7 @@
         </div>
     </div>
     <div class="frame">
-        <iframe ng-src="{{url}}"></iframe>
+        <iframe ng-src="{{state.ninja.url}}"></iframe>
     </div>
 
 </div>

@@ -77,15 +77,18 @@
           <i class="fa fa-calendar"></i>
           <span>{{meta.menu.calendar}} <i class="fa fa-external-link-square"></i></span>
         </a>
-        <a
+        <div
           class="button hover hint--bottom"
           id="ninja"
           ng-if="state.lang=='fr'"
           data-hint="{{meta.menu.ninjatip}}"
           ng-click="changeLayout('ninja');">
           <i class="fa fa-magic"></i>
+          <a class="ext hint--bottom" href="{{meta.source.ninja}}" target="_blank" data-hint="{{meta.menu.sourcetip}}">
+            <i class="fa fa-file-text"></i>
+          </a>
           <span>{{meta.menu.ninja}}</span>
-        </a>
+        </div>
         <div
           class="button hover"
           ng-if="state.lang=='fr'"
@@ -173,7 +176,8 @@
       <!-- SEARCH ZONE -->
       <div
         class="searchinput"
-        ng-class="{inactive: state.layout=='map' || state.layout=='full' || state.layout=='home'}"
+        ng-class="{inactive:
+          state.layout=='ninja' || state.layout=='map' || state.layout=='full' || state.layout=='home'}"
         >
 
         <div

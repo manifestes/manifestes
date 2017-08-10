@@ -5,16 +5,6 @@
 @banner: 28px;
 @menu: 50px;
 
-/* hack to allow linebreaks, aka « &#10; » within hint.css tooltips */
-/* see https://github.com/chinchang/hint.css/issues/100 */
-
-[data-hint]::after, [data-hint]:after {
-  z-index: 999999;
-  white-space: pre !important;
-  text-align: left;
-  line-height: 0.9rem;
-}
-
 .ninja {
 
   box-sizing: border-box;
@@ -263,7 +253,7 @@
     z-index: 50;
     box-sizing: border-box;
     position: absolute;
-    width: 100%;
+    width: 300%; /* to force having one single line of text */
     height: @banner;
     padding: 0px 8px;
     overflow: hidden;
@@ -283,7 +273,7 @@
       position: absolute;
       top: 50%;
       .transform(translate(0,-50%));
-      
+
       .url {
         margin: 0px 5px;
         text-decoration: underline;

@@ -19,9 +19,10 @@ body {
 }
 
 /* hack to allow linebreaks, aka « &#10; » within hint.css tooltips */
-.hint:after, [data-hint]:after {
+/* https://github.com/chinchang/hint.css/issues/100 */
+[class*=hint--]:after {
   z-index: 9999999999;
-  white-space: pre !important;
+  white-space: pre;
   text-align: left;
 }
 
