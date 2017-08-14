@@ -156,7 +156,7 @@ mapcredits:
         color: bce8f1
         url: http://www.colibris-lemouvement.org/oasis/les-oasis-en-france
         type: json
-        _howto: >
+        _howtomanual: >
             src: http://colibris.cc/oasis/wakka.php?wiki=VisualiserCarte2/iframe
             console Chrome:
             var m = marker.map(function(e) { return {geo:e._latlng, title:e.options.title, html:e._popup._content}; })
@@ -224,6 +224,23 @@ mapcredits:
         url: http://www.fermesdavenir.org/
         type: geojson
         _kmz: https://mapsengine.google.com/map/kml?mid=1fy6Fta6qnNkzLroBSTNCggzIVXY
+    -   slug: graino
+        name: Grainothèques
+        description: "connaissez-vous la grainothèque\nproche de chez vous ?"
+        color: 66c9c9
+        url: http://umap.openstreetmap.fr/fr/map/carte-des-grainotheques_5922
+        type: geojson
+        _geojson: http://umap.openstreetmap.fr/fr/datalayer/11026/
+    -   slug: idopi
+        hide: true
+        name: Idopi
+        description: "faciliter une mise en relation,\nde proche en proche,\ndes communautés locales voisines"
+        color: afc975
+        url: http://idopi.org
+        type: geojson
+        _geojson: http://umap.openstreetmap.fr/fr/map/idopiorg_XXXXX
+        _comment: >
+            need merge of all data layers (!)
     -   slug: collec
         name: Collecteurs de déchets
         description: "Un Trash Hero jette aussi peu\nde déchets que possible,\nréutilise autant que possible"

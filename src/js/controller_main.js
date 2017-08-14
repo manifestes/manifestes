@@ -985,6 +985,9 @@ angular.module('manifest.maincontroller', ['underscore','config'])
             description = "Collecteurs de déchets";
             web = prop.description;
           }
+          if(c.slug=="graino") {
+            name = prop.name;
+          }
           if(c.slug=="cnlii") {
             var ds = totext(prop.description).replace(/{{.*}}/,"");
             name = prop.name;

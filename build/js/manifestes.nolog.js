@@ -3545,7 +3545,7 @@ angular.module('manifest', [
 
 angular.module('config', [])
 
-.constant('settings', {dev:false,langs:['fr','es','en'],datapath:'data/',assets:'build/',lastupdate:'10 August 2017 - 4:29'})
+.constant('settings', {dev:false,langs:['fr','es','en'],datapath:'data/',assets:'build/',lastupdate:'14 August 2017 - 3:03'})
 
 ;
 ;
@@ -4536,6 +4536,9 @@ angular.module('manifest.maincontroller', ['underscore','config'])
             name = prop.name;
             description = "Collecteurs de déchets";
             web = prop.description;
+          }
+          if(c.slug=="graino") {
+            name = prop.name;
           }
           if(c.slug=="cnlii") {
             var ds = totext(prop.description).replace(/{{.*}}/,"");
