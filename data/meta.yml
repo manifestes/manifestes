@@ -8,6 +8,8 @@ source:
     texts: https://github.com/manifestes/manifestes/blob/gh-pages/data/texts_fr.yml
     quotes: https://github.com/manifestes/manifestes/blob/gh-pages/data/quotes_fr.yml
     links: https://github.com/manifestes/manifestes/blob/gh-pages/data/links_fr.yml
+    images: https://github.com/manifestes/manifestes/blob/gh-pages/data/inspirations/
+    books: http://unebonnesourcedelivres?
     network: https://github.com/manifestes/manifestes/blob/gh-pages/data/network/network_in.csv
     map: https://framacalc.org/carto
     ninja: https://github.com/manifestes/manifestes/blob/gh-pages/data/network/network_in.csv
@@ -91,6 +93,10 @@ disclaimer:
 
 
         **pour naviguer par thématiques, activez les tags** grâce à l'icône en haut à gauche dans le menu (ne marche pas sur mobile)
+    images: >
+        lavons-nous les yeux !
+    books: >
+        vérifiez les droits d'auteurs avant chaque téléchargement !
     network: >
         **le réseau de tous les sites internet** et des liens qu'ils ont entre eux (approche quantitative)
 
@@ -122,7 +128,7 @@ menu:
     taggingon: désactiver les thématiques
     search: chercher
     addzone: ajouter !
-    sourcetip: voir les données brutes
+    sourcetip: "voir la source\ndes données"
     buttons:
         -   slug: ninja
             label: ninja !
@@ -151,8 +157,7 @@ menu:
             icon: fa-bullhorn
     calendar: agenda
     calendartip: démosphère !
-    catalog: TOUT
-    catalogtip: voir toutes\nles données
+    catalogtip: "voir toutes\nles données"
     pad:
         texts:
             link: "http://annuel.framapad.org/p/manifestes"

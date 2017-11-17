@@ -68,7 +68,7 @@ module.exports = function(grunt) {
           settings: {
             dev: true,
             langs: ['fr','es','en'],
-            menus: ["texts","quotes","links","images","books","network","map"],
+            layouts: ['home','texts','quotes','links','images','books','network','map','mapprint','ninja','catalog','catalogprint'],
             datapath: '../data/',
             assets: './',
             lastupdate: '<%= grunt.template.today("dd mmmm yyyy - h:MM") %>'
@@ -83,6 +83,7 @@ module.exports = function(grunt) {
           settings: {
             dev: false,
             langs: ['fr','es','en'],
+            layouts: ['home','texts','quotes','links','images','books','network','map','mapprint','ninja','catalog','catalogprint'],
             datapath: 'data/',
             assets: 'build/',
             lastupdate: '<%= grunt.template.today("dd mmmm yyyy - h:MM") %>'
@@ -285,13 +286,13 @@ module.exports = function(grunt) {
       //   },
       //   dest:'data/map/map_communecter.json'
       // }
-    },
-
-    execute: {
-        target: {
-            src: ['prepair_hyperlinks_counts.js']
-        }
     }
+
+    // execute: {
+    //     target: {
+    //         src: ['prepair_hyperlinks_counts.js']
+    //     }
+    // }
 
 
   });
@@ -316,8 +317,9 @@ module.exports = function(grunt) {
   // we first set constants to prod to build, then go back to dev
   grunt.registerTask('default', ['tree','ngconstant:production','jshint','env:prod','less:prod','concat:js','concat:css','copy','strip','uglify','preprocess:prod','ngconstant:development']);
   grunt.registerTask('map',['curl']);
-  grunt.registerTask('links', ['execute']);
+  
 
+  //grunt.registerTask('links', ['execute']); // you can directly node something.js (see README.md)
   
 
 };

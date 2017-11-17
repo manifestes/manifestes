@@ -503,7 +503,7 @@ span.highlight, div.highlight { /* searched words */
 
         span {
           display: none;
-          line-height: 81px;
+          line-height: 68px;
           i {
             font-size: 0.9em;
           }
@@ -530,7 +530,6 @@ span.highlight, div.highlight { /* searched words */
         }
           
         &:hover {
-          /*background: @mostLightColor;*/
           a.ext {
             opacity: 0.5;
           }
@@ -544,7 +543,11 @@ span.highlight, div.highlight { /* searched words */
             background: white;
             i { color: grey; }
           }
-          span { display: block; color: white; }
+          span {
+            line-height: 81px;
+            display: block;
+            color: white;
+          }
         }
         
         &.inactive {
@@ -557,10 +560,17 @@ span.highlight, div.highlight { /* searched words */
       }
 
       .button.master {
-        width: 78px;
+        width: 60px;
         height: 100%;
-        padding: 11px 0px;
-        font-size: 0.75em;
+        line-height: 1.1em;
+        font-size: 1.1em;
+        &:hover {
+          background: @mostLightColor;
+        }
+        &.active {
+          background: @redColor;
+          i { color: white; }
+        }
       }
     }
 

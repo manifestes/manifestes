@@ -1523,7 +1523,7 @@ div.highlight {
 }
 .header .menu .buttons .button span {
   display: none;
-  line-height: 81px;
+  line-height: 68px;
 }
 .header .menu .buttons .button span i {
   font-size: 0.9em;
@@ -1554,9 +1554,6 @@ div.highlight {
 .header .menu .buttons .button a.ext:focus:before {
   display: none;
 }
-.header .menu .buttons .button:hover {
-  /*background: @mostLightColor;*/
-}
 .header .menu .buttons .button:hover a.ext {
   opacity: 0.5;
 }
@@ -1579,6 +1576,7 @@ div.highlight {
 }
 .header .menu .buttons .button.active span,
 .header .menu .buttons .button.active:hover span {
+  line-height: 81px;
   display: block;
   color: white;
 }
@@ -1591,10 +1589,19 @@ div.highlight {
   font-style: italic;
 }
 .header .menu .buttons .button.master {
-  width: 78px;
+  width: 60px;
   height: 100%;
-  padding: 11px 0px;
-  font-size: 0.75em;
+  line-height: 1.1em;
+  font-size: 1.1em;
+}
+.header .menu .buttons .button.master:hover {
+  background: #e4e4e4;
+}
+.header .menu .buttons .button.master.active {
+  background: #883e3e;
+}
+.header .menu .buttons .button.master.active i {
+  color: white;
 }
 .header .menu .searchinput {
   z-index: 35;
@@ -2935,7 +2942,7 @@ body.layout-mapprint .container {
   -ms-transition: top 0.4s;
   transition: top 0.4s;
   width: 150px;
-  background: darkred;
+  background: #883e3e;
 }
 .ninja .settings.active {
   top: 50px;
@@ -3131,7 +3138,7 @@ body.layout-mapprint .container {
   display: block;
 }
 .ninja .header.customing .degree {
-  background: darkred;
+  background: #883e3e;
 }
 .ninja .header .setter i {
   font-size: 1.6rem;

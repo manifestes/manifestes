@@ -3568,9 +3568,11 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
     $scope.settings = settings;
     $scope.settings.smallDevice = $window.innerWidth < 1025;
 
+    // what is the current layout ?
     var layout = $routeParams.layout ?
-      (_.union(["home","mapprint","catalogprint"],settings.menus).indexOf($routeParams.layout)==-1 ? "texts" : $routeParams.layout) :
+      (settings.layouts.indexOf($routeParams.layout)==-1 ? "texts" : $routeParams.layout) :
       "home";
+
     var tags = [];
     //var tags = $routeParams.tags ? $routeParams.tags.split(',') : [];
     var intro = !$routeParams.layout;
@@ -3581,13 +3583,15 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
       texts: [],
       quotes: [],
       links: [],
-      images: []
+      images: [],
+      catalog: []
     }
     $scope.dataArrayFilt = { // displayed list
       texts: [],
       quotes: [],
       links: [],
-      images: []
+      images: [],
+      catalog: []
     }
 
     $scope.tagsContents = {}; // .tag .label .description .icon for each tag
@@ -4010,7 +4014,7 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
         });
       }
 
-      ///////////////////////////////////// YAML DATA
+      ///////////////////////////////////// YML DATA
       if(["meta","texts","quotes","links","images","catalog","map"].indexOf(which)!==-1) {
 
         var filename = which;
@@ -4117,7 +4121,8 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
           if(which=="links") {
             var singlelink = res.split('\n\n');
 
-            $scope.templinks4graph = [];
+            // test see above...
+            //$scope.templinks4graph = [];
 
             _.each(singlelink, function(l) {
 
@@ -4132,14 +4137,14 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
               });
 
               // (test/dev) just to see links over graph
-              if(tgs && tgs.length>2) {
-                _.each(tgs, function(t1) {
-                  _.each(tgs, function(t2) {
-                    if(t1!=t2)
-                      $scope.templinks4graph.push([t1,t2]);
-                  });
-                });
-              }
+              // if(tgs && tgs.length>2) {
+              //   _.each(tgs, function(t1) {
+              //     _.each(tgs, function(t2) {
+              //       if(t1!=t2)
+              //         $scope.templinks4graph.push([t1,t2]);
+              //     });
+              //   });
+              // }
 
               var htm = $scope.md2Html( L[1] );
 
@@ -4515,124 +4520,6 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
       }
     };
     
-    ///////////////////////////////////////////////////////////////
-    var parsemap = function(c,data,foreachdo) {
-
-      if(c.type=="csv") {
-        var ms = new CSV(data, {header:true, cast:false}).parse();
-        $scope.points = ms; // testing an index (print)
-        _.each(ms, function(m,k) {
-          // if(!layers[m.source]) {
-          //   layers[m.source] = new L.LayerGroup().addTo(overlays);
-          // }
-
-          // don't look inside csv for source (unuseful column ;)
-          m.source = c.slug;
-          if(foreachdo) foreachdo(m);
-        });
-      }
-
-      if(c.type=="geojson") {
-        _.each(data.features, function(m) {
-
-          var prop = m.properties;
-
-          // default
-          var name = totext(prop.title);
-          var description = prop.description;
-          var web =  "";
-
-          if(c.slug=='report') {
-            name = name.replace(/Il y a \d* jours./,"");
-            web = c.url +"/"+ prop.title.match(/href:\'([^\']*)\'/)[1];
-          }
-          if(c.slug=='basta') {
-            web = prop.description.match(/<a href=\'([^\']*)\'/)[1];
-          }
-          if(c.slug=='passeco') {
-            web = c.url +"/"+ prop.title.match(/<a href=\"([^\"]*)\"/)[1];
-          }
-          if(c.slug=='ecole' || c.slug=='fermav') {
-            name = prop.Name;
-          }
-          if(c.slug=='collec') {
-            name = prop.name;
-            description = "Collecteurs de déchets";
-            web = prop.description;
-          }
-          if(c.slug=="graino") {
-            name = prop.name;
-          }
-          if(c.slug=="cnlii") {
-            var ds = totext(prop.description).replace(/{{.*}}/,"");
-            name = prop.name;
-            description = truncatetext(ds);
-            web = /\[\[.*\]\]/.test(ds) ? ds.match(/\[\[(.*)\]\]/)[1].split('|')[0] : "";
-          }
-
-          if(foreachdo) foreachdo({
-            source: c.slug,
-            name: name,
-            description: description,
-            web: web,
-            lat: m.geometry.coordinates[1],
-            lng: m.geometry.coordinates[0]
-          });
-        });
-      }
-
-      if(c.type=="xml") {
-        var json = xmlToJSON.parseString(data, {
-          childrenAsArray: false
-        });
-        //console.log("Age de:",json);
-        _.each(json.markers.marker, function(m) {
-          foreachdo({
-            source: c.slug,
-            name: m._attr.name._value,
-            description: "Point de vente de L'âge de faire",
-            address: m._attr.address._value,
-            lat: m._attr.lat._value,
-            lng: m._attr.lng._value
-          });
-        });
-      }
-
-      if(c.type=="json") {
-        _.each(data, function(m) {
-
-          if(c.slug=="circc")
-            if(foreachdo) foreachdo({
-              source: "circc",
-              name: m.nom,
-              description: m.comm,
-              address: m.loc,
-              web: m.web,
-              lat: m.lat,
-              lng: m.lng
-            });
-
-          if(c.slug=="ffdn" && m.coordinates)
-            if(foreachdo) foreachdo({
-              source: "ffdn",
-              name: m.shortname,
-              description: m.popup,
-              lat: m.coordinates.latitude,
-              lng: m.coordinates.longitude
-            });
-
-          if(c.slug=="oasis")
-            if(foreachdo) foreachdo({
-              source: "oasis",
-              name: m.title,
-              description: truncatetext(totextwithbreak(m.html)),
-              lat: m.geo.lat,
-              lng: m.geo.lng
-            });
-        });
-      }
-
-    };
 
     ///////////////////////////////////////////////////////////////
     var do_demosphere = function(c,callback) {
@@ -4751,7 +4638,7 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
       .get(settings.datapath+'/map/map_'+c.slug+"."+c.type)
       .success(function(data) {
 
-        parsemap(c,data,addMarker);
+        parseMapCreditAndDo(c,data,addMarker);
         
         c.loaded = true;
         c.loading = false;
@@ -5096,6 +4983,128 @@ angular.module('manifest.filters', [])
       return list.join(", ");
     }
   });
+;
+
+'use strict';
+
+///////////////////////////////////////////////////////////////
+var parseMapCreditAndDo = function(c,data,foreachdo) {
+
+  if(c.type=="csv") {
+    var ms = new CSV(data, {header:true, cast:false}).parse();
+    //$scope.points = ms; // testing an index (print)
+    _.each(ms, function(m,k) {
+      // if(!layers[m.source]) {
+      //   layers[m.source] = new L.LayerGroup().addTo(overlays);
+      // }
+
+      // don't look inside csv for source (unuseful column ;)
+      m.source = c.slug;
+      if(foreachdo) foreachdo(m);
+    });
+  }
+
+  if(c.type=="geojson") {
+    _.each(data.features, function(m) {
+
+      var prop = m.properties;
+
+      // default
+      var name = totext(prop.title);
+      var description = prop.description;
+      var web =  "";
+
+      if(c.slug=='report') {
+        name = name.replace(/Il y a \d* jours./,"");
+        web = c.url +"/"+ prop.title.match(/href:\'([^\']*)\'/)[1];
+      }
+      if(c.slug=='basta') {
+        web = prop.description.match(/<a href=\'([^\']*)\'/)[1];
+      }
+      if(c.slug=='passeco') {
+        web = c.url +"/"+ prop.title.match(/<a href=\"([^\"]*)\"/)[1];
+      }
+      if(c.slug=='ecole' || c.slug=='fermav') {
+        name = prop.Name;
+      }
+      if(c.slug=='collec') {
+        name = prop.name;
+        description = "Collecteurs de déchets";
+        web = prop.description;
+      }
+      if(c.slug=="graino") {
+        name = prop.name;
+      }
+      if(c.slug=="cnlii") {
+        var ds = totext(prop.description).replace(/{{.*}}/,"");
+        name = prop.name;
+        description = truncatetext(ds);
+        web = /\[\[.*\]\]/.test(ds) ? ds.match(/\[\[(.*)\]\]/)[1].split('|')[0] : "";
+      }
+
+      if(foreachdo) foreachdo({
+        source: c.slug,
+        name: name,
+        description: description,
+        web: web,
+        lat: m.geometry.coordinates[1],
+        lng: m.geometry.coordinates[0]
+      });
+    });
+  }
+
+  if(c.type=="xml") {
+    var json = xmlToJSON.parseString(data, {
+      childrenAsArray: false
+    });
+    //console.log("Age de:",json);
+    _.each(json.markers.marker, function(m) {
+      foreachdo({
+        source: c.slug,
+        name: m._attr.name._value,
+        description: "Point de vente de L'âge de faire",
+        address: m._attr.address._value,
+        lat: m._attr.lat._value,
+        lng: m._attr.lng._value
+      });
+    });
+  }
+
+  if(c.type=="json") {
+    _.each(data, function(m) {
+
+      if(c.slug=="circc")
+        if(foreachdo) foreachdo({
+          source: "circc",
+          name: m.nom,
+          description: m.comm,
+          address: m.loc,
+          web: m.web,
+          lat: m.lat,
+          lng: m.lng
+        });
+
+      if(c.slug=="ffdn" && m.coordinates)
+        if(foreachdo) foreachdo({
+          source: "ffdn",
+          name: m.shortname,
+          description: m.popup,
+          lat: m.coordinates.latitude,
+          lng: m.coordinates.longitude
+        });
+
+      if(c.slug=="oasis")
+        if(foreachdo) foreachdo({
+          source: "oasis",
+          name: m.title,
+          description: truncatetext(totextwithbreak(m.html)),
+          lat: m.geo.lat,
+          lng: m.geo.lng
+        });
+    });
+  }
+
+};
 ;
 
 
@@ -5464,6 +5473,6 @@ var loadTagGraph = function(scope) {
 
 angular.module('settings', [])
 
-.constant('settings', {dev:false,langs:['fr','es','en'],datapath:'data/',assets:'build/',lastupdate:'17 November 2017 - 2:07'})
+.constant('settings', {dev:false,langs:['fr','es','en'],layouts:['home','texts','quotes','links','images','books','network','map','mapprint','ninja','catalog','catalogprint'],datapath:'data/',assets:'build/',lastupdate:'17 November 2017 - 8:41'})
 
 ;

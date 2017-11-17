@@ -60,12 +60,12 @@
         <div
           class="master button hint--left"
           ng-click="changeLayout('catalog');"
-          ng-class="{active:state.layout=='catalog'}">
+          ng-class="{active:state.layout=='catalog'}"
+          data-hint="{{meta.menu.catalogtip}}">
           <i class="fa fa-database"></i>
           <a class="ext hint--bottom" href="{{meta.source.catalog}}" target="_blank" data-hint="{{meta.menu.sourcetip}}">
             <i class="fa fa-file-text"></i>
           </a>
-          <span>{{meta.menu.catalog}}</span>
         </div>
 
 <!--         <div class="sep">
@@ -216,7 +216,7 @@
 
     <!-- message displayed the first time you arrived on a layout -->
       <div
-      ng-if="state.layout!='textsprint'&&state.layout!='home'"
+      ng-if="state.layout!='textsprint' && state.layout!='home'"
       class="disclopener"
       ng-class="{active: !state.disclaim[state.layout]}"
       ng-click="state.disclaim[state.layout]=true; $event.stopPropagation();">
@@ -224,22 +224,23 @@
     </div>
     <div
       class="disclaimer"
-      ng-if="state.layout!='textsprint'&&state.layout!='home'"
+      ng-if="state.layout!='catalogprint' && state.layout!='home'"
       ng-class="{active: state.disclaim[state.layout]}"
       ng-click="state.disclaim[state.layout]=false;">
 
-      <div ng-if="state.layout=='texts'"
+
+      <div ng-if="
+        state.layout=='texts' ||
+        state.layout=='links' ||
+        state.layout=='quotes' ||
+        state.layout=='images' ||
+        state.layout=='books' ||
+        state.layout=='catalog'"
       class="full" compile-here="md2Html(meta.disclaimer[state.layout])"></div>
-      <div ng-if="state.layout=='links'"
-      class="full" compile-here="md2Html(meta.disclaimer[state.layout])"></div>
-      <div ng-if="state.layout=='quotes'"
-      class="full" compile-here="md2Html(meta.disclaimer[state.layout])"></div>
-      <div ng-if="state.layout=='network'"
+      
+      <div ng-if="state.layout=='network' || state.layout=='map'"
       class="full left" compile-here="md2Html(meta.disclaimer[state.layout])"></div>
-      <div ng-if="state.layout=='map'"
-      class="full left" compile-here="md2Html(meta.disclaimer[state.layout])"></div>
-      <div ng-if="state.layout=='catalog'"
-      class="full" compile-here="md2Html(meta.disclaimer[state.layout])"></div>
+    
 
       <i class="fa fa-times" ng-click="state.disclaim[state.layout] = false;"></i>
     </div>
