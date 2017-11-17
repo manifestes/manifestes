@@ -56,100 +56,49 @@
       
       <!-- RIGHT MENU BUTTONS, REVERSE ORDER-->
       <div class="buttons">
-        <div class="button" id="lang">
-          <i class="fa fa-globe"></i>
-          <span>
-            <a
-              ng-repeat="l in settings.langs"
-              class="setlang"
-              ng-class="{active: state.lang==l}"
-              href="{{meta.url}}/#/{{l}}"
-              >{{l}}
-            </a>
-          </span>
+        
+        <div
+          class="master button hint--left"
+          ng-click="changeLayout('catalog');"
+          ng-class="{active:state.layout=='catalog'}">
+          <i class="fa fa-database"></i>
+          <a class="ext hint--bottom" href="{{meta.source.catalog}}" target="_blank" data-hint="{{meta.menu.sourcetip}}">
+            <i class="fa fa-file-text"></i>
+          </a>
+          <span>{{meta.menu.catalog}}</span>
         </div>
 
+<!--         <div class="sep">
+          <i class="fa fa-arrow-right"></i>
+        </div> -->
+
         <a
-          class="button hover hint--bottom"
+          class="button hint--bottom"
           id="calendar"
           data-hint="{{meta.menu.calendartip}}"
           href="http://demosphere.eu/fr">
-          <i class="fa fa-calendar"></i>
-          <span>{{meta.menu.calendar}} <i class="fa fa-external-link-square"></i></span>
+          <div class="bubble"><i class="fa fa-calendar"></i></div>
+          <span>{{meta.menu.calendar}}</span>
         </a>
+
         <div
-          class="button hover hint--bottom"
-          id="ninja"
-          ng-if="state.lang=='fr'"
-          data-hint="{{meta.menu.ninjatip}}"
-          ng-click="changeLayout('ninja');">
-          <i class="fa fa-magic"></i>
-          <a class="ext hint--bottom" href="{{meta.source.ninja}}" target="_blank" data-hint="{{meta.menu.sourcetip}}">
-            <i class="fa fa-file-text"></i>
+          ng-repeat="b in meta.menu.buttons"
+          class="button hint--bottom"
+          ng-id="b.slug"
+          data-hint="{{b.tip}}"
+          ng-click="changeLayout(b.slug);"
+          ng-class="{active:state.layout==b.slug}">
+          <div class="bubble"><i class="fa {{b.icon}}"></i></div>
+          <a
+            class="ext hint--bottom"
+            href="{{meta.source[b.slug]}}"
+            target="_blank"
+            data-hint="{{meta.menu.sourcetip}}">
+            <i class="fa fa-arrow-up"></i>
           </a>
-          <span>{{meta.menu.ninja}}</span>
+          <span>{{b.label}}</span>
         </div>
-        <div
-          class="button hover"
-          ng-if="state.lang=='fr'"
-          ng-click="changeLayout('map');"
-          ng-class="{active:state.layout=='map'}">
-          <i class="fa fa-map-o"></i>
-          <a class="ext hint--bottom" href="{{meta.source.map}}" target="_blank" data-hint="{{meta.menu.sourcetip}}">
-            <i class="fa fa-file-text"></i>
-          </a>
-          <span>{{meta.menu.map}}</span>
-        </div>
-        <div
-          class="button hover"
-          id="network"
-          ng-if="state.lang=='fr'"
-          ng-click="changeLayout('network');"
-          ng-class="{active:state.layout=='network'}">
-          <i class="fa fa-sitemap"></i>
-          <a class="ext hint--bottom" href="{{meta.source.network}}" target="_blank" data-hint="{{meta.menu.sourcetip}}">
-            <i class="fa fa-file-text"></i>
-          </a>
-          <span>{{meta.menu.network}}</span>
-        </div>
-        <div
-          class="button hover"
-          ng-click="changeLayout('links');"
-          ng-class="{active:state.layout=='links'}">
-          <i class="fa fa-heart"></i>
-          <a class="ext hint--bottom" href="{{meta.source.links}}" target="_blank" data-hint="{{meta.menu.sourcetip}}">
-            <i class="fa fa-file-text"></i>
-          </a>
-          <span>{{meta.menu.links}}</span>
-        </div>
-        <div
-          class="button hover"
-          ng-click="changeLayout('quotes');"
-          ng-class="{active:state.layout=='quotes'}">
-          <i class="fa fa-quote-left"></i>
-          <a class="ext hint--bottom" href="{{meta.source.quotes}}" target="_blank" data-hint="{{meta.menu.sourcetip}}">
-            <i class="fa fa-file-text"></i>
-          </a>
-          <span>{{meta.menu.quotes}}</span>
-        </div>
-        <div class="buttoncontainer">
-          <div
-            class="inner button hover"
-            ng-click="changeLayout('texts');"
-            ng-class="{active:state.layout=='texts'}">
-            <i class="fa fa-bullhorn"></i>
-            <a class="ext hint--bottom" href="{{meta.source.texts}}" target="_blank" data-hint="{{meta.menu.sourcetip}}">
-              <i class="fa fa-file-text"></i>
-            </a>
-            <span>{{meta.menu.texts}}</span>
-          </div>
-          <a 
-            class="printer hint--bottom"
-            data-hint="{{meta.menu.printtip}}"
-            href="./#/{{state.lang}}/textsprint"
-            target="_blank"><i class="fa fa-print"></i> {{meta.menu.print}}
-          </a>
-        </div>
+
       </div>
 
       <!-- BACK TO INTRO -->
@@ -283,11 +232,13 @@
       class="full" compile-here="md2Html(meta.disclaimer[state.layout])"></div>
       <div ng-if="state.layout=='links'"
       class="full" compile-here="md2Html(meta.disclaimer[state.layout])"></div>
+      <div ng-if="state.layout=='quotes'"
+      class="full" compile-here="md2Html(meta.disclaimer[state.layout])"></div>
       <div ng-if="state.layout=='network'"
       class="full left" compile-here="md2Html(meta.disclaimer[state.layout])"></div>
       <div ng-if="state.layout=='map'"
       class="full left" compile-here="md2Html(meta.disclaimer[state.layout])"></div>
-      <div ng-if="state.layout=='quotes'"
+      <div ng-if="state.layout=='catalog'"
       class="full" compile-here="md2Html(meta.disclaimer[state.layout])"></div>
 
       <i class="fa fa-times" ng-click="state.disclaim[state.layout] = false;"></i>
@@ -302,7 +253,7 @@
     </div>
     -->
 
-    <div class="page" ng-include="layoutTemplate();"></div>
+    <div class="page" ng-include="partialTemplate();"></div>
 
     <div ng-if="!state.layout!='map'" class="footer">
       <!--<div class="count" ng-if="state.search || state.tags.length">

@@ -467,64 +467,13 @@ span.highlight, div.highlight { /* searched words */
       height: @menuH;
       background: white;
 
-      /* FOR A BUTON CONTAINING PRINTER */
-      .buttoncontainer {
-        box-sizing: border-box;
-        position: relative;
-        float: right;
-        width: @menuButtonW;
-        height: 100%;
-
-        .printer {
-          z-index: 7;
-          box-sizing: border-box;
-          display: none;
-          position: absolute;
-          top: 100%;
-          height: 23px;
-          width: 100%;
-          padding: 5px;
-
-          text-align: center;
-          color: @lightColor;
-          font-size: 0.7em;
-          background: white;
-          
-          //.transition(top 0.2s);
-          border-bottom-left-radius: 6px;
-          border-bottom-right-radius: 6px;
-
-          i {
-            color: @lightColor !important;
-            font-size: 1em;
-          }
-          &:hover {
-            color: @redColor;
-            i { color: @redColor !important; }
-          }
-          
-          /* Hack to hide hint tooltip when link clicked */
-          &:active, &:focus {
-            outline: none;
-            .hint:after, &:after, &:before {
-              display: none;
-            }
-          }
-        }
-        &:hover .printer {
-          //.box-shadow(0px 0px 4px 0px #525252);
-          display: block;
-          //top: 100%;
-        }
-      }
-
       /* NORMAL BUTTON LOOK */
       .button {
         //z-index: 10;
         box-sizing: border-box;
         position: relative;
         float: right;
-        width: 78px;
+        width: 60px;
         height: 100%;
         padding: 11px 0px;
 
@@ -534,15 +483,27 @@ span.highlight, div.highlight { /* searched words */
         font-size: 0.75em;
         background: white;
         
+        cursor: pointer;
+
+        .bubble {
+          @bubz: 34px;
+          .absolute-centered();
+          border: 2px solid transparent;
+          border-radius: @bubz;
+          width: @bubz;
+          height: @bubz;
+          top: 35%;
+        }
+
         i {
           color: @lightColor;
-          font-size: 1.5em;
+          font-size: 1.3em;
+          line-height: 1.9em;
         }
 
         span {
-          display: block;
-          color: @lightColor;
-          margin-top: 7px;
+          display: none;
+          line-height: 81px;
           i {
             font-size: 0.9em;
           }
@@ -554,6 +515,7 @@ span.highlight, div.highlight { /* searched words */
           padding: 2px 3px;
           i { 
             font-size: 0.7em;
+            margin-top: 3px;
           }
           opacity: 0;
           &:hover {
@@ -566,31 +528,23 @@ span.highlight, div.highlight { /* searched words */
             }
           }
         }
-        &.hover {
-          cursor: pointer;
-          &:hover {
-            background: @mostLightColor;
-            a.ext {
-              opacity: 0.5;
-            }
+          
+        &:hover {
+          /*background: @mostLightColor;*/
+          a.ext {
+            opacity: 0.5;
           }
+          span { display: block; color: @lightColor; }
         }
+
         &.active, &.active:hover {
           background: @redColor;
-          //border-bottom: @menuButtonBorder none @redColor;
-          i {
-            color: white;
+          .bubble {
+            border: 2px solid white;
+            background: white;
+            i { color: grey; }
           }
-          span {
-            color: white;
-          }
-        }
-        .setlang {
-          color: @lightColor;
-          &.active {
-            color: @redColor;
-            pointer-events: none;
-          }
+          span { display: block; color: white; }
         }
         
         &.inactive {
@@ -600,6 +554,13 @@ span.highlight, div.highlight { /* searched words */
             font-style: italic;
           }
         }
+      }
+
+      .button.master {
+        width: 78px;
+        height: 100%;
+        padding: 11px 0px;
+        font-size: 0.75em;
       }
     }
 
@@ -1051,14 +1012,14 @@ body.layout-textsprint, body.layout-mapprint {
 
 @import "layout_home";
 @import "layout_texts";
-@import "layout_textsprint";
+
 @import "layout_links";
 /* quotes layout is set within links (same type of style) */
 @import "layout_network";
 @import "layout_map";
 @import "layout_ninja";
 
-
+@import "layout_catalogprint";
 
 @import "screen";
 

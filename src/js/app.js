@@ -56,7 +56,7 @@ angular.module('manifest', [
   'manifest.filters',
   'manifest.maincontroller',
   //'manifest.mapcontroller',
-  'config'
+  'settings'
 ])
 
   .config(['$routeProvider','$locationProvider',"settings", function($routeProvider,$locationProvider,settings) {

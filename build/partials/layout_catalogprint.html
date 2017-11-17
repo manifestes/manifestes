@@ -1,0 +1,24 @@
+<!-- COVER(s) -->
+  <div
+    ng-repeat="i in meta.splash.images"
+    class="image"
+    back-img="{{settings.datapath}}splash/{{i.filename}}"
+    ng-style="{'background-color': i.color}"
+    ng-class="{
+      active: $index == state.introimage,
+      left: $index > state.introimage,
+      right: $index < state.introimage,
+      full: i.full
+    }">
+  </div>
+
+<!-- PAGES -->
+<div
+  ng-repeat="p in pagesArray"
+  class="doublepage"
+  ng-include="partialTemplate('catalog_'+p.lay)">
+</div>
+
+<!-- INDEX -->
+
+<!-- COVER ENDS -->

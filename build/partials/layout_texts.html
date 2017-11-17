@@ -1,6 +1,6 @@
 
 <div
-  ng-repeat="e in textFiltArray"
+  ng-repeat="e in dataArrayFilt.texts"
   id="p_{{$index}}"
   class="section t-{{e.tags[0]}} status-{{e.status}}"
   ng-click="toggleOne(e);"
@@ -45,7 +45,7 @@
 
 <div
   class="emptyresult"
-  ng-if="(state.search || state.tags.length) && textFiltArray.length==0"
+  ng-if="(state.search || state.tags.length) && dataArrayFilt.texts.length==0"
   ng-click="resetFilters();">
   <div>
     aucun résultat (pour l'instant) pour cette requête précise et pertinente<br>

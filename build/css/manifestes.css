@@ -1485,78 +1485,45 @@ div.highlight {
   right: 0;
   height: 65px;
   background: white;
-  /* FOR A BUTON CONTAINING PRINTER */
   /* NORMAL BUTTON LOOK */
-}
-.header .menu .buttons .buttoncontainer {
-  box-sizing: border-box;
-  position: relative;
-  float: right;
-  width: 78px;
-  height: 100%;
-}
-.header .menu .buttons .buttoncontainer .printer {
-  z-index: 7;
-  box-sizing: border-box;
-  display: none;
-  position: absolute;
-  top: 100%;
-  height: 23px;
-  width: 100%;
-  padding: 5px;
-  text-align: center;
-  color: #ababab;
-  font-size: 0.7em;
-  background: white;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  /* Hack to hide hint tooltip when link clicked */
-}
-.header .menu .buttons .buttoncontainer .printer i {
-  color: #ababab !important;
-  font-size: 1em;
-}
-.header .menu .buttons .buttoncontainer .printer:hover {
-  color: #883e3e;
-}
-.header .menu .buttons .buttoncontainer .printer:hover i {
-  color: #883e3e !important;
-}
-.header .menu .buttons .buttoncontainer .printer:active,
-.header .menu .buttons .buttoncontainer .printer:focus {
-  outline: none;
-}
-.header .menu .buttons .buttoncontainer .printer:active .hint:after,
-.header .menu .buttons .buttoncontainer .printer:focus .hint:after,
-.header .menu .buttons .buttoncontainer .printer:active:after,
-.header .menu .buttons .buttoncontainer .printer:focus:after,
-.header .menu .buttons .buttoncontainer .printer:active:before,
-.header .menu .buttons .buttoncontainer .printer:focus:before {
-  display: none;
-}
-.header .menu .buttons .buttoncontainer:hover .printer {
-  display: block;
 }
 .header .menu .buttons .button {
   box-sizing: border-box;
   position: relative;
   float: right;
-  width: 78px;
+  width: 60px;
   height: 100%;
   padding: 11px 0px;
   vertical-align: top;
   text-align: center;
   font-size: 0.75em;
   background: white;
+  cursor: pointer;
+}
+.header .menu .buttons .button .bubble {
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border: 2px solid transparent;
+  border-radius: 34px;
+  width: 34px;
+  height: 34px;
+  top: 35%;
 }
 .header .menu .buttons .button i {
   color: #ababab;
-  font-size: 1.5em;
+  font-size: 1.3em;
+  line-height: 1.9em;
 }
 .header .menu .buttons .button span {
-  display: block;
-  color: #ababab;
-  margin-top: 7px;
+  display: none;
+  line-height: 81px;
 }
 .header .menu .buttons .button span i {
   font-size: 0.9em;
@@ -1570,6 +1537,7 @@ div.highlight {
 }
 .header .menu .buttons .button a.ext i {
   font-size: 0.7em;
+  margin-top: 3px;
 }
 .header .menu .buttons .button a.ext:hover {
   opacity: 1 !important;
@@ -1586,33 +1554,33 @@ div.highlight {
 .header .menu .buttons .button a.ext:focus:before {
   display: none;
 }
-.header .menu .buttons .button.hover {
-  cursor: pointer;
+.header .menu .buttons .button:hover {
+  /*background: @mostLightColor;*/
 }
-.header .menu .buttons .button.hover:hover {
-  background: #e4e4e4;
-}
-.header .menu .buttons .button.hover:hover a.ext {
+.header .menu .buttons .button:hover a.ext {
   opacity: 0.5;
+}
+.header .menu .buttons .button:hover span {
+  display: block;
+  color: #ababab;
 }
 .header .menu .buttons .button.active,
 .header .menu .buttons .button.active:hover {
   background: #883e3e;
 }
-.header .menu .buttons .button.active i,
-.header .menu .buttons .button.active:hover i {
-  color: white;
+.header .menu .buttons .button.active .bubble,
+.header .menu .buttons .button.active:hover .bubble {
+  border: 2px solid white;
+  background: white;
+}
+.header .menu .buttons .button.active .bubble i,
+.header .menu .buttons .button.active:hover .bubble i {
+  color: grey;
 }
 .header .menu .buttons .button.active span,
 .header .menu .buttons .button.active:hover span {
+  display: block;
   color: white;
-}
-.header .menu .buttons .button .setlang {
-  color: #ababab;
-}
-.header .menu .buttons .button .setlang.active {
-  color: #883e3e;
-  pointer-events: none;
 }
 .header .menu .buttons .button.inactive {
   pointer-events: none;
@@ -1621,6 +1589,12 @@ div.highlight {
 .header .menu .buttons .button.inactive i {
   color: #cccccc;
   font-style: italic;
+}
+.header .menu .buttons .button.master {
+  width: 78px;
+  height: 100%;
+  padding: 11px 0px;
+  font-size: 0.75em;
 }
 .header .menu .searchinput {
   z-index: 35;
@@ -2458,74 +2432,6 @@ body.layout-mapprint .container {
 .wrapper.layout-texts .section.opened .quote-container {
   opacity: 1;
 }
-.wrapper.layout-textsprint {
-  box-sizing: border-box;
-  font-size: 0.8em;
-  margin-top: 0px;
-}
-.wrapper.layout-textsprint .pagebreakafter {
-  page-break-after: always;
-}
-.wrapper.layout-textsprint .section {
-  margin: 10px;
-  margin-bottom: 20px;
-  border-top: 15px solid lightgray;
-  font-family: 'Lato', sans-serif;
-  text-align: left;
-  min-height: 100px;
-}
-.wrapper.layout-textsprint .section .image {
-  float: left;
-  width: 130px;
-  height: 100px;
-  opacity: 0.2;
-}
-.wrapper.layout-textsprint .section .block {
-  margin-left: 130px;
-  padding-left: 10px;
-}
-.wrapper.layout-textsprint .section .block .h1 {
-  margin: 20px;
-  margin-bottom: 0;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 1.6em;
-}
-.wrapper.layout-textsprint .section .block .h2 {
-  margin: 5px 20px;
-  padding-bottom: 5px;
-  font-size: 1.15em;
-  font-style: italic;
-  border-bottom: 1px dashed lightgray;
-}
-.wrapper.layout-textsprint .section .block p {
-  margin-bottom: 7px;
-  line-height: 1.4em;
-}
-.wrapper.layout-textsprint .section .block ul {
-  margin-left: 20px;
-}
-.wrapper.layout-textsprint .section .block .content {
-  margin-left: 20px;
-  font-size: 0.9em;
-  padding-bottom: 7px;
-}
-.wrapper.layout-textsprint .section .block .content li {
-  margin-top: 7px;
-}
-.wrapper.layout-textsprint .section .block .links {
-  margin-left: 20px;
-  margin-top: 5px;
-  font-size: 0.6em;
-  max-height: 160px;
-  overflow: hidden;
-}
-.wrapper.layout-textsprint .section .block .links ul {
-  list-style: none;
-}
-.wrapper.layout-textsprint .section .block .links li p {
-  margin: 0px;
-}
 .wrapper.layout-links {
   box-sizing: border-box;
 }
@@ -3359,6 +3265,74 @@ body.layout-mapprint .container {
     padding: 30px;
   }
 }*/
+.wrapper.layout-textsprint {
+  box-sizing: border-box;
+  font-size: 0.8em;
+  margin-top: 0px;
+}
+.wrapper.layout-textsprint .pagebreakafter {
+  page-break-after: always;
+}
+.wrapper.layout-textsprint .section {
+  margin: 10px;
+  margin-bottom: 20px;
+  border-top: 15px solid lightgray;
+  font-family: 'Lato', sans-serif;
+  text-align: left;
+  min-height: 100px;
+}
+.wrapper.layout-textsprint .section .image {
+  float: left;
+  width: 130px;
+  height: 100px;
+  opacity: 0.2;
+}
+.wrapper.layout-textsprint .section .block {
+  margin-left: 130px;
+  padding-left: 10px;
+}
+.wrapper.layout-textsprint .section .block .h1 {
+  margin: 20px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.6em;
+}
+.wrapper.layout-textsprint .section .block .h2 {
+  margin: 5px 20px;
+  padding-bottom: 5px;
+  font-size: 1.15em;
+  font-style: italic;
+  border-bottom: 1px dashed lightgray;
+}
+.wrapper.layout-textsprint .section .block p {
+  margin-bottom: 7px;
+  line-height: 1.4em;
+}
+.wrapper.layout-textsprint .section .block ul {
+  margin-left: 20px;
+}
+.wrapper.layout-textsprint .section .block .content {
+  margin-left: 20px;
+  font-size: 0.9em;
+  padding-bottom: 7px;
+}
+.wrapper.layout-textsprint .section .block .content li {
+  margin-top: 7px;
+}
+.wrapper.layout-textsprint .section .block .links {
+  margin-left: 20px;
+  margin-top: 5px;
+  font-size: 0.6em;
+  max-height: 160px;
+  overflow: hidden;
+}
+.wrapper.layout-textsprint .section .block .links ul {
+  list-style: none;
+}
+.wrapper.layout-textsprint .section .block .links li p {
+  margin: 0px;
+}
 /* HEIGHT WILL CHANGE TAGS-GRID, MAP LEGEND, ... */
 @media (max-height: 690px) {
   /* tag collapsible panel when window height is small */

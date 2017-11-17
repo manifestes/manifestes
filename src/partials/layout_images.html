@@ -1,0 +1,19 @@
+<div class="panel bricks links">
+  <div
+    ng-repeat="e in dataArrayFilt.images"
+    class="link image tb-{{e.tags[0]}}">
+
+    <img src="{{e.url}}"/>
+
+  </div>
+</div>
+
+<div
+  class="emptyresult"
+  ng-if="(state.search || state.tags.length) && dataArrayFilt.images.length==0"
+  ng-click="resetFilters();">
+  <div>
+    aucun résultat (pour l'instant) pour cette requête précise et pertinente<br>
+    cliquez ici pour annuler le filtrage
+  </div>
+</div>

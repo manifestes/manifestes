@@ -1,0 +1,51 @@
+<div class="panel bricks catalog">
+  <div
+    ng-repeat="e in catalogFiltArray"
+    class="elm"
+    ng-class="{
+      odd: $index%2==0,
+      even: $index%2==1,
+      used: e.used
+    }">
+
+      <!-- ---------------------------------------- -->
+      <div ng-if="e.t=='text'" class="text">
+        <div class="title" compile-here="e.title"></div>
+        <div class="subtitle" compile-here="e.subtitle"></div>
+        <div class="content" compile-here="e.content"></div>
+      </div>
+
+      <!-- ---------------------------------------- -->
+      <div ng-if="e.t=='quote'" class="quote">
+        <div class="quote" compile-here="md2Html(e.content)"></div>
+        <div class="author" compile-here="md2Html(e.author) "></div>
+      </div>
+
+      <!-- ---------------------------------------- -->
+      <div ng-if="e.t=='link'" class="link">
+        <div class="content" compile-here="e.content"></div>
+      </div>
+
+      <!-- ---------------------------------------- -->
+      <div ng-if="e.t=='pict'" class="pict">
+          <img src="{{e.image}}"/>
+      </div>
+
+      <!-- ---------------------------------------- -->
+      <div ng-if="e.t=='mappoint'" class="mappoint">
+        
+
+      </div>
+
+  </div>
+</div>
+
+<div
+  class="emptyresult"
+  ng-if="(state.search || state.tags.length) && dataArrayFilt.catalog.length==0"
+  ng-click="resetFilters();">
+  <div>
+    aucun résultat (pour l'instant) pour cette requête précise et pertinente<br>
+    cliquez ici pour annuler le filtrage
+  </div>
+</div>

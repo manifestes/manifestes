@@ -3492,7 +3492,7 @@ angular.module('manifest', [
   'manifest.filters',
   'manifest.maincontroller',
   //'manifest.mapcontroller',
-  'config'
+  'settings'
 ])
 
   .config(['$routeProvider','$locationProvider',"settings", function($routeProvider,$locationProvider,settings) {
@@ -3543,16 +3543,9 @@ angular.module('manifest', [
 
 ;
 
-angular.module('config', [])
-
-.constant('settings', {dev:false,langs:['fr','es','en'],datapath:'data/',assets:'build/',lastupdate:'14 August 2017 - 3:03'})
-
-;
-;
-
 'use strict';
 
-angular.module('manifest.maincontroller', ['underscore','config'])
+angular.module('manifest.maincontroller', ['underscore','settings'])
 ////////////////////////////////////////////////////////////////////////
 .controller('MainController', [
   "$scope",
@@ -3576,19 +3569,26 @@ angular.module('manifest.maincontroller', ['underscore','config'])
     $scope.settings.smallDevice = $window.innerWidth < 1025;
 
     var layout = $routeParams.layout ?
-      (["home","texts","textsprint","quotes","links","network","map","mapprint","ninja"].indexOf($routeParams.layout)==-1 ? "texts" : $routeParams.layout) :
+      (_.union(["home","mapprint","catalogprint"],settings.menus).indexOf($routeParams.layout)==-1 ? "texts" : $routeParams.layout) :
       "home";
     var tags = [];
     //var tags = $routeParams.tags ? $routeParams.tags.split(',') : [];
     var intro = !$routeParams.layout;
 
     $scope.meta = {}; // mainly the meta info at start of text.yml
-    $scope.textArray = []; // full list of texts
-    $scope.textFiltArray = []; // displayed list of texts
-    $scope.linkArray = []; // full list of links
-    $scope.linkFiltArray = []; // displayed list of links
-    $scope.quoteArray = []; // full list of quotes
-    $scope.quoteFiltArray = []; // displayed list of quotes
+
+    $scope.dataArray = { // full list 
+      texts: [],
+      quotes: [],
+      links: [],
+      images: []
+    }
+    $scope.dataArrayFilt = { // displayed list
+      texts: [],
+      quotes: [],
+      links: [],
+      images: []
+    }
 
     $scope.tagsContents = {}; // .tag .label .description .icon for each tag
     $scope.tagsContentsOrdered = []; // same but array to be able to sort
@@ -3654,12 +3654,11 @@ angular.module('manifest.maincontroller', ['underscore','config'])
       $location.path('/'+st.lang+'/'+st.layout, false); //+'/'+st.tags.join(','), false);
     }
 
-
-    $scope.layoutTemplate = function() {
-      return $scope.settings.assets+'partials/layout_'+$scope.state.layout+'.html';
-    };
-    $scope.textTemplate = function(s) {
-      return $scope.settings.assets+'partials/layout_texts_'+s.layout+'.html';
+    $scope.partialTemplate = function(lay) {
+      if(!lay)
+        return $scope.settings.assets+'partials/layout_'+$scope.state.layout+'.html';
+      else
+        return $scope.settings.assets+'partials/'+lay+'.html';
     };
 
     $scope.slideSplashImage = function(forward) {
@@ -3780,10 +3779,10 @@ angular.module('manifest.maincontroller', ['underscore','config'])
       return res;
     };
     $scope.updateSearchTagCount = function() {
-      $scope.state.count.texts = _.filter($scope.textArray, function(e){
+      $scope.state.count.texts = _.filter($scope.dataArray.texts, function(e){
         return isElementShown(e);
       }).length;
-      $scope.state.count.links = _.filter($scope.linkArray, function(e){
+      $scope.state.count.links = _.filter($scope.dataArray.links, function(e){
         return isElementShown(e);
       }).length;
     };
@@ -3864,8 +3863,11 @@ angular.module('manifest.maincontroller', ['underscore','config'])
       } else { 
         if(o.author) { // a quote
           var show = reg.test(totext(o.author)) || reg.test(totext(o.content));
-        } else { // a link
-          var show = reg.test(totext(o.content));
+        } else { 
+          if(o.content) // a link
+            var show = reg.test(totext(o.content));
+          else // an image !
+            var show = reg.test(totext(o.label));
         }
       }
       return show;
@@ -3885,28 +3887,16 @@ angular.module('manifest.maincontroller', ['underscore','config'])
 
     var updateArrays = function() {
       console.log("updateArrays!");
+      var lay = $scope.state.layout;
+      if(["texts","quotes","links","images"].indexOf(lay)!==-1) {
 
-      if(!$scope.state.search && !$scope.state.tags.length) {
-        $scope.textFiltArray = $scope.textArray;
-        $scope.linkFiltArray = $scope.linkArray;
-        $scope.quoteFiltArray = $scope.quoteArray;
-      } else {
-
-        if($scope.state.layout=="texts")
-          $scope.textFiltArray = _.filter($scope.textArray, function(e) {
+        if(!$scope.state.search && !$scope.state.tags.length) {
+          $scope.dataArrayFilt[lay] = $scope.dataArray[lay];
+        } else {
+          $scope.dataArrayFilt[lay] = _.filter($scope.dataArray[lay], function(e) {
             return ($scope.state.search && shallShowSearch(e)) || ($scope.state.tags.length && shallShowTags(e,false));
           });
-
-
-        if($scope.state.layout=="links")
-          $scope.linkFiltArray = _.filter($scope.linkArray, function(e) {
-            return ($scope.state.search && shallShowSearch(e)) || ($scope.state.tags.length && shallShowTags(e,false));
-          });
-
-        if($scope.state.layout=="quotes")
-          $scope.quoteFiltArray = _.filter($scope.quoteArray, function(e) {
-            return ($scope.state.search && shallShowSearch(e)) || ($scope.state.tags.length && shallShowTags(e,false));
-          });
+        }
       }
       //$scope.$apply();
     };
@@ -3958,7 +3948,7 @@ angular.module('manifest.maincontroller', ['underscore','config'])
       p.opened = !p.opened ;
     };
     $scope.toggleAlltexts = function(status) {
-      _.each($scope.textArray, function(p) {
+      _.each($scope.dataArray.texts, function(p) {
         p.opened = status;
       });
     };
@@ -3995,249 +3985,308 @@ angular.module('manifest.maincontroller', ['underscore','config'])
 
 
     ///////////////////////////////////////////////////////////////
-    var fetchDataMeta = function(callb) {
-      $http
-      .get(settings.datapath + "meta_"+$scope.state.lang+".yml")
-      .success(function(res) {
-
-        var m = jsyaml.load(res);
-        $scope.meta = m;
-
-        $scope.state.overtag = {description: m.menu.tagsdescription};
-        $scope.state.taggingtooltip = $scope.state.tagging ? 
-          m.menu.taggingon : m.menu.taggingoff;
-
-
-        // for html page meta
-        $rootScope.htmlmeta = m.htmlmeta;
-
-        // prepare splash images & their back color
-        $scope.meta.splash.images = _.map(m.splash.images, function(v) {
-          return {
-            color: /_/.test(v) ? "#"+v.split("_")[1].split('.')[0] : "#000",
-            filename: v,
-            full: !/_/.test(v)
-          };
-        });
-
-        _.each(m.tags, function(v,k) {
-          var parts = v.split(' = ');
-          $scope.tagsContents[k] = {
-            tag: k,
-            label: parts[1 ].replace("_",""),
-            description: parts[2],
-            icon: parts[0]=="" ? "globe" : parts[0],
-            important: /_/.test(parts[1]) ? true : false
-          };
-          $scope.tagsContentsOrdered.push($scope.tagsContents[k]);
-        });
-
-        $scope.state.pad = $scope.meta.menu.hasOwnProperty('pad') ?
-          $scope.meta.menu.pad[$scope.state.layout] : "";
-
-        // $scope.tagsContentsOrdered.sort(function(a,b) {
-        //   return $scope.tagSorter(b) - $scope.tagSorter(a);
-        // });
-      
-        callb();
-      })
-      .error(function (data, status, headers, config) {
-        console.log("error meta",status);
-      });
-    };
-
-
     ///////////////////////////////////////////////////////////////
-    var fetchDataTexts = function() {
-      $http
-      .get(settings.datapath + "texts_"+$scope.state.lang+".yml")
-      .success(function(res) {
+    ///////////////////////////////////////////////////////////////
+    var fetchAndPopulateData = function(which, callb) {
 
-        jsyaml.loadAll(res, function(d) {
+      /////////////////////////////////////
+      if(which=='network') {
+        $timeout(function() {
+          //loadTagGraph($scope);
+          loadLinksGraph($scope);
+        },500);
+      }
 
-          //console.log(d);
-          //d.subtitle = $scope.md2Html(d.subtitle);
-          if(d.subtitle) d.subtitletext = totext(d.subtitle);
-          if(d.quote) {
-            d.quote.content = $scope.md2Html(d.quote.content);
-            d.quote.author = $scope.md2Html(d.quote.author);
+      /////////////////////////////////////
+      if(which=='ninja') {
+        initNinja();
+      }
+
+      /////////////////////////////////////
+      if(which=='catalogprint') {
+        fetchAndPopulateData('catalog', function() {
+          // randomly place contents into page layouts
+          prepairCatalogLayouts();
+        });
+      }
+
+      ///////////////////////////////////// YAML DATA
+      if(["meta","texts","quotes","links","images","catalog","map"].indexOf(which)!==-1) {
+
+        var filename = which;
+        if(which=="images")
+          filename = "inspiration.json";
+        else
+          filename = which+".yml";
+
+        $http
+        .get(settings.datapath + filename)
+        .success(function(res) {
+
+          ////////////////////////////////////
+          if(which=="meta") {
+            var m = jsyaml.load(res);
+            $scope.meta = m;
+
+            $scope.state.overtag = {description: m.menu.tagsdescription};
+            $scope.state.taggingtooltip = $scope.state.tagging ? 
+              m.menu.taggingon : m.menu.taggingoff;
+
+
+            // for html page meta
+            $rootScope.htmlmeta = m.htmlmeta;
+
+            // prepare splash images & their back color
+            $scope.meta.splash.images = _.map(m.splash.images, function(v) {
+              return {
+                color: /_/.test(v) ? "#"+v.split("_")[1].split('.')[0] : "#000",
+                filename: v,
+                full: !/_/.test(v)
+              };
+            });
+
+            _.each(m.tags, function(v,k) {
+              var parts = v.split(' = ');
+              $scope.tagsContents[k] = {
+                tag: k,
+                label: parts[1 ].replace("_",""),
+                description: parts[2],
+                icon: parts[0]=="" ? "globe" : parts[0],
+                important: /_/.test(parts[1]) ? true : false
+              };
+              $scope.tagsContentsOrdered.push($scope.tagsContents[k]);
+            });
+
+            $scope.state.pad = $scope.meta.menu.hasOwnProperty('pad') ?
+              $scope.meta.menu.pad[$scope.state.layout] : "";
+
+            // $scope.tagsContentsOrdered.sort(function(a,b) {
+            //   return $scope.tagSorter(b) - $scope.tagSorter(a);
+            // });
           }
-          d.content = $scope.md2Html(d.content);
-          d.tags = d.tags ? d.tags.split(' ') : [];
-          _.each(d.tags, function(t) {
-            $scope.textNbByTag[t] = $scope.textNbByTag[t] ? $scope.textNbByTag[t]+1 : 1;
-          });
-          d.links = $scope.md2Html(d.links);
-
-          d.date = moment(d.date);
-          var seuil = moment().subtract(6,"month");
-          if(d.date > seuil)
-            d.date = d.date.fromNow();
-          else
-            d.date = null;
           
-          d.sharelink = "http://utopies-concretes.org/slug/"+slugify(d.title);
+          ////////////////////////////////////
+          if(which=="texts") {
+            jsyaml.loadAll(res, function(d) {
+              //console.log(d);
+              //d.subtitle = $scope.md2Html(d.subtitle);
+              if(d.subtitle) d.subtitletext = totext(d.subtitle);
+              if(d.quote) {
+                d.quote.content = $scope.md2Html(d.quote.content);
+                d.quote.author = $scope.md2Html(d.quote.author);
+              }
+              d.content = $scope.md2Html(d.content);
+              d.tags = d.tags ? d.tags.split(' ') : [];
+              _.each(d.tags, function(t) {
+                $scope.textNbByTag[t] = $scope.textNbByTag[t] ? $scope.textNbByTag[t]+1 : 1;
+              });
+              d.links = $scope.md2Html(d.links);
 
-          d.currentlink = 0;
+              d.date = moment(d.date);
+              var seuil = moment().subtract(6,"month");
+              if(d.date > seuil)
+                d.date = d.date.fromNow();
+              else
+                d.date = null;
+              
+              d.sharelink = "http://utopies-concretes.org/slug/"+slugify(d.title);
 
-          //d.layout = 'flat'; //Math.random()<0.2 ? 'grid' : 'flat';
+              d.currentlink = 0;
 
-          // only pushing normal texts if prod (draft texts are only visible if dev)
-          if($scope.settings.dev || !d.status || d.status != 'draft')
-            $scope.textArray.push(d);
+              //d.layout = 'flat'; //Math.random()<0.2 ? 'grid' : 'flat';
 
-          console.log("having texts:",$scope.textArray.length);
-        });
-        $scope.textFiltArray = $scope.textArray;
-      })
-      .error(function (data, status, headers, config) {
-        console.log("error texts",status);
-      });
-    };
+              // only pushing normal texts if prod (draft texts are only visible if dev)
+              if($scope.settings.dev || !d.status || d.status != 'draft')
+                $scope.dataArray.texts.push(d);
 
-    ///////////////////////////////////////////////////////////////
-    var fetchDataLinks = function() {
-      $http
-      .get(settings.datapath + "links_"+$scope.state.lang+".yml")
-      .success(function(res) {
+              //console.log("having text:",$scope.dataArray.texts.length);
+            });
+            $scope.dataArrayFilt.texts = $scope.dataArray.texts;
+          }
 
-        var singlelink = res.split('\n\n');
+          ////////////////////////////////////
+          if(which=="quotes") {
+            var quotes = jsyaml.load(res);
+            _.each(quotes, function(q) {
+              $scope.dataArray.quotes.push(q);
+            });        
+            $scope.dataArrayFilt.quotes = $scope.dataArray.quotes;
+          }
 
-        $scope.templinks4graph = [];
+          ////////////////////////////////////
+          if(which=="links") {
+            var singlelink = res.split('\n\n');
 
-        _.each(singlelink, function(l) {
+            $scope.templinks4graph = [];
 
-          var L = l.split('\n');
+            _.each(singlelink, function(l) {
 
-          var tgs = L[0].match(/\w+/ig);
-          var isimportant = false;
+              var L = l.split('\n');
 
-          _.each(tgs, function(t) {
-            if($scope.tagsContents[t] && $scope.tagsContents[t].important)
-              isimportant = true;
-          });
+              var tgs = L[0].match(/\w+/ig);
+              var isimportant = false;
 
-          // (test/dev) just to see links over graph
-          if(tgs && tgs.length>2) {
-            _.each(tgs, function(t1) {
-              _.each(tgs, function(t2) {
-                if(t1!=t2)
-                  $scope.templinks4graph.push([t1,t2]);
+              _.each(tgs, function(t) {
+                if($scope.tagsContents[t] && $scope.tagsContents[t].important)
+                  isimportant = true;
+              });
+
+              // (test/dev) just to see links over graph
+              if(tgs && tgs.length>2) {
+                _.each(tgs, function(t1) {
+                  _.each(tgs, function(t2) {
+                    if(t1!=t2)
+                      $scope.templinks4graph.push([t1,t2]);
+                  });
+                });
+              }
+
+              var htm = $scope.md2Html( L[1] );
+
+              // store links as array
+              $scope.dataArray.links.push({
+                content: htm,
+                tags: tgs,
+                love: L[0][0]=="!",     // marked as special blend love like !
+                important: isimportant  // if it has a least one tag marked as important
+              });
+
+              // store links indexed by tag (for taggraph sizes!)
+              _.each(tgs, function(t) {
+                if(!$scope.linksByTag[t]) $scope.linksByTag[t] = [];
+                $scope.linksByTag[t].push(htm);
               });
             });
+            
+            $scope.dataArrayFilt.links = $scope.dataArray.links;
+
+
+            if($scope.settings.verbose) {
+              console.log("!! declared tags:",_.keys($scope.meta.tags));
+              console.log("!! declared tags contents:",$scope.tagsContents);
+              console.log("!! all links:",$scope.dataArray.links);
+              console.log("!! nb of links by tag:",$scope.linksByTag);
+              console.log("!! tags used in texts:",$scope.textNbByTag);
+              console.log("!! non used in texts:", _.difference(_.keys($scope.linksByTag), _.keys($scope.textNbByTag)));
+              console.log("!! non-declared tags:", _.difference(_.keys($scope.linksByTag), _.keys($scope.meta.tags)));
+              console.log("!! declared tags with 0 link", _.difference(_.keys($scope.meta.tags), _.keys($scope.linksByTag)));
+            }
+            
           }
 
-          var htm = $scope.md2Html( L[1] );
+          ////////////////////////////////////
+          if(which=="catalog") {
+            $scope.dataArray[which] = jsyaml.load(res)
+            $scope.dataArrayFilt[which] = $scope.dataArray[which];
+          }
 
-          // store links as array
-          $scope.linkArray.push({
-            content: htm,
-            tags: tgs,
-            love: L[0][0]=="!",     // marked as special blend love like !
-            important: isimportant  // if it has a least one tag marked as important
-          });
-
-          // store links indexed by tag (for taggraph sizes!)
-          _.each(tgs, function(t) {
-            if(!$scope.linksByTag[t]) $scope.linksByTag[t] = [];
-            $scope.linksByTag[t].push(htm);
-          });
-        });
-        
-        $scope.linkFiltArray = $scope.linkArray;
-
-
-        if($scope.settings.verbose) {
-          console.log("!! declared tags:",_.keys($scope.meta.tags));
-          console.log("!! declared tags contents:",$scope.tagsContents);
-          console.log("!! all links:",$scope.linkArray);
-          console.log("!! nb of links by tag:",$scope.linksByTag);
-          console.log("!! tags used in texts:",$scope.textNbByTag);
-          console.log("!! non used in texts:", _.difference(_.keys($scope.linksByTag), _.keys($scope.textNbByTag)));
-          console.log("!! non-declared tags:", _.difference(_.keys($scope.linksByTag), _.keys($scope.meta.tags)));
-          console.log("!! declared tags with 0 link", _.difference(_.keys($scope.meta.tags), _.keys($scope.linksByTag)));
-        }
-
-        // populate links related to each text
-        // _.each($scope.texts, function(p) {
-        //   p.links = getLinksFromTags(p.tags);
-        // });
-        
-        // inject some random images ?
-        /*$http
-          .get(settings.datapath + "expo.json")
-          .success(function(data) {
-            //console.log(data);
-            var N = $scope.linkArray.length-1;
-            _.each(data, function(v,k) {
+          ////////////////////////////////////
+          if(which=="images") {
+            _.each(res, function(v,k) {
               var im = {
-                name: k,
-                image: settings.datapath + "expo/" + v
+                label: k,
+                url: settings.datapath + "inspiration/" + v
               };
-              console.log(im);
-              $scope.linkArray.splice(N*Math.random(), 0, im);
+              //console.log(im);
+              $scope.dataArray[which].push(im);
             });
-          })
-          .error(function (data, status, headers, config) {
-            console.log("error expo",status);
-          });*/
+            $scope.dataArrayFilt[which] = $scope.dataArray[which];
+          }
 
-      })
-      .error(function (data, status, headers, config) {
-        console.log("error links",status);
-      });
+          ////////////////////////////////////
+          if(which=="map") {
+            var mapset = jsyaml.load(res);
+            $scope.meta = _.extend($scope.meta, mapset);
+
+            // prepare map credits
+            _.each($scope.meta.mapcredits, function(c) {
+              c.active = false;
+              c.loaded = false;
+              c.count = 0;
+            });
+            $scope.meta.mapcreditsOf = {};
+            _.each($scope.meta.mapcredits, function(c) {
+              $scope.meta.mapcreditsOf[c.slug] = c;
+            });
+
+            
+            createLeaflet();
+
+            // now FETCH data (only of big screen)
+            if(!$scope.settings.smallDevice) {
+
+              var credits = _.filter($scope.meta.mapcredits, function(c) {
+                return !c.dontload;
+              });
+              async.parallel(
+
+                _.map(credits, function(c) {
+                  return function(callb) { loadCredit(c,callb); };
+                })
+                , function(err,results) {
+
+                console.log("All map data fetchs done. Bravo.");
+
+                buildSearchControl();
+                updateMapStyles();
+
+              });
+
+            } else {
+              console.log("Not loading map data 'cause small screen");
+            }
+          }
+
+          ////////////////////////////////////
+          ////////////////////////////////////
+          if(callb) callb();
+        })
+        .error(function (data, status, headers, config) {
+          console.log("error loading:"+which,status);
+        });
+      }
+
     };
 
     ///////////////////////////////////////////////////////////////
-    var fetchDataQuotes = function() {
-      $http
-      .get(settings.datapath + "quotes_"+$scope.state.lang+".yml")
-      .success(function(res) {
+    var prepairCatalogLayouts = function() {
+      // designed layouts are called based on nb of elements they use
+      var layouts = ["2img,1text","1quote"];
+      var tobeput = $scope.catalogArray;
+      console.log("Start catalog loop");
 
-        var quotes = jsyaml.load(res);
-        _.each(quotes, function(q) {
-          $scope.quoteArray.push(q);
-        });        
-        $scope.quoteFiltArray = $scope.quoteArray;
+      // while(tobeput.length>20) {
+      //   var p = {};
+      //   var lay = _.rand(layouts);
+      //   console.log("Choosing another random layout:",lay);
+      //   var elstofind = lay.split(",");
+        
+      //   _.each(elstofind, function(e) {
+      //     // e = {
+      //     //   t: e[1:], // type
+      //     //   howmany: e[0]
+      //     // };
+      //     // look into what's left
+      //     var found = _.find(tobeput, {t:e.t}, e.howmany);
+      //     console.log("Found:",found);
+      //     if(!found) {
+      //       console.log("! Not anymore enough types of this element:",e.t,"in",lay);
+      //       return;
+      //     } else {
+      //       p[e.type] = found;
+      //       // remove those elements from stack
+      //       _.remove(tobeput, found);
+      //     }
+      //   });
 
-      })
-      .error(function (data, status, headers, config) {
-        console.log("error quotes",status);
-      });
+      //   $scope.pagesArray.push(p);
+      //   console.log("Page made:",$scope.pagesArray.length);
+      // };
     };
-
 
     ///////////////////////////////////////////////////////////////
     ////////////////////// MAP !! /////////////////////////////////
     ///////////////////////////////////////////////////////////////
-
-    var mappathprefix = settings.datapath+'/map/map_';
-
-    ///////////////////////////////////////////////////////////////
-    var fetchDataMap = function(callb) {
-      $http
-      .get(settings.datapath + "map_"+$scope.state.lang+".yml")
-      .success(function(res) {
-        var mapset = jsyaml.load(res);
-        $scope.meta = _.extend($scope.meta, mapset);
-
-        // prepare map credits
-        _.each($scope.meta.mapcredits, function(c) {
-          c.active = false;
-          c.loaded = false;
-          c.count = 0;
-        });
-        $scope.meta.mapcreditsOf = {};
-        _.each($scope.meta.mapcredits, function(c) {
-          $scope.meta.mapcreditsOf[c.slug] = c;
-        });
-
-        callb();
-      })
-      .error(function (data, status, headers, config) {
-        console.log("error map",status);
-      });
-    };
 
     ///////////////////////////////////////////////////////////////
     $scope.mapJumpTo = function(c) {
@@ -4467,50 +4516,24 @@ angular.module('manifest.maincontroller', ['underscore','config'])
     };
     
     ///////////////////////////////////////////////////////////////
-    var fetch_csv = function(c,callb) {
-      //console.log("Fetch csv:",c.slug,c);
-      c.loading = true;
-      $http
-      .get(mappathprefix+c.slug+'.csv')
-      .success(function(data) {
-        //console.log("got csv data:",data);
-        //$scope.data = data;
-        var ms = new CSV(data, {header:true, cast:false}).parse();
-        
-        $scope.points = ms;
-        
-        _.each(ms, function(m,k) {
+    var parsemap = function(c,data,foreachdo) {
 
+      if(c.type=="csv") {
+        var ms = new CSV(data, {header:true, cast:false}).parse();
+        $scope.points = ms; // testing an index (print)
+        _.each(ms, function(m,k) {
           // if(!layers[m.source]) {
           //   layers[m.source] = new L.LayerGroup().addTo(overlays);
           // }
 
           // don't look inside csv for source (unuseful column ;)
           m.source = c.slug;
-          addMarker(m);
-          
+          if(foreachdo) foreachdo(m);
         });
-        c.loaded = true;
-        c.loading = false;
-        c.active = true;
-        callb();
-      })
-      .error(function(err) {
-        c.loaded = false;
-        console.log(err);
-        callb();
-      });
-    };
+      }
 
-    ///////////////////////////////////////////////////////////////
-    var fetch_geojson = function(c,callb) {
-      //console.log("Fetch geojson:",c.slug,c);
-      c.loading = true;
-      $http
-      .get(mappathprefix+c.slug+'.geojson')
-      .success(function(geoj) {
-        //console.log(c.slug,geoj);
-        _.each(geoj.features, function(m) {
+      if(c.type=="geojson") {
+        _.each(data.features, function(m) {
 
           var prop = m.properties;
 
@@ -4547,7 +4570,7 @@ angular.module('manifest.maincontroller', ['underscore','config'])
             web = /\[\[.*\]\]/.test(ds) ? ds.match(/\[\[(.*)\]\]/)[1].split('|')[0] : "";
           }
 
-          addMarker({
+          if(foreachdo) foreachdo({
             source: c.slug,
             name: name,
             description: description,
@@ -4556,31 +4579,15 @@ angular.module('manifest.maincontroller', ['underscore','config'])
             lng: m.geometry.coordinates[0]
           });
         });
-        c.loaded = true;
-        c.loading = false;
-        c.active = true;
-        callb();
-      })
-      .error(function(err) {
-        c.loaded = false;
-        console.log(err);
-        callb();
-      });
-    };
+      }
 
-    ///////////////////////////////////////////////////////////////
-    var fetch_xml = function(c,callb) {
-      //console.log("Fetch xml:",c.slug,c);
-      c.loading = true;
-      $http
-      .get(mappathprefix+c.slug+'.xml')
-      .success(function(xml) {
-        var json = xmlToJSON.parseString(xml, {
+      if(c.type=="xml") {
+        var json = xmlToJSON.parseString(data, {
           childrenAsArray: false
         });
         //console.log("Age de:",json);
         _.each(json.markers.marker, function(m) {
-          addMarker({
+          foreachdo({
             source: c.slug,
             name: m._attr.name._value,
             description: "Point de vente de L'âge de faire",
@@ -4589,29 +4596,13 @@ angular.module('manifest.maincontroller', ['underscore','config'])
             lng: m._attr.lng._value
           });
         });
-        c.loaded = true;
-        c.loading = false;
-        c.active = true;
-        callb();
-      })
-      .error(function(err) {
-        c.loaded = false;
-        console.log(err);
-        callb();
-      });
-    };
+      }
 
-    ///////////////////////////////////////////////////////////////
-    var fetch_json = function(c,callb) {
-      //console.log("Fetch json:",c.slug,c);
-      c.loading = true;
-      $http
-      .get(mappathprefix+c.slug+'.json')
-      .success(function(json) {
-        _.each(json, function(m) {
+      if(c.type=="json") {
+        _.each(data, function(m) {
 
           if(c.slug=="circc")
-            addMarker({
+            if(foreachdo) foreachdo({
               source: "circc",
               name: m.nom,
               description: m.comm,
@@ -4622,7 +4613,7 @@ angular.module('manifest.maincontroller', ['underscore','config'])
             });
 
           if(c.slug=="ffdn" && m.coordinates)
-            addMarker({
+            if(foreachdo) foreachdo({
               source: "ffdn",
               name: m.shortname,
               description: m.popup,
@@ -4631,29 +4622,20 @@ angular.module('manifest.maincontroller', ['underscore','config'])
             });
 
           if(c.slug=="oasis")
-            addMarker({
+            if(foreachdo) foreachdo({
               source: "oasis",
               name: m.title,
               description: truncatetext(totextwithbreak(m.html)),
               lat: m.geo.lat,
               lng: m.geo.lng
             });
-
         });
-        c.loaded = true;
-        c.loading = false;
-        c.active = true;
-        callb();
-      })
-      .error(function(err) {
-        c.loaded = false;
-        console.log(err);
-        callb();
-      });
+      }
+
     };
 
     ///////////////////////////////////////////////////////////////
-    var fetch_demosphere = function(c,callback) {
+    var do_demosphere = function(c,callback) {
       console.log("Fetch demosphere:",c.slug,c);
       c.loading = true;
 
@@ -4678,7 +4660,7 @@ angular.module('manifest.maincontroller', ['underscore','config'])
 
       async.parallel(
         _.map(c.cities, function(baseurl) {
-          return function(callb) { fetch_a_demo(c,baseurl,baseurl+flatparams,callb); };
+          return function(callb) { do_a_demo(c,baseurl,baseurl+flatparams,callb); };
         })
         , function(err,results) {
           console.log("All demosphere done.");
@@ -4691,7 +4673,7 @@ angular.module('manifest.maincontroller', ['underscore','config'])
           callback();
       });
     };
-    var fetch_a_demo = function(c,baseurl,longurl,callb) {
+    var do_a_demo = function(c,baseurl,longurl,callb) {
       /*
         bacause of CORS
         did not succeed with $http
@@ -4758,20 +4740,30 @@ angular.module('manifest.maincontroller', ['underscore','config'])
     ///////////////////////////////////////////////////////////////
     // load a map credit
     var loadCredit = function(c,callb) {
-      if(c.type=="csv") // csv
-        fetch_csv(c,callb);
-      else if(c.type=="geojson") //report,bastam,passeco,fermesavenir
-        fetch_geojson(c,callb);
-      else if(c.type=="xml") //agedefaire
-        fetch_xml(c,callb);
-      else if(c.type=="json") //ffdn,circuitscours
-        fetch_json(c,callb);
-      else if(c.type=="demosphere")
-        fetch_demosphere(c,callb);
-      else {
-        console.log("Unkwnown map type !",c);
+      //console.log("Fetch csv:",c.slug,c);
+      c.loading = true;
+
+      if(c.type=="demosphere")
+        do_demosphere(c,callb);
+      else
+
+      $http
+      .get(settings.datapath+'/map/map_'+c.slug+"."+c.type)
+      .success(function(data) {
+
+        parsemap(c,data,addMarker);
+        
+        c.loaded = true;
+        c.loading = false;
+        c.active = true;
         callb();
-      }
+      })
+      .error(function(err) {
+        c.loaded = false;
+        console.log(err);
+        callb();
+      });
+
     };
 
     ///////////////////////////////////////////////////////////////
@@ -4935,63 +4927,10 @@ angular.module('manifest.maincontroller', ['underscore','config'])
     ///////////////////////////////////////////////////////////////
     ///////////////////// DO THINGS !! ////////////////////////////
     ///////////////////////////////////////////////////////////////
-    var initMap = function() {
-      fetchDataMap(function() {
-        
-        createLeaflet();
-
-        // now FETCH data (only of big screen)
-        if(!$scope.settings.smallDevice) {
-
-          var credits = _.filter($scope.meta.mapcredits, function(c) {
-            return !c.dontload;
-          });
-          async.parallel(
-
-            _.map(credits, function(c) {
-              return function(callb) { loadCredit(c,callb); };
-            })
-            , function(err,results) {
-
-            console.log("All map data fetchs done. Bravo.");
-
-            buildSearchControl();
-            updateMapStyles();
-
-          });
-
-        } else {
-          console.log("Not loading map data 'cause small screen");
-        }
-        
-      });
-    };
-    
     ///////////////////////////////////////////////////////////////
-    fetchDataMeta( function() {
+    fetchAndPopulateData( 'meta', function() {
 
-      // Load .yml depending on view
-      if($scope.state.layout=='texts' || $scope.state.layout=='textsprint') {
-        fetchDataTexts();
-      }
-      if($scope.state.layout=='quotes') {
-        fetchDataQuotes();
-      }
-      if($scope.state.layout=='links') {
-        fetchDataLinks();
-      }
-      if($scope.state.layout=='map') {
-        initMap();
-      }
-      if($scope.state.layout=='network') {
-        $timeout(function() {
-          //loadTagGraph($scope);
-          loadLinksGraph($scope);
-        },500);
-      }
-      if($scope.state.layout=='ninja') {
-        initNinja();
-      }
+      fetchAndPopulateData($scope.state.layout);
 
       // (to improve ?) init here to trigger the watch on footer content set though compile-here directive
       $scope.state.search = "";
@@ -5521,3 +5460,10 @@ var loadTagGraph = function(scope) {
     }
   );
 }
+;
+
+angular.module('settings', [])
+
+.constant('settings', {dev:false,langs:['fr','es','en'],datapath:'data/',assets:'build/',lastupdate:'17 November 2017 - 2:07'})
+
+;

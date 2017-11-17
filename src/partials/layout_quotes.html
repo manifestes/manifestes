@@ -1,6 +1,6 @@
 <div class="panel bricks quotes">
   <div
-    ng-repeat="e in quoteFiltArray"
+    ng-repeat="e in dataArrayFilt.quotes"
     class="link"
     ng-class="{
       odd: $index%2==0,
@@ -17,7 +17,7 @@
 
 <div
   class="emptyresult"
-  ng-if="(state.search || state.tags.length) && quoteFiltArray.length==0"
+  ng-if="(state.search || state.tags.length) && dataArrayFilt.quotes.length==0"
   ng-click="resetFilters();">
   <div>
     aucun résultat (pour l'instant) pour cette requête précise et pertinente<br>

@@ -11,6 +11,7 @@ source:
     network: https://github.com/manifestes/manifestes/blob/gh-pages/data/network/network_in.csv
     map: https://framacalc.org/carto
     ninja: https://github.com/manifestes/manifestes/blob/gh-pages/data/network/network_in.csv
+    catalog: https://github.com/manifestes/manifestes/blob/gh-pages/data/catalog.yml
 splash:
     images:
         - urgent-de-ralentir_000.svg
@@ -77,6 +78,11 @@ disclaimer:
 
 
         **Les couleurs** correspondent aux thématiques
+    quotes: >
+        Les citations qui apparaissent **en orange** sont celles déjà utilisées dans des sections de textes
+
+
+        servez-vous !
     links: >
         ici, des liens ajoutés **avec nos petites mains**. ça fait un peu fouilli, leur désordre reflète la multiplicité des collectifs et initiatives !
 
@@ -107,11 +113,8 @@ disclaimer:
 
 
         Pour ajouter, modifier ou supprimer un lieu, utilisez [ce tableau partagé](http://framacalc.org/carto)
-    quotes: >
-        Les citations qui apparaissent **en orange** sont celles déjà utilisées dans des sections de textes
-
-
-        servez-vous !
+    catalog: >
+        faites-moi.
 menu:
     backtip: retourner à l'introduction
     hometip: page d'accueil
@@ -119,18 +122,37 @@ menu:
     taggingon: désactiver les thématiques
     search: chercher
     addzone: ajouter !
-    texts: textes
-    quotes: citations
-    links: liens
-    network: réseau
-    map: carte
-    ninja: ninja !
-    ninjatip: "naviguer au hasard\nparmi les sites du réseau"
+    sourcetip: voir les données brutes
+    buttons:
+        -   slug: ninja
+            label: ninja !
+            icon: fa-magic
+            tip: "naviguer au hasard\nparmi les sites du réseau"
+        -   slug: map
+            label: carte
+            icon: fa-map-o
+        -   slug: network
+            label: réseau
+            icon: fa-sitemap
+        -   slug: books
+            label: livres
+            icon: fa-book
+        -   slug: images
+            label: images
+            icon: fa-image
+        -   slug: links
+            label: liens
+            icon: fa-heart
+        -   slug: quotes
+            label: citations
+            icon: fa-quote-left
+        -   slug: texts
+            label: textes
+            icon: fa-bullhorn
     calendar: agenda
     calendartip: démosphère !
-    print: imprimer
-    printtip: "imprimez\nla fenêtre\nqui s'ouvre !"
-    sourcetip: voir les données brutes
+    catalog: TOUT
+    catalogtip: voir toutes\nles données
     pad:
         texts:
             link: "http://annuel.framapad.org/p/manifestes"

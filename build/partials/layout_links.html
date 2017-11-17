@@ -1,6 +1,6 @@
 <div class="panel bricks links">
   <div
-    ng-repeat="e in linkFiltArray"
+    ng-repeat="e in dataArrayFilt.links"
     class="link tb-{{e.tags[0]}}"
     ng-class="{
       odd: $index%2==0,
@@ -9,10 +9,7 @@
       image: e.image
     }">
 
-    <div ng-if="e.content" class="content" compile-here="e.content"></div>
-    <div ng-if="e.image" class="image">
-      <img src="{{e.image}}"/>
-    </div>
+    <div class="content" compile-here="e.content"></div>
 
     <i ng-if="e.love" class="love fa fa-heart"></i>
     <!--
@@ -28,7 +25,7 @@
 
 <div
   class="emptyresult"
-  ng-if="(state.search || state.tags.length) && linkFiltArray.length==0"
+  ng-if="(state.search || state.tags.length) && dataArrayFilt.links.length==0"
   ng-click="resetFilters();">
   <div>
     aucun résultat (pour l'instant) pour cette requête précise et pertinente<br>

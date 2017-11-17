@@ -6,29 +6,29 @@ module.exports = function(grunt) {
 
     // to list files in directory into a json
     
-    // tree: {
-    //   options: {
-    //     // md5: boolean or number [1-32] | default: false 
-    //     // format: | boolean default: false 
-    //     // type: array | default: [] 
-    //     // recurse: boolean | default: true 
-    //     // cwd: string | default: "" 
-    //     // ext: object 
-    //     //      ext.level: boolean or number [1-N] | default: false 
-    //     //      ext.hyphen: string | default: "-" 
-    //     // exclude: array | default: [] 
-    //     // uncpath: boolean | default: false 
-    //     prettify: true
-    //   },
-    //   your_target: {
-    //     files: [
-    //         {
-    //             src: ['data/expo'],
-    //             dest: 'data/expo.json'
-    //         }
-    //     ]
-    //   }
-    // },
+    tree: {
+      options: {
+        // md5: boolean or number [1-32] | default: false 
+        // format: | boolean default: false 
+        // type: array | default: [] 
+        // recurse: boolean | default: true 
+        // cwd: string | default: "" 
+        // ext: object 
+        //      ext.level: boolean or number [1-N] | default: false 
+        //      ext.hyphen: string | default: "-" 
+        // exclude: array | default: [] 
+        // uncpath: boolean | default: false 
+        prettify: true
+      },
+      listfiles: {
+        files: [
+            {
+                src: ['data/inspiration'],
+                dest: 'data/inspiration.json'
+            }
+        ]
+      }
+    },
 
     preprocess : {
       prod : {
@@ -57,17 +57,18 @@ module.exports = function(grunt) {
     ngconstant: {
       options: {
         space: '  ',
-        name: 'config'
+        name: 'settings'
       },
       // Environment targets
       development: {
         options: {
-          dest: 'src/js/config.js' 
+          dest: 'src/js/settings.js' 
         },
         constants: {
           settings: {
             dev: true,
             langs: ['fr','es','en'],
+            menus: ["texts","quotes","links","images","books","network","map"],
             datapath: '../data/',
             assets: './',
             lastupdate: '<%= grunt.template.today("dd mmmm yyyy - h:MM") %>'
@@ -76,7 +77,7 @@ module.exports = function(grunt) {
       },
       production: {
         options: {
-          dest: 'src/js/config.js'
+          dest: 'src/js/settings.js'
         },
         constants: {
           settings: {
@@ -313,7 +314,7 @@ module.exports = function(grunt) {
   //grunt.registerTask('prod',    ['ngconstant:production', 'execute','jshint','env:prod','less:prod','concat:js','concat:css','copy','strip','uglify','preprocess:prod']);
 
   // we first set constants to prod to build, then go back to dev
-  grunt.registerTask('default', ['ngconstant:production','jshint','env:prod','less:prod','concat:js','concat:css','copy','strip','uglify','preprocess:prod','ngconstant:development']);
+  grunt.registerTask('default', ['tree','ngconstant:production','jshint','env:prod','less:prod','concat:js','concat:css','copy','strip','uglify','preprocess:prod','ngconstant:development']);
   grunt.registerTask('map',['curl']);
   grunt.registerTask('links', ['execute']);
 

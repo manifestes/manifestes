@@ -33,13 +33,18 @@ fork or download this project and start your own !
 ### build & minify
 > grunt
 
+### build catalog
+> node prepair_catalog.js
+
+to merge all data (texts, links, etc..) into `catalog.yml` to spare time on load
+
 ### fetch map geojson
 > grunt map
 
 ### build slug images
 > node slug_build.js
 
-will produce index.html and preview .png used to share text sections
+will produce index.html and preview .png used to social-share text sections
 warning: needs to have a running local web server
 
 > node slug_build.js abcd
@@ -48,6 +53,10 @@ will only (re) produce the text sections whose slug starts with «abcd» (useful
 
 ### build ninja links
 > grunt links
+> 
+> o
+> 
+> node prepair_hyperlinks_counts.js
 
 - will run `prepair_hyperlinks_counts.js`
 - aka will load `http://localhost/manifestes/data/network/network_links.csv` (make sure you have this repo available on a local webserver)
