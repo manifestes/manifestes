@@ -1,248 +1,43 @@
 !function(t,e){"function"==typeof define&&define.amd?define([],e):"object"==typeof module&&module.exports?module.exports=e():t.CSV=e()}(this,function(){"use strict";function t(t){var e=typeof t;return"function"===e||"object"===e&&!!t}function e(t){return"string"==typeof t}function n(t){return!isNaN(+t)}function i(t){return 0==t||1==t}function r(t){return null==t}function o(t){return null!=t}function c(t,e){return o(t)?t:e}function u(t,e){for(var n=0,i=t.length;i>n&&e(t[n],n)!==!1;n+=1);}function s(t){return t.replace(/"/g,'\\"')}function a(t){return"attrs["+t+"]"}function l(t,e){return n(t)?"Number("+a(e)+")":i(t)?"Boolean("+a(e)+" == true)":"String("+a(e)+")"}function f(t,n,i,r){var o=[];return 3==arguments.length?(n?g(n)?u(i,function(i,r){e(n[r])?n[r]=n[r].toLowerCase():t[n[r]]=n[r],o.push("deserialize[cast["+r+"]]("+a(r)+")")}):u(i,function(t,e){o.push(l(t,e))}):u(i,function(t,e){o.push(a(e))}),o="return ["+o.join(",")+"]"):(n?g(n)?u(i,function(i,c){e(n[c])?n[c]=n[c].toLowerCase():t[n[c]]=n[c],o.push('"'+s(r[c])+'": deserialize[cast['+c+"]]("+a(c)+")")}):u(i,function(t,e){o.push('"'+s(r[e])+'": '+l(t,e))}):u(i,function(t,e){o.push('"'+s(r[e])+'": '+a(e))}),o="return {"+o.join(",")+"}"),Function("attrs","deserialize","cast",o)}function h(t,e){var n,i=0;return u(e,function(e){var r,o=e;-1!=p.indexOf(e)&&(o="\\"+o),r=t.match(RegExp(o,"g")),r&&r.length>i&&(i=r.length,n=e)}),n||e[0]}var p=["|","^"],d=[",",";","  ","|","^"],m=["\r\n","\r","\n"],g=Array.isArray||function(t){return"[object Array]"===toString.call(t)},y=function(){function n(t,n){if(n||(n={}),g(t))this.mode="encode";else{if(!e(t))throw Error("Incompatible format!");this.mode="parse"}this.data=t,this.options={header:c(n.header,!1),cast:c(n.cast,!0)};var i=n.lineDelimiter||n.line,r=n.cellDelimiter||n.delimiter;this.isParser()?(this.options.lineDelimiter=i||h(this.data,m),this.options.cellDelimiter=r||h(this.data,d),this.data=o(this.data,this.options.lineDelimiter)):this.isEncoder()&&(this.options.lineDelimiter=i||"\r\n",this.options.cellDelimiter=r||",")}function i(t,e,n,i,r){t(new e(n,i,r))}function o(t,e){return t.slice(-e.length)!=e&&(t+=e),t}function s(n){return g(n)?"array":t(n)?"object":e(n)?"string":r(n)?"null":"primitive"}return n.prototype.set=function(t,e){return this.options[t]=e},n.prototype.isParser=function(){return"parse"==this.mode},n.prototype.isEncoder=function(){return"encode"==this.mode},n.prototype.parse=function(t){function e(){s={escaped:!1,quote:!1,cell:!0}}function n(){m.cell=""}function r(){m.line=[]}function o(t){m.line.push(s.escaped?t.slice(1,-1).replace(/""/g,'"'):t),n(),e()}function c(t){o(t.slice(0,1-p.lineDelimiter.length))}function u(){d?g(d)?(a=f(y,p.cast,m.line,d),(u=function(){i(t,a,m.line,y,p.cast)})()):d=m.line:(a||(a=f(y,p.cast,m.line)),(u=function(){i(t,a,m.line,y,p.cast)})())}if("parse"==this.mode){if(0===this.data.trim().length)return[];var s,a,l,h=this.data,p=this.options,d=p.header,m={cell:"",line:[]},y=this.deserialize;t||(l=[],t=function(t){l.push(t)}),1==p.lineDelimiter.length&&(c=o);var v,A,D,b=h.length,j=p.cellDelimiter.charCodeAt(0),w=p.lineDelimiter.charCodeAt(p.lineDelimiter.length-1);for(e(),v=0,A=0;b>v;v++)D=h.charCodeAt(v),s.cell&&(s.cell=!1,34==D)?s.escaped=!0:s.escaped&&34==D?s.quote=!s.quote:(s.escaped&&s.quote||!s.escaped)&&(D==j?(o(m.cell+h.slice(A,v)),A=v+1):D==w&&(c(m.cell+h.slice(A,v)),A=v+1,u(),r()));return l?l:this}},n.prototype.deserialize={string:function(t){return t+""},number:function(t){return+t},"boolean":function(t){return!!t}},n.prototype.serialize={object:function(t){var e=this,n=Object.keys(t),i=Array(n.length);return u(n,function(n,r){i[r]=e[s(t[n])](t[n])}),i},array:function(t){var e=this,n=Array(t.length);return u(t,function(t,i){n[i]=e[s(t)](t)}),n},string:function(t){return'"'+(t+"").replace(/"/g,'""')+'"'},"null":function(){return""},primitive:function(t){return t}},n.prototype.encode=function(t){function n(t){return t.join(c.cellDelimiter)}if("encode"==this.mode){if(0==this.data.length)return"";var i,r,o=this.data,c=this.options,a=c.header,l=o[0],f=this.serialize,h=0;t||(r=Array(o.length),t=function(t,e){r[e+h]=t}),a&&(g(a)||(i=Object.keys(l),a=i),t(n(f.array(a)),0),h=1);var p,d=s(l);return"array"==d?(g(c.cast)?(p=Array(c.cast.length),u(c.cast,function(t,n){e(t)?p[n]=t.toLowerCase():(p[n]=t,f[t]=t)})):(p=Array(l.length),u(l,function(t,e){p[e]=s(t)})),u(o,function(e,i){var r=Array(p.length);u(e,function(t,e){r[e]=f[p[e]](t)}),t(n(r),i)})):"object"==d&&(i=Object.keys(l),g(c.cast)?(p=Array(c.cast.length),u(c.cast,function(t,n){e(t)?p[n]=t.toLowerCase():(p[n]=t,f[t]=t)})):(p=Array(i.length),u(i,function(t,e){p[e]=s(l[t])})),u(o,function(e,r){var o=Array(i.length);u(i,function(t,n){o[n]=f[p[n]](e[t])}),t(n(o),r)})),r?r.join(c.lineDelimiter):this}},n.prototype.forEach=function(t){return this[this.mode](t)},n}();return y.parse=function(t,e){return new y(t,e).parse()},y.encode=function(t,e){return new y(t,e).encode()},y.forEach=function(t,e,n){return 2==arguments.length&&(n=e),new y(t,e).forEach(n)},y});
 ;
 
-/* Copyright 2015 William Summers, MetaTribal LLC
- * adapted from https://developer.mozilla.org/en-US/docs/JXON
- *
- * Licensed under the MIT License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     https://opensource.org/licenses/MIT
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-/**
- * @author William Summers
- *
- */
- 
-var xmlToJSON = (function () {
+// Generated by CoffeeScript 1.12.7
+(function() {
+  "use strict";
+  var builder, defaults, parser, processors,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
 
-    this.version = "1.3";
+  defaults = require('./defaults');
 
-    var options = { // set up the default options
-        mergeCDATA: true, // extract cdata and merge with text
-        grokAttr: true, // convert truthy attributes to boolean, etc
-        grokText: true, // convert truthy text/attr to boolean, etc
-        normalize: true, // collapse multiple spaces to single space
-        xmlns: true, // include namespaces as attribute in output
-        namespaceKey: '_ns', // tag name for namespace objects
-        textKey: '_text', // tag name for text nodes
-        valueKey: '_value', // tag name for attribute values
-        attrKey: '_attr', // tag for attr groups
-        cdataKey: '_cdata', // tag for cdata nodes (ignored if mergeCDATA is true)
-        attrsAsObject: true, // if false, key is used as prefix to name, set prefix to '' to merge children and attrs.
-        stripAttrPrefix: true, // remove namespace prefixes from attributes
-        stripElemPrefix: true, // for elements of same name in diff namespaces, you can enable namespaces and access the nskey property
-        childrenAsArray: true // force children into arrays
-    };
+  builder = require('./builder');
 
-    var prefixMatch = new RegExp(/(?!xmlns)^.*:/);
-    var trimMatch = new RegExp(/^\s+|\s+$/g);
+  parser = require('./parser');
 
-    this.grokType = function (sValue) {
-        if (/^\s*$/.test(sValue)) {
-            return null;
-        }
-        if (/^(?:true|false)$/i.test(sValue)) {
-            return sValue.toLowerCase() === "true";
-        }
-        if (isFinite(sValue)) {
-            return parseFloat(sValue);
-        }
-        return sValue;
-    };
+  processors = require('./processors');
 
-    this.parseString = function (xmlString, opt) {
-        return this.parseXML(this.stringToXML(xmlString), opt);
+  exports.defaults = defaults.defaults;
+
+  exports.processors = processors;
+
+  exports.ValidationError = (function(superClass) {
+    extend(ValidationError, superClass);
+
+    function ValidationError(message) {
+      this.message = message;
     }
 
-    this.parseXML = function (oXMLParent, opt) {
+    return ValidationError;
 
-        // initialize options
-        for (var key in opt) {
-            options[key] = opt[key];
-        }
+  })(Error);
 
-        var vResult = {},
-            nLength = 0,
-            sCollectedTxt = "";
+  exports.Builder = builder.Builder;
 
-        // parse namespace information
-        if (options.xmlns && oXMLParent.namespaceURI) {
-            vResult[options.namespaceKey] = oXMLParent.namespaceURI;
-        }
+  exports.Parser = parser.Parser;
 
-        // parse attributes
-        // using attributes property instead of hasAttributes method to support older browsers
-        if (oXMLParent.attributes && oXMLParent.attributes.length > 0) {
-            var vAttribs = {};
+  exports.parseString = parser.parseString;
 
-            for (nLength; nLength < oXMLParent.attributes.length; nLength++) {
-                var oAttrib = oXMLParent.attributes.item(nLength);
-                vContent = {};
-                var attribName = '';
-
-                if (options.stripAttrPrefix) {
-                    attribName = oAttrib.name.replace(prefixMatch, '');
-
-                } else {
-                    attribName = oAttrib.name;
-                }
-
-                if (options.grokAttr) {
-                    vContent[options.valueKey] = this.grokType(oAttrib.value.replace(trimMatch, ''));
-                } else {
-                    vContent[options.valueKey] = oAttrib.value.replace(trimMatch, '');
-                }
-
-                if (options.xmlns && oAttrib.namespaceURI) {
-                    vContent[options.namespaceKey] = oAttrib.namespaceURI;
-                }
-
-                if (options.attrsAsObject) { // attributes with same local name must enable prefixes
-                    vAttribs[attribName] = vContent;
-                } else {
-                    vResult[options.attrKey + attribName] = vContent;
-                }
-            }
-
-            if (options.attrsAsObject) {
-                vResult[options.attrKey] = vAttribs;
-            } else {}
-        }
-
-        // iterate over the children
-        if (oXMLParent.hasChildNodes()) {
-            for (var oNode, sProp, vContent, nItem = 0; nItem < oXMLParent.childNodes.length; nItem++) {
-                oNode = oXMLParent.childNodes.item(nItem);
-
-                if (oNode.nodeType === 4) {
-                    if (options.mergeCDATA) {
-                        sCollectedTxt += oNode.nodeValue;
-                    } else {
-                        if (vResult.hasOwnProperty(options.cdataKey)) {
-                            if (vResult[options.cdataKey].constructor !== Array) {
-                                vResult[options.cdataKey] = [vResult[options.cdataKey]];
-                            }
-                            vResult[options.cdataKey].push(oNode.nodeValue);
-
-                        } else {
-                            if (options.childrenAsArray) {
-                                vResult[options.cdataKey] = [];
-                                vResult[options.cdataKey].push(oNode.nodeValue);
-                            } else {
-                                vResult[options.cdataKey] = oNode.nodeValue;
-                            }
-                        }
-                    }
-                } /* nodeType is "CDATASection" (4) */
-                else if (oNode.nodeType === 3) {
-                    sCollectedTxt += oNode.nodeValue;
-                } /* nodeType is "Text" (3) */
-                else if (oNode.nodeType === 1) { /* nodeType is "Element" (1) */
-
-                    if (nLength === 0) {
-                        vResult = {};
-                    }
-
-                    // using nodeName to support browser (IE) implementation with no 'localName' property
-                    if (options.stripElemPrefix) {
-                        sProp = oNode.nodeName.replace(prefixMatch, '');
-                    } else {
-                        sProp = oNode.nodeName;
-                    }
-
-                    vContent = xmlToJSON.parseXML(oNode);
-
-                    if (vResult.hasOwnProperty(sProp)) {
-                        if (vResult[sProp].constructor !== Array) {
-                            vResult[sProp] = [vResult[sProp]];
-                        }
-                        vResult[sProp].push(vContent);
-
-                    } else {
-                        if (options.childrenAsArray) {
-                            vResult[sProp] = [];
-                            vResult[sProp].push(vContent);
-                        } else {
-                            vResult[sProp] = vContent;
-                        }
-                        nLength++;
-                    }
-                }
-            }
-        } else if (!sCollectedTxt) { // no children and no text, return null
-            if (options.childrenAsArray) {
-                vResult[options.textKey] = [];
-                vResult[options.textKey].push(null);
-            } else {
-                vResult[options.textKey] = null;
-            }
-        }
-
-        if (sCollectedTxt) {
-            if (options.grokText) {
-                var value = this.grokType(sCollectedTxt.replace(trimMatch, ''));
-                if (value !== null && value !== undefined) {
-                    vResult[options.textKey] = value;
-                }
-            } else if (options.normalize) {
-                vResult[options.textKey] = sCollectedTxt.replace(trimMatch, '').replace(/\s+/g, " ");
-            } else {
-                vResult[options.textKey] = sCollectedTxt.replace(trimMatch, '');
-            }
-        }
-
-        return vResult;
-    }
-
-
-    // Convert xmlDocument to a string
-    // Returns null on failure
-    this.xmlToString = function (xmlDoc) {
-        try {
-            var xmlString = xmlDoc.xml ? xmlDoc.xml : (new XMLSerializer()).serializeToString(xmlDoc);
-            return xmlString;
-        } catch (err) {
-            return null;
-        }
-    }
-
-    // Convert a string to XML Node Structure
-    // Returns null on failure
-    this.stringToXML = function (xmlString) {
-        try {
-            var xmlDoc = null;
-
-            if (window.DOMParser) {
-
-                var parser = new DOMParser();
-                xmlDoc = parser.parseFromString(xmlString, "text/xml");
-
-                return xmlDoc;
-            } else {
-                xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
-                xmlDoc.async = false;
-                xmlDoc.loadXML(xmlString);
-
-                return xmlDoc;
-            }
-        } catch (e) {
-            return null;
-        }
-    }
-
-    return this;
-}).call({});
-
-if (typeof module != "undefined" && module !== null && module.exports) module.exports = xmlToJSON;
-else if (typeof define === "function" && define.amd) define(function() {return xmlToJSON});
+}).call(this);
 
 ;
 
@@ -3499,17 +3294,17 @@ angular.module('manifest', [
     
     //$locationProvider.html5Mode(true);
 
-    console.log("App Settings",settings);
+    console.log("App",settings);
     
     var lang = navigator.language;
 
-    $routeProvider.when('/:lang', {
-      templateUrl: settings.assets + '/partials/layout.html',
-      controller: 'MainController'
-      // reloadOnSearch: false
-    });
+    // $routeProvider.when('/:lang', {
+    //   templateUrl: settings.assets + '/partials/layout.html',
+    //   controller: 'MainController'
+    //   // reloadOnSearch: false
+    // });
 
-    $routeProvider.when('/:lang/:layout', {
+    $routeProvider.when('/:layout', {
       templateUrl: settings.assets + '/partials/layout.html',
       controller: 'MainController',
       //reloadOnSearch: false
@@ -3527,10 +3322,15 @@ angular.module('manifest', [
     //   // reloadOnSearch: false
     // });
 
-    $routeProvider.otherwise({
-      redirectTo: '/fr'
-    });
+    // $routeProvider.otherwise({
+    //   redirectTo: '/'
+    // });
 
+    $routeProvider.otherwise({
+      templateUrl: settings.assets + '/partials/layout.html',
+      controller: 'MainController',
+    });
+    
   }])
   // .config(function($httpProvider){
   //   $httpProvider.defaults.useXDomain = true;
@@ -3563,19 +3363,21 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
   
     moment.locale('fr');
 
-    console.log("from main controller:",settings);
+    console.log("Controller:",settings);
 
     $scope.settings = settings;
     $scope.settings.smallDevice = $window.innerWidth < 1025;
 
     // what is the current layout ?
+    
+    var intro = !$routeParams.layout;
+
     var layout = $routeParams.layout ?
-      (settings.layouts.indexOf($routeParams.layout)==-1 ? "texts" : $routeParams.layout) :
-      "home";
+      (settings.layouts.indexOf($routeParams.layout)==-1 ? "home" : $routeParams.layout)
+      : "home";
 
     var tags = [];
     //var tags = $routeParams.tags ? $routeParams.tags.split(',') : [];
-    var intro = !$routeParams.layout;
 
     $scope.meta = {}; // mainly the meta info at start of text.yml
 
@@ -3583,14 +3385,14 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
       texts: [],
       quotes: [],
       links: [],
-      images: [],
+      pixels: [],
       catalog: []
     }
     $scope.dataArrayFilt = { // displayed list
       texts: [],
       quotes: [],
       links: [],
-      images: [],
+      pixels: [],
       catalog: []
     }
 
@@ -3605,7 +3407,7 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
     $scope.state = {
       intro: intro, // splash fullscreen panel
       introimage: 0, // slideshow of intro splash images
-      lang: $routeParams.lang,
+      lang: 'fr', // olderly: $routeParams.lang,
       layout: layout, // texts/links/map/print/etc...
       loading: false, // we will show loadingspinner when scope not ready
       
@@ -3655,7 +3457,7 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
 
     $scope.updatePath = function() {
       var st = $scope.state;
-      $location.path('/'+st.lang+'/'+st.layout, false); //+'/'+st.tags.join(','), false);
+      $location.path('/'+st.layout, false); //+'/'+st.tags.join(','), false);
     }
 
     $scope.partialTemplate = function(lay) {
@@ -3690,8 +3492,7 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
     $scope.changeLayout = function(lay) {
       if(lay == $scope.state.layout) return; // unchanged
       else {
-        if($scope.state.lang=='fr')
-          $scope.state.pad = $scope.meta.menu.pad[lay];
+        $scope.state.pad = $scope.meta.menu.pad[lay];
         
         //$scope.state.loading = true;
 
@@ -3892,7 +3693,7 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
     var updateArrays = function() {
       console.log("updateArrays!");
       var lay = $scope.state.layout;
-      if(["texts","quotes","links","images"].indexOf(lay)!==-1) {
+      if(["texts","quotes","links","pixels"].indexOf(lay)!==-1) {
 
         if(!$scope.state.search && !$scope.state.tags.length) {
           $scope.dataArrayFilt[lay] = $scope.dataArray[lay];
@@ -4015,11 +3816,11 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
       }
 
       ///////////////////////////////////// YML DATA
-      if(["meta","texts","quotes","links","images","catalog","map"].indexOf(which)!==-1) {
+      if(["meta","texts","quotes","links","pixels","catalog","map"].indexOf(which)!==-1) {
 
         var filename = which;
-        if(which=="images")
-          filename = "inspiration.json";
+        if(which=="pixels")
+          filename = "pixels.json";
         else
           filename = which+".yml";
 
@@ -4186,11 +3987,11 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
           }
 
           ////////////////////////////////////
-          if(which=="images") {
+          if(which=="pixels") {
             _.each(res, function(v,k) {
               var im = {
                 label: k,
-                url: settings.datapath + "inspiration/" + v
+                url: settings.datapath + "pixels/" + v
               };
               //console.log(im);
               $scope.dataArray[which].push(im);
@@ -4221,7 +4022,7 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
             if(!$scope.settings.smallDevice) {
 
               var credits = _.filter($scope.meta.mapcredits, function(c) {
-                return !c.dontload;
+                return !c.hide;
               });
               async.parallel(
 
@@ -4257,36 +4058,55 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
     var prepairCatalogLayouts = function() {
       // designed layouts are called based on nb of elements they use
       var layouts = ["2img,1text","1quote"];
-      var tobeput = $scope.catalogArray;
+      var tobeput = $scope.dataArray.catalog;
+      $scope.pagesArray = [];
       console.log("Start catalog loop");
 
-      // while(tobeput.length>20) {
-      //   var p = {};
-      //   var lay = _.rand(layouts);
-      //   console.log("Choosing another random layout:",lay);
-      //   var elstofind = lay.split(",");
-        
-      //   _.each(elstofind, function(e) {
-      //     // e = {
-      //     //   t: e[1:], // type
-      //     //   howmany: e[0]
-      //     // };
-      //     // look into what's left
-      //     var found = _.find(tobeput, {t:e.t}, e.howmany);
-      //     console.log("Found:",found);
-      //     if(!found) {
-      //       console.log("! Not anymore enough types of this element:",e.t,"in",lay);
-      //       return;
-      //     } else {
-      //       p[e.type] = found;
-      //       // remove those elements from stack
-      //       _.remove(tobeput, found);
-      //     }
-      //   });
+      // prepair separated lists of elmts
+      var preplists = {};
+      // for each type..
+      _.each(['t','q','l','i','u','m'], function(t) {
+        // ..make a filteredlist
+        preplists[t] = _.filter($scope.dataArray.catalog, function(r) {
+          // is type if has this 'letter' key
+          return r[t];
+        });
+      });
 
-      //   $scope.pagesArray.push(p);
-      //   console.log("Page made:",$scope.pagesArray.length);
-      // };
+      while($scope.pagesArray.length<30) {
+        var p = {};
+        var lay = _.sample(layouts);
+        console.log("Choosing another random layout:",lay);
+        var elstofind = lay.split(",");
+        
+        _.each(elstofind, function(e) {
+          e = {
+            t: e[1], // type is one letter (t,l,i,...)
+            howmany: e[0]
+          };
+
+          //look into what's left in the prepaired list of this elmt type
+          var found = _.sample(preplists[e.t], e.howmany);
+          // if no, forget this layout !
+          if(!found) {
+            layouts = _.without(layouts,lay);
+            console.log("No more elements to fill layout:", lay);
+          }
+
+          //console.log("Found:",found,e);
+          if(!found) {
+            console.log("! Not anymore enough types of this element:",e.t,"in",lay);
+            return;
+          } else {
+            p[e.t] = found;
+            // remove those elements from stack
+            _.without(preplists[e.t], found);
+          }
+        });
+
+        $scope.pagesArray.push(p);
+        console.log("Page made:",$scope.pagesArray.length);
+      };
     };
 
     ///////////////////////////////////////////////////////////////
@@ -4638,6 +4458,8 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
       .get(settings.datapath+'/map/map_'+c.slug+"."+c.type)
       .success(function(data) {
 
+        //console.log(beatthebob.test());
+
         parseMapCreditAndDo(c,data,addMarker);
         
         c.loaded = true;
@@ -4985,7 +4807,38 @@ angular.module('manifest.filters', [])
   });
 ;
 
-'use strict';
+
+
+//if(! typeof require) { // nw on PROD
+  // var _ = require('underscore');
+  // var CSV = require('comma-separated-values');
+  // var xml2js = require('xml2js');
+//}
+
+
+var totextwithbreak = function(htm) {
+  if(htm) return htm.replace(/<[^>]+>/gm,'<br>').replace(/(<br> *)+/gm,'<br>');
+  else return "";
+};
+var truncatetext = function(str) {
+  if(str.length>400)
+    return str.substring(0,400)+" [...]";
+  else
+    return str;
+};
+
+// var beatthebob = (function () {
+//   "use strict";
+//    return {
+//       test: (function () {
+//         return 'testouou';
+//       }()),
+//       test2: (function () {
+//         return console.log('test 2');
+//       })
+//    };
+// }());
+
 
 ///////////////////////////////////////////////////////////////
 var parseMapCreditAndDo = function(c,data,foreachdo) {
@@ -5054,18 +4907,21 @@ var parseMapCreditAndDo = function(c,data,foreachdo) {
   }
 
   if(c.type=="xml") {
-    var json = xmlToJSON.parseString(data, {
-      childrenAsArray: false
-    });
-    //console.log("Age de:",json);
-    _.each(json.markers.marker, function(m) {
-      foreachdo({
-        source: c.slug,
-        name: m._attr.name._value,
-        description: "Point de vente de L'âge de faire",
-        address: m._attr.address._value,
-        lat: m._attr.lat._value,
-        lng: m._attr.lng._value
+    
+    //var json = xmlToJSON.parseString(data, { childrenAsArray: false });
+
+    xml2js.parseString(data, function (err, json) {
+      //console.log("Age de:",JSON.stringify(json));
+      _.each(json.markers.marker, function(m,k) {
+        var e = _.values(m)[0];
+        foreachdo({
+          source: c.slug,
+          name: e.name._value,
+          description: "Point de vente de L'âge de faire",
+          address: e.address._value,
+          lat: e.lat._value,
+          lng: e.lng._value
+        });
       });
     });
   }
@@ -5094,17 +4950,25 @@ var parseMapCreditAndDo = function(c,data,foreachdo) {
         });
 
       if(c.slug=="oasis")
-        if(foreachdo) foreachdo({
-          source: "oasis",
-          name: m.title,
-          description: truncatetext(totextwithbreak(m.html)),
-          lat: m.geo.lat,
-          lng: m.geo.lng
-        });
+        if(m.geo)
+          if(foreachdo) foreachdo({
+            source: "oasis",
+            name: m.title,
+            description: truncatetext(totextwithbreak(m.html)),
+            lat: m.geo.lat,
+            lng: m.geo.lng
+          });
     });
   }
 
 };
+
+// if(! typeof require) {
+//  module.exports.parseMapCreditAndDo = parseMapCreditAndDo;
+// }
+
+
+
 ;
 
 
@@ -5473,6 +5337,6 @@ var loadTagGraph = function(scope) {
 
 angular.module('settings', [])
 
-.constant('settings', {dev:false,langs:['fr','es','en'],layouts:['home','texts','quotes','links','images','books','network','map','mapprint','ninja','catalog','catalogprint'],datapath:'data/',assets:'build/',lastupdate:'17 November 2017 - 8:41'})
+.constant('settings', {dev:false,langs:['fr','es','en'],layouts:['home','texts','quotes','links','pixels','books','network','map','mapprint','ninja','catalog','catalogprint'],datapath:'data/',assets:'build/',lastupdate:'20 January 2018 - 11:27'})
 
 ;

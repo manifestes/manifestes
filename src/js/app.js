@@ -63,17 +63,17 @@ angular.module('manifest', [
     
     //$locationProvider.html5Mode(true);
 
-    console.log("App Settings",settings);
+    console.log("App",settings);
     
     var lang = navigator.language;
 
-    $routeProvider.when('/:lang', {
-      templateUrl: settings.assets + '/partials/layout.html',
-      controller: 'MainController'
-      // reloadOnSearch: false
-    });
+    // $routeProvider.when('/:lang', {
+    //   templateUrl: settings.assets + '/partials/layout.html',
+    //   controller: 'MainController'
+    //   // reloadOnSearch: false
+    // });
 
-    $routeProvider.when('/:lang/:layout', {
+    $routeProvider.when('/:layout', {
       templateUrl: settings.assets + '/partials/layout.html',
       controller: 'MainController',
       //reloadOnSearch: false
@@ -91,10 +91,15 @@ angular.module('manifest', [
     //   // reloadOnSearch: false
     // });
 
-    $routeProvider.otherwise({
-      redirectTo: '/fr'
-    });
+    // $routeProvider.otherwise({
+    //   redirectTo: '/'
+    // });
 
+    $routeProvider.otherwise({
+      templateUrl: settings.assets + '/partials/layout.html',
+      controller: 'MainController',
+    });
+    
   }])
   // .config(function($httpProvider){
   //   $httpProvider.defaults.useXDomain = true;

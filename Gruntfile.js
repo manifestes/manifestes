@@ -23,8 +23,8 @@ module.exports = function(grunt) {
       listfiles: {
         files: [
             {
-                src: ['data/inspiration'],
-                dest: 'data/inspiration.json'
+                src: ['data/pixels'],
+                dest: 'data/pixels.json'
             }
         ]
       }
@@ -68,7 +68,7 @@ module.exports = function(grunt) {
           settings: {
             dev: true,
             langs: ['fr','es','en'],
-            layouts: ['home','texts','quotes','links','images','books','network','map','mapprint','ninja','catalog','catalogprint'],
+            layouts: ['home','texts','quotes','links','pixels','books','network','map','mapprint','ninja','catalog','catalogprint'],
             datapath: '../data/',
             assets: './',
             lastupdate: '<%= grunt.template.today("dd mmmm yyyy - h:MM") %>'
@@ -83,7 +83,7 @@ module.exports = function(grunt) {
           settings: {
             dev: false,
             langs: ['fr','es','en'],
-            layouts: ['home','texts','quotes','links','images','books','network','map','mapprint','ninja','catalog','catalogprint'],
+            layouts: ['home','texts','quotes','links','pixels','books','network','map','mapprint','ninja','catalog','catalogprint'],
             datapath: 'data/',
             assets: 'build/',
             lastupdate: '<%= grunt.template.today("dd mmmm yyyy - h:MM") %>'
@@ -141,7 +141,7 @@ module.exports = function(grunt) {
       js: {
         src: [
           'src/vendor/comma-separated-values/csv.min.js',
-          'src/vendor/xmlToJSON.js/lib/xmlToJSON.js',
+          'src/vendor/xml2js/lib/xml2js.js',
 
           'src/vendor/leaflet/dist/leaflet.js',
           'src/vendor/Leaflet.MakiMarkers/Leaflet.MakiMarkers.js',

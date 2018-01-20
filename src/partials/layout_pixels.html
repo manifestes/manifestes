@@ -1,0 +1,25 @@
+<div class="panel bricks links pixels">
+  <div
+    ng-repeat="e in dataArrayFilt.pixels"
+    class="cursored link image tb-{{e.tags[0]}} nohighlight"
+    ng-class="{
+      fullscreened: e.fullscreened,
+      cover: e.fullscreened
+      }"
+    back-img="{{e.url}}"
+    ng-click="e.fullscreened = !e.fullscreened; $event.stopPropagation();">
+
+    <img src="{{e.url}}"/>
+
+  </div>
+</div>
+
+<div
+  class="emptyresult"
+  ng-if="(state.search || state.tags.length) && dataArrayFilt.pixels.length==0"
+  ng-click="resetFilters();">
+  <div>
+    aucun résultat (pour l'instant) pour cette requête précise et pertinente<br>
+    cliquez ici pour annuler le filtrage
+  </div>
+</div>

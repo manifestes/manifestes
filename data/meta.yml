@@ -8,7 +8,7 @@ source:
     texts: https://github.com/manifestes/manifestes/blob/gh-pages/data/texts_fr.yml
     quotes: https://github.com/manifestes/manifestes/blob/gh-pages/data/quotes_fr.yml
     links: https://github.com/manifestes/manifestes/blob/gh-pages/data/links_fr.yml
-    images: https://github.com/manifestes/manifestes/blob/gh-pages/data/inspirations/
+    pixels: https://github.com/manifestes/manifestes/blob/gh-pages/data/inspirations/
     books: http://unebonnesourcedelivres?
     network: https://github.com/manifestes/manifestes/blob/gh-pages/data/network/network_in.csv
     map: https://framacalc.org/carto
@@ -24,37 +24,48 @@ splash:
     enter: "consulter & participer"
 intro:
     -   layout: texts
-        icon: fa-bullhorn
-        title: textes
-        descr: des citations et morceaux de textes choisis — pour composer d'autres manières de voir le monde
+        title: texte.s
+        descr: des citations et morceaux de textes choisis
         image: FingerBones.jpg
         quote:
             author: Audrey
             content: Que ceux qui sont déjà conscients se sentent soutenus, et que les autres ouvrent les yeux pour changer, à leur rythme, à leur mesure
-    -   layout: links
-        icon: fa-th-list
-        title: liens
-        descr: consulter des textes, vidéos, trouver des médias libres — une sélection d'articles, projets qui méritent d'être connus
-        image: ErwinBlumenfeld.jpg
+    -   layout: pixels
+        title: pixel.s
+        descr: pour composer d'autres manières de voir le monde
+        image: hometohome.jpg
         quote:
-            author: Bernard Werber
-            content: L'important n'est pas de convaincre, mais de donner à réfléchir
+            author: 
+            content: L‘homme est fait de la matière dont sont faits les rêves
     -   layout: network
-        icon: fa-sitemap
         title: réseau
         descr: un graphe de près de 3000 sites internet de collectifs, structures, médias, blogs — positions relatives et interconnexions
-        image: DavidBarth.jpg
+        image: sombrelac.jpg
         quote:
             author: Proverbe mexicain
             content: Ils ont essayé de nous enterrer, ils ne savaient pas que nous étions des graines
     -   layout: map
-        icon: fa-map-o
         title: carte
         descr: "agrégation de plus de 3000 lieux : caravane des alternatives, hétérotopies, articles Reporterre et Bastamag, annonces Passerelle éco, lieux de vie et bases nomades — à visiter !"
-        image: Shigeru_Hatsuyama.jpg
+        image: SophieRaynal_pretemoitesyeux.fr.jpg
         quote:
             author: Chris Marker, Le Joli Mai, 1h28min
             content: l'avenir est là ! mais les gens ne le voient pas ... ils attendent l'horizon au loin
+    -   layout: links
+        title: lien.s
+        descr: consulter des textes, vidéos, trouver des médias libres — une sélection d'articles, projets qui méritent d'être connus
+        image: nepaspencherdanslevirage.jpg
+        quote:
+            author: Bernard Werber
+            content: L'important n'est pas de convaincre, mais de donner à réfléchir
+    -   layout: ninja
+        title: ¡ ninja !
+        descr: random rules
+        image: DannyVonRyswyk.jpg
+        quote:
+            author: Georges Perec
+            content: >
+                Vivre, c'est passer d'un espace à un autre, en essayant le plus possible de ne pas se cogner
 network:
     loading: >
         le réseau est en cours d'affichage
@@ -93,10 +104,15 @@ disclaimer:
 
 
         **pour naviguer par thématiques, activez les tags** grâce à l'icône en haut à gauche dans le menu (ne marche pas sur mobile)
-    images: >
+    pixels: >
         lavons-nous les yeux !
+
+        *clic* pour agrandir, *clic droit* pour «enregistrer sous...»
+
+
+        en cas de doute à propos des droits, contactez-nous !
     books: >
-        vérifiez les droits d'auteurs avant chaque téléchargement !
+        vérifiez les droits d'auteurs avant consultation !
     network: >
         **le réseau de tous les sites internet** et des liens qu'ils ont entre eux (approche quantitative)
 
@@ -133,22 +149,22 @@ menu:
         -   slug: ninja
             label: ninja !
             icon: fa-magic
-            tip: "naviguer au hasard\nparmi les sites du réseau"
+            tip: "consulter au hasard\nun site du réseau"
         -   slug: map
             label: carte
             icon: fa-map-o
         -   slug: network
             label: réseau
             icon: fa-sitemap
-        -   slug: books
-            label: livres
-            icon: fa-book
-        -   slug: images
-            label: images
-            icon: fa-image
         -   slug: links
             label: liens
             icon: fa-heart
+        -   slug: pixels
+            label: pixels
+            icon: fa-image
+        -   slug: books
+            label: livres
+            icon: fa-book
         -   slug: quotes
             label: citations
             icon: fa-quote-left
@@ -165,6 +181,12 @@ menu:
         quotes:
             link: "http://annuel.framapad.org/p/manifestes"
             text: ajouter une<br>citation
+        books:
+            link: "http://annuel.framapad.org/p/manifestes"
+            text: proposer un<br>document
+        pixels:
+            link: "http://annuel.framapad.org/p/manifestes"
+            text: proposer une image<br>ou un dessin
         links:
             link: "http://annuel.framapad.org/p/manifestes"
             text: suggérer ou<br>modifier un lien

@@ -91,6 +91,20 @@
   }
 }
 
+.panel.bricks.pixels {
+  .image.fullscreened {
+    box-sizing: border-box;
+    z-index: 999;
+    position: fixed;
+    left: -10px; /* cause parent padding ;( */
+    top: 0;
+    
+    width: 100%;
+    height: 100%;
+    .covercontain();
+    img {display: none;}
+  }
+}
 
 .panel.bricks.quotes {
   background: black;

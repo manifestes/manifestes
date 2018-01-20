@@ -71,10 +71,6 @@
   .map .markdiv {
     border-radius: none;
   }
-
-  .button#ninja {
-    display: none;
-  }
 }
 
 
@@ -83,7 +79,7 @@
 @media (max-width: 750px) {
   .header .menu .searchinput,
   .header .menu .tagsmenu,
-  .button#calendar, .button#network {
+  .menubutton#ninja, .menubutton#network, .menubutton#pixels, .menubutton#books, .menubutton#calendar {
     display: none;
   }
 
@@ -111,6 +107,9 @@
       margin: 15px 7px !important;
       padding: 12px !important;
     }
+  }
+  .panel.images {
+    .base-columns(2, 0px);
   }
   
   /* SECTIONS */
@@ -184,7 +183,12 @@
     width: 160px !important;
   }
   .panel.links, .panel.quotes { .base-columns(2, 0px); }
+  .panel.images { .base-columns(3, 0px); }
   .section .date { display: none; }
+  
+  .menubutton#calendar {
+    display: none;
+  }
 }
 
 
@@ -192,9 +196,7 @@
 
 @media (min-width: 1026px) and (max-width: 1199px) {
   .panel.links, .panel.quotes { .base-columns(3, 0px); }
-  .button#calendar {
-    display: none !important;
-  }
+  .panel.images { .base-columns(4, 0px); }
 }
 
 
@@ -209,6 +211,7 @@
     width: 250px !important;
   }
   .panel.links, .panel.quotes { .base-columns(4, 0px); }
+  .panel.images { .base-columns(5, 0px); }
 }
 
 
@@ -224,6 +227,7 @@
     width: 300px !important;
   }
   .panel.links, .panel.quotes { .base-columns(5, 0px); }
+  .panel.images { .base-columns(6, 0px); }
 }
 
 /* VERY MOST BIG SCREENS */
@@ -237,5 +241,6 @@
     width: 320px !important;
   }
   .panel.links, .panel.quotes { .base-columns(6, 0px); }
+  .panel.images { .base-columns(7, 0px); }
 }
 

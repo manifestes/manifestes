@@ -1,6 +1,6 @@
 # Manifeste(s)
 
-a simple website to display contents within sections, and change the world
+a 💨 simple website to display contents within ◉ sections, and change the world
 
 - ☀ as less code as possible
 - ♥ easily read contents and collaborate
@@ -33,7 +33,7 @@ fork or download this project and start your own !
 ### build & minify
 > grunt
 
-### build catalog
+### build catalog (in progress)
 > node prepair_catalog.js
 
 to merge all data (texts, links, etc..) into `catalog.yml` to spare time on load

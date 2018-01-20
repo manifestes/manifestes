@@ -2,6 +2,26 @@
 
 
 -
+    author: F. Hölderlin
+    content: "Là où croît le péril, croît aussi ce qui sauve"
+-
+    author: Enrique Vila-Matas
+    content: >
+        La littérature, quelque passion que nous mettions à le nier, permet de sauver de l’oubli tout ce sur quoi le regard contemporain, de plus en plus immoral, prétend glisser dans l’indifférence absolue.
+-
+    author: 
+    content: Freedom doesn’t come from having choices. Freedom comes from making choices.
+-
+    author: Terra Frutis
+    content: The best time to plant up a fruit forest was twenty years ago; the second best time to plant one is now.
+-
+    author: Simone Weil
+    content: C'est la qualité de notre attention aux êtres et aux choses qui accroît nos chances d'échapper à la barbarie tapie au fond de nous
+-
+    author: "Didier Tronchet, Petit traité de vélosophie"
+    content: >
+        En voiture, tout le monde sait quelle est la place du mort. Mais qui pourrait dire quelle est la place du vivant ?
+-
     author: Eric
     content: >
         Pour moi, le plus dur pour changer le monde ce n'est pas de finir ce qui est commencé, mais bel et bien de commencer ce qu'il y a à finir.
@@ -362,10 +382,12 @@
         
         Je n'ai pas à être plus fort que l'autre. Je dois être plus fort que moi grâce à l'autre.
 -
+    used: true
     author: Georges Perec
     content: >
         Vivre, c'est passer d'un espace à un autre, en essayant le plus possible de ne pas se cogner
 -
+    used: true
     author:
     content: L'homme est fait de la matière dont sont faits les rêves
 -

@@ -1,4 +1,35 @@
-'use strict';
+
+
+//if(! typeof require) { // nw on PROD
+  // var _ = require('underscore');
+  // var CSV = require('comma-separated-values');
+  // var xml2js = require('xml2js');
+//}
+
+
+var totextwithbreak = function(htm) {
+  if(htm) return htm.replace(/<[^>]+>/gm,'<br>').replace(/(<br> *)+/gm,'<br>');
+  else return "";
+};
+var truncatetext = function(str) {
+  if(str.length>400)
+    return str.substring(0,400)+" [...]";
+  else
+    return str;
+};
+
+// var beatthebob = (function () {
+//   "use strict";
+//    return {
+//       test: (function () {
+//         return 'testouou';
+//       }()),
+//       test2: (function () {
+//         return console.log('test 2');
+//       })
+//    };
+// }());
+
 
 ///////////////////////////////////////////////////////////////
 var parseMapCreditAndDo = function(c,data,foreachdo) {
@@ -67,18 +98,21 @@ var parseMapCreditAndDo = function(c,data,foreachdo) {
   }
 
   if(c.type=="xml") {
-    var json = xmlToJSON.parseString(data, {
-      childrenAsArray: false
-    });
-    //console.log("Age de:",json);
-    _.each(json.markers.marker, function(m) {
-      foreachdo({
-        source: c.slug,
-        name: m._attr.name._value,
-        description: "Point de vente de L'âge de faire",
-        address: m._attr.address._value,
-        lat: m._attr.lat._value,
-        lng: m._attr.lng._value
+    
+    //var json = xmlToJSON.parseString(data, { childrenAsArray: false });
+
+    xml2js.parseString(data, function (err, json) {
+      //console.log("Age de:",JSON.stringify(json));
+      _.each(json.markers.marker, function(m,k) {
+        var e = _.values(m)[0];
+        foreachdo({
+          source: c.slug,
+          name: e.name._value,
+          description: "Point de vente de L'âge de faire",
+          address: e.address._value,
+          lat: e.lat._value,
+          lng: e.lng._value
+        });
       });
     });
   }
@@ -107,14 +141,21 @@ var parseMapCreditAndDo = function(c,data,foreachdo) {
         });
 
       if(c.slug=="oasis")
-        if(foreachdo) foreachdo({
-          source: "oasis",
-          name: m.title,
-          description: truncatetext(totextwithbreak(m.html)),
-          lat: m.geo.lat,
-          lng: m.geo.lng
-        });
+        if(m.geo)
+          if(foreachdo) foreachdo({
+            source: "oasis",
+            name: m.title,
+            description: truncatetext(totextwithbreak(m.html)),
+            lat: m.geo.lat,
+            lng: m.geo.lng
+          });
     });
   }
 
 };
+
+// if(! typeof require) {
+//  module.exports.parseMapCreditAndDo = parseMapCreditAndDo;
+// }
+
+

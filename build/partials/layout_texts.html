@@ -45,7 +45,7 @@
 
 <div
   class="emptyresult"
-  ng-if="(state.search || state.tags.length) && dataArrayFilt.texts.length==0"
+  ng-if="(state.search || state.tags.length) && dataArrayFilt[state.layout]length==0"
   ng-click="resetFilters();">
   <div>
     aucun résultat (pour l'instant) pour cette requête précise et pertinente<br>

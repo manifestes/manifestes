@@ -2,7 +2,8 @@
   "name": "manifestes",
   "description": "manifestes",
   "dependencies": {
-    "csv": "^1.1.0",
+    "async": "^2.6.0",
+    "comma-separated-values": "^3.6.4",
     "grunt": "~0.4.1",
     "grunt-contrib-clean": "~0.4.1",
     "grunt-contrib-concat": "~0.3.0",
@@ -20,12 +21,12 @@
     "grunt-tree": "~0.4.9",
     "handlebars": "^4.0.5",
     "js-yaml": "^3.6.1",
+    "marked": "^0.3.6",
     "mkdirp": "^0.5.1",
-    "node-markdown": "^0.1.1",
     "request": "^2.51.0",
     "string": "^3.3.3",
     "underscore": "^1.7.0",
     "webshot": "^0.18.0",
-    "async": "latest"
+    "xml2js": "^0.4.19"
   }
 }

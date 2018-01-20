@@ -55,8 +55,9 @@
     <div class="menu">
       
       <!-- RIGHT MENU BUTTONS, REVERSE ORDER-->
-      <div class="buttons">
+      <div class="menubuttons">
         
+        <!--
         <div
           class="master button hint--left"
           ng-click="changeLayout('catalog');"
@@ -67,13 +68,14 @@
             <i class="fa fa-file-text"></i>
           </a>
         </div>
+        -->
 
 <!--         <div class="sep">
           <i class="fa fa-arrow-right"></i>
         </div> -->
 
         <a
-          class="button hint--bottom"
+          class="menubutton hint--left"
           id="calendar"
           data-hint="{{meta.menu.calendartip}}"
           href="http://demosphere.eu/fr">
@@ -83,11 +85,15 @@
 
         <div
           ng-repeat="b in meta.menu.buttons"
-          class="button hint--bottom"
-          ng-id="b.slug"
+          class="menubutton"
+          id="{{b.slug}}"
           data-hint="{{b.tip}}"
           ng-click="changeLayout(b.slug);"
-          ng-class="{active:state.layout==b.slug}">
+          ng-class="{
+            active: state.layout==b.slug,
+            odd: $index%2==1,
+            'hint--left': b.slug=='ninja',
+            'hint--bottom': b.slug!=='ninja' }">
           <div class="bubble"><i class="fa {{b.icon}}"></i></div>
           <a
             class="ext hint--bottom"
@@ -163,7 +169,7 @@
 
       <!-- ADD ZONE -->
       <a
-        ng-if="state.lang=='fr' && state.layout!='home'"
+        ng-if="state.layout!='home'"
         class="padbutton"
         href="{{state.pad.link}}"
         target="_blank">
@@ -229,14 +235,11 @@
       ng-click="state.disclaim[state.layout]=false;">
 
 
-      <div ng-if="
-        state.layout=='texts' ||
-        state.layout=='links' ||
-        state.layout=='quotes' ||
-        state.layout=='images' ||
-        state.layout=='books' ||
-        state.layout=='catalog'"
-      class="full" compile-here="md2Html(meta.disclaimer[state.layout])"></div>
+      <div
+        ng-if="state.layout!='ninja'"
+        class="full"
+        compile-here="md2Html(meta.disclaimer[state.layout])">
+      </div>
       
       <div ng-if="state.layout=='network' || state.layout=='map'"
       class="full left" compile-here="md2Html(meta.disclaimer[state.layout])"></div>

@@ -212,6 +212,7 @@ mapcredits:
         _json: https://db.ffdn.org/isp/map_data.json
     -   slug: circc
         type: json
+        hide: true
         name: Circuits courts en Belgique
         description: "alternatives de consommation,\nd'épargne et de production\nlocales, équitables,\ndurables, saines,\net transparentes"
         color: c6bc90

@@ -18,19 +18,21 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
   
     moment.locale('fr');
 
-    console.log("from main controller:",settings);
+    console.log("Controller:",settings);
 
     $scope.settings = settings;
     $scope.settings.smallDevice = $window.innerWidth < 1025;
 
     // what is the current layout ?
+    
+    var intro = !$routeParams.layout;
+
     var layout = $routeParams.layout ?
-      (settings.layouts.indexOf($routeParams.layout)==-1 ? "texts" : $routeParams.layout) :
-      "home";
+      (settings.layouts.indexOf($routeParams.layout)==-1 ? "home" : $routeParams.layout)
+      : "home";
 
     var tags = [];
     //var tags = $routeParams.tags ? $routeParams.tags.split(',') : [];
-    var intro = !$routeParams.layout;
 
     $scope.meta = {}; // mainly the meta info at start of text.yml
 
@@ -38,14 +40,14 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
       texts: [],
       quotes: [],
       links: [],
-      images: [],
+      pixels: [],
       catalog: []
     }
     $scope.dataArrayFilt = { // displayed list
       texts: [],
       quotes: [],
       links: [],
-      images: [],
+      pixels: [],
       catalog: []
     }
 
@@ -60,7 +62,7 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
     $scope.state = {
       intro: intro, // splash fullscreen panel
       introimage: 0, // slideshow of intro splash images
-      lang: $routeParams.lang,
+      lang: 'fr', // olderly: $routeParams.lang,
       layout: layout, // texts/links/map/print/etc...
       loading: false, // we will show loadingspinner when scope not ready
       
@@ -110,7 +112,7 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
 
     $scope.updatePath = function() {
       var st = $scope.state;
-      $location.path('/'+st.lang+'/'+st.layout, false); //+'/'+st.tags.join(','), false);
+      $location.path('/'+st.layout, false); //+'/'+st.tags.join(','), false);
     }
 
     $scope.partialTemplate = function(lay) {
@@ -145,8 +147,7 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
     $scope.changeLayout = function(lay) {
       if(lay == $scope.state.layout) return; // unchanged
       else {
-        if($scope.state.lang=='fr')
-          $scope.state.pad = $scope.meta.menu.pad[lay];
+        $scope.state.pad = $scope.meta.menu.pad[lay];
         
         //$scope.state.loading = true;
 
@@ -347,7 +348,7 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
     var updateArrays = function() {
       console.log("updateArrays!");
       var lay = $scope.state.layout;
-      if(["texts","quotes","links","images"].indexOf(lay)!==-1) {
+      if(["texts","quotes","links","pixels"].indexOf(lay)!==-1) {
 
         if(!$scope.state.search && !$scope.state.tags.length) {
           $scope.dataArrayFilt[lay] = $scope.dataArray[lay];
@@ -470,11 +471,11 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
       }
 
       ///////////////////////////////////// YML DATA
-      if(["meta","texts","quotes","links","images","catalog","map"].indexOf(which)!==-1) {
+      if(["meta","texts","quotes","links","pixels","catalog","map"].indexOf(which)!==-1) {
 
         var filename = which;
-        if(which=="images")
-          filename = "inspiration.json";
+        if(which=="pixels")
+          filename = "pixels.json";
         else
           filename = which+".yml";
 
@@ -641,11 +642,11 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
           }
 
           ////////////////////////////////////
-          if(which=="images") {
+          if(which=="pixels") {
             _.each(res, function(v,k) {
               var im = {
                 label: k,
-                url: settings.datapath + "inspiration/" + v
+                url: settings.datapath + "pixels/" + v
               };
               //console.log(im);
               $scope.dataArray[which].push(im);
@@ -676,7 +677,7 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
             if(!$scope.settings.smallDevice) {
 
               var credits = _.filter($scope.meta.mapcredits, function(c) {
-                return !c.dontload;
+                return !c.hide;
               });
               async.parallel(
 
@@ -712,36 +713,55 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
     var prepairCatalogLayouts = function() {
       // designed layouts are called based on nb of elements they use
       var layouts = ["2img,1text","1quote"];
-      var tobeput = $scope.catalogArray;
+      var tobeput = $scope.dataArray.catalog;
+      $scope.pagesArray = [];
       console.log("Start catalog loop");
 
-      // while(tobeput.length>20) {
-      //   var p = {};
-      //   var lay = _.rand(layouts);
-      //   console.log("Choosing another random layout:",lay);
-      //   var elstofind = lay.split(",");
-        
-      //   _.each(elstofind, function(e) {
-      //     // e = {
-      //     //   t: e[1:], // type
-      //     //   howmany: e[0]
-      //     // };
-      //     // look into what's left
-      //     var found = _.find(tobeput, {t:e.t}, e.howmany);
-      //     console.log("Found:",found);
-      //     if(!found) {
-      //       console.log("! Not anymore enough types of this element:",e.t,"in",lay);
-      //       return;
-      //     } else {
-      //       p[e.type] = found;
-      //       // remove those elements from stack
-      //       _.remove(tobeput, found);
-      //     }
-      //   });
+      // prepair separated lists of elmts
+      var preplists = {};
+      // for each type..
+      _.each(['t','q','l','i','u','m'], function(t) {
+        // ..make a filteredlist
+        preplists[t] = _.filter($scope.dataArray.catalog, function(r) {
+          // is type if has this 'letter' key
+          return r[t];
+        });
+      });
 
-      //   $scope.pagesArray.push(p);
-      //   console.log("Page made:",$scope.pagesArray.length);
-      // };
+      while($scope.pagesArray.length<30) {
+        var p = {};
+        var lay = _.sample(layouts);
+        console.log("Choosing another random layout:",lay);
+        var elstofind = lay.split(",");
+        
+        _.each(elstofind, function(e) {
+          e = {
+            t: e[1], // type is one letter (t,l,i,...)
+            howmany: e[0]
+          };
+
+          //look into what's left in the prepaired list of this elmt type
+          var found = _.sample(preplists[e.t], e.howmany);
+          // if no, forget this layout !
+          if(!found) {
+            layouts = _.without(layouts,lay);
+            console.log("No more elements to fill layout:", lay);
+          }
+
+          //console.log("Found:",found,e);
+          if(!found) {
+            console.log("! Not anymore enough types of this element:",e.t,"in",lay);
+            return;
+          } else {
+            p[e.t] = found;
+            // remove those elements from stack
+            _.without(preplists[e.t], found);
+          }
+        });
+
+        $scope.pagesArray.push(p);
+        console.log("Page made:",$scope.pagesArray.length);
+      };
     };
 
     ///////////////////////////////////////////////////////////////
@@ -1092,6 +1112,8 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
       $http
       .get(settings.datapath+'/map/map_'+c.slug+"."+c.type)
       .success(function(data) {
+
+        //console.log(beatthebob.test());
 
         parseMapCreditAndDo(c,data,addMarker);
         

@@ -17,6 +17,12 @@ body {
   .background-size(cover);
   background-color: black;
 }
+.covercontain {
+  background-position: center center;
+  background-repeat: no-repeat;
+  .background-size(contain);
+  background-color: black;
+}
 
 /* hack to allow linebreaks, aka « &#10; » within hint.css tooltips */
 /* https://github.com/chinchang/hint.css/issues/100 */
@@ -281,10 +287,10 @@ span.highlight, div.highlight { /* searched words */
       /* background imageurl & color are set within template */
       background-position: center center;
       background-repeat: no-repeat;
-      background-size: contain;
+      .background-size(contain);
 
       &.full {
-        background-size: cover; 
+        .background-size(cover); 
       }
 
       .transition(transform 0.4s);
@@ -427,7 +433,7 @@ span.highlight, div.highlight { /* searched words */
     position: relative;
     height: 47px;
     margin: 9px 0px;
-    padding: 4px;
+    padding: 6px;
     line-height: 47px;
     vertical-align: top;
     border-radius: 40px;
@@ -460,7 +466,7 @@ span.highlight, div.highlight { /* searched words */
     background: white;
     text-align: left;
 
-    .buttons {
+    .menubuttons {
       z-index: 40;
       position: absolute;
       right: 0;
@@ -468,7 +474,7 @@ span.highlight, div.highlight { /* searched words */
       background: white;
 
       /* NORMAL BUTTON LOOK */
-      .button {
+      .menubutton {
         //z-index: 10;
         box-sizing: border-box;
         position: relative;
@@ -484,7 +490,10 @@ span.highlight, div.highlight { /* searched words */
         background: white;
         
         cursor: pointer;
-
+        
+        &.odd {
+          background: #f0f0f0;
+        }
         .bubble {
           @bubz: 34px;
           .absolute-centered();
@@ -500,9 +509,10 @@ span.highlight, div.highlight { /* searched words */
           font-size: 1.3em;
           line-height: 1.9em;
         }
+        &.master i { color: @lightColor; }
 
         span {
-          display: none;
+          color: @lightColor;
           line-height: 68px;
           i {
             font-size: 0.9em;
@@ -530,18 +540,21 @@ span.highlight, div.highlight { /* searched words */
         }
           
         &:hover {
+          border-bottom: 5px solid @redColor;
           a.ext {
             opacity: 0.5;
           }
-          span { display: block; color: @lightColor; }
+          i { color: @redColor; }
+          span { display: block; color: @redColor; }
         }
 
         &.active, &.active:hover {
+          border-bottom: none;
           background: @redColor;
           .bubble {
             border: 2px solid white;
             background: white;
-            i { color: grey; }
+            i { color: @redColor; }
           }
           span {
             line-height: 81px;
@@ -559,7 +572,7 @@ span.highlight, div.highlight { /* searched words */
         }
       }
 
-      .button.master {
+      .menubutton.master {
         width: 60px;
         height: 100%;
         line-height: 1.1em;

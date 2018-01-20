@@ -5,36 +5,48 @@
     ng-class="{
       odd: $index%2==0,
       even: $index%2==1,
-      used: e.used
+      used: e.used,
+      t-t:e.t,
+      t-q:e.q,
+      t-l:e.l,
+      t-u:e.u,
+      t-i:e.i,
+      t-m:e.m,
     }">
 
       <!-- ---------------------------------------- -->
-      <div ng-if="e.t=='text'" class="text">
-        <div class="title" compile-here="e.title"></div>
-        <div class="subtitle" compile-here="e.subtitle"></div>
-        <div class="content" compile-here="e.content"></div>
+      <div ng-if="e.t" class="text">
+        <div class="title" compile-here="e.t"></div>
+        <div class="subtitle" compile-here="e.s"></div>
+        <div class="content" compile-here="e.c"></div>
       </div>
 
       <!-- ---------------------------------------- -->
-      <div ng-if="e.t=='quote'" class="quote">
-        <div class="quote" compile-here="md2Html(e.content)"></div>
-        <div class="author" compile-here="md2Html(e.author) "></div>
+      <div ng-if="e.q" class="quote">
+        <div class="quote" compile-here="md2Html(e.q)"></div>
+        <!-- <div class="author" compile-here="md2Html(e.author) "></div> -->
       </div>
 
       <!-- ---------------------------------------- -->
-      <div ng-if="e.t=='link'" class="link">
-        <div class="content" compile-here="e.content"></div>
+      <div ng-if="e.l" class="link">
+        <div class="content" compile-here="e.l"></div>
       </div>
 
       <!-- ---------------------------------------- -->
-      <div ng-if="e.t=='pict'" class="pict">
-          <img src="{{e.image}}"/>
+      <div ng-if="e.u" class="url">
+        <div class="content" compile-here="e.u"></div>
       </div>
 
       <!-- ---------------------------------------- -->
-      <div ng-if="e.t=='mappoint'" class="mappoint">
-        
+      <div ng-if="e.i" class="pict">
+        <img src="{{e.i}}"/>
+      </div>
 
+      <!-- ---------------------------------------- -->
+      <div ng-if="e.m" class="mappoint">
+        <div class="titl" compile-here="e.m"></div>
+        <div class="desc" compile-here="e.d"></div>
+        <div class="sour" compile-here="e.s"></div>
       </div>
 
   </div>
