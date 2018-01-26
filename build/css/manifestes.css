@@ -1356,7 +1356,7 @@ div.highlight {
   pointer-events: all;
   cursor: pointer;
   box-sizing: border-box;
-  padding: 35px 0px;
+  padding: 14px 0px;
   font-size: 1.7em;
   font-style: italic;
   font-family: 'Lato', sans-serif;
@@ -1373,7 +1373,11 @@ div.highlight {
   transition: padding 0.2s;
 }
 .intro .button:hover {
-  color: #6a6c67;
+  background: black;
+  color: white;
+}
+.intro .button i {
+  font-size: 60px;
 }
 .lastupdate {
   display: inline-block;
@@ -3578,7 +3582,7 @@ body.layout-mapprint .container {
   }
   .intro .button {
     font-size: 1.2em;
-    padding: 20px 0px;
+    padding: 0px 0px;
     margin-top: 10px;
   }
   .intro .splash,

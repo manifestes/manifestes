@@ -16,15 +16,15 @@ source:
     catalog: https://github.com/manifestes/manifestes/blob/gh-pages/data/catalog.yml
 splash:
     images:
-        - urgent-de-ralentir_000.svg
-        - manifeste-utopies-concretes_000.svg
-        - prendre-position_000.svg
-        - collectifs-transition_000.svg
-        - espoirs-fous_000.svg
-    enter: "consulter & participer"
+        - urgent-de-ralentir_960F20.svg
+        - manifeste-utopies-concretes_337A96.svg
+        - prendre-position_253468.svg
+        - collectifs-transition_000000.svg
+        - espoirs-fous_9000BE.svg
+    enter: "enter the void"
 intro:
     -   layout: texts
-        title: texte.s
+        title: manifeste
         descr: des citations et morceaux de textes choisis
         image: FingerBones.jpg
         quote:
@@ -38,7 +38,7 @@ intro:
             author: 
             content: L‘homme est fait de la matière dont sont faits les rêves
     -   layout: network
-        title: réseau
+        title: galaxie
         descr: un graphe de près de 3000 sites internet de collectifs, structures, médias, blogs — positions relatives et interconnexions
         image: sombrelac.jpg
         quote:
@@ -52,7 +52,7 @@ intro:
             author: Chris Marker, Le Joli Mai, 1h28min
             content: l'avenir est là ! mais les gens ne le voient pas ... ils attendent l'horizon au loin
     -   layout: links
-        title: lien.s
+        title: ".: partout :."
         descr: consulter des textes, vidéos, trouver des médias libres — une sélection d'articles, projets qui méritent d'être connus
         image: nepaspencherdanslevirage.jpg
         quote:
