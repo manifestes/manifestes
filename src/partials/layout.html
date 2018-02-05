@@ -222,7 +222,7 @@
     }">
 
     <!-- message displayed the first time you arrived on a layout -->
-      <div
+    <div
       ng-if="state.layout!='textsprint' && state.layout!='home'"
       class="disclopener"
       ng-class="{active: !state.disclaim[state.layout]}"
@@ -235,17 +235,14 @@
       ng-class="{active: state.disclaim[state.layout]}"
       ng-click="state.disclaim[state.layout]=false;">
 
-
-      <div
-        ng-if="state.layout!='ninja'"
+      <div 
         class="full"
+        ng-class="{
+          left: state.layout=='network' || state.layout=='map'
+          }"
         compile-here="md2Html(meta.disclaimer[state.layout])">
       </div>
-      
-      <div ng-if="state.layout=='network' || state.layout=='map'"
-      class="full left" compile-here="md2Html(meta.disclaimer[state.layout])"></div>
     
-
       <i class="fa fa-times" ng-click="state.disclaim[state.layout] = false;"></i>
     </div>
 
