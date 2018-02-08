@@ -16,51 +16,51 @@ source:
     catalog: https://github.com/manifestes/manifestes/blob/gh-pages/data/catalog.yml
 splash:
     images:
-        - urgent-de-ralentir_960F20.svg
-        - manifeste-utopies-concretes_337A96.svg
-        - prendre-position_259D69.svg
-        - collectifs-transition_000000.svg
-        - espoirs-fous_9000BE.svg
+        - 0-urgent-de-ralentir_960F20.svg
+        - 1-manifeste-utopies-concretes_337A96.svg
+        - 2-prendre-position_259D69.svg
+        - 3-collectifs-transition_000000.svg
+        - 4-espoirs-fous_9000BE.svg
     enter: "enter the void"
 intro:
     -   layout: texts
         title: manifeste
-        descr: des citations et morceaux de textes choisis
+        descr: morceaux de textes choisis
         image: FingerBones.jpg
         quote:
             author: Audrey
             content: Que ceux qui sont déjà conscients se sentent soutenus, et que les autres ouvrent les yeux pour changer, à leur rythme, à leur mesure
     -   layout: pixels
         title: pixel.s
-        descr: pour composer d'autres manières de voir le monde
+        descr: composer d'autres manières de voir le monde
         image: hometohome.jpg
         quote:
             author: 
             content: L‘homme est fait de la matière dont sont faits les rêves
     -   layout: network
         title: galaxie
-        descr: un graphe de près de 3000 sites internet de collectifs, structures, médias, blogs — positions relatives et interconnexions
+        descr: un graphe de 3000 sites internet de collectifs, structures, médias, blogs — positions relatives & interconnexions
         image: sombrelac.jpg
         quote:
             author: Proverbe mexicain
             content: Ils ont essayé de nous enterrer, ils ne savaient pas que nous étions des graines
     -   layout: map
         title: carte
-        descr: "agrégation de plus de 3000 lieux : caravane des alternatives, hétérotopies, articles Reporterre et Bastamag, annonces Passerelle éco, lieux de vie et bases nomades — à visiter !"
+        descr: "3000 lieux à visiter : caravane des alternatives, hétérotopies, articles Reporterre et Bastamag, annonces Passerelle éco, lieux de vie et bases nomades..."
         image: SophieRaynal_pretemoitesyeux.fr.jpg
         quote:
             author: Chris Marker, Le Joli Mai, 1h28min
             content: l'avenir est là ! mais les gens ne le voient pas ... ils attendent l'horizon au loin
     -   layout: links
         title: ".: partout :."
-        descr: consulter des textes, vidéos, trouver des médias libres — une sélection d'articles, projets qui méritent d'être connus
+        descr: "sélection de perles à explorer : articles, vidéos, médias libres, projets"
         image: nepaspencherdanslevirage.jpg
         quote:
             author: Bernard Werber
             content: L'important n'est pas de convaincre, mais de donner à réfléchir
     -   layout: ninja
         title: ¡ ninja !
-        descr: random rules
+        descr: random rules — exploration du hasard
         image: DannyVonRyswyk.jpg
         quote:
             author: Georges Perec
@@ -166,7 +166,7 @@ menu:
             label: livres
             icon: fa-book
         -   slug: quotes
-            label: citations
+            label: cit.
             icon: fa-quote-left
         -   slug: texts
             label: textes
@@ -253,8 +253,6 @@ footer:
         + la liste de discussion [utopies-concretes@lists.riseup.net](https://lists.riseup.net/www/subscribe/utopies-concretes)
 
         + le [code source](https://github.com/manifestes/manifestes) du site et les [dernières modifications](https://github.com/manifestes/manifestes/commits/gh-pages)
-
-        + les contenus: [meta](https://github.com/manifestes/manifestes/blob/gh-pages/data/meta_fr.yml), [textes](https://github.com/manifestes/manifestes/blob/gh-pages/data/texts_fr.yml), [citations](https://github.com/manifestes/manifestes/blob/gh-pages/data/quotes_fr.yml), [liens](https://github.com/manifestes/manifestes/blob/gh-pages/data/links_fr.yml)
 
         + [les lieux de la carte à ajouter/modifier](https://framacalc.org/carto)
 

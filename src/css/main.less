@@ -477,6 +477,14 @@ span.highlight, div.highlight { /* searched words */
       height: @menuH;
       background: white;
 
+      /* alternate color (here 'cause number of buttons can change) */
+/*      .menubutton:nth-child(odd) {
+        background: #f0f0f0;
+      }
+      .menubutton:nth-child(even) {
+        background: white;
+      }*/
+
       /* NORMAL BUTTON LOOK */
       .menubutton {
         //z-index: 10;
@@ -491,13 +499,9 @@ span.highlight, div.highlight { /* searched words */
         vertical-align: top;
         text-align: center;
         font-size: 0.75em;
-        background: white;
         
         cursor: pointer;
         
-        &.odd {
-          background: #f0f0f0;
-        }
         .bubble {
           @bubz: 34px;
           .absolute-centered();
@@ -542,7 +546,7 @@ span.highlight, div.highlight { /* searched words */
             }
           }
         }
-          
+
         &:hover {
           border-bottom: 5px solid @redColor;
           a.ext {
@@ -573,6 +577,13 @@ span.highlight, div.highlight { /* searched words */
             color: @veryLightColor;
             font-style: italic;
           }
+        }
+
+        &.disabled {
+          span, i {
+            color: @mostLightColor;
+          }
+          pointer-events: none;
         }
       }
 

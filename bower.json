@@ -25,6 +25,6 @@
     "underscore": "latest",
     "async": "~1.5.2",
     "zepto": "~1.1.6",
-    "xml2js": "~0.4.19"
+    "x2js": "~1.2.0"
   }
 }

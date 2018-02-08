@@ -99,20 +99,18 @@ var parseMapCreditAndDo = function(c,data,foreachdo) {
 
   if(c.type=="xml") {
     
-    //var json = xmlToJSON.parseString(data, { childrenAsArray: false });
+    var x2js = new X2JS();
+    var json = x2js.xml_str2json(data);
+    console.log(json);
 
-    xml2js.parseString(data, function (err, json) {
-      //console.log("Age de:",JSON.stringify(json));
-      _.each(json.markers.marker, function(m,k) {
-        var e = _.values(m)[0];
-        foreachdo({
-          source: c.slug,
-          name: e.name._value,
-          description: "Point de vente de L'âge de faire",
-          address: e.address._value,
-          lat: e.lat._value,
-          lng: e.lng._value
-        });
+    _.each(json.markers.marker, function(m,k) {
+      foreachdo({
+        source: c.slug,
+        name: m._name,
+        description: "Point de vente de L'âge de faire",
+        address: m._address,
+        lat: m._lat,
+        lng: m._lng
       });
     });
   }

@@ -1507,6 +1507,13 @@ div.highlight {
   right: 0;
   height: 65px;
   background: white;
+  /* alternate color (here 'cause number of buttons can change) */
+  /*      .menubutton:nth-child(odd) {
+        background: #f0f0f0;
+      }
+      .menubutton:nth-child(even) {
+        background: white;
+      }*/
   /* NORMAL BUTTON LOOK */
 }
 .header .menu .menubuttons .menubutton {
@@ -1519,11 +1526,7 @@ div.highlight {
   vertical-align: top;
   text-align: center;
   font-size: 0.75em;
-  background: white;
   cursor: pointer;
-}
-.header .menu .menubuttons .menubutton.odd {
-  background: #f0f0f0;
 }
 .header .menu .menubuttons .menubutton .bubble {
   box-sizing: border-box;
@@ -1622,6 +1625,13 @@ div.highlight {
 .header .menu .menubuttons .menubutton.inactive i {
   color: #cccccc;
   font-style: italic;
+}
+.header .menu .menubuttons .menubutton.disabled {
+  pointer-events: none;
+}
+.header .menu .menubuttons .menubutton.disabled span,
+.header .menu .menubuttons .menubutton.disabled i {
+  color: #e4e4e4;
 }
 .header .menu .menubuttons .menubutton.master {
   width: 60px;
@@ -2085,6 +2095,8 @@ body.layout-mapprint .container {
 .wrapper.layout-home .page {
   box-sizing: border-box;
   padding-top: 65px;
+  margin-bottom: 250px;
+  /* hack to avoid overlapping (?) */
   height: 100%;
   width: 100%;
 }
