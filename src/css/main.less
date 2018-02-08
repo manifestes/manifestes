@@ -878,6 +878,33 @@ span.highlight, div.highlight { /* searched words */
   }
 }
 
+.searchsuggestions {
+  z-index: 7;
+  position: absolute;
+  width: 7000px; /* one line please */
+  text-align: left;
+  left: 0;
+  top: @menuH;
+  padding: 6px;
+  font-size: 0.75em;
+  background: @mostLightColor;
+  color: @lightColor;
+
+  .box-shadow(0px 0px 4px 0px #525252);
+
+  .searchsuggestion {
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 2px;
+    background: white;
+    margin-right: 3px;
+    &.active {
+      background: @searchYellow;
+    }
+  }
+}
+
 .disclaimer {
   box-sizing: border-box;
   z-index: 32;

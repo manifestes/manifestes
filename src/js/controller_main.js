@@ -75,6 +75,8 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
         map: !$scope.settings.dev,
       },
 
+      suggestions: {}, // search suggestions based on freqs
+
       count: {}, // will count results if search/tags filtered
 
       tagging: tags.length>0, // if tags/filtering active or not
@@ -483,6 +485,21 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
         .get(settings.datapath + filename)
         .success(function(res) {
 
+          ////////////////////////////////////
+          if(which=="pixels") {
+            // determine most frequent words to help search
+            var words = _.keys(res).join().split(/[\,\-_]/);
+            $scope.state.suggestions.pixels =
+              _.chain(words)
+              .countBy()
+              .pairs()
+              .sortBy(function(item) {return item[1];})
+              .last(30)
+              .map(function(e){return e[0];})
+              .without("","l","i","pas","le","les","vous","de","you","autre")
+              .value();
+            //console.log($scope.state.suggestions.pixels);
+          }
           ////////////////////////////////////
           if(which=="meta") {
             var m = jsyaml.load(res);

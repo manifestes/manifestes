@@ -136,6 +136,7 @@
           state.layout=='ninja' || state.layout=='map' || state.layout=='full' || state.layout=='home'}"
         >
 
+        <!-- TAGS -->
         <div
           class="tagactivator hint--bottom-right"
           data-hint="{{state.taggingtooltip}}"
@@ -244,6 +245,21 @@
       </div>
     
       <i class="fa fa-times" ng-click="state.disclaim[state.layout] = false;"></i>
+    </div>
+
+    <!-- SEARCH SUGGESTIONS -->
+    <div
+      class="searchsuggestions"
+      ng-if="state.layout=='pixels' && state.searchinput.length>0">
+      <i>{{meta.menu.trysearch}}</i>
+      <div
+        ng-repeat="n in state.suggestions.pixels"
+        class="searchsuggestion"
+        ng-class="{
+          active: n == state.search
+        }"
+        ng-click="state.searchinput=n; searchSubmit(n);">
+        {{n}}</div><div class="searchsuggestion">...</div>
     </div>
 
     <!-- loading spinner while not ready -->

@@ -1912,6 +1912,33 @@ div.highlight {
 .disclopener:hover {
   color: #3c3c3c;
 }
+.searchsuggestions {
+  z-index: 7;
+  position: absolute;
+  width: 7000px;
+  /* one line please */
+  text-align: left;
+  left: 0;
+  top: 65px;
+  padding: 6px;
+  font-size: 0.75em;
+  background: #e4e4e4;
+  color: #ababab;
+  -webkit-box-shadow: 0px 0px 4px 0px #525252;
+  -moz-box-shadow: 0px 0px 4px 0px #525252;
+  box-shadow: 0px 0px 4px 0px #525252;
+}
+.searchsuggestions .searchsuggestion {
+  display: inline-block;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 2px;
+  background: white;
+  margin-right: 3px;
+}
+.searchsuggestions .searchsuggestion.active {
+  background: rgba(255, 252, 0, 0.48);
+}
 .disclaimer {
   box-sizing: border-box;
   z-index: 32;

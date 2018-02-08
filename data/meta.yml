@@ -145,6 +145,7 @@ menu:
     search: chercher
     addzone: ajouter !
     sourcetip: "voir la source\ndes données"
+    trysearch: "essayez avec :"
     buttons:
         -   slug: ninja
             label: ninja !
