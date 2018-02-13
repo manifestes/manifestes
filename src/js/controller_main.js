@@ -41,6 +41,7 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
       quotes: [],
       links: [],
       pixels: [],
+      books: [],
       catalog: []
     }
     $scope.dataArrayFilt = { // displayed list
@@ -48,6 +49,7 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
       quotes: [],
       links: [],
       pixels: [],
+      books: [],
       catalog: []
     }
 
@@ -71,6 +73,8 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
         texts: !$scope.settings.dev,
         quotes: !$scope.settings.dev,
         links: !$scope.settings.dev,
+        pixels: !$scope.settings.dev,
+        books: !$scope.settings.dev,
         network: !$scope.settings.dev,
         map: !$scope.settings.dev,
       },
@@ -322,14 +326,19 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
         _.each(['title','subtitle','content'], function(k) {
           show = show || ( o.hasOwnProperty(k) && reg.test(totext(o[k])) );
         });
-      } else { 
+      } else { // DEDUCTIVE PATH: (you can do better)
         if(o.author) { // a quote
           var show = reg.test(totext(o.author)) || reg.test(totext(o.content));
         } else { 
           if(o.content) // a link
             var show = reg.test(totext(o.content));
-          else // an image !
-            var show = reg.test(totext(o.label));
+          else { 
+            if(o.name) { // a book
+              var show = reg.test(totext(o.name));
+            } 
+            else // an image !
+              var show = reg.test(totext(o.label));
+          }
         }
       }
       return show;
@@ -350,7 +359,7 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
     var updateArrays = function() {
       console.log("updateArrays!");
       var lay = $scope.state.layout;
-      if(["texts","quotes","links","pixels"].indexOf(lay)!==-1) {
+      if(["texts","quotes","links","pixels","books"].indexOf(lay)!==-1) {
 
         if(!$scope.state.search && !$scope.state.tags.length) {
           $scope.dataArrayFilt[lay] = $scope.dataArray[lay];
@@ -473,12 +482,12 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
       }
 
       ///////////////////////////////////// YML DATA
-      if(["meta","texts","quotes","links","pixels","catalog","map"].indexOf(which)!==-1) {
+      if(["meta","texts","quotes","links","pixels","books","catalog","map"].indexOf(which)!==-1) {
 
         var filename = which;
         if(which=="pixels")
           filename = "pixels.json";
-        else
+        else 
           filename = which+".yml";
 
         $http
@@ -500,6 +509,7 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
               .value();
             //console.log($scope.state.suggestions.pixels);
           }
+
           ////////////////////////////////////
           if(which=="meta") {
             var m = jsyaml.load(res);
@@ -648,8 +658,7 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
               console.log("!! non used in texts:", _.difference(_.keys($scope.linksByTag), _.keys($scope.textNbByTag)));
               console.log("!! non-declared tags:", _.difference(_.keys($scope.linksByTag), _.keys($scope.meta.tags)));
               console.log("!! declared tags with 0 link", _.difference(_.keys($scope.meta.tags), _.keys($scope.linksByTag)));
-            }
-            
+            }            
           }
 
           ////////////////////////////////////
@@ -661,12 +670,28 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
           ////////////////////////////////////
           if(which=="pixels") {
             _.each(res, function(v,k) {
-              var im = {
+              $scope.dataArray[which].push({
                 label: k,
                 url: settings.datapath + "pixels/" + v
-              };
-              //console.log(im);
-              $scope.dataArray[which].push(im);
+              });
+            });
+            $scope.dataArrayFilt[which] = $scope.dataArray[which];
+          }
+
+          ////////////////////////////////////
+          if(which=="books") {
+            //console.log(res);
+            var line = res.split('\n');
+
+            _.each(line, function(l) {
+              var d = l.split(" "); // name url
+              var tagged = (/,/).test(d[0]); // seems always to be: tag.tag.tag,author_name-of-book.pdf
+              $scope.dataArray[which].push({
+                url: d[1],
+                tags: tagged ? d[0].split(",")[0].split('.') : ["nc"],
+                tag: tagged ? d[0].split(",")[0].split('.')[0] : "nc",
+                name: tagged ? d[0].split(",")[1] : d[0]
+              });
             });
             $scope.dataArrayFilt[which] = $scope.dataArray[which];
           }

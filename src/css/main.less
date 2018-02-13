@@ -103,7 +103,7 @@ span.highlight, div.highlight { /* searched words */
 // settings: C = 0 0.69 / L = 1.06 1.33
 
 
-/* COLORS FOR TAGS (with overwriting/priorities) */
+/* COLORS FOR TAGS (declaring order following overwriting/priorities) */
 .t-about, .t-group, .t-list, .t-tool {
   background-color: #C7C9C6;
 }
@@ -136,6 +136,10 @@ span.highlight, div.highlight { /* searched words */
 }
 .t-companies, .t-history, .t-law, .t-economy, .t-politics, .t-philo {
   background-color: #D9C8DA;
+}
+
+.t-nc {
+  background-color: #d4d4d4; 
 }
 
 // ... then duplicated below for bordered color
@@ -583,7 +587,7 @@ span.highlight, div.highlight { /* searched words */
           span, i {
             color: @mostLightColor;
           }
-          pointer-events: none;
+          /*pointer-events: none;*/
         }
       }
 
