@@ -89,12 +89,12 @@
           class="menubutton"
           id="{{b.slug}}"
           data-hint="{{b.tip}}"
-          ng-click="changeLayout(b.slug);"
+          ng-click="b.slug!='books' && changeLayout(b.slug);"
           ng-class="{
             disabled: b.slug=='books',
             active: state.layout==b.slug,
             'hint--left': b.slug=='ninja',
-            'hint--bottom': b.slug!=='ninja' }">
+            'hint--bottom': b.slug!='ninja' }">
           <div class="bubble"><i class="fa {{b.icon}}"></i></div>
           <a
             class="ext hint--bottom"

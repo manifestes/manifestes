@@ -1,3 +1,12 @@
-<div class="frame">
-    <iframe ng-src="{{meta.source.books}}"></iframe>
+
+<div class="books">
+
+	<a
+		ng-repeat="b in dataArrayFilt.books"
+		class="book t-{{b.tag}}"
+		href="{{b.url}}"
+		title="{{b.name}}"
+		target="_blank"
+	>{{b.name}}</a>
+
 </div>

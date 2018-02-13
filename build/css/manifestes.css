@@ -1062,7 +1062,7 @@ div.highlight {
   padding: 2px 4px;
   background: rgba(255, 252, 0, 0.48);
 }
-/* COLORS FOR TAGS (with overwriting/priorities) */
+/* COLORS FOR TAGS (declaring order following overwriting/priorities) */
 .t-about,
 .t-group,
 .t-list,
@@ -1124,6 +1124,9 @@ div.highlight {
 .t-politics,
 .t-philo {
   background-color: #D9C8DA;
+}
+.t-nc {
+  background-color: #d4d4d4;
 }
 .tb-about,
 .tb-group,
@@ -1627,7 +1630,7 @@ div.highlight {
   font-style: italic;
 }
 .header .menu .menubuttons .menubutton.disabled {
-  pointer-events: none;
+  /*pointer-events: none;*/
 }
 .header .menu .menubuttons .menubutton.disabled span,
 .header .menu .menubuttons .menubutton.disabled i {
@@ -2637,6 +2640,19 @@ body.layout-mapprint .container {
 .panel.bricks .link.image .image,
 .panel.bricks .link.image img {
   width: 100%;
+}
+.books {
+  padding: 40px 70px 40px 70px;
+  line-height: 1.8em;
+  background: #e4e4e4;
+}
+.books .book {
+  margin: 3px;
+  padding: 4px 5px;
+  color: #ababab;
+}
+.books .book:hover {
+  color: #3c3c3c;
 }
 .panel.bricks.pixels .image.fullscreened {
   box-sizing: border-box;
