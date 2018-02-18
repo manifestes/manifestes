@@ -2274,28 +2274,6 @@ body.layout-mapprint .container {
   border-right: 60px solid transparent;
   /* ---------------------- OPENED SECTION */
 }
-.wrapper.layout-texts .section.status-draft {
-  border-right: 60px solid #987676;
-}
-.wrapper.layout-texts .section .date {
-  float: left;
-  box-sizing: border-box;
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 50%;
-  -webkit-transform: translate(0, -50%);
-  -moz-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  -o-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  text-transform: none;
-  font-style: italic;
-  color: gray;
-  text-align: left;
-  margin-left: 15px;
-  font-size: 0.65em;
-}
 .wrapper.layout-texts .section .tags {
   box-sizing: border-box;
   position: absolute;
@@ -2674,31 +2652,6 @@ body.layout-mapprint .container {
 .panel.bricks.pixels .image.fullscreened img {
   display: none;
 }
-.panel.bricks.quotes {
-  background: black;
-}
-.panel.bricks.quotes .link {
-  color: #d4d4d4;
-  background: #383737;
-}
-.panel.bricks.quotes .link.used {
-  border: 3px solid #8D6128;
-}
-.panel.bricks.quotes .link .quote-container {
-  font-family: 'Merriweather', serif;
-  font-style: italic;
-  line-height: 1.5em;
-}
-.panel.bricks.quotes .link .quote-container .quote p {
-  margin-bottom: 12px;
-}
-.panel.bricks.quotes .link .quote-container .author {
-  margin-top: 15px;
-  text-align: right;
-  font-style: italic;
-  color: #969696;
-}
-/* quotes layout is set within links (same type of style) */
 #sigma-network {
   height: 100%;
 }
@@ -3564,8 +3517,7 @@ body.layout-mapprint .container {
     display: none;
   }
   /* LINKS */
-  .panel.links,
-  .panel.quotes {
+  .panel.links {
     -webkit-column-count: 1;
     -moz-column-count: 1;
     column-count: 1;
@@ -3577,8 +3529,7 @@ body.layout-mapprint .container {
   -moz-column-rule: @c outset red;
   column-rule: @c outset red;*/
   }
-  .panel.links .link,
-  .panel.quotes .link {
+  .panel.links .link {
     margin: 15px 7px !important;
     padding: 12px !important;
   }
@@ -3655,8 +3606,7 @@ body.layout-mapprint .container {
   .header .menu .searchinput input {
     width: 160px !important;
   }
-  .panel.links,
-  .panel.quotes {
+  .panel.links {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
@@ -3689,8 +3639,7 @@ body.layout-mapprint .container {
 }
 /* RELATIVELY SMALL - normal CSS */
 @media (min-width: 1026px) and (max-width: 1199px) {
-  .panel.links,
-  .panel.quotes {
+  .panel.links {
     -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
@@ -3720,8 +3669,7 @@ body.layout-mapprint .container {
   .header .menu .searchinput input {
     width: 250px !important;
   }
-  .panel.links,
-  .panel.quotes {
+  .panel.links {
     -webkit-column-count: 4;
     -moz-column-count: 4;
     column-count: 4;
@@ -3751,8 +3699,7 @@ body.layout-mapprint .container {
   .header .menu .searchinput input {
     width: 300px !important;
   }
-  .panel.links,
-  .panel.quotes {
+  .panel.links {
     -webkit-column-count: 5;
     -moz-column-count: 5;
     column-count: 5;
@@ -3782,8 +3729,7 @@ body.layout-mapprint .container {
   .header .menu .searchinput input {
     width: 320px !important;
   }
-  .panel.links,
-  .panel.quotes {
+  .panel.links {
     -webkit-column-count: 6;
     -moz-column-count: 6;
     column-count: 6;

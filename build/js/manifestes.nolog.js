@@ -3345,16 +3345,14 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
     $scope.meta = {}; // mainly the meta info at start of text.yml
 
     $scope.dataArray = { // full list 
-      texts: [],
-      quotes: [],
+      abcd: [],
       links: [],
       pixels: [],
       books: [],
       catalog: []
     }
     $scope.dataArrayFilt = { // displayed list
-      texts: [],
-      quotes: [],
+      abcd: [],
       links: [],
       pixels: [],
       books: [],
@@ -3365,7 +3363,6 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
     $scope.tagsContentsOrdered = []; // same but array to be able to sort
     
     $scope.linksByTag = {}; // links by tag
-    $scope.textNbByTag = {}; // texts by tag (only nb)
     
     $scope.settings.verbose = false; // to print detailed stats on tags, objects, etc...
 
@@ -3373,13 +3370,12 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
       intro: intro, // splash fullscreen panel
       introimage: 0, // slideshow of intro splash images
       lang: 'fr', // olderly: $routeParams.lang,
-      layout: layout, // texts/links/map/print/etc...
+      layout: layout, // abcd/links/map/print/etc...
       loading: false, // we will show loadingspinner when scope not ready
       
       // always hide for dev. starting open for prod
       disclaim: {
-        texts: !$scope.settings.dev,
-        quotes: !$scope.settings.dev,
+        abcd: !$scope.settings.dev,
         links: !$scope.settings.dev,
         pixels: !$scope.settings.dev,
         books: !$scope.settings.dev,
@@ -3395,8 +3391,6 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
       tagsmode: 'grid', // tags display mode: graph OR grid
       tagspanel: false,
       tags: tags, // list of current filtering tags
-
-      toggletexts: null, // wil be 'up' or 'down' to display arrows to open/close all texts
 
       networkstatus: "NO", // loaded or not ?
 
@@ -3629,28 +3623,21 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
     var shallShowSearch = function(o) { // "o" is a text or a link
       var reg = $scope.rgx.search;
       if($scope.state.search)
-      if(o.title) { // a text
-        var show = o.hasOwnProperty('quote') && o.quote && reg.test(totext(o.quote.content)+totext(o.quote.author));
-        _.each(['title','subtitle','content'], function(k) {
+      if(o.content) { // an abcd, or link
+        var show = false;
+        _.each(['source','content'], function(k) {
           show = show || ( o.hasOwnProperty(k) && reg.test(totext(o[k])) );
         });
-      } else { // DEDUCTIVE PATH: (you can do better)
-        if(o.author) { // a quote
-          var show = reg.test(totext(o.author)) || reg.test(totext(o.content));
-        } else { 
-          if(o.content) // a link
-            var show = reg.test(totext(o.content));
-          else { 
-            if(o.name) { // a book
-              var show = reg.test(totext(o.name));
-            } 
-            else // an image !
-              var show = reg.test(totext(o.label));
-          }
-        }
+      } else { // ... if no content, then ...
+        if(o.name) { // a book
+          var show = reg.test(totext(o.name));
+        } 
+        else // an image !
+          var show = reg.test(totext(o.label));
       }
       return show;
     };
+
     var shallShowTags = function(o,onlyintersect) { // "o" is a text or a link
       if($scope.state.tags.length && o.tags) {
         var interslen = _.intersection(o.tags,$scope.state.tags).length;
@@ -3667,7 +3654,7 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
     var updateArrays = function() {
       0;
       var lay = $scope.state.layout;
-      if(["texts","quotes","links","pixels","books"].indexOf(lay)!==-1) {
+      if(["abcd","links","pixels","books"].indexOf(lay)!==-1) {
 
         if(!$scope.state.search && !$scope.state.tags.length) {
           $scope.dataArrayFilt[lay] = $scope.dataArray[lay];
@@ -3790,7 +3777,7 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
       }
 
       ///////////////////////////////////// YML DATA
-      if(["meta","texts","quotes","links","pixels","books","catalog","map"].indexOf(which)!==-1) {
+      if(["meta","abcd","links","pixels","books","catalog","map"].indexOf(which)!==-1) {
 
         var filename = which;
         if(which=="pixels")
@@ -3861,51 +3848,19 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
           }
           
           ////////////////////////////////////
-          if(which=="texts") {
+          if(which=="abcd") {
             jsyaml.loadAll(res, function(d) {
-              //console.log(d);
-              //d.subtitle = $scope.md2Html(d.subtitle);
-              if(d.subtitle) d.subtitletext = totext(d.subtitle);
-              if(d.quote) {
-                d.quote.content = $scope.md2Html(d.quote.content);
-                d.quote.author = $scope.md2Html(d.quote.author);
-              }
+
               d.content = $scope.md2Html(d.content);
               d.tags = d.tags ? d.tags.split(' ') : [];
-              _.each(d.tags, function(t) {
-                $scope.textNbByTag[t] = $scope.textNbByTag[t] ? $scope.textNbByTag[t]+1 : 1;
-              });
-              d.links = $scope.md2Html(d.links);
-
-              d.date = moment(d.date);
-              var seuil = moment().subtract(6,"month");
-              if(d.date > seuil)
-                d.date = d.date.fromNow();
-              else
-                d.date = null;
-              
               d.sharelink = "http://utopies-concretes.org/slug/"+slugify(d.title);
-
-              d.currentlink = 0;
 
               //d.layout = 'flat'; //Math.random()<0.2 ? 'grid' : 'flat';
 
-              // only pushing normal texts if prod (draft texts are only visible if dev)
-              if($scope.settings.dev || !d.status || d.status != 'draft')
-                $scope.dataArray.texts.push(d);
+              $scope.dataArray.abcd.push(d);
 
-              //console.log("having text:",$scope.dataArray.texts.length);
             });
-            $scope.dataArrayFilt.texts = $scope.dataArray.texts;
-          }
-
-          ////////////////////////////////////
-          if(which=="quotes") {
-            var quotes = jsyaml.load(res);
-            _.each(quotes, function(q) {
-              $scope.dataArray.quotes.push(q);
-            });        
-            $scope.dataArrayFilt.quotes = $scope.dataArray.quotes;
+            $scope.dataArrayFilt.abcd = $scope.dataArray.abcd;
           }
 
           ////////////////////////////////////
@@ -3958,8 +3913,6 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
 
 
             if($scope.settings.verbose) {
-              0;
-              0;
               0;
               0;
               0;
@@ -5340,6 +5293,6 @@ var loadTagGraph = function(scope) {
 
 angular.module('settings', [])
 
-.constant('settings', {dev:false,langs:['fr','es','en'],layouts:['home','texts','quotes','links','pixels','books','network','map','mapprint','ninja','catalog','catalogprint'],datapath:'data/',assets:'build/',lastupdate:'13 February 2018 - 8:17'})
+.constant('settings', {dev:false,langs:['fr','es','en'],layouts:['home','abcd','links','pixels','books','network','map','mapprint','ninja','catalog','catalogprint'],datapath:'data/',assets:'build/',lastupdate:'18 February 2018 - 6:25'})
 
 ;
