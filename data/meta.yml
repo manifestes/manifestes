@@ -6,7 +6,6 @@ source:
     github: https://github.com/manifestes/manifestes
     meta: https://github.com/manifestes/manifestes/blob/gh-pages/data/meta.yml
     abcd: https://github.com/manifestes/manifestes/blob/gh-pages/data/abcd.yml
-    links: https://github.com/manifestes/manifestes/blob/gh-pages/data/links.yml
     pixels: https://github.com/manifestes/manifestes/blob/gh-pages/data/pixels/
     books: pas de bonne source ?
     network: https://github.com/manifestes/manifestes/blob/gh-pages/data/network/network_in.csv
@@ -24,7 +23,7 @@ splash:
 intro:
     -   layout: abcd
         title: manifeste
-        descr: abécédaire — mots & morceaux de textes choisis
+        descr: abécédaire — mots & morceaux choisis
         image: FingerBones.jpg
         quote:
             author: Audrey
@@ -46,25 +45,10 @@ intro:
     -   layout: map
         title: carte
         descr: "3000 lieux à visiter : caravane des alternatives, hétérotopies, articles Reporterre et Bastamag, annonces Passerelle éco, lieux de vie et bases nomades..."
-        image: SophieRaynal_pretemoitesyeux.fr.jpg
+        image: nepaspencherdanslevirage.jpg
         quote:
             author: Chris Marker, Le Joli Mai, 1h28min
             content: l'avenir est là ! mais les gens ne le voient pas ... ils attendent l'horizon au loin
-    -   layout: links
-        title: ".: partout :."
-        descr: "sélection de perles à explorer : articles, vidéos, médias libres, projets"
-        image: nepaspencherdanslevirage.jpg
-        quote:
-            author: Bernard Werber
-            content: L'important n'est pas de convaincre, mais de donner à réfléchir
-    -   layout: ninja
-        title: ¡ ninja !
-        descr: random rules — exploration du hasard
-        image: DannyVonRyswyk.jpg
-        quote:
-            author: Georges Perec
-            content: >
-                Vivre, c'est passer d'un espace à un autre, en essayant le plus possible de ne pas se cogner
 network:
     loading: >
         le réseau est en cours d'affichage
@@ -90,14 +74,6 @@ disclaimer:
 
 
         **Les couleurs** correspondent aux thématiques
-    links: >
-        ici, des liens ajoutés **avec nos petites mains**. ça fait un peu fouilli, leur désordre reflète la multiplicité des collectifs et initiatives !
-
-
-        (ce sera toujours mieux que google qui ne nous donne à voir que les plus gros/riches)
-
-
-        **pour naviguer par thématiques, activez les tags** grâce à l'icône en haut à gauche dans le menu (ne marche pas sur mobile)
     pixels: >
         lavons-nous les yeux !
 
@@ -151,9 +127,6 @@ menu:
         -   slug: network
             label: réseau
             icon: fa-sitemap
-        -   slug: links
-            label: liens
-            icon: fa-heart
         -   slug: pixels
             label: pixels
             icon: fa-image
@@ -177,9 +150,6 @@ menu:
         pixels:
             link: "http://annuel.framapad.org/p/manifestes"
             text: proposer une image<br>ou un dessin
-        links:
-            link: "http://annuel.framapad.org/p/manifestes"
-            text: suggérer ou<br>modifier un lien
         network:
             link: "http://annuel.framapad.org/p/3615ninja"
             text: suggérer un site<br>signaler un intru
@@ -189,50 +159,6 @@ menu:
         ninja:
             link: "http://annuel.framapad.org/p/manifestes"
             text: suggérer un site<br>signaler un intru
-tagtip: "filtrer par thématiques"
-tags:
-    about: "question = à propos = à propos de ce projet, contexte,\nliste de discussion, code source"
-    group: "users = collectifs = groupes, réseaux, coopératives,\ncollectifs, associations, structures"
-    list: "database = annuaires = bases de données, annuaires,\nressources, moteurs de recherche"
-    tool: "wrench = outils = guides et fiches pratiques, tutoriaux,\noutils, services, instruments"
-    text: "file-text-o = textes = articles, livres, textes"
-    image: "file-image-o = images = images, dessins,\nphotos, graphiques"
-    audio: "file-audio-o = sons = radios, musiques, sons"
-    video: "file-video-o = films = videos, films, documentaires,\nTV, images mouvantes"
-    earth: "globe = planète = environnement, climat, déchets, pollution,\neau, animaux, végétaux"
-    agriculture: "pagelines = agriculture = (perma)cultures, graines, semences,\njardinage, élevage"
-    eat: "cutlery = _se nourrir = alimentation, manger,\nrecettes, cuisine, nourriture"
-    health: "medkit = _santé = santé, remèdes, plantes\nbien-être, corps, sport"
-    home: "home = _habiter = logement, habitat, hébergement,\néco-lieux, auto-construction, terrain"
-    move: "bicycle = _se déplacer = transports, mobilité,\nvéhicules, co-voiturage"    
-    object: "cogs = _objets = récupération, recyclage, réutilisation,\nressourceries, artisanats, réappropriation,\nsavoirs-faire, construire soi-même, diy,\néquipement, matériel, mobilier, machines"
-    energy: "plug = _énergie = nucléaire, électrique,\néolien, solaire"
-    map: "map-o = lieux = cartes, adresses de lieux physiques,\ntiers-lieux"
-    calendar: "calendar = agendas = calendriers, rendez-vous,\nfestivals, événements"
-    work: "briefcase = travail = emploi, chômage, activité remunérée"
-    slow: "child = _sobriété = ralentir, rencontrer, découvrir, partager,\ncommunication non violente,\ndécroissance"
-    media: "newspaper-o = _médias = information, presse,\njournalisme, actualité"
-    education: "book = éducation = école, université, recherche,\napprendre, se former,\nenseigner, partages de savoir"
-    alienation: "thumbs-down = aliénation = publicité, propagande, aliénation,\nconditionnements, contrôle, violences,\nfichage, cloud, surveillance, pouvoirs"
-    emancipation: "thumbs-up = émancipation = réappropriation, émancipation,\nautonomie, autogestion, horizontalité,\népanouissement, ouverture"
-    subsist: "exclamation-circle = _solidarité = migrants, sans-papiers, sdf,\nsouffrances, survie,\ninégalités d'accès, des chances\ndiscriminations"
-    act: "bullhorn = _action = actions pratiques quotidiennes,\ndésobéissance civile, militantisme\nsortir de sa zone de confort"
-    love: "heart = amour = rêves, idéaux, énergies,\namour, spiritualités,\nfoi, religions, mort"
-    genre: "transgender = genres = patriarcat, féminisme,\ngenres, LGBT, famille,\nracisme, sexisme"
-    zad: "bolt = luttes = grands projets inutiles,\nsquats, occupations, zad,\nradicalités, avant-gardes"
-    words: "commenting = langage = récits, mots, interprétations, controverses, discours,\ns'accorder, s'engueuler, débattre,\nmédiations"
-    creation: "object-group = formes = création, art, culture, écriture,\ndesign, processus, formes,\nhumour"
-    space: "street-view = espaces = espaces publics, partagés, communs, ville"
-    science: "flask = science = sciences, techniques,\nnanotechnologies,\nmanipulation du vivant"
-    web: "at = internet = web, numérique, réseaux"
-    companies: "building = ennemis = néocapitalisme, récupérations, greenwashing,\nmultinationales, puissances d'argent... boycott!"
-    history: "history = histoire = (néo)colonialismes, impérialisme,\npassifs historique"
-    law: "balance-scale = juridique = lois, aspects juridiques,\ndémarches administratives,\nlégislations"
-    economy: "money = économie = échanges, commerce, troc, don,\néconomie, argent, monnaie, finance, dette,\nrevenu de base inconditionnel"
-    politics: "bank = politique = politique et représentation,\nconcertation, décider ensemble,\ncommuns, open (res)sources, démocratie"
-    philo: "puzzle-piece = philosophie = réflexion, théories, principes,\nidéologies, spiritualités"
-moretags:
-    ?time: "hourglass-3 = temps = temporalités, rythmes, rapports aux temps,\nfuturisme, présentisme"
 footer:
     lastupdatetext: dernière modification
     content: >

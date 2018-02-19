@@ -1,9 +1,61 @@
 
+---
+content: >
+    Invoquer les vents, grands ciels, des grands principes; et puis chier dans l'eau potable.
+
 
 ---
-word: Temps
-tags: science > time
-source: Tristan Harris, des millions d'heures sont juste volées à la vie des gens, Rue89
+content: >
+    Pour établir une relation entière avec autrui, il faut d'abord établir une relation avec soi-même. Si nous sommes incapables d'affronter notre propre solitude, nous ne faisons qu'utiliser les autres comme des boucliers. L'Homme doit vivre comme un aigle — sans personne pour l'entendre — pour pouvoir se tourner vers les autres avec amour et se soucier de leur épanouissement.
+
+
+---
+content: >
+    *Il en est ainsi*
+
+
+    Je le veux ainsi
+
+
+---
+content: >
+    Vouloir ce qui est nécessaire, et aimer ce que l'on a voulu.
+
+
+---
+content: >
+    Depuis X ans, j'avais peur de Y, de ce que vous nommez *l'appétit du temps*. J'ai lutté — mais comme un aveugle. Je m'en suis pris à Z plutôt qu'au véritable ennemi.
+
+
+---
+tags: peace
+content: >
+    El movimiento por la paz no esta lejos de nosotros, sino en los desafios que nos proponemos en el simple acontecer de la vida cotidiana: en como superar la naturaleza egocentrica de pensar solo en el propio bienestar, y en como cultivar una aguda sensibilidad capaz de compartir el dolor ajeno. Estas acciones implementadas dia a dia contribuyen al logro de la paz.
+source: Daisaku Ikeda
+
+
+---
+tags: emotion
+content: Les pensées sont les ombres de nos sentiments — toujours plus obscures, plus vides, plus simples que ceux-ci
+source: Friedrich Nietzsche
+
+
+---
+tags: death truth
+content: >
+    Plus personne ne meurre aujourd'hui de contre vérité mortelle : il y a trop de contrepoisons
+source: Friedrich Nietzsche
+
+
+---
+tags: text words
+content: Que nous vaut un livre qui n'a pas la vertu de nous emporter par-delà tous les livres ?
+source: Friedrich Nietzsche
+
+
+---
+tags: time > science
+source: "Tristan Harris, des millions d'heures sont juste volées à la vie des gens, Rue89"
 content: >
     # On nous vole notre temps
 
@@ -353,25 +405,6 @@ content: >
 
 
 ---
-word: Tags
-tags: about
-content: >
-    # Catégories thématiques
-
-    Les thématiques (icône à gauche dans le menu) facilitent la navigation dans le site :
-
-
-    - certaines concernent les types de contenus *vidéo, texte, annuaire, collectif, lieux, agendas...*
-
-    - d'autres couvrent les besoins essentiels : *manger, dormir, se soigner, se vêtir, rencontrer...*
-
-    - d'autres encore touchent à des sujets plus généraux : *histoire, philosophie, nucléaire, pouvoir, autonomie...*
-
-
-    Les couleurs des textes et des liens correspondent au premier tag attribué (le principal)
-
-
----
 word: Carte
 tags: map list about
 content: >
@@ -717,7 +750,6 @@ content: >
 
 ---
 word: Violence
-subtitle: Il existera toujours des inégalités et des violences. Contre qui la violence est-elle la plus insupportable ?
 tags: society > violence subsist
 content: >
     # Inégalités et violences
@@ -728,7 +760,7 @@ content: >
     Il **existera toujours** des inégalités et des violences. Ces conflits internes et externes sont normaux, signes de **confrontation d'altérités** et de multiplicité des mondes.
 
 
-    La véritable question est de savoir contre qui et contre quoi la violence est adressée !
+    La véritable question est de savoir *contre qui* et *contre quoi* la violence est adressée !
 
 
 ---
@@ -1790,7 +1822,6 @@ content: >
 
 ---
 word: Présence
-subtitle: 
 tags: words love attention time slow
 content: >
     Présence, écoute, bienveillance, circulation de la parole, espaces de la conversation.
@@ -2114,6 +2145,7 @@ content: La démocratie même est l’autre face du capital, non son contraire
 
 
 ---
+tags: education
 source: "[Leanne Betasamosake Simpson](https://www.leannesimpson.ca/about/)"
 content: Si les enfants apprennent que la domination et l’absence de consentement sont normaux dans le contexte de l’éducation, l’absence de consentement devient un outil normal pour ceux qui détiennent et exercent le pouvoir.
 
@@ -2525,6 +2557,7 @@ content: Adopte le rythme de la nature, son secret est la patience.
 
 
 ---
+tags: web words companies alienation
 source: E. Snowden
 content: >
     Prétendre que votre droit à une sphère privée n'est pas important parce que vous n'avez rien à cacher n'est rien d'autre que dire que la liberté d'expression n'est pas essentielle, car vous n'avez rien à dire
@@ -2731,11 +2764,13 @@ content: >
 
 
 ---
+tags: history
 source: Yona Friedman
 content: L'histoire se fait à l'insu de ceux qui la font
 
 
 ---
+tags: education
 source: Les deux jambes du militantisme, par Astra Taylor, Monde Diplomatique
 content: >
     Faire en sorte que nos semblables prennent conscience d'un problème - l'un des objectifs privilégiés par l'activisme contemporain - peut se révéler fort utile.
@@ -3092,7 +3127,7 @@ content: >
 
 
 ---
-tags: creation act
+tags: creation act time
 source: Antonin Artaud
 content: >
     Ce qu'il y a encore d'infernal dans ce temps, c'est de s'attarder artistiquement sur des formes au lieu d'être comme des suppliciés que l'on brûle et qui font des signes sur leur bûcher
@@ -3341,6 +3376,7 @@ content: >
 
 
 ---
+tags: education
 source: H. Arendt
 content: >
     C'est avec l'éducation que nous décidons si nous aimons assez nos enfants pour ne pas les rejeter de notre monde, ni les abandonner à eux-mêmes, leur enlever la chance d'entreprendre quelque chose de neuf
@@ -4059,4 +4095,2811 @@ source: Chris Marker, Le Joli Mai, 1h28min
 content: >
     l'avenir est là ! mais les gens ne le voient pas ... ils attendent l'horizon au loin
 
+
+---
+tags: map group
+content: >
+    [Près de chez nous](https://presdecheznous.fr/), la carte collaborative, écologique et solidaire des Colibris
+
+
+---
+tags: creation
+content: >
+    Lucide quant aux catastrophes à venir liées au réchauffement climatique et à l'épuisement des ressources de la planète, [La Compagnie Triple A](https://www.compagnietriplea.fr/) tente comme dirait Antonio Gramsci de «tempérer le pessimisme de sa lucidité par l'optimisme de sa volonté ». de faire du théâtre afin de pousser un cri intelligible, crier à la fois notre angoisse face à l'avenir en même temps que notre joie d'être au monde.  
+
+
+---
+tags: media
+content: >
+    [la gueule ouverte](http://lagueuleouverte.info/), le journal qui confirme la fin du monde
+
+
+---
+tags: map group work
+content: >
+    [La Carto-crise](http://umap.openstreetmap.fr/fr/map/carto-crise-contrats-aides_164823) des Contrats aidés. Total des suppressions d'emplois recensées jusqu'à présent : 2456 dans 728 structures !
+
+
+---
+tags: eat
+content: >
+    [Terra Frutis](https://terrafrutis.com/). Plant Trees. Eat Fruit. Enjoy Life. ~ changes come ~ be, feel, & affect them
+
+
+---
+tags: image group
+content: >
+    [La Meute](https://lameutephotographie.wordpress.com/) est un collectif de photographes indépendant.e.s dont le but est de rendre visibles toutes les luttes qui peuvent se mener
+
+
+---
+tags: genre group
+content: >
+    [http://www.lallab.org/](Lallab) est un magazine en ligne et une association dont le but est de faire entendre les voix des femmes musulmanes pour lutter contre les oppressions racistes et sexistes. Nous façonnons un monde dans lequel les femmes choississent en toute liberté les armes de leur émancipation
+
+
+---
+tags: video
+content: >
+    [My Dinner With Andre](https://www.youtube.com/watch?v=KUf9a1DYuDk) (1981) Le confort tue
+
+
+---
+tags: video
+content: >
+    [Invincibles dès qu'on se dira nous ](https://www.youtube.com/watch?v=yd7aCjzL5MI), version vidéo du tract du même nom écrit pour Génération Ingouvernable.
+
+
+---
+tags: media web science
+content: >
+    [hors-sol](http://hors-sol.herbesfolles.org/) proposera une critique du capitalisme présent, dont la technologie est plus que jamais la condition de son expansion : d’abord pour survivre à ses propres méfaits, ensuite pour renouveler ses marchandises et rationaliser ses procédés.
+
+
+---
+tags: text
+content: >
+    [Le Manifeste Xenofeministe](http://www.laboriacuboniks.net/fr) rejette l’illusion et la mélancolie comme des facteurs d’inhibition politique. L’illusion, ou la croyance aveugle que les plus faibles peuvent l’emporter sur les plus forts sans coordination stratégique, se solde par des promesses non tenues et des énergies non canalisées.
+
+
+---
+tags: map eat agriculture
+content: >
+    [Falling Fruit](http://fallingfruit.org) est une célébration de la générosité alimentaire de nos villes. En quantifiant cette ressource sur une carte interactive, nous espérons faciliter les connexions intimes entre les humains, leurs nourritures, et les organismes naturels qui poussent dans nos quartiers
+
+
+---
+tags: map home
+content: >
+    Ouverte à tous, la [carte des logements vides à Bruxelles](http://www.logementsvides.be/) tend à objectiver l’ampleur de la vacance immobilière et inviter les pouvoirs publics à se donner les moyens de le contrer. Elle permet aux citoyens et collectifs de se saisir de la question et la mettre en débat.
+
+
+---
+tags: map
+content: >
+    La [carte idopi](http://umap.openstreetmap.fr/fr/map/idopiorg_37976) est mise en place pour faciliter une mise en relation, de proche en proche, des communautés locales voisines. Ici tu es simplement invité à communiquer sur ton activité, à penser et formuler le potentiel de ton territoire, ré-enchanter la vie près de chez toi, participer à une recherche, servir le bien commun, faire naître une nouvelle valeur politique ou simplement préparer un voyage par les sentiers
+
+
+---
+tags: map
+content: >
+    [Bretagne Créative](http://www.bretagne-creative.net), réseau des acteurs de l'innovation sociale ouverte en Bretagne historique : présentation et actualités des initiatives locales + 1 cartographie par Pays
+
+
+---
+tags: map
+content: >
+    Programme Domino : recherche-action sur le développement des pratiques collaboratives en Bretagne. Plus de 1000 [initiatives recensées](http://www.bretagne-consommation-collaborative.net/wakka.php?wiki=Carto). La cartographie alimente également le réseau sociétal libre [Communecter](http://www.communecter.org)
+
+
+---
+tags: list education
+content: >
+    [SciHub](http://sci-hub.io/), moteur de recherche d’articles scientifiques
+
+
+---
+tags: media
+content: >
+    [Zad Forever](https://zadforever.blog/), Dispatches from the Liberated Territory Against an Airport & its World
+
+
+---
+tags: media web group
+content: >
+    [Rezo.net](https://rezo.net/), le portail des copains. Regroupe liens vers articles de la presse alternative, podcasts, billets de blog, etc. Site alimenté plusieurs fois par jours. Relaie notamment du contenu relatif aux luttes, aux question feministes, post-coloniales, policières. Tendance nettement libertaire.
+
+
+---
+tags: web tool
+content: >
+    [uBlock origin](https://github.com/gorhill/uBlock) est un module à installer dans son navigateur pour bloquer les publicités
+
+
+---
+tags: eat
+content: >
+    [Fruitiers.net](http://www.fruitiers.net), bourse aux greffons sur internet. Échanger plus de 6000 variétés fruitières. Plus de 10 ans d'existence ; même si le site est actuellement francophone, communauté internationale. Site gratuit et éthique.
+
+
+---
+tags: video politics
+content: >
+    [Game of Fraude](https://www.youtube.com/watch?v=mvY16tpFRr0), clip de campagne officiel d'[Alessandro Di Giuseppe](https://adg2017.fr/): Travaille, obéis, consomme
+
+
+---
+tags: media video
+content: >
+    [Télé bocal](http://telebocal.org/), la chaîne militante et sociale. Exit les critères télévisuels classiques comme la beauté plastique ou la clarté d’élocution, nous souhaitons faire de la télévision un instrument à la portée de tous. Nous voulons construire un outil de communication, ouvert et transparent, accessible à tous, afin que les habitants l’investissent et l’utilisent.
+
+
+---
+tags: media
+content: >
+    [Indymédia](https://bxl.indymedia.org/) à Bruxelles
+
+
+---
+tags: audio
+content: >
+    [Les potes à Jé](https://www.youtube.com/watch?v=GTuoo1X0YfY): *C'est quoi notre quartier ? C'est le potager. Qu'est ce qui fait kiffer ? Etre à walpé*
+
+
+---
+tags: calendar
+content: >
+    Pour sortir à Bruxelles: [Bruxelles brûle-t'il ?](http://feu.ultravnr.be/)
+
+
+---
+tags: science companies
+content: >
+    La [liste](https://infonano.agirpourlenvironnement.org) de 209 produits contenant ou pouvant contenir des nanoparticules
+
+
+---
+tags: video agriculture
+content: >
+    Claude Bourguignon, [la microbiologie des sols](https://www.youtube.com/watch?v=7ipPmc5RplU)
+
+
+---
+tags: image genre
+content: >
+    [The Women project](https://www.carolrossetti.com.br/women), par Carol Rossetti
+
+
+---
+tags: image companies move
+content: >
+    [Les coûts cachés de la production des voitures](https://bloemekets.be/production_voitures/)
+
+
+---
+tags: genre education
+content: >
+    [La culture du viol est dévastatrice](http://quebec.huffingtonpost.ca/jocelyne-robert/culture-du-viol-avenir-de-nos-enfants_b_12613782.html) pour notre société et l'avenir de nos enfants
+
+
+---
+tags: genre
+content: >
+    [Féministes mais anti-voile](http://angryaboutthings.tumblr.com/post/97561177885/f%C3%A9ministes-mais-anti-voile-un-argumentaire-%C3%A0), un argumentaire à l'usage du féminisme non-excluant
+
+
+---
+tags: genre
+content: >
+    [Tirons la langue](https://www.lacite.info/livresidees/2016/6/27/pladoyer-contre-le-sexisme-dans-la-langue-franaise), plaidoyer contre le sexisme dans la langue française
+
+
+---
+tags: list web tool
+content: >
+    [Civic tech landscape](https://onodo.org/visualizations/126), base de liens vers projets de démocratie numérique (quasi tous anglophones)
+
+
+---
+tags: earth politics economy emancipation philo
+content: >
+    [Tol Ardor - L'écologie radicale comme nouveau modèle de société.](http://www.tol-ardor.org/1Accueil.php) : Une analyse de la Crise que nous traversons, une proposition de solution locale.
+
+
+---
+tags: law text
+content: >
+    Avocats de Paris: [Il n’est plus possible de justifier l’état d’urgence](http://www.avocatparis.org/etatdurgence) : il nous appartenait d'élever la voix plutôt que de chuchoter
+
+
+---
+tags: creation text
+content: >
+    Auteurs et autrices libres, indépendant.es et solidaires : [Manifeste pour une alternative](http://page42.org/auteurs-et-autrices-libres-independant-es-et-solidaires-manifeste-pour-une-alternative/)
+
+
+---
+tags: object home text
+content: >
+    [Le Grand Ménage](http://raffa.grandmenage.info/post/2006/01/12/Livret_____Le_Grand_M%C3%A9nage_____Versions_finales), Livret de recettes écologiques et économiques pour l'entretien de la maison
+
+
+---
+tags: text politics
+content: >
+    [Jean Jaurès, 1906](http://www.revolutionpermanente.fr/Jean-Jaures-1906-Le-patronat-n-a-pas-besoin-lui-pour-exercer-une-action-violente-de-gestes) : Tandis que l’acte de violence de l’ouvrier apparaît toujours, est toujours défini, toujours aisément frappé, la responsabilité profonde et meurtrière des grands patrons, des grands capitalistes, elle se dérobe, elle s’évanouit dans une sorte d’obscurité
+
+
+---
+tags: creation video
+content: >
+    [X-Ville](https://vimeo.com/139342392) : des dizaines d’habitants donnent vie aux mots dans leur ville de carton peint. Jordi Colomer y met en scène la société urbaine moderne et rejoue à inventer le monde en interrogeant, joyeusement, ce qui sépare le réalisable de l’utopique, l’utile de l’inutile, l’individu du collectif
+
+
+---
+tags: text politics
+content: >
+    [Utopies réalisables](http://recherche-action.fr/labo-social/download/Livres%20num%C3%A9riques/Utopies%20r%C3%A9alisables.pdf), de Yona Friedman : L'existence d'un *État mafia* est la conséquence de l'impossibilité du maintien de l'État démocratique classique dès que ses dimensions dépassent certaines limites
+
+
+---
+tags: video companies
+content: >
+    [Le temps des bouffons](https://www.youtube.com/watch?v=SiJGQYd6Kw0) de Pierre Falardeau (Quebec, 1985) : Un documentaire à charge, acide et mordant, sur un banquet du Beaver Club, *ces profiteurs qui passent pour des philantropes... aux dents affreusement blanches... qui se reproduisent de pères en fils.*
+
+
+---
+tags: media video
+content: >
+    [DOC du réel](https://www.youtube.com/channel/UC7H198GlIEz9GQt8sLLcWdw) : chaine de documentaires politiques et militants sur les actions légitimes et citoyennes en France, solidaire des collectifs activistes
+
+
+---
+tags: text alienation
+content: >
+    [Les casseurs](https://www.infolibertaire.net/les-casseurs-1789/): En marge des manifestations pacifiques pour soutenir l’examen des cahiers de doléances, des groupes de casseurs ont attaqué la Bastille, se livrant à de nombreuses dégradations et se payant, de manière inadmissible, la tête du gouverneur
+
+
+---
+tags: video
+content: >
+    Nouvelle édition du [journal rythmé de la Parisienne libérée](https://www.mediapart.fr/journal/france/210516/le-jt-de-la-parisienne-liberee-splendeurs-et-miseres-de-letat-policier) ! retour sur les violences policières, Candice découvre l'application Periscope, interdictions de manifester, la rengaine des « casseurs » et une météo nucléaire spéciale Paluel.
+
+
+---
+tags: web emancipation text
+content: >
+    [Manifeste de la guérilla pour le libre acccès](http://framablog.org/2013/01/14/manifeste-guerilla-libre-acces-aaron-swartz/), par Aaron Swartz : Nous avons besoin de récolter l’information où qu’elle soit stockée, d’en faire des copies et de la partager avec le monde. Nous devons nous emparer du domaine public et l’ajouter aux archives. Nous devons acheter des bases de données secrètes et les mettre sur le Web. Nous devons télécharger des revues scientifiques et les poster sur des réseaux de partage de fichiers. Nous devons mener le combat de la guérilla pour le libre accès.
+
+
+---
+tags: web emancipation tool
+content: >
+    [Tails](https://tails.boum.org) est un système d'exploitation que vous pouvez démarrer sur quasiment n'importe quel ordinateur, depuis un DVD, une clé USB, ou une carte SD. Son but est de préserver votre vie privée et votre anonymat
+
+
+---
+tags: web alienation tool
+content: >
+    [Contrôle tes données !](https://controle-tes-donnees.net/) : Vous avez sûrement déjà remarqué que vous étiez suivi sur Internet, principalement par la publicité. Mais saviez-vous que, sur Internet, chacun de vos clics et de vos emails étaient analysés afin de dresser un profil de vos opinions et de votre caractère ?
+
+
+---
+tags: text words
+content: >
+    [Le passager clandestin](http://lepassagerclandestin.fr) Maison d'édition indépendante — Tandis que le réel nous glisse entre les doigts, nous voulons arracher à l'histoire quelques fragments de vérité, interroger sans complaisance l’ordre présent des choses… et rappeler à toutes fins utiles que cet ordre-là ne s’impose pas à nous comme une évidence.
+
+
+---
+tags: subsist alienation list map
+content: >
+    [Guide des associations prison-justice](http://www.guide-associations-prison.fr) : des centaines d’associations agissent en France, à tous les niveaux de la chaîne pénale et pénitentiaire. Ces actions sont très variées, car elles sont locales ou nationales, situées à l’intérieur ou à l’extérieur des établissements, mises en place pendant ou après l’incarcération. Il est parfois difficile de déterminer « qui fait quoi » parmi les différents intervenants associatifs.
+
+
+---
+tags: text
+content: >
+    [La Nef des fous](https://infokiosques.net/imprimersans2.php?id_article=435), par Theodore Kaczynski: « Tout le monde se noya »
+
+
+---
+tags: audio
+content: >
+    [Aube](http://aube.laplumedefeu.com/), une émission de radio présentant des initiatives qui cherchent à réaliser une autre vision du monde
+
+
+---
+tags: tool list map
+content: >
+    Le site [Alternabase](http://www.alternabase.com) propose de répertorier les acteurs du mouvement alternatif en France spécialisés dans l'autonomie et la cohérence énergétique: bibliothèque, carte, annuaire...
+
+
+---
+tags: text philo
+content: >
+    [Hétérotopies, des espaces autres](http://foucault.info/doc/documents/heterotopia/foucault-heterotopia-en-html), Michel Foucault, 1967
+
+
+---
+tags: video
+content: >
+    [intervention](https://www.youtube.com/watch?v=tabXdsGxMvE) de Serge Halimi devant l'intersyndicale du Havre, juin 2016
+
+
+---
+tags: law violence alienation
+content: >
+    [Appel à nasser la police](https://lundi.am/Appel-a-nasser-la-manifestation-de-policiers-du-18-mai) : arrêté n°34378x d'interdiction de rassemblement pour la manifestation du 18mai. Utilisation de flashbananes pour les récalcitrants
+
+
+---
+tags: earth agriculture
+content: >
+    [Réseau pour les Alternatives Forestières](http://alternativesforestieres.org/) : Paysans pluriactifs, citoyens se questionnant sur les forêts de leur territoire, scieurs amoureux de la diversité des bois, éco-constructeurs, débardeurs à cheval, bûcherons cherchant à valoriser le patrimoine forestier, collectifs qui achètent des forêts...
+
+
+---
+tags: text zad
+content: >
+    [Prise de parole](http://parolesdecampagne.blogspot.fr/2016/03/prise-de-parole-de-ladeca-le-27022016.html?utm_source=feedburner&utm_medium=email&utm_campaign=Feed:+ParolesDeCampagneNotre-dame-des-landes+%28Paroles+de+campagne+%3Cbr%3ENotre-Dame-des-Landes%29) de l'ADECA (Association de Défense des Exploitants Concernés par l'Aéroport NDDL), le 27/02/2016 
+
+
+---
+tags: audio group map
+content: >
+    Le [Champ Commun](http://www.lechampcommun.fr/) et la radio sans pub [Timbre FM](http://timbrefm.fr/), associative, locale et rurale à Augan en Bretagne
+
+
+---
+tags: companies politics
+content: >
+    [Fausses solutions face au changement climatique](http://www.medias-libres.org/2015-greenwashing): un dossier de la [Coordination Permanente des Médias Libres](http://medias-libres.org/)
+
+
+---
+tags: list autonomy object
+content: >
+    [Le terrier des Renards verts](http://renards-verts.url.ph/) et sa [chaine youtube](https://www.youtube.com/user/contestavert): petits bricolages, récup', autonomie, idées économiques, écologie (la vraie), un peu de survivalisme...
+
+
+---
+tags: text
+content: >
+    Le [magazine Barré](http://barremag.info), trimestriel papier libre et indépendant, s’intéresse à l’autre information, celle des gens qui naviguent à contre-courant.
+
+
+---
+tags: calendar space fun
+content: >
+    Tous les ans, [La voie est libre](http://www.lavoieestlibre.org/) investit une portion de l'autoroute A186 à Montreuil (3ème weekend de septembre) pour une journée festive, gratuite, ludique, insouciante et joyeuse
+
+
+---
+tags: economy work
+content: >
+    La monnaie temporelle [Kronos](http://www.kronos.money/)
+
+
+---
+tags: companies media alienation
+content: >
+    Nos mythologies économiques, d'Eloi Laurent - sur France Inter : [Le télespectateur otage de la pensée néolibérale](http://www.franceinter.fr/emission-l-instant-m-le-telespectateur-est-il-otage-de-la-pensee-neoliberale)
+
+
+---
+tags: agriculture companies text
+content: >
+    [La bio piratée](http://kokopelli-semences.fr/quoi_de_neuf/bio_pirate) : en France, un certain nombre de compagnies bios sont des filiales d’un des plus gros groupes Européens de l’Agro-alimentaire... petit horizon des dessous des grandes marques bios
+
+
+---
+tags: politics group calendar map
+content: >
+    Les mouvements de réappropriation du pouvoir citoyen se rassemblent : [États généraux en Ardèche](http://www.superchataigne2017.fr/les-mouvements-de-reappropriation-du-pouvoir-citoyen-se-rassemblent/) les 4-5-6 mars 2016
+
+
+---
+tags: energy earth creation
+content: >
+    L’avenir contaminé de la planète par la radioactivité n’est pas une possibilité mais une réalité : [Appel du 26 avril](http://www.brut-de-beton.net/appel.php) pour une insurrection artistique, intellectuelle, scientifique et populaire contre la poursuite de la contamination radioactive de la planète ! [voir les projets](http://www.brut-de-beton.net/telechargement/premiers-PROJETS.pdf)
+
+
+---
+tags: alienation text
+content: >
+    [Abolir la prison, ses mécanismes et ses logiques](https://blogs.mediapart.fr/edition/les-invites-de-mediapart/article/040614/abolir-la-prison-ses-mecanismes-et-ses-logiques): «Nous affirmons qu’au XXIe siècle, enfermer quelqu’un, ce n’est pas le punir : c’est agir par paresse et par prolongement d’un système archaïque, dépassé et inadapté aux sociétés postmodernes»
+
+
+---
+tags: video zad
+content: >
+    Janvier 2016: micro-trottoir de [Lundimatin](https://lundi.am/Micro-trottoir-a-la-Zad-de-Notre-Dame-des-Landes) à Notre-Dame-des-Landes: [Que sera la ZAD dans 10 ans ?](https://www.youtube.com/watch?v=SnxyG--4Ipo)
+
+
+---
+tags: video words
+content: >
+    [L'Arbre, le maire et la médiathèque](https://www.youtube.com/watch?v=vFCBUorFv74), d'Eric Rohmer (1993). plus que jamais d'actualité, à voir et revoir
+
+
+---
+tags: law tool politics
+content: >
+    [La fabrique de la loi](https://www.lafabriquedelaloi.fr/), projet indépendant de l'association [Regards Citoyens](https://www.regardscitoyens.org), permet de suivre en détail la rédaction des lois (adoptions et rejets d'amendements par le parlement)
+
+
+---
+tags: law alienation tool
+content: >
+    Le [guide d’autodéfense juridique](http://www.guidejuridique.net/) paru pour la première fois en 2007 aux éditions l’Altiplano a été repris, actualisé et augmenté par le collectif Cadecol (Caisse de défense collective). Les derniers ajouts sont sur [actujuridique.com](http://actujuridique.com/)
+
+
+---
+tags: map list space home
+content: >
+    [Carte](http://ghost-towns.weebly.com/map--mapa.html) des villages abandonnés dans le monde (surtout en Espagne)
+
+
+---
+tags: map earth
+content: >
+    [Carte des concentrations moyennes en pesticides](https://jsherpin.wordpress.com/2013/07/25/la-quasi-totalite-des-reserves-deau-francaises-contaminees-par-les-pesticides/) dans les cours d'eau en France
+
+
+---
+tags: emancipation space
+content: >
+    [Zomia, ou l'art de ne pas être gouverné](http://www.contretemps.eu/lectures/propos-zomia-lart-ne-pas-%C3%AAtre-gouvern%C3%A9-james-c-scott), de James C. Scott
+
+
+---
+tags: image creation
+content: >
+    [Ne pas plier](http://www.nepasplier.fr/epicerie.htm): épicerie d'affiches et d'images de luttes
+
+
+---
+tags: audio video alienation
+content: >
+    Allez les gars, [combien on vous paye pour faire ça ?](https://www.youtube.com/watch?v=d-t5zdDDSHo)
+
+
+---
+tags: earth map
+content: >
+    [Cartographie](https://air.plumelabs.com/) de la pollution des grandes villes dans le monde
+
+
+---
+tags: creation alienation
+content: >
+    Le collectif d'acteurs [l'avantage du doute](http://lavantagedudoute.com/)
+
+
+---
+tags: alienation companies politics
+content: >
+    [Analyse détaillée](http://antipub.org/spip.php?article483) du décret affichage de la loi Macron: une bombe contre l'environnement
+
+
+---
+tags: alienation text politics
+content: >
+    [En prison chez moi pendant trois semaines](https://paris-luttes.info/en-prison-chez-moi-pendant-trois-4306): quand j’utilise le mot «justice», je ne parle pas de cette justice portée par les institutions, de cette justice qui aujourd’hui m’assigne à résidence. Celle-là n’a de justice que le nom
+
+
+---
+tags: politics text zad
+content: >
+    [Notre-Dame-des-Landes : Nous accusons !](http://www.reporterre.net/Notre-Dame-des-Landes-Nous-accusons) résumé des mensonges, manipulations et provocations que commettent responsables politiques et administration sur le dossier de Notre-Dame-des-Landes
+
+
+---
+tags: politics list                                                        
+content: >
+    [Le PS en actes](http://www.bilan-ps.fr/): relevé thématique des décisions, lois, actions et citations de la mandature de François Hollande, et des différents gouvernements issus du parti socialiste, de mai 2012 à ...
+
+
+---
+tags: text philo slow
+content: >
+    On débranche tout, on réfléchit, et c’est pas triste: [L’An 02](http://www.lan02.org/) est un outil écolo de diffusion et de partage, un passeur d’idées hors des cercles confidentiels. Il propose une livraison de chroniques de livres récents qui nous aident à penser l’écologie politique, la décroissance et la technocritique
+
+
+---
+tags: space text subsist
+content: >
+    [Charivary](https://journalcharivary.wordpress.com/), le journal qui déboîte la rénovation urbaine à Ivry
+
+
+---
+tags: video philo alienation
+content: >
+    [Penser les meurtres de masse](http://la-bas.org/la-bas-magazine/entretiens/alain-badiou-penser-les-meurtres-de-masse), au-delà des indispensables affects : horreur, barbarie, stupéfaction; par Alain Badiou, 1h46
+
+
+---
+tags: control politics
+content: >
+    [Assignez-moi](https://entreleslignesentrelesmots.wordpress.com/2015/12/13/assignez-moi-lettre-ouverte-a-monsieur-le-ministre-de-linterieur/) ! lettre ouverte au ministre de l'intérieur
+
+
+---
+tags: video work
+content: >
+    Bullshit jobs: [the expert](https://www.youtube.com/watch?v=vH0rhNx3dok) sure can draw red lines
+
+
+---
+tags: control politics
+content: >
+    [Coalition Internationale Anti Guerre](https://coalitioninternationaleantiguerreblog.wordpress.com/) et la pétition [À quoi sert leur guerre ?](https://www.change.org/p/a-toutes-et-tous-a-qui-sert-leur-guerre)
+
+
+---
+tags: earth politics
+content: >
+    État d’urgence, marches interdites, escalade militaire : [la démocratie menacée](https://france.attac.org/actus-et-medias/salle-de-presse/article/etat-d-urgence-marches-interdites-escalade-militaire-la-democratie-menacee), par Attac france
+
+
+---
+tags: agriculture politics text video
+content: >
+    Initié par [Filière Paysanne](http://filiere-paysanne.blogspot.fr/), le premier [Manifeste citoyen pour la sauvegarde des terres agricoles et du climat](https://drive.google.com/file/d/0B_YvJcIKM8SuNkFqbXdTUnZhSE0/view?usp=sharing/manifeste-terres-agricoles.pdf). Si le constat est inquiétant en matière d’épuisement des sols, d’accaparement et de bétonnage des terres agricoles, nous pouvons encore agir pour sauvegarder ce bien commun crucial pour notre sécurité alimentaire, notre climat et notre avenir ! voir le [reportage réalisé par Citypost](http://www.citypost.fr/2015/10/filiere-paysanne-dynamise-leconomie-locale/) et la [vidéo](https://www.youtube.com/watch?v=0i9edIjYktE) sur l'équipe Filière Paysanne
+
+
+---
+tags: video earth
+content: >
+    [C'est chaud !](http://cestchaud-laserie.com/), web-série sur le thème du climat réalisée avec des adolescents de la Boissière à Montreuil, Seine-Saint-Denis
+
+
+---
+tags: companies text
+content: >
+    Extraction minière au Brésil: [rupture d'un barrage le 5 novembre 2015](http://www.bastamag.net/Tragedie-ecologique-et-boues-toxiques-au-Bresil-pourquoi-les-autorites-ont-mis): coulée de boues toxiques, un demi million de personnes privées d'accès à l'eau, fleuve considéré comme mort par les scientifiques
+
+
+---
+tags: video politics
+content: >
+    [Cette merde doit cesser](http://www.dailymotion.com/video/xl9qxb_cette-merde-doit-cesser_news), par Jacque Fresco, 2min40
+
+
+---
+tags: text politics philosophy alienation
+content: >
+    Attentats du 13 novembre 2015 à Paris, [comme si de rien n'était ?](https://rannemarie.wordpress.com/2015/11/30/comme-si-de-rien-netait/), par les [Mutins de Pangée](http://www.lesmutins.org/). Comment vivre en sécurité ? quelles sont les responsabilités ? Comment raisonner ?
+
+
+---
+tags: map list tool slow
+content: >
+    [Ecoclash](http://ecoclash.jimdo.com/): Partage de savoirs, Infokiosque, videokiosque, alternatives pratiques, autoconstruction, décroissance, permaculture, ecovillage, communauté, écologie, anarchie, résistance, altermondialisme, freegan, squat, action directe... voir le [wiki des Lieux de vie ouvert](http://sharewiki.org/en/Lieu_de_vie_ouvert)
+
+
+---
+tags: eat list tool economy
+content: >
+    [OpenFoodFacts](http://fr.openfoodfacts.org/) est une base de données sur les produits alimentaires faite par tout le monde, pour tout le monde. Elle vous permet de faire des choix plus informés, et comme les données sont ouvertes (open data), tout le monde peut les utiliser pour tout usage
+
+
+---
+tags: text economy love autonomy act
+content: >
+    [Digressions](https://lundi.am/Digressions-sur-l-ennemi-le-complot-l-argent-et-le-peuple) sur l’ennemi, le complot, l’argent et le peuple, par [Lundi matin](https://lundi.am)
+
+
+---
+tags: companies words earth
+content: >
+    Les [Prix Pinocchio du Climat](http://www.prix-pinocchio.org) donnent à voir l’écart entre les discours de certaines entreprises et leurs activités concrètes
+
+
+---
+tags: audio politics
+content: >
+    [Daesh: autopsie d'un monstre](http://www.franceinter.fr/emission-lenquete-daesh-autopsie-dun-monstre) (France Inter - 20/11/2015). Des anciens diplomates et agents de la DGSE racontent comment Etats-Unis, Arabie Saoudite, Qatar et France ont soutenu financièrement et armé les groupes djihadistes en Irak et en Syrie
+
+
+---
+tags: alienation law history list
+content: >
+    À quoi aura servi l'état d'urgence post attentats en France ? [recensement jour après jour](https://wiki.laquadrature.net/%C3%89tat_urgence/Recensement), par la [Quadrature du net](https://www.laquadrature.net)
+
+
+---
+tags: energy map
+content: >
+    [Carte du nucléaire près de chez vous](http://www.greenpeace.org/france/fr/campagnes/nucleaire/pres-de-chez-vous/), par Greenpeace: centrales, sites de production, de démantelement, transports...
+
+
+---
+tags: politics alienation text
+content: >
+    [Mr le Président, nous n'avons pas les mêmes urgences](https://blogs.mediapart.fr/eric-fassin/blog/291115/monsieur-le-president-nous-n-avons-pas-les-memes-urgences-lettre-ouverte-francois-hollande), par Eric Fassin: Qui peut croire que c’est pour des raisons de sécurité qu’on autorise les marchés de Noël, et que l’on interdit les manifestations politiques ?
+
+
+---
+tags: alienation emancipation text
+content: >
+    [Lettre à ma génération](http://blogs.mediapart.fr/blog/sarah-roubato/201115/lettre-ma-generation-moi-je-nirai-pas-quen-terrasse): Ce qu’on est en train de vivre mérite que chacun se pose un instant à la terrasse de lui-même, et lève la tête pour regarder la société où il vit. Et qui sait... peut-être qu'un peu plus loin, dans un lambeau de ciel blanc accroché aux immeubles, il apercevra la société qu’il espère. Sarah Roubato
+
+
+---
+tags: video work
+content: >
+    [Pôle emploi, ne quittez pas !](http://poleemploinequittezpas.com/): Dans un Pôle emploi du 93, quarante agents font face à quatre mille demandeurs d’emploi. Samia, Corinne, Thierry, Zuleika doivent soutenir et surveiller, faire du chiffre, obéir aux directives politiques et aux injonctions de communication, trouver du travail là où il n’y en a pas. C’est la vie d’une équipe qui a intégré l’impossible à son quotidien
+
+
+---
+tags: media slow list
+content: >
+    [Revues de presse de la décroissance](http://www.scoop.it/u/aquitaine-decroissance), par [Aquitaine décroissance](http://aquitainedecroissance.org/)
+
+
+---
+tags: act space love
+content: >
+    Les [J.E.D.I.](https://jediforclimate.wordpress.com) (Justice and ecological defenders and initiatives for climate) passent à l’action pour la justice climatique ! leur Pipo’Lazer dénonce les pratiques douteuses de certaines entreprises sponsors d’un sommet pour le climat, dont les fausses notes retentissent déjà
+
+
+---
+tags: media act zad
+content: >
+    [Anticop21](http://anticop21.org/): La Conférence de Paris sur les changements climatiques aura lieu du 30 novembre au 11 décembre. De nombreuses mobilisations sont prévues à cette occasion
+
+
+---
+tags: video zad
+content: >
+    [Les sentiers de l'utopie](https://vimeo.com/21919175) et son [blog](https://lessentiersdelutopie.wordpress.com), un livre-film d'Isabelle Fremeaux et John Jordan, du [Labofii](http://labofii.net/)
+
+
+---
+tags: video zad
+content: >
+    Tourné de 2012 à 2014, [Le dernier continent](http://lederniercontinent.tumblr.com/) fait le portrait subjectif de la ZAD de Notre-Dame-des-Landes et de ses habitant.e.s
+
+
+---
+tags: video education
+content: >
+    [Des agrégations](http://www.noematic.space/desagregations.html), 34min, de noémie serfaty: Chérihène, Louis, Stephanos, Lyess et Marc passent l'agrégation de philosophie. Durant cette année de préparation éprouvante, ils se confrontent à la peur de l'échec et découvrent que pour enseigner la philosophie, ils doivent se conformer à un système extrêmement compétitif
+
+
+---
+tags: creation space companies
+content: >
+    Môsieur J, derrière le hashtag *icibientôt*, [documente ces existences formidables](https://www.flickr.com/photos/jblndl/sets/72157656448092059/) dont les promoteurs immobiliers veulent nous gratifier
+
+
+---
+tags: map zad
+content: >
+    The [environmental justice atlas](http://ejatlas.org/) recense les ZAD du monde entier
+
+
+---
+tags: video place work
+content: >
+    [En quête de sens](http://enquetedesens-lefilm.com/) est l'histoire de deux amis d’enfance qui ont décidé de tout quitter pour aller questionner la marche du monde. Leur voyage initiatique sur plusieurs continents est une invitation à reconsidérer notre rapport à la nature, au bonheur et au sens de la vie
+
+
+---
+tags: agriculture eat
+content: >
+    Association [Potage et gourmants](http://potage-et-gourmands.fr/), une ferme, et plein de semences !
+
+
+---
+tags: creation space science
+content: >
+    [Robo Rainbow](https://vimeo.com/19374769), vélo créativement augmenté pour grapher des arcs en ciel en quelques secondes, par [Mudlevel](https://vimeo.com/mudlevel/videos)
+
+
+---
+tags: creation space
+content: >
+    L'artiste [Farewell](https://vimeo.com/user22823950/videos) déchire les pubs, détourne les espaces publics, le métro, les vélibs
+
+
+---
+tags: image companies
+content: >
+    [Les bons labels et les truands](http://www.eco-sapiens.com/labels-eco-consommation.php), pour bien trier nos achats, par [eco-sapiens](http://www.eco-sapiens.com)
+
+
+---
+tags: video work
+content: >
+    Les règles du jeu ([bande annonce](https://www.youtube.com/watch?v=yyRAYQ46UZ8)), réalisé par Claudine Bories et Patrice Chagnard: le Probleme vient-il des jeunes ou des employeurs ? 
+
+
+---
+tags: group politics earth
+content: >
+    La [Coalition Climat 21](http://coalitionclimat21.org/fr) regroupe plus de 130 organisations de la société civile: les négociations de la COP21 ne seront pas suffisantes pour combattre le dérèglement climatique et les inégalités qu’il entraîne
+
+
+---
+tags: group politics earth
+content: >
+    Le [Réseau Action Climat](http://www.rac-f.org) est le représentant français du [Climate Action Network](http://www.climatenetwork.org/), réseau mondial de plus de 700 ONG dans 90 pays dont le but est d’inciter les gouvernements et les citoyens à prendre des mesures pour limiter l’impact des activités humaines sur le climat
+
+
+---
+tags: act economy
+content: >
+    [Appel à requisitionner](http://www.liberation.fr/debats/2015/09/29/pour-le-climat-appel-a-tous-les-faucheurs-de-chaises_1393535) 196 chaises d'ici la COP21 dans les agences des banques les plus implantées dans les paradis fiscaux
+
+
+---
+tags: subsist home act zad text
+content: >
+    Montreuil: [récit de l’expulsion](https://fr.squat.net/2015/10/30/montreuil-93-recit-de-l-expulsion-du-6-rue-de-la-renardiere/) du 6 rue de la Renardière. Aucune expulsion n'est «normale», aucune brutalité policière n'est «normale»
+
+
+---
+tags: video politics
+content: >
+    [J'ai pas voté](https://www.youtube.com/watch?v=uzcN-0Bq1cw) (46min) autopsie la démocratie française afin d’ouvrir une nouvelle ère propice à l’évolution de l’organisation politique
+
+
+---
+tags: alienation science group
+content: >
+    Le collectif [Faut Pas Pucer 29](http://fautpaspucer29.org/) milite contre l’utilisation des techniques favorisant une société de contrôle permanent, et notamment l’utilisation des puces dites «sans contact» (RFID, NFC), interrogeables à distance.
+
+
+---
+tags: object energy emancipation
+content: >
+    [500 Douches chaudes à partir d'un Tas de Compost](https://docs.google.com/document/d/1AtXQPt6DvpmCfyn2ebMQyMdV1_TBPLmBe1qKyqCOEKM/pub) !
+
+
+---
+tags: text science alienation economy audio
+content: >
+    [La liberté dans le coma](https://sortirdefacebook.files.wordpress.com/2013/10/liberte_dans_le_coma_marcuse.pdf), essai sur l’identification électronique et les raisons de s’y opposer, par le groupe Marcuse - *Mouvement Autonome de Réflexion Critique à l’Usage des Survivants de l’Économie*, également auteur de «De la misère humaine en milieu publicitaire» aux éditions La Découverte; invités sur [Terre à Terre, France Culture](http://www.franceculture.fr/emission-terre-a-terre-la-liberte-dans-le-coma-2014-03-22)
+
+
+---
+tags: text media work
+content: >
+    [Kairos](http://kairospresse.be), journal antiproductiviste pour une société décente
+
+
+---
+tags: text media
+content: >
+    [Moins!](http://www.achetezmoins.ch/), journal roman d'écologie politique
+
+
+---
+tags: text
+content: >
+    [Le pas de coté](http://www.lepasdecote.fr): des livres contre la machine
+
+
+---
+tags: economy video
+content: >
+    La dette des gouvernements, des entreprises et des ménages a atteint des proportions astronomiques et enfle démesurément de jour en jour. D'ou vient tout cet argent ? [L'argent dette](https://www.youtube.com/watch?v=kgA2-bWXSN4), Paul Grignon, 2010
+
+
+---
+tags: video education emancipation
+content: >
+    Le film [Être et devenir](http://www.etreetdevenir.com): et si nous faisions le choix de ne pas scolariser nos enfants ?
+
+
+---
+tags: video group media
+content: >
+    [Tv Bruits](http://tvbruits.org) est une télévision locale indépendante à vocation régionale, associative et non commerciale composée d’individus bénévoles et d’associations (Midi-Pyrénées)
+
+
+---
+tags: subsist space group
+content: >
+    [CREA](https://creatoulouse.squat.net), Campagne de Réquisition d'Entraide et d'Autogestion, à Toulouse
+
+
+---
+tags: philo text
+content: >
+    [Appel](http://bloom0101.org/wp-content/uploads/2014/10/appel.pdf) de [Bloom0101.org](http://bloom0101.org/): Devant l'évidence de la catastrophe, il y a ceux qui s'indignent et ceux qui prennent acte, ceux qui dénoncent et ceux qui s'organisent. Nous sommes du côté de ceux qui s'organisent
+
+
+---
+tags: video emancipation agriculture
+content: >
+    [Les Liberterres](http://www.lesliberterres.com/), histoires de rébellion contre les dérives de l'industrie agro-alimentaire, à travers le parcours de 4 paysans qui ont tourné le dos, définitivement, aux méthodes de l’agriculture conventionnelle
+
+
+---
+tags: emancipation list object
+content: >
+    [Survivre au système](http://www.survivre-au-systeme.fr/), savoir-faire et autonomie: le quotidien d'une famille en transition vers l'autonomie
+
+
+---
+tags: video emancipation work companies
+content: >
+    [Conférence gesticulée rêvolutionnaire](http://www.creations-revenusdebase.org/les-projets/la-conf-gesticulee/) d'un retraité de 32 ans: travail libre, revenus de base et autres rêvolutions
+
+
+---
+tags: text philo politics
+content: >
+    La revue [Ballast](http://www.revue-ballast.fr): Chroniques, Carnets de route, Économie, Féminisme, Histoire, International, Littérature, Poésie, Politique, Portraits
+
+
+---
+tags: work text education
+content: >
+    Manifeste: [Pour un statut politique du producteur](http://www.reseau-salariat.info/c816e944574e2433044fa465bae47423?lang=fr), par le [réseau salariat](http://www.reseau-salariat.info), association d'éducation populaire
+
+
+---
+tags: map image
+content: >
+    réédition de la belle [planisphère](http://les-volets-jaunes.org/planispheres-renversantes/), carte du monde géniale (dans le bon sens), par l'association les volets jaunes
+
+
+---
+tags: map list
+content: >
+    La [Caravane des alternatives](http://caravanedesalternatives.weebly.com/): réseau de 3000 lieux alternatifs référencés par département: livres téléchargeables, autonomie alimentaire, autoconstruction, médecine par les plantes, autogestion: [l'annuaire alternatif](http://www.fichier-pdf.fr/2015/04/23/annuairealternatifdunecaravanedesalternativesavril2015/), [le livre de connaissances](http://www.fichier-pdf.fr/2015/04/23/livresdeconnaissancesdunecaravanedesalternativesavril2015/), des [compléments alimentaires](http://www.fichier-pdf.fr/2015/04/23/livrecomplalimentairedunecaravanedesalternativesavril2015/), projet [1 million d'arbres](http://www.fichier-pdf.fr/2015/05/14/livreplantons1milliondarbresmai2015/)... [soutenez la caravane](https://www.leetchi.com/c/solidarite-de-caravane-des-alternatives) !
+
+
+---
+tags: eat economy
+content: >
+    [L'indépendante](http://lindependante.org/), coopérative alimentaire sociale et solidaire, à la Maison Verte dans le 18e à Paris
+
+
+---
+tags: eat economy tool text
+content: >
+    [Recette du GASE](http://www.lepotcommun.com/wp-content/uploads/2015/03/La-recette-du-GASE.pdf), Groupement d'Achat Service Epicerie, un bon compromis entre groupement d'achat et épicerie
+
+
+---
+tags: media tool list
+content: >
+    [Liste](http://atelier.mediaslibres.org/Pour-lutter-contre-la-surveillance) des médias libres accessibles sous Tor
+
+
+---
+tags: media list
+content: >
+    L'incontournable agrégateur des [Médias libres](http://mediaslibres.org/)
+
+
+---
+tags: group agriculture
+content: >
+    L'association [la Marmite](http://www.association-la-marmite.fr/), créée en 2006, a aidé à l’implantation d’une centaine de paysans et acteurs ruraux dans le Sud Est Morbihan. Cela a permis de créer une dynamique, des marchés locaux, des magasins de producteurs
+
+
+---
+tags: tool list map
+content: >
+    Le répertoire des communs d'[encommuns.org](http://encommuns.org/#/p/list)
+
+
+---
+tags: group list
+content: >
+    [alternatiba](https://alternatiba.eu), village mondial des alternatives
+
+
+---
+tags: economy
+content: >
+    [La Tinda](http://www.demainenmain.org/), monnaie locale du Béarn
+
+
+---
+tags: map home
+content: >
+    [Cartographie](http://www.habitatparticipatif.net/cartographie-de-lhabitat-participatif/) de l'habitat participatif et des espaces partagés
+
+
+---
+tags: web science tool
+content: >
+    La [Piratebox](http://piratebox-lille.blogspot.fr/) est un réseau alternatif, indépendant d'Internet. C’est un routeur qui sert de hotspot Wi-Fi nomade permettant de créer un réseau local, auquel tout le monde peut se connecter à l'aide d'un téléphone, ordinateur, console, tablette, etc. Objectif : partager et communiquer librement et anonymement
+
+
+---
+tags: audio object
+content: >
+    [Quand c'est usé je le jette !](https://www.youtube.com/watch?v=7QRY1koyYYE), Jacques Dutronc, 1969
+
+
+---
+tags: act group space
+content: >
+    hack la COP21: [climate games](https://www.climategames.net/), par le [laboratoire d'imagination insurrectionnelle](http://labofii.net/), interviewé sur [France Culture à propos de l'art-activisme](http://www.franceculture.fr/emission-terre-a-terre-l-art-activisme-2015-05-09)
+
+
+---
+tags: genre group education words
+content: >
+    [L'enfance buissonnière](https://enfance-buissonniere.poivron.org) est un groupe de gens de tous les âges et tous les horizons (ou presque) qui développe et diffuse une analyse critique de la catégorie «enfant» et des institutions qui la «gèrent»: famille, école, justice des mineurs...
+
+
+---
+tags: education list emancipation
+content: >
+    [Les maîtres ignorants](http://www.lesmaitresignorants.org/), centre d’autoformation à la pratique démocratique
+
+
+---
+tags: alienation group subsist
+content: >
+    [Contre tous les lieux d’enfermement](http://contrelenfermement.noblogs.org/), relais d’informations sur les actions menées pour briser l’isolement des personnes incarcérées et de leurs proches
+
+
+---
+tags: group object slow
+content: >
+    [ère d'évolution](http://www.rdevolution.org/) et la Ressourcerie du Pont
+
+
+---
+tags: group act media text
+content: >
+    [Pièces et Main d’Oeuvre](http://www.piecesetmaindoeuvre.com/spip.php?page=plan), atelier de bricolage pour la construction d’un esprit critique
+
+
+---
+tags: tool group emancipation
+content: >
+    Agir pour la paix publie [six guides pratiques](http://agirpourlapaix.be/formations/boite-a-outils/) avec outils concrets pour: la facilitation de réunions et d’ateliers, les accords de groupe, le consensus et les retours
+
+
+---
+tags: media earth list agriculture
+content: >
+    [Passerelle Eco](http://www.passerelleco.info/), revue trimestrielle, éditeur associatif, réseau d’éco-acteurs et éditeur du réseau des annonces [eco-village global](http://www.ecovillageglobal.fr/)
+
+
+---
+tags: love group
+content: >
+    [Rainbow Family France](http://rainbowfamilyfrance.wordpress.com/), rencontres en pleine Nature, non commerciale, dans un esprit de partage et d’échanges, une sorte d’anarchie tribale spirituelle, sans chef ni gourou, ni leader
+
+
+---
+tags: space love act
+content: >
+    Un peu de douceur et de bonne humeur dans les villes: le [Collectif France Tricot](http://c-f-t.net) pose des tricots sur le mobilier urbain
+
+
+---
+tags: subsist law
+content: >
+    [Welcome to Europe](http://w2eu.info), informations multilingues indépendantes pour réfugiés et migrants arrivant en Europe
+
+
+---
+tags: philo media text politics
+content: >
+    [Entropia](http://www.entropia-la-revue.org/), revue d'étude théorique et politique de la décroissance
+
+
+---
+tags: group list map video
+content: >
+    Promouvoir la transition individuelle afin de recentrer l’individu comme acteur des changements: [Citoyens en transition](http://citoyens.en-transition.fr/): boite à outils, liens, carte, films. C’est un lieu d’échange et de conseils qui appartient à tous ceux qui en font une réalité.
+
+
+---
+tags: tool object
+content: >
+    [La boutique militante](http://www.la-boutique-militante.com/), des outils pour nourrir vos luttes
+
+
+---
+tags: tool list object
+content: >
+    [Produits pour la vie](http://www.produitspourlavie.org/), annuaire de structures de réparation, échange, location, don, emprunt, achat ou vente d’occasion dans toute la France.
+
+
+---
+tags: agriculture earth
+content: >
+    [Permaculture sans frontières](http://permaculture-sans-frontieres.org/): efficacité, éthique = sociétés d’abondance + soutenables, écologiques, heureuses
+
+
+---
+tags: agriculture earth
+content: >
+    La [Permaculture](http://www.permaculture.fr/) est une science de conception de cultures, de lieux de vie, et de systèmes agricoles humains utilisant des principes d’écologie et le savoir des sociétés traditionnelles pour reproduire la diversité, la stabilité et la résilience des écosystèmes naturels
+
+
+---
+tags: eat group
+content: >
+    [ANDES](http://reseau-andes.viabloga.com/), le réseau des épiceries solidaires
+
+
+---
+tags: agriculture eat
+content: >
+    [Nature et Progrès](http://www.natureetprogres.org/), la Bio associative et solidaire, fédération de consommateurs et de professionnels engagés depuis 1964 dans l’agro-écologie.
+
+
+---
+tags: politics video
+content: >
+    [Vidéo](https://www.youtube.com/watch?v=iWixoOJRrds) de présentation de [La France en commun](http://contribuer.projet.pcf.fr/), une contribution du parti communiste français pour l’élaboration d’un projet émancipateur et d’un programme d’action
+
+
+---
+tags: subsist group
+content: >
+    [Sherpa](http://www.asso-sherpa.org/), protéger et défendre les populations victimes de crimes écologiques.
+
+
+---
+tags: history group
+content: >
+    Association [Survie](http://survie.org/): lutte contre la Françafrique et le néocolonialisme, combattre la banalisation du génocide et réinventer la solidarité internationale par la promotion des Biens Publics mondiaux.
+
+
+---
+tags: group law earth
+content: >
+    Association [Survival](http://www.survivalfrance.org/), pour les droits des peuples indigènes dans le monde entier
+
+
+---
+tags: eat map emancipation
+content: >
+    [La conquète du pain](https://laconquetedupainmontreuil.wordpress.com/), boulangerie bio autogérée à Montreuil
+
+
+---
+tags: education group
+content: >
+    [Le Contre Pied](http://www.lecontrepied.org), coopérative d'éducation populaire, près de Rennes
+
+
+---
+tags: video work alienation
+content: >
+    [La mise à mort du travail](https://www.youtube.com/watch?v=dVwC-9jQgSA), de Jean-Robert Viallet, 2009, 68min. Dans un monde où l'économie n'est plus au service de l'homme mais l'homme au service de l'économie, les objectifs de productivité et les méthodes de management poussent les salariés jusqu'au bout de leurs limites. Jamais maladies, accidents du travail, souffrances physiques et psychologiques n'ont atteint un tel niveau.
+
+
+---
+tags: media list video text
+content: >
+    [Les renseignements généreux](http://www.les-renseignements-genereux.org): autodéfense intellectuelle, informations et alternatives; ressources, brochures, vidéos, revue Traverse
+
+
+---
+tags: group work
+content: >
+    [réseau REPAS](http://www.reseaurepas.free.fr), compagnonnage alternatif et solidaire, réseau d'échanges et de pratiques
+
+
+---
+tags: object video
+content: >
+    [Les Recuper'Acteurs](http://recuperacteurs.fr/) est un webdocumentaire sur les récupérateurs de déchets à Paris et à Buenos Aires: chiffonniers, récupérateurs, cartoneros, biffins, waste pickers, glaneurs...
+
+
+---
+tags: web emancipation
+content: >
+    [Netopi](http://www.netopi.fr/fr/) FAI - Opérateur internet indépendant
+
+
+---
+tags: web emancipation
+content: >
+    [Franciliens.net](http://franciliens.net) est une association à but non-lucratif visant à fournir un accès à Internet de qualité à ses membres: neutre, transparent, fonctionnel et de proximité.
+
+
+---
+tags: web emancipation
+content: >
+    [FDN](http://www.fdn.fr/), fournisseur d’accès internet indépendant
+
+
+---
+tags: love genre
+content: >
+    [post-Ô-porno](http://gaadjou.joueb.com/) est un espace Queer qui a pour finalité le partage et la diffusion de savoirs, d’informations, d’idées, de réflexions ayant trait et/ou croisant les sujets suivants: genre, Queer, sexualités, prostitution, transgenre, Post-porn, homophobie, racisme, sexisme.
+
+
+---
+tags: map list
+content: >
+    [Répertoire des cartes des alternatives](http://www.scoop.it/t/les-cartes-des-alternatives), [Hétérotopies](http://heterotopies.overblog.com), par [Via Brachy](http://www.viabrachy.com/)
+
+
+---
+tags: video politics
+content: >
+    [La dialectique peut-elle casser des briques ?](https://www.youtube.com/watch?v=Anr2d_Tuakg) de René Viénet, 1973; Le scénario détourné relate comment des prolétaires tentent de venir à bout de bureaucrates grâce à la dialectique et à la subjectivité radicale
+
+
+---
+tags: object creation love
+content: >
+    [Les filles du facteur](http://www.fillesdufacteur.org) tissent des sacs plastiques de récup' pour en faire des merveilles. l'[ancien blog](http://fillesdufacteur.typepad.com/), le [nouveau](http://www.facteurceleste.fr/), le [site de vente en ligne](http://facteurshop.com/)
+
+
+---
+tags: video zad
+content: >
+    [Je lutte donc je suis](http://jeluttedoncjesuis.net/), de Yannis Youlountas, visionable [en ligne](https://www.youtube.com/watch?v=97HTxo20c-E)
+
+
+---
+tags: audio media
+content: >
+    [Là-bas si j'y suis](http://la-bas.org/), de Daniel Mermet, et, pour se retrouver autour d’un verre et refaire le monde: [la carte des repaires de Là-bas](http://la-bas.org/les-repaires-de-la-bas)
+
+
+---
+tags: space calendar act zad
+content: >
+    [Marche sur la cop](http://marchesurlacop.noblogs.org/), appel à former convois, marches, tracto-vélos pour se rendre aux manifestations contre la COP 21. Nous cheminerons depuis des territoires en lutte jusqu’à la capitale, avec toute l’énergie composite de nos mouvements, en créant en route des espaces de rencontres et de mobilisation.
+
+
+---
+tags: move space calendar
+content: >
+    La première [journée sans voiture](http://parissansvoiture.fr/) à Paris le 27 septembre 2015
+
+
+---
+tags: media
+content: >
+    [Bonnes nouvelles](http://www.bonnes-nouvelles.be/) et [solutions](http://www.ilfauttuertina.net/solutions/): il y a plein d'alternatives...
+
+
+---
+tags: map agriculture
+content: >
+    Sauvons la [ferme des bouillons](http://www.lafermedesbouillons.fr/sauvons-la-ferme-des-bouillons-2/)
+
+
+---
+tags: text media
+content: >
+    La revue [S!lence](http://www.revuesilence.net/), (écologie, alternatives, non-violence) est publiée depuis 1982. Elle se veut un lien entre toutes celles et ceux qui pensent qu'aujourd'hui il est possible de vivre autrement sans accepter ce que les médias et le pouvoir nous présentent comme une fatalité.
+
+
+---
+tags: media text philo
+content: >
+    [Revue Z](http://www.zite.fr/), revue itinérante d’enquête et de critique sociale
+
+
+---
+tags: media text creation
+content: >
+    [Vacarme](http://vacarme.org) - entre art et politique, entre savants et militants: revue trimestrielle publiée sur papier et prolongée en ligne, qui mène depuis 1997 une réflexion à la croisée de l’engagement politique, de la création artistique et de la recherche.
+
+
+---
+tags: creation image space group
+content: >
+    [Ne rougissez pas](http://www.nerougissezpas.fr/) est un atelier collectif associant graphiste-plasticien cinéaste-relieur & sérigraphe désireux de vivre d'une pratique collaborative et mobile. Nous agissons pour un processus de travail commun et une considération de l'individu, avec le rêve comme moteur de fabrication
+
+
+---
+tags: home move love
+content: >
+    [La caravane des espaces libres](http://lacaravanedesespaceslibres.blogspot.fr/) est une association artistique, nomade et alternative. Elle manifeste l’art, la joie de vivre et le mouvement
+
+
+---
+tags: list video
+content: >
+    [les Mutins de Pangée](http://www.lesmutins.org/), coopérative audiovisuelle avec merveilleux films militants en VOD: C’est pas plus compliqué que de pirater des conneries, il y a des films incontournables, des raretés, des perles, c’est coopératif, c’est pas cher, ça contribue à la production et l’édition de bons films hors des sentiers battus
+
+
+---
+tags: list video
+content: >
+    [Voir et agir](http://voiretagir.org/), des films pour se rencontrer et transformer la société
+
+
+---
+tags: agriculture group
+content: >
+    [Graines de Noé](http://www.graines-de-noe.org/), préservation et diffusion de semences anciennes de céréales
+
+
+---
+tags: agriculture group
+content: >
+    L'association [Croqueurs de carotte](http://www.semaille.com/croqueursdecarottes.html) participe à la sauvegarde des anciennes variétés potagères. Elle recense les variétés menacées d’érosion génétique, en assure l’évaluation et la maintenance, inscrit ou réinscrit les variétés les plus méritantes
+
+
+---
+tags: agriculture group
+content: >
+    L'association [le rêve du peuple des arbres](https://framasphere.org/people/e30466d0c9e10132eaf52a0000053625) a pour but de développer les plantations d'arbres accessibles à tous ou pour des projets autonomes. L'association aidera aussi le développement d'écolieux. Leur site internet sera bientôt disponible. Elles organise l'évènement plantons 1 million d'arbres du 25 au 29 novembre 2015
+
+
+---
+tags: eat group
+content: >
+    [L’Association Végétarienne de France](http://www.vegetarisme.fr/) est une association loi de 1901 sans but lucratif, strictement laïque et non politique, dont les buts sont de promouvoir l’alimentation végétarienne en France
+
+
+---
+tags: web law
+content: >
+    La [Quadrature du Net présente ses propositions](https://www.laquadrature.net/fr/propositions) pour adapter les politiques publiques aux réalités technologiques et sociales d'Internet
+
+
+---
+tags: education group emancipation
+content: >
+    [Vent Debout](http://www.vent-debout.org), coopérative d'éducation populaire
+
+
+---
+tags: media text philo
+content: >
+    [Mouvements.info](http://mouvements.info/), espace d’information critique, d’enquêtes sociales, de travaux théoriques et d’interpellation politique pour intensifier les échanges entre travaux de recherche, espaces de résistance et de proposition politique
+
+
+---
+tags: education creation video
+content: >
+    [conférences gesticulées de Franck Lepage](https://www.youtube.com/playlist?list=PLU-AbkvniKf-2jyYgdp_rTqC7i5PiADBZ), Scop le Pavé
+
+
+---
+tags: politics text
+content: >
+    [Grèce, revue de presse d'une guerre contre les peuples](https://france.attac.org/se-mobiliser/avec-les-grecs-contre-l-austerite-pour-la-democratie/article/grece-revue-de-presse-d-une-guerre-contre-les-peuples), Attac
+
+
+---
+tags: energy earth video
+content: >
+    [Into Eternity](https://www.youtube.com/watch?v=Kl-su2P6mVM), de Michael Madsen: documentaire à propos du stockage en couche géologique profonde de déchets radioactifs en Finlande
+
+
+---
+tags: politics act science philo
+source: Isabelle Stengers
+content: >
+    [La rationalité se trouve du côté de la remise en question du pouvoir et des experts](http://www.regards.fr/web/article/isabelle-stengers-la-rationalite)
+
+
+---
+tags: politics words
+content: >
+    [Compte rendu d'un conseil municipal](http://larotative.info/voisins-vigilants-tarifs-des-1104.html), Tours, 6 juillet 2015
+
+
+---
+tags: earth audio
+content: >
+    [Mer poubelle](http://www.franceculture.fr/emission-du-grain-a-moudre-d-ete-mer-poubelle-par-ou-commencer-le-grand-nettoyage-2015-07-10): pollution des océans, France Culture
+
+
+---
+tags: companies words
+content: >
+    [J'ai rencontré ceuxquifont (de la merde)](http://www.lepostillon.org/J-ai-rencontre-Ceuxquifont-de-la.html): génération Y des makers: ils font quoi ? peu importe
+
+
+---
+tags: creation alienation audio
+content: >
+    Keny Arkana: [Entre les lignes; clouée au sol](https://www.youtube.com/watch?v=UNlE0-vf7aw), Marseille [Capitale de la Rupture](https://www.youtube.com/watch?v=ta2jot9JhU0)
+
+
+---
+tags: politics philo emancipation
+content: >
+    [Peut-on se passer de la promesse](http://www.franceculture.fr/emission-forum-le-monde-le-mans-peut-on-se-passer-de-la-promesse-22-2015-07-09), Philippe Corcuff à propos des promesses politiques, France Culture
+
+
+---
+tags: economy history politics video
+content: >
+    [discours de Thomas Sankara sur la dette](https://www.youtube.com/watch?v=jvYM6cGuBo8), Sommet OUA, Addis Abeba, 29 juillet 1987
+
+
+---
+tags: home subsist audio
+content: >
+    [Offres vides](http://www.franceculture.fr/emission-les-pieds-sur-terre-offres-vides-r-2015-07-08), trouver un logement dans la capitale ? *Les pieds sur terre*, France Culture, 2002
+
+
+---
+tags: map calendar object emancipation
+content: >
+    [La petite rockette](http://www.lapetiterockette.org), et la [Rockette Libre](http://rockette-libre.org)
+
+
+---
+tags: zad video audio
+content: >
+    [gardien de la paix, es-tu bien sûr que c'est elle que tu gardes ?](https://www.youtube.com/watch?v=41dQd6Qkk0E) par Luciole
+
+
+---
+tags: history philo politics
+content: >
+    [À ceux qui me répètent qu’on ne peut pas accueillir «toute la misère du monde»](http://blogs.mediapart.fr/blog/rachel-nef/260615/ceux-qui-me-repetent-qu-ne-peut-pas-accueillir-toute-la-misere-du-monde), Rachel Nef
+
+
+---
+tags: economy
+content: >
+    [La Nef](http://www.lanef.com/), coopérative de finance éthique
+
+
+---
+tags: alienation emancipation video
+content: >
+    [Ne vivons plus comme des esclaves](https://www.youtube.com/watch?v=rpqk24qvoR4), luttes et utopies en Grèce, de Yannis Youlountas, septembre 2013, 89min
+
+
+---
+tags: companies economy text
+content: >
+    [Grèce: petit guide contre les bobards médiatiques](https://france.attac.org/nos-publications/brochures/article/grece-petit-guide-contre-les-bobards-mediatiques)
+
+
+---
+tags: economy group politics
+content: >
+    [collectif pour un audit citoyen de la dette publique](http://www.audit-citoyen.org/)
+
+
+---
+tags: genre text words
+content: >
+    [ça fait genre](http://cafaitgenre.org), decryptage des discours et représentations sur le genre
+
+
+---
+tags: map emancipation
+content: >
+    [Barricade](http://www.barricade.be), lieu d'émancipation collective et de création d'alternatives, à Liège
+
+
+---
+tags: education emancipation
+content: >
+    réseau [éducation populaire](http://www.educationpopulaire93.fr/spip.php?rubrique1) en Seine-Saint-Denis
+
+
+---
+tags: slow map list
+content: >
+    [Semeoz.info](http://semeoz.info/), Observatoire des pratiques collaboratives et constructives: Fédérer les initiatives d'une société civile qui s'affranchit des codes, clivages, gouvernances, pratiques, méthodes ou usages classiques
+
+
+---
+tags: energy group list slow
+content: >
+    [éconologie](http://www.econologie.com/): économie, écologie, environnement, une mine de liens et de projets
+
+
+---
+tags: work economy creation
+content: >
+    [créations autour du revenu de base](http://www.creations-revenusdebase.org/)
+
+
+---
+tags: economy group politics
+content: >
+    [Mouvement français pour un revenu de base](http://revenudebase.info/), et [Appel pour le revenu de vie](http://appelpourlerevenudevie.org/), automatique, inconditionnel et inaliénable
+
+
+---
+tags: map space alienation genre
+content: >
+    [le rémouleur](https://infokiosques.net/le_remouleur) à Bagnolet, local auto-organisé de lutte et de critique sociale
+
+
+---
+tags: companies act
+content: >
+    [BDS](http://www.bdsfrance.org/), Boycott Désinvestissement Sanction: réponse non violente et citoyenne à l’impunité d’Israel
+
+
+---
+tags: group web science law
+content: >
+    [Robins des Toits](http://www.robindestoits.org/), association nationale pour la sécurité sanitaire dans les technologies sans fil
+
+
+---
+tags: media text
+content: >
+    [La décroissance](http://www.ladecroissance.net/), le journal de la joie de vivre !
+
+
+---
+tags: group economy
+content: >
+    [IEESDS](http://www.decroissance.org/), institut d’études économiques et sociales pour la décroissance
+
+
+---
+tags: subsist work group map
+content: >
+    [assemblée contre la précarisation](http://contrelapreca.eklablog.com/), à Marseille, le café des [cafards](https://cafard93.wordpress.com/) à Paris
+
+
+---
+tags: health media text
+content: >
+    [RBH](http://rbh23.com/), La Gazette du Chanvre, légale et gratuite !
+
+
+---
+tags: home group
+content: >
+    [Bâtir des alternatives](http://batirdesalternatives.wordpress.com/): communautés intentionnelles, éco-villages, habitats groupés... des solutions pour vivre autrement
+
+
+---
+tags: economy history politics
+content: >
+    [CADTM](http://cadtm.org/), Comité pour l’Annulation de la Dette du Tiers Monde
+
+
+---
+tags: alienation work text
+content: >
+    [et voila le travail](http://voila-le-travail.fr/), chroniques de l'humain en entreprise
+
+
+---
+tags: act group video creation
+content: >
+    [The yes men are revolting](http://theyesmenarerevolting.com)
+
+
+---
+tags: media philo text
+content: >
+    [La voie du jaguar](http://www.lavoiedujaguar.net/), informations et correspondance pour l’autonomie individuelle et collective, du Chiapas à Oaxaca, du Mexique à l’Argentine, de l’Amérique à l’Asie, partout quoi
+
+
+---
+tags: education alienation video
+content: >
+    [changer de paradigme pour l'éducation](https://www.youtube.com/watch?v=deYjatIfWVU), par Ken Robinson
+
+
+---
+tags: slow video
+content: >
+    [Marc Halévy](http://universitehommesentreprises.com/20eme-universite-hommes-entreprises/marc-halevy), pour une autre croissance
+
+
+---
+tags: text words
+content: >
+    [Le passager clandestin](http://www.lepassagerclandestin.fr/): Maison d’édition indépendante, pour arracher à l’histoire quelques fragments de vérité, interroger sans complaisance l’ordre présent des choses...
+
+
+---
+tags: home slow work
+content: >
+    rencontrer, travailler et se loger par le [woofing](http://wwoof.fr/)
+
+
+---
+tags: home slow object
+content: >
+    [Habiter autrement](http://www.habiter-autrement.org/), portail des habitats et modes de vie alternatifs, des réalisations innovantes, simples, reproductibles, des bricolages dans les marges pour une autre société
+
+
+---
+tags: home slow object
+content: >
+    [HALEM](http://www.halemfrance.org/) HAbitantEs de Logements Ephémères ou Mobiles
+
+
+---
+tags: companies web
+content: >
+    j'ai pas lu les [Terms of Service](https://tosdr.org/)
+
+
+---
+tags: map science web list
+content: >
+    la carte [New Cloud Atlas](http://newcloudatlas.org), qui montre les lieux physiques associés au cloud
+
+
+---
+tags: creation image
+content: >
+    illustrations de [Marie Levesque](http://www.leszillusdemissbean.com/)
+
+
+---
+tags: creation love economy
+content: >
+    les épuisettes culturelles: [amacca](http://reseauculture21.fr/amacca/le-reseau/) (associations pour le maintien des alternatives en matière de culture et de création artistique), par [comme un poisson dans l'art](http://www.commeunpoissondanslart.fr/)
+
+
+---
+tags: creation image love
+content: >
+    [Formes Vives](http://www.formes-vives.org), atelier de communication politique utopique et exigeante.
+
+
+---
+tags: alienation creation
+content: >
+    Jérémie Pujau attend qu'on lui lance des œufs: [de la poule ou de l'œuf](http://pouleouoeuf.com/fr)
+
+
+---
+tags: companies subsist text
+content: >
+    *Leetchi, Change*, [générosité low-cost](http://www.marianne.net/generosite-low-cost-100233071.html)
+
+
+---
+tags: companies move home text
+content: >
+    [Uber et Airbnb n'ont rien à voir avec l'économie de partage](http://www.lemonde.fr/entreprises/article/2015/06/25/michel-bauwens-uber-et-airbnb-n-ont-rien-a-voir-avec-l-economie-de-partage_4661680_1656994.html), par Michel Bauwens
+
+
+---
+tags: companies eat agriculture text
+content: >
+    la ruche qui dit oui ? Lettre ouverte: [l'AMAP, c'est plus qu'un panier](http://miramap.org/IMG/pdf/lettre-ouverte-miramap-26nov2014.pdf)
+
+
+---
+tags: companies home slow
+content: >
+    hébergeons-nous par [Couchsurfing](https://www.couchsurfing.com/) et pas *Airbnb*.
+
+
+---
+tags: companies move
+content: >
+    utiliser le [Covoiturage Libre](http://covoiturage-libre.fr/) et pas *BlaBlaCar* ou *Uber*.
+
+
+---
+tags: emancipation tool list
+content: >
+    la boite à outils ouverte [multibao](http://www.multibao.org/), échanges de fiches pratiques autour des démarches participatives
+
+
+---
+tags: alienation politics companies image
+content: >
+    [liens de sang entre entreprises du CAC40](http://www.alternatives-economiques.fr/fic_bdd/article_pdf_fichier/1274372604_cac40_3.swf)
+
+
+---
+tags: alienation companies creation image
+content: >
+    [An Atlas of Agendas](http://www.anagrambooks.com/atlas-of-agendas), cartes des structures de pouvoir socio-politiques, par [Bureau d'Etudes](http://bureaudetudes.org/)
+
+
+---
+tags: politics energy history audio creation
+content: >
+    [Nuclaire, la fabrique de l'oubli](http://www.radiobartas.net/listings/nucleaire-la-fabrique-de-loubli/): un assemblage d’extraits d’analyses, de témoignages, de textes littéraires, et d’archives sonores qui tentent de nous éclairer sur cette société nucléaire qui par son omniprésence se fait oublier
+
+
+---
+tags: philo politics energy history
+content: >
+    «L’Enterrement de celles et ceux qui mourront demain»: brochure délicieuse de 32 pages pour comprendre le sujet du nucléaire en France, éditée en mai 2013. contacter [All Nucleocrats Are Bastards](mailto:allnucleocratsarebastards@riseup.net)
+
+
+---
+tags: alienation space tool map
+content: >
+    Partout les caméras se multiplient, la vidéo-surveillance enregistre nos faits et gestes au quotidien, alors que les dispositifs de contrôle ne cessent de s’intensifier et de se perfectionner. [Sous-surveillance.net](http://www.sous-surveillance.net) permet à chaque ville (déjà 11 en France!) de se doter facilement d’un site local de cartographie des caméras, publiques comme privées, qui filment l’espace public: 
+
+
+---
+tags: economy slow alienation
+content: >
+    [Eglise de la Très Sainte Consommation](http://www.consomme.org/) beaucoup de personnes pratiquent son culte sans le savoir, ou en ayant une vision peu précise de ce qu’il implique
+
+
+---
+tags: audio history media words
+content: >
+    [Sons en luttes](http://www.sonsenluttes.net/) permet de constituer une mémoire sonore des luttes. Il favorise en priorité l’expression des acteurs des luttes et de la contre-culture qui nourrissent le mouvement social
+
+
+---
+tags: genre love
+content: >
+    [MIEL](http://www.ecologielibidinale.org), Mouvement International pour une Ecologie Libidinale: prévention des névroses et de la peste émotionnelle, éducation, formation et recherche
+
+
+---
+tags: alienation energy companies politics
+content: >
+    [cartographie des personnalités du nucléaire en France](http://greenpeace.fr/facenuke/) par Greenpeace
+
+
+---
+tags: media text
+content: >
+    [fakir](http://www.fakirpresse.info/) n’est lié à aucun parti, aucun syndic, aucune institution... il est entièrement bénévole et faché avec tout le monde, ou presque !
+
+
+---
+tags: media text list
+content: >
+    [Infokiosques](https://www.infokiosques.net/), des centaines de brochures subversives à lire, télécharger, imprimer, propager; classées par éditions et lieux
+
+
+---
+tags: media text emancipation
+content: >
+    [L’âge de Faire](http://www.lagedefaire-lejournal.fr/), mensuel dédié aux expériences alternatives en matière de réappropriation de l’économie, de création de lien social, d’écologie et d’engagement citoyen
+
+
+---
+tags: media text alienation
+content: >
+    [L'envolée](http://lenvolee.net/) est un journal critique du système carcéral et judiciaire, et du monde qui le génère, il s’inscrit dans l’histoire de la critique sociale abordée sous l’angle du châtiment, de la discipline, de la prison
+
+
+---
+tags: media alienation health text
+content: >
+    [Sans remède](http://sansremede.fr/), journal contre l’enfermement psychiatrique
+
+
+---
+tags: media text
+content: >
+    À quoi sert [Le Monde diplomatique](http://www.monde-diplomatique.fr/) ? À apprendre et à comprendre. À donner un peu de cohérence au fracas du monde là où d’autres empilent des informations. Tous les deux mois, l'incontournable [Manière de voir](http://www.monde-diplomatique.fr/mav/) rassemble les meilleurs articles autour d'une thématique
+
+
+---
+tags: media text
+content: >
+    Comment comprendre l’Histoire ? Comment la raconter ? La rédaction de [Lundi matin](http://www.lundi.am) n’a jamais dissimulé un certain tropisme pour la tradition des vaincus, c’est-à-dire, pour l’histoire qu’il reste à faire.
+
+
+---
+tags: media text
+content: >
+    [CQFD](http://cqfd-journal.org/), [J'ai un doute](http://jaiundoute.com/), [Zango](http://zangomedia.fr/), [informaction](http://www.informaction.info/), [Génération Précaire](https://twitter.com/generationpreca), [les Z'indigné(e)s](http://www.les-indignes-revue.fr), [acrimed](http://www.acrimed.org/), [le partage](http://partage-le.com/), [primitivi](http://www.primitivi.org/), [l'impossible](http://www.limpossible.fr/), [article11](http://www.article11.info/), [Jef Klak](http://jefklak.org/), [langue des bois](http://www.lalanguedesbois.ch/la-langue-des-bois/), [l'indigné du canapé](http://www.indigne-du-canape.com/), info honnête, opinion brute
+
+
+---
+tags: law alienation subsist
+content: >
+    [Sans papiers](http://sanspapiers.internetdown.org/), s’organiser contre l’expulsion: que faire en cas d’arrestation ?
+
+
+---
+tags: subsist text
+content: >
+    [Sans Papiers Ni Frontières](http://sanspapiersnifrontieres.noblogs.org/), contre les frontières et leurs prisons
+
+
+---
+tags: media video
+content: >
+    [la télé libre](http://latelelibre.fr/), [Reporter Citoyens](http://www.reporter-citoyen.fr/), [alterjt](http://www.alterjt.tv/), [le 4e Singe](http://4emesinge.com/), [Mr Mondialisation](http://mrmondialisation.org)
+
+
+---
+tags: media text map list
+content: >
+    [Bastamag](http://www.bastamag.net/), média d’informations sur les luttes environnementales et sociales, et son [portail des presses indépendantes](http://portail.bastamag.net/), médias de « transformation » sociale, écologique et démocratique
+
+
+---
+tags: words creation
+content: >
+    COP21: Mesdames et Messieurs les Chefs d'Etat, [Les enfants ont quelque chose à vous dire](http://messagesenfantscop21.strikingly.com/)
+
+
+---
+tags: media text
+content: >
+    [Rebellyon.info](http://rebellyon.info/), site d’informations alternatives et anti-autoritaires sur Lyon et sa région, participatif et collaboratif
+
+
+---
+tags: media text
+content: >
+    [Reporterre](http://reporterre.net/), quotidien de l'écologie, pour une information libre et indépendante
+
+
+---
+tags: media text
+content: >
+    [Paris Luttes Info](http://paris-luttes.info/), [mediapart](http://www.mediapart.fr), [Canard enchainé](http://lecanardenchaine.fr/), [IAATA](https://iaata.info)
+
+
+---
+tags: media subsist space
+content: >
+    [Quartiers XXI](http://quartiersxxi.org) site indépendant d’information sur les quartiers populaires, fondé et géré par un comité de rédaction vivant ou travaillant dans les quartiers populaires
+
+
+---
+tags: words history creation text
+content: >
+    récits de luttes sur [constellations](https://constellations.boum.org/), par le collectif mauvaise troupe : [Défendre la ZAD](https://constellations.boum.org/spip.php?article125), Trajectoires révolutionnaires du jeune 21e siècle, ZAD NO TAV, ...
+
+
+---
+tags: words text politics philo
+content: >
+    collectif [les mots sont importants](http://lmsi.net/?page=presentation)
+
+
+---
+tags: list map
+content: >
+    [ecozoom](http://mapunto.net/ecozoom/) en espagne
+
+
+---
+tags: map space list tool
+content: >
+    [TransforMap](http://transformap.co/)
+
+
+---
+tags: creation group video
+content: >
+    le doctorat sauvage d'[échelle inconnue](http://www.echelleinconnue.net/)
+
+
+---
+tags: move act space
+content: >
+    les [vélorution](http://velorution.org/) réclament la rue pour les cyclistes et autres non-motorisé.e.s
+
+
+---
+tags: space creation education
+content: >
+    [Bruit du frigo](http://bruitdufrigo.com), hybride entre bureau d’étude urbain, collectif de création, structure d’éducation populaire
+
+
+---
+tags: space creation
+content: >
+    les [saprophytes](http://www.les-saprophytes.org/index.php?cat=sapro)
+
+
+---
+tags: space group
+content: >
+    [PEROU](http://www.perou-paris.org/Manifeste.html), pôle d'exploration des ressources urbaines
+
+
+---
+tags: space creation love
+content: >
+    la [Graffiterie](http://graffiterie.org/) met en relation des artistes et des propriétaires de murs pour réenchanter l'espace public
+
+
+---
+tags: map list
+content: >
+    [Cap ou pas Cap ?](http://capoupascap.paris/) carte des alternatives citoyennes à Paris
+
+
+---
+tags: map list economy
+content: >
+    carte des [services et nouvelles formes économiques](http://www.apur.org/dataviz/nouvelles_economies/index.html)
+
+
+---
+tags: zad map list companies
+content: >
+    [carte des projets nuisibles](www.fne.asso.fr/fr/nos-actions/sivens/dautres-sivens), par [France Nature Environnement](http://www.fne.asso.fr)
+
+
+---
+tags: economy philo
+content: >
+    [la désargence](http://desargence.org/), esquisse d’un programme de recherche à partir de l’hypothèse d’une économie sans monnaie
+
+
+---
+tags: group slow
+content: >
+    [Villes et communautés en Transition](http://www.transitionfrance.fr/) pour le passage de la dépendance au pétrole à la résilience locale
+
+
+---
+tags: slow zad map list
+content: >
+    [carte Bastamag des alternatives](http://www.bastamag.net/La-carte-de-France-des-4598), [tour de France des alternatives](http://www.tourdefrancedesalternatives.fr/alternatives/)
+
+
+---
+tags: map list
+content: >
+    [carte](https://www.google.com/maps/d/embed?mid=zObc46bS4Jts.kM-SMEA0C_m8) des [moutons enragés](http://lesmoutonsenrages.fr/carte-des-moutons-2/)
+
+
+---
+tags: agriculture group
+content: >
+    [RELIER](http://www.reseau-relier.org/), Réseau d’Expérimentation et de Liaison des Initiatives en Espace Rural
+
+
+---
+tags: space emancipation zad
+content: >
+    Il n’y aura jamais d’aéroport à Notre-Dame-des-Landes: [zone à défendre](http://zad.nadir.org/), avec l'[ACIPA ](https://www.acipa-ndl.fr), les [Naturalistes en lutte](https://naturalistesenlutte.wordpress.com/) et toutes les énergies complices: [défendre la zad](https://constellations.boum.org/spip.php?article125), [que va devenir la zad ?](https://lundi.am/De-la-ZAD-aux-Communaux-Partie-I)
+
+
+---
+tags: space law text
+content: >
+    [le squat de A à Z](https://infokiosques.net/imprimersans2.php?id_article=41), et son [bonus](https://www.infokiosques.net/IMG/pdf/SquatAZ-bonus-cahierA5.pdf): expérimenter le collectif, faire acte politique dans des lieux délaissés, abandonnés, en attente spéculative
+
+
+---
+tags: energy space
+content: >
+    [Anti THT](http://antitht.noblogs.org), résistance contre les lignes à haute tension
+
+
+---
+tags: calendar list map
+content: >
+    évènements du très riche agenda [Demosphère](http://demosphere.eu) et de [radar.squat.net](https://radar.squat.net/fr/events/country/FR)
+
+
+---
+tags: text map philo
+content: >
+    la [bibliothèque associative de Malakoff](http://www.b-a-m.org/): de bons livres, des ateliers, débats, lectures et projections
+
+
+---
+tags: text map philo
+content: >
+    le [café librairie Michèle Firk](http://www.la-parole-errante.org/index.php?cat=CAFE-MF) à Montreuil
+
+
+---
+tags: love creation video
+content: >
+    [l'an 01](https://www.youtube.com/watch?v=_lgJbU3J7hw), Jacques Doillon, Gébé, Alain Resnais, Jean Rouch, 1973
+
+
+---
+tags: love education
+content: >
+    [Under Construction](http://www.underconstruction.fr/?page_id=1493) fabrique des jeux pour interroger le monde
+
+
+---
+tags: tool love act list
+content: >
+    [beautifultrouble](http://beautifultrouble.org/), boite à outils pour faire la révolution, avec extraits en français dans [Joyeux Bordel](https://france.attac.org/nos-publications/livres/article/joyeux-bordel-tactiques-principes)
+
+
+---
+tags: act love slow space
+content: >
+    les [Engraineurs](http://www.collectif-lesengraineurs.com/) plantent les graines d'un esprit de résistance et cultivent les alternatives
+
+
+---
+tags: act love eat space
+content: >
+    les dîners festifs improvisés de [Jeudi Noir](http://www.jeudi-noir.org/)
+
+
+---
+tags: act love companies eat space
+content: >
+    les pique-niques impromptus au cœur des supermarchés par [l'Appel et la Pioche](http://www.dailymotion.com/lappeletlapioche)
+
+
+---
+tags: act love group
+content: >
+    la [brigade activiste des clowns](https://brigadeclowns.wordpress.com/le-manifeste-de-larmee-des-clowns/) et ses armes de dérision massive
+
+
+---
+tags: health group text
+content: >
+    [Micrurus](http://www.sous-la-cendre.info/wp-content/files/Micrurus_0_bd.pdf), contre la médecine et son monde
+
+
+---
+tags: act eat agriculture health
+content: >
+    manger autrement: [fruits et légumes de saison](http://asso.apne.free.fr/wp-content/uploads/2010/05/legumesaison.jpg), [réseau des AMAP](http://www.amap-idf.org/), [Marché Citoyen](http://www.lemarchecitoyen.net/)
+
+
+---
+tags: object slow
+content: >
+    [boites d'échanges entre voisins](http://www.hclbox.org/fr/boxes)
+
+
+---
+tags: eat space love
+content: >
+    La [Disco Soupe](http://discosoupe.org/) est un mouvement solidaire et festif qui s'approprie l'espace public et le rebut alimentaire pour sensibiliser au gaspillage alimentaire
+
+
+---
+tags: earth agriculture home
+content: >
+    Les [Oasis en Tous Lieux](http://www.oasisdeserendip.net) visent à une autonomie fondée sur la Terre nourricière, la réduction de l’empreinte environnementale, la pluriactivité et les échanges favorables à la reconstitution du lien social.
+
+
+---
+tags: object map 
+content: >
+    [La collecterie](http://lacollecterie.org/) association qui collecte, trie et transforme
+
+
+---
+tags: map agriculture work
+content: >
+    [Terre de Liens](http://www.terredeliens.org/): agir concrètement pour permettre l’installation de paysans et le développement d’une agriculture biologique
+
+
+---
+tags: object economy
+content: >
+    [ressourceries d'Île-de-France](http://www.ressourcerie.fr/Vos-Ressourceries/Localisations)
+
+
+---
+tags: object tool list
+content: >
+    [recupe.net](http://recupe.net/), [jedonne.org](http://www.jedonne.org/), [co-recyclage.com](http://www.co-recyclage.com/), [myrecyclestuff.com](http://myrecyclestuff.com/), [le bon coin](http://www.leboncoin.fr/) ?
+
+
+---
+tags: object economy
+content: >
+    ne plus jeter, mais donner, recycler, récupérer, troquer dans les [zones de gratuité](http://fr.wikipedia.org/wiki/Magasin_gratuit): [boutique sans argent](http://laboutiquesansargent.org/)
+
+
+---
+tags: object economy video
+content: >
+    glânons, [les mains, ça se lave](https://vimeo.com/37089032)
+
+
+---
+tags: agriculture group
+content: >
+    [Kokopelli](https://kokopelli-semences.fr/), semences potagères et aromatiques bio, libres de droit et reproductibles
+
+
+---
+tags: move group zad
+content: >
+    [NO TAV France](http://notavfrance.noblogs.org/), textes et traductions contre la grande vitesse
+
+
+---
+tags: science web text philo
+content: >
+    [à nous d'être les maîtres des technologies](http://www.internetactu.net/2015/05/07/technologie-cest-a-nous-den-etre-les-maitres-oui-mais-comment), par Hubert Guillaud
+
+
+---
+tags: science web text philo
+content: >
+    livre, numérique, capitalisme, progrès: [la querelle des modernes et des modernes](http://les451.noblogs.org/post/2012/11/22/la-querelle-des-modernes-et-des-modernes/), par le collectif des 451
+
+
+---
+tags: web tool alienation
+content: >
+    le [guide d'autodéfense numérique](https://guide.boum.org/), avec version papier par [tahin party](http://tahin-party.org/)
+
+
+---
+tags: science group list
+content: >
+    les projets de l'[IndieWebCamp](http://indiewebcamp.com/)
+
+
+---
+tags: philo science group
+content: >
+    l'association [Technologos](http://technologos.fr/) désacralise la technique
+
+
+---
+tags: web group law
+content: >
+    [la quadrature du net](http://www.laquadrature.net/), association de défense des droits et libertés des citoyens sur Internet.
+
+
+---
+tags: web group law
+content: >
+    l'[April](https://www.april.org/), association de promotion et de défense du Logiciel Libre.
+
+
+---
+tags: agriculture earth group
+content: >
+    [Via Campesina](http://viacampesina.org), mouvement paysan international, défend l'agriculture durable de petite échelle pour promouvoir la justice sociale et la dignité. Elle s'oppose clairement à l'agriculture industrielle et aux entreprises multinationales qui détruisent les personnes et l'environnement
+
+
+---
+tags: web media tool
+content: >
+    le [zinc](http://zinc.mondediplo.net/) du monde diplomatique: comme twitter, mais en mieux
+
+
+---
+tags: web tool alienation
+content: >
+    [DuckDuckGo](https://duckduckgo.com/), moteur de recherche ne marchandisant pas nos données
+
+
+---
+tags: web tool alienation
+content: >
+    [guide riseup](https://help.riseup.net/fr/better-web-browsing) pour une meilleure navigation sur le web
+
+
+---
+tags: web tool alienation
+content: >
+    pour naviguer anonymement, [Tor](https://www.torproject.org/)
+
+
+---
+tags: web tool emancipation
+content: >
+    les outils de [Framasoft](http://www.framasoft.org) pour [degoogliser](http://degooglisons-internet.org/) l'internet: [framapad](https://framapad.org/), [framadate](https://framadate.org/), etc...
+
+
+---
+tags: science earth text alienation
+content: >
+    arrêtons l'[identification électronique](https://www.infokiosques.net/IMG/pdf/2007_des_moutons-cahier.pdf) des animaux et des hommes
+
+
+---
+tags: media web science text
+content: >
+    [Techn0polis](https://www.techn0polis.net/), blog d'Amaelle Guiton
+
+
+---
+tags: web alienation
+content: >
+    surveillance généralisée: vous n'avez rien à cacher ? [we are always listening](http://www.wearealwayslistening.com/)
+
+
+---
+tags: alienation law web text
+content: >
+    la loi sur le renseignement prévoit des [algorithmes pour détecter les comportements suspects](http://ownirevient.fr/)
+
+
+---
+tags: science alienation
+content: >
+    dématérialisation des tickets restaurant, paiement sans contact: à qui profite vraiment le service ?
+
+
+---
+tags: object move emancipation
+content: >
+    ateliers vélo [Cyclofficines](http://cyclocoop.org/)
+
+
+---
+tags: object emancipation
+content: >
+    réparer, fabriquer soi-même dans les [ReparCafés](https://duckduckgo.com/?q=reparcaf%C3%A9)
+
+
+---
+tags: alienation media text
+content: >
+    [la police n'aime pas la presse libre](https://iaata.info/1-74-09-99-192-168-0-1-en-proces-pour-lire-et-soutenir-la-presse-libre-728.html)
+
+
+---
+tags: image alienation emancipation genre
+content: >
+    [débarrassons-nous des chefs](http://generationsfutur.zici.fr/wp-content/uploads/2012/09/Tableauantichefs.gif)
+
+
+---
+tags: work video
+content: >
+    [le travail](https://www.youtube.com/watch?v=cLOZ0c7W2Go), conférence gesticulée de Franck Lepage & Gaël Tanguy: Qu'est-ce que le Travail, est-ce simplement une activité subordonnée à un patron pour nous permettre de vivre ? Comment penser le travail dans une dimension humaniste ?
+
+
+---
+tags: media text alienation
+content: >
+    les 150 numéros du [publiphobe](http://bap.propagande.org/modules.php?name=Publiphobe)
+
+
+---
+tags: companies economy
+content: >
+    pour la fermeture des grandes enseignes le dimanche
+
+
+---
+tags: agriculture space love
+content: >
+    [Les incroyables comestibles](http://lesincroyablescomestibles.fr/), on plante partout où c’est possible, on arrose et on partage !
+
+
+---
+tags: economy object slow
+content: >
+    [nonmarchand.org](http://nonmarchand.org), portail dédié à la réalisation d’échanges non marchands
+
+
+---
+tags: economy work text politics
+content: >
+    [pour un revenu garanti pour tous](http://www.monde-diplomatique.fr/2013/05/CHOLLET/49054), par Mona Chollet
+
+
+---
+tags: alienation act group
+content: >
+    écrasons la publicité: [Résistance à l'Agression Publicitaire](http://antipub.org/), [Reposeurs](http://www.reposeurs.eu.org/), [Déboulonneurs](http://www.deboulonneurs.org/)
+
+
+---
+tags: economy slow
+content: >
+    créons et utilisons des [monnaies locales](http://monnaie-locale-complementaire.net/france/)
+
+
+---
+tags: economy companies
+content: >
+    [changeons de banque](http://jechangedebanque.org/toutes-les-banques-ne-se-valent-pas/) pour [mieux choisir](http://www.financeresponsable.org/entreprise.php) à qui nous laissons notre argent
+
+
+---
+tags: companies media
+content: >
+    l'[Observatoire des multinationales](http://multinationales.org/), pôle indépendant d’information et de ressources sur les entreprises
+
+
+---
+tags: philo group slow
+content: >
+    [Simplicité volontaire](http://simplicitevolontaire.org), réseau québécois pour la simplicité volontaire: riche autrement, autrement libre
+
+
+---
+tags: alienation group video genre
+content: >
+    [Le cinéma est politique](http://www.lecinemaestpolitique.fr/), parce que refuser les rapports de domination, c’est aussi analyser et déconstruire les représentations qui les banalisent ou les légitiment
+
+
+---
+tags: alienation video companies
+content: >
+    conditionnés à la nouveauté: [animal social et (presque) nouveau téléphone](http://www.dailymotion.com/video/xtrtht)
+
+
+---
+tags: history companies video
+content: >
+    webdoc [les multinationales s'accaparent les terres d'Afrique](http://www.maintenantnosterres.com/)
+
+
+---
+tags: history companies video
+content: >
+    [Afrique50](https://www.youtube.com/watch?v=i5vIXhs8qic), [Techniquement si simple](https://www.youtube.com/watch?v=PnrsXB5xfGE), films de René Vautier
+
+
+---
+tags: economy text politics
+content: >
+    [Comment sortir de la crise de la dette pour les nuls par une nulle](http://blogs.mediapart.fr/blog/sarah-kilani/220515/comment-sortir-de-la-crise-de-la-dette-pour-les-nuls-par-une-nulle), par Sarah Kilani, Médiapart
+
+
+---
+tags: web tool group
+content: >
+    la plateforme collaborative [Ggouv](http://ggouv.fr/)
+
+
+---
+tags: media text
+content: >
+    les médias libres et liens d'[article11](http://www.article11.info/)
+
+
+---
+tags: media group list
+content: >
+    [Forum mondial des médias libres](http://www.fmml.net/spip.php?rubrique1)
+
+
+---
+tags: group list
+content: >
+    [Attac Spirale](http://www.spirale.attac.org/) recense déjà les initiatives et réalisations alternatives
+
+
+---
+tags: philo audio
+content: >
+    [pornographie du temps présent](http://plus.franceculture.fr/france-culture-forum-l-annee-vue-par-la-philo), Alain Badiou
+
+
+---
+tags: media video
+content: >
+    les courts de [datagueule](https://www.youtube.com/user/datagueule), et le long [Deux degré avant la fin du monde](https://www.youtube.com/watch?v=Hs-M1vgI_4A) 
+
+
+---
+tags: media video creation
+content: >
+    vidéos de [Mr Mondialisation](https://www.youtube.com/user/MrMondialisation)
+
+
+---
+tags: creation video
+content: >
+    the [Wake Up Call](https://www.youtube.com/watch?v=jid2A7ldc_8)
+
+
+---
+tags: work alienation video
+content: >
+    [La mise à mort du travail](https://www.youtube.com/watch?v=dVwC-9jQgSA), de Jean-Robert Viallet, 64min.
+
+
+---
+tags: media tool text
+content: >
+    [Atelier médias libres](http://atelier.mediaslibres.org/): bidouilles techniques, infos et prises de tête par et pour les médias libres
+
+
+---
+tags: alienation video
+content: >
+    [Attention Danger Travail](https://www.youtube.com/watch?v=P-yPQEQghMs), [Volem Rien foutre al Païs](https://www.youtube.com/watch?v=Ld2jPJPnuc8), [Pas vu pas pris](https://www.youtube.com/watch?v=6DgOE9KZZME), [Enfin Pris](https://www.youtube.com/watch?v=4-qS2Tr_GVU), [Opération Correa: les ânes ont soif](https://www.youtube.com/watch?v=At_fCG1LJpk), films de [Pierre Carles](http://www.pierrecarles.org/)
+
+
+---
+tags: politics image
+content: >
+    [la France n'est pas encore une démocratie](https://magic.piktochart.com/output/5251490-france-democratie), infographie
+
+
+---
+tags: philo politics economy text
+content: >
+    [la mort lente de l'économie](http://www.lyber-eclat.net/lyber/bolo/mort_economie.html), préface de [Bolo'Bolo](http://www.lyber-eclat.net/lyber/bolo/bolo.html), [PM](http://fr.wikipedia.org/wiki/P.M.), 1998
+
+
+---
+tags: economy text
+content: >
+    comprendre les ≠ dettes mondiales: [système de la dette](http://cadtm.org/IMG/pdf/version01-FR.pdf), pdf, 2015
+
+
+---
+tags: alienation companies image text
+content: >
+    nous sommes [drogués du numérique](http://www.influencia.net/fr/actualites/com-media,audace,dessine-moi-drogue-numerique,5342.html)
+
+
+---
+tags: science earth
+content: >
+    [5e rapport du GIEC](http://leclimatchange.fr/questions-reponses/)
+
+
+---
+tags: object earth
+content: >
+    pour ne plus faire caca dans l'eau potable, les [toilettes sèches](https://fr.wikipedia.org/wiki/Toilettes_s%C3%A8ches)
+
+
+---
+tags: calendar group map
+content: >
+    [Festival des Utopies Concrètes](http://festivaldesutopiesconcretes.org/)
+
+
+---
+tags: eat agriculture group list
+content: >
+    les [AMAPs de provence](http://www.lesamapdeprovence.org/)
+
+
+---
+tags: eat agriculture group list
+content: >
+    réseau des [AMAPs d'île-de-france](http://www.amap-idf.org/la-nouvelle-charte-des-amap-est-arrivee_31.php)
+
+
+---
+tags: earth group slow
+content: >
+    [les amis de la terre](http://www.amisdelaterre.org/), [350](http://350.org/about/what-we-do/), [deep green resitance](http://deepgreenresistance.org/fr/who-we-are/guiding-principles-of-deep-green-resistance), grands-parents [suisses](http://gpclimat.blogspot.ch/p/texte-fondateur.html) et [belges](http://gpclimat.be/notre-charte/), [climate express](http://climate-express.be/fr/), [élan global](http://elanglobal.org)
+
+
+---
+tags: economy object group slow
+content: >
+    échangeons biens et services dans les [SEL](http://seldefrance.communityforge.net/node/9), systèmes d'échanges locaux
+
+
+---
+tags: act group
+content: >
+    les [désobéissants](http://www.desobeir.net/le-collectif/le-manifeste/), citoyens engagés partisans de l’action directe non-violente
+
+
+---
+tags: love group slow
+content: >
+    les bénéloves de [Génération Futur](http://generationsfutur.zici.fr/), promoteur associatif de la presse libre et de la bonne humeur
+
+
+---
+tags: creation group
+content: >
+    [laufen](http://laufenmanifesto.org/), [bolo'bolo](http://www.lyber-eclat.net/lyber/bolo/bolo.html), créatifs culturels, [dark mountain](http://dark-mountain.net/about/manifesto/), [évidences](http://www.cluetrain.com/manifeste.html)
+
+
+---
+tags: philo group
+content: >
+    le [convivialisme](http://www.lesconvivialistes.org/abrege-du-manifeste-convivialiste), art de vivre ensemble (con-vivere) permettant aux humains de prendre soin les uns des autres et de la Nature, sans dénier la légitimité du conflit mais en en faisant un facteur de dynamisme et de créativité
+
+
+---
+tags: philo group slow
+content: >
+    [CIIP](https://collectifinnovationsilluminationspolitiques.wordpress.com/credo-du-ciip/), [abécédaire du changement](https://abecedaireduchangement.wordpress.com/2012/05/11/avant-propos-2/), [écosociétalistes](http://www.ecosocietal.org/articles.php?lng=fr&pg=18), [to change everything](http://www.crimethinc.com/tce/quebecois/) par [crimethinc](http://crimethinc.com/), [institut momentum](http://www.institutmomentum.org/le-manifeste/)
+
+
+---
+tags: politics group
+content: >
+    [vers un](https://france.attac.org/archives/spip.php?article6371) — [manifeste](http://www.manifeste.attac.org/) — [attac](https://france.attac.org/) !
+
+
+---
+tags: politics group
+content: >
+    [pirates](https://www.partipirate.org/Declaration-de-politique-generale-112), [rassemblement citoyen](http://www.rassemblementcitoyenidf.fr/), [alliances citoyennes](http://www.alliancecitoyenne-38.fr/le-projet-2/lassociation/), [m1d](http://www.mouv1d.fr/manifeste/), [gentils virus](http://projetgentilsvirus.ouvaton.org/), [roosevelt](http://collectif-roosevelt.fr), [écoféministes](http://fr.wikipedia.org/wiki/%C3%89cof%C3%A9minisme), [15M](https://15mpedia.org), [maquisard.e.s](http://collectifconvergence.blogspot.fr/), [université du nous](http://universite-du-nous.org/a-propos-udn/ses-outils/), coordination citoyenne [Pas sans Nous](http://passansnous.fr/charte/), [reboot la France](http://wiki.rebootlafrance.fr/wiki/Accueil), [démocratie ouverte](http://democratieouverte.org/), [e-constituante](http://www.e-constituante.com/le-projet/), [anarnautes](https://medium.com/@nicolasvoisin/le-manifeste-des-anarnautes-48cc0a5076bc), [m6r](http://www.m6r.fr/), [Réenchantons!](http://www.reenchantons.be) par le [Rassemblement pour le bien vivre](http://www.rassemblement-r.be)
+
+
+---
+tags: energy zad space earth
+content: >
+    [Bure Zone Libre](http://burezoneblog.over-blog.com/) ! Maison de résistance à la poubelle nucléaire de Bure
+
+
+---
+tags: energy history group companies
+content: >
+    Collectif [Areva ne fera pas la loi au Niger](http://areva.niger.free.fr/)
+
+
+---
+tags: energy group law
+content: >
+    [CRIIRAD](http://www.criirad.org/), Commission de Recherche et d’Information Indépendantes sur la Radioactivité
+
+
+---
+tags: eat health science media
+content: >
+    [Inf'OGM](http://www.infogm.org/), veille citoyenne d’information, qui décrypte l’actualité mondiale sur les organismes génétiquement modifiés et les biotechnologies
+
+
+---
+tags: politics web group
+content: >
+    [remix the commons](http://www.remixthecommons.org/), [savoircom1](http://www.savoirscom1.info), [p2p foundation](http://p2pfoundation.net/P2P_Foundation:About), [commons transition](http://commonstransition.org/), [manifeste pour la récupération des biens communs](http://bienscommuns.org/signature/appel/index.php?a=du&c=qsudxs)
+
+
+---
+tags: slow home move
+content: >
+    [Warm Showers](https://fr.warmshowers.org/), communauté pour les cyclo-randoneurs et les hôtes
+
+
+---
+tags: act move group space
+content: >
+    [comme une merde](http://comme-une-merde.fr/), mouvement contre le non respect des autres usagers des infrastructures urbaines et de la voirie. Notamment les automobilistes mal garés
+
+
+---
+tags: move act group
+content: >
+    pour devenir [vélistant](http://www.velistance.fr/), c'est très simple, il suffit de se masquer le visage lors de trajets à vélo (écharpe, foulard, masque)
+
+
+---
+tags: group map emancipation
+content: >
+    Manifeste des [tiers-lieux](http://movilab.org/index.php?title=Le_manifeste_des_Tiers_Lieux)
+
+
+---
+tags: space group zad
+content: >
+    [occupy](http://fr.wikipedia.org/wiki/Occupy_movement) partout !
+
+
+---
+tags: energy
+content: >
+    [Enercoop](http://www.enercoop.fr/), l'énergie militante. Choisissez un fournisseur d’électricité sans nucléaire
+
+
+---
+tags: energy
+content: >
+    [Negawatt](http://www.negawatt.org): changeons d’énergies, transition, mode d’emploi
+
+
+---
+tags: slow group
+content: >
+    mouvement des [colibris](http://www.colibris-lemouvement.org/colibris/la-charte-pour-la-terre-et-lhumanisme), [transition citoyenne](http://www.transitioncitoyenne.org/), [objecteur.euse.s de croissance](http://decroissance.ch/manifeste-du-roc-suisse/) en suisse romande, [décroissants conviviaux](http://www.decroissance.qc.ca/manifeste), [conviviums](http://www.slowfood.fr/slow-food-en-france)
+
+
+---
+tags: video creation media politics text philo
+content: >
+    [Le journal de Personne](http://www.lejournaldepersonne.com) pratique la scénarisation à fond, pour illustrer une question d'actualité. Son info est une info scénario, son drame : une dramatisation et sa réalité : une réalisation. Vous auriez mauvaise grâce d'assimiler Personne à ses personnages, et ses histoires à des dérapages. Le Journal n'est l'otage d'aucun parti, prisonnier d'aucune opinion, dupe d'aucun soupçon.
+
+
+---
+tags: eat text earth
+content: >
+    [BE VEGGIE](http://www.beveggie.be) le nouveau magazine en 3D, gratuit et écologique . Un magazine qui intérroge notre rapport à la nature et à l'alimentation. Ses rédacteurs considèrent que Végétaliser notre alimentation est le changement individuel le plus significatif pour relever les défis écologiques actuels et repenser notre relation avec les animaux.
+
+
+---
+tags: media politics video
+content: >
+    [Frenchlingteam](https://www.youtube.com/user/frenchlingteam) : L'équipe Linguistique Francophone propose une ouverture à un nouveau modèle de société autour d'une Économie basée sur les Ressources à travers la traduction de contenus permettant d'éveiller les consciences quant aux changements radicaux nécessaires à la survie et l'épanouissement de l'humanité. [Forum Linguistique](http://forum.linguisticteam.org/)
+
+
+---
+tags: about
+label: À propos
+content: >
+    projet • pourquoi • quand • contexte • comment • qui
+
+
+---
+tags: agriculture
+label: Agriculture
+content: >
+    (perma)cultures • graines • semences • jardinage • élevage
+
+
+---
+tags: alienation
+label: Aliénation
+content: >
+    publicité • propagande • aliénation • conditionnements • contrôle • violences • fichage • cloud • surveillance • pouvoirs • détournements
+
+
+---
+tags: audio
+label: Sons
+content: >
+    radios • musiques • sons • vibrations • ondes • bruits • écoute • silence
+
+
+---
+tags: calendar
+label: Agendas
+content: >
+    calendriers • rendez-vous • festivals • événements • moments
+
+
+---
+tags: companies
+label: Multinational.es
+content: >
+    néocapitalisme • récupérations • greenwashing • multinationales • puissances d'argent • boycott
+
+
+---
+tags: creation
+label: Forme.s
+content: >
+    création • art • culture • écriture • design • processus • formes • humour
+
+
+---
+tags: do
+label: Action.s
+content: >
+    actions • pratiques • quotidiennes • désobéissance civile • militantisme • zone de confort • passage à l'acte • faire • agir
+
+
+---
+tags: earth
+label: Planète Terre
+content: >
+    environnement • climat • géologie • déchets • pollution • ressources • eau • animaux • végétaux • éléments
+
+
+---
+tags: eat
+label: Manger
+content: >
+    nourrir • alimentation • manger • recettes • cuisine • nourriture
+
+
+---
+tags: economy
+label: Économie
+content: >
+    échanges • commerce • troc • don • économie • argent • monnaie • finance • dette • revenu de base inconditionnel
+
+
+---
+tags: education
+label: Éducation
+content: >
+    école • université • recherche • apprendre • se former • enseigner • partages de savoir
+
+
+---
+tags: emancipation
+label: Émancipation
+content: >
+    réappropriation • émancipation • autonomie • autogestion • horizontalité • épanouissement • ouverture
+
+
+---
+tags: energy
+label: Énergie.s
+content: >
+    nucléaire • électrique • éolien • solaire • cosmique • vitale • transformée
+
+
+---
+tags: game
+label: Jeu.x
+content: >
+    Invente • toi-même • les règles
+
+
+---
+tags: genre
+label: Genres
+content: >
+    patriarcat • féminisme • genres • LGBT • famille • racisme • sexisme
+
+
+---
+tags: group
+label: Collectifs
+content: >
+    Tout.e seul.e • on est rien • groupes • réseaux • coopératives • collectifs • associations • structures
+
+
+---
+tags: health
+label: Santé
+content: >
+    remèdes • plantes • bien-être • corps • sport
+
+
+---
+tags: history
+label: Histoire
+content: >
+    (néo)colonialismes • impérialisme • passifs historique
+
+
+---
+tags: home
+label: Habiter
+content: >
+    logement • habitat • hébergement • éco-lieux • auto-construction • terrain • maison • logis
+
+
+---
+tags: image
+label: Image.s
+content: >
+    images • dessins • photos • graphiques • représentations
+
+---
+tags: law
+label: Juridique
+content: >
+    lois • aspects juridiques • démarches administratives • législations
+
+
+---
+tags: list
+label: Annuaire
+content: >
+    bases de données • annuaires • ressources • moteurs de recherche
+
+---
+tags: love
+label: Amour
+content: >
+    rêves • idéaux • énergies • amour • spiritualités • foi • religions • mort
+
+
+---
+tags: move
+label: Bouger
+content: >
+    se déplacer • transports • mobilité • véhicules • co-voiturage • marcher
+
+
+---
+tags: map
+label: Lieu.x
+content: >
+    cartes • adresses de lieux physiques • tiers-lieux • endroits
+
+
+---
+tags: media
+label: Médias
+content: >
+    information • presse • journalisme • actualité
+
+
+---
+tags: object
+label: Objets
+content: >
+    récup' • recyclage • réutilisation • ressourceries • artisanats • réappropriation • savoirs-faire • construire soi-même • diy • équipement • matériel • mobilier • machines
+
+
+---
+tags: philo
+label: Philosophie
+content: >
+    réflexion • théories • principes • idéologies • dialectique
+
+
+---
+tags: politics
+label: Politique
+content: >
+    politique et représentation • concertation • décider ensemble • communs • open (res)sources • démocratie
+
+
+---
+tags: space
+label: Espace.s
+content: >
+    espaces publics • partagés • communs • ville
+
+
+---
+tags: science
+label: Science.s
+content: >
+    sciences • techniques • nanotechnologies • manipulation du vivant
+
+
+---
+tags: slow
+label: Sobriété
+content: >
+    ralentir • rencontrer • découvrir • partager • décroissance • humilité
+
+
+---
+tags: subsist
+label: Souffrance.s
+content: >
+    migrants • sans-papiers • sdf • souffrances • survie • inégalités d'accès • des chances discriminations
+
+
+---
+tags: text
+label: Texte.s
+content: >
+    articles • livres • textes • mots • phrases
+
+
+---
+tags: time
+label: Temps
+content: >
+    temporalités • rythmes • rapports aux temps • futurisme • présentisme
+
+
+---
+tags: tool
+label: Outils
+content: >
+    guides et fiches pratiques • tutoriaux • outils • services • instruments • diy
+
+
+---
+tags: truth
+label: Vérité
+content: >
+    la vérité • c'est l'accomplissement d'un truc.
+
+
+---
+tags: video
+label: Films
+content: >
+    videos • films • documentaires • TV • images mouvantes • traces
+
+
+---
+tags: web
+label: Numérique
+content: >
+    web • internet • réseaux
+
+
+---
+tags: words
+label: Langage
+content: >
+    récits • mots • interprétations • controverses • discours • s'accorder • s'engueuler • débattre • médiations
+
+
+---
+tags: work
+label: Travail
+content: >
+    emploi • chômage • activité • remunération
+
+
+---
+tags: zad
+label: Lutte.s
+content: >
+    grands projets inutiles • squats • occupations • zad • radicalités • avant-gardes
 

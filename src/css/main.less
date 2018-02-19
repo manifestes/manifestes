@@ -62,7 +62,7 @@ body {
 @introDur: 0.5s;
 
 @menuH: 65px;
-@tagspanelW: 350px;
+@tagspanelW: 240px;
 
 @menuButtonBorder: 5px;
 
@@ -139,7 +139,7 @@ span.highlight, div.highlight { /* searched words */
 }
 
 .t-nc {
-  background-color: #d4d4d4; 
+  background-color: #d4d4d4;
 }
 
 // ... then duplicated below for bordered color
@@ -762,71 +762,50 @@ span.highlight, div.highlight { /* searched words */
     border-right: 2px solid white;
     .transition(all 0.4s);
 
+
+    /* show hint tooltips on the fly if searching term */
+/*    [data-hint].popuped:before, [data-hint].popuped:after {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .hint:after, &:after, &:before {
+      text-transform: none;
+      font-style: normal;
+      color: white;
+      font-size: 0.85em;
+      line-height: 1.1em;
+    }
+    */
+
     &.active {
       left: 0 !important;
-      .box-shadow(0px 0px 5px 0px #525252);
+      //.box-shadow(0px 0px 5px 0px #525252);
 
-      /* show hint tooltips on the fly if searching term */
-      [data-hint].popuped:before, [data-hint].popuped:after {
-        visibility: visible;
-        opacity: 1;
-      }
     }
   
     .nohighlight();
 
-    .gridtag {
+    .linetag {
       box-sizing: border-box;
       position: relative;
       cursor: pointer;
-      display: inline-block;
+      display: block;
       vertical-align: top;
 
-      width: 25%;
-      height: 50px;
+      width: 80%;
       
-      padding: 6px 0px;
-      margin-bottom: 0px;
-      text-align: center;
+      text-align: left;
 
       .no-font-smoothing();
 
       font-style: italic;
+      font-size: 0.80em;
       color: #BFBFBF;
 
-      .hint:after, &:after, &:before {
-        text-transform: none;
-        font-style: normal;
-        color: white;
-        font-size: 0.85em;
-        line-height: 1.1em;
-      }
-
-      i {
-        position: absolute;
-        display: block;
-        width: 100%;
-        font-size: 1.2em;
-      }
       .label {
-        position: absolute;
-        width: 100%;
-        top: 55%;
-        font-size: 0.75em;
-      }
-      .back {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
+        padding: 0px 7px;
         background-color: rgba(0,0,0,0.5);
-      }
-
-      i.close { display: none;}
-
-      &.important {
-        /*background: @darkGreenColor;*/
       }
 
       &:hover, &.popuped {
@@ -839,7 +818,6 @@ span.highlight, div.highlight { /* searched words */
           background: none;
         }
         //.inner-shadow(0px 0px 5px -2px #2F2F2F);
-        i.close { display: block; }
       }
     }
 

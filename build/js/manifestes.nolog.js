@@ -3346,14 +3346,12 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
 
     $scope.dataArray = { // full list 
       abcd: [],
-      links: [],
       pixels: [],
       books: [],
       catalog: []
     }
     $scope.dataArrayFilt = { // displayed list
       abcd: [],
-      links: [],
       pixels: [],
       books: [],
       catalog: []
@@ -3361,8 +3359,6 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
 
     $scope.tagsContents = {}; // .tag .label .description .icon for each tag
     $scope.tagsContentsOrdered = []; // same but array to be able to sort
-    
-    $scope.linksByTag = {}; // links by tag
     
     $scope.settings.verbose = false; // to print detailed stats on tags, objects, etc...
 
@@ -3600,7 +3596,6 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
       else {
         $scope.state.searchinput = "";
         $scope.state.search = "";
-        $scope.toggleAlltexts(false);
       }
       
       $scope.rgx.search = new RegExp($scope.state.search,'i');
@@ -3638,13 +3633,13 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
       return show;
     };
 
-    var shallShowTags = function(o,onlyintersect) { // "o" is a text or a link
+    var shallShowTags = function(o,onlyintersect) { // "o" is an "abcd"
       if($scope.state.tags.length && o.tags) {
         var interslen = _.intersection(o.tags,$scope.state.tags).length;
-        if(onlyintersect) {
+        if(onlyintersect) { // return striclty those who has exactly ?
           return interslen == $scope.state.tags.length;
         }
-        else {
+        else { //
           return interslen > 0;
         }
       } else
@@ -3654,9 +3649,9 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
     var updateArrays = function() {
       0;
       var lay = $scope.state.layout;
-      if(["abcd","links","pixels","books"].indexOf(lay)!==-1) {
+      if(["abcd","pixels","books"].indexOf(lay)!==-1) {
 
-        if(!$scope.state.search && !$scope.state.tags.length) {
+        if(!$scope.state.search && !$scope.state.tags.length) { // if no search no tag
           $scope.dataArrayFilt[lay] = $scope.dataArray[lay];
         } else {
           $scope.dataArrayFilt[lay] = _.filter($scope.dataArray[lay], function(e) {
@@ -3667,6 +3662,9 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
       //$scope.$apply();
     };
 
+    $scope.shuffleContent = function() {
+      $scope.dataArrayFilt.abcd = _.shuffle($scope.dataArrayFilt.abcd);
+    };
 
     $scope.highlight = function(html) {
       var out = "";
@@ -3708,17 +3706,6 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
       }
       return out;
     };
-
-
-    $scope.toggleOne = function(p) {
-      p.opened = !p.opened ;
-    };
-    $scope.toggleAlltexts = function(status) {
-      _.each($scope.dataArray.texts, function(p) {
-        p.opened = status;
-      });
-    };
-
 
     $scope.md2Html = function(str) {
       return str ? markdown.toHTML(str) : "";
@@ -3810,10 +3797,8 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
             var m = jsyaml.load(res);
             $scope.meta = m;
 
-            $scope.state.overtag = {description: m.menu.tagsdescription};
             $scope.state.taggingtooltip = $scope.state.tagging ? 
               m.menu.taggingon : m.menu.taggingoff;
-
 
             // for html page meta
             $rootScope.htmlmeta = m.htmlmeta;
@@ -3827,39 +3812,49 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
               };
             });
 
-            _.each(m.tags, function(v,k) {
-              var parts = v.split(' = ');
-              $scope.tagsContents[k] = {
-                tag: k,
-                label: parts[1 ].replace("_",""),
-                description: parts[2],
-                icon: parts[0]=="" ? "globe" : parts[0],
-                important: /_/.test(parts[1]) ? true : false
-              };
-              $scope.tagsContentsOrdered.push($scope.tagsContents[k]);
-            });
-
             $scope.state.pad = $scope.meta.menu.hasOwnProperty('pad') ?
               $scope.meta.menu.pad[$scope.state.layout] : "";
-
-            // $scope.tagsContentsOrdered.sort(function(a,b) {
-            //   return $scope.tagSorter(b) - $scope.tagSorter(a);
-            // });
           }
           
           ////////////////////////////////////
           if(which=="abcd") {
+            var ttcount = {};
             jsyaml.loadAll(res, function(d) {
 
               d.content = $scope.md2Html(d.content);
-              d.tags = d.tags ? d.tags.split(' ') : [];
+              d.tags = d.tags ? d.tags.split(' ') : ["nc"];
               d.sharelink = "http://utopies-concretes.org/slug/"+slugify(d.title);
-
+              _.each(d.tags, function(t) {
+                if(!ttcount[t])
+                  ttcount[t] = 1;
+                else 
+                  ttcount[t] +=1;
+              });
+              
               //d.layout = 'flat'; //Math.random()<0.2 ? 'grid' : 'flat';
 
               $scope.dataArray.abcd.push(d);
 
             });
+            
+            $scope.dataArray.abcd = _.shuffle($scope.dataArray.abcd);
+
+            var tags = _.filter($scope.dataArray.abcd, function(e) {
+              return e.hasOwnProperty('label');
+            });
+            _.each(tags, function(k) {
+              $scope.tagsContents[k] = {
+                tag: k.tags[0], // should be one ?
+                label: k.label, //"French Name",
+                count: ttcount[k.tags[0]],
+              };
+              $scope.tagsContentsOrdered.push($scope.tagsContents[k]);
+            });
+            $scope.tagsContentsOrdered.sort(function(a,b) {
+              return a.count > b.count;
+            });
+
+
             $scope.dataArrayFilt.abcd = $scope.dataArray.abcd;
           }
 
@@ -5293,6 +5288,6 @@ var loadTagGraph = function(scope) {
 
 angular.module('settings', [])
 
-.constant('settings', {dev:false,langs:['fr','es','en'],layouts:['home','abcd','links','pixels','books','network','map','mapprint','ninja','catalog','catalogprint'],datapath:'data/',assets:'build/',lastupdate:'18 February 2018 - 6:25'})
+.constant('settings', {dev:false,langs:['fr','es','en'],layouts:['home','abcd','pixels','books','network','map','mapprint','ninja','catalog','catalogprint'],datapath:'data/',assets:'build/',lastupdate:'19 February 2018 - 11:36'})
 
 ;

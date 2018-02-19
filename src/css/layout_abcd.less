@@ -1,6 +1,6 @@
 
 
-.wrapper.layout-texts {
+.wrapper.layout-abcd {
   box-sizing: border-box;
   text-align: left;
   font-family: 'Lato', sans-serif;
@@ -8,30 +8,71 @@
 
 @hsect: 60px;
 
-.wrapper.layout-texts .section {
+.sharebutton {
   box-sizing: border-box;
-  position: relative;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 6px 15px;
+  vertical-align: top;
+  border-top-left-radius: 17px;
+  background: white;
+  color: @lightColor;
+  font-size: 0.8em;
+  &:hover {
+    background: @mostLightColor;
+  }
+  i {
+    vertical-align: middle;
+    font-size: 1.3em;
+    margin-left: 5px;
+  }
+  div {
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 0.9em;
+    text-align: left;
+    font-style: italic;
+  }
+}
 
+.wrapper.layout-abcd .section {
+  box-sizing: border-box;
+  display: inline-block;
   padding: 0;
   margin: 0;
-  width: 100%;
-  max-height: 2000px;
-
-  //overflow: hidden;
+  width: 50%;
+  height: 100%;
+  /*max-height: 2000px;*/
   cursor: pointer;
+  text-align: center;
 
-  line-height: 0;
+  &.t-nc:nth-child(odd) {
+    background-color: #E4E4E4;
+  }
+  &.t-nc:nth-child(even) {
+    background-color: #D2D2D2;
+  }  
 
-  border-right: @hsect solid transparent;
+  .inside {
+    box-sizing: border-box;
+    display: inline-block;
+    height: 100%;
+    line-height: 100%;
+    max-width: 90%;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    vertical-align: middle;
+  }
 
   .tags {
     .base-tags();
   }
 
-  .h1 {
+  .title {
     box-sizing: border-box;
     display: inline-block;
-    position: relative;
     span.wtin {
       padding: 25px;
       .absolute-vertical-centered();
@@ -48,19 +89,11 @@
     font-size: 1.1em;
     line-height: 1.2em;
     font-weight: 600;
-
-    //.transition(all @openDur);
   }
-  .h2 {
+  .subtitle {
     box-sizing: border-box;
     display: inline-block;
     position: relative;
-
-    span.wtin {
-      padding: 25px;
-      padding-right: 20%;
-      .absolute-vertical-centered();
-    }
 
     width: 50%;
     height: @hsect;
@@ -76,157 +109,37 @@
     //.transition(all @openDur);
     overflow: hidden;
   }
-  .block {
-    position: relative;
-    width: 100%;
-    height: 0;
-    overflow: hidden;
 
-    .image {
-      box-sizing: border-box;
-      display: none;
-      position: absolute;
-      left: 0;
-      top: 0;
+  .content {
+    box-sizing: border-box;
 
-      width: 50%;
-      height: 100%;
-      .imagecredit {
-        position: absolute;
-        bottom: 0;
-        margin: 15px;
-        color: white;
-        font-size: 0.45em;
-        font-style: italic;
-        display: none;
-      }
+    /*margin-left: 50%;*/
+    /*padding: 10px 50px 50px 50px;*/
+    text-align: left;
 
-      /* ---------------------- QUOTE */
-      .quote-container {
-        box-sizing: border-box;
-
-        padding: 40px 100px 40px 50px;
-        height: 100%;
-        font-family: 'Merriweather', serif;
-        color: white;
-        font-size: 1.1em;
-        line-height: 1.4em;
-        font-style: italic;
-        text-align: left;
-
-        .no-font-smoothing();
-        
-        background: rgba(0,0,0,0.45);
-        //opacity: 0;
-
-        .author {
-          margin-top: 20px;
-          text-align: right;
-          font-size: 0.85em;
-        }
-        .quote p {
-          margin-bottom: 15px;
-        }
-      }
+    color: @textColor;
+    font-size: 0.9em;
+    line-height: 1.6em;
+    h1 {
+      font-size: 1.3em;
     }
-    .content {
-      box-sizing: border-box;
-      display: inline-block;
-      position: relative;
-
-      margin-left: 50%;
-      padding: 10px 50px 50px 50px;
-      text-align: left;
-
-      color: @textColor;
-      font-size: 1em;
-      line-height: 1.5em;
-      h1 {
-        font-size: 1.3em;
-      }
-      p {
-        margin-bottom: 9px;
-      }
-      ul {
-        margin-bottom: 10px;
-      }
+    h2 {
+      font-size: 1.2em;
+      margin-bottom: 2px;
     }
-    .source {
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      margin: 20px 50px;
-      font-size: 0.55em;
-      font-style: italic;
-      color: @textColor;
+    p {
+      margin-bottom: 9px;
     }
-    .sharebutton {
-      box-sizing: border-box;
-      display: inline-block;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      padding: 6px 15px;
-      vertical-align: top;
-      border-top-left-radius: 17px;
-      background: white;
-      color: @lightColor;
-      font-size: 0.8em;
-      &:hover {
-        background: @mostLightColor;
-      }
-      i {
-        vertical-align: middle;
-        font-size: 1.3em;
-        margin-left: 5px;
-      }
-      div {
-        vertical-align: middle;
-        display: inline-block;
-        font-size: 0.9em;
-        text-align: left;
-        font-style: italic;
-      }
+    ul {
+      margin-bottom: 10px;
     }
   }
 
-  &:hover {
-    .h1, .h2 {
-      background: none;
-    }
-    .h2, .h1 {
-      //background: rgba(0, 0, 0, 0.10);
-    }
-  }
-
-  /* ---------------------- OPENED SECTION */
-  &.opened {
-    border-right: @hsect solid black;
-    .h1 {
-      color: white;
-      background: black;
-    }
-    .h2 {
-      opacity: 0;
-    }
-    .block {
-      height: auto;
-    }
-    .image {
-      display: inline-block;
-      .imagecredit {
-        display: block;
-      }
-    }
-    .content {
-      //opacity: 1;
-    }
-    .quote-container {
-      opacity: 1;
-    }
-    .quote-container, .content {
-      //height: initial;
-    }
+  .source {
+    margin-top: 90px;
+    font-size: 0.7em;
+    font-style: italic;
+    color: @textColor;
   }
 
 }
