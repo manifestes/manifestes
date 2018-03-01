@@ -1,11 +1,5 @@
 
 
-.wrapper.layout-abcd {
-  box-sizing: border-box;
-  text-align: left;
-  font-family: 'Lato', sans-serif;
-}
-
 @hsect: 60px;
 
 .sharebutton {
@@ -37,109 +31,129 @@
   }
 }
 
-.wrapper.layout-abcd .section {
+.wrapper.layout-abcd .page {
   box-sizing: border-box;
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-  width: 50%;
+  text-align: left;
+  font-family: 'Lato', sans-serif;
+  
+/*
   height: 100%;
-  /*max-height: 2000px;*/
-  cursor: pointer;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: stretch;
+  */
 
-  &.t-nc:nth-child(odd) {
-    background-color: #E4E4E4;
-  }
-  &.t-nc:nth-child(even) {
-    background-color: #D2D2D2;
-  }  
+  width: 100%;
 
-  .inside {
+  .section {
     box-sizing: border-box;
-    display: inline-block;
-    height: 100%;
-    line-height: 100%;
-    max-width: 90%;
-    margin-top: 90px;
-    margin-bottom: 90px;
-    vertical-align: middle;
-  }
-
-  .tags {
-    .base-tags();
-  }
-
-  .title {
-    box-sizing: border-box;
-    display: inline-block;
-    span.wtin {
-      padding: 25px;
-      .absolute-vertical-centered();
-    }
-
-    width: 50%;
-    height: @hsect;
-
-    color: #414141;
-    background: rgba(0, 0, 0, 0.07);
-
-    text-align: right;
-    text-transform: uppercase;
-    font-size: 1.1em;
-    line-height: 1.2em;
-    font-weight: 600;
-  }
-  .subtitle {
-    box-sizing: border-box;
-    display: inline-block;
-    position: relative;
-
-    width: 50%;
-    height: @hsect;
+    /*display: inline-block;*/
+    padding: 60px 20%;
+    margin: 0;
     
-    color: #595858;
-    background: rgba(0, 0, 0, 0.10);
+    /*cursor: pointer;*/
+    text-align: center;
+    vertical-align: middle;
 
-    font-size: 0.9em;
-    line-height: 1.2em;
-    font-style: italic;
-    //.box-shadow(0px 0px 20px -5px black);
+    /*flex-grow: 1;*/
 
-    //.transition(all @openDur);
-    overflow: hidden;
+    &.t-nc:nth-child(odd) {
+      background-color: #E4E4E4;  
+    }
+    &.t-nc:nth-child(even) {
+      background-color: #D2D2D2;
+    }
+    
+    .tags {
+      .base-tags();
+    }
+
+    a {
+      color: white;
+      background: #748598;
+      padding: 2px 5px;
+      border-radius: 1px;
+      &:hover {
+        color: white;
+        background: orange;
+      }
+    }
+
+    .title {
+      box-sizing: border-box;
+      display: inline-block;
+      span.wtin {
+        padding: 25px;
+        .absolute-vertical-centered();
+      }
+
+      width: 50%;
+      height: @hsect;
+
+      color: #414141;
+      background: rgba(0, 0, 0, 0.07);
+
+      text-align: right;
+      text-transform: uppercase;
+      font-size: 1.1em;
+      line-height: 1.2em;
+      font-weight: 600;
+    }
+    .subtitle {
+      box-sizing: border-box;
+      display: inline-block;
+      position: relative;
+
+      width: 50%;
+      height: @hsect;
+      
+      color: #595858;
+      background: rgba(0, 0, 0, 0.10);
+
+      font-size: 0.9em;
+      line-height: 1.2em;
+      font-style: italic;
+      //.box-shadow(0px 0px 20px -5px black);
+
+      //.transition(all @openDur);
+      overflow: hidden;
+    }
+
+    .content {
+      box-sizing: border-box;
+
+      /*white-space: normal|nowrap|pre|pre-line|pre-wrap|initial|inherit;*/
+
+      /*margin-left: 50%;*/
+      /*padding: 10px 50px 50px 50px;*/
+      text-align: left;
+
+      color: @textColor;
+      font-size: 0.9em;
+      line-height: 1.6em;
+      h1 {
+        font-size: 1.3em;
+      }
+      h2 {
+        font-size: 1.2em;
+        margin-bottom: 2px;
+      }
+      p {
+        margin-bottom: 9px;
+      }
+      ul {
+        margin-bottom: 10px;
+      }
+    }
+
+    .source {
+      margin-top: 90px;
+      font-size: 0.7em;
+      font-style: italic;
+      color: @textColor;
+    }
   }
-
-  .content {
-    box-sizing: border-box;
-
-    /*margin-left: 50%;*/
-    /*padding: 10px 50px 50px 50px;*/
-    text-align: left;
-
-    color: @textColor;
-    font-size: 0.9em;
-    line-height: 1.6em;
-    h1 {
-      font-size: 1.3em;
-    }
-    h2 {
-      font-size: 1.2em;
-      margin-bottom: 2px;
-    }
-    p {
-      margin-bottom: 9px;
-    }
-    ul {
-      margin-bottom: 10px;
-    }
-  }
-
-  .source {
-    margin-top: 90px;
-    font-size: 0.7em;
-    font-style: italic;
-    color: @textColor;
-  }
-
 }
