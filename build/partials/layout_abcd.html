@@ -1,16 +1,11 @@
-
 <div
   ng-repeat="e in dataArrayFilt.abcd"
   id="p_{{$index}}"
-  ng-if="$index<2"
   ng-click="shuffleContent();" 
   class="section t-{{e.tags[0]}}">
-  <div class="inside">
     <div class="content" compile-here="e.content"></div>
     <div class="source" ng-if="e.source" compile-here="md2Html(e.source)"></div>
-  </div>
 </div>
-
 <!--     <div
       class="tags hint--left"
       data-hint="{{meta.tagtip}}"

@@ -62,7 +62,7 @@ body {
 @introDur: 0.5s;
 
 @menuH: 65px;
-@tagspanelW: 240px;
+@tagspanelW: 170px;
 
 @menuButtonBorder: 5px;
 
@@ -99,51 +99,51 @@ span.highlight, div.highlight { /* searched words */
 }
 
 
-// thanks to http://tools.medialab.sciences-po.fr/iwanthue/
-// settings: C = 0 0.69 / L = 1.06 1.33
-
+/* MANY thanks to http://tools.medialab.sciences-po.fr/iwanthue/ */
 
 /* COLORS FOR TAGS (declaring order following overwriting/priorities) */
-.t-about, .t-group, .t-list, .t-tool {
+.t-about, .t-list, .t-tool {
   background-color: #C7C9C6;
 }
-.t-map, .t-calendar {
+.t-map, .t-space, .t-calendar {
   background-color: #B7B4AC;
 }
 .t-text, .t-image, .t-audio, .t-video {
   background-color: #C7C9C6;
 }
+.t-group {
+  background-color:;
+}
 .t-earth, .t-agriculture, .t-health, .t-eat {
   background-color: #A4DAB0;
 }
-.t-home, .t-move, .t-object, .t-energy, .t-work, .t-slow {
+.t-home, .t-move, .t-object, .t-energy, .t-work {
   background-color: #E8B887;
 }
 .t-education, .t-media {
   background-color: #ADD7DB;
 }
-.t-alienation, .t-emancipation {
+.t-alienation, .t-emancipation, .t-realize, .t-slow, .t-balance {
   background-color: #95CBD1;
 }
-.t-subsist, .t-act, .t-love, .t-genre, .t-zad, .t-words {
+.t-suffer, .t-act, .t-genre, .t-zad, .t-words {
   background-color: #EDB4AA;
 }
-.t-creation, .t-space {
+.t-creation, .t-love, .t-attention, .t-fear, .t-human, .t-death, .t-life {
   background-color: #EDB8E5; 
 }
 .t-science, .t-web {
   background-color: #E8D9A0;
 }
-.t-companies, .t-history, .t-law, .t-economy, .t-politics, .t-philo {
+.t-companies, .t-history, .t-law, .t-economy, .t-politics, .t-power, .t-philo {
   background-color: #D9C8DA;
 }
-
 .t-nc {
   background-color: #d4d4d4;
 }
 
-// ... then duplicated below for bordered color
-@bbs: 7px;
+/* ... then duplicated below for bordered color*/
+/*@bbs: 7px;
 .tb-about, .tb-group, .tb-list, .tb-tool {
   border-left: @bbs solid #C7C9C6;
 }
@@ -176,7 +176,7 @@ span.highlight, div.highlight { /* searched words */
 }
 .tb-companies, .tb-history, .tb-law, .tb-economy, .tb-politics, .tb-philo {
   border-left: @bbs solid #D9C8DA;
-}
+}*/
 
 
 
@@ -752,19 +752,25 @@ span.highlight, div.highlight { /* searched words */
     box-sizing: border-box;
     position: fixed;
     width: @tagspanelW;
-    left: -@tagspanelW;
     top: @menuH;
     bottom: 0;
-    padding-top: 5px;
+    &.left {
+      left:-@tagspanelW;
+      text-align: right;
+    }
+    &.right {
+      right:-@tagspanelW;
+      text-align: left;
+    }
+    &.left.active { left:0; }
+    &.right.active { right:0; }
 
-    background: #525252;
-
-    border-right: 2px solid white;
+    background: #E4E4E4;
+    /*border-right: 2px solid white;*/
     .transition(all 0.4s);
 
-
     /* show hint tooltips on the fly if searching term */
-/*    [data-hint].popuped:before, [data-hint].popuped:after {
+    [data-hint].popuped:before, [data-hint].popuped:after {
       visibility: visible;
       opacity: 1;
     }
@@ -776,14 +782,7 @@ span.highlight, div.highlight { /* searched words */
       font-size: 0.85em;
       line-height: 1.1em;
     }
-    */
-
-    &.active {
-      left: 0 !important;
-      //.box-shadow(0px 0px 5px 0px #525252);
-
-    }
-  
+    
     .nohighlight();
 
     .linetag {
@@ -793,30 +792,36 @@ span.highlight, div.highlight { /* searched words */
       display: inline-block;
       vertical-align: top;
 
-      width: 50%;
+      width: 100%;
       
-      text-align: left;
-
       .no-font-smoothing();
 
       font-style: italic;
       font-size: 0.80em;
-      color: #BFBFBF;
+      color: #fff6;
 
+      i {
+        padding: 0 10px;
+        width: 14px;
+        font-size: 1.1em;
+        line-height: 150%;
+      }
       .label {
-        padding: 3px 7px;
-        background-color: rgba(0,0,0,0.5);
+        display: inline-block;
+        /*padding: 3px 7px;*/
+        /*background-color: rgba(0,0,0,0.5);*/
       }
 
       &:hover, &.popuped {
+        i {color: white;}
         background: @veryDarkColor;
       }
+      &.focused {
+        i {color: white;}
+      }
       &.active {
-        color: white;
+        i {color: white;}
         background: black;
-        .back {
-          background: none;
-        }
         //.inner-shadow(0px 0px 5px -2px #2F2F2F);
       }
     }
@@ -994,10 +999,11 @@ span.highlight, div.highlight { /* searched words */
   margin-top: @menuH;
   padding-left: 0;
 
-  .transition(padding-left 0.4s);
+  .transition(padding 0.4s);
   
   &.tagsbordered {
     padding-left: @tagspanelW;
+    padding-right: @tagspanelW;
   }
 }
 

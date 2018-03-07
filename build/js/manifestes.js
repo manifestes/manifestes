@@ -3662,10 +3662,6 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
       //$scope.$apply();
     };
 
-    $scope.shuffleContent = function() {
-      $scope.dataArrayFilt.abcd = _.shuffle($scope.dataArrayFilt.abcd);
-    };
-
     $scope.highlight = function(html) {
       var out = "";
       if(!$scope.state.search || $scope.state.search.length<3) {
@@ -3825,10 +3821,15 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
               d.tags = d.tags ? d.tags.split(' ') : ["nc"];
               d.sharelink = "http://utopies-concretes.org/slug/"+slugify(d.title);
               _.each(d.tags, function(t) {
-                if(!ttcount[t])
-                  ttcount[t] = 1;
-                else 
-                  ttcount[t] +=1;
+                if($scope.tagsContents.hasOwnProperty(t))
+                  $scope.tagsContents[t].count += 1;
+                else {
+                  $scope.tagsContents[t] = {
+                    tag: t,
+                    label: t,
+                    count: 1,
+                  };
+                }
               });
               
               //d.layout = 'flat'; //Math.random()<0.2 ? 'grid' : 'flat';
@@ -3836,25 +3837,15 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
               $scope.dataArray.abcd.push(d);
 
             });
-            
-            $scope.dataArray.abcd = _.shuffle($scope.dataArray.abcd);
 
-            var tags = _.filter($scope.dataArray.abcd, function(e) {
-              return e.hasOwnProperty('label');
-            });
-            _.each(tags, function(k) {
-              $scope.tagsContents[k] = {
-                tag: k.tags[0], // should be one ?
-                label: k.label, //"French Name",
-                count: ttcount[k.tags[0]],
-              };
-              $scope.tagsContentsOrdered.push($scope.tagsContents[k]);
-            });
+            $scope.tagsContentsOrdered = _.map($scope.tagsContents);
             $scope.tagsContentsOrdered.sort(function(a,b) {
-              return a.count > b.count;
+              //return a.count > b.count;
+              return a.label>b.label;
             });
 
-
+            console.log("ABCD:",$scope.dataArray.abcd.length);
+            $scope.dataArray.abcd = _.shuffle($scope.dataArray.abcd);
             $scope.dataArrayFilt.abcd = $scope.dataArray.abcd;
           }
 
@@ -5288,6 +5279,6 @@ var loadTagGraph = function(scope) {
 
 angular.module('settings', [])
 
-.constant('settings', {dev:false,langs:['fr','es','en'],layouts:['home','abcd','pixels','books','network','map','mapprint','ninja','catalog','catalogprint'],datapath:'data/',assets:'build/',lastupdate:'19 February 2018 - 11:36'})
+.constant('settings', {dev:false,langs:['fr','es','en'],layouts:['home','abcd','pixels','books','network','map','mapprint','ninja','catalog','catalogprint'],datapath:'data/',assets:'build/',lastupdate:'01 March 2018 - 10:02'})
 
 ;

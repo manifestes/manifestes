@@ -67,10 +67,7 @@ network:
         date de mise à jour: mi-avril 2017
 disclaimer:
     abcd: >
-        Vous pouvez consulter les textes dans l'ordre que vous voulez
-        
-
-        Pour les applications concrètes, consultez les liens ou la carte
+        L'ordre d'affichage est aléatoire
 
 
         **Les couleurs** correspondent aux thématiques
@@ -112,7 +109,7 @@ menu:
     hometip: page d'accueil
     taggingoff: voir les thématiques
     taggingon: désactiver les thématiques
-    search: chercher
+    search: filtrer...
     addzone: ajouter !
     sourcetip: "voir la source\ndes données"
     trysearch: "essayez avec :"
@@ -159,6 +156,203 @@ menu:
         ninja:
             link: "http://annuel.framapad.org/p/manifestes"
             text: suggérer un site<br>signaler un intru
+tags:
+    about:
+        - question-circle
+        - je comprends rien à ce site
+        - projet,pourquoi ce site ?,contexte
+    video:
+        - file-video-o
+        - des pixels qui bougent
+        - videos,films,documentaires,TV,images mouvantes,traces,archives
+    audio:
+        - file-audio-o
+        - "difficile de faire entendre\ndes paroles rondes\nà des oreilles carrées"
+        - radios,musiques,sons,vibrations,ondes,bruits,écoute,silence,parole,oreilles
+    image:
+        - file-image-o
+        -
+        - images,dessins,photos,graphiques,représentations
+    text:
+        - file-text-o
+        -
+        - articles,livres,textes,mots,phrases
+    list:
+        - list
+        -
+        - bases de données,annuaires,ressources,moteurs de recherche
+    tool:
+        - wrench
+        -
+        - guides et fiches pratiques,tutoriaux,outils,services,instruments,diy
+    map:
+        - map-o
+        -
+        - cartes,adresses,lieux physiques,tiers-lieux,endroits,où ?
+    calendar:
+        - calendar
+        -
+        - calendriers,rendez-vous,festivals,événements,moments
+    earth:
+        - globe
+        -
+        - environnement,climat,géologie,déchets,pollution,ressources,eau,animaux,végétaux,éléments
+    health:
+        - child
+        - ce n'est pas un signe de bonne santé mentale d'être bien adapté à une société malade
+        - remèdes,plantes,bien-être,corps,sport
+    agriculture:
+        - pagelines
+        -
+        - (perma)cultures,graines,semences,jardinage,élevage,terre
+    eat:
+        - cutlery
+        -
+        - nourrir,alimentation,manger,recettes,cuisine,nourriture,digérer
+    space:
+        - street-view
+        -
+        - espaces publics,partagés,communs,ville
+    home:
+        - home
+        -
+        - logement,habitat,hébergement,éco-lieux,auto-construction,terrain,maison,logis
+    move:
+        - bicycle
+        -
+        - se déplacer,transports,mobilité,véhicules,co-voiturage,marcher
+    suffer:
+        - life-ring
+        -
+        - migrants,sans-papiers,sdf,souffrances,survie,inégalités,discriminations
+    energy:
+        - plug
+        -
+        - nucléaire,électrique,éolien,solaire,cosmique,vitale,transformée
+    object:
+        - cogs
+        -
+        - récup',recyclage,réutilisation,ressourceries,artisanats,réappropriation,savoirs-faire,construire soi-même,diy,équipement,matériel,mobilier,machines
+    work:
+        - briefcase
+        -
+        - emploi,chômage,activité,remunération
+    time:
+        - child
+        -
+        - temporalités,rythmes,rapports aux temps,futurisme,présentisme
+    media:
+        - bullhorn
+        -
+        - information,presse,journalisme,actualité
+    education:
+        - shower
+        -
+        - école,université,recherche,apprendre,se former,enseigner,partages de savoir
+    alienation:
+        - magnet
+        -
+        - publicité,propagande,aliénation,conditionnements,contrôle,violences,fichage,cloud,surveillance,pouvoirs,détournements
+    emancipation:
+        - paper-plane
+        -
+        - réappropriation,émancipation,autonomie,autogestion,horizontalité,épanouissement,ouverture
+    realize:
+        - low-vision
+        -
+        - réaliser,se rendre compte
+    act:
+        - bolt
+        -
+        - actions,pratiques,quotidiennes,désobéissance civile,militantisme,zone de confort,passage à l'acte,faire,agir,occupations,squats,radicalités
+    game:
+        - hand-spock-o
+        - invente toi-même les règles
+        - jeux,s'amuser,hasard
+    human:
+        - female
+        -
+        - rencontrer,découvrir,partager,décroissance,humilité,humanité
+    time:
+        - moon-o
+        -
+        - temps,ralentir,patience,lenteur,délai
+    focus:
+        - sun-o
+        -
+        - attention,focus,écoute,présence
+    habits:
+        - history
+        -
+        - habitudes,répétitions,cycles
+    emotion:
+        - podcast
+        - nos désirs sont désordre
+        - peur,émotions,sensible
+    balance:
+        - random
+        -
+        - équilibre,balance
+    love:
+        - heart
+        -
+        - amour,attraction
+    spirit:
+        - snowflake-o
+        -
+        - rêves,idéaux,énergies,amour,spiritualités,foi,religions,mort
+    genre:
+        - venus-mars
+        -
+        - patriarcat,féminisme,genres,LGBT,famille,racisme,sexisme
+    power:
+        - hand-rock-o
+        -
+        - pouvoir,puissance,impuissance
+    words:
+        - commenting
+        -
+        - récits,mots,interprétations,controverses,discours,s'accorder,s'engueuler,débats,médiations
+    creation:
+        - bug
+        -
+        - création,art,culture,écriture,design,processus,formes,humour
+    science:
+        - flask
+        -
+        - sciences,techniques,nanotechnologies,manipulation,vivant
+    web:
+        - hashtag
+        -
+        - web,internet,réseaux
+    violence:
+        - industry
+        -
+        - violence,brutalité,police
+    economy:
+        - money
+        -
+        - échanges,commerce,troc,don,économie,argent,monnaie,finance,dette,revenu de base
+    companies:
+        - trash
+        -
+        - néocapitalisme,récupérations,greenwashing,multinationales,puissances d'argent,boycott
+    politics:
+        - bank
+        -
+        - politique et représentation,concertation,décider ensemble,communs,open (res)sources,démocratie
+    law:
+        - gavel
+        -
+        - lois,aspects juridiques,démarches administratives,législations
+    philo:
+        - puzzle-piece
+        -
+        - réflexions,théories,principes,idéologies,dialectique,pensées
+    history:
+        - book
+        -
+        - (néo)colonialismes,impérialisme,histoire,oubli,archives
 footer:
     lastupdatetext: dernière modification
     content: >

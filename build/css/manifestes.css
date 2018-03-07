@@ -1070,6 +1070,7 @@ div.highlight {
   background-color: #C7C9C6;
 }
 .t-map,
+.t-space,
 .t-calendar {
   background-color: #B7B4AC;
 }
@@ -1089,8 +1090,7 @@ div.highlight {
 .t-move,
 .t-object,
 .t-energy,
-.t-work,
-.t-slow {
+.t-work {
   background-color: #E8B887;
 }
 .t-education,
@@ -1098,19 +1098,26 @@ div.highlight {
   background-color: #ADD7DB;
 }
 .t-alienation,
-.t-emancipation {
+.t-emancipation,
+.t-realize,
+.t-slow,
+.t-balance {
   background-color: #95CBD1;
 }
-.t-subsist,
+.t-suffer,
 .t-act,
-.t-love,
 .t-genre,
 .t-zad,
 .t-words {
   background-color: #EDB4AA;
 }
 .t-creation,
-.t-space {
+.t-love,
+.t-attention,
+.t-fear,
+.t-human,
+.t-death,
+.t-life {
   background-color: #EDB8E5;
 }
 .t-science,
@@ -1122,74 +1129,48 @@ div.highlight {
 .t-law,
 .t-economy,
 .t-politics,
+.t-power,
 .t-philo {
   background-color: #D9C8DA;
 }
 .t-nc {
   background-color: #d4d4d4;
 }
-.tb-about,
-.tb-group,
-.tb-list,
-.tb-tool {
-  border-left: 7px solid #c7c9c6;
+/* ... then duplicated below for bordered color*/
+/*@bbs: 7px;
+.tb-about, .tb-group, .tb-list, .tb-tool {
+  border-left: @bbs solid #C7C9C6;
 }
-.tb-map,
-.tb-calendar {
-  border-left: 7px solid #b7b4ac;
+.tb-map, .tb-calendar {
+  border-left: @bbs solid #B7B4AC;
 }
-.tb-text,
-.tb-image,
-.tb-audio,
-.tb-video {
-  border-left: 7px solid #c7c9c6;
+.tb-text, .tb-image, .tb-audio, .tb-video {
+  border-left: @bbs solid #C7C9C6;
 }
-.tb-earth,
-.tb-agriculture,
-.tb-health,
-.tb-eat {
-  border-left: 7px solid #a4dab0;
+.tb-earth, .tb-agriculture, .tb-health, .tb-eat {
+  border-left: @bbs solid #A4DAB0;
 }
-.tb-home,
-.tb-move,
-.tb-object,
-.tb-energy,
-.tb-work,
-.tb-slow {
-  border-left: 7px solid #e8b887;
+.tb-home, .tb-move, .tb-object, .tb-energy, .tb-work, .tb-slow {
+  border-left: @bbs solid #E8B887;
 }
-.tb-education,
-.tb-media {
-  border-left: 7px solid #add7db;
+.tb-education, .tb-media {
+  border-left: @bbs solid #ADD7DB;
 }
-.tb-alienation,
-.tb-emancipation {
-  border-left: 7px solid #95cbd1;
+.tb-alienation, .tb-emancipation {
+  border-left: @bbs solid #95CBD1;
 }
-.tb-subsist,
-.tb-act,
-.tb-love,
-.tb-genre,
-.tb-zad,
-.tb-words {
-  border-left: 7px solid #edb4aa;
+.tb-subsist, .tb-act, .tb-love, .tb-genre, .tb-zad, .tb-words {
+  border-left: @bbs solid #EDB4AA;
 }
-.tb-creation,
-.tb-space {
-  border-left: 7px solid #edb8e5;
+.tb-creation, .tb-space {
+  border-left: @bbs solid #EDB8E5; 
 }
-.tb-science,
-.tb-web {
-  border-left: 7px solid #e8d9a0;
+.tb-science, .tb-web {
+  border-left: @bbs solid #E8D9A0;
 }
-.tb-companies,
-.tb-history,
-.tb-law,
-.tb-economy,
-.tb-politics,
-.tb-philo {
-  border-left: 7px solid #d9c8da;
-}
+.tb-companies, .tb-history, .tb-law, .tb-economy, .tb-politics, .tb-philo {
+  border-left: @bbs solid #D9C8DA;
+}*/
 .mailing {
   margin-top: 30px;
 }
@@ -1830,9 +1811,9 @@ div.highlight {
   box-sizing: border-box;
   position: relative;
   cursor: pointer;
-  display: block;
+  display: inline-block;
   vertical-align: top;
-  width: 80%;
+  width: 50%;
   text-align: left;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -1842,7 +1823,7 @@ div.highlight {
   color: #BFBFBF;
 }
 .header .tagspanel .linetag .label {
-  padding: 0px 7px;
+  padding: 3px 7px;
   background-color: rgba(0, 0, 0, 0.5);
 }
 .header .tagspanel .linetag:hover,
@@ -2224,11 +2205,6 @@ body.layout-mapprint .container {
   padding: 4px;
   background: white;
 }
-.wrapper.layout-abcd {
-  box-sizing: border-box;
-  text-align: left;
-  font-family: 'Lato', sans-serif;
-}
 .sharebutton {
   box-sizing: border-box;
   display: inline-block;
@@ -2257,34 +2233,38 @@ body.layout-mapprint .container {
   text-align: left;
   font-style: italic;
 }
-.wrapper.layout-abcd .section {
+.wrapper.layout-abcd .page {
   box-sizing: border-box;
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-  width: 50%;
+  text-align: left;
+  font-family: 'Lato', sans-serif;
+  /*
   height: 100%;
-  /*max-height: 2000px;*/
-  cursor: pointer;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: stretch;
+  */
+  width: 100%;
 }
-.wrapper.layout-abcd .section.t-nc:nth-child(odd) {
+.wrapper.layout-abcd .page .section {
+  box-sizing: border-box;
+  /*display: inline-block;*/
+  padding: 60px 20%;
+  margin: 0;
+  /*cursor: pointer;*/
+  text-align: center;
+  vertical-align: middle;
+  /*flex-grow: 1;*/
+}
+.wrapper.layout-abcd .page .section.t-nc:nth-child(odd) {
   background-color: #E4E4E4;
 }
-.wrapper.layout-abcd .section.t-nc:nth-child(even) {
+.wrapper.layout-abcd .page .section.t-nc:nth-child(even) {
   background-color: #D2D2D2;
 }
-.wrapper.layout-abcd .section .inside {
-  box-sizing: border-box;
-  display: inline-block;
-  height: 100%;
-  line-height: 100%;
-  max-width: 90%;
-  margin-top: 90px;
-  margin-bottom: 90px;
-  vertical-align: middle;
-}
-.wrapper.layout-abcd .section .tags {
+.wrapper.layout-abcd .page .section .tags {
   box-sizing: border-box;
   position: absolute;
   right: 0;
@@ -2297,7 +2277,7 @@ body.layout-mapprint .container {
   margin-right: 7px;
   font-size: 0.9em;
 }
-.wrapper.layout-abcd .section .tags .tag {
+.wrapper.layout-abcd .page .section .tags .tag {
   float: right;
   margin: 3px;
   padding: 3px 3px 4px 5px;
@@ -2307,24 +2287,34 @@ body.layout-mapprint .container {
   color: #6a6c67;
   cursor: pointer;
 }
-.wrapper.layout-abcd .section .tags .tag i.clear {
+.wrapper.layout-abcd .page .section .tags .tag i.clear {
   display: none;
   opacity: 0.5;
 }
-.wrapper.layout-abcd .section .tags .tag:hover {
+.wrapper.layout-abcd .page .section .tags .tag:hover {
   color: #383838;
 }
-.wrapper.layout-abcd .section .tags .tag:hover i.clear {
+.wrapper.layout-abcd .page .section .tags .tag:hover i.clear {
   opacity: 1;
 }
-.wrapper.layout-abcd .section .tags .tag.active {
+.wrapper.layout-abcd .page .section .tags .tag.active {
   color: white;
   background: #883e3e;
 }
-.wrapper.layout-abcd .section .tags .tag.active i.clear {
+.wrapper.layout-abcd .page .section .tags .tag.active i.clear {
   display: inline-block;
 }
-.wrapper.layout-abcd .section .title {
+.wrapper.layout-abcd .page .section a {
+  color: white;
+  background: #748598;
+  padding: 2px 5px;
+  border-radius: 1px;
+}
+.wrapper.layout-abcd .page .section a:hover {
+  color: white;
+  background: orange;
+}
+.wrapper.layout-abcd .page .section .title {
   box-sizing: border-box;
   display: inline-block;
   width: 50%;
@@ -2337,7 +2327,7 @@ body.layout-mapprint .container {
   line-height: 1.2em;
   font-weight: 600;
 }
-.wrapper.layout-abcd .section .title span.wtin {
+.wrapper.layout-abcd .page .section .title span.wtin {
   padding: 25px;
   box-sizing: border-box;
   position: absolute;
@@ -2350,7 +2340,7 @@ body.layout-mapprint .container {
   -o-transform: translate(0, -50%);
   transform: translate(0, -50%);
 }
-.wrapper.layout-abcd .section .subtitle {
+.wrapper.layout-abcd .page .section .subtitle {
   box-sizing: border-box;
   display: inline-block;
   position: relative;
@@ -2363,8 +2353,9 @@ body.layout-mapprint .container {
   font-style: italic;
   overflow: hidden;
 }
-.wrapper.layout-abcd .section .content {
+.wrapper.layout-abcd .page .section .content {
   box-sizing: border-box;
+  /*white-space: normal|nowrap|pre|pre-line|pre-wrap|initial|inherit;*/
   /*margin-left: 50%;*/
   /*padding: 10px 50px 50px 50px;*/
   text-align: left;
@@ -2372,20 +2363,20 @@ body.layout-mapprint .container {
   font-size: 0.9em;
   line-height: 1.6em;
 }
-.wrapper.layout-abcd .section .content h1 {
+.wrapper.layout-abcd .page .section .content h1 {
   font-size: 1.3em;
 }
-.wrapper.layout-abcd .section .content h2 {
+.wrapper.layout-abcd .page .section .content h2 {
   font-size: 1.2em;
   margin-bottom: 2px;
 }
-.wrapper.layout-abcd .section .content p {
+.wrapper.layout-abcd .page .section .content p {
   margin-bottom: 9px;
 }
-.wrapper.layout-abcd .section .content ul {
+.wrapper.layout-abcd .page .section .content ul {
   margin-bottom: 10px;
 }
-.wrapper.layout-abcd .section .source {
+.wrapper.layout-abcd .page .section .source {
   margin-top: 90px;
   font-size: 0.7em;
   font-style: italic;

@@ -1,21 +1,96 @@
 
 
 ---
-tags: life suffer
+tags: realize words
+content: >
+    C'est quoi être un anarchiste ? *un mot*
+
+
+    C'est quoi avoir un compte en banque ? *cautioner ce système de merde*
+
+
+---
+tags: act time
+title: When ?
+content: >
+    Do it.
+
+
+    *Now.*
+
+
+---
+tags: realize human
+content: >
+    J’en appelle à la fougue, à la témérité, à l’ardeur des Jeunes Guerrières et Guerriers afin de libérer l’humanité de tous ces criminels, déments et ravagés par leur haine de la Vie. Et par tous les moyens possibles et imaginables qui ne mettront pas en danger leur propre intégrité. Parce que l’humanité a aussi besoin de leur énergie régénératrice pour faire émerger, de ce chaos infernal, les nouvelles Tribus du Futur. Au service de la biosphère, de la Vie, de la Joie, de la Fertilité. Nous sommes au seuil de l’extinction mais nous sommes aussi les Peuples des Semences, les Shista. Nous sommes les Enfants de la Rébellion et nous sommes en chemin. 
+
+
+    Ecoutez : Les Tambours de Gaïa se sont réveillés et ils résonnent dans l’atmosphère vivante de la Terre-Mère !
+
+
+    Pour la Vie.
+source: "Xochi, Dominique Guillet, pour le [Festival Kokopelli](https://festival-kokopelli.fr/), du 8 au 10 juin 2018"
+
+
+---
+tags: realize
+content: If you’ve never changed your mind about something, pinch yourself, you may be dead.
+source: Mr. Cizik
+
+
+---
+tags: human
+content: >
+    The inconveniences of daily life are not the significant problems.
+
+
+    The world that scrolls past you on Twitter is not the real world.
+
+
+    You cannot calibrate your sense of what’s valuable and necessary to the current fashions in your field.
+source: "[Climate Change](http://worrydream.com/ClimateChange/), by Bret Victor"
+
+
+---
+tags: earth science realize
+content: >
+    [Don't even think about it](http://www.climateconviction.org/) — Why our brains are wired to ignore Climate Change
+source: George Marshall
+
+
+---
+tags: earth science realize
+content: >
+    Climate change, closely understood, is terrifying. The natural human response to such a bleak situation is despair.
+
+
+    But despair is not useful. Despair is paralysis, and there’s work to be done.
+source: "[Bret Victor](http://worrydream.com/ClimateChange/)"
+
+
+---
+tags: science
+content: >
+    The first principle is that you must not fool yourself — and you are the easiest person to fool. 
+source: "[Richard Feynman](http://calteches.library.caltech.edu/51/2/CargoCult.pdf)"
+
+
+---
+tags: human suffer
 content: Il y a de ces moments où tout s'écroule, où la fureur de la vie nous brûle le cœur
 
 
 ---
-tags: eat death
+tags: eat alienation
 content: >
-    manger c'est le pire des fléauts
+    manger c'est la pire des drogues
     
 
     mieux vaut plutôt mourir
 
 
 ---
-tags: life philo spirit
+tags: human philo spirit
 content: Sais-tu exactement ce que tu *dois* faire ?
 
 
@@ -26,7 +101,7 @@ content: >
 
 
 ---
-tags: philo spirit life
+tags: philo spirit human
 content: >
     Peut-on se reposer sur une philosophie composée uniquement de mots ?
 
@@ -56,7 +131,7 @@ content: >
 
 
 ---
-tags: slow spirit
+tags: spirit
 content: >
     Vouloir ce qui est nécessaire, et aimer ce que l'on a voulu.
 
@@ -81,7 +156,7 @@ source: Friedrich Nietzsche
 
 
 ---
-tags: death truth health
+tags: alienation health
 content: >
     Plus personne ne meurre aujourd'hui de contre vérité mortelle : il y a trop de contrepoisons
 source: Friedrich Nietzsche
@@ -127,6 +202,8 @@ content: >
     
 
     Les intérêts de cette dettes coûtent environ 1500€ par seconde à l’État, soit plus de 45 milliards d’euros pour la seule année 2014.
+source: >
+    [collectif pour un audit citoyen de la dette publique](http://www.audit-citoyen.org/)
 
 
 ---
@@ -145,37 +222,29 @@ source: Peter Whitehead, mai 2006
 
 ---
 title: C'est quoi ce site ?
-tags: about web
+tags: about web philo words
 content: >
-    Portail de pratiques et d'idées alternatives, manifeste, cartographies... Si nos intentions ne sont pas claires, contactez-nous !
+    ## Oui
 
-    ## C'est
+    un portail d'idées humanistes, un tract manifeste techno-philosophico-politico-pratique, un appel à l'insurrection, un OWNI, une boite à liens, une porte qui en ouvre pleins d'autres, un exercice de style extensible, de la visibilité pour des initiatives et pensées qu'on trouve chouettes et trop peu connues, un truc pour s'amuser et voir ce dont on est capable, un outil pour archiver de jolies citations, une page d'accueil mieux que google, une boite à idées militantes, un projet indépendant ouvert à toutes les bonnes âmes !
 
-    un portail, un tract web philosophico-politico-pratique, un appel à l'insurrection, un OWNI, une boite à liens, une porte qui en ouvre pleins d'autres, un exercice de style extensible, de la visibilité pour des initiatives et pensées qu'on trouve chouettes et trop peu connues, un truc pour s'amuser et voir ce dont on est capable, un outil pour archiver de jolies citations, une page d'accueil mieux que google, une boite à idées militantes, un projet indépendant ouvert à toutes les bonnes âmes !
+    ## Non
 
-    ## Ce n'est pas
-
-    un programme ou parti politique, pas un mouvement conspirationniste, pas une volonté d'absorber et de récupérer toutes les alternatives, pas une branche com' du ministère de la bonne conscience, pas un moyen de faire de l'argent, et surtout pas une prétention d'avoir la vérité ou d'être objectif...
+    un programme ou parti politique, un mouvement conspirationniste, une volonté d'absorber et de récupérer toutes les alternatives, une branche com' du ministère de la bonne conscience, un moyen détourné de faire de l'argent, une prétention d'avoir la vérité ou d'être objectif...
 
 
 ---
 title: Objectif.s
-tags: about tool
+tags: about tool words politics
 content: >
-    Quels autres mondes possibles ? Nous sommes partout. Nos démarches sont infiniment diverses et complémentaires. Qu'avons-nous en commun ?
+    Nous sommes partout. Nos démarches sont infiniment diverses et complémentaires. On fait quoi ?
 
 
-    ## textes
+    - **écrire collectivement** un manifeste de notre territoire commun *philosophique, politique, poétique*
 
-    **écrire collectivement** un manifeste de notre territoire commun *philosophique, politique, poétique, pratique*
+    - **partager et archiver** nos inspirations, références, initiatives
 
-    ## citations, liens, réseau
-
-    **partager et archiver** nos inspirations, références, initiatives
-
-    ## carte, agenda
-
-    **faciliter** l'accès aux solutions concrètes existantes
+    - **faciliter l'accès** aux solutions concrètes existantes (liens, carte géographique)
 
 
 ---
@@ -412,14 +481,20 @@ tags: about words text
 content: >
     Accumulation et extensibilité des points de vue.
 
-    La seule hiérarchie ici nous est l'alphabet.
+    Le seul ordre est l'alphabet.
 
 
 ---
 title: Il n'y a pas de risque
-tags: fear
+tags: emotion realize group
 content: >
-    d'essayer tous ensemble.
+    d'essayer tous ensemble
+
+
+    chacun.e à son rythme, au bon moment
+
+
+    sans laisser personne sur le chemin
 
 
 ---
@@ -458,7 +533,6 @@ content: >
 ---
 title: Caravane des alternatives
 tags: about map list group
-source: "[Caravane des alternatives](http://caravanedesalternatives.weebly.com/)"
 content: >
     ## Charte des écolieux et collectifs de l'annuaire de la caravane des alternatives
 
@@ -469,6 +543,8 @@ content: >
 
 
     Il est difficile de définir une norme de taille idéale (dépend de l'activité, des habitudes de vie, élevage ou non...). La caravane des alternatives se positionne sur le postulat de 0,5 à 1ha de terre cultivable par personne, à rajouter à cela de la terre pour le bois (chauffage, construction, sauvage). Nous valorisons donc les petites structures entre 1 ha et 40ha, voire même de 1ha à 10ha
+source: >
+    La [Caravane des alternatives](http://caravanedesalternatives.weebly.com/): réseau de 3000 lieux alternatifs référencés par département: livres téléchargeables, autonomie alimentaire, autoconstruction, médecine par les plantes, autogestion: [l'annuaire alternatif](http://www.fichier-pdf.fr/2015/04/23/annuairealternatifdunecaravanedesalternativesavril2015/), [le livre de connaissances](http://www.fichier-pdf.fr/2015/04/23/livresdeconnaissancesdunecaravanedesalternativesavril2015/), des [compléments alimentaires](http://www.fichier-pdf.fr/2015/04/23/livrecomplalimentairedunecaravanedesalternativesavril2015/), projet [1 million d'arbres](http://www.fichier-pdf.fr/2015/05/14/livreplantons1milliondarbresmai2015/)... [soutenez la caravane](https://www.leetchi.com/c/solidarite-de-caravane-des-alternatives) !
 
 
 ---
@@ -496,11 +572,9 @@ content: >
 
 
 ---
-title: On en a marre !
+title: "Un monde s'en va, aidons-le à partir"
 tags: alienation suffer earth
 content: >
-    ## Un monde s'en va, aidons-le à partir
-
     - **sur-développement** matériel, boulimie consumériste, gaspillage alimentaire et énergétique
 
     - **sous-développement** affectif, éthique et spirituel, renfermement sur soi, pauvreté des projets de vie
@@ -517,7 +591,7 @@ content: >
 
 ---
 title: Quel.s lien.s ?
-tags: slow earth love
+tags: earth love
 content: >
     Rétablissons les liens et les relations que nous entretenons
 
@@ -559,8 +633,7 @@ content: >
     Quelle planète, quel rapport à la nature et au vivant laisserons-nous à nos enfants ?
 
     
-    *«dis, maman, pourquoi personne n'a rien fait ?»*
-    
+    *... dis, maman, pourquoi personne n'a rien fait ?*
 
 
 ---
@@ -577,7 +650,10 @@ content: >
 ---
 tags: act words
 content: >
-    ne *rien* faire, surtout ne *rien* faire
+    ne *rien* faire
+
+
+    surtout ne *rien* faire
 
 
 ---
@@ -641,7 +717,7 @@ content: >
 
 
 ---
-title: Réseau.x
+title: Réseau.x alternatifs
 tags: web emancipation tool
 content: >
     On recense tous les mouvements... ce sont les RG qui vont être contents !
@@ -721,19 +797,16 @@ source: "[Association Survie](http://survie.org/)"
 
 ---
 title: On ne peut rien faire ?
-tags: alienation act fear
+tags: alienation act emotion realize
 content: >
-    Ce qui se passe en Chine, les guerres... vouloir changer tout ça d'un coup est impossible... vraiment ?
+    Ce qui se passe dans le monde, la société, les habitudes... vouloir changer tout ça d'un coup est impossible ! ... vraiment ?
 
 
-    - *La faute aux politiques ?* Ce sont nous qui les laissons au pouvoir
+    - *la faute aux politiques ?* ... **nous** les laissons au pouvoir !
 
-    - *La faute aux multinationales ?* Nous travaillons pour elles et achetons leurs produits
+    - *la faute aux multinationales ?* ... **nous** sommes leurs employé.e.s ou client.e.s !
 
-    - *Le système financier mondial ?* Nous confions notre argent aux mêmes banques
-
-
-    Nous avons beaucoup plus de **clefs d'action au quotidien** que ce que l'on croit !
+    - *le système financier mondial ?* ... **nous** leur confions notre argent !
 
 
 ---
@@ -771,7 +844,7 @@ content: >
 
 ---
 title: Décès de deux personnes
-tags: politics death
+tags: politics human power
 content: >
     Deux évènements récents côte à côte en disent très long sur les valeurs du gouvernement français.
     D'un côté la mort d'un criminel capitaliste, **Christophe de Margerie**, PDG de Total
@@ -855,11 +928,11 @@ source: "[Le pouvoir de poser la question](https://lundi.am/Le-pouvoir-de-poser-
 
 ---
 title: Menace de l‘islam ?
-tags: fear media politics
+tags: emotion media politics
 content: >
     ## Sortir de la domestication des esprits, vite
 
-    Quand la population musulmane **ne représente que 8%** de celle d’une France dont les citoyens **l’évaluent à 30%**, quand ces femmes voilées contre lesquelles on fait des lois spéciales sont **en tout et pour tout 600**, d’après les enquêtes les plus sérieuses, à l’heure où l’état d’urgence permet à la police de lancer contre cette même population des opérations « antiterroristes » qui n’ont pas d’autre résultat que de la terroriser et de la stigmatiser...
+    Quand la population musulmane ne représente que **8%** de celle d’une France dont les citoyens l’évaluent à **30%**, quand ces femmes voilées contre lesquelles on fait des lois spéciales sont en tout et pour tout **600**, d’après les enquêtes les plus sérieuses, à l’heure où l’état d’urgence permet à la police de lancer contre cette même population des opérations « antiterroristes » qui n’ont pas d’autre résultat que de la terroriser et de la stigmatiser...
 
 
     On serait fondé à discuter du rôle de ce qu’on s’obstinera ici à appeler l’islamophobie et de son potentiel meurtrier. 
@@ -887,12 +960,9 @@ content: >
 
 
 ---
-title: Urgence
-tags: time slow philo love balance
+title: L'urgence de prendre son temps
+tags: time love balance
 content: >
-    ## L'urgence de prendre son temps
-
-
     **Prenons le temps d'être présent.e.s**, développons notre écoute, nos observations, notre bienveillance.
 
 
@@ -905,11 +975,9 @@ content: >
 
 
 ---
-title: Habitude.s
+title: Habitudes, dépendances, aliénations
 tags: alienation habits time
 content: >
-    ## Habitudes, dépendances, aliénations
-
     Nous devons nous battre simultanément **contre les structures** qui nous assujettissent et nous contrôlent et **contre nous-mêmes**, gangréné.e.s de l'intérieur par nos habitudes et les idéologies dominantes.
 
     
@@ -1015,11 +1083,9 @@ source: Luc Boltanski, Arnaud Desquerre, Vers l’extrême, Editions Dehors, 201
 
 
 ---
-title: Impuissance
+title: Ce monde tient sur notre impuissance
 tags: media alienation
 content: >
-    ## Ce monde tient sur notre impuissance
-
     Réfléchir aux bonnes questions que nous voudrions poser à ce monde nécessite de faire un pas de côté, pour échapper aux maîtres des écrans.
 
 
@@ -1063,15 +1129,15 @@ source: "[NPPV](https://nppv.noblogs.org/) via [Lundi.am](https://lundi.am/lundi
 
 
 ---
-title: Revenu de base
+title: Revenu de base inconditionnel
 tags: work economy
 content: >
-    ## Un revenu de base inconditionnel
-
     Le revenu ou dotation universelle inconditionnelle permet à chacun de satisfaire ses besoins primaires. Il permet, du moins de manière transitionnelle, à ceux qui sont entièrement aliénés par leur travail de sortir la tête de l'eau et d'enfin choisir leur activité.
 
 
     En nature ou en argent, il permet de vivre dignement sans avoir à se prostituer dans une activité non choisie
+source: >
+    [Créations](http://www.creations-revenusdebase.org/) autour du revenu de base, [Mouvement français pour un revenu de base](http://revenudebase.info/), [Appel pour le revenu de vie](http://appelpourlerevenudevie.org/), automatique, inconditionnel et inaliénable, [Pour un revenu garanti pour tous](http://www.monde-diplomatique.fr/2013/05/CHOLLET/49054), par Mona Chollet
 
 
 ---
@@ -1108,8 +1174,6 @@ source: JF
 title: Qui sont nos adversaires ?
 tags: companies act
 content: >
-    ## La faute à qui ? Faux problèmes et débats stériles
-
     Soupçonnés pour certains d'extorquer à l'état quelques centaines d'euros, pour d'autres de former une élite manipulatrice, nous désignons parfois comme **coupables** *politiques, riches, étrangers, fonctionnaires, fraudeurs, assistés, journalistes, extrémismes, terrorisme*...
 
 
@@ -1129,11 +1193,9 @@ content: >
 
 
 ---
-title: Ami.e.s
+title: Nous ne sommes pas ami.e.s avec tout le monde
 tags: words politics group
 content: >
-    ## Nous ne sommes pas amis avec tout le monde
-
     Refaire le monde, c’est prendre le risque de déplaire à ceux qui ne veulent pas du tout que le monde soit refait
 
 
@@ -1168,10 +1230,8 @@ content: >
 
 ---
 title: Taxer l'argent
-tags: economy politics slow
+tags: economy politics
 content: >
-    ## Taxer toutes les transactions financières
-
     Du simple retrait de 10€ au distributeur aux spéculateurs financiers, taxer tous les transferts d'argent.
 
 
@@ -1179,11 +1239,9 @@ content: >
 
 
 ---
-title: Publicité
+title: "Publicité, instrument d'un culte"
 tags: companies media alienation education
 content: >
-    ## La pub, instrument d'un culte
-
     Incessant défilé d'images et de slogans mercantiles dans l'espace public.
 
 
@@ -1194,7 +1252,8 @@ content: >
 
 
     **Nous n'en voulons plus.**
-source: "[Collectif des déboulonneurs](http://www.deboulonneurs.org)"
+source: >
+    Collectif des [déboulonneurs](http://www.deboulonneurs.org), [Résistance à l'Agression Publicitaire](http://antipub.org/), [Reposeurs](http://www.reposeurs.eu.org/), les 150 numéros du [publiphobe](http://bap.propagande.org/modules.php?name=Publiphobe)
 
 
 ---
@@ -1207,12 +1266,12 @@ content: >
 
 
     Nous exigeons que toutes les affiches soient limitées au format 50x70cm, taille maximale de l'affichage associatif ou politique, et que des contraintes strictes de densité soient mises en place et respectées. Nous demandons aussi la suppression de tous les panneaux lumineux et numériques, qui sont encore plus envahissants et inutilement énergivores
-source: "[Collectif des déboulonneurs](http://www.deboulonneurs.org)"
+source: "Collectif des [Déboulonneurs](http://www.deboulonneurs.org)"
 
 
 ---
 title: À quoi on tient ?
-tags: love education slow group
+tags: love education group
 content: >
     Si on réfléchit, qu'est-ce qui compte vraiment ?
 
@@ -1233,11 +1292,9 @@ content: >
 
 
 ---
-title: Mangeons mieux
-tags: eat agriculture health
+title: Mangeons mieux, local, de saison
+tags: eat agriculture health act
 content: >
-    # local, de saison
-
     Boycottons la nourriture industrielle, cuisinons nous-même.
 
 
@@ -1245,7 +1302,7 @@ content: >
 
 
     Changeons nos habitudes alimentaires pour décourager les multinationales pollueuses de l'agroalimentaire et **améliorons notre santé** en nous approvisionnant chez de petits producteurs locaux.
-
+source: "[fruits et légumes de saison](http://asso.apne.free.fr/wp-content/uploads/2010/05/legumesaison.jpg), [réseau des AMAP](http://www.amap-idf.org/), [Marché Citoyen](http://www.lemarchecitoyen.net/)"
 
 ---
 title: Devenir végétarien
@@ -1288,15 +1345,13 @@ content: >
 
 
     Relocaliser les productions agricoles, permettre aux petits paysans de vivre de leur travail, c'est fournir une alimentation de qualité et non polluante
-source: "[http://montreuil-climat.org](http://montreuil-climat.org)"
+source: "[Montreuil Climat](http://montreuil-climat.org)"
 
 
 ---
-title: Énergie.s
-tags: energy emancipation
+title: Décentraliser la production d'énergie.s
+tags: energy space
 content: >
-    ## Décentraliser la production d'énergie
-
     Nous avons besoin d'une production d'énergie fondée sur les besoins des populations, pas sur la recherche du profit. Le système nucléaire français est archicentralisé, archidépendant des importations d'uranium, de plus en plus vieillissant et dangereux.
 
 
@@ -1373,29 +1428,26 @@ source: "[L'autonomie ou rien](https://lundi.am/L-AUTONOMIE-OU-RIEN)"
 
 
 ---
-title: État mafia
+title: État mafia, Mafia des médias
 tags: society media politics group
 content: >
-    ## Mafia des médias
+    - L'**État mafia** est la conséquence de l'impossibilité du maintien de l'état démocratique classique dès que les dimensions de l'état dépassent certaines limites
 
-    - L'**« État mafia »** est la conséquence de l'impossibilité du maintien de l'état démocratique classique dès que les dimensions de l'état dépassent certaines limites
-
-    - La **« mafia des médias »** en découle directement, par suite de l'impossibilité de la *communication globale* (mondiale). Internet peut être cité en exemple pour montrer que cette impossibilité n'est pas le résultat de difficultés techniques, mais vient plutôt de l'**inadaptation humaine fondamentale à la communication généralisée** (de tout le monde vers tout le monde).
+    - La **mafia des médias** en découle directement, par suite de l'impossibilité de la communication globale. Internet peut être cité en exemple pour montrer que cette impossibilité n'est pas le résultat de difficultés techniques, mais vient plutôt de l'**inadaptation humaine fondamentale à la communication généralisée**, de tout le monde vers tout le monde.
 
 
-    L'échec de ces deux utopies généreuses, la démocratie et la *communication globale* entre les hommes, entraîne logiquement la formation de ces mafias qui agissent en notre nom et contre nos intérêts. En même temps qu'un acte d'accusation, ce livre veut être aussi un acte d'encouragement: il s'agit d'encourager l'individu à ne donner ni son consentement tacite ni son aide, à ces deux mafias.
+    L'échec de ces deux utopies généreuses, la démocratie et la communication globale entre les hommes, entraîne logiquement la formation de ces mafias qui agissent en notre nom et contre nos intérêts. En même temps qu'un acte d'accusation, ce livre veut être aussi un acte d'encouragement: il s'agit d'encourager l'individu à ne donner ni son consentement tacite ni son aide, à ces deux mafias.
 
 
     **Ce n'est pas là une invitation à la révolution, mais une invitation à la résistance**.
-source: "Yona Friedman, [Utopies Réalisables](http://www.lyber-eclat.net/lyber/friedman/utopies.html)"
+source: >
+    [Utopies réalisables](http://recherche-action.fr/labo-social/download/Livres%20num%C3%A9riques/Utopies%20r%C3%A9alisables.pdf), Yona Friedman, [Lyber-eclat](http://www.lyber-eclat.net/lyber/friedman/utopies.html)
 
 
 ---
-title: Pouvoir d'État
-tags: politics emancipation
+title: Avec ou sans l'État ?
+tags: politics power balance
 content: >
-    ## Reprise du pouvoir, avec ou sans l'État ?
-
     Entrainons-nous à nous gouverner nous-même, luttons contre les oppressions, multiplions les médiations
 
 
@@ -1416,11 +1468,9 @@ source: "[Alain Bihr, Étatistes et libertaires, revue Ballast](http://www.revue
 
 
 ---
-title: Déléguer
+title: Déléguer, toujours déléguer ?
 tags: alienation emancipation politics
 content: >
-    ## Déléguer, toujours déléguer ?
-
     État, institutions, ou comment déléguer toute autorité. À qui accordons nous notre confiance ?
 
 
@@ -1468,11 +1518,9 @@ source: "[Pirates quittons le village](http://facebook.com/quittonslevillage)"
 
 
 ---
-title: Citoyen vote bien
+title: Citoyen.ne vote bien
 tags: politics
 content: >
-    # Citoyen-nes
-
     Ne perdez pas de vue que **les hommes qui vous serviront le mieux sont ceux que vous choisirez parmi vous**, vivant votre vie, souffrant des mêmes maux.
     Défiez-vous autant des ambitieux que des parvenus ; les uns comme les autres ne consultent que leur propre intérêt et finissent toujours par se considérer comme indispensables. Défiez-vous également des parleurs, incapables de passer à l'action ; ils sacrifieront tout à un beau discours, à un effet oratoire ou à un mot spirituel.
 
@@ -1497,7 +1545,7 @@ source: "[NPPV](https://nppv.noblogs.org/) via [Lundi.am](https://lundi.am/lundi
 
 ---
 title: Science sacralisée
-tags: science control web alienation
+tags: science web alienation
 content: >
     Les développement des technologies *nano, bio, numériques, médicales* sont le symptôme d'un **fantasme de contrôle et de connaissance totale** toujours disponible.
 
@@ -1521,11 +1569,9 @@ content: >
 
 
 ---
-title: Technologie.s
+title: Qui contrôle les technologies ? 
 tags: web companies science
 content: >
-    ## Qui contrôle les technologies ? 
-
     *Combien de gens savent ce qu'il se passe lorsqu'on envoie un mail ? Lorsqu'on se connecte sur Facebook ?*
     
 
@@ -1571,11 +1617,9 @@ source: "[Alors qu’est-ce que ça donne, Nuit Debout ?](https://blogs.mediapar
 
 
 ---
-title: Maintenant
-tags: act work time
+title: Quitte ton taff et ta mégalopole
+tags: act work time realize
 content: >
-    ## Quitte ton taff et ta mégalopole
-
     Le plus dur, c'est dans la tête. Avec les potes et un peu d'organisation, on peut tout changer en moins de deux mois.
 
 
@@ -1596,36 +1640,37 @@ content: >
 
 ---
 title: Désobéir, prendre position
-tags: slow act realize
+tags: act realize time
 content: >
-    Sortons de nos zones de confort et de soumission. Depuis là où nous sommes, reformulons nous-mêmes les questions: tout lien, tout échange, toute action est politique
+    La société attend de nous travail — soumission — consommation — confort ? Notre liberté ne se résume pas à choisir entre plusieurs options, mais à la possibilité de **formuler nous-mêmes les questions**, de réinventer continuellement nos identités et nos relations. Depuis le quotidien le plus banal, devenons acteurs, complices d’autres logiques, d'autres manières de vivre :
 
 
-    Ne pensons plus à *la* politique représentative, comme institution de pouvoir et de luttes pour sa conquête.
-    Entretenons ou rétablissons *le* politique, par les relations que nous avons entre voisins, collègues, amis.
-    
+    - **explorer** son corps, sa vie, son quartier ... tout doucement
 
-    ## Au légal préférons le légitime
+    - **ne consommer aucune énergie** ... le plus longtemps possible
 
-
-    Depuis le quotidien le plus banal, devenons acteurs, complices d’autres logiques, d'autres manières de vivre. **Prenons position** en redessinant le territoire dans lequel nous vivons : *marcher moins vite, explorer son quartier, consommer moins d'énergie, avec qui parler, où manger, où travailler, ça je le refuse, ça à la limite, ça ok...* 
+    - **choisir où, comment et avec qui** parler, manger, travailler, faire l'amour...
 
 
-    ## La désobéissance est contagieuse
-
-
-    Notre liberté ne se résume pas à choisir entre plusieurs options, mais à la possibilité de **formuler nous-mêmes les questions**, de réinventer continuellement nos **identités** et nos **relations**.
-
-
-    La société attend de nous travail et consommation ? Choississons *pour qui* nous travaillons, *ce que* nous achetons, mangeons, *comment* nous nous comportons.
+    La désobéissance est contagieuse !
 
 
 ---
-title: Boycott
+title: Tout est politique
+tags: politics act realize group
+content: >
+    ## Au légal préférons le légitime
+
+    Depuis là où nous sommes, reformulons nous-mêmes les questions: tout lien, tout échange, toute action est politique.
+
+
+    Ne pensons plus à **la politique** représentative, comme institution de pouvoir et de luttes pour sa conquête. Entretenons ou rétablissons **le politique**, par les relations que nous avons entre voisins, collègues, amis...
+
+
+---
+title: Boycottons toutes les multinationales
 tags: act companies economy
 content: >
-    ## Boycottons toutes les multinationales
-
     Réapproprions-nous nos outils numériques, choisissons notre banque et avec qui nous faisons commerce.
 
 
@@ -1653,11 +1698,9 @@ source: "[Rejoindre les Nuits Debout pour explorer directement ce qui nous fait 
 
 
 ---
-title: Espace.s
+title: Espace.s de possibles
 tags: space politics words
 content: >
-    ## Les places, espaces de possibles
-
     Un espace pour reconstruire notre légitimité et notre vivre ensemble.
 
 
@@ -1670,7 +1713,7 @@ source: "[Rejoindre les Nuits Debout pour explorer directement ce qui nous fait 
 
 ---
 title: Rencontrons-nous !
-tags: slow group space realize attention
+tags: group space realize focus
 content: >
     Expérience du collectif, attention et confiance en l'autre, nouvelles formes de collectifs autogérés, vivre ensemble.
 
@@ -1689,7 +1732,7 @@ content: >
 
 ---
 title: ZAD et soulèvement populaire
-tags: zad emancipation space
+tags: act emancipation space
 content: >
     S'il est vital pour les gouvernants d'écraser la zad, c'est qu'elle constitue une démonstration insolente d'une vie possible sans eux. Une vie meilleure.
 
@@ -1705,11 +1748,9 @@ source: "[ZAD, Valls sans retour](http://zad.nadir.org/spip.php?article4099), de
 
 
 ---
-title: Langage commun
+title: Pratiquer un langage commun
 tags: words suffer politics
 content: >
-    ## Pratiquer un langage commun
-
     Le langage ne décrit pas le monde, il le construit. Des mots valises à la réalité, pour nous comprendre, soyons précis !
 
 
@@ -1725,7 +1766,7 @@ content: >
 
 ---
 title: Réenchantons
-tags: love slow game fun
+tags: love game human
 content: >
     Prenons plaisir à changer !
 
@@ -1738,7 +1779,7 @@ content: >
 
 ---
 title: Présence
-tags: words love attention time slow
+tags: words love focus time
 content: >
     Présence, écoute, bienveillance, circulation de la parole, espaces de la conversation.
 
@@ -1815,11 +1856,9 @@ source: "Métiers oubliés, métiers d'autrefois - John Seymour"
 
 
 ---
-title: Progrès
+title: Coup d’arrêt au progrès
 tags: science human earth
 content: >
-    ## Coup d’arrêt au progrès
-
     Il n’y a guère que les aménageurs de territoires numériques pour estimer que l’humanité n’a jamais connu d’époque meilleure que la nôtre. Nous avons pourtant tous sous les yeux le résultat on ne peut moins virtuel d’une interminable séquence de progrès sans merci : *dérèglements climatiques et perturbations hormonales, cinquième continent de plastique et morbidité des sols, pénuries d’eau potable et déchets radioactifs éternels* – pour ne citer que les seules calamités environnementales. À écouter les gestionnaires de ce chaos, les « solutions » à ces « dysfonctionnements » seraient, sinon déjà à l’œuvre, du moins aussi prometteuses que les précédentes, c’est-à-dire toujours plus technologiques, contraignantes et globales : **aux ingestions prescrites s’ajouteront les effets secondaires du traitement**.
 source: "[hors-sol](http://hors-sol.herbesfolles.org/), site contre les RFID et le meilleur des mondes"
 
@@ -1839,11 +1878,9 @@ source: "Métiers oubliés, métiers d'autrefois - John Seymour"
 
 
 ---
-title: Production.s
+title: Rendements et production de blé
 tags: work economy
 content: >
-    ## Rendements et production de blé
-
     Un mécanisme économique permet de diviser par cent le nombre d‘heures de travail nécessaires pour produire un quintal de blé
 
 
@@ -1855,11 +1892,9 @@ source: "Albert Jacquard; J’accuse. L’économie triomphante, 1995, [extrait]
 
 
 ---
-title: Tirage au sort
-tags: politics society emancipation
+title: Tirage au sort, réinvestir le politique
+tags: politics society emancipation game
 content: >
-    ## Le tirage au sort pour réinvestir le politique
-
     Supprimer le cumul des mandats, et pourvoir les postes à responsabilité au hasard parmis des assemblées de volontaires.
 
 
@@ -1891,11 +1926,9 @@ content: >
 
 
 ---
-title: Politique
+title: Politique représentative classique
 tags: politics companies
 content: >
-    ## Politique représentative classique
-
     C’est toute la sphère de la politique classique, ou représentative, qui est entrée dans une phase d’obsolescence définitive. Le PS a montré, pour ceux qui en doutaient encore, son vrai visage : celui d’un parasite soumis aux intérêts du patronat et de la finance. Qui est encore assez naïf pour imaginer qu’une quelconque *victoire électorale* permettra d’infliger un recul sérieux au commandement capitaliste ?
 
 
@@ -1945,9 +1978,13 @@ content: >
 
 
 ---
-title: Liberté
-tags: realize
-content: Freedom doesn’t come from having choices. Freedom comes from making choices.
+title: Choisis ta liberté
+tags: realize emancipation
+content: >
+    Freedom doesn’t come from *having* choices.
+
+
+    freedom comes from *making* choices.
 
 
 ---
@@ -1959,13 +1996,13 @@ content: The best time to plant up a fruit forest was twenty years ago; the seco
 
 ---
 title: Présence
-tags: attention love
+tags: focus love
 source: Simone Weil
 content: C'est la qualité de notre attention aux êtres et aux choses qui accroît nos chances d'échapper à la barbarie tapie au fond de nous
 
 
 ---
-tags: death
+tags: move
 source: "Didier Tronchet, Petit traité de vélosophie"
 content: >
     En voiture, tout le monde sait quelle est la place du mort. Mais qui pourrait dire quelle est la place du vivant ?
@@ -1980,7 +2017,7 @@ content: >
 
 ---
 title: Humanité
-tags: human time
+tags: human education love
 source: Emmanuel Kant
 content: >
     On ne doit pas élever les enfants d'après l'état présent de l'espèce humaine, mais d'après un état meilleur, possible dans l'avenir, c'est à dire d'après l'idée que l'on se fait de l'humanité.
@@ -1993,10 +2030,11 @@ content: >
 
 
 ---
-tags: alienation emancipation
-source: Comité Érotique Révolutionnaire
+tags: alienation emancipation human
 content: >
     Se battre pour orchestrer la musique d’un monde en prenant une place depuis laquelle on ne pourra faire changer ni le rythme ni la nature des sons, ni les instruments des musiciens ne nous intéresse plus. C’est changer radicalement de partition que nous désirons. Inventer une musique qui soit faite d’autre chose que de l’organisation machinale, aveugle, aliénante, déshumanisante de nos existences.
+source: >
+    Comité Érotique Révolutionnaire, [L'autonomie ou rien](http://lundi.am)
 
 
 ---
@@ -2007,8 +2045,9 @@ content: >
 
 
 ---
-tags: economy emancipation
-source: "Appel, bloom0101"
+tags: economy emancipation power
+source: Appel, bloom0101
+title: "L'argent c'est mal ?"
 content: >
     La question n'est pas de vivre avec ou sans argent, de voler ou d'acheter, de travailler ou non, mais d'utiliser l'argent que nous avons à accroître notre autonomie par rapport à la sphère marchande
 
@@ -2021,7 +2060,7 @@ content: >
     Le suffrage universel peut quelquefois protéger jusqu’à un certain point la bourgeoisie contre les empiétements du pouvoir central, sans qu’elle ait besoin de recourir constamment à la force pour se défendre. Il peut servir à rétablir l’équilibre entre deux forces qui se disputent le pouvoir, sans que les rivaux en soient réduits à se donner des coups de couteau, comme on le faisait jadis. Mais il ne peut aider en rien s’il s’agit de renverser ou même délimiter le pouvoir, d’abolir la domination. 
 
 
-    Excellent instrument pour résoudre d’une manière pacifique les querelles entre gouvernants, — de quelle utilité peut-il être pour les gouvernés ?
+    Excellent instrument pour résoudre d’une manière pacifique les querelles entre gouvernants, de quelle utilité peut-il être pour les gouvernés ?
 
 
 ---
@@ -2059,7 +2098,8 @@ content: La démocratie même est l’autre face du capital, non son contraire
 
 
 ---
-tags: education alienation power
+tags: education alienation power transmit
+title: Consentement
 source: "[Leanne Betasamosake Simpson](https://www.leannesimpson.ca/about/)"
 content: Si les enfants apprennent que la domination et l’absence de consentement sont normaux dans le contexte de l’éducation, l’absence de consentement devient un outil normal pour ceux qui détiennent et exercent le pouvoir.
 
@@ -2090,8 +2130,8 @@ content: >
 
 
 ---
-title: Vérité
-tags: truth
+title: "y = ax + b"
+tags: realize balance
 content: >
     La vérité, c'est qu'il y a une quantité incroyable de gouttes qui ne font pas déborder le vase
 
@@ -2122,20 +2162,20 @@ content: l'échec scolaire est une invention de l'école de la société du mala
 
 
 ---
-tags: life time
+tags: human time
 source: Gandhi
 content: Nous avons mieux à faire de la vie que d'en accélérer le rythme
 
 
 ---
-tags: time earth
+tags: time earth realize
 source: Pierre Rabhi
 content: >
     À l'échelle du temps géologique, nous sommes arrivés dans les trois dernières minutes d'une planète née il y a vingt-quatre heures.
 
 
 ---
-tags: slow science
+tags: science alienation time
 source: Pierre Rabhi, 24 août 2010
 content: >
     Nous vivons en disharmonie avec notre pulsion cardiaque qui nous dit : « tranquille, tranquille... » L'intelligence de la vie a mis en nous une cadence que la vitesse a changée. Parce que nous ne voulons pas renoncer à la frénésie, nous nous dotons d'instruments supplémentares pour la supporter. Et nous voici prolongés de téléphones et d'ordinateurs portables, appendices censés nous faciliter les choses, eux qui nous tiennent par le nombre fou de messages à traiter ou par leur incessante obsolescence. Car nous sommes dans le mythe d'un toujours plus indéfini, sans jamais pouvoir atteindre une satisfaction que nous plaçons de plus en plus haut.
@@ -2154,13 +2194,13 @@ content: Quand les choses se passent trop vite, personne ne peut être sûr de r
 
 
 ---
-tags: time
+tags: time history
 source: Milan Kundera, La Lenteur
 content: Le degré de la vitesse est directement proportionnel à l'intensité de l'oubli
 
 
 ---
-tags: group alienation
+tags: group power media
 source: Henry David Thoreau
 content: >
     C'est le voluptueux, c'est le dissipé, qui lancent les modes que si scrupuleusement suit le troupeau
@@ -2175,7 +2215,7 @@ content: >
 
 ---
 title: Chaos
-tags: void human
+tags: void human realize balance
 source: Pierre Rabhi
 content: >
     Le chaos, c’est soit le désastre définitif, et on n’en sort pas. Soit c’est la renaissance d’autre chose. Nous sommes dans une phase de chaotisation générale, le modèle de société sur lequel on a tout fondé arrive à sa fin
@@ -2333,7 +2373,7 @@ content: C'est quand chacun de nous attend que l'autre commence que rien ne se p
 
 
 ---
-tags: act zad
+tags: act
 source: "Art 35, Déclaration des droits de l'Homme et du citoyen"
 content: >
     Quand le gouvernement viole les droits du peuple, l'insurrection est, pour le peuple et pour chaque portion du peuple, le plus sacré des droits et le plus indispensable des devoirs
@@ -2388,27 +2428,39 @@ content: >
 
 
 ---
-tags: life
+tags: human
 source: Sénèque
 content: >
     La vie, ce n'est pas d'attendre que l'orage passe, c'est d'apprendre à danser sous la pluie
 
 
 ---
-tags: politics
+tags: politics realize power
 source: Ayn Rand
 content: >
-    *Quand vous vous rendez compte* que pour produire, vous avez besoin de l'autorisation de quelqu'un qui ne produit rien... *Quand vous vous rendez compte* que l'argent, c'est pour ceux qui font des affaires non pas avec des biens mais avec des faveurs... *Quand vous vous rendez compte* que beaucoup sont devenus riches avec des pots-de-vin et une influence plus que pour leur travail, et que la loi ne nous protège pas de ces individus, mais qu'elle les protège à eux... *Quand vous vous rendez compte* que la corruption est récompensée et que l'honnêteté mène vers le sacrifice de soi-même...
+    *Quand vous vous rendez compte* que pour produire, vous avez besoin de l'autorisation de quelqu'un qui ne produit rien...
 
 
-    Alors vous pouvez dire, sans avoir peur de vous tromper, que la société est condamnée
+    *Quand vous vous rendez compte* que l'argent, c'est pour ceux qui font des affaires non pas avec des biens mais avec des faveurs...
+
+
+    *Quand vous vous rendez compte* que beaucoup sont devenus riches avec des pots-de-vin et une influence plus que pour leur travail, et que la loi ne nous protège pas de ces individus, mais qu'elle les protège à eux...
+
+
+    *Quand vous vous rendez compte* que la corruption est récompensée et que l'honnêteté mène vers le sacrifice de soi-même...
+
+
+    Alors vous pouvez dire, sans avoir peur de vous tromper, que la société est condamnée.
 
 
 ---
-tags: human realize
+tags: human realize group act
 source: Anatole
 content: >
-    Le changement d'une seule personne, ça change tout. Surtout quand on sera 7 milliards à le penser
+    Le changement d'une seule personne, ça change tout.
+
+
+    Surtout quand on sera 7 milliards à le penser.
 
 
 ---
@@ -2540,6 +2592,7 @@ content: Adopte le rythme de la nature, son secret est la patience.
 
 ---
 tags: web words media alienation
+title: Je n'ai rien à cacher
 source: E. Snowden
 content: >
     Prétendre que votre droit à une sphère privée n'est pas important parce que vous n'avez rien à cacher n'est rien d'autre que dire que la liberté d'expression n'est pas essentielle, car vous n'avez rien à dire
@@ -2547,6 +2600,7 @@ content: >
 
 ---
 tags: education group
+title: Plus fort que moi grâce à l'autre
 source: Albert Jacquard, La Relève et la Peste
 content: >
     La morale collective actuelle nous fait croire que l'important, c'est de l'emporter sur les autres, de lutter, de gagner.
@@ -2555,11 +2609,11 @@ content: >
     Nous sommes dans une société de compétition, mais un gagnant est un fabriquant de perdants. Il faut rebâtir une société humaine où la compétition sera éliminée.
     
     
-    Je n'ai pas à être plus fort que l'autre. Je dois être plus fort que moi grâce à l'autre.
+    *Je n'ai pas à être plus fort que l'autre.* **Je dois être plus fort que moi grâce à l'autre.**
 
 
 ---
-tags: life
+tags: human
 source: Georges Perec
 content: >
     Vivre, c'est passer d'un espace à un autre, en essayant le plus possible de ne pas se cogner
@@ -2596,7 +2650,7 @@ content: >
 
 
 ---
-tags: life alienation
+tags: human alienation
 source: "[Pastiche d'un pourquoi](https://paris-luttes.info/pastiche-lecture-critique-4639)"
 content: >
     Je ne pourrais pas me contenter de considérer le monde comme un enchevêtrement d'événements parmi lesquels je ne ferais que passer, comme on passe dans le labyrinthe de ces grands magasins où, après y avoir pénétré, on ne circule qu'en pensant à en sortir
@@ -2608,7 +2662,7 @@ content: "La fin d'un monde s'annonce par des signes contradictoires"
 
 
 ---
-tags: life
+tags: human space
 content: >
     RUE de la loi
     
@@ -2635,8 +2689,9 @@ content: >
 
 
 ---
-tags: politics fear
+tags: emotion act politics
 source: Alain Damasio
+title: Surtout ne fais rien !
 content: >
     Nous vivons les années d'hiver de la sécurité, du confort glacé, de la peur gérée comme une variable de docilité optimale des populations.
 
@@ -2691,14 +2746,14 @@ content: Ce ne sont pas nos aptitudes qui montrent ce que nous sommes, ce sont n
 
 
 ---
-tags: life health
+tags: human health act
 source: Martin Luther King
 content: La vie est trop courte pour avoir les ongles propres
 
 
 ---
 tags: web group
-source: "[http://www.descolarisation.org](http://www.descolarisation.org)"
+source: "[descolarisation.org](http://www.descolarisation.org)"
 content: >
     Ne consommez pas ce site !
 
@@ -2773,8 +2828,7 @@ content: >
 
 
 ---
-tags: history
-tags: history
+tags: history power media
 source: Yona Friedman
 content: L'histoire se fait à l'insu de ceux qui la font
 
@@ -2790,7 +2844,7 @@ content: >
 
 
 ---
-tags: life realize
+tags: human realize balance
 source: Yona Friedman
 content: >
     Comprendre le monde, c'est admettre qu'il est incompréhensible. Alors, quoi faire ?
@@ -2846,7 +2900,7 @@ content: >
 
 
 ---
-tags: death group
+tags: group realize
 source: Martin Luther King
 content: Nous devons apprendre à vivre ensemble comme des frères, sinon nous allons mourir tous ensemble comme des idiots
 
@@ -2886,7 +2940,7 @@ content: >
 
 
 ---
-tags: zad
+tags: act group
 source: "[Lundi.am](https://lundi.am/Rennes-occupation-de-la-Maison-du-Peuple)"
 content: Mort au public. Vive le commun !
 
@@ -2899,7 +2953,7 @@ content: >
 
 
 ---
-tags: politics zad
+tags: politics act
 source: "[Lundi.am](https://lundi.am/Le-14-mai-manifestons-contre-les-violences-policieres)"
 content: >
     Derrière les affrontements avec la police il n’y a pas qu’un délire de jeunesse viriliste, mais la prise en compte d’un rapport de force, le début d’un retournement de la normalité, le refus de la place que l’on nous réserve.
@@ -2911,19 +2965,16 @@ content: On n'entre pas dans un monde meilleur sans effraction
 
 
 ---
-tags: life slow spirit
+tags: human spirit
 source: Dharmapada
 content: >
-    *Un moine demande :* peu importe
+    *— Un moine demande :*
+
+
+    Peu importe ce que la voie me réserve, mais quelle est-elle ?
     
 
-    Ce que la voie me réserve
-    
-
-    Mais quelle est-elle ?
-    
-
-    *Le maître zen répond :*
+    *— Le maître zen répond :*
     
 
     La voie est ta vie quotidienne.
@@ -2940,17 +2991,33 @@ content: >
 
 
 ---
-tags: slow spirit
+tags: spirit
 source: Fo-Sho Hintsan King
 content: >
     Celui qui se livre
+
+
     À des méditations claires
+    
+
     Trouve rapidement la joie
+    
+
     Dans tout ce qui est bon
+    
+
     Il voit
+    
+
     Que les richesses et la beauté
+    
+
     Sont impermanentes
+    
+
     Et que la sagesse
+    
+
     Est le plus précieux des joyaux
 
 
@@ -2991,7 +3058,7 @@ content: >
 
 
 ---
-tags: life death time
+tags: human time
 source: Basshô
 content: >
     Rien ne dit
@@ -3004,7 +3071,7 @@ content: >
 
 
 ---
-tags: life space spirit
+tags: human space spirit
 content: >
     Les fleurs tombent
 
@@ -3026,7 +3093,7 @@ content: >
 
 
 ---
-tags: life group
+tags: human group
 autor: Rykyû
 content: >
     Combats ta honte.
@@ -3048,20 +3115,17 @@ content: >
 
 
 ---
-tags: spirit words
+tags: spirit words health balance
 source: Maître Sozan
 content: >
-    Pour réaliser l'éveil ici et maintenant,
-    Nous devons être libérés
-    De l'idée du juste et du faux
+    Pour réaliser l'éveil ici et maintenant, nous devons être libérés de l'idée du juste et du faux.
 
 
-    Lorsque le juste et le faux se livrent bataille
-    L'esprit est malade
+    Lorsque le juste et le faux se livrent bataille, l'esprit est malade.
 
 
 ---
-tags: life
+tags: earth
 source: Zenki Shibayama
 content: >
     Ne dites pas que la lune existe
@@ -3077,7 +3141,7 @@ content: >
 
 
 ---
-tags: zad act
+tags: act
 source: "[Lettre aux mouvements, Rennes, 4 mai 2016](https://lundi.am/Un-zadiste-en-prison-Lettre-aux-mouvements)"
 content: >
     Nous n’avons pas encore gagné, le chemin sera peut-être encore long et douloureux, mais nous savons que nous voulons gagner d’un seul corps, que nos mouvements sont forts, que le pouvoir les craint comme la peste. Des cabanes de palettes de la ZAD aux maisons du peuple des centres-villes, des places occupées aux fermes qui ne veulent pas disparaître, il nous revient dès à présent de penser l’impossible.
@@ -3094,7 +3158,7 @@ content: >
 
 
 ---
-tags: zad act
+tags: act space
 source: "[Sur un mur exerçons le hasard](https://lundi.am/Sur-un-mur-exercons-le-hasard)"
 content: >
     Quoi qu’il arrive, partout, occuper et surgir est devenu une évidence : ZAD, Autoroutes, Rues, Ponts, Places, Immeubles, Théâtres, Cinémas, McDo, Supermarchés, Lycées, Universités, Maisons de Grève, Usines, Chantiers, Boulangeries (« on occupe même deux minutes » criait-on dans les cortèges).
@@ -3104,7 +3168,7 @@ content: >
 
 
 ---
-tags: fear
+tags: emotion
 source: "[Sur un mur exerçons le hasard](https://lundi.am/Sur-un-mur-exercons-le-hasard)"
 content: >
     Espérer ou craindre est une maladresse qui diffère l’action et la retarde en dévotions passives et tristes. Seule la compréhension de ce qui a *déjà eu lieu* et de ce qui est *maintenant en train de se faire* importe à ceux et celles qui font reposer l’avenir sur leurs forces actuelles. Craindre ou espérer, c’est négliger de se compter soi-même comme terme du problème.
@@ -3119,14 +3183,9 @@ content: >
 
 ---
 tags: economy
+title: Affronter le réel
 content: >
-    Affronter le réel, c'est cogner la finance, pas la jeunesse
-
-
----
-tags: alienation
-source: "[L'autonomie ou rien](lundi.am/)"
-content: C’est changer radicalement de partition que nous désirons. Inventer une musique qui soit faite d’autre chose que de l’organisation machinale, aveugle, déshumanisante de nos existences.
+    C'est cogner la finance, pas la jeunesse
 
 
 ---
@@ -3153,7 +3212,7 @@ content: >
 
 ---
 tags: suffer
-source: "[Crise Grecque: tentative de prise d'assaut d'un JT](lundi.am)"
+source: "[Crise Grecque: tentative de prise d'assaut d'un JT](http://lundi.am)"
 content: >
     Il est généralement admis qu’aucun être humain qui mène une vie prospère et sereine dans son propre pays ne s’aventure à le quitter dans de telles conditions sauf à y être forcé par les bombes ou la pauvreté.
 
@@ -3162,7 +3221,7 @@ content: >
 
 
 ---
-tags: life
+tags: love human
 source: "Sébastien Thiéry, [Considérant Calais](https://lundi.am/Considerant-Calais)"
 content: >
     Considérant qu’ici-même l’on habite, cuisine, danse, fait l’amour, fait de la politique, parle une vingtaine de langues, chante l’espoir et la peine, pleure et rit, contredit ô combien les récits dont indignés comme exaspérés s’enivrent, assoiffés des images du désastre, bourrés de plaintes, écoeurés par ce qui s’invente, s’affirme et déborde.
@@ -3234,19 +3293,19 @@ content: >
 
 
 ---
-tags: truth
+tags: alienation
 source: Kafka
 content: Un monde de mensonges ne peut être détruit par la vérité, seulement par un monde de vérité
 
 
 ---
 tags: energy
+title: Batteries renouvelables
 content: L’énergie la plus propre reste celle que l’on ne consomme pas
-tags: energy
 
 
 ---
-tags: alienation
+tags: alienation realize
 source: Alejandro Jodorowsky
 content: Un oiseau né en cage pense que voler est une maladie
 
@@ -3293,7 +3352,7 @@ content: La politique est à la fois l’art des choix sans retour et des longs 
 
 
 ---
-tags: slow time
+tags: time
 source: "[Le temps de l'État, Lundi.am](https://lundi.am/le-temps-de-l-etat)"
 content: >
     Un Empire qu’il est devenu inutile de prendre de vitesse tant il court seul à sa perte. Ce texte qui aurait pu être un éloge de la paresse, se termine discrètement en éloge de la patience.
@@ -3354,7 +3413,7 @@ content: Un raciste est quelqu'un qui se trompe de colère
 
 
 ---
-tags: fear
+tags: emotion
 source: Mark Twain
 content: >
     Dans 20 ans, vous regretterez davantage les choses que vous n'avez pas faites, plutôt que celles que vous avez faites. Alors sortez des sentiers battus. Mettez les voiles. Explorez. Rêvez. Découvrez.
@@ -3445,7 +3504,7 @@ content: Un végétarien en hummer pollue moins qu'un omnivore en vélo
 
 
 ---
-tags: words fear void
+tags: words emotion void
 source: A. Gramsci ou Le Forum du clair-obscur
 content: Le vieux monde se meurt, le nouveau monde tarde à apparaître et dans ce clair-obscur surgissent les monstres
 
@@ -3456,12 +3515,12 @@ content: À qui profite le crime ? minorités — privilégiées — urbaines �
 
 
 ---
-tags: violence fear
+tags: violence emotion
 content: Le silence de vos pantoufles ne masque pas le bruit des bottes
 
 
 ---
-tags: life
+tags: human alienation
 source: Comité invisible, À nos amis
 content: Au lieu des conditions de vie, on a mis des conditions à la vie
 
@@ -3552,27 +3611,27 @@ content: >
 
 
 ---
-tags: spirit human fear
+tags: spirit human emotion game
 source: Helen Keller
 content: >
     Aucun pessimiste n'a jamais découvert le secret des étoiles, navigué jusqu'à des terres inconnues, ou ouvert un nouveau chemin pour l'esprit humain
 
 
 ---
-tags: realize life
+tags: realize human emotion
 source: Anaïs Nin
 content: Vint un temps où le risque de rester à l'étroit dans un bourgeon était plus douloureux que le risque d'éclore
 
 
 ---
-tags: fear realize
+tags: emotion realize
 source: Lettres d'amour d'un soldat de vingt ans, Jacques Higelin
 content: >
     Les murs ça n'effraie que ceux qui restent plantés devant ! Même si on s'écorche en grimpant, même si on se blesse en retombant... on se repose, on attend que le souffle revienne pour la prochaine escalade. Mais ne rien entreprendre parce que le mur semble trop haut, se dire qu'on n'y arrivera jamais, autant se flinguer.
 
 
 ---
-tags: fear realize
+tags: emotion realize
 source: Mark Twain
 content: >
     Ils ne savaient pas que c'était impossible, alors ils l'ont fait
@@ -3659,7 +3718,7 @@ content: >
 
 
 ---
-tags: fear
+tags: emotion
 content: Arrêtez le monde, je voudrais descendre !
 
 
@@ -3689,7 +3748,8 @@ content: >
 
 
 ---
-tags: work human
+tags: work human economy alienation
+title: Qui es-tu ?
 source: Fight Club, Tyler
 content: >
     Vous n'êtes pas votre travail, vous n'êtes pas votre compte en banque, vous n'êtes pas votre voiture, vous n'êtes pas votre portefeuille, ni votre putain de treillis, vous êtes la merde de ce monde prête à servir à tout
@@ -3727,7 +3787,7 @@ content: La vie des pauvres doit être plus sacrée qu'une partie de la proprié
 
 
 ---
-tags: human
+tags: human love
 source: George Bernard Shaw
 content: >
     L'homme est le seul animal qui rougisse; c'est d'ailleurs le seul animal qui ait à rougir de quelque chose.
@@ -3774,7 +3834,7 @@ content: >
 
 
 ---
-tags: power suffer
+tags: power suffer law
 source: Sam Bellamy, pirate en 1720
 content: >
     Ils nous condamnent, ces crapules, alors que la seule différence entre nous, c'est qu'ils volent les pauvres grâce à la loi, et que nous pillons les riches armés de notre seul courage
@@ -3801,20 +3861,40 @@ tags: media companies
 source: "Manifeste des [Engraineurs](http://www.collectif-lesengraineurs.com/)"
 content: >
     Stop à la soupe néolibérale
+
+
     qui désigne précaires et étrangers
+
+
     comme la cause de nos maux
+
+
     quand une poignée d'oligarques
+
+
     spolient de leur droits essentiels
+
+
     99% de l'humanité !
-    le système formate nos désirs et nos pensées
+
+
+    Le système formate nos désirs et nos pensées
+
+
     s'immisce dans notre intimité
+
+
     empoisonne notre santé
+
+
     condamne à l'exclusion les indisciplinés
+
+
     au seul profit de ces privilégiés
 
 
 ---
-tags: time life human
+tags: time human
 content: La vie est courte, il faut savoir prendre son temps !
 
 
@@ -3826,7 +3906,7 @@ content: >
 
 
 ---
-tags: creation fun group words
+tags: creation game group words
 source: Mona Chollet, Manière de voir 136, p. 93
 content: >
     Il faut bien le reconnaître: nous sommes mal armés pour procéder à cette nécessaire révolution de la pensée. Dans "pour sauver la planète, sortez du capitalisme", Kempf souligne la difficulté: il appartient a la jeune génération de devoir "réinventer des solidarités, quand le conditionnement social lui répète sans cesse que l'individu est tout". Il fait remarquer que le discours de l'écologie marchande s'adresse toujours à des individus: on y parle des "bons gestes" que chacun est censé accomplir pour "sa" planète, dans "sa" maison..." Où sont les propositions actives rendant possible et désirable de faire autrement, c'est-à-dire d'abord ensemble, les uns pour mais surtout avec les autres ?" interroge en écho Stengers. Où sont les choix concrets et négociés collectivement? Où sont les récits peuplant les imaginations, partageant réussites et apprentissages ? Où sont, à l'école, les modes de travail qui créeraient le goût de la coopération exigeante et l'expérience de la force d'un collectif qui œuvre a réussir tous ensemble, contre l'évaluation qui sépare et juge ? Il faut se souvenir de tout cela, c'est-à-dire de la manière dont nous sommes formés activés, capturés, vidés.
@@ -3942,8 +4022,7 @@ content: >
 
 
 ---
-tags: slow
-source: l'An 01
+tags: time realize
 content: >
     On arrête tout
 
@@ -3952,6 +4031,7 @@ content: >
 
 
     Et c'est pas triste
+source: "[L'an 01](https://www.youtube.com/watch?v=_lgJbU3J7hw), Jacques Doillon, Gébé, Alain Resnais, Jean Rouch, 1973"
 
 
 ---
@@ -3961,7 +4041,7 @@ content: >
 
 
 ---
-tags: fun love slow
+tags: game love human
 source: Evelyne Pieiller, Manière de voir 136, p.90
 content: >
     Il n'y a pas de recette formelle
@@ -4029,7 +4109,7 @@ content: >
 
 
 ---
-tags: fear realize act
+tags: emotion realize act
 source: Sénèque
 content: >
     Ce n'est pas parce que les choses sont difficiles que nous n'osons pas, mais parce que nous n'osons pas qu'elles sont difficiles
@@ -4076,10 +4156,10 @@ content: La politique est tout autant affaire de désir et de fantasme que de ra
 
 
 ---
-tags: void space attention
+tags: void space focus
 source: "[bloom0101](http://bloom0101.org)"
 content: >
-    Il n’y a pas de vide, tout est habité, nous sommes chacun d’entre nous le lieu de passage et de nouage de quantités d’affects, de lignées, d’histoires, de significations, de flux matériels qui nous excèdent. [...]
+    Il n’y a pas de vide, tout est habité, nous sommes chacun d’entre nous le lieu de passage et de nouage de quantités d’affects, de lignées, d’histoires, de significations, de flux matériels qui nous excèdent.
     
 
     Construire un monde, c’est construire un ordre, faire une place ou pas à chaque chose, à chaque être, à chaque penchant, et penser cette place, la changer s’il le faut.
@@ -4099,8 +4179,8 @@ content: >
 
 
 ---
-tags: suffer fear
-source: "[LANDEYves](https://twitter.com/LANDEYves/status/665317969057071105)"
+tags: suffer emotion
+source: "[LANDE Yves](https://twitter.com/LANDEYves/status/665317969057071105)"
 content: >
     Imaginez cette soirée qui se répète.
 
@@ -4125,14 +4205,14 @@ content: On ne règle pas un problème en utilisant le système de pensée qui l
 
 
 ---
-tags: power attention
+tags: power focus
 source: Malcolm X
 content: >
     Si vous n'êtes pas vigilants, les médias arriveront à vous faire détester les gens opprimés et aimer ceux qui les oppriment.
 
 
 ---
-tags: power attention
+tags: power focus
 content: >
     Nous déléguons tous nos pouvoirs aux puissances d'argent : s'informer, se nourrir, se déplacer, communiquer, il n'y a plus une seule chose quotidienne que nous soyons capable d'assumer par nos propres moyens.
 
@@ -4157,21 +4237,21 @@ content: >
 
 
 ---
-tags: power realize truth
+tags: power realize love
 source: Le Tour de France des Alternatives, collection Reporterre dirigée par Hervé Kempf, 2014
 content: >
-    Il ne s’agit plus de faire la liste, connue jusqu’à la nausée, des **non** de ce que nous refusons, mais d’élaborer collectivement des **oui** qui caractérisent les mondes que nous voulons
+    Il ne s’agit plus de faire la liste, connue jusqu’à la nausée, des *non* de ce que nous refusons, mais d’élaborer collectivement des *oui* qui caractérisent les mondes que nous voulons
 
 
 ---
-tags: truth creation
+tags: love creation
 source: proverbe Yuocmyn
 content: Oublie le vrai, oublie le faux, seul le rêve peut transformer le monde
 
 
 ---
-tags: companies fear suffer
-source: "[Infokiosques.net](http://www.infokiosques.net), qu'est-ce qu'un infokiosque ?"
+tags: companies emotion suffer
+source: "Qu'est-ce qu'un [Infokiosques.net](http://www.infokiosques.net) ?"
 content: >
     Cette société nous pose question, nous empêche de vivre. Parfois elle nous fait vomir, toujours elle nous révolte. Capitalisme, patriarcat, rapports de domination, désastres écologiques, forces étatiques, de quoi faire frémir toute notre bile. Parfois nous voudrions cultiver cette bile, comment dire, l’approfondir, la relever, la garnir de données, d’arguments, d’idées d’action. Mieux connaître ce que nous critiquons pour mieux savoir ce que nous vomissons et comment nous le vomissons.
 
@@ -4184,11 +4264,11 @@ content: >
 
 
 ---
-title: État.s
+title: État.s du Peuple
 tags: politics power
 source: Comité invisible, À nos amis, p.162
 content: >
-    Le gouvernement, c'est denier au peuple toute capacité politique au delà de son vote.
+    Le gouvernement, c'est dénier au peuple toute capacité politique au delà de son vote.
 
 
 ---
@@ -4216,21 +4296,21 @@ content: >
 
 
 ---
-tags: realize fun act attention
+tags: realize game act focus
 source: Guy Debord
 content: >
     L'ennui est toujours contre-révolutionnaire. Toujours.
 
 
 ---
-tags: zad realize act attention
+tags: realize act focus space
 source: Comité invisible, À nos amis, p.186
 content: >
     Faire sécession, c'est habiter un territoire, assumer notre configuration situé du monde, notre façon d'y demeurer, la forme de vie et les vérités qui nous portent, et depuis là entre en conflit ou en complicité
 
 
 ---
-tags: power group fear
+tags: power group emotion
 source: Comité invisible, À nos amis, p.231
 content: >
     Notre force ne naîtra pas de la désignation de l'ennemi, mais de l'effort fait pour entrer les uns dans la géographie des autres.
@@ -4265,10 +4345,16 @@ content: >
 
 
 ---
-tags: creation words life
+tags: creation words human
 source: Hervé Le Tellier, dialogues socratiques
 content: >
-    Pour l'aveugle, l'oiseau chante. Pour le sourd, l'oiseau vole. Qui dit vrai ? Demande au muet.
+    Pour l'aveugle, l'oiseau chante.
+
+
+    Pour le sourd, l'oiseau vole.
+
+
+    Qui dit vrai ? Demande au muet.
 
 
 ---
@@ -4311,7 +4397,7 @@ content: >
 ---
 tags: media
 content: >
-    [la gueule ouverte](http://lagueuleouverte.info/), le journal qui confirme la fin du monde
+    [La gueule ouverte](http://lagueuleouverte.info/), le journal qui confirme la fin du monde
 
 
 ---
@@ -4335,7 +4421,7 @@ content: >
 ---
 tags: genre group
 content: >
-    [http://www.lallab.org/](Lallab) est un magazine en ligne et une association dont le but est de faire entendre les voix des femmes musulmanes pour lutter contre les oppressions racistes et sexistes. Nous façonnons un monde dans lequel les femmes choississent en toute liberté les armes de leur émancipation
+    [Lallab](http://www.lallab.org/) est un magazine en ligne et une association dont le but est de faire entendre les voix des femmes musulmanes pour lutter contre les oppressions racistes et sexistes. Nous façonnons un monde dans lequel les femmes choississent en toute liberté les armes de leur émancipation
 
 
 ---
@@ -4425,7 +4511,9 @@ content: >
 ---
 tags: video politics
 content: >
-    [Game of Fraude](https://www.youtube.com/watch?v=mvY16tpFRr0), clip de campagne officiel d'[Alessandro Di Giuseppe](https://adg2017.fr/): Travaille, obéis, consomme
+    Travaille, obéis, consomme
+source: >
+    [Game of Fraude](https://www.youtube.com/watch?v=mvY16tpFRr0), clip de campagne officiel d'[Alessandro Di Giuseppe](https://adg2017.fr/)
 
 
 ---
@@ -4441,13 +4529,17 @@ content: >
 
 
 ---
-tags: audio
+tags: audio game group
 content: >
-    [Les potes à Jé](https://www.youtube.com/watch?v=GTuoo1X0YfY): *C'est quoi notre quartier ? C'est le potager. Qu'est ce qui fait kiffer ? Etre à walpé*
+    C'est quoi notre quartier ? C'est le potager.
+
+
+    Qu'est ce qui fait kiffer ? Etre à walpé.
+source: "[Les potes à Jé](https://www.youtube.com/watch?v=GTuoo1X0YfY)"
 
 
 ---
-tags: calendar
+tags: calendar map
 content: >
     Pour sortir à Bruxelles: [Bruxelles brûle-t'il ?](http://feu.ultravnr.be/)
 
@@ -4467,7 +4559,8 @@ content: >
 ---
 tags: image genre
 content: >
-    [The Women project](https://www.carolrossetti.com.br/women), par Carol Rossetti
+    [The Women project](https://www.carolrossetti.com.br/women)
+source: Carol Rossetti
 
 
 ---
@@ -4525,21 +4618,10 @@ content: >
 
 
 ---
-tags: text politics
+tags: creation video space
 content: >
-    [Jean Jaurès, 1906](http://www.revolutionpermanente.fr/Jean-Jaures-1906-Le-patronat-n-a-pas-besoin-lui-pour-exercer-une-action-violente-de-gestes) : Tandis que l’acte de violence de l’ouvrier apparaît toujours, est toujours défini, toujours aisément frappé, la responsabilité profonde et meurtrière des grands patrons, des grands capitalistes, elle se dérobe, elle s’évanouit dans une sorte d’obscurité
-
-
----
-tags: creation video
-content: >
-    [X-Ville](https://vimeo.com/139342392) : des dizaines d’habitants donnent vie aux mots dans leur ville de carton peint. Jordi Colomer y met en scène la société urbaine moderne et rejoue à inventer le monde en interrogeant, joyeusement, ce qui sépare le réalisable de l’utopique, l’utile de l’inutile, l’individu du collectif
-
-
----
-tags: text politics
-content: >
-    [Utopies réalisables](http://recherche-action.fr/labo-social/download/Livres%20num%C3%A9riques/Utopies%20r%C3%A9alisables.pdf), de Yona Friedman : L'existence d'un *État mafia* est la conséquence de l'impossibilité du maintien de l'État démocratique classique dès que ses dimensions dépassent certaines limites
+    [X-Ville](https://vimeo.com/139342392) : Des dizaines d’habitants donnent vie aux mots dans leur ville de carton peint. 
+source: Jordi Colomer
 
 
 ---
@@ -4569,7 +4651,9 @@ content: >
 ---
 tags: web emancipation text
 content: >
-    [Manifeste de la guérilla pour le libre acccès](http://framablog.org/2013/01/14/manifeste-guerilla-libre-acces-aaron-swartz/), par Aaron Swartz : Nous avons besoin de récolter l’information où qu’elle soit stockée, d’en faire des copies et de la partager avec le monde. Nous devons nous emparer du domaine public et l’ajouter aux archives. Nous devons acheter des bases de données secrètes et les mettre sur le Web. Nous devons télécharger des revues scientifiques et les poster sur des réseaux de partage de fichiers. Nous devons mener le combat de la guérilla pour le libre accès.
+    Nous avons besoin de récolter l’information où qu’elle soit stockée, d’en faire des copies et de la partager avec le monde. Nous devons nous emparer du domaine public et l’ajouter aux archives. Nous devons acheter des bases de données secrètes et les mettre sur le Web. Nous devons télécharger des revues scientifiques et les poster sur des réseaux de partage de fichiers. Nous devons mener le combat de la guérilla pour le libre accès.
+source: >
+    [Manifeste de la guérilla pour le libre acccès](http://framablog.org/2013/01/14/manifeste-guerilla-libre-acces-aaron-swartz/), Aaron Swartz
 
 
 ---
@@ -4615,9 +4699,10 @@ content: >
 
 
 ---
-tags: text philo
+tags: text philo space
 content: >
-    [Hétérotopies, des espaces autres](http://foucault.info/doc/documents/heterotopia/foucault-heterotopia-en-html), Michel Foucault, 1967
+    [Hétérotopies, des espaces autres](http://foucault.info/doc/documents/heterotopia/foucault-heterotopia-en-html)
+source: Michel Foucault, 1967
 
 
 ---
@@ -4639,7 +4724,7 @@ content: >
 
 
 ---
-tags: text zad
+tags: text act
 content: >
     [Prise de parole](http://parolesdecampagne.blogspot.fr/2016/03/prise-de-parole-de-ladeca-le-27022016.html?utm_source=feedburner&utm_medium=email&utm_campaign=Feed:+ParolesDeCampagneNotre-dame-des-landes+%28Paroles+de+campagne+%3Cbr%3ENotre-Dame-des-Landes%29) de l'ADECA (Association de Défense des Exploitants Concernés par l'Aéroport NDDL), le 27/02/2016 
 
@@ -4669,7 +4754,7 @@ content: >
 
 
 ---
-tags: calendar space fun
+tags: calendar space game
 content: >
     Tous les ans, [La voie est libre](http://www.lavoieestlibre.org/) investit une portion de l'autoroute A186 à Montreuil (3ème weekend de septembre) pour une journée festive, gratuite, ludique, insouciante et joyeuse
 
@@ -4683,7 +4768,8 @@ content: >
 ---
 tags: companies media alienation
 content: >
-    Nos mythologies économiques, d'Eloi Laurent - sur France Inter : [Le télespectateur otage de la pensée néolibérale](http://www.franceinter.fr/emission-l-instant-m-le-telespectateur-est-il-otage-de-la-pensee-neoliberale)
+    Nos mythologies économiques, [Le télespectateur otage de la pensée néolibérale](http://www.franceinter.fr/emission-l-instant-m-le-telespectateur-est-il-otage-de-la-pensee-neoliberale)
+source: Eloi Laurent, France Inter
 
 
 ---
@@ -4711,7 +4797,7 @@ content: >
 
 
 ---
-tags: video zad
+tags: video act
 content: >
     Janvier 2016: micro-trottoir de [Lundimatin](https://lundi.am/Micro-trottoir-a-la-Zad-de-Notre-Dame-des-Landes) à Notre-Dame-des-Landes: [Que sera la ZAD dans 10 ans ?](https://www.youtube.com/watch?v=SnxyG--4Ipo)
 
@@ -4719,8 +4805,8 @@ content: >
 ---
 tags: video words
 content: >
-    [L'Arbre, le maire et la médiathèque](https://www.youtube.com/watch?v=vFCBUorFv74), d'Eric Rohmer (1993). plus que jamais d'actualité, à voir et revoir
-
+    [L'Arbre, le maire et la médiathèque](https://www.youtube.com/watch?v=vFCBUorFv74), plus que jamais d'actualité, à voir et revoir
+source: Eric Rohmer, 1993
 
 ---
 tags: law tool politics
@@ -4749,7 +4835,8 @@ content: >
 ---
 tags: emancipation space
 content: >
-    [Zomia, ou l'art de ne pas être gouverné](http://www.contretemps.eu/lectures/propos-zomia-lart-ne-pas-%C3%AAtre-gouvern%C3%A9-james-c-scott), de James C. Scott
+    [Zomia, ou l'art de ne pas être gouverné](http://www.contretemps.eu/lectures/propos-zomia-lart-ne-pas-%C3%AAtre-gouvern%C3%A9-james-c-scott)
+source: James C. Scott
 
 
 ---
@@ -4789,7 +4876,7 @@ content: >
 
 
 ---
-tags: politics text zad
+tags: politics text act
 content: >
     [Notre-Dame-des-Landes : Nous accusons !](http://www.reporterre.net/Notre-Dame-des-Landes-Nous-accusons) résumé des mensonges, manipulations et provocations que commettent responsables politiques et administration sur le dossier de Notre-Dame-des-Landes
 
@@ -4801,7 +4888,7 @@ content: >
 
 
 ---
-tags: text philo slow
+tags: text philo time
 content: >
     On débranche tout, on réfléchit, et c’est pas triste: [L’An 02](http://www.lan02.org/) est un outil écolo de diffusion et de partage, un passeur d’idées hors des cercles confidentiels. Il propose une livraison de chroniques de livres récents qui nous aident à penser l’écologie politique, la décroissance et la technocritique
 
@@ -4819,7 +4906,7 @@ content: >
 
 
 ---
-tags: control politics
+tags: power politics law
 content: >
     [Assignez-moi](https://entreleslignesentrelesmots.wordpress.com/2015/12/13/assignez-moi-lettre-ouverte-a-monsieur-le-ministre-de-linterieur/) ! lettre ouverte au ministre de l'intérieur
 
@@ -4831,7 +4918,7 @@ content: >
 
 
 ---
-tags: control politics
+tags: politics group
 content: >
     [Coalition Internationale Anti Guerre](https://coalitioninternationaleantiguerreblog.wordpress.com/) et la pétition [À quoi sert leur guerre ?](https://www.change.org/p/a-toutes-et-tous-a-qui-sert-leur-guerre)
 
@@ -4873,7 +4960,7 @@ content: >
 
 
 ---
-tags: map list tool slow
+tags: map list tool
 content: >
     [Ecoclash](http://ecoclash.jimdo.com/): Partage de savoirs, Infokiosque, videokiosque, alternatives pratiques, autoconstruction, décroissance, permaculture, ecovillage, communauté, écologie, anarchie, résistance, altermondialisme, freegan, squat, action directe... voir le [wiki des Lieux de vie ouvert](http://sharewiki.org/en/Lieu_de_vie_ouvert)
 
@@ -4891,7 +4978,7 @@ content: >
 
 
 ---
-tags: companies words earth
+tags: companies words earth balance media
 content: >
     Les [Prix Pinocchio du Climat](http://www.prix-pinocchio.org) donnent à voir l’écart entre les discours de certaines entreprises et leurs activités concrètes
 
@@ -4899,7 +4986,8 @@ content: >
 ---
 tags: audio politics
 content: >
-    [Daesh: autopsie d'un monstre](http://www.franceinter.fr/emission-lenquete-daesh-autopsie-dun-monstre) (France Inter - 20/11/2015). Des anciens diplomates et agents de la DGSE racontent comment Etats-Unis, Arabie Saoudite, Qatar et France ont soutenu financièrement et armé les groupes djihadistes en Irak et en Syrie
+    [Daesh: autopsie d'un monstre](http://www.franceinter.fr/emission-lenquete-daesh-autopsie-dun-monstre) : des anciens diplomates et agents de la DGSE racontent comment Etats-Unis, Arabie Saoudite, Qatar et France ont soutenu financièrement et armé les groupes djihadistes en Irak et en Syrie
+source: France Inter, 20/11/2015
 
 
 ---
@@ -4933,7 +5021,7 @@ content: >
 
 
 ---
-tags: media slow list
+tags: media time list
 content: >
     [Revues de presse de la décroissance](http://www.scoop.it/u/aquitaine-decroissance), par [Aquitaine décroissance](http://aquitainedecroissance.org/)
 
@@ -4945,19 +5033,21 @@ content: >
 
 
 ---
-tags: media act zad
+tags: media act
 content: >
     [Anticop21](http://anticop21.org/): La Conférence de Paris sur les changements climatiques aura lieu du 30 novembre au 11 décembre. De nombreuses mobilisations sont prévues à cette occasion
 
 
 ---
-tags: video zad
+tags: video act
 content: >
-    [Les sentiers de l'utopie](https://vimeo.com/21919175) et son [blog](https://lessentiersdelutopie.wordpress.com), un livre-film d'Isabelle Fremeaux et John Jordan, du [Labofii](http://labofii.net/)
+    [Les sentiers de l'utopie](https://vimeo.com/21919175) et son [blog](https://lessentiersdelutopie.wordpress.com), un livre-film
+source: >
+    Isabelle Fremeaux et John Jordan, du [Labofii](http://labofii.net/)
 
 
 ---
-tags: video zad
+tags: video act
 content: >
     Tourné de 2012 à 2014, [Le dernier continent](http://lederniercontinent.tumblr.com/) fait le portrait subjectif de la ZAD de Notre-Dame-des-Landes et de ses habitant.e.s
 
@@ -4975,7 +5065,7 @@ content: >
 
 
 ---
-tags: map zad
+tags: map act
 content: >
     The [environmental justice atlas](http://ejatlas.org/) recense les ZAD du monde entier
 
@@ -5007,7 +5097,9 @@ content: >
 ---
 tags: image companies
 content: >
-    [Les bons labels et les truands](http://www.eco-sapiens.com/labels-eco-consommation.php), pour bien trier nos achats, par [eco-sapiens](http://www.eco-sapiens.com)
+    [Les bons labels et les truands](http://www.eco-sapiens.com/labels-eco-consommation.php), pour bien trier nos achats
+source: >
+    [eco-sapiens](http://www.eco-sapiens.com)
 
 
 ---
@@ -5035,7 +5127,7 @@ content: >
 
 
 ---
-tags: suffer home act zad text
+tags: suffer home act text
 content: >
     Montreuil: [récit de l’expulsion](https://fr.squat.net/2015/10/30/montreuil-93-recit-de-l-expulsion-du-6-rue-de-la-renardiere/) du 6 rue de la Renardière. Aucune expulsion n'est «normale», aucune brutalité policière n'est «normale»
 
@@ -5077,22 +5169,24 @@ content: >
 
 
 ---
-tags: text
+tags: text emancipation
 content: >
-    [Le pas de coté](http://www.lepasdecote.fr): des livres contre la machine
+    [Le pas de coté](http://www.lepasdecote.fr) — des livres contre la machine
 
 
 ---
 tags: economy video
 content: >
-    La dette des gouvernements, des entreprises et des ménages a atteint des proportions astronomiques et enfle démesurément de jour en jour. D'ou vient tout cet argent ? [L'argent dette](https://www.youtube.com/watch?v=kgA2-bWXSN4), Paul Grignon, 2010
+    La dette des gouvernements, des entreprises et des ménages a atteint des proportions astronomiques et enfle démesurément de jour en jour. D'ou vient tout cet argent ?
+source: >
+    [L'argent dette](https://www.youtube.com/watch?v=kgA2-bWXSN4), Paul Grignon, 2010
 
 
 ---
 tags: video education emancipation
 content: >
-    Le film [Être et devenir](http://www.etreetdevenir.com): et si nous faisions le choix de ne pas scolariser nos enfants ?
-
+    Et si nous faisions le choix de ne pas scolariser nos enfants ?
+source: "Le film [Être et devenir](http://www.etreetdevenir.com)"
 
 ---
 tags: video group media
@@ -5139,19 +5233,16 @@ content: >
 ---
 tags: work text education
 content: >
-    Manifeste: [Pour un statut politique du producteur](http://www.reseau-salariat.info/c816e944574e2433044fa465bae47423?lang=fr), par le [réseau salariat](http://www.reseau-salariat.info), association d'éducation populaire
+    Manifeste: [Pour un statut politique du producteur](http://www.reseau-salariat.info/c816e944574e2433044fa465bae47423?lang=fr)
+source: >
+    [réseau salariat](http://www.reseau-salariat.info), association d'éducation populaire
 
 
 ---
 tags: map image
 content: >
-    réédition de la belle [planisphère](http://les-volets-jaunes.org/planispheres-renversantes/), carte du monde géniale (dans le bon sens), par l'association les volets jaunes
-
-
----
-tags: map list
-content: >
-    La [Caravane des alternatives](http://caravanedesalternatives.weebly.com/): réseau de 3000 lieux alternatifs référencés par département: livres téléchargeables, autonomie alimentaire, autoconstruction, médecine par les plantes, autogestion: [l'annuaire alternatif](http://www.fichier-pdf.fr/2015/04/23/annuairealternatifdunecaravanedesalternativesavril2015/), [le livre de connaissances](http://www.fichier-pdf.fr/2015/04/23/livresdeconnaissancesdunecaravanedesalternativesavril2015/), des [compléments alimentaires](http://www.fichier-pdf.fr/2015/04/23/livrecomplalimentairedunecaravanedesalternativesavril2015/), projet [1 million d'arbres](http://www.fichier-pdf.fr/2015/05/14/livreplantons1milliondarbresmai2015/)... [soutenez la caravane](https://www.leetchi.com/c/solidarite-de-caravane-des-alternatives) !
+    réédition de la belle [planisphère](http://les-volets-jaunes.org/planispheres-renversantes/), carte du monde géniale (dans le bon sens)
+source: association les volets jaunes
 
 
 ---
@@ -5245,7 +5336,7 @@ content: >
 
 
 ---
-tags: group object slow
+tags: group object
 content: >
     [ère d'évolution](http://www.rdevolution.org/) et la Ressourcerie du Pont
 
@@ -5269,7 +5360,7 @@ content: >
 
 
 ---
-tags: love group
+tags: love group spirit
 content: >
     [Rainbow Family France](http://rainbowfamilyfrance.wordpress.com/), rencontres en pleine Nature, non commerciale, dans un esprit de partage et d’échanges, une sorte d’anarchie tribale spirituelle, sans chef ni gourou, ni leader
 
@@ -5361,7 +5452,7 @@ content: >
 ---
 tags: eat map emancipation
 content: >
-    [La conquète du pain](https://laconquetedupainmontreuil.wordpress.com/), boulangerie bio autogérée à Montreuil
+    [La conquète du pain](https://laconquetedupainmontreuil.wordpress.com/) — boulangerie bio autogérée à Montreuil
 
 
 ---
@@ -5421,13 +5512,16 @@ content: >
 ---
 tags: map list
 content: >
-    [Répertoire des cartes des alternatives](http://www.scoop.it/t/les-cartes-des-alternatives), [Hétérotopies](http://heterotopies.overblog.com), par [Via Brachy](http://www.viabrachy.com/)
+    [Répertoire des cartes des alternatives](http://www.scoop.it/t/les-cartes-des-alternatives), [Hétérotopies](http://heterotopies.overblog.com)
+source: >
+    [Via Brachy](http://www.viabrachy.com/)
 
 
 ---
 tags: video politics
 content: >
-    [La dialectique peut-elle casser des briques ?](https://www.youtube.com/watch?v=Anr2d_Tuakg) de René Viénet, 1973; Le scénario détourné relate comment des prolétaires tentent de venir à bout de bureaucrates grâce à la dialectique et à la subjectivité radicale
+    [La dialectique peut-elle casser des briques ?](https://www.youtube.com/watch?v=Anr2d_Tuakg) — des prolétaires tentent de venir à bout de bureaucrates grâce à la dialectique et à la subjectivité radicale
+source: René Viénet, 1973
 
 
 ---
@@ -5437,9 +5531,10 @@ content: >
 
 
 ---
-tags: video zad
+tags: video act
 content: >
-    [Je lutte donc je suis](http://jeluttedoncjesuis.net/), de Yannis Youlountas, visionable [en ligne](https://www.youtube.com/watch?v=97HTxo20c-E)
+    [Je lutte donc je suis](http://jeluttedoncjesuis.net/), visionable [en ligne](https://www.youtube.com/watch?v=97HTxo20c-E)
+source: Yannis Youlountas
 
 
 ---
@@ -5449,7 +5544,7 @@ content: >
 
 
 ---
-tags: space calendar act zad
+tags: space calendar act
 content: >
     [Marche sur la cop](http://marchesurlacop.noblogs.org/), appel à former convois, marches, tracto-vélos pour se rendre aux manifestations contre la COP 21. Nous cheminerons depuis des territoires en lutte jusqu’à la capitale, avec toute l’énergie composite de nos mouvements, en créant en route des espaces de rencontres et de mobilisation.
 
@@ -5565,7 +5660,8 @@ content: >
 ---
 tags: politics text
 content: >
-    [Grèce, revue de presse d'une guerre contre les peuples](https://france.attac.org/se-mobiliser/avec-les-grecs-contre-l-austerite-pour-la-democratie/article/grece-revue-de-presse-d-une-guerre-contre-les-peuples), Attac
+    [Grèce, revue de presse d'une guerre contre les peuples](https://france.attac.org/se-mobiliser/avec-les-grecs-contre-l-austerite-pour-la-democratie/article/grece-revue-de-presse-d-une-guerre-contre-les-peuples)
+source: Attac
 
 
 ---
@@ -5590,13 +5686,14 @@ content: >
 ---
 tags: earth audio
 content: >
-    [Mer poubelle](http://www.franceculture.fr/emission-du-grain-a-moudre-d-ete-mer-poubelle-par-ou-commencer-le-grand-nettoyage-2015-07-10): pollution des océans, France Culture
+    [Mer poubelle](http://www.franceculture.fr/emission-du-grain-a-moudre-d-ete-mer-poubelle-par-ou-commencer-le-grand-nettoyage-2015-07-10) — pollution des océans
+source: France Culture
 
 
 ---
 tags: companies words
 content: >
-    [J'ai rencontré ceuxquifont (de la merde)](http://www.lepostillon.org/J-ai-rencontre-Ceuxquifont-de-la.html): génération Y des makers: ils font quoi ? peu importe
+    [J'ai rencontré ceux qui font](http://www.lepostillon.org/J-ai-rencontre-Ceuxquifont-de-la.html) (de la merde) — génération Y des makers : ils font quoi ? peu importe.
 
 
 ---
@@ -5630,9 +5727,10 @@ content: >
 
 
 ---
-tags: zad video audio
+tags: video audio act
 content: >
-    [gardien de la paix, es-tu bien sûr que c'est elle que tu gardes ?](https://www.youtube.com/watch?v=41dQd6Qkk0E) par Luciole
+    [gardien de la paix, es-tu bien sûr que c'est elle que tu gardes ?](https://www.youtube.com/watch?v=41dQd6Qkk0E)
+source: Luciole
 
 
 ---
@@ -5660,12 +5758,6 @@ content: >
 
 
 ---
-tags: economy group politics
-content: >
-    [collectif pour un audit citoyen de la dette publique](http://www.audit-citoyen.org/)
-
-
----
 tags: genre text words
 content: >
     [ça fait genre](http://cafaitgenre.org), decryptage des discours et représentations sur le genre
@@ -5684,27 +5776,15 @@ content: >
 
 
 ---
-tags: slow map list
+tags: list map
 content: >
     [Semeoz.info](http://semeoz.info/), Observatoire des pratiques collaboratives et constructives: Fédérer les initiatives d'une société civile qui s'affranchit des codes, clivages, gouvernances, pratiques, méthodes ou usages classiques
 
 
 ---
-tags: energy group list slow
+tags: energy group list
 content: >
     [éconologie](http://www.econologie.com/): économie, écologie, environnement, une mine de liens et de projets
-
-
----
-tags: work economy creation
-content: >
-    [créations autour du revenu de base](http://www.creations-revenusdebase.org/)
-
-
----
-tags: economy group politics
-content: >
-    [Mouvement français pour un revenu de base](http://revenudebase.info/), et [Appel pour le revenu de vie](http://appelpourlerevenudevie.org/), automatique, inconditionnel et inaliénable
 
 
 ---
@@ -5782,11 +5862,12 @@ content: >
 ---
 tags: education alienation video
 content: >
-    [changer de paradigme pour l'éducation](https://www.youtube.com/watch?v=deYjatIfWVU), par Ken Robinson
+    [changer de paradigme pour l'éducation](https://www.youtube.com/watch?v=deYjatIfWVU)
+source: Ken Robinson
 
 
 ---
-tags: slow video
+tags: video economy time
 content: >
     [Marc Halévy](http://universitehommesentreprises.com/20eme-universite-hommes-entreprises/marc-halevy), pour une autre croissance
 
@@ -5798,19 +5879,19 @@ content: >
 
 
 ---
-tags: home slow work
+tags: home work
 content: >
     rencontrer, travailler et se loger par le [woofing](http://wwoof.fr/)
 
 
 ---
-tags: home slow object
+tags: home object tool
 content: >
     [Habiter autrement](http://www.habiter-autrement.org/), portail des habitats et modes de vie alternatifs, des réalisations innovantes, simples, reproductibles, des bricolages dans les marges pour une autre société
 
 
 ---
-tags: home slow object
+tags: home object space
 content: >
     [HALEM](http://www.halemfrance.org/) HAbitantEs de Logements Ephémères ou Mobiles
 
@@ -5836,7 +5917,9 @@ content: >
 ---
 tags: creation love economy
 content: >
-    les épuisettes culturelles: [amacca](http://reseauculture21.fr/amacca/le-reseau/) (associations pour le maintien des alternatives en matière de culture et de création artistique), par [comme un poisson dans l'art](http://www.commeunpoissondanslart.fr/)
+    les épuisettes culturelles: [amacca](http://reseauculture21.fr/amacca/le-reseau/) (associations pour le maintien des alternatives en matière de culture et de création artistique)
+source: >
+    [comme un poisson dans l'art](http://www.commeunpoissondanslart.fr/)
 
 
 ---
@@ -5860,7 +5943,8 @@ content: >
 ---
 tags: companies move home text
 content: >
-    [Uber et Airbnb n'ont rien à voir avec l'économie de partage](http://www.lemonde.fr/entreprises/article/2015/06/25/michel-bauwens-uber-et-airbnb-n-ont-rien-a-voir-avec-l-economie-de-partage_4661680_1656994.html), par Michel Bauwens
+    [Uber et Airbnb n'ont rien à voir avec l'économie de partage](http://www.lemonde.fr/entreprises/article/2015/06/25/michel-bauwens-uber-et-airbnb-n-ont-rien-a-voir-avec-l-economie-de-partage_4661680_1656994.html)
+source: Michel Bauwens
 
 
 ---
@@ -5870,7 +5954,7 @@ content: >
 
 
 ---
-tags: companies home slow
+tags: companies home web
 content: >
     hébergeons-nous par [Couchsurfing](https://www.couchsurfing.com/) et pas *Airbnb*.
 
@@ -5896,7 +5980,9 @@ content: >
 ---
 tags: alienation companies creation image
 content: >
-    [An Atlas of Agendas](http://www.anagrambooks.com/atlas-of-agendas), cartes des structures de pouvoir socio-politiques, par [Bureau d'Etudes](http://bureaudetudes.org/)
+    [An Atlas of Agendas](http://www.anagrambooks.com/atlas-of-agendas), cartes des structures de pouvoir socio-politiques
+source: >
+    [Bureau d'Etudes](http://bureaudetudes.org/)
 
 
 ---
@@ -5918,7 +6004,7 @@ content: >
 
 
 ---
-tags: economy slow alienation
+tags: economy alienation
 content: >
     [Eglise de la Très Sainte Consommation](http://www.consomme.org/) beaucoup de personnes pratiquent son culte sans le savoir, ou en ayant une vision peu précise de ce qu’il implique
 
@@ -5938,7 +6024,8 @@ content: >
 ---
 tags: alienation energy companies politics
 content: >
-    [cartographie des personnalités du nucléaire en France](http://greenpeace.fr/facenuke/) par Greenpeace
+    [cartographie des personnalités du nucléaire en France](http://greenpeace.fr/facenuke/)
+source: Greenpeace
 
 
 ---
@@ -6116,9 +6203,11 @@ content: >
 
 
 ---
-tags: zad map list companies
+tags: map list companies
 content: >
-    [carte des projets nuisibles](www.fne.asso.fr/fr/nos-actions/sivens/dautres-sivens), par [France Nature Environnement](http://www.fne.asso.fr)
+    [carte des projets nuisibles](www.fne.asso.fr/fr/nos-actions/sivens/dautres-sivens)
+source: >
+    [France Nature Environnement](http://www.fne.asso.fr)
 
 
 ---
@@ -6128,13 +6217,13 @@ content: >
 
 
 ---
-tags: group slow
+tags: group economy energy
 content: >
     [Villes et communautés en Transition](http://www.transitionfrance.fr/) pour le passage de la dépendance au pétrole à la résilience locale
 
 
 ---
-tags: slow zad map list
+tags: map list
 content: >
     [carte Bastamag des alternatives](http://www.bastamag.net/La-carte-de-France-des-4598), [tour de France des alternatives](http://www.tourdefrancedesalternatives.fr/alternatives/)
 
@@ -6152,7 +6241,7 @@ content: >
 
 
 ---
-tags: space emancipation zad
+tags: space emancipation act
 content: >
     Il n’y aura jamais d’aéroport à Notre-Dame-des-Landes: [zone à défendre](http://zad.nadir.org/), avec l'[ACIPA ](https://www.acipa-ndl.fr), les [Naturalistes en lutte](https://naturalistesenlutte.wordpress.com/) et toutes les énergies complices: [défendre la zad](https://constellations.boum.org/spip.php?article125), [que va devenir la zad ?](https://lundi.am/De-la-ZAD-aux-Communaux-Partie-I)
 
@@ -6188,13 +6277,7 @@ content: >
 
 
 ---
-tags: love creation video
-content: >
-    [l'an 01](https://www.youtube.com/watch?v=_lgJbU3J7hw), Jacques Doillon, Gébé, Alain Resnais, Jean Rouch, 1973
-
-
----
-tags: love education
+tags: love education game
 content: >
     [Under Construction](http://www.underconstruction.fr/?page_id=1493) fabrique des jeux pour interroger le monde
 
@@ -6206,13 +6289,13 @@ content: >
 
 
 ---
-tags: act love slow space
+tags: act group love space
 content: >
     les [Engraineurs](http://www.collectif-lesengraineurs.com/) plantent les graines d'un esprit de résistance et cultivent les alternatives
 
 
 ---
-tags: act love eat space
+tags: act eat space game
 content: >
     les dîners festifs improvisés de [Jeudi Noir](http://www.jeudi-noir.org/)
 
@@ -6236,13 +6319,7 @@ content: >
 
 
 ---
-tags: act eat agriculture health
-content: >
-    manger autrement: [fruits et légumes de saison](http://asso.apne.free.fr/wp-content/uploads/2010/05/legumesaison.jpg), [réseau des AMAP](http://www.amap-idf.org/), [Marché Citoyen](http://www.lemarchecitoyen.net/)
-
-
----
-tags: object slow
+tags: object group space
 content: >
     [boites d'échanges entre voisins](http://www.hclbox.org/fr/boxes)
 
@@ -6302,7 +6379,7 @@ content: >
 
 
 ---
-tags: move group zad
+tags: move group act
 content: >
     [NO TAV France](http://notavfrance.noblogs.org/), textes et traductions contre la grande vitesse
 
@@ -6310,13 +6387,15 @@ content: >
 ---
 tags: science web text philo
 content: >
-    [à nous d'être les maîtres des technologies](http://www.internetactu.net/2015/05/07/technologie-cest-a-nous-den-etre-les-maitres-oui-mais-comment), par Hubert Guillaud
+    [à nous d'être les maîtres des technologies](http://www.internetactu.net/2015/05/07/technologie-cest-a-nous-den-etre-les-maitres-oui-mais-comment)
+source: Hubert Guillaud
 
 
 ---
 tags: science web text philo
 content: >
-    livre, numérique, capitalisme, progrès: [la querelle des modernes et des modernes](http://les451.noblogs.org/post/2012/11/22/la-querelle-des-modernes-et-des-modernes/), par le collectif des 451
+    livre, numérique, capitalisme, progrès: [la querelle des modernes et des modernes](http://les451.noblogs.org/post/2012/11/22/la-querelle-des-modernes-et-des-modernes/)
+source: collectif des 451
 
 
 ---
@@ -6446,12 +6525,6 @@ content: >
 
 
 ---
-tags: media text alienation
-content: >
-    les 150 numéros du [publiphobe](http://bap.propagande.org/modules.php?name=Publiphobe)
-
-
----
 tags: companies economy
 content: >
     pour la fermeture des grandes enseignes le dimanche
@@ -6464,25 +6537,13 @@ content: >
 
 
 ---
-tags: economy object slow
+tags: economy object group
 content: >
     [nonmarchand.org](http://nonmarchand.org), portail dédié à la réalisation d’échanges non marchands
 
 
 ---
-tags: economy work text politics
-content: >
-    [pour un revenu garanti pour tous](http://www.monde-diplomatique.fr/2013/05/CHOLLET/49054), par Mona Chollet
-
-
----
-tags: alienation act group
-content: >
-    écrasons la publicité: [Résistance à l'Agression Publicitaire](http://antipub.org/), [Reposeurs](http://www.reposeurs.eu.org/), [Déboulonneurs](http://www.deboulonneurs.org/)
-
-
----
-tags: economy slow
+tags: economy
 content: >
     créons et utilisons des [monnaies locales](http://monnaie-locale-complementaire.net/france/)
 
@@ -6500,7 +6561,7 @@ content: >
 
 
 ---
-tags: philo group slow
+tags: philo group
 content: >
     [Simplicité volontaire](http://simplicitevolontaire.org), réseau québécois pour la simplicité volontaire: riche autrement, autrement libre
 
@@ -6526,13 +6587,15 @@ content: >
 ---
 tags: history companies video
 content: >
-    [Afrique50](https://www.youtube.com/watch?v=i5vIXhs8qic), [Techniquement si simple](https://www.youtube.com/watch?v=PnrsXB5xfGE), films de René Vautier
+    [Afrique50](https://www.youtube.com/watch?v=i5vIXhs8qic), [Techniquement si simple](https://www.youtube.com/watch?v=PnrsXB5xfGE)
+source: René Vautier
 
 
 ---
 tags: economy text politics
 content: >
-    [Comment sortir de la crise de la dette pour les nuls par une nulle](http://blogs.mediapart.fr/blog/sarah-kilani/220515/comment-sortir-de-la-crise-de-la-dette-pour-les-nuls-par-une-nulle), par Sarah Kilani, Médiapart
+    [Comment sortir de la crise de la dette pour les nuls par une nulle](http://blogs.mediapart.fr/blog/sarah-kilani/220515/comment-sortir-de-la-crise-de-la-dette-pour-les-nuls-par-une-nulle)
+source: Sarah Kilani, Médiapart
 
 
 ---
@@ -6586,7 +6649,8 @@ content: >
 ---
 tags: work alienation video
 content: >
-    [La mise à mort du travail](https://www.youtube.com/watch?v=dVwC-9jQgSA), de Jean-Robert Viallet, 64min.
+    [La mise à mort du travail](https://www.youtube.com/watch?v=dVwC-9jQgSA)
+source: Jean-Robert Viallet, 64min
 
 
 ---
@@ -6626,7 +6690,8 @@ content: >
 
 
 ---
-tags: science earth
+tags: earth science
+title: Le climat ne change pas ?
 content: >
     [5e rapport du GIEC](http://leclimatchange.fr/questions-reponses/)
 
@@ -6656,13 +6721,13 @@ content: >
 
 
 ---
-tags: earth group slow
+tags: earth group
 content: >
     [les amis de la terre](http://www.amisdelaterre.org/), [350](http://350.org/about/what-we-do/), [deep green resitance](http://deepgreenresistance.org/fr/who-we-are/guiding-principles-of-deep-green-resistance), grands-parents [suisses](http://gpclimat.blogspot.ch/p/texte-fondateur.html) et [belges](http://gpclimat.be/notre-charte/), [climate express](http://climate-express.be/fr/), [élan global](http://elanglobal.org)
 
 
 ---
-tags: economy object group slow
+tags: economy object group
 content: >
     échangeons biens et services dans les [SEL](http://seldefrance.communityforge.net/node/9), systèmes d'échanges locaux
 
@@ -6674,7 +6739,7 @@ content: >
 
 
 ---
-tags: love group slow
+tags: love group
 content: >
     les bénéloves de [Génération Futur](http://generationsfutur.zici.fr/), promoteur associatif de la presse libre et de la bonne humeur
 
@@ -6692,9 +6757,17 @@ content: >
 
 
 ---
-tags: philo group slow
+tags: philo group
 content: >
-    [CIIP](https://collectifinnovationsilluminationspolitiques.wordpress.com/credo-du-ciip/), [abécédaire du changement](https://abecedaireduchangement.wordpress.com/2012/05/11/avant-propos-2/), [écosociétalistes](http://www.ecosocietal.org/articles.php?lng=fr&pg=18), [to change everything](http://www.crimethinc.com/tce/quebecois/) par [crimethinc](http://crimethinc.com/), [institut momentum](http://www.institutmomentum.org/le-manifeste/)
+    [CIIP](https://collectifinnovationsilluminationspolitiques.wordpress.com/credo-du-ciip/), [abécédaire du changement](https://abecedaireduchangement.wordpress.com/2012/05/11/avant-propos-2/), [écosociétalistes](http://www.ecosocietal.org/articles.php?lng=fr&pg=18), [institut momentum](http://www.institutmomentum.org/le-manifeste/)
+
+
+---
+tags: group
+content: >
+    [to change everything](http://www.crimethinc.com/tce/quebecois/)
+source: >
+    [crimethinc](http://crimethinc.com/)
 
 
 ---
@@ -6710,7 +6783,7 @@ content: >
 
 
 ---
-tags: energy zad space earth
+tags: energy act space earth
 content: >
     [Bure Zone Libre](http://burezoneblog.over-blog.com/) ! Maison de résistance à la poubelle nucléaire de Bure
 
@@ -6740,7 +6813,7 @@ content: >
 
 
 ---
-tags: slow home move
+tags: home move map
 content: >
     [Warm Showers](https://fr.warmshowers.org/), communauté pour les cyclo-randoneurs et les hôtes
 
@@ -6764,7 +6837,7 @@ content: >
 
 
 ---
-tags: space group zad
+tags: space group act
 content: >
     [occupy](http://fr.wikipedia.org/wiki/Occupy_movement) partout !
 
@@ -6782,7 +6855,7 @@ content: >
 
 
 ---
-tags: slow group
+tags: group
 content: >
     mouvement des [colibris](http://www.colibris-lemouvement.org/colibris/la-charte-pour-la-terre-et-lhumanisme), [transition citoyenne](http://www.transitioncitoyenne.org/), [objecteur.euse.s de croissance](http://decroissance.ch/manifeste-du-roc-suisse/) en suisse romande, [décroissants conviviaux](http://www.decroissance.qc.ca/manifeste), [conviviums](http://www.slowfood.fr/slow-food-en-france)
 
@@ -6803,303 +6876,4 @@ content: >
 tags: media politics video
 content: >
     [Frenchlingteam](https://www.youtube.com/user/frenchlingteam) : L'équipe Linguistique Francophone propose une ouverture à un nouveau modèle de société autour d'une Économie basée sur les Ressources à travers la traduction de contenus permettant d'éveiller les consciences quant aux changements radicaux nécessaires à la survie et l'épanouissement de l'humanité. [Forum Linguistique](http://forum.linguisticteam.org/)
-
-
----
-tags: about
-title: À propos
-content: >
-    projet • pourquoi • quand • contexte • comment • qui
-
-
----
-tags: agriculture
-title: Agriculture
-content: >
-    (perma)cultures • graines • semences • jardinage • élevage
-
-
----
-tags: alienation
-title: Aliénation
-content: >
-    publicité • propagande • aliénation • conditionnements • contrôle • violences • fichage • cloud • surveillance • pouvoirs • détournements
-
-
----
-tags: audio
-title: Sons
-content: >
-    radios • musiques • sons • vibrations • ondes • bruits • écoute • silence
-
-
----
-tags: calendar
-title: Agendas
-content: >
-    calendriers • rendez-vous • festivals • événements • moments
-
-
----
-tags: companies
-title: Multinational.es
-content: >
-    néocapitalisme • récupérations • greenwashing • multinationales • puissances d'argent • boycott
-
-
----
-tags: creation
-title: Forme.s
-content: >
-    création • art • culture • écriture • design • processus • formes • humour
-
-
----
-tags: act
-title: Action.s
-content: >
-    actions • pratiques • quotidiennes • désobéissance civile • militantisme • zone de confort • passage à l'acte • faire • agir
-
-
----
-tags: earth
-title: Planète Terre
-content: >
-    environnement • climat • géologie • déchets • pollution • ressources • eau • animaux • végétaux • éléments
-
-
----
-tags: eat
-title: Manger
-content: >
-    nourrir • alimentation • manger • recettes • cuisine • nourriture
-
-
----
-tags: economy
-title: Économie
-content: >
-    échanges • commerce • troc • don • économie • argent • monnaie • finance • dette • revenu de base inconditionnel
-
-
----
-tags: education
-title: Éducation
-content: >
-    école • université • recherche • apprendre • se former • enseigner • partages de savoir
-
-
----
-tags: emancipation
-title: Émancipation
-content: >
-    réappropriation • émancipation • autonomie • autogestion • horizontalité • épanouissement • ouverture
-
-
----
-tags: energy
-title: Énergie.s
-content: >
-    nucléaire • électrique • éolien • solaire • cosmique • vitale • transformée
-
-
----
-tags: game
-title: Jeu.x
-content: >
-    Invente • toi-même • les règles
-
-
----
-tags: genre
-title: Genres
-content: >
-    patriarcat • féminisme • genres • LGBT • famille • racisme • sexisme
-
-
----
-tags: group
-title: Collectifs
-content: >
-    Tout.e seul.e • on est rien • groupes • réseaux • coopératives • collectifs • associations • structures
-
-
----
-tags: health
-title: Santé
-content: >
-    remèdes • plantes • bien-être • corps • sport
-
-
----
-tags: history
-title: Histoire
-content: >
-    (néo)colonialismes • impérialisme • passifs historique
-
-
----
-tags: home
-title: Habiter
-content: >
-    logement • habitat • hébergement • éco-lieux • auto-construction • terrain • maison • logis
-
-
----
-tags: image
-title: Image.s
-content: >
-    images • dessins • photos • graphiques • représentations
-
----
-tags: law
-title: Juridique
-content: >
-    lois • aspects juridiques • démarches administratives • législations
-
-
----
-tags: list
-title: Annuaire
-content: >
-    bases de données • annuaires • ressources • moteurs de recherche
-
----
-tags: love
-title: Amour
-content: >
-    rêves • idéaux • énergies • amour • spiritualités • foi • religions • mort
-
-
----
-tags: move
-title: Bouger
-content: >
-    se déplacer • transports • mobilité • véhicules • co-voiturage • marcher
-
-
----
-tags: map
-title: Lieu.x
-content: >
-    cartes • adresses de lieux physiques • tiers-lieux • endroits
-
-
----
-tags: media
-title: Médias
-content: >
-    information • presse • journalisme • actualité
-
-
----
-tags: object
-title: Objets
-content: >
-    récup' • recyclage • réutilisation • ressourceries • artisanats • réappropriation • savoirs-faire • construire soi-même • diy • équipement • matériel • mobilier • machines
-
-
----
-tags: philo
-title: Philosophie
-content: >
-    réflexion • théories • principes • idéologies • dialectique
-
-
----
-tags: politics
-title: Politique
-content: >
-    politique et représentation • concertation • décider ensemble • communs • open (res)sources • démocratie
-
-
----
-tags: space
-title: Espace.s
-content: >
-    espaces publics • partagés • communs • ville
-
-
----
-tags: science
-title: Science.s
-content: >
-    sciences • techniques • nanotechnologies • manipulation • vivant
-
-
----
-tags: slow
-title: Sobriété
-content: >
-    ralentir • rencontrer • découvrir • partager • décroissance • humilité
-
-
----
-tags: suffer
-title: Souffrance.s
-content: >
-    migrants • sans-papiers • sdf • souffrances • survie • inégalités • accès • chances • discriminations
-
-
----
-tags: text
-title: Texte.s
-content: >
-    articles • livres • textes • mots • phrases
-
-
----
-tags: time
-title: Temps
-content: >
-    temporalités • rythmes • rapports aux temps • futurisme • présentisme
-
-
----
-tags: tool
-title: Outils
-content: >
-    guides et fiches pratiques • tutoriaux • outils • services • instruments • diy
-
-
----
-tags: truth
-title: Vérité
-content: >
-    la vérité • c'est l'accomplissement d'un truc.
-
-
----
-tags: video
-title: Films
-content: >
-    videos • films • documentaires • TV • images mouvantes • traces
-
-
----
-tags: web
-title: Numérique
-content: >
-    web • internet • réseaux
-
-
----
-tags: words
-title: Langage
-content: >
-    récits • mots • interprétations • controverses • discours • s'accorder • s'engueuler • débattre • médiations
-
-
----
-tags: work
-title: Travail
-content: >
-    emploi • chômage • activité • remunération
-
-
----
-tags: zad
-title: Lutte.s
-content: >
-    grands projets inutiles • squats • occupations • zad • radicalités • avant-gardes
 

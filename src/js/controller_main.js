@@ -78,7 +78,8 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
       tagging: tags.length>0, // if tags/filtering active or not
       tagsmode: 'grid', // tags display mode: graph OR grid
       tagspanel: false,
-      tags: tags, // list of current filtering tags
+      tags: tags, // [] of current filtering tags
+      hoverTags: [], // from hovered abcd section
 
       networkstatus: "NO", // loaded or not ?
 
@@ -175,42 +176,44 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
       controlLinksGraph(what);
     };
 
+    // $scope.overTag = function(tag,refresh) {
+    //   if(tag && $scope.tagsContents[tag]) {
+    //     $scope.state.overtag = $scope.tagsContents[tag];
+    //   } else {
+    //     $scope.state.overtag = {description: $scope.meta.menu.tagsdescription};
+    //   }
+    //   if(refresh) $scope.$apply();
+    // };
 
-    $scope.tagSorter = function(tag) {
-      var tc = tag.label ? tag : ($scope.tagsContents[tag] ? $scope.tagsContents[tag] : null);
-      if(!tc) {
-        //console.log("no sort for tag:",tag);
-        return -1;
-      }
-      var ic = tc.icon;
-      if(!ic) return -1;
-      else {
-        if(tag=='about') return 6;
-        if(tag=='list') return 5;
-        if(tag=='place') return 4;
-        return 1;
-      }
-    };
-    $scope.overTag = function(tag,refresh) {
-      if(tag && $scope.tagsContents[tag]) {
-        $scope.state.overtag = $scope.tagsContents[tag];
-      } else {
-        $scope.state.overtag = {description: $scope.meta.menu.tagsdescription};
-      }
-      if(refresh) $scope.$apply();
+    $scope.overSection = function(e) {
+      $scope.state.hoverTags = e.tags;
+      console.log($scope.state.hoverTags);
     };
 
-    $scope.isTagActive = function(tagslug) {
-      return $scope.state.tags.indexOf(tagslug)!=-1;
+    $scope.isTagActive = function(t) {
+      return $scope.state.tags.indexOf(t.tag)!=-1;
     };
-    $scope.isTagAutoComplete = function(tag) {
+    $scope.isTagFromHoveredSection = function(t) {
+      return $scope.state.hoverTags.indexOf(t.tag)!=-1;
+    };
+    $scope.isTagAutoComplete = function(t) {
       if($scope.state.searchinput && $scope.state.searchinput.length>2) {
-        return (tag.tag+" "+tag.label+" "+tag.description).indexOf($scope.state.searchinput)!=-1;
+        return (t.tag+" "+t.keywordsjoined).indexOf($scope.state.searchinput)!=-1;
       } else
         return false;
     };
-
-
+    $scope.tagHint = function(t) {
+      if($scope.isTagAutoComplete(t)) {
+        var ws = [];
+        _.each(t.keywords, function(k) {
+          if(k.indexOf($scope.state.searchinput)!=-1)
+            ws.push(k);
+        });
+        return ws.join(", ");
+      } else {
+        return t.moto;
+      }
+    };
 
     $scope.toggleTagging = function() {
       $scope.state.tagging = !$scope.state.tagging;
@@ -245,8 +248,8 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
 
     $scope.toggleTag = function(tag,refresh) {
 
-      // erase searchterm if exist ?
-      //$scope.searchSubmit();
+      // erase searchterm if exist
+      $scope.searchSubmit();
 
       // please set max tags to 5 ! (?)
 
@@ -310,9 +313,9 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
     var shallShowSearch = function(o) { // "o" is a text or a link
       var reg = $scope.rgx.search;
       if($scope.state.search)
-      if(o.content) { // an abcd, or link
+      if(o.content) { // an abcd ! (text,link,quote)
         var show = false;
-        _.each(['source','content'], function(k) {
+        _.each(['source','content','title'], function(k) {
           show = show || ( o.hasOwnProperty(k) && reg.test(totext(o[k])) );
         });
       } else { // ... if no content, then ...
@@ -465,22 +468,6 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
         .success(function(res) {
 
           ////////////////////////////////////
-          if(which=="pixels") {
-            // determine most frequent words to help search
-            var words = _.keys(res).join().split(/[\,\-_]/);
-            $scope.state.suggestions.pixels =
-              _.chain(words)
-              .countBy()
-              .pairs()
-              .sortBy(function(item) {return item[1];})
-              .last(30)
-              .map(function(e){return e[0];})
-              .without("","l","i","pas","le","les","vous","de","you","autre")
-              .value();
-            //console.log($scope.state.suggestions.pixels);
-          }
-
-          ////////////////////////////////////
           if(which=="meta") {
             var m = jsyaml.load(res);
             $scope.meta = m;
@@ -490,6 +477,21 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
 
             // for html page meta
             $rootScope.htmlmeta = m.htmlmeta;
+
+            // tags
+            $scope.tags = {};
+            _.each(m.tags, function(v,k) {
+              $scope.tags[k] = {
+                tag: k,
+                icon: v[0],
+                moto: v[1], // default popup display
+                keywords: v[2].split(","), // list of searchable words, popuped when searched
+                keywordsjoined : v[2]
+              };
+            });
+            //console.log($scope.tags);
+            $scope.tagsArray = _.map($scope.tags);
+            //console.log(tco);
 
             // prepare splash images & their back color
             $scope.meta.splash.images = _.map(m.splash.images, function(v) {
@@ -512,109 +514,39 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
               d.content = $scope.md2Html(d.content);
               d.tags = d.tags ? d.tags.split(' ') : ["nc"];
               d.sharelink = "http://utopies-concretes.org/slug/"+slugify(d.title);
-              _.each(d.tags, function(t) {
-                if($scope.tagsContents.hasOwnProperty(t))
-                  $scope.tagsContents[t].count += 1;
-                else {
-                  $scope.tagsContents[t] = {
-                    tag: t,
-                    label: t,
-                    count: 1,
-                  };
-                }
-              });
-              
-              //d.layout = 'flat'; //Math.random()<0.2 ? 'grid' : 'flat';
 
               $scope.dataArray.abcd.push(d);
 
             });
 
-            $scope.tagsContentsOrdered = _.map($scope.tagsContents);
-            $scope.tagsContentsOrdered.sort(function(a,b) {
-              //return a.count > b.count;
-              return a.label>b.label;
-            });
-
-            console.log("ABCD:",$scope.dataArray.abcd.length);
+            //console.log("ABCD:",$scope.dataArray.abcd.length);
             $scope.dataArray.abcd = _.shuffle($scope.dataArray.abcd);
             $scope.dataArrayFilt.abcd = $scope.dataArray.abcd;
           }
 
           ////////////////////////////////////
-          if(which=="links") {
-            var singlelink = res.split('\n\n');
-
-            // test see above...
-            //$scope.templinks4graph = [];
-
-            _.each(singlelink, function(l) {
-
-              var L = l.split('\n');
-
-              var tgs = L[0].match(/\w+/ig);
-              var isimportant = false;
-
-              _.each(tgs, function(t) {
-                if($scope.tagsContents[t] && $scope.tagsContents[t].important)
-                  isimportant = true;
-              });
-
-              // (test/dev) just to see links over graph
-              // if(tgs && tgs.length>2) {
-              //   _.each(tgs, function(t1) {
-              //     _.each(tgs, function(t2) {
-              //       if(t1!=t2)
-              //         $scope.templinks4graph.push([t1,t2]);
-              //     });
-              //   });
-              // }
-
-              var htm = $scope.md2Html( L[1] );
-
-              // store links as array
-              $scope.dataArray.links.push({
-                content: htm,
-                tags: tgs,
-                love: L[0][0]=="!",     // marked as special blend love like !
-                important: isimportant  // if it has a least one tag marked as important
-              });
-
-              // store links indexed by tag (for taggraph sizes!)
-              _.each(tgs, function(t) {
-                if(!$scope.linksByTag[t]) $scope.linksByTag[t] = [];
-                $scope.linksByTag[t].push(htm);
-              });
-            });
-            
-            $scope.dataArrayFilt.links = $scope.dataArray.links;
-
-
-            if($scope.settings.verbose) {
-              console.log("!! declared tags:",_.keys($scope.meta.tags));
-              console.log("!! declared tags contents:",$scope.tagsContents);
-              console.log("!! all links:",$scope.dataArray.links);
-              console.log("!! nb of links by tag:",$scope.linksByTag);
-              console.log("!! non-declared tags:", _.difference(_.keys($scope.linksByTag), _.keys($scope.meta.tags)));
-              console.log("!! declared tags with 0 link", _.difference(_.keys($scope.meta.tags), _.keys($scope.linksByTag)));
-            }            
-          }
-
-          ////////////////////////////////////
-          if(which=="catalog") {
-            $scope.dataArray[which] = jsyaml.load(res)
-            $scope.dataArrayFilt[which] = $scope.dataArray[which];
-          }
-
-          ////////////////////////////////////
           if(which=="pixels") {
+            // determine most frequent words to help search
+            var words = _.keys(res).join().split(/[\,\-_]/);
+            $scope.state.suggestions.pixels =
+              _.chain(words)
+              .countBy()
+              .pairs()
+              .sortBy(function(item) {return item[1];})
+              .last(30)
+              .map(function(e){return e[0];})
+              .without("","l","i","pas","le","les","vous","de","you","autre")
+              .value();
+            //console.log($scope.state.suggestions.pixels);
+
             _.each(res, function(v,k) {
-              $scope.dataArray[which].push({
+              $scope.dataArray.pixels.push({
                 label: k,
                 url: settings.datapath + "pixels/" + v
               });
             });
-            $scope.dataArrayFilt[which] = $scope.dataArray[which];
+            $scope.dataArray.pixels = _.shuffle($scope.dataArray.pixels);
+            $scope.dataArrayFilt.pixels = $scope.dataArray.pixels;
           }
 
           ////////////////////////////////////

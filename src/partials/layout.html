@@ -187,25 +187,50 @@
     </div>
     -->
 
-    <!-- TAGS COLLAPSABLE PANEL -->
+    <!-- TAGS COLOR/ICONS PANEL(s) -->
     <div
-      class="tagspanel"
+      class="tagspanel left"
       ng-class="{
         filtering: state.tags.length,
         active: state.tagging
       }">
       <div
-        ng-repeat="t in tagsContentsOrdered"
+        ng-repeat="t in tagsArray | limitTo : tagsArray.length/2"
         ng-click="toggleTag(t.tag);"
-        class="linetag t-{{t.tag}}"
-        ng-focus="true"
+        class="linetag t-{{t.tag}} hint--right"
+        ng-style="{height: 200/tagsArray.length + '%'}"
+        data-hint="{{tagHint(t)}}"
         ng-class="{
-          important: t.important,
-          active: isTagActive(t.tag),
-          popuped: isTagAutoComplete(t)
-        }"><div class="label">{{t.count}} - {{t.label}}</div>
+          active: isTagActive(t),
+          popuped: isTagAutoComplete(t),
+          focused: isTagFromHoveredSection(t)
+        }">
+        <div class="label">{{t.count}} {{t.tag}}</div>
+        <i class="fa fa-{{t.icon}}"></i>
       </div>
     </div>
+    <div
+      class="tagspanel right"
+      ng-class="{
+        filtering: state.tags.length,
+        active: state.tagging
+      }">
+      <div
+        ng-repeat="t in tagsArray | limitTo : tagsArray.length/2 : tagsArray.length/2"
+        ng-click="toggleTag(t.tag);"
+        class="linetag t-{{t.tag}} hint--left"
+        ng-style="{height: 200/tagsArray.length + '%'}"
+        data-hint="{{tagHint(t)}}"
+        ng-class="{
+          active: isTagActive(t),
+          popuped: isTagAutoComplete(t),
+          focused: isTagFromHoveredSection(t)
+        }">
+        <i class="fa fa-{{t.icon}}"></i>
+        <div class="label">{{t.count}} {{t.tag}}</div>
+      </div>
+    </div>
+
   </div>
 
   <div

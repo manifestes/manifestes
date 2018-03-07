@@ -1,10 +1,11 @@
 <div
   ng-repeat="e in dataArrayFilt.abcd"
   id="p_{{$index}}"
-  ng-click="shuffleContent();" 
+  ng-mouseover="overSection(e);" 
   class="section t-{{e.tags[0]}}">
+    <div ng-if="e.title" class="title" compile-here="e.title"></div>
     <div class="content" compile-here="e.content"></div>
-    <div class="source" ng-if="e.source" compile-here="md2Html(e.source)"></div>
+    <div ng-if="e.source" class="source" compile-here="md2Html(e.source)"></div>
 </div>
 <!--     <div
       class="tags hint--left"
