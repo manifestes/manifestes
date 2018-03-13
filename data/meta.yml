@@ -159,111 +159,79 @@ menu:
 tags:
     about:
         - question-circle
-        - je comprends rien à ce site
-        - projet,pourquoi ce site ?,contexte
-    video:
-        - file-video-o
-        - des pixels qui bougent
-        - videos,films,documentaires,TV,images mouvantes,traces,archives
-    audio:
-        - file-audio-o
-        - "difficile de faire entendre\ndes paroles rondes\nà des oreilles carrées"
-        - radios,musiques,sons,vibrations,ondes,bruits,écoute,silence,parole,oreilles
-    image:
-        - file-image-o
-        -
-        - images,dessins,photos,graphiques,représentations
-    text:
-        - file-text-o
-        -
-        - articles,livres,textes,mots,phrases
-    list:
-        - list
-        -
-        - bases de données,annuaires,ressources,moteurs de recherche
-    tool:
-        - wrench
-        -
-        - guides et fiches pratiques,tutoriaux,outils,services,instruments,diy
-    map:
-        - map-o
-        -
-        - cartes,adresses,lieux physiques,tiers-lieux,endroits,où ?
-    calendar:
-        - calendar
-        -
-        - calendriers,rendez-vous,festivals,événements,moments
+        - C'est quoi ce projet ?
+        - projet,pourquoi ce site ?,contexte,qui,outil
     earth:
         - globe
-        -
-        - environnement,climat,géologie,déchets,pollution,ressources,eau,animaux,végétaux,éléments
+        - Planète
+        - gaia,environnement,climat,géologie,déchets,pollution,ressources,eau,animaux,végétaux,éléments,planète,terre,globe,écosystème
     health:
         - child
-        - ce n'est pas un signe de bonne santé mentale d'être bien adapté à une société malade
-        - remèdes,plantes,bien-être,corps,sport
+        - Santé
+        - remèdes,plantes,bien-être,corps,sport,santé
     agriculture:
         - pagelines
-        -
-        - (perma)cultures,graines,semences,jardinage,élevage,terre
+        - Cultures
+        - (perma)cultures,graines,semences,jardinage,élevage,terre,potager,agriculture
     eat:
         - cutlery
-        -
+        - Manger
         - nourrir,alimentation,manger,recettes,cuisine,nourriture,digérer
     space:
         - street-view
-        -
+        - Espace.s
         - espaces publics,partagés,communs,ville
     home:
         - home
-        -
+        - Habiter
         - logement,habitat,hébergement,éco-lieux,auto-construction,terrain,maison,logis
     move:
         - bicycle
-        -
+        - Bouger
         - se déplacer,transports,mobilité,véhicules,co-voiturage,marcher
     suffer:
         - life-ring
-        -
+        - Aider
         - migrants,sans-papiers,sdf,souffrances,survie,inégalités,discriminations
     energy:
         - plug
-        -
+        - Énergie
         - nucléaire,électrique,éolien,solaire,cosmique,vitale,transformée
     object:
         - cogs
-        -
+        - Bric et Broc
         - récup',recyclage,réutilisation,ressourceries,artisanats,réappropriation,savoirs-faire,construire soi-même,diy,équipement,matériel,mobilier,machines
     work:
         - briefcase
-        -
-        - emploi,chômage,activité,remunération
+        - Emploi
+        - emploi,chômage,activité,remunération,travail,patron
     time:
-        - child
-        -
-        - temporalités,rythmes,rapports aux temps,futurisme,présentisme
+        - moon-o
+        - Temps
+        - temporalités,rythmes,rapports aux temps,futurisme,présentisme,temps,ralentir,patience,lenteur,délai
     media:
         - bullhorn
-        -
+        - Médias
         - information,presse,journalisme,actualité
     education:
         - shower
-        -
-        - école,université,recherche,apprendre,se former,enseigner,partages de savoir
+        - Éducation
+        - école,université,recherche,apprendre,se former,enseigner,partages de savoir,éducation
     alienation:
         - magnet
-        -
-        - publicité,propagande,aliénation,conditionnements,contrôle,violences,fichage,cloud,surveillance,pouvoirs,détournements
+        - Aliénation
+        - publicité,propagande,aliénation,conditionnements,contrôle,fichage,cloud,surveillance,pouvoirs,détournements
     emancipation:
         - paper-plane
-        -
+        - Émancipation
         - réappropriation,émancipation,autonomie,autogestion,horizontalité,épanouissement,ouverture
     realize:
         - low-vision
-        -
+        - Réaliser
         - réaliser,se rendre compte
     act:
         - bolt
-        -
+        - Action.s
         - actions,pratiques,quotidiennes,désobéissance civile,militantisme,zone de confort,passage à l'acte,faire,agir,occupations,squats,radicalités
     game:
         - hand-spock-o
@@ -271,88 +239,116 @@ tags:
         - jeux,s'amuser,hasard
     human:
         - female
-        -
-        - rencontrer,découvrir,partager,décroissance,humilité,humanité
-    time:
-        - moon-o
-        -
-        - temps,ralentir,patience,lenteur,délai
+        - Humain.e
+        - rencontrer,découvrir,partager,décroissance,humilité,humanité,essence
     focus:
         - sun-o
-        -
-        - attention,focus,écoute,présence
+        - Présence
+        - attention,focus,écoute,présence,concentration
     habits:
         - history
-        -
+        - Habitudes
         - habitudes,répétitions,cycles
     emotion:
         - podcast
-        - nos désirs sont désordre
+        - Émotion.s
         - peur,émotions,sensible
     balance:
         - random
-        -
-        - équilibre,balance
+        - Balance
+        - équilibre,balance,dualité
     love:
         - heart
-        -
-        - amour,attraction
+        - Amour
+        - amour,attraction,désir
     spirit:
         - snowflake-o
-        -
-        - rêves,idéaux,énergies,amour,spiritualités,foi,religions,mort
+        - Spiritualité.s
+        - rêves,idéaux,énergies,amour,spiritualités,foi,religions,mort,croyances
     genre:
         - venus-mars
-        -
+        - Genre
         - patriarcat,féminisme,genres,LGBT,famille,racisme,sexisme
     power:
         - hand-rock-o
-        -
-        - pouvoir,puissance,impuissance
+        - Puissance
+        - pouvoir,puissance,impuissance,force
     words:
         - commenting
-        -
-        - récits,mots,interprétations,controverses,discours,s'accorder,s'engueuler,débats,médiations
+        - Langage
+        - récits,mots,interprétations,controverses,discours,s'accorder,s'engueuler,débats,médiations,langage
     creation:
         - bug
-        -
-        - création,art,culture,écriture,design,processus,formes,humour
+        - Forme.s
+        - création,art,culture,écriture,design,processus,formes,humour,émergence
     science:
         - flask
-        -
+        - Science.s
         - sciences,techniques,nanotechnologies,manipulation,vivant
     web:
         - hashtag
-        -
+        - Digital
         - web,internet,réseaux
     violence:
         - industry
-        -
-        - violence,brutalité,police
+        - Violence.s
+        - violence,brutalité,police,oppression,sang
     economy:
         - money
-        -
+        - Économie
         - échanges,commerce,troc,don,économie,argent,monnaie,finance,dette,revenu de base
     companies:
         - trash
-        -
-        - néocapitalisme,récupérations,greenwashing,multinationales,puissances d'argent,boycott
+        - Multinationales
+        - néocapitalisme,récupérations,greenwashing,multinationales,puissances d'argent,boycott,entreprises
     politics:
         - bank
-        -
-        - politique et représentation,concertation,décider ensemble,communs,open (res)sources,démocratie
+        - Politique
+        - politique et représentation,concertation,décider ensemble,communs,open (res)sources,démocratie,hierarchie
     law:
         - gavel
-        -
-        - lois,aspects juridiques,démarches administratives,législations
+        - Juridique
+        - lois,aspects juridiques,démarches administratives,législations,justice
     philo:
         - puzzle-piece
-        -
+        - Théories
         - réflexions,théories,principes,idéologies,dialectique,pensées
     history:
         - book
-        -
-        - (néo)colonialismes,impérialisme,histoire,oubli,archives
+        - Histoire.s
+        - (néo)colonialismes,impérialisme,histoire,oubli,archives,mémoire
+    video:
+        - file-video-o
+        - Vidéo.s
+        - videos,films,documentaires,TV,images mouvantes,traces,archives
+    audio:
+        - file-audio-o
+        - Son.s
+        - radios,musiques,sons,vibrations,ondes,bruits,écoute,silence,parole,oreilles
+    image:
+        - file-image-o
+        - Image.s
+        - images,dessins,photos,graphiques,représentations
+    text:
+        - file-text-o
+        - Texte.services
+        - articles,livres,textes,mots,phrases
+    list:
+        - list
+        - Ressources
+        - bases de données,annuaires,ressources,moteurs de recherche
+    tool:
+        - wrench
+        - Outils
+        - guides et fiches pratiques,tutoriaux,outils,services,instruments,diy
+    map:
+        - map-o
+        - Cartes
+        - cartes,adresses,lieux physiques,tiers-lieux,endroits,où ?
+    calendar:
+        - calendar
+        - Calendriers
+        - calendriers,rendez-vous,festivals,événements,moments
 footer:
     lastupdatetext: dernière modification
     content: >

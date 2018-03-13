@@ -156,6 +156,7 @@
             type="text"
             placeholder="{{meta.menu.search}}"
             ng-model="state.searchinput" 
+            ng-change="searchSubmit(state.searchinput);"
             ng-click="$event.stopPropagation();"
             ng-enter="searchSubmit(state.searchinput);"
             ng-class="{highlight:state.search}"/>
@@ -197,15 +198,16 @@
       <div
         ng-repeat="t in tagsArray | limitTo : tagsArray.length/2"
         ng-click="toggleTag(t.tag);"
-        class="linetag t-{{t.tag}} hint--right"
-        ng-style="{height: 200/tagsArray.length + '%'}"
+        class="linetag tagcolor{{t.index}} hint--right"
+        ng-style="{height: 400/tagsArray.length + '%'}"
         data-hint="{{tagHint(t)}}"
         ng-class="{
           active: isTagActive(t),
           popuped: isTagAutoComplete(t),
           focused: isTagFromHoveredSection(t)
         }">
-        <div class="label">{{t.count}} {{t.tag}}</div>
+        <!-- <div class="label">{{t.count}} {{t.tag}}</div> -->
+        <div class="back"></div>
         <i class="fa fa-{{t.icon}}"></i>
       </div>
     </div>
@@ -218,16 +220,17 @@
       <div
         ng-repeat="t in tagsArray | limitTo : tagsArray.length/2 : tagsArray.length/2"
         ng-click="toggleTag(t.tag);"
-        class="linetag t-{{t.tag}} hint--left"
-        ng-style="{height: 200/tagsArray.length + '%'}"
+        class="linetag tagcolor{{t.index}} hint--left"
+        ng-style="{height: 400/tagsArray.length + '%'}"
         data-hint="{{tagHint(t)}}"
         ng-class="{
           active: isTagActive(t),
           popuped: isTagAutoComplete(t),
           focused: isTagFromHoveredSection(t)
         }">
+        <div class="back"></div>
         <i class="fa fa-{{t.icon}}"></i>
-        <div class="label">{{t.count}} {{t.tag}}</div>
+        <!-- <div class="label">{{t.count}} {{t.tag}}</div> -->
       </div>
     </div>
 

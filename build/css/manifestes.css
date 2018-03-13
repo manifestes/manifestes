@@ -1062,9 +1062,9 @@ div.highlight {
   padding: 2px 4px;
   background: rgba(255, 252, 0, 0.48);
 }
+/* MANY thanks to http://tools.medialab.sciences-po.fr/iwanthue/ */
 /* COLORS FOR TAGS (declaring order following overwriting/priorities) */
 .t-about,
-.t-group,
 .t-list,
 .t-tool {
   background-color: #C7C9C6;
@@ -1079,6 +1079,9 @@ div.highlight {
 .t-audio,
 .t-video {
   background-color: #C7C9C6;
+}
+.t-group {
+  background-color: ;
 }
 .t-earth,
 .t-agriculture,
@@ -1770,32 +1773,17 @@ div.highlight {
   z-index: 27;
   box-sizing: border-box;
   position: fixed;
-  width: 240px;
-  left: -240px;
+  width: 170px;
   top: 65px;
   bottom: 0;
-  padding-top: 5px;
-  background: #525252;
-  border-right: 2px solid white;
+  background: #E4E4E4;
+  /*border-right: 2px solid white;*/
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   -o-transition: all 0.4s;
   -ms-transition: all 0.4s;
   transition: all 0.4s;
   /* show hint tooltips on the fly if searching term */
-  /*    [data-hint].popuped:before, [data-hint].popuped:after {
-      visibility: visible;
-      opacity: 1;
-    }
-
-    .hint:after, &:after, &:before {
-      text-transform: none;
-      font-style: normal;
-      color: white;
-      font-size: 0.85em;
-      line-height: 1.1em;
-    }
-    */
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -1804,8 +1792,33 @@ div.highlight {
   -o-user-select: none;
   user-select: none;
 }
-.header .tagspanel.active {
-  left: 0 !important;
+.header .tagspanel.left {
+  left: -170px;
+  text-align: right;
+}
+.header .tagspanel.right {
+  right: -170px;
+  text-align: left;
+}
+.header .tagspanel.left.active {
+  left: 0;
+}
+.header .tagspanel.right.active {
+  right: 0;
+}
+.header .tagspanel [data-hint].popuped:before,
+.header .tagspanel [data-hint].popuped:after {
+  visibility: visible;
+  opacity: 1;
+}
+.header .tagspanel .hint:after,
+.header .tagspanel:after,
+.header .tagspanel:before {
+  text-transform: none;
+  font-style: normal;
+  color: white;
+  font-size: 0.85em;
+  line-height: 1.1em;
 }
 .header .tagspanel .linetag {
   box-sizing: border-box;
@@ -1813,29 +1826,41 @@ div.highlight {
   cursor: pointer;
   display: inline-block;
   vertical-align: top;
-  width: 50%;
-  text-align: left;
+  width: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: antialiased;
   font-style: italic;
   font-size: 0.80em;
-  color: #BFBFBF;
+  color: #fff6;
+}
+.header .tagspanel .linetag i {
+  padding: 0 10px;
+  width: 14px;
+  font-size: 1.1em;
+  line-height: 150%;
 }
 .header .tagspanel .linetag .label {
-  padding: 3px 7px;
-  background-color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  /*padding: 3px 7px;*/
+  /*background-color: rgba(0,0,0,0.5);*/
 }
 .header .tagspanel .linetag:hover,
 .header .tagspanel .linetag.popuped {
   background: #383838;
 }
-.header .tagspanel .linetag.active {
+.header .tagspanel .linetag:hover i,
+.header .tagspanel .linetag.popuped i {
   color: white;
+}
+.header .tagspanel .linetag.focused i {
+  color: white;
+}
+.header .tagspanel .linetag.active {
   background: black;
 }
-.header .tagspanel .linetag.active .back {
-  background: none;
+.header .tagspanel .linetag.active i {
+  color: white;
 }
 .header .tagspanel.filtering .tagshat {
   background: #e4e4e4;
@@ -1995,14 +2020,15 @@ div.highlight {
 .wrapper {
   margin-top: 65px;
   padding-left: 0;
-  -webkit-transition: padding-left 0.4s;
-  -moz-transition: padding-left 0.4s;
-  -o-transition: padding-left 0.4s;
-  -ms-transition: padding-left 0.4s;
-  transition: padding-left 0.4s;
+  -webkit-transition: padding 0.4s;
+  -moz-transition: padding 0.4s;
+  -o-transition: padding 0.4s;
+  -ms-transition: padding 0.4s;
+  transition: padding 0.4s;
 }
 .wrapper.tagsbordered {
-  padding-left: 240px;
+  padding-left: 170px;
+  padding-right: 170px;
 }
 .emptyresult {
   position: relative;
@@ -2251,11 +2277,11 @@ body.layout-mapprint .container {
 .wrapper.layout-abcd .page .section {
   box-sizing: border-box;
   /*display: inline-block;*/
-  padding: 60px 20%;
   margin: 0;
   /*cursor: pointer;*/
   text-align: center;
   vertical-align: middle;
+  color: #3c3c3c;
   /*flex-grow: 1;*/
 }
 .wrapper.layout-abcd .page .section.t-nc:nth-child(odd) {
@@ -2317,41 +2343,14 @@ body.layout-mapprint .container {
 .wrapper.layout-abcd .page .section .title {
   box-sizing: border-box;
   display: inline-block;
-  width: 50%;
-  height: 60px;
-  color: #414141;
-  background: rgba(0, 0, 0, 0.07);
-  text-align: right;
-  text-transform: uppercase;
-  font-size: 1.1em;
-  line-height: 1.2em;
-  font-weight: 600;
-}
-.wrapper.layout-abcd .page .section .title span.wtin {
-  padding: 25px;
-  box-sizing: border-box;
-  position: absolute;
   width: 100%;
-  left: 0;
-  top: 50%;
-  -webkit-transform: translate(0, -50%);
-  -moz-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  -o-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-}
-.wrapper.layout-abcd .page .section .subtitle {
-  box-sizing: border-box;
-  display: inline-block;
-  position: relative;
-  width: 50%;
-  height: 60px;
-  color: #595858;
-  background: rgba(0, 0, 0, 0.1);
-  font-size: 0.9em;
-  line-height: 1.2em;
+  padding: 30px 12px;
+  color: #e9e9e9;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 1.6em;
   font-style: italic;
-  overflow: hidden;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 .wrapper.layout-abcd .page .section .content {
   box-sizing: border-box;
@@ -2359,7 +2358,7 @@ body.layout-mapprint .container {
   /*margin-left: 50%;*/
   /*padding: 10px 50px 50px 50px;*/
   text-align: left;
-  color: #3c3c3c;
+  padding: 60px 20%;
   font-size: 0.9em;
   line-height: 1.6em;
 }
@@ -2377,10 +2376,10 @@ body.layout-mapprint .container {
   margin-bottom: 10px;
 }
 .wrapper.layout-abcd .page .section .source {
-  margin-top: 90px;
+  padding: 0px 5% 50px 5%;
   font-size: 0.7em;
+  line-height: 1.7em;
   font-style: italic;
-  color: #3c3c3c;
 }
 .wrapper.layout-links {
   box-sizing: border-box;

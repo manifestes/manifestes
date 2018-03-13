@@ -1,14 +1,12 @@
 
 <div class="books">
-
 	<a
 		ng-repeat="b in dataArrayFilt.books"
-		class="book t-{{b.tag}}"
+		class="book tagcolor{{tags[b.tags[0]].index}}"
 		href="{{b.url}}"
 		title="{{b.name}}"
 		target="_blank"
 	>{{b.name}}</a>
-
 </div>
 
 <div

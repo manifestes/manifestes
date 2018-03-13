@@ -1,7 +1,60 @@
 
 
 ---
-tags: realize words
+tags:
+content: >
+    [Solidaires étudiant-e-s](https://www.solidaires-etudiant.org), syndicats de luttes est une fédération des syndicats étudiants de luttes.
+ 
+
+    Nous défendons les droits des étudiants et des étudiantes au quotidien, au niveau des conditions d’études, de logement, des inscriptions, des bourses, des examens…
+
+
+    A Solidaires étudiant­-e­-s, syndicats  de  luttes,  nous  militons  pour  une université  gratuite,  ouverte  à  tou­t-e­-s,  de  qualité,  émancipatrice  et  autogérée.
+
+
+---
+tags: media politics video
+content: >
+    [Le Média](/programmes/l-entretien-libre), le nouveau média indépendant des puissances industrielles et financières.
+
+
+    Fondé grâce au financement et à l’investissement bénévole de milliers de citoyens, appelés les Socios, il est en accès libre et s’adresse au monde francophone.
+
+
+    Engagé en faveur des causes sociales et écologiques, féministes et antiracistes, ouvertement progressiste et humaniste, le Média vous propose un regard différent par rapport à celui véhiculé par les médias dominants.
+
+
+---
+tags: video space group words politics
+content: >
+    Le film [L'Assemblée](https://www.lassemblee-lefilm.fr/) — Le 31 mars 2016, place de la République à Paris naît le mouvement Nuit debout. Pendant plus de trois mois, des gens venus de tous horizons s’essayent avec passion à l’invention d’une nouvelle forme de démocratie.
+
+
+    Comment parler ensemble sans parler d’une seule voix ?
+source: Mariana Otero
+
+
+---
+tags: realize focus time media video
+content: >
+    If you are a perfectionist of the paralysed sort, it's almost guaranteed that you watch a lot of TV. Perfectionists and procrastinators love TV becausenobody watches TV incorrectly. It is completely passive, which makes it an automatic, simple, rewarding, and mistake-free « win ».
+source: Stephen Guise, How to be an Imperfectionist
+
+
+---
+tags: realize focus time habit balance
+content: >
+    Start the habit of asking yourself :
+
+
+    « Am I procucing, or consuming ? »
+
+
+    The mecanics of this are simple : Figure out how much time you spend in each category, and adjust it slowly until it feels right.
+
+
+---
+tags: realize words economy
 content: >
     C'est quoi être un anarchiste ? *un mot*
 
@@ -266,10 +319,8 @@ tags: violence act group human
 content: >
     Seules les réactions face à l'effondrement diffèrent
 
-    Malgré de nombreuses incertitudes, nous savons d'ores-et-déjà que nous courrons au **désastre social, écologique, énergétique et économique**. Il y a bien sûr de nombreux scénarios possibles: *rapide ou graduel, plus ou moins violent ou injuste, préservant une part plus ou moins grande de la population mondiale...*
 
-    
-    On ne peut pas continuer comme ça (à moins d'être *vraiment* masochiste)
+    Malgré de nombreuses incertitudes, nous savons d'ores-et-déjà que **nous courrons au désastre social, écologique, énergétique et économique**. Il y a bien sûr de nombreux scénarios possibles: *rapide ou graduel, plus ou moins violent ou injuste, préservant une part plus ou moins grande de la population mondiale...*
 
 
     **Quelles réactions individuelles, collectives et structurelles souhaitons-nous ?**
@@ -322,7 +373,7 @@ source: "[Manifeste Debout l'École](http://nuitdebouteduc.wix.com/comeduc), Nui
 
 ---
 title: Une société sans école
-tags: education society
+tags: education
 source: Une société sans école, Ivan Illich
 content: >
 
@@ -397,11 +448,11 @@ content: >
     Il est pour l'instant nécessaire de passer par le site [github.com](http://github.com), qui héberge le code source (créez un compte, anonyme si besoin). Vous pourrez alors éditer les documents :
 
 
-    - [texts](https://github.com/manifestes/manifestes/blob/gh-pages/data/texts_fr.yml) : les sections de texte ici présentes
+    - [texts](https://github.com/manifestes/manifestes/blob/gh-pages/data/texts_fr.yml) — les sections de texte ici présentes
 
-    - [quotes](https://github.com/manifestes/manifestes/blob/gh-pages/data/quotes_fr.yml) : des citations à copier/coller
+    - [quotes](https://github.com/manifestes/manifestes/blob/gh-pages/data/quotes_fr.yml) — des citations à copier/coller
 
-    - [links](https://github.com/manifestes/manifestes/blob/gh-pages/data/links_fr.yml) : la liste de tous les liens
+    - [links](https://github.com/manifestes/manifestes/blob/gh-pages/data/links_fr.yml) — la liste de tous les liens
 
 
     Éditez et validez votre modification en la décrivant, puis créez une «pull-request» (bouton vert) pour proposer votre modification aux autres
@@ -544,7 +595,7 @@ content: >
 
     Il est difficile de définir une norme de taille idéale (dépend de l'activité, des habitudes de vie, élevage ou non...). La caravane des alternatives se positionne sur le postulat de 0,5 à 1ha de terre cultivable par personne, à rajouter à cela de la terre pour le bois (chauffage, construction, sauvage). Nous valorisons donc les petites structures entre 1 ha et 40ha, voire même de 1ha à 10ha
 source: >
-    La [Caravane des alternatives](http://caravanedesalternatives.weebly.com/): réseau de 3000 lieux alternatifs référencés par département: livres téléchargeables, autonomie alimentaire, autoconstruction, médecine par les plantes, autogestion: [l'annuaire alternatif](http://www.fichier-pdf.fr/2015/04/23/annuairealternatifdunecaravanedesalternativesavril2015/), [le livre de connaissances](http://www.fichier-pdf.fr/2015/04/23/livresdeconnaissancesdunecaravanedesalternativesavril2015/), des [compléments alimentaires](http://www.fichier-pdf.fr/2015/04/23/livrecomplalimentairedunecaravanedesalternativesavril2015/), projet [1 million d'arbres](http://www.fichier-pdf.fr/2015/05/14/livreplantons1milliondarbresmai2015/)... [soutenez la caravane](https://www.leetchi.com/c/solidarite-de-caravane-des-alternatives) !
+    La [Caravane des alternatives](http://caravanedesalternatives.weebly.com/) — réseau de 3000 lieux alternatifs référencés par département: livres téléchargeables, autonomie alimentaire, autoconstruction, médecine par les plantes, autogestion: [l'annuaire alternatif](http://www.fichier-pdf.fr/2015/04/23/annuairealternatifdunecaravanedesalternativesavril2015/), [le livre de connaissances](http://www.fichier-pdf.fr/2015/04/23/livresdeconnaissancesdunecaravanedesalternativesavril2015/), des [compléments alimentaires](http://www.fichier-pdf.fr/2015/04/23/livrecomplalimentairedunecaravanedesalternativesavril2015/), projet [1 million d'arbres](http://www.fichier-pdf.fr/2015/05/14/livreplantons1milliondarbresmai2015/)... [soutenez la caravane](https://www.leetchi.com/c/solidarite-de-caravane-des-alternatives) !
 
 
 ---
@@ -811,7 +862,7 @@ content: >
 
 ---
 title: Inégalités et violences
-tags: human society violence
+tags: human violence
 content: >
     Êtres sociaux et sensibles, **infiniment complexes**, notre humanité nous rend capables du **meilleur comme du pire**.
     
@@ -824,7 +875,7 @@ content: >
 
 ---
 title: Contre la violence
-tags: violence economy politics society
+tags: violence economy politics
 content: >
     Je suis contre la violence...
 
@@ -1361,7 +1412,7 @@ source: "[http://montreuil-climat.org](http://montreuil-climat.org)"
 
 ---
 title: "Certains commandent, d'autres obéissent"
-tags: society suffer work habits
+tags: suffer work habits
 content: >
     La quête de profits, pour les uns, et la nécessité de « gagner sa vie », pour les autres.
 
@@ -1429,7 +1480,7 @@ source: "[L'autonomie ou rien](https://lundi.am/L-AUTONOMIE-OU-RIEN)"
 
 ---
 title: État mafia, Mafia des médias
-tags: society media politics group
+tags: media politics group
 content: >
     - L'**État mafia** est la conséquence de l'impossibilité du maintien de l'état démocratique classique dès que les dimensions de l'état dépassent certaines limites
 
@@ -1493,7 +1544,7 @@ content: >
     Les décideurs politiques (états) et économiques (multinationales) ne pourront pas concilier leur volonté de croissance infinie (produire plus) avec la décroissance nécessaire des productions, des gaspillages
 
 
-    N'attendons rien de leurs écrans de fumée, ce n'est que par la mobilisation de celles et ceux qui y ont intérêt (nous) : travailleur.euse.s de toutes conditions, manuel.le.s et intellectuel.le.s, urbains et rurales, du Sud et du Nord... que nous pourrons changer la société et reprendre le contrôle de l'avenir
+    N'attendons rien de leurs écrans de fumée, ce n'est que par la mobilisation de celles et ceux qui y ont intérêt (nous) — travailleur.euse.s de toutes conditions, manuel.le.s et intellectuel.le.s, urbains et rurales, du Sud et du Nord... que nous pourrons changer la société et reprendre le contrôle de l'avenir
 source: "[http://montreuil-climat.org](http://montreuil-climat.org)"
 
 
@@ -1893,7 +1944,7 @@ source: "Albert Jacquard; J’accuse. L’économie triomphante, 1995, [extrait]
 
 ---
 title: Tirage au sort, réinvestir le politique
-tags: politics society emancipation game
+tags: politics emancipation game
 content: >
     Supprimer le cumul des mandats, et pourvoir les postes à responsabilité au hasard parmis des assemblées de volontaires.
 
@@ -2157,7 +2208,7 @@ content: >
 
 
 ---
-tags: education society
+tags: education
 content: l'échec scolaire est une invention de l'école de la société du malaise
 
 
@@ -2207,7 +2258,7 @@ content: >
 
 
 ---
-tags: suffer society
+tags: suffer
 source: Juliette Keating
 content: >
     Déloger le pauvre, tirer l'exilé de son abri de bâches et de planches, pousser la tente des Roms un peu plus loin : ventiler la misère, la disperser pour qu'elle sente moins la mort. Qu'ils disparaissent, ordonnent les salauds. L'ordure à la benne et le trottoir passé au karcher sous les yeux vides des électeurs.
@@ -2286,7 +2337,7 @@ content: >
 
 
 ---
-tags: power society
+tags: power
 content: >
     L'Apartheid était *légal*. 
     L'Holocauste était *légal*. 
@@ -2333,12 +2384,12 @@ content: >
 
 
 ---
-tags: transmit suffer
+tags: suffer education
 content: Aider une personne ne changera pas le monde, mais cela pourra changer le monde pour cette personne
 
 
 ---
-tags: society power economy
+tags: power economy
 source: Jules Valles
 content: >
     Le Capital mourait si, tous les matins, on ne graissait les rouages de ses machines avec de l'huile d'homme.
@@ -2464,7 +2515,7 @@ content: >
 
 
 ---
-tags: society politics
+tags: politics
 source: Henry David Thoreau
 content: >
     Tous les hommes reconnaissent le droit à la révolution, c'est-à-dire de refuser fidélité et allégeance au gouvervement et le droit de lui résister quand sa tyrannie ou son incapacité sont notoires et intolérables
@@ -2575,7 +2626,7 @@ content: On ne sait ce qu'on cherche que l'orsqu'on l'a trouvé
 tags: politics group
 source: Robert Guillermet, Les Yeux du Bouillon
 content: >
-    Comme les gens de gauche le savent sûrement, on a réussi à donner deux sens à « politique » : ces deux sens partent du postulat que le capitalisme, c'est l'ordre naturel. Premier sens (le plus important) : faire de la politique, c'est aller contre l'ordre naturel. Deuxième sens (le moins important) : faire de la politique, c'est devenir un leader de l'ordre naturel. Le sens le plus normal, s'intéresser philosophiquement à la chose publique, a été escamoté par nos magiciens.
+    Comme les gens de gauche le savent sûrement, on a réussi à donner deux sens à « politique » : ces deux sens partent du postulat que le capitalisme, c'est l'ordre naturel. Premier sens (le plus important) — faire de la politique, c'est aller contre l'ordre naturel. Deuxième sens (le moins important) — faire de la politique, c'est devenir un leader de l'ordre naturel. Le sens le plus normal, s'intéresser philosophiquement à la chose publique, a été escamoté par nos magiciens.
 
 
 ---
@@ -3657,7 +3708,7 @@ content: On peut amener une collectivité à accepter un bon gouvernement comme 
 
 
 ---
-tags: society human health
+tags: human health
 source: Jiddu Krishnamurti
 content: Ce n'est pas un signe de bonne santé mentale d'être bien adapté à une société malade.
 
@@ -3756,7 +3807,7 @@ content: >
 
 
 ---
-tags: society alienation power
+tags: alienation power
 source: Salvador Dali
 content: >
     Le clown ce n'est pas moi mais cette société monstrueusement cynique et si inconscieusemment naive qui joue le sérieux pour mieux dissimuler sa folie
@@ -3800,7 +3851,7 @@ content: Pour qu'on ne puisse abuser du pouvoir, il faut que, par la disposition
 
 
 ---
-tags: society group
+tags: group
 source: Daniel Pennac
 content: >
     Le bonheur individuel se doit de produire des retombées collectives, faute de quoi, la société n'est qu'un rêve de prédateur
@@ -4230,7 +4281,7 @@ content: Il n'est rien au monde d'aussi puissant qu'une idée dont l'heure est v
 tags: work alienation object
 source: "Manifeste [Technologos.fr](http://www.technologos.fr)"
 content: >
-    Nous pensons que pour oublier les vicissitudes du travail, les humains s'abandonnent aux biens de consommation, au point d'ériger la consommation en *culture*.
+    Nous pensons que pour oublier les vicissitudes du travail, les humains s'abandonnent aux biens de consommation, au point d'ériger la consommation en culture.
 
 
     La publicité n'est pas un simple moyen de propagande, c'est l'instrument d'un culte.
@@ -4338,7 +4389,7 @@ content: >
 
 
 ---
-tags: politics society
+tags: politics
 source: Félix Thiéfaine
 content: >
     Laissez l'État dans les toilettes où vous l'avez trouvé
@@ -4531,11 +4582,12 @@ content: >
 ---
 tags: audio game group
 content: >
-    C'est quoi notre quartier ? C'est le potager.
+    C'est quoi notre quartier ? *C'est le potager*
 
 
-    Qu'est ce qui fait kiffer ? Etre à walpé.
-source: "[Les potes à Jé](https://www.youtube.com/watch?v=GTuoo1X0YfY)"
+    Qu'est ce qui fait kiffer ? *Être à walpé*
+source: >
+    [Les potes à Jé](https://www.youtube.com/watch?v=GTuoo1X0YfY)
 
 
 ---
@@ -4596,19 +4648,19 @@ content: >
 ---
 tags: earth politics economy emancipation philo
 content: >
-    [Tol Ardor - L'écologie radicale comme nouveau modèle de société.](http://www.tol-ardor.org/1Accueil.php) : Une analyse de la Crise que nous traversons, une proposition de solution locale.
+    [Tol Ardor - L'écologie radicale comme nouveau modèle de société.](http://www.tol-ardor.org/1Accueil.php) — Une analyse de la Crise que nous traversons, une proposition de solution locale.
 
 
 ---
 tags: law text
 content: >
-    Avocats de Paris: [Il n’est plus possible de justifier l’état d’urgence](http://www.avocatparis.org/etatdurgence) : il nous appartenait d'élever la voix plutôt que de chuchoter
+    Avocats de Paris: [Il n’est plus possible de justifier l’état d’urgence](http://www.avocatparis.org/etatdurgence) — il nous appartenait d'élever la voix plutôt que de chuchoter
 
 
 ---
 tags: creation text
 content: >
-    Auteurs et autrices libres, indépendant.es et solidaires : [Manifeste pour une alternative](http://page42.org/auteurs-et-autrices-libres-independant-es-et-solidaires-manifeste-pour-une-alternative/)
+    Auteurs et autrices libres, indépendant.es et solidaires — [Manifeste pour une alternative](http://page42.org/auteurs-et-autrices-libres-independant-es-et-solidaires-manifeste-pour-une-alternative/)
 
 
 ---
@@ -4620,26 +4672,26 @@ content: >
 ---
 tags: creation video space
 content: >
-    [X-Ville](https://vimeo.com/139342392) : Des dizaines d’habitants donnent vie aux mots dans leur ville de carton peint. 
+    [X-Ville](https://vimeo.com/139342392) — Des dizaines d’habitants donnent vie aux mots dans leur ville de carton peint. 
 source: Jordi Colomer
 
 
 ---
 tags: video companies
 content: >
-    [Le temps des bouffons](https://www.youtube.com/watch?v=SiJGQYd6Kw0) de Pierre Falardeau (Quebec, 1985) : Un documentaire à charge, acide et mordant, sur un banquet du Beaver Club, *ces profiteurs qui passent pour des philantropes... aux dents affreusement blanches... qui se reproduisent de pères en fils.*
+    [Le temps des bouffons](https://www.youtube.com/watch?v=SiJGQYd6Kw0) de Pierre Falardeau (Quebec, 1985) — Un documentaire à charge, acide et mordant, sur un banquet du Beaver Club, *ces profiteurs qui passent pour des philantropes... aux dents affreusement blanches... qui se reproduisent de pères en fils.*
 
 
 ---
 tags: media video
 content: >
-    [DOC du réel](https://www.youtube.com/channel/UC7H198GlIEz9GQt8sLLcWdw) : chaine de documentaires politiques et militants sur les actions légitimes et citoyennes en France, solidaire des collectifs activistes
+    [DOC du réel](https://www.youtube.com/channel/UC7H198GlIEz9GQt8sLLcWdw) — chaine de documentaires politiques et militants sur les actions légitimes et citoyennes en France, solidaire des collectifs activistes
 
 
 ---
 tags: text alienation
 content: >
-    [Les casseurs](https://www.infolibertaire.net/les-casseurs-1789/): En marge des manifestations pacifiques pour soutenir l’examen des cahiers de doléances, des groupes de casseurs ont attaqué la Bastille, se livrant à de nombreuses dégradations et se payant, de manière inadmissible, la tête du gouverneur
+    [Les casseurs](https://www.infolibertaire.net/les-casseurs-1789/) — En marge des manifestations pacifiques pour soutenir l’examen des cahiers de doléances, des groupes de casseurs ont attaqué la Bastille, se livrant à de nombreuses dégradations et se payant, de manière inadmissible, la tête du gouverneur
 
 
 ---
@@ -4665,7 +4717,7 @@ content: >
 ---
 tags: web alienation tool
 content: >
-    [Contrôle tes données !](https://controle-tes-donnees.net/) : Vous avez sûrement déjà remarqué que vous étiez suivi sur Internet, principalement par la publicité. Mais saviez-vous que, sur Internet, chacun de vos clics et de vos emails étaient analysés afin de dresser un profil de vos opinions et de votre caractère ?
+    [Contrôle tes données !](https://controle-tes-donnees.net/) — Vous avez sûrement déjà remarqué que vous étiez suivi sur Internet, principalement par la publicité. Mais saviez-vous que, sur Internet, chacun de vos clics et de vos emails étaient analysés afin de dresser un profil de vos opinions et de votre caractère ?
 
 
 ---
@@ -4677,13 +4729,14 @@ content: >
 ---
 tags: suffer alienation list map
 content: >
-    [Guide des associations prison-justice](http://www.guide-associations-prison.fr) : des centaines d’associations agissent en France, à tous les niveaux de la chaîne pénale et pénitentiaire. Ces actions sont très variées, car elles sont locales ou nationales, situées à l’intérieur ou à l’extérieur des établissements, mises en place pendant ou après l’incarcération. Il est parfois difficile de déterminer « qui fait quoi » parmi les différents intervenants associatifs.
+    [Guide des associations prison-justice](http://www.guide-associations-prison.fr) — des centaines d’associations agissent en France, à tous les niveaux de la chaîne pénale et pénitentiaire. Ces actions sont très variées, car elles sont locales ou nationales, situées à l’intérieur ou à l’extérieur des établissements, mises en place pendant ou après l’incarcération. Il est parfois difficile de déterminer « qui fait quoi » parmi les différents intervenants associatifs.
 
 
 ---
 tags: text
 content: >
-    [La Nef des fous](https://infokiosques.net/imprimersans2.php?id_article=435), par Theodore Kaczynski: « Tout le monde se noya »
+    [La Nef des fous](https://infokiosques.net/imprimersans2.php?id_article=435)— « Tout le monde se noya »
+source: Theodore Kaczynski
 
 
 ---
@@ -4714,13 +4767,13 @@ content: >
 ---
 tags: law violence alienation
 content: >
-    [Appel à nasser la police](https://lundi.am/Appel-a-nasser-la-manifestation-de-policiers-du-18-mai) : arrêté n°34378x d'interdiction de rassemblement pour la manifestation du 18mai. Utilisation de flashbananes pour les récalcitrants
+    [Appel à nasser la police](https://lundi.am/Appel-a-nasser-la-manifestation-de-policiers-du-18-mai) — arrêté n°34378x d'interdiction de rassemblement pour la manifestation du 18mai. Utilisation de flashbananes pour les récalcitrants
 
 
 ---
 tags: earth agriculture
 content: >
-    [Réseau pour les Alternatives Forestières](http://alternativesforestieres.org/) : Paysans pluriactifs, citoyens se questionnant sur les forêts de leur territoire, scieurs amoureux de la diversité des bois, éco-constructeurs, débardeurs à cheval, bûcherons cherchant à valoriser le patrimoine forestier, collectifs qui achètent des forêts...
+    [Réseau pour les Alternatives Forestières](http://alternativesforestieres.org/) — Paysans pluriactifs, citoyens se questionnant sur les forêts de leur territoire, scieurs amoureux de la diversité des bois, éco-constructeurs, débardeurs à cheval, bûcherons cherchant à valoriser le patrimoine forestier, collectifs qui achètent des forêts...
 
 
 ---
@@ -4738,13 +4791,13 @@ content: >
 ---
 tags: companies politics
 content: >
-    [Fausses solutions face au changement climatique](http://www.medias-libres.org/2015-greenwashing): un dossier de la [Coordination Permanente des Médias Libres](http://medias-libres.org/)
+    [Fausses solutions face au changement climatique](http://www.medias-libres.org/2015-greenwashing) — un dossier de la [Coordination Permanente des Médias Libres](http://medias-libres.org/)
 
 
 ---
 tags: list object tool
 content: >
-    [Le terrier des Renards verts](http://renards-verts.url.ph/) et sa [chaine youtube](https://www.youtube.com/user/contestavert): petits bricolages, récup', autonomie, idées économiques, écologie (la vraie), un peu de survivalisme...
+    [Le terrier des Renards verts](http://renards-verts.url.ph/) et sa [chaine youtube](https://www.youtube.com/user/contestavert) — petits bricolages, récup', autonomie, idées économiques, écologie (la vraie), un peu de survivalisme...
 
 
 ---
@@ -4775,25 +4828,25 @@ source: Eloi Laurent, France Inter
 ---
 tags: agriculture companies text
 content: >
-    [La bio piratée](http://kokopelli-semences.fr/quoi_de_neuf/bio_pirate) : en France, un certain nombre de compagnies bios sont des filiales d’un des plus gros groupes Européens de l’Agro-alimentaire... petit horizon des dessous des grandes marques bios
+    [La bio piratée](http://kokopelli-semences.fr/quoi_de_neuf/bio_pirate) — en France, un certain nombre de compagnies bios sont des filiales d’un des plus gros groupes Européens de l’Agro-alimentaire... petit horizon des dessous des grandes marques bios
 
 
 ---
 tags: politics group calendar map
 content: >
-    Les mouvements de réappropriation du pouvoir citoyen se rassemblent : [États généraux en Ardèche](http://www.superchataigne2017.fr/les-mouvements-de-reappropriation-du-pouvoir-citoyen-se-rassemblent/) les 4-5-6 mars 2016
+    Les mouvements de réappropriation du pouvoir citoyen se rassemblent — [États généraux en Ardèche](http://www.superchataigne2017.fr/les-mouvements-de-reappropriation-du-pouvoir-citoyen-se-rassemblent/) les 4-5-6 mars 2016
 
 
 ---
 tags: energy earth creation
 content: >
-    L’avenir contaminé de la planète par la radioactivité n’est pas une possibilité mais une réalité : [Appel du 26 avril](http://www.brut-de-beton.net/appel.php) pour une insurrection artistique, intellectuelle, scientifique et populaire contre la poursuite de la contamination radioactive de la planète ! [voir les projets](http://www.brut-de-beton.net/telechargement/premiers-PROJETS.pdf)
+    L’avenir contaminé de la planète par la radioactivité n’est pas une possibilité mais une réalité — [Appel du 26 avril](http://www.brut-de-beton.net/appel.php) pour une insurrection artistique, intellectuelle, scientifique et populaire contre la poursuite de la contamination radioactive de la planète ! [voir les projets](http://www.brut-de-beton.net/telechargement/premiers-PROJETS.pdf)
 
 
 ---
 tags: alienation text
 content: >
-    [Abolir la prison, ses mécanismes et ses logiques](https://blogs.mediapart.fr/edition/les-invites-de-mediapart/article/040614/abolir-la-prison-ses-mecanismes-et-ses-logiques): «Nous affirmons qu’au XXIe siècle, enfermer quelqu’un, ce n’est pas le punir : c’est agir par paresse et par prolongement d’un système archaïque, dépassé et inadapté aux sociétés postmodernes»
+    [Abolir la prison, ses mécanismes et ses logiques](https://blogs.mediapart.fr/edition/les-invites-de-mediapart/article/040614/abolir-la-prison-ses-mecanismes-et-ses-logiques) — «Nous affirmons qu’au XXIe siècle, enfermer quelqu’un, ce n’est pas le punir : c’est agir par paresse et par prolongement d’un système archaïque, dépassé et inadapté aux sociétés postmodernes»
 
 
 ---
@@ -4842,7 +4895,7 @@ source: James C. Scott
 ---
 tags: image creation
 content: >
-    [Ne pas plier](http://www.nepasplier.fr/epicerie.htm): épicerie d'affiches et d'images de luttes
+    [Ne pas plier](http://www.nepasplier.fr/epicerie.htm) — épicerie d'affiches et d'images de luttes
 
 
 ---
@@ -4872,7 +4925,7 @@ content: >
 ---
 tags: alienation text politics
 content: >
-    [En prison chez moi pendant trois semaines](https://paris-luttes.info/en-prison-chez-moi-pendant-trois-4306): quand j’utilise le mot «justice», je ne parle pas de cette justice portée par les institutions, de cette justice qui aujourd’hui m’assigne à résidence. Celle-là n’a de justice que le nom
+    [En prison chez moi pendant trois semaines](https://paris-luttes.info/en-prison-chez-moi-pendant-trois-4306) — quand j’utilise le mot «justice», je ne parle pas de cette justice portée par les institutions, de cette justice qui aujourd’hui m’assigne à résidence. Celle-là n’a de justice que le nom
 
 
 ---
@@ -4884,7 +4937,7 @@ content: >
 ---
 tags: politics list                                                        
 content: >
-    [Le PS en actes](http://www.bilan-ps.fr/): relevé thématique des décisions, lois, actions et citations de la mandature de François Hollande, et des différents gouvernements issus du parti socialiste, de mai 2012 à ...
+    [Le PS en actes](http://www.bilan-ps.fr/) — relevé thématique des décisions, lois, actions et citations de la mandature de François Hollande, et des différents gouvernements issus du parti socialiste, de mai 2012 à ...
 
 
 ---
@@ -4902,7 +4955,8 @@ content: >
 ---
 tags: video philo alienation
 content: >
-    [Penser les meurtres de masse](http://la-bas.org/la-bas-magazine/entretiens/alain-badiou-penser-les-meurtres-de-masse), au-delà des indispensables affects : horreur, barbarie, stupéfaction; par Alain Badiou, 1h46
+    [Penser les meurtres de masse](http://la-bas.org/la-bas-magazine/entretiens/alain-badiou-penser-les-meurtres-de-masse), au-delà des indispensables affects : horreur, barbarie, stupéfaction
+source: Alain Badiou, 1h46
 
 
 ---
@@ -4944,7 +4998,7 @@ content: >
 ---
 tags: companies text
 content: >
-    Extraction minière au Brésil: [rupture d'un barrage le 5 novembre 2015](http://www.bastamag.net/Tragedie-ecologique-et-boues-toxiques-au-Bresil-pourquoi-les-autorites-ont-mis): coulée de boues toxiques, un demi million de personnes privées d'accès à l'eau, fleuve considéré comme mort par les scientifiques
+    Extraction minière au Brésil: [rupture d'un barrage le 5 novembre 2015](http://www.bastamag.net/Tragedie-ecologique-et-boues-toxiques-au-Bresil-pourquoi-les-autorites-ont-mis) — coulée de boues toxiques, un demi million de personnes privées d'accès à l'eau, fleuve considéré comme mort par les scientifiques
 
 
 ---
@@ -4962,7 +5016,7 @@ content: >
 ---
 tags: map list tool
 content: >
-    [Ecoclash](http://ecoclash.jimdo.com/): Partage de savoirs, Infokiosque, videokiosque, alternatives pratiques, autoconstruction, décroissance, permaculture, ecovillage, communauté, écologie, anarchie, résistance, altermondialisme, freegan, squat, action directe... voir le [wiki des Lieux de vie ouvert](http://sharewiki.org/en/Lieu_de_vie_ouvert)
+    [Ecoclash](http://ecoclash.jimdo.com/) — Partage de savoirs, Infokiosque, videokiosque, alternatives pratiques, autoconstruction, décroissance, permaculture, ecovillage, communauté, écologie, anarchie, résistance, altermondialisme, freegan, squat, action directe... voir le [wiki des Lieux de vie ouvert](http://sharewiki.org/en/Lieu_de_vie_ouvert)
 
 
 ---
@@ -4986,7 +5040,7 @@ content: >
 ---
 tags: audio politics
 content: >
-    [Daesh: autopsie d'un monstre](http://www.franceinter.fr/emission-lenquete-daesh-autopsie-dun-monstre) : des anciens diplomates et agents de la DGSE racontent comment Etats-Unis, Arabie Saoudite, Qatar et France ont soutenu financièrement et armé les groupes djihadistes en Irak et en Syrie
+    [Daesh: autopsie d'un monstre](http://www.franceinter.fr/emission-lenquete-daesh-autopsie-dun-monstre) — des anciens diplomates et agents de la DGSE racontent comment Etats-Unis, Arabie Saoudite, Qatar et France ont soutenu financièrement et armé les groupes djihadistes en Irak et en Syrie
 source: France Inter, 20/11/2015
 
 
@@ -5011,13 +5065,13 @@ content: >
 ---
 tags: alienation emancipation text
 content: >
-    [Lettre à ma génération](http://blogs.mediapart.fr/blog/sarah-roubato/201115/lettre-ma-generation-moi-je-nirai-pas-quen-terrasse): Ce qu’on est en train de vivre mérite que chacun se pose un instant à la terrasse de lui-même, et lève la tête pour regarder la société où il vit. Et qui sait... peut-être qu'un peu plus loin, dans un lambeau de ciel blanc accroché aux immeubles, il apercevra la société qu’il espère. Sarah Roubato
+    [Lettre à ma génération](http://blogs.mediapart.fr/blog/sarah-roubato/201115/lettre-ma-generation-moi-je-nirai-pas-quen-terrasse) — Ce qu’on est en train de vivre mérite que chacun se pose un instant à la terrasse de lui-même, et lève la tête pour regarder la société où il vit. Et qui sait... peut-être qu'un peu plus loin, dans un lambeau de ciel blanc accroché aux immeubles, il apercevra la société qu’il espère. Sarah Roubato
 
 
 ---
 tags: video work
 content: >
-    [Pôle emploi, ne quittez pas !](http://poleemploinequittezpas.com/): Dans un Pôle emploi du 93, quarante agents font face à quatre mille demandeurs d’emploi. Samia, Corinne, Thierry, Zuleika doivent soutenir et surveiller, faire du chiffre, obéir aux directives politiques et aux injonctions de communication, trouver du travail là où il n’y en a pas. C’est la vie d’une équipe qui a intégré l’impossible à son quotidien
+    [Pôle emploi, ne quittez pas !](http://poleemploinequittezpas.com/) — Dans un Pôle emploi du 93, quarante agents font face à quatre mille demandeurs d’emploi. Samia, Corinne, Thierry, Zuleika doivent soutenir et surveiller, faire du chiffre, obéir aux directives politiques et aux injonctions de communication, trouver du travail là où il n’y en a pas. C’est la vie d’une équipe qui a intégré l’impossible à son quotidien
 
 
 ---
@@ -5035,7 +5089,7 @@ content: >
 ---
 tags: media act
 content: >
-    [Anticop21](http://anticop21.org/): La Conférence de Paris sur les changements climatiques aura lieu du 30 novembre au 11 décembre. De nombreuses mobilisations sont prévues à cette occasion
+    [Anticop21](http://anticop21.org/) — La Conférence de Paris sur les changements climatiques aura lieu du 30 novembre au 11 décembre. De nombreuses mobilisations sont prévues à cette occasion
 
 
 ---
@@ -5105,7 +5159,8 @@ source: >
 ---
 tags: video work
 content: >
-    Les règles du jeu ([bande annonce](https://www.youtube.com/watch?v=yyRAYQ46UZ8)), réalisé par Claudine Bories et Patrice Chagnard: le Probleme vient-il des jeunes ou des employeurs ? 
+    [Les règles du jeu](https://www.youtube.com/watch?v=yyRAYQ46UZ8) — Le Probleme vient-il des jeunes ou des employeurs ? 
+source: Claudine Bories et Patrice Chagnard
 
 
 ---
@@ -5203,7 +5258,7 @@ content: >
 ---
 tags: philo text
 content: >
-    [Appel](http://bloom0101.org/wp-content/uploads/2014/10/appel.pdf) de [Bloom0101.org](http://bloom0101.org/): Devant l'évidence de la catastrophe, il y a ceux qui s'indignent et ceux qui prennent acte, ceux qui dénoncent et ceux qui s'organisent. Nous sommes du côté de ceux qui s'organisent
+    [Appel](http://bloom0101.org/wp-content/uploads/2014/10/appel.pdf) de [Bloom0101.org](http://bloom0101.org/) — Devant l'évidence de la catastrophe, il y a ceux qui s'indignent et ceux qui prennent acte, ceux qui dénoncent et ceux qui s'organisent. Nous sommes du côté de ceux qui s'organisent
 
 
 ---
@@ -5227,7 +5282,7 @@ content: >
 ---
 tags: text philo politics
 content: >
-    La revue [Ballast](http://www.revue-ballast.fr): Chroniques, Carnets de route, Économie, Féminisme, Histoire, International, Littérature, Poésie, Politique, Portraits
+    La revue [Ballast](http://www.revue-ballast.fr) — Chroniques, Carnets de route, Économie, Féminisme, Histoire, International, Littérature, Poésie, Politique, Portraits
 
 
 ---
@@ -5386,7 +5441,7 @@ content: >
 ---
 tags: group list map video
 content: >
-    Promouvoir la transition individuelle afin de recentrer l’individu comme acteur des changements: [Citoyens en transition](http://citoyens.en-transition.fr/): boite à outils, liens, carte, films. C’est un lieu d’échange et de conseils qui appartient à tous ceux qui en font une réalité.
+    Promouvoir la transition individuelle afin de recentrer l’individu comme acteur des changements: [Citoyens en transition](http://citoyens.en-transition.fr/) — boite à outils, liens, carte, films. C’est un lieu d’échange et de conseils qui appartient à tous ceux qui en font une réalité.
 
 
 ---
@@ -5404,7 +5459,7 @@ content: >
 ---
 tags: agriculture earth
 content: >
-    [Permaculture sans frontières](http://permaculture-sans-frontieres.org/): efficacité, éthique = sociétés d’abondance + soutenables, écologiques, heureuses
+    [Permaculture sans frontières](http://permaculture-sans-frontieres.org/) — efficacité, éthique = sociétés d’abondance + soutenables, écologiques, heureuses
 
 
 ---
@@ -5440,7 +5495,7 @@ content: >
 ---
 tags: history group
 content: >
-    Association [Survie](http://survie.org/): lutte contre la Françafrique et le néocolonialisme, combattre la banalisation du génocide et réinventer la solidarité internationale par la promotion des Biens Publics mondiaux.
+    Association [Survie](http://survie.org/) — lutte contre la Françafrique et le néocolonialisme, combattre la banalisation du génocide et réinventer la solidarité internationale par la promotion des Biens Publics mondiaux.
 
 
 ---
@@ -5470,7 +5525,7 @@ content: >
 ---
 tags: media list video text
 content: >
-    [Les renseignements généreux](http://www.les-renseignements-genereux.org): autodéfense intellectuelle, informations et alternatives; ressources, brochures, vidéos, revue Traverse
+    [Les renseignements généreux](http://www.les-renseignements-genereux.org) — autodéfense intellectuelle, informations et alternatives; ressources, brochures, vidéos, revue Traverse
 
 
 ---
@@ -5558,7 +5613,7 @@ content: >
 ---
 tags: media
 content: >
-    [Bonnes nouvelles](http://www.bonnes-nouvelles.be/) et [solutions](http://www.ilfauttuertina.net/solutions/): il y a plein d'alternatives...
+    [Bonnes nouvelles](http://www.bonnes-nouvelles.be/) et [solutions](http://www.ilfauttuertina.net/solutions/) — il y a plein d'alternatives...
 
 
 ---
@@ -5705,19 +5760,22 @@ content: >
 ---
 tags: politics philo emancipation
 content: >
-    [Peut-on se passer de la promesse](http://www.franceculture.fr/emission-forum-le-monde-le-mans-peut-on-se-passer-de-la-promesse-22-2015-07-09), Philippe Corcuff à propos des promesses politiques, France Culture
+    [Peut-on se passer de la promesse](http://www.franceculture.fr/emission-forum-le-monde-le-mans-peut-on-se-passer-de-la-promesse-22-2015-07-09), Philippe Corcuff à propos des promesses politiques
+source: France Culture
 
 
 ---
 tags: economy history politics video
 content: >
-    [discours de Thomas Sankara sur la dette](https://www.youtube.com/watch?v=jvYM6cGuBo8), Sommet OUA, Addis Abeba, 29 juillet 1987
+    [discours de Thomas Sankara sur la dette](https://www.youtube.com/watch?v=jvYM6cGuBo8)
+source: Sommet OUA, Addis Abeba, 29 juillet 1987
 
 
 ---
 tags: home suffer audio
 content: >
-    [Offres vides](http://www.franceculture.fr/emission-les-pieds-sur-terre-offres-vides-r-2015-07-08), trouver un logement dans la capitale ? *Les pieds sur terre*, France Culture, 2002
+    [Offres vides](http://www.franceculture.fr/emission-les-pieds-sur-terre-offres-vides-r-2015-07-08), trouver un logement dans la capitale ?
+source: Les pieds sur terre, France Culture, 2002
 
 
 ---
@@ -5784,7 +5842,7 @@ content: >
 ---
 tags: energy group list
 content: >
-    [éconologie](http://www.econologie.com/): économie, écologie, environnement, une mine de liens et de projets
+    [éconologie](http://www.econologie.com/) — économie, écologie, environnement, une mine de liens et de projets
 
 
 ---
@@ -5832,7 +5890,7 @@ content: >
 ---
 tags: home group
 content: >
-    [Bâtir des alternatives](http://batirdesalternatives.wordpress.com/): communautés intentionnelles, éco-villages, habitats groupés... des solutions pour vivre autrement
+    [Bâtir des alternatives](http://batirdesalternatives.wordpress.com/) — communautés intentionnelles, éco-villages, habitats groupés... des solutions pour vivre autrement
 
 
 ---
@@ -5862,7 +5920,7 @@ content: >
 ---
 tags: education alienation video
 content: >
-    [changer de paradigme pour l'éducation](https://www.youtube.com/watch?v=deYjatIfWVU)
+    [Changer de paradigme pour l'éducation](https://www.youtube.com/watch?v=deYjatIfWVU)
 source: Ken Robinson
 
 
@@ -5875,7 +5933,7 @@ content: >
 ---
 tags: text words
 content: >
-    [Le passager clandestin](http://www.lepassagerclandestin.fr/): Maison d’édition indépendante, pour arracher à l’histoire quelques fragments de vérité, interroger sans complaisance l’ordre présent des choses...
+    [Le passager clandestin](http://www.lepassagerclandestin.fr/) — Maison d’édition indépendante, pour arracher à l’histoire quelques fragments de vérité, interroger sans complaisance l’ordre présent des choses...
 
 
 ---
@@ -5988,7 +6046,7 @@ source: >
 ---
 tags: politics energy history audio creation
 content: >
-    [Nuclaire, la fabrique de l'oubli](http://www.radiobartas.net/listings/nucleaire-la-fabrique-de-loubli/): un assemblage d’extraits d’analyses, de témoignages, de textes littéraires, et d’archives sonores qui tentent de nous éclairer sur cette société nucléaire qui par son omniprésence se fait oublier
+    [Nuclaire, la fabrique de l'oubli](http://www.radiobartas.net/listings/nucleaire-la-fabrique-de-loubli/) — un assemblage d’extraits d’analyses, de témoignages, de textes littéraires, et d’archives sonores qui tentent de nous éclairer sur cette société nucléaire qui par son omniprésence se fait oublier
 
 
 ---
@@ -6000,7 +6058,10 @@ content: >
 ---
 tags: alienation space tool map
 content: >
-    Partout les caméras se multiplient, la vidéo-surveillance enregistre nos faits et gestes au quotidien, alors que les dispositifs de contrôle ne cessent de s’intensifier et de se perfectionner. [Sous-surveillance.net](http://www.sous-surveillance.net) permet à chaque ville (déjà 11 en France!) de se doter facilement d’un site local de cartographie des caméras, publiques comme privées, qui filment l’espace public: 
+    Partout les caméras se multiplient, la vidéo-surveillance enregistre nos faits et gestes au quotidien, alors que les dispositifs de contrôle ne cessent de s’intensifier et de se perfectionner.
+
+
+    [Sous-surveillance.net](http://www.sous-surveillance.net) permet au villes de se doter facilement d’un site local de cartographie des caméras, publiques comme privées, qui filment l’espace public
 
 
 ---
@@ -6133,7 +6194,8 @@ content: >
 ---
 tags: words history creation text
 content: >
-    récits de luttes sur [constellations](https://constellations.boum.org/), par le collectif mauvaise troupe : [Défendre la ZAD](https://constellations.boum.org/spip.php?article125), Trajectoires révolutionnaires du jeune 21e siècle, ZAD NO TAV, ...
+    récits de luttes sur [constellations](https://constellations.boum.org/), [Défendre la ZAD](https://constellations.boum.org/spip.php?article125), Trajectoires révolutionnaires du jeune 21e siècle, ZAD NO TAV
+source: Collectif mauvaise troupe
 
 
 ---
@@ -6249,7 +6311,7 @@ content: >
 ---
 tags: space law text
 content: >
-    [le squat de A à Z](https://infokiosques.net/imprimersans2.php?id_article=41), et son [bonus](https://www.infokiosques.net/IMG/pdf/SquatAZ-bonus-cahierA5.pdf): expérimenter le collectif, faire acte politique dans des lieux délaissés, abandonnés, en attente spéculative
+    [le squat de A à Z](https://infokiosques.net/imprimersans2.php?id_article=41), et son [bonus](https://www.infokiosques.net/IMG/pdf/SquatAZ-bonus-cahierA5.pdf) — expérimenter le collectif, faire acte politique dans des lieux délaissés, abandonnés, en attente spéculative
 
 
 ---
@@ -6267,7 +6329,7 @@ content: >
 ---
 tags: text map philo
 content: >
-    la [bibliothèque associative de Malakoff](http://www.b-a-m.org/): de bons livres, des ateliers, débats, lectures et projections
+    la [bibliothèque associative de Malakoff](http://www.b-a-m.org/) — de bons livres, des ateliers, débats, lectures et projections
 
 
 ---
@@ -6345,7 +6407,7 @@ content: >
 ---
 tags: map agriculture work
 content: >
-    [Terre de Liens](http://www.terredeliens.org/): agir concrètement pour permettre l’installation de paysans et le développement d’une agriculture biologique
+    [Terre de Liens](http://www.terredeliens.org/) — agir concrètement pour permettre l’installation de paysans et le développement d’une agriculture biologique
 
 
 ---
@@ -6363,7 +6425,7 @@ content: >
 ---
 tags: object economy
 content: >
-    ne plus jeter, mais donner, recycler, récupérer, troquer dans les [zones de gratuité](http://fr.wikipedia.org/wiki/Magasin_gratuit): [boutique sans argent](http://laboutiquesansargent.org/)
+    ne plus jeter, mais donner, recycler, récupérer, troquer dans les [zones de gratuité](http://fr.wikipedia.org/wiki/Magasin_gratuit) — [boutique sans argent](http://laboutiquesansargent.org/)
 
 
 ---
@@ -6525,9 +6587,12 @@ content: >
 
 
 ---
-tags: companies economy
+tags: companies economy time
 content: >
     pour la fermeture des grandes enseignes le dimanche
+
+
+    parce que c'est un bon jour pour se promener dans la forêt.
 
 
 ---
@@ -6625,7 +6690,8 @@ content: >
 ---
 tags: philo audio
 content: >
-    [pornographie du temps présent](http://plus.franceculture.fr/france-culture-forum-l-annee-vue-par-la-philo), Alain Badiou
+    [pornographie du temps présent](http://plus.franceculture.fr/france-culture-forum-l-annee-vue-par-la-philo)
+source: Alain Badiou, France Culture
 
 
 ---
@@ -6656,7 +6722,7 @@ source: Jean-Robert Viallet, 64min
 ---
 tags: media tool text
 content: >
-    [Atelier médias libres](http://atelier.mediaslibres.org/): bidouilles techniques, infos et prises de tête par et pour les médias libres
+    [Atelier médias libres](http://atelier.mediaslibres.org/) — bidouilles techniques, infos et prises de tête par et pour les médias libres
 
 
 ---
@@ -6851,7 +6917,7 @@ content: >
 ---
 tags: energy
 content: >
-    [Negawatt](http://www.negawatt.org): changeons d’énergies, transition, mode d’emploi
+    [Negawatt](http://www.negawatt.org) — changeons d’énergies, transition, mode d’emploi
 
 
 ---
@@ -6875,5 +6941,5 @@ content: >
 ---
 tags: media politics video
 content: >
-    [Frenchlingteam](https://www.youtube.com/user/frenchlingteam) : L'équipe Linguistique Francophone propose une ouverture à un nouveau modèle de société autour d'une Économie basée sur les Ressources à travers la traduction de contenus permettant d'éveiller les consciences quant aux changements radicaux nécessaires à la survie et l'épanouissement de l'humanité. [Forum Linguistique](http://forum.linguisticteam.org/)
+    [Frenchlingteam](https://www.youtube.com/user/frenchlingteam) — L'équipe Linguistique Francophone propose une ouverture à un nouveau modèle de société autour d'une Économie basée sur les Ressources à travers la traduction de contenus permettant d'éveiller les consciences quant aux changements radicaux nécessaires à la survie et l'épanouissement de l'humanité. [Forum Linguistique](http://forum.linguisticteam.org/)
 
