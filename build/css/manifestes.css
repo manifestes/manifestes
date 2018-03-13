@@ -1063,117 +1063,158 @@ div.highlight {
   background: rgba(255, 252, 0, 0.48);
 }
 /* MANY thanks to http://tools.medialab.sciences-po.fr/iwanthue/ */
-/* COLORS FOR TAGS (declaring order following overwriting/priorities) */
-.t-about,
-.t-list,
-.t-tool {
-  background-color: #C7C9C6;
+/*
+C 17.72 51.18
+L 74.8 96.46000000000001
+*/
+/* COLORS FOR TAGS */
+.tagcolor0 {
+  background-color: #ebb6bd;
 }
-.t-map,
-.t-space,
-.t-calendar {
-  background-color: #B7B4AC;
+.tagcolor1 {
+  background-color: #f9a576;
 }
-.t-text,
-.t-image,
-.t-audio,
-.t-video {
-  background-color: #C7C9C6;
+.tagcolor2 {
+  background-color: #ebcaa7;
 }
-.t-group {
-  background-color: ;
+.tagcolor3 {
+  background-color: #f3d999;
 }
-.t-earth,
-.t-agriculture,
-.t-health,
-.t-eat {
-  background-color: #A4DAB0;
+.tagcolor4 {
+  background-color: #e1d774;
 }
-.t-home,
-.t-move,
-.t-object,
-.t-energy,
-.t-work {
-  background-color: #E8B887;
+.tagcolor5 {
+  background-color: #c5c19a;
 }
-.t-education,
-.t-media {
-  background-color: #ADD7DB;
+.tagcolor6 {
+  background-color: #e4e9b7;
 }
-.t-alienation,
-.t-emancipation,
-.t-realize,
-.t-slow,
-.t-balance {
-  background-color: #95CBD1;
+.tagcolor7 {
+  background-color: #d4f89d;
 }
-.t-suffer,
-.t-act,
-.t-genre,
-.t-zad,
-.t-words {
-  background-color: #EDB4AA;
+.tagcolor8 {
+  background-color: #a4cf7c;
 }
-.t-creation,
-.t-love,
-.t-attention,
-.t-fear,
-.t-human,
-.t-death,
-.t-life {
-  background-color: #EDB8E5;
+.tagcolor9 {
+  background-color: #caecbc;
 }
-.t-science,
-.t-web {
-  background-color: #E8D9A0;
+.tagcolor10 {
+  background-color: #83d996;
 }
-.t-companies,
-.t-history,
-.t-law,
-.t-economy,
-.t-politics,
-.t-power,
-.t-philo {
-  background-color: #D9C8DA;
+.tagcolor11 {
+  background-color: #a7eabe;
 }
-.t-nc {
-  background-color: #d4d4d4;
+.tagcolor12 {
+  background-color: #9acab6;
 }
-/* ... then duplicated below for bordered color*/
-/*@bbs: 7px;
-.tb-about, .tb-group, .tb-list, .tb-tool {
-  border-left: @bbs solid #C7C9C6;
+.tagcolor13 {
+  background-color: #bcf1e0;
 }
-.tb-map, .tb-calendar {
-  border-left: @bbs solid #B7B4AC;
+.tagcolor14 {
+  background-color: #79cfbe;
 }
-.tb-text, .tb-image, .tb-audio, .tb-video {
-  border-left: @bbs solid #C7C9C6;
+.tagcolor15 {
+  background-color: #55f4df;
 }
-.tb-earth, .tb-agriculture, .tb-health, .tb-eat {
-  border-left: @bbs solid #A4DAB0;
+.tagcolor16 {
+  background-color: #51d2d1;
 }
-.tb-home, .tb-move, .tb-object, .tb-energy, .tb-work, .tb-slow {
-  border-left: @bbs solid #E8B887;
+.tagcolor17 {
+  background-color: #9be0e6;
 }
-.tb-education, .tb-media {
-  border-left: @bbs solid #ADD7DB;
+.tagcolor18 {
+  background-color: #4ed1f8;
 }
-.tb-alienation, .tb-emancipation {
-  border-left: @bbs solid #95CBD1;
+.tagcolor19 {
+  background-color: #80c8f6;
 }
-.tb-subsist, .tb-act, .tb-love, .tb-genre, .tb-zad, .tb-words {
-  border-left: @bbs solid #EDB4AA;
+.tagcolor20 {
+  background-color: #bcc5eb;
 }
-.tb-creation, .tb-space {
-  border-left: @bbs solid #EDB8E5; 
+.tagcolor21 {
+  background-color: #dbbbec;
 }
-.tb-science, .tb-web {
-  border-left: @bbs solid #E8D9A0;
+.tagcolor22 {
+  background-color: #edb4ec;
 }
-.tb-companies, .tb-history, .tb-law, .tb-economy, .tb-politics, .tb-philo {
-  border-left: @bbs solid #D9C8DA;
-}*/
+.tagcolor23 {
+  background-color: #f7a2dd;
+}
+.tagcolor24 {
+  background-color: #f6a39f;
+}
+.tagcolor25 {
+  background-color: #eeb38f;
+}
+.tagcolor26 {
+  background-color: #eabe6e;
+}
+.tagcolor27 {
+  background-color: #d0c074;
+}
+.tagcolor28 {
+  background-color: #cdc58c;
+}
+.tagcolor29 {
+  background-color: #ebe695;
+}
+.tagcolor30 {
+  background-color: #c8dd8c;
+}
+.tagcolor31 {
+  background-color: #d8f3af;
+}
+.tagcolor32 {
+  background-color: #a3ca93;
+}
+.tagcolor33 {
+  background-color: #b1f3ab;
+}
+.tagcolor34 {
+  background-color: #b3dfc1;
+}
+.tagcolor35 {
+  background-color: #86ceac;
+}
+.tagcolor36 {
+  background-color: #6beec3;
+}
+.tagcolor37 {
+  background-color: #51d4b5;
+}
+.tagcolor38 {
+  background-color: #94ebda;
+}
+.tagcolor39 {
+  background-color: #87c4c1;
+}
+.tagcolor40 {
+  background-color: #67eeef;
+}
+.tagcolor41 {
+  background-color: #6ad5eb;
+}
+.tagcolor42 {
+  background-color: #99ceeb;
+}
+.tagcolor43 {
+  background-color: #9cc2f7;
+}
+.tagcolor44 {
+  background-color: #bfb9f7;
+}
+.tagcolor45 {
+  background-color: #e6aaf8;
+}
+.tagcolor46 {
+  background-color: #e4bad9;
+}
+.tagcolor47 {
+  background-color: #f4a8c6;
+}
+.tagcolor48 {
+  background-color: red;
+}
 .mailing {
   margin-top: 30px;
 }
@@ -1773,7 +1814,7 @@ div.highlight {
   z-index: 27;
   box-sizing: border-box;
   position: fixed;
-  width: 170px;
+  width: 180px;
   top: 65px;
   bottom: 0;
   background: #E4E4E4;
@@ -1793,11 +1834,11 @@ div.highlight {
   user-select: none;
 }
 .header .tagspanel.left {
-  left: -170px;
+  left: -180px;
   text-align: right;
 }
 .header .tagspanel.right {
-  right: -170px;
+  right: -180px;
   text-align: left;
 }
 .header .tagspanel.left.active {
@@ -1826,41 +1867,64 @@ div.highlight {
   cursor: pointer;
   display: inline-block;
   vertical-align: top;
-  width: 100%;
+  text-align: center;
+  width: 50%;
+  -webkit-box-shadow: inset 0px 0px 12px -11px #2f2f2f;
+  -moz-box-shadow: inset 0px 0px 12px -11px #2f2f2f;
+  box-shadow: inset 0px 0px 12px -11px #2f2f2f;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: antialiased;
   font-style: italic;
   font-size: 0.80em;
-  color: #fff6;
 }
 .header .tagspanel .linetag i {
-  padding: 0 10px;
-  width: 14px;
-  font-size: 1.1em;
-  line-height: 150%;
+  font-size: 2.0em;
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: none;
+  color: white;
+}
+.header .tagspanel .linetag .back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .header .tagspanel .linetag .label {
+  position: absolute;
   display: inline-block;
-  /*padding: 3px 7px;*/
-  /*background-color: rgba(0,0,0,0.5);*/
-}
-.header .tagspanel .linetag:hover,
-.header .tagspanel .linetag.popuped {
-  background: #383838;
+  left: 0;
+  bottom: 0;
+  margin-bottom: 2px;
+  width: 100%;
+  color: #fff6;
 }
 .header .tagspanel .linetag:hover i,
 .header .tagspanel .linetag.popuped i {
-  color: white;
+  display: inline-block;
+}
+.header .tagspanel .linetag:hover .back,
+.header .tagspanel .linetag.popuped .back {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .header .tagspanel .linetag.focused i {
-  color: white;
-}
-.header .tagspanel .linetag.active {
-  background: black;
+  display: inline-block;
 }
 .header .tagspanel .linetag.active i {
-  color: white;
+  display: inline-block;
+}
+.header .tagspanel .linetag.active .back {
+  background-color: rgba(0, 0, 0, 0.15);
 }
 .header .tagspanel.filtering .tagshat {
   background: #e4e4e4;
@@ -2027,8 +2091,8 @@ div.highlight {
   transition: padding 0.4s;
 }
 .wrapper.tagsbordered {
-  padding-left: 170px;
-  padding-right: 170px;
+  padding-left: 180px;
+  padding-right: 180px;
 }
 .emptyresult {
   position: relative;
@@ -2335,6 +2399,7 @@ body.layout-mapprint .container {
   background: #748598;
   padding: 2px 5px;
   border-radius: 1px;
+  white-space: nowrap;
 }
 .wrapper.layout-abcd .page .section a:hover {
   color: white;
@@ -2359,7 +2424,7 @@ body.layout-mapprint .container {
   /*padding: 10px 50px 50px 50px;*/
   text-align: left;
   padding: 60px 20%;
-  font-size: 0.9em;
+  font-size: 1.1em;
   line-height: 1.6em;
 }
 .wrapper.layout-abcd .page .section .content h1 {
@@ -2427,7 +2492,8 @@ body.layout-mapprint .container {
 .panel.bricks .link a {
   color: white;
   background: #748598;
-  padding: 2px 4px;
+  padding: 3px 7px;
+  white-space: nowrap;
 }
 .panel.bricks .link a:hover {
   color: white;

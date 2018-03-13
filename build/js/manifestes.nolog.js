@@ -3356,9 +3356,6 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
       books: [],
       catalog: []
     }
-
-    $scope.tagsContents = {}; // .tag .label .description .icon for each tag
-    $scope.tagsContentsOrdered = []; // same but array to be able to sort
     
     $scope.settings.verbose = false; // to print detailed stats on tags, objects, etc...
 
@@ -3384,11 +3381,11 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
       count: {}, // will count results if search/tags filtered
 
       tagging: tags.length>0, // if tags/filtering active or not
-      tagsmode: 'grid', // tags display mode: graph OR grid
       tagspanel: false,
       tags: tags, // [] of current filtering tags
       hoverTags: [], // from hovered abcd section
 
+      prevSearchLen: 0, // ...see how live searching works
       networkstatus: "NO", // loaded or not ?
 
       mapSources: [],
@@ -3405,15 +3402,6 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
     
     if($scope.settings.verbose)
       0;
-
-
-    // $scope.clickMenu = function(k) {
-    //   var target = document.getElementById('p_'+k);
-    //   //console.log("o",target.offsetTop);
-    //   //target.scrollIntoView({block: "end", behavior: "smooth"});
-    //   window.scrollTo(0,target.offsetTop - 110);
-    //   //window.scrollBy(0,-40);
-    // };
 
     $scope.updatePath = function() {
       var st = $scope.state;
@@ -3453,27 +3441,8 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
       if(lay == $scope.state.layout) return; // unchanged
       else {
         $scope.state.pad = $scope.meta.menu.pad[lay];
-        
-        //$scope.state.loading = true;
-
-        // reset tags & search
-        //$scope.toggleTag();
-        //$scope.searchSubmit();
 
         $scope.state.layout = lay;
-        // if(lay!='network') {
-        //   $scope.state.networkstatus = "NO";
-        //   //loadLinksGraph($scope);
-        // }
-
-        //scrollToup();
-        
-        // update tag graph sizes
-        //if($scope.state.tagsmode=='graph')
-          //updateTagNodesSizesForLayout($scope,lay);
-
-        // unlock loader when scope ready (for map, only done after csv received)
-        //if(lay!='map') $timeout(function(){ $scope.state.loading = false; });
 
         $scope.updatePath();
 
@@ -3483,15 +3452,6 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
     $scope.networkControl = function(what) {
       controlLinksGraph(what);
     };
-
-    // $scope.overTag = function(tag,refresh) {
-    //   if(tag && $scope.tagsContents[tag]) {
-    //     $scope.state.overtag = $scope.tagsContents[tag];
-    //   } else {
-    //     $scope.state.overtag = {description: $scope.meta.menu.tagsdescription};
-    //   }
-    //   if(refresh) $scope.$apply();
-    // };
 
     $scope.overSection = function(e) {
       $scope.state.hoverTags = e.tags;
@@ -3557,7 +3517,7 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
     $scope.toggleTag = function(tag,refresh) {
 
       // erase searchterm if exist
-      $scope.searchSubmit();
+      if(tag) $scope.searchSubmit("",true);
 
       // please set max tags to 5 ! (?)
 
@@ -3577,10 +3537,6 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
       
       scrollToup();
 
-      // update graph node colors
-      //if($scope.state.tagsmode=='graph')
-        //updateTagNodes($scope.state.tags);
-
       updateArrays();
 
       if($scope.state.networkstatus=="OK")
@@ -3592,25 +3548,28 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
     };
 
 
-    $scope.searchSubmit = function(term) {
-      if(term) {
-        $scope.state.search = term;
-      }
-      else {
+    $scope.searchSubmit = function(term,dontdetag) {
+      if(!term) {
         $scope.state.searchinput = "";
         $scope.state.search = "";
+        if(!dontdetag) $scope.state.tagging = false;
       }
-      
-      $scope.rgx.search = new RegExp($scope.state.search,'i');
+      if(term && term.length < $scope.prevSearchLen || term.length>1) {
+        if(term) {
+          $scope.state.search = term;
+          $scope.prevSearchLen = term.length;
+          $scope.state.tagging = true;
+        }
+        
+        $scope.rgx.search = new RegExp($scope.state.search,'i');
 
-      updateArrays();
+        updateArrays();
 
-      if($scope.state.networkstatus=='OK')
-        filterLinksNodesFromTerm($scope.state.search);
+        if($scope.state.networkstatus=='OK')
+          filterLinksNodesFromTerm($scope.state.search);
 
-      //$scope.updateSearchTagCount();
-
-      scrollToup();
+        scrollToup();
+      }
     };
 
     
@@ -3787,10 +3746,12 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
             $rootScope.htmlmeta = m.htmlmeta;
 
             // tags
+            var ii = 0;
             $scope.tags = {};
             _.each(m.tags, function(v,k) {
               $scope.tags[k] = {
                 tag: k,
+                index: ii++,
                 icon: v[0],
                 moto: v[1], // default popup display
                 keywords: v[2].split(","), // list of searchable words, popuped when searched
@@ -3867,8 +3828,8 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
               var tagged = (/,/).test(d[0]); // seems always to be: tag.tag.tag,author_name-of-book.pdf
               $scope.dataArray[which].push({
                 url: d[1],
-                tags: tagged ? d[0].split(",")[0].split('.') : ["nc"],
-                tag: tagged ? d[0].split(",")[0].split('.')[0] : "nc",
+                tags: tagged ? d[0].split(",")[0].split('.') : [],
+                tag: tagged ? d[0].split(",")[0].split('.')[0] : "",
                 name: tagged ? d[0].split(",")[1] : d[0]
               });
             });
@@ -5211,6 +5172,6 @@ var loadTagGraph = function(scope) {
 
 angular.module('settings', [])
 
-.constant('settings', {dev:false,langs:['fr','es','en'],layouts:['home','abcd','pixels','books','network','map','mapprint','ninja','catalog','catalogprint'],datapath:'data/',assets:'build/',lastupdate:'07 March 2018 - 11:43'})
+.constant('settings', {dev:false,langs:['fr','es','en'],layouts:['home','abcd','pixels','books','network','map','mapprint','ninja','catalog','catalogprint'],datapath:'data/',assets:'build/',lastupdate:'13 March 2018 - 11:26'})
 
 ;
