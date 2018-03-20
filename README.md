@@ -30,15 +30,10 @@ fork or download this project and start your own !
 > 
 > bower install
 
-### build & minify
+### make pixels list, build, minify
 > grunt
 
-### build catalog (in progress)
-> node prepair_catalog.js
-
-to merge all data (texts, links, etc..) into `catalog.yml` to spare time on load
-
-### fetch map geojson
+### fetch map geojson(s)
 > grunt map
 
 ### build slug images

@@ -3329,7 +3329,7 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
     console.log("Controller:",settings);
 
     $scope.settings = settings;
-    $scope.settings.smallDevice = $window.innerWidth < 1025;
+    $scope.settings.smallDevice = $window.innerWidth < 1025; // to load or not all map credits !
 
     // what is the current layout ?
     
@@ -3347,13 +3347,11 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
     $scope.dataArray = { // full list 
       abcd: [],
       pixels: [],
-      books: [],
       catalog: []
     }
     $scope.dataArrayFilt = { // displayed list
       abcd: [],
       pixels: [],
-      books: [],
       catalog: []
     }
     
@@ -3369,16 +3367,10 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
       // always hide for dev. starting open for prod
       disclaim: {
         abcd: !$scope.settings.dev,
-        links: !$scope.settings.dev,
         pixels: !$scope.settings.dev,
-        books: !$scope.settings.dev,
         network: !$scope.settings.dev,
         map: !$scope.settings.dev,
       },
-
-      suggestions: {}, // search suggestions based on freqs
-
-      count: {}, // will count results if search/tags filtered
 
       tagging: tags.length>0, // if tags/filtering active or not
       tagspanel: false,
@@ -3436,6 +3428,22 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
       return Math.floor((Math.random()*7));
     };
 
+    $scope.fontSizeContent = function(e) {
+      // from 1.0 to 3.0 ?
+      var fs = 1.1; // default
+      if(e.content.length < 180)
+        fs = 1.8;
+      else if(e.content.length < 150)
+        fs = 2.5;
+      else if(e.content.length < 120)
+        fs = 2.9;
+      else if(e.content.length < 90)
+        fs = 3.2;
+      else if(e.content.length < 60)
+        fs = 3.8;
+
+      return fs;
+    };
 
     $scope.changeLayout = function(lay) {
       if(lay == $scope.state.layout) return; // unchanged
@@ -3552,7 +3560,10 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
       if(!term) {
         $scope.state.searchinput = "";
         $scope.state.search = "";
-        if(!dontdetag) $scope.state.tagging = false;
+        if(!dontdetag) {
+          $scope.state.tags = [];
+          $scope.state.tagging = false;
+        }
       }
       if(term && term.length < $scope.prevSearchLen || term.length>1) {
         if(term) {
@@ -3580,23 +3591,27 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
     var shallShowSearch = function(o) { // "o" is a text or a link
       var reg = $scope.rgx.search;
       if($scope.state.search)
-      if(o.content) { // an abcd ! (text,link,quote)
+      if(o.content) { // an abcd !
         var show = false;
         _.each(['source','content','title'], function(k) {
           show = show || ( o.hasOwnProperty(k) && reg.test(totext(o[k])) );
         });
-      } else { // ... if no content, then ...
-        if(o.name) { // a book
-          var show = reg.test(totext(o.name));
-        } 
-        else // an image !
-          var show = reg.test(totext(o.label));
+      } else { // ... if no content, then, an image !
+        var show = reg.test(totext(o.label));
       }
       return show;
     };
 
-    var shallShowTags = function(o,onlyintersect) { // "o" is an "abcd"
-      if($scope.state.tags.length && o.tags) {
+    var shallShowTags = function(o,onlyintersect) {
+      if($scope.state.tags.length && o.label) { // an image
+        var res = false;
+        _.each($scope.state.tags, function(t) {
+          var li = _.intersection($scope.tags[t].keywords,o.label.split(/[-_]/g)).length;
+          res = res || li>0;
+        });
+        return res;
+      } else
+      if($scope.state.tags.length && o.tags) { // an "abcd"
         var interslen = _.intersection(o.tags,$scope.state.tags).length;
         if(onlyintersect) { // return striclty those who has exactly ?
           return interslen == $scope.state.tags.length;
@@ -3611,7 +3626,7 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
     var updateArrays = function() {
       console.log("updateArrays!");
       var lay = $scope.state.layout;
-      if(["abcd","pixels","books"].indexOf(lay)!==-1) {
+      if(["abcd","pixels"].indexOf(lay)!==-1) {
 
         if(!$scope.state.search && !$scope.state.tags.length) { // if no search no tag
           $scope.dataArrayFilt[lay] = $scope.dataArray[lay];
@@ -3722,7 +3737,7 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
       }
 
       ///////////////////////////////////// YML DATA
-      if(["meta","abcd","links","pixels","books","catalog","map"].indexOf(which)!==-1) {
+      if(["meta","abcd","links","pixels","catalog","map"].indexOf(which)!==-1) {
 
         var filename = which;
         if(which=="pixels")
@@ -3758,7 +3773,8 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
                 keywordsjoined : v[2]
               };
             });
-            //console.log($scope.tags);
+            console.log("Official Meta Tags:",$scope.tags);
+
             $scope.tagsArray = _.map($scope.tags);
             //console.log(tco);
 
@@ -3777,36 +3793,69 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
           
           ////////////////////////////////////
           if(which=="abcd") {
-            var ttcount = {};
+            var tgcount = {};
+
             jsyaml.loadAll(res, function(d) {
 
               d.content = $scope.md2Html(d.content);
+              if(!d.tags) console.log(d.content);
               d.tags = d.tags ? d.tags.split(' ') : ["nc"];
-              d.sharelink = "http://utopies-concretes.org/slug/"+slugify(d.title);
+              
 
+
+              //d.sharelink = "http://utopies-concretes.org/slug/"+slugify(d.title);
+              _.each(d.tags,function(t) {
+                tgcount.hasOwnProperty(t) ? ++tgcount[t] : tgcount[t]=0;
+              });
+              
               $scope.dataArray.abcd.push(d);
 
             });
+            console.log("Tags detected:",tgcount);
 
-            //console.log("ABCD:",$scope.dataArray.abcd.length);
-            $scope.dataArray.abcd = _.shuffle($scope.dataArray.abcd);
-            $scope.dataArrayFilt.abcd = $scope.dataArray.abcd;
+            // fetch books
+            $http
+              .get(settings.datapath + "books.csv")
+              .success(function(res) {
+                var line = res.split('\n');
+
+                _.each(line, function(l) {
+                  var d = l.split(" "); // name url
+                  // SYNTAX seems to be: tag.tag.tag,Mr_author_name-of-book.pdf URL
+                  var tagged = (/,/).test(d[0]);
+                  var tags = tagged ?
+                    d[0]
+                      .split(",")[0]
+                      .replace("agro","agriculture")
+                      .replace("diy","object")
+                      .replace("zad","space.act")
+                      .replace("text","philo") // all will have "text" tag anyway
+                      .split('.')
+                      .concat("text"):
+                    ["text"]
+                  var name = tagged ?
+                    d[0].split(",")[1] :
+                    d[0];
+                  var contentmd = "["+name.replace(/_/g," ")+"]("+d[1]+")";
+                  $scope.dataArray.abcd.push({
+                    content: $scope.md2Html(contentmd),
+                    tags: tags
+                  });
+                });
+
+                //console.log("ABCD:",$scope.dataArray.abcd.length);
+                $scope.dataArray.abcd = _.shuffle($scope.dataArray.abcd);
+                $scope.dataArrayFilt.abcd = $scope.dataArray.abcd;
+
+                if(callb) callb();
+              })
+              .error(function (data, status, headers, config) {
+                console.log("error loading pixels.csv",status);
+              });
           }
 
           ////////////////////////////////////
           if(which=="pixels") {
-            // determine most frequent words to help search
-            var words = _.keys(res).join().split(/[\,\-_]/);
-            $scope.state.suggestions.pixels =
-              _.chain(words)
-              .countBy()
-              .pairs()
-              .sortBy(function(item) {return item[1];})
-              .last(30)
-              .map(function(e){return e[0];})
-              .without("","l","i","pas","le","les","vous","de","you","autre")
-              .value();
-            //console.log($scope.state.suggestions.pixels);
 
             _.each(res, function(v,k) {
               $scope.dataArray.pixels.push({
@@ -3816,24 +3865,6 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
             });
             $scope.dataArray.pixels = _.shuffle($scope.dataArray.pixels);
             $scope.dataArrayFilt.pixels = $scope.dataArray.pixels;
-          }
-
-          ////////////////////////////////////
-          if(which=="books") {
-            //console.log(res);
-            var line = res.split('\n');
-
-            _.each(line, function(l) {
-              var d = l.split(" "); // name url
-              var tagged = (/,/).test(d[0]); // seems always to be: tag.tag.tag,author_name-of-book.pdf
-              $scope.dataArray[which].push({
-                url: d[1],
-                tags: tagged ? d[0].split(",")[0].split('.') : [],
-                tag: tagged ? d[0].split(",")[0].split('.')[0] : "",
-                name: tagged ? d[0].split(",")[1] : d[0]
-              });
-            });
-            $scope.dataArrayFilt[which] = $scope.dataArray[which];
           }
 
           ////////////////////////////////////
@@ -5172,6 +5203,6 @@ var loadTagGraph = function(scope) {
 
 angular.module('settings', [])
 
-.constant('settings', {dev:false,langs:['fr','es','en'],layouts:['home','abcd','pixels','books','network','map','mapprint','ninja','catalog','catalogprint'],datapath:'data/',assets:'build/',lastupdate:'13 March 2018 - 11:26'})
+.constant('settings', {dev:false,langs:['fr','es','en'],layouts:['home','abcd','pixels','network','map','mapprint','ninja','catalogprint'],datapath:'data/',assets:'build/',lastupdate:'20 March 2018 - 10:29'})
 
 ;

@@ -1,0 +1,33 @@
+
+.panel.pixels {
+  box-sizing: border-box;
+  position: relative;
+
+  .base-columns(4, 1px);
+
+  background: @veryLightColor;
+  
+  padding: 20px 0px 50px 0px;
+  text-align: left;
+  @borderG: 15px;
+
+  .image {
+    margin: -5px 1px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .image.fullscreened {
+    box-sizing: border-box;
+    z-index: 999;
+    position: fixed;
+    left: -2px;
+    right: -2px;
+    top: 0;
+    bottom: 0;
+    
+    .covercontain();
+    img {display: none;}
+  }
+}

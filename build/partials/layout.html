@@ -1,8 +1,3 @@
-<!--
-      ng-click="swiping ? ( swiping = false ) : slideSplashImage(true,true);"
-      ng-swipe-left="slideSplashImage(true); swiping=true;"
-      ng-swipe-right="slideSplashImage(false); swiping=true;">
--->
 
 <div
   class="intro"
@@ -58,23 +53,6 @@
       <!-- RIGHT MENU BUTTONS, REVERSE ORDER-->
       <div class="menubuttons">
         
-        <!--
-        <div
-          class="master button hint--left"
-          ng-click="changeLayout('catalog');"
-          ng-class="{active:state.layout=='catalog'}"
-          data-hint="{{meta.menu.catalogtip}}">
-          <i class="fa fa-database"></i>
-          <a class="ext hint--bottom" href="{{meta.source.catalog}}" target="_blank" data-hint="{{meta.menu.sourcetip}}">
-            <i class="fa fa-file-text"></i>
-          </a>
-        </div>
-        -->
-
-<!--         <div class="sep">
-          <i class="fa fa-arrow-right"></i>
-        </div> -->
-
         <a
           class="menubutton hint--left"
           id="calendar"
@@ -123,11 +101,7 @@
           ng-class="{active:state.layout=='home'}">
           <i class="fa fa-home"></i>
         </div>
-      <!-- closing div is under to avoid space between inline-blocks -->
       </div>
-
-      <!-- SEARCH ZONE for map -->
-      <!--<div id="searchinputformap" ng-if="state.layout=='map'"></div>-->
 
       <!-- SEARCH ZONE -->
       <div
@@ -148,8 +122,8 @@
           <i
             class="fa"
             ng-class="{
-              'fa-tag': !state.tagging,
-              'fa-tags': state.tagging
+              'fa-hand-paper-o': !state.tagging,
+              'fa-hand-spock-o': state.tagging
             }"></i>
         </div><form autocomplete="off" ng-submit="searchSubmit(state.searchinput);">
           <input
@@ -182,12 +156,6 @@
       
     </div>
 
-    <!-- ADD ZONE -->
-    <!--
-    <div class="addzone" ng-if="state.addzone">
-    </div>
-    -->
-
     <!-- TAGS COLOR/ICONS PANEL(s) -->
     <div
       class="tagspanel left"
@@ -206,7 +174,6 @@
           popuped: isTagAutoComplete(t),
           focused: isTagFromHoveredSection(t)
         }">
-        <!-- <div class="label">{{t.count}} {{t.tag}}</div> -->
         <div class="back"></div>
         <i class="fa fa-{{t.icon}}"></i>
       </div>
@@ -230,7 +197,6 @@
         }">
         <div class="back"></div>
         <i class="fa fa-{{t.icon}}"></i>
-        <!-- <div class="label">{{t.count}} {{t.tag}}</div> -->
       </div>
     </div>
 
@@ -269,44 +235,25 @@
       <i class="fa fa-times" ng-click="state.disclaim[state.layout] = false;"></i>
     </div>
 
-    <!-- SEARCH SUGGESTIONS -->
-    <div
-      class="searchsuggestions"
-      ng-if="state.layout=='pixels' && state.searchinput.length>0">
-      <i>{{meta.menu.trysearch}}</i>
-      <div
-        ng-repeat="n in state.suggestions.pixels"
-        class="searchsuggestion"
-        ng-class="{
-          active: n == state.search
-        }"
-        ng-click="state.searchinput=n; searchSubmit(n);">
-        {{n}}</div><div class="searchsuggestion">...</div>
-    </div>
-
-    <!-- loading spinner while not ready -->
-    <!--
-    <div class="loading spinner" ng-if="state.loading">
-      <div class="bounce1"></div>
-      <div class="bounce2"></div>
-      <div class="bounce3"></div>
-    </div>
-    -->
-
     <div class="page" ng-include="partialTemplate();"></div>
 
-    <div ng-if="!state.layout!='map'" class="footer">
-      <!--<div class="count" ng-if="state.search || state.tags.length">
-        filtre: {{state.count.texts}} / {{textArray.length}} section(s) & {{state.count.links}} / {{linkArray.length}} lien(s)
-      </div>-->
-      <div class="content" compile-here="md2Html(meta.footer.content)"></div>
+    <div ng-if="state.layout!='map' && state.layout!='network'" class="footer">
+
+      <a
+        ng-repeat="f in meta.footer.buttons"
+        class="padbutton"
+        href="{{f.href}}"
+        target="_blank">
+        <i class="fa {{f.icon}}"></i>
+        <div ng-bind-html="f.label"></div>
+      </a>
 
       <form
-        class="mailing"
+        class="inline mailing"
         action="https://lists.riseup.net/www"
         method="POST"
         target="_blank">
-        <div class="label">inscrivez-vous sur la liste de discussion</div>
+        <div class="label">inscrivez-vous sur la <a target="_blank" href="https://lists.riseup.net/www/subscribe/utopies-concretes">liste de discussion</a></div>
         <input
           class="email"
           type="email"
@@ -323,8 +270,6 @@
           name="action_subrequest"
           value="inscrire">
       </form>
-
-      <a class="lastupdate" target="_blank" href="{{meta.repo}}">{{meta.footer.lastupdatetext}}<br>{{settings.lastupdate}}</a>
 
       <div><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a></div>
 

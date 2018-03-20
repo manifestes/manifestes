@@ -4955,6 +4955,126 @@
 			"icon_size": [33,33],
 			"icon_anchor": [16.5,16.5],
 			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [14.2487826, 40.8359336]},
+		"id":"532",
+		"properties": {
+			"title":"Naples",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.bastamag.net\/SfruttaZero-une-sauce-tomate-contre-l-exploitation-des-travailleurs-migrants-et' target='_blank'>&#171;&nbsp;SfruttaZero&nbsp;&#187;, une sauce tomate contre l&#8217;exploitation des travailleurs migrants et des pr\u00e9caires en Italie<\/a><\/div>\n\t<div class=\"texte\">Ils travaillent jusqu\u2019\u00e0 12 heures par jour, pay\u00e9es une mis\u00e8re, par une chaleur accablante qui parfois les terrasse. Tout cela pour ramasser des tomates \u00ab 100% italiennes \u00bb et \u00ab \u00e0 savourer en famille \u00bb\u2026 Eux, ce sont les travailleurs migrants exploit\u00e9s par un syst\u00e8me quasi-f\u00e9odal dans le sud de l\u2019Italie.&nbsp;(...)<\/div>\n<\/div>","id_mot": "120"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-120.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [4.351697, 50.8465573]},
+		"id":"533",
+		"properties": {
+			"title":"Bruxelles (1000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.mediapart.fr\/journal\/international\/180218\/bruxelles-les-reseaux-de-solidarite-sorganisent-face-aux-politiques-anti-migrants' target='_blank'>A Bruxelles, les r\u00e9seaux de solidarit\u00e9 s&#8217;organisent face aux politiques anti-migrants<\/a><\/div>\n\t<div class=\"texte\">Idris, Bruxelles, 17 f\u00e9vrier 2018 Dans la capitale belge, un surgissement civique s\u00e8me les graines d\u2019une solidarit\u00e9 renforc\u00e9e avec les migrants pourchass\u00e9s. En r\u00e9action \u00e0 une descente de police dans une association culturelle : Globe Aroma. Petit coup d\u2019\u0153il sur un grand dessein qui prenait forme,&nbsp;(...)<\/div>\n<\/div>","id_mot": "41"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/plugins\/carteppi\/images\/marker_defaut.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-1.823268, 48.249661]},
+		"id":"534",
+		"properties": {
+			"title":"Langouet (35630)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/Emprunter-aux-habitants-pour-la-transition-ecologique-ca-marche-a-Langouet' target='_blank'>Emprunter aux habitants pour la transition \u00e9cologique&nbsp;: \u00e7a marche \u00e0 Langou\u00ebt<\/a><\/div>\n\t<div class=\"texte\">Pour financer un projet de permaculture, la commune bretonne de Langou\u00ebt vient de recourir \u00e0 l\u2019emprunt citoyen. Ce type de financement est fort utile pour des communes au budget serr\u00e9. Mais il pose aussi la question du d\u00e9sengagement de l\u2019\u00c9tat. Langou\u00ebt (Ille-et-Vilaine), reportage  En Bretagne,&nbsp;(...)<\/div>\n<\/div>","id_mot": "127"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-127.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [12.3810549, 51.3391827]},
+		"id":"535",
+		"properties": {
+			"title":"Leipzig (04103)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/A-Leipzig-la-bicyclette-est-reine' target='_blank'>\u00c0 Leipzig, la bicyclette est reine<\/a><\/div>\n\t<div class=\"texte\">La ville allemande de Leipzig pr\u00e9serve sa singularit\u00e9 populaire et \u00e9cologique. L\u2019un des exemples les plus visibles est la place accord\u00e9e \u00e0 la petite reine. Leipzig (Allemagne), reportage  Un touriste fran\u00e7ais, inform\u00e9 des \u00e9v\u00e8nements majeurs qui ont \u00e9maill\u00e9 l\u2019histoire r\u00e9cente de Leipzig, pourrait sans&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.484753, 45.333323]},
+		"id":"536",
+		"properties": {
+			"title":"Renage (38140)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.bastamag.net\/Le-succes-d-une-cooperative-qui-aide-les-paysans-a-acquerir-leur-autonomie' target='_blank'>Le succ\u00e8s d&#8217;une coop\u00e9rative qui aide les paysans \u00e0 acqu\u00e9rir leur autonomie technologique et \u00e0 ne pas se surendetter<\/a><\/div>\n\t<div class=\"texte\">Machines, engrais, semences... L\u2019intensification agricole s\u2019est accompagn\u00e9e d\u2019un endettement et d\u2019une d\u00e9pendance croissants du monde paysan. Pour les membres de l\u2019Atelier Paysan, cette spirale n\u2019est pas une fatalit\u00e9 : la coop\u00e9rative, qui compte aujourd\u2019hui 14 salari\u00e9s, organise des dizaines de&nbsp;(...)<\/div>\n<\/div>","id_mot": "120"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-120.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-73.9866136, 40.7306458]},
+		"id":"537",
+		"properties": {
+			"title":"New York",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.axellemag.be\/resist-magazine-contre-trump\/' target='_blank'>Resist&nbsp;!, un magazine au poing lev\u00e9 contre Trump<\/a><\/div>\n\t<div class=\"texte\">Au lendemain de l\u2019\u00e9lection pr\u00e9sidentielle aux \u00c9tats-Unis, en 2017, beaucoup ont pleur\u00e9. D\u2019autres se sont retrouss\u00e9 les manches et, parmi les r\u00e9sistant\u00b7es, certain\u00b7es ont lanc\u00e9 un magazine f\u00e9ministe. Resist ! \u00e9tait n\u00e9. [Article extrait du dossier \u00ab La Fronde des m\u00e9dias f\u00e9ministes&nbsp;(...)<\/div>\n<\/div>","id_mot": "128"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-128.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.301891, 51.012722]},
+		"id":"538",
+		"properties": {
+			"title":"Grande-Synthe (59760)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/A-Grande-Synthe-elus-et-associatifs-ont-reflechi-a-un-accueil-digne-des' target='_blank'>Des dizaines de villes inventent une politique d&#8217;accueil des migrants<\/a><\/div>\n\t<div class=\"texte\">Jeudi et vendredi s\u2019est tenue \u00e0 Grande-Synthe la premi\u00e8re Convention nationale sur l\u2019accueil et les migrations. Des \u00e9lus aux associatifs, tous les acteurs de l\u2019aide aux migrants ont jet\u00e9 des ponts entre les initiatives locales, cherchant \u00e0 construire un r\u00e9seau des villes accueillantes. Grande-Synthe&nbsp;(...)<\/div>\n<\/div>","id_mot": "41"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/plugins\/carteppi\/images\/marker_defaut.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [6.637437, 44.898766]},
+		"id":"539",
+		"properties": {
+			"title":"Brian\u00e7on (05100)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.bastamag.net\/A-Briancon-la-politique-en-actes-d-une-population-fortement-mobilisee-pour-l' target='_blank'>A Brian\u00e7on, la &#171;&nbsp;politique en actes&nbsp;&#187; d&#8217;une population fortement mobilis\u00e9e pour l&#8217;accueil des migrants<\/a><\/div>\n\t<div class=\"texte\">\u00ab En montagne, on ne laisse jamais quelqu\u2019un en difficult\u00e9. \u00bb Cyniquement oubli\u00e9e par les autorit\u00e9s, cette \u00e9vidence ne l\u2019a pas \u00e9t\u00e9 par les habitants de la sous-pr\u00e9fecture des Hautes-Alpes, perch\u00e9e \u00e0 1300 m\u00e8tres d\u2019altitude et situ\u00e9e sur l\u2019une des voies de passage les plus emprunt\u00e9es \u2013 et les plus dangereuses&nbsp;(...)<\/div>\n<\/div>","id_mot": "41"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/plugins\/carteppi\/images\/marker_defaut.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [0.862977, 47.753494]},
+		"id":"540",
+		"properties": {
+			"title":"Montoire-sur-le-Loir (41800)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/Dans-ce-lycee-les-jeunes-paysans-apprennent-l-agriculture-bio' target='_blank'>Dans ce lyc\u00e9e, les jeunes paysans apprennent l&#8217;agriculture bio<\/a><\/div>\n\t<div class=\"texte\">Les lyc\u00e9es agricoles, lieu de formation des futurs agriculteurs, ont longtemps promu les m\u00e9thodes conventionnelles et les intrants chimiques. Mais les mentalit\u00e9s \u00e9voluent, comme \u00e0 Montoire-sur-le-Loir, o\u00f9 l\u2019\u00e9quipe enseignante d\u00e9montre les vertus de l\u2019agriculture biologique \u00e0 des jeunes encore r\u00e9tifs.&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [1.13544, 42.4440202]},
+		"id":"541",
+		"properties": {
+			"title":" (25560)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.equaltimes.org\/graines-de-berger' target='_blank'>Graines de berger<\/a><\/div>\n\t<div class=\"texte\">L\u2019Escola de Pastors de Catalunya, un projet audacieux visant la r\u00e9cup\u00e9ration et la redynamisation du secteur de l\u2019\u00e9levage, f\u00eate cette ann\u00e9e sa premi\u00e8re d\u00e9cennie d\u2019existence, et elle le fait en restant impassible face aux avis pessimistes qui consid\u00e8rent que le pastoralisme est vou\u00e9 \u00e0 dispara\u00eetre.  L\u2019un&nbsp;(...)<\/div>\n<\/div>","id_mot": "120"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-120.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
 		}}
 	]
 }

@@ -53,6 +53,7 @@ body {
 @pastelColor: #DBCF90;
 @searchYellow: rgba(255, 252, 0, 0.48);
 @yellowColor: #FFCD21;
+@yellowPastelColor: #E0CF97;
 
 @filterYellow: #8D8B38;
 
@@ -73,8 +74,6 @@ body {
 @menuButtonW: 78px;
 
 @reducedFlatSectionH: 43px;
-
-
 
 ul, li {
   margin: 0;
@@ -101,63 +100,67 @@ span.highlight, div.highlight { /* searched words */
 
 /* MANY thanks to http://tools.medialab.sciences-po.fr/iwanthue/ */
 /*
-C 17.72 51.18
-L 74.8 96.46000000000001
+H 0 360
+C 17 51
+L 80 98
 */
 /* COLORS FOR TAGS */
-.tagcolor0 { background-color:#ebb6bd; }
-.tagcolor1 { background-color:#f9a576; }
-.tagcolor2 { background-color:#ebcaa7; }
-.tagcolor3 { background-color:#f3d999; }
-.tagcolor4 { background-color:#e1d774; }
-.tagcolor5 { background-color:#c5c19a; }
-.tagcolor6 { background-color:#e4e9b7; }
-.tagcolor7 { background-color:#d4f89d; }
-.tagcolor8 { background-color:#a4cf7c; }
-.tagcolor9 { background-color:#caecbc; }
-.tagcolor10 { background-color:#83d996; }
-.tagcolor11 { background-color:#a7eabe; }
-.tagcolor12 { background-color:#9acab6; }
-.tagcolor13 { background-color:#bcf1e0; }
-.tagcolor14 { background-color:#79cfbe; }
-.tagcolor15 { background-color:#55f4df; }
-.tagcolor16 { background-color:#51d2d1; }
-.tagcolor17 { background-color:#9be0e6; }
-.tagcolor18 { background-color:#4ed1f8; }
-.tagcolor19 { background-color:#80c8f6; }
-.tagcolor20 { background-color:#bcc5eb; }
-.tagcolor21 { background-color:#dbbbec; }
-.tagcolor22 { background-color:#edb4ec; }
-.tagcolor23 { background-color:#f7a2dd; }
-.tagcolor24 { background-color:#f6a39f; }
-.tagcolor25 { background-color:#eeb38f; }
-.tagcolor26 { background-color:#eabe6e; }
-.tagcolor27 { background-color:#d0c074; }
-.tagcolor28 { background-color:#cdc58c; }
-.tagcolor29 { background-color:#ebe695; }
-.tagcolor30 { background-color:#c8dd8c; }
-.tagcolor31 { background-color:#d8f3af; }
-.tagcolor32 { background-color:#a3ca93; }
-.tagcolor33 { background-color:#b1f3ab; }
-.tagcolor34 { background-color:#b3dfc1; }
-.tagcolor35 { background-color:#86ceac; }
-.tagcolor36 { background-color:#6beec3; }
-.tagcolor37 { background-color:#51d4b5; }
-.tagcolor38 { background-color:#94ebda; }
-.tagcolor39 { background-color:#87c4c1; }
-.tagcolor40 { background-color:#67eeef; }
-.tagcolor41 { background-color:#6ad5eb; }
-.tagcolor42 { background-color:#99ceeb; }
-.tagcolor43 { background-color:#9cc2f7; }
-.tagcolor44 { background-color:#bfb9f7; }
-.tagcolor45 { background-color:#e6aaf8; }
-.tagcolor46 { background-color:#e4bad9; }
-.tagcolor47 { background-color:#f4a8c6; }
-.tagcolor48 { background-color: red; }
-
+.tagcolor0 { background-color:#f2b9b5; }
+.tagcolor26 { background-color:#eec6a8; }
+.tagcolor1 { background-color:#facc9c; }
+.tagcolor27 { background-color:#f1c878; }
+.tagcolor2 { background-color:#e9d29c; }
+.tagcolor28 { background-color:#f5d98f; }
+.tagcolor3 { background-color:#ede68b; }
+.tagcolor29 { background-color:#d3cfa8; }
+.tagcolor4 { background-color:#d5d181; }
+.tagcolor30 { background-color:#d7d89b; }
+.tagcolor5 { background-color:#ecedaf; }
+.tagcolor31 { background-color:#e0e0b8; }
+.tagcolor6 { background-color:#edf5ca; }
+.tagcolor32 { background-color:#d8eb94; }
+.tagcolor7 { background-color:#d8f3af; }
+.tagcolor33 { background-color:#bcd794; }
+.tagcolor8 { background-color:#aedb80; }
+.tagcolor34 { background-color:#caf89b; }
+.tagcolor9 { background-color:#d1f3c2; }
+.tagcolor35 { background-color:#aee39a; }
+.tagcolor10 { background-color:#bcdeae; }
+.tagcolor36 { background-color:#c3f8af; }
+.tagcolor11 { background-color:#a4f6a7; }
+.tagcolor37 { background-color:#8fe093; }
+.tagcolor12 { background-color:#b3f1bb; }
+.tagcolor38 { background-color:#9edca7; }
+.tagcolor13 { background-color:#8be8ad; }
+.tagcolor39 { background-color:#acd8ba; }
+.tagcolor14 { background-color:#99f6bb; }
+.tagcolor40 { background-color:#c8f4d6; }
+.tagcolor15 { background-color:#9be4c0; }
+.tagcolor41 { background-color:#a9f2ce; }
+.tagcolor16 { background-color:#77e1b9; }
+.tagcolor42 { background-color:#68fbce; }
+.tagcolor17 { background-color:#57ecc0; }
+.tagcolor43 { background-color:#7cf2d6; }
+.tagcolor18 { background-color:#9bf3e1; }
+.tagcolor44 { background-color:#8de4d3; }
+.tagcolor19 { background-color:#b6eee2; }
+.tagcolor45 { background-color:#48f4e7; }
+.tagcolor20 { background-color:#6ce6ee; }
+.tagcolor46 { background-color:#a2e7ed; }
+.tagcolor21 { background-color:#8dd2d8; }
+.tagcolor47 { background-color:#8ae1f9; }
+.tagcolor22 { background-color:#7cd3eb; }
+.tagcolor48 { background-color:#64d4fd; }
+.tagcolor23 { background-color:#64d4fd; }
+.tagcolor49 { background-color:#64d4fd; }
+.tagcolor24 { background-color:#a0d5f2; }
+.tagcolor50 { background-color:#bfcaf9; }
+.tagcolor25 { background-color:#f3b7f3; }
+.tagcolor51 { background-color:#f6c8de; }
 
 .mailing {
-  margin-top: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   .label {
     margin-bottom: 6px; 
   }
@@ -180,6 +183,36 @@ L 74.8 96.46000000000001
   }
 }
 
+.padbutton {
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  height: 47px;
+  margin: 9px 0px 9px 12px;
+  padding: 6px;
+  line-height: 47px;
+  text-align: left;
+  vertical-align: top;
+  border-radius: 40px;
+  border: 1px solid lightgray;
+  background: white;
+  color: @lightColor;
+  &:hover {
+    background: @mostLightColor;
+  }
+  i {
+    .absolute-vertical-centered();
+    font-size: 1.3em;
+    margin: 0px 12px;
+  }
+  div {
+    margin-left: 35px;
+    margin-right: 12px;
+    display: inline-block;
+    line-height: 14px;
+    font-size: 0.8rem;
+  }
+}
 
 .container {
   box-sizing: border-box;
@@ -411,37 +444,6 @@ L 74.8 96.46000000000001
     }
   }
 
-  .padbutton {
-    box-sizing: border-box;
-    display: inline-block;
-    position: relative;
-    height: 47px;
-    margin: 9px 0px;
-    padding: 6px;
-    line-height: 47px;
-    vertical-align: top;
-    border-radius: 40px;
-    border: 1px solid lightgray;
-    background: white;
-    color: @lightColor;
-    &:hover {
-      background: @mostLightColor;
-    }
-    i {
-      .absolute-vertical-centered();
-      font-size: 1.3em;
-      margin: 0px 12px;
-    }
-    div {
-      margin-left: 36px;
-      margin-right: 15px;
-      display: inline-block;
-      line-height: 14px;
-      font-size: 0.8em;
-      text-align: left;
-    }
-  }
-
   .menu {
     z-index: 80;
     position: absolute;
@@ -502,6 +504,7 @@ L 74.8 96.46000000000001
         span {
           color: @lightColor;
           line-height: 68px;
+          text-transform: capitalize;
           i {
             font-size: 0.9em;
           }
@@ -676,7 +679,19 @@ L 74.8 96.46000000000001
       font-size: 1.3em;
 
       i {
-        .absolute-centered();
+          /* looks like absolute-centered(), but one we want to scale */
+          /* caus' dont remember how to mirror fa-icons */
+
+          box-sizing: border-box;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          &.fa-hand-spock-o {
+            .transform(translate(-50%,-50%) scale(-1));
+          }
+          &.fa-hand-paper-o {
+            .transform(translate(-50%,-50%) scale(-1));
+          }
       }
       &:hover {
         i {
@@ -1053,7 +1068,7 @@ body.layout-textsprint, body.layout-mapprint {
 
 @import "layout_home";
 @import "layout_abcd";
-@import "layout_links";
+@import "layout_pixels";
 @import "layout_network";
 @import "layout_map";
 @import "layout_ninja";

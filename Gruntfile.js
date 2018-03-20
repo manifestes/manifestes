@@ -68,7 +68,7 @@ module.exports = function(grunt) {
           settings: {
             dev: true,
             langs: ['fr','es','en'],
-            layouts: ['home','abcd','pixels','books','network','map','mapprint','ninja','catalog','catalogprint'],
+            layouts: ['home','abcd','pixels','network','map','mapprint','ninja','catalogprint'],
             datapath: '../data/',
             assets: './',
             lastupdate: '<%= grunt.template.today("dd mmmm yyyy - h:MM") %>'
@@ -83,7 +83,7 @@ module.exports = function(grunt) {
           settings: {
             dev: false,
             langs: ['fr','es','en'],
-            layouts: ['home','abcd','pixels','books','network','map','mapprint','ninja','catalog','catalogprint'],
+            layouts: ['home','abcd','pixels','network','map','mapprint','ninja','catalogprint'],
             datapath: 'data/',
             assets: 'build/',
             lastupdate: '<%= grunt.template.today("dd mmmm yyyy - h:MM") %>'

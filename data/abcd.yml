@@ -1,7 +1,97 @@
 
 
 ---
-tags:
+tags: time space earth
+content: >
+    Le concept de décroissance qui repose sur un constat assez réaliste de notre situation éco- logique, paraît ignorer que la croissance n’est pas un choix d’évolution désiré ou organisé par les hommes mais une obligation imposée par les exigences de domination des sociétés les plus influentes dans la colonisation rationnelle du monde vivant.
+
+
+    Comment les promoteurs de ce concept peuvent-ils imaginer que la société où ils se trouvent, acceptera un redoutable affaiblissement de sa puissance au moment même où un milliard d’individus expérimentent une croissance hallucinante et de ce fait pourront bientôt (eux ou ceux qui travailleront avec eux) prendre possession des terres des décroissants encore plus facilement que l’Occident colonisa le monde.
+source: >
+    [Planète Laboratoire](http://www.laboratoryplanet.org)
+
+
+---
+tags: time act
+content: >
+    Pour qu’une possibilité de renverser le cours des choses existe, il faudrait non seulement qu’il soit devenu flagrant pour la majorité des humains qu’il est préférable de déserter le système et vivre autrement en mobilisant leur énergie autour de projets de reconstruction, mais encore que cela intervienne partout simultanément. Et pour cela il faudrait surtout que ceux qui sont invités à s’intégrer au système technomarchand refusent d’y venir.
+source: >
+    [Planète Laboratoire](http://www.laboratoryplanet.org)
+
+
+---
+tags: realize act alienation
+content: >
+    Les plus grandes vilenies d’aujourd’hui ne proviennent pas de ce qu’on les fait, mais de ce qu’on les laisse faire. Elles se développent dans le vide.
+source: >
+    Robert Musil, L’homme sans qualités (vers 1920)
+
+
+---
+tags: alienation realize focus
+content: On peut passer sa vie à mesurer les dimensions de sa prison
+
+
+---
+tags: earth politics
+content: >
+    How many of us are there ?
+
+
+    Where do we live ?
+
+
+    What is the climate where we live ?
+
+
+    What do we eat ?
+
+
+    How do we exploit each other ?
+
+
+    How can we place limits on exploitation ?
+
+    
+    Whom are we going to live with and where ?
+
+
+    On what kind of Earth?
+source: >
+    [For a terrestrial politics](https://www.eurozine.com/authors/bruno-latour/), An interview with Bruno Latour
+
+
+---
+tags: philo words
+content: >
+    The most important features of our orientation in the world (who are we as individuals? What is the shape of the larger ensemble inside which we are supposed to live? What are the boundaries that define our collective existence?) are based on a series of concepts wholly unfit to capture the nature of individuality and of collective
+
+
+---
+tags: philo words
+content: >
+    Metaphors travel freely, transporting the same unexamined perplexities from field to field
+
+
+---
+tags: home tool
+content: >
+    [Simply Differently](https://simplydifferently.org) — temporary buildings, studying, planning, building, and living in
+
+---
+tags: home tool
+content: >
+    [Domes et Bulles](http://domesetbulles.org/)
+
+
+---
+tags: home tool
+content: >
+    [Association Apache](http://associationapache.org) pour la Promotion des Alternatives de Constructions Humbles et Écologiques en Maine-et-Loire
+
+
+---
+tags: education law
 content: >
     [Solidaires étudiant-e-s](https://www.solidaires-etudiant.org), syndicats de luttes est une fédération des syndicats étudiants de luttes.
  
@@ -9,7 +99,7 @@ content: >
     Nous défendons les droits des étudiants et des étudiantes au quotidien, au niveau des conditions d’études, de logement, des inscriptions, des bourses, des examens…
 
 
-    A Solidaires étudiant­-e­-s, syndicats  de  luttes,  nous  militons  pour  une université  gratuite,  ouverte  à  tou­t-e­-s,  de  qualité,  émancipatrice  et  autogérée.
+    A Solidaires étudiant­-e­-s, syndicats de luttes, nous militons pour une université gratuite, ouverte à tou­t-e­-s, de qualité, émancipatrice et autogérée.
 
 
 ---
@@ -42,7 +132,7 @@ source: Stephen Guise, How to be an Imperfectionist
 
 
 ---
-tags: realize focus time habit balance
+tags: realize focus time habits balance
 content: >
     Start the habit of asking yourself :
 
@@ -56,10 +146,16 @@ content: >
 ---
 tags: realize words economy
 content: >
-    C'est quoi être un anarchiste ? *un mot*
+    C'est quoi être un anarchiste ?
 
 
-    C'est quoi avoir un compte en banque ? *cautioner ce système de merde*
+    *un mot*
+
+
+    C'est quoi avoir un compte en banque ?
+
+
+    *cautioner ce système de merde*
 
 
 ---
@@ -435,33 +531,24 @@ content: >
 title: Comment participer ?
 tags: about tool
 content: >
-    Vous êtes convaincu.e ? vous voulez ajouter, modifier des contenus ? rejoignez-nous !
+    Vous êtes convaincu.e ? vous voulez ajouter, modifier des contenus ? aidez-nous !
 
-    ## Pour discuter, commenter
-
-
-    - sujets ou idées générales : utilisez [le document partagé](https://annuel.framapad.org/p/manifestes) ou envoyez un mail à la [liste de discussion](https://lists.riseup.net/www/subscribe/utopies-concretes)
+    **Pour discuter, commenter des sujets ou idées générales**, utilisez [le document partagé](https://annuel.framapad.org/p/manifestes) ou envoyez un mail à la [liste de discussion](https://lists.riseup.net/www/subscribe/utopies-concretes)
 
 
-    ## Pour ajouter des contenus
-
-    Il est pour l'instant nécessaire de passer par le site [github.com](http://github.com), qui héberge le code source (créez un compte, anonyme si besoin). Vous pourrez alors éditer les documents :
+    **Pour ajouter des contenus**, il est pour l'instant nécessaire de passer par la plateforme [github.com](http://github.com), qui héberge le code source
 
 
-    - [texts](https://github.com/manifestes/manifestes/blob/gh-pages/data/texts_fr.yml) — les sections de texte ici présentes
-
-    - [quotes](https://github.com/manifestes/manifestes/blob/gh-pages/data/quotes_fr.yml) — des citations à copier/coller
-
-    - [links](https://github.com/manifestes/manifestes/blob/gh-pages/data/links_fr.yml) — la liste de tous les liens
+    Créez un compte, anonyme si besoin, pour éditer le document [abcd.yml](https://github.com/manifestes/manifestes/blob/gh-pages/data/abcd.yml), c'est à dire la liste de tous les blocs de textes ici présents.
 
 
     Éditez et validez votre modification en la décrivant, puis créez une «pull-request» (bouton vert) pour proposer votre modification aux autres
 
 
-    **Pour les points de la carte**, vous pouvez directement modifier [ce tableau partagé](https://framacalc.org/carto), les modifications seront mises en ligne régulièrement
+    **Pour les points de la carte**, modifiez [ce tableau partagé](https://framacalc.org/carto), les ajouts seront mises en ligne régulièrement
 
 
-    **Réseau des sites** : n'hésitez pas à nous signaler les sites absents de la [liste](https://github.com/manifestes/manifestes/blob/gh-pages/data/network/network_in.csv) du réseau (galaxie des liens)
+    Et n'hésitez pas à nous signaler les sites internet non référencés dans la [galaxie des liens](https://github.com/manifestes/manifestes/blob/gh-pages/data/network/network_in.csv) !
 
 
 ---
@@ -768,22 +855,16 @@ content: >
 
 
 ---
-title: Réseau.x alternatifs
-tags: web emancipation tool
+title: Réseau.x et transparence
+tags: web tool power companies
 content: >
-    On recense tous les mouvements... ce sont les RG qui vont être contents !
+    **Cartographier, recenser, rendre visible les réseaux informels** ne va t'il pas leur nuire ? Ce sont les RG qui vont être contents !
 
 
-    *Cartographier, recenser, rendre visible* les réseaux informels ne va t'il pas leur nuire ?
+    Les textes et liens de cette liste se retrouvent par *Google, Facebook, Twitter* et autres... **Naviguons sans passer par eux !**
 
 
-    Tout ce qui est présent sur ce site l'est aussi chez *Google, Facebook, Twitter* et autres... sauf qu'ils ont déjà bien plus de données que nous ! Nous leur léguons tout car nous utilisons leurs tuyaux et services pour la plupart de nos communications sur internet.
-
-
-    Il est donc plus que temps d'essayer de **se réapproprer le numérique** — *recherche, archivage, agrégation* — avant que l'avance qu'ils ont sur nous ne devienne insurmontable.
-
-    
-    Quelle que soit notre position vis-à-vis des technologies, nous devons à minima comprendre comment elle fonctionnent pour pouvoir nous défendre !
+    **Réapproprions nous le numérique** — *langage, données, recherche, archivage, agrégation*, pour le tourner à notre avantage !
 
 
 ---
@@ -807,7 +888,7 @@ source: "[Attac](https://france.attac.org/se-mobiliser/changeons-systeme-pas-cli
 
 
 ---
-title: Héritages, colonialisme
+title: "Héritages, colonialisme"
 tags: history transmit companies politics
 content: >
     ## Privilégiés du nord, responsables, refusons l'ingérence
@@ -2150,7 +2231,7 @@ content: La démocratie même est l’autre face du capital, non son contraire
 
 ---
 tags: education alienation power transmit
-title: Consentement
+title: Consentement et domination
 source: "[Leanne Betasamosake Simpson](https://www.leannesimpson.ca/about/)"
 content: Si les enfants apprennent que la domination et l’absence de consentement sont normaux dans le contexte de l’éducation, l’absence de consentement devient un outil normal pour ceux qui détiennent et exercent le pouvoir.
 
@@ -4368,10 +4449,16 @@ content: >
 
 
 ---
-tags: human tool
+tags: human education
 source: Robert A. Heinlein
 content: >
-    Un être humain devrait savoir *changer une couche-culotte, planifier une invasion, égorger un cochon, manœuvrer un navire, concevoir un bâtiment, écrire un sonnet, faire un bilan comptable, monter un mur, réduire une fracture, soutenir un mourant, prendre des ordres, donner des ordres, coopérer, agir seul, résoudre des équations, analyser un nouveau problème, répandre de l'engrais, programmer un ordinateur, cuisiner un bon repas, se battre efficacement, et mourir bravement*. La spécialisation, c'est bon pour les insectes.
+    Un être humain devrait savoir
+
+
+    *changer une couche-culotte, planifier une invasion, égorger un cochon, manœuvrer un navire, concevoir un bâtiment, écrire un sonnet, faire un bilan comptable, monter un mur, réduire une fracture, soutenir un mourant, prendre des ordres, donner des ordres, coopérer, agir seul, résoudre des équations, analyser un nouveau problème, répandre de l'engrais, programmer un ordinateur, cuisiner un bon repas, se battre efficacement, et mourir bravement*.
+
+
+    La spécialisation, c'est bon pour les insectes.
 
 
 ---
@@ -4478,7 +4565,8 @@ content: >
 ---
 tags: video
 content: >
-    [My Dinner With Andre](https://www.youtube.com/watch?v=KUf9a1DYuDk) (1981) Le confort tue
+    [Le confort tue](https://www.youtube.com/watch?v=KUf9a1DYuDk)
+source: My Dinner With Andre, 1981
 
 
 ---
@@ -4795,9 +4883,9 @@ content: >
 
 
 ---
-tags: list object tool
+tags: list object tool video
 content: >
-    [Le terrier des Renards verts](http://renards-verts.url.ph/) et sa [chaine youtube](https://www.youtube.com/user/contestavert) — petits bricolages, récup', autonomie, idées économiques, écologie (la vraie), un peu de survivalisme...
+    [Le terrier des Renards verts](http://renards-verts.url.ph/) et sa [chaine vidéo](https://www.youtube.com/user/contestavert) — petits bricolages, récup', autonomie, idées économiques, écologie (la vraie), un peu de survivalisme ...
 
 
 ---
@@ -5022,7 +5110,7 @@ content: >
 ---
 tags: eat list tool economy
 content: >
-    [OpenFoodFacts](http://fr.openfoodfacts.org/) est une base de données sur les produits alimentaires faite par tout le monde, pour tout le monde. Elle vous permet de faire des choix plus informés, et comme les données sont ouvertes (open data), tout le monde peut les utiliser pour tout usage
+    [OpenFoodFacts](http://fr.openfoodfacts.org/) est une base de données sur les produits alimentaires faite par tout le monde, pour tout le monde. Elle vous permet de faire des choix plus informés, et comme les données sont ouvertes, tout le monde peut les utiliser pour tout usage
 
 
 ---
@@ -5051,9 +5139,10 @@ content: >
 
 
 ---
-tags: energy map
+tags: energy map power
 content: >
-    [Carte du nucléaire près de chez vous](http://www.greenpeace.org/france/fr/campagnes/nucleaire/pres-de-chez-vous/), par Greenpeace: centrales, sites de production, de démantelement, transports...
+    [Carte du nucléaire près de chez vous](http://www.greenpeace.org/france/fr/campagnes/nucleaire/pres-de-chez-vous/) — centrales, sites de production, de démantelement, transports
+source: Greenpeace
 
 
 ---
@@ -5139,7 +5228,9 @@ content: >
 ---
 tags: creation space science
 content: >
-    [Robo Rainbow](https://vimeo.com/19374769), vélo créativement augmenté pour grapher des arcs en ciel en quelques secondes, par [Mudlevel](https://vimeo.com/mudlevel/videos)
+    [Robo Rainbow](https://vimeo.com/19374769), vélo créativement augmenté pour grapher des arcs en ciel en quelques secondes
+source: >
+    [Mudlevel](https://vimeo.com/mudlevel/videos)
 
 
 ---
@@ -5200,16 +5291,17 @@ content: >
 
 
 ---
-tags: object energy emancipation
+tags: object energy agriculture
 content: >
-    [500 Douches chaudes à partir d'un Tas de Compost](https://docs.google.com/document/d/1AtXQPt6DvpmCfyn2ebMQyMdV1_TBPLmBe1qKyqCOEKM/pub) !
+    [500 Douches chaudes à partir d'un Tas de Compost](https://docs.google.com/document/d/1AtXQPt6DvpmCfyn2ebMQyMdV1_TBPLmBe1qKyqCOEKM/pub)
 
 
 ---
 tags: text science alienation economy audio
 content: >
-    [La liberté dans le coma](https://sortirdefacebook.files.wordpress.com/2013/10/liberte_dans_le_coma_marcuse.pdf), essai sur l’identification électronique et les raisons de s’y opposer, par le groupe Marcuse - *Mouvement Autonome de Réflexion Critique à l’Usage des Survivants de l’Économie*, également auteur de «De la misère humaine en milieu publicitaire» aux éditions La Découverte; invités sur [Terre à Terre, France Culture](http://www.franceculture.fr/emission-terre-a-terre-la-liberte-dans-le-coma-2014-03-22)
-
+    [La liberté dans le coma](https://sortirdefacebook.files.wordpress.com/2013/10/liberte_dans_le_coma_marcuse.pdf), essai sur l’identification électronique et les raisons de s’y opposer, par le groupe Marcuse - *Mouvement Autonome de Réflexion Critique à l’Usage des Survivants de l’Économie*, également auteur de «De la misère humaine en milieu publicitaire» aux éditions La Découverte
+source: >
+    [Terre à Terre, France Culture](http://www.franceculture.fr/emission-terre-a-terre-la-liberte-dans-le-coma-2014-03-22)
 
 ---
 tags: text media work
@@ -5319,9 +5411,9 @@ content: >
 
 
 ---
-tags: media list
+tags: media list tool web
 content: >
-    L'incontournable agrégateur des [Médias libres](http://mediaslibres.org/)
+    L'incontournable agrégateur des [Médias libres](http://mediaslibres.org/), répertoire des actualités non dominantes
 
 
 ---
@@ -5333,7 +5425,7 @@ content: >
 ---
 tags: tool list map
 content: >
-    Le répertoire des communs d'[encommuns.org](http://encommuns.org/#/p/list)
+    Le répertoire des communs d'[Encommuns](http://encommuns.org/#/p/list)
 
 
 ---
@@ -5363,7 +5455,8 @@ content: >
 ---
 tags: audio object
 content: >
-    [Quand c'est usé je le jette !](https://www.youtube.com/watch?v=7QRY1koyYYE), Jacques Dutronc, 1969
+    [Quand c'est usé je le jette !](https://www.youtube.com/watch?v=7QRY1koyYYE)
+source: Jacques Dutronc, 1969
 
 
 ---
@@ -5403,9 +5496,9 @@ content: >
 
 
 ---
-tags: tool group emancipation
+tags: tool group words
 content: >
-    Agir pour la paix publie [six guides pratiques](http://agirpourlapaix.be/formations/boite-a-outils/) avec outils concrets pour: la facilitation de réunions et d’ateliers, les accords de groupe, le consensus et les retours
+    Agir pour la paix publie [six guides pratiques](http://agirpourlapaix.be/formations/boite-a-outils/) avec outils concrets pour faciliter réunions et ateliers, accords de groupe, consensus et retours
 
 
 ---
@@ -5595,7 +5688,8 @@ source: Yannis Youlountas
 ---
 tags: audio media
 content: >
-    [Là-bas si j'y suis](http://la-bas.org/), de Daniel Mermet, et, pour se retrouver autour d’un verre et refaire le monde: [la carte des repaires de Là-bas](http://la-bas.org/les-repaires-de-la-bas)
+    [Là-bas si j'y suis](http://la-bas.org/), et, pour se retrouver autour d’un verre et refaire le monde: [la carte des repaires](http://la-bas.org/les-repaires-de-la-bas)
+source: Daniel Mermet
 
 
 ---
@@ -5607,7 +5701,7 @@ content: >
 ---
 tags: move space calendar
 content: >
-    La première [journée sans voiture](http://parissansvoiture.fr/) à Paris le 27 septembre 2015
+    [Paris sans voiture !](http://parissansvoiture.fr/)
 
 
 ---
@@ -5722,8 +5816,8 @@ source: Attac
 ---
 tags: energy earth video
 content: >
-    [Into Eternity](https://www.youtube.com/watch?v=Kl-su2P6mVM), de Michael Madsen: documentaire à propos du stockage en couche géologique profonde de déchets radioactifs en Finlande
-
+    [Documentaire](https://www.youtube.com/watch?v=Kl-su2P6mVM) à propos du stockage en couche géologique profonde de déchets radioactifs en Finlande
+source: Into Eternity, Michael Madsen
 
 ---
 tags: politics act science philo
@@ -5754,14 +5848,15 @@ content: >
 ---
 tags: creation alienation audio
 content: >
-    Keny Arkana: [Entre les lignes; clouée au sol](https://www.youtube.com/watch?v=UNlE0-vf7aw), Marseille [Capitale de la Rupture](https://www.youtube.com/watch?v=ta2jot9JhU0)
+    [Entre les lignes; clouée au sol](https://www.youtube.com/watch?v=UNlE0-vf7aw), Marseille [Capitale de la Rupture](https://www.youtube.com/watch?v=ta2jot9JhU0)
+source: Keny Arkana
 
 
 ---
 tags: politics philo emancipation
 content: >
-    [Peut-on se passer de la promesse](http://www.franceculture.fr/emission-forum-le-monde-le-mans-peut-on-se-passer-de-la-promesse-22-2015-07-09), Philippe Corcuff à propos des promesses politiques
-source: France Culture
+    [Peut-on se passer de la promesse ?](http://www.franceculture.fr/emission-forum-le-monde-le-mans-peut-on-se-passer-de-la-promesse-22-2015-07-09)
+source: Philippe Corcuff, France Culture
 
 
 ---
@@ -5806,7 +5901,8 @@ content: >
 ---
 tags: alienation emancipation video
 content: >
-    [Ne vivons plus comme des esclaves](https://www.youtube.com/watch?v=rpqk24qvoR4), luttes et utopies en Grèce, de Yannis Youlountas, septembre 2013, 89min
+    [Ne vivons plus comme des esclaves](https://www.youtube.com/watch?v=rpqk24qvoR4) — luttes et utopies en Grèce
+source: Yannis Youlountas, septembre 2013, 89min
 
 
 ---
@@ -5943,9 +6039,9 @@ content: >
 
 
 ---
-tags: home object tool
+tags: home space object tool
 content: >
-    [Habiter autrement](http://www.habiter-autrement.org/), portail des habitats et modes de vie alternatifs, des réalisations innovantes, simples, reproductibles, des bricolages dans les marges pour une autre société
+    [Habiter autrement](http://www.habiter-autrement.org/) — portail des habitats et modes de vie alternatifs, des réalisations innovantes, simples, reproductibles, des bricolages dans les marges pour une autre société
 
 
 ---
@@ -5961,9 +6057,9 @@ content: >
 
 
 ---
-tags: map science web list
+tags: map science web list space
 content: >
-    la carte [New Cloud Atlas](http://newcloudatlas.org), qui montre les lieux physiques associés au cloud
+    Le [New Cloud Atlas](http://newcloudatlas.org) montre les lieux physiques associés au cloud
 
 
 ---
@@ -6083,9 +6179,9 @@ content: >
 
 
 ---
-tags: alienation energy companies politics
+tags: energy companies politics
 content: >
-    [cartographie des personnalités du nucléaire en France](http://greenpeace.fr/facenuke/)
+    [cartographie](http://greenpeace.fr/facenuke/) des personnalités du nucléaire en France
 source: Greenpeace
 
 
@@ -6305,7 +6401,9 @@ content: >
 ---
 tags: space emancipation act
 content: >
-    Il n’y aura jamais d’aéroport à Notre-Dame-des-Landes: [zone à défendre](http://zad.nadir.org/), avec l'[ACIPA ](https://www.acipa-ndl.fr), les [Naturalistes en lutte](https://naturalistesenlutte.wordpress.com/) et toutes les énergies complices: [défendre la zad](https://constellations.boum.org/spip.php?article125), [que va devenir la zad ?](https://lundi.am/De-la-ZAD-aux-Communaux-Partie-I)
+    Il n’y aura jamais d’aéroport à Notre-Dame-des-Landes !
+source: >
+    [Zone à défendre](http://zad.nadir.org/), [ACIPA ](https://www.acipa-ndl.fr), [Naturalistes en lutte](https://naturalistesenlutte.wordpress.com/), [Défendre la zad](https://constellations.boum.org/spip.php?article125), [Que va devenir la zad ?](https://lundi.am/De-la-ZAD-aux-Communaux-Partie-I)
 
 
 ---
@@ -6497,9 +6595,12 @@ content: >
 
 
 ---
-tags: web media tool
+tags: web media tool list
 content: >
-    le [zinc](http://zinc.mondediplo.net/) du monde diplomatique: comme twitter, mais en mieux
+    [Le zinc](http://zinc.mondediplo.net/) du monde diplomatique.
+
+
+    Comme twitter, mais en mieux
 
 
 ---
@@ -6535,7 +6636,8 @@ content: >
 ---
 tags: media web science text
 content: >
-    [Techn0polis](https://www.techn0polis.net/), blog d'Amaelle Guiton
+    [Techn0polis](https://www.techn0polis.net/)
+source: Amaelle Guiton
 
 
 ---
@@ -6547,7 +6649,9 @@ content: >
 ---
 tags: alienation law web text
 content: >
-    la loi sur le renseignement prévoit des [algorithmes pour détecter les comportements suspects](http://ownirevient.fr/)
+    la loi sur le renseignement prévoit des algorithmes pour détecter les comportements suspects
+source: >
+    [Owni](http://ownirevient.fr/)
 
 
 ---
@@ -6666,7 +6770,7 @@ source: Sarah Kilani, Médiapart
 ---
 tags: web tool group
 content: >
-    la plateforme collaborative [Ggouv](http://ggouv.fr/)
+    la plateforme collaborative [Ggouv](http://ggouv.fr/), pour décider et gouverner collectivement
 
 
 ---
@@ -6915,7 +7019,7 @@ content: >
 
 
 ---
-tags: energy
+tags: energy tool
 content: >
     [Negawatt](http://www.negawatt.org) — changeons d’énergies, transition, mode d’emploi
 
@@ -6942,4 +7046,3 @@ content: >
 tags: media politics video
 content: >
     [Frenchlingteam](https://www.youtube.com/user/frenchlingteam) — L'équipe Linguistique Francophone propose une ouverture à un nouveau modèle de société autour d'une Économie basée sur les Ressources à travers la traduction de contenus permettant d'éveiller les consciences quant aux changements radicaux nécessaires à la survie et l'épanouissement de l'humanité. [Forum Linguistique](http://forum.linguisticteam.org/)
-

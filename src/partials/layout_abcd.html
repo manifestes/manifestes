@@ -4,7 +4,7 @@
   ng-mouseover="overSection(e);" 
   class="section tagcolor{{tags[e.tags[0]].index}}">
     <div ng-if="e.title" class="title" compile-here="e.title"></div>
-    <div class="content" compile-here="e.content"></div>
+    <div class="content" style="font-size: {{fontSizeContent(e)}}em;" compile-here="e.content"></div>
     <div ng-if="e.source" class="source" compile-here="md2Html(e.source)"></div>
 </div>
 

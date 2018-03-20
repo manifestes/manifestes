@@ -7,11 +7,9 @@ source:
     meta: https://github.com/manifestes/manifestes/blob/gh-pages/data/meta.yml
     abcd: https://github.com/manifestes/manifestes/blob/gh-pages/data/abcd.yml
     pixels: https://github.com/manifestes/manifestes/blob/gh-pages/data/pixels/
-    books: pas de bonne source ?
     network: https://github.com/manifestes/manifestes/blob/gh-pages/data/network/network_in.csv
     map: https://framacalc.org/carto
     ninja: https://github.com/manifestes/manifestes/blob/gh-pages/data/network/network_in.csv
-    catalog: https://github.com/manifestes/manifestes/blob/gh-pages/data/catalog.yml
 splash:
     images:
         - 0-urgent-de-ralentir_960F20.svg
@@ -22,30 +20,30 @@ splash:
     enter: "enter the void"
 intro:
     -   layout: abcd
-        title: manifeste
-        descr: abécédaire — mots & morceaux choisis
-        image: FingerBones.jpg
+        title: penser
+        descr: Abécédaire — mots & morceaux choisis
+        image: warsheep.jpg
         quote:
             author: Audrey
             content: Que ceux qui sont déjà conscients se sentent soutenus, et que les autres ouvrent les yeux pour changer, à leur rythme, à leur mesure
     -   layout: pixels
-        title: pixel.s
-        descr: composer d'autres manières de voir le monde
-        image: hometohome.jpg
+        title: voir
+        descr: Composer d'autres manières de voir le monde
+        image: arton6207-76652.jpg
         quote:
             author: 
             content: L‘homme est fait de la matière dont sont faits les rêves
     -   layout: network
         title: galaxie
-        descr: un graphe de 3000 sites internet de collectifs, structures, médias, blogs — positions relatives & interconnexions
-        image: sombrelac.jpg
+        descr: Un graphe de 3000 sites internet de collectifs, structures, médias, blogs — positions relatives & interconnexions
+        image: arbrecouleurs.jpg
         quote:
             author: Proverbe mexicain
             content: Ils ont essayé de nous enterrer, ils ne savaient pas que nous étions des graines
     -   layout: map
         title: carte
         descr: "3000 lieux à visiter : caravane des alternatives, hétérotopies, articles Reporterre et Bastamag, annonces Passerelle éco, lieux de vie et bases nomades..."
-        image: nepaspencherdanslevirage.jpg
+        image: ericDrooker_skull.jpg
         quote:
             author: Chris Marker, Le Joli Mai, 1h28min
             content: l'avenir est là ! mais les gens ne le voient pas ... ils attendent l'horizon au loin
@@ -78,8 +76,6 @@ disclaimer:
 
 
         en cas de doute à propos des droits, contactez-nous !
-    books: >
-        vérifiez les droits d'auteurs avant consultation !
     network: >
         **le réseau de tous les sites internet** et des liens qu'ils ont entre eux (approche quantitative)
 
@@ -102,17 +98,13 @@ disclaimer:
 
 
         Pour ajouter, modifier ou supprimer un lieu, utilisez [ce tableau partagé](http://framacalc.org/carto)
-    catalog: >
-        faites-moi.
 menu:
-    backtip: retourner à l'introduction
-    hometip: page d'accueil
+    backtip: introduction
+    hometip: accueil
     taggingoff: voir les thématiques
     taggingon: désactiver les thématiques
     search: filtrer...
-    addzone: ajouter !
     sourcetip: "voir la source\ndes données"
-    trysearch: "essayez avec :"
     buttons:
         -   slug: ninja
             label: ninja !
@@ -122,18 +114,14 @@ menu:
             label: carte
             icon: fa-map-o
         -   slug: network
-            label: réseau
-            icon: fa-sitemap
+            label: galaxie
+            icon: fa-snowflake-o
         -   slug: pixels
-            label: pixels
-            icon: fa-image
-        -   slug: books
-            label: livres
-            icon: fa-book
-            tip: "contactez-nous !"
+            label: voir
+            icon: fa-eye
         -   slug: abcd
-            label: abcd
-            icon: fa-bullhorn
+            label: penser
+            icon: fa-child
     calendar: agenda
     calendartip: démosphère !
     catalogtip: "voir toutes\nles données"
@@ -141,9 +129,6 @@ menu:
         abcd:
             link: "http://annuel.framapad.org/p/manifestes"
             text: suggérer ou<br>modifier un texte
-        books:
-            link: "http://annuel.framapad.org/p/manifestes"
-            text: proposer un<br>document
         pixels:
             link: "http://annuel.framapad.org/p/manifestes"
             text: proposer une image<br>ou un dessin
@@ -160,19 +145,19 @@ tags:
     about:
         - question-circle
         - C'est quoi ce projet ?
-        - projet,pourquoi ce site ?,contexte,qui,outil
+        - projet,pourquoi ce site ?,contexte,qui,outil,contact
     earth:
         - globe
         - Planète
-        - gaia,environnement,climat,géologie,déchets,pollution,ressources,eau,animaux,végétaux,éléments,planète,terre,globe,écosystème
+        - gaia,environnement,climat,géologie,déchets,pollution,ressources,eau,animaux,végétaux,éléments,planète,terre,globe,écosystème,astronomie,monde
     health:
         - child
         - Santé
-        - remèdes,plantes,bien-être,corps,sport,santé
+        - remèdes,plantes,bien-être,corps,sport,santé,yoga,méditation
     agriculture:
         - pagelines
         - Cultures
-        - (perma)cultures,graines,semences,jardinage,élevage,terre,potager,agriculture
+        - (perma)cultures,graines,semences,jardinage,élevage,terre,potager,agriculture,compost
     eat:
         - cutlery
         - Manger
@@ -184,7 +169,7 @@ tags:
     home:
         - home
         - Habiter
-        - logement,habitat,hébergement,éco-lieux,auto-construction,terrain,maison,logis
+        - logement,habitat,hébergement,éco-lieux,auto-construction,terrain,maison,logis,écovillage,dome,zome,cabane,dormir,refuge
     move:
         - bicycle
         - Bouger
@@ -192,15 +177,15 @@ tags:
     suffer:
         - life-ring
         - Aider
-        - migrants,sans-papiers,sdf,souffrances,survie,inégalités,discriminations
+        - migrants,sans-papiers,sdf,souffrances,survie,inégalités,discriminations,aider
     energy:
         - plug
         - Énergie
-        - nucléaire,électrique,éolien,solaire,cosmique,vitale,transformée
+        - nucléaire,électrique,éolien,solaire,cosmique,vitale,transformée,pétrole,gaz
     object:
         - cogs
         - Bric et Broc
-        - récup',recyclage,réutilisation,ressourceries,artisanats,réappropriation,savoirs-faire,construire soi-même,diy,équipement,matériel,mobilier,machines
+        - récup',recyclage,réutilisation,ressourceries,artisanats,réappropriation,savoirs-faire,construire soi-même,diy,équipement,matériel,mobilier,machines,déchets
     work:
         - briefcase
         - Emploi
@@ -212,31 +197,35 @@ tags:
     media:
         - bullhorn
         - Médias
-        - information,presse,journalisme,actualité
+        - information,presse,journalisme,actualité,medias
     education:
         - shower
         - Éducation
-        - école,université,recherche,apprendre,se former,enseigner,partages de savoir,éducation
+        - école,université,recherche,apprendre,se former,enseigner,partages de savoir,éducation,school
+    group:
+        - group
+        - Collectif.s
+        - groupes,collectifs,ensembles,organisation,cercles,assemblée.s
     alienation:
         - magnet
         - Aliénation
-        - publicité,propagande,aliénation,conditionnements,contrôle,fichage,cloud,surveillance,pouvoirs,détournements
+        - publicité,propagande,aliénation,conditionnements,contrôle,fichage,cloud,surveillance,pouvoirs,détournements,harcelement,pub
     emancipation:
         - paper-plane
         - Émancipation
         - réappropriation,émancipation,autonomie,autogestion,horizontalité,épanouissement,ouverture
     realize:
         - low-vision
-        - Réaliser
-        - réaliser,se rendre compte
+        - Se rendre compte
+        - réaliser,se rendre compte,changer
     act:
         - bolt
         - Action.s
         - actions,pratiques,quotidiennes,désobéissance civile,militantisme,zone de confort,passage à l'acte,faire,agir,occupations,squats,radicalités
     game:
         - hand-spock-o
-        - invente toi-même les règles
-        - jeux,s'amuser,hasard
+        - Invente toi-même les règles
+        - jeux,s'amuser,hasard,règles
     human:
         - female
         - Humain.e
@@ -245,18 +234,14 @@ tags:
         - sun-o
         - Présence
         - attention,focus,écoute,présence,concentration
-    habits:
-        - history
-        - Habitudes
-        - habitudes,répétitions,cycles
     emotion:
         - podcast
         - Émotion.s
-        - peur,émotions,sensible
+        - peur,émotions,sensible,corps,sentir,ressentir
     balance:
-        - random
-        - Balance
-        - équilibre,balance,dualité
+        - tree
+        - Équilibre
+        - équilibre,balance,dualité,habitudes,répétitions,cycles
     love:
         - heart
         - Amour
@@ -264,11 +249,11 @@ tags:
     spirit:
         - snowflake-o
         - Spiritualité.s
-        - rêves,idéaux,énergies,amour,spiritualités,foi,religions,mort,croyances
+        - rêves,idéaux,énergies,amour,spiritualités,foi,religions,mort,croyances,yoga,jésus,dieu,esprit.s,astrologie,vide,rien,néant,origine
     genre:
         - venus-mars
-        - Genre
-        - patriarcat,féminisme,genres,LGBT,famille,racisme,sexisme
+        - Genre.s
+        - patriarcat,féminisme,genres,LGBT,famille,racisme,sexisme,corps,sentir,sens
     power:
         - hand-rock-o
         - Puissance
@@ -276,7 +261,7 @@ tags:
     words:
         - commenting
         - Langage
-        - récits,mots,interprétations,controverses,discours,s'accorder,s'engueuler,débats,médiations,langage
+        - récits,mots,interprétations,controverses,discours,s'accorder,s'engueuler,débats,médiations,langage,conflits
     creation:
         - bug
         - Forme.s
@@ -288,11 +273,11 @@ tags:
     web:
         - hashtag
         - Digital
-        - web,internet,réseaux
+        - web,internet,réseaux,technologies
     violence:
         - industry
         - Violence.s
-        - violence,brutalité,police,oppression,sang
+        - violence,brutalité,police,oppression,sang,flic
     economy:
         - money
         - Économie
@@ -300,19 +285,19 @@ tags:
     companies:
         - trash
         - Multinationales
-        - néocapitalisme,récupérations,greenwashing,multinationales,puissances d'argent,boycott,entreprises
+        - néocapitalisme,récupérations,greenwashing,multinationales,puissances,argent,boycott,entreprises,ennemis,money
     politics:
         - bank
         - Politique
-        - politique et représentation,concertation,décider ensemble,communs,open (res)sources,démocratie,hierarchie
+        - politique et représentation,concertation,décider ensemble,communs,open (res)sources,démocratie,hierarchie,voter
     law:
         - gavel
         - Juridique
         - lois,aspects juridiques,démarches administratives,législations,justice
     philo:
         - puzzle-piece
-        - Théories
-        - réflexions,théories,principes,idéologies,dialectique,pensées
+        - Philosophie.s
+        - réflexions,théories,principes,idéologies,dialectique,penser,philosophie
     history:
         - book
         - Histoire.s
@@ -331,7 +316,7 @@ tags:
         - images,dessins,photos,graphiques,représentations
     text:
         - file-text-o
-        - Texte.services
+        - Texte.s
         - articles,livres,textes,mots,phrases
     list:
         - list
@@ -350,23 +335,16 @@ tags:
         - Calendriers
         - calendriers,rendez-vous,festivals,événements,moments
 footer:
-    lastupdatetext: dernière modification
-    content: >
-        ##*voir aussi*
-
-        + le [document partagé](https://annuel.framapad.org/p/manifestes): discutoire, choses à faire
-
-        + la liste de discussion [utopies-concretes@lists.riseup.net](https://lists.riseup.net/www/subscribe/utopies-concretes)
-
-        + le [code source](https://github.com/manifestes/manifestes) du site et les [dernières modifications](https://github.com/manifestes/manifestes/commits/gh-pages)
-
-        + [les lieux de la carte à ajouter/modifier](https://framacalc.org/carto)
-
-        + le compte twitter [@manifestes](https://twitter.com/manifestes)
-
-        + dites-nous [bonjour@utopies-concretes.org](mailto:bonjour@utopies-concretes.org) !
-        
-        
-        *toute reproduction non commerciale de tout ça est encouragée*
-
-
+    buttons:
+        -   label: document<br>partagé
+            icon: fa-edit
+            href: https://annuel.framapad.org/p/manifestes
+        -   label: lieux à ajouter<br>sur la carte
+            icon: fa-map-o
+            href: https://framacalc.org/carto
+        -   label: voir le code<br>source du site
+            icon: fa-github
+            href: https://github.com/manifestes/manifestes
+        -   label: écrivez-nous !<br>bonjour@utopies-concretes.org
+            icon: fa-envelope-o
+            href: mailto:bonjour@utopies-concretes.org

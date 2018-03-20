@@ -1,29 +1,8 @@
 
 /* HEIGHT WILL CHANGE TAGS-GRID, MAP LEGEND, ... */
 
-@media (max-height: 690px) {
-  /* tag collapsible panel when window height is small */
-  /*
-  .tagspanel {
-    width: 195px !important;
-    left: -195px !important;
-    .gridtag {
-      width: 50% !important;
-      padding: 2px 0px 2px 5px !important;
-    }
-  }
-  .wrapper.tagsbordered {
-    padding-left: 190px !important;
-  }
-  */
-}
 
-@media (max-height: 630px) {
-
-}
-
-
-/* PHONES & TABLETS */
+/* ###################################### PHONES & TABLETS */
 
 @media (max-width: 1025px) {
   .container,
@@ -36,7 +15,7 @@
   .quote-container,
   .block .h1,
   .block img.icon,
-  .block .links .linkslide {
+  .block .pixels .linkslide {
     .erase-transition();
   }
   .layout-home .fullbox {
@@ -74,12 +53,13 @@
 }
 
 
-/* PHONES ONLY */
+/* ###################################### PHONES ONLY */
 
 @media (max-width: 750px) {
   .header .menu .searchinput,
   .header .menu .tagsmenu,
-  .menubutton#ninja, .menubutton#network, .menubutton#pixels, .menubutton#books, .menubutton#calendar {
+  .footer { display: none; }
+  .menubutton#network, .menubutton#calendar {
     display: none;
   }
 
@@ -100,32 +80,13 @@
     }
   }
 
-  /* LINKS */
-  .panel.links {
+  /* PIXELS */
+  .panel.pixels {
     .base-columns(1, 0px);
-    .link {
-      margin: 15px 7px !important;
-      padding: 12px !important;
-    }
-  }
-  .panel.images {
-    .base-columns(2, 0px);
   }
   
-  /* SECTIONS */
+  /* ABCD */
   .section {
-    border: none !important;
-    .image {
-      position: relative !important;
-      width: 100% !important;
-      height: inherit !important;
-      background-image: none !important;
-    }
-    .quote-container {
-      padding: 40px !important;
-      font-size: 0.9em !important;
-    }
-    .imagecredit { display: none !important; }
     .h1 {
       font-size: 0.8em !important;
       padding: 10px !important;
@@ -137,17 +98,11 @@
       width: 100% !important;
       background: none !important;
     }
-    &.opened .h1 {
-      background: black !important;
-    }
-    &.opened .h2 {
-      display: none !important;
-    }
 
     .block {
       .content {
         margin-left: 0 !important;
-        padding: 30px 20px 30px 30px !important;
+        padding: 45px 7% !important;
       }
       .source {
         left: 0 !important;
@@ -172,75 +127,46 @@
 }
 
 
-/* TABLETS ONLY */
+/* ###################################### TABLETS ONLY */
 
 @media (min-width: 750px) and (max-width: 1025px) {
-  .tagspanel .gridtag {
-    //padding: 12px 6px !important;
-    //font-size: 0.65em !important;
-  }
   .header .menu .searchinput input {
     width: 160px !important;
   }
-  .panel.links { .base-columns(2, 0px); }
-  .panel.images { .base-columns(3, 0px); }
-  .section .date { display: none; }
-  
-  .menubutton#calendar {
-    display: none;
-  }
+  .panel.pixels { .base-columns(2, 0px); }
 }
 
 
-/* RELATIVELY SMALL - normal CSS */
+/* ###################################### RELATIVELY SMALL - normal CSS */
 
 @media (min-width: 1026px) and (max-width: 1199px) {
-  .panel.links { .base-columns(3, 0px); }
-  .panel.images { .base-columns(4, 0px); }
+  .panel.pixels { .base-columns(3, 0px); }
 }
 
-
-/* BIG SCREENS */
+/* ###################################### BIG SCREENS */
 
 @media (min-width: 1200px) {
-  .tagspanel .gridtag {
-    // padding: 17px 8px !important;
-    // font-size: 0.75em !important;
-  }  
   .header .menu .searchinput input {
     width: 250px !important;
   }
-  .panel.links { .base-columns(4, 0px); }
-  .panel.images { .base-columns(5, 0px); }
+  .panel.pixels { .base-columns(4, 0px); }
 }
 
-
-
-/* VERY BIG SCREENS */
+/* ###################################### VERY BIG SCREENS */
 
 @media (min-width: 1450px) {
-  .tagspanel .gridtag {
-    // padding: 16px 11px !important;
-    // font-size: 0.9em !important;
-  }
   .header .menu .searchinput input {
     width: 300px !important;
   }
-  .panel.links { .base-columns(5, 0px); }
-  .panel.images { .base-columns(6, 0px); }
+  .panel.pixels { .base-columns(5, 0px); }
 }
 
-/* VERY MOST BIG SCREENS */
+/* ###################################### VERY MOST BIG SCREENS */
 
 @media (min-width: 1650px) {
-  .tagspanel .gridtag {
-    // padding: 16px 11px !important;
-    // font-size: 0.9em !important;
-  }
   .header .menu .searchinput input {
     width: 320px !important;
   }
-  .panel.links { .base-columns(6, 0px); }
-  .panel.images { .base-columns(7, 0px); }
+  .panel.pixels { .base-columns(6, 0px); }
 }
 
