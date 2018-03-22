@@ -87,10 +87,25 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
     if($scope.settings.verbose)
       console.log("state:",$scope.state);
 
+    /* thanks to https://gist.github.com/alisterlf/3490957 */
+    function removeAccents(str) {
+      var accents    = 'ÀÁÂÃÄÅàáâãäåÒÓÔÕÕÖØòóôõöøÈÉÊËèéêëðÇçÐÌÍÎÏìíîïÙÚÛÜùúûüÑñŠšŸÿýŽž';
+      var accentsOut = "AAAAAAaaaaaaOOOOOOOooooooEEEEeeeeeCcDIIIIiiiiUUUUuuuuNnSsYyyZz";
+      str = str.split('');
+      var strLen = str.length;
+      var i, x;
+      for (i = 0; i < strLen; i++) {
+        if ((x = accents.indexOf(str[i])) != -1) {
+          str[i] = accentsOut[x];
+        }
+      }
+      return str.join('');
+    };
+
     $scope.updatePath = function() {
       var st = $scope.state;
       $location.path('/'+st.layout, false); //+'/'+st.tags.join(','), false);
-    }
+    };
 
     $scope.partialTemplate = function(lay) {
       if(!lay)
@@ -155,7 +170,10 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
 
     $scope.overSection = function(e) {
       $scope.state.hoverTags = e.tags;
-      console.log($scope.state.hoverTags);
+    };
+    
+    $scope.overTagActivator = function(act) {
+      $scope.state.showAllTags = act;
     };
 
     $scope.isTagActive = function(t) {
@@ -185,8 +203,6 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
 
     $scope.toggleTagging = function() {
       $scope.state.tagging = !$scope.state.tagging;
-      $scope.state.taggingtooltip = $scope.state.tagging ? 
-        $scope.meta.menu.taggingon : $scope.meta.menu.taggingoff;
       $scope.toggleTag();
     };
 
@@ -265,6 +281,7 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
         }
         
         $scope.rgx.search = new RegExp($scope.state.search,'i');
+        $scope.rgx.searchna = new RegExp(removeAccents($scope.state.search),'i');
 
         updateArrays();
 
@@ -281,12 +298,12 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
     $scope.rgx.search = new RegExp("",'i'); // is updated after each keystroke on search input
 
     var shallShowSearch = function(o) { // "o" is a text or a link
-      var reg = $scope.rgx.search;
+      var reg = $scope.rgx.searchna;
       if($scope.state.search)
       if(o.content) { // an abcd !
         var show = false;
         _.each(['source','content','title'], function(k) {
-          show = show || ( o.hasOwnProperty(k) && reg.test(totext(o[k])) );
+          show = show || ( o.hasOwnProperty(k) && reg.test( removeAccents(totext(o[k])) ));
         });
       } else { // ... if no content, then, an image !
         var show = reg.test(totext(o.label));
@@ -401,6 +418,21 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
       });
     }
 
+    $scope.logEmptySearches = function(term) {
+      console.log("Empty Search:",term);
+      $http
+        .post("https://maker.ifttt.com/trigger/searched/with/key/I4lLpckM9TwP9GDY0jUN6", {
+          Value1: term,
+          Value2: "empty search",
+          Value3: "subrequest"
+        })
+        .success(function(res) {
+          console.log(res);
+        })
+        .error(function (data, status, headers, config) {
+          console.log("error empty searcheds",data,status,headers,config);
+        });
+    };
 
     ///////////////////////////////////////////////////////////////
     ///////////////////////////////////////////////////////////////
@@ -445,9 +477,6 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
           if(which=="meta") {
             var m = jsyaml.load(res);
             $scope.meta = m;
-
-            $scope.state.taggingtooltip = $scope.state.tagging ? 
-              m.menu.taggingon : m.menu.taggingoff;
 
             // for html page meta
             $rootScope.htmlmeta = m.htmlmeta;

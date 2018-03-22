@@ -1772,26 +1772,25 @@ L 80 98
   font-size: 1.3em;
 }
 .header .menu .tagactivator i {
-  /* looks like absolute-centered(), but one we want to scale */
-  /* caus' dont remember how to mirror fa-icons */
+  /* looks like absolute-centered(), but we want to mirro(s) */
   box-sizing: border-box;
   position: absolute;
   left: 50%;
   top: 50%;
 }
 .header .menu .tagactivator i.fa-hand-spock-o {
-  -webkit-transform: translate(-50%, -50%) scale(-1);
-  -moz-transform: translate(-50%, -50%) scale(-1);
-  -ms-transform: translate(-50%, -50%) scale(-1);
-  -o-transform: translate(-50%, -50%) scale(-1);
-  transform: translate(-50%, -50%) scale(-1);
+  -webkit-transform: translate(-50%, -50%) scale(1, 1);
+  -moz-transform: translate(-50%, -50%) scale(1, 1);
+  -ms-transform: translate(-50%, -50%) scale(1, 1);
+  -o-transform: translate(-50%, -50%) scale(1, 1);
+  transform: translate(-50%, -50%) scale(1, 1);
 }
 .header .menu .tagactivator i.fa-hand-paper-o {
-  -webkit-transform: translate(-50%, -50%) scale(-1);
-  -moz-transform: translate(-50%, -50%) scale(-1);
-  -ms-transform: translate(-50%, -50%) scale(-1);
-  -o-transform: translate(-50%, -50%) scale(-1);
-  transform: translate(-50%, -50%) scale(-1);
+  -webkit-transform: translate(-50%, -50%) scale(-1, 1);
+  -moz-transform: translate(-50%, -50%) scale(-1, 1);
+  -ms-transform: translate(-50%, -50%) scale(-1, 1);
+  -o-transform: translate(-50%, -50%) scale(-1, 1);
+  transform: translate(-50%, -50%) scale(-1, 1);
 }
 .header .menu .tagactivator:hover i {
   color: #cccccc;
@@ -2010,6 +2009,7 @@ L 80 98
   position: fixed;
   width: 100%;
   padding: 5px 0px;
+  left: 0;
   top: -100%;
   -webkit-transition: top 0.4s;
   -moz-transition: top 0.4s;

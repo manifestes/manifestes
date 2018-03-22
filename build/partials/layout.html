@@ -113,11 +113,13 @@
         <!-- TAGS -->
         <div
           class="tagactivator hint--bottom-right"
-          data-hint="{{state.taggingtooltip}}"
+          data-hint="{{state.tagging ? meta.menu.taggingon : meta.menu.taggingoff;}}"
           ng-class="{
             active: state.tagging,
             filtered: state.tags.length>0
           }"
+          ng-mouseover="overTagActivator(true);"
+          ng-mouseout="overTagActivator(false);"
           ng-click="toggleTagging();">
           <i
             class="fa"
@@ -172,7 +174,7 @@
         ng-class="{
           active: isTagActive(t),
           popuped: isTagAutoComplete(t),
-          focused: isTagFromHoveredSection(t)
+          focused: isTagFromHoveredSection(t) || state.showAllTags
         }">
         <div class="back"></div>
         <i class="fa fa-{{t.icon}}"></i>
@@ -193,7 +195,7 @@
         ng-class="{
           active: isTagActive(t),
           popuped: isTagAutoComplete(t),
-          focused: isTagFromHoveredSection(t)
+          focused: isTagFromHoveredSection(t) || state.showAllTags
         }">
         <div class="back"></div>
         <i class="fa fa-{{t.icon}}"></i>

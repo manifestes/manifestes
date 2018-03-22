@@ -165,7 +165,7 @@ tags:
     space:
         - street-view
         - Espace.s
-        - espaces publics,partagés,communs,ville
+        - espaces publics,partagés,communs,ville,rue,place.s
     home:
         - home
         - Habiter
@@ -173,7 +173,7 @@ tags:
     move:
         - bicycle
         - Bouger
-        - se déplacer,transports,mobilité,véhicules,co-voiturage,marcher
+        - se déplacer,transports,mobilité,véhicules,co-voiturage,marcher,train
     suffer:
         - life-ring
         - Aider
@@ -193,7 +193,7 @@ tags:
     time:
         - moon-o
         - Temps
-        - temporalités,rythmes,rapports aux temps,futurisme,présentisme,temps,ralentir,patience,lenteur,délai
+        - temporalités,rythmes,futurisme,présentisme,temps,ralentir,patience,lenteur,délai,quotidien
     media:
         - bullhorn
         - Médias
@@ -221,7 +221,7 @@ tags:
     act:
         - bolt
         - Action.s
-        - actions,pratiques,quotidiennes,désobéissance civile,militantisme,zone de confort,passage à l'acte,faire,agir,occupations,squats,radicalités
+        - actions,pratiques,désobéissance civile,militantisme,zone de confort,passage à l'acte,faire,agir,occupations,squats,radicalités,bataille.s
     game:
         - hand-spock-o
         - Invente toi-même les règles
@@ -229,7 +229,7 @@ tags:
     human:
         - female
         - Humain.e
-        - rencontrer,découvrir,partager,décroissance,humilité,humanité,essence
+        - rencontrer,découvrir,partager,décroissance,humilité,humanité,essence,instinct.s
     focus:
         - sun-o
         - Présence
@@ -237,11 +237,11 @@ tags:
     emotion:
         - podcast
         - Émotion.s
-        - peur,émotions,sensible,corps,sentir,ressentir
+        - peur,émotions,sensible,corps,sentir,ressentir,irrationel
     balance:
         - tree
         - Équilibre
-        - équilibre,balance,dualité,habitudes,répétitions,cycles
+        - équilibre,balance,dualité,habitudes,répétitions,cycles,intérieur,extérieur
     love:
         - heart
         - Amour
@@ -257,7 +257,7 @@ tags:
     power:
         - hand-rock-o
         - Puissance
-        - pouvoir,puissance,impuissance,force
+        - pouvoir,puissance,impuissance,force.s,contrôle,esclavage,consentement,maîtrise,compétition
     words:
         - commenting
         - Langage
@@ -265,11 +265,11 @@ tags:
     creation:
         - bug
         - Forme.s
-        - création,art,culture,écriture,design,processus,formes,humour,émergence
+        - création,art,culture,écriture,design,processus,formes,humour,émergence,représentation.s
     science:
         - flask
         - Science.s
-        - sciences,techniques,nanotechnologies,manipulation,vivant
+        - sciences,techniques,nanotechnologies,manipulation,vivant,logique,rationalité
     web:
         - hashtag
         - Digital
@@ -277,7 +277,7 @@ tags:
     violence:
         - industry
         - Violence.s
-        - violence,brutalité,police,oppression,sang,flic
+        - violence,brutalité,police,oppression,sang,flic,souffrance.s
     economy:
         - money
         - Économie
@@ -285,11 +285,11 @@ tags:
     companies:
         - trash
         - Multinationales
-        - néocapitalisme,récupérations,greenwashing,multinationales,puissances,argent,boycott,entreprises,ennemis,money
+        - néocapitalisme,récupérations,greenwashing,multinationales,puissances,argent,boycott,entreprises,ennemis,money,consommation
     politics:
         - bank
         - Politique
-        - politique et représentation,concertation,décider ensemble,communs,open (res)sources,démocratie,hierarchie,voter
+        - politique,représentation,concertation,décider,communs,open (res)sources,démocratie,hierarchie,voter,élection.s
     law:
         - gavel
         - Juridique
@@ -297,7 +297,7 @@ tags:
     philo:
         - puzzle-piece
         - Philosophie.s
-        - réflexions,théories,principes,idéologies,dialectique,penser,philosophie
+        - réflexions,théories,principes,idéologies,dialectique,penser,philosophie,raison,psychanalyse
     history:
         - book
         - Histoire.s
@@ -313,7 +313,7 @@ tags:
     image:
         - file-image-o
         - Image.s
-        - images,dessins,photos,graphiques,représentations
+        - images,dessins,photos,graphiques
     text:
         - file-text-o
         - Texte.s

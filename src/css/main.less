@@ -679,18 +679,17 @@ L 80 98
       font-size: 1.3em;
 
       i {
-          /* looks like absolute-centered(), but one we want to scale */
-          /* caus' dont remember how to mirror fa-icons */
+          /* looks like absolute-centered(), but we want to mirro(s) */
 
           box-sizing: border-box;
           position: absolute;
           left: 50%;
           top: 50%;
           &.fa-hand-spock-o {
-            .transform(translate(-50%,-50%) scale(-1));
+            .transform(translate(-50%,-50%) scale(1, 1));
           }
           &.fa-hand-paper-o {
-            .transform(translate(-50%,-50%) scale(-1));
+            .transform(translate(-50%,-50%) scale(-1, 1));
           }
       }
       &:hover {
@@ -899,11 +898,12 @@ L 80 98
   box-sizing: border-box;
   z-index: 32;
   position: fixed;
-  //display: table;
+  
   width: 100%;
   padding: 5px 0px;
-
+  left: 0;
   top: -100%;
+
   .transition(top 0.4s);
   &.active {
     top: @menuH;  

@@ -614,15 +614,6 @@ content: >
 
 
 ---
-title: Composer
-tags: about words text
-content: >
-    Accumulation et extensibilité des points de vue.
-
-    Le seul ordre est l'alphabet.
-
-
----
 title: Il n'y a pas de risque
 tags: emotion realize group
 content: >
@@ -672,17 +663,18 @@ content: >
 title: Caravane des alternatives
 tags: about map list group
 content: >
-    ## Charte des écolieux et collectifs de l'annuaire de la caravane des alternatives
+    *Réseau de 3000 lieux alternatifs référencés par département: livres téléchargeables, autonomie alimentaire, autoconstruction, médecine par les plantes, autogestion*
+
 
     La définition des lieux alternatifs ou écolieux est très difficile à définir tant les strates d'alternatives sont multiples et complexes... Ici, ce n'est pas la qualité des points de vente bio mais plutôt la philosophie de l'accueil qui a été mise en avant.
 
 
-    Ont été référencés les écolieux visant l'**autonomie alimentaire et matérielle (autoconstruction) et accueillant** pour : formations, woofing, passage, ou pour y vivre ! Les écolieux avec une petite surface cultivable ont été privilégiés.
+    Ont été référencés les écolieux visant l'**autonomie alimentaire et matérielle (autoconstruction) et accueillant** pour formations, woofing, passage, ou pour y vivre ! Les écolieux avec une petite surface cultivable ont été privilégiés.
 
 
     Il est difficile de définir une norme de taille idéale (dépend de l'activité, des habitudes de vie, élevage ou non...). La caravane des alternatives se positionne sur le postulat de 0,5 à 1ha de terre cultivable par personne, à rajouter à cela de la terre pour le bois (chauffage, construction, sauvage). Nous valorisons donc les petites structures entre 1 ha et 40ha, voire même de 1ha à 10ha
 source: >
-    La [Caravane des alternatives](http://caravanedesalternatives.weebly.com/) — réseau de 3000 lieux alternatifs référencés par département: livres téléchargeables, autonomie alimentaire, autoconstruction, médecine par les plantes, autogestion: [l'annuaire alternatif](http://www.fichier-pdf.fr/2015/04/23/annuairealternatifdunecaravanedesalternativesavril2015/), [le livre de connaissances](http://www.fichier-pdf.fr/2015/04/23/livresdeconnaissancesdunecaravanedesalternativesavril2015/), des [compléments alimentaires](http://www.fichier-pdf.fr/2015/04/23/livrecomplalimentairedunecaravanedesalternativesavril2015/), projet [1 million d'arbres](http://www.fichier-pdf.fr/2015/05/14/livreplantons1milliondarbresmai2015/)... [soutenez la caravane](https://www.leetchi.com/c/solidarite-de-caravane-des-alternatives) !
+    La [Caravane des alternatives](http://caravanedesalternatives.weebly.com/) — [l'annuaire](http://www.fichier-pdf.fr/2015/04/23/annuairealternatifdunecaravanedesalternativesavril2015/), [le livre de connaissances](http://www.fichier-pdf.fr/2015/04/23/livresdeconnaissancesdunecaravanedesalternativesavril2015/), [compléments alimentaires](http://www.fichier-pdf.fr/2015/04/23/livrecomplalimentairedunecaravanedesalternativesavril2015/), projet [1 million d'arbres](http://www.fichier-pdf.fr/2015/05/14/livreplantons1milliondarbresmai2015/) [soutenez la caravane](https://www.leetchi.com/c/solidarite-de-caravane-des-alternatives) !
 
 
 ---
@@ -2640,6 +2632,7 @@ source: Loïc Schneider
 content: >
     Face à l'injustice, il n'y a que deux chemins, celui de l'indignation ou de l'indifférence.
 
+
     L'un est un combat l'autre une soumission
 
 
@@ -2731,7 +2724,7 @@ content: >
 
 
 ---
-tags: education group
+tags: education group power
 title: Plus fort que moi grâce à l'autre
 source: Albert Jacquard, La Relève et la Peste
 content: >
@@ -2741,7 +2734,10 @@ content: >
     Nous sommes dans une société de compétition, mais un gagnant est un fabriquant de perdants. Il faut rebâtir une société humaine où la compétition sera éliminée.
     
     
-    *Je n'ai pas à être plus fort que l'autre.* **Je dois être plus fort que moi grâce à l'autre.**
+    *Je n'ai pas à être plus fort que l'autre.*
+
+
+    **Je dois être plus fort que moi grâce à l'autre.**
 
 
 ---
@@ -3113,13 +3109,13 @@ content: >
 
 
 ---
-tags: group
+tags: group power
 source: Ananda Dhvaja Sri Badhra
 content: >
-    Une goutte d'eau est 
-    Peu de chose
-    Mais, unie à un lac
-    Quand séchera-t-elle ?
+    Une goutte d'eau est peu de chose
+    
+
+    Mais, unie à un lac, quand séchera-t-elle ?
 
 
 ---
@@ -4372,7 +4368,7 @@ content: >
 tags: power realize love
 source: Le Tour de France des Alternatives, collection Reporterre dirigée par Hervé Kempf, 2014
 content: >
-    Il ne s’agit plus de faire la liste, connue jusqu’à la nausée, des *non* de ce que nous refusons, mais d’élaborer collectivement des *oui* qui caractérisent les mondes que nous voulons
+    Il ne s’agit plus de faire la liste, connue jusqu’à la nausée, des **non de ce que nous refusons**, mais d’élaborer collectivement des **oui qui caractérisent les mondes que nous voulons**
 
 
 ---
@@ -5116,8 +5112,9 @@ content: >
 ---
 tags: text economy love act
 content: >
-    [Digressions](https://lundi.am/Digressions-sur-l-ennemi-le-complot-l-argent-et-le-peuple) sur l’ennemi, le complot, l’argent et le peuple, par [Lundi matin](https://lundi.am)
-
+    [Digressions](https://lundi.am/Digressions-sur-l-ennemi-le-complot-l-argent-et-le-peuple) sur l’ennemi, le complot, l’argent et le peuple
+source: >
+    [Lundi matin](https://lundi.am)
 
 ---
 tags: companies words earth balance media
@@ -5520,7 +5517,7 @@ content: >
 
 
 ---
-tags: suffer law
+tags: suffer law move
 content: >
     [Welcome to Europe](http://w2eu.info), informations multilingues indépendantes pour réfugiés et migrants arrivant en Europe
 

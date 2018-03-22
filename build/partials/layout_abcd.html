@@ -1,7 +1,7 @@
 <div
   ng-repeat="e in dataArrayFilt.abcd"
   id="p_{{$index}}"
-  ng-mouseover="overSection(e);" 
+  ng-mouseover="overSection(e);"
   class="section tagcolor{{tags[e.tags[0]].index}}">
     <div ng-if="e.title" class="title" compile-here="e.title"></div>
     <div class="content" style="font-size: {{fontSizeContent(e)}}em;" compile-here="e.content"></div>
@@ -20,7 +20,7 @@
 <div
   class="emptyresult"
   ng-if="(state.search || state.tags.length) && dataArrayFilt.abcd.length==0"
-  ng-click="resetFilters();">
+  ng-click="logEmptySearches(state.searchinput) && resetFilters();">
   <div>
     aucun résultat (pour l'instant) pour cette requête précise et pertinente<br>
     cliquez ici pour annuler le filtrage
