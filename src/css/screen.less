@@ -25,12 +25,6 @@
       opacity: 1 !important;
     }
   }
-  .section .image {
-    .erase-shadow();
-  }
-  .section .tags {
-    display: none;
-  }
   .header {
     .printer, .button#lang, .ext, .padbutton {
       display: none !important;
@@ -79,6 +73,11 @@
       display: none;
     }
   }
+  
+  /* NINJA */
+  .ninja .splash .text {
+    width: 90% !important;
+  }
 
   /* PIXELS */
   .panel.pixels {
@@ -91,22 +90,15 @@
       font-size: 0.8em !important;
       padding: 10px !important;
     }
-    .h2 {
-      height: 100px !important;
-    }
-    .h1, .h2 {
-      width: 100% !important;
-      background: none !important;
-    }
-
-    .block {
-      .content {
-        margin-left: 0 !important;
-        padding: 45px 7% !important;
+    .content {
+      margin-left: 0 !important;
+      padding: 45px 7% !important;
+      a {
+        white-space: normal !important;
       }
-      .source {
-        left: 0 !important;
-      }
+    }
+    .source {
+      left: 0 !important;
     }
   }
 
