@@ -3160,6 +3160,7 @@ body.layout-mapprint .container {
   font-size: 1.1em;
 }
 .ninja .splash .text {
+  width: 50%;
   box-sizing: border-box;
   position: absolute;
   left: 50%;
@@ -3296,14 +3297,6 @@ body.layout-mapprint .container {
     top: 38% !important;
     opacity: 1 !important;
   }
-  .section .image {
-    -webkit-box-shadow: none !important;
-    -moz-box-shadow: none !important;
-    box-shadow: none !important;
-  }
-  .section .tags {
-    display: none;
-  }
   .header .printer,
   .header .button#lang,
   .header .ext,
@@ -3356,6 +3349,10 @@ body.layout-mapprint .container {
   .layout-home .fullbox#network {
     display: none;
   }
+  /* NINJA */
+  .ninja .splash .text {
+    width: 90% !important;
+  }
   /* PIXELS */
   .panel.pixels {
     -webkit-column-count: 1;
@@ -3374,19 +3371,14 @@ body.layout-mapprint .container {
     font-size: 0.8em !important;
     padding: 10px !important;
   }
-  .section .h2 {
-    height: 100px !important;
-  }
-  .section .h1,
-  .section .h2 {
-    width: 100% !important;
-    background: none !important;
-  }
-  .section .block .content {
+  .section .content {
     margin-left: 0 !important;
     padding: 45px 7% !important;
   }
-  .section .block .source {
+  .section .content a {
+    white-space: normal !important;
+  }
+  .section .source {
     left: 0 !important;
   }
   /* SPLASH */
