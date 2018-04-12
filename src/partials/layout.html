@@ -64,15 +64,14 @@
 
         <div
           ng-repeat="b in meta.menu.buttons"
-          class="menubutton"
+          class="menubutton hint--bottom"
           id="{{b.slug}}"
           data-hint="{{b.tip}}"
           ng-click="b.slug!='books' && changeLayout(b.slug);"
           ng-class="{
             disabled: b.slug=='books',
-            active: state.layout==b.slug,
-            'hint--left': b.slug=='ninja',
-            'hint--bottom': b.slug!='ninja' }">
+            active: state.layout==b.slug
+          }">
           <div class="bubble"><i class="fa {{b.icon}}"></i></div>
           <a
             class="ext hint--bottom"

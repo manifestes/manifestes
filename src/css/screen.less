@@ -80,9 +80,7 @@
   }
 
   /* PIXELS */
-  .panel.pixels {
-    .base-columns(1, 0px);
-  }
+  .panel.pixels .image { width: 100%; }
   
   /* ABCD */
   .section {
@@ -125,14 +123,14 @@
   .header .menu .searchinput input {
     width: 160px !important;
   }
-  .panel.pixels { .base-columns(2, 0px); }
+  .panel.pixels .image { width: 50%; }
 }
 
 
 /* ###################################### RELATIVELY SMALL - normal CSS */
 
 @media (min-width: 1026px) and (max-width: 1199px) {
-  .panel.pixels { .base-columns(3, 0px); }
+  .panel.pixels .image { width: 33.3%; }
 }
 
 /* ###################################### BIG SCREENS */
@@ -141,7 +139,7 @@
   .header .menu .searchinput input {
     width: 250px !important;
   }
-  .panel.pixels { .base-columns(4, 0px); }
+  .panel.pixels .image { width: 25%; }
 }
 
 /* ###################################### VERY BIG SCREENS */
@@ -150,7 +148,7 @@
   .header .menu .searchinput input {
     width: 300px !important;
   }
-  .panel.pixels { .base-columns(5, 0px); }
+  .panel.pixels .image { width: 20%; }
 }
 
 /* ###################################### VERY MOST BIG SCREENS */
@@ -159,6 +157,6 @@
   .header .menu .searchinput input {
     width: 320px !important;
   }
-  .panel.pixels { .base-columns(6, 0px); }
+  .panel.pixels .image { width: 16.6%; }
 }
 

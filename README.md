@@ -36,7 +36,7 @@ fork or download this project and start your own !
 ### fetch map geojson(s)
 > grunt map
 
-### build slug images
+### build slug images (will be deprecated)
 > node slug_build.js
 
 will produce index.html and preview .png used to social-share text sections
@@ -46,7 +46,7 @@ warning: needs to have a running local web server
 
 will only (re) produce the text sections whose slug starts with «abcd» (useful to avoid doing them all for each change)
 
-### build ninja links
+### build ninja links (when updating networks_links)
 > node prepair_hyperlinks_counts.js
 
 - aka will load `http://localhost/manifestes/data/network/network_links.csv` (make sure you have this repo available on a local webserver)

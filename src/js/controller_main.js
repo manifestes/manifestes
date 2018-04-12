@@ -265,6 +265,7 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
 
 
     $scope.searchSubmit = function(term,dontdetag) {
+      // erase (blank)
       if(!term) {
         $scope.state.searchinput = "";
         $scope.state.search = "";
@@ -273,23 +274,22 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
           $scope.state.tagging = false;
         }
       }
-      if(term && term.length < $scope.prevSearchLen || term.length>1) {
-        if(term) {
-          $scope.state.search = term;
-          $scope.prevSearchLen = term.length;
-          $scope.state.tagging = true;
-        }
-        
-        $scope.rgx.search = new RegExp($scope.state.search,'i');
-        $scope.rgx.searchna = new RegExp(removeAccents($scope.state.search),'i');
-
-        updateArrays();
-
-        if($scope.state.networkstatus=='OK')
-          filterLinksNodesFromTerm($scope.state.search);
-
-        scrollToup();
+      // search
+      if(term && (term.length < $scope.prevSearchLen || term.length>1)) {
+        $scope.state.search = term;
+        $scope.prevSearchLen = term.length;
+        $scope.state.tagging = true;
       }
+
+      $scope.rgx.search = new RegExp($scope.state.search,'i');
+      $scope.rgx.searchna = new RegExp(removeAccents($scope.state.search),'i');
+
+      updateArrays();
+
+      if($scope.state.networkstatus=='OK')
+        filterLinksNodesFromTerm($scope.state.search);
+
+      scrollToup();
     };
 
     
@@ -785,8 +785,8 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
       });
       var tileLayers = {
-        "Positron": CartoDB_Positron,
         "DarkMatter": CartoDB_DarkMatter,
+        "Positron": CartoDB_Positron,
         "OSM Grey": osm,
         "Cycle": cycle,
         "Topographic": OpenTopoMap,
@@ -818,7 +818,7 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
         minZoom: 5,
         maxZoom: 15,
         locateButton: true,
-        layers: [CartoDB_Positron]
+        layers: [CartoDB_DarkMatter]
       });
 
       L.control.zoom({

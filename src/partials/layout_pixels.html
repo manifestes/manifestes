@@ -1,14 +1,15 @@
 <div class="panel pixels">
   <div
     ng-repeat="e in dataArrayFilt.pixels"
-    class="cursored image tb-{{e.tags[0]}} nohighlight"
+    class="cursored image nohighlight"
     ng-class="{
       fullscreened: e.fullscreened,
       cover: e.fullscreened
       }"
+    title="{{e.label}}"
     back-img="{{e.url}}"
-    ng-click="e.fullscreened = !e.fullscreened; $event.stopPropagation();"
-    ><img src="{{e.url}}" title="{{e.label}}"/></div>
+    ng-click="e.fullscreened = !e.fullscreened; $event.stopPropagation();">
+  </div>
 </div>
 
 <div

@@ -181,7 +181,7 @@ tags:
     energy:
         - plug
         - Énergie
-        - nucléaire,électrique,éolien,solaire,cosmique,vitale,transformée,pétrole,gaz
+        - nucléaire,électrique,éolien,solaire,cosmique,vitale,transformée,pétrole,gaz,géothermie
     object:
         - cogs
         - Bric et Broc
@@ -205,7 +205,7 @@ tags:
     group:
         - group
         - Collectif.s
-        - groupes,collectifs,ensembles,organisation,cercles,assemblée.s
+        - groupes,collectifs,ensembles,organisation,cercles,assemblée.s,multiplicité,diversité
     alienation:
         - magnet
         - Aliénation
@@ -289,7 +289,7 @@ tags:
     politics:
         - bank
         - Politique
-        - politique,représentation,concertation,décider,communs,open (res)sources,démocratie,hierarchie,voter,élection.s
+        - politique,représentation,concertation,décider,communs,open (res)sources,démocratie,hierarchie,voter,élection.s,citoyen
     law:
         - gavel
         - Juridique
@@ -345,6 +345,9 @@ footer:
         -   label: voir le code<br>source du site
             icon: fa-github
             href: https://github.com/manifestes/manifestes
+        -   label: anciennes<br>versions
+            icon: fa-history
+            href: https://github.com/manifestes/archived
         -   label: écrivez-nous !<br>bonjour@utopies-concretes.org
             icon: fa-envelope-o
             href: mailto:bonjour@utopies-concretes.org

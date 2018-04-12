@@ -5075,6 +5075,78 @@
 			"icon_size": [33,33],
 			"icon_anchor": [16.5,16.5],
 			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [3.05644, 50.631564]},
+		"id":"542",
+		"properties": {
+			"title":"Lille (59800)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/labrique.net\/index.php\/thematiques\/droit-a-la-ville\/975-a-p-u-fives-a-nous-la-ville' target='_blank'>Atelier populaire d&#8217;urbanisme&nbsp;: &#171;&nbsp;\u00e0 nous la ville&nbsp;&#187;<\/a><\/div>\n\t<div class=\"texte\">L\u2019Atelier populaire d\u2019urbanisme de Fives est la petite derni\u00e8re des APU. N\u00e9e en 2014, l\u2019association est nourrie par l\u2019histoire d\u2019une lutte qui d\u00e9marre en 1973 \u00e0 l\u2019Alma-Gare \u00e0 Roubaix. Premiers pas, et d\u00e9j\u00e0 sur ses deux jambes, pour d\u00e9fendre les locataires contre les marchands de sommeil et les bailleurs&nbsp;(...)<\/div>\n<\/div>","id_mot": "70"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-70.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.483013, 48.901886]},
+		"id":"543",
+		"properties": {
+			"title":"Bondy (93140)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.bondyblog.fr\/201803271609\/a-saint-denis-un-forum-public-pour-federer-parents-eleves-et-profs-autour-de-lavenir-de-leducation\/' target='_blank'>\u00c0 Saint-Denis, un forum public pour f\u00e9d\u00e9rer parents, \u00e9l\u00e8ves et profs autour de l\u2019avenir de l\u2019\u00e9ducation<\/a><\/div>\n\t<div class=\"texte\">Sous le hashtag #balancetonr\u00eave, un premier forum public sur l\u2019avenir de l\u2019\u00e9ducation a \u00e9t\u00e9 lanc\u00e9 ce samedi \u00e0 Saint-Denis. Objectif : la r\u00e9appropriation du d\u00e9bat sur les enjeux \u00e9ducatifs par les habitants, parents et \u00e9l\u00e8ves notamment. Reportage Source : Bondy&nbsp;(...)<\/div>\n<\/div>","id_mot": "117"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-117.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [11.2555757, 43.7698712]},
+		"id":"544",
+		"properties": {
+			"title":"Florence",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/En-Italie-la-Zad-de-Mondeggi-cultive-le-bien-commun' target='_blank'>En Italie, la Zad de Mondeggi cultive le bien commun<\/a><\/div>\n\t<div class=\"texte\">Depuis quatre ans, les occupants de la ferme de Mondeggi, pr\u00e8s de Florence, exp\u00e9rimentent l\u2019autogestion et la d\u00e9fense du territoire comme \u00ab bien commun \u00bb. Les auteurs de cette tribune y voient des parall\u00e8les avec Notre-Dame-des-Landes.  Clara Lesbros est \u00e9tudiante \u00e0 l\u2019\u00c9cole nationale sup\u00e9rieure&nbsp;(...)<\/div>\n<\/div>","id_mot": "219"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-219.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [6.624973, 44.891172]},
+		"id":"545",
+		"properties": {
+			"title":"Puy-Saint-Pierre (05100)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/Chez-Marcel-havre-autogere-sur-la-route-des-migrants' target='_blank'>Chez Marcel, havre autog\u00e9r\u00e9 sur la route des migrants<\/a><\/div>\n\t<div class=\"texte\">Depuis l\u2019\u00e9t\u00e9 2017, un collectif a r\u00e9nov\u00e9 une maison \u00e0 l\u2019abandon pr\u00e8s de Brian\u00e7on afin d\u2019y accueillir des demandeurs d\u2019asile. Ceux-ci restent toujours aussi nombreux \u00e0 franchir les Alpes depuis que la vall\u00e9e de la Roya leur a \u00e9t\u00e9 ferm\u00e9e. Puy-Saint-Pierre (Hautes-Alpes), reportage  \u00ab Vous avez pris contact&nbsp;(...)<\/div>\n<\/div>","id_mot": "41"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/plugins\/carteppi\/images\/marker_defaut.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [0.107396, 49.493304]},
+		"id":"546",
+		"properties": {
+			"title":"Le Havre (76600)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.revue-projet.com\/articles\/2018-gilli-le-havre-quand-des-citoyens-se-reapproprient-leur-quartier' target='_blank'>Quand des citoyens se r\u00e9approprient leur quartier<\/a><\/div>\n\t<div class=\"texte\">La d\u00e9mocratie participative est souvent en butte aux critiques : elle serait capt\u00e9e par des groupes de citoyens actifs, peu repr\u00e9sentatifs de la diversit\u00e9 des populations, moins l\u00e9gitimes que les \u00e9lus, d\u00e9fendant une... | De : Fr\u00e9d\u00e9ric&nbsp;(...)<\/div>\n<\/div>","id_mot": "215"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-215.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [36.3095814, 33.5130695]},
+		"id":"547",
+		"properties": {
+			"title":"Damas (2277)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.bastamag.net\/Dans-le-Rojava-syrien-une-marche-vers-l-ecologie-ralentie-par-la-guerre' target='_blank'>Dans le &#171;&nbsp;Rojava&nbsp;&#187; syrien, une marche vers l&#8217;\u00e9cologie ralentie par la guerre<\/a><\/div>\n\t<div class=\"texte\">Dans le Kurdistan syrien \u2013 plus connu sous le nom de Rojava, r\u00e9cemment rebaptis\u00e9 F\u00e9d\u00e9ration d\u00e9mocratique du Nord-Syrie \u2013 les institutions locales mettent en avant la dimension \u00e9cologique de leur projet de soci\u00e9t\u00e9. Investie sur les questions agricoles, le recyclage des d\u00e9chets ou le reverdissement des&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
 		}}
 	]
 }

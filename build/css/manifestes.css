@@ -2469,25 +2469,21 @@ body.layout-mapprint .container {
 .panel.pixels {
   box-sizing: border-box;
   position: relative;
-  -webkit-column-count: 4;
-  -moz-column-count: 4;
-  column-count: 4;
-  -webkit-column-gap: 1px;
-  -moz-column-gap: 1px;
-  column-gap: 1px;
-  -webkit-perspective: 1;
-  /*-webkit-column-rule:  @c outset red;
-  -moz-column-rule: @c outset red;
-  column-rule: @c outset red;*/
   background: #cccccc;
-  padding: 20px 0px 50px 0px;
-  text-align: left;
+  padding: 0;
+  text-align: center;
+  line-height: 0;
 }
 .panel.pixels .image {
-  margin: -5px 1px;
-}
-.panel.pixels .image img {
-  width: 100%;
+  display: inline-block;
+  height: 270px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: black;
 }
 .panel.pixels .image.fullscreened {
   box-sizing: border-box;
@@ -2497,6 +2493,8 @@ body.layout-mapprint .container {
   right: -2px;
   top: 0;
   bottom: 0;
+  width: 100%;
+  height: 100%;
   background-position: center center;
   background-repeat: no-repeat;
   -webkit-background-size: contain;
@@ -2504,9 +2502,6 @@ body.layout-mapprint .container {
   -o-background-size: contain;
   background-size: contain;
   background-color: black;
-}
-.panel.pixels .image.fullscreened img {
-  display: none;
 }
 #sigma-network {
   height: 100%;
@@ -3354,17 +3349,8 @@ body.layout-mapprint .container {
     width: 90% !important;
   }
   /* PIXELS */
-  .panel.pixels {
-    -webkit-column-count: 1;
-    -moz-column-count: 1;
-    column-count: 1;
-    -webkit-column-gap: 0px;
-    -moz-column-gap: 0px;
-    column-gap: 0px;
-    -webkit-perspective: 1;
-    /*-webkit-column-rule:  @c outset red;
-  -moz-column-rule: @c outset red;
-  column-rule: @c outset red;*/
+  .panel.pixels .image {
+    width: 100%;
   }
   /* ABCD */
   .section .h1 {
@@ -3400,32 +3386,14 @@ body.layout-mapprint .container {
   .header .menu .searchinput input {
     width: 160px !important;
   }
-  .panel.pixels {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-    -webkit-column-gap: 0px;
-    -moz-column-gap: 0px;
-    column-gap: 0px;
-    -webkit-perspective: 1;
-    /*-webkit-column-rule:  @c outset red;
-  -moz-column-rule: @c outset red;
-  column-rule: @c outset red;*/
+  .panel.pixels .image {
+    width: 50%;
   }
 }
 /* ###################################### RELATIVELY SMALL - normal CSS */
 @media (min-width: 1026px) and (max-width: 1199px) {
-  .panel.pixels {
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 3;
-    -webkit-column-gap: 0px;
-    -moz-column-gap: 0px;
-    column-gap: 0px;
-    -webkit-perspective: 1;
-    /*-webkit-column-rule:  @c outset red;
-  -moz-column-rule: @c outset red;
-  column-rule: @c outset red;*/
+  .panel.pixels .image {
+    width: 33.3%;
   }
 }
 /* ###################################### BIG SCREENS */
@@ -3433,17 +3401,8 @@ body.layout-mapprint .container {
   .header .menu .searchinput input {
     width: 250px !important;
   }
-  .panel.pixels {
-    -webkit-column-count: 4;
-    -moz-column-count: 4;
-    column-count: 4;
-    -webkit-column-gap: 0px;
-    -moz-column-gap: 0px;
-    column-gap: 0px;
-    -webkit-perspective: 1;
-    /*-webkit-column-rule:  @c outset red;
-  -moz-column-rule: @c outset red;
-  column-rule: @c outset red;*/
+  .panel.pixels .image {
+    width: 25%;
   }
 }
 /* ###################################### VERY BIG SCREENS */
@@ -3451,17 +3410,8 @@ body.layout-mapprint .container {
   .header .menu .searchinput input {
     width: 300px !important;
   }
-  .panel.pixels {
-    -webkit-column-count: 5;
-    -moz-column-count: 5;
-    column-count: 5;
-    -webkit-column-gap: 0px;
-    -moz-column-gap: 0px;
-    column-gap: 0px;
-    -webkit-perspective: 1;
-    /*-webkit-column-rule:  @c outset red;
-  -moz-column-rule: @c outset red;
-  column-rule: @c outset red;*/
+  .panel.pixels .image {
+    width: 20%;
   }
 }
 /* ###################################### VERY MOST BIG SCREENS */
@@ -3469,16 +3419,7 @@ body.layout-mapprint .container {
   .header .menu .searchinput input {
     width: 320px !important;
   }
-  .panel.pixels {
-    -webkit-column-count: 6;
-    -moz-column-count: 6;
-    column-count: 6;
-    -webkit-column-gap: 0px;
-    -moz-column-gap: 0px;
-    column-gap: 0px;
-    -webkit-perspective: 1;
-    /*-webkit-column-rule:  @c outset red;
-  -moz-column-rule: @c outset red;
-  column-rule: @c outset red;*/
+  .panel.pixels .image {
+    width: 16.6%;
   }
 }

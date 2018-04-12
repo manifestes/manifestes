@@ -3,19 +3,19 @@
   box-sizing: border-box;
   position: relative;
 
-  .base-columns(4, 1px);
-
   background: @veryLightColor;
   
-  padding: 20px 0px 50px 0px;
-  text-align: left;
+  padding: 0;
+  text-align: center;
+  line-height: 0;
+  
   @borderG: 15px;
 
   .image {
-    margin: -5px 1px;
-    img {
-      width: 100%;
-    }
+    display: inline-block;
+    height: 270px;
+
+    .cover();
   }
 
   .image.fullscreened {
@@ -26,8 +26,9 @@
     right: -2px;
     top: 0;
     bottom: 0;
+    width: 100%;
+    height: 100%;
     
     .covercontain();
-    img {display: none;}
   }
 }
