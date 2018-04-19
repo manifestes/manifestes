@@ -171,7 +171,7 @@ tags:
     move:
         - bicycle
         - Bouger
-        - se déplacer,transports,mobilité,véhicules,co-voiturage,marcher,train
+        - se déplacer,transports,mobilité,véhicules,co-voiturage,marcher,train,vélo
     suffer:
         - life-ring
         - Aider
@@ -349,3 +349,7 @@ footer:
         -   label: écrivez-nous !<br>bonjour@utopies-concretes.org
             icon: fa-envelope-o
             href: mailto:bonjour@utopies-concretes.org
+        -   label: inscrivez-vous sur<br>la liste de discussion
+            icon: fa-newspaper-o
+            href: https://lists.riseup.net/www/subscribe/utopies-concretes
+
