@@ -5232,6 +5232,6 @@ var loadTagGraph = function(scope) {
 
 angular.module('settings', [])
 
-.constant('settings', {dev:false,langs:['fr','es','en'],layouts:['home','abcd','pixels','network','map','mapprint','ninja','catalogprint'],datapath:'data/',assets:'build/',lastupdate:'19 April 2018 - 10:12'})
+.constant('settings', {dev:false,langs:['fr','es','en'],layouts:['home','abcd','pixels','network','map','mapprint','ninja','catalogprint'],datapath:'data/',assets:'build/',lastupdate:'20 April 2018 - 2:27'})
 
 ;
