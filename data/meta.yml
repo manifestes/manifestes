@@ -275,7 +275,7 @@ tags:
     violence:
         - industry
         - Violence.s
-        - violence,brutalité,police,oppression,sang,flic,souffrance.s
+        - violence,brutalité,police,oppression,sang,flic,souffrance.s,prison
     economy:
         - money
         - Économie
@@ -287,7 +287,7 @@ tags:
     politics:
         - bank
         - Politique
-        - politique,représentation,concertation,décider,communs,open (res)sources,démocratie,hierarchie,voter,élection.s,citoyen
+        - politique,représentation,concertation,décider,communs,open (res)sources,démocratie,oligarchie,hierarchie,voter,élection.s,citoyen
     law:
         - gavel
         - Juridique
