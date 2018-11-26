@@ -10,12 +10,9 @@ a 💨 simple website to display contents within ◉ sections, and change the wo
 - 💿 can be served through github gh-pages (like here)
 - 💬 all contents are set in the `data` folder, using yaml documents containing markdown
     + meta (menu, tags, tooltips) in `data/meta.yml`
-    + text sections in `data/sections.yml`
-    + tagged links in `data/links.yml`
-    + quotes in `data/quotes.yml`
+    + text sections in `data/abcd.yml`
     + map sources in `data/map.yml`
-    + images in the `data/media` folder (prefixed by "-" if unused yet)
-    + misc documents in the `data/files` folder
+    + images in the `data/pixels` folder
 
 for more information (french), browse [http://utopies-concretes.org](http://utopies-concretes.org)
 
@@ -42,9 +39,9 @@ fork or download this project and start your own !
 will produce index.html and preview .png used to social-share text sections
 warning: needs to have a running local web server
 
-> node slug_build.js abcd
+> node slug_build.js coincoin
 
-will only (re) produce the text sections whose slug starts with «abcd» (useful to avoid doing them all for each change)
+will only (re) produce the text sections whose slug starts with ”coincoin” (useful to avoid doing them all for each change)
 
 ### build ninja links (when updating networks_links)
 > node prepair_hyperlinks_counts.js
