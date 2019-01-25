@@ -5831,6 +5831,246 @@
 			"icon_size": [33,33],
 			"icon_anchor": [16.5,16.5],
 			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [4.064878, 45.607085]},
+		"id":"611",
+		"properties": {
+			"title":"Montbrison (42600)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.lagedefaire-lejournal.fr\/ces-mutuelles-qui-defendent-la-secu\/' target='_blank'>Ces mutuelles qui d\u00e9fendent la s\u00e9cu<\/a><\/div>\n\t<div class=\"texte\">Si j\u2019adh\u00e8re \u00e0 une mutuelle, est-ce que je participe, indirectement, au d\u00e9mant\u00e8lement de la S\u00e9curit\u00e9 sociale ? Pas forc\u00e9ment : des militants mutualistes mettent en \u0153uvre...  Cet article Ces mutuelles qui d\u00e9fendent la s\u00e9cu est apparu en premier sur Le site du journal L\u2019age de&nbsp;(...)<\/div>\n<\/div>","id_mot": "129"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-129.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.353006, 48.935427]},
+		"id":"612",
+		"properties": {
+			"title":"Saint-Denis (93200)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.bondyblog.fr\/reportages\/au-tableau\/en-seine-saint-denis-des-mairies-organisent-une-aide-aux-devoirs-pour-reduire-les-inegalites\/' target='_blank'>En Seine-Saint-Denis, des aides aux devoirs municipales pour r\u00e9duire les in\u00e9galit\u00e9s<\/a><\/div>\n\t<div class=\"texte\">En Seine-Saint-Denis, des mairies ont mis en place un soutien scolaire accessible assur\u00e9 par des b\u00e9n\u00e9voles dans des biblioth\u00e8ques et centres municipaux. Objectif : am\u00e9liorer les chances de r\u00e9ussite des \u00e9l\u00e8ves et r\u00e9duire les in\u00e9galit\u00e9s. Reportage.  The post En Seine-Saint-Denis, des aides aux devoirs&nbsp;(...)<\/div>\n<\/div>","id_mot": "117"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-117.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.37085, 43.300199]},
+		"id":"613",
+		"properties": {
+			"title":"Pau (64000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.lagedefaire-lejournal.fr\/les-compagnons-de-lutopie\/' target='_blank'>Les compagnons de l\u2019utopie<\/a><\/div>\n\t<div class=\"texte\">Entre recyclage, agriculture et \u00e9coconstruction, la communaut\u00e9 Emma\u00fcs de Lescar-Pau invente depuis 1982 son propre mod\u00e8le, dans lequel 130 compagnons se reconstruisent tout en...  Cet article Les compagnons de l\u2019utopie est apparu en premier sur Le site du journal L\u2019age de&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.442545, 48.859436]},
+		"id":"614",
+		"properties": {
+			"title":"Montreuil (93100)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.bondyblog.fr\/reportages\/cest-chaud\/montreuil-les-premiers-pas-poussifs-de-la-mutuelle-communale\/' target='_blank'>A Montreuil, les premiers pas poussifs de la mutuelle communale<\/a><\/div>\n\t<div class=\"texte\">Apr\u00e8s Epinay, Drancy et Bondy, la ville de Montreuil a lanc\u00e9, \u00e0 la rentr\u00e9e, sa mutuelle communale, une mutuelle aux tarifs n\u00e9goci\u00e9s sp\u00e9cialement pour les habitants de la ville. Le service devait permettre aux 30 % d\u2019habitants d\u00e9pourvus de mutuelle de pouvoir en acqu\u00e9rir une, cens\u00e9e \u00eatre plus&nbsp;(...)<\/div>\n<\/div>"
+			,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/plugins\/carteppi\/images\/marker_defaut.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [77.2022662, 28.6141793]},
+		"id":"615",
+		"properties": {
+			"title":"",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.monde-diplomatique.fr\/2013\/05\/FERNANDEZ\/49068' target='_blank'>En Inde, l&#8217;exp\u00e9rience du revenu garanti a revitalis\u00e9s les villages<\/a><\/div>\n\t<div class=\"texte\">Dans l\u2019Etat indien du Madhya Pradesh, un syndicat de femmes a lanc\u00e9 en 2011 une exp\u00e9rience-pilote de revenu inconditionnel. La somme vers\u00e9e ne suffit pas pour se passer d\u2019emploi, mais favorise les initiatives individuelles ou collectives, et permet de mieux vivre. \/ Inde, \u00c9conomie, Enfance, Femmes,&nbsp;(...)<\/div>\n<\/div>","id_mot": "215"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-215.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.991994, 47.124167]},
+		"id":"616",
+		"properties": {
+			"title":"S\u00e8vremoine (49450)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/lecourrier.ch\/2018\/12\/10\/lhomme-qui-fait-reverdir-le-burkina\/' target='_blank'>L\u2019homme qui fait reverdir le Burkina<\/a><\/div>\n\t<div class=\"texte\">L\u2019un des laur\u00e9ats de la 39e \u00e9dition du prix Nobel alternatif1Le Right Livelihood Award est d\u00e9cern\u00e9 tous les ans par une fondation su\u00e9doise \u00e0 quatre \u00ab personnes ou organisations exemplaires et visionnaires \u00bb qui s\u2019attaquent \u00ab aux racines des probl\u00e8mes mondiaux \u00bb. est un modeste cultivateur burkinab\u00e9 dont&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [11.3430347, 44.4936714]},
+		"id":"617",
+		"properties": {
+			"title":"Bologne",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/cqfd-journal.org\/En-Italie-un-Mondial-antiraciste' target='_blank'>En Italie, un Mondial antiraciste<\/a><\/div>\n\t<div class=\"texte\">Chaque \u00e9t\u00e9, pr\u00e8s de Bologne, se tient une grand-messe du foot plaisir, o\u00f9 les \u00e9quipes m\u00e9langent les nationalit\u00e9s, les genres et les \u00e2ges. Le vainqueur ? On s\u2019en fout (ou presque). Attention, le match va bient\u00f4t commencer. Les joueurs p\u00e9n\u00e8trent sur le terrain, ils se saluent. Bient\u00f4t le moment des hymnes&nbsp;(...)<\/div>\n<\/div>","id_mot": "41"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/plugins\/carteppi\/images\/marker_defaut.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [36.3095814, 33.5130695]},
+		"id":"618",
+		"properties": {
+			"title":"Damas (2277)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/orientxxi.info\/magazine\/le-rojava-en-syrie-entre-compromis-et-utopie,2824' target='_blank'>Le Rojava en Syrie, entre compromis et utopie<\/a><\/div>\n\t<div class=\"texte\">La F\u00e9d\u00e9ration d\u00e9mocratique du nord et l\u2019est de la Syrie, qu\u2019on appelle aussi le Rojava, traverse une p\u00e9riode dangereuse pour son avenir. Attaqu\u00e9e par la Turquie, qui a envahi le canton d\u2019Afrin et qui menace d\u2019\u00e9tendre son agression, au moment m\u00eame o\u00f9 elle contribue \u00e0 liquider l\u2019organisation de l\u2019\u00c9tat&nbsp;(...)<\/div>\n<\/div>","id_mot": "215"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-215.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.725358, 45.18627]},
+		"id":"619",
+		"properties": {
+			"title":"Grenoble (38000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.placegrenet.fr\/2018\/12\/23\/ferme-urbaine-biologique-grenoble\/217740' target='_blank'>Avec sa ferme urbaine biologique, Grenoble fait un petit pas vers l\u2019autonomie alimentaire<\/a><\/div>\n\t<div class=\"texte\">EN BREF \u2013 La Ville de Grenoble a r\u00e9cemment inaugur\u00e9 sa premi\u00e8re \u00ab ferme urbaine 100 % biologique \u00bb au sein \u2026 Lire la suite \u2192  L\u2019article Avec sa ferme urbaine biologique, Grenoble fait un petit pas vers l\u2019autonomie alimentaire est apparu en premier sur Place&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.353006, 48.935427]},
+		"id":"620",
+		"properties": {
+			"title":"Saint-Denis (93200)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.bondyblog.fr\/reportages\/au-tableau\/seine-saint-denis-des-mairies-organisent-une-aide-aux-devoirs-pour-reduire-les-inegalites-2-2\/' target='_blank'>En Seine-Saint-Denis, des aides aux devoirs municipales pour r\u00e9duire les in\u00e9galit\u00e9s<\/a><\/div>\n\t<div class=\"texte\">#REDIFF En Seine-Saint-Denis, des mairies ont mis en place un soutien scolaire accessible assur\u00e9 par des b\u00e9n\u00e9voles dans des biblioth\u00e8ques et centres municipaux. Objectif : am\u00e9liorer les chances de r\u00e9ussite des \u00e9l\u00e8ves et r\u00e9duire les in\u00e9galit\u00e9s. Reportage.  The post En Seine-Saint-Denis, des aides aux&nbsp;(...)<\/div>\n<\/div>","id_mot": "117"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-117.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.579717, 44.837663]},
+		"id":"621",
+		"properties": {
+			"title":"Bordeaux (33000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/rue89bordeaux.com\/2019\/01\/ovale-citoyen-rugby-joue-a-louverture-refugies\/' target='_blank'>Ovale citoyen, quand le rugby joue \u00e0 l\u2019ouverture pour les r\u00e9fugi\u00e9s<\/a><\/div>\n\t<div class=\"texte\">Premi\u00e8re du genre en France, une \u00e9quipe m\u00ealant demandeurs d\u2019asiles, migrants, sans domiciles et militants \u00e9volue depuis septembre sur les terrains de l\u2019UBB \u00e0 B\u00e8gles. L\u2019essai d\u2019Ovale citoyen va \u00eatre transform\u00e9 \u00e0 Pau et Paris. Reportage au c\u0153ur de la m\u00eal\u00e9e.  The post Ovale citoyen, quand le rugby joue \u00e0&nbsp;(...)<\/div>\n<\/div>","id_mot": "41"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/plugins\/carteppi\/images\/marker_defaut.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [12.4853384, 41.894802]},
+		"id":"622",
+		"properties": {
+			"title":"Rome",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/visionscarto.net\/italie-resistances-municipales' target='_blank'>En Italie, des maires s&#8217;opposent \u00e0 la politique de fermeture des \u00c9tats<\/a><\/div>\n\t<div class=\"texte\">\u00ab Quand l\u2019\u00c9tat faillit \u00e0 ses responsabilit\u00e9s, l\u2019alternative peut-elle provenir des municipalit\u00e9s ? \u00bb se demandait Filippo Furri dans le num\u00e9ro 81 de la revue Vacarme en automne 2017. La r\u00e9ponse est oui. Et pour illustrer son propos, Furri cite en exemple le mouvement des villes-refuge, avec des&nbsp;(...)<\/div>\n<\/div>","id_mot": "41"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/plugins\/carteppi\/images\/marker_defaut.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [28.1879444, -25.7459374]},
+		"id":"623",
+		"properties": {
+			"title":"Pretoria (0001)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/REP-En-Afrique-du-Sud-les-Black-Mambas-luttent-contre-le-braconnage-En-Afrique' target='_blank'>En Afrique du Sud, une unit\u00e9 de femmes contre le braconnage<\/a><\/div>\n\t<div class=\"texte\">En Afrique du Sud, les 36 femmes de l\u2019unit\u00e9 des \u00ab Black Mambas \u00bb combattent le braconnage dans une r\u00e9serve priv\u00e9e. Leur force : appartenir aux communaut\u00e9s voisines et ne pas porter d\u2019arme. R\u00e9serve Balule (Afrique du Sud), reportage  \u00ab On peut les entendre \u00e0 plusieurs kilom\u00e8tres de distance \u00bb, chuchote&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.353006, 48.935427]},
+		"id":"624",
+		"properties": {
+			"title":"Saint-Denis (93200)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.bastamag.net\/A-la-Maison-des-femmes-de-Saint-Denis-les-victimes-de-violences-reprennent-le' target='_blank'>\u00c0 la &#171;&nbsp;Maison des femmes&nbsp;&#187; de Saint-Denis, les victimes de violences reprennent le contr\u00f4le de leur vie<\/a><\/div>\n\t<div class=\"texte\">Elles ont subi tous types de violences, ont besoin de conseils en mati\u00e8re de contraception ou d\u2019IVG. Comme beaucoup, elles auraient pu se perdre dans les m\u00e9andres du syst\u00e8me de soin, en \u00eatre d\u00e9courag\u00e9es, rester isol\u00e9es. Mais elles ont rencontr\u00e9 la Maison des femmes, une structure unique cr\u00e9\u00e9e en 2016,&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-74.0761028, 4.5980772]},
+		"id":"625",
+		"properties": {
+			"title":"Bogota (110321)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/En-Colombie-les-referendums-d-initiative-citoyenne-stoppent-les-mines' target='_blank'>En Colombie, les r\u00e9f\u00e9rendums d\u2019initiative citoyenne stoppent les mines<\/a><\/div>\n\t<div class=\"texte\">En Colombie, la lutte contre les projets d\u2019exploitation mini\u00e8re et p\u00e9troli\u00e8re s\u2019organise \u00e0 l\u2019\u00e9chelle municipale par le biais de r\u00e9f\u00e9rendums. Une pratique qui d\u00e9pla\u00eet au gouvernement mais qui dynamise les territoires o\u00f9 elle se d\u00e9roule. Cajamarca (Colombie), reportage  \u00c0 premi\u00e8re vue, Cajamarca n\u2019est qu\u2019un&nbsp;(...)<\/div>\n<\/div>","id_mot": "215"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-215.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [11.2555757, 43.7698712]},
+		"id":"626",
+		"properties": {
+			"title":"Florence",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/cqfd-journal.org\/Le-terroir-du-chianti-collectif' target='_blank'>Le terroir du chianti collectif <\/a><\/div>\n\t<div class=\"texte\">En Toscane, o\u00f9 le prix du foncier agricole est exorbitant, des militants cultivent des terres publiques au nez et \u00e0 la barbe de l\u2019administration, qui voulait les revendre \u00e0 une multinationale am\u00e9ricaine. Voyage \u00e0 Mondeggi, o\u00f9 vignes et oliviers ont \u00e9t\u00e9 \u00ab collectivis\u00e9s&nbsp;(...)<\/div>\n<\/div>","id_mot": "16"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-16.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.3806, 43.2804]},
+		"id":"627",
+		"properties": {
+			"title":"Marseille (13000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/marcelle.media\/2019\/01\/23\/une-chambre-pour-redemarrer-dans-la-vie\/' target='_blank'>Une chambre pour red\u00e9marrer dans la vie<\/a><\/div>\n\t<div class=\"texte\">Pour les jeunes r\u00e9fugi\u00e9s, une r\u00e9ponse positive \u00e0 une demande d\u2019asile ne sonne pas la fin des probl\u00e8mes. L\u2019association AAJT a donc cr\u00e9\u00e9 \"Mon toit pour toi\", un dispositif qui les met en contact avec des familles pr\u00eates \u00e0 les accueillir le temps qu\u2019ils trouvent du&nbsp;(...)<\/div>\n<\/div>","id_mot": "41"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/plugins\/carteppi\/images\/marker_defaut.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.445708, 47.239253]},
+		"id":"628",
+		"properties": {
+			"title":"Terranjou (49540)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.bastamag.net\/L-histoire-d-un-vin-vivant-produit-sans-aucun-additif-avec-des-moyens-100' target='_blank'>L&#8217;histoire d&#8217;un &#171;&nbsp;vin vivant&nbsp;&#187;, produit sans aucun additif avec des moyens 100% naturels<\/a><\/div>\n\t<div class=\"texte\">Face \u00e0 l\u2019industrialisation de la viticulture sur l\u2019ensemble de la cha\u00eene de fabrication \u2013 de la taille au tri en passant par la r\u00e9colte \u2013 et \u00e0 l\u2019uniformisation du go\u00fbt des vins \u00e0 travers des processus chimiques complexes, des vignerons ont d\u00e9cid\u00e9 de prendre le chemin inverse. Olivier et Baptiste Cousin,&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.335191, 48.863258]},
+		"id":"629",
+		"properties": {
+			"title":"Paris (75001)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.streetpress.com\/sujet\/1548265165-un-avec-le-paris-d-exil-fc-une-equipe-de-foot-de-jeunes-migrants' target='_blank'>Un an avec le Paris d\u2019Exil FC, une \u00e9quipe de foot de jeunes migrants<\/a><\/div>\n\t<div class=\"texte\">Dans ce nouveau documentaire, StreetPress suit la premi\u00e8re saison du Paris d\u2019Exil FC, un club compos\u00e9 de mineurs isol\u00e9s. A travers Kader, Yaya et Bakary, 3 joueurs, on en apprend plus sur cette aventure et la personnalit\u00e9 de ces jeunes&nbsp;(...)<\/div>\n<\/div>","id_mot": "41"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/plugins\/carteppi\/images\/marker_defaut.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [12.4853384, 41.894802]},
+		"id":"630",
+		"properties": {
+			"title":"Rome",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.kaizen-magazine.com\/article\/italie-les-femmes-au-coeur-de-lagriculture-de-demain\/' target='_blank'>Italie&nbsp;: les femmes au c\u0153ur de l\u2019agriculture de demain<\/a><\/div>\n\t<div class=\"texte\">Depuis 1999, Donne in Campo (\u00ab Femmes au champ \u00bb) aide les agricultrices italiennes \u00e0 se mettre en r\u00e9seau afin de rompre leur isolement et de soutenir leurs initiatives. L\u2019association regroupe aujourd\u2019hui quelque quinze mille membres aux id\u00e9es innovantes. Dans le champ, c\u2019est une femme qui est sur le&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
 		}}
 	]
 }

@@ -1,38 +1,475 @@
 {"type": "FeatureCollection",
 	"features": [
 		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [-1.5541362, 47.2186371]},
-		"id":"625",
+		"geometry": {"type": "Point", "coordinates": [-1.1977683, 46.153917]},
+		"id":"947",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15970'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH147\/arton15970-b0af0.jpg?1541368759' width='100' height='147' style='margin-right:5px;float:left;' \/><b style='color:black;'>RENDEZ-VOUS<\/b><br> Colloque \u00ab<small class='fine'>\u00a0<\/small>L'abandon du projet d'a\u00e9roport de Notre-Dame-des-Landes\u00a0: quels enseignements<small class='fine'>\u00a0<\/small>?<small class='fine'>\u00a0<\/small>\u00bb, \u00e0 Nantes (Loire-Atlantique)<\/a><br>Le 29 novembre 2018.<div class=nettoyeur><\/div>",
-			"description":"<p>Il s&#8217;agit d&#8217;un colloque universitaire organis\u00e9 \u00e0 Nantes les 29-30\u00a0novembre 2018 \u00e0 la Facult\u00e9 de droit (le 29) et \u00e0 l&#8217;Ecole d&#8217;architecture (le 30) portant sur l&#8217;abandon du projet d&#8217;a\u00e9roport de Notre-Dame-des-Landes, visant \u00e0 tirer un premier bilan de ce dossier.<\/p>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16473'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH43\/arton16473-0638a.png?1547761732' width='100' height='43' style='margin-right:5px;float:left;' \/><b style='color:black;'>RENDEZ-VOUS<\/b><br>10<sup class='typo_exposants'>e<\/sup> Festival Terre &amp; Lettres, \u00e0 La Rochelle (Charente-Maritime)<\/a><br>Le 26 avril 2019.<div class=nettoyeur><\/div>",
+			"description":"<p>Le Festival Terre &amp; Lettres c\u00e9l\u00e8brera fin avril \u00e0 La Rochelle son 10<sup class=\"typo_exposants\">e<\/sup> anniversaire avec une programmation encore plus riche que les autres ann\u00e9es\u00a0: 11 rencontres avec auteurs et r\u00e9alisateurs et 7 ateliers, le tout r\u00e9parti sur 5 journ\u00e9es  les 13, 26, 27, 28 et 29\u00a0avril.<\/p>",
 
 		"icon": "\/images\/marker.png",	
-		"icon_size": [36,60],		"icon_anchor": [9,38]
+		"icon_size": [18.202247191011,30.337078651685],		"icon_anchor": [9,38]
 		}},
 		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.4452231, 48.906387]},
-		"id":"986",
+		"geometry": {"type": "Point", "coordinates": [-0.1395367196316273, 46.23181635]},
+		"id":"1017",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16027'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton16027-14f53.jpg?1542128533' width='100' height='67' style='margin-right:5px;float:left;' \/><b style='color:black;'>RENDEZ-VOUS<\/b><br>\u00ab<small class='fine'>\u00a0<\/small>20 mSv<small class='fine'>\u00a0<\/small>\u00bb, spectacle d'apr\u00e8s la catastrophe de Fukushima, \u00e0 Bobigny (Seine-Saint-Denis)<\/a><br>Le 30 novembre 2018.<div class=nettoyeur><\/div>",
-			"description":"<p>20 mSv - Un spectacle de Bruno Meyssat<br class='autobr' \/>\nd&#8217;apr\u00e8s la catastrophe de Fukushima<br class='autobr' \/>\n30\u00a0novembre - 8\u00a0d\u00e9cembre<\/p>\n<p>Le th\u00e9\u00e2tre tr\u00e8s document\u00e9 de Bruno Meyssat pose un regard personnel et incisif sur l\u2019\u00e9nergie nucl\u00e9aire. \u00c0 partir de la catastrophe de Fukushima de 2011, il fait entendre une autre voix qui d\u00e9passe l\u2019angoisse individuelle ou l\u2019aveuglement volontaire.<\/p>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16434'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH138\/arton16434-e3fda.jpg?1547463636' width='100' height='138' style='margin-right:5px;float:left;' \/><b style='color:black;'>RENDEZ-VOUS<\/b><br>Rencontres naturalistes, \u00e0 Melle (Deux-S\u00e8vres)<\/a><br>Le 15 f\u00e9vrier 2019.<div class=nettoyeur><\/div>",
+			"description":"<p>La 2<sup class=\"typo_exposants\">e<\/sup> \u00e9dition des Rencontres naturalistes en Poitou-Charentes se tiendra les 15 et 16\u00a0f\u00e9vrier \u00e0 Melle et rassemblera des naturalistes professionnels et b\u00e9n\u00e9voles de l&#8217;ex-r\u00e9gion Poitou-Charentes pour partager leurs exp\u00e9riences. Gratuit. Inscription avant le 24\u00a0janvier...<\/p>",
 
 		"icon": "\/images\/marker.png",	
-		"icon_size": [27,45],		"icon_anchor": [9,38]
+		"icon_size": [18.947368421053,31.578947368421],		"icon_anchor": [9,38]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [4.859703, 46.6917733]},
+		"id":"1018",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16439'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH142\/arton16439-5f316.jpg?1547481087' width='100' height='142' style='margin-right:5px;float:left;' \/><b style='color:black;'>RENDEZ-VOUS<\/b><br>Journ\u00e9es des plantes et arts du jardin, \u00e0 Saint-Ambreuil (Sa\u00f4ne-et-Loire)<\/a><br>Le 20 avril 2019.<div class=nettoyeur><\/div>",
+			"description":"<p>Les 16<sup class=\"typo_exposants\">es<\/sup> Journ\u00e9es des Plantes et Arts du jardin\u00a0de la Fert\u00e9 auront lieu les\u00a020\u00a0et\u00a021\u00a0avril 2019 et r\u00e9uniront les passionn\u00e9s de plantes, de jardins et de Nature dans un haut lieu du patrimoine fran\u00e7ais\u00a0: le Ch\u00e2teau de La Fert\u00e9, sur la commune de Saint-Ambreuil en Bourgogne Sa\u00f4ne et Loire (71), situ\u00e9 \u00e0 10 kms de Chalon-sur-Sa\u00f4ne (sortie autoroute Chalon-sud).<\/p>",
+
+		"icon": "\/images\/marker.png",	
+		"icon_size": [18.21686746988,30.361445783133],		"icon_anchor": [9,38]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [3.282606, 48.1978559]},
+		"id":"1022",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16452'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH142\/arton16452-0ca63.jpg?1547738532' width='100' height='142' style='margin-right:5px;float:left;' \/><b style='color:black;'>RENDEZ-VOUS<\/b><br>Le Festival des possibles, \u00e0 Sens (Yonne)<\/a><br>Le 15 novembre 2019.<div class=nettoyeur><\/div>",
+			"description":"<p>Bonjour<\/p>\n<p>le Festival des Possibles tiendra sa premi\u00e8re \u00e9dition les 15 et 16\u00a0novembre 2019 \u00e0 Sens (89).<\/p>\n<p>Festival de films sur des actions, des r\u00e9alisations, des innovations, des projets, des hommes et des femmes dans les domaines de la transition \u00e9cologique, l\u2019\u00e9nergie, l\u2019\u00e9conomie circulaire et la biodiversit\u00e9.<\/p>",
+
+		"icon": "\/images\/marker.png",	
+		"icon_size": [18.061643835616,30.102739726027],		"icon_anchor": [9,38]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [3.8627227, 43.5328117]},
+		"id":"1027",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16496'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH142\/arton16496-253f0.jpg?1548157266' width='100' height='142' style='margin-right:5px;float:left;' \/><b style='color:black;'>RENDEZ-VOUS<\/b><br>Journ\u00e9e mondiale des zones humides \u00e0 la Galerie \u00e9ph\u00e9m\u00e8re, \u00e0 Villeneuve-l\u00e8s-Maguelone (H\u00e9rault) <\/a><br>Le 1er f\u00e9vrier 2019.<div class=nettoyeur><\/div>",
+			"description":"<p>Un \u00e9v\u00e9nement Art et Nature sur les anciens Salins de Villeneuve-l\u00e8s-Maguelone dans l&#8217;H\u00e9rault. A l&#8217;occasion de la Journ\u00e9e Mondiale des Zones Humides, une quinzaine d&#8217;artistes investissent les anciens b\u00e2timents des sauniers sur ce site naturel d&#8217;exception entre S\u00e8te et Montpellier.<\/p>",
+
+		"icon": "\/images\/marker.png",	
+		"icon_size": [21.6,36],		"icon_anchor": [9,38]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [6.1763552, 49.1196964]},
+		"id":"1029",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16535'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH100\/arton16535-e3b38.jpg?1548411877' width='100' height='100' style='margin-right:5px;float:left;' \/><b style='color:black;'>RENDEZ-VOUS<\/b><br>Marche pour la biodiversit\u00e9, \u00e0 Metz (Moselle)<\/a><br>Le 9 mars 2019.<div class=nettoyeur><\/div>",
+			"description":"<p>La <span class=\"caps\">LPO<\/span> <span class=\"caps\">MOSELLE<\/span> sous l&#8217;initiative de Victor <span class=\"caps\">NOEL<\/span> passionn\u00e9 de nature \u00e2g\u00e9 de 14 ans, et avec le soutien d&#8217;une trentaine d&#8217;associations et de personnalit\u00e9s organisera le 9\u00a0mars 2019 \u00e0 Metz une <span class=\"caps\">MARCHE<\/span> <span class=\"caps\">POUR<\/span> <span class=\"caps\">LA<\/span> <span class=\"caps\">BIODIVERSITE<\/span> pour r\u00e9clamer une v\u00e9ritable politique de sauvegarde de la Biodiversit\u00e9.<\/p>",
+
+		"icon": "\/images\/marker.png",	
+		"icon_size": [18.439024390244,30.731707317073],		"icon_anchor": [9,38]
+		}}
+		,
+		
+
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [4.822279, 44.7518413]},
+		"id":"1021",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16462'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH142\/arton16462-f7d2a.jpg?1547714099' width='100' height='142' style='margin-right:5px;float:left;' \/>Les 17<sup class='typo_exposants'>es<\/sup> Rencontres de Die (Dr\u00f4me)<\/a><br>publi\u00e9 le 25 janvier 2019.<div class=nettoyeur><\/div>",
+			"description":"<p>Les 17<sup class=\"typo_exposants\">es<\/sup> Rencontres de Die<br class='autobr' \/>\n\u00ab<small class=\"fine\">\u00a0<\/small>S\u2019engager ensemble\u2026 pour une terre de vie, de paix, de liens<small class=\"fine\">\u00a0<\/small>\u00bb<br class='autobr' \/>\nDepuis dix-sept ans, Les Rencontres de Die ont pour objectifs d\u2019informer, de sensibiliser et former les habitantes et les habitants des impacts de notre mode de vie et de nos choix de consommation sur l\u2019environnement, la sant\u00e9, la soci\u00e9t\u00e9 et le vivant en proposant des alternatives et des transitions.<\/p>",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [4.375756406648373, 50.83857005]},
+		"id":"1028",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16530'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton16530-06568.jpg?1548344103' width='100' height='67' style='margin-right:5px;float:left;' \/>35.000 \u00e9tudiants manifestent en Belgique pour le climat<\/a><br>publi\u00e9 le 24 janvier 2019.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [3.7977715, 43.8779276]},
+		"id":"1026",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16484'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton16484-11b54.jpg?1548153814' width='100' height='67' style='margin-right:5px;float:left;' \/>Dans l'H\u00e9rault, des truffes ou des paysans<small class='fine'>\u00a0<\/small>? Bataille pour 400 hectares de terres <\/a><br>publi\u00e9 le 22 janvier 2019.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [44.5125849, 40.1776121]},
+		"id":"1020",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16453'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton16453-f34b1.jpg?1548059979' width='100' height='67' style='margin-right:5px;float:left;' \/>Un projet de mine d'or menace l'eau potable en Arm\u00e9nie<\/a><br>publi\u00e9 le 21 janvier 2019.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [4.848169764586095, 46.754101190698805]},
+		"id":"1024",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16471'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton16471-2cc25.jpg?1547893327' width='100' height='67' style='margin-right:5px;float:left;' \/>En Sa\u00f4ne-et-Loire, les Gilets jaunes d\u00e9noncent Amazon, \u00ab<small class='fine'>\u00a0<\/small>une infamie sur le plan social et environnemental<small class='fine'>\u00a0<\/small>\u00bb<\/a><br>publi\u00e9 le 19 janvier 2019.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.4396714, 48.8474508]},
+		"id":"1009",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16309'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH100\/arton16309-31ef0.jpg?1545148334' width='100' height='100' style='margin-right:5px;float:left;' \/>34<sup class='typo_exposants'>e<\/sup> Festival international du voyage \u00e0 v\u00e9lo, \u00e0 Vincennes (Val-de-Marne)<\/a><br>publi\u00e9 le 19 janvier 2019.<div class=nettoyeur><\/div>",
+			"description":"<p>Le 34<sup class=\"typo_exposants\">e<\/sup> Festival international du voyage \u00e0 v\u00e9lo se d\u00e9roulera \u00e0 Vincennes (94300) le 19 et 20\u00a0janvier 2019. \ufeffC&#8217;est le rendez-vous de tous les voyageurs et les voyageuses \u00e0 v\u00e9lo.<br class='autobr' \/>\nPour cette nouvelle \u00e9dition, le festival garde son cap\u00a0: faire partager des aventures petites et grandes faites d\u2019itin\u00e9rance et d\u2019autonomie, o\u00f9 les rencontres \u00e0 l\u2019\u00e9tape comptent autant que les kilom\u00e8tres parcourus. Seul, en famille, en couple ou entre amis, ils se sont tous lanc\u00e9s dans le voyage \u00e0 v\u00e9lo et susciteront l\u2019admiration ou, pourquoi pas, l\u2019envie d\u2019en faire autant.<\/p>",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [4.3631681, 46.6740455]},
+		"id":"1023",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16461'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton16461-64409.jpg?1547802680' width='100' height='67' style='margin-right:5px;float:left;' \/>\u00c0 Montceau-les-Mines, les Gilets jaunes veulent \u00ab<small class='fine'>\u00a0<\/small>sauver la plan\u00e8te et sauver des emplois<small class='fine'>\u00a0<\/small>\u00bb<\/a><br>publi\u00e9 le 18 janvier 2019.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [4.6128839, 50.6682012]},
+		"id":"1019",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16447'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton16447-00d63.jpg?1547629568' width='100' height='67' style='margin-right:5px;float:left;' \/>En Belgique, un quartier de cabanes et de roulottes depuis cinquante ans<\/a><br>publi\u00e9 le 16 janvier 2019.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-73.783892, 2.8894434]},
+		"id":"1015",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16414'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton16414-a3537.jpg?1547543011' width='100' height='67' style='margin-right:5px;float:left;' \/>En Colombie, les r\u00e9f\u00e9rendums d\u2019initiative citoyenne stoppent les mines<\/a><br>publi\u00e9 le 15 janvier 2019.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.7826657, 43.8338026]},
+		"id":"1016",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16429'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton16429-686e8.jpg?1547458396' width='100' height='67' style='margin-right:5px;float:left;' \/>Au pays de Castaner, les Gilets jaunes se disent \u00ab<small class='fine'>\u00a0<\/small>irr\u00e9ductibles<small class='fine'>\u00a0<\/small>\u00bb<\/a><br>publi\u00e9 le 14 janvier 2019.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.17868398788480677, 48.44127535]},
+		"id":"1013",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16384'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH137\/arton16384-704bf.jpg?1546973644' width='100' height='137' style='margin-right:5px;float:left;' \/>Habiter l\u00e0, festival d\u2019architecture et d\u2019urbanisme durable en milieu rural, \u00e0 Pr\u00e9-en-Pail (Mayenne)<\/a><br>publi\u00e9 le 12 janvier 2019.<div class=nettoyeur><\/div>",
+			"description":"<p>Festival d\u2019architecture et d\u2019urbanisme durable en milieu rural, quatre mois d\u2019\u00e9changes, de rencontres, de discussions, de d\u00e9couvertes, de chantier, d\u2019actions.<\/p>",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [0.1631898, 45.0098898]},
+		"id":"1014",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16408'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton16408-2eb07.jpg?1547197861' width='100' height='67' style='margin-right:5px;float:left;' \/>En Dordogne\u00a0: \u00ab<small class='fine'>\u00a0<\/small>On ne se connaissait pas avant les Gilets jaunes et on\u00a0en\u00a0vient \u00e0 former une famille<small class='fine'>\u00a0<\/small>\u00bb<\/a><br>publi\u00e9 le 11 janvier 2019.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-4.369679, 48.3742317]},
+		"id":"1011",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16350'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH145\/arton16350-4726c.jpg?1546419979' width='100' height='145' style='margin-right:5px;float:left;' \/>Projection de \u00ab<small class='fine'>\u00a0<\/small>Grande Synthe, la ville ou tout se joue<small class='fine'>\u00a0<\/small>\u00bb, \u00e0 Plougastel (Finist\u00e8re)<\/a><br>publi\u00e9 le 10 janvier 2019.<div class=nettoyeur><\/div>",
+			"description":"<p>Le Jeudi 10\u00a0janvier est organis\u00e9e une projection du film &quot;Grande Synthe, la ville ou tout se joue&quot; en pr\u00e9sence de la r\u00e9alisatrice B\u00e9atrice Camurat Jaud au cin\u00e9ma l&#8217;Image de Plougastel A l\u2019issue de cette s\u00e9ance sera propos\u00e9e une discussion ouverte sur les d\u00e9fis auxquels sont confront\u00e9es les soci\u00e9t\u00e9s contemporaines, et notamment les soci\u00e9t\u00e9s occidentales, \u00e0 savoir\u00a0: la d\u00e9sindustrialisation, le voisinage d&#8217;une centrale nucl\u00e9aire, la crise migratoire, le ch\u00f4mage et les enjeux qui en d\u00e9coulent, qui lient aspects sociaux et environnementaux.<\/p>",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-4.0699356, 48.5127551]},
+		"id":"1012",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16357'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH210\/arton16357-39898.jpg?1546447133' width='100' height='210' style='margin-right:5px;float:left;' \/>Projection-discussion \u00ab<small class='fine'>\u00a0<\/small>Grande Synthe, la ville ou tout se joue<small class='fine'>\u00a0<\/small>\u00bb, \u00e0 Landivisiau (Finist\u00e8re)<\/a><br>publi\u00e9 le 9 janvier 2019.<div class=nettoyeur><\/div>",
+			"description":"<p>Le Mercredi 9\u00a0janvier est organis\u00e9e une projection du film &quot;Grande Synthe, la ville ou tout se joue&quot; en pr\u00e9sence de la r\u00e9alisatrice B\u00e9atrice Camurat Jaud au cin\u00e9ma les Studios de Landivisiau A l\u2019issue de cette s\u00e9ance sera propos\u00e9e une discussion ouverte sur les d\u00e9fis auxquels sont confront\u00e9es les soci\u00e9t\u00e9s contemporaines, et notamment les soci\u00e9t\u00e9s occidentales, \u00e0 savoir\u00a0: la d\u00e9sindustrialisation, le voisinage d\u2019une centrale nucl\u00e9aire, la crise migratoire, le ch\u00f4mage et les enjeux qui en d\u00e9coulent, qui lient aspects sociaux et environnementaux.<\/p>",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [55.5265771, -21.1309332]},
+		"id":"1010",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16313'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton16313-d8e67.jpg?1546938077' width='100' height='67' style='margin-right:5px;float:left;' \/>\u00c0 La R\u00e9union, les Gilets jaunes ont mis en relief la\u00a0d\u00e9pendance de l\u2019\u00eele \u00e0 la voiture<\/a><br>publi\u00e9 le 8 janvier 2019.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [4.9206153, 45.7784255]},
+		"id":"1005",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16254'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton16254-c1a00.jpg?1546684230' width='100' height='67' style='margin-right:5px;float:left;' \/>\u00c0 Chamarel, vieillir ensemble, c'est politique\u00a0<\/a><br>publi\u00e9 le 5 janvier 2019.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [3.970702, 46.7896]},
+		"id":"1006",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16262'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton16262-08de8.jpg?1545209511' width='100' height='67' style='margin-right:5px;float:left;' \/>Dans le Morvan, un village r\u00e9sistant accueille des\u00a0demandeurs d'asile<\/a><br>publi\u00e9 le 19 d\u00e9cembre 2018.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.4645212, 46.3239455]},
+		"id":"1008",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16310'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton16310-a2190.jpg?1545209511' width='100' height='67' style='margin-right:5px;float:left;' \/>Dans le marais poitevin, la bataille autour de l'eau se\u00a0durcit<\/a><br>publi\u00e9 le 19 d\u00e9cembre 2018.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [19.02317047119141, 50.25870045776576]},
+		"id":"1004",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16188'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton16188-4b2e4.jpg?1545040285' width='100' height='67' style='margin-right:5px;float:left;' \/>La <span class='caps'>COP24<\/span>, le journal jour apr\u00e8s jour<\/a><br>publi\u00e9 le 17 d\u00e9cembre 2018.<div class=nettoyeur><\/div>",
+			"description":"<p>Tous les jours, notre envoy\u00e9e sp\u00e9ciale vous raconte les coulisses, les anecdotes et les coups de th\u00e9\u00e2tre de la <span class=\"caps\">COP24<\/span>, qui se d\u00e9roule en Pologne, du 2 au 14\u00a0d\u00e9cembre.<\/p>",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.5800364, 44.841225]},
+		"id":"1007",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16287'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton16287-17e87.jpg?1545036879' width='100' height='67' style='margin-right:5px;float:left;' \/>Les Gilets jaunes \u00e0 Bordeaux\u00a0: \u00ab<small class='fine'>\u00a0<\/small>Le\u00a0gouvernement est sourd. Mais on\u00a0les\u00a0aura \u00e0 l'usure<small class='fine'>\u00a0<\/small>\u00bb<\/a><br>publi\u00e9 le 17 d\u00e9cembre 2018.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.2088714, 44.7357062]},
+		"id":"992",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16080'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton16080-a0a56.jpg?1544778212' width='100' height='67' style='margin-right:5px;float:left;' \/>Dans la Dr\u00f4me, un havre r\u00e9serv\u00e9 \u00e0 la vie sauvage<\/a><br>publi\u00e9 le 14 d\u00e9cembre 2018.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-71.3187697, -31.7613365]},
+		"id":"716",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=14450'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton14450-e0d9b.jpg?1522828042' width='100' height='67' style='margin-right:5px;float:left;' \/>Engie pollue le nord du Chili avec d'antiques centrales \u00e0\u00a0charbon <\/a><br>publi\u00e9 le 13 d\u00e9cembre 2018.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-71.3187697, -31.7613365]},
+		"id":"717",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=14450'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton14450-e0d9b.jpg?1522828042' width='100' height='67' style='margin-right:5px;float:left;' \/>Engie pollue le nord du Chili avec d'antiques centrales \u00e0\u00a0charbon <\/a><br>publi\u00e9 le 13 d\u00e9cembre 2018.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [14.963035583496096, 50.9057102836471]},
+		"id":"868",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15690'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton15690-4ca5f.jpg?1544431186' width='100' height='67' style='margin-right:5px;float:left;' \/>Dans le \u00ab<small class='fine'>\u00a0<\/small>triangle noir<small class='fine'>\u00a0<\/small>\u00bb, le charbon polonais a encore de\u00a0beaux jours devant lui <\/a><br>publi\u00e9 le 10 d\u00e9cembre 2018.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [6.1834097, 48.6937223]},
+		"id":"1003",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16232'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton16232-5e909.jpg?1544390754' width='100' height='67' style='margin-right:5px;float:left;' \/>La garde \u00e0 vue du pr\u00e9sident des Amis de la terre\u00a0: \u00ab<small class='fine'>\u00a0<\/small>Les\u00a0ordres venaient d'en haut<small class='fine'>\u00a0<\/small>\u00bb<\/a><br>publi\u00e9 le 8 d\u00e9cembre 2018.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-3.0794428, 47.5836629]},
+		"id":"1001",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16215'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH142\/arton16215-05ad1.jpg?1544176552' width='100' height='142' style='margin-right:5px;float:left;' \/>Marche pour le climat et go\u00fbter d\u00e9bat, \u00e0 Carnac (Morbihan)<\/a><br>publi\u00e9 le 8 d\u00e9cembre 2018.<div class=nettoyeur><\/div>",
+			"description":"<p>marche pour le climat + go\u00fbter-d\u00e9bat<\/p>",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.4358326, 48.8852958]},
+		"id":"1000",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16218'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH145\/arton16218-bcd1d.jpg?1544176209' width='100' height='145' style='margin-right:5px;float:left;' \/>Marche pour le climat, d\u00e9fendons la for\u00eat de la Corniche des forts, \u00e0 Romainville (93)<\/a><br>publi\u00e9 le 8 d\u00e9cembre 2018.<div class=nettoyeur><\/div>",
+			"description":"<p>Comme d\u00e9part de la marche pour le climat, un rassemblement pour les for\u00eats et les quartiers populaires est organis\u00e9 \u00e0 Romainville \u00e0 11h, en face de la for\u00eat menac\u00e9e (musique, prises de parole, plantations), avant de marcher jusqu&#8217;\u00e0 Mairie des Lilas.<\/p>",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.5914753, 48.763203]},
+		"id":"1002",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16224'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton16224-6c06c.jpg?1544257092' width='100' height='67' style='margin-right:5px;float:left;' \/>Sur les ronds-points, les Gilets jaunes refont la d\u00e9mocratie<\/a><br>publi\u00e9 le 8 d\u00e9cembre 2018.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [6.171294, 46.0164774]},
+		"id":"999",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16208'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton16208-122dc.jpg?1544172954' width='100' height='67' style='margin-right:5px;float:left;' \/>En Haute-Savoie, les agriculteurs cherchent les solutions face au changement climatique<\/a><br>publi\u00e9 le 7 d\u00e9cembre 2018.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [10.4234469, 51.0834196]},
+		"id":"998",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16193'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton16193-a59e4.jpg?1543999001' width='100' height='67' style='margin-right:5px;float:left;' \/>En Allemagne, les trains du quotidien fonctionnent tr\u00e8s\u00a0bien<\/a><br>publi\u00e9 le 5 d\u00e9cembre 2018.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [3.0819427, 45.7774551]},
+		"id":"996",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16072'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH87\/arton16072-cd450.jpg?1543501077' width='100' height='87' style='margin-right:5px;float:left;' \/>\u00ab<small class='fine'>\u00a0<\/small>Tchernobyl continue<small class='fine'>\u00a0<\/small>\u00bb, 4 conf\u00e9rences de Yury Bandajevsky, en France<\/a><br>publi\u00e9 le 4 d\u00e9cembre 2018.<div class=nettoyeur><\/div>",
+			"description":"<p>Le 10\u00a0d\u00e9cembre \u00e0 Lyon avec Mich\u00e8le <span class=\"caps\">RIVASI<\/span> d\u00e9put\u00e9e europ\u00e9enne, le 4\u00a0d\u00e9cembre \u00e0 Clermont Ferrand, Le 7\u00a0d\u00e9cembre \u00e0 Strasbourg, le 11\u00a0d\u00e9cembre \u00e0 Bordeaux, Yury <span class=\"caps\">BANDAJEVSKI<\/span> au cours de 4 conf\u00e9rences pr\u00e9sentera les r\u00e9cents r\u00e9sultats de ses travaux sur la sant\u00e9 des enfants et des populations vivant depuis plus de trente ans dans les territoires contamin\u00e9s par l&#8217;accident de Tchernobyl.<\/p>",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [134.755, -24.7761086]},
+		"id":"997",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16171'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH70\/arton16171-8b1eb.png?1543690486' width='100' height='70' style='margin-right:5px;float:left;' \/>En Australie, des milliers d'\u00e9coliers ont manifest\u00e9 pour le climat<\/a><br>publi\u00e9 le 1er d\u00e9cembre 2018.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
 		}},
 		{"type": "Feature",
 		"geometry": {"type": "Point", "coordinates": [2.420831960443964, 48.876210441810535]},
 		"id":"987",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16036'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH142\/arton16036-985f9.jpg?1543171529' width='100' height='142' style='margin-right:5px;float:left;' \/><b style='color:black;'>RENDEZ-VOUS<\/b><br>Conf\u00e9rence perturb\u00e9e\u00a0: \u00ab<small class='fine'>\u00a0<\/small>Climat, il n'est pas trop tard<small class='fine'>\u00a0<\/small>\u00bb, \u00e0 Bagnolet (93), avec Jean Jouzel et Jean-Luc Vincent<\/a><br>Le 30 novembre 2018.<div class=nettoyeur><\/div>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16036'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH142\/arton16036-985f9.jpg?1544029351' width='100' height='142' style='margin-right:5px;float:left;' \/>Conf\u00e9rence perturb\u00e9e\u00a0: \u00ab<small class='fine'>\u00a0<\/small>Climat, il n'est pas trop tard<small class='fine'>\u00a0<\/small>\u00bb, \u00e0 Bagnolet (93), avec Jean Jouzel et Jean-Luc Vincent<\/a><br>publi\u00e9 le 30 novembre 2018.<div class=nettoyeur><\/div>",
 			"description":"<p>[Rencontre de l&#8217;\u00e9cologie]<br class='autobr' \/>\nConf\u00e9rence perturb\u00e9e sur l&#8217;urgence climatique avec le climatologue Jean Jouzel et le com\u00e9dien excentrique Jean-Luc Vincent. Le 30\u00a0novembre au Samovar, \u00e0 Bagnolet.<\/p>",
 
-		"icon": "\/images\/marker.png",	
-		"icon_size": [27,45],		"icon_anchor": [9,38]
-		}}
-		,
-		
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.4452231, 48.906387]},
+		"id":"986",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16027'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton16027-14f53.jpg?1542128533' width='100' height='67' style='margin-right:5px;float:left;' \/>\u00ab<small class='fine'>\u00a0<\/small>20 mSv<small class='fine'>\u00a0<\/small>\u00bb, spectacle d'apr\u00e8s la catastrophe de Fukushima, \u00e0 Bobigny (Seine-Saint-Denis)<\/a><br>publi\u00e9 le 30 novembre 2018.<div class=nettoyeur><\/div>",
+			"description":"<p>20 mSv - Un spectacle de Bruno Meyssat<br class='autobr' \/>\nd&#8217;apr\u00e8s la catastrophe de Fukushima<br class='autobr' \/>\n30\u00a0novembre - 8\u00a0d\u00e9cembre<\/p>\n<p>Le th\u00e9\u00e2tre tr\u00e8s document\u00e9 de Bruno Meyssat pose un regard personnel et incisif sur l\u2019\u00e9nergie nucl\u00e9aire. \u00c0 partir de la catastrophe de Fukushima de 2011, il fait entendre une autre voix qui d\u00e9passe l\u2019angoisse individuelle ou l\u2019aveuglement volontaire.<\/p>",
 
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-16.49082183837891, 16.011165983099755]},
+		"id":"995",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16095'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton16095-45a96.jpg?1544102617' width='100' height='67' style='margin-right:5px;float:left;' \/>L\u2019Atlantique engloutit Saint-Louis du S\u00e9n\u00e9gal et ses\u00a0quartiers de\u00a0p\u00eacheurs<\/a><br>publi\u00e9 le 29 novembre 2018.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.769584655761719, 51.15684660587383]},
+		"id":"993",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16088'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH65\/arton16088-d3291.jpg?1543307887' width='100' height='65' style='margin-right:5px;float:left;' \/>La Belgique, \u00e0 la merci de la mont\u00e9e des\u00a0eaux, tarde \u00e0\u00a0agir<\/a><br>publi\u00e9 le 27 novembre 2018.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.728398649503426, 51.144160049999996]},
+		"id":"994",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16088'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH65\/arton16088-d3291.jpg?1543307887' width='100' height='65' style='margin-right:5px;float:left;' \/>La Belgique, \u00e0 la merci de la mont\u00e9e des\u00a0eaux, tarde \u00e0\u00a0agir<\/a><br>publi\u00e9 le 27 novembre 2018.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
 		{"type": "Feature",
 		"geometry": {"type": "Point", "coordinates": [4.6095583, 46.5687793]},
 		"id":"985",
@@ -721,413 +1158,6 @@
 		"properties": {
 			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15825'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton15825-5e54e.jpg?1539934865' width='100' height='67' style='margin-right:5px;float:left;' \/>Pain d\u00e9croissant, livres et caf\u00e9 \u00e9picerie, une recette de coop\u00e9ration conviviale<\/a><br>publi\u00e9 le 19 octobre 2018.<div class=nettoyeur><\/div>",
 			"description":"",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.6429118, 50.7942556]},
-		"id":"918",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15825'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton15825-5e54e.jpg?1539934865' width='100' height='67' style='margin-right:5px;float:left;' \/>Pain d\u00e9croissant, livres et caf\u00e9 \u00e9picerie, une recette de coop\u00e9ration conviviale<\/a><br>publi\u00e9 le 19 octobre 2018.<div class=nettoyeur><\/div>",
-			"description":"",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [0.847148895263672, 44.10385844598368]},
-		"id":"941",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15849'});\" >Golfech (Tarn-et-Garonne)<\/a><br>publi\u00e9 le 18 octobre 2018.<div class=nettoyeur><\/div>",
-			"description":"<p>Centrale nucl\u00e9aire de Golfech<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [3.6916669, 44.7006307]},
-		"id":"940",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15848'});\" >Saint-Jean-la-Fouillouse (Loz\u00e8re)<\/a><br>publi\u00e9 le 18 octobre 2018.<div class=nettoyeur><\/div>",
-			"description":"<p>Ancienne mine du Cellier<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [1.723394, 44.7789948]},
-		"id":"939",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15847'});\" >Gramat (Lot)<\/a><br>publi\u00e9 le 18 octobre 2018.<div class=nettoyeur><\/div>",
-			"description":"<p>\u00c9tablissement <span class=\"caps\">CEA<\/span> <span class=\"caps\">DAM<\/span><\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [3.3465814590454106, 43.70308163577985]},
-		"id":"938",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15846'});\" >Le Bosc (H\u00e9rault) - ancienne mine de Lod\u00e8ve<\/a><br>publi\u00e9 le 18 octobre 2018.<div class=nettoyeur><\/div>",
-			"description":"<p>Ancienne mine de Lod\u00e8ve<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.7603149414062504, 44.382520394767475]},
-		"id":"937",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15845'});\" >Berthol\u00e8ne (Aveyron)<\/a><br>publi\u00e9 le 18 octobre 2018.<div class=nettoyeur><\/div>",
-			"description":"<p>Ancienne mine<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [0.6520557403564454, 46.45542144660565]},
-		"id":"936",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15844'});\" >Civaux (Vienne)<\/a><br>publi\u00e9 le 18 octobre 2018.<div class=nettoyeur><\/div>",
-			"description":"<p>Centrale nucl\u00e9aire de Civaux<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [1.3542366027832031, 46.00554713642256]},
-		"id":"935",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15843'});\" >Saint-Sylvestre (Haute-Vienne)<\/a><br>publi\u00e9 le 18 octobre 2018.<div class=nettoyeur><\/div>",
-			"description":"<p>Ancienne mine de Fanay<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [1.2611031, 46.3530294]},
-		"id":"934",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15842'});\" >Jouac (Haute-Vienne)<\/a><br>publi\u00e9 le 18 octobre 2018.<div class=nettoyeur><\/div>",
-			"description":"<p>Ancienne mine et usine de traitement de minerais<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [-1.6285686907490189, 49.634360599999994]},
-		"id":"933",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15841'});\" >Cherbourg-Octeville\u00a0(Manche)<\/a><br>publi\u00e9 le 18 octobre 2018.<div class=nettoyeur><\/div>",
-			"description":"<p>Etablissement de contr\u00f4le de Cherbourg\u00a0(Etac)<small class=\"fine\">\u00a0<\/small>;<br class='autobr' \/>\nEtablissement de contr\u00f4le de Cherbourg\u00a0(Etac) des sous-marins nucl\u00e9aires lanceurs d&#8217;engins\u00a0(<span class=\"caps\">SNLE<\/span>)<small class=\"fine\">\u00a0<\/small>;<br class='autobr' \/>\nLaboratoire de radio\u00e9cologie de l&#8217;<span class=\"caps\">IRSN<\/span><small class=\"fine\">\u00a0<\/small>;<br class='autobr' \/>\n\u00c9cole des applications militaires de l&#8217;\u00e9nergie atomique<small class=\"fine\">\u00a0<\/small>;<br class='autobr' \/>\nLaboratoire d&#8217;analyses, de surveillance et d&#8217;expertise de la Marine\u00a0(Lasem)<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [3.5920794, 45.9947184]},
-		"id":"922",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15829'});\" >Lachaux (Puy-de-D\u00f4me)<\/a><br>publi\u00e9 le 18 octobre 2018.<div class=nettoyeur><\/div>",
-			"description":"<p>Ancienne mine de Rophin<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.1278715133666997, 46.26340014626565]},
-		"id":"927",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15835'});\" >Domeyrot (Creuse)<\/a><br>publi\u00e9 le 18 octobre 2018.<div class=nettoyeur><\/div>",
-			"description":"<p>Ancienne mine de La Ribi\u00e8re<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [3.7398147583007817, 45.923453279829104]},
-		"id":"920",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15828'});\" >Saint-Priest-la-Prugne (Loire)<\/a><br>publi\u00e9 le 18 octobre 2018.<div class=nettoyeur><\/div>",
-			"description":"<p>Ancienne mine des Bois Noirs Limouzat<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [5.0796741, 45.0502153]},
-		"id":"898",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15805'});\" >Romans-sur-Is\u00e8re (Dr\u00f4me)<\/a><br>publi\u00e9 le 18 octobre 2018.<div class=nettoyeur><\/div>",
-			"description":"<p>Installations Nucl\u00e9aires de Base (<span class=\"caps\">INB<\/span>)<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [5.469220541076856, 45.75764864999999]},
-		"id":"904",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15811'});\" >Creys-Malville (Is\u00e8re)<\/a><br>publi\u00e9 le 18 octobre 2018.<div class=nettoyeur><\/div>",
-			"description":"<p>Centrale de Creys-Malville en d\u00e9construction<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [5.735658266535721, 45.09091808384042]},
-		"id":"903",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15810'});\" >Jarrie (Is\u00e8re) - Usine de Cezus<\/a><br>publi\u00e9 le 18 octobre 2018.<div class=nettoyeur><\/div>",
-			"description":"<p>Usine de Zirconium de Jarrie (Cezus)<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [1.3685926, 46.1090993]},
-		"id":"931",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15839'});\" >Bessine-sur-Gartempe (Haute-Vienne)<\/a><br>publi\u00e9 le 18 octobre 2018.<div class=nettoyeur><\/div>",
-			"description":"<p>Anciennes mines et \u00e9tablissement de Bessine-sur-Gartempe<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [1.3183593750000002, 46.001493029950105]},
-		"id":"932",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15840'});\" >Compreignac (Haute-Vienne)<\/a><br>publi\u00e9 le 18 octobre 2018.<div class=nettoyeur><\/div>",
-			"description":"<p>Anciennes mines<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [-0.8054351806640626, 44.64911632343077]},
-		"id":"930",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15838'});\" >Le Barp (Gironde)<\/a><br>publi\u00e9 le 18 octobre 2018.<div class=nettoyeur><\/div>",
-			"description":"<p>Centre d&#8217;Etudes Scientifiques et Techniques d&#8217;Aquitaine<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [-0.6875896453857423, 45.2560990567112]},
-		"id":"929",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15837'});\" >Braud-et-Saint-Louis (Gironde) - centrale du Blayais<\/a><br>publi\u00e9 le 18 octobre 2018.<div class=nettoyeur><\/div>",
-			"description":"<p>Centrale nucl\u00e9aire du Blayais<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.1336066, 48.8825766]},
-		"id":"928",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15836'});\" >Le V\u00e9sinet\u00a0(Yvelines)<\/a><br>publi\u00e9 le 18 octobre 2018.<div class=nettoyeur><\/div>",
-			"description":"<p>Laboratoires de l&#8217;Institut de radioprotection et de s\u00fbret\u00e9 nucl\u00e9aire\u00a0(<span class=\"caps\">IRSN<\/span>)<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.4809129, 48.7489857]},
-		"id":"926",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15834'});\" >Limeil-Brevannes\u00a0(Val-de-Marne)<\/a><br>publi\u00e9 le 18 octobre 2018.<div class=nettoyeur><\/div>",
-			"description":"<p>Sodern Limeil-Brevannes<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [1.216564178466797, 49.975513597389075]},
-		"id":"925",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15833'});\" >Penly (Seine-Maritime)<\/a><br>publi\u00e9 le 18 octobre 2018.<div class=nettoyeur><\/div>",
-			"description":"<p>Centrale nucl\u00e9aire de Penly<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.4530731, 48.7771486]},
-		"id":"924",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15832'});\" >Cr\u00e9teil\u00a0(Val-de-Marne)<\/a><br>publi\u00e9 le 18 octobre 2018.<div class=nettoyeur><\/div>",
-			"description":"<p>Institut du radium<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [0.636434555053711, 49.85694206365442]},
-		"id":"923",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15831'});\" >Paluel (Seine-Maritime)<\/a><br>publi\u00e9 le 18 octobre 2018.<div class=nettoyeur><\/div>",
-			"description":"<p>Centrale nucl\u00e9aire de Paluel<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.2870373, 48.7911052]},
-		"id":"921",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15830'});\" >Fontenay-aux-Roses\u00a0(Hauts-de-Seine)<\/a><br>publi\u00e9 le 18 octobre 2018.<div class=nettoyeur><\/div>",
-			"description":"<p>Centre de Fontenay-aux-Roses<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [5.660555362701417, 45.02310682365467]},
-		"id":"919",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15826'});\" >Vif (Is\u00e8re)<\/a><br>publi\u00e9 le 18 octobre 2018.<div class=nettoyeur><\/div>",
-			"description":"<p>Vif, d\u00e9charge du Serf<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.148721749110957, 48.7094984]},
-		"id":"916",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15824'});\" >Saint-Aubin\u00a0(Essonne)<\/a><br>publi\u00e9 le 18 octobre 2018.<div class=nettoyeur><\/div>",
-			"description":"<p><span class=\"caps\">CEA<\/span> L&#8217;Orme-des-Merisiers<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [4.719979763031007, 44.32100144234806]},
-		"id":"915",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15823'});\" >Boll\u00e8ne (Vaucluse) - Tricastin<\/a><br>publi\u00e9 le 18 octobre 2018.<div class=nettoyeur><\/div>",
-			"description":"<p>Zone nucl\u00e9aire de Tricastin<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.148137429152547, 48.72459795]},
-		"id":"913",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15822'});\" >Saclay\u00a0(Essonne)<\/a><br>publi\u00e9 le 18 octobre 2018.<div class=nettoyeur><\/div>",
-			"description":"<p>Centre de Saclay<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.148137429152547, 48.72459795]},
-		"id":"914",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15822'});\" >Saclay\u00a0(Essonne)<\/a><br>publi\u00e9 le 18 octobre 2018.<div class=nettoyeur><\/div>",
-			"description":"<p>Centre de Saclay<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [4.730944633483888, 44.330847647470456]},
-		"id":"911",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15820'});\" >Saint-Paul-Trois-Chateaux (Dr\u00f4me) - Tricastin<\/a><br>publi\u00e9 le 18 octobre 2018.<div class=nettoyeur><\/div>",
-			"description":"<p>Centrale nucl\u00e9aire de Tricastin et usine de conversion<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.4855792, 48.5653177]},
-		"id":"910",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15819'});\" >Le Coudray-Montceaux\u00a0(Essonne)<\/a><br>publi\u00e9 le 18 octobre 2018.<div class=nettoyeur><\/div>",
-			"description":"<p>Butte de Montboucher<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.3418427, 48.5145073]},
-		"id":"909",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15818'});\" >Itteville\u00a0(Essonne)<\/a><br>publi\u00e9 le 18 octobre 2018.<div class=nettoyeur><\/div>",
-			"description":"<p>Site du Bouchet<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.3102393, 48.7073458]},
-		"id":"908",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15817'});\" >Chilly-Mazarin\u00a0(Essonne)<\/a><br>publi\u00e9 le 18 octobre 2018.<div class=nettoyeur><\/div>",
-			"description":"<p>Autoroute A\u00a0126 au niveau de Chilly-Mazarin<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.203894655307797, 48.5949894]},
-		"id":"907",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15816'});\" >Bruy\u00e8res-le-Ch\u00e2tel\u00a0(Essonne)<\/a><br>publi\u00e9 le 18 octobre 2018.<div class=nettoyeur><\/div>",
-			"description":"<p><span class=\"caps\">CEA<\/span> de Bruy\u00e8res-le-Ch\u00e2tel<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [4.717211723327638, 44.34766777090457]},
-		"id":"906",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15815'});\" >Pierrelatte (Dr\u00f4me) - Tricastin<\/a><br>publi\u00e9 le 18 octobre 2018.<div class=nettoyeur><\/div>",
-			"description":"<p>Zone nucl\u00e9aire de Tricastin<\/p>",
 
 		"icon": "\/images\/marker_rond.png",	
 		"icon_size": [12,12],
@@ -2971,6 +3001,16 @@
 
 ,
 
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-1.7103294, 47.3819408]},
+		"id":"814",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16475'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH75\/arton16475-656da.jpg?1547802681' width='100' height='75' style='margin-right:5px;float:left;' \/><span style='color:black;'>Notre-Dame-des-Landes<\/span><br>Les zadistes veulent acheter les terres de\u00a0Notre-Dame-des-Landes<\/a><br>publi\u00e9 le 18 janvier 2019.<div class=nettoyeur><\/div>",
+			"description":"",
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+		}},
 		{"type": "Feature",
 		"geometry": {"type": "Point", "coordinates": [-1.5541362, 47.2186371]},
 		"id":"625",
@@ -5153,7 +5193,41 @@
 		"icon_anchor": [6,6]		
 		}}
 
+,
 
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [19.02317047119141, 50.25870045776576]},
+		"id":"1004",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16273'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton16273-76b7c.jpg?1544779421' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>Climat et <span class='caps'>COP<\/span> 24<\/span><br><span class='caps'>COP24<\/span>\u00a0: la n\u00e9gociation finale s'annonce difficile et\u00a0d\u00e9cevante<\/a><br>publi\u00e9 le 14 d\u00e9cembre 2018.<div class=nettoyeur><\/div>",
+			"description":"",
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [19.02317047119141, 50.25870045776576]},
+		"id":"1004",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16260'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton16260-0fccf.jpg?1544694289' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>Climat et <span class='caps'>COP<\/span> 24<\/span><br>J10\u00a0: Rater la <span class='caps'>COP24<\/span> \u00ab<small class='fine'>\u00a0<\/small>ne serait pas seulement immoral, mais suicidaire<small class='fine'>\u00a0<\/small>\u00bb<\/a><br>publi\u00e9 le 13 d\u00e9cembre 2018.<div class=nettoyeur><\/div>",
+			"description":"",
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+		}}
+
+,
+
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [1.4442469, 43.6044622]},
+		"id":"463",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16419'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton16419-ffb7c.jpg?1547282796' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>Gilets jaunes<\/span><br>Les Secouristes volontaires toulousains\u00a0: la paix au coeur des manifestations<\/a><br>publi\u00e9 le 12 janvier 2019.<div class=nettoyeur><\/div>",
+			"description":"",
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+		}}
 
 ,
 
@@ -5354,7 +5428,7 @@
 		"geometry": {"type": "Point", "coordinates": [-73.6103641, 45.4972159]},
 		"id":"369",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15884'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton15884-05d82.jpg?1540366910' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>Economie<\/span><br>Au Canada, la l\u00e9galisation du cannabis profite d\u2019abord aux gros producteurs<\/a><br>publi\u00e9 le 24 octobre 2018.<div class=nettoyeur><\/div>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15884'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton15884-05d82.jpg?1540366910' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>\u00c9conomie<\/span><br>Au Canada, la l\u00e9galisation du cannabis profite d\u2019abord aux gros producteurs<\/a><br>publi\u00e9 le 24 octobre 2018.<div class=nettoyeur><\/div>",
 			"description":"",
 		"icon": "\/images\/marker_rond.png",	
 		"icon_size": [12,12],
@@ -5364,8 +5438,8 @@
 		"geometry": {"type": "Point", "coordinates": [-1.6800498962402346, 48.11362053786795]},
 		"id":"216",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15012'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton15012-b11b6.jpg?1529141130' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>Economie<\/span><br>Partout en France, \u00e9leveurs et filateurs font\u00a0rena\u00eetre la\u00a0fili\u00e8re laine<\/a><br>publi\u00e9 le 16 juin 2018.<div class=nettoyeur><\/div>",
-			"description":"",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15012'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton15012-b11b6.jpg?1529141130' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>\u00c9conomie<\/span><br>Partout en France, \u00e9leveurs et filateurs font\u00a0rena\u00eetre la\u00a0fili\u00e8re laine<\/a><br>publi\u00e9 le 16 juin 2018.<div class=nettoyeur><\/div>",
+			"description":"<p>Ringardis\u00e9e par les fibres synth\u00e9tiques, la laine est devenue un sous-produit voire un d\u00e9chet de l&#8217;\u00e9levage de moutons. Mais des collectifs \u00e9mergent dans toute la France pour la revaloriser\u00a0: races locales, circuits courts, renouveau des anciens m\u00e9tiers - la laine rena\u00eet en France.<\/p>",
 		"icon": "\/images\/marker_rond.png",	
 		"icon_size": [12,12],
 		"icon_anchor": [6,6]		
@@ -5374,8 +5448,8 @@
 		"geometry": {"type": "Point", "coordinates": [-1.5951475, 49.2353152]},
 		"id":"770",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15012'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton15012-b11b6.jpg?1529141130' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>Economie<\/span><br>Partout en France, \u00e9leveurs et filateurs font\u00a0rena\u00eetre la\u00a0fili\u00e8re laine<\/a><br>publi\u00e9 le 16 juin 2018.<div class=nettoyeur><\/div>",
-			"description":"",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15012'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton15012-b11b6.jpg?1529141130' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>\u00c9conomie<\/span><br>Partout en France, \u00e9leveurs et filateurs font\u00a0rena\u00eetre la\u00a0fili\u00e8re laine<\/a><br>publi\u00e9 le 16 juin 2018.<div class=nettoyeur><\/div>",
+			"description":"<p>Ringardis\u00e9e par les fibres synth\u00e9tiques, la laine est devenue un sous-produit voire un d\u00e9chet de l&#8217;\u00e9levage de moutons. Mais des collectifs \u00e9mergent dans toute la France pour la revaloriser\u00a0: races locales, circuits courts, renouveau des anciens m\u00e9tiers - la laine rena\u00eet en France.<\/p>",
 		"icon": "\/images\/marker_rond.png",	
 		"icon_size": [12,12],
 		"icon_anchor": [6,6]		
@@ -5384,7 +5458,7 @@
 		"geometry": {"type": "Point", "coordinates": [5.048752, 44.0554997]},
 		"id":"667",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=14028'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton14028-238ab.jpg?1517990377' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>Economie<\/span><br>Contre la <span class='caps'>BNP<\/span> et l'\u00e9vasion fiscale, les militants ont\u00a0fait\u00a0le\u00a0plein \u00e0 Carpentras<\/a><br>publi\u00e9 le 7 f\u00e9vrier 2018.<div class=nettoyeur><\/div>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=14028'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton14028-238ab.jpg?1517990377' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>\u00c9conomie<\/span><br>Contre la <span class='caps'>BNP<\/span> et l'\u00e9vasion fiscale, les militants ont\u00a0fait\u00a0le\u00a0plein \u00e0 Carpentras<\/a><br>publi\u00e9 le 7 f\u00e9vrier 2018.<div class=nettoyeur><\/div>",
 			"description":"",
 		"icon": "\/images\/marker_rond.png",	
 		"icon_size": [12,12],
@@ -5394,7 +5468,7 @@
 		"geometry": {"type": "Point", "coordinates": [3.3721049, 45.5519544]},
 		"id":"626",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=13571'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton13571-4ebe1.jpg?1511946485' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>Economie<\/span><br>En Auvergne, un magasin autog\u00e9r\u00e9 sauve un village de la d\u00e9sertification<\/a><br>publi\u00e9 le 29 novembre 2017.<div class=nettoyeur><\/div>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=13571'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton13571-4ebe1.jpg?1511946485' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>\u00c9conomie<\/span><br>En Auvergne, un magasin autog\u00e9r\u00e9 sauve un village de la d\u00e9sertification<\/a><br>publi\u00e9 le 29 novembre 2017.<div class=nettoyeur><\/div>",
 			"description":"",
 		"icon": "\/images\/marker_rond.png",	
 		"icon_size": [12,12],
@@ -5404,7 +5478,7 @@
 		"geometry": {"type": "Point", "coordinates": [90.2932426, 24.4768783]},
 		"id":"365",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=12109'});\" ><span style='color:black;'>Economie<\/span><br>4 ans apr\u00e8s le drame du Rana Plaza, peu d'am\u00e9lioration pour les travailleurs au Bangladesh<\/a><br>publi\u00e9 le 25 avril 2017.<div class=nettoyeur><\/div>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=12109'});\" ><span style='color:black;'>\u00c9conomie<\/span><br>4 ans apr\u00e8s le drame du Rana Plaza, peu d'am\u00e9lioration pour les travailleurs au Bangladesh<\/a><br>publi\u00e9 le 25 avril 2017.<div class=nettoyeur><\/div>",
 			"description":"",
 		"icon": "\/images\/marker_rond.png",	
 		"icon_size": [12,12],
@@ -5414,7 +5488,7 @@
 		"geometry": {"type": "Point", "coordinates": [89.629548, 27.4727617]},
 		"id":"274",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=11582'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH75\/arton11582-012fc.jpg?1513008742' width='100' height='75' style='margin-right:5px;float:left;' \/><span style='color:black;'>Economie<\/span><br>Au Bhoutan, le bonheur brut est serein malgr\u00e9 les nuages<\/a><br>publi\u00e9 le 11 f\u00e9vrier 2017.<div class=nettoyeur><\/div>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=11582'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH75\/arton11582-012fc.jpg?1513008742' width='100' height='75' style='margin-right:5px;float:left;' \/><span style='color:black;'>\u00c9conomie<\/span><br>Au Bhoutan, le bonheur brut est serein malgr\u00e9 les nuages<\/a><br>publi\u00e9 le 11 f\u00e9vrier 2017.<div class=nettoyeur><\/div>",
 			"description":"",
 		"icon": "\/images\/marker_rond.png",	
 		"icon_size": [12,12],
@@ -5424,7 +5498,7 @@
 		"geometry": {"type": "Point", "coordinates": [89.629548, 27.4727617]},
 		"id":"275",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=11582'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH75\/arton11582-012fc.jpg?1513008742' width='100' height='75' style='margin-right:5px;float:left;' \/><span style='color:black;'>Economie<\/span><br>Au Bhoutan, le bonheur brut est serein malgr\u00e9 les nuages<\/a><br>publi\u00e9 le 11 f\u00e9vrier 2017.<div class=nettoyeur><\/div>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=11582'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH75\/arton11582-012fc.jpg?1513008742' width='100' height='75' style='margin-right:5px;float:left;' \/><span style='color:black;'>\u00c9conomie<\/span><br>Au Bhoutan, le bonheur brut est serein malgr\u00e9 les nuages<\/a><br>publi\u00e9 le 11 f\u00e9vrier 2017.<div class=nettoyeur><\/div>",
 			"description":"",
 		"icon": "\/images\/marker_rond.png",	
 		"icon_size": [12,12],
@@ -5434,7 +5508,7 @@
 		"geometry": {"type": "Point", "coordinates": [-1.0533075, 43.7080596]},
 		"id":"179",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=11317'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton11317-aeab5.jpg?1513008742' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>Economie<\/span><br> Mobilisation r\u00e9ussie\u00a0: \u00e0 Dax, les faucheurs de chaises l'ont emport\u00e9 sur la banque fraudeuse<\/a><br>publi\u00e9 le 10 janvier 2017.<div class=nettoyeur><\/div>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=11317'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton11317-aeab5.jpg?1513008742' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>\u00c9conomie<\/span><br> Mobilisation r\u00e9ussie\u00a0: \u00e0 Dax, les faucheurs de chaises l'ont emport\u00e9 sur la banque fraudeuse<\/a><br>publi\u00e9 le 10 janvier 2017.<div class=nettoyeur><\/div>",
 			"description":"",
 		"icon": "\/images\/marker_rond.png",	
 		"icon_size": [12,12],
@@ -5444,7 +5518,7 @@
 		"geometry": {"type": "Point", "coordinates": [4.3600687, 43.8374249]},
 		"id":"243",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=9364'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton9364-3e223.jpg?1513008742' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>Economie<\/span><br>Pour se lib\u00e9rer de la grande distribution, les boutiques paysannes se multiplient<\/a><br>publi\u00e9 le 26 mars 2016.<div class=nettoyeur><\/div>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=9364'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton9364-3e223.jpg?1513008742' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>\u00c9conomie<\/span><br>Pour se lib\u00e9rer de la grande distribution, les boutiques paysannes se multiplient<\/a><br>publi\u00e9 le 26 mars 2016.<div class=nettoyeur><\/div>",
 			"description":"",
 		"icon": "\/images\/marker_rond.png",	
 		"icon_size": [12,12],
@@ -5454,7 +5528,7 @@
 		"geometry": {"type": "Point", "coordinates": [3.8304162, 43.5679034]},
 		"id":"244",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=9364'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton9364-3e223.jpg?1513008742' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>Economie<\/span><br>Pour se lib\u00e9rer de la grande distribution, les boutiques paysannes se multiplient<\/a><br>publi\u00e9 le 26 mars 2016.<div class=nettoyeur><\/div>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=9364'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton9364-3e223.jpg?1513008742' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>\u00c9conomie<\/span><br>Pour se lib\u00e9rer de la grande distribution, les boutiques paysannes se multiplient<\/a><br>publi\u00e9 le 26 mars 2016.<div class=nettoyeur><\/div>",
 			"description":"",
 		"icon": "\/images\/marker_rond.png",	
 		"icon_size": [12,12],
@@ -5464,7 +5538,7 @@
 		"geometry": {"type": "Point", "coordinates": [19.0404707, 47.4983815]},
 		"id":"55",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7444'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH69\/arton7444-138a4.jpg?1513008742' width='100' height='69' style='margin-right:5px;float:left;' \/><span style='color:black;'>Economie<\/span><br>Vous voulez des emplois<small class='fine'>\u00a0<\/small>? Choisissez la d\u00e9croissance<\/a><br>publi\u00e9 le 9 mai 2015.<div class=nettoyeur><\/div>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7444'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH69\/arton7444-138a4.jpg?1513008742' width='100' height='69' style='margin-right:5px;float:left;' \/><span style='color:black;'>\u00c9conomie<\/span><br>Vous voulez des emplois<small class='fine'>\u00a0<\/small>? Choisissez la d\u00e9croissance<\/a><br>publi\u00e9 le 9 mai 2015.<div class=nettoyeur><\/div>",
 			"description":"",
 		"icon": "\/images\/marker_rond.png",	
 		"icon_size": [12,12],
@@ -5474,7 +5548,7 @@
 		"geometry": {"type": "Point", "coordinates": [1.9737186, 47.9200018]},
 		"id":"31",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7061'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH102\/arton7061-7f111.jpg?1513008742' width='100' height='102' style='margin-right:5px;float:left;' \/><span style='color:black;'>Economie<\/span><br>L'\u00e9vasion fiscale \u00e0 travers l'exemple de la famille Mulliez (Auchan)<\/a><br>publi\u00e9 le 14 mars 2015.<div class=nettoyeur><\/div>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=7061'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH102\/arton7061-7f111.jpg?1513008742' width='100' height='102' style='margin-right:5px;float:left;' \/><span style='color:black;'>\u00c9conomie<\/span><br>L'\u00e9vasion fiscale \u00e0 travers l'exemple de la famille Mulliez (Auchan)<\/a><br>publi\u00e9 le 14 mars 2015.<div class=nettoyeur><\/div>",
 			"description":"",
 		"icon": "\/images\/marker_rond.png",	
 		"icon_size": [12,12],
@@ -5484,7 +5558,7 @@
 		"geometry": {"type": "Point", "coordinates": [2.3580232, 48.935773]},
 		"id":"17",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6938'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton6938-37688.jpg?1513008743' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>Economie<\/span><br>\u00c0 Saint-Denis, l'Amap est anarchiste et \u00e7a marche tr\u00e8s bien<\/a><br>publi\u00e9 le 16 f\u00e9vrier 2015.<div class=nettoyeur><\/div>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=6938'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton6938-37688.jpg?1513008743' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>\u00c9conomie<\/span><br>\u00c0 Saint-Denis, l'Amap est anarchiste et \u00e7a marche tr\u00e8s bien<\/a><br>publi\u00e9 le 16 f\u00e9vrier 2015.<div class=nettoyeur><\/div>",
 			"description":"",
 		"icon": "\/images\/marker_rond.png",	
 		"icon_size": [12,12],
@@ -5494,7 +5568,7 @@
 		"geometry": {"type": "Point", "coordinates": [5.6295178, 43.2961722]},
 		"id":"356",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=5110'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton5110-a6c07.jpg?1513008743' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>Economie<\/span><br>Les ouvriers de Fralib luttent depuis mille jours pour lancer une coop\u00e9rative \u00e9cologique<\/a><br>publi\u00e9 le 6 d\u00e9cembre 2013.<div class=nettoyeur><\/div>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=5110'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton5110-a6c07.jpg?1513008743' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>\u00c9conomie<\/span><br>Les ouvriers de Fralib luttent depuis mille jours pour lancer une coop\u00e9rative \u00e9cologique<\/a><br>publi\u00e9 le 6 d\u00e9cembre 2013.<div class=nettoyeur><\/div>",
 			"description":"",
 		"icon": "\/images\/marker_rond.png",	
 		"icon_size": [12,12],
@@ -5820,7 +5894,7 @@
 		"geometry": {"type": "Point", "coordinates": [-1.4764192, 48.0061864]},
 		"id":"536",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=12959'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton12959-600f4.jpg?1511609893' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>Agriculture<\/span><br>En Bretagne, une pollution de Lactalis a d\u00e9vast\u00e9 une rivi\u00e8re<\/a><br>publi\u00e9 le 8 septembre 2017.<div class=nettoyeur><\/div>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=12959'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton12959-600f4.jpg?1511609893' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>Agriculture<\/span><br>En Bretagne, une pollution de Lactalis a d\u00e9vast\u00e9 une\u00a0rivi\u00e8re<\/a><br>publi\u00e9 le 8 septembre 2017.<div class=nettoyeur><\/div>",
 			"description":"",
 		"icon": "\/images\/marker_rond.png",	
 		"icon_size": [12,12],
@@ -6293,6 +6367,16 @@
 ,
 
 		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.4692947, 43.4547814]},
+		"id":"235",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16399'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH71\/arton16399-1af65.jpg?1547115103' width='100' height='71' style='margin-right:5px;float:left;' \/><span style='color:black;'>Energie<\/span><br>En gr\u00e8ve, la centrale \u00e0 charbon de Gardanne se cherche un avenir <\/a><br>publi\u00e9 le 10 janvier 2019.<div class=nettoyeur><\/div>",
+			"description":"",
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+		}},
+		{"type": "Feature",
 		"geometry": {"type": "Point", "coordinates": [2.809572608723186, 44.0500454]},
 		"id":"801",
 		"properties": {
@@ -6317,26 +6401,6 @@
 		"id":"774",
 		"properties": {
 			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=15046'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton15046-890f1.jpg?1529478809' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>Energie<\/span><br>M.\u00a0Hulot autorise un projet de transformateur \u00e9lectrique contest\u00e9 en Aveyron<\/a><br>publi\u00e9 le 20 juin 2018.<div class=nettoyeur><\/div>",
-			"description":"",
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]		
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [-71.3187697, -31.7613365]},
-		"id":"716",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=14450'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton14450-e0d9b.jpg?1522828042' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>Energie<\/span><br>Engie pollue le nord du Chili avec d'antiques centrales \u00e0 charbon <\/a><br>publi\u00e9 le 4 avril 2018.<div class=nettoyeur><\/div>",
-			"description":"",
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]		
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [-71.3187697, -31.7613365]},
-		"id":"717",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=14450'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton14450-e0d9b.jpg?1522828042' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>Energie<\/span><br>Engie pollue le nord du Chili avec d'antiques centrales \u00e0 charbon <\/a><br>publi\u00e9 le 4 avril 2018.<div class=nettoyeur><\/div>",
 			"description":"",
 		"icon": "\/images\/marker_rond.png",	
 		"icon_size": [12,12],
@@ -6891,6 +6955,16 @@
 
 ,
 
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.4325275421142583, 48.88794380702432]},
+		"id":"858",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=16226'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton16226-51f60.jpg?1544208179' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>Luttes<\/span><br>La Corniche des forts de Romainville d\u00e9cr\u00e9t\u00e9e \u00ab<small class='fine'>\u00a0<\/small>for\u00eat \u00e0 d\u00e9fendre<small class='fine'>\u00a0<\/small>\u00bb<\/a><br>publi\u00e9 le 7 d\u00e9cembre 2018.<div class=nettoyeur><\/div>",
+			"description":"",
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+		}},
 		{"type": "Feature",
 		"geometry": {"type": "Point", "coordinates": [5.386519432067871, 43.29529882421918]},
 		"id":"957",

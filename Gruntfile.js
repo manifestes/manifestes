@@ -167,6 +167,10 @@ module.exports = function(grunt) {
           
           'src/vendor/markdown/lib/markdown.js',
           'src/vendor/js-yaml/dist/js-yaml.min.js',
+          
+          'src/js/sigmajs/sigma.min.js',
+          'src/js/sigmajs/plugins/sigma.parsers.gexf.min.js',
+
           'src/js/*.js'
         ],
         dest: 'build/js/<%= pkg.name %>.js'

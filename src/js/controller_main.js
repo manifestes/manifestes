@@ -1022,7 +1022,7 @@ angular.module('manifest.maincontroller', ['underscore','settings'])
         //   }
         //   return {yo:"trop"};
         // },
-        callTip: function(text, val) {
+        buildTip: function(text, val) {
           var d = val.layer.options.raw;
           var sou = '<span class="markdiv-'+d.credit.color+' source">'+d.credit.slug+'</span> ';
           var add = d.address ? ' <span class="address">'+totext(d.address)+'</span>' : "";
