@@ -1381,18 +1381,6 @@
 			"popup_anchor": [0,0]
 		}},
 		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [7.350453, 47.865614]},
-		"id":"200",
-		"properties": {
-			"title":"Ensisheim (68190)",
-			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.alterjt.tv\/ungersheim-le-village-le-plus-ecolo-de-france\/' target='_blank'>Ungersheim&nbsp;: le village le plus \u00e9colo de France&nbsp;?<\/a><\/div>\n\t<div class=\"texte\">A Ungersheim (Haut Rhin), la transition \u00e9nerg\u00e9tique est largement entam\u00e9e : Photovolta\u00efque, ceinture maraich\u00e8re, monnaie locale, transport \u00e9questre\u2026 et 21 utopies concr\u00eates mises en oeuvre. Jean- Claude Mensch, le maire du village, nous livre ses recettes miracles&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
-		  ,
-			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
-			"icon_size": [33,33],
-			"icon_anchor": [16.5,16.5],
-			"popup_anchor": [0,0]
-		}},
-		{"type": "Feature",
 		"geometry": {"type": "Point", "coordinates": [1.907818, 48.993691]},
 		"id":"201",
 		"properties": {
@@ -2249,9 +2237,9 @@
 		"id":"275",
 		"properties": {
 			"title":"Paris (75010)",
-			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/' target='_blank'>Reporterre, le quotidien de l \u2019\u00e9cologie<\/a><\/div>\n\t<div class=\"texte\">La crise \u00e9cologique est plus aigu\u00eb que jamais. Le monde va devoir changer. Mais on ne peut plus traiter l\u2019\u00e9cologie ind\u00e9pendamment de la crise sociale qui lui est li\u00e9e et qui empire elle aussi de jour en jour. Pour r\u00e9fl\u00e9chir \u00e0 ces nouvelles questions et discuter des solutions, Reporterre veut \u00eatre le&nbsp;(...)<\/div>\n<\/div>","id_mot": "128"
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/' target='_blank'>Reporterre, le quotidien de l\u2019\u00e9cologie<\/a><\/div>\n\t<div class=\"texte\">La crise \u00e9cologique est plus aigu\u00eb que jamais. Le monde va devoir changer. Mais on ne peut plus traiter l\u2019\u00e9cologie ind\u00e9pendamment de la crise sociale qui lui est li\u00e9e et qui empire elle aussi de jour en jour. Pour r\u00e9fl\u00e9chir \u00e0 ces nouvelles questions et discuter des solutions, Reporterre veut \u00eatre le&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
 		  ,
-			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-128.png",
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
 			"icon_size": [33,33],
 			"icon_anchor": [16.5,16.5],
 			"popup_anchor": [0,0]
@@ -2437,23 +2425,11 @@
 			"popup_anchor": [0,0]
 		}},
 		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.345186, 48.831283]},
-		"id":"293",
-		"properties": {
-			"title":"Paris (75013)",
-			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.transrural-initiatives.org\/' target='_blank'>Transrural initiatives \u25cf La revue des territoires ruraux | Mensuel d&#8217;information rurale<\/a><\/div>\n\t<div class=\"texte\">Transrural initiatives est une revue mensuelle d\u2019information sur le monde rural. Elle est publi\u00e9e par l\u2019ADIR (Agence de diffusion et d\u2019information rurales), association d\u2019\u00e9dition de l\u2019AFIP, de la FNCivam,  du MRJC et de la CNFR.<\/div>\n<\/div>","id_mot": "128"
-		  ,
-			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-128.png",
-			"icon_size": [33,33],
-			"icon_anchor": [16.5,16.5],
-			"popup_anchor": [0,0]
-		}},
-		{"type": "Feature",
 		"geometry": {"type": "Point", "coordinates": [2.454781, 48.874937]},
 		"id":"294",
 		"properties": {
 			"title":"Montreuil (93100)",
-			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.zelium.info\/' target='_blank'>Z\u00e9lium | Journal satirique, livres et b\u00e9d\u00e9s<\/a><\/div>\n\t<div class=\"texte\">Notre projet \u00e9ditorial est n\u00e9 d\u2019un constat simple :  plus on est de fous, plus on rit !\n\n Z\u00e9lium, c\u2019est une centaine de b\u00e9n\u00e9voles, dessinateurs, journalistes et chroniqueurs,  qui a d\u00e9cid\u00e9, malgr\u00e9 la crise de la presse et la pr\u00e9dominance du mod\u00e8le num\u00e9rique, de faire le pari d\u2019une publication satirique&nbsp;(...)<\/div>\n<\/div>","id_mot": "128"
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/www.zelium.info\/' target='_blank'>Z\u00e9lium | Journal satirique, livres et b\u00e9d\u00e9s<\/a><\/div>\n\t<div class=\"texte\">Notre projet \u00e9ditorial est n\u00e9 d\u2019un constat simple :  plus on est de fous, plus on rit !\n\nZ\u00e9lium, c\u2019est une centaine de b\u00e9n\u00e9voles, dessinateurs, journalistes et chroniqueurs,  qui a d\u00e9cid\u00e9, malgr\u00e9 la crise de la presse et la pr\u00e9dominance du mod\u00e8le num\u00e9rique, de faire le pari d\u2019une publication satirique&nbsp;(...)<\/div>\n<\/div>","id_mot": "128"
 		  ,
 			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-128.png",
 			"icon_size": [33,33],
@@ -3126,18 +3102,6 @@
 		"properties": {
 			"title":"Langouet (35630)",
 			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/reporterre.net\/Langouet-la-commune-bretonne-qui-a-dit-non-aux-energies-fossiles' target='_blank'>Langou\u00ebt, la commune bretonne qui a dit non aux \u00e9nergies fossiles<\/a><\/div>\n\t<div class=\"texte\">Langou\u00ebt (Ille-et-Vilaine) a d\u00e9cid\u00e9 en 2003 de se passer des \u00e9nergies fossiles. La commune est en passe d\u2019y parvenir, prouvant que la transition \u00e9nerg\u00e9tique est possible, m\u00eame \u00e0 l\u2019\u00e9chelle d\u2019une ville sans technicien ni moyens financiers&nbsp;(...)<\/div>\n<\/div>","id_mot": "127"
-		  ,
-			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-127.png",
-			"icon_size": [33,33],
-			"icon_anchor": [16.5,16.5],
-			"popup_anchor": [0,0]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [-21.9422366, 64.145981]},
-		"id":"381",
-		"properties": {
-			"title":"Reykjavik",
-			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/limprevu.fr\/affaire-a-suivre\/lislande-future-chaudiere-de-leurope\/' target='_blank'>L&#8217;Islande, future chaudi\u00e8re de l&#8217;Europe&nbsp;?<\/a><\/div>\n\t<div class=\"texte\">\u00c0 l\u2019heure o\u00f9 la plupart des pays europ\u00e9ens peinent \u00e0 atteindre les 20 ou 30% d\u2019\u00e9nergies renouvelables, l\u2019Islande satisfait 80% de ses besoins \u00e9nerg\u00e9tiques gr\u00e2ce \u00e0 l\u2019hydro\u00e9lectricit\u00e9 et la g\u00e9othermie, deux sources d\u2019\u00e9nergies vertes. Isol\u00e9 dans l\u2019oc\u00e9an, le pays envisage d\u2019exporter ses ressources vers&nbsp;(...)<\/div>\n<\/div>","id_mot": "127"
 		  ,
 			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-127.png",
 			"icon_size": [33,33],
@@ -6066,6 +6030,2118 @@
 		"properties": {
 			"title":"Rome",
 			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.kaizen-magazine.com\/article\/italie-les-femmes-au-coeur-de-lagriculture-de-demain\/' target='_blank'>Italie&nbsp;: les femmes au c\u0153ur de l\u2019agriculture de demain<\/a><\/div>\n\t<div class=\"texte\">Depuis 1999, Donne in Campo (\u00ab Femmes au champ \u00bb) aide les agricultrices italiennes \u00e0 se mettre en r\u00e9seau afin de rompre leur isolement et de soutenir leurs initiatives. L\u2019association regroupe aujourd\u2019hui quelque quinze mille membres aux id\u00e9es innovantes. Dans le champ, c\u2019est une femme qui est sur le&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.370637, 49.181339]},
+		"id":"631",
+		"properties": {
+			"title":"Caen (14000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/Dans-le-Calvados-des-habitants-aident-les-migrants-qu-abandonnent-les-autorites' target='_blank'>Dans le Calvados, des habitants aident les migrants abandonn\u00e9s par les autorit\u00e9s<\/a><\/div>\n\t<div class=\"texte\">En Normandie, le port de Ouistreham est apr\u00e8s Calais le deuxi\u00e8me point de d\u00e9part de la France vers l\u2019Angleterre. Les 110.000 camions annuels qui traversent la mer aimantent les exil\u00e9s. Pour pallier l\u2019inaction du maire de la commune, un collectif d\u2019habitants a vu le jour pour leur venir en aide.&nbsp;(...)<\/div>\n<\/div>","id_mot": "41"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/plugins\/carteppi\/images\/marker_defaut.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [4.874364, 45.525351]},
+		"id":"632",
+		"properties": {
+			"title":"Vienne (38200)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.rue89lyon.fr\/2019\/01\/31\/quand-luniversite-populaire-du-pays-viennois-enseigne-grace-a-des-conferences-gesticulees\/' target='_blank'>Les conf\u00e9rences gesticul\u00e9es de l&#8217;universit\u00e9 populaire du pays viennois<\/a><\/div>\n\t<div class=\"texte\">C\u00e9dric Deglise a cr\u00e9\u00e9 en 2016 l\u2019Universit\u00e9 Populaire du pays viennois, dont le but tient en une expression simple, \u00ab transmettre des savoirs au plus grand nombre \u00bb. A l\u2019occasion de la deuxi\u00e8me \u00e9dition du \u00ab Gestival \u00bb (du 1er au 3 f\u00e9vrier), entendons ce qu\u2019est le principe de la conf\u00e9rence&nbsp;(...)<\/div>\n<\/div>","id_mot": "117"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-117.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [1.855514, 50.946642]},
+		"id":"633",
+		"properties": {
+			"title":"Calais (62100)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/lundi.am\/Resistance-solidaire' target='_blank'>R\u00e9sistance solidaire<\/a><\/div>\n\t<div class=\"texte\">C\u2019est une phrase entendue de la bouche d\u2019un b\u00e9n\u00e9vole travaillant \u00e0 \u00ab l\u2019Auberge \u00bb depuis presque 7 mois. C\u2019est ce t\u00e9moignage et cette r\u00e9flexion marquante, attrap\u00e9s entre deux caf\u00e9s en fin de journ\u00e9e, que j\u2019ai voulu mettre en avant suite aux quinze jours pass\u00e9s \u00e0 photographier la&nbsp;(...)<\/div>\n<\/div>","id_mot": "41"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/plugins\/carteppi\/images\/marker_defaut.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.579717, 44.837663]},
+		"id":"634",
+		"properties": {
+			"title":"Bordeaux (33000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/rue89bordeaux.com\/2019\/02\/escale-des-familles-reconfortante-a-bordeaux\/' target='_blank'>Une escale r\u00e9confortante \u00e0 Bordeaux pour les familles en errance <\/a><\/div>\n\t<div class=\"texte\">Install\u00e9e depuis le mois d\u2019octobre au sein de l\u2019Espace Solidarit\u00e9 du Secours Populaire \u00e0 Bordeaux, l\u2019Escale des familles est la nouvelle halte de jour des familles sans logement fixe. Dans ce lieu chaleureux et convivial, les parents peuvent suivre des cours de fran\u00e7ais, \u00eatre accompagn\u00e9s dans les&nbsp;(...)<\/div>\n<\/div>","id_mot": "41"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/plugins\/carteppi\/images\/marker_defaut.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [13.3888599, 52.5170365]},
+		"id":"635",
+		"properties": {
+			"title":"Berlin (10117)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.bastamag.net\/Face-a-l-explosion-des-loyers-a-Berlin-un-puissant-mouvement-d-habitants-veut' target='_blank'>Face \u00e0 l\u2019explosion des loyers \u00e0 Berlin, un puissant mouvement d\u2019habitants veut exproprier les gros bailleurs priv\u00e9s<\/a><\/div>\n\t<div class=\"texte\">En France, les loyers continuent d\u2019augmenter, le mal-logement de s\u2019enraciner avec 4 millions de personnes concern\u00e9es, alors que la loi Elan ouvre la (...)<\/div>\n<\/div>","id_mot": "70"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-70.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [1.189486, 47.260183]},
+		"id":"636",
+		"properties": {
+			"title":"C\u00e9r\u00e9-la-Ronde (37460)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/larotative.info\/l-ecole-montessori-de-cere-la-3163.html' target='_blank'>\u00c9cole Montessori \u00e0 C\u00e9r\u00e9-la-Ronde&nbsp;: pol\u00e9mique autour de la lib\u00e9ralisation du march\u00e9 scolaire<\/a><\/div>\n\t<div class=\"texte\">Le collectif Questions de classe(s) relaie la pol\u00e9mique n\u00e9e autour de l\u2019ouverture d\u2019une \u00e9cole dans la commune de C\u00e9r\u00e9-la-Ronde, en Indre-et-Loire, en lieu et place de l\u2019\u00e9cole publique ferm\u00e9e faute d\u2019effectif suffisant. - \u00e0 lire ailleurs \/ Education -&nbsp;(...)<\/div>\n<\/div>","id_mot": "117"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-117.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-1.747014, 48.549252]},
+		"id":"637",
+		"properties": {
+			"title":"Dol-de-Bretagne (35120)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.lagedefaire-lejournal.fr\/a-dol-des-habitants-revolutionnent-lassainissement\/' target='_blank'>A Dol, des habitants r\u00e9volutionnent l\u2019assainissement<\/a><\/div>\n\t<div class=\"texte\">En Bretagne, un projet d\u2019habitat participatif a pr\u00e9vu un syst\u00e8me d\u2019assainissement \u00e9cologique dans la conception des b\u00e2timents. Une premi\u00e8re en France, qui fait d\u00e9j\u00e0...  Cet article A Dol, des habitants r\u00e9volutionnent l\u2019assainissement est apparu en premier sur Le site du journal L\u2019age de&nbsp;(...)<\/div>\n<\/div>","id_mot": "70"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-70.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [7.746735, 48.58353]},
+		"id":"638",
+		"properties": {
+			"title":"Strasbourg (67000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/feedproxy.google.com\/~r\/Rue89Strasbourg\/~3\/sn_nfpdDUrg\/kenya-lingolsheim-parcours-zakaria-adika-professeur-polyglotte-147122' target='_blank'>Du Kenya \u00e0 Lingolsheim, le parcours de Zakaria, professeur polyglotte<\/a><\/div>\n\t<div class=\"texte\">Gagne \u00e0 \u00eatre connu-e. Professeur d\u2019anglais en coll\u00e8ge, Zakaria Adika transmet ses comp\u00e9tences pointues en langues vivantes et son caract\u00e8re de bosseur du cot\u00e9 de Lingolsheim. Arriv\u00e9 en 2004 du Kenya... [Cliquez sur le titre pour lire la suite de&nbsp;(...)<\/div>\n<\/div>"
+			,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/plugins\/carteppi\/images\/marker_defaut.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [4.8353, 45.7579]},
+		"id":"639",
+		"properties": {
+			"title":"Lyon (69000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.rue89lyon.fr\/2019\/02\/11\/greve-au-college-gabriel-rosset-de-lyon-le-personnel-educatif-denonce-une-mauvaise-gestion-de-letablissement-classe-en-rep\/' target='_blank'>Gr\u00e8ve au coll\u00e8ge Gabriel Rosset de Lyon&nbsp;: le personnel d\u00e9nonce la gestion de l\u2019\u00e9tablissement class\u00e9 en REP<\/a><\/div>\n\t<div class=\"texte\">L\u2019\u00e9quipe \u00e9ducative du coll\u00e8ge Gabriel Rosset (Lyon 7e) s\u2019est mobilis\u00e9e ce lundi 11 f\u00e9vrier pour d\u00e9noncer le d\u00e9ficit de direction de leur \u00e9tablissement class\u00e9 en REP, ainsi que le manque de moyens mat\u00e9riels. Une alerte qui devrait r\u00e9sonner encore ces prochains jours. Contact\u00e9s par Rue89Lyon, le Rectorat&nbsp;(...)<\/div>\n<\/div>"
+			,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/plugins\/carteppi\/images\/marker_defaut.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.3806, 43.2804]},
+		"id":"640",
+		"properties": {
+			"title":"Marseille (13000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/marcelle.media\/2019\/02\/13\/au-gyptis-les-habitants-font-leur-cinema\/' target='_blank'>Le Gyptis, une oasis dans un d\u00e9sert culturel<\/a><\/div>\n\t<div class=\"texte\">Marre des blockbusters am\u00e9ricains et des tickets hors de prix ? Gros plan sur le Gyptis, qui f\u00eatera ses cinq ans cette ann\u00e9e. Port\u00e9 par une \u00e9quipe de la Friche, ce cin\u00e9ma fait le pari d\u2019une programmation exigeante, au c\u0153ur des quartiers.<\/div>\n<\/div>","id_mot": "117"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-117.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.579717, 44.837663]},
+		"id":"641",
+		"properties": {
+			"title":"Bordeaux (33000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/rue89bordeaux.com\/2019\/02\/bordeaux-enquete-racisme-lantisemitisme\/' target='_blank'>Bordeaux enqu\u00eate sur le racisme et l\u2019antis\u00e9mitisme<\/a><\/div>\n\t<div class=\"texte\">L\u2019Observatoire bordelais de l\u2019Egalit\u00e9 vient de lancer une grande enqu\u00eate sur le racisme et l\u2019antis\u00e9mitisme. Pr\u00e9sent\u00e9e lundi par Alain Jupp\u00e9, elle aura pour objectif d\u2019\u00e9laborer un Plan local de lutte dans \u00ab un contexte local et national fragile \u00bb, explique Marik Fetouh dans un entretien \u00e0 Rue89 Bordeaux.&nbsp;(...)<\/div>\n<\/div>"
+			,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/plugins\/carteppi\/images\/marker_defaut.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-99.1333416, 19.4326009]},
+		"id":"642",
+		"properties": {
+			"title":"Mexico (06060)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/rapportsdeforce.fr\/pouvoir-et-contre-pouvoir\/25-ans-dinsurrection-zapatiste-cest-une-forme-de-democratie-reelle-radicale-02203160' target='_blank'>25 ans d\u2019insurrection zapatiste&nbsp;: &#171;&nbsp;C\u2019est une forme de d\u00e9mocratie r\u00e9elle, radicale&nbsp;&#187;<\/a><\/div>\n\t<div class=\"texte\">C\u2019est un anniversaire qui a eu peu d\u2019\u00e9cho dans la presse. Le premier janvier 1994, jour d\u2019entr\u00e9e en vigueur de l\u2019accord de libre-\u00e9change nord-am\u00e9ricain (ALENA), commen\u00e7ait le soul\u00e8vement zapatiste dans le sud du Mexique. Communes autonomes, conseils de bon [\u2026]  L\u2019article 25 ans d\u2019insurrection zapatiste :&nbsp;(...)<\/div>\n<\/div>","id_mot": "215"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-215.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [6.176026, 49.119146]},
+		"id":"643",
+		"properties": {
+			"title":"Metz (57000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/En-Lorraine-le-renouveau-des-microbrasseries-dynamise-les-cultures-d-orge-et-de' target='_blank'>En Lorraine, le renouveau des microbrasseries dynamise les cultures d&#8217;orge et de houblon<\/a><\/div>\n\t<div class=\"texte\">Le rejet des bi\u00e8res industrielles favorise le d\u00e9veloppement des microbrasseries artisanales et locales. En Lorraine, cet engouement porte l\u2019espoir de d\u00e9veloppement de toute une fili\u00e8re, de la consigne de bouteilles aux cultures du houblon et de l\u2019orge.  SP\u00c9CIAL SALON DE L\u2019AGRICULTURE \u2014 \u00c0 l\u2019occasion&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-1.751757, 48.549085]},
+		"id":"644",
+		"properties": {
+			"title":"Dol-de-Bretagne (35120)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.bastamag.net\/Assainissement-ecologique-pour-la-premiere-fois-des-toilettes-seches-vont' target='_blank'>Assainissement \u00e9cologique&nbsp;: pour la premi\u00e8re fois, des toilettes s\u00e8ches vont \u00e9quiper un habitat collectif<\/a><\/div>\n\t<div class=\"texte\">Malgr\u00e9 un certain succ\u00e8s chez des particuliers, dans les festivals de musique et autres \u00e9v\u00e9nements, l\u2019assainissement \u00e9cologique \u2013 comprenez : des toilettes s\u00e8ches qui ne n\u00e9cessitent plus de chasse d\u2019eau et le gaspillage qui l\u2019accompagne \u2013 n\u2019avait pas encore gagn\u00e9 l\u2019habitat collectif. Ce sera bient\u00f4t&nbsp;(...)<\/div>\n<\/div>","id_mot": "70"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-70.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-3.173895, 47.962853]},
+		"id":"645",
+		"properties": {
+			"title":"Bubry (56310)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/Un-couple-de-paysans-s-epanouit-dans-la-recherche-de-l-autonomie' target='_blank'>Un couple de paysans s&#8217;\u00e9panouit dans la recherche de l&#8217;autonomie<\/a><\/div>\n\t<div class=\"texte\">Sur leur ferme de 20 hectares \u00e0 Bubry, dans le Morbihan, Pierre-\u00c9tienne et Marie-\u00c8ve ont install\u00e9 un troupeau de brebis, une tannerie \u00e9cologique, une boulangerie et un petit verger. Ils poursuivent ainsi leur recherche d\u2019autonomie et de coh\u00e9rence.  SP\u00c9CIAL SALON DE L\u2019AGRICULTURE \u2014 \u00c0 l\u2019occasion du&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [18.6915686, 44.5310532]},
+		"id":"646",
+		"properties": {
+			"title":"Tuzla (75000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.politis.fr\/articles\/2019\/03\/guiti-news-partager-linfo-40101\/' target='_blank'>Guiti News&nbsp;: Partager l\u2019info <\/a><\/div>\n\t<div class=\"texte\">Tout juste cr\u00e9\u00e9, le site Guiti News r\u00e9unit des journalistes fran\u00e7ais et r\u00e9fugi\u00e9s. Un projet social et culturel passionnant, abordant tous les sujets par le prisme des migrations.<\/div>\n<\/div>","id_mot": "128"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-128.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.410111, 48.855346]},
+		"id":"647",
+		"properties": {
+			"title":"Paris (75020)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/radioparleur.net\/2019\/03\/07\/biffin-recyclage\/' target='_blank'>Les biffin.es, recyclez y&#8217;a rien \u00e0 voir&nbsp;!<\/a><\/div>\n\t<div class=\"texte\">Les biffin.es, ces chiffonniers du XIXe si\u00e8cle, ont revendiqu\u00e9 vendredi 1er mars le droit de travailler sans \u00eatre pourchass\u00e9.es par la police. Leur activit\u00e9 de recyclage d\u2019objets usag\u00e9s poss\u00e8de en effet une dimension \u00e9cologique qu\u2019ils aimeraient faire reconna\u00eetre. Vendredi 1er mars, place Stalingrad,&nbsp;(...)<\/div>\n<\/div>","id_mot": "118"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-118.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.579717, 44.837663]},
+		"id":"648",
+		"properties": {
+			"title":"Bordeaux (33000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/rue89bordeaux.com\/2019\/03\/jeunes-derriere-premiere-greve-climat-a-bordeaux\/' target='_blank'>Qui sont les jeunes derri\u00e8re la premi\u00e8re &#171;&nbsp;gr\u00e8ve pour le climat&nbsp;&#187; \u00e0 Bordeaux&nbsp;?<\/a><\/div>\n\t<div class=\"texte\">Vendredi aura lieu la premi\u00e8re \u00ab gr\u00e8ve internationale des jeunes pour le climat \u00bb de Bordeaux. Inspir\u00e9s par \u00ab Friday for future \u00bb, mouvement europ\u00e9en contre le changement climatique, des lyc\u00e9ens, coll\u00e9giens et \u00e9tudiants girondins s\u2019organisent depuis plusieurs semaines. Nous les avons rencontr\u00e9s.  The post&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.579717, 44.837663]},
+		"id":"649",
+		"properties": {
+			"title":"Bordeaux (33000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/rue89bordeaux.com\/2019\/03\/fabriquer-planche-de-surf-materiaux-naturels-de-recup-mode-demploi\/' target='_blank'>Fabriquer sa planche de surf en mat\u00e9riaux naturels et de r\u00e9cup, mode d\u2019emploi<\/a><\/div>\n\t<div class=\"texte\">Titouan La Droitte est shaper dans la r\u00e9gion bordelaise. Il est le dernier gagnant du concours \u00ab Creators &amp; innovators upcycle contest \u00bb dont le principe est de cr\u00e9er une planche de surf fonctionnelle \u00e0 partir de mat\u00e9riaux de r\u00e9cup\u00e9ration. Reportage en images sur un processus de cr\u00e9ation innovant.&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [7.746735, 48.58353]},
+		"id":"650",
+		"properties": {
+			"title":"Strasbourg (67000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/feedproxy.google.com\/~r\/Rue89Strasbourg\/~3\/5uBNoxBE2zc\/manifestation-syndicats-amplification-mobilisation-sociale-19-mars-strasbourg-149967' target='_blank'>Manifestation de syndicats pour une &#171;&nbsp;amplification de la mobilisation sociale&nbsp;&#187; mardi<\/a><\/div>\n\t<div class=\"texte\">L\u2019intersyndicale CGT, FO, Solidaires, FSU, Unef, UNL appelle \u00e0 une journ\u00e9e de mobilisation et de gr\u00e8ve mardi 19 mars et esp\u00e8re une \u00ab amplification de la mobilisation sociale. \u00bb Une... [Cliquez sur le titre pour lire la suite de l\u2019article]<\/div>\n<\/div>"
+			,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/plugins\/carteppi\/images\/marker_defaut.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [55.640264, -21.130507]},
+		"id":"651",
+		"properties": {
+			"title":"La Plaine-des-Palmistes (97431)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/marcelle.media\/2019\/03\/18\/projet-theatre-inclusion-ulis-malraux\/' target='_blank'>Le th\u00e9\u00e2tre pour mieux int\u00e9grer les coll\u00e9giens diff\u00e9rents<\/a><\/div>\n\t<div class=\"texte\">Dans un coll\u00e8ge de Marseille, quatre professeures et une attach\u00e9e de vie scolaire se sont lanc\u00e9es dans un pari un peu fou : pr\u00e9senter \u00ab On ne badine pas avec l\u2019amour \u00bb avec un casting de 30 coll\u00e9giens, dont 12 pr\u00e9sentant des troubles tels que la dyslexie ou la dyspraxie. \u00c0 la cl\u00e9 de ce projet inclusif,&nbsp;(...)<\/div>\n<\/div>","id_mot": "117"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-117.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.196514, 44.696235]},
+		"id":"652",
+		"properties": {
+			"title":"Saillans (26340)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/cqfd-journal.org\/Saillans-village-utopique-et' target='_blank'>Saillans, village &#171;&nbsp;utopique et pragmatique&nbsp;&#187;<\/a><\/div>\n\t<div class=\"texte\">Cinq ans apr\u00e8s les \u00e9lections qui ont conduit une liste participative \u00e0 la mairie de Saillans (Dr\u00f4me), de vrais dispositifs de prise de d\u00e9cision alternatifs ont \u00e9t\u00e9 mis en place. Mais l\u2019investissement des habitant.es n\u2019est pas aussi fort qu\u2019esp\u00e9r\u00e9. Reportage et retour d\u2019exp\u00e9rience. Plant\u00e9 au bord des&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.335191, 48.863258]},
+		"id":"667",
+		"properties": {
+			"title":"Paris (75001)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.bondyblog.fr\/les-batisseurs\/mobildouche-lhygiene-partout-et-pour-tous\/' target='_blank'>Mobil&#8217;douche, l&#8217;hygi\u00e8ne partout et pour tous <\/a><\/div>\n\t<div class=\"texte\">Cr\u00e9\u00e9e en 2012, l\u2019association Mobil\u2019douche propose aux sans-abri et aux personnes mal log\u00e9es une toilette, o\u00f9 qu\u2019ils se trouvent. Les b\u00e9n\u00e9voles et permanents de l\u2019association arpentent le sud de Paris et la petite couronne pour offrir \u00e0 ceux qui en ont besoin un des fondamentaux de la dignit\u00e9 :&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [32.8537929, 39.9215219]},
+		"id":"668",
+		"properties": {
+			"title":"Ankara (06660)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.mediapart.fr\/journal\/international\/270319\/fatih-mehmet-macoglu-le-petit-maire-communiste-d-ovacik-qui-voulait-conquerir-la-turquie' target='_blank'>Fatih Mehmet Ma\u00e7oglu, le petit maire communiste d\u2019Ovacik qui voulait conqu\u00e9rir la Turquie<\/a><\/div>\n\t<div class=\"texte\">Seul maire \u00e9tiquet\u00e9 communiste de Turquie, Fatih Mehmet Ma\u00e7oglu a appliqu\u00e9 dans sa bourgade d\u2019Ovacik, au fond des montagnes kurdes du Dersim, un programme \u00ab populaire r\u00e9volutionnaire \u00bb qui a redonn\u00e9 vie \u00e0 l\u2019agriculture et le pouvoir de d\u00e9cision aux habitants. Aux municipales du 31 mars, il entend conqu\u00e9rir&nbsp;(...)<\/div>\n<\/div>","id_mot": "215"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-215.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [3.566354, 47.796826]},
+		"id":"669",
+		"properties": {
+			"title":"Auxerre (89000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/Dans-l-Yonne-la-cooperative-de-consommation-Germinal-prospere-sans-lacher-sur' target='_blank'>Dans l&#8217;Yonne, la coop\u00e9rative de consommation Germinal prosp\u00e8re sans l\u00e2cher sur les principes<\/a><\/div>\n\t<div class=\"texte\">La coop\u00e9rative Germinal s\u2019occupe de quatre magasins bio dans le d\u00e9partement de l\u2019Yonne. Elle est aujourd\u2019hui un exemple dans le monde coop\u00e9ratif du maintien des engagements sur une longue p\u00e9riode. Auxerre (Yonne), reportage  En 1974, des sympathisant\u00b7es auxerrois\u00b7es du jeune mouvement d\u2019agriculture&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [0.618546, 44.202482]},
+		"id":"670",
+		"properties": {
+			"title":"Agen (47000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/rue89bordeaux.com\/2019\/04\/revenu-de-base-teste-grandeur-nature-lot-et-garonne\/' target='_blank'>Le revenu de base test\u00e9 grandeur nature par Tera dans le Lot-et-Garonne<\/a><\/div>\n\t<div class=\"texte\">C\u2019est une utopie les pieds sur terre : alors que l\u2019Assembl\u00e9e Nationale a dit non au revenu de base, l\u2019association \u00ab Tera, un Ecovillage pour le XXIe si\u00e8cle \u00bb exp\u00e9rimente en Lot-et-Garonne les tous premiers revenus d\u2019autonomie vers\u00e9s pour l\u2019instant \u00e0 4 personnes, et \u00e0 85% en monnaie locale. Objectif :&nbsp;(...)<\/div>\n<\/div>","id_mot": "215"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-215.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.348803, 48.898272]},
+		"id":"671",
+		"properties": {
+			"title":"Paris (75018)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/L-ecologie-et-le-social-les-deux-mamelles-de-La-Louve-supermarche-cooperatif-parisien' target='_blank'>L&#8217;\u00e9cologie et le social, les deux mamelles de La Louve, supermarch\u00e9 coop\u00e9ratif parisien<\/a><\/div>\n\t<div class=\"texte\">La Louve est un supermarch\u00e9 coop\u00e9ratif et participatif qui a su reproduire \u00e0 Paris la m\u00e9thode du Park Slope Food Coop new-yorkais n\u00e9 en 1973. Reporterre a assist\u00e9 \u00e0 \u00ab un cr\u00e9neau \u00bb, p\u00e9riode pendant laquelle les coop\u00e9rateurs participent \u00e0 la vie du magasin. Reportage en images. Paris, reportage  En Europe,&nbsp;(...)<\/div>\n<\/div>","id_mot": "16"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-16.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [3.875521, 43.611024]},
+		"id":"672",
+		"properties": {
+			"title":"Montpellier (34000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/A-Montpellier-le-velo-revendique-sa-place' target='_blank'>\u00c0 Montpellier, le v\u00e9lo revendique sa place<\/a><\/div>\n\t<div class=\"texte\">Depuis longtemps inadapt\u00e9e au v\u00e9lo, la capitale languedocienne s\u2019ouvre timidement \u00e0 l\u2019accueil de la petite reine. La mobilisation des cyclistes apr\u00e8s un mot malheureux du maire a jou\u00e9 un r\u00f4le central dans cette \u00ab v\u00e9lorution \u00bb. Montpellier (H\u00e9rault), reportage  Casque fluo viss\u00e9 sur sa t\u00eate blonde, L\u00e9a, 5&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.395371, 48.931152]},
+		"id":"673",
+		"properties": {
+			"title":"La Courneuve (93120)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.bondyblog.fr\/les-batisseurs\/la-courneuve-asad-vise-lexcellence-pour-les-enfants-des-4000\/' target='_blank'>A La Courneuve, Asad vise &#171;&nbsp;l&#8217;excellence&nbsp;&#187; pour les enfants des 4000<\/a><\/div>\n\t<div class=\"texte\">En plein milieu de la cit\u00e9 des 4000, \u00e0 La Courneuve, l\u2019association Asad accueille chaque soir une quarantaine d\u2019enfants et de jeunes entre 5 et 20 ans. L\u2019objectif : les amener \u00e0 la r\u00e9ussite scolaire mais aussi \u00e0 l\u2019\u00e9panouissement culturel. Pour \u00e7a, ils sont pr\u00e8s d\u2019une centaine de volontaires et b\u00e9n\u00e9voles&nbsp;(...)<\/div>\n<\/div>","id_mot": "117"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-117.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [32.8537929, 39.9215219]},
+		"id":"674",
+		"properties": {
+			"title":"Ankara (06660)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/theconversation.com\/en-turquie-la-lecon-des-maires-kurdes-sur-legalite-entre-femmes-et-hommes-115020' target='_blank'>En Turquie, la&nbsp;le\u00e7on des&nbsp;maires kurdes sur&nbsp;l\u2019\u00e9galit\u00e9 entre femmes et&nbsp;hommes<\/a><\/div>\n\t<div class=\"texte\">Les \u00e9lections municipales en Turquie ont r\u00e9v\u00e9l\u00e9 un syst\u00e8me innovant d\u2019\u00e9galit\u00e9 entre hommes et femmes politiques.<\/div>\n<\/div>","id_mot": "215"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-215.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.442545, 48.859436]},
+		"id":"675",
+		"properties": {
+			"title":"Montreuil (93100)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.streetpress.com\/sujet\/1554306197-montreuil-une-maternite-pour-les-femmes-en-detresse' target='_blank'>\u00c0 Montreuil, une maternit\u00e9 pour les femmes en d\u00e9tresse<\/a><\/div>\n\t<div class=\"texte\">Fatouma n\u2019a pas de papiers. Mireille a \u00e9t\u00e9 mise \u00e0 la rue par son compagnon. Sabrina a \u00e9t\u00e9 battue par son mari. Toutes sont suivies par la maternit\u00e9 de Montreuil. Un dispositif unique en France, r\u00e9serv\u00e9 aux femmes en situation de tr\u00e8s grande&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-1.710474, 47.380559]},
+		"id":"676",
+		"properties": {
+			"title":"Notre-Dame-des-Landes (44130)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/Un-an-apres-l-expulsion-l-heritage-vivace-de-la-Zad-de-Notre-Dame-des-Landes' target='_blank'>Un an apr\u00e8s l&#8217;expulsion, l&#8217;h\u00e9ritage vivace de la Zad de Notre-Dame-des-Landes<\/a><\/div>\n\t<div class=\"texte\">Le 9 avril 2018, apr\u00e8s des ann\u00e9es d\u2019occupation et d\u2019exp\u00e9rimentations, la Zad de Notre-Dame-des-Landes \u00e9tait expuls\u00e9e dans une r\u00e9pression polici\u00e8re intense. Un an apr\u00e8s, des personnalit\u00e9s confient \u00e0 Reporterre quel h\u00e9ritage ils portent de cette alternative humaine et politique sans pr\u00e9c\u00e9dent.  Genevi\u00e8ve&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-3.827333, 48.577783]},
+		"id":"677",
+		"properties": {
+			"title":"Morlaix (29600)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/marcelle.media\/2019\/04\/16\/un-voilier-cargo-plein-de-vin-de-cafe-et-de-chocolat\/' target='_blank'>Un voilier-cargo pour acheminer caf\u00e9 et chocolat sans polluer<\/a><\/div>\n\t<div class=\"texte\">En France m\u00e9tropolitaine, certains produits font culpabiliser les \u00e9colos comme moi, mais je refuse de me passer de chocolat et de caf\u00e9. \u00c0 Morlaix, j\u2019ai trouv\u00e9 de quoi \u00e9touffer toute honte li\u00e9e au bilan carbone de mes tablettes.<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.579717, 44.837663]},
+		"id":"678",
+		"properties": {
+			"title":"Bordeaux (33000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/rue89bordeaux.com\/2019\/04\/nouveau-squat-squid-exclusivement-reserve-aux-femmes\/' target='_blank'>&#171;&nbsp;Les M\u00e8res Veilleuses&nbsp;&#187;, le nouveau squat du Squid r\u00e9serv\u00e9 aux femmes<\/a><\/div>\n\t<div class=\"texte\">Dimanche, le Squid a investi un nouveau b\u00e2timent situ\u00e9 dans le quartier de la gare. Apr\u00e8s plus d\u2019un an, le collectif de squatteurs a d\u00e9j\u00e0 mis \u00e0 l\u2019abri pr\u00e8s de 300 personnes.  The post \u00ab Les M\u00e8res Veilleuses \u00bb, le nouveau squat du Squid r\u00e9serv\u00e9 aux femmes appeared first on Rue89&nbsp;(...)<\/div>\n<\/div>","id_mot": "70"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-70.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.442545, 48.859436]},
+		"id":"679",
+		"properties": {
+			"title":"Montreuil (93100)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.bondyblog.fr\/reportages\/montreuil-des-lyceens-bluffants-saffrontent-sur-le-terrain-de-leloquence\/' target='_blank'>A Montreuil, des lyc\u00e9ens bluffants s&#8217;affrontent sur le terrain de l&#8217;\u00e9loquence <\/a><\/div>\n\t<div class=\"texte\">Ce vendredi 19 avril \u00e0 Montreuil, la municipalit\u00e9 et quatre lyc\u00e9es de la ville organisaient la finale des Libres Parleurs, un grand concours d\u2019\u00e9loquence chapeaut\u00e9 par Cl\u00e9ment Viktorovitch. Ils \u00e9taient neuf \u00e0 s\u2019affronter (cinq filles, quatre gar\u00e7ons) devant leurs familles, leurs professeurs et leurs amis&nbsp;(...)<\/div>\n<\/div>","id_mot": "117"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-117.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [100.493087, 13.7542529]},
+		"id":"680",
+		"properties": {
+			"title":"Bangkok (10200)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.equaltimes.org\/l-elevage-d-insectes-en-thailande?lang=fr' target='_blank'>L\u2019\u00e9levage d\u2019insectes en Tha\u00eflande&nbsp;: bon pour l\u2019environnement, encore meilleur pour les revenus des paysans <\/a><\/div>\n\t<div class=\"texte\">Il y a sept ans, Naroumol Intharasit, 44 ans, a remarqu\u00e9 que son voisin, \u00e9galement agriculteur dans le petit village du nord-est de la Tha\u00eflande o\u00f9 elle vit, avait commenc\u00e9 \u00e0 gagner plus d\u2019argent que de coutume. Intrigu\u00e9e, elle a (...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-1.438491, 48.183639]},
+		"id":"681",
+		"properties": {
+			"title":"La Bou\u00ebxi\u00e8re (35340)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/Le-cheval-de-trait-est-de-retour-dans-les-villes-bretonnes' target='_blank'>Le cheval de trait est de retour dans les villes bretonnes<\/a><\/div>\n\t<div class=\"texte\">En Ille-et-Vilaine, \u00e0 La Bou\u00ebxi\u00e8re, deux chevaux de trait breton ont remplac\u00e9 les tracteurs pour arroser les fleurs et d\u00e9sherber les all\u00e9es. Cette commune de 4.300 habitants a opt\u00e9 pour cette solution \u00e9cologique qui permet aussi de pr\u00e9server la race d\u2019\u00e9quid\u00e9 bretonne, en d\u00e9clin depuis les ann\u00e9es 1960.&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [3.875521, 43.611024]},
+		"id":"682",
+		"properties": {
+			"title":"Montpellier (34000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reflets.info\/articles\/l-utopie-a-la-rescousse-de-la-misere' target='_blank'>Quand l&#8217;utopie se charge de la mis\u00e8re <\/a><\/div>\n\t<div class=\"texte\">La mouvance squat est souvent pr\u00e9sent\u00e9e dans les m\u00e9dias comme une entit\u00e9 \u00e0 part, inqui\u00e9tante et autonome. Pourtant se pencher sur le sujet r\u00e9v\u00e8le un milieu d\u2019une grande diversit\u00e9, en lien avec les autres pans de la soci\u00e9t\u00e9. Et si celui-ci reste tr\u00e8s inspir\u00e9 par l\u2019autonomie et l\u2019anarchisme, il tire&nbsp;(...)<\/div>\n<\/div>","id_mot": "70"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-70.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.258735, 49.278895]},
+		"id":"683",
+		"properties": {
+			"title":"Ouistreham (14150)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/radioparleur.net\/2019\/04\/26\/a-ouistreham-histoires-de-solidarites-avec-les-refugies\/' target='_blank'>\u00c0 Ouistreham, histoires de solidarit\u00e9s avec les r\u00e9fugi\u00e9s<\/a><\/div>\n\t<div class=\"texte\">En Normandie, le collectif d\u2019aide aux migrants de Ouistreham (CAMO) existe depuis septembre 2017. Une structure devenue indispensable dans cette ville portuaire. Les personnes r\u00e9fugi\u00e9.e.s y attendent leur visa et esp\u00e8rent franchir le bras de mer qui les s\u00e9pare de l\u2019Angleterre. Mich\u00e8le et La\u00ebtitia&nbsp;(...)<\/div>\n<\/div>","id_mot": "41"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/plugins\/carteppi\/images\/marker_defaut.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.335191, 48.863258]},
+		"id":"684",
+		"properties": {
+			"title":"Paris (75001)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/lejournalminimal.fr\/nos-nuits-au-post-01-lhistoire-du-squat-ouvert-avec-un-post-facebook\/' target='_blank'>Nos nuits au Post #01&nbsp;: L\u2019histoire du squat ouvert avec un post Facebook<\/a><\/div>\n\t<div class=\"texte\">Alors que les prix de l\u2019immobilier flambent dans la capitale, des artistes se sont empar\u00e9s d\u2019un immeuble inoccup\u00e9 rue Blanche (Paris 9e). R\u00e9cit de cette aventure hom\u00e9rique. Le feuilleton Nos Nuits au Post est racont\u00e9 ici par Gaspard Delano\u00eb, figure historique des squats parisiens, ouvreur du c\u00e9l\u00e8bre 59&nbsp;(...)<\/div>\n<\/div>","id_mot": "70"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-70.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [0.091616, 48.429326]},
+		"id":"685",
+		"properties": {
+			"title":"Alen\u00e7on (61000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/Dans-le-Perche-un-terreau-fertile-a-l-eclosion-des-alternatives-paysannes' target='_blank'>Dans le Perche, un terreau fertile \u00e0 l\u2019\u00e9closion des alternatives paysannes<\/a><\/div>\n\t<div class=\"texte\">\u00ab March\u00e9 d\u2019int\u00e9r\u00eat local \u00bb, coop\u00e9rative de paysans, boutique collective... Dans le Perche, le petit monde du bio et des pratiques alternatives est tr\u00e8s actif. Reportage en deux volets. Perche, Orne et Eure-et-Loir (reportage)  Les Percheronnes et les Percherons ne d\u00e9daignent pas entendre les louanges&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [0.091616, 48.429326]},
+		"id":"686",
+		"properties": {
+			"title":"Alen\u00e7on (61000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/Maraichage-ecoconstruction-les-jeunes-font-revivre-le-Perche' target='_blank'>Mara\u00eechage, \u00e9coconstruction&nbsp;: les n\u00e9o-paysans font revivre le Perche<\/a><\/div>\n\t<div class=\"texte\">Artisanat lainier, plantes m\u00e9dicinales, pommes locales... mais aussi \u00e9coconstruction \u00e0 base de chanvre fermier et de terre crue. Dans le Perche, la pratique du circuit court ne se limite pas \u00e0 l\u2019agriculture. Reportage en deux volets sur les alternatives percheronnes.  Pour le premier volet de ce&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [4.8353, 45.7579]},
+		"id":"687",
+		"properties": {
+			"title":"Lyon (69000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.rue89lyon.fr\/2019\/05\/09\/des-moutons-dans-lyon-ou-comment-ramener-un-peu-de-campagne-en-bas-des-immeubles\/' target='_blank'>Des moutons dans Lyon ou comment &#171;&nbsp;ramener un peu de campagne en bas des immeubles&nbsp;&#187;<\/a><\/div>\n\t<div class=\"texte\">Si un troupeau de treize moutons s\u2019invitaient dans les espaces verts au bas de votre immeuble, quelle r\u00e9action auriez-vous ? C\u2019est sous la forme d\u2019un quasi pari que Bastien Boyer, berger se lance dans son projet simplement baptis\u00e9 La Bergerie&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.579717, 44.837663]},
+		"id":"688",
+		"properties": {
+			"title":"Bordeaux (33000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/rue89bordeaux.com\/2019\/05\/ca-roule-maisons-velo-a-bordeaux\/' target='_blank'>\u00c7a roule pour les Maisons du V\u00e9lo \u00e0 Bordeaux M\u00e9tropole<\/a><\/div>\n\t<div class=\"texte\">Les Maisons du V\u00e9lo et des Mobilit\u00e9s Alternatives ont fait leur apparition \u00e0 la suite de la mise en vigueur du plan v\u00e9lo m\u00e9tropolitain. Objectif : d\u00e9velopper l\u2019usage du v\u00e9lo dans la M\u00e9tropole, \u00e0 travers des pr\u00eats et autres services pour les usagers.  The post \u00c7a roule pour les Maisons du V\u00e9lo \u00e0 Bordeaux&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.579717, 44.837663]},
+		"id":"689",
+		"properties": {
+			"title":"Bordeaux (33000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/rue89bordeaux.com\/2019\/05\/vins-bio-nature-lalternative-bordeaux-bashing\/' target='_blank'>Les vins bio et naturels, l&#8217;alternative au \"bordeaux bashing\"<\/a><\/div>\n\t<div class=\"texte\">\u00ab Les vins bio et naturels, c\u2019est moins bon. \u00bb \u00ab Impossible de faire du bio \u00e0 Bordeaux. \u00bb \u00ab Les bons bordeaux, c\u2019est trop cher. \u00bb Ces sentences d\u00e9finitives, que tout le monde a pu entendre, sont vraiment en train de passer de mode. La conversion des ch\u00e2teaux Latour ou Yquem illustre en effet le boom du&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [7.746735, 48.58353]},
+		"id":"690",
+		"properties": {
+			"title":"Strasbourg (67000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.lagedefaire-lejournal.fr\/consigne-lalsace-a-un-temps-davance\/' target='_blank'>Consigne&nbsp;: l\u2019Alsace a un temps d\u2019avance <\/a><\/div>\n\t<div class=\"texte\">L\u2019Alsace est la seule r\u00e9gion de France o\u00f9 les bouteilles sont encore consign\u00e9es \u00e0 grande \u00e9chelle. Les brasseries Meteor et Kronenbourg (qui est propri\u00e9taire...  Cet article Consigne : l\u2019Alsace a un temps d\u2019avance est apparu en premier sur Le site du journal L&#039;age de&nbsp;(...)<\/div>\n<\/div>","id_mot": "118"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-118.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [6.1466014, 46.2017559]},
+		"id":"691",
+		"properties": {
+			"title":"Gen\u00e8ve",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/lecourrier.ch\/2019\/05\/21\/tester-sa-drogue-pour-reduire-les-risques\/' target='_blank'>Tester sa drogue pour r\u00e9duire les risques <\/a><\/div>\n\t<div class=\"texte\">Faire analyser sa boulette de coke ou sa pilule d\u2019ecstasy pour conna\u00eetre son dosage ou encore sa composition exacte. C\u2019est ce que proposera, \u00e0 partir du 3 juin, Nuit blanche ?, l\u2019antenne de l\u2019association Premi\u00e8re ligne d\u00e9di\u00e9e \u00e0 la r\u00e9duction des risques li\u00e9s \u00e0 la consommation r\u00e9cr\u00e9ative de drogues. Soutenu&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.381275, 48.898944]},
+		"id":"692",
+		"properties": {
+			"title":"Paris (75019)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.streetpress.com\/sujet\/1559134801-grace-ecole-deuxieme-chance-peut-reussir-sans-diplome-education' target='_blank'>Gr\u00e2ce \u00e0 l\u2019\u00c9cole de la Deuxi\u00e8me Chance, on peut r\u00e9ussir sans dipl\u00f4me<\/a><\/div>\n\t<div class=\"texte\">\u00c0 Paris, l\u2019\u00c9cole de la Deuxi\u00e8me Chance propose aux jeunes sans dipl\u00f4mes une formation avant de reprendre des \u00e9tudes ou de trouver un job. Au programme : stages en entreprise et retour sur les fondamentaux. Et \u00e7a marche !Reportages<\/div>\n<\/div>","id_mot": "117"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-117.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [7.746735, 48.58353]},
+		"id":"693",
+		"properties": {
+			"title":"Strasbourg (67000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.rue89strasbourg.com\/a-lecole-camille-hirtz-les-enfants-reprennent-possession-de-la-rue-155336?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+Rue89Strasbourg+%28Rue89+Strasbourg%29' target='_blank'>A l&#8217;\u00e9cole Camille Hirtz, \"les enfants reprennent possession de la rue\"<\/a><\/div>\n\t<div class=\"texte\">L\u2019\u00e9cole primaire de Cronenbourg teste jusqu\u2019au 23 juin la fermeture temporaire de la rue des renards aux voitures.<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.398998, 48.971637]},
+		"id":"694",
+		"properties": {
+			"title":"Garges-l\u00e8s-Gonesse (95140)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/Le-jardin-de-Rodrigue-un-havre-partage-au-coeur-d-un-quartier-populaire' target='_blank'>Le &#171;&nbsp;jardin de Rodrigue&nbsp;&#187;, un havre partag\u00e9 au c\u0153ur d\u2019un quartier populaire<\/a><\/div>\n\t<div class=\"texte\">Dans le quartier populaire de la Dame-Blanche, \u00e0 Garges-l\u00e8s-Gonesse, les habitants profitent d\u2019un jardin partag\u00e9 pour apprendre \u00e0 s\u2019occuper des plantes, cueillir des herbes aromatiques, ou simplement fl\u00e2ner et discuter avec leurs voisins. Un lieu vivant que sont all\u00e9s d\u00e9couvrir des jeunes du centre&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [4.027514, 49.264571]},
+		"id":"695",
+		"properties": {
+			"title":"Reims (51100)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.bondyblog.fr\/reportages\/micro-lycee-maxi-succes\/' target='_blank'>Micro-lyc\u00e9e, maxi succ\u00e8s <\/a><\/div>\n\t<div class=\"texte\">#BBReims, \u00e9pisode 5. Depuis le d\u00e9but des ann\u00e9es 2000, les \u00ab structures de retour \u00e0 l\u2019\u00e9cole \u00bb ont un objectif simple : remettre des jeunes d\u00e9crocheurs sur le chemin de l\u2019\u00e9cole et leur permettre d\u2019obtenir le baccalaur\u00e9at. Aujourd\u2019hui, il en existe 62 en France, parmi lesquelles le micro-lyc\u00e9e de Reims. Cette&nbsp;(...)<\/div>\n<\/div>","id_mot": "117"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-117.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [1.441019, 43.604268]},
+		"id":"696",
+		"properties": {
+			"title":"Toulouse (31000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.bastamag.net\/Toulouse-hopital-Saint-Cyprien-quartier-libre-gentrification-immobilier-logement' target='_blank'>Menac\u00e9 par la sp\u00e9culation immobili\u00e8re, un h\u00f4pital r\u00e9siste en s&#8217;ouvrant sur la vie de son quartier<\/a><\/div>\n\t<div class=\"texte\">Coinc\u00e9 entre coupes budg\u00e9taires, gentrification et promotion immobili\u00e8re, l\u2019h\u00f4pital de La Grave, \u00e0 Toulouse, fait de la r\u00e9sistance. R\u00e9solument ancr\u00e9 dans la vie du quartier populaire de Saint-Cyprien, le CHU est d\u00e9fendu bec et ongles par un collectif de personnels, de syndicats, d\u2019associations et&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [11.2555757, 43.7698712]},
+		"id":"697",
+		"properties": {
+			"title":"Florence",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.metropolitiques.eu\/La-ferme-de-Mondeggi-une-experience-de-democratie-communautaire-a-Florence.html' target='_blank'>La ferme de Mondeggi&nbsp;: une exp\u00e9rience de d\u00e9mocratie communautaire \u00e0 Florence<\/a><\/div>\n\t<div class=\"texte\">Souvent compar\u00e9e \u00e0 une ZAD, la communaut\u00e9 de Mondeggi s\u2019oppose depuis plusieurs ann\u00e9es \u00e0 la vente d\u2019un domaine agricole public aujourd\u2019hui g\u00e9r\u00e9 par la M\u00e9tropole de Florence. Exp\u00e9rience autogestionnaire pour le maintien d\u2019un territoire productif \u00ab paysan \u00bb, le contre-projet qu\u2019elle d\u00e9veloppe t\u00e9moigne du&nbsp;(...)<\/div>\n<\/div>","id_mot": "16"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-16.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-77.0365625, 38.8950092]},
+		"id":"698",
+		"properties": {
+			"title":"Washington",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.mediapart.fr\/journal\/international\/260619\/aux-etats-unis-bernie-sanders-propose-l-annulation-totale-de-la-dette-etudiante' target='_blank'>Aux Etats-Unis, Bernie Sanders propose l\u2019annulation totale de la dette \u00e9tudiante<\/a><\/div>\n\t<div class=\"texte\">Bernie Sanders, candidat \u00e0 la primaire d\u00e9mocrate pour 2020, propose d\u2019annuler purement et simplement 1 600 milliards de dollars de dettes \u00e9tudiantes. Une proposition qui va plus loin que celle d\u2019Elizabeth Warren et qui est tr\u00e8s critiqu\u00e9e par les d\u00e9mocrates mod\u00e9r\u00e9s, mais qui r\u00e9pond \u00e0 une vraie&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.345707, 48.973157]},
+		"id":"699",
+		"properties": {
+			"title":"Montmagny (95360)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.bondyblog.fr\/reportages\/devenir-fermier-pour-purger-sa-peine-une-journee-avec-les-tigistes-de-montmagny\/' target='_blank'>Devenir fermier pour purger sa peine&nbsp;: une journ\u00e9e avec les tigistes de Montmagny <\/a><\/div>\n\t<div class=\"texte\">Depuis 2014, l\u2019association \u00ab Les fermiers de la Francilienne \u00bb accueille des b\u00e9n\u00e9voles pas comme les autres. Plusieurs dizaines de femmes et d\u2019hommes condamn\u00e9s par la justice viennent en effet accomplir leurs heures de TIG - pour travail d\u2019int\u00e9r\u00eat g\u00e9n\u00e9ral - au sein des fermes urbaines de l\u2019association.&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.579717, 44.837663]},
+		"id":"700",
+		"properties": {
+			"title":"Bordeaux (33000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/rue89bordeaux.com\/2019\/07\/retoque-conseil-municipal-lencadrement-loyers-a-bordeaux-passe-petition\/' target='_blank'>Retoqu\u00e9 au conseil municipal, l\u2019encadrement des loyers \u00e0 Bordeaux passe par une p\u00e9tition<\/a><\/div>\n\t<div class=\"texte\">Pour le dernier conseil municipal avant la tr\u00eave estivale, Vincent Feltesse a pr\u00e9sent\u00e9 un v\u0153u sur l\u2019encadrement des loyers \u00e0 Bordeaux qui a \u00e9t\u00e9 balay\u00e9 d\u2019un revers de la main par la majorit\u00e9, fid\u00e8le \u00e0 la ligne d\u2019Alain Jupp\u00e9. Via un collectif, une p\u00e9tition est lanc\u00e9e.  The post Retoqu\u00e9 au conseil municipal,&nbsp;(...)<\/div>\n<\/div>","id_mot": "70"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-70.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-76.610759, 39.2908816]},
+		"id":"701",
+		"properties": {
+			"title":"Baltimore (21203)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/REP-L-agriculture-a-Baltimore-entre-travail-social-et-renovation-urbaine' target='_blank'>\u00c0 Baltimore, les quartiers pauvres renaissent gr\u00e2ce aux fermes urbaines<\/a><\/div>\n\t<div class=\"texte\">La ville du Maryland, l\u2019une des plus pauvres et plus violentes des \u00c9tats-Unis, compte une vingtaine de fermes urbaines, qui lui permettent de se d\u00e9barrasser de ses friches industrielles tout en luttant contre la malnutrition. Baltimore (Maryland, \u00c9tats-Unis d\u2019Am\u00e9rique), reportage  22 % de la&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [4.351697, 50.8465573]},
+		"id":"702",
+		"properties": {
+			"title":"Bruxelles (1000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/guitinews.fr\/reportage\/2019\/07\/11\/belgique-un-club-de-football-de-premiere-division-se-dote-dune-equipe-de-refugies\/' target='_blank'>Belgique&nbsp;: un club de football se dote d\u2019une \u00e9quipe de r\u00e9fugi\u00e9s <\/a><\/div>\n\t<div class=\"texte\">En Belgique, le centre d\u2019accueil pour demandeurs d\u2019asile de Mouscron et le club de football de l\u2019Excel de Mouscron se sont associ\u00e9s pour cr\u00e9er une \u00e9quipe de r\u00e9fugi\u00e9s. Un des objectifs : tacler les pr\u00e9jug\u00e9s. De nos correspondants en Belgique, Laurent Dupuis et Patou Nsimba \u00c0...  L\u2019article Ballon rond VS&nbsp;(...)<\/div>\n<\/div>","id_mot": "41"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/plugins\/carteppi\/images\/marker_defaut.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.398998, 48.971637]},
+		"id":"703",
+		"properties": {
+			"title":"Garges-l\u00e8s-Gonesse (95140)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.bondyblog.fr\/les-batisseurs\/le-bus-de-linitiative-pour-trouver-les-futurs-entrepreneurs-en-bas-de-chez-eux\/' target='_blank'>Le bus de l&#8217;initiative, pour trouver les futurs entrepreneurs en bas de chez eux<\/a><\/div>\n\t<div class=\"texte\">Depuis 2012, le bus de l\u2019initiative se balade dans la r\u00e9gion. N\u00e9 \u00e0 Garges-l\u00e8s-Gonesse, cette id\u00e9e de l\u2019association Cr\u00e9ative n\u2019a qu\u2019une mission, celle de permettre l\u2019insertion professionnelle par le biais de l\u2019entreprenariat dans les quartiers populaires. Une mani\u00e8re de recr\u00e9er du lien et d\u2019informer au plus&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [35.2294008, 31.8442308]},
+		"id":"704",
+		"properties": {
+			"title":"J\u00e9rusalem (no)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.equaltimes.org\/planter-la-resistance-la-lutte' target='_blank'>Planter la r\u00e9sistance&nbsp;: la lutte pour la souverainet\u00e9 alimentaire en Palestine<\/a><\/div>\n\t<div class=\"texte\">[Cet article est accompagn\u00e9 d\u2019une vid\u00e9o \u00e0 visionner ici]  En Palestine, la souverainet\u00e9 alimentaire est intrins\u00e8quement li\u00e9e \u00e0 la lutte pour l\u2019autod\u00e9termination. La d\u00e9possession des terres palestiniennes a commenc\u00e9 en 1948, lorsque 78 % de la Palestine historique est devenue Isra\u00ebl. Les 22 % restants -&nbsp;(...)<\/div>\n<\/div>","id_mot": "70"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-70.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-6.2602732, 53.3497645]},
+		"id":"705",
+		"properties": {
+			"title":"",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.equaltimes.org\/a-dublin-le-club-des-emerald' target='_blank'>\u00c0 Dublin, le club des Emerald Warriors pr\u00f4ne un rugby pour tous<\/a><\/div>\n\t<div class=\"texte\">Le bruit des crampons claque sur le sol en b\u00e9ton \u00e0 la sortie des vestiaires. Un \u00e0 un, les joueurs p\u00e9n\u00e8trent sur le gazon et d\u00e9posent leur sac de sport derri\u00e8re la ligne de touche. D\u2019une poign\u00e9e de main, d\u2019une accolade, d\u2019un baiser \u00ab \u00e0 la russe \u00bb ou d\u2019une tape amicale sur les fesses, la bande de copains se&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-5.273263, 6.809107]},
+		"id":"706",
+		"properties": {
+			"title":"Yamoussoukro",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/En-Cote-d-Ivoire-une-foret-menacee-est-devenue-une-reserve-naturelle-modele' target='_blank'>En C\u00f4te d&#8217;Ivoire, une for\u00eat menac\u00e9e est devenue une r\u00e9serve naturelle mod\u00e8le<\/a><\/div>\n\t<div class=\"texte\">Longtemps menac\u00e9s par l\u2019exploitation foresti\u00e8re et le braconnage, le mont Nimba et la r\u00e9serve qui l\u2019entoure, en Afrique de l\u2019Ouest, sont aujourd\u2019hui une r\u00e9f\u00e9rence en mati\u00e8re de pr\u00e9servation de la nature, gr\u00e2ce \u00e0 la volont\u00e9 des riverains. Une protection rare dans un pays qui a d\u00e9forest\u00e9 90 % de ses for\u00eats&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [7.23334, 43.714921]},
+		"id":"707",
+		"properties": {
+			"title":"Nice (06000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.bondyblog.fr\/reportages\/nice-le-quartier-des-moulins-releve-le-defi-ma-cite-va-briller\/' target='_blank'>A Nice, le quartier des Moulins rel\u00e8ve le d\u00e9fi &#171;&nbsp;Ma cit\u00e9 va briller&nbsp;&#187;<\/a><\/div>\n\t<div class=\"texte\">D\u00e9but ao\u00fbt, des jeunes de Garges-l\u00e8s-Gonesse avaient lanc\u00e9 le challenge \u00ab Ma cit\u00e9 va briller \u00bb, pour motiver les habitants d\u2019autres quartiers \u00e0 nettoyer eux-m\u00eames les rues qu\u2019ils partagent. Une initiative qui a fait des \u00e9mules jusqu\u2019\u00e0 Nice, o\u00f9, le 25 ao\u00fbt dernier, jeunes et moins jeunes du quartier des&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [24.9425683, 60.1674086]},
+		"id":"708",
+		"properties": {
+			"title":"Helsinki",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.equaltimes.org\/logement-d-abord-la-politique-d' target='_blank'>&#171;&nbsp;Logement d&#8217;abord&nbsp;&#187;&nbsp;: la politique d&#8217;aide aux sans-abri qui fait ses preuves en Finlande<\/a><\/div>\n\t<div class=\"texte\">Rita Lahtinen, 54 ans, a emm\u00e9nag\u00e9 dans son propre logement au mois d\u2019avril, apr\u00e8s avoir pass\u00e9 sept ans de sa vie dans des h\u00e9bergements provisoires. \u00ab Ma vie a chang\u00e9 \u00bb, d\u00e9clare-t-elle. Les rayons du soleil traversent les larges fen\u00eatres de son studio une pi\u00e8ce, install\u00e9 \u00e0 Helsinki, la capitale&nbsp;(...)<\/div>\n<\/div>","id_mot": "70"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-70.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.71728, 45.183471]},
+		"id":"709",
+		"properties": {
+			"title":"Grenoble (38000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/A-Grenoble-pour-moins-payer-les-habitants-devront-moins-jeter' target='_blank'>\u00c0 Grenoble, pour moins payer, les habitants devront moins jeter<\/a><\/div>\n\t<div class=\"texte\">En 2022, les poubelles des Grenoblois seront puc\u00e9es et les bennes dot\u00e9es d\u2019un lecteur afin que la taxe d\u2019enl\u00e8vement des ordures m\u00e9nag\u00e8res soit all\u00e9g\u00e9e pour ceux qui jettent moins. Une incitation financi\u00e8re \u00e0 la r\u00e9duction des d\u00e9chets in\u00e9dite \u00e0 l\u2019\u00e9chelle d\u2019une m\u00e9tropole.  Grenoble est en train de franchir un&nbsp;(...)<\/div>\n<\/div>","id_mot": "118"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-118.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-112.0037839, 36.5677638]},
+		"id":"710",
+		"properties": {
+			"title":"",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/grand-format.net\/series\/jeannettes\/' target='_blank'>Jeannette, madeleines solidaires depuis 2015 <\/a><\/div>\n\t<div class=\"texte\">Ici, un clavier d\u2019ordinateur et une souris, l\u00e0, une armoire. En janvier 2015, Ma\u00eetre Rivola, le commissaire-priseur, qui avait trouv\u00e9 porte close un an plus t\u00f4t, revient proc\u00e9der \u00e0 l\u2019inventaire du mat\u00e9riel. Les \u00ab Jeannette \u00bb, leur avocate, Elise Brand, et les repr\u00e9sentants de la CGT lui embo\u00eetent le pas,&nbsp;(...)<\/div>\n<\/div>","id_mot": "120"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-120.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [0.637337, 48.509536]},
+		"id":"711",
+		"properties": {
+			"title":"Saint-Mard-de-R\u00e9no (61400)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/grand-format.net\/series\/ferme-conversion-agriculture-biologique-perche-journal-grand-format\/' target='_blank'>Quand la ferme du Chaillou\u00e9 a rang\u00e9 le pulv\u00e9 <\/a><\/div>\n\t<div class=\"texte\">Depuis quelques ann\u00e9es, \u00e0 la ferme du Chaillou\u00e9, Samuel et Franck Deschoolmeester s\u2019interrogent sur l\u2019agriculture conventionnelle et sur leurs pratiques. Il aura fallu la maladie de Samuel, en 2014, pour les d\u00e9cider \u00e0 passer au bio.<\/div>\n<\/div>","id_mot": "71"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.587876, 44.862132]},
+		"id":"712",
+		"properties": {
+			"title":"Bordeaux (33000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/rue89bordeaux.com\/2019\/09\/departement-de-gironde-lancera-budget-participatif-2020\/' target='_blank'>Le d\u00e9partement de la Gironde lancera son budget participatif en 2020 <\/a><\/div>\n\t<div class=\"texte\">Le conseil d\u00e9partemental de la Gironde consacrera l\u2019ann\u00e9e prochaine une partie de son budget \u2013 au moins 2 millions d\u2019euros \u2013 \u00e0 la r\u00e9alisation de projets propos\u00e9s puis choisis par les citoyens, a indiqu\u00e9 ce jeudi Jean-Luc Gleyze, pr\u00e9sident du d\u00e9partement, lors d\u2019un point presse. Le d\u00e9partement compte \u00ab&nbsp;(...)<\/div>\n<\/div>","id_mot": "215"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-215.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-3.7035825, 40.4167047]},
+		"id":"713",
+		"properties": {
+			"title":"Madrid (28001)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/Valdepielagos-l-ecovillage-espagnol-qui-resiste-a-l-exode-rural' target='_blank'>Valdepi\u00e9lagos, l\u2019\u00e9covillage espagnol qui r\u00e9siste \u00e0 l\u2019exode rural<\/a><\/div>\n\t<div class=\"texte\">En 2008, l\u2019arriv\u00e9e de 30 familles aux aspirations \u00e9cologiques a permis de revitaliser le bourg de Valdepi\u00e9lagos. Fort de ses r\u00e9ussites et aussi de ses imperfections, cet \u00e9covillage propose, \u00e0 son \u00e9chelle, des outils pour all\u00e9ger la pression sur&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.601385, 43.34538]},
+		"id":"714",
+		"properties": {
+			"title":"Roquevaire (13360)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/marcelle.media\/2019\/09\/24\/atelier-transformation-invendu-bocal\/' target='_blank'>Des invendus en bocaux pour \u00e9viter la poubelle | Marcelle<\/a><\/div>\n\t<div class=\"texte\">Roquevaire,<\/div>\n<\/div>","id_mot": "118"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-118.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.487277, 48.873861]},
+		"id":"715",
+		"properties": {
+			"title":"Rosny-sous-Bois (93110)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.bondyblog.fr\/reportages\/rosny-une-ferme-en-pleine-ville-des-vignes-et-une-chevre\/' target='_blank'>A Rosny, une ferme en pleine ville, des vignes et une ch\u00e8vre<\/a><\/div>\n\t<div class=\"texte\">C\u2019est un mini-salon de l\u2019agriculture en Seine-Saint-Denis. Comme \u00e0 chaque rentr\u00e9e, la ville de Rosny-sous-Bois a ouvert sa ferme p\u00e9dagogique \u00e0 tous le temps d\u2019un week-end, les 14 et 15 septembre dernier. Une dizaine de milliers de visiteurs \u00e9taient l\u00e0 pour respirer un peu de l\u2019air de la nature au&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.3752, 48.845]},
+		"id":"716",
+		"properties": {
+			"title":"Paris (75001)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/guitinews.fr\/reportage\/2019\/09\/26\/avec-kabubu-les-refugies-se-sentent-mieux-dans-leurs-baskets-entrainement-de-basket\/' target='_blank'>Avec Kabubu, les r\u00e9fugi\u00e9s se sentent mieux dans leurs baskets<\/a><\/div>\n\t<div class=\"texte\">Cr\u00e9\u00e9e en 2018, l\u2019association Kabubu mise sur l\u2019inclusion des r\u00e9fugi\u00e9s par le sport en proposant des cours ouverts \u00e0 tous. Chaque lundi, elle propose des entra\u00eenements de basket, dans le 7\u00b0 arrondissement de Paris. Reportage. Julie Coulon-Profizi Dans le hall de l\u2019\u00e9glise am\u00e9ricaine de Paris...  L\u2019article&nbsp;(...)<\/div>\n<\/div>","id_mot": "41"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/plugins\/carteppi\/images\/marker_defaut.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.587876, 44.862132]},
+		"id":"717",
+		"properties": {
+			"title":"Bordeaux (33000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/Un-nouveau-grand-cru-dans-le-Bordelais-le-vrai-lait-de-ferme' target='_blank'>Un nouveau grand cru dans le Bordelais&nbsp;: le vrai lait de ferme<\/a><\/div>\n\t<div class=\"texte\">Au c\u0153ur de la campagne bordelaise, une famille d\u2019\u00e9leveurs laitiers a d\u00e9cid\u00e9 de ne plus fournir l\u2019industrie agroalimentaire et de nourrir les vaches int\u00e9gralement \u00e0 l\u2019herbe. Ce changement de mod\u00e8le de production vaut au Ch\u00e2teau Le Pis de produire aujourd\u2019hui un lait d\u2019exception. Taillecavat (Gironde),&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [15.08738, 37.5022355]},
+		"id":"718",
+		"properties": {
+			"title":"Catane",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.bastamag.net\/mafia-Sicile-gangs-Citta-Invisibile-musique-classique-Catane-Falcone-Borsellino' target='_blank'>La musique classique pour lutter contre la mafia et l&#8217;embrigadement des enfants<\/a><\/div>\n\t<div class=\"texte\">Pauvret\u00e9 et ch\u00f4mage pr\u00e9cipitent une partie de la jeunesse dans les bras de la mafia. Tout le monde n\u2019a pas baiss\u00e9 les bras : via l\u2019apprentissage \u00e0 la musique et des concerts, une fondation ouvre de nouveaux horizons aux enfants, face \u00e0 l\u2019attraction de l\u2019argent facile.  Au d\u00e9tour d\u2019une petite ruelle&nbsp;(...)<\/div>\n<\/div>","id_mot": "117"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-117.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.634765, 43.29707]},
+		"id":"719",
+		"properties": {
+			"title":"G\u00e9menos (13420)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/la-bas.org\/5673' target='_blank'>Cinq ans apr\u00e8s, les FRALIB, \u00e7a marche&nbsp;?<\/a><\/div>\n\t<div class=\"texte\">Vous vous souvenez, en 2010, la longue lutte des FRALIB pour sauver leurs emplois en cr\u00e9ant leur propre bo\u00eete ? Beaucoup de salari\u00e9s abattus par un plan social ont \u00e9t\u00e9 tent\u00e9s de remonter l\u2019entreprise par eux-m\u00eames, mais tr\u00e8s peu ont r\u00e9ussi. Et eux, cinq apr\u00e8s, o\u00f9 en sont les ex-FRALIB devenus SCOP-TI ?&nbsp;(...)<\/div>\n<\/div>","id_mot": "120"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-120.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [7.727869, 48.579662]},
+		"id":"720",
+		"properties": {
+			"title":"Strasbourg (67000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.rue89strasbourg.com\/appel-projets-koenigshoffen-permaculteurs-jardiniers-9000-metres-carres-disposition-162083?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+Rue89Strasbourg+%28Rue89+Strasbourg%29' target='_blank'>\u00c0 Koenigshoffen, permaculteurs et jardiniers auront bient\u00f4t 9&nbsp;000 m\u00e8tres carr\u00e9s \u00e0 disposition<\/a><\/div>\n\t<div class=\"texte\">Fin 2021, plus de 9000 m\u00e8tres carr\u00e9s seront lib\u00e9r\u00e9s pour des jardins partag\u00e9s ou de la permaculture dans le quartier de Koenigshoffen.<\/div>\n<\/div>","id_mot": "71"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-1.867743, 46.638813]},
+		"id":"721",
+		"properties": {
+			"title":"Bretignolles-sur-Mer (85470)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.bastamag.net\/ZAD-littoral-Bretignolles-sur-Mer-zone-humide-Vendee-port-de-plaisance-surfrider' target='_blank'>En Vend\u00e9e, la &#171;&nbsp;ZAD de la Dune&nbsp;&#187; contre un projet d&#8217;artificialisation du littoral <\/a><\/div>\n\t<div class=\"texte\">Cet \u00e9t\u00e9, le pr\u00e9fet de Vend\u00e9e a d\u00e9clar\u00e9 d\u2019utilit\u00e9 publique un projet de port de plaisance au sein d\u2019une zone naturelle class\u00e9e... La \u00ab ZAD de la Dune \u00bb bloque les pelleteuses depuis le d\u00e9but de la semaine.  Ils refusent le d\u00e9boisement massif de la v\u00e9g\u00e9tation du littoral et l\u2019aplanissement de la dune \u00e0 coup&nbsp;(...)<\/div>\n<\/div>"
+			,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/plugins\/carteppi\/images\/marker_defaut.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [13.3888599, 52.5170365]},
+		"id":"722",
+		"properties": {
+			"title":"Berlin (10117)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.mediapart.fr\/journal\/international\/131019\/berlin-laboratoire-contre-l-immobilier-trop-cher' target='_blank'>Berlin, laboratoire contre l\u2019immobilier trop cher<\/a><\/div>\n\t<div class=\"texte\">Le gel pr\u00e8s de 1,5 million de loyers berlinois, annonc\u00e9 en fanfare en juillet dernier, pourra-t-il d\u00e9marrer d\u00e9but 2020 comme pr\u00e9vu ? Au vu des d\u00e9saccords qui r\u00e8gnent au sein de la coalition de gauche qui gouverne Berlin, cela semble peu&nbsp;(...)<\/div>\n<\/div>","id_mot": "70"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-70.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.359316, 48.862489]},
+		"id":"723",
+		"properties": {
+			"title":"Paris 3e Arrondissement (75003)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/lejournalminimal.fr\/ils-creent-une-amap-etudiante-a-la-sorbonne-pour-proposer-des-produits-bio-locaux-et-de-saison\/' target='_blank'>Sor\u2019bio, Sciences Potiron\u2026 les AMAP \u00e9tudiantes se multiplient comme des petits pains<\/a><\/div>\n\t<div class=\"texte\">Apr\u00e8s les Marches pour le climat, la mode est aux AMAP \u00e9tudiantes. Reportage \u00e0 la Sorbonne Nouvelle (Paris 3), o\u00f9 une association propose des paniers de fruits et l\u00e9gumes bio, locaux et de saison. Depuis le 1er octobre, \u00e0 l\u2019Universit\u00e9 Sorbonne Nouvelle (Paris 3), il est possible d\u2019acheter des fruits et&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.925969, 48.206441]},
+		"id":"724",
+		"properties": {
+			"title":"Villeb\u00e9on (77710)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/EN-VIDEO-Le-115-du-particulier-une-communaute-autogeree-d-anciens-SDF' target='_blank'>EN VID\u00c9O \u2013 Le 115 du particulier, une communaut\u00e9 autog\u00e9r\u00e9e d&#8217;anciens SDF<\/a><\/div>\n\t<div class=\"texte\">Villeb\u00e9on (Seine-et-Marne), reportage  Oreillette Bluetooth encastr\u00e9e en permanence dans l\u2019oreille, Brann du Senon est un humaniste en col\u00e8re. \u00ab Bandit au grand c\u0153ur \u00bb, comme il se d\u00e9finit lui-m\u00eame, il a fond\u00e9 l\u2019association du 115 du particulier depuis 2012 et accueille sur son terrain priv\u00e9 des&nbsp;(...)<\/div>\n<\/div>","id_mot": "41"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/plugins\/carteppi\/images\/marker_defaut.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-117.847685737281, 33.6202271552319]},
+		"id":"725",
+		"properties": {
+			"title":"Newport Beach (92660)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/rue89bordeaux.com\/2019\/10\/la-nouvelle-aquitaine-veut-inscrire-le-feminicide-dans-le-code-penal-pour-quoi-faire\/' target='_blank'>La Nouvelle-Aquitaine veut inscrire le f\u00e9minicide dans le code p\u00e9nal, pour quoi faire&nbsp;?&nbsp;<\/a><\/div>\n\t<div class=\"texte\">Sur proposition de l\u2019\u00e9lue socialiste Na\u00efma Chara\u00ef, la R\u00e9gion Nouvelle-Aquitaine a vot\u00e9 \u00e0 la majorit\u00e9 sa volont\u00e9 d\u2019inscrire le F\u00e9minicide dans le code p\u00e9nal. Mais les professionnels de la justice n\u2019y voient aucun int\u00e9r\u00eat.  The post La Nouvelle-Aquitaine veut inscrire le f\u00e9minicide dans le code p\u00e9nal, pour quoi&nbsp;(...)<\/div>\n<\/div>","id_mot": "215"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-215.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [7.7907, 48.618251]},
+		"id":"726",
+		"properties": {
+			"title":"Strasbourg (67000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.rue89strasbourg.com\/des-peniches-bientot-sur-lill-pour-baisser-le-transport-routier-a-strasbourg-162627?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+Rue89Strasbourg+%28Rue89+Strasbourg%29' target='_blank'>Et si des p\u00e9niches sur l&#8217;Ill rempla\u00e7aient les camions \u00e0 Strasbourg&nbsp;?<\/a><\/div>\n\t<div class=\"texte\">L\u2019Eurom\u00e9tropole de Strasbourg et Voies Navigables de France ont lanc\u00e9 un appel \u00e0 projets pour trouver un utilisateur \u00e0 la plate-forme logistique du quai<\/div>\n<\/div>","id_mot": "362"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/plugins\/carteppi\/images\/marker_defaut.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [3.031108, 50.615937]},
+		"id":"727",
+		"properties": {
+			"title":"Lille (59000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.bastamag.net\/Prisons-surveillants-gardiens-condition-de-detention-administration-penitentiaire' target='_blank'>Dans les prisons norv\u00e9giennes, des surveillants &#171;&nbsp;travailleurs sociaux&nbsp;&#187; avant d&#8217;\u00eatre gardiens<\/a><\/div>\n\t<div class=\"texte\">En Norv\u00e8ge, les gardiens de prison ne sont pas exclusivement affect\u00e9s \u00e0 des t\u00e2ches s\u00e9curitaires. Leur r\u00f4le, au contraire, privil\u00e9gie la proximit\u00e9 avec les d\u00e9tenus. R\u00e9cit, en partenariat avec Hesamag.  Seuls 25 d\u00e9tenus se c\u00f4toient dans la petite prison de Sarpsborg, au sud de la Norv\u00e8ge. Si les barbel\u00e9s et&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [18.3866868, 43.8519774]},
+		"id":"728",
+		"properties": {
+			"title":"Sarajevo (71000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/En-Bosnie-une-cooperative-de-femmes-efface-les-traces-de-la-guerre' target='_blank'>En Bosnie, une coop\u00e9rative de femmes efface les traces de la guerre<\/a><\/div>\n\t<div class=\"texte\">Ustikolina (Bosnie), reportage  \u00ab Hier, on a pass\u00e9 la journ\u00e9e enti\u00e8re \u00e0 peler les prunes \u00e0 la main et il y en a pour 15 kg. C\u2019est une m\u00e9thode lente, \u00e7a prend beaucoup de temps. \u00bb Dans leur cuisine ext\u00e9rieure, ombrag\u00e9e de fruitiers, Jasmina \u0160ahovi\u0107 [\u00ab Chaovitse \u00bb] et ses voisines ne quittent pas leurs&nbsp;(...)<\/div>\n<\/div>","id_mot": "120"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-120.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-1.68217, 48.111889]},
+		"id":"729",
+		"properties": {
+			"title":"Rennes (35000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.metropolitiques.eu\/Retour-sur-une-experience-de-logement-des-migrants.html' target='_blank'>Retour sur une exp\u00e9rience de logement des migrants <\/a><\/div>\n\t<div class=\"texte\">Entre d\u00e9cembre 2016 et l\u2019\u00e9t\u00e9 2017, un squat occup\u00e9 par des migrants avec l\u2019aide d\u2019associations locales a \u00e9t\u00e9 l\u2019objet d\u2019un conventionnement avec la mairie de Rennes. Ce conventionnement des \u00ab Jardins de la Poterie \u00bb, qui reste une modalit\u00e9 d\u2019action \u00e9ph\u00e9m\u00e8re, a donn\u00e9 lieu \u00e0 des exp\u00e9riences et \u00e0 des&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.287665, 44.776076]},
+		"id":"730",
+		"properties": {
+			"title":"Sainte-Croix (26150)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.rue89lyon.fr\/2019\/11\/07\/achard-vincent-pionnier-de-la-biodynamie-dans-la-clairette-de-die\/' target='_blank'>Achard-Vincent, pionnier de la biodynamie dans la clairette de Die<\/a><\/div>\n\t<div class=\"texte\">A l\u2019heure o\u00f9 ses voisins se plongeaient dans le glyphosate et autres pesticides, le grand-p\u00e8re de Thomas Achard se mettait au bio. Aujourd\u2019hui en biodynamie, le domaine Achard-Vincent fait figure d\u2019ovni dans la clairette de Die. Un vignoble largement domin\u00e9 par la cave&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.587876, 44.862132]},
+		"id":"731",
+		"properties": {
+			"title":"Bordeaux (33000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/rue89bordeaux.com\/2019\/11\/elles-lancent-le-premier-drive-zero-dechet-de-nouvelle-aquitaine\/' target='_blank'>Elles lancent le premier Drive Z\u00e9ro D\u00e9chet de Nouvelle-Aquitaine<\/a><\/div>\n\t<div class=\"texte\">Apr\u00e8s le Drive Tout Nu \u00e0 Toulouse, deux jeunes Girondines cr\u00e9ent le premier Drive Z\u00e9ro D\u00e9chet de la r\u00e9gion dans l\u2019agglo bordelaise. A partir de janvier 2020, il proposera des produits majoritairement bio et locaux, \u00e0 commander sur internet et \u00e0 r\u00e9cup\u00e9rer dans un des points de retrait.  The post Elles&nbsp;(...)<\/div>\n<\/div>","id_mot": "118"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-118.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-1.68217, 48.111889]},
+		"id":"732",
+		"properties": {
+			"title":"Rennes (35000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/Une-epicerie-gratuite-pour-les-etudiants-qui-ne-mangent-pas-a-leur-faim' target='_blank'>Une \u00e9picerie gratuite pour les \u00e9tudiants qui ne mangent pas \u00e0 leur faim<\/a><\/div>\n\t<div class=\"texte\">Rennes (Ille-et-Vilaine), reportage\u00ad  \u00c0 17 h 30, ils sont d\u00e9j\u00e0 une vingtaine \u00e0 patienter dans un couloir. Ce mardi 12 novembre, c\u2019est la premi\u00e8re distribution de la semaine pour l\u2019\u00e9picerie gratuite de Rennes 2. Chaque jour d\u2019ouverture, environ 200 kg de produits alimentaires sont donn\u00e9s. Ce soir, il y&nbsp;(...)<\/div>\n<\/div>","id_mot": "16"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-16.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.3722, 43.2545]},
+		"id":"733",
+		"properties": {
+			"title":"Marseille (13001)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/marcelle.media\/2019\/11\/20\/des-biodechets-aux-champignons-de-marseille\/' target='_blank'>Des biod\u00e9chets aux champignons de Marseille<\/a><\/div>\n\t<div class=\"texte\">[Parrain\u00e9] Dans les caves d\u2019un lyc\u00e9e agricole pousse une esp\u00e8ce rare : les champignons de Marseille. Une production urbaine, garantie 100% locale et sans d\u00e9chet.<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.786598, 50.453394]},
+		"id":"734",
+		"properties": {
+			"title":"Loos-en-Gohelle (62750)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.bastamag.net\/agriculture-bio-locale-filieres-courtes-emplois-de-la-transition-archipel-fruitier-Loos-en-Gohelle' target='_blank'>Zone d&#8217;\u00e9co-activit\u00e9s, agriculture bio et locale&nbsp;: une ville mini\u00e8re tente de cr\u00e9er les emplois de demain<\/a><\/div>\n\t<div class=\"texte\">Dans l\u2019ancien bassin minier du Pas-de-Calais, la ville de Loos-en-Gohelle exp\u00e9rimente un nouveau \u00ab syst\u00e8me alimentaire \u00bb local, approvisionn\u00e9 en bio, tout en essayant de r\u00e9pondre aux difficult\u00e9s sociales qui frappent une partie des habitants. Second volet de notre dossier.  Au Nord c\u2019\u00e9taient Les&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.786598, 50.453394]},
+		"id":"735",
+		"properties": {
+			"title":"Loos-en-Gohelle (62750)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.bastamag.net\/Transition-ecologique-sobriete-energetique-pesticides-isolation-Loos-en-Gohelle' target='_blank'>Malgr\u00e9 le ch\u00f4mage et la pauvret\u00e9, une ancienne ville mini\u00e8re devient un mod\u00e8le de transition \u00e9cologique <\/a><\/div>\n\t<div class=\"texte\">A Loos-en-Gohelle, dans le Pas-de-Calais, l\u2019\u00e9quipe municipale tente d\u2019ouvrir un nouvel horizon \u00e9cologique et social pour les habitants, avec une (...)<\/div>\n<\/div>","id_mot": "127"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-127.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.365001, 48.8302]},
+		"id":"736",
+		"properties": {
+			"title":"Paris 13e Arrondissement (75013)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.revue-ballast.fr\/un-supermarche-contre-la-grande-distribution\/' target='_blank'>Un supermarch\u00e9 contre la grande distribution<\/a><\/div>\n\t<div class=\"texte\">Rencontre avec une coop\u00e9rative : vers une alternative anticapitaliste ?  L\u2019article Un supermarch\u00e9 contre la grande distribution est apparu en premier sur BALLAST.<\/div>\n<\/div>","id_mot": "16"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-16.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.3722, 43.2545]},
+		"id":"737",
+		"properties": {
+			"title":"Marseille (13001)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/marcelle.media\/2019\/11\/27\/co-habitat-cherche-co-habitants-1\/' target='_blank'>Co-habitat cherche co-habitants #1<\/a><\/div>\n\t<div class=\"texte\">[Parrain\u00e9] Nom de code : \u00ab 11 boulevard Battala \u00bb. C\u2019est une premi\u00e8re \u00e0 Marseille : un immeuble \u00e0 r\u00e9habiliter, r\u00e9serv\u00e9 \u00e0 de \u00ab l\u2019habitat participatif \u00bb, un mode de logement mixant appartements priv\u00e9s et espaces communs (terrasse, buanderie, chambre d\u2019amis etc.). Avis aux candidats marseillais : les&nbsp;(...)<\/div>\n<\/div>","id_mot": "70"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-70.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [1.082285, 49.543856]},
+		"id":"738",
+		"properties": {
+			"title":"Montville (76710)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/lagedefaire-lejournal.fr\/torrefier-au-soleil-de-normandie\/' target='_blank'>Torr\u00e9fier au soleil de\u2026 Normandie&nbsp;!<\/a><\/div>\n\t<div class=\"texte\">Tournesol, lin, chanvre, noisette ou ch\u00e2taigne\u2026 Gr\u00e2ce \u00e0 son torr\u00e9facteur solaire, une coop\u00e9rative soutient les fili\u00e8res locales et propose des alternatives aux produits import\u00e9s...  Cet article Torr\u00e9fier au soleil de\u2026 Normandie ! est apparu en premier sur Le site du journal L\u2019age de&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [0.159017, 47.984818]},
+		"id":"739",
+		"properties": {
+			"title":"Le Mans (72000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/marcelle.media\/2019\/12\/04\/cookie-anti-gaspi-pain-invendu\/' target='_blank'>Du pain invendu recycl\u00e9 en cookies anti-gaspi <\/a><\/div>\n\t<div class=\"texte\">[Parrain\u00e9] Et si on rempla\u00e7ait la farine des traditionnels cookies par de la chapelure issue de pains invendus ? D\u00e9velopp\u00e9 au Mans (72), ce concept anti-gaspi baptis\u00e9 \u00ab Sookies \u00bb fait travailler des personnes en insertion.<\/div>\n<\/div>","id_mot": "118"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-118.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-1.537886, 47.224906]},
+		"id":"740",
+		"properties": {
+			"title":"Nantes (44000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/Les-zadistes-de-la-Cagette-des-terres-ravitaillent-et-rechauffent-les-luttes' target='_blank'>Les zadistes de la Cagette des terres ravitaillent et r\u00e9chauffent les luttes<\/a><\/div>\n\t<div class=\"texte\">Nantes (Loire-Atlantique), reportage  La Cagette des terres s\u2019imposerait-elle comme un outil essentiel \u00e0 ce d\u00e9but de mouvement social contre la r\u00e9forme des retraites ? Cr\u00e9\u00e9 par la Zad de Notre-Dame-des-Landes, ce r\u00e9seau de ravitaillement des luttes du pays nantais est d\u00e9j\u00e0 de toutes les actions. Lors&nbsp;(...)<\/div>\n<\/div>","id_mot": "219"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-219.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.448955, 48.863776]},
+		"id":"741",
+		"properties": {
+			"title":"Montreuil (93100)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.bondyblog.fr\/societe\/police-justice\/wake-up-cafe-lassociation-qui-donne-une-seconde-chance-apres-la-prison\/' target='_blank'>Wake up Caf\u00e9, l\u2019association qui donne une seconde chance apr\u00e8s la prison <\/a><\/div>\n\t<div class=\"texte\">80 000 personnes sortent de prison tous les ans. Apr\u00e8s plusieurs ann\u00e9es pass\u00e9es derri\u00e8re les barreaux, beaucoup ont du mal \u00e0 retrouver un logement, un emploi ou simplement une vie normale. Le plus souvent livr\u00e9s \u00e0 eux-m\u00eames, ces ex-d\u00e9tenus sont men\u00e9s irr\u00e9m\u00e9diablement vers la r\u00e9cidive. L\u2019association Wake&nbsp;(...)<\/div>\n<\/div>","id_mot": "117"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-117.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.35058, 48.845277]},
+		"id":"742",
+		"properties": {
+			"title":"Paris 5e Arrondissement (75005)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/Reparer-pour-ne-plus-surconsommer-le-boom-des-Repair-Cafes' target='_blank'>R\u00e9parer pour ne plus surconsommer, le boom des Repair Caf\u00e9s<\/a><\/div>\n\t<div class=\"texte\">R\u00e9parer un objet cass\u00e9, aid\u00e9 par un b\u00e9n\u00e9vole : c\u2019est le principe d\u2019un Repair Caf\u00e9. De plus en plus de personnes fr\u00e9quentent ces lieux, par souci \u00e9cologique ou parce qu\u2019ils sont pr\u00e9caires. La loi sur \u00ab l\u2019\u00e9conomie circulaire \u00bb, actuellement discut\u00e9e au Parlement, accompagnera-t-elle cet attrait pour&nbsp;(...)<\/div>\n<\/div>","id_mot": "118"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-118.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.371816, 49.184417]},
+		"id":"743",
+		"properties": {
+			"title":"Caen (14000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/grand-format.net\/series\/zero-chomeurs\/' target='_blank'>Z\u00e9ro ch\u00f4meurs <\/a><\/div>\n\t<div class=\"texte\">6 millions de ch\u00f4meurs. Et une id\u00e9e folle : donner un emploi \u00e0 tous, sans surco\u00fbt pour la collectivit\u00e9 et avec un impact positif sur les territoires. Exp\u00e9riment\u00e9e \u00e0 Colombelles, dans la banlieue de Caen, Territoire z\u00e9ro ch\u00f4meurs change le quotidien des personnes employ\u00e9es, mais affronte de nombreux&nbsp;(...)<\/div>\n<\/div>","id_mot": "120"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-120.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [4.8236, 45.7685]},
+		"id":"744",
+		"properties": {
+			"title":"Lyon (69001)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/Du-bio-pas-cher-dans-les-quartiers-populaires-le-pari-de-l-association-Vrac' target='_blank'>Du bio, pas cher, dans les quartiers populaires&nbsp;: le pari de l&#8217;association Vrac<\/a><\/div>\n\t<div class=\"texte\">Dans trois quartiers populaires lyonnais, l\u2019association Vrac lutte contre la pr\u00e9carit\u00e9 alimentaire. Plusieurs groupements d\u2019achats, fonctionnant comme des Amap, permettent aux habitants d\u2019acheter des produits issus de l\u2019agriculture paysanne et biologique \u00e0 prix coutant. Lyon, correspondance  Entre&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [4.8236, 45.7685]},
+		"id":"745",
+		"properties": {
+			"title":"Lyon (69001)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.rue89lyon.fr\/2020\/01\/01\/pollution-dites-bonjour-a-la-zone-a-faibles-emissions-de-la-metropole-de-lyon\/' target='_blank'>Pollution&nbsp;: dites bonjour \u00e0 la &#171;&nbsp;Zone \u00e0 faibles \u00e9missions&nbsp;&#187; de la M\u00e9tropole de Lyon<\/a><\/div>\n\t<div class=\"texte\">La \u00ab Zone \u00e0 faibles \u00e9missions \u00bb ou ZFE entre en vigueur aujourd\u2019hui, 1er janvier 2020. Pour f\u00eater sa naissance, Lyon et son agglom\u00e9ration vivent un deuxi\u00e8me pic de pollution aux particules fines en un mois. En quoi consiste ce plan de restriction de la circulation automobile cens\u00e9 permettre de lutter&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.327972, 44.432746]},
+		"id":"746",
+		"properties": {
+			"title":"Uzeste (33730)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/rue89bordeaux.com\/2020\/01\/a-uzeste-des-citoyens-rachetent-la-foret-pour-la-proteger\/' target='_blank'>A Uzeste, des citoyens rach\u00e8tent la for\u00eat pour la prot\u00e9ger<\/a><\/div>\n\t<div class=\"texte\">Le groupement forestier uzestois s\u2019emploie \u00e0 racheter des parcelles de for\u00eat pour \"pr\u00e9server\" sa biodiversit\u00e9. Organis\u00e9s en soci\u00e9t\u00e9 civile, une centaine d\u2019adh\u00e9rents souhaite ainsi pr\u00e9server ce \"patrimoine naturel\" de la sylviculture intensive.  The post A Uzeste, des citoyens rach\u00e8tent la for\u00eat pour la&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-1.056903, 49.285775]},
+		"id":"747",
+		"properties": {
+			"title":"Isigny-sur-Mer (14230)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/grand-format.net\/series\/a-la-coope\/' target='_blank'>\u00c0 la Coop\u00e9<\/a><\/div>\n\t<div class=\"texte\">La coop\u00e9rative laiti\u00e8re, \u00e0 Isigny-sur-mer, dans le Calvados, fournit de la poudre de lait \u00e0 plus d\u2019un million de b\u00e9b\u00e9s \u00e0 travers le monde. Arnaud a pass\u00e9 18 mois dans cette usine. Il raconte son quotidien d\u2019employ\u00e9.<\/div>\n<\/div>","id_mot": "120"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-120.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-58.4370894, -34.6075682]},
+		"id":"748",
+		"properties": {
+			"title":"Buenos Aires",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.equaltimes.org\/l-agro-ecologie-feministe-fait?lang=fr#.XiF_zTBPYXs.twitter' target='_blank'>L\u2019agro-\u00e9cologie f\u00e9ministe fait front au mod\u00e8le agro-industriel en Argentine<\/a><\/div>\n\t<div class=\"texte\">L\u2019Argentine, pays dont 60 % de la surface arable est sem\u00e9e de soja transg\u00e9nique, est devenue l\u2019un des territoires o\u00f9 le mod\u00e8le de l\u2019agro-business connait son essor le plus rapide ; toutefois, ces derni\u00e8res ann\u00e9es y ont \u00e9galement vu monter en&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [7.8494005, 47.9960901]},
+		"id":"749",
+		"properties": {
+			"title":"",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.rue89strasbourg.com\/zero-dechet-comment-fribourg-met-sa-voisine-strasbourgeoise-a-lamende-165673?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+Rue89Strasbourg+%28Rue89+Strasbourg%29' target='_blank'>Z\u00e9ro d\u00e9chet&nbsp;: Comment Fribourg met sa voisine strasbourgeoise \u00e0 l\u2019amende<\/a><\/div>\n\t<div class=\"texte\">Strasbourg exp\u00e9rimente, Strasbourg \u00e9tudie, Strasbourg louvoie\u2026 Pendant ce temps \u00e0 Fribourg, le tri des biod\u00e9chets et la taxe proportionnelle sont un<\/div>\n<\/div>","id_mot": "118"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-118.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [16.3725042, 48.2083537]},
+		"id":"750",
+		"properties": {
+			"title":"Vienne (1010)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.equaltimes.org\/le-modele-viennois-de-logement' target='_blank'>Le mod\u00e8le viennois de logement social, une inspiration pour d\u00e9fier la crise du logement en Europe<\/a><\/div>\n\t<div class=\"texte\">Avec ses petits immeubles et ses nombreux jardins privatifs, l\u2019ensemble Schmelz, dans le 15e arrondissement viennois, ressemble \u00e0 un lotissement de banlieue cossue. Et pourtant, il s\u2019agit bien de logements sociaux. Wolfram Mack a grandi et vit encore ici. Le retrait\u00e9 loue un 95 m\u00b2 pour 360 euros&nbsp;(...)<\/div>\n<\/div>","id_mot": "70"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-70.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-3.65457, 47.808205]},
+		"id":"751",
+		"properties": {
+			"title":"Mo\u00eblan-sur-Mer (29350)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/Une-commune-bretonne-impose-l-agriculture-bio-et-paysanne-a-400-proprietaires' target='_blank'>Une commune bretonne impose l\u2019agriculture bio et paysanne \u00e0 400 propri\u00e9taires<\/a><\/div>\n\t<div class=\"texte\">En recourant \u00e0 une proc\u00e9dure m\u00e9connue du Code rural, le maire de Mo\u00eblan a permis de mettre en culture des parcelles agricoles priv\u00e9es laiss\u00e9es \u00e0 l\u2019abandon. En deux ans, une trentaine d\u2019emplois ont \u00e9t\u00e9 cr\u00e9\u00e9s et l\u2019autonomie alimentaire de la commune s\u2019est&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [4.488718, 44.7546]},
+		"id":"752",
+		"properties": {
+			"title":"Ajoux (07000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.revuesilence.net\/numeros\/318-Alternatives-Drome-Ardeche\/etre-maire-et-ecologiste-dans-une-petite-commune-rurale' target='_blank'>Etre maire et \u00e9cologiste dans une petite commune rurale <\/a><\/div>\n\t<div class=\"texte\">Pascal Dumoulin est maire de la commune d\u2019Ajoux, sur les hauts plateaux ard\u00e9chois, 90 habitants en hiver, entre le double et le triple en \u00e9t\u00e9. Agriculteur biologique, il se confronte aux id\u00e9es anciennes et parfois irr\u00e9alistes des collectivit\u00e9s locales. - Alternatives - Dr\u00f4me\/Ard\u00e8che \/ Article,&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.714426, 45.145898]},
+		"id":"753",
+		"properties": {
+			"title":"\u00c9chirolles (38130)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/En-Isere-un-centre-de-sante-autogere-et-populaire-repense-le-soin' target='_blank'>En Is\u00e8re, un centre de sant\u00e9 autog\u00e9r\u00e9 et populaire repense le soin<\/a><\/div>\n\t<div class=\"texte\">\u00c0 \u00c9chirolles (Is\u00e8re), un centre de soin communautaire et autog\u00e9r\u00e9 permet depuis 2016 aux habitants de cette commune populaire de devenir acteurs de leur sant\u00e9. M\u00e9decins, kin\u00e9s, infirmiers assistants sociaux, coordinateurs administratifs... Le Village 2 sant\u00e9 propose une offre de soins globale prenant&nbsp;(...)<\/div>\n<\/div>"
+			,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/plugins\/carteppi\/images\/marker_defaut.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.714426, 45.145898]},
+		"id":"754",
+		"properties": {
+			"title":"\u00c9chirolles (38130)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.revuesilence.net\/numeros\/485-Le-soin-c-est-communautaire\/autogestion-et-sante-communautaire-les-deux-jambes-du-village-2-sante' target='_blank'>Autogestion et sant\u00e9 communautaire, les deux jambes du Village 2 sant\u00e9<\/a><\/div>\n\t<div class=\"texte\">Depuis 2016, c\u2019est un ovni dans le champ m\u00e9dico-social qui a ouvert \u00e0 \u00c9chirolles, au sud de Grenoble. Le Village 2 sant\u00e9 est un centre de sant\u00e9 communautaire autog\u00e9r\u00e9, lieu de ressource salutaire dans un quartier populaire permettant aux habitant\u00b7es de devenir acteurs et actrices de leur sant\u00e9. - Le&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [0.696825, 47.432192]},
+		"id":"755",
+		"properties": {
+			"title":"Tours (37100)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.alternatives-economiques.fr\/danemark-paradis-jeunes-adultes\/00091614' target='_blank'>Le Danemark, paradis pour jeunes adultes <\/a><\/div>\n\t<div class=\"texte\">Gr\u00e2ce \u00e0 la gratuit\u00e9 des \u00e9tudes, un syst\u00e8me de soutien \u00e0 l\u2019\u00e9ducation tr\u00e8s g\u00e9n\u00e9reux et un march\u00e9 du travail accommodant, la jeunesse danoise b\u00e9n\u00e9ficie d\u2019une grande autonomie.<\/div>\n<\/div>","id_mot": "140"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-140.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [3.873083, 43.611665]},
+		"id":"756",
+		"properties": {
+			"title":"Montpellier (34000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.bastamag.net\/Dans-un-centre-d-accueil-pour-jeunes-en-difficultes-Ils-font-quelque-chose-d' target='_blank'>Dans un centre d&#8217;accueil pour jeunes en difficult\u00e9s&nbsp;: &#171;&nbsp;Ils font quelque chose d\u2019utile et qui va rester&nbsp;&#187;<\/a><\/div>\n\t<div class=\"texte\">Aux ateliers de Bentenac, pr\u00e8s de Montpellier, l\u2019accueil d\u2019enfants plac\u00e9s et de jeunes en difficult\u00e9 scolaire, sociale ou psychologique coexiste avec (...)<\/div>\n<\/div>","id_mot": "117"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-117.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [12.51433, 41.9185819]},
+		"id":"757",
+		"properties": {
+			"title":"Rome (00161)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.equaltimes.org\/a-rome-les-migrants-invisibles?lang=fr#.XkPSucKpOU0.twitter' target='_blank'>\u00c0 Rome, les migrants &#171;&nbsp;invisibles&nbsp;&#187; offrent une nouvelle image de la Ville \u00e9ternelle <\/a><\/div>\n\t<div class=\"texte\">Pour nombre de personnes vivant \u00e0 Rome, les week-ends sont r\u00e9serv\u00e9s aux promenades et au l\u00e8che-vitrine dans le centre-ville. Mais, un dimanche de janvier, par une matin\u00e9e d\u2019hiver ensoleill\u00e9e, 12 personnes se sont retrouv\u00e9es dans (...)<\/div>\n<\/div>","id_mot": "41"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/plugins\/carteppi\/images\/marker_defaut.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.371816, 49.184349]},
+		"id":"758",
+		"properties": {
+			"title":"Caen (14000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/grand-format.net\/series\/migrants-camo-rase_ecole-nomade\/#2' target='_blank'>D\u2019une terre \u00e0 l\u2019autre<\/a><\/div>\n\t<div class=\"texte\">Ils ont travers\u00e9 des pays, des continents, des mers, dans l\u2019espoir d\u2019un avenir meilleur. Leur route s\u2019est arr\u00eat\u00e9e en Normandie, parfois provisoirement, o\u00f9 ils doivent encore lutter pour une vie digne. R\u00e9cits de migrants. Fatima, Afghane, 30 ans Mon mari est d\u00e9c\u00e9d\u00e9 il y a deux ans, des suites de fi\u00e8vres&nbsp;(...)<\/div>\n<\/div>","id_mot": "41"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/plugins\/carteppi\/images\/marker_defaut.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.1774122, 41.3832835]},
+		"id":"759",
+		"properties": {
+			"title":"Barcelone (08002)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.equaltimes.org\/ma-coloc-est-une-mamie-repenser?lang=en' target='_blank'>Ma coloc est une mamie \u2013 repenser les cohabitations entre g\u00e9n\u00e9rations<\/a><\/div>\n\t<div class=\"texte\">Josep Anglada, \u00e9tudiant de 19 ans originaire de Minorque, vit depuis plus de deux ans chez Maria Teresa, une Barcelonaise de 96 ans. Lorsque nous arrivons chez elle, Josep et moi, Maria Teresa se l\u00e8ve (...)<\/div>\n<\/div>","id_mot": "70"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-70.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-1.1639, 43.2099]},
+		"id":"760",
+		"properties": {
+			"title":"Ainhice-Mongelos (64220)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/Au-Pays-basque-les-paysans-ont-cree-leur-chambre-d-agriculture-alternative' target='_blank'>Au Pays basque, les paysans ont cr\u00e9\u00e9 leur chambre d\u2019agriculture alternative<\/a><\/div>\n\t<div class=\"texte\">Euskal Herriko Laborantza Ganbara (EHLG \u2013 chambre d\u2019agriculture basque - en euskara, la langue basque) est une association pour aider les paysans cr\u00e9\u00e9e en 2005. Endossant le m\u00eame r\u00f4le qu\u2019une chambre d\u2019agriculture d\u00e9partementale sans pour autant \u00eatre reconnue comme un office public, elle encourage une&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [6.073465, 43.392529]},
+		"id":"761",
+		"properties": {
+			"title":"Brignoles (83170)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/marcelle.media\/2020\/02\/20\/agroforesterie-vigne-cooperative-estandon\/' target='_blank'>La coop\u00e9rative d\u2019Estandon plante 670 arbres dans ses vignes<\/a><\/div>\n\t<div class=\"texte\">[Parrain\u00e9] L\u2019agroforesterie \u00e0 la rescousse de la vigne pour amortir le changement climatique : 670 arbres et arbustes vont \u00eatre plant\u00e9s sur trois exploitations viticoles varoises pour fournir aux sols davantage de biodiversit\u00e9, de fra\u00eecheur et&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.376771, 49.186744]},
+		"id":"762",
+		"properties": {
+			"title":"Caen (14000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.bastamag.net\/Parcel-relocalisation-agricole-circuits-courts-agriculture-bio-territoires' target='_blank'>Votre commune peut-elle se convertir \u00e0 une agriculture 100% locale et 100% bio&nbsp;?<\/a><\/div>\n\t<div class=\"texte\">Combien d\u2019hectares agricoles pour nourrir ma ville ? Combien d\u2019agriculteurs en plus, d\u2019emplois cr\u00e9\u00e9s, si on relocalise la production alimentaire ? Et si on convertit en 100% bio ? Outil in\u00e9dit, le site \u00ab Parcel \u00bb permet de faire ces calculs. Pour les citoyens et les \u00e9lus qui souhaitent engager la&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.387709, 48.887253]},
+		"id":"763",
+		"properties": {
+			"title":"Paris 19e Arrondissement (75019)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.bondyblog.fr\/societe\/migrations\/avec-causons-les-refugies-donnent-des-cours\/' target='_blank'>Avec Causons, les r\u00e9fugi\u00e9s donnent des cours <\/a><\/div>\n\t<div class=\"texte\">L\u2019association Causons propose des cours de langue originaux, donn\u00e9s par des personnes migrantes et r\u00e9fugi\u00e9es. Un dispositif original et nouveau qui permet \u00e0 ces derniers d\u2019avoir un revenu, de transmettre leur culture et leur langue et de s\u2019ins\u00e9rer professionnellement. Reportage.  The post Avec Causons,&nbsp;(...)<\/div>\n<\/div>","id_mot": "41"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/plugins\/carteppi\/images\/marker_defaut.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [7.778813, 48.608328]},
+		"id":"764",
+		"properties": {
+			"title":"Strasbourg (67000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.rue89strasbourg.com\/a-cronenbourg-un-nouveau-squat-pour-femmes-vient-detre-ouvert-169888?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+Rue89Strasbourg+%28Rue89+Strasbourg%29' target='_blank'>\u00c0 Cronenbourg, un nouveau squat pour femmes vient d&#8217;\u00eatre ouvert<\/a><\/div>\n\t<div class=\"texte\">En fin d\u2019apr\u00e8s-midi du dimanche 1er mars, la police a constat\u00e9 l\u2019existence d\u2019un nouveau squat dans le quartier de Cronenbourg. Un collectif de militantes veut en faire une structure d\u2019accueil d\u00e9di\u00e9e aux femmes.<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.17495, 44.696199]},
+		"id":"765",
+		"properties": {
+			"title":"Saillans (26340)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/lagedefaire-lejournal.fr\/saillans-ou-la-democratie-experimentale\/' target='_blank'>Saillans, ou la d\u00e9mocratie exp\u00e9rimentale<\/a><\/div>\n\t<div class=\"texte\">La Petite R\u00e9publique de Saillans raconte les d\u00e9couvertes et t\u00e2tonnements de ces \u00e9lu\u00b7es qui ont choisi, pour le meilleur et pour le pire, de partager le pouvoir avec les habitant\u00b7es. Un pr\u00e9cieux retour d\u2019exp\u00e9rience.<\/div>\n<\/div>","id_mot": "215"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-215.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.587635, 48.761574]},
+		"id":"766",
+		"properties": {
+			"title":"Commercy (55200)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/mouvements.info\/gj_commercy\/' target='_blank'>La commune, comme communaut\u00e9 de vie, de lutte, comme territoire que l\u2019on a en commun<\/a><\/div>\n\t<div class=\"texte\">En septembre 2019, le groupe des Gilets Jaunes de Commercy lance un appel \u00e0 la cr\u00e9ation de \u00ab Communes Libres \u00bb partout [\u2026]<\/div>\n<\/div>","id_mot": "215"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-215.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.520905, 43.871708]},
+		"id":"767",
+		"properties": {
+			"title":"Saint-Martin-de-Castillon (84750)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/La-ferme-qui-guerit-des-addictions' target='_blank'>La ferme qui gu\u00e9rit des addictions<\/a><\/div>\n\t<div class=\"texte\">L\u2019id\u00e9e de la Bergerie de Berdine, cr\u00e9\u00e9e en 1973 ? \u00ab Reconstruire les murs pour se reconstruire soi-m\u00eame \u00bb. Dans ce hameau du Vaucluse, via le travail manuel et le soin aux animaux, des personnes en grande difficult\u00e9, notamment toxicomanes, reprennent doucement&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.385349, 48.658307]},
+		"id":"768",
+		"properties": {
+			"title":"Grigny (91350)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.wedemain.fr\/Le-jardinage-comme-arme-de-transformation-sociale_a4166.html' target='_blank'>Le jardinage comme arme de transformation sociale<\/a><\/div>\n\t<div class=\"texte\">\u00c0 Grigny, la ville la plus pauvre de France, en r\u00e9gion parisienne, un bailleur social et les jardiniers urbains de Merci Raymond ont lanc\u00e9 un ambitieux programme de v\u00e9g\u00e9talisation. Objectif : lutter contre la violence et susciter des&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [3.599573, 44.324652]},
+		"id":"769",
+		"properties": {
+			"title":"Florac Trois Rivi\u00e8res (48400)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.bastamag.net\/Masques-covid19-penurie-PME-Lozere-filiere-courte-jeans-fabriques-en-France' target='_blank'>Une petite entreprise textile de Loz\u00e8re d\u00e9cide de fabriquer gratuitement des masques contre le Covid-19 <\/a><\/div>\n\t<div class=\"texte\">Loin des annonces de certains gros industriels, l\u2019Atelier Tuffery s\u2019est lanc\u00e9 b\u00e9n\u00e9volement dans la confection de masques pour pallier aux d\u00e9faillances (...)<\/div>\n<\/div>","id_mot": "120"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-120.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-9.1464654, 39.4107069]},
+		"id":"770",
+		"properties": {
+			"title":"Santo Onofre e Serra do Bouro (2500-844)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.equaltimes.org\/au-portugal-le-renouveau-de-la' target='_blank'>Au Portugal, le renouveau de la production de li\u00e8ge autrefois chancelante et devenue durable<\/a><\/div>\n\t<div class=\"texte\">Chaque \u00e9t\u00e9, dans la r\u00e9gion de l\u2019Alentejo au sud du Portugal, des travailleurs arm\u00e9s de haches, aussi aiguis\u00e9es que des rasoirs, consacrent leurs journ\u00e9es \u00e0 l\u2019op\u00e9ration minutieuse de la r\u00e9colte du li\u00e8ge. C\u2019est un travail hautement qualifi\u00e9, fond\u00e9 sur des m\u00e9thodes \u00e9prouv\u00e9es depuis des si\u00e8cles, enti\u00e8rement&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.587876, 44.853383]},
+		"id":"771",
+		"properties": {
+			"title":"Bordeaux (33000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/rue89bordeaux.com\/2020\/03\/des-plateformes-en-ligne-pour-soutenir-les-agriculteurs-locaux\/' target='_blank'>Des plateformes en ligne pour soutenir les agriculteurs locaux<\/a><\/div>\n\t<div class=\"texte\">Le D\u00e9partement de la Gironde vient d\u2019ouvrir un site permettant aux agriculteurs de proposer \u00e0 la vente directe leurs fruits, l\u00e9gumes, viandes ou poissons. Celle de la R\u00e9gion Nouvelle-Aquitaine sera effective le 31 mars.  The post Des plateformes en ligne pour soutenir les agriculteurs locaux&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [4.351697, 50.8465573]},
+		"id":"772",
+		"properties": {
+			"title":"Bruxelles (1000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.kairospresse.be\/article\/les-maisons-medicales-un-contre-modele-a-la-medecine-marchande\/' target='_blank'>Les maisons m\u00e9dicales&nbsp;: une contre mod\u00e8le \u00e0 la m\u00e9decine marchande&nbsp;?<\/a><\/div>\n\t<div class=\"texte\">Kairos : Pouvez-vous nous retracer l\u2019histoire des maisons m\u00e9dicales en Belgique ? Christophe Cocu[note] : Les maisons m\u00e9dicales apparaissent \u00e0 la fin des ann\u00e9es 1970, comme des \u00ab enfants tardifs \u00bb de mai 68, dans le m\u00eame creuset que les plannings familiaux et les centres de sant\u00e9 mentale. C\u2019est la&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-47.8823172, -15.7934036]},
+		"id":"773",
+		"properties": {
+			"title":"Brasilia (70.701-010)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/rapportsdeforce.fr\/linternationale\/dans-les-favelas-du-bresil-des-habitants-sorganisent-pour-freiner-la-progression-du-covid-19-03296573' target='_blank'>Dans les favelas du Br\u00e9sil, des habitants s\u2019organisent pour freiner la progression du Covid-19<\/a><\/div>\n\t<div class=\"texte\">Alors que le pr\u00e9sident br\u00e9silien Jair Bolsonaro affirme toujours que le coronavirus n\u2019est qu\u2019une petite grippe, qu\u2019il s\u2019assoit sur les recommandations de l\u2019OMS et fustige les m\u00e9dias comme les gouverneurs des \u00c9tats prenant des mesures, les initiatives en provenance [\u2026]  L\u2019article Dans les favelas du&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.174718, 48.937841]},
+		"id":"774",
+		"properties": {
+			"title":"Sartrouville (78500)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reflets.info\/articles\/a-sartrouville-des-jeunes-se-mobilisent-pour-les-soignants' target='_blank'>A Sartrouville, des jeunes se mobilisent pour les soignants<\/a><\/div>\n\t<div class=\"texte\">Les jeunes de Sartrouville font preuve de solidarit\u00e9 avec le personnel m\u00e9dical. D\u2019autres nettoient aussi les halls d\u2019immeuble pour \u00e9viter la propagation du virus. Leur initiative commence \u00e0 faire boule de neige dans...<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.587876, 44.853383]},
+		"id":"775",
+		"properties": {
+			"title":"Bordeaux (33000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/rue89bordeaux.com\/2020\/04\/les-habitants-confines-de-la-bastide-veulent-des-producteurs-et-moins-de-supermarches\/' target='_blank'>Les habitants confin\u00e9s de La Bastide veulent des producteurs et \"moins de supermarch\u00e9s\" <\/a><\/div>\n\t<div class=\"texte\">Apr\u00e8s la suspension du march\u00e9 place Calixte-Camelle pour cause de confinement, les habitants du quartier de la Bastide ont demand\u00e9 aux producteurs de revenir chacun un jour de la semaine pour distribuer des commandes pass\u00e9es par t\u00e9l\u00e9phone la veille. Jeudi dernier, pour la venue du mara\u00eecher, premier&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.3722, 43.2545]},
+		"id":"776",
+		"properties": {
+			"title":"Marseille (13001)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/lagedefaire-lejournal.fr\/requisition-citoyenne-dun-mcdo-a-marseille\/' target='_blank'>R\u00e9quisition (citoyenne) d&#8217;un McDo \u00e0 Marseille <\/a><\/div>\n\t<div class=\"texte\">Dans les quartiers Nord de Marseille, des citoyen\u00b7nes ont r\u00e9quisitionn\u00e9 les locaux d\u2019un McDonald pour venir en aide \u00e0 une population d\u00e9munie, menac\u00e9e par la faim et abandonn\u00e9e des pouvoirs publics.<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.9725526, 50.4277333]},
+		"id":"777",
+		"properties": {
+			"title":"Stavelot (4970)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.equaltimes.org\/papiers-et-ciseaux-une-cooperative' target='_blank'>Papiers et ciseaux \u2013 une coop\u00e9rative de coiffeurs et couturiers pour sortir du travail informel, dans le quartier africain de Bruxelles<\/a><\/div>\n\t<div class=\"texte\">\u00c0 l\u2019angle de la rue de la Paix et celle de la Longue-Vie, au plein c\u0153ur de Matong\u00e9, un quartier bruxellois influenc\u00e9 par un riche m\u00e9lange de cultures africaines, mais de plus en plus menac\u00e9 par des processus de gentrification, se trouve un salon de coiffure, comme il y en a beaucoup dans les rues&nbsp;(...)<\/div>\n<\/div>","id_mot": "120"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-120.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-70.2942783, -18.4835833]},
+		"id":"778",
+		"properties": {
+			"title":"Arica (10000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/Face-au-manque-d-eau-les-Chiliens-s-entraident' target='_blank'>Face au manque d\u2019eau, les Chiliens s\u2019entraident<\/a><\/div>\n\t<div class=\"texte\">Plus de 350.000 Chiliens n\u2019auraient pas acc\u00e8s \u00e0 l\u2019eau potable et seraient encore plus vuln\u00e9rables face \u00e0 la propagation du Covid-19. Une situation tendue qui d\u00e9coule de politiques n\u00e9olib\u00e9rales de privatisation de l\u2019eau. Face \u00e0 l\u2019inaction de l\u2019\u00c9tat, la population s\u2019entraide. Lire la suite - Reportage \/&nbsp;(...)<\/div>\n<\/div>","id_mot": "41"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/plugins\/carteppi\/images\/marker_defaut.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.473599, 48.850004]},
+		"id":"779",
+		"properties": {
+			"title":"Fontenay-sous-Bois (94120)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/lejournalminimal.fr\/a-fontenay-sous-bois-cette-petite-amap-sest-rapidement-adaptee-au-covid-19\/' target='_blank'>\u00c0 Fontenay-sous-Bois, cette petite AMAP s\u2019est rapidement adapt\u00e9e au Covid-19<\/a><\/div>\n\t<div class=\"texte\">Pl\u00e9biscit\u00e9es par les consommateurs, les AMAP se d\u00e9brouillent plut\u00f4t pas mal face au coronavirus. Reportage en images \u00e0 Fontenay-sous-Bois. La pand\u00e9mie de Covid-19 a oblig\u00e9 les Associations pour le maintien d\u2019une agriculture paysanne (AMAP) \u00e0 se r\u00e9organiser pour que les mara\u00eechers puissent livrer leurs&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.348679, 48.892046]},
+		"id":"780",
+		"properties": {
+			"title":"Paris 18e Arrondissement (75018)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.bondyblog.fr\/societe\/a-barbes-les-heros-masques-du-ftour\/' target='_blank'>A Barb\u00e8s, les h\u00e9ros masqu\u00e9s du ftour <\/a><\/div>\n\t<div class=\"texte\">#LesBienfaiteurs du jour sont en plein Paris, \u00e0 Barb\u00e8s. Rachid Arar et les autres b\u00e9n\u00e9voles de \u00ab La table ouverte \u00bb distribuent chaque soir des centaines de repas \u00e0 celles et ceux qui en ont besoin. Une initiative qui contribue \u00e0 faire vivre ce quartier historiquement solidaire, malgr\u00e9 le confinement.&nbsp;(...)<\/div>\n<\/div>"
+			,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/plugins\/carteppi\/images\/marker_defaut.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [4.59587, 44.721071]},
+		"id":"781",
+		"properties": {
+			"title":"Privas (07000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/cqfd-journal.org\/En-Ariege-le-futur-c-est' target='_blank'>En Ari\u00e8ge, le futur c&#8217;est maintenant <\/a><\/div>\n\t<div class=\"texte\">Dans la vall\u00e9e du Biros, en Ari\u00e8ge, un r\u00e9seau autonome d\u2019approvisionnement alimentaire a \u00e9t\u00e9 mis en place par les habitants. L\u2019objectif ? Subvenir aux besoins des personnes les plus fragiles face au coronavirus et \u00e9couler les stocks des petits producteurs&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-104.9568557, 51.0704195]},
+		"id":"782",
+		"properties": {
+			"title":"Strasbourg (S0G 4V0)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='http:\/\/feedproxy.google.com\/~r\/Rue89Strasbourg\/~3\/cA4HCfRqRnQ\/habitants-hautepierre-cronenbourg-actions-solidarite-entraide-175127' target='_blank'>Des habitants de Hautepierre et Cronenbourg organisent des actions de solidarit\u00e9 et d\u2019entraide<\/a><\/div>\n\t<div class=\"texte\">Distribution de masques et de paniers-repas, courses \u00e0 domicile\u2026 D\u00e8s le d\u00e9but du confinement, des habitants des quartiers de Hautepierre et Cronenbourg ont mis en place des actions de solidarit\u00e9 et... [Cliquez sur le titre pour lire la suite de&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.396749, 48.862605]},
+		"id":"783",
+		"properties": {
+			"title":"Paris 20e Arrondissement (75020)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/guitinews.fr\/reportage-photo\/2020\/05\/13\/collectif-solidaire-zoom-sur-une-mobilisation-citoyenne-a-grande-echelle-pour-nourrir-les-soignants\/' target='_blank'>Collectif solidaire&nbsp;: une mobilisation citoyenne pour nourrir&nbsp;les soignants<\/a><\/div>\n\t<div class=\"texte\">Depuis fin mars, une \u00e9quipe dynamique s\u2019est constitu\u00e9e en collectif engag\u00e9 pour nourrir les soignants d\u2019Ile-de-France. Ce sont six trentenaires, entrepreneurs et chefs cuisiniers qui se sont mobilis\u00e9s pour proposer une distribution de repas \u00e0 grande \u00e9chelle aux diff\u00e9rents services des 22 h\u00f4pitaux de&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.408514, 48.900574]},
+		"id":"784",
+		"properties": {
+			"title":"Pantin (93500)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.bastamag.net\/Brigade-solidarite-populaire-autodefense-sanitaire-anticapitalisme-antifascisme-Seine-Saint-Denis-entraide-reportage-photos-covid' target='_blank'>Des &#171;&nbsp;brigades de solidarit\u00e9 populaire&nbsp;&#187; comme antidote au virus des in\u00e9galit\u00e9s <\/a><\/div>\n\t<div class=\"texte\">Des groupes d\u2019habitants de Seine-Saint-Denis se sont form\u00e9s d\u00e8s le d\u00e9but du confinement pour r\u00e9colter et distribuer colis alimentaires, produits (...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.634765, 43.29707]},
+		"id":"785",
+		"properties": {
+			"title":"G\u00e9menos (13420)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/rapportsdeforce.fr\/ici-et-maintenant\/crise-sanitaire-sous-controle-ouvrier-a-la-cooperative-scop-ti-05137161' target='_blank'>Crise sanitaire sous contr\u00f4le ouvrier \u00e0 la coop\u00e9rative Scop-Ti<\/a><\/div>\n\t<div class=\"texte\">R\u00e9duction du temps de travail, horaires d\u00e9cal\u00e9s, mise en place pr\u00e9coce de mesures sanitaires. Ce sont quelques-unes des dispositions prises pour poursuivre la production de th\u00e9s et d\u2019infusions \u00e0 l\u2019usine de G\u00e9menos. Et si l\u2019autogestion ouvri\u00e8re n\u2019avait pas \u00e0 p\u00e2lir de sa gestion du Covid-19, en comparaison&nbsp;(...)<\/div>\n<\/div>","id_mot": "120"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-120.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [7.319453, 48.533568]},
+		"id":"786",
+		"properties": {
+			"title":"Urmatt (67280)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.rue89strasbourg.com\/urmatt-scierie-siat-ecologie-zero-dechet-169715?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+Rue89Strasbourg+%28Rue89+Strasbourg%29' target='_blank'>\u00c0 Urmatt, la scierie SIAT pionni\u00e8re d&#8217;une industrie \u00e9colo<\/a><\/div>\n\t<div class=\"texte\">En investissant dans l\u2019\u00e9conomie circulaire, SIAT, leader fran\u00e7ais de la production de bois install\u00e9 \u00e0 Urmatt, a r\u00e9duit son empreinte carbone, favorise les circuits courts et vise le \"z\u00e9ro d\u00e9chet.\" Il s\u2019agit \"d\u2019aller dans le sens de l\u2019histoire\" selon son&nbsp;(...)<\/div>\n<\/div>","id_mot": "127"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-127.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.362113, 48.92668]},
+		"id":"787",
+		"properties": {
+			"title":"Saint-Denis (93200)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.bondyblog.fr\/societe\/a-saint-denis-un-eternel-repere-pour-les-femmes\/' target='_blank'>A Saint-Denis, un \u00e9ternel rep\u00e8re pour les femmes <\/a><\/div>\n\t<div class=\"texte\">La Maison des femmes de Saint-Denis n\u2019a jamais ferm\u00e9 ses portes durant le confinement, oscillant entre t\u00e9l\u00e9consultations et accueil physique des cas les plus urgents. Depuis le 11 mai, les femmes reviennent progressivement pour y trouver l\u2019aide dont elles ont besoin.  The post A Saint-Denis, un&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.448955, 48.863776]},
+		"id":"788",
+		"properties": {
+			"title":"Montreuil (93100)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/Re-apprendre-la-bicyclette-apres-la-Covid-19-le-boom-des-velo-ecoles' target='_blank'>(R\u00e9)apprendre la bicyclette&nbsp;: apr\u00e8s le Covid-19, le boom des v\u00e9lo-\u00e9coles<\/a><\/div>\n\t<div class=\"texte\">Le v\u00e9lo, moyen de transport \u00e9cologique par excellence, conna\u00eet un surcroit d\u2019engouement depuis qu\u2019il permet aussi de r\u00e9pondre aux enjeux de distanciation physique. De nombreux Fran\u00e7ais choisissent donc de se (re)mettre \u00e0 la bicyclette et, parfois, de se faire accompagner par une v\u00e9lo-\u00e9cole. Montreuil&nbsp;(...)<\/div>\n<\/div>","id_mot": "362"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/plugins\/carteppi\/images\/marker_defaut.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.3722, 43.2545]},
+		"id":"789",
+		"properties": {
+			"title":"Marseille (13001)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.mediapart.fr\/journal\/france\/070620\/vendre-aussi-du-nutella-un-supermarche-cooperatif-cherche-sa-recette' target='_blank'>&#171;&nbsp;Vendre aussi du Nutella&nbsp;?&nbsp;&#187;&nbsp;: un supermarch\u00e9 coop\u00e9ratif cherche sa recette<\/a><\/div>\n\t<div class=\"texte\">\u00c0 Marseille, les cr\u00e9ateurs d\u2019une petite \u00e9picerie coop\u00e9rative veulent passer \u00e0 400 m\u00b2. Alors qu\u2019une trentaine de projets similaires existent d\u00e9j\u00e0 en France, le chemin est encore long de l\u2019id\u00e9e \u00e0 la r\u00e9alisation.<\/div>\n<\/div>","id_mot": "16"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-16.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-1.541877, 47.233441]},
+		"id":"790",
+		"properties": {
+			"title":"Nantes (44000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.mediacites.fr\/solutions\/nantes\/2020\/06\/11\/lautre-hangar-la-plateforme-de-solidarite-nee-du-confinement-quil-faudrait-perenniser\/' target='_blank'>L&#8217;Autre Hangar, la plateforme de solidarit\u00e9 n\u00e9e du confinement qu&#8217;il faudrait p\u00e9renniser <\/a><\/div>\n\t<div class=\"texte\">D\u2019un c\u00f4t\u00e9, des dons qui affluent. De l\u2019autre, des associations en manque de b\u00e9n\u00e9voles et qui font face \u00e0 une augmentation du nombre de b\u00e9n\u00e9ficiaires. \u00c0 Nantes, durant le confinement, la cr\u00e9ation de l\u2019Autre Hangar a permis de mettre en lien ces diff\u00e9rents acteurs, pour stocker et redistribuer efficacement&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.3722, 43.2545]},
+		"id":"791",
+		"properties": {
+			"title":"Marseille (13001)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.mediapart.fr\/journal\/france\/100620\/marseille-la-scolarisation-de-minots-etrangers-mobilise-une-escouade-de-referents-solidaires' target='_blank'>A Marseille, la scolarisation de minots \u00e9trangers mobilise une escouade de r\u00e9f\u00e9rents solidaires<\/a><\/div>\n\t<div class=\"texte\">Un r\u00e9seau de quelque 200 b\u00e9n\u00e9voles a facilit\u00e9 la scolarisation de mineurs \u00e9trangers vivant depuis des mois dans un squat, \u00e9vacu\u00e9 d\u00e9but juin. Face au d\u00e9dale administratif, un pragmatisme du quotidien.<\/div>\n<\/div>","id_mot": "41"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/plugins\/carteppi\/images\/marker_defaut.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.587876, 44.853383]},
+		"id":"792",
+		"properties": {
+			"title":"Bordeaux (33000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/rue89bordeaux.com\/2020\/06\/le-velo-decolle-dans-la-metropole-bordeaux-perennise-ses-pistes-cyclables-temporaires\/' target='_blank'>Le v\u00e9lo d\u00e9colle dans la m\u00e9tropole, Bordeaux veut p\u00e9renniser ses pistes temporaires<\/a><\/div>\n\t<div class=\"texte\">Le maire de Bordeaux a annonc\u00e9 ce mercredi que les 25 kilom\u00e8tres d\u2019am\u00e9nagements cyclables temporaires, dont les couloirs bus-v\u00e9lo sur les boulevards, avaient \u00ab vocation \u00e0 \u00eatre p\u00e9rennis\u00e9s \u00bb, quand M\u00e9rignac a fait machine arri\u00e8re sur l\u2019un d\u2019eux. Bordeaux M\u00e9tropole indique pour sa part \u00ab un afflux tr\u00e8s&nbsp;(...)<\/div>\n<\/div>","id_mot": "362"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/plugins\/carteppi\/images\/marker_defaut.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [4.914231749531422, 52.37233395]},
+		"id":"793",
+		"properties": {
+			"title":"Amsterdam (1018JA)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.equaltimes.org\/moins-c-est-plus-a-la-decouverte?lang=en' target='_blank'>&#171;&nbsp;Moins, c\u2019est plus&nbsp;&#187;&nbsp;: \u00e0 la d\u00e9couverte du mouvement des micro-maisons aux Pays-Bas <\/a><\/div>\n\t<div class=\"texte\">\u00ab Avant, j\u2019habitais dans une maison unifamiliale typique, mais en 2016 j\u2019ai commenc\u00e9 \u00e0 ressentir de mani\u00e8re chaque fois plus claire que je voulais changer de style de vie. Je r\u00eavais de vivre dans une petite maison, entour\u00e9e de nature et&nbsp;(...)<\/div>\n<\/div>","id_mot": "70"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-70.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.562748, 47.468087]},
+		"id":"794",
+		"properties": {
+			"title":"Angers (49000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.mediapart.fr\/journal\/france\/160620\/autour-d-angers-l-autoproduction-alimentaire-pour-se-reapproprier-les-choses-essentielles' target='_blank'>Autour d\u2019Angers, l\u2019autoproduction alimentaire pour &#171;&nbsp;se r\u00e9approprier les choses essentielles&nbsp;&#187;<\/a><\/div>\n\t<div class=\"texte\">Cr\u00e9\u00e9e il y a plus d\u2019un an, l\u2019association RAARE a mis en mara\u00eechage des terrains r\u00e9cup\u00e9r\u00e9s dans les alentours d\u2019Angers. Autour de ces cultures, tout un r\u00e9seau d\u2019entraide s\u2019est d\u00e9velopp\u00e9 ; ses activit\u00e9s se sont d\u00e9cupl\u00e9es depuis le confinement.<\/div>\n<\/div>","id_mot": "71"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.6253361, 6.4990718]},
+		"id":"795",
+		"properties": {
+			"title":"Porto-Novo (03BP647)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/lvsl.fr\/centre-songhai-modele-dagro-ecologie-en-afrique-reportage-photo\/' target='_blank'>Centre Songha\u00ef, mod\u00e8le d&#8217;agro-\u00e9cologie en Afrique&nbsp;:  reportage photo<\/a><\/div>\n\t<div class=\"texte\">Le centre Songha\u00ef de Porto Novo au B\u00e9nin fait office de r\u00e9f\u00e9rence en mati\u00e8re d\u2019agro-\u00e9cologie, dans un pays class\u00e9 parmi les moins avanc\u00e9s. Fond\u00e9 en 1985 par un pr\u00eatre dominicain d\u2019origine nig\u00e9riane, le centre revendique la mission de valoriser l\u2019agro-\u00e9cologie sur le continent africain et la cr\u00e9ation d\u2019un&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-3.794541, 48.466367]},
+		"id":"796",
+		"properties": {
+			"title":"Le Clo\u00eetre-Saint-Th\u00e9gonnec (29410)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/Dans-le-Finistere-une-ecole-alternative-pour-les-migrants' target='_blank'>Dans le Finist\u00e8re, une &#171;&nbsp;\u00e9cole alternative&nbsp;&#187; pour les migrants<\/a><\/div>\n\t<div class=\"texte\">Au printemps 2018, dans un village de 600 habitants, une association bretonne a ouvert l\u2019\u00e9cole alternative des Monts d\u2019Arr\u00e9e. G\u00e9r\u00e9e par des b\u00e9n\u00e9voles, elle a accueilli sa deuxi\u00e8me promotion de quinze personnes migrantes en septembre 2019. Elles y apprennent le fran\u00e7ais, le breton, les sciences... et&nbsp;(...)<\/div>\n<\/div>","id_mot": "117"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-117.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [12.336084199479028, 45.43699085]},
+		"id":"797",
+		"properties": {
+			"title":"Venise",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.equaltimes.org\/videe-de-ses-touristes-venise' target='_blank'>Vid\u00e9e de ses touristes, Venise regorge d&#8217;id\u00e9es. Mais l&#8217;\u00e9conomie solidaire suffira-t-elle \u00e0 maintenir la ville \u00e0 flot&nbsp;?<\/a><\/div>\n\t<div class=\"texte\">\u00ab Lorsque nous avons ferm\u00e9 la librairie, nous avons aussi retir\u00e9 l\u2019affiche No Grandi Navi de la vitrine, en signe de conciliation \u00bb, a indiqu\u00e9 Claudio Moretti, le propri\u00e9taire de la librairie MarcoPolo, \u00e0 Venise. M. Moretti s\u2019est b\u00e2ti une r\u00e9putation dans la ville pour son activisme, notamment au sein du&nbsp;(...)<\/div>\n<\/div>"
+			,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/plugins\/carteppi\/images\/marker_defaut.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.587876, 44.853383]},
+		"id":"798",
+		"properties": {
+			"title":"Bordeaux (33000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/rue89bordeaux.com\/2020\/07\/la-fumainerie-bon-petit-coin-bordelais-des-toilettes-seches-a-domicile\/' target='_blank'>La Fumainerie, bon (petit) coin bordelais des toilettes s\u00e8ches \u00e0 domicile <\/a><\/div>\n\t<div class=\"texte\">Marre de faire vos besoins dans l\u2019eau potable ? \u00c7a tombe bien, et c\u2019est une premi\u00e8re en France : l\u2019association La Fumainerie propose d\u2019installer des toilettes s\u00e8ches chez les habitants de l\u2019agglom\u00e9ration de Bordeaux. Elle se charge ensuite de collecter leurs d\u00e9jections pour en faire du compost, et&nbsp;(...)<\/div>\n<\/div>","id_mot": "70"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-70.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-3.153244, 48.560263]},
+		"id":"799",
+		"properties": {
+			"title":"Guingamp (22200)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/rapportsdeforce.fr\/breves\/victoire-pour-le-projet-de-cooperative-de-masques-en-bretagne-07017616' target='_blank'>Victoire pour le projet de coop\u00e9rative de masques en Bretagne<\/a><\/div>\n\t<div class=\"texte\">L\u2019id\u00e9e \u00e9tait un peu folle. Le 26 mars, l\u2019Union syndicale Solidaires des C\u00f4tes-d\u2019Armor proposait de red\u00e9marrer une production de masques avec d\u2019anciens salari\u00e9s de l\u2019usine de Plaintel en Bretagne, ferm\u00e9e par le groupe Honeywell en 2018. Trois mois et [\u2026]  L\u2019article Victoire pour le projet de coop\u00e9rative de&nbsp;(...)<\/div>\n<\/div>","id_mot": "120"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-120.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [6.967369, 43.619554]},
+		"id":"800",
+		"properties": {
+			"title":"Mouans-Sartoux (06370)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.mediapart.fr\/journal\/france\/030720\/mouans-sartoux-l-agriculture-municipale-mis-les-cantines-au-regime-bio' target='_blank'>A Mouans-Sartoux, l\u2019agriculture municipale a mis les cantines au r\u00e9gime bio<\/a><\/div>\n\t<div class=\"texte\">C\u2019est une aventure commenc\u00e9e il y a plus de dix ans. Aujourd\u2019hui, les menus des cantines de Mouans-Sartoux, dans les Alpes-Maritimes, sont 100% bio et la quasi-totalit\u00e9 des l\u00e9gumes poussent sur des terres municipales. Cette gestion montre comment certaines des propositions de la Convention citoyenne&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.587876, 44.853383]},
+		"id":"801",
+		"properties": {
+			"title":"Bordeaux (33000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/rue89bordeaux.com\/2020\/07\/lentreprise-citoyenne-solevent-branche-begles-sur-courant-alternatif\/' target='_blank'>L&#8217;entreprise citoyenne Sol\u00e9vent branche B\u00e8gles sur courant alternatif <\/a><\/div>\n\t<div class=\"texte\">La transition \u00e9nerg\u00e9tique ? Ils n\u2019ont pas attendu des investisseurs priv\u00e9s pour s\u2019en emparer ! En l\u2019espace de deux ans, 22 B\u00e9glais sont devenus actionnaires citoyens de Sol\u00e9vent, une entreprise qui r\u00e9investit tous ses b\u00e9n\u00e9fices dans des projets de renouvelables. Nous avons assist\u00e9 \u00e0 la mise en service&nbsp;(...)<\/div>\n<\/div>","id_mot": "127"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-127.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [3.050163, 50.625346]},
+		"id":"802",
+		"properties": {
+			"title":"Lille (59000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.revuesilence.net\/numeros\/491-Les-Gandhi-de-grand-chemin\/a-lille-precaires-et-habitant-es-se-battent-pour-preserver-une-immense-friche' target='_blank'>\u00c0 Lille, pr\u00e9caires et habitant\u00b7es se battent pour pr\u00e9server une immense friche urbaine <\/a><\/div>\n\t<div class=\"texte\">Au c\u0153ur de Lille la friche Saint-Sauveur, devenue une Zap, \u00ab zone \u00e0 prot\u00e9ger \u00bb, est menac\u00e9e par un projet de nouveau quartier. - Les Gandhi de grand chemin \/ Chronique, Alternatives, Lieu alternatif, Nord, Chronique de Reporterre<\/div>\n<\/div>","id_mot": "219"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-219.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.587876, 44.853383]},
+		"id":"803",
+		"properties": {
+			"title":"Bordeaux (33000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/rue89bordeaux.com\/2020\/07\/la-nouvelle-aquitaine-parie-sur-les-energies-renouvelables-citoyennes\/' target='_blank'>La Nouvelle-Aquitaine parie sur les \u00e9nergies renouvelables citoyennes <\/a><\/div>\n\t<div class=\"texte\">Depuis le transfert de comp\u00e9tences en mati\u00e8re de transition \u00e9cologique aux r\u00e9gions en 2016, la R\u00e9gion Nouvelle-Aquitaine a multipli\u00e9 les soutiens aux projets citoyens et mixtes, d\u00e9veloppant l\u2019utilisation des \u00e9nergies renouvelables. \u00c9olien, solaire, m\u00e9thanisation, hydraulique\u2026 \u00e9tat des lieux de la&nbsp;(...)<\/div>\n<\/div>","id_mot": "127"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-127.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.587876, 44.853383]},
+		"id":"804",
+		"properties": {
+			"title":"Bordeaux (33000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.mediapart.fr\/journal\/economie\/150720\/bordeaux-la-cooperative-qui-monte-l-assaut-de-deliveroo-et-uber' target='_blank'>A Bordeaux, la coop\u00e9rative qui monte \u00e0 l\u2019assaut de Deliveroo et Uber<\/a><\/div>\n\t<div class=\"texte\">Fond\u00e9e par d\u2019anciens livreurs travaillant pour les plateformes, Coursiers bordelais fait vivre cinq personnes. Elle s\u2019appuie sur CoopCycle, une f\u00e9d\u00e9ration de coop\u00e9ratives qui a essaim\u00e9 partout dans le monde, et qui fournit outils techniques et conseils&nbsp;(...)<\/div>\n<\/div>","id_mot": "120"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-120.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-1.535852, 47.233707]},
+		"id":"805",
+		"properties": {
+			"title":"Nantes (44000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/radioparleur.net\/2020\/07\/15\/militant-luttes-nantes\/' target='_blank'>\u00c0 Nantes, deux jours pour penser la \"confluence\" des luttes<\/a><\/div>\n\t<div class=\"texte\">.L\u2019\u00e9t\u00e9 militant ne se fera pas \u00e0 grand coup de festivals de luttes et de grands rassemblements politiques. Camps climats locaux, petits \u00e9v\u00e9nements r\u00e9gionaux, les militant\uff65e\uff65s s\u2019adaptent. Dans l\u2019Ouest, terre de luttes diverses et dynamiques, Radio Parleur vous emm\u00e8ne au c\u0153ur des retrouvailles et des&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [7.842573431944331, 48.009124850000006]},
+		"id":"806",
+		"properties": {
+			"title":"Fribourg-en-Brisgau (79106)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.rue89strasbourg.com\/video-gartencoop-fribourg-consommateurs-agriculteurs-ferme-solidaire-180266?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+Rue89Strasbourg+%28Rue89+Strasbourg%29' target='_blank'>\u00c0 Gartencoop, consommateurs et agriculteurs g\u00e8rent ensemble une ferme solidaire<\/a><\/div>\n\t<div class=\"texte\">\u00c0 20 km de Fribourg, une ferme solidaire et autog\u00e9r\u00e9e produit des l\u00e9gumes bio pour 300 familles depuis 2009. Ici, les consommateurs participent activement \u00e0 la gestion de la coop\u00e9rative et aux r\u00e9coltes dans les champs. Reportage en&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [3.873083, 43.611665]},
+		"id":"807",
+		"properties": {
+			"title":"Montpellier (34000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.mediapart.fr\/journal\/france\/200720\/montpellier-une-boulangerie-mitonne-de-la-fraternite-avec-des-rencontres-litteraires' target='_blank'>A Montpellier, une boulangerie mitonne de la fraternit\u00e9 avec des rencontres litt\u00e9raires<\/a><\/div>\n\t<div class=\"texte\">\u00ab C\u2019\u00e9tait une zone o\u00f9 il n\u2019y avait de place que pour le rap et le foot. \u00bb Depuis un an, une boulangerie du quartier populaire de la Paillade organise \u00ab Dites-le avec des livres \u00bb, initiative qui fait le pont avec le centre-ville.<\/div>\n<\/div>","id_mot": "41"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/plugins\/carteppi\/images\/marker_defaut.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-2.969621, 48.064044]},
+		"id":"808",
+		"properties": {
+			"title":"Pontivy (56300)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/En-Bretagne-ils-veulent-relancer-une-ligne-de-train-fermee-depuis-30-ans' target='_blank'>En Bretagne, ils veulent relancer une ligne de train ferm\u00e9e depuis 30 ans<\/a><\/div>\n\t<div class=\"texte\">Ferm\u00e9e depuis trente ans, la ligne de chemin de fer TER qui traverse la Bretagne du nord au sud pourrait reprendre du service. \u00c0 l\u2019initiative de cette possible renaissance, un collectif de cheminots et un passionn\u00e9 de trains qui militent pour le retour du rail en zone rurale. Pontivy (Morbihan),&nbsp;(...)<\/div>\n<\/div>","id_mot": "362"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/plugins\/carteppi\/images\/marker_defaut.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-81.96862789624511, 34.894780749999995]},
+		"id":"809",
+		"properties": {
+			"title":"",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/marcelle.media\/2020\/07\/23\/consigne-provence-verre-bouteille\/' target='_blank'>La consigne du verre se r\u00e9implante doucement en Provence<\/a><\/div>\n\t<div class=\"texte\">[Au fait] Plus de 30 000 bouteilles de vin en verre ont \u00e9t\u00e9 sauv\u00e9es de la casse en 2019. L\u2019objectif d\u2019Ecoscience Provence, l\u2019association \u00e0 l\u2019initiative du retour de la consigne sur le territoire, est maintenant de multiplier ce chiffre par 30 et de relocaliser le lavage sur les terres proven\u00e7ales.&nbsp;(...)<\/div>\n<\/div>","id_mot": "118"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-118.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [0.376264, 46.57216]},
+		"id":"810",
+		"properties": {
+			"title":"Poitiers (86000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/lejournalminimal.fr\/le-jardin-du-rail-a-poitiers-un-improbable-potager-partage-entre-une-route-et-une-voie-de-chemin-de-fer\/' target='_blank'>Le Jardin du rail \u00e0 Poitiers, un improbable potager partag\u00e9 entre une route et une voie SNCF<\/a><\/div>\n\t<div class=\"texte\">Rencontre avec les cr\u00e9ateurs du Jardin du rail, deux jeunes Pictaviens qui ont transform\u00e9 en quelques semaines un no man\u2019s land en un potager partag\u00e9 ouvert \u00e0 tous. Tout d\u2019abord, pouvez-vous me d\u00e9crire ce jardin ? Qu\u2019y avait-il l\u00e0 avant ? Alban et Axelle : Le jardin pousse sur une bande d\u2019herbe plus ou&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [6.716703, 47.903501]},
+		"id":"811",
+		"properties": {
+			"title":"Ferdrupt (88360)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.rue89strasbourg.com\/devenus-patrons-des-salaries-du-textile-vosgien-continuent-de-se-battre-contre-le-grand-import-180371?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+Rue89Strasbourg+%28Rue89+Strasbourg%29' target='_blank'>Devenus patrons, des salari\u00e9s du textile vosgien continuent de se battre contre le grand import<\/a><\/div>\n\t<div class=\"texte\">L\u2019usine de tissage de Ferdrupt est un des derniers bastions du textile dans la r\u00e9gion. Quand les salari\u00e9s ont repris leur usine en 2014, certains observateurs jugeaient l\u2019aventure hasardeuse. Cinq ans plus tard, ils sont toujours l\u00e0. Mais m\u00eame dans le haut de de gamme, il faut se battre contre la&nbsp;(...)<\/div>\n<\/div>","id_mot": "120"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-120.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [23.7283052, 37.9839412]},
+		"id":"812",
+		"properties": {
+			"title":"Ath\u00e8nes (10667)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.equaltimes.org\/en-grece-les-artistes-revendiquent' target='_blank'>En Gr\u00e8ce, les artistes revendiquent plus que jamais leurs droits et l&#8217;acc\u00e8s \u00e0 la culture pour tous <\/a><\/div>\n\t<div class=\"texte\">Sa voix puissante r\u00e9sonne entre les murs du th\u00e9\u00e2tre, vide. Fotini Banou se pr\u00e9pare \u00e0 une repr\u00e9sentation, \u00ab m\u00eame si, on ne sait pas quand est-ce qu\u2019on va rouvrir \u00bb, pr\u00e9cise-t-elle. Mi-mars, le gouvernement grec a d\u00e9cid\u00e9 la fermeture des cin\u00e9mas, th\u00e9\u00e2tres, mus\u00e9es, sites arch\u00e9ologiques, des \u00e9coles et&nbsp;(...)<\/div>\n<\/div>","id_mot": "117"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-117.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.679626, 44.832437]},
+		"id":"813",
+		"properties": {
+			"title":"M\u00e9rignac (33700)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/rue89bordeaux.com\/2020\/08\/la-recyclerie-sportive-de-merignac-vise-le-maillot-vert\/' target='_blank'>La Recyclerie sportive de M\u00e9rignac vise le maillot vert<\/a><\/div>\n\t<div class=\"texte\">Une recyclerie sportive s\u2019est install\u00e9e Avenue de la Marne \u00e0 M\u00e9rignac pour encourager \u00e0 pratiquer un sport \u00ab z\u00e9ro d\u00e9chet \u00bb. Des achats d\u2019article de seconde main, mais aussi des ateliers de r\u00e9paration permettent de concilier \u00e9conomies et&nbsp;(...)<\/div>\n<\/div>","id_mot": "118"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-118.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [0.381314, 43.881409]},
+		"id":"814",
+		"properties": {
+			"title":"Valence-sur-Ba\u00efse (32310)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.equaltimes.org\/comment-resister-a-l-urbanisme?lang=en' target='_blank'>Comment r\u00e9sister \u00e0 l\u2019urbanisme sp\u00e9culatif&nbsp;? L\u2019exemple du quartier d\u2019El Cabanyal, \u00e0 Valence <\/a><\/div>\n\t<div class=\"texte\">Les quartiers les plus m\u00e9diatiques attirent g\u00e9n\u00e9ralement l\u2019attention de deux fa\u00e7ons distinctes : car ils sont soit un foyer de conflits, soit un p\u00f4le d\u2019investissement. Depuis 30 ans, le quartier d\u2019El Cabanyal de Valence en Espagne, occupe ces&nbsp;(...)<\/div>\n<\/div>","id_mot": "70"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-70.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-71.2143518, 46.8183175]},
+		"id":"815",
+		"properties": {
+			"title":"Qu\u00e9bec (G1K 3X2)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/Au-Quebec-l-agriculture-urbaine-est-dopee-par-la-pandemie' target='_blank'>Au Qu\u00e9bec, l&#8217;agriculture urbaine est dop\u00e9e par la pand\u00e9mie<\/a><\/div>\n\t<div class=\"texte\">La verdure s\u2019est taill\u00e9 une place sur les immeubles des villes qu\u00e9becoises. Les potagers y foisonnent et les m\u00e9gaprojets fermiers se d\u00e9veloppent sur les toits. La pand\u00e9mie de Covid-19 a acc\u00e9l\u00e9r\u00e9 la cadence. Reportage \u00e0 Montr\u00e9al, o\u00f9 une serre de 1,5 hectare vient d\u2019\u00eatre inaugur\u00e9e. Province de Qu\u00e9bec&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.371816, 49.184349]},
+		"id":"816",
+		"properties": {
+			"title":"Caen (14000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/A-Caen-une-cooperative-cultive-l-autogestion' target='_blank'>\u00c0 Caen, une coop\u00e9rative cultive l\u2019autogestion<\/a><\/div>\n\t<div class=\"texte\">La Coop 5 pour 100 est une soci\u00e9t\u00e9 coop\u00e9rative d\u2019int\u00e9r\u00eat collectif qui s\u2019est fix\u00e9 pour mission de proposer une alternative au mod\u00e8le \u00e9conomique actuel. Elle compte pour cela sur sa ressourcerie, son \u00e9picerie, sa cantine et ses ateliers.  L\u2019histoire de Coop 5 pour 100 commence en avril 2015. \u00c0 l\u2019origine&nbsp;(...)<\/div>\n<\/div>","id_mot": "120"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-120.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.918582, 44.200678]},
+		"id":"817",
+		"properties": {
+			"title":"Sisteron (04200)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/rapportsdeforce.fr\/breves\/lutte-victorieuse-les-urgences-de-nuit-de-sisteron-rouvrent-09077896' target='_blank'>Lutte victorieuse&nbsp;: les urgences de nuit de Sisteron rouvrent<\/a><\/div>\n\t<div class=\"texte\">Les plus de 13 mois de mobilisation de la population et des syndicats ont pay\u00e9 ! Ce lundi 7 septembre, le service des urgences de nuit \u00e0 l\u2019h\u00f4pital intercommunal de Sisteron rouvre ses portes. Il les avait ferm\u00e9es le 15 [\u2026]  L\u2019article Lutte victorieuse : les urgences de nuit de Sisteron rouvrent est&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-2.076386, 47.997823]},
+		"id":"818",
+		"properties": {
+			"title":"Pl\u00e9lan-le-Grand (35380)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/A-Plelan-le-Grand-le-parc-eolien-souffle-a-l-energie-citoyenne' target='_blank'>\u00c0 Pl\u00e9lan-le-Grand, le parc \u00e9olien souffle \u00e0 l\u2019\u00e9nergie citoyenne<\/a><\/div>\n\t<div class=\"texte\">Depuis fin 2008, les six \u00e9oliennes de Pl\u00e9lan-le-Grand, commune bretonne de 4.000 habitants, dans le sud de l\u2019Ille-et-Vilaine, fonctionnent \u00e0 plein r\u00e9gime. Leur moteur : l\u2019\u00e9nergie de douze personnes qui ont eu l\u2019id\u00e9e de produire leur \u00e9lectricit\u00e9 \u00e0 l\u2019aide d\u2019une soci\u00e9t\u00e9&nbsp;(...)<\/div>\n<\/div>","id_mot": "127"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-127.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.587876, 44.853383]},
+		"id":"819",
+		"properties": {
+			"title":"Bordeaux (33000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/rue89bordeaux.com\/2020\/09\/un-nouveau-squat-ouvert-a-bordeaux-pour-soulager-les-autres-lieux-satures\/' target='_blank'>Un nouveau squat ouvert \u00e0 Bordeaux pour \"soulager les autres lieux satur\u00e9s\"<\/a><\/div>\n\t<div class=\"texte\">60 personnes sont attendues dans un ancien Ehpad ouvert ce samedi rue Gravelotte \u00e0 Bordeaux : des familles de La Zone libre, satur\u00e9e, et d\u2019autres d\u2019un squat \u00e0 M\u00e9rignac \u00e9vacu\u00e9 r\u00e9cemment.  The post Un nouveau squat ouvert \u00e0 Bordeaux pour \u00ab soulager les autres lieux satur\u00e9s \u00bb appeared first on Rue89&nbsp;(...)<\/div>\n<\/div>","id_mot": "70"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-70.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-47.8823172, -15.7934036]},
+		"id":"820",
+		"properties": {
+			"title":"Brasilia (70.701-010)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/lvsl.fr\/bresil-contre-lausterite-et-la-pandemie-lagroecologie\/' target='_blank'>Br\u00e9sil&nbsp;: contre l&#8217;aust\u00e9rit\u00e9 et la pand\u00e9mie, l&#8217;agro\u00e9cologie&nbsp;?<\/a><\/div>\n\t<div class=\"texte\">Alors que les plus pr\u00e9caires sont abandonn\u00e9s \u00e0 leur \u00ab isolement social \u00bb par l\u2019\u00c9tat br\u00e9silien, \u00e0 Ribeir\u00e3o Preto, dans la province de S\u00e3o Paulo, des r\u00e9seaux d\u2019entraide se structurent et promeuvent la distribution des productions de paysans agro\u00e9cologiques locaux vers la ville et ses favelas. Ils s\u2019inscrivent&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
 		  ,
 			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
 			"icon_size": [33,33],

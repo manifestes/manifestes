@@ -270,7 +270,7 @@ module.exports = function(grunt) {
 
     // fetch data for some maps
     curl: {
-      'data/map/map_agefa.xml': 'http://magasin.lagedefaire-lejournal.fr/index.php?controller=stores?ajax=1&all=1',
+      // TOUPDATE!!! 'data/map/map_agefa.xml': 'http://magasin.lagedefaire-lejournal.fr/index.php?controller=stores?ajax=1&all=1',
       'data/map/map_basta.geojson':'http://portail.bastamag.net/spip.php?page=gis_json&objets=syndic_articles&limit=500',
       //'data/map/map_circc.json':'http://www.circuits-courts.be/get_json_data.php?data=ext',
       'data/map/map_ffdn.json':'https://db.ffdn.org/isp/map_data.json',
