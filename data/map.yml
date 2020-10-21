@@ -197,12 +197,12 @@ mapcredits:
         color: d59454
         url: https://www.google.com/maps/d/viewer?mid=zJ1PitvzVPN0.kN_S8AWMFbDQ
     -   slug: agefa
-        type: xml
+        type: json
         name: L'âge de faire
         description: "Revue des outils pour\nchanger le monde"
         color: 95b5d5
         url: http://www.lagedefaire-lejournal.fr/
-        _xml: http://magasin.lagedefaire-lejournal.fr/index.php?controller=stores?ajax=1&all=1
+        _manuallyfrom: https://lagedefaire-lejournal.fr/maps/fullscreen/1/
     -   slug: ffdn
         type: json
         name: Fournisseurs d'accès internet FFDN
@@ -252,8 +252,16 @@ mapcredits:
     -   slug: cnlii
         type: geojson
         name: Lieux CNLII
-        description: "Coordination nationale des\nlieux intermédiaires et\nindépendants"
+        description: "coordination nationale des\nlieux intermédiaires et\nindépendants"
         color: 417271
         url: http://cnlii.org
         _geojson: https://umap.openstreetmap.fr/fr/datalayer/91000/
+    -   slug: zeste
+        type: json
+        name: Zeste.coop (NEF)
+        description: "financement participatif pour\nprojets de la transition\nécologique et solidaire"
+        color: FFCA28
+        url: https://www.zeste.coop
+        jsonprefix: projects
+        _geojson: https://www.zeste.coop/fr/api/v1/projects
 

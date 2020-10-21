@@ -4741,6 +4741,11 @@ var truncatetext = function(str) {
   else
     return str;
 };
+var gethref = function(str) {
+  var m = str.match(/<a href=[\"\']([^[\"\']*)[\"\']/);
+  if(m && m.length>0) return m[1];
+  else return "";
+};
 
 // var beatthebob = (function () {
 //   "use strict";
@@ -4787,10 +4792,10 @@ var parseMapCreditAndDo = function(c,data,foreachdo) {
         web = c.url +"/"+ prop.title.match(/href:\'([^\']*)\'/)[1];
       }
       if(c.slug=='basta') {
-        web = prop.description.match(/<a href=\'([^\']*)\'/)[1];
+        web = gethref(prop.description);
       }
       if(c.slug=='passeco') {
-        web = c.url +"/"+ prop.title.match(/<a href=\"([^\"]*)\"/)[1];
+        web = c.url +"/"+ gethref(prop.title);
       }
       if(c.slug=='ecole' || c.slug=='fermav') {
         name = prop.Name;
@@ -4821,6 +4826,9 @@ var parseMapCreditAndDo = function(c,data,foreachdo) {
     });
   }
 
+  /* agefa before being json was XML ! */
+  
+  /*
   if(c.type=="xml") {
     
     var x2js = new X2JS();
@@ -4838,9 +4846,23 @@ var parseMapCreditAndDo = function(c,data,foreachdo) {
       });
     });
   }
+  */
 
   if(c.type=="json") {
+
+    if(c.jsonprefix) data = data[c.jsonprefix];
+
     _.each(data, function(m) {
+
+      if(c.slug=="agefa")
+        if(foreachdo) foreachdo({
+          source: "agefa",
+          name: m.name,
+          description: "Point de vente de L'âge de faire",
+          address: m.address,
+          lat: m.lat,
+          lng: m.lng
+        });
 
       if(c.slug=="circc")
         if(foreachdo) foreachdo({
@@ -4871,6 +4893,17 @@ var parseMapCreditAndDo = function(c,data,foreachdo) {
             lat: m.geo.lat,
             lng: m.geo.lng
           });
+
+      if(c.slug=="zeste")
+        if(foreachdo) foreachdo({
+          source: "zeste",
+          name: m.name,
+          description: m.headline,
+          lat: m.latitude,
+          lng: m.longitude,
+          web: "https://www.zeste.coop/fr/"+m.permalink
+        });
+
     });
   }
 
@@ -5250,6 +5283,6 @@ var loadTagGraph = function(scope) {
 
 angular.module('settings', [])
 
-.constant('settings', {dev:false,langs:['fr','es','en'],layouts:['home','abcd','pixels','network','map','mapprint','ninja','catalogprint'],datapath:'data/',assets:'build/',lastupdate:'25 January 2019 - 2:09'})
+.constant('settings', {dev:false,langs:['fr','es','en'],layouts:['home','abcd','pixels','network','map','mapprint','ninja','catalogprint'],datapath:'data/',assets:'build/',lastupdate:'21 October 2020 - 10:13'})
 
 ;

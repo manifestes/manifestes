@@ -8117,9 +8117,9 @@
 		"id":"818",
 		"properties": {
 			"title":"Pl\u00e9lan-le-Grand (35380)",
-			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/A-Plelan-le-Grand-le-parc-eolien-souffle-a-l-energie-citoyenne' target='_blank'>\u00c0 Pl\u00e9lan-le-Grand, le parc \u00e9olien souffle \u00e0 l\u2019\u00e9nergie citoyenne<\/a><\/div>\n\t<div class=\"texte\">Depuis fin 2008, les six \u00e9oliennes de Pl\u00e9lan-le-Grand, commune bretonne de 4.000 habitants, dans le sud de l\u2019Ille-et-Vilaine, fonctionnent \u00e0 plein r\u00e9gime. Leur moteur : l\u2019\u00e9nergie de douze personnes qui ont eu l\u2019id\u00e9e de produire leur \u00e9lectricit\u00e9 \u00e0 l\u2019aide d\u2019une soci\u00e9t\u00e9&nbsp;(...)<\/div>\n<\/div>","id_mot": "127"
-		  ,
-			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-127.png",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/reporterre.net\/A-Plelan-le-Grand-le-parc-eolien-souffle-a-l-energie-citoyenne' target='_blank'>\u00c0 Pl\u00e9lan-le-Grand, le parc \u00e9olien souffle \u00e0 l\u2019\u00e9nergie citoyenne<\/a><\/div>\n\t<div class=\"texte\">Depuis fin 2008, les six \u00e9oliennes de Pl\u00e9lan-le-Grand, commune bretonne de 4.000 habitants, dans le sud de l\u2019Ille-et-Vilaine, fonctionnent \u00e0 plein r\u00e9gime. Leur moteur : l\u2019\u00e9nergie de douze personnes qui ont eu l\u2019id\u00e9e de produire leur \u00e9lectricit\u00e9 \u00e0 l\u2019aide d\u2019une soci\u00e9t\u00e9&nbsp;(...)<\/div>\n<\/div>"
+			,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/plugins\/carteppi\/images\/marker_defaut.png",
 			"icon_size": [33,33],
 			"icon_anchor": [16.5,16.5],
 			"popup_anchor": [0,0]
@@ -8144,6 +8144,90 @@
 			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/lvsl.fr\/bresil-contre-lausterite-et-la-pandemie-lagroecologie\/' target='_blank'>Br\u00e9sil&nbsp;: contre l&#8217;aust\u00e9rit\u00e9 et la pand\u00e9mie, l&#8217;agro\u00e9cologie&nbsp;?<\/a><\/div>\n\t<div class=\"texte\">Alors que les plus pr\u00e9caires sont abandonn\u00e9s \u00e0 leur \u00ab isolement social \u00bb par l\u2019\u00c9tat br\u00e9silien, \u00e0 Ribeir\u00e3o Preto, dans la province de S\u00e3o Paulo, des r\u00e9seaux d\u2019entraide se structurent et promeuvent la distribution des productions de paysans agro\u00e9cologiques locaux vers la ville et ses favelas. Ils s\u2019inscrivent&nbsp;(...)<\/div>\n<\/div>","id_mot": "71"
 		  ,
 			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-71.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-75.13068122460982, -14.70638785]},
+		"id":"821",
+		"properties": {
+			"title":"Nasca",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.revuesilence.net\/numeros\/489-Kraftwerk-une-utopie-realisee\/penser-une-autre-economie-avec-la-coop-5-pour-100' target='_blank'>Penser une autre \u00e9conomie avec la Coop 5 pour 100 <\/a><\/div>\n\t<div class=\"texte\">La Coop 5 pour 100 est une Soci\u00e9t\u00e9 Coop\u00e9rative d\u2019Int\u00e9r\u00eat Collective, situ\u00e9e pr\u00e8s de la gare de Caen. Sa mission principale ? Proposer une alternative au mod\u00e8le \u00e9conomique actuel. Pour cela, elle peut compter sur sa ressourcerie, son \u00e9picerie, sa cantine et ses ateliers. - Kraftwerk : une utopie r\u00e9alis\u00e9e&nbsp;(...)<\/div>\n<\/div>","id_mot": "120"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-120.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-2.076386, 47.997823]},
+		"id":"822",
+		"properties": {
+			"title":"Pl\u00e9lan-le-Grand (35380)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.revuesilence.net\/numeros\/491-Les-Gandhi-de-grand-chemin\/a-plelan-le-grand-le-parc-eolien-souffle-a-l-energie-citoyenne' target='_blank'>\u00c0 Pl\u00e9lan-le-Grand, le parc \u00e9olien souffle \u00e0 l\u2019\u00e9nergie citoyenne <\/a><\/div>\n\t<div class=\"texte\">Depuis fin 2008, les six \u00e9oliennes d\u2019une commune bretonne de 4 000 habitant\u22c5es, dans le sud de l\u2019Ille-et-Vilaine, fonctionnent \u00e0 plein r\u00e9gime. Leur moteur : l\u2019\u00e9nergie de 12 personnes qui ont eu l\u2019id\u00e9e de produire leur \u00e9lectricit\u00e9 \u00e0 l\u2019aide d\u2019une soci\u00e9t\u00e9&nbsp;(...)<\/div>\n<\/div>","id_mot": "127"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-127.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.71728, 45.183471]},
+		"id":"823",
+		"properties": {
+			"title":"Grenoble (38000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/radioparleur.net\/2020\/09\/21\/jardins-de-la-buisserate-grenoble-artificialisation-sols\/' target='_blank'>Pr\u00e8s de Grenoble, un jardin en lutte contre les promoteurs<\/a><\/div>\n\t<div class=\"texte\">A Saint-Martin-Le-Vinoux, en p\u00e9riph\u00e9rie de Grenoble, un projet de construction de logements cristallise les tensions. Entre les barres d\u2019immeubles des ann\u00e9es 1950 les habitant\u00b7es se r\u00e9unissent autour d\u2019un petit lopin de terre qu\u2019ils tentent de sauver co\u00fbte que co\u00fbte. Face \u00e0 l\u2019imminence du terrassement,&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.925734, 45.565852]},
+		"id":"824",
+		"properties": {
+			"title":"Chamb\u00e9ry (73000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.mediapart.fr\/journal\/france\/270920\/une-anti-mafia-sociale-et-solidaire-l-ambitieux-modele-calabrais' target='_blank'>Une anti-mafia sociale et solidaire&nbsp;: l\u2019ambitieux mod\u00e8le calabrais<\/a><\/div>\n\t<div class=\"texte\">En Italie, les biens immobiliers confisqu\u00e9s \u00e0 la mafia doivent obligatoirement \u00eatre affect\u00e9s \u00e0 un usage social. En Calabre, au pays de la \u2019Ndrangheta, une coop\u00e9rative agricole cultive olives et agrumes sur des terres confisqu\u00e9es. Malgr\u00e9 la peur et les&nbsp;(...)<\/div>\n<\/div>","id_mot": "75"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-75.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [4.86972, 43.93522]},
+		"id":"825",
+		"properties": {
+			"title":"Avignon (84000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.politis.fr\/articles\/2020\/09\/a-rosmerta-la-tradition-de-lhospitalite-42341\/' target='_blank'>\u00c0 Rosmerta, la tradition de l\u2019hospitalit\u00e9 <\/a><\/div>\n\t<div class=\"texte\">Dans le centre d\u2019Avignon, une ancienne \u00e9cole catholique abrite des mineurs \u00e9trangers isol\u00e9s et des familles d\u00e9bout\u00e9es du droit d\u2019asile. Le dioc\u00e8se a saisi la justice pour les expulser.<\/div>\n<\/div>","id_mot": "41"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/plugins\/carteppi\/images\/marker_defaut.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [7.763636, 48.591891]},
+		"id":"826",
+		"properties": {
+			"title":"Strasbourg (67000)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.rue89strasbourg.com\/habitat-participatif-strasbourg-exception-191410?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+Rue89Strasbourg+%28Rue89+Strasbourg%29' target='_blank'>L&#8217;habitat participatif, une exception strasbourgeoise<\/a><\/div>\n\t<div class=\"texte\">\u00c0 Strasbourg, 11 collectifs d\u2019habitants ont men\u00e9 avec succ\u00e8s leurs op\u00e9rations immobili\u00e8res et 17 projets sont en cours. Malgr\u00e9 ces chiffres, Strasbourg est la ville fran\u00e7aise la plus active en mati\u00e8re d\u2019habitat participatif.<\/div>\n<\/div>","id_mot": "70"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/img\/mot-70.png",
+			"icon_size": [33,33],
+			"icon_anchor": [16.5,16.5],
+			"popup_anchor": [0,0]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.356921, 48.854388]},
+		"id":"827",
+		"properties": {
+			"title":"Paris 4e Arrondissement (75004)",
+			"description":"<div class=\"description\">\n\t<div class=\"lien\"><a href='https:\/\/www.mediapart.fr\/journal\/france\/081020\/paris-une-colocation-entre-refugies-et-francais-reinvente-la-solidarite' target='_blank'>A Paris, une colocation entre r\u00e9fugi\u00e9s et Fran\u00e7ais r\u00e9invente la solidarit\u00e9<\/a><\/div>\n\t<div class=\"texte\">Depuis trois semaines, douze r\u00e9fugi\u00e9s statutaires et autant de citoyens fran\u00e7ais cohabitent dans un immeuble de la R\u00e9gie immobili\u00e8re de la ville de Paris, dans le Ier arrondissement. Inaugur\u00e9e lundi 5 octobre, la \u00ab colocation solidaire \u00bb doit favoriser la mixit\u00e9 sociale et l\u2019int\u00e9gration des personnes&nbsp;(...)<\/div>\n<\/div>","id_mot": "41"
+		  ,
+			"icon": "https:\/\/portail.bastamag.net\/squelettes\/plugins\/carteppi\/images\/marker_defaut.png",
 			"icon_size": [33,33],
 			"icon_anchor": [16.5,16.5],
 			"popup_anchor": [0,0]

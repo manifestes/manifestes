@@ -1,64 +1,54 @@
 {"type": "FeatureCollection",
 	"features": [
 		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [-1.6800498962402346, 48.11362053786795]},
-		"id":"216",
+		"geometry": {"type": "Point", "coordinates": [6.0243246, 47.237953]},
+		"id":"518",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21205'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH148\/arton21205-062ff.jpg?1600638508' width='100' height='148' style='margin-right:5px;float:left;' \/><b style='color:black;'>RENDEZ-VOUS<\/b><br>F\u00eate des possibles - Balade associative au Blosne, \u00e0 Rennes (Ille-et-Vilaine)<\/a><br>Le 23 septembre 2020.<div class=nettoyeur><\/div>",
-			"description":"<p>Dans le cadre de la Fete des possibles 2020, viens d\u00e9couvrir l&#8217;\u00e9cosyst\u00e8me associative du quartier du Blosne \u00e0 Rennes lors d&#8217;une balade festive et ouverte \u00e0 tous.tes<small class=\"fine d-inline\">\u00a0<\/small>!<\/p>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21425'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH142\/arton21425-ca589.png?1602798411' width='100' height='142' style='margin-right:5px;float:left;' \/><b style='color:black;'>RENDEZ-VOUS<\/b><br>Face \u00e0 l'effondrement comment (r\u00e9)agir<small class='fine d-inline'>\u00a0<\/small>? Entre discours, r\u00e9alit\u00e9s et d\u00e9cisions, journ\u00e9e d'\u00e9changes \u00e0 Besan\u00e7on (Doubs)<\/a><br>Le 23 octobre 2020.<div class=nettoyeur><\/div>",
+			"description":"<p>Effondrement, Anthropoc\u00e8ne, collapsologie... Autant de mots consacr\u00e9s \u00e0 la vuln\u00e9rabilit\u00e9 de notre civilisation, \u00e0 la perception d\u2019un processus menant possiblement \u00e0 son effondrement et \u00e0 ce qui pourrait advenir. D&#8217;abord cantonn\u00e9 dans un petit cercle, le sujet, popularis\u00e9 par les livres de Jared Diamond et Pablo Servigne\/Rapha\u00ebl Stevens, s&#8217;est propag\u00e9 dans le d\u00e9bat public.<\/p>\n<p>Vous vous interrogez sur cette vision<small class=\"fine d-inline\">\u00a0<\/small>? Participez \u00e0 la journ\u00e9e d&#8217;\u00e9changes \u00ab<small class=\"fine d-inline\">\u00a0<\/small>Face \u00e0 l&#8217;effondrement comment (r\u00e9)agir<small class=\"fine d-inline\">\u00a0<\/small>? Entre discours, r\u00e9alit\u00e9s et d\u00e9cisions<small class=\"fine d-inline\">\u00a0<\/small>\u00bb.<\/p>",
 
 		"icon": "\/images\/marker.png",	
 		"icon_size": [36,60],		"icon_anchor": [9,38]
 		}},
 		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.305068969726563, 51.012026657382386]},
-		"id":"652",
+		"geometry": {"type": "Point", "coordinates": [1.9086066, 47.9027336]},
+		"id":"573",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21146'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH69\/arton21146-b15f2.png?1600104157' width='100' height='69' style='margin-right:5px;float:left;' \/><b style='color:black;'>RENDEZ-VOUS<\/b><br>\u00ab<small class='fine d-inline'>\u00a0<\/small>Agriculture, alimentation et pand\u00e9mie<small class='fine d-inline'>\u00a0<\/small>\u00bb, d\u00e9bat \u00e0 Grande-Synthe (Nord)<\/a><br>Le 27 septembre 2020.<div class=nettoyeur><\/div>",
-			"description":"<p>Lors de la f\u00eate paysanne de Grande-Synthe, <span class=\"caps\">ATTAC<\/span> Flandre aura un stand et le plaisir d&#8217;y recevoir Roxanne Mitralias, pour une rencontre d\u00e9bat autour de &quot;Agriculture, alimentation et pand\u00e9mie&quot;. <br class='autobr' \/>\nLieu<small class=\"fine d-inline\">\u00a0<\/small>; Grande-Synthe (59760), Lac du Courghain<br class='autobr' \/>\nDate et heures\u00a0: 27\u00a0septembre, \u00e0 11h<\/p>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21382'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH142\/arton21382-01046.jpg?1602492283' width='100' height='142' style='margin-right:5px;float:left;' \/><b style='color:black;'>RENDEZ-VOUS<\/b><br>Festival des alternatives alimentaires 2020, \u00e0 Orl\u00e9ans (Loiret)<\/a><br>Le 27 octobre 2020.<div class=nettoyeur><\/div>",
+			"description":"<p>Pour une S\u00e9curit\u00e9 Sociale de l&#8217;Alimentation<\/p>\n<p>D&#8217;une pierre faire deux coups ou plus\u00a0: r\u00e9duire \u00e0 la fois la pr\u00e9carit\u00e9 alimentaire et la pr\u00e9carit\u00e9 des paysans tout en favorisant une agriculture locale respectueuse de l&#8217;environnement et la sant\u00e9 de tous.<\/p>",
 
 		"icon": "\/images\/marker.png",	
-		"icon_size": [22.5,37.5],		"icon_anchor": [9,38]
+		"icon_size": [21.6,36],		"icon_anchor": [9,38]
 		}},
 		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [6.9477708, 48.2873153]},
-		"id":"823",
+		"geometry": {"type": "Point", "coordinates": [1.770601272583008, 43.917185711709344]},
+		"id":"589",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=20978'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH142\/arton20978-5da0d.jpg?1598255912' width='100' height='142' style='margin-right:5px;float:left;' \/><b style='color:black;'>RENDEZ-VOUS<\/b><br>Festival international de g\u00e9ographie, \u00e0 Saint-Di\u00e9-des-Vosges (Vosges)<\/a><br>Le 2 octobre 2020.<div class=nettoyeur><\/div>",
-			"description":"<p>Le Festival International de G\u00e9ographie se donne pour mission la promotion de la g\u00e9ographie aupr\u00e8s du grand public. Pendant 3 jours, la ville de <span class=\"caps\">SAINT<\/span>-<span class=\"caps\">DI<\/span>\u00c9-<span class=\"caps\">DES<\/span>-<span class=\"caps\">VOSGES<\/span> devient <span class=\"caps\">LE<\/span> <span class=\"caps\">LIEU<\/span> des \u00e9changes entre g\u00e9ographes, chercheurs, universitaires, enseignants, \u00e9crivains, illustrateurs et le grand public. D\u00e9battre et r\u00e9fl\u00e9chir aux enjeux de la place et de la transmission de cette discipline, mais \u00e0 travers elle\u00a0: d\u00e9battre et \u00e9changer sur le monde.<\/p>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21441'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH75\/arton21441-4c563.jpg?1603052718' width='100' height='75' style='margin-right:5px;float:left;' \/><b style='color:black;'>RENDEZ-VOUS<\/b><br>Sivens\u00a0: il y a 6 ans l\u2019\u00c9tat tuait, rassemblement \u00e0 Sivens (Tarn)<\/a><br>Le 25 octobre 2020.<div class=nettoyeur><\/div>",
+			"description":"<p>Rassemblement le 25\u00a0octobre sur le lieu de la mort de R\u00e9mi Fraisse, tu\u00e9 par un gendarme dans la nuit du 25 au 26\u00a0octobre 2014.<\/p>",
+
+		"icon": "\/images\/marker.png",	
+		"icon_size": [24,40],		"icon_anchor": [9,38]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [4.0852818, 44.1253665]},
+		"id":"743",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21327'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH71\/arton21327-22dae.jpg?1601900722' width='100' height='71' style='margin-right:5px;float:left;' \/><b style='color:black;'>RENDEZ-VOUS<\/b><br>La <span class='caps'>PAC<\/span>\u00a0: Demain, quelle agriculture pour quelle alimentation<small class='fine d-inline'>\u00a0<\/small>? rencontre-d\u00e9bat \u00e0 Al\u00e8s (Gard) <\/a><br>Le 31 octobre 2020.<div class=nettoyeur><\/div>",
+			"description":"<p>Le Collectif des Coquelicots d&#8217;Al\u00e8s, l&#8217;association Sauvegarde de l\u2019identit\u00e9 de la Prairie, Attac Al\u00e8s-C\u00e9vennes, Nature &amp; Progr\u00e8s Gard et la Conf\u00e9d\u00e9ration paysanne du Gard organisent une rencontre pour comprendre, \u00e9changer et d\u00e9battre sur la <span class=\"caps\">PAC<\/span> (Politique Agricole Commune) qui est actuellement en cours de r\u00e9forme.<\/p>",
 
 		"icon": "\/images\/marker.png",	
 		"icon_size": [20,33.333333333333],		"icon_anchor": [9,38]
 		}},
 		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [-1.1977683, 46.153917]},
-		"id":"947",
+		"geometry": {"type": "Point", "coordinates": [6.1545239, 47.6197251]},
+		"id":"1128",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21136'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH142\/arton21136-01322.jpg?1600074572' width='100' height='142' style='margin-right:5px;float:left;' \/><b style='color:black;'>RENDEZ-VOUS<\/b><br>11<sup class='typo_exposants'>e<\/sup> Festival Terre et Lettres, \u00e0 La Rochelle (Charente-Maritime)<\/a><br>Le 7 octobre 2020.<div class=nettoyeur><\/div>",
-			"description":"<p>6 ateliers, 2 projections d\u00e9bat et 8 rencontres avec 15 auteurs dont Coline Serreau - Grand T\u00e9moin, Corinne Morel Darleux, Fran\u00e7ois Sarano, Herv\u00e9 Kempf pour tenter de r\u00e9pondre \u00e0 la question\u00a0: &quot;Ecologie ou catastrophe. Comment agir<small class=\"fine d-inline\">\u00a0<\/small>?&quot;<\/p>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21424'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH142\/arton21424-becf3.jpg?1602798411' width='100' height='142' style='margin-right:5px;float:left;' \/><b style='color:black;'>RENDEZ-VOUS<\/b><br>Quelle m\u00e9thanisation voulons-nous<small class='fine d-inline'>\u00a0<\/small>?, d\u00e9bat \u00e0 Vesoul (Haute-Sa\u00f4ne)<\/a><br>Le 29 octobre 2020.<div class=nettoyeur><\/div>",
+			"description":"<p>Le Plateau D\u00e9bat Public, <span class=\"caps\">FNE<\/span> <span class=\"caps\">BFC<\/span>, l&#8217;<span class=\"caps\">ADEAR70<\/span> et <span class=\"caps\">FNE<\/span> 70 pr\u00e9sentent le d\u00e9bat public\u00a0: Quelle m\u00e9thanisation voulons-nous, \u00e0 Vesoul, en Haute-Sa\u00f4ne<\/p>",
 
 		"icon": "\/images\/marker.png",	
-		"icon_size": [19.285714285714,32.142857142857],		"icon_anchor": [9,38]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [6.1540688, 48.6634506]},
-		"id":"1421",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21143'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH74\/arton21143-57a72.png?1600104157' width='100' height='74' style='margin-right:5px;float:left;' \/><b style='color:black;'>RENDEZ-VOUS<\/b><br>\u00ab<small class='fine d-inline'>\u00a0<\/small>Comment j\u2019ai rat\u00e9 ma transition\u2026 (Et pourtant j\u2019\u00e9tais bien inform\u00e9<small class='fine d-inline'>\u00a0<\/small>!)<small class='fine d-inline'>\u00a0<\/small>\u00bb, conf\u00e9rence gesticul\u00e9e \u00e0 Vand\u0153uvre (Meurthe-et-Moselle)<\/a><br>Le 2 octobre 2020.<div class=nettoyeur><\/div>",
-			"description":"<p>La transition serait-elle une strat\u00e9gie d\u2019\u00e9vitement plut\u00f4t qu\u2019une rupture radicale<small class=\"fine d-inline\">\u00a0<\/small>? A qui profite l\u2019injonction \u00e0 se r\u00e9inventer avec des \u00e9nergies renouvelables<small class=\"fine d-inline\">\u00a0<\/small>?<\/p>",
-
-		"icon": "\/images\/marker.png",	
-		"icon_size": [20,33.333333333333],		"icon_anchor": [9,38]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [6.108398437500001, 46.1912395780416]},
-		"id":"1472",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21208'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH50\/arton21208-98816.jpg?1600684076' width='100' height='50' style='margin-right:5px;float:left;' \/><b style='color:black;'>RENDEZ-VOUS<\/b><br>\u00ab<small class='fine d-inline'>\u00a0<\/small>Que cr\u00e8ve le capitalisme<small class='fine d-inline'>\u00a0<\/small>\u00bb, rencontre avec Herv\u00e9 Kempf \u00e0 Gen\u00e8ve (Suisse)<\/a><br>Le 23 septembre 2020.<div class=nettoyeur><\/div>",
-			"description":"<p>Herv\u00e9 Kempf vient discuter de l&#8217;opposition entre capitalisme et \u00e9cologie, alors que la situation \u00e9cologique et sociale mondiale devient extr\u00eamement grave. Il proposera des r\u00e9ponses \u00e0 ces questions\u00a0: Que veut le nouveau capitalisme<small class=\"fine d-inline\">\u00a0<\/small>? Quels sont les enjeux du pr\u00e9sent<small class=\"fine d-inline\">\u00a0<\/small>? Quelle strat\u00e9gie pour le mouvement \u00e9cologiste et \u00e9mancipateur<small class=\"fine d-inline\">\u00a0<\/small>?<\/p>",
-
-		"icon": "\/images\/marker.png",	
-		"icon_size": [36,60],		"icon_anchor": [9,38]
+		"icon_size": [20.571428571429,34.285714285714],		"icon_anchor": [9,38]
 		}},
 		{"type": "Feature",
 		"geometry": {"type": "Point", "coordinates": [-0.0590828, 46.4963424]},
@@ -68,71 +58,318 @@
 			"description":"<p>Le Festival international du film ornithologique de M\u00e9nigoute est l\u2019un des \u00e9v\u00e9nements mondiaux majeurs du cin\u00e9ma animalier. La premi\u00e8re \u00e9dition s\u2019est tenue en 1985, le Festival de M\u00e9nigoute est port\u00e9 par l\u2019association Mainate<\/p>",
 
 		"icon": "\/images\/marker.png",	
-		"icon_size": [18.529411764706,30.882352941176],		"icon_anchor": [9,38]
+		"icon_size": [21.6,36],		"icon_anchor": [9,38]
 		}},
 		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [4.9125102, 44.3594738]},
-		"id":"1654",
+		"geometry": {"type": "Point", "coordinates": [4.8529605, 46.7888997]},
+		"id":"1697",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=20965'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH142\/arton20965-f9142.jpg?1598255912' width='100' height='142' style='margin-right:5px;float:left;' \/><b style='color:black;'>RENDEZ-VOUS<\/b><br>Festival R\u00eaveSolutions, \u00e0 Richerenches (Vaucluse)<\/a><br>Le 25 septembre 2020.<div class=nettoyeur><\/div>",
-			"description":"<p>R\u00eaveSolutions, un festival  pour \u00e9changer, participer, apprendre, regarder, fl\u00e2ner, danser, d\u00e9guster, vous reposer, vous balader en famille dans les jardins partag\u00e9s de Richerenches (84) \u00e0 la d\u00e9couverte de la Permaculture.<\/p>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21423'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH142\/arton21423-2b401.png?1602798411' width='100' height='142' style='margin-right:5px;float:left;' \/><b style='color:black;'>RENDEZ-VOUS<\/b><br>Quel tourisme pour demain<small class='fine d-inline'>\u00a0<\/small>?, d\u00e9bat \u00e0 Chalon-sur-Sa\u00f4ne (Sa\u00f4ne-et-Loire)<\/a><br>Le 27 octobre 2020.<div class=nettoyeur><\/div>",
+			"description":"<p>Comment permettre au tourisme de r\u00e9pondre aux enjeux de territoire, de respect de l&#8217;environnement et d&#8217;emploi<small class=\"fine d-inline\">\u00a0<\/small>? - D\u00e9bat public sur le tourisme de demain<\/p>",
 
 		"icon": "\/images\/marker.png",	
-		"icon_size": [27,45],		"icon_anchor": [9,38]
+		"icon_size": [21.6,36],		"icon_anchor": [9,38]
+		}}
+		,
+		
+
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [3.5489707, 45.855795]},
+		"id":"1699",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21436'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton21436-13608.jpg?1602919412' width='100' height='67' style='margin-right:5px;float:left;' \/>Territoires z\u00e9ro ch\u00f4meur\u00a0: quand les profils caboss\u00e9s retrouvent une vie \u00ab<small class='fine d-inline'>\u00a0<\/small>normale<small class='fine d-inline'>\u00a0<\/small>\u00bb<\/a><br>publi\u00e9 le 17 octobre 2020.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [35.8225116, 34.4453581]},
+		"id":"1698",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21419'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton21419-dc5f4.jpg?1602836607' width='100' height='67' style='margin-right:5px;float:left;' \/>\u00ab<small class='fine d-inline'>\u00a0<\/small>Plut\u00f4t mourir en mer que rester<small class='fine d-inline'>\u00a0<\/small>\u00bb\u00a0: les Libanais tentent de fuir vers l'Europe<\/a><br>publi\u00e9 le 16 octobre 2020.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
 		}},
 		{"type": "Feature",
 		"geometry": {"type": "Point", "coordinates": [3.5021158, 43.6499836]},
 		"id":"1655",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=20836'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH142\/arton20836-17bf7.jpg?1598255912' width='100' height='142' style='margin-right:5px;float:left;' \/><b style='color:black;'>RENDEZ-VOUS<\/b><br>Perm'<span class='caps'>ACTE<\/span> 2020, universit\u00e9 de permaculture en action, \u00e0 Saint-Andr\u00e9-de-Sangonis (H\u00e9rault)<\/a><br>Le 16 octobre 2020.<div class=nettoyeur><\/div>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=20836'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH142\/arton20836-17bf7.jpg?1598255912' width='100' height='142' style='margin-right:5px;float:left;' \/>Perm'<span class='caps'>ACTE<\/span> 2020, universit\u00e9 de permaculture en action, \u00e0 Saint-Andr\u00e9-de-Sangonis (H\u00e9rault)<\/a><br>publi\u00e9 le 16 octobre 2020.<div class=nettoyeur><\/div>",
 			"description":"<p>10 jours de rencontres (ateliers, forums, conf\u00e9rences, cin\u00e9-d\u00e9bat, spectacles \u2026) pour diffuser et former \u00e0 la permaculture, le tout \u00e0 partir de 10\u20ac\/jour<small class=\"fine d-inline\">\u00a0<\/small>!<\/p>",
 
-		"icon": "\/images\/marker.png",	
-		"icon_size": [18.782608695652,31.304347826087],		"icon_anchor": [9,38]
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
 		}},
 		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.7488069, 42.485804]},
-		"id":"1673",
+		"geometry": {"type": "Point", "coordinates": [-1.4611915, 43.5405622]},
+		"id":"1696",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21107'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH142\/arton21107-9235b.jpg?1599745563' width='100' height='142' style='margin-right:5px;float:left;' \/><b style='color:black;'>RENDEZ-VOUS<\/b><br>Transitions \u00e9cologiques en Vallespir, \u00e9cofestival \u00e0 C\u00e9ret (Pyr\u00e9n\u00e9es-Orientales)<\/a><br>Le 23 septembre 2020.<div class=nettoyeur><\/div>",
-			"description":"<p>20<sup class=\"typo_exposants\">e<\/sup> \u00e9dition de l&#8217;\u00e9cofestival organis\u00e9 chaque ann\u00e9e \u00e0 C\u00e9ret (66400), par l&#8217;association <span class=\"caps\">VALLESPIR<\/span> <span class=\"caps\">TERRES<\/span> <span class=\"caps\">VIVANTES<\/span>. Le th\u00e8me de cette ann\u00e9e\u00a0: <span class=\"caps\">TRANSITIONS<\/span> \u00c9<span class=\"caps\">COLOGIQUES<\/span> <span class=\"caps\">EN<\/span> <span class=\"caps\">VALLESPIR<\/span><small class=\"fine d-inline\">\u00a0<\/small>!!!<\/p>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21393'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton21393-3c58e.jpg?1602663833' width='100' height='67' style='margin-right:5px;float:left;' \/>Dans les Landes, le plus grand l\u00e9zard d\u2019Europe menac\u00e9 par un projet routier <\/a><br>publi\u00e9 le 14 octobre 2020.<div class=nettoyeur><\/div>",
+			"description":"",
 
-		"icon": "\/images\/marker.png",	
-		"icon_size": [36,60],		"icon_anchor": [9,38]
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
 		}},
 		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [-0.5879629, 44.8088438]},
-		"id":"1675",
+		"geometry": {"type": "Point", "coordinates": [-0.5845503, 46.2299425]},
+		"id":"1695",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21144'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH143\/arton21144-003af.png?1600104157' width='100' height='143' style='margin-right:5px;float:left;' \/><b style='color:black;'>RENDEZ-VOUS<\/b><br>L\u2019environnement en question\u2026 \u00c0 la crois\u00e9e des sciences humaines et naturelles, conf\u00e9rences \u00e0 Talence (Gironde)<\/a><br>Le 28 septembre 2020.<div class=nettoyeur><\/div>",
-			"description":"<p>L\u2019\u00c9cole Nationale d\u2019Architecture et du Paysage de Bordeaux et l\u2019Agence R\u00e9gionale de la Biodiversit\u00e9 Nouvelle-Aquitaine, co-organisent la deuxi\u00e8me \u00e9dition du cycle de conf\u00e9rences publiques \u00ab<small class=\"fine d-inline\">\u00a0<\/small>L\u2019environnement en question\u2026<small class=\"fine d-inline\">\u00a0<\/small>\u00bb. Il traite des probl\u00e9matiques environnementales contemporaines et des relations des soci\u00e9t\u00e9s \u00e0 la nature, \u00e0 travers le temps et les cultures.<\/p>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21387'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH75\/arton21387-59ed1.jpg?1602514845' width='100' height='75' style='margin-right:5px;float:left;' \/>Dans les Deux-S\u00e8vres, 3.000 personnes ont d\u00e9fil\u00e9 contre les bassines<\/a><br>publi\u00e9 le 12 octobre 2020.<div class=nettoyeur><\/div>",
+			"description":"",
 
-		"icon": "\/images\/marker.png",	
-		"icon_size": [21.6,36],		"icon_anchor": [9,38]
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [18.154612724609358, 39.92423638217221]},
+		"id":"1694",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21375'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton21375-eed75.jpg?1602492283' width='100' height='67' style='margin-right:5px;float:left;' \/>\u00ab<small class='fine d-inline'>\u00a0<\/small>Tous les oliviers meurent<small class='fine d-inline'>\u00a0<\/small>\u00bb\u00a0: les paysans italiens face \u00e0 une bact\u00e9rie incontr\u00f4lable <\/a><br>publi\u00e9 le 12 octobre 2020.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [1.99503, 48.95275]},
+		"id":"1691",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21314'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH142\/arton21314-13864.png?1601672901' width='100' height='142' style='margin-right:5px;float:left;' \/>Lancement du Repair Caf\u00e9 de M\u00e9dan (Yvelines)<\/a><br>publi\u00e9 le 10 octobre 2020.<div class=nettoyeur><\/div>",
+			"description":"<p>Le 10\u00a0octobre 2020, la commune de M\u00e9dan dans les Yvelines inaugure son Repair Caf\u00e9 lors de l&#8217;\u00e9v\u00e8nement les &quot;Samedis 2 M\u00e9dan&quot; qui r\u00e9unira plusieurs associations, producteurs et ateliers participatifs et de sensibilisation \u00e0 l&#8217;environnement.<\/p>",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [3.0457226, 43.3265792]},
+		"id":"1692",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21310'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton21310-02cb5.jpg?1602233537' width='100' height='67' style='margin-right:5px;float:left;' \/>Les communes, nouvelles actrices de l'installation paysanne<\/a><br>publi\u00e9 le 9 octobre 2020.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.7055996, 45.2088706]},
+		"id":"1693",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21347'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton21347-8b737.jpg?1602146637' width='100' height='67' style='margin-right:5px;float:left;' \/>\u00ab<small class='fine d-inline'>\u00a0<\/small>Comment va-t-on respirer<small class='fine d-inline'>\u00a0<\/small>?<small class='fine d-inline'>\u00a0<\/small>\u00bb Un jardin ouvrier menac\u00e9 par le b\u00e9ton pr\u00e8s de Grenoble<\/a><br>publi\u00e9 le 8 octobre 2020.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [1.7152634, 47.79829]},
+		"id":"1681",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21219'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton21219-ff017.jpg?1601891249' width='100' height='67' style='margin-right:5px;float:left;' \/> \u00c0 Upaya, \u00ab<small class='fine d-inline'>\u00a0<\/small>les enfants apprennent les maths en comptant les tomates<small class='fine d-inline'>\u00a0<\/small>\u00bb<\/a><br>publi\u00e9 le 5 octobre 2020.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.3658756, 48.9118584]},
+		"id":"1684",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21254'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH134\/arton21254-4f072.jpg?1601059169' width='100' height='134' style='margin-right:5px;float:left;' \/>Journ\u00e9es d'\u00e9tudes pour l'arr\u00eat du nucl\u00e9aire, \u00e0 La Plaine-Saint-Denis (Seine-Saint-Denis)<\/a><br>publi\u00e9 le 3 octobre 2020.<div class=nettoyeur><\/div>",
+			"description":"<p>Le collectif <span class=\"caps\">ADN<\/span> (Arr\u00eat Du Nucl\u00e9aire) vous invite pour ces 7<sup class=\"typo_exposants\">e<\/sup> journ\u00e9es d&#8217;\u00e9tude \u00e0 La Plaine Saint-Denis (r\u00e9gion parisienne)\u00a0: 2 jours de d\u00e9bats et de f\u00eate<small class=\"fine d-inline\">\u00a0<\/small>!<\/p>",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
 		}},
 		{"type": "Feature",
 		"geometry": {"type": "Point", "coordinates": [1.8102982, 43.8529903]},
 		"id":"1676",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21173'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH88\/arton21173-94eeb.jpg?1600322258' width='100' height='88' style='margin-right:5px;float:left;' \/><b style='color:black;'>RENDEZ-VOUS<\/b><br>Manif et rassemblement contre le barrage de Sivens, \u00e0  Lisle-sur-Tarn (Tarn)<\/a><br>Le 3 octobre 2020.<div class=nettoyeur><\/div>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21173'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH142\/arton21173-9e73b.jpg?1601387321' width='100' height='142' style='margin-right:5px;float:left;' \/>Manif et rassemblement contre le barrage de Sivens, \u00e0  Lisle-sur-Tarn (Tarn)<\/a><br>publi\u00e9 le 3 octobre 2020.<div class=nettoyeur><\/div>",
 			"description":"<p>Face \u00e0 l&#8217;ent\u00eatement des \u00e9lus et de la Fnsea \u00e0 vouloir imposer un barrage sur la zone humide de Sivens, le groupe\u00a0: &quot;Habitant.e.s d&#8217;ici et d&#8217;ailleurs&quot; appelle les opposants \u00e0 une manifestation suivie d&#8217;un rassemblement. Au court de celui-ci des paysans et autres habitants des lieux porteront t\u00e9moignages des dangers de l&#8217;agriculture chimique, des r\u00e9alit\u00e9s du r\u00e9chauffement climatique, de l&#8217;h\u00e9r\u00e9sie de r\u00e9pondre aux s\u00e9cheresses de plus en plus s\u00e9v\u00e8res, dont nous subissons d\u00e9j\u00e0 les premiers assauts, par la cr\u00e9ations de r\u00e9serves, barrages et autres.<br class='autobr' \/>\nMais les t\u00e9moignages ne manqueront pas de porter sur l&#8217;efficacit\u00e9 av\u00e9r\u00e9e des techniques culturales sans travail du sol, sans pesticides, sans sols nus... dans le respect de la vie de tous.<\/p>",
 
-		"icon": "\/images\/marker.png",	
-		"icon_size": [19.8,33],		"icon_anchor": [9,38]
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [9.02956008911133, 50.76360788469468]},
+		"id":"1690",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21324'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton21324-d29bd.jpg?1601704767' width='100' height='67' style='margin-right:5px;float:left;' \/>En Allemagne, des \u00e9cologistes juch\u00e9s dans des arbres luttent contre un projet d'autoroute<\/a><br>publi\u00e9 le 3 octobre 2020.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.8468743, 44.6839098]},
+		"id":"1688",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21294'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton21294-b2d83.jpg?1601623621' width='100' height='67' style='margin-right:5px;float:left;' \/>\u00ab<small class='fine d-inline'>\u00a0<\/small>\u00c9quarrisseur naturel<small class='fine d-inline'>\u00a0<\/small>\u00bb ou tueur de b\u00e9tail<small class='fine d-inline'>\u00a0<\/small>? Dans l\u2019Aubrac, le vautour fauve divise<\/a><br>publi\u00e9 le 2 octobre 2020.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.86534, 44.6532]},
+		"id":"1689",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21294'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton21294-b2d83.jpg?1601623621' width='100' height='67' style='margin-right:5px;float:left;' \/>\u00ab<small class='fine d-inline'>\u00a0<\/small>\u00c9quarrisseur naturel<small class='fine d-inline'>\u00a0<\/small>\u00bb ou tueur de b\u00e9tail<small class='fine d-inline'>\u00a0<\/small>? Dans l\u2019Aubrac, le vautour fauve divise<\/a><br>publi\u00e9 le 2 octobre 2020.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [3.8466598, 43.6843999]},
+		"id":"1685",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21282'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton21282-66b9c.jpg?1601544493' width='100' height='67' style='margin-right:5px;float:left;' \/>Decathlon veut encore b\u00e9tonner des terres agricoles pr\u00e8s de Montpellier<\/a><br>publi\u00e9 le 1er octobre 2020.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.8263171, 49.4179497]},
+		"id":"1687",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21299'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton21299-4b74c.jpg?1601544493' width='100' height='67' style='margin-right:5px;float:left;' \/>Quand les chasseurs sont chass\u00e9s\u00a0: une journ\u00e9e avec des militants anti-chasse \u00e0 courre<\/a><br>publi\u00e9 le 1er octobre 2020.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [27.5618791, 53.902334]},
+		"id":"1686",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21285'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton21285-ebfcb.jpg?1601454162' width='100' height='67' style='margin-right:5px;float:left;' \/>Intimidations, arrestations\u2026 Les \u00e9cologistes bi\u00e9lorusses r\u00e9prim\u00e9s par le pouvoir<\/a><br>publi\u00e9 le 30 septembre 2020.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.5342691279297984, 43.65313195]},
+		"id":"1683",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21257'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton21257-a1de7.jpg?1601451677' width='100' height='67' style='margin-right:5px;float:left;' \/>Dans le Tarn, un village se rebelle contre une mine de tungst\u00e8ne<\/a><br>publi\u00e9 le 30 septembre 2020.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-0.5879629, 44.8088438]},
+		"id":"1675",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21144'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH143\/arton21144-003af.png?1600104157' width='100' height='143' style='margin-right:5px;float:left;' \/>L\u2019environnement en question\u2026 \u00c0 la crois\u00e9e des sciences humaines et naturelles, conf\u00e9rences \u00e0 Talence (Gironde)<\/a><br>publi\u00e9 le 28 septembre 2020.<div class=nettoyeur><\/div>",
+			"description":"<p>L\u2019\u00c9cole Nationale d\u2019Architecture et du Paysage de Bordeaux et l\u2019Agence R\u00e9gionale de la Biodiversit\u00e9 Nouvelle-Aquitaine, co-organisent la deuxi\u00e8me \u00e9dition du cycle de conf\u00e9rences publiques \u00ab<small class=\"fine d-inline\">\u00a0<\/small>L\u2019environnement en question\u2026<small class=\"fine d-inline\">\u00a0<\/small>\u00bb. Il traite des probl\u00e9matiques environnementales contemporaines et des relations des soci\u00e9t\u00e9s \u00e0 la nature, \u00e0 travers le temps et les cultures.<\/p>",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [1.7766633, 48.9717033]},
+		"id":"1680",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21214'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH142\/arton21214-99f57.jpg?1600702633' width='100' height='142' style='margin-right:5px;float:left;' \/>Conf\u00e9rence gesticul\u00e9e \u00ab<small class='fine d-inline'>\u00a0<\/small>Le Grand Tri<small class='fine d-inline'>\u00a0<\/small>\u00bb, \u00e0 Porcheville (Yvelines)<\/a><br>publi\u00e9 le 26 septembre 2020.<div class=nettoyeur><\/div>",
+			"description":"<p><span class=\"caps\">LE<\/span> <span class=\"caps\">GRAND<\/span> <span class=\"caps\">TRI<\/span>... avant que le grand crack nous croque<small class=\"fine d-inline\">\u00a0<\/small>!<\/p>",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [4.9125102, 44.3594738]},
+		"id":"1654",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=20965'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH142\/arton20965-f9142.jpg?1598255912' width='100' height='142' style='margin-right:5px;float:left;' \/>Festival R\u00eaveSolutions, \u00e0 Richerenches (Vaucluse)<\/a><br>publi\u00e9 le 25 septembre 2020.<div class=nettoyeur><\/div>",
+			"description":"<p>R\u00eaveSolutions, un festival  pour \u00e9changer, participer, apprendre, regarder, fl\u00e2ner, danser, d\u00e9guster, vous reposer, vous balader en famille dans les jardins partag\u00e9s de Richerenches (84) \u00e0 la d\u00e9couverte de la Permaculture.<\/p>",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
 		}},
 		{"type": "Feature",
 		"geometry": {"type": "Point", "coordinates": [3.8466598, 43.6843999]},
 		"id":"1677",
 		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21200'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH28\/arton21200-e3cc8.png?1600638508' width='100' height='28' style='margin-right:5px;float:left;' \/><b style='color:black;'>RENDEZ-VOUS<\/b><br>Non au projet Oxylane et \u00e0 son monde, \u00e0 Saint-Cl\u00e9ment-de-Rivi\u00e8re (H\u00e9rault)<\/a><br>Le 25 septembre 2020.<div class=nettoyeur><\/div>",
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21200'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH142\/arton21200-0cdae.png?1600758213' width='100' height='142' style='margin-right:5px;float:left;' \/>Non au projet Oxylane et \u00e0 son monde, \u00e0 Saint-Cl\u00e9ment-de-Rivi\u00e8re (H\u00e9rault)<\/a><br>publi\u00e9 le 25 septembre 2020.<div class=nettoyeur><\/div>",
 			"description":"<p>La Conf\u00e9d\u00e9ration paysanne, aux c\u00f4t\u00e9s d\u2019Attac et du collectif Oxyg\u00e8ne, appelle \u00e0 une journ\u00e9e sur le site du futur D\u00e9cathlon Oxylane, pour protester contre ce projet qui s\u2019inclut dans la b\u00e9tonisation des abords de Montpellier, et r\u00e9clamer plus largement le maintien des terres agricoles. Celle-ci se d\u00e9roulera le 25\u00a0septembre 2020 \u00e0 partir de 10h sur le site des Fontanelles \u00e0 Saint-Cl\u00e9ment-de-Rivi\u00e8re.<br class='autobr' \/>\nEn pr\u00e9sence d\u2019Aur\u00e9lie Trouv\u00e9 (porte-parole nationale d\u2019Attac) et de Nicolas Girod (porte-parole national de la Conf) les participant\u00b7es sont invit\u00e9\u00b7es \u00e0 se joindre au semis d\u2019une parcelle de c\u00e9r\u00e9ales, \u00e0 la plantation d\u2019arbres fruitiers, \u00e0 des ateliers de greffe, accompagn\u00e9s de prises de parole, d\u2019un pique-nique, d\u2019une visite naturaliste du site des Fontanelles, et d\u2019un atelier-d\u00e9bat.<\/p>",
 
-		"icon": "\/images\/marker.png",	
-		"icon_size": [27,45],		"icon_anchor": [9,38]
-		}}
-		,
-		
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.9583419, 47.281542]},
+		"id":"1679",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21213'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH142\/arton21213-f7b46.jpg?1600702633' width='100' height='142' style='margin-right:5px;float:left;' \/>Conf\u00e9rence gesticul\u00e9e \u00ab<small class='fine d-inline'>\u00a0<\/small>Le Grand Tri<small class='fine d-inline'>\u00a0<\/small>\u00bb, \u00e0 Pouilly-sur-Loire (Ni\u00e8vre)<\/a><br>publi\u00e9 le 25 septembre 2020.<div class=nettoyeur><\/div>",
+			"description":"<p><span class=\"caps\">LE<\/span> <span class=\"caps\">GRAND<\/span> <span class=\"caps\">TRI<\/span>... avant que le grand crack nous croque<small class=\"fine d-inline\">\u00a0<\/small>!<\/p>",
 
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [0.1542712, 44.8450346]},
+		"id":"1678",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21211'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH142\/arton21211-853be.jpg?1600697379' width='100' height='142' style='margin-right:5px;float:left;' \/>Ma\u00efs paysan et \u00e9levage, journ\u00e9e de rencontres \u00e0 Saint-Antoine-de-Breuilh (Dordogne)<\/a><br>publi\u00e9 le 24 septembre 2020.<div class=nettoyeur><\/div>",
+			"description":"<p>&quot;ma\u00efs paysan et \u00e9levage&quot;\u00a0: une journ\u00e9e pour d\u00e9couvrir la diversit\u00e9 des ma\u00efs reproductibles et libres de droit, qui renforcent l&#8217;autonomie des paysans et pr\u00e9servent la biodiversit\u00e9 cultiv\u00e9e, et leurs applications en \u00e9levage.<\/p>",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.7488069, 42.485804]},
+		"id":"1673",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21107'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH142\/arton21107-9235b.jpg?1599745563' width='100' height='142' style='margin-right:5px;float:left;' \/>Transitions \u00e9cologiques en Vallespir, \u00e9cofestival \u00e0 C\u00e9ret (Pyr\u00e9n\u00e9es-Orientales)<\/a><br>publi\u00e9 le 23 septembre 2020.<div class=nettoyeur><\/div>",
+			"description":"<p>20<sup class=\"typo_exposants\">e<\/sup> \u00e9dition de l&#8217;\u00e9cofestival organis\u00e9 chaque ann\u00e9e \u00e0 C\u00e9ret (66400), par l&#8217;association <span class=\"caps\">VALLESPIR<\/span> <span class=\"caps\">TERRES<\/span> <span class=\"caps\">VIVANTES<\/span>. Le th\u00e8me de cette ann\u00e9e\u00a0: <span class=\"caps\">TRANSITIONS<\/span> \u00c9<span class=\"caps\">COLOGIQUES<\/span> <span class=\"caps\">EN<\/span> <span class=\"caps\">VALLESPIR<\/span><small class=\"fine d-inline\">\u00a0<\/small>!!!<\/p>",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [1.8312994, 49.1866449]},
+		"id":"1682",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21132'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton21132-0ee3c.jpg?1600760472' width='100' height='67' style='margin-right:5px;float:left;' \/>La betterave, cheval de Troie des n\u00e9onicotino\u00efdes<\/a><br>publi\u00e9 le 22 septembre 2020.<div class=nettoyeur><\/div>",
+			"description":"",
+
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]
+		}},
 		{"type": "Feature",
 		"geometry": {"type": "Point", "coordinates": [5.71984, 46.7691]},
 		"id":"1661",
@@ -935,307 +1172,20 @@
 		"icon": "\/images\/marker_rond.png",	
 		"icon_size": [12,12],
 		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [1.8398174, 47.8869822]},
-		"id":"1595",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=19975'});\" >La Chapelle-Saint-Mesmin (Loiret)<\/a><br>publi\u00e9 le 12 mars 2020.<div class=nettoyeur><\/div>",
-			"description":"<p>Un portrait d&#8217;Emmanuel Macron a \u00e9t\u00e9 d\u00e9voil\u00e9, le 7\u00a0octobre 2019, par <span class=\"caps\">ANV<\/span>-<span class=\"caps\">COP21<\/span> Orl\u00e9ans contre un projet de circuit de <span class=\"caps\">BMX<\/span> sur des terres agricoles \u00e0 La Chapelle-Saint-Mesmin (Loiret).<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [5.725583608171566, 45.18155284831502]},
-		"id":"1594",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=19974'});\" >Grenoble (Is\u00e8re)<\/a><br>publi\u00e9 le 12 mars 2020.<div class=nettoyeur><\/div>",
-			"description":"",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [0.5850507, 43.6463558]},
-		"id":"1593",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=19973'});\" >Auch (Gers)<\/a><br>publi\u00e9 le 12 mars 2020.<div class=nettoyeur><\/div>",
-			"description":"<p>Un portrait d&#8217;Emmanuel Macron a \u00e9t\u00e9 d\u00e9voil\u00e9 le 5\u00a0d\u00e9cembre 2019 \u00e0 Auch, en soutien \u00e0 la gr\u00e8ve des urgences de l&#8217;h\u00f4pital d&#8217;Auch (Gers).<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [-0.6294321, 43.3708943]},
-		"id":"1592",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=19972'});\" >Usine Sanofi de Mourenx (Pyr\u00e9n\u00e9es-Atlantiques)<\/a><br>publi\u00e9 le 12 mars 2020.<div class=nettoyeur><\/div>",
-			"description":"<p>Un portrait d&#8217;Emmanuel Macron a \u00e9t\u00e9 sorti, le 17\u00a0f\u00e9vrier 2020, \u00e0 l&#8217;usine Sanofi de Mourenx par le groupe <span class=\"caps\">ANV<\/span>-<span class=\"caps\">COP21<\/span> Oloron, en soutien aux victimes de scandales sanitaires et environnementaux.<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [4.8747841, 45.5252114]},
-		"id":"1591",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=19970'});\" >Vienne (Is\u00e8re)<\/a><br>publi\u00e9 le 12 mars 2020.<div class=nettoyeur><\/div>",
-			"description":"<p>Thierry Kovacs, maire <span class=\"caps\">LR<\/span> de Vienne, dans l\u2019Is\u00e8re, a pr\u00eat\u00e9, samedi 21\u00a0septembre, un portrait d\u2019Emmanuel Macron \u00e0 des Gilets jaunes qui manifestaient dans sa ville.<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [1.3532506, 45.6094669]},
-		"id":"1590",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=19969'});\" >Ch\u00e2teau-Chervix (Haute-Vienne)<\/a><br>publi\u00e9 le 12 mars 2020.<div class=nettoyeur><\/div>",
-			"description":"<p>Des activistes d\u2019<span class=\"caps\">ANV<\/span>-<span class=\"caps\">COP<\/span> 21 ont d\u00e9croch\u00e9 le portrait d\u2019Emmanuel Macron de la mairie de Ch\u00e2teau-Chervix, en Haute-Vienne, le 30\u00a0septembre 2019.<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [4.0936377, 49.2140079]},
-		"id":"1589",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=19968'});\" >Taissy (Marne)<\/a><br>publi\u00e9 le 12 mars 2020.<div class=nettoyeur><\/div>",
-			"description":"<p>Des activistes d\u2019<span class=\"caps\">ANV<\/span>-<span class=\"caps\">COP<\/span> 21 ont d\u00e9croch\u00e9 le portrait d\u2019Emmanuel Macron de la mairie de Taissy, dans la Marne, le 6\u00a0mars 2020.<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.5287445, 42.6450647]},
-		"id":"1588",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=19967'});\" >Vin\u00e7a (Pyr\u00e9n\u00e9es-Orientales)<\/a><br>publi\u00e9 le 12 mars 2020.<div class=nettoyeur><\/div>",
-			"description":"<p>Des activistes d\u2019<span class=\"caps\">ANV<\/span>-<span class=\"caps\">COP<\/span> 21 ont d\u00e9croch\u00e9 le portrait d\u2019Emmanuel Macron de la mairie de Vin\u00e7a, dans les Pyr\u00e9n\u00e9es-Orientales, le 17\u00a0f\u00e9vrier 2020.<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.360445036409199, 48.876008049999996]},
-		"id":"1587",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=19966'});\" >10<sup class='typo_exposants'>e<\/sup> arrondissement de Paris<\/a><br>publi\u00e9 le 12 mars 2020.<div class=nettoyeur><\/div>",
-			"description":"<p>Des activistes du collectif f\u00e9ministe Les D\u00e9crocheuses ont d\u00e9croch\u00e9 le portrait d\u2019Emmanuel Macron de la mairie du 10<sup class=\"typo_exposants\">e<\/sup> arrondissement de Paris, le 10\u00a0septembre 2019.<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.334267, 48.911729]},
-		"id":"1586",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=19965'});\" >Saint-Ouen (Seine-Saint-Denis)<\/a><br>publi\u00e9 le 12 mars 2020.<div class=nettoyeur><\/div>",
-			"description":"<p>Des activistes d\u2019<span class=\"caps\">ANV<\/span>-<span class=\"caps\">COP<\/span> 21 ont d\u00e9croch\u00e9 le portrait d\u2019Emmanuel Macron de la mairie de Saint-Ouen, en Seine-Saint-Denis, le 11\u00a0septembre 2019.<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [-0.6115586, 43.1922408]},
-		"id":"1585",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=19964'});\" >Oloron-Sainte-Marie (Pyr\u00e9n\u00e9es-Atlantiques)<\/a><br>publi\u00e9 le 12 mars 2020.<div class=nettoyeur><\/div>",
-			"description":"<p>Des activistes d\u2019<span class=\"caps\">ANV<\/span>-<span class=\"caps\">COP<\/span> 21 ont d\u00e9croch\u00e9 le portrait d\u2019Emmanuel Macron de la mairie de Oloron-Sainte-Marie, dans les Pyr\u00e9n\u00e9es-Atlantiques, le 5\u00a0f\u00e9vrier 2020.<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [-1.3472697, 47.2385415]},
-		"id":"1584",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=19963'});\" >Le Loroux-Bottereau (Loire-Atlantique)<\/a><br>publi\u00e9 le 12 mars 2020.<div class=nettoyeur><\/div>",
-			"description":"<p>Des activistes d\u2019<span class=\"caps\">ANV<\/span>-<span class=\"caps\">COP<\/span> 21 ont d\u00e9croch\u00e9 le portrait d\u2019Emmanuel Macron de la mairie de Le Loroux-Bottereau, en Loire-Atlantique, le 21\u00a0f\u00e9vrier 2020.<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.2956951, 49.8941708]},
-		"id":"1583",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=19962'});\" >Amiens (Somme)<\/a><br>publi\u00e9 le 12 mars 2020.<div class=nettoyeur><\/div>",
-			"description":"<p>Des activistes d\u2019<span class=\"caps\">ANV<\/span>-<span class=\"caps\">COP<\/span> 21 ont d\u00e9croch\u00e9 le portrait d\u2019Emmanuel Macron de la mairie d&#8217;Amiens, dans la Somme, le 6\u00a0mars 2020.<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [5.58169, 45.5264]},
-		"id":"1582",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=19960'});\" >Charancieu (Is\u00e8re)<\/a><br>publi\u00e9 le 12 mars 2020.<div class=nettoyeur><\/div>",
-			"description":"<p>Des activistes d\u2019<span class=\"caps\">ANV<\/span>-<span class=\"caps\">COP<\/span> 21 ont d\u00e9croch\u00e9 le portrait d\u2019Emmanuel Macron de la mairie de Charancieu, en Is\u00e8re, le 5\u00a0mars 2020.<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [5.5833, 45.4833]},
-		"id":"1581",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=19959'});\" >Montferrat (Is\u00e8re)<\/a><br>publi\u00e9 le 12 mars 2020.<div class=nettoyeur><\/div>",
-			"description":"<p>Des activistes d\u2019<span class=\"caps\">ANV<\/span>-<span class=\"caps\">COP<\/span> 21 ont d\u00e9croch\u00e9 le portrait d\u2019Emmanuel Macron de la mairie de Montferrat, en Is\u00e8re, le 5\u00a0mars 2020.<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [5.616002, 45.3558251]},
-		"id":"1580",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=19958'});\" >Coublevie (Is\u00e8re)<\/a><br>publi\u00e9 le 12 mars 2020.<div class=nettoyeur><\/div>",
-			"description":"<p>Des activistes d\u2019<span class=\"caps\">ANV<\/span>-<span class=\"caps\">COP<\/span> 21 ont d\u00e9croch\u00e9 le portrait d\u2019Emmanuel Macron de la mairie de Coublevie, en Is\u00e8re, le 5\u00a0mars 2020.<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [5.9396547, 47.3368706]},
-		"id":"1579",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=19957'});\" >Cussey-sur-l'Ognon (Doubs)<\/a><br>publi\u00e9 le 12 mars 2020.<div class=nettoyeur><\/div>",
-			"description":"<p>Des activistes d\u2019<span class=\"caps\">ANV<\/span>-<span class=\"caps\">COP<\/span> 21 ont d\u00e9croch\u00e9 le portrait d\u2019Emmanuel Macron de la mairie de Cussey-sur-l&#8217;Ognon, dans le Doubs, le 28\u00a0f\u00e9vrier 2020.<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [6.011267, 47.3273068]},
-		"id":"1578",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=19956'});\" >Devecey (Doubs)<\/a><br>publi\u00e9 le 12 mars 2020.<div class=nettoyeur><\/div>",
-			"description":"<p>Des activistes d\u2019<span class=\"caps\">ANV<\/span>-<span class=\"caps\">COP<\/span> 21 ont d\u00e9croch\u00e9 le portrait d\u2019Emmanuel Macron de la mairie de Devecey, dans le Doubs, le 28\u00a0f\u00e9vrier 2020.<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [3.6670232, 49.4278312]},
-		"id":"1577",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=19955'});\" >Vendresse (Ardennes)<\/a><br>publi\u00e9 le 12 mars 2020.<div class=nettoyeur><\/div>",
-			"description":"<p>Des activistes d\u2019<span class=\"caps\">ANV<\/span>-<span class=\"caps\">COP<\/span> 21 ont d\u00e9croch\u00e9 le portrait d\u2019Emmanuel Macron de la mairie de Vendresse, dans les Ardennes, le 6\u00a0mars 2020.<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [4.6156543, 49.7854796]},
-		"id":"1576",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=19954'});\" >Haudrecy (Ardennes)<\/a><br>publi\u00e9 le 12 mars 2020.<div class=nettoyeur><\/div>",
-			"description":"<p>Des activistes d\u2019<span class=\"caps\">ANV<\/span>-<span class=\"caps\">COP<\/span> 21 ont d\u00e9croch\u00e9 le portrait d\u2019Emmanuel Macron de la mairie d&#8217;Haudrecy, dans les Ardennes, le 5\u00a0mars 2020.<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [4.7445678, 49.814437]},
-		"id":"1575",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=19953'});\" >Nouzonville (Ardennes)<\/a><br>publi\u00e9 le 12 mars 2020.<div class=nettoyeur><\/div>",
-			"description":"<p>Des activistes d\u2019<span class=\"caps\">ANV<\/span>-<span class=\"caps\">COP<\/span> 21 ont d\u00e9croch\u00e9 le portrait d\u2019Emmanuel Macron de la mairie de Nouzonville, dans les Ardennes, le 4\u00a0mars 2020.<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [4.73785, 49.47041]},
-		"id":"1574",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=19952'});\" >Les Alleux (Ardennes)<\/a><br>publi\u00e9 le 12 mars 2020.<div class=nettoyeur><\/div>",
-			"description":"<p>Des activistes d\u2019<span class=\"caps\">ANV<\/span>-<span class=\"caps\">COP<\/span> 21 ont d\u00e9croch\u00e9 le portrait d\u2019Emmanuel Macron de la mairie de Les Alleux, dans les Ardennes, le 4\u00a0mars 2020.<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [4.8407354, 49.4311232]},
-		"id":"1573",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=19950'});\" >Boult-aux-Bois (Ardennes)<\/a><br>publi\u00e9 le 12 mars 2020.<div class=nettoyeur><\/div>",
-			"description":"<p>Des activistes d\u2019<span class=\"caps\">ANV<\/span>-<span class=\"caps\">COP<\/span> 21 ont d\u00e9croch\u00e9 le portrait d\u2019Emmanuel Macron de la mairie Boult-aux-Bois, dans les Ardennes, le 27\u00a0f\u00e9vrier 2020.<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [4.92917, 49.4342]},
-		"id":"1572",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=19949'});\" >Harricourt (Ardennes)<\/a><br>publi\u00e9 le 12 mars 2020.<div class=nettoyeur><\/div>",
-			"description":"<p>Des activistes d&#8217;<span class=\"caps\">ANV<\/span>-<span class=\"caps\">COP<\/span> 21 ont d\u00e9croch\u00e9 le portrait d\u2019Emmanuel Macron de la mairie d\u2019Harricourt, dans les Ardennes, le 24\u00a0f\u00e9vrier 2020.<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [2.39164, 48.7876]},
-		"id":"1561",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=19731'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH57\/arton19731-6ef76.jpg?1590937871' width='100' height='57' style='margin-right:5px;float:left;' \/>\u00ab<small class='fine d-inline'>\u00a0<\/small>Archipel<small class='fine d-inline'>\u00a0<\/small>\u00bb, au th\u00e9\u00e2tre \u00e0 Vitry-sur-Seine (Val-de-Marne) <\/a><br>publi\u00e9 le 11 mars 2020.<div class=nettoyeur><\/div>",
-			"description":"<p>On reste l\u00e0 avec nos h\u00e9ros, nos monstres et nos morts, \u00e0 attendre que l\u2019exaltation et l\u2019espoir nous \u00e9puisent.<\/p>\n<p>Un homme d\u2019une trentaine d\u2019ann\u00e9e au volant d\u2019une voiture, sur une route gorg\u00e9e d\u2019eau. Dans un ultime acte de refus (ou d\u2019abandon) Ulysse d\u00e9cide de d\u00e9crocher. Ses mains quittent le volant et la voiture fonce maintenant dans le d\u00e9cor. Accident. Coma. Pour rester aupr\u00e8s de son fr\u00e8re, Pauline ne cesse de reporter son d\u00e9part pour Ath\u00e8nes, o\u00f9 elle devait \u00e9crire sa th\u00e8se sur le Petit \u00c2ge Glaciaire, une catastrophe climatique du <span class=\"caps\">XIV<\/span><sup class=\"typo_exposants\">e<\/sup> si\u00e8cle. Lors de ses visites \u00e0 l\u2019h\u00f4pital elle rencontre Th\u00e9o, jeune musicien de dix-neuf ans en qu\u00eate d\u2019absoluet C\u00e9cile, l\u2019infirmi\u00e8re en charge des soins d\u2019Ulysse. Puis la catastrophe se produit r\u00e9ellement et change les paradigmes de chacun.<\/p>",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [6.8651754, 48.1454792]},
-		"id":"1567",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=19907'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton19907-55a52.jpg?1590937871' width='100' height='67' style='margin-right:5px;float:left;' \/>Poulailler industriel g\u00e9ant... et \u00ab<small class='fine d-inline'>\u00a0<\/small>bio<small class='fine d-inline'>\u00a0<\/small>\u00bb\u00a0: dans les Vosges, \u00e7a ne passe pas<\/a><br>publi\u00e9 le 7 mars 2020.<div class=nettoyeur><\/div>",
-			"description":"",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
-		}},
-		{"type": "Feature",
-		"geometry": {"type": "Point", "coordinates": [6.2736178, 48.3358386]},
-		"id":"1568",
-		"properties": {
-			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=19907'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton19907-55a52.jpg?1590937871' width='100' height='67' style='margin-right:5px;float:left;' \/>Poulailler industriel g\u00e9ant... et \u00ab<small class='fine d-inline'>\u00a0<\/small>bio<small class='fine d-inline'>\u00a0<\/small>\u00bb\u00a0: dans les Vosges, \u00e7a ne passe pas<\/a><br>publi\u00e9 le 7 mars 2020.<div class=nettoyeur><\/div>",
-			"description":"",
-
-		"icon": "\/images\/marker_rond.png",	
-		"icon_size": [12,12],
-		"icon_anchor": [6,6]
 		}}		
 
 ,
 
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.35634994506836, 48.50375360167399]},
+		"id":"268",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21365'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton21365-410c0.jpg?1602233537' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>D\u00e9chets nucl\u00e9aires<\/span><br>\u00c0 Bure, une \u00ab<small class='fine d-inline'>\u00a0<\/small>semaine antinucl\u00e9aire<small class='fine d-inline'>\u00a0<\/small>\u00bb festive et militante revigore les luttes<\/a><br>publi\u00e9 le 9 octobre 2020.<div class=nettoyeur><\/div>",
+			"description":"",
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+		}},
 		{"type": "Feature",
 		"geometry": {"type": "Point", "coordinates": [5.35634994506836, 48.50375360167399]},
 		"id":"268",
@@ -1632,6 +1582,16 @@
 
 ,
 
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.0414701, 47.3215806]},
+		"id":"849",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21215'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton21215-56c65.jpg?1600760472' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>Grands Projets inutiles<\/span><br>\u00c0 Dijon, une zad pour pr\u00e9server un \u00eelot de nature en ville<\/a><br>publi\u00e9 le 22 septembre 2020.<div class=nettoyeur><\/div>",
+			"description":"",
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+		}},
 		{"type": "Feature",
 		"geometry": {"type": "Point", "coordinates": [3.046461, 43.0203536]},
 		"id":"1552",
@@ -2529,6 +2489,26 @@
 		"id":"369",
 		"properties": {
 			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=19983'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton19983-342f3.jpg?1590937879' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>Animaux<\/span><br>Au Qu\u00e9bec, les derniers caribous menac\u00e9s par l'industrie foresti\u00e8re<\/a><br>publi\u00e9 le 17 mars 2020.<div class=nettoyeur><\/div>",
+			"description":"",
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [6.8651754, 48.1454792]},
+		"id":"1567",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=19907'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton19907-55a52.jpg?1590937871' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>Animaux<\/span><br>Poulailler industriel g\u00e9ant... et \u00ab<small class='fine d-inline'>\u00a0<\/small>bio<small class='fine d-inline'>\u00a0<\/small>\u00bb\u00a0: dans les Vosges, \u00e7a ne passe pas<\/a><br>publi\u00e9 le 7 mars 2020.<div class=nettoyeur><\/div>",
+			"description":"",
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [6.2736178, 48.3358386]},
+		"id":"1568",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=19907'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton19907-55a52.jpg?1590937871' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>Animaux<\/span><br>Poulailler industriel g\u00e9ant... et \u00ab<small class='fine d-inline'>\u00a0<\/small>bio<small class='fine d-inline'>\u00a0<\/small>\u00bb\u00a0: dans les Vosges, \u00e7a ne passe pas<\/a><br>publi\u00e9 le 7 mars 2020.<div class=nettoyeur><\/div>",
 			"description":"",
 		"icon": "\/images\/marker_rond.png",	
 		"icon_size": [12,12],
@@ -3763,6 +3743,26 @@
 
 ,
 
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [2.556380831162444, 49.00409618358581]},
+		"id":"1326",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21332'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton21332-3e47c.jpg?1601884941' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>Transports<\/span><br>La plus grande action jamais men\u00e9e en France contre le trafic a\u00e9rien<\/a><br>publi\u00e9 le 5 octobre 2020.<div class=nettoyeur><\/div>",
+			"description":"",
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-1.52605400580917, 47.22294913789694]},
+		"id":"1384",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21332'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton21332-3e47c.jpg?1601884941' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>Transports<\/span><br>La plus grande action jamais men\u00e9e en France contre le trafic a\u00e9rien<\/a><br>publi\u00e9 le 5 octobre 2020.<div class=nettoyeur><\/div>",
+			"description":"",
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+		}},
 		{"type": "Feature",
 		"geometry": {"type": "Point", "coordinates": [-2.9675702, 48.0647729]},
 		"id":"1397",
@@ -6216,6 +6216,16 @@
 ,
 
 		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [57.5703566, -20.2759451]},
+		"id":"1674",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21261'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH57\/arton21261-315e2.jpg?1601282538' width='100' height='57' style='margin-right:5px;float:left;' \/><span style='color:black;'>Eau, mers et oc\u00e9ans<\/span><br>\u00c0 l'\u00eele Maurice, r\u00e9bellion et autogestion contre la mar\u00e9e noire<\/a><br>publi\u00e9 le 28 septembre 2020.<div class=nettoyeur><\/div>",
+			"description":"",
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+		}},
+		{"type": "Feature",
 		"geometry": {"type": "Point", "coordinates": [-1.6800498962402346, 48.11362053786795]},
 		"id":"216",
 		"properties": {
@@ -7692,6 +7702,26 @@
 		"geometry": {"type": "Point", "coordinates": [1.0939658, 49.4404591]},
 		"id":"321",
 		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21274'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton21274-5b500.jpg?1601284387' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>Lubrizol<\/span><br>Un an apr\u00e8s Lubrizol, les Rouennais manifestent pour la v\u00e9rit\u00e9<\/a><br>publi\u00e9 le 28 septembre 2020.<div class=nettoyeur><\/div>",
+			"description":"",
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [1.0939658, 49.4404591]},
+		"id":"321",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21247'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton21247-603ee.jpg?1601034559' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>Lubrizol<\/span><br>\u00ab<small class='fine d-inline'>\u00a0<\/small>Lubrizol nous a salis<small class='fine d-inline'>\u00a0<\/small>\u00bb\u00a0: un an apr\u00e8s l\u2019incendie, des Rouennais t\u00e9moignent<\/a><br>publi\u00e9 le 25 septembre 2020.<div class=nettoyeur><\/div>",
+			"description":"",
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [1.0939658, 49.4404591]},
+		"id":"321",
+		"properties": {
 			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=18824'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton18824-cfdb6.jpg?1590937897' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>Lubrizol<\/span><br>Lubrizol\u00a0: des analyses rassurantes, mais insuffisantes<\/a><br>publi\u00e9 le 15 octobre 2019.<div class=nettoyeur><\/div>",
 			"description":"",
 		"icon": "\/images\/marker_rond.png",	
@@ -8824,6 +8854,26 @@
 
 ,
 
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-1.6800498962402346, 48.11362053786795]},
+		"id":"216",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21317'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton21317-7ab60.jpg?1602581183' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>Agriculture<\/span><br>M\u00eame \u00e0 petite \u00e9chelle, la m\u00e9thanisation suscite des d\u00e9bats<\/a><br>publi\u00e9 le 13 octobre 2020.<div class=nettoyeur><\/div>",
+			"description":"",
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+		}},
+		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [-71.24710996247306, 46.80140230306924]},
+		"id":"1665",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21311'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton21311-3066e.jpg?1601623623' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>Agriculture<\/span><br>Les minifermes et les maxiprofits d\u2019un mara\u00eecher star<\/a><br>publi\u00e9 le 2 octobre 2020.<div class=nettoyeur><\/div>",
+			"description":"",
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+		}},
 		{"type": "Feature",
 		"geometry": {"type": "Point", "coordinates": [5.5114818, 43.8598174]},
 		"id":"1564",
@@ -10467,6 +10517,16 @@
 ,
 
 		{"type": "Feature",
+		"geometry": {"type": "Point", "coordinates": [5.725583608171566, 45.18155284831502]},
+		"id":"1594",
+		"properties": {
+			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=21342'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton21342-50c00.jpg?1602056978' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>Libert\u00e9s<\/span><br>\u00c0 Grenoble, six militants \u00e9colos face \u00e0 une justice kafka\u00efenne<\/a><br>publi\u00e9 le 7 octobre 2020.<div class=nettoyeur><\/div>",
+			"description":"",
+		"icon": "\/images\/marker_rond.png",	
+		"icon_size": [12,12],
+		"icon_anchor": [6,6]		
+		}},
+		{"type": "Feature",
 		"geometry": {"type": "Point", "coordinates": [-84.5978534, 15.0610686]},
 		"id":"681",
 		"properties": {
@@ -10621,7 +10681,7 @@
 		"id":"189",
 		"properties": {
 			"title":"<a onclick=\"$.colorbox({iframe:true,width:'90%',height:'90%',href:'spip.php?page=articlenu&id_article=13211'});\" ><img class='spip_logo spip_logos' alt='' src='local\/cache-vignettes\/L100xH67\/arton13211-7ca62.jpg?1590937907' width='100' height='67' style='margin-right:5px;float:left;' \/><span style='color:black;'>Libert\u00e9s<\/span><br>Fou mais vrai\u00a0: la police poursuit un manifestant pour \u00ab<small class='fine d-inline'>\u00a0<\/small>jet de feuilles d'origine v\u00e9g\u00e9tale<small class='fine d-inline'>\u00a0<\/small>\u00bb<\/a><br>publi\u00e9 le 13 octobre 2017.<div class=nettoyeur><\/div>",
-			"description":"",
+			"description":"<p>Le tribunal de grande instance de Rodez a instruit le proc\u00e8s d\u2019un militant anti-\u00e9olien, accus\u00e9 de \u00ab<small class=\"fine d-inline\">\u00a0<\/small>violences volontaires<small class=\"fine d-inline\">\u00a0<\/small>\u00bb \u00ab<small class=\"fine d-inline\">\u00a0<\/small>avec jet de feuilles d\u2019origine v\u00e9g\u00e9tale<small class=\"fine d-inline\">\u00a0<\/small>\u00bb. La police a port\u00e9 plainte. Reporterre a assist\u00e9 \u00e0 l\u2019audience.<\/p>",
 		"icon": "\/images\/marker_rond.png",	
 		"icon_size": [12,12],
 		"icon_anchor": [6,6]		
