@@ -346,9 +346,9 @@ footer:
         -   label: anciennes<br>versions
             icon: fa-history
             href: https://github.com/manifestes/archived
-        -   label: écrivez-nous !<br>bonjour@utopies-concretes.org
+        -   label: écrivez-nous !<br>minutpapillon@gmail.com
             icon: fa-envelope-o
-            href: mailto:bonjour@utopies-concretes.org
+            href: mailto:minutpapillon@gmail.com
         -   label: inscrivez-vous sur<br>la liste de discussion
             icon: fa-newspaper-o
             href: https://lists.riseup.net/www/subscribe/utopies-concretes
