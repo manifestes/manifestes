@@ -129,6 +129,16 @@ var parseMapCreditAndDo = function(c,data,foreachdo) {
     if(c.jsonprefix) data = data[c.jsonprefix];
 
     _.each(data, function(m) {
+      
+      if(c.slug=="cluttes")
+        if(foreachdo) foreachdo({
+          source: "cluttes",
+          name: m.name,
+          description: m.Description + " - " + m.Article,
+          web: m.URL_1,
+          lat: m.geo.latitude,
+          lng: m.geo.longitude
+        });
 
       if(c.slug=="agefa")
         if(foreachdo) foreachdo({

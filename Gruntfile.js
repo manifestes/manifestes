@@ -273,22 +273,40 @@ module.exports = function(grunt) {
       
       // OFFLINE !? 'data/map/map_circc.json':'http://www.circuits-courts.be/get_json_data.php?data=ext',
       
-      // TODO:
-      // inspect: https://lagedefaire-lejournal.fr/maps/fullscreen/1/
+      // AGEDEFAIRE
+      // todo: inspect: https://lagedefaire-lejournal.fr/maps/fullscreen/1/
       // they use: https://lagedefaire-lejournal.fr/wp-content/plugins/maps-marker-pro/readme.txt
       // get post data !
       // 'data/map/map_agefa.json': 'https://lagedefaire-lejournal.fr/wp-admin/admin-ajax.php',
 
+      // still working, bravo !
       'data/map/map_basta.geojson':'http://portail.bastamag.net/spip.php?page=gis_json&objets=syndic_articles&limit=500',
       'data/map/map_ffdn.json':'https://db.ffdn.org/isp/map_data.json',
       'data/map/map_passeco.geojson':'http://www.ecovillageglobal.fr/spip.php?page=gis_json&objets=annonces&limit=500',
+
+      // REPORTERRE
+      'data/map/map_report.geojson':'http://reporterre.net/spip.php?page=gis_json&objets=articles&limit=500',
+      // ... il y a now une "carte des luttes" https://lutteslocales.gogocarto.fr/
+      'data/map/map_cluttes.json':'https://lutteslocales.gogocarto.fr/api/elements?categories=&fullRepresentation=false',
       
-      // ... disapeared ... il y a now une "carte des luttes"
-      //'data/map/map_report.geojson':'http://reporterre.net/spip.php?page=gis_json&objets=articles&limit=500',
+      // ... disapeared
+      //'data/map/map_collec.geojson':'https://framacarte.org/fr/datalayer/5289/',
       
-      'data/map/map_collec.geojson':'https://framacarte.org/fr/datalayer/5289/',
-      'data/map/map_graino.geojson':'http://umap.openstreetmap.fr/fr/datalayer/11026/',
-      'data/map/map_cnlii.geojson':'https://umap.openstreetmap.fr/fr/datalayer/91000/',
+      // GRAINOTHEQUE
+      // ... disapeared
+      //'data/map/map_graino.geojson':'http://umap.openstreetmap.fr/fr/datalayer/11026/',
+      // ... now 2 ≠ categories
+      //'data/map/map_graino.geojson':'https://umap.openstreetmap.fr/en/datalayer/5922/159c4cab-818e-4742-b82c-8853c27abe0d/',
+      'data/map/map_graino.geojson':'https://umap.openstreetmap.fr/en/datalayer/5922/e62689b8-b2d3-4823-ac1f-4dc901692ce1/',
+      
+      // CNLII (coord nat lieux interm indep) https://cnlii.org/
+      // ... disapeared
+      //'data/map/map_cnlii.geojson':'https://umap.openstreetmap.fr/fr/datalayer/91000/',
+      // ... now 3 ≠ categories
+      //'data/map/map_cnlii.geojson':'https://umap.openstreetmap.fr/fr/datalayer/40759/8423424f-5d0d-4680-9934-7c1682423135/',
+      //'data/map/map_cnlii.geojson':'https://umap.openstreetmap.fr/fr/datalayer/40759/412f4cc6-9851-4230-94c6-aa6515dc9149/',
+      'data/map/map_cnlii.geojson':'https://umap.openstreetmap.fr/fr/datalayer/40759/022fdb88-0216-48ea-8fd0-a34c56a7828f/',
+
       'data/map/map_zeste.json':'https://www.zeste.coop/fr/api/v1/projects'
 
       // NEED MERGE OF DATALAYERS 'data/map/map_idopi.geojson':'http://umap.openstreetmap.fr/fr/datalayer/240600/'

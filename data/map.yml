@@ -176,6 +176,13 @@ mapcredits:
         color: 5db678
         url: http://reporterre.net
         _geojson: http://reporterre.net/spip.php?page=gis_json&objets=articles&limit=500
+    -   slug: cluttes
+        type: json
+        name: Carte des luttes
+        description: Luttes locales par Reporterre
+        color: 5f86ac
+        url: https://lutteslocales.gogocarto.fr/
+        jsonprefix: data
     -   slug: basta
         type: geojson
         name: Portail Bastamag

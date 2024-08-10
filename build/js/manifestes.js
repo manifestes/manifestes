@@ -4853,6 +4853,16 @@ var parseMapCreditAndDo = function(c,data,foreachdo) {
     if(c.jsonprefix) data = data[c.jsonprefix];
 
     _.each(data, function(m) {
+      
+      if(c.slug=="cluttes")
+        if(foreachdo) foreachdo({
+          source: "cluttes",
+          name: m.name,
+          description: m.Description + " - " + m.Article,
+          web: m.URL_1,
+          lat: m.geo.latitude,
+          lng: m.geo.longitude
+        });
 
       if(c.slug=="agefa")
         if(foreachdo) foreachdo({
@@ -5283,6 +5293,6 @@ var loadTagGraph = function(scope) {
 
 angular.module('settings', [])
 
-.constant('settings', {dev:false,langs:['fr','es','en'],layouts:['home','abcd','pixels','network','map','mapprint','ninja','catalogprint'],datapath:'data/',assets:'build/',lastupdate:'21 October 2020 - 10:13'})
+.constant('settings', {dev:false,langs:['fr','es','en'],layouts:['home','abcd','pixels','network','map','mapprint','ninja','catalogprint'],datapath:'data/',assets:'build/',lastupdate:'10 August 2024 - 9:54'})
 
 ;
